@@ -17,8 +17,13 @@ const ROOT_FILES = [
   'README.md',
 ];
 const TEXT_EXT = new Set(['.ts', '.tsx', '.js', '.mjs', '.css', '.json', '.md', '.svg', '.html']);
-// Dinh nghia bang code point U+2014 de chinh file nay khong chua ky tu literal.
-const EMDASH = String.fromCharCode(0x2014);
+// Dau bi cam, dinh nghia bang code point de chinh file nay khong chua literal.
+// Ca em-dash (U+2014) lan en-dash (U+2013): nguoi doc thuong khong phan biet,
+// deu la dau vet AI voi khach nhay cam (quyet dinh Con nguoi, 2026-07-14).
+const BANNED = [
+  { name: 'em-dash U+2014', ch: String.fromCharCode(0x2014) },
+  { name: 'en-dash U+2013', ch: String.fromCharCode(0x2013) },
+];
 
 let hits = 0;
 
@@ -27,9 +32,11 @@ function scanFile(path) {
   const text = readFileSync(path, 'utf8');
   const lines = text.split('\n');
   lines.forEach((line, i) => {
-    if (line.includes(EMDASH)) {
-      hits += 1;
-      console.log(`${path}:${i + 1}: ${line.trim()}`);
+    for (const { name, ch } of BANNED) {
+      if (line.includes(ch)) {
+        hits += 1;
+        console.log(`${path}:${i + 1}: [${name}] ${line.trim()}`);
+      }
     }
   });
 }
@@ -59,7 +66,7 @@ for (const f of ROOT_FILES) {
 }
 
 if (hits > 0) {
-  console.error(`\nFAIL: tim thay ${hits} em-dash (U+2014). Phai bang 0.`);
+  console.error(`\nFAIL: tim thay ${hits} dau bi cam (em-dash U+2014 hoac en-dash U+2013). Phai bang 0.`);
   process.exit(1);
 }
-console.log('OK: 0 em-dash.');
+console.log('OK: 0 em-dash, 0 en-dash.');

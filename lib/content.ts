@@ -45,7 +45,7 @@ export const tagline = {
 } as const;
 
 export const ui = {
-  livePill: 'Live · supply–demand graph',
+  livePill: 'Live · supply-demand graph',
   viewLanding: 'Landing',
   viewHub: 'Hub',
 } as const;
