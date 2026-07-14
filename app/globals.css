@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Token nen. Dong bo 1:1 voi design/reference_landing_hub.html (:root) va lib/tokens.ts.
+  Nen trang, xam, den trung tinh. Do (--dot) la accent duy nhat, dung tiet che.
+*/
+:root {
+  --paper: #FBFBFC;
+  --paper-2: #FFFFFF;
+  --paper-3: #F4F4F6;
+  --paper-4: #EBEBEE;
+  --ink: #111113;
+  --ink-2: #3E3E45;
+  --ink-3: #8A8A92;
+  --line: #E7E7EB;
+  --line-2: #D6D6DC;
+  --accent: #2C2C33;
+  --accent-d: #111113;
+  --accent-soft: #EFEFF2;
+  --ok: #3E3E45;
+  --ok-soft: #EEEEF1;
+  --dot: #E4341E;
+  --radius: 14px;
+  --radius-s: 9px;
+  --maxw: 1600px;
+
+  /* Font tro toi next/font/local qua bien --font-*, co fallback he thong */
+  --sans: var(--font-sans), system-ui, sans-serif;
+  --serif: var(--font-serif), Georgia, serif;
+  --mono: var(--font-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: rgba(228, 52, 30, 0.14);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  /* Nhan ky thuat EN mono in hoa */
+  .mono {
+    font-family: var(--mono);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Dau cham thuong hieu: hinh tron CSS mau do, khong phai ky tu */
+  .accentdot {
+    display: inline-block;
+    width: 0.34em;
+    height: 0.34em;
+    border-radius: 50%;
+    background: var(--dot);
+    vertical-align: baseline;
+    margin-right: 0.06em;
+  }
+
+  /* Wordmark .touch */
+  .brand {
+    display: inline-flex;
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
