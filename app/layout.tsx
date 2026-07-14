@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   const fontVars = `${beVietnamPro.variable} ${fraunces.variable} ${ibmPlexMono.variable}`;
   return (
-    <html lang="vi" className={fontVars}>
+    <html lang="vi" className={fontVars} data-scroll-behavior="smooth">
       <body>{children}</body>
     </html>
   );

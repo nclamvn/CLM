@@ -22,6 +22,8 @@ export type MatchSide = { role: string; name: string; desc: string };
 
 export type MatchCardData = {
   tag: string;
+  /** Dinh danh phu (mono, ink-3) duoi tag. Dung o Hub MatchDetail. */
+  id?: string;
   /** Do khop 0..1, hien 2 chu so va thanh bar theo phan tram. */
   score: number;
   demand: MatchSide;
@@ -152,6 +154,48 @@ export const landing = {
       { h: 'Công ty', links: [{ href: '#', label: 'Về .touch' }, { href: '#cta', label: 'Liên hệ' }] },
     ],
   },
+} as const;
+
+/** Chrome (nhan giao dien) cua Hub. Du lieu match/registry o lib/demo-data.ts. */
+export const hub = {
+  domainLabel: 'Ngành:',
+  domainValue: 'Công nghiệp hỗ trợ',
+  searchPlaceholder: 'Tìm thực thể, năng lực, match…',
+  demoTag: 'DEMO DATA',
+  backHome: '← Trang chủ',
+  avatar: 'LN',
+  rail: [
+    {
+      group: 'Tổng quan',
+      items: [
+        { ic: '▦', label: 'Bảng điều khiển', active: true },
+        { ic: '⇄', label: 'Matches', active: false },
+      ],
+    },
+    {
+      group: 'Registry',
+      items: [
+        { ic: '↗', label: 'Cung / Supply', active: false },
+        { ic: '↘', label: 'Cầu / Demand', active: false },
+        { ic: '◈', label: 'Provenance', active: false },
+      ],
+    },
+    {
+      group: 'Tầng niềm tin',
+      items: [
+        { ic: '◆', label: 'Bảo chứng', active: false },
+        { ic: '◷', label: 'Track record', active: false },
+      ],
+    },
+  ],
+  dashboardTitle: 'Bảng điều khiển',
+  dashboardSub: 'Domain: supporting-industry · cập nhật 14/07/2026',
+  runMatch: 'Chạy matching mới',
+  panelTitle: 'Matches đề xuất',
+  panelSort: 'sorted · độ khớp',
+  regTitle: 'Registry cung · trích',
+  regCols: ['Registry cung · trích', 'Năng lực', 'Tier'],
+  note: 'Toàn bộ dữ liệu trên màn này là DEMO minh hoạ, không phải doanh nghiệp thật.',
 } as const;
 
 /** Match mau (don vi gia tri). Ten doanh nghiep la hu cau minh hoa. */

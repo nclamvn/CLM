@@ -22,6 +22,7 @@ export function MatchCard({
       <div className="mcard-top">
         <div>
           <div className="tag">{data.tag}</div>
+          {data.id ? <div className="id mono">{data.id}</div> : null}
         </div>
         <div className="mscore">
           <span className="mono">{scoreText}</span>
