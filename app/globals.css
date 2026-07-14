@@ -196,6 +196,13 @@
   .viewswitch a:hover:not(.on),
   .viewswitch button:hover:not(.on) { color: var(--paper); }
 
+  /* Canvas qua cau. Container quyet dinh kich thuoc; ty le vuong. */
+  .globe-canvas {
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+  }
+
   /* Match card (don vi gia tri, DESIGN_SPEC muc 8) */
   .mcard {
     background: var(--paper-2);
