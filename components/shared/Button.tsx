@@ -40,10 +40,18 @@ export function Button(props: LinkButton | NativeButton) {
   );
 
   if ('href' in props && props.href) {
+    // Route noi bo (bat dau bang '/') dung Link; hash, mailto, http dung <a>.
+    if (props.href.startsWith('/')) {
+      return (
+        <Link href={props.href} className={classes}>
+          {inner}
+        </Link>
+      );
+    }
     return (
-      <Link href={props.href} className={classes}>
+      <a href={props.href} className={classes}>
         {inner}
-      </Link>
+      </a>
     );
   }
 
