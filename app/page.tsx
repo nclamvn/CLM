@@ -1,9 +1,9 @@
 import { Container } from '@/components/shared/Container';
+import { brand, tagline } from '@/lib/content';
 
 /**
- * Trang nen TIP-01. Chua dung section that (Landing thuoc TIP-04).
- * Hien wordmark .touch dung font va mau token, kem tagline that de kiem
- * ket xuat tieng Viet co dau, serif italic do focal, va nhan mono.
+ * Trang nen. Chua dung section that (Landing thuoc TIP-04).
+ * Moi chuoi lay tu lib/content.ts de giu mot nguon duy nhat.
  */
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <div style={{ maxWidth: 640 }}>
           <div className="brand" style={{ fontSize: 40 }}>
             <span className="accentdot" />
-            touch
+            {brand.wordmark}
           </div>
           <p
             style={{
@@ -30,7 +30,7 @@ export default function Home() {
               lineHeight: 1.5,
             }}
           >
-            Chạm đúng đối tác, bằng những match{' '}
+            {tagline.lead}
             <em
               style={{
                 fontFamily: 'var(--serif)',
@@ -39,9 +39,9 @@ export default function Home() {
                 color: 'var(--dot)',
               }}
             >
-              chứng-minh-được
+              {tagline.focal}
             </em>
-            .
+            {tagline.tail}
           </p>
           <p
             className="mono"
@@ -52,7 +52,7 @@ export default function Home() {
               color: 'var(--ink-3)',
             }}
           >
-            Provenance-backed B2B matching
+            {brand.positioning}
           </p>
         </div>
       </Container>

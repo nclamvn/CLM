@@ -94,8 +94,190 @@
   }
 }
 
+@layer components {
+  /* Buttons (port .btn tu reference). Trang thai disabled thiet ke moi. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 22px;
+    border-radius: 100px;
+    font-size: 14.5px;
+    font-weight: 600;
+    transition: 0.18s;
+    white-space: nowrap;
+  }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid var(--line-2); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--ink); background: var(--paper-2); }
+  .btn .ar { transition: 0.2s; }
+  .btn:hover .ar { transform: translateX(3px); }
+  .btn:disabled,
+  .btn[aria-disabled='true'] {
+    opacity: 0.45;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none;
+  }
+
+  /* Section tag: do 11px. Class .mono di kem se them font mono + hoa + spacing. */
+  .sec-tag {
+    font-size: 11px;
+    color: var(--dot);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  /* Live pill */
+  .live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    border: 1px solid var(--line-2);
+    background: var(--paper-2);
+    padding: 7px 15px;
+    border-radius: 100px;
+  }
+  .live-pill .ld {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--dot);
+    animation: lpulse 2.2s infinite;
+  }
+
+  /* Tier badge */
+  .tier {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+  }
+  .tierA { background: var(--ink); color: var(--paper); }
+  .tierB { background: transparent; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .tierC { background: var(--accent-soft); color: var(--accent-d); }
+
+  /* View switch (pill chuyen Landing / Hub). .viewswitch-fixed cho ban noi. */
+  .viewswitch {
+    display: inline-flex;
+    gap: 4px;
+    padding: 5px;
+    background: var(--ink);
+    border-radius: 100px;
+    box-shadow: 0 18px 40px -16px rgba(20, 20, 22, 0.6);
+  }
+  .viewswitch-fixed {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 60;
+  }
+  .viewswitch a,
+  .viewswitch button {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #c9c9cf;
+    padding: 8px 18px;
+    border-radius: 100px;
+    transition: 0.16s;
+  }
+  .viewswitch a.on,
+  .viewswitch button.on { background: var(--paper); color: var(--ink); }
+  .viewswitch a:hover:not(.on),
+  .viewswitch button:hover:not(.on) { color: var(--paper); }
+
+  /* Match card (don vi gia tri, DESIGN_SPEC muc 8) */
+  .mcard {
+    background: var(--paper-2);
+    border: 1px solid var(--line-2);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 24px 60px -34px rgba(20, 20, 22, 0.35);
+  }
+  .mcard-flush { border: none; box-shadow: none; border-radius: 0; }
+  .mcard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: var(--paper-4);
+    border-bottom: 1px solid var(--line);
+  }
+  .mcard-top .tag { font-size: 13px; font-weight: 600; color: var(--accent-d); }
+  .mscore { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--ink-2); }
+  .mscore .bar { width: 52px; height: 5px; border-radius: 3px; background: var(--line-2); overflow: hidden; }
+  .mscore .bar i { display: block; height: 100%; background: var(--ok); }
+  .mcard-sides {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 18px;
+    border-bottom: 1px dashed var(--line-2);
+  }
+  .mside .r { font-size: 9.5px; color: var(--ink-3); margin-bottom: 4px; }
+  .mside .n { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+  .mside .d { font-size: 12px; color: var(--ink-2); line-height: 1.4; }
+  .mlink {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--line-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dot);
+    font-size: 16px;
+  }
+  .chain { padding: 14px 18px; }
+  .chain-h { font-size: 9.5px; color: var(--ink-3); margin-bottom: 10px; }
+  .crow { display: flex; gap: 12px; font-size: 12.5px; padding: 5px 0; border-bottom: 1px solid var(--paper-3); }
+  .crow:last-child { border-bottom: none; }
+  .crow .k { color: var(--ink-3); min-width: 104px; flex: none; }
+  .crow .v { color: var(--ink); }
+  .claim { font-style: italic; color: var(--accent-d); }
+  .vouch {
+    margin: 2px 18px;
+    padding: 10px 14px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-s);
+    font-size: 12.5px;
+    color: var(--accent-d);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .gate { padding: 10px 18px 16px; font-size: 11px; color: var(--ink-3); display: flex; align-items: center; gap: 8px; }
+  .gate .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
+}
+
+@keyframes lpulse {
+  0% { box-shadow: 0 0 0 0 rgba(228, 52, 30, 0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(228, 52, 30, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(228, 52, 30, 0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .live-pill .ld {
+    animation: none;
+  }
+  .btn,
+  .btn .ar,
+  .viewswitch a,
+  .viewswitch button {
+    transition: none;
   }
 }
