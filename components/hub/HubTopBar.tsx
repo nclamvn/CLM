@@ -10,13 +10,13 @@ export function HubTopBar() {
           <span className="accentdot" />
           touch
         </div>
-        <div className="dom-switch">
+        <button type="button" className="dom-switch">
           {hub.domainLabel} <b>{hub.domainValue}</b> <span aria-hidden="true">▾</span>
-        </div>
+        </button>
       </div>
-      <div className="hub-search">
+      <button type="button" className="hub-search">
         <span aria-hidden="true">⌕</span> {hub.searchPlaceholder}
-      </div>
+      </button>
       <div className="r">
         <span className="demo-tag">{hub.demoTag}</span>
         <Link className="nav-login" href="/" style={{ fontSize: 13, color: 'var(--ink-2)' }}>

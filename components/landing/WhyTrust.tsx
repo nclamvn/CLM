@@ -22,7 +22,7 @@ export function WhyTrust() {
               <div className="ic" aria-hidden="true">
                 {d.ic}
               </div>
-              <h4>{d.h}</h4>
+              <h3>{d.h}</h3>
               <p>{d.p}</p>
               <div className="tg mono">{d.tg}</div>
             </div>

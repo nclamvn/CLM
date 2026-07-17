@@ -112,10 +112,16 @@ export const hubMatches: HubMatch[] = [
 
 export type RegistryRow = { name: string; cap: string; tier: Tier; tierLabel: string };
 
+/*
+ * Tier o day la tier NGUON cua fact nang luc, nhat quan voi chuoi provenance
+ * cua match tuong ung (PCB Hưng Gia: chung nhan RoHS tier A trong MATCH-0035).
+ * Dong tier C giu vi du CLAIM: thuc the moi, ho so tu khai chua kiem.
+ */
 export const registry: RegistryRow[] = [
   { name: 'Precision Trường Sơn', cap: 'CNC 5 trục, ISO 9001', tier: 'A', tierLabel: 'A' },
   { name: 'Khuôn mẫu Á Châu', cap: 'Khuôn ép, dung sai 5µm', tier: 'B', tierLabel: 'B' },
-  { name: 'PCB Hưng Gia', cap: 'Bo mạch 4-6 lớp', tier: 'C', tierLabel: 'CLAIM' },
+  { name: 'PCB Hưng Gia', cap: 'Bo mạch 4-6 lớp, SMT', tier: 'A', tierLabel: 'A' },
+  { name: 'Cao su Kỹ thuật Việt Hưng', cap: 'Gioăng, phớt cao su kỹ thuật', tier: 'C', tierLabel: 'CLAIM' },
 ];
 
 export type Kpi = { k: string; v: string; t: string; warn: boolean };

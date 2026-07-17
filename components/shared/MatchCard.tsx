@@ -41,7 +41,7 @@ export function MatchCard({
         <div className="mlink" aria-hidden="true">
           ⇄
         </div>
-        <div className="mside" style={{ textAlign: 'right' }}>
+        <div className="mside mside-r">
           <div className="r mono">{data.supply.role}</div>
           <div className="n">{data.supply.name}</div>
           <div className="d">{data.supply.desc}</div>

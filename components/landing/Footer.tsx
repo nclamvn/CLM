@@ -18,7 +18,7 @@ export function Footer() {
         <div className="foot-cols">
           {f.cols.map((col) => (
             <div className="foot-col" key={col.h}>
-              <h5 className="mono">{col.h}</h5>
+              <h3 className="mono">{col.h}</h3>
               {col.links.map((l) =>
                 l.href.startsWith('/') ? (
                   <Link key={l.label} href={l.href}>

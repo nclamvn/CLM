@@ -25,6 +25,7 @@ const config: Config = {
         ok: colors.ok,
         'ok-soft': colors.okSoft,
         dot: colors.dot,
+        'dot-text': colors.dotText,
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],

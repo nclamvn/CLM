@@ -17,7 +17,7 @@ export function HubApp() {
     <div className="hub-cols">
       <div className="panel">
         <div className="panel-h">
-          <h3>{hub.panelTitle}</h3>
+          <h2>{hub.panelTitle}</h2>
           <span className="mono">{hub.panelSort}</span>
         </div>
         <MatchList matches={hubMatches} selected={selected} onSelect={setSelected} />

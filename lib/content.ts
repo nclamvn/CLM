@@ -50,6 +50,21 @@ export const ui = {
   livePill: 'Live · supply-demand graph',
   viewLanding: 'Landing',
   viewHub: 'Hub',
+  skipToContent: 'Bỏ qua tới nội dung chính',
+  menuOpen: 'Mở menu',
+  menuClose: 'Đóng menu',
+  menuLabel: 'Menu điều hướng',
+} as const;
+
+/** Trang 404 dung thuong hieu. */
+export const notFound = {
+  code: '404',
+  titlePre: 'Trang này ',
+  titleEm: 'chưa tồn tại',
+  titleTail: '.',
+  p: 'Đường dẫn không có trong registry. Giống một match thiếu dẫn chứng, chúng tôi thà nói "không có" còn hơn trả về một trang rác.',
+  home: 'Về trang chủ',
+  hub: 'Mở Hub',
 } as const;
 
 /** Toan bo copy trang Landing. Tieng Viet chinh, nhan EN mono. */
@@ -81,7 +96,8 @@ export const landing = {
     legend: [
       { color: '#8A8A92', label: 'Cầu', diamond: false },
       { color: '#111113', label: 'Cung', diamond: false },
-      { color: '#E4341E', label: 'Khớp', diamond: true },
+      // Do chu nho (AA): dau ◆ chu thich dung dot-text, node tren globe van --dot.
+      { color: '#D42B16', label: 'Khớp', diamond: true },
     ],
   },
   strip: [

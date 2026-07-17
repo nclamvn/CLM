@@ -10,7 +10,8 @@ export const colors = {
   paper4: '#EBEBEE',
   ink: '#111113',
   ink2: '#3E3E45',
-  ink3: '#8A8A92',
+  /* Toi hon reference (#8A8A92) de chu nho dat AA tren cac nen sang (TIP-06). */
+  ink3: '#696971',
   line: '#E7E7EB',
   line2: '#D6D6DC',
   accent: '#2C2C33',
@@ -19,6 +20,8 @@ export const colors = {
   ok: '#3E3E45',
   okSoft: '#EEEEF1',
   dot: '#E4341E',
+  /* Do danh cho chu nho: cung ho voi dot, toi hon de dat AA 4.5:1 (TIP-06). */
+  dotText: '#D42B16',
 } as const;
 
 export const radius = {

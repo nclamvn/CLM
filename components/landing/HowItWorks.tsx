@@ -25,7 +25,7 @@ export function HowItWorks() {
               <div className="ic" aria-hidden="true">
                 {s.ic}
               </div>
-              <h4>{s.h}</h4>
+              <h3>{s.h}</h3>
               <p>{s.p}</p>
             </div>
           ))}

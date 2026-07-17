@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import { Container } from '../shared/Container';
 import { Button } from '../shared/Button';
+import { MobileNav } from '../shared/MobileNav';
 import { landing } from '@/lib/content';
 
-/** Nav sticky, blur nen, wordmark, 4 tab gach chan do hover, CTA, link Hub. */
+/**
+ * Nav sticky, blur nen, wordmark, 4 tab gach chan do hover, CTA, link Hub.
+ * Duoi 920px tab an di, MobileNav (hamburger + panel) thay the.
+ */
 export function Nav() {
   return (
     <nav className="nav">
@@ -23,9 +27,10 @@ export function Nav() {
           <Link className="nav-login" href="/hub">
             {landing.nav.hub} →
           </Link>
-          <Button variant="primary" href="#cta">
+          <Button variant="primary" href="#cta" className="nav-cta">
             {landing.nav.cta}
           </Button>
+          <MobileNav />
         </div>
       </Container>
     </nav>
