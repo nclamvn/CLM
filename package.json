@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:emdash": "node scripts/check-emdash.mjs"
+    "check:emdash": "node scripts/check-emdash.mjs",
+    "check": "next lint && node scripts/check-emdash.mjs && next build"
   },
   "dependencies": {
     "next": "^15.5.20",
