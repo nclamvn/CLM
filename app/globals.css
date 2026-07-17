@@ -969,6 +969,8 @@
     --dk-rdb: #E8221A;
     --dk-rds: rgba(196, 15, 15, 0.14);
     --dk-rdl: rgba(196, 15, 15, 0.5);
+    /* do CHU nho tren nen toi: sang hon mot bac de dat AA 4.5:1 */
+    --dk-rdt: #F53B2E;
     --dk-ok: #3FB27F;
     background: var(--dk-bg);
     color: var(--dk-tx);
@@ -1234,4 +1236,57 @@
   .dk-metrics-in { grid-template-columns: 1fr; }
   .dk-metric { border-right: none; border-bottom: 1px solid var(--dk-ln); }
   .dk-foot { padding-bottom: 110px; }
+}
+
+/* ============================================================
+   HUB TOI: cung tone den do voi landing (.dk hub-view).
+   Override cac class hub sang token dk-*, giu nguyen ket cau.
+   ============================================================ */
+@layer components {
+  .dk :focus-visible { outline-color: var(--dk-tx); }
+  .dk.hub-view { background: var(--dk-bg); }
+  .dk .hub-top { background: rgba(8, 8, 10, 0.72); border-bottom: 1px solid var(--dk-ln); backdrop-filter: blur(16px); }
+  .dk .dom-switch { background: transparent; border-color: var(--dk-ln2); color: var(--dk-tx2); }
+  .dk .dom-switch b { color: var(--dk-tx); }
+  .dk .hub-search { background: var(--dk-bg-1); border-color: var(--dk-ln); color: var(--dk-tx3); }
+  .dk .demo-tag { color: var(--dk-tx2); border-color: var(--dk-rdl); background: var(--dk-rds); }
+  .dk .avatar { background: var(--dk-bg-3); color: var(--dk-tx); border: 1px solid var(--dk-ln2); }
+  .dk .nav-login { color: var(--dk-tx2) !important; }
+  .dk .nav-login:hover { color: var(--dk-tx) !important; }
+  .dk .rail { background: var(--dk-bg-1); border-right-color: var(--dk-ln); }
+  .dk .rail .grp { color: var(--dk-tx3); }
+  .dk .rail a, .dk .rail button { color: var(--dk-tx2); }
+  .dk .rail a.on, .dk .rail button.on { background: var(--dk-bg-3); color: var(--dk-tx); }
+  .dk .rail a:hover:not(.on), .dk .rail button:hover:not(.on) { background: var(--dk-bg-2); }
+  .dk .hub-h p { color: var(--dk-tx3); }
+  .dk .btn-primary { background: transparent; border: 1px solid var(--dk-rdl); color: var(--dk-rdt); }
+  .dk .btn-primary:hover { background: var(--dk-rds); border-color: var(--dk-rd); transform: translateY(-1px); box-shadow: 0 10px 28px -10px rgba(196, 15, 15, 0.4); }
+  .dk .kpi { background: var(--dk-bg-1); border-color: var(--dk-ln); }
+  .dk .kpi .k { color: var(--dk-tx3); }
+  .dk .kpi .t { color: var(--dk-ok); }
+  .dk .kpi .t.warn { color: var(--dk-rdt); }
+  .dk .panel { background: var(--dk-bg-1); border-color: var(--dk-ln); }
+  .dk .panel-h { border-bottom-color: var(--dk-ln); }
+  .dk .panel-h .mono { color: var(--dk-tx3); }
+  .dk .qrow { border-bottom-color: var(--dk-ln); }
+  .dk .qrow:hover { background: var(--dk-bg-2); }
+  .dk .qrow.on { background: var(--dk-rds); }
+  .dk .qrow .sc { color: var(--dk-ok); }
+  .dk .qrow .mid .a { color: var(--dk-tx); }
+  .dk .qrow .mid .b { color: var(--dk-tx3); }
+  .dk .badge.vch { background: var(--dk-rds); color: var(--dk-tx); border: 1px solid var(--dk-rdl); }
+  .dk .badge.rdy { background: rgba(63, 178, 127, 0.14); color: var(--dk-ok); border: 1px solid rgba(63, 178, 127, 0.4); }
+  .dk .reg-table { border-top-color: var(--dk-ln); }
+  .dk .reg-table th { color: var(--dk-tx3); border-bottom-color: var(--dk-ln); }
+  .dk .reg-table td { color: var(--dk-tx2); border-bottom-color: var(--dk-ln); }
+  .dk .reg-table .ent { color: var(--dk-tx); }
+  .dk .tierC { background: var(--dk-bg-3); border: 1px solid var(--dk-ln2); color: var(--dk-tx2); }
+  .dk .hub-note { color: var(--dk-tx3); }
+  .dk .mcard-flush { border: none; box-shadow: none; }
+  /* rail thanh ngang mobile: pill toi */
+  @media (max-width: 960px) {
+    .dk .rail { border-bottom-color: var(--dk-ln); }
+    .dk .rail a, .dk .rail button { border-color: var(--dk-ln); background: var(--dk-bg-2); }
+    .dk .rail a.on, .dk .rail button.on { background: var(--dk-tx); color: var(--dk-bg); border-color: var(--dk-tx); }
+  }
 }

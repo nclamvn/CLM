@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function HubPage() {
   return (
-    <div className="hub-view">
+    <div className="dk hub-view">
       <HubTopBar />
       <div className="hub-body">
         <HubRail />
