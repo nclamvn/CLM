@@ -29,6 +29,8 @@ python3 methodbox/refinery.py domains/dich_vu_solo_entrepreneur   # pipeline 7 g
 python3 methodbox/bites.py domains/dich_vu_solo_entrepreneur      # 6 rang core (+N/A gates)
 python3 match_engine.py run domains/dich_vu_solo_entrepreneur     # build match + gate
 python3 match_engine.py validate domains/dich_vu_solo_entrepreneur out/matches.jsonl
+python3 match_engine.py validate ... --require-signoff   # Phase B: bat nguoi gac cong that ky
+python3 match_engine.py sign out/matches.jsonl "<ten>" <ngay>  # ghi signoff SAU khi nguoi gac cong duyet
 python3 match_bites.py                                      # 4 rang match gate
 python3 check_dash.py                                       # cong dash
 ```

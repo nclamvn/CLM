@@ -284,9 +284,11 @@ def run(domain_dir):
     return report
 
 
-def validate_file(domain_dir, matches_path):
+def validate_file(domain_dir, matches_path, require_signoff=False):
     """Che do cho bites + X-Ray: doc facts tu out/facts.jsonl (artefact) va
-    kiem tung match trong file. Bat ky rang nao can -> exit 2."""
+    kiem tung match trong file. Bat ky rang nao can -> exit 2.
+    --require-signoff (Phase B, nhac cua X-Ray 17/07): moi match phai co nguoi
+    gac cong THAT ky (by + date), 'pending-human-review' bi rang SIGNOFF_PENDING can."""
     out = (Path(domain_dir) / ".." / ".." / "out").resolve()
     facts = {}
     for line in (out / "facts.jsonl").read_text(encoding="utf-8").splitlines():
@@ -296,17 +298,41 @@ def validate_file(domain_dir, matches_path):
     matches = [json.loads(l) for l in Path(matches_path).read_text(encoding="utf-8").splitlines() if l.strip()]
     for m in matches:
         gate_match(m, facts)
-    print(f"VALIDATE PASSED · {len(matches)} match · 0 gate bites")
+        if require_signoff:
+            so = (m.get("gate") or {}).get("signoff") or {}
+            if not so.get("by") or so.get("by") == "pending-human-review" or not so.get("date"):
+                raise GateError("SIGNOFF_PENDING",
+                                f"{m.get('id')}: chua co nguoi gac cong that ky (by/date)")
+    mode = " · signoff THAT du" if require_signoff else ""
+    print(f"VALIDATE PASSED · {len(matches)} match · 0 gate bites{mode}")
+
+
+def sign_matches(matches_path, by, date):
+    """Ghi signoff cua nguoi gac cong that vao moi match dat gate (dung o Phase B
+    SAU khi nguoi gac cong da duyet danh sach; lenh nay chi ghi lai quyet dinh)."""
+    p = Path(matches_path)
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    for m in rows:
+        m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date}
+    p.write_text("\n".join(json.dumps(m, ensure_ascii=False, sort_keys=True) for m in rows) + "\n",
+                 encoding="utf-8")
+    print(f"SIGNOFF: {len(rows)} match ky boi {by} ngay {date}")
 
 
 if __name__ == "__main__":
     try:
-        if len(sys.argv) >= 3 and sys.argv[1] == "run":
-            run(sys.argv[2])
-        elif len(sys.argv) >= 4 and sys.argv[1] == "validate":
-            validate_file(sys.argv[2], sys.argv[3])
+        args = [a for a in sys.argv[1:] if not a.startswith("--")]
+        flags = {a for a in sys.argv[1:] if a.startswith("--")}
+        if len(args) >= 2 and args[0] == "run":
+            run(args[1])
+        elif len(args) >= 3 and args[0] == "validate":
+            validate_file(args[1], args[2], require_signoff="--require-signoff" in flags)
+        elif len(args) >= 4 and args[0] == "sign":
+            sign_matches(args[1], args[2], args[3])
         else:
-            sys.exit("usage: match_engine.py run <domain_dir> | validate <domain_dir> <matches.jsonl>")
+            sys.exit("usage: match_engine.py run <domain_dir> | "
+                     "validate <domain_dir> <matches.jsonl> [--require-signoff] | "
+                     "sign <matches.jsonl> <ten_nguoi_gac_cong> <ngay>")
     except (GateError, refinery.GateError) as e:
         print(f"GATE BITES · {e}")
         sys.exit(2)
