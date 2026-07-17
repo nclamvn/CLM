@@ -5,12 +5,22 @@ import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { landing, ui } from '@/lib/content';
 
+type NavLink = { readonly href: string; readonly label: string };
+
 /**
  * Menu mobile that cho Nav (hien duoi 920px qua CSS .mnav). Nut hamburger mo
  * panel role="dialog": focus don vao panel, Tab quay vong trong panel, Esc dong,
  * dong tra focus ve nut mo, body khoa cuon khi mo. Chon mot muc thi dong menu.
+ * `links` cho phep be mat khac (landing toi) truyen anchor rieng; `dark` doi
+ * skin panel (panel portal ra body nen khong an theo scope .dk).
  */
-export function MobileNav() {
+export function MobileNav({
+  dark = false,
+  links = landing.nav.links,
+}: {
+  dark?: boolean;
+  links?: readonly NavLink[];
+}) {
   const [open, setOpen] = useState(false);
   const btnRef = useRef<HTMLButtonElement | null>(null);
   const panelRef = useRef<HTMLDivElement | null>(null);
@@ -84,7 +94,7 @@ export function MobileNav() {
         <div
           ref={panelRef}
           id="mobile-menu"
-          className="mnav-panel"
+          className={`mnav-panel ${dark ? 'mnav-dark' : ''}`.trim()}
           role="dialog"
           aria-modal="true"
           aria-label={ui.menuLabel}
@@ -99,7 +109,7 @@ export function MobileNav() {
             </button>
           </div>
           <nav className="mnav-links" aria-label={ui.menuLabel}>
-            {landing.nav.links.map((l) => (
+            {links.map((l) => (
               <a key={l.href + l.label} href={l.href} onClick={close}>
                 {l.label}
               </a>

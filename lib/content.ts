@@ -172,6 +172,137 @@ export const landing = {
   },
 } as const;
 
+/**
+ * Copy cho landing TOI (control-room, huong C). Du lieu so o lib/dark-data.ts.
+ * Do dam #C40F0F/#E8221A la chu ky thuong hieu tren nen graphite.
+ */
+export const dk = {
+  nav: {
+    links: [
+      { href: '#pipeline', label: 'Cách hoạt động' },
+      { href: '#data', label: 'Dữ liệu' },
+      { href: '#matching', label: 'Matching' },
+      { href: '#vertical', label: 'Ngành dọc' },
+    ],
+    status: 'ENGINE · LIVE',
+    cta: 'Yêu cầu demo',
+  },
+  hero: {
+    eyebrow: 'Deep-industry intelligence hub',
+    line1: 'Chạm đúng đối tác,',
+    line2: 'bằng những match ',
+    focal: tagline.focal,
+    tail: tagline.tail,
+    sub: 'Cào, tinh lọc, gắn provenance, dựng registry sống, ghép cung cầu và nội suy phân tích trên một engine. Mỗi match truy được về nguồn, mỗi giới thiệu có người bảo chứng.',
+    ctaPrimary: 'Yêu cầu demo',
+    ctaGhost: 'Xem engine hoạt động',
+    assure: ['Provenance mọi fact', 'Fail-loud, không match rác', 'Người bảo chứng đứng sau'],
+    streamTitle: 'MATCH STREAM',
+    streamLive: 'LIVE',
+  },
+  tape: [
+    { k: 'Provenance', v: '100%', d: 'fact có chuỗi nguồn gốc', hot: false },
+    { k: 'Fail-loud', v: '0', d: 'match thiếu dẫn chứng lọt ra', hot: true },
+    { k: 'Trust layer', v: '1:1', d: 'giới thiệu có người bảo chứng', hot: false },
+    { k: 'Audit', v: 'by design', d: 'truy vết mọi lúc', hot: false },
+    { k: 'Gate', v: '8', d: 'match bị cổng chặn tuần này', hot: true },
+  ],
+  pipeline: {
+    tag: 'The engine · two layers',
+    h2pre: 'Một dây chuyền bảy khâu, ',
+    h2em: 'mỗi khâu một cổng',
+    h2tail: '.',
+    lead: 'Dữ liệu chảy qua bảy cổng fail-loud. Không đạt thì dừng ồn ào tại chỗ, không lặng lẽ trôi vào registry. Đỏ là lúc một cổng cắn.',
+    panelTitle: 'Dòng bản ghi qua bảy cổng · realtime',
+    statIn: 'IN',
+    statOk: 'ĐẠT',
+    statBlocked: 'CẮN',
+    legend: [
+      { color: '#9A9AA6', label: 'bản ghi sống' },
+      { color: '#C40F0F', label: 'cổng cắn (loại)' },
+      { color: '#3FB27F', label: 'đạt, gắn provenance' },
+    ],
+  },
+  data: {
+    tag: 'Refined datasets · capability matrix',
+    h2pre: 'Ma trận ',
+    h2em: 'Năng lực nhân Yêu cầu',
+    h2tail: ', đọc được ngay.',
+    lead: 'Registry sạch trở thành ma trận. Ô càng đỏ, độ khớp năng lực với yêu cầu càng cao. Ô viền đỏ là Fit đã đủ điều kiện xuất match.',
+    mxTitle: 'Supporting industry · Q3 2026',
+    mxTag: 'DEMO DATA',
+    mxKeyLow: 'độ khớp thấp',
+    mxKeyHigh: 'cao',
+    mxKeyFit: '▢ viền đỏ = Fit',
+    provTitle: 'Provenance graph · MATCH-0042',
+    provTag: 'truy vết được',
+  },
+  matching: {
+    tag: 'Matching · interpolation',
+    h2pre: 'Không chỉ ghép cặp. ',
+    h2em: 'Nội suy và dự phóng',
+    h2tail: '.',
+    lead: 'Engine đọc tín hiệu ngành theo thời gian, nội suy chỗ khuyết và dự phóng khoảng bất định, để match đúng lúc chứ không chỉ đúng bên.',
+    chartTitle: 'Nội suy nhu cầu ngành · 18 kỳ',
+    chartTag: 'DEMO DATA',
+    chartNow: 'now',
+    legend: [
+      { color: '#C40F0F', label: 'tín hiệu đã kiểm' },
+      { color: '#6E6E7A', label: 'nội suy' },
+      { color: 'rgba(196,15,15,.25)', label: 'khoảng bất định dự phóng' },
+    ],
+  },
+  pillars: {
+    tag: 'Why it holds',
+    h2pre: 'Tin cậy là ',
+    h2em: 'cơ chế',
+    h2tail: ', không phải khẩu hiệu.',
+    items: [
+      { ic: '◈', h: 'Chứng-minh-được', p: 'Mọi match truy ngược về từng fact và từng nguồn trong vài bước. Không phải tin, mà tra được.', tg: 'provenance · evidence span · tier A/B' },
+      { ic: '◆', h: 'Tầng niềm tin', p: 'Người uy tín đứng sau mỗi giới thiệu để giao dịch đi hết vòng. Track record tích lũy vào registry.', tg: 'human vouching · track record' },
+      { ic: '⏻', h: 'Fail-loud', p: 'Cổng kiểm dừng ồn ào khi dữ liệu không đạt. Thà nói không có còn hơn trả match kém.', tg: 'bite test · human-in-the-loop' },
+    ],
+  },
+  vertical: {
+    tag: 'Vertical registries',
+    h2pre: 'Mỗi ngành một registry sống, ',
+    h2em: 'chung một engine',
+    h2tail: '.',
+    factsLabel: 'Facts verified',
+    matchLabel: 'Match',
+    tierLabels: ['A', 'B', 'CLAIM'],
+    refreshLabel: 'LÀM MỚI',
+    failLabel: 'FAIL-LOUD · 0 LỌT',
+    live: 'LIVE',
+  },
+  cta: {
+    eyebrow: 'ENGINE READY · CHỜ DỮ LIỆU NGÀNH CỦA BẠN',
+    h2pre: 'Sẵn sàng thấy match ',
+    h2em: 'chứng-minh-được',
+    h2tail: ' đầu tiên?',
+    p: 'Đặt một buổi demo trên chính dữ liệu ngành của bạn. Không match rác, không cam kết quá lời.',
+    ctaPrimary: 'Yêu cầu demo',
+    ctaGhost: 'Xem engine hoạt động',
+    email: 'mailto:hello@touch.example',
+    legend: [
+      { color: '#9AA6C8', label: 'cầu tìm đường' },
+      { color: '#C40F0F', label: 'cung tìm đường' },
+      { color: 'meet', label: 'điểm gặp · match' },
+    ],
+    meetTail: 'đúng bên · đúng điểm',
+  },
+  footer: {
+    blurb: 'Kết nối cung cầu bằng những match chứng-minh-được, với một người bảo chứng đứng sau.',
+    status: 'ENGINE · LIVE · UPTIME 99,98%',
+    cols: [
+      { h: 'Sản phẩm', links: [{ href: '#pipeline', label: 'Engine' }, { href: '#data', label: 'Dữ liệu' }, { href: '#matching', label: 'Matching' }] },
+      { h: 'Tin cậy', links: [{ href: '#why', label: 'Provenance' }, { href: '#why', label: 'Bảo chứng' }, { href: '#why', label: 'Fail-loud' }] },
+      { h: 'Công ty', links: [{ href: '#', label: 'Về .touch' }, { href: '#cta', label: 'Liên hệ' }] },
+    ],
+    meta: ['© 2026 .TOUCH', 'DEMO DATA · DOANH NGHIỆP MINH HOẠ', 'BUILD 0717 · VIETNAM'],
+  },
+} as const;
+
 /** Chrome (nhan giao dien) cua Hub. Du lieu match/registry o lib/demo-data.ts. */
 export const hub = {
   domainLabel: 'Ngành:',
