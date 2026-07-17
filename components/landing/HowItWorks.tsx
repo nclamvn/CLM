@@ -19,7 +19,7 @@ export function HowItWorks() {
         </div>
         <div className="flow">
           {h.steps.map((s) => (
-            <div className="step" key={s.n}>
+            <div className={`step ${s.layer === 'Trust' ? 'step-trust' : ''}`.trim()} key={s.n}>
               <span className="lyr mono">{s.layer}</span>
               <div className="n mono">{s.n}</div>
               <div className="ic" aria-hidden="true">
