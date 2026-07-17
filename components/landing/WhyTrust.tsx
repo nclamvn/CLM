@@ -2,7 +2,11 @@ import { Container } from '../shared/Container';
 import { SectionTag } from '../shared/SectionTag';
 import { landing } from '@/lib/content';
 
-/** Vi sao tin duoc: 3 cot co che. */
+/**
+ * Vi sao tin duoc: 3 the co che, cung ngon ngu voi pipeline (chip icon,
+ * pill chi so, hover nhac the) + chu ky rieng: glyph watermark kho lon mo
+ * o goc duoi phai, dam len nhe khi hover. Watermark aria-hidden (trang tri).
+ */
 export function WhyTrust() {
   const w = landing.why;
   return (
@@ -17,14 +21,20 @@ export function WhyTrust() {
           </h2>
         </div>
         <div className="diffs">
-          {w.diffs.map((d) => (
+          {w.diffs.map((d, i) => (
             <div className="diff" key={d.h}>
-              <div className="ic" aria-hidden="true">
+              <span className="wm" aria-hidden="true">
                 {d.ic}
+              </span>
+              <div className="diff-in">
+                <span className="idx mono">{String(i + 1).padStart(2, '0')}</span>
+                <div className="ic" aria-hidden="true">
+                  {d.ic}
+                </div>
+                <h3>{d.h}</h3>
+                <p>{d.p}</p>
+                <div className="tg mono">{d.tg}</div>
               </div>
-              <h3>{d.h}</h3>
-              <p>{d.p}</p>
-              <div className="tg mono">{d.tg}</div>
             </div>
           ))}
         </div>
