@@ -525,9 +525,11 @@
   .step-trust:hover { border-color: var(--ink); }
   .step-trust h3 { color: var(--paper); }
   .step-trust p { color: #c9c9cf; }
-  .step-trust .n { color: #2c2c33; }
+  /* So 05 do: nhan diem den cua day chuyen (Con nguoi duyet 2026-07-17,
+     them 1 cho do vao ban do do, tong 6). */
+  .step-trust .n { color: var(--dot); }
   @supports (-webkit-text-stroke: 1px #000) {
-    .step-trust .n { color: transparent; -webkit-text-stroke: 1px #3e3e45; }
+    .step-trust .n { color: transparent; -webkit-text-stroke: 1px var(--dot); }
   }
   .step-trust .ic { border-color: rgba(255, 255, 255, 0.28); background: transparent; color: var(--paper); }
   .step-trust:hover .ic { background: var(--paper); border-color: var(--paper); color: var(--ink); }
