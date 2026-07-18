@@ -1,0 +1,27 @@
+domain: don_vi_cncl
+entity_label: "Don vi VN co nang luc theo nhom cong nghe chien luoc (QD 21/2026/QD-TTg)"
+
+schema:
+  type_field: loai_hinh          # DN / vien / truong
+  fields:
+    - ten_don_vi
+    - loai_hinh
+    - nhom_cncl                   # 1..10 theo QD 21/2026
+    - san_pham_lien_quan          # 1..30 theo QD 21/2026, hoac de trong
+    - nang_luc_mo_ta
+    - bang_chung_nang_luc         # du an / san pham / chung nhan trich nguyen van
+    - location
+    - source
+
+rollup_field: nhom_cncl
+
+universe:
+  estimate: 80
+  basis: "Uoc luong tho cho pilot Pha 1 chi 2 nhom (9 hang khong vu tru + 1 cong nghe so). Con so 80 la placeholder co co so mong: hang khong vu tru it don vi cong khai (order ~15-25), cong nghe so dong hon (order ~50-60). Coverage % chi mang tinh chi bao trong pilot, KHONG cong bo nhu ty le chinh xac. Refine bang mau so co co so o Pha 2."
+
+refresh_days:
+  default: 180
+
+alias_map: {}                     # chi gop khi chac cung mot thuc the (VD Viettel High Tech <-> VHT)
+
+ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
