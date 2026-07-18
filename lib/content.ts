@@ -308,7 +308,7 @@ export const hub = {
   domainLabel: 'Ngành:',
   domainValue: 'Công nghiệp hỗ trợ',
   searchPlaceholder: 'Tìm thực thể, năng lực, match…',
-  demoTag: 'DEMO DATA',
+  demoTag: 'MATCH: DEMO · REGISTRY: THẬT',
   backHome: '← Trang chủ',
   avatar: 'LN',
   rail: [
@@ -342,7 +342,7 @@ export const hub = {
   panelSort: 'sorted · độ khớp',
   regTitle: 'Registry cung · trích',
   regCols: ['Registry cung · trích', 'Năng lực', 'Tier'],
-  note: 'Toàn bộ dữ liệu trên màn này là DEMO minh hoạ, không phải doanh nghiệp thật.',
+  note: 'Match trên màn này là DEMO minh hoạ (chưa có chiều cầu). Registry cung bên dưới là dữ liệu THẬT (CNCLData), mỗi ô bấm ra snapshot kiểm được.',
 } as const;
 
 /** Match mau (don vi gia tri). Ten doanh nghiep la hu cau minh hoa. */

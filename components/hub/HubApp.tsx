@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { MatchList } from './MatchList';
-import { RegistryTable } from './RegistryTable';
+import { CnclRegistry } from './CnclRegistry';
 import { MatchDetail } from './MatchDetail';
 import { hubMatches } from '@/lib/demo-data';
 import { hub } from '@/lib/content';
@@ -21,7 +21,7 @@ export function HubApp() {
           <span className="mono">{hub.panelSort}</span>
         </div>
         <MatchList matches={hubMatches} selected={selected} onSelect={setSelected} />
-        <RegistryTable />
+        <CnclRegistry />
       </div>
       <MatchDetail match={hubMatches[selected]} />
     </div>
