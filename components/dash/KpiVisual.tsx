@@ -12,39 +12,50 @@ const dots = (pts: [number, number][], o: number) =>
 const VIS: Record<KpiVisualName, ReactElement> = {
   city: (
     <g stroke="currentColor" fill="none">
-      <g opacity="0.45" strokeWidth="1.1">
-        <rect x="6" y="48" width="13" height="30" rx="1" />
-        <rect x="66" y="42" width="13" height="36" rx="1" />
+      <g opacity="0.4" strokeWidth="1.1">
+        <rect x="6" y="50" width="11" height="28" rx="1" />
+        <rect x="68" y="44" width="12" height="34" rx="1" />
+        <rect x="58" y="52" width="9" height="26" rx="1" />
+      </g>
+      <g opacity="0.7" strokeWidth="1.2">
+        <rect x="18" y="40" width="12" height="38" rx="1" />
+        <rect x="46" y="34" width="13" height="44" rx="1" />
       </g>
       <g strokeWidth="1.4">
-        <rect x="24" y="32" width="15" height="46" rx="1" />
-        <rect x="43" y="20" width="14" height="58" rx="1" />
-        <line x1="50" y1="20" x2="50" y2="12" />
+        <rect x="32" y="22" width="13" height="56" rx="1" />
+        <line x1="38" y1="22" x2="38" y2="14" />
       </g>
-      <circle cx="50" cy="10" r="1.4" fill="currentColor" stroke="none" />
-      <g opacity="0.55" strokeWidth="1">
-        <line x1="27" y1="40" x2="36" y2="40" /><line x1="27" y1="46" x2="36" y2="46" /><line x1="27" y1="52" x2="36" y2="52" />
-        <line x1="46" y1="30" x2="54" y2="30" /><line x1="46" y1="37" x2="54" y2="37" /><line x1="46" y1="44" x2="54" y2="44" /><line x1="46" y1="51" x2="54" y2="51" />
+      <circle cx="38" cy="12" r="1.4" fill="currentColor" stroke="none" />
+      <g opacity="0.55" strokeWidth="0.9">
+        <line x1="35" y1="30" x2="42" y2="30" /><line x1="35" y1="37" x2="42" y2="37" /><line x1="35" y1="44" x2="42" y2="44" /><line x1="35" y1="51" x2="42" y2="51" />
+        <line x1="49" y1="42" x2="56" y2="42" /><line x1="49" y1="49" x2="56" y2="49" /><line x1="49" y1="56" x2="56" y2="56" />
+        <line x1="21" y1="48" x2="27" y2="48" /><line x1="21" y1="55" x2="27" y2="55" />
       </g>
-      {dots([[10, 54], [12, 60], [70, 50], [72, 58], [74, 66]], 0.3)}
+      {dots([[10, 58], [12, 64], [72, 54], [74, 62]], 0.3)}
     </g>
   ),
   dome: (
     <g stroke="currentColor" fill="none">
       <g opacity="0.45" strokeWidth="1.1">
-        <line x1="14" y1="72" x2="72" y2="72" /><line x1="18" y1="66" x2="68" y2="66" />
+        <line x1="14" y1="77" x2="72" y2="77" /><line x1="18" y1="72" x2="68" y2="72" />
       </g>
       <g opacity="0.7" strokeWidth="1.2">
-        <line x1="24" y1="66" x2="24" y2="45" /><line x1="34" y1="66" x2="34" y2="45" />
-        <line x1="43" y1="66" x2="43" y2="45" /><line x1="52" y1="66" x2="52" y2="45" /><line x1="62" y1="66" x2="62" y2="45" />
-        <line x1="21" y1="45" x2="65" y2="45" />
+        <line x1="23" y1="72" x2="23" y2="53" /><line x1="31" y1="72" x2="31" y2="53" />
+        <line x1="39" y1="72" x2="39" y2="53" /><line x1="47" y1="72" x2="47" y2="53" />
+        <line x1="55" y1="72" x2="55" y2="53" /><line x1="63" y1="72" x2="63" y2="53" />
+        <line x1="20" y1="53" x2="66" y2="53" />
       </g>
-      <g strokeWidth="1.4">
-        <path d="M27 45 Q43 21 59 45" />
-        <line x1="43" y1="22" x2="43" y2="15" />
+      <line x1="29" y1="47" x2="57" y2="47" strokeWidth="1.1" opacity="0.6" />
+      <path d="M29 47 Q29 24 43 22 Q57 24 57 47" strokeWidth="1.5" />
+      <g opacity="0.5" strokeWidth="0.9">
+        <path d="M43 22 Q35 34 34 47" /><path d="M43 22 Q51 34 52 47" />
       </g>
-      <circle cx="43" cy="13" r="1.5" fill="currentColor" stroke="none" />
-      {dots([[31, 38], [43, 34], [55, 38]], 0.4)}
+      <g strokeWidth="1.1">
+        <line x1="39" y1="22" x2="39" y2="17" /><line x1="47" y1="22" x2="47" y2="17" />
+        <path d="M38 17 Q43 13 48 17" />
+        <line x1="43" y1="13" x2="43" y2="9" />
+      </g>
+      <circle cx="43" cy="8" r="1.4" fill="currentColor" stroke="none" />
     </g>
   ),
   radar: (

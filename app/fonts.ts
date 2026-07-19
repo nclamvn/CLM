@@ -25,6 +25,7 @@ export const fraunces = localFont({
   ],
   variable: '--font-serif',
   display: 'swap',
+  preload: false,
 });
 
 export const ibmPlexMono = localFont({
@@ -34,4 +35,5 @@ export const ibmPlexMono = localFont({
   ],
   variable: '--font-mono',
   display: 'swap',
+  preload: false,
 });

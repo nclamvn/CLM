@@ -1,5 +1,8 @@
 // Responsive gate: chup 5 viewport, kiem horizontal overflow. Chay: node scripts/responsive-gate.mjs
+// URL qua env DASH_URL (mac dinh dev 3000); anh luu reports/pha1/.
 import { chromium } from 'playwright';
+
+const BASE = process.env.DASH_URL || 'http://localhost:3000/dashboard';
 
 const viewports = [
   { name: 'desktop-xl', width: 1536, height: 1024 },
@@ -14,13 +17,13 @@ let fail = 0;
 for (const v of viewports) {
   const ctx = await browser.newContext({ viewport: { width: v.width, height: v.height }, deviceScaleFactor: 1 });
   const page = await ctx.newPage();
-  await page.goto('http://localhost:3000/dashboard', { waitUntil: 'networkidle', timeout: 45000 });
+  await page.goto(BASE, { waitUntil: 'networkidle', timeout: 45000 });
   await page.addStyleTag({ content: 'nextjs-portal,[data-nextjs-toast],#__next-build-watcher{display:none!important}' });
   try { await page.evaluate(() => document.fonts.ready); } catch {}
   await page.waitForTimeout(500);
   const overflow = await page.evaluate(() =>
     document.documentElement.scrollWidth > document.documentElement.clientWidth);
-  await page.screenshot({ path: `reports/dash-${v.name}.png` });
+  await page.screenshot({ path: `reports/pha1/dash-${v.name}.png` });
   if (overflow) fail++;
   console.log(`${v.name.padEnd(18)} ${v.width}x${v.height}  hOverflow=${overflow ? 'FAIL' : 'ok'}`);
   await ctx.close();
