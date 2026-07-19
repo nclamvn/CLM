@@ -16,6 +16,7 @@ export const beVietnamPro = localFont({
   ],
   variable: '--font-sans',
   display: 'swap',
+  preload: false,
 });
 
 export const fraunces = localFont({
