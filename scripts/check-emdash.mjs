@@ -17,6 +17,13 @@ const ROOT_FILES = [
   'README.md',
 ];
 const TEXT_EXT = new Set(['.ts', '.tsx', '.js', '.mjs', '.css', '.json', '.md', '.svg', '.html']);
+// Tai lieu handoff/SOT imported tu ben ngoai (khong phai content san pham tu viet).
+// Rule em-dash chi ap len content san pham; bo qua reference imported.
+const EXCLUDE_SUFFIX = [
+  'docs/design/TOUCH_PORTAL_LANDING_HUB_BLUEPRINT.md',
+  'docs/design/touch-portal-recipes.css',
+  'docs/design/touch-portal-tokens.json',
+];
 // Dau bi cam, dinh nghia bang code point de chinh file nay khong chua literal.
 // Ca em-dash (U+2014) lan en-dash (U+2013): nguoi doc thuong khong phan biet,
 // deu la dau vet AI voi khach nhay cam (quyet dinh Con nguoi, 2026-07-14).
@@ -29,6 +36,7 @@ let hits = 0;
 
 function scanFile(path) {
   if (!TEXT_EXT.has(extname(path))) return;
+  if (EXCLUDE_SUFFIX.some((s) => path.endsWith(s))) return;
   const text = readFileSync(path, 'utf8');
   const lines = text.split('\n');
   lines.forEach((line, i) => {

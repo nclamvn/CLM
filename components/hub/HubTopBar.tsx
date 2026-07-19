@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PortalSwitcher } from '@/components/portal/PortalSwitcher';
 import { hub } from '@/lib/content';
 
 /** Thanh tren Hub: wordmark, chuyen nganh, search, DEMO DATA, ve trang chu, avatar. */
@@ -18,6 +19,7 @@ export function HubTopBar() {
         <span aria-hidden="true">⌕</span> {hub.searchPlaceholder}
       </button>
       <div className="r">
+        <PortalSwitcher active="hub" />
         <span className="demo-tag">{hub.demoTag}</span>
         <Link className="nav-login" href="/" style={{ fontSize: 13, color: 'var(--ink-2)' }}>
           {hub.backHome}

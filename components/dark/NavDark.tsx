@@ -1,4 +1,5 @@
 import { MobileNav } from '../shared/MobileNav';
+import { PortalSwitcher } from '@/components/portal/PortalSwitcher';
 import { dk } from '@/lib/content';
 
 /** Nav toi: wordmark glow, 4 tab, chi bao ENGINE LIVE, CTA outline. */
@@ -18,6 +19,7 @@ export function NavDark() {
           ))}
         </div>
         <div className="dk-nav-right">
+          <PortalSwitcher active="landing" />
           <div className="dk-status">
             <span className="d" aria-hidden="true" /> {dk.nav.status}
           </div>

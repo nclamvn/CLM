@@ -1,4 +1,5 @@
 import { Icon } from './Icon';
+import { PortalSwitcher } from '@/components/portal/PortalSwitcher';
 import { statusMeta } from '@/lib/project-status';
 
 export function DashTopBar() {
@@ -9,6 +10,7 @@ export function DashTopBar() {
         <div className="dash-topbar__sub">{statusMeta.subtitle}</div>
       </div>
       <div className="dash-topbar__controls">
+        <PortalSwitcher active="dashboard" />
         <button type="button" className="dash-prov">
           <span className="dash-prov__dot" aria-hidden="true" />
           Provenance ON

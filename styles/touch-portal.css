@@ -1,0 +1,235 @@
+/* TIP-PORTAL-V1 foundation.
+   Nguon gia tri duy nhat = token Pha 0 color-x. Ten blueprint accent-x va text-x
+   la ALIAS tro ve Pha 0 nen 0 visual drift voi dashboard da ship.
+   Shadow portal namespaced portal-shadow-x de KHONG de len shadow-panel Pha 0. */
+:root {
+  /* ---- alias: ten accent/text blueprint -> nguon Pha 0 ---- */
+  --accent-blue: var(--color-accent-blue);
+  --accent-cyan: var(--color-accent-cyan);
+  --accent-purple: var(--color-accent-purple);
+  --accent-amber: var(--color-accent-amber);
+  --accent-green: var(--color-accent-green);
+  --accent-red: var(--color-accent-red);
+  --accent-red-strong: var(--color-brand-dot);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --text-disabled: #475569;
+  --text-link: var(--color-text-link);
+  --text-on-accent: #ffffff;
+  --radius-pill: var(--radius-full);
+  --portal-font: var(--font-ui); /* Inter Variable */
+
+  /* ---- portal surfaces (cap moi) ---- */
+  --portal-canvas: #020611;
+  --portal-canvas-deep: #01030a;
+  --portal-surface-0: #040b18;
+  --portal-surface-1: #071225;
+  --portal-surface-2: #0a1730;
+  --portal-surface-3: #0e1d3b;
+  --portal-surface-inset: #030a16;
+  --portal-border-subtle: #173152;
+  --portal-border-muted: rgba(148, 163, 184, 0.13);
+  --portal-border-strong: #2b4d78;
+
+  /* ---- alpha fills ---- */
+  --fill-blue-06: rgba(47, 107, 255, 0.06);
+  --fill-blue-10: rgba(47, 107, 255, 0.10);
+  --fill-blue-16: rgba(47, 107, 255, 0.16);
+  --fill-cyan-08: rgba(24, 212, 245, 0.08);
+  --fill-purple-10: rgba(136, 92, 246, 0.10);
+  --fill-amber-09: rgba(245, 158, 11, 0.09);
+  --fill-green-09: rgba(34, 197, 94, 0.09);
+  --fill-green-14: rgba(34, 197, 94, 0.14);
+  --fill-red-08: rgba(239, 68, 68, 0.08);
+  --fill-red-12: rgba(239, 68, 68, 0.12);
+  --fill-white-03: rgba(255, 255, 255, 0.03);
+  --fill-black-28: rgba(0, 0, 0, 0.28);
+
+  /* ---- portal shadows (namespaced, khong de len --shadow-panel Pha 0) ---- */
+  --portal-shadow-panel:
+    inset 0 1px 0 rgba(255, 255, 255, 0.032),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.26),
+    0 14px 38px rgba(0, 0, 0, 0.24);
+  --portal-shadow-panel-compact:
+    inset 0 1px 0 rgba(255, 255, 255, 0.026),
+    0 8px 24px rgba(0, 0, 0, 0.20);
+}
+
+/* ---- portal shell ---- */
+.portal-root {
+  min-height: 100dvh;
+  color: var(--text-primary);
+  background:
+    radial-gradient(1000px 560px at 72% -10%, var(--fill-blue-06), transparent 65%),
+    linear-gradient(180deg, var(--portal-canvas), var(--portal-canvas-deep));
+  font-family: var(--portal-font);
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+.portal-container {
+  width: min(1440px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+/* ---- surface recipes ---- */
+.surface-executive {
+  --surface-glow: transparent;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(520px 220px at 82% -12%, var(--surface-glow), transparent 64%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.018), transparent 34%),
+    linear-gradient(180deg, var(--portal-surface-1), var(--portal-surface-0));
+  border: var(--stroke-hairline) solid var(--portal-border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--portal-shadow-panel);
+}
+.surface-executive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.026), transparent 28%);
+}
+.surface-blue { --surface-glow: var(--fill-blue-16); }
+.surface-cyan { --surface-glow: var(--fill-cyan-08); }
+.surface-purple { --surface-glow: var(--fill-purple-10); }
+.surface-amber { --surface-glow: var(--fill-amber-09); }
+.surface-green { --surface-glow: var(--fill-green-14); }
+.surface-red { --surface-glow: var(--fill-red-12); }
+
+.surface-critical {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(520px 220px at 84% -10%, var(--fill-red-12), transparent 64%),
+    linear-gradient(180deg, var(--fill-red-08), var(--portal-surface-0));
+  border: var(--stroke-hairline) solid color-mix(in srgb, var(--accent-red) 56%, transparent);
+  border-radius: var(--radius-md);
+  box-shadow: var(--portal-shadow-panel), var(--glow-red);
+}
+
+/* ---- data truth badge ---- */
+.data-truth-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1_5);
+  min-height: 22px;
+  padding-inline: var(--space-2);
+  border: var(--stroke-hairline) solid var(--portal-border-subtle);
+  border-radius: var(--radius-pill);
+  font-family: var(--portal-font);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.data-truth-badge::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  background: currentColor;
+  flex: none;
+}
+.data-truth-badge[data-truth="REAL"] { color: var(--accent-green); }
+.data-truth-badge[data-truth="DEMO"] { color: var(--accent-purple); }
+.data-truth-badge[data-truth="SYNTHETIC"] { color: var(--accent-amber); }
+.data-truth-badge[data-truth="SCAFFOLD"] { color: var(--text-muted); }
+
+/* ---- portal switcher ---- */
+.portal-switcher { position: relative; font-family: var(--portal-font); }
+.portal-switcher__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 152px;
+  height: 40px;
+  padding: 0 var(--space-3);
+  background: var(--portal-surface-1);
+  border: var(--stroke-hairline) solid var(--portal-border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--motion-fast, 120ms) var(--ease-standard, ease);
+}
+.portal-switcher__trigger:hover { background: var(--portal-surface-2); }
+.portal-switcher__icon { width: 18px; height: 18px; flex: none; color: var(--text-secondary); }
+.portal-switcher__chev { width: 16px; height: 16px; margin-left: auto; color: var(--text-muted); }
+.portal-switcher__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 40;
+  width: 264px;
+  padding: var(--space-1_5);
+  background: var(--portal-surface-2);
+  border: var(--stroke-hairline) solid var(--portal-border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--portal-shadow-panel);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.portal-switcher__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 52px;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--motion-fast, 120ms) var(--ease-standard, ease);
+}
+.portal-switcher__row:hover { background: var(--portal-surface-3); color: var(--text-primary); }
+.portal-switcher__row.is-active { color: var(--text-primary); }
+.portal-switcher__dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--accent-blue); flex: none; }
+.portal-switcher__row:not(.is-active) .portal-switcher__dot { background: var(--portal-border-strong); }
+.portal-switcher__rowtext { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.portal-switcher__rowlabel { font-size: 13px; line-height: 18px; font-weight: 600; }
+.portal-switcher__rowdesc { font-size: 11px; line-height: 15px; color: var(--text-muted); }
+
+/* ---- provenance status ---- */
+.provenance-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 32px;
+  padding: 0 var(--space-3);
+  border: var(--stroke-hairline) solid var(--portal-border-subtle);
+  border-radius: var(--radius-pill);
+  background: var(--fill-green-09);
+  font-family: var(--portal-font);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.provenance-status__dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--accent-green); box-shadow: var(--glow-green); flex: none; }
+.provenance-status__pct { color: var(--accent-green); font-weight: 600; }
+
+@media (max-width: 899px) {
+  .portal-container { width: min(100% - 32px, 720px); }
+}
+@media (max-width: 639px) {
+  .portal-container { width: calc(100% - 24px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portal-root *,
+  .portal-root *::before,
+  .portal-root *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
