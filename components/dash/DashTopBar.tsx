@@ -1,0 +1,34 @@
+import { Icon } from './Icon';
+import { statusMeta } from '@/lib/project-status';
+
+export function DashTopBar() {
+  return (
+    <header className="dash-topbar">
+      <div>
+        <div className="dash-topbar__title">{statusMeta.title}</div>
+        <div className="dash-topbar__sub">{statusMeta.subtitle}</div>
+      </div>
+      <div className="dash-topbar__controls">
+        <button type="button" className="dash-prov">
+          <span className="dash-prov__dot" aria-hidden="true" />
+          Provenance ON
+        </button>
+        <span className="dash-vdiv" aria-hidden="true" />
+        <button type="button" className="dash-iconbtn" aria-label="Tim kiem">
+          <Icon name="search" />
+        </button>
+        <button type="button" className="dash-iconbtn" aria-label="Thong bao">
+          <Icon name="bell" />
+        </button>
+        <div className="dash-user">
+          <span className="dash-avatar">LN</span>
+          <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15 }}>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>Lam</span>
+            <span style={{ fontSize: 11, color: 'var(--color-text-secondary)' }}>Project Lead</span>
+          </span>
+          <Icon name="chevron" size={16} />
+        </div>
+      </div>
+    </header>
+  );
+}

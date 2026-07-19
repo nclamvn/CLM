@@ -8,7 +8,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, extname } from 'node:path';
 
 const ROOT = process.cwd();
-const SCAN_DIRS = ['app', 'components', 'lib', 'scripts'];
+const SCAN_DIRS = ['app', 'components', 'lib', 'scripts', 'styles', 'docs'];
 const ROOT_FILES = [
   'tailwind.config.ts',
   'next.config.mjs',

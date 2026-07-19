@@ -1,0 +1,10 @@
+/* fixture: PHAI PASS - toan token */
+.good-card {
+  color: var(--color-text-primary);
+  background: var(--color-bg-surface-1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+  font-family: var(--font-ui);
+  padding: 16px;
+  gap: 12px;
+}

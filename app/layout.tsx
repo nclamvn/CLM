@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import '@/styles/touch-theme.css';
 import { beVietnamPro, fraunces, ibmPlexMono } from './fonts';
 import { ui } from '@/lib/content';
 
