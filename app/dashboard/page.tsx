@@ -77,7 +77,6 @@ export default function DashboardPage() {
                   {c.d.value}
                   {c.d.unit ? <span className="kpi-card__unit">{c.d.unit}</span> : null}
                 </div>
-                <div className="kpi-card__sub">{c.d.sub}</div>
                 <KpiVisual name={c.vis} />
               </div>
             ))}

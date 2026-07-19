@@ -149,7 +149,6 @@
 .dash-shell .kpi-card__eyebrow { font-size: 13px; line-height: 18px; font-weight: 500; color: var(--color-text-secondary); }
 .dash-shell .kpi-card__metric { font-size: 40px; line-height: 44px; font-weight: 650; letter-spacing: -0.035em; margin-top: var(--space-1_5); }
 .dash-shell .kpi-card__unit { font-size: 13px; line-height: 18px; color: var(--color-text-secondary); margin-left: 8px; font-weight: 500; letter-spacing: 0; }
-.dash-shell .kpi-card__sub { position: absolute; left: 20px; bottom: 14px; font-size: 12px; line-height: 18px; color: var(--color-text-muted); }
 .dash-shell .kpi-card--cung .kpi-card__metric { color: var(--color-accent-blue); }
 .dash-shell .kpi-card--cau .kpi-card__metric { color: var(--color-accent-purple); }
 .dash-shell .kpi-card--engine .kpi-card__metric { color: var(--color-accent-amber); }
