@@ -11,9 +11,8 @@ import { PillarsDark } from '@/components/dark/PillarsDark';
 import { VerticalsDark } from '@/components/dark/VerticalsDark';
 import { CTADark } from '@/components/dark/CTADark';
 import { FooterDark } from '@/components/dark/FooterDark';
-import { MatchCard } from '@/components/shared/MatchCard';
-import { ViewSwitch } from '@/components/shared/ViewSwitch';
-import { dk, demoMatch } from '@/lib/content';
+import { dk } from '@/lib/content';
+import '@/styles/touch-landing.css';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
@@ -34,14 +33,14 @@ function SecHead({
   lead?: string;
 }) {
   return (
-    <div className="dk-sec-head">
-      <span className="dk-sec-tag">{tag}</span>
-      <h2>
+    <div className="lp-sec-head">
+      <span className="lp-sec-head__tag">{tag}</span>
+      <h2 className="lp-sec-head__h2">
         {pre}
-        <em>{em}</em>
+        <span className="is-accent">{em}</span>
         {tail}
       </h2>
-      {lead ? <p>{lead}</p> : null}
+      {lead ? <p className="lp-sec-head__lead">{lead}</p> : null}
     </div>
   );
 }
@@ -57,8 +56,8 @@ export default function LandingPage() {
         <TapeDark />
         <MetricsBand />
 
-        <section className="dk-sec" id="pipeline">
-          <div className="wrap">
+        <section className="lp-sec" id="pipeline">
+          <div className="portal-container">
             <SecHead
               tag={dk.pipeline.tag}
               pre={dk.pipeline.h2pre}
@@ -66,12 +65,17 @@ export default function LandingPage() {
               tail={dk.pipeline.h2tail}
               lead={dk.pipeline.lead}
             />
-            <PipelineDark />
+            <div className="lp-board surface-executive">
+              <PipelineDark />
+              <div className="lp-board__divider" aria-hidden="true" />
+              <MatrixHeatmap />
+              <p className="lp-board__note">Dùng để minh họa kiến trúc engine. Không phải kết quả matching thật.</p>
+            </div>
           </div>
         </section>
 
-        <section className="dk-sec" id="data">
-          <div className="wrap">
+        <section className="lp-sec" id="data">
+          <div className="portal-container">
             <SecHead
               tag={dk.data.tag}
               pre={dk.data.h2pre}
@@ -79,31 +83,16 @@ export default function LandingPage() {
               tail={dk.data.h2tail}
               lead={dk.data.lead}
             />
-            <div className="dk-grid-2">
-              <MatrixHeatmap />
+            <div className="lp-pi-grid">
               <ProvenanceGraph />
-            </div>
-          </div>
-        </section>
-
-        <section className="dk-sec" id="matching">
-          <div className="wrap">
-            <SecHead
-              tag={dk.matching.tag}
-              pre={dk.matching.h2pre}
-              em={dk.matching.h2em}
-              tail={dk.matching.h2tail}
-              lead={dk.matching.lead}
-            />
-            <div className="dk-grid-2">
               <InterpChart />
-              <MatchCard data={demoMatch} />
             </div>
+            <p className="lp-mod-note">Cả hai là ví dụ minh họa kiến trúc dữ liệu. Không phải match hay dự báo thật.</p>
           </div>
         </section>
 
-        <section className="dk-sec" id="why">
-          <div className="wrap">
+        <section className="lp-sec" id="why">
+          <div className="portal-container">
             <SecHead
               tag={dk.pillars.tag}
               pre={dk.pillars.h2pre}
@@ -114,8 +103,8 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="dk-sec" id="vertical">
-          <div className="wrap">
+        <section className="lp-sec" id="vertical">
+          <div className="portal-container">
             <SecHead
               tag={dk.vertical.tag}
               pre={dk.vertical.h2pre}
@@ -129,7 +118,6 @@ export default function LandingPage() {
         <CTADark />
       </main>
       <FooterDark />
-      <ViewSwitch active="landing" fixed />
     </div>
   );
 }

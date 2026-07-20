@@ -1,50 +1,35 @@
-import Link from 'next/link';
-import { dk } from '@/lib/content';
+import { TouchBrand } from '@/components/brand/TouchBrand';
 
-/** Footer toi: wordmark outline khong lo, status, cot link, hang meta. */
+/* FooterDark (VF-L-020): portal footer. TouchBrand compact, 3 cot Product/Trust/Company,
+   Provenance is our DNA, build/date mono. Khong giant wordmark, khong fake ENGINE LIVE. */
+const COLS = [
+  { h: 'Product', links: [{ label: 'Hub', href: '/hub' }, { label: 'Dashboard', href: '/dashboard' }, { label: 'Engine', href: '#pipeline' }] },
+  { h: 'Trust', links: [{ label: 'Provenance', href: '#data' }, { label: 'Bảo chứng', href: '#why' }, { label: 'Fail-loud', href: '#why' }] },
+  { h: 'Company', links: [{ label: 'Nguồn dữ liệu', href: '#matching' }, { label: 'Ngành dọc', href: '#vertical' }] },
+];
+
 export function FooterDark() {
-  const f = dk.footer;
   return (
-    <footer className="dk-foot">
-      <div className="giant" aria-hidden="true">
-        .touch
-      </div>
-      <div className="wrap">
-        <div className="dk-foot-in">
-          <div>
-            <div className="brand">
-              <span className="accentdot" />
-              touch
-            </div>
-            <p>{f.blurb}</p>
-            <div className="dk-status">
-              <span className="d" aria-hidden="true" /> {f.status}
-            </div>
-          </div>
-          <div className="dk-foot-cols">
-            {f.cols.map((col) => (
-              <div className="dk-foot-col" key={col.h}>
-                <h3>{col.h}</h3>
-                {col.links.map((l) =>
-                  l.href.startsWith('/') ? (
-                    <Link key={l.label} href={l.href}>
-                      {l.label}
-                    </Link>
-                  ) : (
-                    <a key={l.label} href={l.href}>
-                      {l.label}
-                    </a>
-                  ),
-                )}
-              </div>
+    <footer className="lp-footer">
+      <div className="portal-container lp-footer__inner">
+        <div className="lp-footer__brand">
+          <TouchBrand mode="compact" theme="dark" size="sm" href="/" />
+          <p className="lp-footer__dna">Provenance is our DNA</p>
+        </div>
+        {COLS.map((c) => (
+          <nav className="lp-footer__col" key={c.h} aria-label={c.h}>
+            <span className="lp-footer__ch">{c.h}</span>
+            {c.links.map((l) => (
+              <a key={l.label} href={l.href}>
+                {l.label}
+              </a>
             ))}
-          </div>
-        </div>
-        <div className="dk-foot-meta">
-          {f.meta.map((m) => (
-            <span key={m}>{m}</span>
-          ))}
-        </div>
+          </nav>
+        ))}
+      </div>
+      <div className="portal-container lp-footer__meta">
+        <span>.touch · B2B Matching Platform</span>
+        <span className="lp-footer__build">build 6c13f57 · 2026-07-19</span>
       </div>
     </footer>
   );

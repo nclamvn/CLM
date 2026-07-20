@@ -54,6 +54,54 @@
   --portal-shadow-panel-compact:
     inset 0 1px 0 rgba(255, 255, 255, 0.026),
     0 8px 24px rgba(0, 0, 0, 0.20);
+
+  --space-7: 28px;
+
+  /* ---- CTA do da duyet (blueprint muc 6.1) ---- */
+  --cta-red-grad: linear-gradient(180deg, #b52a31, #7f1820);
+  --cta-red-border: color-mix(in srgb, var(--accent-red-strong) 45%, transparent);
+  --cta-red-shadow: 0 8px 24px rgba(239, 68, 68, 0.18);
+  --cta-red-shadow-soft: 0 4px 14px rgba(239, 68, 68, 0.16);
+
+  /* ---- VF premium: ambient ---- */
+  --fx-ambient-blue-04: rgba(47, 107, 255, 0.04);
+  --fx-ambient-blue-08: rgba(47, 107, 255, 0.08);
+  --fx-ambient-blue-12: rgba(47, 107, 255, 0.12);
+  --fx-ambient-red-04: rgba(239, 68, 68, 0.04);
+  --fx-ambient-red-08: rgba(239, 68, 68, 0.08);
+  --fx-ambient-cyan-08: rgba(24, 212, 245, 0.08);
+  --fx-ambient-purple-08: rgba(136, 92, 246, 0.08);
+  --fx-vignette-canvas: rgba(1, 3, 10, 0.55);
+  --fx-starfield-dot: rgba(255, 255, 255, 0.05);
+
+  /* ---- VF premium: graphic stroke + node ---- */
+  --graphic-stroke-hairline: 0.75px;
+  --graphic-stroke-default: 1px;
+  --graphic-stroke-strong: 1.5px;
+  --graphic-node-core-sm: 4px;
+  --graphic-node-core-md: 8px;
+  --graphic-node-ring: 12px;
+
+  /* ---- VF premium: chart ---- */
+  --chart-grid: rgba(255, 255, 255, 0.05);
+  --chart-axis: var(--text-muted);
+  --chart-observed: var(--accent-cyan);
+  --chart-interpolated: var(--accent-purple);
+  --chart-band-low: rgba(136, 92, 246, 0.05);
+  --chart-band-high: rgba(136, 92, 246, 0.14);
+  --chart-cell-1: var(--fill-blue-06);
+  --chart-cell-2: var(--fill-blue-10);
+  --chart-cell-3: var(--fill-blue-16);
+  --chart-cell-4: var(--accent-blue);
+
+  /* ---- VF premium: composite shadow / local glow ---- */
+  --shadow-executive-card: var(--portal-shadow-panel);
+  --shadow-chart-inset: inset 0 1px 0 rgba(255, 255, 255, 0.02), inset 0 0 44px rgba(0, 0, 0, 0.30);
+  --shadow-glow-blue-local: 0 0 24px rgba(47, 107, 255, 0.22);
+  --shadow-glow-red-local: 0 0 22px rgba(239, 68, 68, 0.20);
+  --shadow-glow-green-local: 0 0 22px rgba(34, 197, 94, 0.20);
+  --shadow-selected-row: inset 2px 0 0 var(--accent-blue), 0 0 0 1px rgba(47, 107, 255, 0.20);
+  --shadow-cell-hl: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 /* ---- portal shell ---- */
@@ -217,6 +265,19 @@
 }
 .provenance-status__dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--accent-green); box-shadow: var(--glow-green); flex: none; }
 .provenance-status__pct { color: var(--accent-green); font-weight: 600; }
+
+/* ---- accessibility utility ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 @media (max-width: 899px) {
   .portal-container { width: min(100% - 32px, 720px); }

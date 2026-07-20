@@ -1,61 +1,60 @@
-'use client';
+import { DataTruthBadge } from '@/components/portal/DataTruthBadge';
 
-import { useEffect, useRef } from 'react';
-import { createPipeline } from './pipeline-core';
-import { pipelineCounters } from '@/lib/dark-data';
-import { dk } from '@/lib/content';
+/* PipelineDark (TIP-PORTAL-V1 muc 7.6 + fail-loud muc 5.2).
+   7 cong DOM (keyboard-accessible), khong canvas, khong tuyen bo engine dang chay.
+   Cong 7 bi chan: ly do doc duoc bang CHU, khong chi dua vao mau. */
+interface Gate {
+  n: number;
+  name: string;
+  state: 'pass' | 'blocked';
+  reason?: string;
+  outcome?: string;
+}
 
-const fmt = (n: number) => n.toLocaleString('vi-VN');
+const GATES: Gate[] = [
+  { n: 1, name: 'Thu thập', state: 'pass' },
+  { n: 2, name: 'Chuẩn hóa', state: 'pass' },
+  { n: 3, name: 'Xác thực', state: 'pass' },
+  { n: 4, name: 'Phân hạng', state: 'pass' },
+  { n: 5, name: 'Đối chiếu', state: 'pass' },
+  { n: 6, name: 'Dựng provenance', state: 'pass' },
+  { n: 7, name: 'Gate kết quả', state: 'blocked', reason: 'Chưa có dữ liệu CẦU thật', outcome: 'Không phát hành match' },
+];
 
-/** Panel pipeline: header thong ke IN/DAT/CAN + canvas 7 cong + chu thich. */
 export function PipelineDark() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const inRef = useRef<HTMLElement | null>(null);
-  const okRef = useRef<HTMLElement | null>(null);
-  const blkRef = useRef<HTMLElement | null>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const reduced =
-      typeof window.matchMedia === 'function' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const pipe = createPipeline(
-      canvas,
-      { inEl: inRef.current, okEl: okRef.current, blkEl: blkRef.current },
-      { reducedMotion: reduced },
-    );
-    return () => pipe.destroy();
-  }, []);
-
-  const p = dk.pipeline;
   return (
-    <div className="dk-panel dk-pipe-wrap">
-      <div className="dk-pipe-h">
-        <span className="ttl">{p.panelTitle}</span>
-        <span className="dk-pipe-stats">
-          <span>
-            {p.statIn}
-            <b ref={inRef}>{fmt(pipelineCounters.in)}</b>
-          </span>
-          <span>
-            {p.statOk}
-            <b ref={okRef}>{fmt(pipelineCounters.ok)}</b>
-          </span>
-          <span className="rd">
-            {p.statBlocked}
-            <b ref={blkRef}>{fmt(pipelineCounters.blocked)}</b>
-          </span>
-        </span>
+    <div className="lp-pipe lp-inset">
+      <div className="lp-mod-head">
+        <div>
+          <span className="lp-mod-title">Pipeline chứng minh</span>
+          <p className="lp-mod-sub">Mô phỏng quy trình, không phải phiên engine đang chạy</p>
+        </div>
+        <DataTruthBadge state="SYNTHETIC" />
       </div>
-      <canvas ref={canvasRef} className="dk-pipe-canvas" aria-hidden="true" />
-      <div className="dk-legend">
-        {p.legend.map((l) => (
-          <span key={l.label}>
-            <i style={{ background: l.color }} aria-hidden="true" />
-            {l.label}
-          </span>
+      <ol className="lp-pipe__gates">
+        {GATES.map((g) => (
+          <li
+            key={g.n}
+            className={`lp-gate is-${g.state}`}
+            tabIndex={0}
+            aria-label={
+              g.state === 'blocked'
+                ? `Cổng ${g.n} ${g.name}: bị chặn. Lý do ${g.reason}. ${g.outcome}.`
+                : `Cổng ${g.n} ${g.name}: mô phỏng đạt.`
+            }
+          >
+            <span className="lp-gate__node" aria-hidden="true">
+              {g.n}
+            </span>
+            <span className="lp-gate__name">{g.name}</span>
+            <span className="lp-gate__status">{g.state === 'blocked' ? 'Bị chặn' : 'Mô phỏng đạt'}</span>
+          </li>
         ))}
+      </ol>
+      <div className="lp-pipe__block" role="status">
+        <span className="lp-pipe__block-tag">Gate kết quả · BỊ CHẶN</span>
+        <span className="lp-pipe__block-reason">Lý do: Chưa có dữ liệu CẦU thật</span>
+        <span className="lp-pipe__block-out">Kết luận: Không phát hành match</span>
       </div>
     </div>
   );

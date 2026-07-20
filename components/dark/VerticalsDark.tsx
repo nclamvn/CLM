@@ -1,55 +1,50 @@
-import { GCard } from './GCard';
 import { darkVerticals } from '@/lib/dark-data';
-import { dk } from '@/lib/content';
+import { DataTruthBadge } from '@/components/portal/DataTruthBadge';
 
-const SEG_COLORS = ['#C40F0F', '#6E6E7A', '#2a2a30'];
+/* VerticalsDark (VF-L-017): 3 vertical card portal. So la SYNTHETIC (demo seeded),
+   KHONG dung LIVE. Moi card co tier-composition bar lam data motif rieng. */
+const ACCENTS = ['blue', 'cyan', 'green'] as const;
+const TIER = ['a', 'b', 'claim'] as const;
+const TIER_LABEL = ['A', 'B', 'CLAIM'];
 
-/** Tile dashboard tung nganh: LIVE pill, 2 so lon, thanh phan bo tier. */
 export function VerticalsDark() {
-  const v = dk.vertical;
   return (
-    <div className="dk-pillars">
+    <div className="lp-verticals">
       {darkVerticals.map((d, di) => (
-        <GCard className="dk-vert" key={d.name}>
-          <div className="dk-vert-h">
-            <h3>{d.name}</h3>
-            <span className="dk-live">
-              <i aria-hidden="true" />
-              {v.live}
-            </span>
+        <div key={d.name} className={`lp-vert surface-executive surface-${ACCENTS[di]}`} data-accent={ACCENTS[di]}>
+          <div className="lp-vert__head">
+            <h3 className="lp-vert__name">{d.name}</h3>
+            <DataTruthBadge state="SYNTHETIC" />
           </div>
-          <div className="dk-vert-nums">
-            <div className="dk-vn">
-              <div className="l">{v.factsLabel}</div>
-              <div className="n">{d.facts}</div>
+          <div className="lp-vert__nums">
+            <div className="lp-vert__num">
+              <span className="lp-vert__nlabel">Facts</span>
+              <span className="lp-vert__nval">{d.facts}</span>
             </div>
-            <div className="dk-vn">
-              <div className="l">{v.matchLabel}</div>
-              <div className="n">
-                {d.match}
-                <small>▲ {d.delta}</small>
-              </div>
+            <div className="lp-vert__num">
+              <span className="lp-vert__nlabel">Match</span>
+              <span className="lp-vert__nval">
+                {d.match} <small className="lp-vert__delta">▲ {d.delta}</small>
+              </span>
             </div>
           </div>
-          <div className="dk-dist" aria-hidden="true">
+          <div className="lp-vert__bar" aria-hidden="true">
             {d.tiers.map((p, i) => (
-              <i key={i} style={{ width: `${p}%`, background: SEG_COLORS[i], animationDelay: `${(0.12 * i + di * 0.1).toFixed(2)}s` }} />
+              <span key={i} className={`is-${TIER[i]}`} style={{ width: `${p}%` }} />
             ))}
           </div>
-          <div className="dk-dist-lab">
+          <div className="lp-vert__tiers">
             {d.tiers.map((p, i) => (
-              <span key={i}>
-                {v.tierLabels[i]} <b>{p}%</b>
+              <span key={i} className={`lp-vert__tier is-${TIER[i]}`}>
+                Tier {TIER_LABEL[i]} <b>{p}%</b>
               </span>
             ))}
           </div>
-          <div className="dk-vert-ft">
-            <span>
-              {v.refreshLabel} {d.refresh}
-            </span>
-            <span>{v.failLabel}</span>
+          <div className="lp-vert__foot">
+            <span>Làm mới {d.refresh}</span>
+            <span className="lp-vert__fl">Fail-loud · 0 lọt</span>
           </div>
-        </GCard>
+        </div>
       ))}
     </div>
   );

@@ -2,7 +2,7 @@
 export default {
   // thu muc quet de quy (them file don le o scanFiles)
   scanDirs: ['components/dash', 'components/brand', 'components/portal', 'app/dashboard'],
-  scanFiles: ['styles/dashboard.css'],
+  scanFiles: ['styles/dashboard.css', 'styles/touch-landing.css'],
   scanExt: ['.css', '.tsx', '.ts'],
 
   // KHONG quet: file token goc + svg data + build
