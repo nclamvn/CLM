@@ -23,7 +23,7 @@ export const kpis = {
 
 export const projectComponents: ProjectComponent[] = [
   {
-    n: 1, name: 'Site touch-hub', status: 'PASS', version: 'ea45bad', date: '19/07/2026',
+    n: 1, name: 'Site touch-hub', status: 'PASS', version: '77f850d', date: '15/08/2026',
     checks: [
       { label: 'Hub Mức 3 render 14 đơn vị', ok: true },
       { label: 'Evidence bấm là kiểm được', ok: true },
@@ -40,7 +40,7 @@ export const projectComponents: ProjectComponent[] = [
     ],
   },
   {
-    n: 3, name: 'Demand khung CNCL', status: 'PASS', version: '(chưa git)', date: '19/07/2026',
+    n: 3, name: 'Demand khung CNCL', status: 'PASS', version: '38438ca (local)', date: '19/07/2026',
     checks: [
       { label: 'Span-gate PASS 124/124', ok: true },
       { label: '9 snapshot', ok: true },
@@ -101,7 +101,7 @@ export const workQueue = [
 ];
 
 export const repos = [
-  { name: 'touch-hub', owner: 'nclamvn/touch-hub', vis: 'Public', head: 'ea45bad', date: '19/07/2026' },
+  { name: 'touch-hub', owner: 'nclamvn/touch-hub', vis: 'Public', head: '77f850d', date: '15/08/2026' },
   { name: 'cncl-data', owner: 'nclamvn/cncl-data', vis: 'Private', head: '303ea12', date: '19/07/2026' },
   { name: 'CaoLocMatch', owner: 'nclamvn/CaoLocMatch', vis: 'Public', head: '8235b58', date: '19/07/2026' },
 ];
@@ -121,6 +121,6 @@ export const nav = [
   { label: 'Tiến độ & Gates', href: '' },
   { label: 'Rủi ro & Hành động', href: '' },
   { label: 'Tài liệu & SOP', href: '' },
-  { label: 'Repositories', href: '' },
+  { label: 'Repositories', href: '/dashboard/repos' },
   { label: 'Cài đặt', href: '' },
 ];
