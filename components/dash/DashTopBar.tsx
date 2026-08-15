@@ -2,12 +2,12 @@ import { Icon } from './Icon';
 import { PortalSwitcher } from '@/components/portal/PortalSwitcher';
 import { statusMeta } from '@/lib/project-status';
 
-export function DashTopBar() {
+export function DashTopBar({ title, subtitle }: { title?: string; subtitle?: string } = {}) {
   return (
     <header className="dash-topbar">
       <div>
-        <div className="dash-topbar__title">{statusMeta.title}</div>
-        <div className="dash-topbar__sub">{statusMeta.subtitle}</div>
+        <div className="dash-topbar__title">{title ?? statusMeta.title}</div>
+        <div className="dash-topbar__sub">{subtitle ?? statusMeta.subtitle}</div>
       </div>
       <div className="dash-topbar__controls">
         <PortalSwitcher active="dashboard" />

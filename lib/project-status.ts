@@ -112,14 +112,15 @@ export const evidence = {
   gates: { pass: 4, total: 4, lastRun: '19/07/2026 22:18:33' },
 } as const;
 
+/** href rỗng = màn chưa dựng, sidebar hiển thị trạng thái "sắp có" trung thực, không dead-link. */
 export const nav = [
-  { label: 'Tổng quan', active: true },
-  { label: 'Hai chiều dữ liệu', active: false },
-  { label: 'Engine & Matching', active: false },
-  { label: 'Evidence Registry', active: false },
-  { label: 'Tiến độ & Gates', active: false },
-  { label: 'Rủi ro & Hành động', active: false },
-  { label: 'Tài liệu & SOP', active: false },
-  { label: 'Repositories', active: false },
-  { label: 'Cài đặt', active: false },
+  { label: 'Tổng quan', href: '/dashboard' },
+  { label: 'Hai chiều dữ liệu', href: '' },
+  { label: 'Engine & Matching', href: '' },
+  { label: 'Evidence Registry', href: '/dashboard/registry' },
+  { label: 'Tiến độ & Gates', href: '' },
+  { label: 'Rủi ro & Hành động', href: '' },
+  { label: 'Tài liệu & SOP', href: '' },
+  { label: 'Repositories', href: '' },
+  { label: 'Cài đặt', href: '' },
 ];
