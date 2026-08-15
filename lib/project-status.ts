@@ -116,7 +116,7 @@ export const evidence = {
 export const nav = [
   { label: 'Tổng quan', href: '/dashboard' },
   { label: 'Hai chiều dữ liệu', href: '' },
-  { label: 'Engine & Matching', href: '' },
+  { label: 'Engine & Matching', href: '/dashboard/matching' },
   { label: 'Evidence Registry', href: '/dashboard/registry' },
   { label: 'Tiến độ & Gates', href: '' },
   { label: 'Rủi ro & Hành động', href: '' },
