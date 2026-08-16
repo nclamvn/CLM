@@ -24,6 +24,7 @@ schema:
     # Ly do: nang_luc_mo_ta don tri; mot don vi that su co nhieu mang nang luc.
     # Cung khuon voi nhom_cncl_phu_*: tach truong de o luon don tri, khong tranh chap gia.
     - nang_luc_mo_ta_2
+    - nhom_cncl_phu_5
 
 rollup_field: nhom_cncl
 
