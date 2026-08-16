@@ -51,7 +51,8 @@ def main():
         name_claim = (fields.get("ten_don_vi") or caps)[0]
         rows.append({"entity": ent, "field": "entity_name", "value": ent,
                      "evidence_span": name_claim["evidence_span"], "extraction": "normalized",
-                     "tier": name_claim["tier"], "capture": name_claim["capture"]})
+                     "tier": name_claim["tier"], "capture": name_claim["capture"],
+                     "note": "Ten thuc the lay tu khoa entity cua registry CUNG da qua cong, khong phai trich moi tu span."})
         rows.append({"entity": ent, "field": "entity_type", "value": "cung",
                      "evidence_span": name_claim["evidence_span"], "extraction": "normalized",
                      "tier": name_claim["tier"], "capture": name_claim["capture"],
@@ -70,7 +71,8 @@ def main():
         for c in fields.get("nhom_cncl", []):
             rows.append({"entity": ent, "field": "nhom", "value": c["value"],
                          "evidence_span": c["evidence_span"], "extraction": c["extraction"],
-                         "tier": c["tier"], "capture": c["capture"]})
+                         "tier": c["tier"], "capture": c["capture"],
+                         "note": c.get("note") or "Anh xa nhom ke thua tu claim nhom_cncl cua registry CUNG da qua cong."})
         for fname, cs in sorted(fields.items()):
             if not fname.startswith("nhom_cncl_phu_"):
                 continue
@@ -78,7 +80,8 @@ def main():
             for c in cs:
                 rows.append({"entity": ent, "field": f"nhom_phu_{n}", "value": c["value"],
                              "evidence_span": c["evidence_span"], "extraction": c["extraction"],
-                             "tier": c["tier"], "capture": c["capture"]})
+                             "tier": c["tier"], "capture": c["capture"],
+                             "note": c.get("note") or "Nhom phu ke thua tu registry CUNG da qua cong."})
         for c in fields.get("location", []):
             rows.append({"entity": ent, "field": "location", "value": c["value"],
                          "evidence_span": c["evidence_span"], "extraction": c["extraction"],
@@ -102,7 +105,8 @@ def main():
                "snapshot": c["snapshot"], "source": c.get("source", "baochinhphu.vn")}
         rows.append({"entity": ent, "field": "entity_name", "value": ent,
                      "evidence_span": c["evidence_span"], "extraction": "normalized",
-                     "tier": c.get("tier", "A"), "capture": cap})
+                     "tier": c.get("tier", "A"), "capture": cap,
+                     "note": f"Ten thuc the ben CAU do domain dan xuat dat theo ma san pham {c['id']}, khong phai trich tu nguon."})
         rows.append({"entity": ent, "field": "entity_type", "value": "cau",
                      "evidence_span": c["evidence_span"], "extraction": "normalized",
                      "tier": c.get("tier", "A"), "capture": cap,
