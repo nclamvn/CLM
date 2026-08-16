@@ -25,11 +25,17 @@ import refinery  # noqa: E402  (engine 7 giai doan, da co bo rang rieng)
 # chay bang co --rule-v1. Doi rule la tang version, dung dieu kien tien quyet so 2 ky o 04.
 RULE_V1 = "overlay_capability_need_v1"
 RULE_V2 = "anchor_group_overlap_v2"
+RULE_V3 = "anchor_bigram_v3"
 VERSION_V1 = "cao-loc-match/0.1.0 rule=" + RULE_V1
 VERSION_V2 = "cao-loc-match/0.2.0 rule=" + RULE_V2
+VERSION_V3 = "cao-loc-match/0.3.0 rule=" + RULE_V3
+# RULE VAN HANH = v2 (quyet dinh 16/08/2026 sau khi v3 truot tieu chi V2).
+# v3 KHONG bi xoa: goi bang --rule-v3. Giu lai vi lan sau se co nguoi nghi den bigram
+# va can thay ket qua nay thay vi thu lai tu dau. Xem reports/RULE_V3_verify.md.
 USE_V1 = "--rule-v1" in sys.argv
-ENGINE_VERSION = VERSION_V1 if USE_V1 else VERSION_V2
-RULE = RULE_V1 if USE_V1 else RULE_V2
+USE_V3 = "--rule-v3" in sys.argv
+ENGINE_VERSION = VERSION_V1 if USE_V1 else (VERSION_V3 if USE_V3 else VERSION_V2)
+RULE = RULE_V1 if USE_V1 else (RULE_V3 if USE_V3 else RULE_V2)
 
 # Tu dung chung cua van ban chinh sach: xuat hien khap noi, khong mang thong tin
 # phan biet. Chinh chung da tao ra duong tinh gia MATCH-0001 o vong v1
@@ -115,6 +121,23 @@ def _tokens_v2(s):
     return {w for w in _tokens(s) if w not in STOPWORD_VN and w not in STOPWORD_NGANH}
 
 
+def _syllables(s):
+    """Chuoi AM TIET theo dung thu tu, giu nguyen trat tu de dung cho bigram."""
+    return re.findall(r"[0-9a-zà-ỹ]+", (s or "").lower())
+
+
+def _bigrams_v3(s):
+    """Cum HAI AM TIET lien nhau, sau khi bo stopword nganh.
+
+    VI SAO CAN: bo tach token cua v1 va v2 cat tieng Viet theo am tiet, nen tu ghep
+    hai am tiet bi vo. "mo hinh" thanh {hinh} va khop bua voi bat cu cho nao co chu
+    "hinh". Do chinh la nguyen nhan cua MATCH-0002 (VNPT x P08) ma Lam da tu choi.
+    So theo cum thi "mo hinh" chi khop "mo hinh".
+    """
+    syl = [w for w in _syllables(s) if w not in STOPWORD_VN and w not in STOPWORD_NGANH]
+    return {f"{syl[i]} {syl[i+1]}" for i in range(len(syl) - 1)}
+
+
 def load_mapping(domain_dir):
     """Doc mapping_sp_nhom.yaml. Khong co file -> tra ve rong, rule v2 se khong neo duoc
     va PHAI bao loi thay vi im lang cho qua."""
@@ -143,6 +166,107 @@ def overlap(need_v, cap_v):
     if not nt:
         return 0.0
     return len(nt & ct) / len(nt)
+
+
+def make_matches_v3(cfg, facts, domain, domain_dir):
+    """Rule v3 · anchor_bigram_v3. Nhu v2 nhung LOP 3 so theo CUM HAI AM TIET.
+
+    Lop 1 NEO NHOM  : giu nguyen v2.
+    Lop 2 STOPWORD  : giu nguyen v2.
+    Lop 3 BIGRAM    : so tren tap cum hai am tiet, khong so am tiet le.
+    Lop 4 DIEM      : giu nguyen cong thuc de con so so sanh duoc voi v1 va v2.
+
+    Need it hon 1 bigram thi lui ve so token don, VA GHI VAO rationale la da lui,
+    de nguoi doc biet dong do yeu hon nhung dong khac.
+    """
+    mapping = load_mapping(domain_dir)
+    sp_map = mapping.get("san_pham") or {}
+    edges = mapping.get("canh_chuoi_gia_tri") or []
+
+    needs = sorted([f for f in facts.values() if f["field"].startswith("need")], key=lambda f: f["id"])
+    caps = sorted([f for f in facts.values() if f["field"].startswith("capability")], key=lambda f: f["id"])
+    by_entity = {}
+    for f in facts.values():
+        by_entity.setdefault(f["entity"], []).append(f)
+
+    created_at = max((f["checked_at"] or "" for f in facts.values()), default="")
+    matches, seq = [], 0
+    for nf in needs:
+        sp_id = str(nf["entity"]).split(" ")[0]
+        row = sp_map.get(sp_id)
+        if not row:
+            continue
+        nhom_cau = int(row["nhom"])
+        cho_duyet = [] if row.get("trang_thai") == "da_duyet" else [
+            {"fact_id": nf["id"],
+             "note": f"anh xa {sp_id} ve nhom {nhom_cau} CHUA DUOC NGUOI DUYET (mapping_sp_nhom.yaml)"}]
+        nb = _bigrams_v3(nf["value"])
+        lui_token = not nb
+        for cf in caps:
+            if nf["entity"] == cf["entity"]:
+                continue
+            groups = _sup_groups(by_entity, cf["entity"])
+            if not groups:
+                continue
+            qua_canh = None
+            if nhom_cau not in groups:
+                for e in edges:
+                    if int(e["tu"]) in groups and int(e["den"]) == nhom_cau:
+                        qua_canh = e
+                        break
+                if qua_canh is None:
+                    continue
+            if lui_token:
+                nt, ct = _tokens_v2(nf["value"]), _tokens_v2(cf["value"])
+            else:
+                nt, ct = nb, _bigrams_v3(cf["value"])
+            if not nt:
+                continue
+            ov = len(nt & ct) / len(nt)
+            if ov < OVERLAP_MIN_V2:
+                continue
+            seq += 1
+            tier_score = (TIER_W[nf["tier_best"]] + TIER_W[cf["tier_best"]]) / 2
+            loc_n = next((x["value"] for x in by_entity.get(nf["entity"], []) if x["field"] == "location"), None)
+            loc_c = next((x["value"] for x in by_entity.get(cf["entity"], []) if x["field"] == "location"), None)
+            loc = 1.0 if (loc_n and loc_c and loc_n == loc_c) else 0.0
+            score = round(0.7 * ov + 0.2 * tier_score + 0.1 * loc, 2)
+            unverified = list(cho_duyet)
+            if qua_canh is not None and qua_canh.get("trang_thai") != "da_duyet":
+                unverified.append({"fact_id": cf["id"],
+                                   "note": f"noi qua canh chuoi gia tri nhom {qua_canh['tu']} sang {qua_canh['den']}, CHUA DUOC NGUOI DUYET"})
+            for side in (nf["entity"], cf["entity"]):
+                for x in sorted(by_entity.get(side, []), key=lambda f: f["id"]):
+                    if x["tier_best"] == "C":
+                        note = "de o muc claim, khong phoi nhu su that cung"
+                        if x["id"] in (nf["id"], cf["id"]):
+                            note = "CAN CU CHINH o muc claim: " + note
+                        unverified.append({"fact_id": x["id"], "note": note})
+            matches.append({
+                "id": f"MATCH-{seq:04d}",
+                "domain": domain,
+                "created_at": created_at,
+                "demand": {"entity_id": nf["entity"], "need_fact_ids": [nf["id"]]},
+                "supply": {"entity_id": cf["entity"], "capability_fact_ids": [cf["id"]]},
+                "rationale": {
+                    "rule": RULE_V3,
+                    "matched_fields": [["capability", "need"]],
+                    "score": score,
+                    "computed_by": VERSION_V3,
+                    "neo_nhom": {"nhom_cau": nhom_cau, "nhom_cung": sorted(groups),
+                                 "qua_canh_chuoi_gia_tri": bool(qua_canh)},
+                    "so_theo": "token_don (lui vi need it hon 1 cum)" if lui_token else "cum_hai_am_tiet",
+                    "cum_giao": sorted(nt & ct),
+                },
+                "unverified": unverified,
+                "gate": {
+                    "chain_complete": None,
+                    "checked_at": created_at,
+                    "signoff": {"by": "pending-human-review", "role": "chuyen gia gac cong", "date": None},
+                },
+                "vouch": {"backer": None, "status": "none"},
+            })
+    return matches
 
 
 def make_matches_v2(cfg, facts, domain, domain_dir):
@@ -377,6 +501,8 @@ def run(domain_dir):
     attach_checked_at(facts, claims)
     if USE_V1:
         matches = make_matches(cfg, facts, cfg["domain"])
+    elif USE_V3:
+        matches = make_matches_v3(cfg, facts, cfg["domain"], domain_dir)
     else:
         matches = make_matches_v2(cfg, facts, cfg["domain"], domain_dir)
     passed, blocked = validate_all(matches, facts, stop_on_first=False)
