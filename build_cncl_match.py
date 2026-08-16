@@ -62,6 +62,23 @@ def main():
                          "tier": c["tier"], "capture": c["capture"],
                          **({"note": c["note"]} if "note" in c else {}),
                          **({"favors": c["favors"]} if "favors" in c else {})})
+        for c in fields.get("nang_luc_mo_ta_2", []):
+            rows.append({"entity": ent, "field": "capability_2", "value": c["value"],
+                         "evidence_span": c["evidence_span"], "extraction": c["extraction"],
+                         "tier": c["tier"], "capture": c["capture"],
+                         **({"note": c["note"]} if "note" in c else {})})
+        for c in fields.get("nhom_cncl", []):
+            rows.append({"entity": ent, "field": "nhom", "value": c["value"],
+                         "evidence_span": c["evidence_span"], "extraction": c["extraction"],
+                         "tier": c["tier"], "capture": c["capture"]})
+        for fname, cs in sorted(fields.items()):
+            if not fname.startswith("nhom_cncl_phu_"):
+                continue
+            n = fname.rsplit("_", 1)[-1]
+            for c in cs:
+                rows.append({"entity": ent, "field": f"nhom_phu_{n}", "value": c["value"],
+                             "evidence_span": c["evidence_span"], "extraction": c["extraction"],
+                             "tier": c["tier"], "capture": c["capture"]})
         for c in fields.get("location", []):
             rows.append({"entity": ent, "field": "location", "value": c["value"],
                          "evidence_span": c["evidence_span"], "extraction": c["extraction"],

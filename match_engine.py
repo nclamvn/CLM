@@ -21,9 +21,32 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "methodbox"))
 import refinery  # noqa: E402  (engine 7 giai doan, da co bo rang rieng)
 
-ENGINE_VERSION = "cao-loc-match/0.1.0 rule=overlay_capability_need_v1"
-RULE = "overlay_capability_need_v1"
+# RULE v2 (TIP-CNCL-3B, 16/08/2026). Rule v1 GIU NGUYEN ben duoi de doi chieu,
+# chay bang co --rule-v1. Doi rule la tang version, dung dieu kien tien quyet so 2 ky o 04.
+RULE_V1 = "overlay_capability_need_v1"
+RULE_V2 = "anchor_group_overlap_v2"
+VERSION_V1 = "cao-loc-match/0.1.0 rule=" + RULE_V1
+VERSION_V2 = "cao-loc-match/0.2.0 rule=" + RULE_V2
+USE_V1 = "--rule-v1" in sys.argv
+ENGINE_VERSION = VERSION_V1 if USE_V1 else VERSION_V2
+RULE = RULE_V1 if USE_V1 else RULE_V2
+
+# Tu dung chung cua van ban chinh sach: xuat hien khap noi, khong mang thong tin
+# phan biet. Chinh chung da tao ra duong tinh gia MATCH-0001 o vong v1
+# (Phenikaa-X UAV khop "Chip chuyen dung" chi vi hai chu "chuyen dung").
+STOPWORD_NGANH = {
+    "chuyen", "dung", "he", "thong", "thiet", "bi", "cong", "nghe", "tien",
+    "giai", "phap", "nen", "tang", "san", "pham", "ung", "phat", "trien",
+    "thong minh", "hien", "dai", "cac", "va", "cho", "trong",
+}
+# Ban co dau (token thuc te la co dau, khong bo dau)
+STOPWORD_VN = {
+    "chuyên", "dụng", "hệ", "thống", "thiết", "công", "nghệ", "tiên", "tiến",
+    "giải", "pháp", "nền", "tảng", "sản", "phẩm", "ứng", "dụng", "phát", "triển",
+    "thông", "minh", "hiện", "đại", "các", "cho", "trong", "những", "một",
+}
 OVERLAP_MIN = 0.5
+OVERLAP_MIN_V2 = 0.5  # giu nguyen nguong de so sanh duoc voi v1
 TIER_W = {"A": 1.0, "B": 0.75, "C": 0.3}
 USABLE_STATES = {"sourced", "corroborated"}
 
@@ -87,11 +110,136 @@ def _tokens(s):
     return set(re.findall(r"[0-9a-zà-ỹ]{3,}", (s or "").lower()))
 
 
+def _tokens_v2(s):
+    """Nhu _tokens nhung loai tu dung chung cua van ban chinh sach."""
+    return {w for w in _tokens(s) if w not in STOPWORD_VN and w not in STOPWORD_NGANH}
+
+
+def load_mapping(domain_dir):
+    """Doc mapping_sp_nhom.yaml. Khong co file -> tra ve rong, rule v2 se khong neo duoc
+    va PHAI bao loi thay vi im lang cho qua."""
+    import yaml
+    p = Path(domain_dir) / "mapping_sp_nhom.yaml"
+    if not p.exists():
+        raise GateError("MAPPING_MISSING",
+                        f"rule v2 can {p} de neo nhom; khong co thi khong duoc doan bua")
+    return yaml.safe_load(p.read_text(encoding="utf-8"))
+
+
+def _sup_groups(by_entity, ent):
+    """Nhom cua don vi CUNG: nhom chinh + moi nhom phu, lay tu fact da co bang chung."""
+    out = set()
+    for f in by_entity.get(ent, []):
+        if f["field"] == "nhom" or f["field"].startswith("nhom_phu"):
+            try:
+                out.add(int(str(f["value"]).strip()))
+            except ValueError:
+                pass
+    return out
+
+
 def overlap(need_v, cap_v):
     nt, ct = _tokens(need_v), _tokens(cap_v)
     if not nt:
         return 0.0
     return len(nt & ct) / len(nt)
+
+
+def make_matches_v2(cfg, facts, domain, domain_dir):
+    """Rule v2 · anchor_group_overlap_v2. Ba lop, thu tu co y nghia:
+
+      Lop 1 NEO NHOM  · nhom cua don vi CUNG (chinh hoac phu) phai trung nhom cua san
+                        pham CAU, hoac noi duoc qua canh chuoi gia tri. Khong thoa thi
+                        LOAI THANG, khong tinh diem. Lop nay giet duong tinh gia kieu
+                        "khac linh vuc nhung trung chu".
+      Lop 2 STOPWORD  · bo tu dung chung cua van ban chinh sach truoc khi so.
+      Lop 3 OVERLAP   · giu nguyen cong thuc diem cua v1 de con so so sanh duoc.
+
+    Anh xa san pham ve nhom la PHAN DOAN cua nguoi, doc tu mapping_sp_nhom.yaml.
+    Dong nao con `cho_duyet` thi match dua tren no PHAI tu khai vao `unverified`.
+    """
+    mapping = load_mapping(domain_dir)
+    sp_map = mapping.get("san_pham") or {}
+    edges = mapping.get("canh_chuoi_gia_tri") or []
+
+    needs = sorted([f for f in facts.values() if f["field"].startswith("need")], key=lambda f: f["id"])
+    caps = sorted([f for f in facts.values() if f["field"].startswith("capability")], key=lambda f: f["id"])
+    by_entity = {}
+    for f in facts.values():
+        by_entity.setdefault(f["entity"], []).append(f)
+
+    created_at = max((f["checked_at"] or "" for f in facts.values()), default="")
+    matches, seq = [], 0
+    for nf in needs:
+        sp_id = str(nf["entity"]).split(" ")[0]
+        row = sp_map.get(sp_id)
+        if not row:
+            continue  # khong co anh xa thi khong doan bua
+        nhom_cau = int(row["nhom"])
+        cho_duyet = [] if row.get("trang_thai") == "da_duyet" else [
+            {"fact_id": nf["id"],
+             "note": f"anh xa {sp_id} ve nhom {nhom_cau} CHUA DUOC NGUOI DUYET (mapping_sp_nhom.yaml)"}]
+        for cf in caps:
+            if nf["entity"] == cf["entity"]:
+                continue
+            groups = _sup_groups(by_entity, cf["entity"])
+            if not groups:
+                continue
+            qua_canh = None
+            if nhom_cau not in groups:
+                for e in edges:
+                    if int(e["tu"]) in groups and int(e["den"]) == nhom_cau:
+                        qua_canh = e
+                        break
+                if qua_canh is None:
+                    continue  # LOP 1 loai
+            nt, ct = _tokens_v2(nf["value"]), _tokens_v2(cf["value"])
+            if not nt:
+                continue
+            ov = len(nt & ct) / len(nt)
+            if ov < OVERLAP_MIN_V2:
+                continue
+            seq += 1
+            tier_score = (TIER_W[nf["tier_best"]] + TIER_W[cf["tier_best"]]) / 2
+            loc_n = next((x["value"] for x in by_entity.get(nf["entity"], []) if x["field"] == "location"), None)
+            loc_c = next((x["value"] for x in by_entity.get(cf["entity"], []) if x["field"] == "location"), None)
+            loc = 1.0 if (loc_n and loc_c and loc_n == loc_c) else 0.0
+            score = round(0.7 * ov + 0.2 * tier_score + 0.1 * loc, 2)
+            unverified = list(cho_duyet)
+            if qua_canh is not None and qua_canh.get("trang_thai") != "da_duyet":
+                unverified.append({"fact_id": cf["id"],
+                                   "note": f"noi qua canh chuoi gia tri nhom {qua_canh['tu']} sang {qua_canh['den']}, CHUA DUOC NGUOI DUYET"})
+            for side in (nf["entity"], cf["entity"]):
+                for x in sorted(by_entity.get(side, []), key=lambda f: f["id"]):
+                    if x["tier_best"] == "C":
+                        note = "de o muc claim, khong phoi nhu su that cung"
+                        if x["id"] in (nf["id"], cf["id"]):
+                            note = "CAN CU CHINH o muc claim: " + note
+                        unverified.append({"fact_id": x["id"], "note": note})
+            matches.append({
+                "id": f"MATCH-{seq:04d}",
+                "domain": domain,
+                "created_at": created_at,
+                "demand": {"entity_id": nf["entity"], "need_fact_ids": [nf["id"]]},
+                "supply": {"entity_id": cf["entity"], "capability_fact_ids": [cf["id"]]},
+                "rationale": {
+                    "rule": RULE_V2,
+                    "matched_fields": [["capability", "need"]],
+                    "score": score,
+                    "computed_by": VERSION_V2,
+                    "neo_nhom": {"nhom_cau": nhom_cau, "nhom_cung": sorted(groups),
+                                 "qua_canh_chuoi_gia_tri": bool(qua_canh)},
+                    "token_con_lai": {"need": sorted(nt), "giao": sorted(nt & ct)},
+                },
+                "unverified": unverified,
+                "gate": {
+                    "chain_complete": None,
+                    "checked_at": created_at,
+                    "signoff": {"by": "pending-human-review", "role": "chuyen gia gac cong", "date": None},
+                },
+                "vouch": {"backer": None, "status": "none"},
+            })
+    return matches
 
 
 def make_matches(cfg, facts, domain):
@@ -227,7 +375,10 @@ def run(domain_dir):
         if not f["evidence"]:
             raise GateError("MATCH_FACT_NO_EVIDENCE", f"fact {f['id']} khong tra duoc evidence")
     attach_checked_at(facts, claims)
-    matches = make_matches(cfg, facts, cfg["domain"])
+    if USE_V1:
+        matches = make_matches(cfg, facts, cfg["domain"])
+    else:
+        matches = make_matches_v2(cfg, facts, cfg["domain"], domain_dir)
     passed, blocked = validate_all(matches, facts, stop_on_first=False)
     # engine tu sinh ma bi chan -> bug logic, fail loud luon (khong co o Phase A sach)
     for b in blocked:

@@ -1,0 +1,57 @@
+# mapping_sp_nhom.yaml · Anh xa 30 san pham chien luoc ve 10 nhom cong nghe.
+#
+# VI SAO FILE NAY TON TAI, VA VI SAO MOI DONG DEU "cho_duyet":
+# Quyet dinh 21/2026/QD-TTg liet ke 10 nhom cong nghe o mot cho va 30 san pham o
+# cho khac, KHONG noi hai danh sach. Nghia la anh xa nay KHONG CO trong nguon.
+# Day la PHAN DOAN cua may, khong phai bang chung. Theo ky luat cua du an, phan
+# doan phai de nguoi gac cong duyet, khong duoc phoi nhu su that.
+# Engine phai tu khai vao `unverified` moi match dua tren dong con `cho_duyet`.
+#
+# Doi `trang_thai` sang `da_duyet` khi Lam da xem va dong y tung dong.
+
+version: 1
+ngay_lap: 2026-08-16
+nguoi_lap: "may (Tho), theo TIP-CNCL-3B"
+trang_thai_mac_dinh: cho_duyet
+
+san_pham:
+  CNCL-P01: {nhom: 1, ly_do: "LLM tieng Viet, tro ly ao, AI chuyen nganh thuoc Cong nghe so", trang_thai: cho_duyet}
+  CNCL-P02: {nhom: 1, ly_do: "AI camera xu ly tai bien: AI va dien toan bien", trang_thai: cho_duyet}
+  CNCL-P03: {nhom: 1, ly_do: "Nen tang ban sao so duoc goi ten trong nhom 1", trang_thai: cho_duyet}
+  CNCL-P04: {nhom: 1, ly_do: "Dien toan dam may duoc goi ten trong nhom 1", trang_thai: cho_duyet}
+  CNCL-P05: {nhom: 1, ly_do: "Blockchain va truy xuat nguon goc: chuoi khoi trong nhom 1", trang_thai: cho_duyet}
+  CNCL-P06: {nhom: 2, ly_do: "Thiet bi he thong mang 5G va 5G-Advanced", trang_thai: cho_duyet}
+  CNCL-P07: {nhom: 3, ly_do: "Robot tu hanh va robot cong nghiep", trang_thai: cho_duyet}
+  CNCL-P08: {nhom: 3, ly_do: "San xuat thong minh gan voi tu dong hoa", trang_thai: cho_duyet}
+  CNCL-P09: {nhom: 7, ly_do: "An ninh mang cho ha tang quan trong", trang_thai: cho_duyet}
+  CNCL-P10: {nhom: 4, ly_do: "Vac xin the he moi dung cho nguoi: y sinh", trang_thai: cho_duyet}
+  CNCL-P11: {nhom: 4, ly_do: "Lieu phap te bao: y sinh tien tien", trang_thai: cho_duyet}
+  CNCL-P12: {nhom: 4, ly_do: "San xuat y te ca the hoa bang in 3D", trang_thai: cho_duyet}
+  CNCL-P13: {nhom: 4, ly_do: "Cam bien sinh hoc thong minh", trang_thai: cho_duyet}
+  CNCL-P14: {nhom: 4, ly_do: "Vac xin va che pham sinh hoc nong nghiep: cong nghe sinh hoc", trang_thai: cho_duyet}
+  CNCL-P15: {nhom: 4, ly_do: "San xuat che bien sau nong nghiep gan cong nghe sinh hoc. RANH GIOI XAM, nguoi duyet can xem ky", trang_thai: cho_duyet}
+  CNCL-P16: {nhom: 4, ly_do: "Giong cay trong vat nuoi cong nghe sinh hoc", trang_thai: cho_duyet}
+  CNCL-P17: {nhom: 5, ly_do: "Vat lieu tien tien, vat lieu chuc nang", trang_thai: cho_duyet}
+  CNCL-P18: {nhom: 5, ly_do: "Pin, ac quy, luu tru nang luong BESS", trang_thai: cho_duyet}
+  CNCL-P19: {nhom: 5, ly_do: "Hydrogen xanh, nhien lieu sinh hoc: nang luong", trang_thai: cho_duyet}
+  CNCL-P20: {nhom: 5, ly_do: "Thiet bi dien cao ap va truyen tai dien", trang_thai: cho_duyet}
+  CNCL-P21: {nhom: 5, ly_do: "Thu giu su dung luu tru carbon gan nang luong. RANH GIOI XAM voi nhom 8", trang_thai: cho_duyet}
+  CNCL-P22: {nhom: 9, ly_do: "UAV va he thong giam sat che ap UAV thuoc hang khong vu tru; da co claim CNCL-P22-A neo vao nhom 9", trang_thai: cho_duyet}
+  CNCL-P23: {nhom: 6, ly_do: "Chip chuyen dung thuoc Cong nghe chip ban dan", trang_thai: cho_duyet}
+  CNCL-P24: {nhom: 7, ly_do: "Cong nghe luong tu: nhom 7 an ninh mang va luong tu", trang_thai: cho_duyet}
+  CNCL-P25: {nhom: 8, ly_do: "Khai thac che bien khoang san va dat hiem: long dat", trang_thai: cho_duyet}
+  CNCL-P26: {nhom: 8, ly_do: "Tham do bien sau, long dat, nang luong ngoai khoi", trang_thai: cho_duyet}
+  CNCL-P27: {nhom: 5, ly_do: "Lo phan ung hat nhan mo-dun nho SMR: nang luong. RANH GIOI XAM, co the tach nhom rieng", trang_thai: cho_duyet}
+  CNCL-P28: {nhom: 9, ly_do: "Ve tinh va chum ve tinh quy dao thap: vu tru", trang_thai: cho_duyet}
+  CNCL-P29: {nhom: 10, ly_do: "Cong trinh duong sat toc do cao", trang_thai: cho_duyet}
+  CNCL-P30: {nhom: 10, ly_do: "He thong thiet bi duong sat toc do cao va do thi", trang_thai: cho_duyet}
+
+# Canh chuoi gia tri: don vi o nhom A cung cap dau vao cho nhu cau o nhom B.
+# KHONG doi xung: chip cap cho UAV, khong suy nguoc lai.
+# Day cung la phan doan, cung cho duyet.
+canh_chuoi_gia_tri:
+  - {tu: 6, den: 9, ly_do: "Chip ban dan la dau vao cua thiet bi bay: nguon mst.gov.vn 28/01/2026 noi ro chip SoC AI on Edge lam cho drone va UAV", trang_thai: cho_duyet}
+  - {tu: 6, den: 2, ly_do: "Chip ban dan la dau vao cua thiet bi mang di dong", trang_thai: cho_duyet}
+  - {tu: 6, den: 3, ly_do: "Chip ban dan la dau vao cua robot va tu dong hoa", trang_thai: cho_duyet}
+  - {tu: 1, den: 3, ly_do: "AI va thi giac may la dau vao cua robot tu hanh", trang_thai: cho_duyet}
+  - {tu: 5, den: 9, ly_do: "Vat lieu tien tien la dau vao cua ket cau hang khong", trang_thai: cho_duyet}
