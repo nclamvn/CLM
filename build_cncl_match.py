@@ -57,6 +57,10 @@ def main():
                      "evidence_span": name_claim["evidence_span"], "extraction": "normalized",
                      "tier": name_claim["tier"], "capture": name_claim["capture"],
                      "note": "Phan loai ben CUNG do domain dan xuat gan, khong phai trich tu nguon."})
+        # HOAN NGUYEN 16/08/2026: TIP-CNCL-3G da THU tach nang luc ghep o dau cham phay va
+        # THAT BAI (bao cao reports/TACH_NANG_LUC_verify.md). Ket qua: cap dang rung thi con
+        # (Vien Han lam x thiet bi dien cao ap, khop qua tu chung chung "dien/hieu/suat/cao"),
+        # cap dang con thi rung (Vien Han lam x pin). KHONG thu lai huong nay.
         for c in caps:
             rows.append({"entity": ent, "field": "capability", "value": c["value"],
                          "evidence_span": c["evidence_span"], "extraction": c["extraction"],
@@ -135,8 +139,9 @@ def main():
             bad += 1
             continue
         txt = cache.setdefault(snap, norm(p.read_text(encoding="utf-8", errors="replace")))
-        if r["field"].startswith("need") and norm(str(r["value"])) not in norm(r["evidence_span"]):
-            print(f"NEED_PART_NOT_VERBATIM: {r['entity']} / {r['field']} khong la chuoi con cua span goc")
+        if r["field"].startswith(("need", "capability")) and r["extraction"] == "verbatim" \
+                and norm(str(r["value"])) not in norm(r["evidence_span"]):
+            print(f"PART_NOT_VERBATIM: {r['entity']} / {r['field']} khong la chuoi con cua span goc")
             bad += 1
         if norm(r["evidence_span"]) not in txt:
             print(f"SPAN_LOST: {r['entity']} / {r['field']} khong con trong {snap}")

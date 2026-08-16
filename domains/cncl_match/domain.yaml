@@ -15,6 +15,8 @@ schema:
     - entity_type          # cung | cau
     - capability           # ben CUNG: nang luc da co bang chung
     - capability_2         # mo ta nang luc thu hai (tu nang_luc_mo_ta_2 ben CUNG)
+    - capability_3         # manh 2 cua nang luc ghep, tach o dau cham phay (TIP-3G)
+    - capability_4         # manh 3 cua nang luc ghep
     - nhom                 # nhom CNCL chinh cua don vi CUNG, dung de NEO o rule v2
     - nhom_phu_3
     - nhom_phu_6
