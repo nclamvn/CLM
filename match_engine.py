@@ -388,6 +388,7 @@ def run(domain_dir):
     out = Path(domain_dir) / ".." / ".." / "out"
     out = out.resolve()
     out.mkdir(exist_ok=True)
+    _canh_bao_ghi_de(out, Path(domain_dir), "--force" in sys.argv)
     (out / "facts.jsonl").write_text(
         "\n".join(json.dumps(facts[k], ensure_ascii=False, sort_keys=True) for k in sorted(facts)) + "\n",
         encoding="utf-8")
@@ -483,6 +484,81 @@ def _val_flag(argv, name):
     return None
 
 
+def _match_khoa(m):
+    """Khoa NOI DUNG cua mot match, dung lam dinh danh THAT trong so chu ky.
+
+    VI SAO KHONG DUNG match_id: "MATCH-0002" chi la so thu tu do engine sinh. Chay lai
+    voi du lieu khac thi MATCH-0002 co the la mot cap hoan toan khac. Gan chu ky vao so
+    thu tu se dan den ky nham nguoi khac, con te hon la mat chu ky.
+    """
+    d = m["demand"]; s = m["supply"]
+    raw = "|".join([
+        str(d.get("entity_id")), str(s.get("entity_id")),
+        ",".join(sorted(d.get("need_fact_ids") or [])),
+        ",".join(sorted(s.get("capability_fact_ids") or [])),
+    ])
+    return {
+        "demand_entity": d.get("entity_id"),
+        "supply_entity": s.get("entity_id"),
+        "need_fact_ids": sorted(d.get("need_fact_ids") or []),
+        "capability_fact_ids": sorted(s.get("capability_fact_ids") or []),
+        "digest": hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16],
+    }
+
+
+def _ledger_path(domain_dir):
+    return Path(domain_dir) / "signoff_ledger.jsonl"
+
+
+def _read_ledger(domain_dir):
+    p = _ledger_path(domain_dir)
+    if not p.exists():
+        return []
+    return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def _write_ledger(domain_dir, rows):
+    p = _ledger_path(domain_dir)
+    p.write_text("\n".join(json.dumps(r, ensure_ascii=False, sort_keys=True) for r in rows) + "\n",
+                 encoding="utf-8")
+
+
+def _ghi_so(domain_dir, chon, by, date, decision, ly_do=None):
+    """Ghi quyet dinh vao so chu ky. Quyet dinh moi cho cung mot khoa se GHI DE dong cu,
+    nhung dong cu KHONG bi xoa khoi lich su git: sổ nam trong git nen moi lan doi deu co dau vet."""
+    rows = _read_ledger(domain_dir)
+    by_digest = {r["khoa"]["digest"]: i for i, r in enumerate(rows)}
+    for m in chon:
+        khoa = _match_khoa(m)
+        rec = {"match_id": m["id"], "decision": decision, "by": by,
+               "role": "chuyen gia gac cong", "date": date, "khoa": khoa,
+               "engine_version": (m.get("rationale") or {}).get("computed_by"),
+               "ghi_luc": date}
+        if ly_do:
+            rec["ly_do"] = ly_do
+        i = by_digest.get(khoa["digest"])
+        if i is None:
+            rows.append(rec)
+        else:
+            rows[i] = rec
+    _write_ledger(domain_dir, rows)
+    return len(rows)
+
+
+def _domain_tu_matches(matches_path):
+    """Suy ra domain_dir tu duong dan out/matches.jsonl. Fail-loud neu khong doan duoc."""
+    p = Path(matches_path).resolve()
+    root = p.parent.parent
+    cands = sorted((root / "domains").glob("*/domain.yaml")) if (root / "domains").exists() else []
+    if len(cands) == 1:
+        return cands[0].parent
+    for c in cands:
+        if (c.parent / "signoff_ledger.jsonl").exists():
+            return c.parent
+    raise GateError("KHONG_XAC_DINH_DUOC_DOMAIN",
+                    "khong suy duoc domain tu duong dan matches; dung --domain <domain_dir>")
+
+
 def _write_matches(p, rows):
     p.write_text("\n".join(json.dumps(m, ensure_ascii=False, sort_keys=True) for m in rows) + "\n",
                  encoding="utf-8")
@@ -504,7 +580,7 @@ def _select(rows, only, exc):
     return rows
 
 
-def sign_matches(matches_path, by, date, only=None, exc=None):
+def sign_matches(matches_path, by, date, only=None, exc=None, domain_dir=None):
     """Ghi chu ky NGUOI GAC CONG that.
 
     LY DO CO --only VA --except (16/08/2026): ban dau lenh nay ky TAT CA, khong co
@@ -520,12 +596,15 @@ def sign_matches(matches_path, by, date, only=None, exc=None):
         m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date,
                                 "decision": "ky"}
     _write_matches(p, rows)
+    dd = Path(domain_dir) if domain_dir else _domain_tu_matches(matches_path)
+    n = _ghi_so(dd, chon, by, date, "ky")
     ids = ", ".join(m["id"] for m in chon)
     print(f"SIGNOFF: {len(chon)}/{len(rows)} match ky boi {by} ngay {date}")
     print(f"  da ky: {ids}")
+    print(f"  so chu ky: {_ledger_path(dd)} ({n} dong, DUOC GIT THEO DOI)")
 
 
-def reject_matches(matches_path, by, date, ids, reason):
+def reject_matches(matches_path, by, date, ids, reason, domain_dir=None):
     """Ghi quyet dinh TU CHOI cua nguoi gac cong.
 
     VI SAO CAN VERB RIENG: vang chu ky la trang thai NHAP NHANG, khong phan biet duoc
@@ -539,8 +618,75 @@ def reject_matches(matches_path, by, date, ids, reason):
         m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date,
                                 "decision": "tu_choi", "ly_do": reason}
     _write_matches(p, rows)
+    dd = Path(domain_dir) if domain_dir else _domain_tu_matches(matches_path)
+    n = _ghi_so(dd, chon, by, date, "tu_choi", reason)
     print(f"TU CHOI: {len(chon)}/{len(rows)} match bi {by} tu choi ngay {date}")
     print(f"  ly do: {reason}")
+    print(f"  so chu ky: {_ledger_path(dd)} ({n} dong, DUOC GIT THEO DOI)")
+
+
+def restore_signoff(domain_dir, matches_path):
+    """Gan lai chu ky tu so vao file match moi sinh, KHOP THEO KHOA NOI DUNG.
+
+    Match nao doi noi dung so voi luc ky thi KHONG duoc gan lai: noi dung khac tuc la
+    nguoi gac cong chua tung xem thu do. Bao ro de nguoi ky lai.
+    """
+    ledger = {r["khoa"]["digest"]: r for r in _read_ledger(domain_dir)}
+    p = Path(matches_path)
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    gan, chua = [], []
+    for m in rows:
+        k = _match_khoa(m)
+        r = ledger.get(k["digest"])
+        if r is None:
+            chua.append(m["id"])
+            continue
+        m["gate"]["signoff"] = {"by": r["by"], "role": r["role"], "date": r["date"],
+                                "decision": r["decision"]}
+        if r.get("ly_do"):
+            m["gate"]["signoff"]["ly_do"] = r["ly_do"]
+        gan.append(m["id"])
+    _write_matches(p, rows)
+    print(f"RESTORE: gan lai {len(gan)}/{len(rows)} chu ky tu so")
+    if gan:
+        print(f"  da gan  : {', '.join(gan)}")
+    if chua:
+        print(f"  CHUA KY : {', '.join(chua)}  (khoa noi dung khong co trong so, phai de nguoi ky)")
+    return len(chua)
+
+
+def _canh_bao_ghi_de(out_dir, domain_dir, force):
+    """Cong chan ghi de chu ky. Chay TRUOC khi run() ghi bat cu thu gi."""
+    mp = out_dir / "matches.jsonl"
+    if not mp.exists():
+        return
+    rows = [json.loads(l) for l in mp.read_text(encoding="utf-8").splitlines() if l.strip()]
+    def _da_xu_ly(m):
+        """Da co quyet dinh cua NGUOI hay chua.
+
+        Tuong thich nguoc: chu ky cu KHONG co truong `decision` nhung co `by` that.
+        Neu chi xet `decision` thi 7 chu ky cu cua Lam se lot luoi va bi ghi de am tham.
+        Loi nay lo ra o phep thu L2 tren ban sao, truoc khi dung file that.
+        """
+        so = (m.get("gate") or {}).get("signoff") or {}
+        if so.get("decision"):
+            return True
+        return bool(so.get("by")) and so.get("by") != "pending-human-review" and bool(so.get("date"))
+
+    da_xu = [m for m in rows if _da_xu_ly(m)]
+    if not da_xu:
+        return
+    ledger = {r["khoa"]["digest"] for r in _read_ledger(domain_dir)}
+    thieu = [m["id"] for m in da_xu if _match_khoa(m)["digest"] not in ledger]
+    if not thieu:
+        return
+    if force:
+        print(f"CANH BAO --force: ghi de {len(thieu)} chu ky CHUA co trong so: {', '.join(thieu)}")
+        return
+    raise GateError("SIGNOFF_SE_BI_GHI_DE",
+                    f"out/matches.jsonl dang co {len(thieu)} quyet dinh cua nguoi gac cong "
+                    f"CHUA duoc ghi vao so ({', '.join(thieu)}). Chay lai se xoa mat. "
+                    f"Cach xu ly: chay lai lenh sign/reject de ghi vao so, hoac dung --force neu that su muon bo.")
 
 
 if __name__ == "__main__":
@@ -556,7 +702,10 @@ if __name__ == "__main__":
             exc = _csv_flag(sys.argv, "--except")
             if only and exc:
                 sys.exit("Chon mot trong hai: --only hoac --except, khong dung ca hai.")
-            sign_matches(args[1], args[2], args[3], only=only, exc=exc)
+            sign_matches(args[1], args[2], args[3], only=only, exc=exc,
+                         domain_dir=_val_flag(sys.argv, "--domain"))
+        elif len(args) >= 3 and args[0] == "restore-signoff":
+            sys.exit(2 if restore_signoff(args[1], args[2]) else 0)
         elif len(args) >= 4 and args[0] == "reject":
             ids = _csv_flag(sys.argv, "--ids")
             reason = _val_flag(sys.argv, "--reason")
@@ -564,12 +713,14 @@ if __name__ == "__main__":
                 sys.exit("reject can --ids MATCH-0002[,MATCH-0005]")
             if not reason:
                 sys.exit("reject can --reason \"ly do tu choi\" (tu choi khong ghi ly do la vo nghia)")
-            reject_matches(args[1], args[2], args[3], ids, reason)
+            reject_matches(args[1], args[2], args[3], ids, reason,
+                           domain_dir=_val_flag(sys.argv, "--domain"))
         else:
             sys.exit("usage: match_engine.py run <domain_dir> | "
                      "validate <domain_dir> <matches.jsonl> [--require-signoff] | "
-                     "sign <matches.jsonl> <nguoi_gac_cong> <ngay> [--only ID,ID | --except ID,ID] | "
-                     "reject <matches.jsonl> <nguoi_gac_cong> <ngay> --ids ID,ID --reason \"...\"")
+                     "sign <matches.jsonl> <nguoi> <ngay> [--only ID,ID | --except ID,ID] [--domain DIR] | "
+                     "reject <matches.jsonl> <nguoi_gac_cong> <ngay> --ids ID,ID --reason \"...\" | "
+                     "restore-signoff <domain_dir> <matches.jsonl>")
     except (GateError, refinery.GateError) as e:
         print(f"GATE BITES · {e}")
         sys.exit(2)
