@@ -107,10 +107,19 @@ def main():
                      "evidence_span": c["evidence_span"], "extraction": "normalized",
                      "tier": c.get("tier", "A"), "capture": cap,
                      "note": "Phan loai ben CAU do domain dan xuat gan, khong phai trich tu nguon."})
-        rows.append({"entity": ent, "field": "need", "value": c["value"],
-                     "evidence_span": c["evidence_span"], "extraction": c.get("extraction", "verbatim"),
-                     "tier": c.get("tier", "A"), "capture": cap,
-                     "note": f"Nhu cau quoc gia theo QD 21/2026, claim goc {c['id']}."})
+        # TACH NHU CAU GHEP (TIP-CNCL-3C). Chi tach o dau CHAM PHAY, la ky hieu liet ke
+        # tuong minh cua chinh van ban goc. KHONG tach o dau phay va KHONG tach o chu "va",
+        # vi hai thu do thuong noi cac thanh phan cua cung mot khai niem.
+        # Moi manh phai la chuoi con NGUYEN VAN cua span goc; cong tu kiem ben duoi chan neu sai.
+        parts = [x.strip() for x in str(c["value"]).split(";") if x.strip()]
+        for i, part in enumerate(parts):
+            fname = "need" if i == 0 else f"need_{i + 1}"
+            note = f"Nhu cau quoc gia theo QD 21/2026, claim goc {c['id']}."
+            if len(parts) > 1:
+                note += f" Manh {i + 1}/{len(parts)} cua nhu cau ghep, tach o dau cham phay cua ban goc."
+            rows.append({"entity": ent, "field": fname, "value": part,
+                         "evidence_span": c["evidence_span"], "extraction": c.get("extraction", "verbatim"),
+                         "tier": c.get("tier", "A"), "capture": cap, "note": note})
 
     # ---------- cong tu kiem truoc khi ghi ----------
     cache, bad = {}, 0
@@ -122,6 +131,9 @@ def main():
             bad += 1
             continue
         txt = cache.setdefault(snap, norm(p.read_text(encoding="utf-8", errors="replace")))
+        if r["field"].startswith("need") and norm(str(r["value"])) not in norm(r["evidence_span"]):
+            print(f"NEED_PART_NOT_VERBATIM: {r['entity']} / {r['field']} khong la chuoi con cua span goc")
+            bad += 1
         if norm(r["evidence_span"]) not in txt:
             print(f"SPAN_LOST: {r['entity']} / {r['field']} khong con trong {snap}")
             bad += 1

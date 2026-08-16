@@ -19,6 +19,7 @@ schema:
     - nhom_phu_3
     - nhom_phu_6
     - need                 # ben CAU: nhu cau cong nghe cua quoc gia
+    - need_2               # manh thu hai cua nhu cau ghep (tach o dau cham phay ban goc)
     - capacity
     - certification
     - location
