@@ -31,7 +31,7 @@ Gốc rễ: `signoff_ledger.jsonl` chỉ là sổ ghi chép. Engine không đọ
 ## Ba lớp phòng thủ
 
 1. **Khi sinh match**: engine đọc sổ, loại cặp đã bị từ chối trước khi chạy gate.
-2. **Ghi lại**: mỗi cặp bị loại được in ra và ghi vào `out/blocked_by_signoff.jsonl`. **Không loại âm thầm** — loại âm thầm nguy hiểm ngang cho qua âm thầm.
+2. **Ghi lại**: mỗi cặp bị loại được in ra và ghi vào `out/blocked_by_signoff.jsonl`. **Không loại âm thầm** , loại âm thầm nguy hiểm ngang cho qua âm thầm.
 3. **Hậu kiểm**: `validate` cắn nếu phát hiện cặp bị từ chối xuất hiện như match hợp lệ, phòng khi ai đó sinh match bằng đường khác.
 
 Cửa thoát hiểm `--ignore-rejections` tồn tại vì không có nó thì không sửa được quyết định sai của quá khứ. Nhưng nó **luôn in cảnh báo kèm danh sách**, không bao giờ im lặng.
