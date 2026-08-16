@@ -6,11 +6,13 @@ pre-registration, 04 schema match provenance).
 
 ## Cai dat (lam TRUOC khi chay bat ky lenh nao)
 
+Tren macOS co Homebrew Python (da kiem tren may Lam 16/08/2026, PEP 668 chan `--user` don thuan):
+
 ```
-python3 -m pip install --user -r requirements.txt
+python3 -m pip install --user --break-system-packages -r requirements.txt
 ```
 
-macOS chan voi "externally-managed-environment" thi them `--break-system-packages`.
+Moi truong khong bi PEP 668 chan thi bo `--break-system-packages`.
 
 Thieu PyYAML se lam MOI lenh dung ngay o dong dau voi thong bao "Can PyYAML".
 Day la loi moi truong, khong phai loi du lieu: khong co gi bi ghi hong, cu cai roi chay lai.
