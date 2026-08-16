@@ -4,6 +4,17 @@ Workspace rieng cua Tho, tach khoi repo website .touch. Theo TIP 05 va cac van
 ban da ky trong `KnowledgeBase/CaoLocMatch_PoC/` (01 spec dataset, 02
 pre-registration, 04 schema match provenance).
 
+## Cai dat (lam TRUOC khi chay bat ky lenh nao)
+
+```
+python3 -m pip install --user -r requirements.txt
+```
+
+macOS chan voi "externally-managed-environment" thi them `--break-system-packages`.
+
+Thieu PyYAML se lam MOI lenh dung ngay o dong dau voi thong bao "Can PyYAML".
+Day la loi moi truong, khong phai loi du lieu: khong co gi bi ghi hong, cu cai roi chay lai.
+
 ## Cau truc
 
 ```

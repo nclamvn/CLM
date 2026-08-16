@@ -1,0 +1,4 @@
+# Phu thuoc cua engine cao-loc-match.
+# Bai hoc 16/08/2026: Lam chay lenh sign tren may that va truot vi thieu PyYAML.
+# Sandbox cua may co san nen khong lo ra. Tu nay moi phu thuoc phai khai o day.
+PyYAML>=6.0
