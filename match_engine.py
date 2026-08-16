@@ -659,6 +659,8 @@ def run(domain_dir):
         matches = make_matches_v4(cfg, facts, cfg["domain"], domain_dir)
     else:
         matches = make_matches_v2(cfg, facts, cfg["domain"], domain_dir)
+    matches, bi_tu_choi = _loc_bi_tu_choi(matches, Path(domain_dir),
+                                          bo_qua="--ignore-rejections" in sys.argv)
     passed, blocked = validate_all(matches, facts, stop_on_first=False)
     # engine tu sinh ma bi chan -> bug logic, fail loud luon (khong co o Phase A sach)
     for b in blocked:
@@ -675,6 +677,9 @@ def run(domain_dir):
     (out / "matches.jsonl").write_text(
         "\n".join(json.dumps(m, ensure_ascii=False, sort_keys=True) for m in passed) + "\n",
         encoding="utf-8")
+    (out / "blocked_by_signoff.jsonl").write_text(
+        ("\n".join(json.dumps(b, ensure_ascii=False, sort_keys=True) for b in bi_tu_choi) + "\n")
+        if bi_tu_choi else "", encoding="utf-8")
     (out / "blocked.jsonl").write_text(
         ("\n".join(json.dumps(b, ensure_ascii=False, sort_keys=True) for b in blocked) + "\n") if blocked else "",
         encoding="utf-8")
@@ -728,8 +733,14 @@ def validate_file(domain_dir, matches_path, require_signoff=False):
             f = json.loads(line)
             facts[f["id"]] = f
     matches = [json.loads(l) for l in Path(matches_path).read_text(encoding="utf-8").splitlines() if l.strip()]
+    rej = _rejected_digests(Path(domain_dir))
     for m in matches:
         gate_match(m, facts)
+        r = rej.get(_match_khoa(m)["digest"])
+        if r is not None and ((m.get("gate") or {}).get("signoff") or {}).get("decision") != "tu_choi":
+            raise GateError("SIGNOFF_REJECTED_RESURFACED",
+                            f"{m.get('id')}: cap {m['demand']['entity_id']} <-> {m['supply']['entity_id']} "
+                            f"da bi {r.get('by')} TU CHOI ngay {r.get('date')} nhung lai xuat hien nhu match hop le")
         if require_signoff:
             so = (m.get("gate") or {}).get("signoff") or {}
             if not so.get("by") or so.get("by") == "pending-human-review" or not so.get("date"):
@@ -784,6 +795,49 @@ def _match_khoa(m):
         "capability_fact_ids": sorted(s.get("capability_fact_ids") or []),
         "digest": hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16],
     }
+
+
+def _rejected_digests(domain_dir):
+    """Tap digest cua cac cap NGUOI GAC CONG DA TU CHOI.
+
+    VI SAO O TANG ENGINE CHU KHONG O TANG RULE (TIP-CNCL-3I):
+    Ngay 16/08/2026 rule v4 lam cap VNPT x P08 quay lai, du Lam da tu choi cap do
+    kem ly do ghi trong so. No quay lai qua canh chuoi gia tri, tuc mot duong ma rule
+    moi mo ra. Chuyen do chi lo vi tieu chi H5 duoc khoa truoc; khong khoa thi da lang le.
+    Neu chi va rule v2 thi rule v5 sau nay lai thung. Rang buoc phai nam duoi moi rule.
+    """
+    return {r["khoa"]["digest"]: r for r in _read_ledger(domain_dir)
+            if r.get("decision") == "tu_choi"}
+
+
+def _loc_bi_tu_choi(matches, domain_dir, bo_qua=False):
+    """Loai cap da bi tu choi. Tra ve (con_lai, bi_loai).
+
+    KHONG loai am tham: moi cap bi loai deu duoc in ra va ghi vao out/blocked_by_signoff.jsonl.
+    Loai am tham nguy hiem ngang cho qua am tham.
+    """
+    rej = _rejected_digests(domain_dir)
+    if not rej:
+        return matches, []
+    con, loai = [], []
+    for m in matches:
+        r = rej.get(_match_khoa(m)["digest"])
+        if r is None:
+            con.append(m)
+        else:
+            loai.append({"id": m["id"], "demand": m["demand"]["entity_id"],
+                         "supply": m["supply"]["entity_id"],
+                         "tu_choi_boi": r.get("by"), "ngay": r.get("date"),
+                         "ly_do": r.get("ly_do"), "digest": _match_khoa(m)["digest"]})
+    if bo_qua:
+        print(f"CANH BAO --ignore-rejections: BO QUA {len(loai)} quyet dinh TU CHOI cua nguoi gac cong")
+        for b in loai:
+            print(f"  ! {b['demand']} <-> {b['supply']} · bi {b['tu_choi_boi']} tu choi {b['ngay']}")
+        return matches, []
+    for b in loai:
+        print(f"LOAI THEO SO CHU KY: {b['demand']} <-> {b['supply']}")
+        print(f"    bi {b['tu_choi_boi']} tu choi ngay {b['ngay']}: {str(b.get('ly_do'))[:80]}")
+    return con, loai
 
 
 def _ledger_path(domain_dir):
