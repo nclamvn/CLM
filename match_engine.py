@@ -26,16 +26,30 @@ import refinery  # noqa: E402  (engine 7 giai doan, da co bo rang rieng)
 RULE_V1 = "overlay_capability_need_v1"
 RULE_V2 = "anchor_group_overlap_v2"
 RULE_V3 = "anchor_bigram_v3"
+RULE_V4 = "anchor_product_v4"
 VERSION_V1 = "cao-loc-match/0.1.0 rule=" + RULE_V1
 VERSION_V2 = "cao-loc-match/0.2.0 rule=" + RULE_V2
 VERSION_V3 = "cao-loc-match/0.3.0 rule=" + RULE_V3
+VERSION_V4 = "cao-loc-match/0.4.0 rule=" + RULE_V4
 # RULE VAN HANH = v2 (quyet dinh 16/08/2026 sau khi v3 truot tieu chi V2).
 # v3 KHONG bi xoa: goi bang --rule-v3. Giu lai vi lan sau se co nguoi nghi den bigram
 # va can thay ket qua nay thay vi thu lai tu dau. Xem reports/RULE_V3_verify.md.
+# RULE VAN HANH = v4 tu 16/08/2026 (TIP-3H). v1, v2, v3 giu lai, goi bang co.
+USE_V1 = "--rule-v1" in sys.argv
+USE_V2 = "--rule-v2" in sys.argv
+USE_V3 = "--rule-v3" in sys.argv
+# RULE VAN HANH tro lai v2 sau khi v4 TRUOT 3/7 tieu chi (reports/NEO_SAN_PHAM_verify.md).
+# v4 giu lai, goi bang --rule-v4. BA LOI DA BIET cua v4, doc bao cao truoc khi dung lai:
+#  1. Coi san_pham_lien_quan (truong DON TRI) nhu danh sach day du -> giet cap chip Viettel.
+#  2. Canh chuoi gia tri lam duong vong cho cap Lam DA TU CHOI (VNPT x P08 quay lai).
+#  3. Nhanh don vi chua khai san pham khong gan nhan neo, de lai None trong rationale.
 USE_V1 = "--rule-v1" in sys.argv
 USE_V3 = "--rule-v3" in sys.argv
-ENGINE_VERSION = VERSION_V1 if USE_V1 else (VERSION_V3 if USE_V3 else VERSION_V2)
-RULE = RULE_V1 if USE_V1 else (RULE_V3 if USE_V3 else RULE_V2)
+USE_V4 = "--rule-v4" in sys.argv
+ENGINE_VERSION = (VERSION_V1 if USE_V1 else VERSION_V3 if USE_V3 else
+                  VERSION_V4 if USE_V4 else VERSION_V2)
+RULE = (RULE_V1 if USE_V1 else RULE_V3 if USE_V3 else
+        RULE_V4 if USE_V4 else RULE_V2)
 
 # Tu dung chung cua van ban chinh sach: xuat hien khap noi, khong mang thong tin
 # phan biet. Chinh chung da tao ra duong tinh gia MATCH-0001 o vong v1
@@ -149,6 +163,18 @@ def load_mapping(domain_dir):
     return yaml.safe_load(p.read_text(encoding="utf-8"))
 
 
+def _sup_products(by_entity, ent):
+    """Ma san pham chien luoc ma don vi CUNG phu, tu fact da co bang chung.
+    Tra ve tap ma dang 2 chu so (vd {"23"}). Rong = don vi chua khai san pham."""
+    out = set()
+    for f in by_entity.get(ent, []):
+        if f["field"] == "san_pham" or f["field"].startswith("san_pham_phu"):
+            v = str(f["value"]).strip().upper().replace("CNCL-P", "").replace("P", "")
+            if v.isdigit():
+                out.add(v.zfill(2))
+    return out
+
+
 def _sup_groups(by_entity, ent):
     """Nhom cua don vi CUNG: nhom chinh + moi nhom phu, lay tu fact da co bang chung."""
     out = set()
@@ -257,6 +283,132 @@ def make_matches_v3(cfg, facts, domain, domain_dir):
                                  "qua_canh_chuoi_gia_tri": bool(qua_canh)},
                     "so_theo": "token_don (lui vi need it hon 1 cum)" if lui_token else "cum_hai_am_tiet",
                     "cum_giao": sorted(nt & ct),
+                },
+                "unverified": unverified,
+                "gate": {
+                    "chain_complete": None,
+                    "checked_at": created_at,
+                    "signoff": {"by": "pending-human-review", "role": "chuyen gia gac cong", "date": None},
+                },
+                "vouch": {"backer": None, "status": "none"},
+            })
+    return matches
+
+
+def make_matches_v4(cfg, facts, domain, domain_dir):
+    """Rule v4 · anchor_product_v4. Nhu v2 nhung THEM LOP NEO SAN PHAM dat TRUOC neo nhom.
+
+    Ly do: bon vong thu nghiem tren CHUOI KY TU deu phan tac dung (rule v3 bigram truot,
+    tach nang luc ghep truot). Vong nay siet bang DU LIEU CO CAU TRUC thay vi bang chu.
+    Nhom la phan loai THO: nhom 5 gop ca vat lieu, pin, hydro, thiet bi dien. San pham thi khong gop.
+
+    LOP 0 NEO SAN PHAM (moi):
+      · Don vi CUNG co khai san_pham: trung ma san pham cua nhu cau -> cho qua thang.
+        Khac ma -> LOAI, tru khi noi duoc qua canh chuoi gia tri da duyet.
+      · Don vi CUNG chua khai san pham (honest-null) -> LUI ve neo nhom nhu v2, ghi ro da lui.
+
+    Ba lop con lai giu nguyen v2:
+
+      Lop 1 NEO NHOM  · nhom cua don vi CUNG (chinh hoac phu) phai trung nhom cua san
+                        pham CAU, hoac noi duoc qua canh chuoi gia tri. Khong thoa thi
+                        LOAI THANG, khong tinh diem. Lop nay giet duong tinh gia kieu
+                        "khac linh vuc nhung trung chu".
+      Lop 2 STOPWORD  · bo tu dung chung cua van ban chinh sach truoc khi so.
+      Lop 3 OVERLAP   · giu nguyen cong thuc diem cua v1 de con so so sanh duoc.
+
+    Anh xa san pham ve nhom la PHAN DOAN cua nguoi, doc tu mapping_sp_nhom.yaml.
+    Dong nao con `cho_duyet` thi match dua tren no PHAI tu khai vao `unverified`.
+    """
+    mapping = load_mapping(domain_dir)
+    sp_map = mapping.get("san_pham") or {}
+    edges = mapping.get("canh_chuoi_gia_tri") or []
+
+    needs = sorted([f for f in facts.values() if f["field"].startswith("need")], key=lambda f: f["id"])
+    caps = sorted([f for f in facts.values() if f["field"].startswith("capability")], key=lambda f: f["id"])
+    by_entity = {}
+    for f in facts.values():
+        by_entity.setdefault(f["entity"], []).append(f)
+
+    created_at = max((f["checked_at"] or "" for f in facts.values()), default="")
+    matches, seq = [], 0
+    for nf in needs:
+        sp_id = str(nf["entity"]).split(" ")[0]
+        row = sp_map.get(sp_id)
+        if not row:
+            continue  # khong co anh xa thi khong doan bua
+        nhom_cau = int(row["nhom"])
+        cho_duyet = [] if row.get("trang_thai") == "da_duyet" else [
+            {"fact_id": nf["id"],
+             "note": f"anh xa {sp_id} ve nhom {nhom_cau} CHUA DUOC NGUOI DUYET (mapping_sp_nhom.yaml)"}]
+        for cf in caps:
+            if nf["entity"] == cf["entity"]:
+                continue
+            sps = _sup_products(by_entity, cf["entity"])
+            sp_cau = sp_id.replace("CNCL-P", "")
+            neo_kieu = None
+            if sps:
+                if sp_cau in sps:
+                    neo_kieu = "san_pham"
+                # khong trung ma -> van cho xet canh chuoi gia tri o duoi
+            groups = _sup_groups(by_entity, cf["entity"])
+            if not groups:
+                continue
+            qua_canh = None
+            if neo_kieu != "san_pham" and sps:
+                # don vi DA khai san pham nhung khac ma: chi cuu duoc bang canh chuoi gia tri
+                for e in edges:
+                    if int(e["tu"]) in groups and int(e["den"]) == nhom_cau:
+                        qua_canh = e
+                        neo_kieu = "canh_chuoi_gia_tri"
+                        break
+                if qua_canh is None:
+                    continue
+            elif not sps and nhom_cau not in groups:
+                for e in edges:
+                    if int(e["tu"]) in groups and int(e["den"]) == nhom_cau:
+                        qua_canh = e
+                        break
+                if qua_canh is None:
+                    continue  # LOP 1 loai
+            nt, ct = _tokens_v2(nf["value"]), _tokens_v2(cf["value"])
+            if not nt:
+                continue
+            ov = len(nt & ct) / len(nt)
+            if ov < OVERLAP_MIN_V2:
+                continue
+            seq += 1
+            tier_score = (TIER_W[nf["tier_best"]] + TIER_W[cf["tier_best"]]) / 2
+            loc_n = next((x["value"] for x in by_entity.get(nf["entity"], []) if x["field"] == "location"), None)
+            loc_c = next((x["value"] for x in by_entity.get(cf["entity"], []) if x["field"] == "location"), None)
+            loc = 1.0 if (loc_n and loc_c and loc_n == loc_c) else 0.0
+            score = round(0.7 * ov + 0.2 * tier_score + 0.1 * loc, 2)
+            unverified = list(cho_duyet)
+            if qua_canh is not None and qua_canh.get("trang_thai") != "da_duyet":
+                unverified.append({"fact_id": cf["id"],
+                                   "note": f"noi qua canh chuoi gia tri nhom {qua_canh['tu']} sang {qua_canh['den']}, CHUA DUOC NGUOI DUYET"})
+            for side in (nf["entity"], cf["entity"]):
+                for x in sorted(by_entity.get(side, []), key=lambda f: f["id"]):
+                    if x["tier_best"] == "C":
+                        note = "de o muc claim, khong phoi nhu su that cung"
+                        if x["id"] in (nf["id"], cf["id"]):
+                            note = "CAN CU CHINH o muc claim: " + note
+                        unverified.append({"fact_id": x["id"], "note": note})
+            matches.append({
+                "id": f"MATCH-{seq:04d}",
+                "domain": domain,
+                "created_at": created_at,
+                "demand": {"entity_id": nf["entity"], "need_fact_ids": [nf["id"]]},
+                "supply": {"entity_id": cf["entity"], "capability_fact_ids": [cf["id"]]},
+                "rationale": {
+                    "rule": RULE_V4,
+                    "matched_fields": [["capability", "need"]],
+                    "score": score,
+                    "computed_by": VERSION_V4,
+                    "neo": neo_kieu,
+                    "neo_nhom": {"nhom_cau": nhom_cau, "nhom_cung": sorted(groups),
+                                 "san_pham_cau": sp_cau, "san_pham_cung": sorted(sps),
+                                 "qua_canh_chuoi_gia_tri": bool(qua_canh)},
+                    "token_con_lai": {"need": sorted(nt), "giao": sorted(nt & ct)},
                 },
                 "unverified": unverified,
                 "gate": {
@@ -503,6 +655,8 @@ def run(domain_dir):
         matches = make_matches(cfg, facts, cfg["domain"])
     elif USE_V3:
         matches = make_matches_v3(cfg, facts, cfg["domain"], domain_dir)
+    elif USE_V4:
+        matches = make_matches_v4(cfg, facts, cfg["domain"], domain_dir)
     else:
         matches = make_matches_v2(cfg, facts, cfg["domain"], domain_dir)
     passed, blocked = validate_all(matches, facts, stop_on_first=False)

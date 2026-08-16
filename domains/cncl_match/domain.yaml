@@ -20,6 +20,8 @@ schema:
     - nhom                 # nhom CNCL chinh cua don vi CUNG, dung de NEO o rule v2
     - nhom_phu_3
     - nhom_phu_6
+    - san_pham            # ma SP chien luoc don vi CUNG phu, dung de NEO o rule v4
+    - san_pham_phu_P23
     - need                 # ben CAU: nhu cau cong nghe cua quoc gia
     - need_2               # manh thu hai cua nhu cau ghep (tach o dau cham phay ban goc)
     - capacity

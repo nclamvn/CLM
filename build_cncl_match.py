@@ -86,6 +86,20 @@ def main():
                              "evidence_span": c["evidence_span"], "extraction": c["extraction"],
                              "tier": c["tier"], "capture": c["capture"],
                              "note": c.get("note") or "Nhom phu ke thua tu registry CUNG da qua cong."})
+        # NEN SAN PHAM (TIP-2F Phan B) -> lop neo san pham cua rule v4 (TIP-3H).
+        for c in fields.get("san_pham_lien_quan", []):
+            rows.append({"entity": ent, "field": "san_pham", "value": c["value"],
+                         "evidence_span": c["evidence_span"], "extraction": c["extraction"],
+                         "tier": c["tier"], "capture": c["capture"],
+                         "note": c.get("note") or "Ma san pham ke thua tu registry CUNG da qua cong."})
+        for fname, cs in sorted(fields.items()):
+            if not fname.startswith("san_pham_phu_"):
+                continue
+            for c in cs:
+                rows.append({"entity": ent, "field": fname.replace("san_pham_phu_", "san_pham_phu_"),
+                             "value": c["value"], "evidence_span": c["evidence_span"],
+                             "extraction": c["extraction"], "tier": c["tier"], "capture": c["capture"],
+                             "note": c.get("note") or "San pham phu ke thua tu registry CUNG."})
         for c in fields.get("location", []):
             rows.append({"entity": ent, "field": "location", "value": c["value"],
                          "evidence_span": c["evidence_span"], "extraction": c["extraction"],
