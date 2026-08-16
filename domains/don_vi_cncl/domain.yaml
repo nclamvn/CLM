@@ -25,6 +25,9 @@ schema:
     # Cung khuon voi nhom_cncl_phu_*: tach truong de o luon don tri, khong tranh chap gia.
     - nang_luc_mo_ta_2
     - nhom_cncl_phu_5
+    # SAN PHAM PHU: mot don vi phu nhieu san pham chien luoc (TIP-2F).
+    # Cung khuon nhom_cncl_phu_N: moi san pham mot truong rieng, o luon don tri.
+    - san_pham_phu_P23
 
 rollup_field: nhom_cncl
 

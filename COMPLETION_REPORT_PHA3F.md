@@ -54,7 +54,7 @@ Nguyên nhân là `build_cncl_match.py` tự sinh các dòng `entity_name`, `nho
 
 **D. Domain PoC synthetic: 36 claim.**
 
-Dữ liệu tổng hợp của Phase A, dùng để chạy pipeline và bite test. Đã thêm note khai rõ là synthetic, không phải claim thật về tổ chức có thật. **Không miễn trừ cổng cho domain này** — miễn trừ âm thầm là cách khe hở sinh ra.
+Dữ liệu tổng hợp của Phase A, dùng để chạy pipeline và bite test. Đã thêm note khai rõ là synthetic, không phải claim thật về tổ chức có thật. **Không miễn trừ cổng cho domain này** : miễn trừ âm thầm là cách khe hở sinh ra.
 
 ## Bốn registry sau khi sửa
 
