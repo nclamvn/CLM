@@ -20,6 +20,10 @@ schema:
     # Chi dung khi nguon KHONG goi dich danh phap nhan con; co ten phap nhan rieng thi van tach phap nhan.
     - nhom_cncl_phu_3
     - nhom_cncl_phu_6
+    # MO TA NANG LUC THU HAI (them 16/08/2026, TIP-CNCL-3B).
+    # Ly do: nang_luc_mo_ta don tri; mot don vi that su co nhieu mang nang luc.
+    # Cung khuon voi nhom_cncl_phu_*: tach truong de o luon don tri, khong tranh chap gia.
+    - nang_luc_mo_ta_2
 
 rollup_field: nhom_cncl
 
