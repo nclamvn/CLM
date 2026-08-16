@@ -16,12 +16,12 @@ schema:
 rollup_field: nhom_cncl
 
 universe:
-  estimate: 80
-  basis: "Uoc luong tho cho pilot Pha 1 chi 2 nhom (9 hang khong vu tru + 1 cong nghe so). Con so 80 la placeholder co co so mong: hang khong vu tru it don vi cong khai (order ~15-25), cong nghe so dong hon (order ~50-60). Coverage % chi mang tinh chi bao trong pilot, KHONG cong bo nhu ty le chinh xac. Refine bang mau so co co so o Pha 2."
+  estimate: 95
+  basis: "Cap nhat Pha 2b (16/08/2026), 3 nhom. Nhom 9 hang khong vu tru + nhom 1 cong nghe so giu uoc luong Pha 1 (order ~80, co so mong). Nhom 6 chip ban dan CO CO SO TIER A: mst.gov.vn 28/01/2026 dan thong ke 8/2025 'gan 60 doanh nghiep trong linh vuc ban dan, trong do 50 doanh nghiep thiet ke chip, 7 doanh nghiep dong goi va kiem thu, tuy nhien phan lon deu la cac doanh nghiep nuoc ngoai'. Domain nay chi tinh DON VI VIET NAM, nen phan Viet cua nhom 6 nho hon nhieu con so 60; uoc ~15 don vi Viet, con so nay VAN LA UOC LUONG vi nguon khong tach ro so luong doanh nghiep Viet. Coverage % chi mang tinh chi bao, KHONG cong bo nhu ty le chinh xac."
 
 refresh_days:
   default: 180
 
 alias_map: {}                     # chi gop khi chac cung mot thuc the (VD Viettel High Tech <-> VHT)
 
-ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"], ["FPT", "FPT Semiconductor"], ["CT Group", "CT Semiconductor"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
+ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"], ["FPT", "FPT Semiconductor", "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT"], ["CT Group", "CT Semiconductor"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
