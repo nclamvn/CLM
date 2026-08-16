@@ -454,20 +454,93 @@ def validate_file(domain_dir, matches_path, require_signoff=False):
             if not so.get("by") or so.get("by") == "pending-human-review" or not so.get("date"):
                 raise GateError("SIGNOFF_PENDING",
                                 f"{m.get('id')}: chua co nguoi gac cong that ky (by/date)")
-    mode = " · signoff THAT du" if require_signoff else ""
-    print(f"VALIDATE PASSED · {len(matches)} match · 0 gate bites{mode}")
+    if require_signoff:
+        ky = [m for m in matches if ((m.get("gate") or {}).get("signoff") or {}).get("decision", "ky") == "ky"]
+        tu_choi = [m for m in matches if ((m.get("gate") or {}).get("signoff") or {}).get("decision") == "tu_choi"]
+        print(f"VALIDATE PASSED · {len(matches)} match · 0 gate bites · signoff THAT du")
+        print(f"  KY      : {len(ky)}  -> chi nhung match nay duoc trinh ra ngoai")
+        print(f"  TU CHOI : {len(tu_choi)}" + (f"  ({', '.join(m['id'] for m in tu_choi)})" if tu_choi else ""))
+        return
+    print(f"VALIDATE PASSED · {len(matches)} match · 0 gate bites")
 
 
-def sign_matches(matches_path, by, date):
-    """Ghi signoff cua nguoi gac cong that vao moi match dat gate (dung o Phase B
-    SAU khi nguoi gac cong da duyet danh sach; lenh nay chi ghi lai quyet dinh)."""
-    p = Path(matches_path)
-    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
-    for m in rows:
-        m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date}
+def _csv_flag(argv, name):
+    """Doc co dang --name A,B hoac --name=A,B. Tra ve list hoac None."""
+    for i, a in enumerate(argv):
+        if a == name and i + 1 < len(argv):
+            return [x.strip() for x in argv[i + 1].split(",") if x.strip()]
+        if a.startswith(name + "="):
+            return [x.strip() for x in a.split("=", 1)[1].split(",") if x.strip()]
+    return None
+
+
+def _val_flag(argv, name):
+    for i, a in enumerate(argv):
+        if a == name and i + 1 < len(argv):
+            return argv[i + 1]
+        if a.startswith(name + "="):
+            return a.split("=", 1)[1]
+    return None
+
+
+def _write_matches(p, rows):
     p.write_text("\n".join(json.dumps(m, ensure_ascii=False, sort_keys=True) for m in rows) + "\n",
                  encoding="utf-8")
-    print(f"SIGNOFF: {len(rows)} match ky boi {by} ngay {date}")
+
+
+def _select(rows, only, exc):
+    """Chon match theo --only hoac --except. Khong khai gi -> toan bo."""
+    ids = {m["id"] for m in rows}
+    if only:
+        thieu = set(only) - ids
+        if thieu:
+            raise GateError("SIGN_ID_KHONG_TON_TAI", f"--only tro toi ID khong co trong file: {sorted(thieu)}")
+        return [m for m in rows if m["id"] in set(only)]
+    if exc:
+        thieu = set(exc) - ids
+        if thieu:
+            raise GateError("SIGN_ID_KHONG_TON_TAI", f"--except tro toi ID khong co trong file: {sorted(thieu)}")
+        return [m for m in rows if m["id"] not in set(exc)]
+    return rows
+
+
+def sign_matches(matches_path, by, date, only=None, exc=None):
+    """Ghi chu ky NGUOI GAC CONG that.
+
+    LY DO CO --only VA --except (16/08/2026): ban dau lenh nay ky TAT CA, khong co
+    cach ky chon loc. Lam da ky nham ca MATCH-0002 la ca da biet la rac, vi lenh
+    khong cho tru ra. Mot cong gac ma chi co nut "duyet tat" thi khong phai cong gac.
+
+    decision = "ky". Xem them reject_matches cho quyet dinh tu choi.
+    """
+    p = Path(matches_path)
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    chon = _select(rows, only, exc)
+    for m in chon:
+        m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date,
+                                "decision": "ky"}
+    _write_matches(p, rows)
+    ids = ", ".join(m["id"] for m in chon)
+    print(f"SIGNOFF: {len(chon)}/{len(rows)} match ky boi {by} ngay {date}")
+    print(f"  da ky: {ids}")
+
+
+def reject_matches(matches_path, by, date, ids, reason):
+    """Ghi quyet dinh TU CHOI cua nguoi gac cong.
+
+    VI SAO CAN VERB RIENG: vang chu ky la trang thai NHAP NHANG, khong phan biet duoc
+    "chua ai xem" voi "da xem va tu choi". Hai thu do khac han nhau ve trach nhiem.
+    Tu choi phai duoc GHI LAI kem ly do, khong phai de trong.
+    """
+    p = Path(matches_path)
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    chon = _select(rows, ids, None)
+    for m in chon:
+        m["gate"]["signoff"] = {"by": by, "role": "chuyen gia gac cong", "date": date,
+                                "decision": "tu_choi", "ly_do": reason}
+    _write_matches(p, rows)
+    print(f"TU CHOI: {len(chon)}/{len(rows)} match bi {by} tu choi ngay {date}")
+    print(f"  ly do: {reason}")
 
 
 if __name__ == "__main__":
@@ -479,11 +552,24 @@ if __name__ == "__main__":
         elif len(args) >= 3 and args[0] == "validate":
             validate_file(args[1], args[2], require_signoff="--require-signoff" in flags)
         elif len(args) >= 4 and args[0] == "sign":
-            sign_matches(args[1], args[2], args[3])
+            only = _csv_flag(sys.argv, "--only")
+            exc = _csv_flag(sys.argv, "--except")
+            if only and exc:
+                sys.exit("Chon mot trong hai: --only hoac --except, khong dung ca hai.")
+            sign_matches(args[1], args[2], args[3], only=only, exc=exc)
+        elif len(args) >= 4 and args[0] == "reject":
+            ids = _csv_flag(sys.argv, "--ids")
+            reason = _val_flag(sys.argv, "--reason")
+            if not ids:
+                sys.exit("reject can --ids MATCH-0002[,MATCH-0005]")
+            if not reason:
+                sys.exit("reject can --reason \"ly do tu choi\" (tu choi khong ghi ly do la vo nghia)")
+            reject_matches(args[1], args[2], args[3], ids, reason)
         else:
             sys.exit("usage: match_engine.py run <domain_dir> | "
                      "validate <domain_dir> <matches.jsonl> [--require-signoff] | "
-                     "sign <matches.jsonl> <ten_nguoi_gac_cong> <ngay>")
+                     "sign <matches.jsonl> <nguoi_gac_cong> <ngay> [--only ID,ID | --except ID,ID] | "
+                     "reject <matches.jsonl> <nguoi_gac_cong> <ngay> --ids ID,ID --reason \"...\"")
     except (GateError, refinery.GateError) as e:
         print(f"GATE BITES · {e}")
         sys.exit(2)
