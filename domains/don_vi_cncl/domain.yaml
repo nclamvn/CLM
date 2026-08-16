@@ -12,12 +12,26 @@ schema:
     - bang_chung_nang_luc         # du an / san pham / chung nhan trich nguyen van
     - location
     - source
+    # TRUONG PHU THEO NHOM (them 16/08/2026, TIP-CNCL-2D, Lam duyet).
+    # Quy uoc: moi nhom phu la MOT truong rieng, gia tri luon la chinh so nhom do
+    # (vd truong nhom_cncl_phu_6 chi nhan gia tri "6"). Nho vay o luon don tri,
+    # khong bao gio tranh chap gia, va hai nguon doc lap cung khang dinh se cho corroborated.
+    # Truong phu KHONG tham gia rollup (xem rollup_field ben duoi), dung cam ket voi Lam.
+    # Chi dung khi nguon KHONG goi dich danh phap nhan con; co ten phap nhan rieng thi van tach phap nhan.
+    - nhom_cncl_phu_3
+    - nhom_cncl_phu_6
 
 rollup_field: nhom_cncl
 
 universe:
   estimate: 95
   basis: "Cap nhat Pha 2b (16/08/2026), 3 nhom. Nhom 9 hang khong vu tru + nhom 1 cong nghe so giu uoc luong Pha 1 (order ~80, co so mong). Nhom 6 chip ban dan CO CO SO TIER A: mst.gov.vn 28/01/2026 dan thong ke 8/2025 'gan 60 doanh nghiep trong linh vuc ban dan, trong do 50 doanh nghiep thiet ke chip, 7 doanh nghiep dong goi va kiem thu, tuy nhien phan lon deu la cac doanh nghiep nuoc ngoai'. Domain nay chi tinh DON VI VIET NAM, nen phan Viet cua nhom 6 nho hon nhieu con so 60; uoc ~15 don vi Viet, con so nay VAN LA UOC LUONG vi nguon khong tach ro so luong doanh nghiep Viet. Coverage % chi mang tinh chi bao, KHONG cong bo nhu ty le chinh xac."
+
+scope_note:
+  du_dieu_kien: "LAM CHU CONG NGHE. Don vi thiet ke, che tao, san xuat, hoac nghien cuu cong nghe loi thuoc nhom. Bang chung phai la nang luc da hinh thanh (san pham, nguyen mau, day chuyen, cong bo, khach hang that), khong phai y dinh."
+  khong_du_dieu_kien: "VAN HANH VA KHAI THAC DICH VU tren cong nghe do don vi khac lam ra. Vi du: nha mang thuong mai hoa 5G bang thiet bi mua ngoai; dai ly phan phoi; don vi chi tich hop san pham co san. Ghi honest-null kem ly do, khong nap."
+  ranh_gioi_xam: "Don vi vua van hanh vua tu phat trien mot phan cong nghe loi thi XET THEO BANG CHUNG CU THE cua phan tu phat trien, khong xet theo quy mo van hanh."
+  ap_dung_16_08_2026: "MobiFone: nguon chung minh trien khai 5G SA va NSA thuong mai, tuc VAN HANH. Khong tim thay bang chung MobiFone tu thiet ke hay che tao thiet bi mang. KET LUAN: KHONG NAP. Se nap neu sau nay co bang chung phan tu phat trien."
 
 refresh_days:
   default: 180
