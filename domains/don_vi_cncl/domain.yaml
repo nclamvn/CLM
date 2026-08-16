@@ -24,4 +24,4 @@ refresh_days:
 
 alias_map: {}                     # chi gop khi chac cung mot thuc the (VD Viettel High Tech <-> VHT)
 
-ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
+ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"], ["FPT", "FPT Semiconductor"], ["CT Group", "CT Semiconductor"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
