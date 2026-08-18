@@ -1,10 +1,13 @@
-44
+36
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
 #   18/08/2026  46 -> 44  vong dau. VNPT Technology: cao lai tim duoc nguon tier A mst.gov.vn
 #                         02/07/2026, khong nhac lai thiet bi 5G nen KHONG tinh la da lam moi;
 #                         ghi GIU NGUON CU kem can cu cho 2 claim 2022.
+#   18/08/2026  44 -> 36  vong hai, nam don vi con lai trong match da ky. FPT Semiconductor co nguon
+#                         moi vjst.vn 15/06/2026. Bon don vi con lai deu la SU KIEN DA XAY RA nen ghi
+#                         GIU NGUON CU kem can cu, khong phai vi tim duoc nguon moi.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
