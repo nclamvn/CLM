@@ -18,11 +18,30 @@ Anh xa:
 
 Exit 0 neu ghi xong. Exit 2 neu phat hien span khong con nam trong snapshot dich (fail-loud).
 """
-import json, os, sys, unicodedata, html
+import json, os, shutil, sys, unicodedata, html
 from pathlib import Path
 
-SUP = Path("/sessions/exciting-busy-clarke/mnt/CNCLData/domains/don_vi_cncl")
-DEM = Path("/sessions/exciting-busy-clarke/mnt/KnowledgeBase/Dataset_CongNgheChienLuoc")
+def goc(*duoi):
+    """Tra ve duong dan that, chay duoc o CA HAI moi truong.
+
+    VI SAO: cung mot dia nhung hai goc khac nhau. Claude Code tren may thay /Users/os/...,
+    con moi truong bash trong Cowork thay /sessions/<phien>/mnt/... Duong dan cung theo mot
+    goc thi moi truong kia chay la gay, va gay o cho kho doan vi loi hien ra la
+    "thieu ban chup" chu khong phai "sai duong dan".
+
+    Khong co goc nao ton tai thi BAO NGAY luc nap, khong de den luc doc file moi vo.
+    """
+    for g in (Path("/Users/os"), Path("/sessions/exciting-busy-clarke/mnt")):
+        p = g.joinpath(*duoi)
+        if p.exists():
+            return p
+    raise SystemExit(f"KHONG THAY {'/'.join(duoi)} o ca hai goc (/Users/os va /sessions/.../mnt). "
+                     f"Kiem tra dang chay o moi truong nao.")
+
+
+SUP = goc("CNCLData", "domains", "don_vi_cncl")
+DEM = goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") if Path("/Users/os/RtR").exists() \
+    else goc("KnowledgeBase", "Dataset_CongNgheChienLuoc")
 DST = Path(__file__).parent / "domains" / "cncl_match"
 
 
@@ -32,6 +51,49 @@ def norm(s):
 
 def read_jsonl(p):
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def dong_bo_snapshot(rows):
+    """Chep ban chup tu hai mien GOC sang mien dan xuat, va noi ro cai gi doi.
+
+    VI SAO CO HAM NAY (16/08/2026): hai vong lien tiep vap cung mot bay. Sua ban chup ben
+    CNCLData xong, chay build o day thi no doc ban chup CU trong domains/cncl_match/snapshots
+    va bao hang loat SPAN_LOST. Khong hong du lieu vi cong chan dung, nhung thu phai nho hai
+    lan thi thuoc loai phai tu dong hoa, khong phai loai ghi vao tai lieu roi mong minh nho.
+
+    HAI LUAT, deu la de KHONG lam ro ri:
+      1. Ban chup goc THIEU thi FAIL, khong duoc lang le xai ban cu con nam trong mien dan
+         xuat. Thieu dieu kien ma he van chay tiep thi cho suy bien do chinh la duong ro.
+      2. Moi lan chep de deu IN TEN FILE. Dong bo im lang lam mat dau vet mot su that quan
+         trong: ban chup vua doi chu, tuc moi thu tua vao no can duoc nhin lai.
+    """
+    can = sorted({r["capture"]["snapshot"] for r in rows})
+    dich = DST / "snapshots"
+    dich.mkdir(parents=True, exist_ok=True)
+    them, doi, thieu = [], [], []
+    for ten in can:
+        goc = next((p for p in (SUP / "snapshots" / ten, DEM / "snapshots" / ten) if p.exists()), None)
+        if goc is None:
+            thieu.append(ten)
+            continue
+        d = dich / ten
+        if not d.exists():
+            shutil.copy2(goc, d)
+            them.append(ten)
+        elif goc.read_bytes() != d.read_bytes():
+            shutil.copy2(goc, d)
+            doi.append(ten)
+    print(f"SNAPSHOT: {len(can)} can · them {len(them)} · cap nhat {len(doi)} · thieu {len(thieu)}")
+    for t in them:
+        print(f"  [THEM]     {t}")
+    for t in doi:
+        print(f"  [CAP NHAT] {t}  (ban chup goc da doi chu, moi thu tua vao no can nhin lai)")
+    for t in thieu:
+        print(f"  [THIEU]    {t}  KHONG co o ca hai mien goc")
+    if thieu:
+        print(f"FAIL: {len(thieu)} ban chup khong co ban goc. Khong xai ban cu de chay tiep.")
+        return 2
+    return 0
 
 
 def main():
@@ -142,6 +204,10 @@ def main():
             rows.append({"entity": ent, "field": fname, "value": part,
                          "evidence_span": c["evidence_span"], "extraction": c.get("extraction", "verbatim"),
                          "tier": c.get("tier", "A"), "capture": cap, "note": note})
+
+    # ---------- dong bo ban chup truoc khi kiem ----------
+    if dong_bo_snapshot(rows) != 0:
+        return 2
 
     # ---------- cong tu kiem truoc khi ghi ----------
     cache, bad = {}, 0
