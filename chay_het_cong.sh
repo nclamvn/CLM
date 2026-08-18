@@ -85,6 +85,16 @@ chay CaoLocMatch match_run        "$CLM" 'digest_matches'        python3 match_e
 chay CaoLocMatch restore_signoff  "$CLM" 'RESTORE|BANG CHUNG'    python3 match_engine.py restore-signoff domains/cncl_match out/matches.jsonl
 chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_engine.py validate domains/cncl_match out/matches.jsonl --require-signoff
 
+# ── Web: so tren trang phai la so sinh tu registry, khong go tay ────────────
+# Bo sinh la mot cong chu khong phai tien ich: no FAIL khi thieu ban chup goc, va no la
+# thu duy nhat duoc phep viet lib/cncl-*.ts. Chay no o day de bang trang thai bat duoc
+# chuyen "web lech so voi registry" ngay khi no vua xay ra.
+TOUCH=$(tim_kho .touch || true)
+if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
+  chay .touch      sinh_du_lieu_web "$TOUCH" 'REGISTRY:|FAIL:'   node scripts/gen-cncl-data.mjs
+  chay .touch      cong_em_dash     "$TOUCH" 'OK:|FAIL:'         node scripts/check-emdash.mjs
+fi
+
 # ── Ba bo rang: cong nao cung phai tu chung minh no con can ─────────────────
 if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
