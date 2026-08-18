@@ -92,7 +92,14 @@ chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_e
 TOUCH=$(tim_kho .touch || true)
 if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      sinh_du_lieu_web "$TOUCH" 'REGISTRY:|FAIL:'   node scripts/gen-cncl-data.mjs
+  # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
+  # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
+  # gio lech voi du lieu that.
+  chay .touch      sinh_tra_cuu     "$TOUCH" 'TRA CUU:|FAIL:'    node scripts/gen-tracuu-html.mjs
   chay .touch      cong_em_dash     "$TOUCH" 'OK:|FAIL:'         node scripts/check-emdash.mjs
+  if [ "$NHANH" -eq 0 ]; then
+    chay .touch    rang_tra_cuu     "$TOUCH" 'BITE TRA CUU'      node scripts/bite_tracuu.mjs
+  fi
 fi
 
 # ── Ba bo rang: cong nao cung phai tu chung minh no con can ─────────────────
