@@ -24,16 +24,36 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
-from build_cncl_match import SUP  # dung chung mot nguon su that ve duong dan
+from ban_tam import ban_tam
 
-LENH = ROOT / "chay_het_cong.sh"
-CLAIMS = SUP / "claims.jsonl"
-FRESH = SUP.parent.parent / ".fidelity_fresh"
+BT = None  # dat trong main(), moi thao tac deu tren BAN SAO
 
 
 def chay_lenh():
-    r = subprocess.run(["bash", str(LENH), "--nhanh"], capture_output=True, text=True)
+    """Chay bang trang thai TREN BAN SAO. Kho that khong bi cham, ke ca khi rang tiem loi."""
+    r = subprocess.run(["bash", str(BT.match / "chay_het_cong.sh"), "--nhanh"],
+                       capture_output=True, text=True, env=BT.moi_truong)
     return r.returncode, r.stdout + r.stderr
+
+
+def _duong_that():
+    """Cac file THAT ma phep thu tuyet doi khong duoc cham. Bo qua file chua ton tai."""
+    from ban_tam import _goc
+    ds = []
+    for duoi in [("CNCLData", "domains", "don_vi_cncl", "claims.jsonl"),
+                 ("RtR", "KnowledgeBase", "CaoLocMatch_PoC", "CaoLocMatch_TraCuu.html"),
+                 ("KnowledgeBase", "CaoLocMatch_PoC", "CaoLocMatch_TraCuu.html"),
+                 (".touch", "lib", "cncl-registry.ts"),
+                 (".touch", "lib", "cncl-match.ts")]:
+        p = _goc(*duoi)
+        if p and p.is_file():
+            ds.append(p)
+    return ds
+
+
+def _van_tay(ds):
+    import hashlib
+    return {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in ds}
 
 
 def o_bang(out, cong):
@@ -46,52 +66,61 @@ def o_bang(out, cong):
 
 
 def main():
-    if not LENH.exists():
-        print(f"KHONG CHAY DUOC: thieu {LENH.name}")
-        return 3
-    if not CLAIMS.exists() or not FRESH.exists():
-        print("KHONG CHAY DUOC: thieu claims.jsonl hoac .fidelity_fresh")
-        return 3
+    global BT
+    duong_that = _duong_that()
+    van_tay_truoc = _van_tay(duong_that)
+    with ban_tam() as bt:
+        BT = bt
+        claims = bt.cncl / "domains" / "don_vi_cncl" / "claims.jsonl"
+        fresh = bt.cncl / ".fidelity_fresh"
+        if not (bt.match / "chay_het_cong.sh").exists():
+            print("KHONG CHAY DUOC: ban tam thieu chay_het_cong.sh")
+            return 3
+        if not claims.exists() or not fresh.exists():
+            print("KHONG CHAY DUOC: ban tam thieu claims.jsonl hoac .fidelity_fresh")
+            return 3
 
-    giu = CLAIMS.read_bytes()
-    ok1 = ok2 = ok3 = False
-    tam = FRESH.parent / ".fidelity_fresh__bite_tam"
-    try:
+        ok1 = ok2 = ok3 = False
+        tam = fresh.parent / ".fidelity_fresh__bite_tam"
+
         # ── RANG 1 · tiem loi that, doi bao DO ────────────────────────────────
-        rows = [json.loads(l) for l in CLAIMS.read_text(encoding="utf-8").splitlines() if l.strip()]
+        rows = [json.loads(l) for l in claims.read_text(encoding="utf-8").splitlines() if l.strip()]
         rows[0]["evidence_span"] = rows[0]["evidence_span"] + " CAU NAY KHONG CO TRONG BAN CHUP"
-        CLAIMS.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n",
+        giu = claims.read_bytes()
+        claims.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n",
                           encoding="utf-8")
         rc, out = chay_lenh()
         ok1 = rc == 1 and o_bang(out, "refinery") == "DO"
         print(f"{'RANG 1 · bao DO khi co loi that':38s} : " +
               ("CAN OK (exit 1, refinery DO)" if ok1 else f"KHONG CAN !! exit{rc} o={o_bang(out,'refinery')}"))
-        CLAIMS.write_bytes(giu)
+        claims.write_bytes(giu)
 
         # ── RANG 2 · mat dieu kien chay, doi KHONG CHAY DUOC ──────────────────
-        FRESH.rename(tam)
+        fresh.rename(tam)
         rc, out = chay_lenh()
         o = o_bang(out, "doi_chung_nguon")
         ok2 = rc != 0 and o == "KHONG CHAY"
         print(f"{'RANG 2 · vang tin khong phai tin tot':38s} : " +
               ("CAN OK (KHONG CHAY DUOC, exit khac 0)" if ok2 else f"KHONG CAN !! exit{rc} o={o}"))
-        tam.rename(FRESH)
+        tam.rename(fresh)
 
         # ── RANG 3 · khong bao do oan ─────────────────────────────────────────
         rc, out = chay_lenh()
         ok3 = rc == 0 and "TAT CA XANH" in out
         print(f"{'RANG 3 · khong bao DO oan':38s} : " +
               ("CAN OK (exit 0, tat ca xanh)" if ok3 else f"KHONG CAN !! exit{rc}\n{out[-700:]}"))
-    finally:
-        CLAIMS.write_bytes(giu)
-        if tam.exists() and not FRESH.exists():
-            tam.rename(FRESH)
-        rc, out = chay_lenh()
-        if rc != 0:
-            print(f"!! PHUC HOI HONG: chay lai sau khi tra ve van exit{rc}\n{out[-700:]}")
-            return 1
 
-    tat_ca = ok1 and ok2 and ok3
+        # ── RANG 4 · khong cham ban that ──────────────────────────────────────
+        # Ba rang tren da tiem loi ba lan. Neu ban that con nguyen thi moi chung minh duoc
+        # ban lam viec tam that su cach ly, chu khong phai chi doi ten thu muc cho vui.
+        van_tay_sau = _van_tay(duong_that)
+        doi = [p for p in van_tay_truoc if van_tay_truoc[p] != van_tay_sau.get(p)]
+        ok4 = bool(duong_that) and not doi
+        print(f"{'RANG 4 · khong cham ban that':38s} : " +
+              (f"CAN OK ({len(duong_that)} file that con nguyen tung byte)" if ok4
+               else f"KHONG CAN !! da doi: {', '.join(Path(p).name for p in doi) or 'khong tim thay file that de doi chieu'}"))
+
+    tat_ca = ok1 and ok2 and ok3 and ok4
     print("-" * 62)
     print("BITE CHAY HET CONG:", "RANG CAN" if tat_ca else "CO RANG KHONG CAN")
     return 0 if tat_ca else 1

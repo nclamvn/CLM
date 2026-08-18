@@ -21,6 +21,17 @@ Exit 0 neu ghi xong. Exit 2 neu phat hien span khong con nam trong snapshot dich
 import json, os, shutil, sys, unicodedata, html
 from pathlib import Path
 
+def goc_moi_truong(bien):
+    """Ban lam viec tam: CLM_KHO_* tro toi mot BAN SAO cua kho, dung cho cac bo rang.
+
+    Vi sao (18/08/2026): rang phai tiem loi that roi xem cong co no khong. Tiem thang vao
+    kho that thi trong vai giay do file nguoi dung cam mang du lieu hong. Bien nay cho rang
+    lam viec tren ban sao. Khong dat thi chay tren kho that nhu binh thuong.
+    """
+    v = os.environ.get(bien)
+    return Path(v) if v else None
+
+
 def goc(*duoi):
     """Tra ve duong dan that, chay duoc o CA HAI moi truong.
 
@@ -39,9 +50,12 @@ def goc(*duoi):
                      f"Kiem tra dang chay o moi truong nao.")
 
 
-SUP = goc("CNCLData", "domains", "don_vi_cncl")
-DEM = goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") if Path("/Users/os/RtR").exists() \
-    else goc("KnowledgeBase", "Dataset_CongNgheChienLuoc")
+SUP = goc_moi_truong("CLM_KHO_CNCL") or goc("CNCLData", "domains", "don_vi_cncl")
+if goc_moi_truong("CLM_KHO_CNCL"):
+    SUP = SUP / "domains" / "don_vi_cncl"
+DEM = goc_moi_truong("CLM_KHO_DEM") or (
+    goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") if Path("/Users/os/RtR").exists()
+    else goc("KnowledgeBase", "Dataset_CongNgheChienLuoc"))
 DST = Path(__file__).parent / "domains" / "cncl_match"
 
 

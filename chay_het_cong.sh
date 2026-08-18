@@ -33,7 +33,16 @@ done
 # ── Duong dan chay duoc o CA HAI moi truong ─────────────────────────────────
 # Claude Code tren may thay /Users/os/..., bash trong Cowork thay /sessions/<phien>/mnt/...
 # Cung mot dia, hai goc. Neo cung mot goc thi moi truong kia gay o cho kho doan.
+# BAN LAM VIEC TAM: bien moi truong CLM_KHO_* de tro toi mot BAN SAO cua kho.
+# Vi sao: cac bo rang phai tiem loi that vao du lieu roi xem cong co no khong. Truoc
+# 18/08/2026 chung tiem thang vao kho that va tra lai sau. Tra dung, nhung trong vai giay
+# do file NGUOI DUNG CAM mang du lieu hong. Nay rang dung ban sao, kho that khong bi cham.
 tim_kho() {
+  case "$1" in
+    CNCLData)    [ -n "${CLM_KHO_CNCL:-}" ]  && { echo "$CLM_KHO_CNCL"; return 0; } ;;
+    CaoLocMatch) [ -n "${CLM_KHO_MATCH:-}" ] && { echo "$CLM_KHO_MATCH"; return 0; } ;;
+    .touch)      [ -n "${CLM_KHO_TOUCH:-}" ] && { echo "$CLM_KHO_TOUCH"; return 0; } ;;
+  esac
   for g in /Users/os /sessions/*/mnt; do
     [ -d "$g/$1" ] && { echo "$g/$1"; return 0; }
   done

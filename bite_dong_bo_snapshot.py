@@ -21,24 +21,30 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
-from build_cncl_match import SUP, DST  # dung chung mot nguon su that ve duong dan
+from ban_tam import ban_tam
 
-SUP_SNAP = SUP / "snapshots"
-DST_SNAP = DST / "snapshots"
 FILE = "vjst_viettel_llm_20260718.html"
 CU = "Có mô hình xác suất có khả năng hiểu và sinh ngôn ngữ tự nhiên (LLM)"
+BT = None  # dat trong main(); moi thao tac deu tren BAN SAO, kho that khong bi cham
 
 
 def build():
-    r = subprocess.run([sys.executable, str(ROOT / "build_cncl_match.py")],
-                       cwd=str(ROOT), capture_output=True, text=True)
+    r = subprocess.run([sys.executable, str(BT.match / "build_cncl_match.py")],
+                       cwd=str(BT.match), capture_output=True, text=True, env=BT.moi_truong)
     return r.returncode, r.stdout + r.stderr
 
 
 def main():
-    goc, dan_xuat = SUP_SNAP / FILE, DST_SNAP / FILE
+    global BT
+    with ban_tam(can_touch=False) as bt:
+        BT = bt
+        return _chay(bt.cncl / "domains" / "don_vi_cncl" / "snapshots" / FILE,
+                     bt.match / "domains" / "cncl_match" / "snapshots" / FILE)
+
+
+def _chay(goc, dan_xuat):
     if not goc.exists() or not dan_xuat.exists():
-        print(f"KHONG CHAY DUOC: thieu {FILE} o mien goc hoac mien dan xuat")
+        print(f"KHONG CHAY DUOC: ban tam thieu {FILE} o mien goc hoac mien dan xuat")
         return 3
 
     giu_goc = goc.read_bytes()
