@@ -775,6 +775,34 @@ def _val_flag(argv, name):
     return None
 
 
+def bang_chung_digest(domain_dir, m):
+    """Khoa CHU CUA BANG CHUNG ma mot match dua vao (fact_id + snapshot + evidence_span).
+
+    VI SAO CAN, phat hien 16/08/2026: fact_id = sha1(entity|field|value), tuc KHONG phu
+    evidence_span. Vong doi chung nguon vua viet lai 25 span (co ca cau bi viet lai chu
+    khong chi lech dinh dang), the ma restore-signoff gan lai DU 12/12 chu ky, khong dong
+    nao bao dong. Nguoi gac cong ky tren mot cau, cau doi, chu ky van con: do la chu ky
+    treo lo lung. Khoa nay lam viec do lo ra.
+
+    KHONG gop vao digest cu: gop thi ca 12 chu ky doi khoa mot luc, khong phan biet duoc
+    dong nao that su bi dung toi bang chung. De rieng thi so chi ra dung dong bi anh huong.
+    """
+    facts = {}
+    p = Path(domain_dir)
+    p = p if p.is_file() else p / "claims.jsonl"
+    if p.exists():
+        for line in p.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            c = json.loads(line)
+            fid = fact_id(c["entity"], c["field"], c["value"])
+            cap = c.get("capture") or {}
+            facts.setdefault(fid, set()).add(f"{cap.get('snapshot','')}::{c.get('evidence_span','')}")
+    ids = sorted((m["demand"].get("need_fact_ids") or []) + (m["supply"].get("capability_fact_ids") or []))
+    raw = "|".join(f"{i}=>" + "~".join(sorted(facts.get(i, {"KHONG-CO-BANG-CHUNG"}))) for i in ids)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
 def _match_khoa(m):
     """Khoa NOI DUNG cua mot match, dung lam dinh danh THAT trong so chu ky.
 
@@ -864,6 +892,7 @@ def _ghi_so(domain_dir, chon, by, date, decision, ly_do=None):
     by_digest = {r["khoa"]["digest"]: i for i, r in enumerate(rows)}
     for m in chon:
         khoa = _match_khoa(m)
+        khoa["bang_chung"] = bang_chung_digest(domain_dir, m)
         rec = {"match_id": m["id"], "decision": decision, "by": by,
                "role": "chuyen gia gac cong", "date": date, "khoa": khoa,
                "engine_version": (m.get("rationale") or {}).get("computed_by"),
@@ -959,6 +988,38 @@ def reject_matches(matches_path, by, date, ids, reason, domain_dir=None):
     print(f"  so chu ky: {_ledger_path(dd)} ({n} dong, DUOC GIT THEO DOI)")
 
 
+def migrate_ledger(domain_dir, matches_path, truoc):
+    """Dong khoa bang chung cho cac dong ky TRUOC khi khoa nay ton tai (16/08/2026).
+
+    BAT BUOC co `--truoc`: duong dan toi ban claims DUNG LUC KY (lay tu git). Neu lay
+    ban HIEN TAI ma dong dau thi moi dong deu khop, tuc la lang le hop thuc hoa dung cai
+    thay doi ma khoa nay sinh ra de bat. Do la ky nguoc, khong phai di cu.
+    """
+    tp = Path(truoc)
+    if not tp.exists():
+        print(f"KHONG CHAY DUOC: khong thay ban claims luc ky {truoc!r}")
+        return 3
+    rows = [json.loads(l) for l in Path(matches_path).read_text(encoding="utf-8").splitlines() if l.strip()]
+    theo_digest = {_match_khoa(m)["digest"]: m for m in rows}
+    so = _read_ledger(domain_dir)
+    n, thieu = 0, []
+    for r in so:
+        if (r.get("khoa") or {}).get("bang_chung"):
+            continue
+        m = theo_digest.get(r["khoa"]["digest"])
+        if m is None:
+            thieu.append(r.get("match_id"))
+            continue
+        r["khoa"]["bang_chung"] = bang_chung_digest(tp, m)
+        r["khoa_bang_chung_dong_tu"] = str(truoc)
+        n += 1
+    _write_ledger(domain_dir, so)
+    print(f"MIGRATE: dong khoa bang chung cho {n} dong so, lay tu {truoc}")
+    if thieu:
+        print(f"  KHONG DOI CHIEU DUOC: {', '.join(str(x) for x in thieu)} (cap khong con trong ket qua chay)")
+    return 0
+
+
 def restore_signoff(domain_dir, matches_path):
     """Gan lai chu ky tu so vao file match moi sinh, KHOP THEO KHOA NOI DUNG.
 
@@ -968,12 +1029,21 @@ def restore_signoff(domain_dir, matches_path):
     ledger = {r["khoa"]["digest"]: r for r in _read_ledger(domain_dir)}
     p = Path(matches_path)
     rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
-    gan, chua = [], []
+    gan, chua, doi_bang_chung, chua_khoa = [], [], [], []
     for m in rows:
         k = _match_khoa(m)
         r = ledger.get(k["digest"])
         if r is None:
             chua.append(m["id"])
+            continue
+        # Chu ky chi con gia tri neu CHU CUA BANG CHUNG van dung chu luc ky.
+        cu = (r.get("khoa") or {}).get("bang_chung")
+        moi = bang_chung_digest(domain_dir, m)
+        if cu is None:
+            chua_khoa.append(m["id"])
+            continue
+        if cu != moi:
+            doi_bang_chung.append(m["id"])
             continue
         m["gate"]["signoff"] = {"by": r["by"], "role": r["role"], "date": r["date"],
                                 "decision": r["decision"]}
@@ -986,7 +1056,13 @@ def restore_signoff(domain_dir, matches_path):
         print(f"  da gan  : {', '.join(gan)}")
     if chua:
         print(f"  CHUA KY : {', '.join(chua)}  (khoa noi dung khong co trong so, phai de nguoi ky)")
-    return len(chua)
+    if doi_bang_chung:
+        print(f"  BANG CHUNG DOI CHU: {', '.join(doi_bang_chung)}")
+        print("     Cap van dung cap do, nhung CAU LAM BANG da khac luc ky. Chu ky khong duoc gan lai.")
+    if chua_khoa:
+        print(f"  SO CU CHUA CO KHOA BANG CHUNG: {', '.join(chua_khoa)}")
+        print("     Chay `migrate-ledger` de dong khoa bang chung cho cac dong ky truoc 16/08/2026.")
+    return len(chua) + len(doi_bang_chung) + len(chua_khoa)
 
 
 def _canh_bao_ghi_de(out_dir, domain_dir, force):
@@ -1040,6 +1116,12 @@ if __name__ == "__main__":
                          domain_dir=_val_flag(sys.argv, "--domain"))
         elif len(args) >= 3 and args[0] == "restore-signoff":
             sys.exit(2 if restore_signoff(args[1], args[2]) else 0)
+        elif len(args) >= 3 and args[0] == "migrate-ledger":
+            truoc = _val_flag(sys.argv, "--truoc")
+            if not truoc:
+                sys.exit("migrate-ledger can --truoc <claims.jsonl DUNG LUC KY, lay tu git>. "
+                         "Dong dau bang ban hien tai la hop thuc hoa chinh thay doi can bat.")
+            sys.exit(migrate_ledger(args[1], args[2], truoc))
         elif len(args) >= 4 and args[0] == "reject":
             ids = _csv_flag(sys.argv, "--ids")
             reason = _val_flag(sys.argv, "--reason")
@@ -1054,7 +1136,8 @@ if __name__ == "__main__":
                      "validate <domain_dir> <matches.jsonl> [--require-signoff] | "
                      "sign <matches.jsonl> <nguoi> <ngay> [--only ID,ID | --except ID,ID] [--domain DIR] | "
                      "reject <matches.jsonl> <nguoi_gac_cong> <ngay> --ids ID,ID --reason \"...\" | "
-                     "restore-signoff <domain_dir> <matches.jsonl>")
+                     "restore-signoff <domain_dir> <matches.jsonl> | "
+                     "migrate-ledger <domain_dir> <matches.jsonl> --truoc <claims.jsonl luc ky>")
     except (GateError, refinery.GateError) as e:
         print(f"GATE BITES · {e}")
         sys.exit(2)
