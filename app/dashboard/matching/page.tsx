@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DashTopBar } from '@/components/dash/DashTopBar';
 import { MatchingWorkbench } from '@/components/dash/MatchingWorkbench';
+import { matchMeta } from '@/lib/cncl-match';
 
 export const metadata: Metadata = {
   title: 'Matching Workbench - .touch',
@@ -12,7 +13,7 @@ export default function MatchingPage() {
     <>
       <DashTopBar
         title="Matching Workbench"
-        subtitle="Capability-to-demand linkage · confidence ladder · human review. MATCH: DEMO (engine chưa chạy match thật)"
+        subtitle={`Ghép cầu với cung trên registry thật · ${matchMeta.daKy} match đã ký bởi ${matchMeta.nguoiKy} · quy tắc ${matchMeta.rule}`}
       />
       <div className="dash-content">
         <MatchingWorkbench />

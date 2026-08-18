@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  Cong cung: bat ky tu em-dash U+2014 trong source. Ket qua phai bang 0.
+  Cong cung: bat ky tu em-dash U+2014 trong source. Ket qua phai bang 0. En-dash U+2013 duoc phep.
   Quet app, components, lib, va cac file cau hinh goc. Bo qua node_modules, .next,
   public/fonts (nhi phan). Dung trong scripts va truoc moi ban giao TIP.
 */
@@ -25,11 +25,18 @@ const EXCLUDE_SUFFIX = [
   'docs/design/touch-portal-tokens.json',
 ];
 // Dau bi cam, dinh nghia bang code point de chinh file nay khong chua literal.
-// Ca em-dash (U+2014) lan en-dash (U+2013): nguoi doc thuong khong phan biet,
-// deu la dau vet AI voi khach nhay cam (quyet dinh Con nguoi, 2026-07-14).
+//
+// NOI LUAT 18/08/2026 (Con nguoi quyet, thay quyet dinh 2026-07-14): CHI cam em-dash
+// U+2014. En-dash U+2013 DUOC PHEP. Ly do: em-dash la dau vet AI ro rang trong van phong,
+// con en-dash la dau cau binh thuong cua tieng Viet in an. Cung luat da ap cho
+// CNCLData/check_dash.py tu 16/08.
+//
+// Ly do thu hai, nang hon: tu 18/08 lib/cncl-registry.ts chua CAU TRICH NGUYEN VAN tu
+// nguon that. Bat cong nay cam en-dash trong do se ep phai SUA CHU CUA NGUON de qua cong,
+// tuc pham dung cai loi ma ba vong vua roi bo cong sua: viet lai cau roi van goi la
+// verbatim. Cong van phong khong duoc phep de len cong nguyen van.
 const BANNED = [
   { name: 'em-dash U+2014', ch: String.fromCharCode(0x2014) },
-  { name: 'en-dash U+2013', ch: String.fromCharCode(0x2013) },
 ];
 
 let hits = 0;
@@ -74,7 +81,7 @@ for (const f of ROOT_FILES) {
 }
 
 if (hits > 0) {
-  console.error(`\nFAIL: tim thay ${hits} dau bi cam (em-dash U+2014 hoac en-dash U+2013). Phai bang 0.`);
+  console.error(`\nFAIL: tim thay ${hits} em-dash U+2014. Phai bang 0. (en-dash U+2013 duoc phep tu 18/08/2026)`);
   process.exit(1);
 }
-console.log('OK: 0 em-dash, 0 en-dash.');
+console.log('OK: 0 em-dash U+2014 (en-dash U+2013 duoc phep).');

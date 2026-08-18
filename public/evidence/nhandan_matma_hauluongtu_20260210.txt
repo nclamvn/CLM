@@ -1,0 +1,13 @@
+# SNAPSHOT · nhandan.vn (Bao Nhan Dan dien tu) · captured 2026-08-16 via web_fetch (text extraction)
+# URL: https://nhandan.vn/tu-chu-cong-nghe-bao-mat-san-sang-lo-trinh-chuyen-dich-mat-ma-hau-luong-tu-post942147.html
+# Bai dang 10/02/2026. Tier B. Trich cau nguyen van, khong sua chu.
+
+# Tu chu cong nghe bao mat, san sang lo trinh chuyen dich mat ma hau luong tu
+
+## Thuat toan chu ky so hau luong tu VN-PQSign cua Vien Khoa hoc-Cong nghe mat ma
+
+Một trong những nội dung thu hút sự chú ý của giới khoa học là phần trình bày của nhóm nghiên cứu thuộc Viện Khoa học-Công nghệ mật mã (Ban Cơ yếu Chính phủ). Đơn vị đã giới thiệu thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign.
+
+## Lotus GovID cua MK Smart dat chung chi Common Criteria EAL 5+
+
+Sản phẩm Lotus GovID của MK Smart đã đạt chứng chỉ Common Criteria (CC) mức EAL 5+ theo quyết định BOE-A-2026-1037, góp phần tạo nên “Giấy thông hành” quyền lực của công nghệ Việt Nam.

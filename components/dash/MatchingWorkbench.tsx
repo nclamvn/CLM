@@ -1,111 +1,131 @@
 'use client';
 
 import { useState } from 'react';
-import { hubMatches, type HubMatch, type Badge } from '@/lib/demo-data';
+import { signedMatches, rejectedPairs, matchMeta, type SignedMatch, type MatchEvidence } from '@/lib/cncl-match';
 
 /**
- * Matching Workbench (Pha 3, handbook muc 4 poster p4): 3 cot
- * A demand/filters 280px · B candidates + confidence ladder · C evidence trail + human decision 320px,
- * sticky action footer. TOAN BO DEMO co nhan: engine chua chay match that (thieu chieu CAU).
- * Approve/Reject CHI ghi UI-state kem ghi chu bat buoc, KHONG tiem vai nguoi gac cong that.
+ * Matching Workbench. DU LIEU THAT tu 18/08/2026: 12 match da qua toan bo chuoi cong va
+ * mang chu ky that cua nguoi gac cong, sinh boi scripts/gen-cncl-data.mjs.
+ *
+ * VI SAO BO NUT APPROVE/REJECT (quyet dinh 18/08/2026):
+ * Ban DEMO cu co hai nut ghi UI-state kem ghi chu. Khi match con la minh hoa thi vo hai.
+ * Nay match la that va da co chu ky that trong so, hai nut do tro thanh mot DUONG KY THU HAI:
+ * yeu hon duong that (khong qua cong, khong vao so, khong khoa bang chung) nhung nhin giong
+ * het. Nguoi dung se tuong minh vua duyet mot match.
+ *
+ * Duong ky duy nhat la lenh cua engine:
+ *     python3 match_engine.py sign out/matches.jsonl "<ten>" <ngay> [--only ID]
+ * No ghi vao so co khoa noi dung VA khoa bang chung, nen sua mot chu trong cau lam bang la
+ * chu ky rung ra. Man nay chi DOC va HIEN chu ky do. Xem reports/KHOA_BANG_CHUNG_verify.md.
+ *
+ * Man nay khong duoc phep tao chu ky. Do la ranh gioi, khong phai thieu tinh nang.
  */
 
-type Decision = { verdict: 'approve' | 'reject'; note: string };
+function thang(score: number): { label: string; tone: string } {
+  if (score >= 0.75) return { label: 'Khớp mạnh', tone: 'green' };
+  if (score >= 0.60) return { label: 'Khớp khá', tone: 'blue' };
+  if (score >= 0.50) return { label: 'Khớp vừa', tone: 'amber' };
+  return { label: 'Khớp yếu', tone: 'red' };
+}
 
-function ladder(score: number): { label: string; tone: string } {
-  if (score >= 0.9) return { label: 'High match', tone: 'green' };
-  if (score >= 0.85) return { label: 'Strong match', tone: 'blue' };
-  if (score >= 0.8) return { label: 'Moderate match', tone: 'amber' };
-  return { label: 'Weak match', tone: 'red' };
+const tenCau = (id: string) => id.replace(' · nhu cầu quốc gia', '').replace('san_pham_', 'SP ');
+
+function EvidenceBlock({ nhan, ds }: { nhan: string; ds: MatchEvidence[] }) {
+  return (
+    <div className="mw-ev">
+      <div className="mw-eyebrow">{nhan}</div>
+      {ds.length === 0 ? (
+        <p className="mw-hint">Không có fact nào, đây là bất thường và cần soi lại.</p>
+      ) : ds.map((e, i) => (
+        <figure key={i} className="mw-quote">
+          <blockquote className="mw-quote__txt">{e.span}</blockquote>
+          <figcaption className="mw-quote__cap">
+            <span className={`chip ${e.tier === 'A' ? 'chip--pass' : e.tier === 'B' ? 'chip--public' : 'chip--private'} reg-tier`}>
+              {`Tier ${e.tier}`}
+            </span>
+            <a className="reg-src" href={e.href} target="_blank" rel="noopener noreferrer">{e.source}</a>
+            <span className="t-mono-01">{e.field}</span>
+            {e.extraction !== 'verbatim' ? (
+              <span className="chip chip--private reg-tier" title="Giá trị chuẩn hoá từ câu nguồn, không trích nguyên văn">
+                {e.extraction}
+              </span>
+            ) : null}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  );
 }
 
 export function MatchingWorkbench() {
-  const [filter, setFilter] = useState<'ALL' | Badge>('ALL');
   const [sel, setSel] = useState(0);
-  const [note, setNote] = useState('');
-  const [decisions, setDecisions] = useState<Record<string, Decision>>({});
-
-  const list = hubMatches.filter((m) => filter === 'ALL' || m.badge === filter);
-  const current: HubMatch | undefined = list[Math.min(sel, Math.max(0, list.length - 1))];
-  const decided = current ? decisions[current.code] : undefined;
-
-  function decide(verdict: Decision['verdict']) {
-    if (!current || note.trim().length === 0) return;
-    setDecisions((d) => ({ ...d, [current.code]: { verdict, note: note.trim() } }));
-    setNote('');
-  }
+  const list = signedMatches;
+  const current: SignedMatch | undefined = list[Math.min(sel, Math.max(0, list.length - 1))];
 
   return (
-    <div className="mw" data-demo="true">
-      <aside className="mw-col mw-left" aria-label="Demand va bo loc">
+    <div className="mw">
+      <aside className="mw-col mw-left" aria-label="Tong quan va quyet dinh nguoi">
         <div className="mw-panel">
-          <div className="mw-eyebrow">Demand summary</div>
-          <p className="mw-demand-note">
-            Chiều CẦU thật chưa có (chờ dataset PoC). Demand dưới đây là DEMO minh hoạ luồng duyệt.
-          </p>
-          <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Filters</div>
-          <div className="mw-filters" role="group" aria-label="Loc theo trang thai">
-            {(['ALL', 'VOUCHED', 'READY'] as const).map((f) => (
-              <button
-                key={f}
-                type="button"
-                className={`mw-chip${filter === f ? ' is-on' : ''}`}
-                aria-pressed={filter === f}
-                onClick={() => { setFilter(f); setSel(0); }}
-              >
-                {f === 'ALL' ? 'Tất cả' : f}
-              </button>
-            ))}
-          </div>
-          <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Đã quyết (UI demo)</div>
+          <div className="mw-eyebrow">Trạng thái</div>
           <ul className="mw-decided">
-            {Object.entries(decisions).length === 0 ? (
-              <li className="mw-decided__empty">Chưa có quyết định nào.</li>
-            ) : (
-              Object.entries(decisions).map(([code, d]) => (
-                <li key={code}>
-                  <span className="t-mono-01">{code}</span>{' '}
-                  <span className={d.verdict === 'approve' ? 'mw-ok' : 'mw-no'}>
-                    {d.verdict === 'approve' ? 'Approve' : 'Reject'}
-                  </span>
-                </li>
-              ))
-            )}
+            <li><span className="mw-ok">{matchMeta.daKy}</span> match đã ký</li>
+            <li><span className="mw-no">{matchMeta.tuChoi}</span> cặp bị từ chối</li>
+            <li>Người ký: {matchMeta.nguoiKy}</li>
+            <li>Quy tắc: <span className="t-mono-01">{matchMeta.rule}</span></li>
           </ul>
+
+          <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Chữ ký tạo ở đâu</div>
+          <p className="mw-hint">
+            Chữ ký chỉ sinh ra từ lệnh <span className="t-mono-01">sign</span> của engine, ghi vào sổ
+            có khoá nội dung và khoá bằng chứng. Sửa một chữ trong câu làm bằng là chữ ký rụng ra.
+            Màn này chỉ đọc và hiện lại, không tạo được chữ ký.
+          </p>
+
+          {rejectedPairs.length > 0 ? (
+            <>
+              <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Đã từ chối</div>
+              <ul className="mw-decided">
+                {rejectedPairs.map((r, i) => (
+                  <li key={i}>
+                    <span className="mw-no">{tenCau(r.demandId)} ⇄ {r.supplyId}</span>
+                    <span className="mw-rej__why">{r.lyDo}</span>
+                    <span className="mw-rej__who">{r.by} · {r.date}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mw-hint">
+                Cặp đã từ chối bị chặn ở tầng engine, dưới mọi quy tắc so khớp. Một quy tắc mới làm
+                nó quay lại thì cổng nổ chứ không im lặng cho qua.
+              </p>
+            </>
+          ) : null}
         </div>
       </aside>
 
-      <section className="mw-col mw-center" aria-label="Candidate matches">
+      <section className="mw-col mw-center" aria-label="Match da ky">
         <div className="mw-center-head">
-          <span className="mw-eyebrow">Candidate matches · confidence · explanation</span>
-          <span className="chip chip--private">MATCH: DEMO</span>
+          <span className="mw-eyebrow">Cầu ⇄ cung · điểm khớp · chữ ký</span>
+          <span className="chip chip--pass">DỮ LIỆU THẬT</span>
         </div>
         <ul className="mw-cands" role="list">
           {list.map((m, i) => {
-            const l = ladder(m.score);
-            const isSel = current?.code === m.code;
+            const l = thang(m.score);
+            const isSel = current?.id === m.id;
             return (
-              <li key={m.code}>
-                <button
-                  type="button"
-                  className={`mw-cand${isSel ? ' is-sel' : ''}`}
-                  aria-pressed={isSel}
-                  onClick={() => setSel(i)}
-                >
+              <li key={m.id}>
+                <button type="button" className={`mw-cand${isSel ? ' is-sel' : ''}`} aria-pressed={isSel} onClick={() => setSel(i)}>
                   <span className={`mw-score mw-score--${l.tone}`}>{Math.round(m.score * 100)}</span>
                   <span className="mw-cand__mid">
-                    <span className="mw-cand__title">{m.short}</span>
-                    <span className="mw-cand__why">Vì sao khớp: {m.chain[0]?.v}</span>
-                    <span className="mw-cand__cap">{m.cap}</span>
+                    <span className="mw-cand__title">{tenCau(m.demandId)} ⇄ {m.supplyId}</span>
+                    <span className="mw-cand__why">
+                      Neo nhóm {m.nhomCau} ∩ {m.nhomCung.join(', ') || 'không'}
+                      {m.tokenGiao.length ? ` · giao chữ: ${m.tokenGiao.join(', ')}` : ''}
+                    </span>
+                    <span className="mw-cand__cap">{m.supplyEvidence[0]?.value ?? ''}</span>
                   </span>
                   <span className="mw-cand__right">
                     <span className={`mw-ladder mw-ladder--${l.tone}`}>{l.label}</span>
-                    <span className="chip chip--public reg-tier">{m.badge}</span>
-                    {decisions[m.code] ? (
-                      <span className={decisions[m.code].verdict === 'approve' ? 'mw-ok' : 'mw-no'}>
-                        {decisions[m.code].verdict === 'approve' ? 'Đã approve' : 'Đã reject'}
-                      </span>
-                    ) : null}
+                    <span className="chip chip--pass reg-tier" title={`Ký bởi ${m.signoff.by} ngày ${m.signoff.date}`}>ĐÃ KÝ</span>
                   </span>
                 </button>
               </li>
@@ -114,65 +134,49 @@ export function MatchingWorkbench() {
         </ul>
       </section>
 
-      <aside className="mw-col mw-right" aria-label="Evidence trail va quyet dinh nguoi">
+      <aside className="mw-col mw-right" aria-label="Chuoi bang chung">
         {current ? (
           <div className="mw-panel">
             <div className="mw-center-head">
-              <span className="mw-eyebrow">Evidence trail</span>
-              <span className="t-mono-01">{current.code}</span>
+              <span className="mw-eyebrow">Chuỗi bằng chứng</span>
+              <span className="t-mono-01">{current.id}</span>
             </div>
+
+            <EvidenceBlock nhan="Bên CẦU · nhu cầu quốc gia" ds={current.demandEvidence} />
+            <EvidenceBlock nhan={`Bên CUNG · ${current.supplyId}`} ds={current.supplyEvidence} />
+
+            <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Chữ ký người gác cổng</div>
             <ul className="mw-trail">
-              {current.chain.map((row, i) => (
-                <li key={i} className={row.claim ? 'is-claim' : ''}>
-                  <span className="mw-trail__k">{row.k}</span>
-                  <span className="mw-trail__v">
-                    {row.v}
-                    {row.tier ? <span className="chip chip--public reg-tier" style={{ marginLeft: 6 }}>{row.tier.label}</span> : null}
-                    {row.tail ?? ''}
-                  </span>
-                </li>
-              ))}
+              <li><span className="mw-trail__k">Người ký</span><span className="mw-trail__v">{current.signoff.by}</span></li>
+              <li><span className="mw-trail__k">Vai</span><span className="mw-trail__v">{current.signoff.role}</span></li>
+              <li><span className="mw-trail__k">Ngày</span><span className="mw-trail__v">{current.signoff.date}</span></li>
+              <li>
+                <span className="mw-trail__k">Khoá bằng chứng</span>
+                <span className="mw-trail__v t-mono-01" title="Băm của tập câu làm bằng lúc ký. Đổi một chữ là chữ ký rụng.">
+                  {current.khoaBangChung ?? 'chưa đóng khoá'}
+                </span>
+              </li>
+              <li><span className="mw-trail__k">Engine</span><span className="mw-trail__v t-mono-01">{current.engine}</span></li>
             </ul>
-            <div className="mw-vouch">{current.vouch}</div>
-            <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Human review required</div>
-            <p className="mw-hint">
-              Quyết định dưới đây chỉ ghi UI-state demo. Vòng gác cổng thật dùng lệnh sign của engine
-              (validate --require-signoff), không thay được bằng nút này.
-            </p>
-            <label className="mw-eyebrow" htmlFor="mw-note">Notes (required)</label>
-            <textarea
-              id="mw-note"
-              className="mw-note"
-              rows={3}
-              placeholder="Căn cứ quyết định..."
-              value={note}
-              onChange={(e) => setNote(e.target.value)}
-            />
-            <div className="mw-actions">
-              <button type="button" className="mw-btn mw-btn--ok" disabled={note.trim().length === 0} onClick={() => decide('approve')}>
-                Approve
-              </button>
-              <button type="button" className="mw-btn mw-btn--no" disabled={note.trim().length === 0} onClick={() => decide('reject')}>
-                Reject
-              </button>
-            </div>
-            {decided ? (
-              <p className="mw-done">
-                Đã ghi: {decided.verdict === 'approve' ? 'Approve' : 'Reject'} · &quot;{decided.note}&quot; (UI demo)
+
+            {current.unverified.length > 0 ? (
+              <p className="mw-hint">
+                Tự khai unverified: {current.unverified.join(', ')}.
               </p>
             ) : null}
           </div>
         ) : (
-          <div className="mw-panel mw-decided__empty">Không có match trong bộ lọc này.</div>
+          <div className="mw-panel mw-decided__empty">Chưa có match nào được ký.</div>
         )}
       </aside>
 
       <footer className="mw-footer" aria-label="Provenance-linked output">
-        <span className="chip chip--private">DEMO</span>
+        <span className="chip chip--pass">ĐÃ KÝ</span>
         <span className="mw-footer__txt">
-          Provenance-linked output · match đạt gate mới được xuất · registry cung là DỮ LIỆU THẬT, demand và match là minh hoạ.
+          Chỉ match đã qua đủ cổng và có chữ ký người mới được đưa lên đây. Match chưa ký không
+          xuất hiện trên web, vì web là chỗ trình ra ngoài.
         </span>
-        <span className="t-mono-01">{Object.keys(decisions).length}/{hubMatches.length} đã duyệt (demo)</span>
+        <span className="t-mono-01">{matchMeta.daKy}/{matchMeta.tongChay} đã ký · sinh {matchMeta.generatedAt}</span>
       </footer>
     </div>
   );

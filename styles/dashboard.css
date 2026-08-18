@@ -403,9 +403,33 @@
 .dash-shell .reg-src { color: var(--color-text-link); text-decoration: none; }
 .dash-shell .reg-src:hover { text-decoration: underline; }
 .dash-shell .reg-foot { font-size: 12px; line-height: 16px; color: var(--color-text-muted); max-width: 720px; margin-top: var(--space-4); }
+/* ---- Tra cuu registry (loc tuc thoi phia client) - token-only ---- */
+.dash-shell .reg-find { margin-bottom: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+.dash-shell .reg-find__row { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.dash-shell .reg-find__lab { font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); min-width: 84px; }
+.dash-shell .reg-find__inp { flex: 1 1 320px; min-width: 0; font-family: var(--font-ui); font-size: 14px; line-height: 20px; color: var(--color-text-primary); background: var(--color-bg-canvas); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-md); padding: var(--space-2_5) var(--space-3); }
+.dash-shell .reg-find__inp::placeholder { color: var(--color-text-muted); }
+.dash-shell .reg-find__inp:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .reg-find__clear { font-size: 12px; padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); border: var(--stroke-hairline) solid var(--color-border-subtle); background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+.dash-shell .reg-find__clear:hover { color: var(--color-text-primary); border-color: var(--color-border-strong); }
+.dash-shell .reg-pill { font-size: 12px; min-width: 34px; padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); border: var(--stroke-hairline) solid var(--color-border-subtle); background: transparent; color: var(--color-text-secondary); cursor: pointer; transition: all var(--motion-fast) var(--ease-standard); }
+.dash-shell .reg-pill:hover { color: var(--color-text-primary); border-color: var(--color-border-strong); }
+.dash-shell .reg-pill.is-on { color: var(--color-accent-blue); border-color: var(--color-border-focus); background: var(--fill-blue-subtle); }
+.dash-shell .reg-find__sep { width: var(--stroke-hairline); align-self: stretch; background: var(--color-border-subtle); margin: 0 var(--space-2); }
+.dash-shell .reg-find__count { font-size: 12px; line-height: 16px; color: var(--color-text-muted); margin: 0; }
+.dash-shell .reg-unit__tags { grid-column: 1 / -1; display: flex; gap: var(--space-1_5); flex-wrap: wrap; }
+.dash-shell .reg-tag { font-size: 11px; line-height: 16px; color: var(--color-text-muted); border: var(--stroke-hairline) solid var(--color-border-muted); border-radius: var(--radius-full); padding: 0 var(--space-2); }
+.dash-shell .reg-tag--sp { color: var(--color-accent-cyan); }
+.dash-shell .reg-ex { margin-left: var(--space-2); }
+.dash-shell .reg-empty { text-align: left; }
+.dash-shell .reg-empty p { font-size: 14px; line-height: 20px; color: var(--color-text-secondary); margin: 0; }
+.dash-shell .reg-empty__note { font-size: 12px; line-height: 18px; color: var(--color-text-muted); margin-top: var(--space-2); max-width: 640px; }
+.dash-shell .reg-table--cau td:nth-child(2) { color: var(--color-text-primary); }
+
 @media (max-width: 1023px) {
   .dash-shell .reg-unit__head { grid-template-columns: 1fr; }
   .dash-shell .reg-unit__meta { justify-self: start; }
+  .dash-shell .reg-find__lab { min-width: 0; }
 }
 
 /* ---- Matching Workbench (Pha 3, DEMO) - token-only ---- */
@@ -482,3 +506,11 @@
 .dash-shell .rv-edge__note { color: var(--color-text-muted); font-size: 12px; }
 @media (max-width: 1279px) { .dash-shell .rv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767px) { .dash-shell .rv-grid { grid-template-columns: 1fr; } .dash-shell .rv-edge { grid-template-columns: 1fr; gap: var(--space-1); } .dash-shell .rv-edge__arrow { text-align: left; } }
+
+/* ---- Matching: chuoi bang chung that (18/08/2026, thay khoi DEMO) - token-only ---- */
+.dash-shell .mw-ev { margin-top: var(--space-4); }
+.dash-shell .mw-quote { margin: var(--space-2) 0 0; }
+.dash-shell .mw-quote__txt { margin: 0; padding-left: var(--space-3); border-left: var(--stroke-hairline) solid var(--color-border-strong); font-size: 13px; line-height: 19px; color: var(--color-text-primary); }
+.dash-shell .mw-quote__cap { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; margin-top: var(--space-1_5); padding-left: var(--space-3); font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .mw-rej__why { display: block; font-size: 11px; line-height: 16px; color: var(--color-text-muted); }
+.dash-shell .mw-rej__who { display: block; font-size: 11px; color: var(--color-text-muted); }

@@ -42,7 +42,7 @@ export function CnclRegistry() {
         <span style={chip}>{cnclMeta.units} đơn vị</span>
         <span style={chip}>{cnclMeta.claims} claim</span>
         <span style={chip}>{cnclMeta.sources} nguồn</span>
-        <span style={chip}>{cnclMeta.corroboratedCells} corroborated</span>
+        <span style={chip}>{cnclMeta.needs} nhu cầu</span>
         <span style={chip}>{cnclMeta.gate}</span>
       </div>
       <p className="mono" style={{ fontSize: 10.5, color: 'var(--dk-tx3, #6f7891)', margin: '0 0 12px' }}>
@@ -67,17 +67,12 @@ export function CnclRegistry() {
                 {u.favorsRtr ? <span style={rtrTag}>favors=rtr</span> : null}
               </td>
               <td className="mono" style={{ fontSize: 11 }}>
-                {u.nhomLabel}
-                {u.sanPham ? ` · SP ${u.sanPham}` : ''}
+                {u.nhomLabels.join(' · ')}
+                {u.sanPham.length ? ` · SP ${u.sanPham.join(', ')}` : ''}
               </td>
               <td style={{ maxWidth: 300 }}>{u.capability || '(chưa có)'}</td>
               <td>
                 <TierBadge level={u.bestTier}>{u.bestTier}</TierBadge>
-                {u.corroborated ? (
-                  <span className="mono" style={{ marginLeft: 6, fontSize: 10, color: '#6fce8f' }}>
-                    ✓✓
-                  </span>
-                ) : null}
               </td>
               <td>
                 {u.sources.map((s, i) => (
