@@ -53,11 +53,16 @@ function tim(nhan, ...duoi) {
   return p;
 }
 
-const SUP = tim('registry CUNG', 'CNCLData', 'domains', 'don_vi_cncl');
-const DEM = existsSync('/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc')
+// BAN LAM VIEC TAM: CLM_KHO_* tro toi ban sao cua kho, dung cho cac bo rang. Khong dat
+// thi chay tren kho that. Xem chay_het_cong.sh de biet vi sao can.
+const env = (k) => process.env[k] || null;
+
+const SUP = env('CLM_KHO_CNCL') ? join(env('CLM_KHO_CNCL'), 'domains', 'don_vi_cncl')
+  : tim('registry CUNG', 'CNCLData', 'domains', 'don_vi_cncl');
+const DEM = env('CLM_KHO_DEM') || (existsSync('/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc')
   ? '/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc'
-  : tim('dataset CAU', 'KnowledgeBase', 'Dataset_CongNgheChienLuoc');
-const CLM = tim('kho match', 'CaoLocMatch');
+  : tim('dataset CAU', 'KnowledgeBase', 'Dataset_CongNgheChienLuoc'));
+const CLM = env('CLM_KHO_MATCH') || tim('kho match', 'CaoLocMatch');
 
 const doc = (p) => readFileSync(p, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));
 

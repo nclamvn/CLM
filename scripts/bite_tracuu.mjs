@@ -18,20 +18,34 @@
  * Chay: node scripts/bite_tracuu.mjs
  * Exit 0 neu ca ba rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
  */
-import { readFileSync, writeFileSync, existsSync, unlinkSync, renameSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, unlinkSync, renameSync, statSync,
+         mkdtempSync, mkdirSync, cpSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const TOUCH = join(HERE, '..');
-const GEN = join(HERE, 'gen-tracuu-html.mjs');
-const EV = join(TOUCH, 'public', 'evidence');
-const LIB = join(TOUCH, 'lib', 'cncl-match.ts');
+const THAT = join(HERE, '..');
 const MOI = 'vjst_viettel_llm_20260718.txt';
 
+// BAN LAM VIEC TAM. Rang phai xoa ban chup va giau file lib di moi thu duoc, ma hai thu do
+// la dau vao cua file NGUOI DUNG CAM. Chep sang thu muc tam roi pha o do: kho that khong
+// bao gio bi cham, ke ca trong vai giay cua phep thu.
+const TAM = mkdtempSync(join(tmpdir(), 'tracuu-bite-'));
+const TOUCH = join(TAM, 'touch');
+mkdirSync(join(TOUCH, 'public'), { recursive: true });
+cpSync(join(THAT, 'lib'), join(TOUCH, 'lib'), { recursive: true });
+cpSync(join(THAT, 'scripts'), join(TOUCH, 'scripts'), { recursive: true });
+cpSync(join(THAT, 'public', 'evidence'), join(TOUCH, 'public', 'evidence'), { recursive: true });
+
+const GEN = join(TOUCH, 'scripts', 'gen-tracuu-html.mjs');
+const EV = join(TOUCH, 'public', 'evidence');
+const LIB = join(TOUCH, 'lib', 'cncl-match.ts');
+const RA_TAM = join(TAM, 'CaoLocMatch_TraCuu.html');
+
 function chay() {
-  const r = spawnSync(process.execPath, [GEN], { cwd: TOUCH, encoding: 'utf8' });
+  const r = spawnSync(process.execPath, [GEN, RA_TAM], { cwd: TOUCH, encoding: 'utf8' });
   return { rc: r.status, out: (r.stdout || '') + (r.stderr || '') };
 }
 
@@ -53,8 +67,9 @@ if (!existsSync(banChup)) {
 }
 
 let ok1 = false, ok2 = false, ok3 = false;
-const giuEv = readFileSync(banChup);
-const giuLib = readFileSync(LIB);
+// Doc tu ban THAT: rang 4 doi chieu lai chinh hai file nay o cuoi.
+const giuEv = readFileSync(join(THAT, 'public', 'evidence', MOI));
+const giuLib = readFileSync(join(THAT, 'lib', 'cncl-match.ts'));
 const truocKichCo = statSync(RA).size;
 const truocNoiDung = readFileSync(RA);
 
@@ -89,11 +104,23 @@ try {
   const cuoi = chay();
   if (cuoi.rc !== 0) {
     console.error(`!! PHUC HOI HONG: chay lai sau khi tra ve van exit${cuoi.rc}\n${cuoi.out.slice(-500)}`);
+    rmSync(TAM, { recursive: true, force: true });
     process.exit(1);
   }
 }
 
-const tatCa = ok1 && ok2 && ok3;
+// RANG 4 · khong cham ban that. Ba rang tren da xoa file va giau file ba lan. Neu kho that
+// con nguyen thi moi chung minh duoc ban tam that su cach ly chu khong phai doi ten cho vui.
+const thatEv = join(THAT, 'public', 'evidence', MOI);
+const thatLib = join(THAT, 'lib', 'cncl-match.ts');
+const ok4 = existsSync(thatEv) && existsSync(thatLib) &&
+  Buffer.compare(readFileSync(thatEv), giuEv) === 0 &&
+  Buffer.compare(readFileSync(thatLib), giuLib) === 0;
+console.log(`${'RANG 4 · khong cham ban that'.padEnd(38)} : ` +
+  (ok4 ? 'CAN OK (dau vao that con nguyen tung byte)' : 'KHONG CAN !! ban that da bi doi trong luc thu'));
+
+rmSync(TAM, { recursive: true, force: true });
+const tatCa = ok1 && ok2 && ok3 && ok4;
 console.log('-'.repeat(62));
 console.log('BITE TRA CUU:', tatCa ? 'RANG CAN' : 'CO RANG KHONG CAN');
 process.exit(tatCa ? 0 : 1);

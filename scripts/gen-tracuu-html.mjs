@@ -43,7 +43,9 @@ function goc(...duoi) {
   return null;
 }
 
-const RA = process.argv[2] || (() => {
+// Thu tu uu tien noi ghi ra: tham so dong lenh, roi bien moi truong cua ban lam viec tam,
+// roi moi toi cho that. Bo rang luon dat CLM_RA_TRACUU nen no khong bao gio cham ban that.
+const RA = process.argv[2] || process.env.CLM_RA_TRACUU || (() => {
   const kb = goc('RtR', 'KnowledgeBase', 'CaoLocMatch_PoC') || goc('KnowledgeBase', 'CaoLocMatch_PoC');
   if (!kb) { console.error('KHONG THAY thu muc CaoLocMatch_PoC de ghi ra.'); process.exit(2); }
   return join(kb, 'CaoLocMatch_TraCuu.html');
