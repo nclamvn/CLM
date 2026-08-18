@@ -51,10 +51,27 @@ const RA = process.argv[2] || (() => {
 
 // ── Doc du lieu da sinh (khong doc lai registry goc: mot nguon su that) ─────
 function docTS(ten, bien) {
-  const t = readFileSync(join(TOUCH, 'lib', ten), 'utf8');
+  // Thieu dau vao phai NO DANG HOANG chu khong sap. Rang 2 cua bite_tracuu.mjs bat duoc
+  // chuyen nay ngay lan chay dau: file lib bien mat thi readFileSync nem loi, Node thoat
+  // exit 1 kem stack trace, va bang trang thai doc exit 1 nhu mot loi khong ro nguon con.
+  // Loi nao cung do ca, nhung "do vi thieu file X" khac han "do vi mot ngoai le nao do".
+  const p = join(TOUCH, 'lib', ten);
+  if (!existsSync(p)) {
+    console.error(`FAIL: khong thay lib/${ten}. Chay gen-cncl-data.mjs truoc.`);
+    process.exit(2);
+  }
+  const t = readFileSync(p, 'utf8');
   const m = t.match(new RegExp(`export const ${bien}[^=]*= ([\\s\\S]*?);\\n`, 'm'));
-  if (!m) { console.error(`KHONG DOC DUOC ${bien} trong ${ten}. Chay gen-cncl-data.mjs truoc.`); process.exit(2); }
-  return JSON.parse(m[1].replace(/ as const$/, ''));
+  if (!m) {
+    console.error(`FAIL: khong doc duoc ${bien} trong lib/${ten}. Chay gen-cncl-data.mjs truoc.`);
+    process.exit(2);
+  }
+  try {
+    return JSON.parse(m[1].replace(/ as const$/, ''));
+  } catch (e) {
+    console.error(`FAIL: ${bien} trong lib/${ten} khong phai JSON hop le. ${e.message}`);
+    process.exit(2);
+  }
 }
 
 const meta = docTS('cncl-registry.ts', 'cnclMeta');
@@ -69,6 +86,24 @@ const EV = join(TOUCH, 'public', 'evidence');
 const banChup = {};
 for (const f of readdirSync(EV)) {
   if (f.endsWith('.txt')) banChup['/evidence/' + f] = readFileSync(join(EV, f), 'utf8');
+}
+
+// CONG: moi lien ket bang chung ma du lieu tro toi PHAI co ban chup nhung kem.
+//
+// VI SAO FAIL chu khong chi canh bao: file nay chay offline, khong co duong nao di lay ban
+// chup thieu. Neu cu sinh ra thi nguoi mo se bam vao nguon va nhan mot cau xin loi, tuc mot
+// o trong nhin giong nhu da co bang chung. Thieu dieu kien ma van sinh ra thi cho suy bien
+// do chinh la duong ro. Cung ky luat voi dong_bo_snapshot() ben build_cncl_match.py.
+const canCo = new Set();
+for (const u of units) { for (const e of u.evidence) canCo.add(e.href); for (const s of u.sources) canCo.add(s.href); }
+for (const n of needs) canCo.add(n.href);
+for (const m of matches) for (const e of [...m.demandEvidence, ...m.supplyEvidence]) canCo.add(e.href);
+const thieu = [...canCo].filter((h) => !(h in banChup)).sort();
+if (thieu.length) {
+  console.error(`FAIL: ${thieu.length} ban chup duoc tro toi nhung khong nhung duoc.`);
+  for (const t of thieu) console.error(`  [THIEU] ${t}`);
+  console.error('Khong sinh file tra cuu thieu bang chung. Chay gen-cncl-data.mjs truoc.');
+  process.exit(2);
 }
 
 const DL = JSON.stringify({ meta, units, needs, mmeta, matches, rejected, banChup })
