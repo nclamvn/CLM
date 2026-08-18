@@ -34,6 +34,17 @@ check_dash.py     cong 0 em-dash/en-dash cho file Tho sinh
 out/              facts.jsonl, matches.jsonl, blocked.jsonl, report.json
 ```
 
+## Kiem suc khoe ca he trong mot lenh
+
+```bash
+./chay_het_cong.sh            # 14 cong o hai kho, in bang, exit != 0 neu co o khong xanh
+./chay_het_cong.sh --nhanh    # bo qua khoi rang: 1 giay thay vi 12, nhung YEU hon
+python3 bite_chay_het_cong.py # kiem chinh cai bang: no phai biet bao DO va bao KHONG CHAY DUOC
+```
+
+Bang co BA trang thai chu khong phai hai. `KHONG CHAY DUOC` (vi du cong doi chung nguon khi
+chua ai nap ban tuoi) KHONG duoc tinh la xanh: khong biet khac han biet la sai.
+
 ## Lenh tai lap tung buoc
 
 ```bash
