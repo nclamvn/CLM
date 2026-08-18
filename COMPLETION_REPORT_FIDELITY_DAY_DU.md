@@ -81,6 +81,15 @@ Ba match đã ký bị ảnh hưởng: chip với Tập đoàn Viettel, LLM ti�
 
 **Chín mươi phần trăm registry không bị đụng.** Nhưng ba match đã ký thì bị, và đó là phần cần xử lý cẩn thận nhất vì nó mang chữ ký của người gác cổng.
 
+> **ĐÍNH CHÍNH 16/08/2026, sau khi có khoá bằng chứng.** Con số "3 match đã ký bị ảnh hưởng"
+> ở trên **sai**, và sai theo hướng thổi phồng. Nó đếm ở mức **đơn vị**: đơn vị nào có một ô
+> đổi chữ thì mọi match của đơn vị đó bị tính là ảnh hưởng. Đo lại ở mức **fact mà match
+> thật sự dựa vào** thì con số là **0 trên 12**. Ví dụ MATCH-0004 (Viettel × P23) không dựa
+> vào ô `nang_luc_mo_ta` bị sửa, mà dựa vào `nang_luc_mo_ta_2`, ô này không đổi một ký tự nào.
+>
+> Đây không phải sửa để đẹp số. Con số cũ do tôi ước lượng bằng mắt; con số mới do máy tính
+> ra từ khoá `bang_chung` và kiểm được lại bất cứ lúc nào bằng `bite_bang_chung.py`.
+
 ## Điều phải nói cho đúng
 
 Đây **không phải bằng chứng bịa đặt**. 21 trên 24 câu có nội dung thật trong nguồn, chỉ sai ở chỗ chữ không khớp từng ký tự. Nhưng dự án này dựng trên một lời hứa cụ thể: mọi khẳng định truy được về **một câu nguyên văn**. Câu gần đúng không phải câu nguyên văn.
