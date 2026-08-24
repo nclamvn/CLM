@@ -28,6 +28,11 @@ function thang(score: number): { label: string; tone: string } {
   return { label: 'Khớp yếu', tone: 'red' };
 }
 
+// `role` la hang so do engine gan khi ky, khong phai chu cua nguoi ky. Hien no dung chinh
+// ta tieng Viet la DINH DANG, giong nhu hien ngay 2026-08-16 thanh 16/08/2026. Nguoc lai,
+// `ly_do` tu choi la CHU CUA NGUOI GAC CONG, tuyet doi khong duoc sua o lop hien thi.
+const nhanVai = (r: string) => (r === 'chuyen gia gac cong' ? 'chuyên gia gác cổng' : r);
+
 const tenCau = (id: string) => id.replace(' · nhu cầu quốc gia', '').replace('san_pham_', 'SP ');
 
 function EvidenceBlock({ nhan, ds }: { nhan: string; ds: MatchEvidence[] }) {
@@ -153,7 +158,7 @@ export function MatchingWorkbench() {
             <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Chữ ký người gác cổng</div>
             <ul className="mw-trail">
               <li><span className="mw-trail__k">Người ký</span><span className="mw-trail__v">{current.signoff.by}</span></li>
-              <li><span className="mw-trail__k">Vai</span><span className="mw-trail__v">{current.signoff.role}</span></li>
+              <li><span className="mw-trail__k">Vai</span><span className="mw-trail__v">{nhanVai(current.signoff.role)}</span></li>
               <li><span className="mw-trail__k">Ngày</span><span className="mw-trail__v">{current.signoff.date}</span></li>
               <li>
                 <span className="mw-trail__k">Khoá bằng chứng</span>
