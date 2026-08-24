@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""bite_gop_cap.py · Ba rang cua buoc GOP MATCH CUNG CAP va luat chu ky theo tap con.
+"""bite_gop_cap.py · Bon rang cua buoc GOP MATCH CUNG CAP va luat chu ky theo tap con.
 
 VI SAO CAN (18/08/2026): truoc hom nay, cao them mot nguon cho mot cap DA KY se sinh ra mot
 dong match thu hai cho dung cap do. Cung mot ket luan hien hai lan, va so match phinh theo
@@ -18,12 +18,20 @@ RANG 1 · GOP THAT: hai chuoi bang chung cho cung mot cap phai ra MOT dong, khon
 RANG 2 · THEM THI CON: them mot fact moi vao cap da ky thi chu ky VAN con, va fact moi phai
          bi danh dau chua_duyet. Neu khong danh dau, no se duoc trinh nhu da qua mat nguoi.
 RANG 3 · SUA THI RUNG: sua mot chu trong fact DA KY thi chu ky phai rung ra.
+RANG 4 · GOP DU CHU KY (them 24/08/2026): mot cap co NHIEU dong trong so thi phai gop het
+         cac dong do lai roi moi tinh `chua_duyet`. Va chieu nguoc lai phai giu: cap chi co
+         mot dong so ma con fact ngoai tap da ky thi VAN phai bao.
 
 Rang 2 va rang 3 phai cung dung mot luc. Chi rang 2 thi la khoa long; chi rang 3 thi moi lan
 cao them nguon la phai ky lai het, va ky lai hang loat thi chu ky mat y nghia.
 
+Rang 4 sinh ra tu mot loi that: engine bao MATCH-0011 co bang chung "chua ai duyet", trong
+khi Lam da ky dung cai fact do tu 16/08/2026 o mot dong so khac. May bao thua chu khong bao
+thieu, tuc sai theo huong an toan, nhung mot cai nhan bao dong sai thuong xuyen thi nguoi ta
+se bam qua no, va den luc no dung thi khong ai con nhin.
+
 Chay: python3 bite_gop_cap.py
-Exit 0 neu ca ba rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
+Exit 0 neu ca bon rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
 """
 import json, subprocess, sys
 from pathlib import Path
@@ -76,6 +84,41 @@ def main():
               (f"CAN OK ({len(co_dau)} dong co chua_duyet ma van giu chu ky)" if ok2
                else f"KHONG CAN !! exit{rc} co_dau={len(co_dau)} van_ky={len(van_ky)}"))
 
+        # ── RANG 4 · gop NHIEU DONG SO cua cung mot cap, ca hai chieu ───────
+        # VI SAO (24/08/2026): gop_cung_cap gop nhieu match thanh mot dong, nhung trong SO
+        # chung van la nhieu dong ky rieng. restore-signoff cu `break` o dong so dau tien
+        # khop duoc, roi goi phan con lai la `chua_duyet`. Ket qua: mot chu ky THAT cua nguoi
+        # gac cong bi giau, man hinh bao "chua ai duyet" dung cai ma nguoi do da ky. Bat duoc
+        # tai MATCH-0011 (CNCL-P20 <-> Vien Han lam): hai dong ky, deu cua Lam 16/08/2026.
+        #
+        # KHOA CA HAI CHIEU trong cung mot rang, dung luat "test ca hai chieu":
+        #   4a PHAI LAM DUOC : cap co hai dong so hop le thi gop lai, khong con chua_duyet,
+        #                      va phai ghi ra da gop tu nhung dong nao.
+        #   4b CAM LAM DUOC  : cap chi co mot dong so ma dong hien tai co fact ngoai tap da ky
+        #                      thi VAN phai bao chua_duyet. Neu bo mat chieu nay, ban va vua
+        #                      roi tro thanh mot lenh dai xa: gop het, khong con ai bi bao.
+        CAP_GOP = ("CNCL-P20 · nhu cầu quốc gia", "Viện Hàn lâm Khoa học và Công nghệ Việt Nam")
+        so = [json.loads(l) for l in
+              (BT.match / "domains" / "cncl_match" / "signoff_ledger.jsonl")
+              .read_text(encoding="utf-8").splitlines() if l.strip()]
+        dong_cap = [r for r in so if (r["khoa"]["demand_entity"], r["khoa"]["supply_entity"]) == CAP_GOP]
+        m_gop = next((m for m in rows
+                      if (m["demand"]["entity_id"], m["supply"]["entity_id"]) == CAP_GOP), None)
+        if len(dong_cap) < 2 or m_gop is None:
+            print(f"{'RANG 4 · gop nhieu dong so':38s} :  N/A (canh khong con cap 2 dong so)")
+            return 3
+        so_gop = m_gop["gate"]["signoff"] or {}
+        ok4a = (not so_gop.get("chua_duyet")) and len(so_gop.get("gop_tu") or []) == len(dong_cap)
+        ok4b = len(co_dau) >= 1 and all(
+            len([r for r in so if (r["khoa"]["demand_entity"], r["khoa"]["supply_entity"])
+                 == (m["demand"]["entity_id"], m["supply"]["entity_id"])]) >= 1
+            for m in co_dau)
+        ok4 = ok4a and ok4b
+        print(f"{'RANG 4 · gop nhieu dong so, hai chieu':38s} : " +
+              (f"CAN OK (gop {len(dong_cap)} dong, {len(co_dau)} dong that su chua ky van bi bao)"
+               if ok4 else f"KHONG CAN !! 4a={ok4a} 4b={ok4b} gop_tu={so_gop.get('gop_tu')} "
+                           f"chua_duyet={so_gop.get('chua_duyet')}"))
+
         # ── RANG 3 · sua chu cua fact DA KY thi chu ky rung ──────────────────
         p = BT.match / "domains" / "cncl_match" / "claims.jsonl"
         cs = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -93,7 +136,7 @@ def main():
         print(f"{'RANG 3 · sua fact da ky thi chu ky rung':38s} : " +
               (f"CAN OK (exit 2, chu ky bi go)" if ok3 else f"KHONG CAN !! exit{rc}\n{out[-400:]}"))
 
-    tat_ca = ok1 and ok2 and ok3
+    tat_ca = ok1 and ok2 and ok3 and ok4
     print("-" * 62)
     print("BITE GOP CAP:", "RANG CAN" if tat_ca else "CO RANG KHONG CAN")
     return 0 if tat_ca else 1

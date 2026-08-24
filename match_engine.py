@@ -1112,7 +1112,22 @@ def restore_signoff(domain_dir, matches_path):
             chua.append(m["id"])
             continue
         co_dong = m["demand"]["need_fact_ids"] + m["supply"]["capability_fact_ids"]
-        hop_le, thieu_khoa, sai_chu = None, False, False
+        # GOP MOI DONG SO HOP LE CUA CUNG MOT CAP, khong dung o dong dau tien (sua 24/08/2026).
+        #
+        # VI SAO: `gop_cung_cap` gop cac match cung mot cap (cau, cung) thanh MOT dong. Nhung
+        # trong so thi chung van la NHIEU DONG KY rieng, vi luc ky chung con la nhieu match.
+        # Vong lap cu `break` ngay o dong so dau tien khop duoc, roi lay phan con lai goi la
+        # `chua_duyet`. Ket qua: MOT CHU KY THAT CUA NGUOI GAC CONG BI GIAU DI, va man hinh
+        # bao "chua ai duyet" dung cai ma nguoi do da ky.
+        #
+        # Bat duoc 24/08/2026 tai MATCH-0011 (CNCL-P20 <-> Vien Han lam): so co HAI dong ky,
+        # MATCH-0011 va MATCH-0013, ca hai deu do Lam ky 16/08/2026 va ca hai deu qua duoc
+        # khoa bang chung. Hop lai thi khong con fact nao chua ky. May van bao co.
+        #
+        # Sai theo huong AN TOAN (bao thua chu khong bao thieu), nhung van phai sua: mot cai
+        # nhan bao dong sai thuong xuyen thi nguoi ta se bam qua no, va den luc no dung thi
+        # khong ai con nhin. Bo `break`, gop het, va ghi ra da gop tu nhung dong nao.
+        hop_le_ds, thieu_khoa, sai_chu = [], False, False
         for r in ds:
             ky_ids = (r["khoa"].get("need_fact_ids") or []) + (r["khoa"].get("capability_fact_ids") or [])
             if not set(ky_ids).issubset(co_dong):
@@ -1124,14 +1139,20 @@ def restore_signoff(domain_dir, matches_path):
             if cu != bang_chung_digest(domain_dir, m, ids_rieng=ky_ids):
                 sai_chu = True
                 continue
-            hop_le = (r, set(ky_ids))
-            break
-        if hop_le is None:
+            hop_le_ds.append((r, set(ky_ids)))
+        if not hop_le_ds:
             (chua_khoa if thieu_khoa else doi_bang_chung if sai_chu else chua).append(m["id"])
             continue
-        r, ky_ids = hop_le
+        # Dong DAI DIEN de hien ten nguoi ky: dong phu nhieu fact nhat, hoa thi lay dong ky
+        # sau cung. Chi gop cac dong CUNG MOT QUYET DINH voi dong dai dien; khong bao gio
+        # tron mot dong ky voi mot dong tu choi.
+        r = max(hop_le_ds, key=lambda x: (len(x[1]), x[0]["date"]))[0]
+        cung_qd = [(rr, kk) for rr, kk in hop_le_ds if rr["decision"] == r["decision"]]
+        ky_ids = set().union(*[kk for _, kk in cung_qd])
         m["gate"]["signoff"] = {"by": r["by"], "role": r["role"], "date": r["date"],
                                 "decision": r["decision"]}
+        if len(cung_qd) > 1:
+            m["gate"]["signoff"]["gop_tu"] = sorted(rr["match_id"] for rr, _ in cung_qd)
         if r.get("ly_do"):
             m["gate"]["signoff"]["ly_do"] = r["ly_do"]
         them = sorted(set(co_dong) - ky_ids)
