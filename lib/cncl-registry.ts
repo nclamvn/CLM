@@ -289,7 +289,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
+        "note": "NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi. GIU NGUON CU: cao lai 24/08/2026, khong co nguon tier A hoac B nao trong 180 ngay goi dich danh VinES kem khang dinh nang luc. Bai gan nhat tim duoc la baochinhphu 19/03/2026 nhung viet ve VinFast, khong phai VinES. Cau nay mo ta NGANH NGHE luc THANH LAP thang 8/2021, tuc gan vao mot su kien co moc, khong phai trang thai vo thoi han."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -299,7 +299,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "CANH BAO: day la KHANG DINH CUA TOA SOAN, khong dan nguon kiem chung. Doc nhu CLAIM chu khong phai su that cung. Them nua, cung bai ghi 11/10/2023 VinES da duoc tang 99,8% cho VinFast, tu cach phap nhan doc lap hien nay CHUA kiem chung."
+        "note": "CANH BAO: day la KHANG DINH CUA TOA SOAN, khong dan nguon kiem chung. Doc nhu CLAIM chu khong phai su that cung. Them nua, cung bai ghi 11/10/2023 VinES da duoc tang 99,8% cho VinFast, tu cach phap nhan doc lap hien nay CHUA kiem chung. GIU NGUON CU: cung vong tim voi claim tren, khong co nguon moi. Cau la mot moc LAN DAU nen khong het han. NHUNG PHAI LUU Y KHI TRINH RA NGOAI: 'dau tien tai Dong Nam A lam chu duoc cong nghe ve cell pin' la mot khang dinh SO SANH KHU VUC, loai de bi doi chieu va bac bo, va no den tu mot bai bao 06/03/2024 chu khong tu mot cong bo doc lap. Cung loai rui ro voi cum 'dau tien' cua CT Semiconductor va FPT ma vong truoc da ghi nhan hai ben cung nhan."
       },
       {
         "field": "san_pham_lien_quan",
