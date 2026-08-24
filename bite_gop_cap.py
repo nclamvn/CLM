@@ -55,10 +55,44 @@ def _rows():
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
 
 
+def _tiem_fact_moi():
+    """Tu DUNG LAY CANH cho rang 2 va rang 4b, thay vi trong cho du lieu that co san.
+
+    VI SAO (24/08/2026, ngay trong ngay viet rang 4): rang 2 va rang 4b doi 'phai co it nhat
+    mot dong mang nhan chua_duyet'. Luc viet, canh do co san vi MATCH-0005 dang mang nhan.
+    Lam ky phu MATCH-0005 vai phut sau. Nhan bien mat, va CAI RANG GAY, khong phai vi engine
+    sai ma vi canh khong con.
+
+    Do la mot cai bay that: rang bam vao trang thai du lieu THAT thi moi lan nguoi lam dung
+    viec cua ho la rang lai do, va suc ep se doi ve phia noi rang cho de. Rang phai tu dung
+    lay canh cua no tren ban lam viec tam.
+
+    Tiem mot fact MOI cho mot cap DA KY: clone span cua capability_2 (FPT Semiconductor) va
+    lay mot doan nguyen van khac trong chinh cau do, nen no van qua duoc moi cong bang chung.
+    """
+    p = BT.match / "domains" / "cncl_match" / "claims.jsonl"
+    cs = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    goc = next((c for c in cs if c["entity"] == "FPT Semiconductor" and c["field"] == "capability_2"), None)
+    if goc is None or any(c["entity"] == "FPT Semiconductor" and c["field"] == "capability_3" for c in cs):
+        return False
+    moi = dict(goc)
+    moi["field"] = "capability_3"
+    moi["value"] = "thiết kế chip (FPT Semiconductor)"
+    moi["note"] = "FACT DUNG DE THU, chi ton tai tren ban lam viec tam cua bite_gop_cap.py."
+    if moi["value"] not in moi["evidence_span"]:
+        return False
+    cs.append(moi)
+    p.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in cs) + "\n", encoding="utf-8")
+    return True
+
+
 def main():
     global BT
     with ban_tam(can_touch=False) as bt:
         BT = bt
+        if not _tiem_fact_moi():
+            print("KHONG CHAY DUOC: khong dung duoc canh fact moi cho cap da ky")
+            return 3
         rc, out = _chay(["run", "domains/cncl_match"])
         if rc != 0:
             print(f"KHONG CHAY DUOC: run exit{rc}\n{out[-500:]}")
