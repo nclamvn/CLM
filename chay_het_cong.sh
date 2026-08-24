@@ -90,6 +90,9 @@ chay CNCLData doi_chung_nguon     "$CNCL" 'cau khop'             python3 check_s
 # duoc nguoi ghi ly do giu nguon cu. Do la trang thai DUNG: registry that su dang cu o day,
 # va mot bang bao xanh trong khi 44 claim dua tren bai 2019-2025 thi la bang noi doi.
 chay CNCLData do_tuoi_nguon       "$CNCL" 'mau hong qua han'     python3 check_do_tuoi.py domains/don_vi_cncl
+# Bai co tai tro nam tren dung ten mien tier B, dung tac gia, dung dinh dang. Chi mot dong
+# chu nho phan biet no voi bao chi doc lap. Ngay 24/08/2026 suyt nap mot bai nhu vay.
+chay CNCLData nguon_tai_tro       "$CNCL" 'dau hieu tai tro|VI PHAM' python3 check_tai_tro.py domains/don_vi_cncl
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
