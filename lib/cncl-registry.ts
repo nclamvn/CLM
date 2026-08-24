@@ -79,12 +79,12 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "nang_luc_mo_ta",
         "value": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
-        "span": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
+        "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
         "source": "mst.gov.vn",
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
-        "note": "Bai dang 12/04/2019, qua refresh_days 180 rat xa. Can moc gan hon truoc khi dung cho ho so khach. CHUA MIEN TRU DUOC, ghi ngay 24/08/2026 de lan sau khoi tim lai tu dau. Da cao lai, khong thay nguon tier A hoac B nao trong 180 ngay goi dich danh Cong ty An ninh mang Viettel kem mot khang dinh tuong duong. Nhung ly do chinh de KHONG mien tru la ban than cau nay: '100% cac san pham nay deu duoc nghien cuu, phat trien hoan toan boi doi ngu nhan su cua cong ty' la mot KHANG DINH TRANG THAI PHU TOAN BO danh muc san pham nam 2019, khong phai mot su kien da xay ra. Danh muc san pham doi thi cau nay co the sai ma khong ai biet. Hai huong xu: cao duoc nguon moi, hoac thu hep value ve dung danh muc san pham ma bai 2019 liet ke."
+        "note": "Bai dang 12/04/2019, qua refresh_days 180 rat xa. Can moc gan hon truoc khi dung cho ho so khach. NEO LAI SPAN 24/08/2026, Lam duyet. Truoc do span chi la mot cau chua cum 'cac san pham nay', ma danh sach san pham thi khong nam trong ban chup: mot THAM CHIEU TREO. Doc len khong biet 100% do phu len nhung gi. Nay span la CA DOAN nguyen van, liet ke bon he thong (SOC; giam sat mang vien thong chong lau cuoc; bao ve ung dung Web tren dam may; quan ly ATTT mang Van phong) va ba nhom dich vu, roi moi toi cau 100%. Nho vay claim tro thanh mot su kien co pham vi va co moc thoi gian: tinh toi 12/04/2019, voi dung danh muc do, 100% do doi ngu cong ty phat trien. GIU NGUON CU: da co pham vi ro nen tuoi bai khong lam claim sai; van can nguon moi neu muon noi ve danh muc san pham HIEN NAY. Loi chinh ta 'dam may' viet thanh 'dam may' trong nguon duoc giu nguyen."
       },
       {
         "field": "san_pham_lien_quan",
