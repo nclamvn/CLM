@@ -1,4 +1,4 @@
-29
+24
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -28,6 +28,10 @@
 #                         VinFast. Ca hai claim la su kien co moc (thanh lap 8/2021, moc 'dau
 #                         tien Dong Nam A') nen mien tru co can cu. Claim 'dau tien Dong Nam A'
 #                         co ghi CANH BAO rieng vi la khang dinh so sanh khu vuc.
+#   24/08/2026  29 -> 24  me ha tang: PTSC, Vien Cong nghe xa hiem, TEDI. Deu la su kien da
+#                         hoan thanh hoac san pham da giao nen mien tru co can cu. Claim 'lan
+#                         dau tien' cua PTSC ghi canh bao rieng. FECON KHONG xu o day: no bi
+#                         cong du_dieu_kien chan, cho anh Lam quyet loai hay giu.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
