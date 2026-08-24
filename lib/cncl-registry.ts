@@ -264,32 +264,32 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "ten_don_vi",
         "value": "Công ty Cổ phần Giải pháp Năng lượng VinES",
-        "span": "Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
+        "span": "Tháng 8/2021, trước thời điểm chuyển đổi sang xe điện, nhà sản xuất ô tô Việt Nam đã ký kết Biên bản ghi nhớ hợp tác với Gotion High-Tech. Trọng tâm của thỏa thuận này là dự án cung ứng pin LFP và nghiên cứu kế hoạch xây dựng Nhà máy Giga sản xuất cell pin LFP đầu tiên tại Việt Nam. Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
         "source": "vneconomy.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "Nguon goi tat 'VinES'; ten day du chuan hoa. Tach phap nhan khoi VinAI/VinBigData/VinMotion da co trong registry."
+        "note": "Nguon goi tat 'VinES'; ten day du chuan hoa. Tach phap nhan khoi VinAI/VinBigData/VinMotion da co trong registry. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
       },
       {
         "field": "nhom_cncl",
         "value": "5",
-        "span": "Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
+        "span": "Tháng 8/2021, trước thời điểm chuyển đổi sang xe điện, nhà sản xuất ô tô Việt Nam đã ký kết Biên bản ghi nhớ hợp tác với Gotion High-Tech. Trọng tâm của thỏa thuận này là dự án cung ứng pin LFP và nghiên cứu kế hoạch xây dựng Nhà máy Giga sản xuất cell pin LFP đầu tiên tại Việt Nam. Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
         "source": "vneconomy.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "Nang luong va vat lieu tien tien -> nhom 5 theo QD 21/2026 [CNCL-G05]. Anh xa nhom, khong phai quote literal so 5."
+        "note": "Nang luong va vat lieu tien tien -> nhom 5 theo QD 21/2026 [CNCL-G05]. Anh xa nhom, khong phai quote literal so 5. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
       },
       {
         "field": "nang_luc_mo_ta",
         "value": "chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
-        "span": "Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
+        "span": "Tháng 8/2021, trước thời điểm chuyển đổi sang xe điện, nhà sản xuất ô tô Việt Nam đã ký kết Biên bản ghi nhớ hợp tác với Gotion High-Tech. Trọng tâm của thỏa thuận này là dự án cung ứng pin LFP và nghiên cứu kế hoạch xây dựng Nhà máy Giga sản xuất cell pin LFP đầu tiên tại Việt Nam. Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
         "source": "vneconomy.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": ""
+        "note": "NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -304,12 +304,12 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "san_pham_lien_quan",
         "value": "18",
-        "span": "Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
+        "span": "Tháng 8/2021, trước thời điểm chuyển đổi sang xe điện, nhà sản xuất ô tô Việt Nam đã ký kết Biên bản ghi nhớ hợp tác với Gotion High-Tech. Trọng tâm của thỏa thuận này là dự án cung ứng pin LFP và nghiên cứu kế hoạch xây dựng Nhà máy Giga sản xuất cell pin LFP đầu tiên tại Việt Nam. Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng.",
         "source": "vneconomy.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nghien cuu, san xuat pin xe dien va cac giai phap nang luong' -> SP18. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nghien cuu, san xuat pin xe dien va cac giai phap nang luong' -> SP18. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
       }
     ]
   },
@@ -554,22 +554,22 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "nhom_cncl",
         "value": "4",
-        "span": "Ngày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
+        "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
-        "note": "Sinh hoc va y sinh tien tien -> nhom 4 theo QD 21/2026 [CNCL-G04]. Anh xa nhom, khong phai quote literal so 4."
+        "note": "Sinh hoc va y sinh tien tien -> nhom 4 theo QD 21/2026 [CNCL-G04]. Anh xa nhom, khong phai quote literal so 4. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: span mo dau bang 'Trong khi do' va chua 'Trong boi canh DO'. Cac cum nay noi cac han che cua phuong phap dieu tri truyen thong, tuc CAU DAN, va chinh cac han che do da nam trong span. Phan registry khang dinh la thiet bi va nang luc cua Y Sinh Ngoc Bao, tu dung duoc. Khong lui them vi se keo ca doan benh hoc vao ma khong them nghia."
       },
       {
         "field": "nang_luc_mo_ta",
         "value": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
-        "span": "Ngày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
+        "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
-        "note": "Da duoc Bo Y te cap phep luu hanh 04/07/2025."
+        "note": "Da duoc Bo Y te cap phep luu hanh 04/07/2025. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: span mo dau bang 'Trong khi do' va chua 'Trong boi canh DO'. Cac cum nay noi cac han che cua phuong phap dieu tri truyen thong, tuc CAU DAN, va chinh cac han che do da nam trong span. Phan registry khang dinh la thiet bi va nang luc cua Y Sinh Ngoc Bao, tu dung duoc. Khong lui them vi se keo ca doan benh hoc vao ma khong them nghia."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -584,12 +584,12 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "san_pham_lien_quan",
         "value": "12",
-        "span": "Ngày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
+        "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
-        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'Manh ghep hop so che tao tu vat lieu PEEK' in 3D ca the hoa -> SP12 He thong san xuat y te ca the hoa bang in 3D. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'Manh ghep hop so che tao tu vat lieu PEEK' in 3D ca the hoa -> SP12 He thong san xuat y te ca the hoa bang in 3D. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: span mo dau bang 'Trong khi do' va chua 'Trong boi canh DO'. Cac cum nay noi cac han che cua phuong phap dieu tri truyen thong, tuc CAU DAN, va chinh cac han che do da nam trong span. Phan registry khang dinh la thiet bi va nang luc cua Y Sinh Ngoc Bao, tu dung duoc. Khong lui them vi se keo ca doan benh hoc vao ma khong them nghia."
       }
     ]
   },
@@ -1710,12 +1710,12 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "ten_don_vi",
         "value": "ROSTEK",
-        "span": "Để giải quyết vấn đề này, startup công nghệ ROSTEK đã cho ra đời xe tự hành ROSTEK AGV, giúp tự động hóa quá trình vận chuyển, nhận và trả hàng hóa.",
+        "span": "Phương pháp thủ công này tiêu tốn rất nhiều nhân lực, nhưng hiệu suất lại thấp và chưa đạt độ chính xác cao.\n\nNgoài ra, với những kho hàng có số lượng và chủng loại hàng hóa lớn, việc vận chuyển và sắp xếp hàng hóa đúng chỗ, đúng cách cho mỗi loại hàng hóa là rất khó đạt được. Để giải quyết vấn đề này, startup công nghệ ROSTEK đã cho ra đời xe tự hành ROSTEK AGV, giúp tự động hóa quá trình vận chuyển, nhận và trả hàng hóa.",
         "source": "vjst.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vjst_rostek_agv_20220103.txt",
-        "note": ""
+        "note": "NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: sau hai luot lui, span van mo dau bang 'Phuong phap thu cong NAY' va chua 'de giai quyet van de NAY'. Lui tiep se lai loi vao mot cum hoi chieu khac, thanh day chuyen, va span se phinh ra ca bai. DUNG LAI o day vi hai cum do nam trong CAU DAN MO TA BOI CANH kho hang, con phan registry khang dinh (ROSTEK cho ra doi xe tu hanh ROSTEK AGV, cong dung cua no) thi tu dung duoc, khong phu thuoc vao viec 'van de nay' la van de gi."
       },
       {
         "field": "nhom_cncl",
@@ -2964,42 +2964,42 @@ export const cnclUnits: CnclUnit[] = [
       {
         "field": "ten_don_vi",
         "value": "VSAP LAB",
-        "span": "Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
+        "span": "![03cb792df852760c2f43.jpg]()\n\nTại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nhandan_vsaplab_20260816.txt",
-        "note": ""
+        "note": "NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
       },
       {
         "field": "nhom_cncl",
         "value": "6",
-        "span": "Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
+        "span": "![03cb792df852760c2f43.jpg]()\n\nTại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/nhandan_vsaplab_20260816.txt",
-        "note": "Chip ban dan -> nhom 6 (Cong nghe chip ban dan) theo QD 21/2026 [CNCL-G06]. Anh xa nhom, khong phai quote literal so 6."
+        "note": "Chip ban dan -> nhom 6 (Cong nghe chip ban dan) theo QD 21/2026 [CNCL-G06]. Anh xa nhom, khong phai quote literal so 6. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
       },
       {
         "field": "nang_luc_mo_ta",
         "value": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
-        "span": "Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
+        "span": "![03cb792df852760c2f43.jpg]()\n\nTại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nhandan_vsaplab_20260816.txt",
-        "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay."
+        "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
       },
       {
         "field": "san_pham_lien_quan",
         "value": "23",
-        "span": "Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
+        "span": "![03cb792df852760c2f43.jpg]()\n\nTại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.",
         "source": "nhandan.vn",
         "tier": "B",
         "extraction": "normalized",
         "href": "/evidence/nhandan_vsaplab_20260816.txt",
-        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+        "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
       }
     ]
   },
