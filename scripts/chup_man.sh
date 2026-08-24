@@ -27,21 +27,22 @@
 # Script NAY thi khong can gi ca, vi may that co san Chromium. Do la ly do van giu no.
 #
 # Chay: bash scripts/chup_man.sh
-# Anh ra: reports/man-registry.png va reports/man-matching.png
+# Anh ra: mot file .png cho MOI khung hinh khai trong scripts/moc_anh.json,
+#         cong reports/phu_moc.json ghi lai don vi nao that su nam trong khung.
 
 set -u
 cd "$(dirname "$0")/.." || exit 3
 
-echo "1/4 · sinh lai du lieu tu registry"
+echo "1/5 · sinh lai du lieu tu registry"
 node scripts/gen-cncl-data.mjs || { echo "DUNG: sinh du lieu that bai"; exit 2; }
 
-echo "2/4 · build"
+echo "2/5 · build"
 npm run build >/tmp/chup-build.log 2>&1 || { echo "DUNG: build that bai, xem /tmp/chup-build.log"; tail -20 /tmp/chup-build.log; exit 2; }
 
 # Cong con trong. Xin he dieu hanh mot cong bat ky roi tra lai ngay, tranh dung cung 3000
 # hay 3100 von hay ban tren may nay.
 P=$(node -e 'const s=require("net").createServer();s.listen(0,"127.0.0.1",()=>{console.log(s.address().port);s.close()})')
-echo "3/4 · chay server o cong $P"
+echo "3/5 · chay server o cong $P"
 npx next start -p "$P" >/tmp/chup-server.log 2>&1 &
 SV=$!
 # Doi that su san sang, khong doi bang sleep mu.
@@ -53,41 +54,52 @@ if ! curl -s -o /dev/null "http://localhost:$P/dashboard/registry"; then
   echo "DUNG: server khong len sau 20 giay, xem /tmp/chup-server.log"; kill $SV 2>/dev/null; exit 2
 fi
 
-echo "4/4 · chup"
+echo "4/5 · chup va do vung phu"
 mkdir -p reports
 RC=0
-node scripts/shot.mjs "http://localhost:$P/dashboard/registry" reports/man-registry.png || RC=2
-node scripts/shot.mjs "http://localhost:$P/dashboard/matching" reports/man-matching.png || RC=2
+if [ "${1:-}" = "--chot-moc" ]; then
+  node scripts/chup_va_do.mjs "http://localhost:$P" --chot || RC=2
+else
+  node scripts/chup_va_do.mjs "http://localhost:$P" || RC=2
+fi
 kill $SV 2>/dev/null
 wait $SV 2>/dev/null
 
 if [ "$RC" -ne 0 ]; then
-  echo "CHUP THAT BAI. Neu bao thieu trinh duyet thi chay: npx playwright install chromium"
+  echo "CHUP THAT BAI. Neu bao thieu trinh duyet thi chay:"
+  echo "  node node_modules/playwright-core/cli.js install chromium"
   exit 2
+fi
+
+if [ "${1:-}" = "--chot-moc" ]; then
+  echo
+  echo "Da chot moc moi cho moi khung hinh. Nho chot lai ngan sach vung phu neu no doi:"
+  node scripts/check-phu-moc.mjs
+  exit 0
 fi
 
 # 5/5 · SO VOI ANH MOC. Vi sao co buoc nay: ba lan lien tiep loi bo cuc chi lo khi nhin anh,
 # va lan thu ba chinh ban sua de ra loi moi. Mat nguoi van la cong cuoi, nhung buoc nay thu
 # hep cho phai nhin tu ca trang xuong dung vung vua doi.
-if [ "${1:-}" = "--chot-moc" ]; then
-  node scripts/so_anh.mjs --chot reports/man-registry.png reports/moc/man-registry.png
-  node scripts/so_anh.mjs --chot reports/man-matching.png reports/moc/man-matching.png
-  echo "Da chot moc moi. Lan sau chay khong co co nay se so voi hai anh nay."
-  exit 0
-fi
-
+#
+# VA MOT CANH BAO da phai tra gia moi biet: "TRUNG MOC tuyet doi" KHONG co nghia la trang
+# khong doi. No chi co nghia la phan NAM TRONG KHUNG HINH khong doi. Ngay 24/08/2026 mot tag
+# moi len 9 the ma phep so van bao 0% diem khac, vi ca 9 the do nam duoi day danh sach. Do la
+# ly do buoc 4 bay gio do luon vung phu, va co check-phu-moc.mjs khoa con so do mot chieu.
 echo "5/5 · so voi anh moc"
 SO=0
-node scripts/so_anh.mjs reports/man-registry.png reports/moc/man-registry.png || SO=$?
-node scripts/so_anh.mjs reports/man-matching.png reports/moc/man-matching.png || SO=$?
+for TEN in $(node -e 'const c=require("./scripts/moc_anh.json");console.log(c.khung.map(k=>k.ten).join(" "))'); do
+  node scripts/so_anh.mjs "reports/$TEN.png" "reports/moc/$TEN.png" || SO=$?
+done
 echo
 if [ "$SO" -ne 0 ]; then
   echo "CO MAN DOI SO VOI MOC. Doi la binh thuong khi vua sua UI. Nhin dung vung tren roi:"
   echo "  bash scripts/chup_man.sh --chot-moc    # neu dung y, chot lai moc"
   echo
 fi
-echo "XONG. Hai anh o:"
-echo "  $(pwd)/reports/man-registry.png"
-echo "  $(pwd)/reports/man-matching.png"
+node scripts/check-phu-moc.mjs
+echo
+echo "XONG. Anh o $(pwd)/reports/ :"
+node -e 'const c=require("./scripts/moc_anh.json");for(const k of c.khung)console.log("  "+k.ten+".png  "+k.vi_sao)'
 echo
 echo "Link neu muon tu xem lai (chay lai server): npx next start -p $P"
