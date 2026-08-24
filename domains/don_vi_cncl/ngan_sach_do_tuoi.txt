@@ -1,4 +1,4 @@
-32
+31
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -19,6 +19,10 @@
 #                         danh muc 2019, danh muc doi thi cau co the sai ma khong ai biet.
 #                         Ti le vong nay: 5 mien tru tren 6 claim dung toi, khong cao duoc
 #                         nguon moi nao du tuoi.
+#   24/08/2026  32 -> 31  Cong ty An ninh mang Viettel: NEO LAI SPAN thay vi cao nguon moi.
+#                         Span cu chi co cau '100% cac san pham nay...' con danh sach san pham
+#                         thi khong nam trong ban chup, tuc THAM CHIEU TREO. Lay lai ca doan
+#                         nguyen van nen cau co pham vi va co moc, mien tru moi co can cu.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.

@@ -63,11 +63,13 @@ def main(argv):
         snaps = sorted(random.sample(snaps, min(sample, len(snaps))))
 
     checked = unreachable = changed = 0
+    unreachable_names = []
     lines_ok = 0
     for p in snaps:
         fresh = fresh_dir / p.name
         if not fresh.exists():
             unreachable += 1
+            unreachable_names.append(p.name)
             print(f"SOURCE_UNREACHABLE: {p.name} · chua co ban tuoi tai {fresh}")
             continue
         checked += 1
@@ -91,7 +93,35 @@ def main(argv):
         print("KHONG CHAY DUOC: khong co ban tuoi nao. Day KHONG phai PASS.")
         return 3
     if unreachable:
-        print(f"OK mot phan: {checked} snapshot khop, con {unreachable} snapshot chua doi chung.")
+        # LUAT NAY DA TUNG BI CHINH CONG NAY PHA (sua 24/08/2026): docstring o tren viet
+        # "khong bao gio in OK khi chua doi chung duoc thu gi", the ma nhanh nay in
+        # "OK mot phan" va tra 0 cho nhung snapshot KHONG co ban tuoi. Voi cac snapshot do,
+        # cong khong biet gi ca, ma khong biet thi khong duoc tinh la dat.
+        #
+        # Cho phep MIEN, nhung phai ghi ten ra file, kem ly do. Vi du chinh dang: ban chup
+        # vua tao hom nay tu mot lan fetch, doi chung voi chinh lan fetch do thi luon khop
+        # va khong noi len dieu gi; phai cho toi lan sau moi co y nghia.
+        mien = {}
+        f = fresh_dir / "CHUA_DOI_CHUNG.txt"
+        if f.exists():
+            for d in f.read_text(encoding="utf-8").splitlines():
+                d = d.strip()
+                if not d or d.startswith("#"):
+                    continue
+                ten, _, ly = d.partition("|")
+                mien[ten.strip()] = ly.strip()
+        thieu = [n for n in sorted(unreachable_names) if n not in mien]
+        for n in sorted(unreachable_names):
+            if n in mien:
+                print(f"  [MIEN] {n}  ({mien[n]})")
+        if thieu:
+            print(f"KHONG CHAY DUOC: {len(thieu)} snapshot khong co ban tuoi va khong co ly do mien.")
+            for n in thieu:
+                print(f"  [THIEU BAN TUOI] {n}")
+            print(f'Cach xu: nap ban tuoi vao {fresh_dir}/, HOAC ghi mot dong '
+                  f'"<ten snapshot> | <ly do>" vao {f.name}.')
+            return 3
+        print(f"OK: {checked} snapshot khop, {len(mien)} snapshot duoc mien co ghi ly do.")
         return 0
     print("OK: moi snapshot deu trung thanh voi ban tuoi cua nguon.")
     return 0
