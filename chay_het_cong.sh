@@ -120,6 +120,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
+  chay CaoLocMatch rang_gop_cap     "$CLM" 'BITE GOP CAP'        python3 bite_gop_cap.py
   # Rang cua CHINH cai bang nay. Khong de quy vo han: no goi lai script voi --nhanh,
   # ma --nhanh bo qua toan bo khoi rang, nen chi sau dung mot tang.
   chay CaoLocMatch rang_chinh_bang  "$CLM" 'BITE CHAY HET'       python3 bite_chay_het_cong.py

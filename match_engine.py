@@ -659,6 +659,7 @@ def run(domain_dir):
         matches = make_matches_v4(cfg, facts, cfg["domain"], domain_dir)
     else:
         matches = make_matches_v2(cfg, facts, cfg["domain"], domain_dir)
+    matches = gop_cung_cap(matches)
     matches, bi_tu_choi = _loc_bi_tu_choi(matches, Path(domain_dir),
                                           bo_qua="--ignore-rejections" in sys.argv)
     passed, blocked = validate_all(matches, facts, stop_on_first=False)
@@ -736,7 +737,7 @@ def validate_file(domain_dir, matches_path, require_signoff=False):
     rej = _rejected_digests(Path(domain_dir))
     for m in matches:
         gate_match(m, facts)
-        r = rej.get(_match_khoa(m)["digest"])
+        r = rej.get((m["demand"]["entity_id"], m["supply"]["entity_id"]))
         if r is not None and ((m.get("gate") or {}).get("signoff") or {}).get("decision") != "tu_choi":
             raise GateError("SIGNOFF_REJECTED_RESURFACED",
                             f"{m.get('id')}: cap {m['demand']['entity_id']} <-> {m['supply']['entity_id']} "
@@ -775,7 +776,7 @@ def _val_flag(argv, name):
     return None
 
 
-def bang_chung_digest(domain_dir, m):
+def bang_chung_digest(domain_dir, m, ids_rieng=None):
     """Khoa CHU CUA BANG CHUNG ma mot match dua vao (fact_id + snapshot + evidence_span).
 
     VI SAO CAN, phat hien 16/08/2026: fact_id = sha1(entity|field|value), tuc KHONG phu
@@ -798,7 +799,10 @@ def bang_chung_digest(domain_dir, m):
             fid = fact_id(c["entity"], c["field"], c["value"])
             cap = c.get("capture") or {}
             facts.setdefault(fid, set()).add(f"{cap.get('snapshot','')}::{c.get('evidence_span','')}")
-    ids = sorted((m["demand"].get("need_fact_ids") or []) + (m["supply"].get("capability_fact_ids") or []))
+    if ids_rieng is None:
+        ids = sorted((m["demand"].get("need_fact_ids") or []) + (m["supply"].get("capability_fact_ids") or []))
+    else:
+        ids = sorted(ids_rieng)
     raw = "|".join(f"{i}=>" + "~".join(sorted(facts.get(i, {"KHONG-CO-BANG-CHUNG"}))) for i in ids)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -833,9 +837,66 @@ def _rejected_digests(domain_dir):
     kem ly do ghi trong so. No quay lai qua canh chuoi gia tri, tuc mot duong ma rule
     moi mo ra. Chuyen do chi lo vi tieu chi H5 duoc khoa truoc; khong khoa thi da lang le.
     Neu chi va rule v2 thi rule v5 sau nay lai thung. Rang buoc phai nam duoi moi rule.
+
+    KHOA THEO CAP CHU KHONG THEO DIGEST (18/08/2026): Lam tu choi mot CAP, khong tu choi mot
+    chuoi bang chung cu the. Khoa theo digest thi chi can cao them mot nguon moi cho cap do
+    la digest doi va cap quay lai nhu chua tung bi tu choi. Do la mot cua hau, va chinh loai
+    cua hau nay da lam VNPT x P08 quay lai o rule v4.
     """
-    return {r["khoa"]["digest"]: r for r in _read_ledger(domain_dir)
-            if r.get("decision") == "tu_choi"}
+    return {(r["khoa"]["demand_entity"], r["khoa"]["supply_entity"]): r
+            for r in _read_ledger(domain_dir) if r.get("decision") == "tu_choi"}
+
+
+def gop_cung_cap(matches):
+    """Gop cac match CUNG MOT CAP (cau, cung) thanh MOT dong nhieu chuoi bang chung.
+
+    VI SAO (18/08/2026): vong cao lam moi tim duoc mot nguon moi cho FPT Semiconductor. Fact
+    nang luc moi sinh ra MATCH-0007, trong khi MATCH-0005 da la dung cap do va Lam da ky.
+    Cung mot ket luan hien hai lan, va so match se phinh theo SO NGUON chu khong theo SO CAP
+    that. Nguoi doc dem match de uoc luong do phu se bi con so danh lua.
+
+    GOP CHU KHONG BO: hai chuoi bang chung deu duoc giu, chi don vao mot dong. Bo bot mot
+    chuoi la vut bang chung, thu ma ca he nay ton tai de giu.
+
+    Dong gop giu:
+      - hop cua fact hai ben, de khoa noi dung phu du bang chung
+      - diem CAO NHAT trong cac chuoi (khong trung binh: trung binh lam mot chuoi manh bi
+        mot chuoi yeu keo xuong, tuc them bang chung lai lam match xau di, vo ly)
+      - `chuoi_bang_chung`: tung chuoi goc kem diem rieng, de nguoi gac cong soi tung duong
+    """
+    theo_cap, thu_tu = {}, []
+    for m in matches:
+        k = (m["demand"]["entity_id"], m["supply"]["entity_id"])
+        if k not in theo_cap:
+            theo_cap[k] = []
+            thu_tu.append(k)
+        theo_cap[k].append(m)
+
+    ra, seq = [], 0
+    for k in thu_tu:
+        nhom = theo_cap[k]
+        seq += 1
+        goc = max(nhom, key=lambda m: m["rationale"]["score"])
+        m = json.loads(json.dumps(goc))  # ban sao sau, khong sua ban goc
+        m["id"] = f"MATCH-{seq:04d}"
+        m["demand"]["need_fact_ids"] = sorted({i for x in nhom for i in x["demand"]["need_fact_ids"]})
+        m["supply"]["capability_fact_ids"] = sorted({i for x in nhom for i in x["supply"]["capability_fact_ids"]})
+        m["rationale"]["score"] = max(x["rationale"]["score"] for x in nhom)
+        m["rationale"]["chuoi_bang_chung"] = [{
+            "need_fact_ids": sorted(x["demand"]["need_fact_ids"]),
+            "capability_fact_ids": sorted(x["supply"]["capability_fact_ids"]),
+            "score": x["rationale"]["score"],
+            "neo_nhom": x["rationale"].get("neo_nhom"),
+            "token_giao": (x["rationale"].get("token_con_lai") or {}).get("giao"),
+        } for x in sorted(nhom, key=lambda x: -x["rationale"]["score"])]
+        uv = {json.dumps(u, sort_keys=True) for x in nhom for u in (x.get("unverified") or [])}
+        m["unverified"] = [json.loads(s) for s in sorted(uv)]
+        ra.append(m)
+
+    gop = len(matches) - len(ra)
+    if gop:
+        print(f"GOP CUNG CAP: {len(matches)} match -> {len(ra)} cap ({gop} dong duoc gop, khong bo bang chung nao)")
+    return ra
 
 
 def _loc_bi_tu_choi(matches, domain_dir, bo_qua=False):
@@ -849,7 +910,7 @@ def _loc_bi_tu_choi(matches, domain_dir, bo_qua=False):
         return matches, []
     con, loai = [], []
     for m in matches:
-        r = rej.get(_match_khoa(m)["digest"])
+        r = rej.get((m["demand"]["entity_id"], m["supply"]["entity_id"]))
         if r is None:
             con.append(m)
         else:
@@ -1026,29 +1087,57 @@ def restore_signoff(domain_dir, matches_path):
     Match nao doi noi dung so voi luc ky thi KHONG duoc gan lai: noi dung khac tuc la
     nguoi gac cong chua tung xem thu do. Bao ro de nguoi ky lai.
     """
-    ledger = {r["khoa"]["digest"]: r for r in _read_ledger(domain_dir)}
+    # TRA SO THEO CAP, KHONG THEO DIGEST TOAN DONG (18/08/2026, cung luc co gop_cung_cap).
+    #
+    # Vi sao doi: sau khi gop, mot dong mang HOP cua nhieu chuoi bang chung, nen digest toan
+    # dong khac digest luc ky va khong dong nao tra duoc so. Neu cu the thi moi lan cao them
+    # mot nguon la Lam phai ky lai het, va ky lai hang loat thi chu ky mat y nghia.
+    #
+    # Luat moi, chat hon chu khong long hon:
+    #   Chu ky con gia tri khi TAP BANG CHUNG DA KY VAN CON NGUYEN trong dong hien tai,
+    #   dung tung chu. Fact moi them vao KHONG duoc chu ky do bao ve: chung bi danh dau
+    #   `chua_duyet` de nguoi doc biet phan nao da qua mat nguoi va phan nao chua.
+    #
+    # Nghia la: them bang chung thi chu ky con, sua hoac bo bang chung DA KY thi chu ky rung.
+    # Do dung la phan biet ma mot chu ky can co.
+    theo_cap = {}
+    for r in _read_ledger(domain_dir):
+        theo_cap.setdefault((r["khoa"]["demand_entity"], r["khoa"]["supply_entity"]), []).append(r)
     p = Path(matches_path)
     rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
-    gan, chua, doi_bang_chung, chua_khoa = [], [], [], []
+    gan, chua, doi_bang_chung, chua_khoa, co_them = [], [], [], [], []
     for m in rows:
-        k = _match_khoa(m)
-        r = ledger.get(k["digest"])
-        if r is None:
+        ds = theo_cap.get((m["demand"]["entity_id"], m["supply"]["entity_id"]))
+        if not ds:
             chua.append(m["id"])
             continue
-        # Chu ky chi con gia tri neu CHU CUA BANG CHUNG van dung chu luc ky.
-        cu = (r.get("khoa") or {}).get("bang_chung")
-        moi = bang_chung_digest(domain_dir, m)
-        if cu is None:
-            chua_khoa.append(m["id"])
+        co_dong = m["demand"]["need_fact_ids"] + m["supply"]["capability_fact_ids"]
+        hop_le, thieu_khoa, sai_chu = None, False, False
+        for r in ds:
+            ky_ids = (r["khoa"].get("need_fact_ids") or []) + (r["khoa"].get("capability_fact_ids") or [])
+            if not set(ky_ids).issubset(co_dong):
+                continue          # tap da ky khong con nam tron trong dong nay
+            cu = (r.get("khoa") or {}).get("bang_chung")
+            if cu is None:
+                thieu_khoa = True
+                continue
+            if cu != bang_chung_digest(domain_dir, m, ids_rieng=ky_ids):
+                sai_chu = True
+                continue
+            hop_le = (r, set(ky_ids))
+            break
+        if hop_le is None:
+            (chua_khoa if thieu_khoa else doi_bang_chung if sai_chu else chua).append(m["id"])
             continue
-        if cu != moi:
-            doi_bang_chung.append(m["id"])
-            continue
+        r, ky_ids = hop_le
         m["gate"]["signoff"] = {"by": r["by"], "role": r["role"], "date": r["date"],
                                 "decision": r["decision"]}
         if r.get("ly_do"):
             m["gate"]["signoff"]["ly_do"] = r["ly_do"]
+        them = sorted(set(co_dong) - ky_ids)
+        if them:
+            m["gate"]["signoff"]["chua_duyet"] = them
+            co_them.append(f"{m['id']}({len(them)})")
         gan.append(m["id"])
     _write_matches(p, rows)
     print(f"RESTORE: gan lai {len(gan)}/{len(rows)} chu ky tu so")
@@ -1062,6 +1151,10 @@ def restore_signoff(domain_dir, matches_path):
     if chua_khoa:
         print(f"  SO CU CHUA CO KHOA BANG CHUNG: {', '.join(chua_khoa)}")
         print("     Chay `migrate-ledger` de dong khoa bang chung cho cac dong ky truoc 16/08/2026.")
+    if co_them:
+        print(f"  CO BANG CHUNG MOI CHUA AI DUYET: {', '.join(co_them)}")
+        print("     Chu ky cu van dung cho phan da ky. Phan moi danh dau chua_duyet, khong duoc")
+        print("     trinh nhu da qua mat nguoi gac cong. Ky lai dong do neu muon phu ca phan moi.")
     return len(chua) + len(doi_bang_chung) + len(chua_khoa)
 
 
@@ -1086,8 +1179,13 @@ def _canh_bao_ghi_de(out_dir, domain_dir, force):
     da_xu = [m for m in rows if _da_xu_ly(m)]
     if not da_xu:
         return
-    ledger = {r["khoa"]["digest"] for r in _read_ledger(domain_dir)}
-    thieu = [m["id"] for m in da_xu if _match_khoa(m)["digest"] not in ledger]
+    # Tra so THEO CAP, cung luat voi restore_signoff (18/08/2026). Tra theo digest toan dong
+    # se bao dong gia sau khi gop_cung_cap: dong gop mang hop cua nhieu chuoi nen digest khac
+    # digest luc ky, du quyet dinh cua nguoi VAN nam trong so. Bao dong gia cung nguy hiem
+    # ngang bo sot, vi no day nguoi ta toi thoi quen go --force cho xong.
+    cap_trong_so = {(r["khoa"]["demand_entity"], r["khoa"]["supply_entity"]) for r in _read_ledger(domain_dir)}
+    thieu = [m["id"] for m in da_xu
+             if (m["demand"]["entity_id"], m["supply"]["entity_id"]) not in cap_trong_so]
     if not thieu:
         return
     if force:
