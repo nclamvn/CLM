@@ -104,6 +104,11 @@ chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_e
 # chuyen "web lech so voi registry" ngay khi no vua xay ra.
 TOUCH=$(tim_kho .touch || true)
 if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
+  # Tu kiem goc duong dan TRUOC khi sinh. Ngay 24/08/2026 gen-cncl-data.mjs sap tren may
+  # anh Lam voi ENOENT scandir '/sessions', vi moi truong nay co /sessions con may that thi
+  # khong. Moi moi truong chi co MOT goc, nen nhanh danh cho goc kia khong bao gio chay o
+  # day va khong cong nao bat duoc. O nay chay ca hai nhanh bang thu muc gia.
+  chay .touch      goc_duong_dan    "$TOUCH" 'TU KIEM GOC'        node scripts/goc.mjs --tu-kiem
   chay .touch      sinh_du_lieu_web "$TOUCH" 'REGISTRY:|FAIL:'   node scripts/gen-cncl-data.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
