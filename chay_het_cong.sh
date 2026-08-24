@@ -97,6 +97,11 @@ chay CNCLData nguon_tai_tro       "$CNCL" 'dau hieu tai tro|VI PHAM' python3 che
 # nay' ma danh sach lai nam o cau khong duoc chup. Loai loi nay QUA DUOC het cac cong khac:
 # span van nguyen van, value van la chuoi con, tier van dung. Chi co nghia la rong.
 chay CNCLData tham_chieu_treo     "$CNCL" 'tham chieu treo|ngan sach' python3 check_tham_chieu_treo.py domains/don_vi_cncl
+# Doi chieu claim voi chinh luat du dieu kien cua domain. Luat nam trong domain.yaml tu dau
+# va da dung de loai MobiFone, nhung khong may nao doi chieu, nen FECON van o lai voi mot
+# claim 'van hanh' ma luat xep vao ve khong du dieu kien. Ap luat khong deu la thu khach soi
+# ho so se hoi dau tien.
+chay CNCLData du_dieu_kien        "$CNCL" 'can tra loi|OK:'     python3 check_du_dieu_kien.py domains/don_vi_cncl
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py

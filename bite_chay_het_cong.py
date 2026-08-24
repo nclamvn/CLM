@@ -83,6 +83,11 @@ def main():
         ok1 = ok2 = ok3 = False
         tam = fresh.parent / ".fidelity_fresh__bite_tam"
 
+        # NEN: ket qua khi chua tiem gi. Rang 1 va 2 doi ket qua PHAI KHAC nen, rang 3 doi
+        # ket qua PHAI TRO VE nen. Chup nen truoc thi ba rang do dung mot moc.
+        nen_rc, _ = chay_lenh()
+        print(f"{'NEN (chua tiem gi)':38s} : exit {nen_rc}")
+
         # ── RANG 1 · tiem loi that, doi bao DO ────────────────────────────────
         rows = [json.loads(l) for l in claims.read_text(encoding="utf-8").splitlines() if l.strip()]
         rows[0]["evidence_span"] = rows[0]["evidence_span"] + " CAU NAY KHONG CO TRONG BAN CHUP"
@@ -90,7 +95,7 @@ def main():
         claims.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n",
                           encoding="utf-8")
         rc, out = chay_lenh()
-        ok1 = rc == 1 and o_bang(out, "refinery") == "DO"
+        ok1 = rc != 0 and o_bang(out, "refinery") == "DO"
         print(f"{'RANG 1 · bao DO khi co loi that':38s} : " +
               ("CAN OK (exit 1, refinery DO)" if ok1 else f"KHONG CAN !! exit{rc} o={o_bang(out,'refinery')}"))
         claims.write_bytes(giu)
@@ -105,10 +110,17 @@ def main():
         tam.rename(fresh)
 
         # ── RANG 3 · khong bao do oan ─────────────────────────────────────────
+        # Do TRO VE DUNG NEN, khong doi "tat ca xanh" (sua 24/08/2026). Truoc do rang nay
+        # doi exit 0, tuc ngam gia dinh he luc nao cung sach. Gia dinh do vo ngay hom nay:
+        # cong du_dieu_kien bat FECON va DUNG khi bao do, vi do la mot quyet dinh dang cho
+        # nguoi. Rang doi mau xanh se bien mot cau hoi chinh dang thanh mot loi cua he thong,
+        # va suc ep se doi ve phia go cau hoi di cho bang xanh lai. Cai rang nay muon do la
+        # "tra ve nguyen trang thi ket qua tro lai nhu cu", nen phai so voi NEN da chup luc dau.
         rc, out = chay_lenh()
-        ok3 = rc == 0 and "TAT CA XANH" in out
+        ok3 = rc == nen_rc
         print(f"{'RANG 3 · khong bao DO oan':38s} : " +
-              ("CAN OK (exit 0, tat ca xanh)" if ok3 else f"KHONG CAN !! exit{rc}\n{out[-700:]}"))
+              (f"CAN OK (tro ve dung nen, exit {rc})" if ok3
+               else f"KHONG CAN !! exit{rc} khac nen exit{nen_rc}\n{out[-700:]}"))
 
         # ── RANG 4 · khong cham ban that ──────────────────────────────────────
         # Ba rang tren da tiem loi ba lan. Neu ban that con nguyen thi moi chung minh duoc
