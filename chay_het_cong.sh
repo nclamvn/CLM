@@ -132,8 +132,14 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # gio lech voi du lieu that.
   chay .touch      sinh_tra_cuu     "$TOUCH" 'TRA CUU:|FAIL:'    node scripts/gen-tracuu-html.mjs
   chay .touch      cong_em_dash     "$TOUCH" 'OK:|FAIL:'         node scripts/check-emdash.mjs
+  # Cong nay hoi cau ma 25 o con lai KHONG hoi: cai gi trong registry ma trang web bo roi.
+  # Moi o khac deu do TINH TOAN VEN DU LIEU. Truong nang_luc_mo_ta_2 nam trong registry tam
+  # ngay, du lieu dung tung chu, bang trang thai xanh het, va the tren web van ke thieu mot
+  # nua nang luc cua FECON. Phai chay SAU sinh_du_lieu_web vi no doc dau ra cua buoc do.
+  chay .touch      truong_hien      "$TOUCH" 'OK:|FAIL|CHUA KHAI' node scripts/check-truong-hien.mjs
   if [ "$NHANH" -eq 0 ]; then
     chay .touch    rang_tra_cuu     "$TOUCH" 'BITE TRA CUU'      node scripts/bite_tracuu.mjs
+    chay .touch    rang_truong_hien "$TOUCH" 'BITE TRUONG HIEN'  node scripts/bite-truong-hien.mjs
   fi
 fi
 
