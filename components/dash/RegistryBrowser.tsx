@@ -69,6 +69,10 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
           <span className="reg-unit__count">{u.evidence.length} evidence</span>
         </span>
         <span className="reg-unit__cap">{u.capability || 'Chưa có mô tả năng lực có bằng chứng verbatim.'}</span>
+        {/* Mang nang luc thu hai. Mot don vi co hai mang thi ke ca hai, vi ke mot mang co
+            the noi nguoc han y nghia: FECON co ca "van hanh TBM" lan "tu nghien cuu vo ham",
+            va chi hien ve dau thi trang web mo ta dung cai ly do de LOAI no. */}
+        {u.capability2 ? <span className="reg-unit__cap reg-unit__cap--2">{u.capability2}</span> : null}
         <span className="reg-unit__tags">
           {u.nhoms.map((n) => (
             <span key={n} className="reg-tag">{`Nhóm ${n} · ${TEN_NHOM[n] ?? ''}`}</span>

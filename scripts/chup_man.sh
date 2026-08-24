@@ -1,13 +1,22 @@
 #!/usr/bin/env bash
 # chup_man.sh · Dung server, chup hai man dashboard, tat server. Chay tren MAY THAT.
 #
-# VI SAO CO (24/08/2026): moi truong bash cua Claude la mot may Linux rieng, mang cua no
-# khong toi duoc may nay, va no thieu thu vien he thong nen Playwright khong chay duoc o do.
-# Ket qua: khau soi bo cuc bang mat la khau duy nhat trong ca chuoi khong tu dong hoa duoc.
+# VI SAO CO (24/08/2026): thu gon khau chup con MOT lenh dan. Khong phai go tung buoc, khong
+# phai nho port, khong phai nho tat server. Dan mot dong, may lam phan con lai va in ra duong
+# dan hai file anh.
 #
-# Script nay thu gon khau do con MOT lenh dan. Khong phai go tung buoc, khong phai nho port,
-# khong phai nho tat server. Anh Lam dan mot dong, may tu lam phan con lai va in ra duong dan
-# hai file anh.
+# SUA MOT CAU SAI CUA CHINH FILE NAY (chieu 24/08/2026). Ban dau o day viet: "moi truong bash
+# cua Claude thieu thu vien he thong nen Playwright khong chay duoc o do, nen khau soi bo cuc
+# bang mat la khau duy nhat khong tu dong hoa duoc". Cau do SAI, va no sai theo kieu nguy
+# nhat: mot gia dinh chua thu bao gio, viet vao file duoi dang su that, roi dung lam ly do de
+# khong lam.
+#
+# Thu that thi thieu DUNG MOT thu vien, libXdamage.so.1. Tai goi .deb bang apt-get download,
+# giai nen vao thu muc rieng, tro LD_LIBRARY_PATH vao do, la Chromium chay. Toan bo chuoi
+# build, dung server, chup hai man, so anh voi moc DEU chay duoc trong moi truong Linux do.
+#
+# Chi con MOT khau that su can nguoi: NHIN CAI ANH. May chup duoc, may so duoc phan tram diem
+# khac, nhung "trang nay co coi duoc khong" thi van la mat nguoi.
 #
 # Chay: bash scripts/chup_man.sh
 # Anh ra: reports/man-registry.png va reports/man-matching.png

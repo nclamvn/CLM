@@ -197,13 +197,11 @@ export const signedMatches: SignedMatch[] = [
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
-      "date": "2026-08-16"
+      "date": "2026-08-24"
     },
-    "chuaDuyet": [
-      "FACT-fc80770a3a"
-    ],
+    "chuaDuyet": [],
     "soChuoi": 2,
-    "khoaBangChung": "8e8994686f816b3d",
+    "khoaBangChung": "8e65ab7b193b67e7",
     "demandEvidence": [
       {
         "field": "need",
@@ -508,9 +506,7 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
-    "chuaDuyet": [
-      "FACT-f4b6629590"
-    ],
+    "chuaDuyet": [],
     "soChuoi": 2,
     "khoaBangChung": "a5a01bc2d7b0748e",
     "demandEvidence": [

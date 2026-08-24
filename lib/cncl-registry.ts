@@ -10,7 +10,7 @@ export type CnclEvidence = {
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
   name: string; loaiHinh: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
-  capability: string; bestTier: CnclTier; favorsRtr: boolean;
+  capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };
 export type CnclNeed = {
@@ -20,12 +20,12 @@ export type CnclNeed = {
 
 export const cnclMeta = {
   "units": 42,
-  "claims": 202,
+  "claims": 204,
   "needs": 30,
-  "sources": 11,
-  "snapshots": 39,
+  "sources": 12,
+  "snapshots": 40,
   "tierA": 76,
-  "tierB": 126,
+  "tierB": 128,
   "nhomPhu": 10,
   "generatedAt": "2026-08-24",
   "frame": "QĐ 21/2026/QĐ-TTg",
@@ -46,6 +46,7 @@ export const cnclUnits: CnclUnit[] = [
       "09"
     ],
     "capability": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -111,6 +112,7 @@ export const cnclUnits: CnclUnit[] = [
       "14"
     ],
     "capability": "AVAC ASF LIVE",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -186,6 +188,7 @@ export const cnclUnits: CnclUnit[] = [
       "09"
     ],
     "capability": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -251,6 +254,7 @@ export const cnclUnits: CnclUnit[] = [
       "18"
     ],
     "capability": "chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -299,7 +303,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-        "note": "CANH BAO: day la KHANG DINH CUA TOA SOAN, khong dan nguon kiem chung. Doc nhu CLAIM chu khong phai su that cung. Them nua, cung bai ghi 11/10/2023 VinES da duoc tang 99,8% cho VinFast, tu cach phap nhan doc lap hien nay CHUA kiem chung. GIU NGUON CU: cung vong tim voi claim tren, khong co nguon moi. Cau la mot moc LAN DAU nen khong het han. NHUNG PHAI LUU Y KHI TRINH RA NGOAI: 'dau tien tai Dong Nam A lam chu duoc cong nghe ve cell pin' la mot khang dinh SO SANH KHU VUC, loai de bi doi chieu va bac bo, va no den tu mot bai bao 06/03/2024 chu khong tu mot cong bo doc lap. Cung loai rui ro voi cum 'dau tien' cua CT Semiconductor va FPT ma vong truoc da ghi nhan hai ben cung nhan."
+        "note": "CANH BAO: day la KHANG DINH CUA TOA SOAN, khong dan nguon kiem chung. Doc nhu CLAIM chu khong phai su that cung. Them nua, cung bai ghi 11/10/2023 VinES da duoc tang 99,8% cho VinFast, tu cach phap nhan doc lap hien nay CHUA kiem chung. GIU NGUON CU: cung vong tim voi claim tren, khong co nguon moi. Cau la mot moc LAN DAU nen khong het han. NHUNG PHAI LUU Y KHI TRINH RA NGOAI: 'dau tien tai Dong Nam A lam chu duoc cong nghe ve cell pin' la mot khang dinh SO SANH KHU VUC, loai de bi doi chieu va bac bo, va no den tu mot bai bao 06/03/2024 chu khong tu mot cong bo doc lap. Cung loai rui ro voi cum 'dau tien' cua CT Semiconductor va FPT ma vong truoc da ghi nhan hai ben cung nhan. KHANG DINH TOI THUONG: pham vi la DAU TIEN TAI DONG NAM A lam chu cong nghe cell pin, tuc so sanh CAP KHU VUC · nguon 06/03/2024 · CHUA doi chieu doc lap. RUI RO CAO NHAT trong bay cai: pham vi cang rong thi cang de bi mot truong hop som hon o nuoc khac bac bo."
       },
       {
         "field": "san_pham_lien_quan",
@@ -326,6 +330,7 @@ export const cnclUnits: CnclUnit[] = [
       "07"
     ],
     "capability": "giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -391,6 +396,7 @@ export const cnclUnits: CnclUnit[] = [
       "14"
     ],
     "capability": "NAVET-ASFVAC",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -456,6 +462,7 @@ export const cnclUnits: CnclUnit[] = [
       "07"
     ],
     "capability": "nghiên cứu, phát triển và thương mại hóa robot hình người",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -504,7 +511,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt",
-        "note": "Muc NGUYEN MAU, khong phai san pham thuong mai. Viec trien khai vao nha may VinFast trong bai la KE HOACH."
+        "note": "Muc NGUYEN MAU, khong phai san pham thuong mai. Viec trien khai vao nha may VinFast trong bai la KE HOACH. KHANG DINH TOI THUONG: pham vi la NGUYEN MAU ROBOT DAU TIEN CUA CHINH VINMOTION, khong phai dau tien cua Viet Nam · nguon 06/06/2025 · doc ky thi cau tu gioi han o pham vi doi ngu ky su cua VinMotion nen it rui ro nhat trong bay cai."
       },
       {
         "field": "san_pham_lien_quan",
@@ -531,6 +538,7 @@ export const cnclUnits: CnclUnit[] = [
       "12"
     ],
     "capability": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -606,6 +614,7 @@ export const cnclUnits: CnclUnit[] = [
       "25"
     ],
     "capability": "sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -681,6 +690,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -756,6 +766,7 @@ export const cnclUnits: CnclUnit[] = [
       "23"
     ],
     "capability": "triển khai giai đoạn 2 nhà máy chip ATP",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -831,15 +842,20 @@ export const cnclUnits: CnclUnit[] = [
       "29"
     ],
     "capability": "đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội",
+    "capability2": "trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: Vỏ hầm và sản xuất vỏ hầm tại Việt Nam, Ứng dụng công nghệ cọc cừ bê tông dự ứng lực và Quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - Fiber Optic",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vnexpress.net",
         "href": "/evidence/vnexpress_fecon_tbm_20240829.txt"
+      },
+      {
+        "source": "baodautu.vn",
+        "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt"
       }
     ],
-    "tim": "fecon đơn vị trực tiếp vận hành robot đào ngầm (tbm) số 1 metro nhổn - ga hà nội nhóm 10 đường sắt tốc độ cao sp 29",
+    "tim": "fecon đơn vị trực tiếp vận hành robot đào ngầm (tbm) số 1 metro nhổn - ga hà nội trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: vỏ hầm và sản xuất vỏ hầm tại việt nam, ứng dụng công nghệ cọc cừ bê tông dự ứng lực và quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - fiber optic nhóm 10 đường sắt tốc độ cao sp 29",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -869,7 +885,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
-        "note": "QUAN TRONG: FECON VAN HANH may TBM, KHONG che tao. May do hang nuoc ngoai san xuat. Nang luc thuoc mang THI CONG, khong phai thiet bi."
+        "note": "QUAN TRONG: FECON VAN HANH may TBM, KHONG che tao. May do hang nuoc ngoai san xuat. Nang luc thuoc mang THI CONG, khong phai thiet bi. GIU NGUON CU: da cao lai 24/08/2026. Claim mo ta viec FECON van hanh TBM so 1 tuyen Nhon - ga Ha Noi, mot SU KIEN DA KET THUC: baoxaydung.vn 07/05/2026 (baoxaydung_fecon_tbm_vedich_20260507.html) cho biet thang 4/2026 may TBM 'Tao Bao' da ve dich tai Ga Ha Noi, hoan thanh doan ham cuoi cung. Su kien xong thi khong het han, nen giu nguyen nguon vnexpress 29/08/2024 lam nguon goc cua cau. Nguon 2026 nay chi dung de DOI CHUNG rang viec do da hoan tat, khong dung de sua span. DU DIEU KIEN DA XET: LAM QUYET 24/08/2026, theo dieu khoan ranh_gioi_xam cua domain.yaml. MAY KHONG QUYET CAI NAY. Cong bao do ba luot, may di tim bang chung, nguoi phan xu. CAN CU: FECON vua VAN HANH may TBM do hang nuoc ngoai san xuat (khong du dieu kien) vua co phan TU NGHIEN CUU (du dieu kien). Bang chung phan tu nghien cuu: baodautu.vn 28/12/2015, tier B, nguon doc lap, ghi Ban R&D FECON 'truc tiep nghien cuu va thu nghiem 3 de tai' la vo ham va san xuat vo ham, coc cu be tong du ung luc, va quan trac cap quang. Xem claim FECON/nang_luc_mo_ta_2 va FECON/bang_chung_nang_luc. PHAM VI HEP, day la phan phai doc ky nhat: phan tu phat trien CHI GOM vo ham, coc cu va quan trac. KHONG bao gom may TBM. FECON KHONG thiet ke, KHONG che tao may TBM, va khong nguon nao noi the. Trinh ra ngoai ma de nguoi doc hieu FECON lam chu may TBM la trinh sai. KHAC MOBIFONE O CHO NAO: MobiFone bi loai 16/08/2026 vi KHONG tim thay bat ky phan tu phat trien nao, chu khong phai vi no van hanh. FECON co phan do va co nguon. Hai ca ap CUNG MOT luat, ra hai ket qua khac nhau vi bang chung khac nhau. Do khong phai noi luat. DIEM YEU TU NHAN, ghi ra de sau nay khong ai phai phat hien lai: bang chung la bai 2015, da 11 nam. Khach soi ho so co quyen hoi vi sao khong co ban moi hon. Cau tra loi that la vong 24/08/2026 chua tim duoc nguon tier A hoac B nao sau 2015 noi FECON tu nghien cuu, ngoai trang thuong hieu tren nhandan.vn/special va trang fecon.com.vn, ca hai deu khong dung duoc. Neu vong sau tim duoc ban moi thi thay vao day."
       },
       {
         "field": "san_pham_lien_quan",
@@ -880,6 +896,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi thi cong ham ngam metro -> SP29 Cong trinh duong sat toc do cao (mang cong trinh). Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: Vỏ hầm và sản xuất vỏ hầm tại Việt Nam, Ứng dụng công nghệ cọc cừ bê tông dự ứng lực và Quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - Fiber Optic",
+        "span": "Đặc biệt năm 2015, Ban R&D cùng các đơn vị trong hệ thống FECON đã trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: Vỏ hầm và sản xuất vỏ hầm tại Việt Nam, Ứng dụng công nghệ cọc cừ bê tông dự ứng lực và Quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - Fiber Optic.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
+        "note": "GIU NGUON CU: nguon 28/12/2015, va do la DUNG loai nguon can dung. Claim mo ta mot viec DA XAY RA VA DA KET THUC (nam 2015 Ban R&D FECON nghien cuu va san xuat thu vo ham), khong phai mot trang thai dang chay. Su kien xong thi khong het han; cao mot bai 2026 cung khong lam viec nam 2015 dung hay sai hon. Doc dung la 'nam 2015 da lam', KHONG duoc doc thanh 'hien dang nghien cuu'. NEU sau nay muon khang dinh FECON HIEN NAY con nang luc nghien cuu thi do la mot claim KHAC, truong khac, va phai co nguon moi. VONG DU DIEU KIEN 24/08/2026. Nap de TRA LOI cau hoi cong check_du_dieu_kien.py dat ra, KHONG phai de tu ket luan. Cong bao DO vi claim nang_luc_mo_ta chi noi FECON VAN HANH may TBM do hang nuoc ngoai san xuat. Dieu khoan ranh_gioi_xam trong domain.yaml noi: don vi vua van hanh vua tu phat trien mot phan cong nghe loi thi XET THEO BANG CHUNG CU THE cua phan tu phat trien. Day la bang chung cu the do. SU KIEN DA HOAN THANH nam 2015, khong phai trang thai dang chay, nen khong het han theo luat do_tuoi. Doc dung la: nam 2015 FECON da tu nghien cuu ba de tai. KHONG duoc doc thanh FECON hien dang nghien cuu, va KHONG duoc doc thanh FECON che tao may TBM. CAI KHONG TIM THAY, ghi ra de nguoi can nhac ca hai chieu: khong co nguon nao noi FECON thiet ke hay che tao chinh may TBM. Ba de tai nay la vo ham, coc cu be tong du ung luc va quan trac cap quang, tuc phu kien va cong nghe phu tro, khong phai thiet bi dao. NGUON DA LOAI: fecon.com.vn la trang cua chinh don vi (tier C). Trang nhandan.vn/special/ ve FECON co noi ro Vien R&D FECON lap nam 2010, NHUNG do la trang emagazine dung Shorthand, con nguyen chu mau tieng Anh chua xoa cua template (vi du 'A meeting point for those passionate about pushing the boundaries of film and media') va slug URL ket thuc bang '-copy'. Mot trang khong ai doc soat lai thi khong dung lam bang chung registry, du ten mien la tier A."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "sản xuất thử thành công vỏ hầm",
+        "span": "Trong đó, việc sản xuất thử thành công vỏ hầm là một bước đi quan trọng, mang tính chiến lược của công ty FECON nhằm đón đầu nhu cầu xây dựng công trình ngầm đô thị trong thời gian tới.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
+        "note": "GIU NGUON CU: nguon 28/12/2015, va do la DUNG loai nguon can dung. Claim mo ta mot viec DA XAY RA VA DA KET THUC (nam 2015 Ban R&D FECON nghien cuu va san xuat thu vo ham), khong phai mot trang thai dang chay. Su kien xong thi khong het han; cao mot bai 2026 cung khong lam viec nam 2015 dung hay sai hon. Doc dung la 'nam 2015 da lam', KHONG duoc doc thanh 'hien dang nghien cuu'. NEU sau nay muon khang dinh FECON HIEN NAY con nang luc nghien cuu thi do la mot claim KHAC, truong khac, va phai co nguon moi. Cung nguon voi nang_luc_mo_ta_2. Chon cau nay lam span thay vi cau truoc no ('ca 3 de tai nghien cuu tren...') vi cau do co tham chieu treo: cum '3 de tai nghien cuu tren' tro ra ngoai span. GHI NHAN MOT LO HONG CONG: check_tham_chieu_treo.py KHONG bat duoc cum nay, vi danh sach chi dinh cua no co 'neu tren', 'ke tren', 'noi tren' ma khong co 'tren' tran. KHONG mo rong danh sach do: 'tren' la gioi tu pho bien nhat tieng Viet, them vao se lam cong bao gia hang loat roi bi tat. Cho nay tam thoi van phai mat nguoi nhin."
       }
     ]
   },
@@ -896,6 +932,7 @@ export const cnclUnits: CnclUnit[] = [
       "1"
     ],
     "capability": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng.",
+    "capability2": "dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -999,6 +1036,7 @@ export const cnclUnits: CnclUnit[] = [
       "23"
     ],
     "capability": "doanh nghiệp Việt đầu tiên thiết kế và phát triển chip thương mại",
+    "capability2": "thiết kế chip",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1041,7 +1079,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
-        "note": "GIU NGUON CU: da cao lai 18/08/2026. Claim la moc LAN DAU (doanh nghiep Viet dau tien thiet ke va phat trien chip thuong mai), tuc su kien da xay ra, khong het han. Nguon moi vjst.vn 15/06/2026 (vjst_fpt_tokyo_20260615) xac nhan lai mang thiet ke chip van do FPT Semiconductor dam nhiem."
+        "note": "GIU NGUON CU: da cao lai 18/08/2026. Claim la moc LAN DAU (doanh nghiep Viet dau tien thiet ke va phat trien chip thuong mai), tuc su kien da xay ra, khong het han. Nguon moi vjst.vn 15/06/2026 (vjst_fpt_tokyo_20260615) xac nhan lai mang thiet ke chip van do FPT Semiconductor dam nhiem. KHANG DINH TOI THUONG: pham vi la DOANH NGHIEP VIET DAU TIEN o khau THIET KE VA PHAT TRIEN CHIP THUONG MAI · nguon 27/10/2025 · CHUA doi chieu doc lap. LUU Y: cung nhom 6 co VSAP LAB cung nhan 'dau tien' nhung o khau DONG GOI, hai pham vi khac nhau nen KHONG choi nhau. Rieng cum 'nha may dong goi kiem thu dau tien do nguoi Viet lam chu' thi FPT va CT Semiconductor CO cung nhan, da ghi trong claim cua CT Semiconductor."
       },
       {
         "field": "san_pham_lien_quan",
@@ -1078,6 +1116,7 @@ export const cnclUnits: CnclUnit[] = [
       "18"
     ],
     "capability": "tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1153,6 +1192,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "Horus P02 với khả năng hoạt động yên lặt và trang bị cảm biến nhiệt",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1218,6 +1258,7 @@ export const cnclUnits: CnclUnit[] = [
       "29"
     ],
     "capability": "rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1256,7 +1297,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
-        "note": "San pham la HO SO NGHIEN CUU TIEN KHA THI, khong phai he thong hay thiet bi."
+        "note": "San pham la HO SO NGHIEN CUU TIEN KHA THI, khong phai he thong hay thiet bi. GIU NGUON CU: cao lai 24/08/2026. Cau ghi ket qua ra soat huong tuyen duong sat toc do cao, mot SAN PHAM TU VAN da giao, gan voi phuong an trinh nam 2019, nen co moc va khong het han. LUU Y PHAM VI: day la nang luc TU VAN THIET KE tuyen, khong phai che tao thiet bi duong sat. Trung voi ghi nhan cu rang nhom 10 lech pham vi, ca hai don vi deu thuoc mang cong trinh."
       },
       {
         "field": "san_pham_lien_quan",
@@ -1277,6 +1318,7 @@ export const cnclUnits: CnclUnit[] = [
     "nhomLabels": [],
     "sanPham": [],
     "capability": "cung cấp các vật liệu công nghệ cao như vonfram, fluorspar cho chuỗi giá trị sản xuất chip toàn cầu",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1322,6 +1364,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1387,6 +1430,7 @@ export const cnclUnits: CnclUnit[] = [
       "09"
     ],
     "capability": "Lotus GovID",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1462,6 +1506,7 @@ export const cnclUnits: CnclUnit[] = [
       "23"
     ],
     "capability": "nhà máy kiểm thử, đóng gói tiên tiến do người Việt làm chủ",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1547,6 +1592,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "VTOL-01 chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1612,6 +1658,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": true,
     "sources": [
@@ -1697,6 +1744,7 @@ export const cnclUnits: CnclUnit[] = [
       "07"
     ],
     "capability": "xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1772,6 +1820,7 @@ export const cnclUnits: CnclUnit[] = [
       "07"
     ],
     "capability": "robot do Tập đoàn MISA phát triển đã thực hiện các thao tác trình diễn theo kịch bản",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1839,6 +1888,7 @@ export const cnclUnits: CnclUnit[] = [
       "1"
     ],
     "capability": "Mô hình LLM hỗ trợ tiếng Việt với độ dài ngữ cảnh (context length) 4096 token",
+    "capability2": "dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1938,6 +1988,7 @@ export const cnclUnits: CnclUnit[] = [
       "26"
     ],
     "capability": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1976,7 +2027,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
-        "note": ""
+        "note": "GIU NGUON CU: cao lai 24/08/2026. Cau ghi mot SU KIEN DA HOAN THANH, ban giao 33 chan de dien gio ngoai khoi cho Orsted, nen tuoi bai khong lam no sai."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -1986,7 +2037,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
-        "note": "Day la LOI PHAT BIEU cua Tong giam doc PTSC duoc tuong thuat gian tiep, khong phai khang dinh doc lap cua toa soan."
+        "note": "Day la LOI PHAT BIEU cua Tong giam doc PTSC duoc tuong thuat gian tiep, khong phai khang dinh doc lap cua toa soan. GIU NGUON CU: su kien lan dau nen khong het han. LUU Y KHI TRINH RA NGOAI: 'lan dau tien mot doanh nghiep Viet Nam thang thau va che tao chan de dien gio quy mo lon de xuat khau' la mot khang dinh LAN DAU, cung loai rui ro voi cac cum 'dau tien' cua CT Semiconductor, FPT va VinES ma cac vong truoc da ghi. Nen kiem lai truoc khi dua vao ho so khach. KHANG DINH TOI THUONG: pham vi la LAN DAU TIEN MOT DOANH NGHIEP VIET NAM thang thau va che tao chan de dien gio quy mo lon de XUAT KHAU · nguon 18/06/2025 · CHUA doi chieu doc lap. Ba dieu kien chong nhau (Viet Nam, quy mo lon, xuat khau) lam pham vi hep lai, do la diem manh cua cau nay."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2013,6 +2064,7 @@ export const cnclUnits: CnclUnit[] = [
       "20"
     ],
     "capability": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2051,7 +2103,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
-        "note": "GIU NGUON CU: da cao lai 18/08/2026, khong co nguon tier A hoac B nao moi hon ve EEMC. Claim ghi mot SU KIEN DA HOAN THANH ngay 16/12/2024 (xuat xuong may bien ap 500kV-3x300MVA, dat toan bo hang muc thu nghiem IEC). Su kien da xay ra thi khong het han, va khong nguon nao noi nguoc lai."
+        "note": "GIU NGUON CU: da cao lai 18/08/2026, khong co nguon tier A hoac B nao moi hon ve EEMC. Claim ghi mot SU KIEN DA HOAN THANH ngay 16/12/2024 (xuat xuong may bien ap 500kV-3x300MVA, dat toan bo hang muc thu nghiem IEC). Su kien da xay ra thi khong het han, va khong nguon nao noi nguoc lai. KHANG DINH TOI THUONG: pham vi la CONG SUAT LON NHAT TREN LUOI DIEN TRUYEN TAI VIET NAM cho may bien ap 500kV · nguon 16/12/2024 · pham vi hep va kiem duoc qua ho so luoi dien, nen rui ro thap. Nhung con so co the bi vuot khi co may lon hon vao luoi."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -2088,6 +2140,7 @@ export const cnclUnits: CnclUnit[] = [
       "01"
     ],
     "capability": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2153,6 +2206,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2242,6 +2296,7 @@ export const cnclUnits: CnclUnit[] = [
       "25"
     ],
     "capability": "làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2290,7 +2345,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
-        "note": ""
+        "note": "GIU NGUON CU: cao lai 24/08/2026, khong tim duoc nguon tier A hoac B moi hon goi dich danh Vien Cong nghe xa hiem. Cau la 'lam chu cac cong doan cong nghe cot loi', mot nang luc DA HINH THANH chu khong phai y dinh, va nguon la mst.gov.vn tier A."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -2300,7 +2355,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
-        "note": "QUAN TRONG: chinh nguon noi ro CHI O QUY MO PHONG THI NGHIEM VA PILOT, 'san sang chuyen giao va mo rong quy mo san xuat khi co su dau tu dung muc'. KHONG duoc doc thanh day chuyen cong nghiep."
+        "note": "QUAN TRONG: chinh nguon noi ro CHI O QUY MO PHONG THI NGHIEM VA PILOT, 'san sang chuyen giao va mo rong quy mo san xuat khi co su dau tu dung muc'. KHONG duoc doc thanh day chuyen cong nghiep. GIU NGUON CU: cung vong. Cau tu gioi han pham vi rat ro, 'o quy mo phong thi nghiem va pilot', tuc no KHONG khang dinh nang luc cong nghiep. Chinh cho tu gioi han do lam no ben: no khong the bi vuot qua boi mot moc san xuat lon hon."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2327,6 +2382,7 @@ export const cnclUnits: CnclUnit[] = [
       "16"
     ],
     "capability": "những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2400,6 +2456,7 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "sanPham": [],
     "capability": "phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2465,6 +2522,7 @@ export const cnclUnits: CnclUnit[] = [
       "24"
     ],
     "capability": "thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2540,6 +2598,7 @@ export const cnclUnits: CnclUnit[] = [
       "10"
     ],
     "capability": "đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S)",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2625,6 +2684,7 @@ export const cnclUnits: CnclUnit[] = [
       "01"
     ],
     "capability": "VinAI đã lọt vào Top 20 công ty toàn cầu dẫn đầu về nghiên cứu AI",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2663,7 +2723,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-        "note": ""
+        "note": "KHANG DINH TOI THUONG: pham vi la MOT VI TRI TRONG BANG XEP HANG cua ben thu ba, Top 20 toan cau ve nghien cuu AI, chu khong phai ngoi vi so mot · nguon 18/07/2026 · CHUA doi chieu doc lap, bai khong ghi ro bang xep hang nao va ky nao. RUI RO: bang xep hang doi hang nam, va cau khong neu ten bang nen khong tu kiem duoc."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2690,6 +2750,7 @@ export const cnclUnits: CnclUnit[] = [
       "1"
     ],
     "capability": "Tháng 8/2023, VinBigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng Việt",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2757,6 +2818,7 @@ export const cnclUnits: CnclUnit[] = [
       "2"
     ],
     "capability": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
+    "capability2": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2866,6 +2928,7 @@ export const cnclUnits: CnclUnit[] = [
       "06"
     ],
     "capability": "đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây",
+    "capability2": "phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2951,6 +3014,7 @@ export const cnclUnits: CnclUnit[] = [
       "23"
     ],
     "capability": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2989,7 +3053,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nhandan_vsaplab_20260816.txt",
-        "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
+        "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. KHANG DINH TOI THUONG: pham vi la LAB-FAB DAU TIEN TAI VIET NAM trong linh vuc DONG GOI BAN DAN TIEN TIEN, tuc mot loai co so nghien cuu san xuat thu, khong phai nha may thuong mai · nguon 16/08/2026 · CHUA doi chieu doc lap. Khong choi voi FPT Semiconductor vi khac khau."
       },
       {
         "field": "san_pham_lien_quan",
@@ -3016,6 +3080,7 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -3081,6 +3146,7 @@ export const cnclUnits: CnclUnit[] = [
       "1"
     ],
     "capability": "",
+    "capability2": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [

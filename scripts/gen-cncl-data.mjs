@@ -105,6 +105,16 @@ const units = [...theoDonVi.entries()].sort((a, b) => a[0].localeCompare(b[0], '
     nhomLabels: nhoms.map((n) => `Nhóm ${n} · ${TEN_NHOM[Number(n)] ?? ''}`.trim()),
     sanPham: sps,
     capability: dau(cs, 'nang_luc_mo_ta'),
+    // MO TA NANG LUC THU HAI (them 24/08/2026). Truoc do the card chi hien
+    // `nang_luc_mo_ta`, tuc mot don vi co hai mang nang luc thi web chi ke MOT.
+    //
+    // Lo ra o ca FECON: cau duoc chon lam dong tom tat la "don vi truc tiep van hanh robot
+    // dao ngam (TBM)...", dung cai ve mà domain.yaml xep vao KHONG DU DIEU KIEN. Lam giu
+    // FECON lai chinh vi phan TU NGHIEN CUU, va phan do nam o `nang_luc_mo_ta_2`. Neu web
+    // chi hien dong dau thi trang web noi nguoc voi ly do giu don vi do.
+    //
+    // Khong doi thu tu, khong chon cau nao "dep hon": hien CA HAI, dung thu tu truong.
+    capability2: dau(cs, 'nang_luc_mo_ta_2'),
     bestTier: capTot(cs),
     favorsRtr: cs.some((c) => c.favors === 'rtr'),
     sources: nguon,
@@ -233,7 +243,7 @@ export type CnclEvidence = {
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
   name: string; loaiHinh: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
-  capability: string; bestTier: CnclTier; favorsRtr: boolean;
+  capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };
 export type CnclNeed = {
