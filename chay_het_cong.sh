@@ -93,6 +93,10 @@ chay CNCLData do_tuoi_nguon       "$CNCL" 'mau hong qua han'     python3 check_d
 # Bai co tai tro nam tren dung ten mien tier B, dung tac gia, dung dinh dang. Chi mot dong
 # chu nho phan biet no voi bao chi doc lap. Ngay 24/08/2026 suyt nap mot bai nhu vay.
 chay CNCLData nguon_tai_tro       "$CNCL" 'dau hieu tai tro|VI PHAM' python3 check_tai_tro.py domains/don_vi_cncl
+# Tham chieu treo: span tro toi mot thu khong co trong pham vi da chup, kieu 'cac san pham
+# nay' ma danh sach lai nam o cau khong duoc chup. Loai loi nay QUA DUOC het cac cong khac:
+# span van nguyen van, value van la chuoi con, tier van dung. Chi co nghia la rong.
+chay CNCLData tham_chieu_treo     "$CNCL" 'tham chieu treo|ngan sach' python3 check_tham_chieu_treo.py domains/don_vi_cncl
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
