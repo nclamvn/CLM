@@ -27,31 +27,13 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, copyFileSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { goc, tim } from './goc.mjs';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const TOUCH = join(HERE, '..');
 
-/** Duong dan chay duoc o CA HAI moi truong: /Users/os tren may, /sessions/<phien>/mnt trong Cowork. */
-function goc(...duoi) {
-  const nen = ['/Users/os', ...readdirSync('/sessions', { withFileTypes: true })
-    .filter((d) => d.isDirectory())
-    .map((d) => `/sessions/${d.name}/mnt`)];
-  for (const g of nen) {
-    const p = join(g, ...duoi);
-    if (existsSync(p)) return p;
-  }
-  return null;
-}
-
-function tim(nhan, ...duoi) {
-  const p = goc(...duoi);
-  if (!p) {
-    console.error(`KHONG THAY ${nhan}: ${duoi.join('/')} o ca hai goc (/Users/os va /sessions/*/mnt)`);
-    process.exit(2);
-  }
-  return p;
-}
+// Goc duong dan dung chung mot nguon su that, xem scripts/goc.mjs.
 
 // BAN LAM VIEC TAM: CLM_KHO_* tro toi ban sao cua kho, dung cho cac bo rang. Khong dat
 // thi chay tren kho that. Xem chay_het_cong.sh de biet vi sao can.

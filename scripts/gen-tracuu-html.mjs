@@ -21,30 +21,14 @@
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { goc } from './goc.mjs';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const TOUCH = join(HERE, '..');
 
-function nen() {
-  const ds = ['/Users/os'];
-  try {
-    for (const d of readdirSync('/sessions', { withFileTypes: true })) {
-      if (d.isDirectory()) ds.push(`/sessions/${d.name}/mnt`);
-    }
-  } catch { /* khong phai moi truong Cowork */ }
-  return ds;
-}
-function goc(...duoi) {
-  for (const g of nen()) {
-    const p = join(g, ...duoi);
-    if (existsSync(p)) return p;
-  }
-  return null;
-}
+// Goc duong dan dung chung mot nguon su that, xem scripts/goc.mjs.
 
-// Thu tu uu tien noi ghi ra: tham so dong lenh, roi bien moi truong cua ban lam viec tam,
-// roi moi toi cho that. Bo rang luon dat CLM_RA_TRACUU nen no khong bao gio cham ban that.
 const RA = process.argv[2] || process.env.CLM_RA_TRACUU || (() => {
   const kb = goc('RtR', 'KnowledgeBase', 'CaoLocMatch_PoC') || goc('KnowledgeBase', 'CaoLocMatch_PoC');
   if (!kb) { console.error('KHONG THAY thu muc CaoLocMatch_PoC de ghi ra.'); process.exit(2); }
