@@ -102,6 +102,11 @@ chay CNCLData tham_chieu_treo     "$CNCL" 'tham chieu treo|ngan sach' python3 ch
 # claim 'van hanh' ma luat xep vao ve khong du dieu kien. Ap luat khong deu la thu khach soi
 # ho so se hoi dau tien.
 chay CNCLData du_dieu_kien        "$CNCL" 'can tra loi|OK:'     python3 check_du_dieu_kien.py domains/don_vi_cncl
+# Khang dinh 'dau tien, duy nhat, lon nhat' la loi moi doi chieu: doi thu chi can chi ra mot
+# truong hop som hon la ca ho so mat tin. Cong nay khong doi claim phai dung, no doi PHAM VI
+# phai duoc viet ra, vi gan het cac vu choi nhau la do hai ben dung cung mot chu cho hai
+# pham vi khac nhau.
+chay CNCLData khang_dinh_toi_thuong "$CNCL" 'khang dinh toi thuong|OK:' python3 check_khang_dinh_toi_thuong.py domains/don_vi_cncl
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
