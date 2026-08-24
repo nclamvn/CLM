@@ -1,4 +1,4 @@
-37
+32
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -13,6 +13,12 @@
 #                         KHONG mien tru duoc: cau viet 'Vien phat trien cong nghe loi...', tuc
 #                         mot TRANG THAI DANG DIEN RA chu khong phai su kien da xay ra. Chua tim
 #                         duoc nguon moi. Day la mon no that, ghi ra chu khong giau.
+#   24/08/2026  37 -> 32  vong ba, bon don vi cu nhat ngoai match. IVAC, AVAC, NAVETCO deu la
+#                         SU KIEN DA XAY RA nen mien tru co can cu. Cong ty An ninh mang Viettel
+#                         KHONG mien tru: cau la khang dinh trang thai '100% san pham' phu ca
+#                         danh muc 2019, danh muc doi thi cau co the sai ma khong ai biet.
+#                         Ti le vong nay: 5 mien tru tren 6 claim dung toi, khong cao duoc
+#                         nguon moi nao du tuoi.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
