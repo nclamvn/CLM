@@ -140,9 +140,19 @@ def main(domain_dir, hom_nay):
 
     print(f"\nngan sach: {ngan_sach} · thuc te: {len(qua_han)}")
     if len(qua_han) > ngan_sach:
-        print(f"FAIL: TE DI {len(qua_han) - ngan_sach} claim so voi ngan sach. "
-              f"Mot claim mau-hong moi vua bi them ma khong co nguon tuoi hoac ly do.")
+        # Chi dung thu pham. Cong nay tu bat minh mot lan (24/08/2026): no bao "mot claim
+        # mau-hong moi vua bi them" trong khi that ra khong ai them gi ca, chi la SAU NGAY
+        # troi qua va vai claim vuot moc 180. Hai nguyen nhan doi hoi hai cach xu khac han,
+        # nen goi chung mot ten la day nguoi ta di tim nham cho.
+        vua_vuot = sorted([(t, c) for t, c in qua_han if t <= nguong + 30], key=lambda x: x[0])
+        print(f"FAIL: TE DI {len(qua_han) - ngan_sach} claim so voi ngan sach.")
+        if vua_vuot:
+            print(f"  {len(vua_vuot)} claim vua vuot moc trong 30 ngay gan day, tuc co the chi la NGAY TROI "
+                  f"chu khong phai ai them du lieu xau:")
+            for t, c in vua_vuot[:6]:
+                print(f"    {t:5} ngay · {c['entity'][:34]:34} · {c['field'][:20]:20} · {c['capture']['snapshot']}")
         print(f'Cach xu: cao nguon moi, HOAC ghi vao note "{MIEN_TRU} <ly do cu the>".')
+        print("Neu chi vi ngay troi ma khong tim duoc nguon moi thi duoc phep nang ngan sach, NHUNG\n  phai ghi vao lich su trong file ngan sach: ngay nao, claim nao, vi sao khong mien tru duoc.\n  Nang lang le moi la bien khoa mot chieu thanh cai dong ho dem no.")
         return 2
     if len(qua_han) < ngan_sach:
         print(f"FAIL(TOT): GIAM DUOC {ngan_sach - len(qua_han)} claim. Sua {ns_file.name} thanh "

@@ -1,4 +1,4 @@
-36
+37
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -8,6 +8,11 @@
 #   18/08/2026  44 -> 36  vong hai, nam don vi con lai trong match da ky. FPT Semiconductor co nguon
 #                         moi vjst.vn 15/06/2026. Bon don vi con lai deu la SU KIEN DA XAY RA nen ghi
 #                         GIU NGUON CU kem can cu, khong phai vi tim duoc nguon moi.
+#   24/08/2026  36 -> 37  TANG, va tang vi NGAY TROI chu khong phai ai them du lieu xau. Claim
+#                         nang_luc_mo_ta cua Vien Han lam (vjst 23/02/2026) vua vuot moc 180.
+#                         KHONG mien tru duoc: cau viet 'Vien phat trien cong nghe loi...', tuc
+#                         mot TRANG THAI DANG DIEN RA chu khong phai su kien da xay ra. Chua tim
+#                         duoc nguon moi. Day la mon no that, ghi ra chu khong giau.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
