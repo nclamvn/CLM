@@ -48,7 +48,27 @@ if [ "$RC" -ne 0 ]; then
   echo "CHUP THAT BAI. Neu bao thieu trinh duyet thi chay: npx playwright install chromium"
   exit 2
 fi
+
+# 5/5 · SO VOI ANH MOC. Vi sao co buoc nay: ba lan lien tiep loi bo cuc chi lo khi nhin anh,
+# va lan thu ba chinh ban sua de ra loi moi. Mat nguoi van la cong cuoi, nhung buoc nay thu
+# hep cho phai nhin tu ca trang xuong dung vung vua doi.
+if [ "${1:-}" = "--chot-moc" ]; then
+  node scripts/so_anh.mjs --chot reports/man-registry.png reports/moc/man-registry.png
+  node scripts/so_anh.mjs --chot reports/man-matching.png reports/moc/man-matching.png
+  echo "Da chot moc moi. Lan sau chay khong co co nay se so voi hai anh nay."
+  exit 0
+fi
+
+echo "5/5 · so voi anh moc"
+SO=0
+node scripts/so_anh.mjs reports/man-registry.png reports/moc/man-registry.png || SO=$?
+node scripts/so_anh.mjs reports/man-matching.png reports/moc/man-matching.png || SO=$?
 echo
+if [ "$SO" -ne 0 ]; then
+  echo "CO MAN DOI SO VOI MOC. Doi la binh thuong khi vua sua UI. Nhin dung vung tren roi:"
+  echo "  bash scripts/chup_man.sh --chot-moc    # neu dung y, chot lai moc"
+  echo
+fi
 echo "XONG. Hai anh o:"
 echo "  $(pwd)/reports/man-registry.png"
 echo "  $(pwd)/reports/man-matching.png"
