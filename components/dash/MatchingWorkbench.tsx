@@ -166,7 +166,7 @@ export function MatchingWorkbench() {
                   {current.khoaBangChung ?? 'chưa đóng khoá'}
                 </span>
               </li>
-              <li><span className="mw-trail__k">Engine</span><span className="mw-trail__v t-mono-01">{current.engine}</span></li>
+              <li className="is-dai"><span className="mw-trail__k">Engine</span><span className="mw-trail__v t-mono-01">{current.engine}</span></li>
             </ul>
 
             {current.chuaDuyet.length > 0 ? (
