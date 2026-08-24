@@ -137,9 +137,14 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # ngay, du lieu dung tung chu, bang trang thai xanh het, va the tren web van ke thieu mot
   # nua nang luc cua FECON. Phai chay SAU sinh_du_lieu_web vi no doc dau ra cua buoc do.
   chay .touch      truong_hien      "$TOUCH" 'OK:|FAIL|CHUA KHAI' node scripts/check-truong-hien.mjs
+  # Do VUNG PHU cua anh moc. O nay khong can trinh duyet: no doc reports/phu_moc.json do
+  # scripts/chup_man.sh sinh ra. Neu registry doi ke tu lan chup cuoi thi van tay lech va o
+  # nay bao KHONG CHAY DUOC chu khong bao XANH: con so cu khong dung de ket luan duoc.
+  chay .touch      phu_moc          "$TOUCH" 'vung phu|FAIL|KHONG CHAY' node scripts/check-phu-moc.mjs
   if [ "$NHANH" -eq 0 ]; then
     chay .touch    rang_tra_cuu     "$TOUCH" 'BITE TRA CUU'      node scripts/bite_tracuu.mjs
     chay .touch    rang_truong_hien "$TOUCH" 'BITE TRUONG HIEN'  node scripts/bite-truong-hien.mjs
+    chay .touch    rang_phu_moc     "$TOUCH" 'BITE PHU MOC'      node scripts/bite-phu-moc.mjs
   fi
 fi
 

@@ -91,6 +91,14 @@ def ban_tam(can_touch=True):
             if ev.exists():
                 (touch_tam / "public").mkdir(exist_ok=True)
                 shutil.copytree(ev, touch_tam / "public" / "evidence")
+            # reports/phu_moc.json: cong check-phu-moc.mjs doc file nay. Chep RIENG mot file
+            # thay vi ca thu muc reports, vi trong do co anh toan trang 5,6 MB ma rang khong
+            # dung toi. Thieu file nay thi cong bao KHONG CHAY DUOC, dung ve nguyen tac nhung
+            # se lam moi lan chay rang deu co mot o xam vo co.
+            pm = touch_that / "reports" / "phu_moc.json"
+            if pm.exists():
+                (touch_tam / "reports").mkdir(exist_ok=True)
+                shutil.copy2(pm, touch_tam / "reports" / "phu_moc.json")
         yield BanTam(g, g / "CNCLData", g / "Dataset_CongNgheChienLuoc",
                      g / "CaoLocMatch", touch_tam, g / "CaoLocMatch_TraCuu.html")
     finally:
