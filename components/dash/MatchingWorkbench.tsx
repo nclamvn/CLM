@@ -35,6 +35,25 @@ const nhanVai = (r: string) => (r === 'chuyen gia gac cong' ? 'chuyên gia gác 
 
 const tenCau = (id: string) => id.replace(' · nhu cầu quốc gia', '').replace('san_pham_', 'SP ');
 
+/** To ro phan REGISTRY KHANG DINH nam trong cau nguon.
+ *
+ * VI SAO (24/08/2026): claim cua CT Semiconductor tung keo value dai toi mot du bao da toi
+ * han. Da cat value, nhung SPAN van chua cum do vi span la chu cua nguon va khong duoc sua.
+ * Ket qua la nguoi doc thay ca cau, khong phan biet duoc dau la dieu registry dam nhan va
+ * dau la chu xung quanh. To len la cach noi that ma khong dong vao nguon.
+ */
+function SpanCoDiem({ span, value }: { span: string; value: string }) {
+  const i = value ? span.indexOf(value) : -1;
+  if (i < 0) return <>{span}</>;
+  return (
+    <>
+      {span.slice(0, i)}
+      <mark className="mw-diem" title="Phần registry khẳng định. Chữ xung quanh là câu nguồn.">{value}</mark>
+      {span.slice(i + value.length)}
+    </>
+  );
+}
+
 function EvidenceBlock({ nhan, ds }: { nhan: string; ds: MatchEvidence[] }) {
   return (
     <div className="mw-ev">
@@ -43,7 +62,7 @@ function EvidenceBlock({ nhan, ds }: { nhan: string; ds: MatchEvidence[] }) {
         <p className="mw-hint">Không có fact nào, đây là bất thường và cần soi lại.</p>
       ) : ds.map((e, i) => (
         <figure key={i} className="mw-quote">
-          <blockquote className="mw-quote__txt">{e.span}</blockquote>
+          <blockquote className="mw-quote__txt"><SpanCoDiem span={e.span} value={e.value} /></blockquote>
           <figcaption className="mw-quote__cap">
             <span className={`chip ${e.tier === 'A' ? 'chip--pass' : e.tier === 'B' ? 'chip--public' : 'chip--private'} reg-tier`}>
               {`Tier ${e.tier}`}

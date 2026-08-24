@@ -210,6 +210,14 @@ dialog mark{background:var(--strong);color:var(--ink)}
 const D = ${DL};
 const el = (h) => { const d = document.createElement('div'); d.innerHTML = h; return d; };
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// To ro phan registry khang dinh trong cau nguon. Xem chu thich cung ten ben
+// components/dash/MatchingWorkbench.tsx.
+const toDiem = (span, value) => {
+  const i = value ? String(span).indexOf(value) : -1;
+  if (i < 0) return esc(span);
+  return esc(String(span).slice(0, i)) + '<mark>' + esc(value) +
+    '</mark>' + esc(String(span).slice(i + String(value).length));
+};
 const tierCls = (t) => t === 'A' ? 'tier a' : t === 'B' ? 'tier b' : 'tier';
 const tenCau = (id) => String(id).replace(' · nhu cầu quốc gia', '').replace('san_pham_', 'SP ');
 let tab = 'cung', q = '', nhom = 'tat-ca', tier = 'tat-ca', sel = 0;
@@ -296,7 +304,7 @@ function veCau() {
 
 function khoiBangChung(nhan, ds) {
   return '<div style="margin-top:16px"><div class="lab">' + esc(nhan) + '</div>' +
-    (ds.length ? ds.map((e) => '<blockquote class="q">' + esc(e.span) + '</blockquote>' +
+    (ds.length ? ds.map((e) => '<blockquote class="q">' + toDiem(e.span, e.value) + '</blockquote>' +
       '<div class="qc"><span class="' + tierCls(e.tier) + '">Tier ' + e.tier + '</span>' +
       '<span class="src" data-h="' + esc(e.href) + '" data-s="' + esc(e.span) + '">' + esc(e.source) + '</span>' +
       '<span class="fld">' + esc(e.field) + '</span>' +

@@ -798,13 +798,13 @@ export const cnclUnits: CnclUnit[] = [
       },
       {
         "field": "bang_chung_nang_luc",
-        "value": "tổng vốn đầu tư gần 100 triệu USD và dự kiến cho ra đời con chip “Made by Vietnam” đầu tiên trong năm 2025",
+        "value": "tổng vốn đầu tư gần 100 triệu USD",
         "span": "CT Semiconductor (thành viên CT Group) đang triển khai giai đoạn 2 nhà máy chip ATP tại tỉnh Bình Dương cũ (nay thuộc TP. HCM), với tổng vốn đầu tư gần 100 triệu USD và dự kiến cho ra đời con chip “Made by Vietnam” đầu tiên trong năm 2025.",
         "source": "nguoiquansat.vn",
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
-        "note": "Du kien 2025 la moc trong bai dang 27/10/2025; CHUA co nguon xac nhan da ra chip. Khong duoc doc thanh da hoan thanh. GIU NGUON CU: da cao lai 18/08/2026. Tim duoc nhieu bai tier A va B ve CT Group va CT Semiconductor nhung deu CU HON hoac ngang tuoi nguon dang dung. LUU Y PHAI KIEM: claim cu chua cum 'du kien cho ra doi con chip Made by Vietnam dau tien trong nam 2025', tuc mot DU BAO nay da toi han. Chua tim duoc nguon xac nhan hay bac bo viec do. Day la cho de sai nhat khi trinh ra ngoai."
+        "note": "Du kien 2025 la moc trong bai dang 27/10/2025; CHUA co nguon xac nhan da ra chip. Khong duoc doc thanh da hoan thanh. GIU NGUON CU: da cao lai 18/08/2026. Tim duoc nhieu bai tier A va B ve CT Group va CT Semiconductor nhung deu CU HON hoac ngang tuoi nguon dang dung. LUU Y PHAI KIEM: claim cu chua cum 'du kien cho ra doi con chip Made by Vietnam dau tien trong nam 2025', tuc mot DU BAO nay da toi han. Chua tim duoc nguon xac nhan hay bac bo viec do. Day la cho de sai nhat khi trinh ra ngoai. VONG TRUY 24/08/2026 ve cum 'du kien ... trong nam 2025': VAN CHUA co nguon tier A hoac B doc lap xac nhan hay bac bo. Bai gan nhat dung chu de la nhandan.vn 20/08/2026, NHUNG bai do gan nhan 'Noi dung co tai tro' nen KHONG NAP (xem check_tai_tro.py). Bai do cung khong nhac CT Semiconductor, va lai dan FPT tu xac dinh nha may Bac Ninh la nha may kiem thu dong goi dau tien tai Viet Nam do nguoi Viet lam chu, tuc co HAI ben cung nhan 'dau tien'. Ket luan: cum du kien nay VAN LA LOI HUA QUA HAN, tuyet doi khong duoc doc nhu mot thanh tuu khi trinh ra ngoai. CAT NGAY 24/08/2026, Lam duyet. Value cu keo dai toi cum 'du kien cho ra doi con chip Made by Vietnam dau tien trong nam 2025'. Do la MOT DU BAO, da toi han, va ba vong truy (18/08 va 24/08) khong tim duoc nguon tier A hoac B doc lap xac nhan hay bac bo. De no o truong bang_chung_nang_luc nghia la registry TU KHANG DINH mot loi hua qua han nhu bang chung nang luc. Nay value chi con phan da cam ket la von dau tu. SPAN GIU NGUYEN va van chua cum do, vi span la CHU CUA NGUON, khong duoc sua. Nguon noi gi thi trich dung nhu the; cai sua duoc chi la registry khang dinh gi."
       },
       {
         "field": "san_pham_lien_quan",

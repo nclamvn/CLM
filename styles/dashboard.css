@@ -516,5 +516,6 @@
 .dash-shell .mw-quote { margin: var(--space-2) 0 0; }
 .dash-shell .mw-quote__txt { margin: 0; padding-left: var(--space-3); border-left: var(--stroke-hairline) solid var(--color-border-strong); font-size: 13px; line-height: 19px; color: var(--color-text-primary); }
 .dash-shell .mw-quote__cap { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; margin-top: var(--space-1_5); padding-left: var(--space-3); font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .mw-diem { background: var(--a-neutral-06); color: var(--color-text-primary); font-weight: 600; border-bottom: var(--stroke-hairline) solid var(--color-border-strong); padding: 0 2px; border-radius: var(--radius-sm); }
 .dash-shell .mw-rej__why { display: block; font-size: 11px; line-height: 16px; color: var(--color-text-muted); }
 .dash-shell .mw-rej__who { display: block; font-size: 11px; color: var(--color-text-muted); }
