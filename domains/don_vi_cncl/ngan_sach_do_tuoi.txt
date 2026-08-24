@@ -1,4 +1,4 @@
-31
+29
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -23,6 +23,11 @@
 #                         Span cu chi co cau '100% cac san pham nay...' con danh sach san pham
 #                         thi khong nam trong ban chup, tuc THAM CHIEU TREO. Lay lai ca doan
 #                         nguyen van nen cau co pham vi va co moc, mien tru moi co can cu.
+#   24/08/2026  31 -> 29  VinES, don vi cu nhat con lai (901 ngay). Khong co nguon 2026 nao goi
+#                         dich danh VinES; bai gan nhat la baochinhphu 19/03/2026 nhung viet ve
+#                         VinFast. Ca hai claim la su kien co moc (thanh lap 8/2021, moc 'dau
+#                         tien Dong Nam A') nen mien tru co can cu. Claim 'dau tien Dong Nam A'
+#                         co ghi CANH BAO rieng vi la khang dinh so sanh khu vuc.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.

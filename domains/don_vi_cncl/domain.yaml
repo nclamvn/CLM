@@ -41,6 +41,8 @@ scope_note:
   ranh_gioi_xam: "Don vi vua van hanh vua tu phat trien mot phan cong nghe loi thi XET THEO BANG CHUNG CU THE cua phan tu phat trien, khong xet theo quy mo van hanh."
   ap_dung_16_08_2026: "MobiFone: nguon chung minh trien khai 5G SA va NSA thuong mai, tuc VAN HANH. Khong tim thay bang chung MobiFone tu thiet ke hay che tao thiet bi mang. KET LUAN: KHONG NAP. Se nap neu sau nay co bang chung phan tu phat trien."
 
+  ap_dung_24_08_2026_asf: "Mang vac xin dich ta lon chau Phi hien chi co AVAC va NAVETCO trong registry. Vong 24/08/2026 tim duoc them hai ten. DABACO: vnexpress.net 08/09/2025 viet 'ngoai AVAC con co Navetco va Dabaco dang san xuat va luu hanh'. Cau nay chung minh Dabaco CO MAT trong mang, nhung KHONG noi Dabaco tu phat trien hay chi san xuat theo giay phep, ma ranh gioi lam chu va gia cong nam dung o do. KET LUAN: KHONG NAP, honest-null co can cu. Se nap khi co mot cau noi ro Dabaco tu nghien cuu hoac tu phat trien. DACOVET voi vac xin Dacovac-ASF2: chi thay trong ban tom tat cua may tim kiem, CHUA co trang nao duoc chup, nen khong du dieu kien nap. Ghi ra day de vong sau khoi tim lai tu dau."
+
 refresh_days:
   default: 180
 
