@@ -1,4 +1,4 @@
-2
+1
 # Khoa mot chieu cho check-truong-hien.mjs: so truong CO du lieu trong registry ma trang web
 # KHONG noi ra o dong tom tat, va da duoc ghi nhan kem ly do.
 #
@@ -8,6 +8,13 @@
 #                     the ra, nen day la mon no NHE: khong phai giau, chi la khong tom tat.
 #                     Truong thu ba cung dang la nang_luc_mo_ta_2 thi da sua xong trong chinh
 #                     vong nay, nen no khong nam trong con so 2.
+#   24/08/2026  2 -> 1 tra mon no loai_hinh. Gia tri la ma normalized ('DN' / 'vien') nen
+#                     the hien NHAN doc duoc ('Doanh nghiệp' / 'Viện') kem title noi ro day
+#                     la phan loai chu khong phai chu cua nguon. Ma la khong biet thi tra lai
+#                     chinh ma, khong tra chuoi rong: ma moi phai nhin thay ngay tren the.
+#                     LAN DAU chieu GIAM cua khoa nay no bang mot ca THAT chu khong phai ca
+#                     tiem. Truoc do chieu giam chi duoc chung minh boi RANG 4.
+#                     Con lai: location, 1 don vi, cho nap them vai don vi nua roi hay quyet.
 #
 # Con so nay chi duoc GIAM. Tang la mon no moi. Giam ma khong sua file nay cung la mon no,
 # vi khoa se het siet.

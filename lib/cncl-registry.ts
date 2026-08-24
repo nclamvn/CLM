@@ -9,7 +9,7 @@ export type CnclEvidence = {
 };
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
-  name: string; loaiHinh: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
+  name: string; loaiHinh: string; loaiHinhLabel: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
   capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };
@@ -36,6 +36,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty An ninh mạng Viettel",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "7"
     ],
@@ -102,6 +103,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty cổ phần AVAC Việt Nam",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "4"
     ],
@@ -178,6 +180,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "7"
     ],
@@ -244,6 +247,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty Cổ phần Giải pháp Năng lượng VinES",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "5"
     ],
@@ -320,6 +324,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty cổ phần Health Care Center",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "3"
     ],
@@ -386,6 +391,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "4"
     ],
@@ -452,6 +458,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty cổ phần VinMotion",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "3"
     ],
@@ -528,6 +535,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty Cổ phần Y Sinh Ngọc Bảo",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "4"
     ],
@@ -604,6 +612,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Công ty TNHH Luyện kim Trần Hồng Quân",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "8"
     ],
@@ -680,6 +689,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "CT Group",
     "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
     "nhoms": [
       "9"
     ],
@@ -699,7 +709,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt"
       }
     ],
-    "tim": "ct group dn ký được hợp đồng xuất khẩu tới 5.000 uav ra thị trường quốc tế (hàn quốc) nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "ct group dn doanh nghiệp ký được hợp đồng xuất khẩu tới 5.000 uav ra thị trường quốc tế (hàn quốc) nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -756,6 +766,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "CT Semiconductor",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "6"
     ],
@@ -832,6 +843,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "FECON",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "10"
     ],
@@ -922,6 +934,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "FPT",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1"
     ],
@@ -1026,6 +1039,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "FPT Semiconductor",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "6"
     ],
@@ -1106,6 +1120,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "GG Power",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "5"
     ],
@@ -1182,6 +1197,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "HTI Technology",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "9"
     ],
@@ -1248,6 +1264,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "10"
     ],
@@ -1314,6 +1331,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Masan High-Tech Materials",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [],
     "nhomLabels": [],
     "sanPham": [],
@@ -1354,6 +1372,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "MiSmart",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "9"
     ],
@@ -1420,6 +1439,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "MK Smart",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "7"
     ],
@@ -1496,6 +1516,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "6"
     ],
@@ -1582,6 +1603,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Phenikaa-X",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "9"
     ],
@@ -1648,6 +1670,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Realtime Robotics (RtR)",
     "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
     "nhoms": [
       "9"
     ],
@@ -1667,7 +1690,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/cafef_dn_uav_20250903.txt"
       }
     ],
-    "tim": "realtime robotics (rtr) dn drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "realtime robotics (rtr) dn doanh nghiệp drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1734,6 +1757,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "ROSTEK",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "3"
     ],
@@ -1810,6 +1834,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Tập đoàn MISA",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "3"
     ],
@@ -1876,6 +1901,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Tập đoàn Viettel",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1",
       "6"
@@ -1978,6 +2004,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "8"
     ],
@@ -2054,6 +2081,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Tổng công ty Thiết bị điện Đông Anh",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "5"
     ],
@@ -2130,6 +2158,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viettel AI",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1"
     ],
@@ -2196,6 +2225,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viettel High Tech",
     "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
     "nhoms": [
       "9"
     ],
@@ -2219,7 +2249,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/nhandan_uav_madeinvn_20260718.txt"
       }
     ],
-    "tim": "viettel high tech dn với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, vu-r70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "viettel high tech dn doanh nghiệp với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, vu-r70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2286,6 +2316,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Công nghệ xạ hiếm",
     "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
     "nhoms": [
       "8"
     ],
@@ -2305,7 +2336,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt"
       }
     ],
-    "tim": "viện công nghệ xạ hiếm vien làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
+    "tim": "viện công nghệ xạ hiếm vien viện làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2372,6 +2403,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Di truyền Nông nghiệp Việt Nam",
     "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
     "nhoms": [
       "4"
     ],
@@ -2391,7 +2423,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt"
       }
     ],
-    "tim": "viện di truyền nông nghiệp việt nam vien những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
+    "tim": "viện di truyền nông nghiệp việt nam vien viện những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2448,6 +2480,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
     "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
     "nhoms": [
       "5"
     ],
@@ -2465,7 +2498,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt"
       }
     ],
-    "tim": "viện hàn lâm khoa học và công nghệ việt nam vien phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
+    "tim": "viện hàn lâm khoa học và công nghệ việt nam vien viện phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2512,6 +2545,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Khoa học-Công nghệ mật mã",
     "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
     "nhoms": [
       "7"
     ],
@@ -2531,7 +2565,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt"
       }
     ],
-    "tim": "viện khoa học-công nghệ mật mã vien thuật toán chữ ký số hậu lượng tử với tên gọi vn-pqsign nhóm 7 an ninh mạng và lượng tử sp 24",
+    "tim": "viện khoa học-công nghệ mật mã vien viện thuật toán chữ ký số hậu lượng tử với tên gọi vn-pqsign nhóm 7 an ninh mạng và lượng tử sp 24",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2588,6 +2622,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Vaccine và sinh phẩm y tế (IVAC)",
     "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
     "nhoms": [
       "4"
     ],
@@ -2607,7 +2642,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt"
       }
     ],
-    "tim": "viện vaccine và sinh phẩm y tế (ivac) vien đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
+    "tim": "viện vaccine và sinh phẩm y tế (ivac) vien viện đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2674,6 +2709,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "VinAI",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1"
     ],
@@ -2740,6 +2776,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "VinBigData",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1"
     ],
@@ -2806,6 +2843,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "VNPT",
     "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
     "nhoms": [
       "1",
       "3"
@@ -2831,7 +2869,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
       }
     ],
-    "tim": "vnpt dn làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
+    "tim": "vnpt dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2918,6 +2956,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "VNPT Technology",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "2"
     ],
@@ -3004,6 +3043,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "VSAP LAB",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "6"
     ],
@@ -3070,6 +3110,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "XBStation",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "9"
     ],
@@ -3136,6 +3177,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Zalo",
     "loaiHinh": "",
+    "loaiHinhLabel": "",
     "nhoms": [
       "1"
     ],

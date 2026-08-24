@@ -18,6 +18,14 @@
 # Chi con MOT khau that su can nguoi: NHIN CAI ANH. May chup duoc, may so duoc phan tram diem
 # khac, nhung "trang nay co coi duoc khong" thi van la mat nguoi.
 #
+# CAI GIA PHAI TRA, ghi ra cho khoi tuong bo: moi truong Linux do la EPHEMERAL. Ngay trong
+# cung mot buoi lam viec, thu muc ~/.cache/ms-playwright bi don sach mot lan giua chung, va
+# lenh chup gay voi "Executable doesn't exist". Nen o do phai dung lai canh moi phien:
+#   node node_modules/playwright-core/cli.js install chromium     # dung ban CUA REPO, khong
+#                                                                 # phai playwright@latest
+#   apt-get download libxdamage1 && dpkg-deb -x ... && export LD_LIBRARY_PATH=...
+# Script NAY thi khong can gi ca, vi may that co san Chromium. Do la ly do van giu no.
+#
 # Chay: bash scripts/chup_man.sh
 # Anh ra: reports/man-registry.png va reports/man-matching.png
 

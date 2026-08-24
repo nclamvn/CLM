@@ -36,10 +36,7 @@
     "ly_do": "Chung cu chi tiet cho nang luc. The da hien tier va so evidence; cau chung cu day du doc trong bang khi mo the ra."
   },
 
-  "loai_hinh": {
-    "lop": "chua_hien",
-    "ly_do": "9 don vi co gia tri. Khoa loaiHinh CO trong du lieu sinh ra nhung KHONG component nao doc no. Day la ca thu hai cung dang voi nang_luc_mo_ta_2, tim ra trong cung vong 24/08/2026. Chua sua vi chua quyet hien o dau tren the: canh ten don vi hay thanh mot the tag rieng. Van doc duoc trong bang bang chung."
-  },
+  "loai_hinh": { "lop": "tom_tat", "khoa": "loaiHinh" },
   "location": {
     "lop": "chua_hien",
     "ly_do": "Dung 1 don vi co gia tri, khong du de dung mot cho hien tu te tren the. Van doc duoc trong bang bang chung. Nap them vai don vi nua roi hay quyet."

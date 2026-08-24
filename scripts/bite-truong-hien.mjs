@@ -77,8 +77,20 @@ const ok3 = r.ma === 0 && r.ra.includes('OK: moi truong');
 in_('RANG 3 · tra lai nguyen trang thi XANH', ok3, ok3 ? 'exit 0' : `exit ${r.ma}\n${r.ra.slice(-400)}`);
 
 // ── RANG 4 · khoa mot chieu, chieu TANG ────────────────────────────────────
+// Ha ngan sach xuong DUOI muc thuc te, tinh tu chinh con so dang co chu khong go cung.
+//
+// Ban dau dong nay viet `goc_ngan.replace(/^2/, '1')`, tuc go cung con so 2 cua hom viet rang.
+// Vai phut sau tra xong mon no loai_hinh, ngan sach ve 1, phep the khong khop gi ca, va rang
+// bao KHONG CAN du engine dung. LAN THU BA trong cung mot ngay mot cai rang bam vao trang
+// thai du lieu that: truoc do la RANG 3 cua bite_chay_het_cong doi "tat ca xanh", roi RANG 2
+// va 4b cua bite_gop_cap doi "phai co dong mang nhan chua_duyet".
+//
+// Rang phai tu dung lay canh cua no, ke ca khi canh do chi la mot con so.
 const goc_ngan = readFileSync(pNgan, 'utf8');
-writeFileSync(pNgan, goc_ngan.replace(/^2/, '1'));
+const dongDau = goc_ngan.split('\n')[0].trim();
+const muc = Number(dongDau);
+if (!Number.isFinite(muc)) { console.log(`KHONG CHAY DUOC: dong dau ngan sach khong phai so: ${dongDau}`); rmSync(tam, { recursive: true, force: true }); process.exit(3); }
+writeFileSync(pNgan, goc_ngan.replace(dongDau, String(muc - 1)));
 r = chay();
 const ok4 = r.ma === 2 && r.ra.includes('TANG so truong');
 in_('RANG 4 · vuot ngan sach chua_hien thi DO', ok4, ok4 ? 'exit 2' : `exit ${r.ma}`);

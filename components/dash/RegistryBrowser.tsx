@@ -74,6 +74,15 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
             va chi hien ve dau thi trang web mo ta dung cai ly do de LOAI no. */}
         {u.capability2 ? <span className="reg-unit__cap reg-unit__cap--2">{u.capability2}</span> : null}
         <span className="reg-unit__tags">
+          {/* Loai hinh don vi. Gia tri goc la ma normalized ('DN' / 'vien'), nen hien nhan
+              doc duoc va gan title noi ro day la PHAN LOAI chu khong phai chu cua nguon.
+              Doc ca `u.loaiHinh` (ma goc) lan `u.loaiHinhLabel` (nhan) la co y: cong
+              truong_hien kiem xem khoa GOC co ai doc khong, khong phai khoa dan xuat. */}
+          {u.loaiHinh ? (
+            <span className="reg-tag reg-tag--loai" title="Phân loại đơn vị, giá trị chuẩn hoá từ nguồn chứ không trích nguyên văn">
+              {u.loaiHinhLabel}
+            </span>
+          ) : null}
           {u.nhoms.map((n) => (
             <span key={n} className="reg-tag">{`Nhóm ${n} · ${TEN_NHOM[n] ?? ''}`}</span>
           ))}

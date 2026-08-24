@@ -55,6 +55,15 @@ const TEN_NHOM = {
   9: 'Hàng không và vũ trụ', 10: 'Đường sắt tốc độ cao',
 };
 
+// Nhan cho truong loai_hinh. Ma trong registry la 'DN' / 'vien' / 'truong' theo schema cua
+// domain.yaml, va gia tri do la NORMALIZED chu khong phai chu cua nguon: nguon viet "Tổng
+// công ty Công nghiệp Công nghệ cao Viettel", nguoi nhap suy ra 'DN'. Nen tren the phai hien
+// mot NHAN PHAN LOAI de doc, khong duoc bay ra nhu mot cau trich.
+//
+// Ma la khong biet thi TRA LAI CHINH MA, khong tra chuoi rong. Ma moi la phai nhin thay ngay
+// tren the chu khong bien mat im lang; do la khac biet giua honest-null va bo sot.
+const TEN_LOAI = { DN: 'Doanh nghiệp', vien: 'Viện', truong: 'Trường' };
+
 // ── Ban chup ────────────────────────────────────────────────────────────────
 const EV = join(TOUCH, 'public', 'evidence');
 mkdirSync(EV, { recursive: true });
@@ -101,6 +110,9 @@ const units = [...theoDonVi.entries()].sort((a, b) => a[0].localeCompare(b[0], '
   return {
     name: ten,
     loaiHinh: dau(cs, 'loai_hinh'),
+    // Nhan doc duoc cua loai_hinh. Cung khuon voi nhomLabels: ma o mot khoa, chu o khoa
+    // khac, de the hien chu ma cong `truong_hien` van kiem duoc dung khoa goc.
+    loaiHinhLabel: TEN_LOAI[dau(cs, 'loai_hinh')] ?? dau(cs, 'loai_hinh'),
     nhoms,
     nhomLabels: nhoms.map((n) => `Nhóm ${n} · ${TEN_NHOM[Number(n)] ?? ''}`.trim()),
     sanPham: sps,
@@ -119,7 +131,8 @@ const units = [...theoDonVi.entries()].sort((a, b) => a[0].localeCompare(b[0], '
     favorsRtr: cs.some((c) => c.favors === 'rtr'),
     sources: nguon,
     // Chuoi tra cuu: gop het chu de o loc tren trinh duyet khoi phai duyet tung truong.
-    tim: [ten, dau(cs, 'loai_hinh'), dau(cs, 'nang_luc_mo_ta'), dau(cs, 'nang_luc_mo_ta_2'),
+    tim: [ten, dau(cs, 'loai_hinh'), TEN_LOAI[dau(cs, 'loai_hinh')] ?? '',
+      dau(cs, 'nang_luc_mo_ta'), dau(cs, 'nang_luc_mo_ta_2'),
       ...nhoms.map((n) => `nhóm ${n} ${TEN_NHOM[Number(n)] ?? ''}`), ...sps.map((s) => `sp ${s}`)]
       .filter(Boolean).join(' ').toLowerCase(),
     evidence: cs.map((c) => ({
@@ -242,7 +255,7 @@ export type CnclEvidence = {
 };
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
-  name: string; loaiHinh: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
+  name: string; loaiHinh: string; loaiHinhLabel: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
   capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };

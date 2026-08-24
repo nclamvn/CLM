@@ -424,6 +424,9 @@
 .dash-shell .reg-unit__tags { grid-column: 1 / -1; display: flex; gap: var(--space-1_5); flex-wrap: wrap; }
 .dash-shell .reg-tag { font-size: 11px; line-height: 16px; color: var(--color-text-muted); border: var(--stroke-hairline) solid var(--color-border-muted); border-radius: var(--radius-full); padding: 0 var(--space-2); }
 .dash-shell .reg-tag--sp { color: var(--color-accent-cyan); }
+/* Loai hinh don vi: nhan phan loai, khong phai chu cua nguon. De nhat va khong to mau de no
+   khong doi ngang hang voi tag nhom va tag san pham, von la ma tra ve QD 21/2026. */
+.dash-shell .reg-tag--loai { color: var(--color-text-secondary); opacity: .85; }
 .dash-shell .reg-ex { margin-left: var(--space-2); }
 .dash-shell .reg-empty { text-align: left; }
 .dash-shell .reg-empty p { font-size: 14px; line-height: 20px; color: var(--color-text-secondary); margin: 0; }
