@@ -84,7 +84,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
-        "note": "Bai dang 12/04/2019, qua refresh_days 180 rat xa. Can moc gan hon truoc khi dung cho ho so khach."
+        "note": "Bai dang 12/04/2019, qua refresh_days 180 rat xa. Can moc gan hon truoc khi dung cho ho so khach. CHUA MIEN TRU DUOC, ghi ngay 24/08/2026 de lan sau khoi tim lai tu dau. Da cao lai, khong thay nguon tier A hoac B nao trong 180 ngay goi dich danh Cong ty An ninh mang Viettel kem mot khang dinh tuong duong. Nhung ly do chinh de KHONG mien tru la ban than cau nay: '100% cac san pham nay deu duoc nghien cuu, phat trien hoan toan boi doi ngu nhan su cua cong ty' la mot KHANG DINH TRANG THAI PHU TOAN BO danh muc san pham nam 2019, khong phai mot su kien da xay ra. Danh muc san pham doi thi cau nay co the sai ma khong ai biet. Hai huong xu: cao duoc nguon moi, hoac thu hep value ve dung danh muc san pham ma bai 2019 liet ke."
       },
       {
         "field": "san_pham_lien_quan",
@@ -149,7 +149,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
-        "note": ""
+        "note": "GIU NGUON CU: cao lai 24/08/2026. Nguon moi nhat tim duoc la vnexpress.net 08/09/2025 (350 ngay, VAN QUA nguong 180 nen KHONG tinh la lam moi) noi ro Avac ASF Live la lo thu hai trong 600.000 lieu Philippines dat mua, tuc xac nhan va con manh hon claim cu. Nguon tier A moi nhat dung linh vuc la QD 779/QD-TTg ngay 02/05/2026 tren baochinhphu.vn (114 ngay), NHUNG van ban do chi noi chung ve 'loai vaccine duoc phep luu hanh', KHONG goi dich danh doanh nghiep nen khong dung lam bang chung don vi duoc."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -159,7 +159,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
-        "note": ""
+        "note": "GIU NGUON CU: cao lai 24/08/2026. Nguon moi nhat tim duoc la vnexpress.net 08/09/2025 (350 ngay, VAN QUA nguong 180 nen KHONG tinh la lam moi) noi ro Avac ASF Live la lo thu hai trong 600.000 lieu Philippines dat mua, tuc xac nhan va con manh hon claim cu. Nguon tier A moi nhat dung linh vuc la QD 779/QD-TTg ngay 02/05/2026 tren baochinhphu.vn (114 ngay), NHUNG van ban do chi noi chung ve 'loai vaccine duoc phep luu hanh', KHONG goi dich danh doanh nghiep nen khong dung lam bang chung don vi duoc."
       },
       {
         "field": "san_pham_lien_quan",
@@ -429,7 +429,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
-        "note": "Ten vac xin dich ta lon chau Phi do don vi nghien cuu san xuat, da duoc cap Giay chung nhan luu hanh theo nguon."
+        "note": "Ten vac xin dich ta lon chau Phi do don vi nghien cuu san xuat, da duoc cap Giay chung nhan luu hanh theo nguon. GIU NGUON CU: cao lai 24/08/2026, cung vong voi AVAC. NAVET-ASFVAC la TEN SAN PHAM da duoc cap giay chung nhan luu hanh, tuc mot dinh danh chu khong phai mot trang thai het han duoc. Khong co nguon tier A hoac B nao trong 180 ngay goi dich danh NAVETCO."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2588,7 +2588,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
-        "note": "Ban goc dung chu 'vaccine', khong phai 'vac xin'. Giu nguyen."
+        "note": "Ban goc dung chu 'vaccine', khong phai 'vac xin'. Giu nguyen. GIU NGUON CU: cao lai 24/08/2026, khong tim duoc nguon tier A hoac B nao moi hon goi dich danh IVAC kem mot khang dinh nang luc tuong duong. Claim la SU KIEN DA XAY RA (da san xuat thanh cong hai loai vaccine, da hoan thanh ba giai doan thu nghiem lam sang), khong phai trang thai dang dien ra, nen tuoi cua bai khong lam no sai. Van nen cao lai truoc khi dung cho ho so khach vi bai goc tu 16/01/2019."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -2598,7 +2598,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
-        "note": "Bai dang 16/01/2019, qua refresh_days 180 rat xa."
+        "note": "Bai dang 16/01/2019, qua refresh_days 180 rat xa. GIU NGUON CU: cao lai 24/08/2026, khong tim duoc nguon tier A hoac B nao moi hon goi dich danh IVAC kem mot khang dinh nang luc tuong duong. Claim la SU KIEN DA XAY RA (da san xuat thanh cong hai loai vaccine, da hoan thanh ba giai doan thu nghiem lam sang), khong phai trang thai dang dien ra, nen tuoi cua bai khong lam no sai. Van nen cao lai truoc khi dung cho ho so khach vi bai goc tu 16/01/2019."
       },
       {
         "field": "san_pham_lien_quan",
