@@ -1,0 +1,47 @@
+{
+  "_doc": [
+    "Khai bao LOP HIEN THI cho tung truong cua registry don_vi_cncl.",
+    "",
+    "VI SAO CO (24/08/2026): truong nang_luc_mo_ta_2 ton tai trong registry tu 16/08 ma the",
+    "tren web khong bao gio hien. Voi FECON, dong duy nhat duoc hien la 'don vi truc tiep van",
+    "hanh robot dao ngam (TBM)', tuc dung cai ve ma domain.yaml xep vao KHONG DU DIEU KIEN,",
+    "trong khi ly do giu FECON lai nam o truong bi bo. Trang web doc troi chay va noi sai.",
+    "",
+    "Khong cong nao trong 25 cong bat duoc, vi moi cong deu soi TINH TOAN VEN DU LIEU. Cai sai",
+    "nam o cho: du lieu dung, nhung cai gi duoc dua len mat trang. Do la cau hoi ve Y NGHIA.",
+    "",
+    "LUAT: moi truong xuat hien trong claims.jsonl PHAI co mot dong o day. Truong la khai bao",
+    "thi cong DO ngay, khong doan gium. Them mot truong phu moi la phai tra loi: no hien o dau.",
+    "",
+    "Ba lop:",
+    "  tom_tat  · phai len DONG TOM TAT cua the. Doi hai thu: khoa co trong du lieu sinh ra,",
+    "             VA khoa duoc mot component that su doc. Chi co du lieu ma khong ai render thi",
+    "             van la bi bo, va do dung la cach nang_luc_mo_ta_2 lot luoi.",
+    "  bang     · chi can co mat trong bang bang chung khi mo the ra. Du cho cac truong lam",
+    "             chung cu chi tiet, khong can len dong tom tat.",
+    "  chua_hien· CO du lieu ma CHUA quyet hien o dau. Phai ghi ly do. So luong bi khoa mot",
+    "             chieu trong ngan_sach_truong_chua_hien.txt: duoc giam, khong duoc tang."
+  ],
+
+  "ten_don_vi":          { "lop": "tom_tat", "khoa": "name" },
+  "nang_luc_mo_ta":      { "lop": "tom_tat", "khoa": "capability" },
+  "nang_luc_mo_ta_2":    { "lop": "tom_tat", "khoa": "capability2" },
+  "nhom_cncl":           { "lop": "tom_tat", "khoa": "nhoms" },
+  "nhom_cncl_phu_3":     { "lop": "tom_tat", "khoa": "nhoms" },
+  "nhom_cncl_phu_6":     { "lop": "tom_tat", "khoa": "nhoms" },
+  "san_pham_lien_quan":  { "lop": "tom_tat", "khoa": "sanPham" },
+
+  "bang_chung_nang_luc": {
+    "lop": "bang",
+    "ly_do": "Chung cu chi tiet cho nang luc. The da hien tier va so evidence; cau chung cu day du doc trong bang khi mo the ra."
+  },
+
+  "loai_hinh": {
+    "lop": "chua_hien",
+    "ly_do": "9 don vi co gia tri. Khoa loaiHinh CO trong du lieu sinh ra nhung KHONG component nao doc no. Day la ca thu hai cung dang voi nang_luc_mo_ta_2, tim ra trong cung vong 24/08/2026. Chua sua vi chua quyet hien o dau tren the: canh ten don vi hay thanh mot the tag rieng. Van doc duoc trong bang bang chung."
+  },
+  "location": {
+    "lop": "chua_hien",
+    "ly_do": "Dung 1 don vi co gia tri, khong du de dung mot cho hien tu te tren the. Van doc duoc trong bang bang chung. Nap them vai don vi nua roi hay quyet."
+  }
+}

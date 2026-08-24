@@ -1,0 +1,13 @@
+2
+# Khoa mot chieu cho check-truong-hien.mjs: so truong CO du lieu trong registry ma trang web
+# KHONG noi ra o dong tom tat, va da duoc ghi nhan kem ly do.
+#
+# Lich su:
+#   24/08/2026  -> 2  vong dau, dung ngay tim ra lo hong. Hai truong: loai_hinh (9 don vi) va
+#                     location (1 don vi). Ca hai deu doc duoc trong bang bang chung khi mo
+#                     the ra, nen day la mon no NHE: khong phai giau, chi la khong tom tat.
+#                     Truong thu ba cung dang la nang_luc_mo_ta_2 thi da sua xong trong chinh
+#                     vong nay, nen no khong nam trong con so 2.
+#
+# Con so nay chi duoc GIAM. Tang la mon no moi. Giam ma khong sua file nay cung la mon no,
+# vi khoa se het siet.
