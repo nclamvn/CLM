@@ -4,12 +4,15 @@ Ngày: 24/08/2026.
 
 ## STATUS
 
-**25 ô, 24 xanh, 1 đỏ.** Ô đỏ vẫn là `du_dieu_kien`, vẫn chờ anh. Đó là kết quả đúng.
+**25 ô, 25 xanh, exit 0.** Lâm quyết chiều 24/08/2026: **giữ FECON, phạm vi hẹp**.
 
 ```
 do tuoi nguon : 24 -> 23   (khoa mot chieu no khi GIAM, da chot muc moi)
-du dieu kien  : DO         (khong doi, va khong duoc phep doi boi may)
+du dieu kien  : DO -> XANH (nguoi quyet, khong phai may go)
 ```
+
+Ô đỏ tồn tại **ba lượt**. Nó không tự tắt, không ai tắt hộ, và nó chỉ mở khi có chữ của
+người. Đó là điều duy nhất đáng nói về cái cổng này.
 
 ## Việc tôi làm và việc tôi không làm
 
@@ -87,24 +90,29 @@ sang câu tự đủ nghĩa và ghi lỗ hổng vào note. Chỗ này tạm th�
 bằng cách tạm gỡ thay đổi của vòng này rồi chạy lại: **cảnh báo có từ trước**, không phải do
 hai claim FECON. Chữ ký cũ vẫn phủ đúng phần đã ký; phần mới bị đánh dấu, không lẫn vào.
 
-## Việc của anh
+## Quyết định, và cách hỏi sai của tôi
 
-Ô `du_dieu_kien` đỏ. Bằng chứng cho đường hai nay đã nằm trong registry, có nguồn, có tier,
-trích nguyên văn. Quyết vẫn là của anh:
+Hai lượt tôi đặt câu hỏi này bằng văn xuôi. Hai lượt anh trả lời *"bước kế chuẩn nhất"*. Tôi
+đọc đó là "làm tiếp đi" và đi làm tiếp, trong khi lỗi nằm ở **cách hỏi**: tôi bắt anh soạn
+một đoạn văn để gỡ một cái cổng, thay vì bắt anh bấm một nút. Lượt thứ ba hỏi bằng hai lựa
+chọn có nêu rõ điểm yếu của từng đường thì có câu trả lời ngay.
 
-```
-# duong 1: loai FECON, ghi ly do vao domain.yaml muc ap_dung_..., giong MobiFone
-# duong 2: giu, ghi vao note cua claim nang_luc_mo_ta:
-DU DIEU KIEN DA XET: <can cu>
-```
+Ghi lại vì nó lặp được: **một quyết định của người mà máy trình bày dưới dạng bài luận thì
+thực chất là máy đang trì hoãn.**
 
-Nếu chọn đường hai, câu căn cứ đề nghị, anh sửa chữ nào tuỳ anh:
+Anh chọn **giữ, phạm vi hẹp**. Đã ghi vào note của claim `FECON/nang_luc_mo_ta` và vào
+`domain.yaml` mục `ap_dung_24_08_2026_fecon`, kèm ba thứ bắt buộc:
 
-> DU DIEU KIEN DA XET: theo dieu khoan ranh_gioi_xam. FECON vua van hanh TBM (khong du dieu
-> kien) vua co phan tu nghien cuu (du dieu kien): baodautu.vn 28/12/2015 ghi Ban R&D FECON
-> truc tiep nghien cuu va san xuat thu vo ham, coc cu be tong du ung luc va quan trac cap
-> quang. Nap voi PHAM VI HEP: phan tu phat trien la phu kien va cong nghe phu tro, KHONG bao
-> gom may TBM. Khac MobiFone o cho MobiFone khong tim thay bat ky phan tu phat trien nao.
+**Phạm vi.** Phần tự phát triển chỉ gồm vỏ hầm, cọc cừ và quan trắc cáp quang. **Không bao
+gồm máy TBM.** Trình ra ngoài mà để người đọc hiểu FECON làm chủ máy TBM là trình sai.
+
+**Khác MobiFone ở chỗ nào.** Cùng một luật, hai kết quả, vì bằng chứng khác nhau. MobiFone
+không tìm thấy **bất kỳ** phần tự phát triển nào. Đây không phải nới luật, đây là dùng cái vế
+xám mà luật đã viết sẵn và **chưa lần nào được dùng**. Nay nó hết là chữ chết.
+
+**Điểm yếu tự nhận.** Bằng chứng là bài 2015, đã 11 năm. Khách soi hồ sơ có quyền hỏi vì sao
+không có bản mới hơn, và câu trả lời thật là vòng 24/08 không tìm được. Đã ghi thẳng vào note
+để sau này không ai phải phát hiện lại.
 
 ## Lệnh
 
