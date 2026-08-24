@@ -214,7 +214,8 @@ const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'
 // components/dash/MatchingWorkbench.tsx.
 const toDiem = (span, value) => {
   const i = value ? String(span).indexOf(value) : -1;
-  if (i < 0) return esc(span);
+  // Value phu tron span thi khong to: to ca cau khong phan biet duoc gi.
+  if (i < 0 || String(value).trim() === String(span).trim()) return esc(span);
   return esc(String(span).slice(0, i)) + '<mark>' + esc(value) +
     '</mark>' + esc(String(span).slice(i + String(value).length));
 };

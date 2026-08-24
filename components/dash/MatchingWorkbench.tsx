@@ -44,7 +44,9 @@ const tenCau = (id: string) => id.replace(' · nhu cầu quốc gia', '').replac
  */
 function SpanCoDiem({ span, value }: { span: string; value: string }) {
   const i = value ? span.indexOf(value) : -1;
-  if (i < 0) return <>{span}</>;
+  // Value phu tron span thi KHONG to. To ca cau thi cai to khong phan biet duoc gi, no chi
+  // con la mot mang nen la. Chi to khi that su co phan chu nguon nam ngoai phan khang dinh.
+  if (i < 0 || value.trim() === span.trim()) return <>{span}</>;
   return (
     <>
       {span.slice(0, i)}
