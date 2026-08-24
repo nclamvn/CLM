@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-18 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-24 · KHONG sua tay.
 // Nguon: CNCLData/domains/don_vi_cncl + Dataset_CongNgheChienLuoc
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -20,14 +20,14 @@ export type CnclNeed = {
 
 export const cnclMeta = {
   "units": 42,
-  "claims": 200,
+  "claims": 202,
   "needs": 30,
   "sources": 11,
-  "snapshots": 37,
-  "tierA": 75,
-  "tierB": 125,
+  "snapshots": 39,
+  "tierA": 76,
+  "tierB": 126,
   "nhomPhu": 10,
-  "generatedAt": "2026-08-18",
+  "generatedAt": "2026-08-24",
   "frame": "QĐ 21/2026/QĐ-TTg",
   "gate": "chay_het_cong.sh · 14 o xanh"
 } as const;
@@ -794,7 +794,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
-        "note": ""
+        "note": "GIU NGUON CU: da cao lai 18/08/2026. Tim duoc nhieu bai tier A va B ve CT Group va CT Semiconductor nhung deu CU HON hoac ngang tuoi nguon dang dung. LUU Y PHAI KIEM: claim cu chua cum 'du kien cho ra doi con chip Made by Vietnam dau tien trong nam 2025', tuc mot DU BAO nay da toi han. Chua tim duoc nguon xac nhan hay bac bo viec do. Day la cho de sai nhat khi trinh ra ngoai."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -804,7 +804,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
-        "note": "Du kien 2025 la moc trong bai dang 27/10/2025; CHUA co nguon xac nhan da ra chip. Khong duoc doc thanh da hoan thanh."
+        "note": "Du kien 2025 la moc trong bai dang 27/10/2025; CHUA co nguon xac nhan da ra chip. Khong duoc doc thanh da hoan thanh. GIU NGUON CU: da cao lai 18/08/2026. Tim duoc nhieu bai tier A va B ve CT Group va CT Semiconductor nhung deu CU HON hoac ngang tuoi nguon dang dung. LUU Y PHAI KIEM: claim cu chua cum 'du kien cho ra doi con chip Made by Vietnam dau tien trong nam 2025', tuc mot DU BAO nay da toi han. Chua tim duoc nguon xac nhan hay bac bo viec do. Day la cho de sai nhat khi trinh ra ngoai."
       },
       {
         "field": "san_pham_lien_quan",
@@ -1005,9 +1005,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "nguoiquansat.vn",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt"
+      },
+      {
+        "source": "vjst.vn",
+        "href": "/evidence/vjst_fpt_tokyo_20260615.txt"
       }
     ],
-    "tim": "fpt semiconductor doanh nghiệp việt đầu tiên thiết kế và phát triển chip thương mại nhóm 6 chip bán dẫn sp 23",
+    "tim": "fpt semiconductor doanh nghiệp việt đầu tiên thiết kế và phát triển chip thương mại thiết kế chip nhóm 6 chip bán dẫn sp 23",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1037,7 +1041,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
-        "note": ""
+        "note": "GIU NGUON CU: da cao lai 18/08/2026. Claim la moc LAN DAU (doanh nghiep Viet dau tien thiet ke va phat trien chip thuong mai), tuc su kien da xay ra, khong het han. Nguon moi vjst.vn 15/06/2026 (vjst_fpt_tokyo_20260615) xac nhan lai mang thiet ke chip van do FPT Semiconductor dam nhiem."
       },
       {
         "field": "san_pham_lien_quan",
@@ -1048,6 +1052,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'thiet ke va phat trien chip thuong mai' -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "thiết kế chip",
+        "span": "Hiện FPT phát triển các mảng cốt lõi gồm thiết kế chip (FPT Semiconductor), kiểm thử - đóng gói và đào tạo nhân lực quy mô lớn.",
+        "source": "vjst.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vjst_fpt_tokyo_20260615.txt",
+        "note": "Vong lam moi 18/08/2026. Nguon 15/06/2026 xac nhan LAI mang thiet ke chip van do FPT Semiconductor dam nhiem, tuc nang luc dang ton tai chu khong phai du dinh. Cau goi dich danh phap nhan con trong ngoac nen gan cho FPT Semiconductor chu khong gan cho FPT."
       }
     ]
   },
@@ -1721,7 +1735,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vjst_rostek_agv_20220103.txt",
-        "note": ""
+        "note": "GIU NGUON CU: da cao lai 18/08/2026, hai vong tim, khong co nguon tier A hoac B nao moi hon goi dich danh ROSTEK. Ket qua tim duoc hoac la trang tu gioi thieu cua cong ty (tier C, duoi nguong), hoac la bai ve cong nghe AMR noi chung khong nhac ten don vi. Claim la MOT VIEC DA XAY RA (AGV da duoc dung trong day chuyen Nidec Sankyo), khong phai trang thai dang dien ra, nen tuoi cua bai khong lam no sai. Van can nguon moi truoc khi dung cho ho so khach."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -1731,7 +1745,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/vjst_rostek_agv_20220103.txt",
-        "note": "Bai dang 03/01/2022, da qua refresh_days 180. Chinh ta 'day truyen' la loi cua ban goc, giu nguyen. Cau dung 'loai robot nay' chu khong goi dich danh ROSTEK AGV, quy chieu theo mach doan."
+        "note": "Bai dang 03/01/2022, da qua refresh_days 180. Chinh ta 'day truyen' la loi cua ban goc, giu nguyen. Cau dung 'loai robot nay' chu khong goi dich danh ROSTEK AGV, quy chieu theo mach doan. GIU NGUON CU: da cao lai 18/08/2026, hai vong tim, khong co nguon tier A hoac B nao moi hon goi dich danh ROSTEK. Ket qua tim duoc hoac la trang tu gioi thieu cua cong ty (tier C, duoi nguong), hoac la bai ve cong nghe AMR noi chung khong nhac ten don vi. Claim la MOT VIEC DA XAY RA (AGV da duoc dung trong day chuyen Nidec Sankyo), khong phai trang thai dang dien ra, nen tuoi cua bai khong lam no sai. Van can nguon moi truoc khi dung cho ho so khach."
       },
       {
         "field": "san_pham_lien_quan",
@@ -1907,7 +1921,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_fpt_nhamay_20260128.txt",
-        "note": "TIP-CNCL-3B Task A. Truong nang_luc_mo_ta_2 vi nang_luc_mo_ta da co gia tri khac (don tri). Day la nang luc HOP TAC FPT va Viettel, cong bo 28/01/2026, muc do LA THOA THUAN va DINH HUONG PHAT TRIEN, chua phai chip da ra."
+        "note": "TIP-CNCL-3B Task A. Truong nang_luc_mo_ta_2 vi nang_luc_mo_ta da co gia tri khac (don tri). Day la nang luc HOP TAC FPT va Viettel, cong bo 28/01/2026, muc do LA THOA THUAN va DINH HUONG PHAT TRIEN, chua phai chip da ra. GIU NGUON CU: da cao lai 18/08/2026. Claim ghi noi dung MOT THOA THUAN KY NGAY 28/01/2026 giua FPT va Viettel. Le ky la su kien da xay ra nen khong het han. Cai co the doi la ket qua trien khai, va claim nay von da ghi ro no la thoa thuan chu khong phai chip da ra."
       }
     ]
   },
@@ -2037,7 +2051,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
-        "note": ""
+        "note": "GIU NGUON CU: da cao lai 18/08/2026, khong co nguon tier A hoac B nao moi hon ve EEMC. Claim ghi mot SU KIEN DA HOAN THANH ngay 16/12/2024 (xuat xuong may bien ap 500kV-3x300MVA, dat toan bo hang muc thu nghiem IEC). Su kien da xay ra thi khong het han, va khong nguon nao noi nguoc lai."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -2047,7 +2061,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
-        "note": "San pham vat ly da xuat xuong, khong phai ke hoach. Ban goc viet '500kV- 3x300MVA' thieu dau cach, giu nguyen."
+        "note": "San pham vat ly da xuat xuong, khong phai ke hoach. Ban goc viet '500kV- 3x300MVA' thieu dau cach, giu nguyen. GIU NGUON CU: da cao lai 18/08/2026, khong co nguon tier A hoac B nao moi hon ve EEMC. Claim ghi mot SU KIEN DA HOAN THANH ngay 16/12/2024 (xuat xuong may bien ap 500kV-3x300MVA, dat toan bo hang muc thu nghiem IEC). Su kien da xay ra thi khong het han, va khong nguon nao noi nguoc lai."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2857,10 +2871,10 @@ export const cnclUnits: CnclUnit[] = [
     "sources": [
       {
         "source": "mst.gov.vn",
-        "href": "/evidence/mst_vnpttech_5g_20220831.txt"
+        "href": "/evidence/mst_vnpttech_vkist_20260702.txt"
       }
     ],
-    "tim": "vnpt technology đang phát triển các sản phẩm cho mạng 5g phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây nhóm 2 mạng di động thế hệ sau sp 06",
+    "tim": "vnpt technology đang phát triển các sản phẩm cho mạng 5g phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây phát triển các sản phẩm odm/oem trong lĩnh vực điện tử - viễn thông nhóm 2 mạng di động thế hệ sau sp 06",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2890,7 +2904,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_vnpttech_5g_20220831.txt",
-        "note": "Bai dang 31/08/2022, da qua refresh_days 180 rat xa. Nguon KHONG neu ten model 5G cu the nao; muc do la DANG PHAT TRIEN, khong phai da thuong mai."
+        "note": "Bai dang 31/08/2022, da qua refresh_days 180 rat xa. Nguon KHONG neu ten model 5G cu the nao; muc do la DANG PHAT TRIEN, khong phai da thuong mai. GIU NGUON CU: da cao lai ngay 18/08/2026, khong tim duoc nguon tier A hoac B nao moi hon khang dinh lai nang luc thiet bi 5G. Nguon tier A mst.gov.vn 02/07/2026 (mst_vnpttech_vkist_20260702) xac nhan don vi VAN co nang luc nghien cuu, phat trien va san xuat, va van lam ODM/OEM dien tu vien thong, tuc khong mau thuan voi claim 2022. Nhung no KHONG nhac lai thiet bi 5G, nen claim 2022 giu nguyen chu khong duoc coi la da lam moi. Can cao lai khi co nguon moi noi truc tiep ve thiet bi 5G."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -2900,7 +2914,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "A",
         "extraction": "verbatim",
         "href": "/evidence/mst_vnpttech_5g_20220831.txt",
-        "note": "Thiet bi neu ten cu the trong bai thuoc 3G/4G va Wifi 4/5/6, khong phai 5G. Giu tach bach."
+        "note": "Thiet bi neu ten cu the trong bai thuoc 3G/4G va Wifi 4/5/6, khong phai 5G. Giu tach bach. GIU NGUON CU: da cao lai ngay 18/08/2026, khong tim duoc nguon tier A hoac B nao moi hon khang dinh lai nang luc thiet bi 5G. Nguon tier A mst.gov.vn 02/07/2026 (mst_vnpttech_vkist_20260702) xac nhan don vi VAN co nang luc nghien cuu, phat trien va san xuat, va van lam ODM/OEM dien tu vien thong, tuc khong mau thuan voi claim 2022. Nhung no KHONG nhac lai thiet bi 5G, nen claim 2022 giu nguyen chu khong duoc coi la da lam moi. Can cao lai khi co nguon moi noi truc tiep ve thiet bi 5G."
       },
       {
         "field": "san_pham_lien_quan",
@@ -2911,6 +2925,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/mst_vnpttech_5g_20220831.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'phat trien cac san pham cho mang 5G' -> SP06 Thiet bi he thong mang 5G. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông",
+        "span": "Theo Biên bản ghi nhớ, hai bên sẽ phối hợp nghiên cứu và phát triển các công nghệ phục vụ chuyển đổi số trong sản xuất, bao gồm ứng dụng robot tự hành và các giải pháp tự động hóa trong nhà máy; nghiên cứu AI, IoT và cơ điện tử; phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông; đồng thời số hóa dữ liệu và ứng dụng AI phục vụ nhà máy thông minh cũng như nghiên cứu khoa học.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+        "note": "Vong lam moi 18/08/2026. DAY LA NOI DUNG THOA THUAN MoU ky 30/06/2026, tuc DINH HUONG, chua phai nang luc da hinh thanh. Ghi theo tien le nang_luc_mo_ta_2 cua Tap doan Viettel (thoa thuan chip FPT-Viettel 28/01/2026). KHONG duoc dung dong nay lam can cu noi VNPT Technology da lam chu ODM/OEM."
       }
     ]
   },

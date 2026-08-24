@@ -202,6 +202,9 @@ const webMatches = daKy.map((m) => {
     quaChuoiGiaTri: Boolean(m.rationale.neo_nhom?.qua_canh_chuoi_gia_tri),
     tokenGiao: m.rationale.token_con_lai?.giao ?? [],
     signoff: { by: m.gate.signoff.by, role: m.gate.signoff.role, date: m.gate.signoff.date },
+    // Fact them vao SAU khi nguoi ky. Chu ky cu khong phu chung, nen web phai noi ro.
+    chuaDuyet: m.gate.signoff.chua_duyet ?? [],
+    soChuoi: (m.rationale.chuoi_bang_chung ?? []).length,
     khoaBangChung: so?.khoa?.bang_chung ?? null,
     demandEvidence: cau.map(anh),
     supplyEvidence: cung.map(anh),
@@ -276,6 +279,8 @@ export type SignedMatch = {
   nhomCau: number | null; nhomCung: number[]; quaChuoiGiaTri: boolean; tokenGiao: string[];
   signoff: { by: string; role: string; date: string };
   khoaBangChung: string | null;
+  chuaDuyet: string[];
+  soChuoi: number;
   demandEvidence: MatchEvidence[]; supplyEvidence: MatchEvidence[];
   unverified: string[];
 };

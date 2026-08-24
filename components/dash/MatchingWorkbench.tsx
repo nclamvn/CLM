@@ -126,6 +126,11 @@ export function MatchingWorkbench() {
                   <span className="mw-cand__right">
                     <span className={`mw-ladder mw-ladder--${l.tone}`}>{l.label}</span>
                     <span className="chip chip--pass reg-tier" title={`Ký bởi ${m.signoff.by} ngày ${m.signoff.date}`}>ĐÃ KÝ</span>
+                    {m.chuaDuyet.length ? (
+                      <span className="chip chip--private reg-tier" title="Bằng chứng thêm vào sau khi ký, chữ ký cũ không phủ phần này">
+                        {`+${m.chuaDuyet.length} chưa duyệt`}
+                      </span>
+                    ) : null}
                   </span>
                 </button>
               </li>
@@ -159,6 +164,18 @@ export function MatchingWorkbench() {
               <li><span className="mw-trail__k">Engine</span><span className="mw-trail__v t-mono-01">{current.engine}</span></li>
             </ul>
 
+            {current.chuaDuyet.length > 0 ? (
+              <p className="mw-hint">
+                {current.chuaDuyet.length} bằng chứng được thêm vào SAU khi ký, nên chữ ký hiện tại
+                không phủ phần đó. Cặp này vẫn có người ký, nhưng phần mới chưa ai xem. Ký lại dòng
+                này nếu muốn chữ ký phủ cả phần mới.
+              </p>
+            ) : null}
+            {current.soChuoi > 1 ? (
+              <p className="mw-hint">
+                Cặp này có {current.soChuoi} chuỗi bằng chứng độc lập, đã gộp vào một dòng.
+              </p>
+            ) : null}
             {current.unverified.length > 0 ? (
               <p className="mw-hint">
                 Tự khai unverified: {current.unverified.join(', ')}.

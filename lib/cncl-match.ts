@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-18 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-24 · KHONG sua tay.
 // Nguon: CaoLocMatch/out/matches.jsonl + signoff_ledger.jsonl
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -14,6 +14,8 @@ export type SignedMatch = {
   nhomCau: number | null; nhomCung: number[]; quaChuoiGiaTri: boolean; tokenGiao: string[];
   signoff: { by: string; role: string; date: string };
   khoaBangChung: string | null;
+  chuaDuyet: string[];
+  soChuoi: number;
   demandEvidence: MatchEvidence[]; supplyEvidence: MatchEvidence[];
   unverified: string[];
 };
@@ -22,12 +24,12 @@ export type RejectedPair = {
 };
 
 export const matchMeta = {
-  "daKy": 12,
+  "daKy": 11,
   "tuChoi": 1,
-  "tongChay": 12,
+  "tongChay": 11,
   "rule": "anchor_group_overlap_v2",
   "nguoiKy": "Lam Nguyen",
-  "generatedAt": "2026-08-18"
+  "generatedAt": "2026-08-24"
 } as const;
 
 export const signedMatches: SignedMatch[] = [
@@ -52,6 +54,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "862548dda49165e3",
     "demandEvidence": [
       {
@@ -100,6 +104,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "69645ee490ea1124",
     "demandEvidence": [
       {
@@ -146,6 +152,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "d7dfdf2004751dd9",
     "demandEvidence": [
       {
@@ -191,6 +199,10 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [
+      "FACT-fc80770a3a"
+    ],
+    "soChuoi": 2,
     "khoaBangChung": "8e8994686f816b3d",
     "demandEvidence": [
       {
@@ -212,6 +224,15 @@ export const signedMatches: SignedMatch[] = [
         "extraction": "verbatim",
         "source": "nguoiquansat.vn",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt"
+      },
+      {
+        "field": "capability_2",
+        "value": "thiết kế chip",
+        "span": "Hiện FPT phát triển các mảng cốt lõi gồm thiết kế chip (FPT Semiconductor), kiểm thử - đóng gói và đào tạo nhân lực quy mô lớn.",
+        "tier": "B",
+        "extraction": "verbatim",
+        "source": "vjst.vn",
+        "href": "/evidence/vjst_fpt_tokyo_20260615.txt"
       }
     ],
     "unverified": []
@@ -236,6 +257,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "95a4acb064fe6817",
     "demandEvidence": [
       {
@@ -286,6 +309,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "72003af33e5da3a0",
     "demandEvidence": [
       {
@@ -336,6 +361,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "1216d421d3a07c35",
     "demandEvidence": [
       {
@@ -382,6 +409,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": null,
     "demandEvidence": [
       {
@@ -431,6 +460,8 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "efccb540b69159ff",
     "demandEvidence": [
       {
@@ -458,7 +489,7 @@ export const signedMatches: SignedMatch[] = [
   },
   {
     "id": "MATCH-0011",
-    "score": 0.61,
+    "score": 0.64,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
     "demandId": "CNCL-P20 · nhu cầu quốc gia",
@@ -470,9 +501,6 @@ export const signedMatches: SignedMatch[] = [
     "quaChuoiGiaTri": false,
     "tokenGiao": [
       "cao",
-      "hiệu",
-      "suất",
-      "truyền",
       "điện"
     ],
     "signoff": {
@@ -480,8 +508,21 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [
+      "FACT-f4b6629590"
+    ],
+    "soChuoi": 2,
     "khoaBangChung": "a5a01bc2d7b0748e",
     "demandEvidence": [
+      {
+        "field": "need",
+        "value": "Thiết bị điện cao áp, siêu cao áp",
+        "span": "Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+        "tier": "A",
+        "extraction": "verbatim",
+        "source": "baochinhphu.vn",
+        "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt"
+      },
       {
         "field": "need_2",
         "value": "máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
@@ -531,58 +572,14 @@ export const signedMatches: SignedMatch[] = [
       "role": "chuyen gia gac cong",
       "date": "2026-08-16"
     },
+    "chuaDuyet": [],
+    "soChuoi": 1,
     "khoaBangChung": "7fb63383a698e35f",
     "demandEvidence": [
       {
         "field": "need",
         "value": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
         "span": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
-        "tier": "A",
-        "extraction": "verbatim",
-        "source": "baochinhphu.vn",
-        "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt"
-      }
-    ],
-    "supplyEvidence": [
-      {
-        "field": "capability",
-        "value": "phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
-        "span": "Trong lĩnh vực năng lượng tái tạo và vật liệu tiên tiến, Viện phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao.",
-        "tier": "B",
-        "extraction": "verbatim",
-        "source": "vjst.vn",
-        "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt"
-      }
-    ],
-    "unverified": []
-  },
-  {
-    "id": "MATCH-0013",
-    "score": 0.64,
-    "rule": "anchor_group_overlap_v2",
-    "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
-    "demandId": "CNCL-P20 · nhu cầu quốc gia",
-    "supplyId": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
-    "nhomCau": 5,
-    "nhomCung": [
-      5
-    ],
-    "quaChuoiGiaTri": false,
-    "tokenGiao": [
-      "cao",
-      "điện"
-    ],
-    "signoff": {
-      "by": "Lam Nguyen",
-      "role": "chuyen gia gac cong",
-      "date": "2026-08-16"
-    },
-    "khoaBangChung": "ec6bfb1e830d6a46",
-    "demandEvidence": [
-      {
-        "field": "need",
-        "value": "Thiết bị điện cao áp, siêu cao áp",
-        "span": "Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
         "tier": "A",
         "extraction": "verbatim",
         "source": "baochinhphu.vn",
