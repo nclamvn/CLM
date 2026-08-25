@@ -24,7 +24,7 @@ Chay:
     python3 do_gia_thanh.py ket_thuc
     python3 do_gia_thanh.py moc
 """
-import json, subprocess, sys, datetime
+import json, re, subprocess, sys, datetime
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -35,6 +35,18 @@ DANG_CHAY = HERE / ".vong_dang_chay.json"
 
 # Hai commit cach nhau qua xa thi khong con la mot vong lam, do la hai buoi khac nhau.
 KHE_TOI_DA_PHUT = 90
+
+
+def _no_do_tuoi():
+    """So claim mau-hong qua han MA CHUA co ly do, doc tu CHINH CONG check_do_tuoi.py.
+
+    Khong chep lai logic cua cong vao day. Chep lai la tao ra hai nguon su that, va den luc
+    chung lech nhau thi khong ai biet cai nao dung.
+    """
+    r = subprocess.run([sys.executable, str(HERE / "check_do_tuoi.py"), str(HERE / "domains" / "don_vi_cncl")],
+                       capture_output=True, text=True)
+    m = re.search(r"mau hong qua han:\s*(\d+)\s*chua co ly do", r.stdout)
+    return int(m.group(1)) if m else None
 
 
 def _git(*a):
@@ -105,7 +117,7 @@ def bat_dau(nhan):
     n = sum(1 for l in CLAIMS.read_text(encoding="utf-8").splitlines() if l.strip())
     DANG_CHAY.write_text(json.dumps({
         "nhan": nhan, "bat_dau": datetime.datetime.now().isoformat(timespec="seconds"),
-        "claim_truoc": n}, ensure_ascii=False), encoding="utf-8")
+        "claim_truoc": n, "no_truoc": _no_do_tuoi()}, ensure_ascii=False), encoding="utf-8")
     print(f"MO VONG '{nhan}' luc {datetime.datetime.now():%H:%M} · claim hien co {n}")
     print("Xong thi chay: python3 do_gia_thanh.py ket_thuc")
     return 0
@@ -121,16 +133,32 @@ def ket_thuc():
     n = sum(1 for l in CLAIMS.read_text(encoding="utf-8").splitlines() if l.strip())
     them = n - v["claim_truoc"]
     phut = (t1 - t0).total_seconds() / 60
+    # CONG VIEC KHONG CHI LA CLAIM MOI (them 25/08/2026, ngay sau vong do thu ba).
+    #
+    # Vong thu ba la mot vong LAM MOI: no chi them 2 claim nhung go duoc 3 claim khoi danh
+    # sach no do tuoi. Do bang "phut tren claim moi" thi vong do ra 1,96, dat gap doi hai vong
+    # kia, trong khi thuc te no lam NHIEU HON. Mau so sai thi ty so vo nghia.
+    #
+    # Chuyen nay khong phai chi tiet ke toan: ca moc M3 song chet o viec lam moi, va mot thuoc
+    # do khong nhin thay cong viec lam moi thi khong do duoc M3.
+    no_sau = _no_do_tuoi()
+    go_no = None
+    if v.get("no_truoc") is not None and no_sau is not None:
+        go_no = v["no_truoc"] - no_sau
     if them <= 0:
         print(f"VONG '{v['nhan']}': {phut:.0f} phut, KHONG them claim nao. Khong ghi vao so.")
         print("Vong khong ra claim van la chi phi that, nhung ghi no vao mau so se lam chia cho 0.")
         print("Ghi rieng de sau nay biet ty le vong hong:")
         rec = {"nhan": v["nhan"], "bat_dau": v["bat_dau"], "phut": round(phut, 1),
-               "claim_them": 0, "phut_moi_claim": None}
+               "claim_them": 0, "go_no": go_no, "phut_moi_claim": None}
     else:
+        viec = them + max(go_no or 0, 0)
         rec = {"nhan": v["nhan"], "bat_dau": v["bat_dau"], "phut": round(phut, 1),
-               "claim_them": them, "phut_moi_claim": round(phut / them, 2)}
-        print(f"VONG '{v['nhan']}': {phut:.0f} phut · +{them} claim · {phut/them:.2f} phut/claim")
+               "claim_them": them, "go_no": go_no, "viec": viec,
+               "phut_moi_claim": round(phut / them, 2),
+               "phut_moi_viec": round(phut / viec, 2) if viec else None}
+        print(f"VONG '{v['nhan']}': {phut:.0f} phut · +{them} claim · go {go_no} claim khoi no")
+        print(f"  {phut/them:.2f} phut/claim moi · {phut/viec:.2f} phut/viec (claim moi + claim go khoi no)")
     with SO.open("a", encoding="utf-8") as f:
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
     DANG_CHAY.unlink()
@@ -174,12 +202,19 @@ def moc():
         print("Va ba vong do phai KHAC DO KHO nhau. Ba vong de lien tiep cung chi cho mot")
         print("con so ve phan de, va phan de thi da hai xong.")
         return 3
+    # DON VI CUA MOC LA "VIEC", KHONG PHAI "CLAIM MOI".
+    # Mot vong lam moi go 3 claim khoi no ma chi them 2 claim moi. Do bang claim moi thi vong
+    # do ra 1,96 phut, dat gap doi hai vong nap moi, trong khi tinh theo viec no ra 0,78, tuc
+    # ngang bang. Mau so sai thi ty so vo nghia, va o day mau so sai lam mot vong TOT trong
+    # nhu mot vong te.
     tong_phut = sum(r["phut"] for r in ds)
     tong_claim = sum(r["claim_them"] for r in ds)
-    hien = tong_phut / tong_claim
+    tong_viec = sum(r.get("viec") or r["claim_them"] for r in ds)
+    hien = tong_phut / tong_viec
     hong = len(ds) - len(co)
     print(f"vong da do: {len(ds)} · vong khong ra claim: {hong}")
-    print(f"tong: {tong_phut:.0f} phut · {tong_claim} claim · {hien:.2f} phut moi claim")
+    print(f"tong: {tong_phut:.0f} phut · {tong_claim} claim moi · {tong_viec} viec")
+    print(f"     {tong_phut/tong_claim:.2f} phut moi claim moi · {hien:.2f} PHUT MOI VIEC (don vi cua moc)")
     if not NGAN_SACH.exists():
         print(f"\nCHUA CO MOC. Ghi {hien:.2f} vao {NGAN_SACH.name} de chot muc dau tien.")
         return 2

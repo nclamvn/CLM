@@ -1,4 +1,4 @@
-24
+21
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -48,6 +48,14 @@
 #                         bo qua mot don vi CO NANG LUC THAT chi de giu con so dep.
 #                         Claim bang_chung_nang_luc cua cung don vi thi mien tru duoc, vi la
 #                         su kien da xay ra.
+#   25/08/2026  24 -> 21  VONG LAM MOI dau tien duoc bam gio (vong do M1 thu ba). Ba claim:
+#                         NCS/nang_luc_mo_ta, VinMotion/nang_luc_mo_ta, VinMotion/bang_chung.
+#                         CHI MOT trong ba xoa duoc no bang nguon that su con trong han:
+#                         VinMotion, cafef.vn 20/08/2026, moi 5 ngay. NCS thi nguon moi nhat
+#                         tim duoc la mst.gov.vn 03/11/2025, moi hon 4 thang va len tier A
+#                         nhung VAN qua 180 ngay, nen do la mien tru dua tren DOI CHUNG chu
+#                         khong phai nguon con han. Ghi ra vi day la khac biet that: lam moi
+#                         khong dong nghia xoa no.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.

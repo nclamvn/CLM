@@ -1,0 +1,16 @@
+0.80
+# Khoa mot chieu cho do_gia_thanh.py: PHUT TREN MOT VIEC.
+# Mot "viec" = mot claim moi, hoac mot claim duoc go khoi danh sach no do tuoi.
+#
+# Lich su:
+#   25/08/2026  -> 0,80  MOC DAU TIEN. Ba vong bam gio, khac do kho, cung ngay:
+#                        nhom 10 duong sat (nap moi, vong kho)         0,92
+#                        vac xin ASF (chon de hong, hoa ra nap duoc)   0,71
+#                        lam moi 3 claim qua han                       0,78
+#                        Ba con so tum tren mot dai hep, khac han dai 35 lan cua lich su git.
+#                        Ly do khac: ba vong nay do THOI GIAN THAT cua mot vong co agent lam,
+#                        con so lich su git do khoang cach giua cac commit trong mot buoi co
+#                        nguoi tham gia thao luan.
+#                        KHONG so con so nay voi con so lich_su. Hai dai luong khac nhau.
+#
+# Con so nay chi duoc GIAM. Tang la cong no.
