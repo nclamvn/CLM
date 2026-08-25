@@ -19,13 +19,13 @@ export type CnclNeed = {
 };
 
 export const cnclMeta = {
-  "units": 43,
-  "claims": 210,
+  "units": 44,
+  "claims": 217,
   "needs": 30,
-  "sources": 12,
-  "snapshots": 41,
+  "sources": 13,
+  "snapshots": 42,
   "tierA": 76,
-  "tierB": 134,
+  "tierB": 141,
   "nhomPhu": 10,
   "generatedAt": "2026-08-25",
   "frame": "QĐ 21/2026/QĐ-TTg",
@@ -1915,6 +1915,103 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vjst_rostek_agv_20220103.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'xe tu hanh dan duong chu dong' -> SP07 Robot tu hanh va robot cong nghiep. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      }
+    ]
+  },
+  {
+    "name": "Tập đoàn Dabaco Việt Nam",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "14"
+    ],
+    "capability": "vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại",
+    "capability2": "công suất 200 triệu liều vacxin/năm",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "nongnghiepmoitruong.vn",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt"
+      }
+    ],
+    "tim": "tập đoàn dabaco việt nam dn doanh nghiệp vacxin dịch tả lợn châu phi thứ 3 tại việt nam được bộ nông nghiệp và môi trường cấp phép lưu hành thương mại công suất 200 triệu liều vacxin/năm nhóm 4 sinh học và y sinh sp 14",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Tập đoàn Dabaco Việt Nam",
+        "span": "Sáng 29/3 tại Bắc Ninh, Tập đoàn Dabaco Việt Nam tổ chức lễ khánh thành Nhà máy vacxin Dacovet và công bố thương mại vacxin dịch tả lợn Châu Phi Dacovet - ASF2.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "VONG DO M1 thu hai, 25/08/2026. Lay phap nhan tap doan chu khong lay ten nha may Dacovet. AP LUAT DEU: AVAC va NAVETCO vao registry nho DUNG MOT CAU cua baochinhphu.vn noi ho 'nghien cuu, san xuat'. Khong don vi nao trong ba don vi tu tao chung giong. Dung mot chuan thi Dabaco du dieu kien. Ket luan honest-null ngay 24/08/2026 la QUA CHAT so voi chuan da dung cho hai don vi kia, va day la lan thu hai trong hai ngay bat duoc kieu ap luat khong deu, sau ca FECON so voi MobiFone."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Sáng 29/3 tại Bắc Ninh, Tập đoàn Dabaco Việt Nam tổ chức lễ khánh thành Nhà máy vacxin Dacovet và công bố thương mại vacxin dịch tả lợn Châu Phi Dacovet - ASF2.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "Suy tu 'Tap doan ... Viet Nam'. Anh xa ma theo schema domain.yaml."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "BẮC NINH  Dacovac - ASF2 là sản phẩm vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "Vacxin thu y -> nhom 4 Sinh hoc va y sinh theo QD 21/2026. Cung anh xa da dung cho AVAC va NAVETCO."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "14",
+        "span": "BẮC NINH  Dacovac - ASF2 là sản phẩm vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "SP14, cung ma da gan cho AVAC va NAVETCO trong cung mang vacxin dich ta lon chau Phi."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại",
+        "span": "BẮC NINH  Dacovac - ASF2 là sản phẩm vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "GIU NGUON CU: su kien DA XAY RA, cap phep luu hanh la mot moc phap ly co ngay. Su kien xong thi khong het han. PHAM VI, phai doc kem: chung virus nhuoc doc ASFV-G-DeltaI177L/DeltaLVR va dong te bao PIPEC la do Bo Nong nghiep Hoa Ky CHUYEN GIAO, theo loi Chu tich Dabaco trong cung bai. Nghia la Dabaco KHONG tu tao chung giong tu dau. Trinh ra ngoai ma de nguoi doc hieu Dabaco tu phat trien chung virus la trinh sai."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "cấp phép lưu hành thương mại chính thức ngày 28/2/2025",
+        "span": "Vacxin được cấp phép lưu hành thương mại chính thức ngày 28/2/2025, trở thành “lá chắn sinh học” cho ngành chăn nuôi lợn tại Việt Nam sau những tổn thất nặng nề do dịch tả lợn Châu Phi gây ra từ năm 2019.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "GIU NGUON CU: moc phap ly da xay ra ngay 28/02/2025. Chon cau NAY lam bang chung thay vi cau ve nha may, vi cap phep la su kien do CO QUAN QUAN LY quyet dinh, con so lieu nha may la 'theo thong tin tu Tap doan Dabaco', tuc TU KHAI thuat lai qua bao. Hai muc do tin cay khac nhau."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "công suất 200 triệu liều vacxin/năm",
+        "span": "Theo thông tin từ Tập đoàn Dabaco Việt Nam, Nhà máy vacxin Dacovet có tổng vốn đầu tư hơn 300 tỷ đồng, công suất 200 triệu liều vacxin/năm, là nhà máy vacxin thứ 12 tại Việt Nam.",
+        "source": "nongnghiepmoitruong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+        "note": "GIU NGUON CU: nha may da khanh thanh 29/03/2025, su kien da xay ra. HANG NGUON: cau mo dau bang 'Theo thong tin tu Tap doan Dabaco Viet Nam', tuc con so nay la TU KHAI duoc bao thuat lai, khong phai bao kiem chung. Bao Nong nghiep va Moi truong la tier B ve UY TIN BEN XUAT BAN, nhung rieng cau nay ben noi la ben co loi ich truc tiep. Day la ca dau tien trong registry can den truc hang nguon ma 00_KHUNG_SAN_PHAM.md vua dinh nghia; truong hang_nguon chua co trong schema nen tam ghi vao note, va do la mot mon no schema."
       }
     ]
   },
