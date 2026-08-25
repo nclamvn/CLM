@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-24 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-25 · KHONG sua tay.
 // Nguon: CNCLData/domains/don_vi_cncl + Dataset_CongNgheChienLuoc
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -19,15 +19,15 @@ export type CnclNeed = {
 };
 
 export const cnclMeta = {
-  "units": 42,
-  "claims": 204,
+  "units": 43,
+  "claims": 210,
   "needs": 30,
   "sources": 12,
-  "snapshots": 40,
+  "snapshots": 41,
   "tierA": 76,
-  "tierB": 128,
+  "tierB": 134,
   "nhomPhu": 10,
-  "generatedAt": "2026-08-24",
+  "generatedAt": "2026-08-25",
   "frame": "QĐ 21/2026/QĐ-TTg",
   "gate": "chay_het_cong.sh · 14 o xanh"
 } as const;
@@ -529,6 +529,93 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nghien cuu phat trien va thuong mai hoa robot hinh nguoi' -> SP07 Robot. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      }
+    ]
+  },
+  {
+    "name": "Công ty cổ phần Xe lửa Dĩ An",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "10"
+    ],
+    "nhomLabels": [
+      "Nhóm 10 · Đường sắt tốc độ cao"
+    ],
+    "sanPham": [
+      "30"
+    ],
+    "capability": "sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "cafef.vn",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt"
+      }
+    ],
+    "tim": "công ty cổ phần xe lửa dĩ an dn doanh nghiệp sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác nhóm 10 đường sắt tốc độ cao sp 30",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Công ty cổ phần Xe lửa Dĩ An",
+        "span": "Hiện tại, Nhà máy xe lửa Dĩ An hiện do Công ty cổ phần Xe lửa Dĩ An quản lý, tọa lạc tại số 8 Lý Thường Kiệt, khu phố 1, phường Dĩ An, TP Dĩ An, Bình Dương.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "VONG DO M1 25/08/2026, nhom 10 mang phuong tien. Lay phap nhan chu khong lay ten nha may: 'Nha may xe lua Di An' la co so, 'Cong ty co phan Xe lua Di An' la phap nhan quan ly no."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Hiện tại, Nhà máy xe lửa Dĩ An hiện do Công ty cổ phần Xe lửa Dĩ An quản lý, tọa lạc tại số 8 Lý Thường Kiệt, khu phố 1, phường Dĩ An, TP Dĩ An, Bình Dương.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "Suy tu cum 'Cong ty co phan' trong span. Anh xa ma theo schema domain.yaml."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "10",
+        "span": "Nhà máy xe lửa Dĩ An có chức năng sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "Duong sat toc do cao va do thi -> nhom 10 theo QD 21/2026. Anh xa nhom tu chuc nang dong moi toa xe."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "30",
+        "span": "Nhà máy xe lửa Dĩ An có chức năng sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "SP30 'He thong, thiet bi duong sat toc do cao va do thi', ban wording khac ghi ro 'phuong tien'. Toa xe la PHUONG TIEN nen thuoc SP30, KHONG phai SP29 von la mang CONG TRINH. Day dung la cho registry con trong truoc vong nay."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
+        "span": "Nhà máy xe lửa Dĩ An có chức năng sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "MON NO DO TUOI CO Y NHAN: nguon 25/09/2024, da 700 ngay. Cau la mo ta CHUC NANG dang ton tai, tuc mot TRANG THAI chu khong phai su kien da xong, nen KHONG mien tru duoc. Vong 25/08/2026 da tim ban moi hon va khong thay nguon tier A hoac B nao sau 2024 noi ve nang luc nay. Nap va ghi no ra, khong giau."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "hàng chục toa tàu do chính tay kỹ sư Việt Nam đóng đã ra đời",
+        "span": "Từ thành công bước đầu, hàng chục toa tàu do chính tay kỹ sư Việt Nam đóng đã ra đời, đường sắt Việt Nam từ đó đến nay không còn phải đi nhập khẩu toa tàu ở nước ngoài.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_xelua_dian_20240925.txt",
+        "note": "GIU NGUON CU: su kien DA XAY RA, hang chuc toa tau da dong xong tu thi diem nam 2016. Su kien xong thi khong het han. CAT VALUE CO Y: cau nguon con ve sau 'duong sat Viet Nam tu do den nay khong con phai di nhap khau toa tau o nuoc ngoai', do la mot khang dinh TUYET DOI ve ca nganh, khong kiem duoc, va khong phai dieu registry can khang dinh. Span giu nguyen vi span la chu cua nguon."
       }
     ]
   },
