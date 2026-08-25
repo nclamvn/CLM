@@ -153,6 +153,27 @@ def moc():
     if not co:
         print("KHONG CHAY DUOC: co vong nhung chua vong nao ra claim.")
         return 3
+
+    # TOI THIEU BA VONG truoc khi cho chot moc (them 25/08/2026, ngay sau vong do dau tien).
+    #
+    # VI SAO: vong dau ra 0,92 phut mot claim, trong khi lich su cua hai vong gan nhat la 21,6
+    # va 43,9. Chenh hai bac. Mot con so dep bat thuong tu MOT mau la thu de tin nhat va nguy
+    # nhat: neo no lam moc thi M2 phai thang 0,09 phut mot claim moi duoc coi la "giam mot bac",
+    # tuc dat ra mot cai dich vo nghia roi that bai voi no.
+    #
+    # Cung mot luat da dung cho cong: mot cong chua tung bat duoc loi thi chua chung minh duoc
+    # no song. Mot moc dua tren mot mau thi chua phai moc, no la mot giai thoai.
+    TOI_THIEU = 3
+    if len(co) < TOI_THIEU:
+        print(f"KHONG CHAY DUOC: moi co {len(co)} vong ra claim, can it nhat {TOI_THIEU}.")
+        print()
+        for r in co:
+            print(f"  {r['bat_dau'][:10]} · {r['nhan'][:38]:38} · {r['phut']:5.1f} phut · "
+                  f"{r['claim_them']:2d} claim · {r['phut_moi_claim']:.2f} phut/claim")
+        print()
+        print("Va ba vong do phai KHAC DO KHO nhau. Ba vong de lien tiep cung chi cho mot")
+        print("con so ve phan de, va phan de thi da hai xong.")
+        return 3
     tong_phut = sum(r["phut"] for r in ds)
     tong_claim = sum(r["claim_them"] for r in ds)
     hien = tong_phut / tong_claim

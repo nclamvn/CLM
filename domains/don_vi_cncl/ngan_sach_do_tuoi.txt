@@ -1,4 +1,4 @@
-23
+24
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -40,6 +40,14 @@
 #                         trong cung mot luot. Bai hoc ghi lai: NAP NGUON CU LA VAY THEM NO
 #                         DO TUOI, khong phai chi la them du lieu. Lan dau cong bat duoc dieu
 #                         do, va no bat vi ngan sach dem ca claim moi lan claim cu.
+#   25/08/2026  23 -> 24  TANG, va tang CO Y. Nap Cong ty co phan Xe lua Di An (nhom 10, mang
+#                         phuong tien) tu cafef.vn 25/09/2024. Claim nang_luc_mo_ta la mo ta
+#                         CHUC NANG dang ton tai, tuc TRANG THAI chu khong phai su kien da
+#                         xong, nen khong mien tru duoc. Da tim ban moi hon trong cung vong va
+#                         khong co nguon tier A hoac B nao sau 2024. Nap va nhan no, thay vi
+#                         bo qua mot don vi CO NANG LUC THAT chi de giu con so dep.
+#                         Claim bang_chung_nang_luc cua cung don vi thi mien tru duoc, vi la
+#                         su kien da xay ra.
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
