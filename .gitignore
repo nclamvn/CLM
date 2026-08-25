@@ -4,3 +4,4 @@ __pycache__/
 # Ban tuoi tai ve de doi chung snapshot. La ban sao tam cua trang goc, khong phai
 # artefact cua du an, va co the rat lon. Khong version.
 .fidelity_fresh/
+.vong_dang_chay.json
