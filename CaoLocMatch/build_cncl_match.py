@@ -42,7 +42,14 @@ def goc(*duoi):
 
     Khong co goc nao ton tai thi BAO NGAY luc nap, khong de den luc doc file moi vo.
     """
-    for g in (Path("/Users/os"), Path("/sessions/exciting-busy-clarke/mnt")):
+    # TO TIEN CUA CHINH FILE NAY TRUOC (them 01/09/2026, bo cuc gop).
+    #
+    # VI SAO PHAI SUA: ngay sau khi gop kho thu tu, ham nay van tra SUP ve
+    # /sessions/.../mnt/CNCLData, tuc KHO CU, du dang chay tu trong kho gop. Doc du lieu cua
+    # kho cu roi ghi ket qua vao kho gop la dung cai mim phan ky ma viec gop di xoa bo. Kho
+    # nao chua chinh file nay thi ket qua phai lay tu kho do.
+    for g in [*Path(__file__).resolve().parents,
+              Path("/Users/os"), Path("/sessions/exciting-busy-clarke/mnt")]:
         p = g.joinpath(*duoi)
         if p.exists():
             return p
@@ -53,7 +60,21 @@ def goc(*duoi):
 SUP = goc_moi_truong("CLM_KHO_CNCL") or goc("CNCLData", "domains", "don_vi_cncl")
 if goc_moi_truong("CLM_KHO_CNCL"):
     SUP = SUP / "domains" / "don_vi_cncl"
-DEM = goc_moi_truong("CLM_KHO_DEM") or (
+def trong_kho(ten):
+    """Tim mot thu muc anh em NGAY TRONG kho, bang cach di nguoc to tien cua chinh file nay.
+
+    THEM 01/09/2026, khi gop kho thu tu. Truoc do chieu CAU nam ngoai ca ba kho, o
+    KnowledgeBase/Dataset_CongNgheChienLuoc, va khong mot moi truong CI nao co no. Nay no da
+    o trong kho, nen phai TIM TRONG KHO TRUOC. Hai duong dan ngoai giu lai lam duong lui cho
+    ky chuyen tiep, va se bo khi ba kho cu duoc go vao 01/10/2026.
+    """
+    for g in Path(__file__).resolve().parents:
+        if (g / ten).is_dir():
+            return g / ten
+    return None
+
+
+DEM = goc_moi_truong("CLM_KHO_DEM") or trong_kho("Dataset_CongNgheChienLuoc") or (
     goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") if Path("/Users/os/RtR").exists()
     else goc("KnowledgeBase", "Dataset_CongNgheChienLuoc"))
 DST = Path(__file__).parent / "domains" / "cncl_match"

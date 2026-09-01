@@ -41,9 +41,13 @@ const env = (k) => process.env[k] || null;
 
 const SUP = env('CLM_KHO_CNCL') ? join(env('CLM_KHO_CNCL'), 'domains', 'don_vi_cncl')
   : tim('registry CUNG', 'CNCLData', 'domains', 'don_vi_cncl');
-const DEM = env('CLM_KHO_DEM') || (existsSync('/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc')
-  ? '/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc'
-  : tim('dataset CAU', 'KnowledgeBase', 'Dataset_CongNgheChienLuoc'));
+// Chieu CAU: TIM TRONG KHO TRUOC (them 01/09/2026, khi gop kho thu tu). goc() da di nguoc
+// to tien cua chinh file nay, nen trong bo cuc gop no thay ngay Dataset_CongNgheChienLuoc
+// nam canh CNCLData. Hai duong dan ngoai giu lam duong lui cho ky chuyen tiep.
+const DEM = env('CLM_KHO_DEM') || goc('Dataset_CongNgheChienLuoc')
+  || (existsSync('/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc')
+    ? '/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc'
+    : tim('dataset CAU', 'KnowledgeBase', 'Dataset_CongNgheChienLuoc'));
 const CLM = env('CLM_KHO_MATCH') || tim('kho match', 'CaoLocMatch');
 
 const doc = (p) => readFileSync(p, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));

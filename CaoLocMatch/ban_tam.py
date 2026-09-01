@@ -66,7 +66,10 @@ class BanTam:
 def ban_tam(can_touch=True):
     cncl_that = _goc("CNCLData")
     match_that = _goc("CaoLocMatch")
-    dem_that = _goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") \
+    # TRONG KHO TRUOC (them 01/09/2026, khi gop kho thu tu). _goc() di nguoc to tien cua
+    # chinh file nay, nen trong bo cuc gop no thay Dataset_CongNgheChienLuoc nam canh CNCLData.
+    dem_that = _goc("Dataset_CongNgheChienLuoc") \
+        or _goc("RtR", "KnowledgeBase", "Dataset_CongNgheChienLuoc") \
         or _goc("KnowledgeBase", "Dataset_CongNgheChienLuoc")
     touch_that = _goc(".touch")
     thieu = [t for t, p in [("CNCLData", cncl_that), ("CaoLocMatch", match_that),
