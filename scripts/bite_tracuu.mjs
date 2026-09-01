@@ -17,6 +17,17 @@
  *
  * Chay: node scripts/bite_tracuu.mjs
  * Exit 0 neu ca ba rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
+ *
+ * CANH
+ * ====
+ * MUON DU LIEU THAT, va con MOT CHO GO CUNG chua go duoc.
+ *
+ * Rang chep kho vao thu muc tam roi tiem tren ban sao. Nhung hang `const MOI` go cung TEN MOT
+ * BAN CHUP cu the. Ban chup do bi doi ten hoac bi bo thi rang gay, va gay vi canh chu khong vi
+ * engine sai. Do dung la dang loi da vap bon lan trong hai ngay.
+ *
+ * Chua sua trong TIP-03 vi sua no phai doi cach rang chon ban chup, tuc doi hanh vi cua rang
+ * chu khong chi doi mot hang. Ghi ra day nhu mot mon no da nhan dien, khong giau.
  */
 import { readFileSync, writeFileSync, existsSync, unlinkSync, renameSync, statSync,
          mkdtempSync, mkdirSync, cpSync, rmSync } from 'node:fs';

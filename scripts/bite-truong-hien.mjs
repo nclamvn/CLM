@@ -17,6 +17,15 @@
  *
  * Chay: node scripts/bite-truong-hien.mjs
  * Exit 0 neu ca bon rang can · 1 neu co rang khong can · 3 neu khong dung duoc canh.
+ *
+ * CANH
+ * ====
+ * TU DUNG LAY CANH. Rang chep kho vao thu muc tam (mkdtempSync) roi TIEM mot fact moi vao mot
+ * cap da ky de tao ra tinh huong can do, thay vi trong cho du lieu that co san tinh huong do.
+ *
+ * Ly do: RANG 2 va RANG 4b doi "phai co it nhat mot dong mang nhan chua_duyet". Luc viet, canh
+ * do co san trong du lieu that. Lam ky phu MATCH-0005 vai phut sau, nhan bien mat, rang gay.
+ * Rang bam vao trang thai du lieu that thi moi lan nguoi ta lam dung viec cua ho la rang lai do.
  */
 import { cpSync, mkdtempSync, readFileSync, writeFileSync, rmSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';

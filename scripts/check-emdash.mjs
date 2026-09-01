@@ -4,7 +4,7 @@
   Quet app, components, lib, va cac file cau hinh goc. Bo qua node_modules, .next,
   public/fonts (nhi phan). Dung trong scripts va truoc moi ban giao TIP.
 */
-import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';
 import { join, extname } from 'node:path';
 
 const ROOT = process.cwd();
@@ -60,8 +60,12 @@ function walk(dir) {
   let entries;
   try {
     entries = readdirSync(dir);
-  } catch {
-    return;
+  } catch (e) {
+    // KHONG NUOT (sua 25/08/2026, TIP-02). Ban cu `catch { return; }` bo qua thu muc khong doc
+    // duoc, tuc mot thu muc loi se duoc tinh la SACH. Cong dem em-dash ma khong doc duoc mot
+    // nhanh cay thi con so 0 cua no vo nghia, va no bao xanh tren mot phan minh chua nhin.
+    console.error(`KHONG CHAY DUOC: khong doc duoc thu muc ${dir}: ${e.message}`);
+    process.exit(3);
   }
   for (const name of entries) {
     const full = join(dir, name);
@@ -73,10 +77,17 @@ function walk(dir) {
 
 for (const d of SCAN_DIRS) walk(join(ROOT, d));
 for (const f of ROOT_FILES) {
+  // File goc co the CHUA TON TAI, do la trang thai binh thuong. Nhung "chua ton tai" khac han
+  // "co ma khong doc duoc": cai dau bo qua duoc, cai sau la mot phan cong nay chua nhin.
+  const p = join(ROOT, f);
+  if (!existsSync(p)) continue;
   try {
-    scanFile(join(ROOT, f));
-  } catch {
-    /* file may not exist yet */
+    scanFile(p);
+  } catch (e) {
+    // KHONG NUOT (sua 25/08/2026, TIP-02). Ban cu nuot moi loi kem chu thich "file may not
+    // exist yet", nhung no nuot ca loi doc file DA TON TAI.
+    console.error(`KHONG CHAY DUOC: khong doc duoc ${p}: ${e.message}`);
+    process.exit(3);
   }
 }
 

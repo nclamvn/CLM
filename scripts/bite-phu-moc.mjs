@@ -14,6 +14,18 @@
  * RANG 4 · SACH THI XANH -> exit 0.
  *
  * Chay: node scripts/bite-phu-moc.mjs
+ *
+ * CANH
+ * ====
+ * MUON DU LIEU THAT: rang chep reports/phu_moc.json va lib/cncl-registry.json that vao thu muc
+ * tam roi sua tren ban sao.
+ *
+ * Sua 25/08/2026: ban cu chep lib/cncl-registry.ts. Khi cac cong doi sang doc ban .json thi
+ * canh khong con dung file ma cong that su doc, va rang gay du engine dung. Do la lan thu tu
+ * trong hai ngay mot rang bam vao ARTEFACT thay vi vao HANH VI.
+ *
+ * Con phu thuoc: phai da chay chup man it nhat mot lan de co phu_moc.json. Chua co thi rang
+ * bao KHONG CHAY DUOC, khong bao xanh.
  */
 import { cpSync, mkdtempSync, readFileSync, writeFileSync, rmSync, existsSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';

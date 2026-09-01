@@ -26,7 +26,13 @@ export function cacGoc(nenLinux = '/sessions') {
       if (d.isDirectory()) ds.push(join(nenLinux, d.name, 'mnt'));
     }
   } catch {
-    // Khong co thu muc phien Linux. Binh thuong khi chay tren may that.
+    // NUOT CO Y: khong co thu muc phien Linux la TRANG THAI BINH THUONG, khong phai loi.
+    // May that co /Users/os va khong co /sessions; may Linux thi nguoc lai. Moi moi truong
+    // chi co MOT goc, nen vang mat mot goc khong duoc lam sap chuong trinh.
+    //
+    // Cho nuot nay CO PHEP THU RIENG: `node scripts/goc.mjs --tu-kiem` dung mot thu muc nen
+    // khong ton tai de ep dung nhanh nay chay, roi kiem ket qua. Khac han cac cho nuot khac
+    // o cho no khong chi duoc khai, no duoc CHUNG MINH.
   }
   return ds;
 }
