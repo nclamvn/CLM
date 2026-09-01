@@ -1,0 +1,61 @@
+# Chuoi cong CLM · chay TOAN BO 41 o trong mot job
+#
+# VI SAO CO (02/09/2026): truoc khi gop, chuoi cong nay phu thuoc MOT NGUOI NHO GO MOT LENH.
+# Do la rui ro (c) trong 01_NHA_MAY_TINH_LOC.md, va no chan duong toi nen tang nhieu ben:
+# them nguoi ma ky luat van nam trong thoi quen thi ky luat loang theo toc do tuyen.
+#
+# Ban truoc cua file nay nam trong CNCLData va chi chay duoc 12 o, vi ba kho la ba repo rieng
+# tu va checkout cheo doi mot PAT. Gop kho xoa bo han cai vuong do: mot repo, mot lan checkout,
+# khong secret nao.
+#
+# BA O KHONG CHAY DUOC O DAY, va chung duoc HOAN chu khong duoc giau:
+#
+#   doi_chung_nguon   can .fidelity_fresh, ban tai ve lai cua nguon that. Khong script nao
+#                     sinh ra no; no den tu mot vong lam tuoi thu cong co mang.
+#   dong_bo_cau       can BAN DOC cua chieu CAU o KnowledgeBase. CI khong co KnowledgeBase.
+#   rang_chinh_bang   dung ban tam, ma ban tam can .fidelity_fresh nhu tren.
+#
+# Ba ten nay phai nam trong danh sach go cung o dau chay_het_cong.sh, neu khong script tu choi
+# chay. Va moi lan chay, bang ket in ra muc "O DUOC HOAN" kem ly do, ke ca khi mo thu deu xanh.
+# Khoang trong duoc thoa thuan van la khoang trong.
+#
+# CON CHO NGUOI QUYET: file nay khong tu quyet dinh viec chan merge. Job that bai chi chan
+# merge khi bat branch protection trong cai dat GitHub, va do la quyet dinh cua Lam.
+
+name: chuoi-cong
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  chuoi-cong:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: .touch/package-lock.json
+
+      - name: Cai phu thuoc Python
+        run: pip install pyyaml
+
+      - name: Cai phu thuoc Node
+        working-directory: .touch
+        run: npm ci
+
+      # Mot lenh duy nhat, dung lenh nguoi go tren may that. Khong chep lai danh sach cong
+      # vao day: mot ban sao danh sach la mot ban sao se lac.
+      - name: Chuoi cong 41 o
+        working-directory: CaoLocMatch
+        run: ./chay_het_cong.sh --hoan=doi_chung_nguon --hoan=dong_bo_cau --hoan=rang_chinh_bang
