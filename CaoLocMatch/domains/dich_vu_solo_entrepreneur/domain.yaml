@@ -1,0 +1,25 @@
+# Domain PoC theo 01_SPEC_DATASET.md (ky 17/07/2026). Universe 1500 la uoc tinh
+# Tuyet xac nhan lai khi giao dataset that; du lieu hien tai la SYNTHETIC cho
+# Phase A (chay pipeline + bite test), KHONG phai du lieu that.
+domain: dich_vu_solo_entrepreneur
+entity_label: "Cung: nha cung cap dich vu (freelancer, agency nho). Cau: solo entrepreneur can dich vu"
+schema:
+  type_field: entity_type
+  fields:
+    - entity_name
+    - entity_type
+    - capability
+    - need
+    - capacity
+    - certification
+    - location
+    - contact_channel
+    - source_url
+    - captured_at
+rollup_field: entity_type
+universe:
+  estimate: 1500
+alias_map:
+  "Sao Viet Studio": "Studio Sao Việt"
+ambiguous_clusters:
+  - ["Minh Anh Design", "Minh Anh Media"]

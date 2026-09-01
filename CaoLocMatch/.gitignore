@@ -1,0 +1,8 @@
+# out/ chua artefact tai tao duoc (facts, blocked, report) NEN bo qua,
+# NHUNG out/matches.jsonl chua QUYET DINH CUA NGUOI GAC CONG, khong tai tao duoc.
+# Bo sot dieu nay tu thang 7; phat hien 16/08/2026 khi commit thay "nothing to commit".
+# LUU Y KY THUAT: phai dung "out/*" chu KHONG phai "out/". Git khong di vao thu muc
+# da bi loai, nen "!out/matches.jsonl" sau "out/" hoan toan vo tac dung (da thu, van bi loai).
+out/*
+!out/matches.jsonl
+__pycache__/
