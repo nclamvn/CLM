@@ -107,6 +107,11 @@ chay CNCLData du_dieu_kien        "$CNCL" 'can tra loi|OK:'     python3 check_du
 # phai duoc viet ra, vi gan het cac vu choi nhau la do hai ben dung cung mot chu cho hai
 # pham vi khac nhau.
 chay CNCLData khang_dinh_toi_thuong "$CNCL" 'khang dinh toi thuong|OK:' python3 check_khang_dinh_toi_thuong.py domains/don_vi_cncl
+# Cong nay khong phan xu quyet dinh loai hay nap. No bat buoc PHEP SO SANH voi mot don vi
+# DA NAP phai duoc viet ra, va ten voi truong trong do phai co that. Sinh ra tu hai ca that
+# trong hai ngay: MobiFone so voi FECON, va Dabaco so voi AVAC. Ca hai lan deu lo ra do
+# nguoi di kiem lai chu khong do cong bat.
+chay CNCLData ap_luat_deu          "$CNCL" 'OK:|FAIL|CHUA DOI CHIEU' python3 check_ap_luat_deu.py domains/don_vi_cncl
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
@@ -150,6 +155,7 @@ fi
 
 # ── Ba bo rang: cong nao cung phai tu chung minh no con can ─────────────────
 if [ "$NHANH" -eq 0 ]; then
+  chay CNCLData    rang_ap_luat_deu   "$CNCL" 'BITE AP LUAT DEU'   python3 bite_ap_luat_deu.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
