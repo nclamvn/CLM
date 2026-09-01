@@ -132,6 +132,12 @@ chay CaoLocMatch match_run        "$CLM" 'digest_matches'        python3 match_e
 chay CaoLocMatch restore_signoff  "$CLM" 'RESTORE|BANG CHUNG'    python3 match_engine.py restore-signoff domains/cncl_match out/matches.jsonl
 chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_engine.py validate domains/cncl_match out/matches.jsonl --require-signoff
 
+# Chay trong kho nao thi phai DOC du lieu cua kho do. Them 01/09/2026 sau khi gop kho thu tu:
+# build_cncl_match.py van doc CNCLData CU du dang chay trong kho gop, va bang nay van bao 36
+# xanh vi hai cay luc do giong het nhau. O nay do bang bay chi bao chu khong doc ma nguon.
+# Trong bo cuc ba kho tach roi no tra 3 (khong co gi de do), do la dung.
+chay CaoLocMatch doc_dung_kho     "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 check_doc_dung_kho.py
+
 # ── Web: so tren trang phai la so sinh tu registry, khong go tay ────────────
 # Bo sinh la mot cong chu khong phai tien ich: no FAIL khi thieu ban chup goc, va no la
 # thu duy nhat duoc phep viet lib/cncl-*.ts. Chay no o day de bang trang thai bat duoc
@@ -180,6 +186,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
   chay CaoLocMatch rang_gop_cap     "$CLM" 'BITE GOP CAP'        python3 bite_gop_cap.py
+  chay CaoLocMatch rang_doc_dung_kho "$CLM" 'BITE DOC DUNG KHO'  python3 bite_doc_dung_kho.py
   # Rang cua CHINH cai bang nay. Khong de quy vo han: no goi lai script voi --nhanh,
   # ma --nhanh bo qua toan bo khoi rang, nen chi sau dung mot tang.
   chay CaoLocMatch rang_chinh_bang  "$CLM" 'BITE CHAY HET'       python3 bite_chay_het_cong.py
