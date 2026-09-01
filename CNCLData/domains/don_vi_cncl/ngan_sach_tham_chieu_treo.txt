@@ -1,0 +1,21 @@
+0
+# Ngan sach khoa mot chieu cho check_tham_chieu_treo.py: so span tro toi mot thu KHONG co
+# trong pham vi da chup ("cac san pham nay", "cam hung do", "van de nay", "thoi gian nay").
+#
+# Lich su:
+#   24/08/2026  12 -> 0. Gom mot luot: neo lai 8 claim bang cach lui span ve truoc (nguyen van
+#               tu ban tuoi), neo TAY ca VinES vi tien nguu la moc 'Thang 8/2021' chu khong
+#               phai lap lai danh tu, va ghi ly do cho 4 claim con lai vi cum hoi chieu nam o
+#               CAU DAN chu khong o phan khang dinh. Khong fetch lan nao: ban tuoi da co san.
+#   24/08/2026  chot lan dau o 12. Cong ra doi sau khi tim ra ca Cong ty An ninh mang Viettel
+#               bang mat, tinh co, trong lot thu hep mot claim khac. Ca do da neo lai xong
+#               nen khong nam trong 12 nay.
+#
+# Ca dang lo nhat trong 12, xu truoc o vong sau:
+#   VinES  "Cung trong thoi gian NAY, VinES ... duoc thanh lap voi von phap dinh 6.500 ty"
+#          Claim khang dinh mot su kien thanh lap, ma moc thoi gian lai tro vao mot doan
+#          khong duoc chup. Doc len khong biet la nam nao.
+#   ROSTEK "De giai quyet van de NAY, startup ROSTEK da cho ra doi xe tu hanh"
+#   VSAP LAB "Va cung tu nguon cam hung DO, VSAP LAB ... da duoc thanh hinh"
+#
+# Con so nay chi duoc GIAM. Giam ma khong sua file nay cung la cong no.

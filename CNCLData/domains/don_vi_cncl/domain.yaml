@@ -1,0 +1,57 @@
+domain: don_vi_cncl
+entity_label: "Don vi VN co nang luc theo nhom cong nghe chien luoc (QD 21/2026/QD-TTg)"
+
+schema:
+  type_field: loai_hinh          # DN / vien / truong
+  fields:
+    - ten_don_vi
+    - loai_hinh
+    - nhom_cncl                   # 1..10 theo QD 21/2026
+    - san_pham_lien_quan          # 1..30 theo QD 21/2026, hoac de trong
+    - nang_luc_mo_ta
+    - bang_chung_nang_luc         # du an / san pham / chung nhan trich nguyen van
+    - location
+    - source
+    # TRUONG PHU THEO NHOM (them 16/08/2026, TIP-CNCL-2D, Lam duyet).
+    # Quy uoc: moi nhom phu la MOT truong rieng, gia tri luon la chinh so nhom do
+    # (vd truong nhom_cncl_phu_6 chi nhan gia tri "6"). Nho vay o luon don tri,
+    # khong bao gio tranh chap gia, va hai nguon doc lap cung khang dinh se cho corroborated.
+    # Truong phu KHONG tham gia rollup (xem rollup_field ben duoi), dung cam ket voi Lam.
+    # Chi dung khi nguon KHONG goi dich danh phap nhan con; co ten phap nhan rieng thi van tach phap nhan.
+    - nhom_cncl_phu_3
+    - nhom_cncl_phu_6
+    # MO TA NANG LUC THU HAI (them 16/08/2026, TIP-CNCL-3B).
+    # Ly do: nang_luc_mo_ta don tri; mot don vi that su co nhieu mang nang luc.
+    # Cung khuon voi nhom_cncl_phu_*: tach truong de o luon don tri, khong tranh chap gia.
+    - nang_luc_mo_ta_2
+    - nhom_cncl_phu_5
+    # SAN PHAM PHU: mot don vi phu nhieu san pham chien luoc (TIP-2F).
+    # Cung khuon nhom_cncl_phu_N: moi san pham mot truong rieng, o luon don tri.
+    - san_pham_phu_P23
+
+rollup_field: nhom_cncl
+
+universe:
+  estimate: 95
+  basis: "Cap nhat Pha 2b (16/08/2026), 3 nhom. Nhom 9 hang khong vu tru + nhom 1 cong nghe so giu uoc luong Pha 1 (order ~80, co so mong). Nhom 6 chip ban dan CO CO SO TIER A: mst.gov.vn 28/01/2026 dan thong ke 8/2025 'gan 60 doanh nghiep trong linh vuc ban dan, trong do 50 doanh nghiep thiet ke chip, 7 doanh nghiep dong goi va kiem thu, tuy nhien phan lon deu la cac doanh nghiep nuoc ngoai'. Domain nay chi tinh DON VI VIET NAM, nen phan Viet cua nhom 6 nho hon nhieu con so 60; uoc ~15 don vi Viet, con so nay VAN LA UOC LUONG vi nguon khong tach ro so luong doanh nghiep Viet. Coverage % chi mang tinh chi bao, KHONG cong bo nhu ty le chinh xac."
+
+scope_note:
+  du_dieu_kien: "LAM CHU CONG NGHE. Don vi thiet ke, che tao, san xuat, hoac nghien cuu cong nghe loi thuoc nhom. Bang chung phai la nang luc da hinh thanh (san pham, nguyen mau, day chuyen, cong bo, khach hang that), khong phai y dinh."
+  khong_du_dieu_kien: "VAN HANH VA KHAI THAC DICH VU tren cong nghe do don vi khac lam ra. Vi du: nha mang thuong mai hoa 5G bang thiet bi mua ngoai; dai ly phan phoi; don vi chi tich hop san pham co san. Ghi honest-null kem ly do, khong nap."
+  ranh_gioi_xam: "Don vi vua van hanh vua tu phat trien mot phan cong nghe loi thi XET THEO BANG CHUNG CU THE cua phan tu phat trien, khong xet theo quy mo van hanh."
+  ap_dung_16_08_2026: "MobiFone: nguon chung minh trien khai 5G SA va NSA thuong mai, tuc VAN HANH. Khong tim thay bang chung MobiFone tu thiet ke hay che tao thiet bi mang. KET LUAN: KHONG NAP. Se nap neu sau nay co bang chung phan tu phat trien. SO VOI DA NAP: FECON · nang_luc_mo_ta_2 · FECON CUNG van hanh thiet bi do hang nuoc ngoai lam (may TBM) ma van o trong registry. Khac biet that nam o cho FECON co MOT PHAN TU NGHIEN CUU co nguon doc lap (baodautu.vn 28/12/2015, vo ham va coc cu), con MobiFone thi khong tim thay phan tu phat trien nao. BO SUNG NGUOC 25/08/2026: dong doi chieu nay khong co trong ban goc ngay 16/08. Neu co no tu dau thi ca FECON da lo ra ngay hom do chu khong phai tam ngay sau, va cong check_du_dieu_kien.py da khong phai bao do ba luot."
+
+  ap_dung_25_08_2026_asf_sua_lai: "SUA LAI KET LUAN ngay 24/08/2026 ve Dabaco. Ket luan cu: khong nap, vi nguon khong noi Dabaco tu phat trien. Ket luan moi 25/08/2026: NAP. Ly do sua, va ly do nay quan trong hon ca ket qua: ket luan cu ap cho Dabaco mot chuan CHAT HON chuan da dung cho AVAC va NAVETCO. Hai don vi kia vao registry nho DUNG MOT CAU cua baochinhphu.vn 24/07/2023 noi ho nghien cuu va san xuat. Khong don vi nao trong ba don vi tu tao chung giong: chung ASFV-G-DeltaI177L la cua Bo Nong nghiep Hoa Ky. Bang chung moi cho Dabaco manh hon chuan do: vacxin Dacovac-ASF2 duoc cap phep luu hanh thuong mai ngay 28/02/2025, nha may Dacovet khanh thanh 29/03/2025, nguon nongnghiepmoitruong.vn tier B. LAN THU HAI TRONG HAI NGAY bat duoc kieu ap luat khong deu, sau ca FECON so voi MobiFone. Hai lan deu do di kiem lai mot ket luan cu chu khong phai do cong bat. Do la mot lo hong: khong cong nao doi chieu duoc mot don vi BI LOAI voi mot don vi DA NAP trong cung mang. KHONG XOA ket luan cu o muc ap_dung_24_08_2026_asf, giu de doi chieu duoc cai gi da doi va vi sao. DACOVET van khong nap rieng: no la NHA MAY thuoc Dabaco, khong phai phap nhan doc lap trong pham vi bai nay."
+
+  ap_dung_25_08_2026_duongsat: "Nhom 10, mang PHUONG TIEN (dau may, toa xe do Viet Nam che tao). Vong 25/08/2026 xet ba ten. NAP: Cong ty co phan Xe lua Di An, vi co nang luc DA HINH THANH, cafef.vn 25/09/2024 ghi hang chuc toa tau do ky su Viet Nam dong da ra doi tu thi diem 2016. KHONG NAP THACO: to hop cong nghiep duong sat 320 ha moi khoi cong 3/2026, du kien van hanh 9/2026, va thoa thuan chuyen giao cong nghe voi Hyundai Rotem. Toan bo la Y DINH va TIEN DO, chua co san pham, nen theo scope_note la khong du dieu kien. KHONG NAP HOA PHAT: nha may ray Dung Quat da xong hon 50% khoi luong xay dung (cafef 06/08/2026) nhung san pham ray dau tien du kien Q1/2027. Mot nha may dang xay khong phai mot day chuyen da co. CA HAI se nap khi co san pham that. GHI RA DAY de vong sau khoi tim lai tu dau va khoi nap nham vi thay ten lon. BAI HOC VE CACH CHON NGUON: registry truoc nay chi nhin cac du an lon moi cong bo va bo qua co so DA SAN XUAT hang chuc nam. O trong cua nhom 10 khong phai o trong that, no la diem mu cua nguoi di tim. SO VOI DA NAP: Cong ty co phan Xe lua Di An · bang_chung_nang_luc · Xe lua Di An vao registry nho mot SAN PHAM DA GIAO, hang chuc toa tau da dong xong. THACO va Hoa Phat deu chua co san pham nao roi khoi day chuyen: mot ben moi khoi cong to hop, mot ben nha may xong hon nua khoi luong xay dung. Do la khac biet giua DA LAM RA va DANG XAY DE LAM RA. SO VOI DA NAP: Cong ty co phan Xe lua Di An · nang_luc_mo_ta · Cung mot mang phuong tien duong sat, cung mot chuan: co chuc nang dong moi va da dong that. Ap cho ca ba ten trong vong nay."
+
+  ap_dung_24_08_2026_fecon: "FECON: LAM QUYET 24/08/2026, GIU LAI theo dieu khoan ranh_gioi_xam. Day la lan DAU TIEN dieu khoan ranh_gioi_xam duoc dung; truoc do no la chu chet trong file. FECON van hanh may TBM do hang nuoc ngoai san xuat, tuc mot minh phan do thi KHONG du dieu kien. Nhung baodautu.vn 28/12/2015 (tier B, nguon doc lap, khong phai fecon.com.vn) ghi Ban R&D FECON truc tiep nghien cuu va thu nghiem 3 de tai: vo ham va san xuat vo ham, coc cu be tong du ung luc, quan trac cap quang. Luat noi du dieu kien gom ca NGHIEN CUU cong nghe loi, nen phan do du. NAP VOI PHAM VI HEP: phan tu phat trien chi gom vo ham, coc cu va quan trac; KHONG bao gom may TBM. SO VOI MOBIFONE: cung mot luat, hai ket qua, vi bang chung khac nhau. MobiFone khong tim thay BAT KY phan tu phat trien nao; FECON co va co nguon. Day khong phai noi luat, day la dung cai ve xam ma luat da viet san. DIEM YEU: bang chung la bai 2015, chua tim duoc ban moi hon dung duoc. QUY TRINH: cong check_du_dieu_kien.py bao do ba luot lien tiep truoc khi co quyet dinh nay. May di tim bang chung, may KHONG tu go o do. Ranh gioi do giu nguyen cho moi ca sau."
+
+  ap_dung_24_08_2026_asf: "Mang vac xin dich ta lon chau Phi hien chi co AVAC va NAVETCO trong registry. Vong 24/08/2026 tim duoc them hai ten. DABACO: vnexpress.net 08/09/2025 viet 'ngoai AVAC con co Navetco va Dabaco dang san xuat va luu hanh'. Cau nay chung minh Dabaco CO MAT trong mang, nhung KHONG noi Dabaco tu phat trien hay chi san xuat theo giay phep, ma ranh gioi lam chu va gia cong nam dung o do. KET LUAN: KHONG NAP, honest-null co can cu. Se nap khi co mot cau noi ro Dabaco tu nghien cuu hoac tu phat trien. DACOVET voi vac xin Dacovac-ASF2: chi thay trong ban tom tat cua may tim kiem, CHUA co trang nao duoc chup, nen khong du dieu kien nap. Ghi ra day de vong sau khoi tim lai tu dau. SO VOI DA NAP: Tap doan Dabaco Viet Nam · ten_don_vi · BO SUNG NGUOC 25/08/2026. Ket luan KHONG NAP o muc nay danh cho Dabaco DA BI SUA LAI, xem ap_dung_25_08_2026_asf_sua_lai: Dabaco nay DA NAP. Giu nguyen ket luan cu de doi chieu duoc. Phan con lai van dung: DACOVET khong nap RIENG vi no la NHA MAY thuoc Dabaco chu khong phai phap nhan doc lap, va phap nhan me thi da co trong registry roi. Day dung la loai ca ma cong nay sinh ra de bat: neu co dong doi chieu nay tu 24/08 thi cau hoi 'AVAC vao bang bang chung gi' da phai duoc tra loi ngay hom do."
+
+refresh_days:
+  default: 180
+
+alias_map: {}                     # chi gop khi chac cung mot thuc the (VD Viettel High Tech <-> VHT)
+
+ambiguous_clusters: [["Viettel High Tech", "Viettel AI", "Tập đoàn Viettel"], ["VinAI", "VinBigData"], ["FPT", "FPT Semiconductor", "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT"], ["CT Group", "CT Semiconductor"], ["VNPT", "VNPT Technology"]]   # ten cung tap doan khac don vi, cam tu gop, cho nguoi quyet
