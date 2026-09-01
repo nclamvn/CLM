@@ -138,6 +138,11 @@ chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_e
 # Trong bo cuc ba kho tach roi no tra 3 (khong co gi de do), do la dung.
 chay CaoLocMatch doc_dung_kho     "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 check_doc_dung_kho.py
 
+# Chieu CAU co mot BAN DOC o KnowledgeBase cho RtR Copilot. Kho nay la nguon; ban doc phai
+# theo kho. O nay bao do khi hai ben lech. Moi truong khong co KnowledgeBase (CI) thi no tra
+# 3 chu khong tra 0: vang ban doc la khong doi chieu duoc, khong phai la khop.
+chay CaoLocMatch dong_bo_cau      "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 dong_bo_cau.py
+
 # ── Web: so tren trang phai la so sinh tu registry, khong go tay ────────────
 # Bo sinh la mot cong chu khong phai tien ich: no FAIL khi thieu ban chup goc, va no la
 # thu duy nhat duoc phep viet lib/cncl-*.ts. Chay no o day de bang trang thai bat duoc
@@ -187,6 +192,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
   chay CaoLocMatch rang_gop_cap     "$CLM" 'BITE GOP CAP'        python3 bite_gop_cap.py
   chay CaoLocMatch rang_doc_dung_kho "$CLM" 'BITE DOC DUNG KHO'  python3 bite_doc_dung_kho.py
+  chay CaoLocMatch rang_dong_bo_cau  "$CLM" 'BITE DONG BO CAU'   python3 bite_dong_bo_cau.py
   # Rang cua CHINH cai bang nay. Khong de quy vo han: no goi lai script voi --nhanh,
   # ma --nhanh bo qua toan bo khoi rang, nen chi sau dung mot tang.
   chay CaoLocMatch rang_chinh_bang  "$CLM" 'BITE CHAY HET'       python3 bite_chay_het_cong.py
