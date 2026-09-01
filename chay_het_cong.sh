@@ -142,6 +142,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # ngay, du lieu dung tung chu, bang trang thai xanh het, va the tren web van ke thieu mot
   # nua nang luc cua FECON. Phai chay SAU sinh_du_lieu_web vi no doc dau ra cua buoc do.
   chay .touch      truong_hien      "$TOUCH" 'OK:|FAIL|CHUA KHAI' node scripts/check-truong-hien.mjs
+  # Hai ban song sinh .json va .ts phai trung tung ky tu. Lech nguy nhat la .json dung ma
+  # .ts cu: cong doc .json nen bao XANH, con trang web nguoi dung nhin thi doc .ts.
+  chay .touch      lib_song_sinh    "$TOUCH" 'OK:|FAIL|LECH'   node scripts/check-lib-song-sinh.mjs
   # Do VUNG PHU cua anh moc. O nay khong can trinh duyet: no doc reports/phu_moc.json do
   # scripts/chup_man.sh sinh ra. Neu registry doi ke tu lan chup cuoi thi van tay lech va o
   # nay bao KHONG CHAY DUOC chu khong bao XANH: con so cu khong dung de ket luan duoc.
