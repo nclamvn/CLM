@@ -55,6 +55,10 @@ def ngay_nguon(c):
     try:
         return date(int(s[:4]), int(s[4:6]), int(s[6:]))
     except ValueError:
+        # NUOT CO Y: tra None chu khong nem loi, NHUNG nguoi goi khong coi None la sach.
+        # main() gom moi claim co ngay None vao `khong_doc_duoc` roi tra exit 3 KHONG CHAY
+        # DUOC. Nen day la fail-closed o cap ham goi chu khong phai o cap chuong bat loi.
+        # Da kiem tay ngay 25/08/2026 khi dung check_fail_closed.py, khong phai gia dinh.
         return None
 
 

@@ -11,6 +11,14 @@ RANG 3 · BIA TRUONG THI DO: ten that nhung truong don vi do khong co -> exit 2.
 RANG 4 · SACH THI XANH.
 
 Chay: python3 bite_ap_luat_deu.py
+CANH
+====
+MUON DU LIEU THAT, co chu, va day la diem yeu da biet.
+
+Rang chep domain.yaml va claims.jsonl that vao thu muc tam roi tiem vao BAN SAO. Kho that
+khong bi cham. Nhung canh chi ton tai khi domain.yaml CON IT NHAT MOT ca KHONG NAP: het ca
+loai thi cong tra 0 tu nhien, RANG 1 khong con gi de go, va ca bo rang mat y nghia trong im
+lang. Chua tu dung duoc vi cong doc ca cau truc scope_note that.
 """
 import re, shutil, subprocess, sys, tempfile
 from pathlib import Path
