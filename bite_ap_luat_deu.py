@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""bite_ap_luat_deu.py · Bon rang cua cong check_ap_luat_deu.py.
+
+Cong nay de tro thanh mot cai den xanh hon moi cong khac trong he, vi cai no doi la MOT DONG
+VAN BAN. Rat de viet mot phien ban chi kiem "co chu SO VOI DA NAP hay khong", va ban do se
+xanh voi mot dong bia dat hoan toan. RANG 2 va RANG 3 la de chan dung cho do.
+
+RANG 1 · KHONG CO DOI CHIEU THI DO: go het dong SO VOI DA NAP -> exit 2.
+RANG 2 · BIA TEN THI DO: doi chieu voi mot don vi khong co trong registry -> exit 2.
+RANG 3 · BIA TRUONG THI DO: ten that nhung truong don vi do khong co -> exit 2.
+RANG 4 · SACH THI XANH.
+
+Chay: python3 bite_ap_luat_deu.py
+"""
+import re, shutil, subprocess, sys, tempfile
+from pathlib import Path
+
+HERE = Path(__file__).parent
+CONG = HERE / "check_ap_luat_deu.py"
+
+
+def chay(d):
+    r = subprocess.run([sys.executable, str(CONG), str(d)], capture_output=True, text=True)
+    return r.returncode, r.stdout + r.stderr
+
+
+def in_(nhan, ok, chi):
+    print(f"{nhan:44} : " + (f"CAN OK ({chi})" if ok else f"KHONG CAN !! {chi}"))
+
+
+def main():
+    tam = Path(tempfile.mkdtemp(prefix="bite-ap-luat-"))
+    d = tam / "don_vi_cncl"
+    shutil.copytree(HERE / "domains" / "don_vi_cncl", d,
+                    ignore=shutil.ignore_patterns("snapshots"))
+    dy = d / "domain.yaml"
+    goc = dy.read_text(encoding="utf-8")
+
+    nen_ma, nen_ra = chay(d)
+    if nen_ma != 0:
+        print(f"KHONG CHAY DUOC: ban sao chua tiem gi ma da exit {nen_ma}\n{nen_ra}")
+        shutil.rmtree(tam, ignore_errors=True)
+        return 3
+
+    # RANG 1 · go het dong doi chieu
+    dy.write_text(re.sub(r"SO VOI DA NAP:[^·]+·[^·]+·", "", goc), encoding="utf-8")
+    ma, ra = chay(d)
+    ok1 = ma == 2 and "CHUA DOI CHIEU" in ra
+    in_("RANG 1 · khong co doi chieu thi DO", ok1, "exit 2" if ok1 else f"exit {ma}")
+
+    # RANG 2 · bia ten don vi
+    dy.write_text(goc.replace("SO VOI DA NAP: FECON ·",
+                              "SO VOI DA NAP: Cong ty Ma Khong Co That ·", 1), encoding="utf-8")
+    ma, ra = chay(d)
+    ok2 = ma == 2 and "khong phai don vi da nap" in ra
+    in_("RANG 2 · bia ten don vi thi DO", ok2, "exit 2" if ok2 else f"exit {ma}")
+
+    # RANG 3 · ten that nhung truong khong co tren don vi do
+    dy.write_text(goc.replace("SO VOI DA NAP: FECON · nang_luc_mo_ta_2 ·",
+                              "SO VOI DA NAP: FECON · truong_bia_dat ·", 1), encoding="utf-8")
+    ma, ra = chay(d)
+    ok3 = ma == 2 and "khong co truong" in ra
+    in_("RANG 3 · bia truong thi DO", ok3, "exit 2" if ok3 else f"exit {ma}")
+
+    # RANG 4 · tra lai nguyen trang
+    dy.write_text(goc, encoding="utf-8")
+    ma, ra = chay(d)
+    ok4 = ma == 0 and "OK: moi ca loai" in ra
+    in_("RANG 4 · tra lai nguyen trang thi XANH", ok4, "exit 0" if ok4 else f"exit {ma}")
+
+    shutil.rmtree(tam, ignore_errors=True)
+    tat_ca = ok1 and ok2 and ok3 and ok4
+    print("-" * 62)
+    print("BITE AP LUAT DEU:", "RANG CAN" if tat_ca else "CO RANG KHONG CAN")
+    return 0 if tat_ca else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
