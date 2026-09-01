@@ -32,7 +32,10 @@ TOUCH_CAN = ["scripts", "lib", "app", "components", "styles", "docs", "package.j
 
 
 def _goc(*duoi):
-    for g in [Path("/Users/os"), *sorted(Path("/sessions").glob("*/mnt"))]:
+    # To tien cua chinh file nay truoc, de chay duoc trong bo cuc GOP ma khong can
+    # duong dan tuyet doi. Hai goc cu giu lai cho bo cuc ba kho tach roi.
+    for g in [*Path(__file__).resolve().parents,
+              Path("/Users/os"), *sorted(Path("/sessions").glob("*/mnt"))]:
         p = g.joinpath(*duoi)
         if p.exists():
             return p

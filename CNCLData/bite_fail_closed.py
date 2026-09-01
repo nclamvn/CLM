@@ -21,6 +21,7 @@ RANG 4 · SACH THI XANH: khong tiem gi -> exit 0.
 
 Chay: python3 bite_fail_closed.py
 """
+import re
 import shutil
 import subprocess
 import sys
@@ -68,8 +69,24 @@ def main():
     # Cong tim kho theo duong dan tuyet doi, nen phai tro no vao canh. Cach re nhat la sua
     # hang GOC trong ban sao. Sua BAN SAO, khong sua ban that.
     ban = (kho / CONG.name).read_text(encoding="utf-8")
-    ban = ban.replace('GOC = [Path("/Users/os"), *sorted(Path("/sessions").glob("*/mnt"))]',
-                      f'GOC = [Path("{tam}")]')
+    # PHEP THAY THE PHAI TU CHUNG MINH NO CO CAN (sua 01/09/2026).
+    #
+    # Ban cu go cung nguyen van hang GOC cu. Khi hang GOC doi hinh dang (them to tien cua
+    # module de chay duoc trong bo cuc GOP), phep replace nay KHONG KHOP GI CA va tro thanh
+    # mot dong khong lam gi, IM LANG. Rang van can, nhung can nho may: ban sao cua cong nam
+    # trong canh nen to tien cua no da tro dung vao canh. Neu mai kia bo loi tim theo to tien
+    # thi dong nay se dan cong di quet KHO THAT ma khong ai biet.
+    #
+    # Day dung la ho loi da gap bay lan: mot phep kiem tuong minh da tac dong len thu no dinh
+    # tac dong. Nay thay bang re.subn va DOI dung mot lan thay the; khong dung mot lan thi
+    # KHONG CHAY DUOC, khong phai sach.
+    ban, so_thay = re.subn(r"^GOC = \[.*?\]\s*$",
+                           f'GOC = [Path({str(tam)!r})]', ban, count=1, flags=re.M | re.S)
+    if so_thay != 1:
+        print("KHONG CHAY DUOC: khong tim thay hang GOC trong ban sao cua cong de tro vao canh.")
+        print("Hang GOC cua check_fail_closed.py da doi hinh dang; rang nay phai duoc sua theo.")
+        shutil.rmtree(tam, ignore_errors=True)
+        return 3
     (kho / CONG.name).write_text(ban, encoding="utf-8")
 
     ma, ra = chay()

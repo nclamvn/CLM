@@ -16,11 +16,17 @@
  * Tu kiem: node scripts/goc.mjs --tu-kiem
  */
 import { existsSync, readdirSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 /** Danh sach goc co the co. Goc nao khong ton tai thi bo qua, khong nem loi. */
 export function cacGoc(nenLinux = '/sessions') {
-  const ds = ['/Users/os'];
+  // To tien cua chinh module nay truoc: trong bo cuc GOP thi mot trong so do la goc
+  // chua ca ba kho. Sau do moi den hai goc cu cua bo cuc ba kho tach roi.
+  const ds = [];
+  let d = dirname(fileURLToPath(import.meta.url));
+  while (d !== dirname(d)) { ds.push(d); d = dirname(d); }
+  ds.push('/Users/os');
   try {
     for (const d of readdirSync(nenLinux, { withFileTypes: true })) {
       if (d.isDirectory()) ds.push(join(nenLinux, d.name, 'mnt'));
@@ -61,9 +67,17 @@ if (process.argv[1] && process.argv[1].endsWith('goc.mjs') && process.argv.inclu
   // Canh chinh la ca da sap: goc Linux KHONG TON TAI.
   try {
     const ds = cacGoc('/khong-he-co-thu-muc-nay');
-    const dung = ds.length === 1 && ds[0] === '/Users/os';
+    // DO HANH VI, KHONG DO HINH DANG (sua 25/08/2026).
+    //
+    // Ban cu khang dinh `ds.length === 1 && ds[0] === '/Users/os'`, tuc go cung ca SO LUONG
+    // lan NOI DUNG cua danh sach. Khi cacGoc them to tien cua chinh module de chay duoc trong
+    // bo cuc GOP, phep tu kiem nay bao SAI du hanh vi can do van dung nguyen.
+    //
+    // Hanh vi can do chi co hai: khong nem loi, va van tra ve duoc goc dung tren may that.
+    // Do dung hai dieu do.
+    const dung = Array.isArray(ds) && ds.length > 0 && ds.includes('/Users/os');
     console.log(`${'goc Linux vang mat thi khong sap'.padEnd(38)} : ` +
-      (dung ? 'OK (tra ve dung mot goc /Users/os)' : `SAI !! ${JSON.stringify(ds)}`));
+      (dung ? `OK (khong nem loi, ${ds.length} goc ung vien, co /Users/os)` : `SAI !! ${JSON.stringify(ds)}`));
     ok = ok && dung;
   } catch (e) {
     console.log(`${'goc Linux vang mat thi khong sap'.padEnd(38)} : SAI !! nem loi ${e.code || e.message}`);

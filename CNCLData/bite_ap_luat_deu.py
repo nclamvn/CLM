@@ -56,16 +56,45 @@ def main():
     ok1 = ma == 2 and "CHUA DOI CHIEU" in ra
     in_("RANG 1 · khong co doi chieu thi DO", ok1, "exit 2" if ok1 else f"exit {ma}")
 
+    # LAY DONG DOI CHIEU DAU TIEN TU CHINH DU LIEU, khong go cung ten don vi (sua 01/09/2026).
+    #
+    # Ban cu viet thang chu "FECON". Ngay nao dong doi chieu cua FECON doi chu, hai phep
+    # replace duoi day thanh khong-lam-gi, cong chay tren du lieu NGUYEN VEN va tra 0, rang
+    # bao KHONG CAN. Tuc rang gay vi CANH doi chu khong phai vi cong hong: dung ho loi ma
+    # TIP-03 duoc viet ra de chan. Nay doc ten va truong tu dong dau tien co that trong file.
+    m_dau = re.search(r"SO VOI DA NAP:\s*([^·\n]+?)\s*·\s*([^·\n]+?)\s*·", goc)
+    if not m_dau:
+        print("KHONG CHAY DUOC: khong tim thay dong 'SO VOI DA NAP:' nao trong domain.yaml.")
+        shutil.rmtree(tam, ignore_errors=True)
+        return 3
+    ten_dv, truong_dv = m_dau.group(1), m_dau.group(2)
+    dau_ten = f"SO VOI DA NAP: {ten_dv} ·"
+    dau_truong = f"SO VOI DA NAP: {ten_dv} · {truong_dv} ·"
+
+    def thay(cu_, moi_):
+        """Thay dung mot lan, va DOI no that su xay ra. Khong xay ra thi la KHONG CHAY DUOC."""
+        if cu_ not in goc:
+            return None
+        return goc.replace(cu_, moi_, 1)
+
     # RANG 2 · bia ten don vi
-    dy.write_text(goc.replace("SO VOI DA NAP: FECON ·",
-                              "SO VOI DA NAP: Cong ty Ma Khong Co That ·", 1), encoding="utf-8")
+    van = thay(dau_ten, f"SO VOI DA NAP: Cong ty Ma Khong Co That ·")
+    if van is None:
+        print(f"KHONG CHAY DUOC: khong tiem duoc, khong thay {dau_ten!r}.")
+        shutil.rmtree(tam, ignore_errors=True)
+        return 3
+    dy.write_text(van, encoding="utf-8")
     ma, ra = chay(d)
     ok2 = ma == 2 and "khong phai don vi da nap" in ra
     in_("RANG 2 · bia ten don vi thi DO", ok2, "exit 2" if ok2 else f"exit {ma}")
 
     # RANG 3 · ten that nhung truong khong co tren don vi do
-    dy.write_text(goc.replace("SO VOI DA NAP: FECON · nang_luc_mo_ta_2 ·",
-                              "SO VOI DA NAP: FECON · truong_bia_dat ·", 1), encoding="utf-8")
+    van = thay(dau_truong, f"SO VOI DA NAP: {ten_dv} · truong_bia_dat ·")
+    if van is None:
+        print(f"KHONG CHAY DUOC: khong tiem duoc, khong thay {dau_truong!r}.")
+        shutil.rmtree(tam, ignore_errors=True)
+        return 3
+    dy.write_text(van, encoding="utf-8")
     ma, ra = chay(d)
     ok3 = ma == 2 and "khong co truong" in ra
     in_("RANG 3 · bia truong thi DO", ok3, "exit 2" if ok3 else f"exit {ma}")

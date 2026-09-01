@@ -30,7 +30,14 @@ import sys
 from pathlib import Path
 
 NHAN = "NUOT CO Y:"
-GOC = [Path("/Users/os"), *sorted(Path("/sessions").glob("*/mnt"))]
+# GOC UNG VIEN, xep theo do uu tien:
+#   1. To tien cua chinh file nay. Trong bo cuc GOP (mot repo chua ca ba kho lam thu
+#      muc con) thi to tien do CHINH LA goc, va khong can biet duong dan tuyet doi.
+#   2. Hai goc cu, cho bo cuc BA KHO tach roi tren may that va trong sandbox.
+# Giu ca hai de ma chay duoc o CA HAI bo cuc trong ky chuyen tiep, khong phai sua
+# hai lan va khong co ngay nao he nam giua hai trang thai.
+GOC = [*Path(__file__).resolve().parents,
+       Path("/Users/os"), *sorted(Path("/sessions").glob("*/mnt"))]
 KHO = ["CNCLData", "CaoLocMatch", ".touch"]
 MAU_TEN = ("check_", "check-", "bite_", "bite-", "gen-")
 # Ba helper duoi day khong mang tien to cong nhung DUOC CAC CONG DUNG CHUNG, nen mot cho nuot

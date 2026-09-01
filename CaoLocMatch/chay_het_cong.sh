@@ -43,7 +43,11 @@ tim_kho() {
     CaoLocMatch) [ -n "${CLM_KHO_MATCH:-}" ] && { echo "$CLM_KHO_MATCH"; return 0; } ;;
     .touch)      [ -n "${CLM_KHO_TOUCH:-}" ] && { echo "$CLM_KHO_TOUCH"; return 0; } ;;
   esac
-  for g in /Users/os /sessions/*/mnt; do
+  # Goc ung vien: thu muc cha cua chinh script nay truoc (bo cuc GOP: mot repo chua ca
+  # ba kho), roi den hai goc cu (bo cuc ba kho tach roi). Giu ca hai de chay duoc o ca
+  # hai bo cuc trong ky chuyen tiep.
+  TU_THAN=$(cd "$(dirname "$0")/.." && pwd)
+  for g in "$TU_THAN" /Users/os /sessions/*/mnt; do
     [ -d "$g/$1" ] && { echo "$g/$1"; return 0; }
   done
   return 1
