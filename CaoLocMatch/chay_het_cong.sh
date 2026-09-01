@@ -20,13 +20,59 @@
 
 set -u
 
-NHANH=0; IM=0
+NHANH=0; IM=0; HOAN=""
+
+# ── DANH SACH O DUOC PHEP HOAN, GO CUNG TRONG CHINH SCRIPT NAY ──────────────
+#
+# VI SAO CO (02/09/2026, khi dung CI cho kho gop): ba o duoi day KHONG CHAY DUOC trong mot moi
+# truong CI sach, va khong phai vi chung hong. Chung can mot thu nam NGOAI git:
+#
+#   doi_chung_nguon   can .fidelity_fresh, la ban tai ve lai cua nguon that. Khong script nao
+#                     sinh ra no; no den tu mot vong lam tuoi thu cong co mang.
+#   dong_bo_cau       can BAN DOC o KnowledgeBase. CI khong co KnowledgeBase.
+#   rang_chinh_bang   dung ban tam, ma ban tam can .fidelity_fresh nhu tren.
+#
+# Neu de nguyen thi CI luc nao cung do va khong ai doc no nua, tuc mot cong khong ai doc thi
+# bang khong co cong. Nhung noi long kieu "cho phep bo qua o nao cung duoc" thi lai la mot
+# CHE DO SUY BIEN: thieu dieu kien la he tu ha tieu chuan, va do la duong ro.
+#
+# BON RANG BUOC de cho noi long nay khong thanh duong ro:
+#   1. Chi hoan duoc o NAM TRONG danh sach nay. Ten khac -> exit 3, khong chay gi ca.
+#   2. Danh sach nay GO CUNG TRONG SCRIPT, khong nhan tu dong lenh, khong nhan tu bien moi
+#      truong. Muon them mot o thi phai sua file nay va di qua review.
+#   3. Hoan chi doi KHONG CHAY DUOC thanh HOAN. O DO van la DO va van lam ca luot that bai.
+#   4. Moi lan chay deu IN RA muc HOAN kem ly do, ke ca khi mo thu deu xanh.
+HOAN_DUOC_PHEP="doi_chung_nguon dong_bo_cau rang_chinh_bang"
+ly_do_hoan() {
+  case "$1" in
+    doi_chung_nguon) echo "can .fidelity_fresh, ban tai lai cua nguon that, khong nam trong git" ;;
+    dong_bo_cau)     echo "can ban doc o KnowledgeBase, moi truong nay khong co" ;;
+    rang_chinh_bang) echo "dung ban tam, ma ban tam can .fidelity_fresh" ;;
+    *)               echo "KHONG CO LY DO GHI SAN" ;;
+  esac
+}
+
 for a in "$@"; do
   case "$a" in
     --nhanh) NHANH=1 ;;
     --im)    IM=1 ;;
+    --hoan=*) HOAN="$HOAN ${a#--hoan=}" ;;
     -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
     *) echo "Khong hieu tham so: $a"; exit 3 ;;
+  esac
+done
+
+# Rang buoc 1 + 2: ten ngoai danh sach thi DUNG NGAY, truoc khi chay bat ky cong nao.
+for h in $HOAN; do
+  case " $HOAN_DUOC_PHEP " in
+    *" $h "*) : ;;
+    *)
+      echo "KHONG CHAY DUOC: '$h' khong nam trong danh sach o duoc phep hoan."
+      echo "Duoc phep: $HOAN_DUOC_PHEP"
+      echo
+      echo "Danh sach nay go cung trong chay_het_cong.sh chu khong nhan tu dong lenh, dung de"
+      echo "mot moi truong thieu thon khong the tu ha tieu chuan cua ca chuoi cong."
+      exit 3 ;;
   esac
 done
 
@@ -55,7 +101,8 @@ tim_kho() {
 CNCL=$(tim_kho CNCLData)    || { echo "KHONG THAY kho CNCLData o ca hai goc."; exit 3; }
 CLM=$(tim_kho CaoLocMatch)  || { echo "KHONG THAY kho CaoLocMatch o ca hai goc."; exit 3; }
 
-XANH=0; DO=0; TREO=0
+XANH=0; DO=0; TREO=0; DA_HOAN=0
+DS_HOAN=""; THUA=""
 DONG=""; CHI_TIET=""
 
 # chay <kho_nhan> <ten_cong> <thu_muc> <loc_ghi_chu> <lenh...>
@@ -69,9 +116,18 @@ chay() {
   else
     ghi=""
   fi
+  local duoc_hoan=0
+  case " $HOAN " in *" $ten "*) duoc_hoan=1 ;; esac
   case "$rc" in
-    0) trang_thai="XANH";        XANH=$((XANH+1)) ;;
-    3) trang_thai="KHONG CHAY";  TREO=$((TREO+1)) ;;
+    0) trang_thai="XANH";        XANH=$((XANH+1))
+       # Rang buoc 4b: hoan mot o van chay duoc la thua, va thua thi phai noi ra.
+       [ "$duoc_hoan" -eq 1 ] && THUA="$THUA $ten" ;;
+    # Rang buoc 3: CHI KHONG CHAY DUOC moi hoan duoc. O DO khong bao gio duoc hoan.
+    3) if [ "$duoc_hoan" -eq 1 ]; then
+         trang_thai="HOAN";      DA_HOAN=$((DA_HOAN+1)); DS_HOAN="$DS_HOAN $ten"
+       else
+         trang_thai="KHONG CHAY"; TREO=$((TREO+1))
+       fi ;;
     *) trang_thai="DO";          DO=$((DO+1)) ;;
   esac
   DONG="${DONG}$(printf '%-12s %-26s %-11s %s' "$kho" "$ten" "$trang_thai" "$ghi")
@@ -193,13 +249,15 @@ if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_gop_cap     "$CLM" 'BITE GOP CAP'        python3 bite_gop_cap.py
   chay CaoLocMatch rang_doc_dung_kho "$CLM" 'BITE DOC DUNG KHO'  python3 bite_doc_dung_kho.py
   chay CaoLocMatch rang_dong_bo_cau  "$CLM" 'BITE DONG BO CAU'   python3 bite_dong_bo_cau.py
+  # Rang cua chinh co --hoan o dau file nay. Dung o gia nen chay trong mot phan giay.
+  chay CaoLocMatch rang_hoan        "$CLM" 'BITE HOAN'           python3 bite_hoan.py
   # Rang cua CHINH cai bang nay. Khong de quy vo han: no goi lai script voi --nhanh,
   # ma --nhanh bo qua toan bo khoi rang, nen chi sau dung mot tang.
   chay CaoLocMatch rang_chinh_bang  "$CLM" 'BITE CHAY HET'       python3 bite_chay_het_cong.py
 fi
 
 # ── Bang ────────────────────────────────────────────────────────────────────
-TONG=$((XANH+DO+TREO))
+TONG=$((XANH+DO+TREO+DA_HOAN))
 echo
 echo "CAOLOCMATCH · CHUOI CONG · $(date '+%d/%m/%Y %H:%M')"
 [ "$NHANH" -eq 1 ] && echo "che do --nhanh: DA BO QUA ba bo rang, ket qua nay YEU hon ban day du"
@@ -208,11 +266,33 @@ printf '%-12s %-26s %-11s %s\n' "KHO" "CONG" "KET QUA" "GHI CHU"
 printf '%s\n' "------------------------------------------------------------------------------"
 printf '%s' "$DONG"
 printf '%s\n' "------------------------------------------------------------------------------"
-printf 'tong %d · xanh %d · do %d · khong chay duoc %d\n' "$TONG" "$XANH" "$DO" "$TREO"
+printf 'tong %d · xanh %d · do %d · khong chay duoc %d · hoan %d\n' \
+  "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN"
+
+# Rang buoc 4: muc HOAN in ra MOI LAN, ke ca khi moi thu deu xanh. Mot khoang trong duoc
+# thoa thuan van la mot khoang trong; giau no di la bien thoa thuan thanh quen lang.
+if [ "$DA_HOAN" -gt 0 ]; then
+  echo
+  echo "O DUOC HOAN TRONG LUOT NAY ($DA_HOAN), khong duoc doc bang nay nhu la da phu het:"
+  for h in $DS_HOAN; do
+    printf '  %-20s %s\n' "$h" "$(ly_do_hoan "$h")"
+  done
+  echo "  Muon dong khoang trong nay thi phai mang duoc thu con thieu vao moi truong,"
+  echo "  khong phai bang cach them ten vao danh sach hoan."
+fi
+if [ -n "$THUA" ]; then
+  echo
+  echo "HOAN THUA:$THUA"
+  echo "  Cac o nay da chay duoc trong moi truong hien tai. Bo --hoan cua chung di."
+fi
 echo
 
 if [ "$DO" -eq 0 ] && [ "$TREO" -eq 0 ]; then
-  echo "TAT CA XANH."
+  if [ "$DA_HOAN" -gt 0 ]; then
+    echo "XANH TRU $DA_HOAN O DUOC HOAN. Day KHONG phai 'tat ca xanh'."
+  else
+    echo "TAT CA XANH."
+  fi
   exit 0
 fi
 
