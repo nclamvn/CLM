@@ -65,12 +65,28 @@ def doc_refresh_days(domain_dir):
     dung dang mapping. No bao "KHONG CHAY DUOC" chu khong lang le lay 180 lam mac dinh. Do la
     hanh vi dung: mot cong doan gia tri no khong doc duoc thi khong con la cong.
     """
-    t = (Path(domain_dir) / "domain.yaml").read_text(encoding="utf-8")
-    m = re.search(r"^refresh_days:\s*(\d+)\s*$", t, re.M)
-    if m:
-        return int(m.group(1))
-    m = re.search(r"^refresh_days:\s*\n(?:\s+\S+.*\n)*?\s+default:\s*(\d+)", t, re.M)
-    return int(m.group(1)) if m else None
+    # DOC BANG PARSER YAML THAT (sua 25/08/2026).
+    #
+    # Ban cu doc bang hai bieu thuc chinh quy. No CHAY DUOC, va do moi la van de: neu
+    # domain.yaml hong cu phap (vi du mot cap nhay kep long trong chuoi da nhay kep, dung loi
+    # da xay ra hom nay), regex van rut duoc so 180 va cong nay van bao XANH, trong khi he
+    # thong that khong doc noi file do. Mot cong doc file cau truc bang regex co the XANH HON
+    # CA PARSER, va no noi doi theo huong nguy nhat: bao an toan tren mot file da hong.
+    #
+    # Nay hong cu phap thi tra None -> cong bao KHONG CHAY DUOC. Do van la hanh vi cu: mot
+    # cong doan gia tri no khong doc duoc thi khong con la cong.
+    try:
+        import yaml
+        cfg = yaml.safe_load((Path(domain_dir) / "domain.yaml").read_text(encoding="utf-8")) or {}
+    except Exception as e:
+        print(f"  (domain.yaml khong parse duoc: {type(e).__name__}: {e})")
+        return None
+    v = cfg.get("refresh_days")
+    if isinstance(v, int):
+        return v
+    if isinstance(v, dict) and isinstance(v.get("default"), int):
+        return v["default"]
+    return None
 
 
 def main(domain_dir, hom_nay):
