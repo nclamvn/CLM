@@ -1,0 +1,16 @@
+# SNAPSHOT · mst.gov.vn (Cong TTDT Bo Khoa hoc va Cong nghe) · captured 2026-08-16 via web_fetch (text extraction)
+# URL: https://mst.gov.vn/chinh-thuc-ra-mat-cong-ty-an-ninh-mang-viettel-197138879.htm
+# Bai dang 12/04/2019. Tier A. Trich cau nguyen van, khong sua chu.
+
+# Chinh thuc ra mat Cong ty An ninh mang Viettel
+
+## Phap nhan: thanh lap tren co so to chuc lai Trung tam An ninh mang Viettel
+
+Công ty An ninh mạng Viettel được thành lập trên cơ sở tổ chức lại Trung tâm An ninh mạng Viettel, là một chi nhánh của Tập đoàn Công nghiệp Viễn thông Quân đội Viettel.
+
+## Danh muc san pham va muc do tu chu
+# BO SUNG 24/08/2026: ban chup cu chi giu MOT cau "100% cac san pham nay...", trong khi
+# danh sach ma cum "cac san pham nay" tro toi lai nam o cau truoc va KHONG duoc chup.
+# Da lay lai ca doan nguyen van tu nguon de cum do co cho neo.
+
+Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.

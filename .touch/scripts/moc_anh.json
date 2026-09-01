@@ -1,0 +1,44 @@
+{
+  "_doc": [
+    "Danh sach anh moc. Moi dong la mot khung hinh se duoc chup, so voi moc, va DEM VUNG PHU.",
+    "",
+    "VI SAO CO (24/08/2026): sau khi them tag loai hinh len 9 the, phep so anh bao TRUNG MOC",
+    "TUYET DOI, 0% diem khac. Khong phai loi cua so_anh.mjs: anh moc chi chup KHUNG NHIN DAU",
+    "TIEN, danh sach xep theo bang chu cai, va ca 9 don vi do deu nam duoi day. Phep so khong",
+    "sai, no chi khong nhin toi do, va im lang dung luc can keu.",
+    "",
+    "Do la dung cai benh da vap ba lan trong ngay: mot phep kiem nhin vao MOT LAT CAT roi duoc",
+    "doc nhu the no nhin toan canh.",
+    "",
+    "Nen danh sach nay khong chi de chup cho du. No la TAP PHU: don vi nao khong lot vao khung",
+    "hinh nao trong day thi khong co anh moc nao canh giu, va so luong do bi khoa mot chieu.",
+    "24/08/2026, ngay trong lan chay dau: khung 'man-cuoi-bang' loc chu 'Công ty' HOA RA PHU DUOC 0 don vi moi, vi danh sach khong loc CUNG bat dau bang cac don vi ten 'Công ty'. Phep do vung phu bat duoc ngay. Thay bang mot khung TOAN TRANG: chup het chieu dai danh sach thay vi doan them vai bo loc. Go nguyen nhan chu khong va quanh no."
+  ],
+  "khung": [
+    {
+      "ten": "man-registry",
+      "duong": "/dashboard/registry",
+      "loc": null,
+      "vi_sao": "Trang registry nguyen trang, dau danh sach."
+    },
+    {
+      "ten": "man-matching",
+      "duong": "/dashboard/matching",
+      "loc": null,
+      "vi_sao": "Man match, cot chuoi bang chung va chu ky."
+    },
+    {
+      "ten": "man-loaihinh",
+      "duong": "/dashboard/registry",
+      "loc": "Viện",
+      "vi_sao": "Phu nhom don vi nam duoi day bang chu cai ma anh toan trang khong bao gio cham toi. Them 24/08/2026 sau khi phat hien vung phu qua hep."
+    },
+    {
+      "ten": "man-registry-toan-trang",
+      "duong": "/dashboard/registry",
+      "loc": null,
+      "toan_trang": true,
+      "vi_sao": "Chup HET chieu dai danh sach, khong cat theo khung nhin. Day la khung duy nhat phu duoc moi don vi, va no go dung nguyen nhan lam moc bo sot: viewport cat mat phan duoi."
+    }
+  ]
+}

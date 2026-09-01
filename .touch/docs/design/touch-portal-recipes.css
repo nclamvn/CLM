@@ -1,0 +1,138 @@
+/* TIP-PORTAL-V1 — consume existing Pha 0 tokens where names overlap. */
+:root {
+  --portal-canvas: #020611;
+  --portal-canvas-deep: #01030a;
+  --portal-surface-0: #040b18;
+  --portal-surface-1: #071225;
+  --portal-surface-2: #0a1730;
+  --portal-surface-3: #0e1d3b;
+  --portal-surface-inset: #030a16;
+  --portal-border-subtle: #173152;
+  --portal-border-muted: rgba(148, 163, 184, 0.13);
+  --portal-border-strong: #2b4d78;
+
+  --fill-blue-06: rgba(47, 107, 255, 0.06);
+  --fill-blue-10: rgba(47, 107, 255, 0.10);
+  --fill-blue-16: rgba(47, 107, 255, 0.16);
+  --fill-cyan-08: rgba(24, 212, 245, 0.08);
+  --fill-purple-10: rgba(136, 92, 246, 0.10);
+  --fill-amber-09: rgba(245, 158, 11, 0.09);
+  --fill-green-09: rgba(34, 197, 94, 0.09);
+  --fill-green-14: rgba(34, 197, 94, 0.14);
+  --fill-red-08: rgba(239, 68, 68, 0.08);
+  --fill-red-12: rgba(239, 68, 68, 0.12);
+
+  --shadow-panel:
+    inset 0 1px 0 rgba(255, 255, 255, 0.032),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.26),
+    0 14px 38px rgba(0, 0, 0, 0.24);
+  --shadow-panel-compact:
+    inset 0 1px 0 rgba(255, 255, 255, 0.026),
+    0 8px 24px rgba(0, 0, 0, 0.20);
+
+  --glow-blue: 0 0 24px rgba(47, 107, 255, 0.18);
+  --glow-cyan: 0 0 24px rgba(24, 212, 245, 0.16);
+  --glow-purple: 0 0 24px rgba(136, 92, 246, 0.16);
+  --glow-green: 0 0 24px rgba(34, 197, 94, 0.18);
+  --glow-red: 0 0 24px rgba(239, 68, 68, 0.16);
+}
+
+.portal-root {
+  min-height: 100dvh;
+  color: var(--text-primary);
+  background:
+    radial-gradient(1000px 560px at 72% -10%, var(--fill-blue-06), transparent 65%),
+    linear-gradient(180deg, var(--portal-canvas), var(--portal-canvas-deep));
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+.portal-container {
+  width: min(1440px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.surface-executive {
+  --surface-glow: transparent;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(520px 220px at 82% -12%, var(--surface-glow), transparent 64%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.018), transparent 34%),
+    linear-gradient(180deg, var(--portal-surface-1), var(--portal-surface-0));
+  border: 1px solid var(--portal-border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+}
+
+.surface-executive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.026), transparent 28%);
+}
+
+.surface-blue { --surface-glow: var(--fill-blue-16); }
+.surface-cyan { --surface-glow: var(--fill-cyan-08); }
+.surface-purple { --surface-glow: var(--fill-purple-10); }
+.surface-amber { --surface-glow: var(--fill-amber-09); }
+.surface-green { --surface-glow: var(--fill-green-14); }
+.surface-red { --surface-glow: var(--fill-red-12); }
+
+.surface-critical {
+  background:
+    radial-gradient(520px 220px at 84% -10%, var(--fill-red-12), transparent 64%),
+    linear-gradient(180deg, var(--fill-red-08), var(--portal-surface-0));
+  border-color: color-mix(in srgb, var(--accent-red) 56%, transparent);
+  box-shadow: var(--shadow-panel), var(--glow-red);
+}
+
+.data-truth-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1_5);
+  min-height: 22px;
+  padding-inline: var(--space-2);
+  border: 1px solid var(--portal-border-subtle);
+  border-radius: var(--radius-pill);
+  font: 600 10px/14px var(--font-sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.data-truth-badge::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.data-truth-badge[data-truth="REAL"] { color: var(--accent-green); }
+.data-truth-badge[data-truth="DEMO"] { color: var(--accent-purple); }
+.data-truth-badge[data-truth="SYNTHETIC"] { color: var(--accent-amber); }
+.data-truth-badge[data-truth="SCAFFOLD"] { color: var(--text-muted); }
+
+@media (max-width: 899px) {
+  .portal-container {
+    width: min(100% - 32px, 720px);
+  }
+}
+
+@media (max-width: 639px) {
+  .portal-container {
+    width: calc(100% - 24px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

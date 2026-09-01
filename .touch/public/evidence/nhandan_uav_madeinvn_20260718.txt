@@ -1,0 +1,17 @@
+# SNAPSHOT · special.nhandan.vn · captured 2026-07-18 via web_fetch (text extraction, KHONG phai HTML raw)
+# URL: https://special.nhandan.vn/UAV-made-in-Vietnam/index.html
+# Ghi chu: trich cau nguyen van nêu don vi + san pham + nang luc. Fidelity snapshot-vs-goc can doi chung truoc khi ra ngoai.
+
+# Cac don vi Viet Nam san xuat UAV
+
+## Viettel (Tổng công ty Công nghiệp Công nghệ cao Viettel)
+
+UAV trinh sát, UAV cảm tử và UAV đa năng. Tất cả các sản phẩm UAV này Viettel đều làm chủ công nghệ, tự nghiên cứu, phát triển và chế tạo trong nước 100%
+
+Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ.
+
+##### **UAV trinh sát hạng nhẹ tầm ngắn VU-R50 (bên trái) là phương tiện tối ưu cho các nhiệm vụ trinh sát nhanh và chính xác. Sở hữu sải cánh 3,2m, chiều dài 2,2m và cùng trọng lượng cất cánh tối đa 26kg, VU-R50 có thể hoạt động liên tục trong 3 giờ với tốc độ tối đa 120km/giờ.
+
+##### **Khí tài này có sải cánh 1,5m, chiều dài 1,1m và trọng lượng cất cánh tối đa 8kg, thời gian hoạt động liên tục 40 phút, đạt tốc độ tấn công mục tiêu tối đa lên đến hơn 130km/giờ.
+
+##### **Ngoài ra, Viettel còn giới thiệu mô hình UAV đa năng tầm xa VU-MALE với khả năng hoạt động ở cự ly lớn trong mọi điều kiện thời tiết và mang được nhiều loại khí tài tấn công và trinh sát tầm xa.

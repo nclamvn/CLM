@@ -1,0 +1,119 @@
+{
+  "$meta": {
+    "name": "touch-design-tokens",
+    "version": "2.0.0",
+    "source": "docs/design/TOUCH_UI_DEVELOPER_HANDBOOK.md muc 3 (SOT v2)",
+    "generatedBy": "Tho theo TIP-UI-V2 Pha 0 (bundle goc chua co, doi chieu khi Con nguoi tha)",
+    "mode": "dark-first",
+    "note": "Moi gia tri giao dien phai di qua token. Brand dot #FF3830 immutable."
+  },
+  "color": {
+    "dark": {
+      "bg": {
+        "canvas": "#020617",
+        "sidebar": "#030914",
+        "surface1": "#071225",
+        "surface2": "#0B1730",
+        "surface3": "#0F1D3D",
+        "overlay": "rgba(2, 6, 23, 0.84)",
+        "scrim": "rgba(2, 6, 23, 0.64)"
+      },
+      "text": {
+        "primary": "#F8FAFC",
+        "secondary": "#94A3B8",
+        "muted": "#64748B",
+        "inverse": "#0B1220",
+        "link": "#7DB4FF"
+      },
+      "border": {
+        "subtle": "#173152",
+        "muted": "rgba(148, 163, 184, 0.14)",
+        "strong": "#2B4D78",
+        "focus": "#2F6BFF"
+      }
+    },
+    "light": {
+      "bg": {
+        "canvas": "#F4F7FB",
+        "sidebar": "#FFFFFF",
+        "surface1": "#FFFFFF",
+        "surface2": "#F1F5F9",
+        "surface3": "#EAF0F7"
+      },
+      "text": {
+        "primary": "#0B1220",
+        "secondary": "#334155",
+        "muted": "#64748B",
+        "link": "#174FC4"
+      },
+      "border": {
+        "subtle": "#D7E0EA",
+        "strong": "#AFC0D4",
+        "focus": "#2F6BFF"
+      }
+    },
+    "accent": {
+      "brandDot": "#FF3830",
+      "blue": "#2F6BFF",
+      "cyan": "#18D4F5",
+      "purple": "#885CF6",
+      "amber": "#F59E0B",
+      "green": "#22C55E",
+      "red": "#EF4444",
+      "tealDark": "#083B44"
+    },
+    "fill": {
+      "blueSubtle": "rgba(47, 107, 255, 0.10)",
+      "cyanSubtle": "rgba(24, 212, 245, 0.08)",
+      "purpleSubtle": "rgba(136, 92, 246, 0.10)",
+      "amberSubtle": "rgba(245, 158, 11, 0.09)",
+      "greenSubtle": "rgba(34, 197, 94, 0.09)",
+      "redSubtle": "rgba(239, 68, 68, 0.10)"
+    }
+  },
+  "typography": {
+    "fontFamily": "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "fontMono": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace",
+    "scale": {
+      "display01": { "size": 48, "line": 56, "weight": 700, "tracking": "-0.03em", "use": "Hero/marketing" },
+      "heading01": { "size": 32, "line": 40, "weight": 700, "tracking": "-0.025em", "use": "Page title lon" },
+      "heading02": { "size": 24, "line": 32, "weight": 600, "tracking": "-0.02em", "use": "Page title app" },
+      "title01": { "size": 18, "line": 28, "weight": 600, "tracking": "-0.01em", "use": "Section/panel title" },
+      "title02": { "size": 16, "line": 24, "weight": 600, "tracking": "-0.005em", "use": "Card title" },
+      "body01": { "size": 16, "line": 24, "weight": 400, "tracking": "0", "use": "Body chinh" },
+      "body02": { "size": 14, "line": 22, "weight": 400, "tracking": "0", "use": "Body dashboard" },
+      "label01": { "size": 13, "line": 18, "weight": 500, "tracking": "0.01em", "use": "Label/metadata" },
+      "labelUpper": { "size": 12, "line": 16, "weight": 600, "tracking": "0.08em", "use": "Section eyebrow" },
+      "mono01": { "size": 12, "line": 18, "weight": 500, "tracking": "0", "use": "Commit hash, IDs, code" },
+      "caption01": { "size": 11, "line": 16, "weight": 400, "tracking": "0.01em", "use": "Caption/footer" },
+      "metricXl": { "size": 40, "line": 44, "weight": 650, "tracking": "-0.035em", "use": "KPI chinh" },
+      "metricLg": { "size": 32, "line": 36, "weight": 650, "tracking": "-0.03em", "use": "Metric trong panel" }
+    }
+  },
+  "space": { "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40, "12": 48, "16": 64, "20": 80 },
+  "radius": { "xs": 6, "sm": 8, "md": 12, "lg": 16, "xl": 20, "full": 999 },
+  "stroke": { "hairline": 1, "emphasis": 1.5, "focusRing": 2, "focusOffset": 2 },
+  "shadow": {
+    "panel": "0 12px 40px rgba(0, 0, 0, 0.28)",
+    "float": "0 20px 64px rgba(0, 0, 0, 0.36)",
+    "glowBlue": "0 0 24px rgba(47, 107, 255, 0.18)",
+    "glowCyan": "0 0 24px rgba(24, 212, 245, 0.16)",
+    "glowGreen": "0 0 20px rgba(34, 197, 94, 0.16)",
+    "glowRed": "0 0 24px rgba(239, 68, 68, 0.16)"
+  },
+  "motion": {
+    "fast": "120ms",
+    "base": "180ms",
+    "slow": "260ms",
+    "count": "480ms",
+    "easeStandard": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "easeEmphasis": "cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  "brand": {
+    "dot": "#FF3830",
+    "wordDark": "#F8FAFC",
+    "wordLight": "#0B1220",
+    "descriptor": "#64748B",
+    "sidebar": { "brandHeight": 88, "padX": 24, "wordSize": 36, "wordLine": 40, "weight": 700, "tracking": "-0.04em", "dot": 10, "gap": 4, "dotOffset": 5, "descriptor": "11/16" }
+  }
+}

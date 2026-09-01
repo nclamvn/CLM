@@ -1,0 +1,8 @@
+/* fixture: PHAI FAIL - raw color, shadow, radius */
+.bad-card {
+  color: #f8fafc;
+  background: rgba(7, 18, 37, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  font-family: Inter, sans-serif;
+}

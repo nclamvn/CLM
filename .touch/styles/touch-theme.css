@@ -1,0 +1,264 @@
+/*
+  touch-theme.css - he token giao dien .touch v2 (dark-first).
+  Sinh tu docs/design/TOUCH_UI_DEVELOPER_HANDBOOK.md muc 3 (SOT v2) va styles/touch-design-tokens.json.
+  Luat: component chi dung var(--token), khong hardcode hex/spacing/radius. Dash-clean (0 em/en-dash).
+*/
+
+/* Inter self-host, subset vietnamese+latin, variable wght 100-900 (fontTools proof: 0 glyph thieu). */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/Inter-Variable-subset.woff2") format("woff2");
+}
+
+:root {
+  /* ---- color: background va surface (dark) ---- */
+  --color-bg-canvas: #020617;
+  --color-bg-sidebar: #030914;
+  --color-bg-surface-1: #071225;
+  --color-bg-surface-2: #0B1730;
+  --color-bg-surface-3: #0F1D3D;
+  --color-bg-overlay: rgba(2, 6, 23, 0.84);
+  --color-bg-scrim: rgba(2, 6, 23, 0.64);
+
+  /* ---- color: text (dark) ---- */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-text-inverse: #0B1220;
+  --color-text-link: #7DB4FF;
+
+  /* ---- color: border (dark) ---- */
+  --color-border-subtle: #173152;
+  --color-border-muted: rgba(148, 163, 184, 0.14);
+  --color-border-strong: #2B4D78;
+  --color-border-focus: #2F6BFF;
+
+  /* ---- semantic accent (shared hue) ---- */
+  --color-brand-dot: #FF3830;
+  --color-accent-blue: #2F6BFF;
+  --color-accent-cyan: #18D4F5;
+  --color-accent-purple: #885CF6;
+  --color-accent-amber: #F59E0B;
+  --color-accent-green: #22C55E;
+  --color-accent-red: #EF4444;
+  --color-accent-teal-dark: #083B44;
+
+  /* ---- tinted fills ---- */
+  --fill-blue-subtle: rgba(47, 107, 255, 0.10);
+  --fill-cyan-subtle: rgba(24, 212, 245, 0.08);
+  --fill-purple-subtle: rgba(136, 92, 246, 0.10);
+  --fill-amber-subtle: rgba(245, 158, 11, 0.09);
+  --fill-green-subtle: rgba(34, 197, 94, 0.09);
+  --fill-red-subtle: rgba(239, 68, 68, 0.10);
+
+  /* ---- typography ---- */
+  --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-code: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* ---- spacing (base grid 4px) ---- */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  /* half-step: mat do compact dashboard (giua cac buoc 4px) */
+  --space-1_5: 6px;
+  --space-2_5: 10px;
+  --space-3_5: 14px;
+  --space-4_5: 18px;
+
+  /* ---- radius ---- */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* ---- stroke ---- */
+  --stroke-hairline: 1px;
+  --stroke-emphasis: 1.5px;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+
+  /* ---- shadow va glow ---- */
+  --shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.28);
+  --shadow-float: 0 20px 64px rgba(0, 0, 0, 0.36);
+  --glow-blue: 0 0 24px rgba(47, 107, 255, 0.18);
+  --glow-cyan: 0 0 24px rgba(24, 212, 245, 0.16);
+  --glow-green: 0 0 20px rgba(34, 197, 94, 0.16);
+  --glow-red: 0 0 24px rgba(239, 68, 68, 0.16);
+
+  /* ---- motion ---- */
+  --motion-fast: 120ms;
+  --motion-base: 180ms;
+  --motion-slow: 260ms;
+  --motion-count: 480ms;
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-emphasis: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- brand lockup ---- */
+  --brand-word-dark: #F8FAFC;
+  --brand-word-light: #0B1220;
+  --brand-descriptor: #64748B;
+}
+
+/* light theme: chi override token doi mau; accent giu nguyen hue */
+:root[data-theme="light"] {
+  --color-bg-canvas: #F4F7FB;
+  --color-bg-sidebar: #FFFFFF;
+  --color-bg-surface-1: #FFFFFF;
+  --color-bg-surface-2: #F1F5F9;
+  --color-bg-surface-3: #EAF0F7;
+  --color-text-primary: #0B1220;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748B;
+  --color-text-link: #174FC4;
+  --color-border-subtle: #D7E0EA;
+  --color-border-strong: #AFC0D4;
+}
+
+/* ---- typography helper classes (size/line/weight/tracking tu muc 3.3) ---- */
+.t-display-01 { font-size: 48px; line-height: 56px; font-weight: 700; letter-spacing: -0.03em; }
+.t-heading-01 { font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.025em; }
+.t-heading-02 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.02em; }
+.t-title-01   { font-size: 18px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; }
+.t-title-02   { font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.005em; }
+.t-body-01    { font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: 0; }
+.t-body-02    { font-size: 14px; line-height: 22px; font-weight: 400; letter-spacing: 0; }
+.t-label-01   { font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0.01em; }
+.t-label-upper{ font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.t-mono-01    { font-family: var(--font-code); font-size: 12px; line-height: 18px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.t-caption-01 { font-size: 11px; line-height: 16px; font-weight: 400; letter-spacing: 0.01em; }
+.t-metric-xl  { font-size: 40px; line-height: 44px; font-weight: 650; letter-spacing: -0.035em; }
+.t-metric-lg  { font-size: 32px; line-height: 36px; font-weight: 650; letter-spacing: -0.03em; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+    --motion-count: 0ms;
+  }
+}
+
+/* ---- brand lockup canonical (component TouchBrand). Dot immutable, khong glow, khong gradient chu, cam dung thu cong. ---- */
+:root { --brand-dot-red: var(--color-brand-dot); }
+.touch-brand { display: inline-flex; flex-direction: column; gap: 2px; text-decoration: none; }
+.touch-brand__row { display: inline-flex; align-items: baseline; }
+.touch-brand__dot {
+  flex: none; border-radius: var(--radius-full); background: var(--brand-dot-red);
+  width: var(--brand-dot-size); height: var(--brand-dot-size);
+  margin-right: var(--brand-lockup-gap); transform: translateY(var(--brand-dot-offset));
+}
+.touch-brand--mark .touch-brand__dot { margin-right: 0; }
+.touch-brand__word {
+  font-family: var(--font-ui); font-weight: 700; letter-spacing: -0.04em; color: var(--brand-wordmark);
+  font-size: var(--brand-word-size); line-height: var(--brand-word-line);
+}
+.touch-brand__sub { font-size: 11px; line-height: 16px; font-weight: 400; color: var(--brand-descriptor); }
+.touch-brand--dark { --brand-wordmark: var(--brand-word-dark); }
+.touch-brand--light { --brand-wordmark: var(--brand-word-light); }
+.touch-brand--xs { --brand-dot-size: 5px; --brand-lockup-gap: 3px; --brand-dot-offset: 2px; --brand-word-size: 13px; --brand-word-line: 18px; }
+.touch-brand--sm { --brand-dot-size: 7px; --brand-lockup-gap: 3px; --brand-dot-offset: 3px; --brand-word-size: 24px; --brand-word-line: 28px; }
+.touch-brand--md { --brand-dot-size: 10px; --brand-lockup-gap: 4px; --brand-dot-offset: 5px; --brand-word-size: 36px; --brand-word-line: 40px; }
+.touch-brand--lg { --brand-dot-size: 12px; --brand-lockup-gap: 5px; --brand-dot-offset: 6px; --brand-word-size: 48px; --brand-word-line: 52px; }
+
+/* ---- dashboard surface / alpha / shadow tokens (Pha 1). Raw values chi song o day (file token). ---- */
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --sf-deep: #050b1a;
+  --sf-deep-red: #12060a;
+  --sb-top: #01040c;
+  --sb-bot: #04101f;
+  --tile-text: #cfe0ff;
+
+  --hi-045: rgba(255, 255, 255, 0.045);
+  --hi-04: rgba(255, 255, 255, 0.04);
+  --hi-035: rgba(255, 255, 255, 0.035);
+  --hi-028: rgba(255, 255, 255, 0.028);
+  --hi-02: rgba(255, 255, 255, 0.02);
+  --hi-015: rgba(255, 255, 255, 0.015);
+  --lo-30: rgba(0, 0, 0, 0.30);
+  --lo-24: rgba(0, 0, 0, 0.24);
+  --lo-20: rgba(0, 0, 0, 0.2);
+  --scrim: rgba(0, 0, 0, 0.62);
+
+  --a-blue-035: rgba(47, 107, 255, 0.035);
+  --a-blue-06: rgba(47, 107, 255, 0.06);
+  --a-blue-10: rgba(47, 107, 255, 0.10);
+  --a-blue-12: rgba(47, 107, 255, 0.12);
+  --a-blue-14: rgba(47, 107, 255, 0.14);
+  --a-blue-18: rgba(47, 107, 255, 0.18);
+  --a-blue-20: rgba(47, 107, 255, 0.20);
+  --a-blue-25: rgba(47, 107, 255, 0.25);
+  --a-blue-28: rgba(47, 107, 255, 0.28);
+  --a-blue-35: rgba(47, 107, 255, 0.35);
+  --a-blue-50: rgba(47, 107, 255, 0.5);
+  --a-blue-55: rgba(47, 107, 255, 0.55);
+  --a-blue-60: rgba(47, 107, 255, 0.6);
+
+  --a-purple-05: rgba(136, 92, 246, 0.05);
+  --a-purple-06: rgba(136, 92, 246, 0.06);
+  --a-purple-12: rgba(136, 92, 246, 0.12);
+  --a-purple-13: rgba(136, 92, 246, 0.13);
+  --a-purple-20: rgba(136, 92, 246, 0.20);
+  --a-purple-22: rgba(136, 92, 246, 0.22);
+  --a-purple-35: rgba(136, 92, 246, 0.35);
+
+  --a-green-04: rgba(34, 197, 94, 0.04);
+  --a-green-11: rgba(34, 197, 94, 0.11);
+  --a-green-12: rgba(34, 197, 94, 0.12);
+  --a-green-20: rgba(34, 197, 94, 0.20);
+  --a-green-30: rgba(34, 197, 94, 0.30);
+  --a-green-35: rgba(34, 197, 94, 0.35);
+  --a-green-50: rgba(34, 197, 94, 0.5);
+
+  --a-red-05: rgba(239, 68, 68, 0.05);
+  --a-red-10: rgba(239, 68, 68, 0.10);
+  --a-red-14: rgba(239, 68, 68, 0.14);
+  --a-red-16: rgba(239, 68, 68, 0.16);
+  --a-red-20: rgba(239, 68, 68, 0.2);
+  --a-red-45: rgba(239, 68, 68, 0.45);
+  --a-red-50: rgba(239, 68, 68, 0.5);
+  --a-red-55: rgba(239, 68, 68, 0.55);
+
+  --a-amber-11: rgba(245, 158, 11, 0.11);
+  --a-amber-18: rgba(245, 158, 11, 0.18);
+  --a-amber-35: rgba(245, 158, 11, 0.35);
+
+  --a-cyan-40: rgba(24, 212, 245, 0.4);
+  --a-neutral-06: rgba(148, 163, 184, 0.06);
+  --a-rail-border: rgba(55, 92, 140, 0.36);
+  --a-rail-top: rgba(7, 18, 37, 0.98);
+  --a-rail-bot: rgba(3, 10, 23, 0.99);
+  --a-bridge-glow: rgba(56, 139, 253, 0.22);
+
+  --radius-control: 10px;
+  --radius-14: 14px;
+  --radius-marker: 2px;
+
+  --shadow-surface: inset 0 1px 0 var(--hi-045), inset 0 -1px 0 var(--lo-30), 0 14px 32px var(--lo-24);
+  --shadow-sidebar: inset -1px 0 0 var(--a-blue-14), 1px 0 24px var(--lo-30);
+  --shadow-nav-active: inset 0 0 0 1px var(--a-blue-55), 0 0 20px var(--a-blue-18);
+  --shadow-nav-bar: 0 0 10px var(--color-accent-blue);
+  --shadow-inset-hi: inset 0 1px 0 var(--hi-04);
+  --shadow-rail: inset 1px 0 0 var(--hi-02), -18px 0 42px var(--lo-20);
+  --shadow-tile: 0 0 10px var(--a-blue-25);
+  --shadow-glow-green-sm: 0 0 12px var(--a-green-12);
+  --shadow-glow-red-sm: 0 0 12px var(--a-red-14);
+  --shadow-deadline: inset 0 1px 0 var(--hi-04), 0 0 30px var(--a-red-14);
+  --shadow-chart-cau: inset 0 0 0 1px var(--a-purple-20), var(--shadow-panel);
+  --shadow-queue-red: 0 0 10px var(--a-red-20);
+}
