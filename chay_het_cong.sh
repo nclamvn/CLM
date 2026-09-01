@@ -112,6 +112,14 @@ chay CNCLData khang_dinh_toi_thuong "$CNCL" 'khang dinh toi thuong|OK:' python3 
 # trong hai ngay: MobiFone so voi FECON, va Dabaco so voi AVAC. Ca hai lan deu lo ra do
 # nguoi di kiem lai chu khong do cong bat.
 chay CNCLData ap_luat_deu          "$CNCL" 'OK:|FAIL|CHUA DOI CHIEU' python3 check_ap_luat_deu.py domains/don_vi_cncl
+# TIP-02. Ho loi thu hai cung tinh chat voi 'doc cau truc bang regex': mot cong bat duoc
+# ngoai le roi di tiep nhu khong co gi. Ca that: check-emdash.mjs tung bo qua thu muc khong
+# doc duoc, tuc dem em-dash tren mot phan no chua nhin roi bao 0.
+chay CNCLData fail_closed          "$CNCL" 'OK:|FAIL|CHUA KHAI' python3 check_fail_closed.py
+# TIP-03. Bon lan trong hai ngay mot bo rang gay khong phai vi engine sai ma vi CANH cua no
+# bien mat. Cong nay khong doc duoc y nghia khoi CANH, no bat buoc khoi do phai ton tai va
+# loi khai phai khop voi ma.
+chay CNCLData rang_khai_canh       "$CNCL" 'OK:|FAIL|CHUA KHAI|HONG CU PHAP' python3 check_rang_khai_canh.py
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
@@ -145,6 +153,10 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Hai ban song sinh .json va .ts phai trung tung ky tu. Lech nguy nhat la .json dung ma
   # .ts cu: cong doc .json nen bao XANH, con trang web nguoi dung nhin thi doc .ts.
   chay .touch      lib_song_sinh    "$TOUCH" 'OK:|FAIL|LECH'   node scripts/check-lib-song-sinh.mjs
+  # TIP-01. Cong lib_song_sinh chung minh phan THAN JSON khop, nhung phan VO TypeScript
+  # thi chua ai kiem. Mot file .ts hong cu phap ma JSON van khop se qua duoc ca 32 o, va
+  # chi lo ra vao lan chup anh ke tiep, tuc co the vai ngay sau khi hong.
+  chay .touch      bien_dich_ts     "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-bien-dich.mjs
   # Do VUNG PHU cua anh moc. O nay khong can trinh duyet: no doc reports/phu_moc.json do
   # scripts/chup_man.sh sinh ra. Neu registry doi ke tu lan chup cuoi thi van tay lech va o
   # nay bao KHONG CHAY DUOC chu khong bao XANH: con so cu khong dung de ket luan duoc.
@@ -159,6 +171,7 @@ fi
 # ── Ba bo rang: cong nao cung phai tu chung minh no con can ─────────────────
 if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_ap_luat_deu   "$CNCL" 'BITE AP LUAT DEU'   python3 bite_ap_luat_deu.py
+  chay CNCLData    rang_fail_closed   "$CNCL" 'BITE FAIL CLOSED'  python3 bite_fail_closed.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py

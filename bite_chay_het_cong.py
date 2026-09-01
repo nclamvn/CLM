@@ -18,6 +18,13 @@ lam mat mot phan biet co that: KHONG BIET khac han BIET LA SAI.
 
 Chay:  python3 bite_chay_het_cong.py
 Exit 0 neu ca ba rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
+CANH
+====
+MUON DU LIEU THAT qua ban_tam, nhung KHONG doi mot trang thai cu the.
+
+Sua 24/08/2026: RANG 3 truoc day doi "tat ca xanh", tuc ngam gia dinh he luc nao cung sach.
+Gia dinh do vo ngay hom cong du_dieu_kien bao do DUNG. Nay rang chup NEN truoc khi tiem roi
+do "tro ve dung nen". Do la cach do HANH VI thay vi do mot trang thai.
 """
 import json, shutil, subprocess, sys
 from pathlib import Path

@@ -15,6 +15,10 @@ Rang 2 quan trong hon rang 1. Rang 1 chi tiet kiem thoi gian; rang 2 giu tinh tr
 
 Chay:  python3 bite_dong_bo_snapshot.py
 Exit 0 neu ca hai rang can. Exit 1 neu co rang khong can.
+CANH
+====
+MUON DU LIEU THAT qua ban_tam. Rang tiem loi vao ban sao, kho that khong bi cham. Canh phu
+thuoc vao viec kho nguon con it nhat mot ban chup de lam lech; kho rong thi bao KHONG CHAY DUOC.
 """
 import shutil, subprocess, sys
 from pathlib import Path

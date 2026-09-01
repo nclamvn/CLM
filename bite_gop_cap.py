@@ -32,6 +32,17 @@ se bam qua no, va den luc no dung thi khong ai con nhin.
 
 Chay: python3 bite_gop_cap.py
 Exit 0 neu ca bon rang can. Exit 1 neu co rang khong can. Exit 3 neu khong dung duoc canh.
+CANH
+====
+NUA TU DUNG, NUA MUON. Ghi ro vi day la bo rang da gay hai lan.
+
+RANG 2 va RANG 4b TU DUNG canh: rang tiem mot fact moi vao mot cap da ky ngay tren ban sao.
+Truoc 25/08/2026 chung doi "phai co san mot dong mang nhan chua_duyet" trong du lieu that, va
+canh do bien mat vai phut sau khi Lam ky MATCH-0005.
+
+RANG 1 va RANG 4a van MUON: hai cap CAP_MOI va CAP_GOP go cung theo ten thuc the that. Cap do
+bien mat thi rang bao N/A va exit 3, tuc KHONG CHAY DUOC chu khong xanh. Chap nhan duoc vi no
+that bai LON TIENG, nhung van la mot cho bam vao du lieu.
 """
 import json, subprocess, sys
 from pathlib import Path

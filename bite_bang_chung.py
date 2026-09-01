@@ -11,6 +11,10 @@ vao thi chu ky cua MOI match dung fact do phai bi go ra, khong duoc gan lai am t
 
 Chay:  python3 bite_bang_chung.py
 Exit 0 neu rang can. Exit 1 neu KHONG can (tuc la cong vo dung, phai sua truoc khi tin).
+CANH
+====
+MUON DU LIEU THAT. Rang chep kho vao thu muc tam roi tiem vao ban sao. Canh phu thuoc vao viec
+so chu ky con it nhat mot dong da ky; so rong thi rang bao KHONG CHAY DUOC chu khong bao xanh.
 """
 import json, shutil, subprocess, sys, tempfile
 from pathlib import Path
