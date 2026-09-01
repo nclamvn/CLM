@@ -6,14 +6,20 @@ CANH
 TU DUNG LAY CANH. Rang chep cay kho sang thu muc tam roi lam viec tren ban sao; kho that
 khong bao gio bi cham.
 
-Canh cua RANG 2 cung TU DUNG chu khong lay ban ma cu tu git. Ban dau toi dinh viet
-`git show 1f45a4f:CaoLocMatch/build_cncl_match.py` cho tien, nhung do la go cung mot SHA, tuc
-lai bam vao artefact thay vi hanh vi, dung cai bay TIP-03 duoc viet ra de chan. Nay rang tu
-gay ra HANH VI can do: bo dong "to tien cua chinh file nay" khoi ham tim duong dan, va DOI
-phep bo do phai thuc su xay ra dung mot lan.
+Canh cua RANG 2 TU DUNG CA CAY NGOAI. Hai ban truoc deu sai va deu sai cung mot kieu:
 
-Neu mai kia ham tim duong dan doi hinh dang thi RANG 2 tra KHONG CHAY DUOC chu khong am tham
-thanh khong-lam-gi.
+  ban 1  lay ban ma cu bang `git show <SHA>:...`  -> go cung mot SHA, bam vao artefact
+  ban 2  chi cat dong "to tien" roi trong vao viec may co /Users/os hoac /sessions/*/mnt
+         de ban da cat doc trom -> bam vao MOI TRUONG
+
+Ban 2 chay xanh tren may that va GAY khi chay trong khong gian cach ly (dung nhu CI): hai goc
+co dinh khong ton tai nen ban da cat thoat ngay luc nap, cong tra 3 chu khong tra 2.
+
+Nay rang tu chep mot cay ngoai vao thu muc tam roi tro ban da cat vao chinh cay do. Hanh vi
+can do la "doc mot cay khac cay minh dang nam trong", va no do duoc o MOI moi truong.
+
+Phep tro do phai xay ra dung mot lan; khong xay ra thi RANG 2 tra KHONG CHAY DUOC chu khong
+am tham thanh khong-lam-gi.
 
 RANG
 ====
@@ -74,11 +80,22 @@ def main():
     ok1 = ma == 0
     in_("RANG 1 · canh sach thi XANH", ok1, "exit 0" if ok1 else f"exit {ma}\n{ra[-400:]}")
 
-    # RANG 2 · tu gay ra hanh vi "chi nhin hai goc co dinh", khong lay ban cu tu git.
-    van, so = re.subn(re.escape(DONG_TO_TIEN) + r"\n\s*Path\(",
-                      "for g in [Path(", giu_build, count=1)
+    # RANG 2 · TU DUNG LUON CAY NGOAI, khong trong cho may co san mot cay ngoai.
+    #
+    # Ban dau rang nay chi cat dong "to tien" di, roi trong vao viec may co /Users/os hoac
+    # /sessions/*/mnt de ban da cat doc trom. Chay trong mot khong gian cach ly (dung nhu CI)
+    # thi hai goc do khong ton tai, ban da cat gay ngay luc nap, cong tra 3 chu khong tra 2,
+    # va rang bao KHONG CAN. Rang lai bam vao MOI TRUONG chu khong vao HANH VI: dung ho loi ma
+    # TIP-03 duoc viet ra de chan, va lan nay chinh toi vua mac lai trong cung mot me.
+    #
+    # Nay rang tu dung mot cay ngoai trong thu muc tam roi tro ban da cat vao do. Hanh vi can
+    # do la "doc mot cay khac cay minh dang nam trong", va no do duoc o moi moi truong.
+    ngoai = tam / "cay_ngoai"
+    shutil.copytree(goc, ngoai, ignore=BO_QUA, symlinks=True)
+    van, so = re.subn(re.escape(DONG_TO_TIEN) + r"[^\]]*\]",
+                      f"for g in [Path({str(ngoai)!r})]", giu_build, count=1)
     if so != 1:
-        print("KHONG CHAY DUOC: khong cat duoc dong tim theo to tien trong build_cncl_match.py.")
+        print("KHONG CHAY DUOC: khong tro duoc ham tim duong dan sang cay ngoai tu dung.")
         print(f"Ham tim duong dan da doi hinh dang; RANG 2 phai duoc sua theo. Tim: {DONG_TO_TIEN!r}")
         shutil.rmtree(tam, ignore_errors=True)
         return 3

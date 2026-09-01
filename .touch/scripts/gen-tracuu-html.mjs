@@ -19,7 +19,7 @@
  *
  * Chay: node scripts/gen-tracuu-html.mjs [duong/dan/ra.html]
  */
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { goc } from './goc.mjs';
 import { fileURLToPath } from 'node:url';
@@ -31,8 +31,18 @@ const TOUCH = join(HERE, '..');
 
 const RA = process.argv[2] || process.env.CLM_RA_TRACUU || (() => {
   const kb = goc('RtR', 'KnowledgeBase', 'CaoLocMatch_PoC') || goc('KnowledgeBase', 'CaoLocMatch_PoC');
-  if (!kb) { console.error('KHONG THAY thu muc CaoLocMatch_PoC de ghi ra.'); process.exit(2); }
-  return join(kb, 'CaoLocMatch_TraCuu.html');
+  if (kb) return join(kb, 'CaoLocMatch_TraCuu.html');
+  // KHONG CO KnowledgeBase THI VAN PHAI SINH DUOC (sua 02/09/2026).
+  //
+  // Ban cu thoat 2 khi khong thay CaoLocMatch_PoC. Do la thu muc TAI LIEU nam ngoai kho, va
+  // trong mot moi truong CI sach no khong bao gio co. Ket qua: o sinh_tra_cuu bao DO trong CI
+  // khong phai vi bo sinh hong ma vi CHO DE KET QUA khong co san. Do la hai chuyen khac nhau.
+  //
+  // Cho de ket qua thieu thi tu tao trong kho va noi ro, chu khong bien no thanh loi.
+  const trong = join(TOUCH, 'out');
+  if (!existsSync(trong)) mkdirSync(trong, { recursive: true });
+  console.log(`KHONG THAY CaoLocMatch_PoC, ghi vao trong kho: ${join(trong, 'CaoLocMatch_TraCuu.html')}`);
+  return join(trong, 'CaoLocMatch_TraCuu.html');
 })();
 
 // ── Doc du lieu da sinh (khong doc lai registry goc: mot nguon su that) ─────
