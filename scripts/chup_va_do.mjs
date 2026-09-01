@@ -30,10 +30,13 @@ const RP = join(TOUCH, 'reports');
 mkdirSync(join(RP, 'moc'), { recursive: true });
 
 // Tap don vi that su co trong registry, lay tu file SINH RA chu khong go tay.
-const lib = readFileSync(join(TOUCH, 'lib', 'cncl-registry.ts'), 'utf8');
-const m = lib.match(/export const cnclUnits(?::\s*CnclUnit\[\])?\s*=\s*(\[[\s\S]*?\n\]);/);
-if (!m) { console.error('KHONG CHAY DUOC: khong doc duoc cnclUnits'); process.exit(3); }
-const tenDonVi = JSON.parse(m[1]).map((u) => u.name);
+// DOC BAN JSON SONG SINH, KHONG BOC MANG RA KHOI FILE .ts BANG REGEX (sua 25/08/2026).
+// Boc bang regex la doan ranh gioi cua mot cau truc bang mat chu: no van rut duoc mot manh
+// hop le tu mot file da hong, va cong se XANH HON CA PARSER. Ban JSON do gen-cncl-data.mjs
+// sinh ra canh ban .ts, va cong check-lib-song-sinh.mjs canh hai ban luon khop.
+const libP = join(TOUCH, 'lib', 'cncl-registry.json');
+if (!existsSync(libP)) { console.error('KHONG CHAY DUOC: chua sinh lib/cncl-registry.json'); process.exit(3); }
+const tenDonVi = JSON.parse(readFileSync(libP, 'utf8')).units.map((u) => u.name);
 const vanTay = createHash('sha256').update(tenDonVi.slice().sort().join('|')).digest('hex').slice(0, 16);
 
 const browser = await chromium.launch();

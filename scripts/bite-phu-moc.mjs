@@ -27,7 +27,9 @@ const k = join(tam, 'touch');
 mkdirSync(join(k, 'lib'), { recursive: true });
 mkdirSync(join(k, 'reports'), { recursive: true });
 cpSync(join(TOUCH, 'scripts'), join(k, 'scripts'), { recursive: true });
-cpSync(join(TOUCH, 'lib', 'cncl-registry.ts'), join(k, 'lib', 'cncl-registry.ts'));
+// Cong doc ban JSON song sinh tu 25/08/2026, nen canh phai co dung file do.
+// Rang thu tu trong ngay bam vao mot artefact cu thay vi vao HANH VI can do.
+cpSync(join(TOUCH, 'lib', 'cncl-registry.json'), join(k, 'lib', 'cncl-registry.json'));
 const pPhu = join(TOUCH, 'reports', 'phu_moc.json');
 if (!existsSync(pPhu)) { console.log('KHONG CHAY DUOC: chua co reports/phu_moc.json'); rmSync(tam, { recursive: true, force: true }); process.exit(3); }
 cpSync(pPhu, join(k, 'reports', 'phu_moc.json'));

@@ -9,7 +9,7 @@
  *
  * RANG 1 · THIEU BAN CHUP THI DUNG: xoa mot ban chup ma du lieu co tro toi, bo sinh phai
  *          exit 2 va KHONG ghi de file cu.
- * RANG 2 · MAT DAU VAO THI DUNG: giau lib/cncl-match.ts di, phai exit 2 chu khong sinh ra
+ * RANG 2 · MAT DAU VAO THI DUNG: giau lib/cncl-match.json di, phai exit 2 chu khong sinh ra
  *          mot file tra cuu khong co phan match.
  * RANG 3 · KHONG BAO DO OAN: tra nguyen trang thi phai exit 0 va sinh lai duoc.
  *
@@ -41,7 +41,10 @@ cpSync(join(THAT, 'public', 'evidence'), join(TOUCH, 'public', 'evidence'), { re
 
 const GEN = join(TOUCH, 'scripts', 'gen-tracuu-html.mjs');
 const EV = join(TOUCH, 'public', 'evidence');
-const LIB = join(TOUCH, 'lib', 'cncl-match.ts');
+// Tu 25/08/2026 gen-tracuu-html.mjs doc BAN JSON song sinh, khong boc bien ra khoi .ts
+// bang regex nua. Rang nay giau dau vao de thu 'mat dau vao thi dung', nen no phai giau
+// dung file ma bo sinh THAT SU doc. Rang thu tu trong ngay bam vao mot artefact cu.
+const LIB = join(TOUCH, 'lib', 'cncl-match.json');
 const RA_TAM = join(TAM, 'CaoLocMatch_TraCuu.html');
 
 function chay() {
@@ -69,7 +72,7 @@ if (!existsSync(banChup)) {
 let ok1 = false, ok2 = false, ok3 = false;
 // Doc tu ban THAT: rang 4 doi chieu lai chinh hai file nay o cuoi.
 const giuEv = readFileSync(join(THAT, 'public', 'evidence', MOI));
-const giuLib = readFileSync(join(THAT, 'lib', 'cncl-match.ts'));
+const giuLib = readFileSync(join(THAT, 'lib', 'cncl-match.json'));
 const truocKichCo = statSync(RA).size;
 const truocNoiDung = readFileSync(RA);
 
@@ -112,7 +115,7 @@ try {
 // RANG 4 · khong cham ban that. Ba rang tren da xoa file va giau file ba lan. Neu kho that
 // con nguyen thi moi chung minh duoc ban tam that su cach ly chu khong phai doi ten cho vui.
 const thatEv = join(THAT, 'public', 'evidence', MOI);
-const thatLib = join(THAT, 'lib', 'cncl-match.ts');
+const thatLib = join(THAT, 'lib', 'cncl-match.json');
 const ok4 = existsSync(thatEv) && existsSync(thatLib) &&
   Buffer.compare(readFileSync(thatEv), giuEv) === 0 &&
   Buffer.compare(readFileSync(thatLib), giuLib) === 0;

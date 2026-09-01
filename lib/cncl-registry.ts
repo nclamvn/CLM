@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-08-25 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-09-01 · KHONG sua tay.
 // Nguon: CNCLData/domains/don_vi_cncl + Dataset_CongNgheChienLuoc
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -20,14 +20,14 @@ export type CnclNeed = {
 
 export const cnclMeta = {
   "units": 44,
-  "claims": 217,
+  "claims": 219,
   "needs": 30,
   "sources": 13,
-  "snapshots": 42,
-  "tierA": 76,
-  "tierB": 141,
+  "snapshots": 44,
+  "tierA": 77,
+  "tierB": 142,
   "nhomPhu": 10,
-  "generatedAt": "2026-08-25",
+  "generatedAt": "2026-09-01",
   "frame": "QĐ 21/2026/QĐ-TTg",
   "gate": "chay_het_cong.sh · 14 o xanh"
 } as const;
@@ -191,16 +191,20 @@ export const cnclUnits: CnclUnit[] = [
       "09"
     ],
     "capability": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC",
-    "capability2": "",
-    "bestTier": "B",
+    "capability2": "do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
+    "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "tuoitre.vn",
         "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt"
+      },
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_ncs_hesinhthai_20251103.txt"
       }
     ],
-    "tim": "công ty cổ phần công nghệ an ninh mạng quốc gia việt nam (ncs) tường lửa thế hệ mới ncs next generation firewall, nền tảng tình báo an ninh mạng ncs ti, an ninh mạng điểm cuối ncs edr, trung tâm giám sát an ninh mạng ncs soc nhóm 7 an ninh mạng và lượng tử sp 09",
+    "tim": "công ty cổ phần công nghệ an ninh mạng quốc gia việt nam (ncs) tường lửa thế hệ mới ncs next generation firewall, nền tảng tình báo an ninh mạng ncs ti, an ninh mạng điểm cuối ncs edr, trung tâm giám sát an ninh mạng ncs soc do các chuyên gia việt nam nghiên cứu, sáng tạo và làm chủ nhóm 7 an ninh mạng và lượng tử sp 09",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -230,7 +234,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
-        "note": "Ban goc KHONG viet tat 'NGFW' o bat cu dau. Chua thay nguon tier A/B neu so khach hang dang chay that."
+        "note": "Ban goc KHONG viet tat 'NGFW' o bat cu dau. Chua thay nguon tier A/B neu so khach hang dang chay that. GIU NGUON CU: da cao lai 25/08/2026. Nguon moi hon VA tier cao hon la mst.gov.vn 03/11/2025 (mst_ncs_hesinhthai_20251103.html), tier A, xac nhan lai he sinh thai san pham NCS ton tai va do chuyen gia Viet Nam lam chu. Danh sach ten san pham chi co o nguon tuoitre goc nen giu nguyen span cu. LUU Y: nguon doi chung nay CUNG da qua 180 ngay, nen day la mien tru dua tren DOI CHUNG chu khong phai dua tren nguon con trong han."
       },
       {
         "field": "san_pham_lien_quan",
@@ -241,6 +245,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span liet ke tuong lua, SOC, SIEM, SOAR -> SP09. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
+        "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+        "note": "VONG LAM MOI 25/08/2026. Nguon TIER A, moi hon nguon goc 4 thang. GIU NGUON CU: cau la mo ta muc do lam chu tai thoi diem ra mat he sinh thai 11/2025, mot su kien da xay ra. LUU Y THAT THA: bai nay 03/11/2025, tuc VAN qua nguong 180 ngay. No nang tier tu B len A va lam moi phan doi chung, nhung KHONG xoa duoc no do tuoi. Vong lam moi khong phai lan nao cung xoa duoc no."
       }
     ]
   },
@@ -469,16 +483,20 @@ export const cnclUnits: CnclUnit[] = [
       "07"
     ],
     "capability": "nghiên cứu, phát triển và thương mại hóa robot hình người",
-    "capability2": "",
+    "capability2": "đã chính thức giới thiệu Motion thế hệ 2",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "tuoitre.vn",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt"
+      },
+      {
+        "source": "cafef.vn",
+        "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt"
       }
     ],
-    "tim": "công ty cổ phần vinmotion nghiên cứu, phát triển và thương mại hóa robot hình người nhóm 3 robot và tự động hoá sp 07",
+    "tim": "công ty cổ phần vinmotion nghiên cứu, phát triển và thương mại hóa robot hình người đã chính thức giới thiệu motion thế hệ 2 nhóm 3 robot và tự động hoá sp 07",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -508,7 +526,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt",
-        "note": ""
+        "note": " GIU NGUON CU: da cao lai 25/08/2026. cafef.vn 20/08/2026 (cafef_vinmotion_minimotion_20260820.html), moi 5 ngay, xac nhan lai nguyen mau robot dau tien ra doi sau hon 3 thang thanh lap va VinMotion da ra Motion the he 2 dau nam 2026. Nang luc khong nhung con ton tai ma da tien them mot the he. Day la ca DUY NHAT trong ba ca cua vong nay xoa duoc no bang mot nguon that su con trong han."
       },
       {
         "field": "bang_chung_nang_luc",
@@ -518,7 +536,7 @@ export const cnclUnits: CnclUnit[] = [
         "tier": "B",
         "extraction": "verbatim",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt",
-        "note": "Muc NGUYEN MAU, khong phai san pham thuong mai. Viec trien khai vao nha may VinFast trong bai la KE HOACH. KHANG DINH TOI THUONG: pham vi la NGUYEN MAU ROBOT DAU TIEN CUA CHINH VINMOTION, khong phai dau tien cua Viet Nam · nguon 06/06/2025 · doc ky thi cau tu gioi han o pham vi doi ngu ky su cua VinMotion nen it rui ro nhat trong bay cai."
+        "note": "Muc NGUYEN MAU, khong phai san pham thuong mai. Viec trien khai vao nha may VinFast trong bai la KE HOACH. KHANG DINH TOI THUONG: pham vi la NGUYEN MAU ROBOT DAU TIEN CUA CHINH VINMOTION, khong phai dau tien cua Viet Nam · nguon 06/06/2025 · doc ky thi cau tu gioi han o pham vi doi ngu ky su cua VinMotion nen it rui ro nhat trong bay cai. GIU NGUON CU: da cao lai 25/08/2026. cafef.vn 20/08/2026 (cafef_vinmotion_minimotion_20260820.html), moi 5 ngay, xac nhan lai nguyen mau robot dau tien ra doi sau hon 3 thang thanh lap va VinMotion da ra Motion the he 2 dau nam 2026. Nang luc khong nhung con ton tai ma da tien them mot the he. Day la ca DUY NHAT trong ba ca cua vong nay xoa duoc no bang mot nguon that su con trong han."
       },
       {
         "field": "san_pham_lien_quan",
@@ -529,6 +547,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/tuoitre_vinmotion_20250606.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nghien cuu phat trien va thuong mai hoa robot hinh nguoi' -> SP07 Robot. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "đã chính thức giới thiệu Motion thế hệ 2",
+        "span": "Đến đầu năm 2026, VinMotion đã chính thức giới thiệu Motion thế hệ 2 – mẫu robot hình người mới nhất do đội ngũ kỹ sư Việt Nam phát triển.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt",
+        "note": "VONG LAM MOI 25/08/2026. Nguon cafef.vn 20/08/2026, MOI 5 NGAY. Su kien dau nam 2026 da xay ra. CAT VALUE CO Y: cau nguon con ve 'mau robot hinh nguoi moi nhat do doi ngu ky su Viet Nam phat trien'. Cum 'moi nhat' la khang dinh so sanh khong kiem duoc va khong phai dieu registry can khang dinh; span giu nguyen vi span la chu cua nguon."
       }
     ]
   },

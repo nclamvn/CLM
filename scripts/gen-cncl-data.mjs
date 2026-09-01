@@ -271,6 +271,15 @@ export const cnclUnits: CnclUnit[] = ${JSON.stringify(units, null, 2)};
 export const cnclNeeds: CnclNeed[] = ${JSON.stringify(needs, null, 2)};
 `, 'utf8');
 
+const matchMetaObj = {
+  daKy: webMatches.length,
+  tuChoi: tuChoi.length,
+  tongChay: matches.length,
+  rule: [...new Set(webMatches.map((m) => m.rule))].join(', '),
+  nguoiKy: [...new Set(webMatches.map((m) => m.signoff.by))].join(', '),
+  generatedAt: NOW,
+};
+
 writeFileSync(join(TOUCH, 'lib', 'cncl-match.ts'), banner('CaoLocMatch/out/matches.jsonl + signoff_ledger.jsonl') + `
 import type { CnclTier } from './cncl-registry';
 
@@ -293,19 +302,28 @@ export type RejectedPair = {
   demandId: string; supplyId: string; by: string; date: string; lyDo: string;
 };
 
-export const matchMeta = ${JSON.stringify({
-  daKy: webMatches.length,
-  tuChoi: tuChoi.length,
-  tongChay: matches.length,
-  rule: [...new Set(webMatches.map((m) => m.rule))].join(', '),
-  nguoiKy: [...new Set(webMatches.map((m) => m.signoff.by))].join(', '),
-  generatedAt: NOW,
-}, null, 2)} as const;
+export const matchMeta = ${JSON.stringify(matchMetaObj, null, 2)} as const;
 
 export const signedMatches: SignedMatch[] = ${JSON.stringify(webMatches, null, 2)};
 
 export const rejectedPairs: RejectedPair[] = ${JSON.stringify(tuChoi, null, 2)};
 `, 'utf8');
+
+// ── BAN JSON SONG SINH ──────────────────────────────────────────────────────
+// VI SAO (25/08/2026): bon script khac dang boc mang cnclUnits ra khoi file .ts BANG REGEX,
+// tuc doan ranh gioi cua mot cau truc bang mat chu. Cung dang loi vua bat duoc o
+// check_ap_luat_deu.py va check_do_tuoi.py: doc file cau truc bang regex thi co the XANH HON
+// CA PARSER, vi regex van rut duoc mot manh hop le tu mot file da hong.
+//
+// Go nguyen nhan chu khong va quanh: sinh luon mot ban JSON thuan canh ban .ts. Ai can du
+// lieu thi JSON.parse, khong ai phai doan ranh gioi nua. Ban .ts van giu vi Next can kieu
+// TypeScript, nhung no thoi la nguon DOC cua cac cong.
+//
+// Hai ban phai LUON KHOP. Cong check-lib-song-sinh.mjs canh dieu do.
+writeFileSync(join(TOUCH, 'lib', 'cncl-registry.json'),
+  JSON.stringify({ meta, units, needs }, null, 2) + '\n', 'utf8');
+writeFileSync(join(TOUCH, 'lib', 'cncl-match.json'),
+  JSON.stringify({ matchMeta: matchMetaObj, signedMatches: webMatches, rejectedPairs: tuChoi }, null, 2) + '\n', 'utf8');
 
 console.log(`REGISTRY: ${meta.units} don vi · ${meta.claims} claim · ${meta.needs} nhu cau · tier A ${meta.tierA}`);
 console.log(`MATCH   : ${webMatches.length} da ky / ${matches.length} chay ra · ${tuChoi.length} bi tu choi`);

@@ -36,36 +36,34 @@ const RA = process.argv[2] || process.env.CLM_RA_TRACUU || (() => {
 })();
 
 // ── Doc du lieu da sinh (khong doc lai registry goc: mot nguon su that) ─────
-function docTS(ten, bien) {
-  // Thieu dau vao phai NO DANG HOANG chu khong sap. Rang 2 cua bite_tracuu.mjs bat duoc
-  // chuyen nay ngay lan chay dau: file lib bien mat thi readFileSync nem loi, Node thoat
-  // exit 1 kem stack trace, va bang trang thai doc exit 1 nhu mot loi khong ro nguon con.
-  // Loi nao cung do ca, nhung "do vi thieu file X" khac han "do vi mot ngoai le nao do".
+// DOC BAN JSON SONG SINH (sua 25/08/2026). Ban cu boc tung bien ra khoi file .ts bang mot
+// RegExp dung `([\s\S]*?);\n` lam ranh gioi, tuc doan ket thuc cua mot cau truc bang mat
+// chu. Mot dau cham phay xuong dong nam trong chuoi du lieu la cat nham, va te hon: tu mot
+// file .ts da hong cu phap no van rut duoc mot manh JSON hop le roi bao XANH.
+//
+// Cung dang loi da bat duoc trong ngay o check_ap_luat_deu.py va check_do_tuoi.py.
+function docJSON(ten) {
   const p = join(TOUCH, 'lib', ten);
   if (!existsSync(p)) {
     console.error(`FAIL: khong thay lib/${ten}. Chay gen-cncl-data.mjs truoc.`);
     process.exit(2);
   }
-  const t = readFileSync(p, 'utf8');
-  const m = t.match(new RegExp(`export const ${bien}[^=]*= ([\\s\\S]*?);\\n`, 'm'));
-  if (!m) {
-    console.error(`FAIL: khong doc duoc ${bien} trong lib/${ten}. Chay gen-cncl-data.mjs truoc.`);
-    process.exit(2);
-  }
   try {
-    return JSON.parse(m[1].replace(/ as const$/, ''));
+    return JSON.parse(readFileSync(p, 'utf8'));
   } catch (e) {
-    console.error(`FAIL: ${bien} trong lib/${ten} khong phai JSON hop le. ${e.message}`);
+    console.error(`FAIL: lib/${ten} khong phai JSON hop le. ${e.message}`);
     process.exit(2);
   }
 }
 
-const meta = docTS('cncl-registry.ts', 'cnclMeta');
-const units = docTS('cncl-registry.ts', 'cnclUnits');
-const needs = docTS('cncl-registry.ts', 'cnclNeeds');
-const mmeta = docTS('cncl-match.ts', 'matchMeta');
-const matches = docTS('cncl-match.ts', 'signedMatches');
-const rejected = docTS('cncl-match.ts', 'rejectedPairs');
+const reg = docJSON('cncl-registry.json');
+const mat = docJSON('cncl-match.json');
+const meta = reg.meta;
+const units = reg.units;
+const needs = reg.needs;
+const mmeta = mat.matchMeta;
+const matches = mat.signedMatches;
+const rejected = mat.rejectedPairs;
 
 // ── Nhung ban chup nguyen van vao file ─────────────────────────────────────
 const EV = join(TOUCH, 'public', 'evidence');

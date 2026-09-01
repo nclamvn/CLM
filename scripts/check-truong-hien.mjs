@@ -51,12 +51,16 @@ const khai = JSON.parse(readFileSync(KHAI, 'utf8'));
 const lopCua = (f) => (f.startsWith('_') ? null : khai[f] ?? null);
 
 // Du lieu sinh ra. Doc bang regex JSON trong file .ts vi day la file SINH RA, cau truc co dinh.
-const libP = join(TOUCH, 'lib', 'cncl-registry.ts');
-if (!existsSync(libP)) thoat(3, 'KHONG CHAY DUOC: chua sinh lib/cncl-registry.ts');
-const lib = readFileSync(libP, 'utf8');
-const m = lib.match(/export const cnclUnits(?::\s*CnclUnit\[\])?\s*=\s*(\[[\s\S]*?\n\]);/);
-if (!m) thoat(3, 'KHONG CHAY DUOC: khong doc duoc mang cnclUnits trong lib/cncl-registry.ts');
-const units = JSON.parse(m[1]);
+// DOC BAN JSON SONG SINH, KHONG BOC MANG RA KHOI FILE .ts BANG REGEX (sua 25/08/2026).
+// Boc bang regex la doan ranh gioi cua mot cau truc bang mat chu: no van rut duoc mot manh
+// hop le tu mot file da hong, va cong se XANH HON CA PARSER. Ban JSON do gen-cncl-data.mjs
+// sinh ra canh ban .ts, va cong check-lib-song-sinh.mjs canh hai ban luon khop.
+const libP = join(TOUCH, 'lib', 'cncl-registry.json');
+if (!existsSync(libP)) thoat(3, 'KHONG CHAY DUOC: chua sinh lib/cncl-registry.json. Chay gen-cncl-data.mjs.');
+let units;
+try { units = JSON.parse(readFileSync(libP, 'utf8')).units; }
+catch (e) { thoat(3, `KHONG CHAY DUOC: lib/cncl-registry.json khong parse duoc: ${e.message}`); }
+if (!Array.isArray(units)) thoat(3, 'KHONG CHAY DUOC: lib/cncl-registry.json khong co mang units.');
 
 // Component nao that su DOC khoa do. Chi co du lieu ma khong ai render thi van la bi bo.
 const tsx = [];
