@@ -76,16 +76,49 @@ fi
 echo "  Kiem repo co that va co vao duoc khong..."
 # LAY MA THOAT TRUOC ROI MOI XET. Viet `if ! cmd; then ma=$?` la sai: trong nhanh then, $?
 # la ma cua phep phu dinh (luon 0), khong phai ma cua cmd. Bay quen thuoc cua bash.
-git ls-remote --exit-code -h "$URL" >/dev/null 2>&1; ma=$?
-if [ "$ma" -ne 0 ]; then
-  if [ "$ma" -eq 2 ]; then
-    echo "  repo co that nhung con trong (chua nhanh nao). Dung nhu mong doi."
-  else
-    thoat "khong vao duoc '$URL'.
-       Hai kha nang: repo chua duoc tao, hoac may nay chua co quyen day len.
-       Voi dia chi git@... thi thu:  ssh -T git@github.com
-       Voi dia chi https://... thi may se hoi thong tin dang nhap luc day."
-  fi
+loi=$(GIT_TERMINAL_PROMPT=0 git ls-remote --exit-code -h "$URL" 2>&1 >/dev/null); ma=$?
+if [ "$ma" -eq 0 ]; then
+  echo "  repo co that va vao duoc."
+elif [ "$ma" -eq 2 ]; then
+  echo "  repo co that nhung con trong (chua nhanh nao). Dung nhu mong doi."
+else
+  # KHONG NUOT THONG BAO LOI (sua 02/09/2026, ngay trong lan chay dau tien).
+  #
+  # Ban dau cho nay ghi ">/dev/null 2>&1" roi in ra "hai kha nang: A hoac B". Doc xong khong
+  # biet la A hay B, tuc cong dung lai dung cho nhung khong noi duoc vi sao. Chan ma khong
+  # chan doan duoc thi nguoi ta se tu di vong qua cong.
+  #
+  # GitHub co tinh tra 404 cho ca "repo khong ton tai" lan "repo rieng tu ma ban khong duoc
+  # thay", nen rieng thong bao loi khong tach duoc hai ca do. Cach tach: thu mot repo DA BIET
+  # LA VAO DUOC tren cung tai khoan. Vao duoc repo cu ma khong vao duoc repo nay thi dang
+  # nhap khong hong, van de nam o chinh repo nay.
+  echo
+  echo "  git noi nguyen van:"
+  printf '    %s\n' "$loi"
+
+  chu=$(printf '%s' "$URL" | sed -E 's#.*[:/]([^/]+)/[^/]+$#\1#')
+  echo
+  echo "  Thu mot repo cu cua cung tai khoan de tach 'chua tao' khoi 'chua co quyen'..."
+  for cu_repo in CaoLocMatch cncl-data touch-hub; do
+    u="https://github.com/$chu/$cu_repo.git"
+    l=$(GIT_TERMINAL_PROMPT=0 git ls-remote -h "$u" 2>&1 >/dev/null); m=$?
+    if [ "$m" -eq 0 ]; then
+      echo "    $cu_repo : VAO DUOC"
+      echo
+      thoat "dang nhap KHONG hong (vao duoc $cu_repo), nhung khong vao duoc repo nay.
+       Nghia la mot trong hai:
+         a) repo CLM chua duoc tao tren github.com/new (ten CLM, Private, khong tich gi)
+         b) repo da tao nhung token dang dung khong phu no. Token loai fine-grained chi phu
+            dung nhung repo da chon; repo moi tao thi phai them vao danh sach do."
+    else
+      echo "    $cu_repo : khong vao duoc"
+    fi
+  done
+  echo
+  thoat "khong vao duoc ca repo nay lan repo cu nao cua tai khoan '$chu'.
+       Nghia la van de o DANG NHAP chu khong o repo. Kiem bang:
+         git ls-remote https://github.com/$chu/CaoLocMatch.git
+       Lenh do se hoi thong tin dang nhap neu may chua co."
 fi
 
 echo
