@@ -2193,13 +2193,13 @@ export const cnclUnits: CnclUnit[] = [
       },
       {
         "field": "bang_chung_nang_luc",
-        "value": "Bộ TT&TT giao Tập đoàn Viettel phát triển Mô hình ngôn ngữ lớn Tiếng Việt và công cụ trợ lý ảo cho cán bộ, công chức",
+        "value": "được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử nghiệm phát triển Mô hình ngôn ngữ lớn Tiếng Việt và trợ lý ảo cho cán bộ, công chức",
         "span": "meta-description: Tập đoàn Viettel đã được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử nghiệm phát triển Mô hình ngôn ngữ lớn Tiếng Việt và trợ lý ảo cho cán bộ, công chức tại Bộ TT&TT.",
         "source": "vjst.vn",
         "tier": "B",
-        "extraction": "normalized",
+        "extraction": "verbatim",
         "href": "/evidence/vjst_viettel_llm_20260718.txt",
-        "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi."
+        "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026, DAY LA MOT CLAIM NOI QUA CHU KHONG PHAI LOI CHINH TA. Value cu viet 'Bo TT&TT GIAO Tap doan Viettel phat trien', trong khi nguon chi noi Viettel 'da duoc Bo TT&TT PHE DUYET LA DON VI NGHIEN CUU, THU NGHIEM phat trien'. Hai muc do khac han nhau: duoc phe duyet de thu nghiem khong phai la duoc giao nhiem vu. Value cu con bo mat hai chu 'nghien cuu, thu nghiem' va them chu 'cong cu' khong co trong nguon. Cong luat 3 KHONG bat duoc vi no chi cam value VUOT span theo chuoi con, ma claim nay mang nhan 'normalized' nen duoc mien phep so chuoi. Lo ra ngay 02/09/2026 khi do thu ca 14 claim van xuoi normalized sau khi tim thay loi chinh ta cua HTI Technology. Value moi la chuoi con nguyen van cua span nen tra extraction ve verbatim. LUU Y: claim nay nam duoi MATCH-0004 va MATCH-0008 da ky; doi value tuc la doi bang chung duoi chu ky, phai de co che khoa bang chung xu ly chu khong duoc lang le."
       },
       {
         "field": "nang_luc_mo_ta",
