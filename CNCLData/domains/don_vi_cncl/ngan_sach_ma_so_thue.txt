@@ -1,0 +1,22 @@
+# Do phu DINH DANH PHAP NHAN: bao nhieu don vi trong registry co ma so doanh nghiep lay tu
+# cong chinh thuc. Xem CNCLData/check_ma_so_thue.py.
+#
+# Con so nay chi duoc TANG. Giam la cong no: mat mot dinh danh la mat kha nang phan biet hai
+# phap nhan trung ten. Tang ma khong sua file nay cung la cong no, vi khoa se het siet.
+#
+# 02/09/2026  chot moc dau tien o 0.
+#   Khong phai vi khong tim duoc ma so nao. Trong vong khao sat 8 mau cung ngay, BON don vi
+#   tra duoc ten phap nhan day du va ma so:
+#     Y Sinh Ngoc Bao          0107448355
+#     HTI UAS                  0111330765
+#     MiSmart                  0316054643
+#     XBStation (ung vien)     0402159858, chua chac chan, chi suy tu trung dia ban va nganh
+#
+#   KHONG NAP mot ma nao, vi ca bon deu chi doc duoc qua TRANG TRA CUU TONG HOP TU NHAN.
+#   Cong quoc gia dichvuthongtin.dkkd.gov.vn chan bang captcha, va giai captcha khong phai
+#   viec duoc phep lam. Nap tu nguon tong hop la dung cai ma registry nay ton tai de chan:
+#   mot ma so sai dan toi ghep nham phap nhan, va sai lam do di thang toi nguoi dung.
+#
+#   Bon ma tren duoc ghi o day nhu MANH MOI CHO NGUOI TRA TAY, khong phai du lieu da nap.
+#   Ai mo duoc cong quoc gia va doc chinh mat thi nap, roi sua con so duoi day.
+0

@@ -178,6 +178,11 @@ chay CNCLData ap_luat_deu          "$CNCL" 'OK:|FAIL|CHUA DOI CHIEU' python3 che
 # 'Bo TT&TT GIAO' trong khi nguon chi noi 'duoc phe duyet la don vi NGHIEN CUU, THU NGHIEM',
 # nam duoi hai match da ky, khong cong nao bat duoc trong 17 ngay.
 chay CNCLData chuan_hoa           "$CNCL" 'OK:|FAIL|CHUA KHAI'   python3 check_chuan_hoa.py domains/don_vi_cncl
+
+# Dinh danh phap nhan. O nay hien do phu 0/44 va VAN XANH: de trong la hop le, cong chi cam ma
+# so den tu nguon khong chinh thuc. Nhung no IN RA khoang trong moi lan chay, vi ngay
+# 02/09/2026 viec nhan dien don vi bang ten goi tren bao da sai mot lan voi HTI.
+chay CNCLData ma_so_thue          "$CNCL" 'OK:|FAIL|CHUA CO'      python3 check_ma_so_thue.py domains/don_vi_cncl
 # TIP-02. Ho loi thu hai cung tinh chat voi 'doc cau truc bang regex': mot cong bat duoc
 # ngoai le roi di tiep nhu khong co gi. Ca that: check-emdash.mjs tung bo qua thu muc khong
 # doc duoc, tuc dem em-dash tren mot phan no chua nhin roi bao 0.
@@ -254,6 +259,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_ap_luat_deu   "$CNCL" 'BITE AP LUAT DEU'   python3 bite_ap_luat_deu.py
   chay CNCLData    rang_fail_closed   "$CNCL" 'BITE FAIL CLOSED'  python3 bite_fail_closed.py
   chay CNCLData    rang_chuan_hoa     "$CNCL" 'BITE CHUAN HOA'   python3 bite_chuan_hoa.py
+  chay CNCLData    rang_ma_so_thue    "$CNCL" 'BITE MA SO THUE'  python3 bite_ma_so_thue.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py

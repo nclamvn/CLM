@@ -44,7 +44,12 @@ from pathlib import Path
 
 # Truong VAN XUOI: value la chu trich tu span, nen so tung tu duoc.
 TRUONG_VAN = {"nang_luc_mo_ta", "nang_luc_mo_ta_2", "bang_chung_nang_luc", "ten_don_vi",
-              "location", "source"}
+              "location", "source",
+              # ma_so_thue nam o day chu KHONG o TRUONG_MA_SO, du no la mot day so. Ly do:
+              # "ma so" trong TRUONG_MA_SO nghia la NHAN PHAN LOAI suy ra theo luat domain
+              # (nhom 9, san pham 22), thu khong co trong nguon. Ma so doanh nghiep thi nguoc
+              # lai: no PHAI co nguyen van trong span, va do la diem chinh cua no.
+              "ma_so_thue"}
 
 # Truong MA SO: value la nhan phan loai suy ra theo luat domain, khong phai chu trich.
 TRUONG_MA_SO = {"nhom_cncl", "san_pham_lien_quan", "loai_hinh", "nhom_cncl_phu_3",

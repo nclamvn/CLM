@@ -5,6 +5,8 @@ schema:
   type_field: loai_hinh          # DN / vien / truong
   fields:
     - ten_don_vi
+    - ma_so_thue                  # dinh danh phap nhan, CHI tu cong chinh thuc.
+                                  # Xem CNCLData/check_ma_so_thue.py. De trong la hop le.
     - loai_hinh
     - nhom_cncl                   # 1..10 theo QD 21/2026
     - san_pham_lien_quan          # 1..30 theo QD 21/2026, hoac de trong
