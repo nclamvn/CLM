@@ -172,6 +172,12 @@ chay CNCLData khang_dinh_toi_thuong "$CNCL" 'khang dinh toi thuong|OK:' python3 
 # trong hai ngay: MobiFone so voi FECON, va Dabaco so voi AVAC. Ca hai lan deu lo ra do
 # nguoi di kiem lai chu khong do cong bat.
 chay CNCLData ap_luat_deu          "$CNCL" 'OK:|FAIL|CHUA DOI CHIEU' python3 check_ap_luat_deu.py domains/don_vi_cncl
+
+# Nhan 'normalized' khong duoc lam cua sau. Luat 3 cam value VUOT span nhung kiem bang phep
+# chuoi con, va claim normalized duoc mien phep do. Ngay 02/09/2026 mot claim Viettel viet
+# 'Bo TT&TT GIAO' trong khi nguon chi noi 'duoc phe duyet la don vi NGHIEN CUU, THU NGHIEM',
+# nam duoi hai match da ky, khong cong nao bat duoc trong 17 ngay.
+chay CNCLData chuan_hoa           "$CNCL" 'OK:|FAIL|CHUA KHAI'   python3 check_chuan_hoa.py domains/don_vi_cncl
 # TIP-02. Ho loi thu hai cung tinh chat voi 'doc cau truc bang regex': mot cong bat duoc
 # ngoai le roi di tiep nhu khong co gi. Ca that: check-emdash.mjs tung bo qua thu muc khong
 # doc duoc, tuc dem em-dash tren mot phan no chua nhin roi bao 0.
@@ -247,6 +253,7 @@ fi
 if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_ap_luat_deu   "$CNCL" 'BITE AP LUAT DEU'   python3 bite_ap_luat_deu.py
   chay CNCLData    rang_fail_closed   "$CNCL" 'BITE FAIL CLOSED'  python3 bite_fail_closed.py
+  chay CNCLData    rang_chuan_hoa     "$CNCL" 'BITE CHUAN HOA'   python3 bite_chuan_hoa.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py

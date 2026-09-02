@@ -5,8 +5,8 @@
     "needs": 30,
     "sources": 13,
     "snapshots": 45,
-    "tierA": 77,
-    "tierB": 144,
+    "tierA": 78,
+    "tierB": 143,
     "nhomPhu": 10,
     "generatedAt": "2026-09-02",
     "frame": "QĐ 21/2026/QĐ-TTg",
@@ -176,12 +176,12 @@
       "favorsRtr": false,
       "sources": [
         {
-          "source": "tuoitre.vn",
-          "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt"
-        },
-        {
           "source": "mst.gov.vn",
           "href": "/evidence/mst_ncs_hesinhthai_20251103.txt"
+        },
+        {
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt"
         }
       ],
       "tim": "công ty cổ phần công nghệ an ninh mạng quốc gia việt nam (ncs) tường lửa thế hệ mới ncs next generation firewall, nền tảng tình báo an ninh mạng ncs ti, an ninh mạng điểm cuối ncs edr, trung tâm giám sát an ninh mạng ncs soc do các chuyên gia việt nam nghiên cứu, sáng tạo và làm chủ nhóm 7 an ninh mạng và lượng tử sp 09",
@@ -189,12 +189,12 @@
         {
           "field": "ten_don_vi",
           "value": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
-          "span": "Ngày 2-7 tại Hà Nội, Công ty cổ phần Công nghệ [an ninh mạng](https://tuoitre.",
-          "source": "tuoitre.vn",
-          "tier": "B",
+          "span": "Nhằm giúp các cơ quan, doanh nghiệp xây dựng nền tảng bảo mật vững chắc, hiệu quả, tiết kiệm chi phí vận hành và đáp ứng yêu cầu ngày càng cao của môi trường số, bộ giải pháp toàn diện ứng dụng trí tuệ nhân tạo (AI) đã chính thức được Công ty Cổ phần Công nghệ An ninh mạng Quốc gia Việt Nam NCS cho ra mắt.",
+          "source": "mst.gov.vn",
+          "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span."
+          "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+          "note": "NEO LAI NGUON 02/09/2026 vi BAN CHUP CU BI CAT CUT. Span cu tro toi tuoitre_ncs_hesinhthai_20250702.html, va dong do trong CHINH BAN CHUP ket thuc giua mot duong dan: 'Cong ty co phan Cong nghe [an ninh mang](https://tuoitre.' Muc trong ban chup ten la 'Ten day du phap nhan NCS', tuc dong do duoc cao RIENG de lam bang chung cho ten phap nhan, va no hong dung o cho no phai lam viec. Ba claim khac cua NCS dung mot dong khac cua ban chup do, dong do con nguyen, nen chi claim nay bi anh huong. Nay tro sang mst.gov.vn 03/11/2025, TIER A va moi hon, cau noi du ten phap nhan. CHUAN HOA CO CHU DICH: nguon viet hoa 'An ninh mang Quoc gia' con value viet thuong, va nguon khong dat NCS trong ngoac don. Chi khac cach viet hoa va dau ngoac, khong them bot chu nao. Giu nhan normalized vi hai khac biet do la that. Lo ra ngay 02/09/2026 nho cong check_chuan_hoa.py vua dung."
         },
         {
           "field": "nhom_cncl",
@@ -271,7 +271,7 @@
           "tier": "B",
           "extraction": "normalized",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
-          "note": "Nguon goi tat 'VinES'; ten day du chuan hoa. Tach phap nhan khoi VinAI/VinBigData/VinMotion da co trong registry. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
+          "note": "Nguon goi tat 'VinES'; ten day du chuan hoa. Tach phap nhan khoi VinAI/VinBigData/VinMotion da co trong registry. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi. CHUAN HOA CO CHU DICH: span goi tat la 'VinES'; hai chu 'Co phan' va cum 'Giai phap Nang luong' thuoc ten phap nhan day du, khong co trong cau nay cua nguon. Day la ten dang ky kinh doanh chu khong phai chu cua nha bao, nen phai khai."
         },
         {
           "field": "nhom_cncl",
@@ -2189,7 +2189,7 @@
           "tier": "B",
           "extraction": "normalized",
           "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span."
+          "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span. CHUAN HOA CO CHU DICH: chu 'voi' khong co trong nguon. No duoc chen lam TU NOI khi rut gon cum 'duoc huan luyen ho tro do dai ngu canh' thanh 'voi do dai ngu canh'. Mot tu noi khong them khang dinh nao: con so 4096 token va cum '(context length)' deu nguyen van cua nguon."
         },
         {
           "field": "nhom_cncl_phu_6",
@@ -2720,7 +2720,7 @@
           "tier": "B",
           "extraction": "normalized",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
-          "note": "Span dung dang rut gon 'Vien'; ten day du lay tu tieu de bai cua vjst.vn (bai viet ve Vien Han lam Khoa hoc va Cong nghe Viet Nam). Da doi tu verbatim sang normalized sau khi cong luat 3 cua Chu thau bat loi ghi nhan sai cua Tho."
+          "note": "Span dung dang rut gon 'Vien'; ten day du lay tu tieu de bai cua vjst.vn (bai viet ve Vien Han lam Khoa hoc va Cong nghe Viet Nam). Da doi tu verbatim sang normalized sau khi cong luat 3 cua Chu thau bat loi ghi nhan sai cua Tho. CHUAN HOA CO CHU DICH: span goi tat la 'Vien'; sau chu 'Han lam Khoa hoc Cong nghe Viet Nam' lay tu TIEU DE bai cua vjst.vn, khong phai tu tu suy. Tieu de nam trong chinh ban chup, dong bat dau bang '# Vien Han lam Khoa hoc va Cong nghe Viet Nam'."
         },
         {
           "field": "loai_hinh",
@@ -2864,7 +2864,7 @@
           "tier": "A",
           "extraction": "normalized",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
-          "note": "Nguon trong cau nay goi tat 'IVAC'; ten day du lay tu tieu de va than bai."
+          "note": "Nguon trong cau nay goi tat 'IVAC'; ten day du lay tu tieu de va than bai. CHUAN HOA CO CHU DICH: span goi tat la 'IVAC'; cum 'Vien Vaccine va sinh pham y te' lay tu tieu de va than bai cua cung ban chup, khong phai tu tu suy."
         },
         {
           "field": "loai_hinh",
