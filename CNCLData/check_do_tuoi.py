@@ -148,10 +148,13 @@ def main(domain_dir, hom_nay):
 
     if qua_han:
         print(f"\nQUA HAN, THIEU LY DO ({len(qua_han)}):")
-        for tuoi, c in sorted(qua_han, key=lambda x: -x[0])[:12]:
+        # --tat-ca de in HET, khong cat o 12. Them 02/09/2026 khi chuan bi vong lam tuoi:
+        # muon tra no thi phai nhin duoc ca mon no, ma ban cu chi cho thay hon mot nua.
+        gioi_han = None if "--tat-ca" in sys.argv else 12
+        for tuoi, c in sorted(qua_han, key=lambda x: -x[0])[:gioi_han]:
             print(f"  {tuoi:5} ngay · {c['entity'][:36]:36} · {c['field'][:20]:20} · {c['capture']['snapshot']}")
-        if len(qua_han) > 12:
-            print(f"  ... con {len(qua_han) - 12} claim nua")
+        if len(qua_han) > 12 and gioi_han is not None:
+            print(f"  ... con {len(qua_han) - 12} claim nua. Dung --tat-ca de in het.")
 
     if ngan_sach is None:
         print(f"\nKHONG CHAY DUOC: thieu {ns_file.name}. Ghi vao do con so hien tai ({len(qua_han)}) "

@@ -1,4 +1,4 @@
-21
+18
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -59,3 +59,19 @@
 #
 # Con so nay chi duoc GIAM. Tang la cong no. Giam ma khong sua file nay cung la cong no,
 # vi khoa se het siet.
+
+02/09/2026 21 -> 18. Vong lam moi THAT, khong phai vong nap moi.
+  Ba claim ra khoi muc 'chua co ly do' KHONG phai vi tim duoc nguon moi hon, ma vi da di
+  tim va ghi ra ket qua di tim. Ca ba deu la GIU NGUON CU co can cu:
+    Vien Han lam · nang_luc_mo_ta  khong co nguon nao sau 23/02/2026. Ung vien gan nhat
+                                   (nhandan post944271) CUNG NGAY va gan nhu cung chu voi
+                                   ban vjst dang dung, nhieu kha nang cung mot thong cao,
+                                   nen khong tinh la nguon doc lap thu hai.
+    RtR · nang_luc_mo_ta           co nguon moi hon (cafef 18/04/2026) nhung noi nang luc
+                                   KHAC, khong nhac lai tai trong 15 kg hay 56 phut bay.
+    RtR · bang_chung_nang_luc      nguon moi khong nhac lai bang sang che My/Uc, khong nhac
+                                   Los Alamos, va ghi ro 'Hien chua co don dat hang ngay'.
+  BAI HOC DO DUOC: mot vong lam moi KHONG chac ha duoc no. Tim thay bai moi hon ma bai do
+  noi chuyen khac thi van khong lam moi duoc claim cu. Ghi ra day de lan sau khong ai ky
+  vong sai rang cu cao lai la no tu giam.
+

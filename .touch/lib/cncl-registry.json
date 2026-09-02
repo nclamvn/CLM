@@ -1835,7 +1835,7 @@
           "tier": "B",
           "extraction": "normalized",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi."
+          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. GIU NGUON CU: da di tim nguon moi ngay 02/09/2026. Nguon moi hon (cafef.vn 18/04/2026) KHONG nhac lai bang sang che My/Uc, cung khong nhac Los Alamos hay canh sat My, Ha Lan. No noi mot su kien khac (bay trinh dien tai Xponential) va ghi ro 'Hien chua co don dat hang ngay'. Khong khang dinh lai duoc claim nay."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -1845,7 +1845,7 @@
           "tier": "B",
           "extraction": "verbatim",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "note": "GIU NGUON CU: da di tim nguon moi ngay 02/09/2026. Co nguon moi hon that (cafef.vn 18/04/2026 ve Xponential 2026), nhung bai do noi ve NANG LUC KHAC (ket noi Starlink, gimbal OmniSight, gap 14 lan) va KHONG nhac lai tai trong 15 kg hay thoi gian bay 56 phut. Nguon moi khong khang dinh lai claim nay thi khong duoc dung de lam moi claim nay."
         }
       ]
     },
@@ -2730,7 +2730,7 @@
           "tier": "B",
           "extraction": "verbatim",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
-          "note": "NANG LUC CAP NGHIEN CUU (lab/pilot), chua phai day chuyen cong nghiep. Nguon goi ten PHAP NHAN ME, khong chi dich danh vien thanh vien nao."
+          "note": "NANG LUC CAP NGHIEN CUU (lab/pilot), chua phai day chuyen cong nghiep. Nguon goi ten PHAP NHAN ME, khong chi dich danh vien thanh vien nao. GIU NGUON CU: da di tim nguon moi ngay 02/09/2026, khong thay nguon tier A hoac B nao dang sau 23/02/2026 khang dinh lai nang luc nay. Ung vien gan nhat la nhandan.vn post944271, nhung bai do CUNG DANG 23/02/2026 va cau ve nang luong/vat lieu gan nhu trung tung chu voi ban vjst dang dung, nen nhieu kha nang hai bai cung mot thong cao. KHONG tinh la nguon doc lap thu hai, va cung khong moi hon. Ket luan doc duoc: nang luc nay chua duoc khang dinh lai cong khai trong hon 6 thang."
         }
       ]
     },
