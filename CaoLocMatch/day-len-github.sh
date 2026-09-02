@@ -140,7 +140,9 @@ echo "==========================================================================
 echo "DA DAY XONG VA DOI CHIEU KHOP: $URL"
 echo
 echo "Buoc ke: mo tab Actions tren GitHub. Chuoi cong se tu chay va phai ra"
-echo "  38 xanh · 0 do · 3 hoan"
+# KHONG go cung con so o day nua. Ban dau dong nay ghi "38 xanh · 3 hoan", roi chuoi cong len
+# 45 o ma dong nay khong ai sua, tuc script tu in ra mot con so cu nhu the no la so hien hanh.
+echo "  so o dang co: $(grep -c '^chay \|^  chay ' "$KHO/CaoLocMatch/chay_het_cong.sh") o, tru 3 o duoc hoan"
 echo "Ba o hoan phai duoc in ra kem ly do o cuoi log. Khong thay muc do la co gi sai."
 echo
 echo "DIEM DUNG: van KHONG xoa bon kho cu truoc 01/10/2026."
