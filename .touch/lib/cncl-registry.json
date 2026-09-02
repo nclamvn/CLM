@@ -1,12 +1,12 @@
 {
   "meta": {
     "units": 44,
-    "claims": 222,
+    "claims": 221,
     "needs": 30,
     "sources": 13,
-    "snapshots": 46,
+    "snapshots": 45,
     "tierA": 78,
-    "tierB": 144,
+    "tierB": 143,
     "nhomPhu": 10,
     "generatedAt": "2026-09-02",
     "frame": "QĐ 21/2026/QĐ-TTg",
@@ -1303,20 +1303,16 @@
         "22"
       ],
       "capability": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
-      "capability2": "lựa chọn chiến lược làm chủ toàn bộ chuỗi công nghệ UAV, từ thiết kế khí động học, hệ thống điều khiển bay, truyền dẫn dữ liệu, định vị, điều hướng đến phần mềm quản lý nhiệm vụ và trung tâm điều hành",
+      "capability2": "",
       "bestTier": "B",
       "favorsRtr": false,
       "sources": [
         {
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt"
-        },
-        {
-          "source": "nhandan.vn",
-          "href": "/evidence/nhandan_hti_japandrone_20260604.txt"
         }
       ],
-      "tim": "hti technology horus p02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt lựa chọn chiến lược làm chủ toàn bộ chuỗi công nghệ uav, từ thiết kế khí động học, hệ thống điều khiển bay, truyền dẫn dữ liệu, định vị, điều hướng đến phần mềm quản lý nhiệm vụ và trung tâm điều hành nhóm 9 hàng không và vũ trụ sp 22",
+      "tim": "hti technology horus p02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt nhóm 9 hàng không và vũ trụ sp 22",
       "evidence": [
         {
           "field": "ten_don_vi",
@@ -1357,16 +1353,6 @@
           "extraction": "normalized",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "note": "Span truoc day sai chinh ta 'yen lat'; nguon viet 'yen lang'. Tra ve nguyen van 16/08/2026. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026: value van con giu loi chinh ta 'yen lat' trong khi span da duoc tra ve nguyen van 'yen lang' tu 16/08/2026. Mot lan va lam nua chung: sua span ma quen sua value, nen registry khai mot chu KHONG CO trong nguon suot 17 ngay. Van giu extraction 'normalized', va day la cho toi vua tu sai roi tu sua trong cung mot luot: doi sang 'verbatim' thi cong luat 3 bao DO ngay, vi span mang dau markdown **Horus P02** con value bo dau do di. Bo ky tu dinh dang la mot phep chuan hoa that, nen nhan 'normalized' moi dung. GIU NGUON CU: da di tim nguon moi ngay 02/09/2026. Co nguon moi hon (nhandan.vn 04/06/2026) nhung bai do noi ve chien luoc lam chu chuoi cong nghe va ve Horus QS24, KHONG nhac lai kha nang hoat dong yen lang hay cam bien nhiet cua Horus P02. Nguon moi khong khang dinh lai claim nay thi khong duoc dung de lam moi claim nay."
-        },
-        {
-          "field": "nang_luc_mo_ta_2",
-          "value": "lựa chọn chiến lược làm chủ toàn bộ chuỗi công nghệ UAV, từ thiết kế khí động học, hệ thống điều khiển bay, truyền dẫn dữ liệu, định vị, điều hướng đến phần mềm quản lý nhiệm vụ và trung tâm điều hành",
-          "span": "Khác với xu hướng tập trung phát triển thiết bị bay đơn lẻ, HTI UAS lựa chọn chiến lược làm chủ toàn bộ chuỗi công nghệ UAV, từ thiết kế khí động học, hệ thống điều khiển bay, truyền dẫn dữ liệu, định vị, điều hướng đến phần mềm quản lý nhiệm vụ và trung tâm điều hành.",
-          "source": "nhandan.vn",
-          "tier": "B",
-          "extraction": "verbatim",
-          "href": "/evidence/nhandan_hti_japandrone_20260604.txt",
-          "note": "BAC CAU DANH TINH: nguon goi don vi la 'HTI UAS', registry ghi 'HTI Technology'. Can cu bac cau va cho con ho ghi day du o domain.yaml muc ap_dung_02_09_2026_hti. Tom tat: bac cau dua tren viec hai bao khac nhau cung gan san pham Horus P02 cho don vi ho goi ten; KHONG nguon nao neu ten phap nhan day du nen khong doi chieu duoc giay dang ky kinh doanh. Neu sau nay lo ra la hai phap nhan thi claim nay phai tach ra entity rieng. Nguon KHONG neu con so nao do duoc: khong san luong, khong khach hang, khong ket qua do kiem doc lap. Muc do la MO TA CHIEN LUOC do don vi tu neu tai trien lam."
         }
       ]
     },
