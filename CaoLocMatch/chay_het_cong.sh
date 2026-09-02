@@ -199,6 +199,10 @@ chay CaoLocMatch doc_dung_kho     "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 check_d
 # 3 chu khong tra 0: vang ban doc la khong doi chieu duoc, khong phai la khop.
 chay CaoLocMatch dong_bo_cau      "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 dong_bo_cau.py
 
+# Bi mat trong file duoc git theo doi. Chay MOI LUOT chu khong chi truoc khi day: mot token
+# lot vao commit hom nay ma thang sau moi day len thi van la token da nam trong lich su.
+chay CaoLocMatch bi_mat           "$CLM" 'OK:|FAIL:|KHONG CHAY'  python3 check_bi_mat.py
+
 # ── Web: so tren trang phai la so sinh tu registry, khong go tay ────────────
 # Bo sinh la mot cong chu khong phai tien ich: no FAIL khi thieu ban chup goc, va no la
 # thu duy nhat duoc phep viet lib/cncl-*.ts. Chay no o day de bang trang thai bat duoc
@@ -251,6 +255,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CaoLocMatch rang_dong_bo_cau  "$CLM" 'BITE DONG BO CAU'   python3 bite_dong_bo_cau.py
   # Rang cua chinh co --hoan o dau file nay. Dung o gia nen chay trong mot phan giay.
   chay CaoLocMatch rang_hoan        "$CLM" 'BITE HOAN'           python3 bite_hoan.py
+  chay CaoLocMatch rang_bi_mat      "$CLM" 'BITE BI MAT'         python3 bite_bi_mat.py
   # Rang cua CHINH cai bang nay. Khong de quy vo han: no goi lai script voi --nhanh,
   # ma --nhanh bo qua toan bo khoi rang, nen chi sau dung mot tang.
   chay CaoLocMatch rang_chinh_bang  "$CLM" 'BITE CHAY HET'       python3 bite_chay_het_cong.py
