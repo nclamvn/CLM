@@ -1302,7 +1302,7 @@
       "sanPham": [
         "22"
       ],
-      "capability": "Horus P02 với khả năng hoạt động yên lặt và trang bị cảm biến nhiệt",
+      "capability": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
       "capability2": "",
       "bestTier": "B",
       "favorsRtr": false,
@@ -1312,7 +1312,7 @@
           "href": "/evidence/cafef_dn_uav_20250903.txt"
         }
       ],
-      "tim": "hti technology horus p02 với khả năng hoạt động yên lặt và trang bị cảm biến nhiệt nhóm 9 hàng không và vũ trụ sp 22",
+      "tim": "hti technology horus p02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt nhóm 9 hàng không và vũ trụ sp 22",
       "evidence": [
         {
           "field": "ten_don_vi",
@@ -1346,13 +1346,13 @@
         },
         {
           "field": "nang_luc_mo_ta",
-          "value": "Horus P02 với khả năng hoạt động yên lặt và trang bị cảm biến nhiệt",
+          "value": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
           "span": "phức tạp như rừng núi, trong khi HTI Technology cung cấp  **Horus P02** với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt, tối ưu cho các hoạt động trinh sát, cứu hộ.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "normalized",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "Span truoc day sai chinh ta 'yen lat'; nguon viet 'yen lang'. Tra ve nguyen van 16/08/2026. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi."
+          "note": "Span truoc day sai chinh ta 'yen lat'; nguon viet 'yen lang'. Tra ve nguyen van 16/08/2026. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026: value van con giu loi chinh ta 'yen lat' trong khi span da duoc tra ve nguyen van 'yen lang' tu 16/08/2026. Mot lan va lam nua chung: sua span ma quen sua value, nen registry khai mot chu KHONG CO trong nguon suot 17 ngay. Van giu extraction 'normalized', va day la cho toi vua tu sai roi tu sua trong cung mot luot: doi sang 'verbatim' thi cong luat 3 bao DO ngay, vi span mang dau markdown **Horus P02** con value bo dau do di. Bo ky tu dinh dang la mot phep chuan hoa that, nen nhan 'normalized' moi dung."
         }
       ]
     },
