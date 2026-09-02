@@ -20,12 +20,12 @@ export type CnclNeed = {
 
 export const cnclMeta = {
   "units": 44,
-  "claims": 219,
+  "claims": 221,
   "needs": 30,
   "sources": 13,
-  "snapshots": 44,
+  "snapshots": 45,
   "tierA": 77,
-  "tierB": 142,
+  "tierB": 144,
   "nhomPhu": 10,
   "generatedAt": "2026-09-02",
   "frame": "QĐ 21/2026/QĐ-TTg",
@@ -1796,16 +1796,16 @@ export const cnclUnits: CnclUnit[] = [
       "22"
     ],
     "capability": "Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải",
-    "capability2": "",
+    "capability2": "sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành",
     "bestTier": "B",
     "favorsRtr": true,
     "sources": [
       {
         "source": "cafef.vn",
-        "href": "/evidence/cafef_dn_uav_20250903.txt"
+        "href": "/evidence/cafef_rtr_xponential_20260418.txt"
       }
     ],
-    "tim": "realtime robotics (rtr) dn doanh nghiệp drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "realtime robotics (rtr) dn doanh nghiệp drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải sử dụng kết nối vệ tinh starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ uav lên vệ tinh rồi truyền ngược về người vận hành nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1866,6 +1866,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/cafef_dn_uav_20250903.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 02/09/2026. Co nguon moi hon that (cafef.vn 18/04/2026 ve Xponential 2026), nhung bai do noi ve NANG LUC KHAC (ket noi Starlink, gimbal OmniSight, gap 14 lan) va KHONG nhac lai tai trong 15 kg hay thoi gian bay 56 phut. Nguon moi khong khang dinh lai claim nay thi khong duoc dung de lam moi claim nay."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành",
+        "span": "Thay vì giới hạn khoảng cách truyền tín hiệu trực tiếp khoảng 10km như các hệ thống thông thường, Hera sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_rtr_xponential_20260418.txt",
+        "note": "HANG NGUON: TU KHAI. Toan bo noi dung nang luc trong bai den tu phat ngon cua TS Luong Viet Quoc, nha sang lap kiem CEO RtR; bao dang lai, khong kiem chung doc lap. RtR cung la ben van hanh registry nay, nen claim ve chinh minh phai doc voi canh giac cao hon claim ve don vi khac. Nguon KHONG neu tam bay thuc do duoc, khong neu do tre, khong neu da co khach nao dung. Muc do la MO TA THIET KE, chua phai ket qua do kiem doc lap. DU DIEU KIEN DA XET: cong bat vi trong value co chu 'van hanh'. Doc lai thi day la BAO GIA TREN MOT TU: cum day du la 'truyen nguoc ve NGUOI VAN HANH', tuc nguoi lai drone nhan hinh anh, KHONG phai RtR di van hanh cong nghe cua ben khac. Chinh bai nay ghi 'Hera la may bay khong nguoi lai do doanh nghiep Viet Nam thiet ke va che tao', tuc phan tu phat trien nam ngay trong nguon. SO VOI DA NAP: MobiFone · nang_luc_mo_ta · MobiFone bi loai 16/08/2026 vi nguon chi chung minh trien khai mang thuong mai va KHONG tim thay bat ky phan tu tu thiet ke hay che tao nao. RtR khac o dung cho do: nguon noi thang la thiet ke va che tao. Cung mot luat, hai ket qua, vi bang chung khac nhau. GHI RO DE SAU NAY KIEM DUOC: RtR la ben van hanh registry nay, nen o day co xung dot loi ich. Toi KHONG sua cong de RtR di qua. Cong van giu nguyen luat cu; cai duoc them chi la dong can cu nay, dung the thuc ma FECON va Dabaco da phai lam."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Hera trở thành drone duy nhất bay thành công trong điều kiện thời tiết khắc nghiệt",
+        "span": "Nhờ đó, Hera trở thành drone duy nhất bay thành công trong điều kiện thời tiết khắc nghiệt, tạo ấn tượng với giới chuyên môn và truyền thông tại sự kiện.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_rtr_xponential_20260418.txt",
+        "note": "HANG NGUON: TU KHAI. Toan bo noi dung nang luc trong bai den tu phat ngon cua TS Luong Viet Quoc, nha sang lap kiem CEO RtR; bao dang lai, khong kiem chung doc lap. RtR cung la ben van hanh registry nay, nen claim ve chinh minh phai doc voi canh giac cao hon claim ve don vi khac. KHANG DINH TOI THUONG: pham vi la MOT BUOI, MOT NGAY, MOT SU KIEN. 'Duy nhat' o day co nghia: trong buoi Media Preview cua Xponential 2026 ngay 13/04/2026, cac don vi khac deu TU HUY bay vi gio manh, con doi Hera van bay. No KHONG co nghia Hera la drone duy nhat tren the gioi bay duoc trong gio manh, cung khong phai ket qua cua mot phep so sanh co doi chung. Nguon cung ghi ro 'Hien chua co don dat hang ngay vi vua hoan tat bay trinh dien'."
       }
     ]
   },
