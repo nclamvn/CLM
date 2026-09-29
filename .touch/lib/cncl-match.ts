@@ -12,6 +12,8 @@ export type SignedMatch = {
   id: string; score: number; rule: string; engine: string;
   demandId: string; supplyId: string;
   nhomCau: number | null; nhomCung: number[]; quaChuoiGiaTri: boolean; tokenGiao: string[];
+  tokenCau: string[];
+  canhChuoi: { tu: number; den: number; lyDo: string; trangThai: string } | null;
   signoff: { by: string; role: string; date: string };
   khoaBangChung: string | null;
   chuaDuyet: string[];
@@ -29,7 +31,18 @@ export const matchMeta = {
   "tongChay": 11,
   "rule": "anchor_group_overlap_v2",
   "nguoiKy": "Lam Nguyen",
-  "generatedAt": "2026-09-29"
+  "generatedAt": "2026-09-29",
+  "congThuc": {
+    "wGiao": 0.7,
+    "wTier": 0.2,
+    "wDiaDiem": 0.1,
+    "tierW": {
+      "A": 1,
+      "B": 0.75,
+      "C": 0.3
+    },
+    "nguongGiao": 0.5
+  }
 } as const;
 
 export const signedMatches: SignedMatch[] = [
@@ -49,6 +62,13 @@ export const signedMatches: SignedMatch[] = [
       "hành",
       "động"
     ],
+    "tokenCau": [
+      "hành",
+      "nghiệp",
+      "robot",
+      "động"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -99,6 +119,17 @@ export const signedMatches: SignedMatch[] = [
       "pin",
       "trữ"
     ],
+    "tokenCau": [
+      "bess",
+      "hợp",
+      "lượng",
+      "năng",
+      "pin",
+      "quy",
+      "trữ",
+      "tích"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -147,6 +178,10 @@ export const signedMatches: SignedMatch[] = [
     "tokenGiao": [
       "chip"
     ],
+    "tokenCau": [
+      "chip"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -194,6 +229,10 @@ export const signedMatches: SignedMatch[] = [
     "tokenGiao": [
       "chip"
     ],
+    "tokenCau": [
+      "chip"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -250,6 +289,10 @@ export const signedMatches: SignedMatch[] = [
     "tokenGiao": [
       "chip"
     ],
+    "tokenCau": [
+      "chip"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -302,6 +345,21 @@ export const signedMatches: SignedMatch[] = [
       "tiếng",
       "việt"
     ],
+    "tokenCau": [
+      "hình",
+      "lớn",
+      "ngành",
+      "ngôn",
+      "ngữ",
+      "nhân",
+      "tiếng",
+      "trí",
+      "trợ",
+      "tuệ",
+      "tạo",
+      "việt"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -354,6 +412,21 @@ export const signedMatches: SignedMatch[] = [
       "người",
       "uav"
     ],
+    "tokenCau": [
+      "bay",
+      "không",
+      "lái",
+      "người",
+      "phương",
+      "tiện",
+      "uav"
+    ],
+    "canhChuoi": {
+      "tu": 6,
+      "den": 9,
+      "lyDo": "Chip ban dan la dau vao cua thiet bi bay: nguon mst.gov.vn 28/01/2026 noi ro chip SoC AI on Edge lam cho drone va UAV",
+      "trangThai": "da_duyet"
+    },
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -402,6 +475,12 @@ export const signedMatches: SignedMatch[] = [
       "mạng",
       "động"
     ],
+    "tokenCau": [
+      "advanced",
+      "mạng",
+      "động"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -453,6 +532,17 @@ export const signedMatches: SignedMatch[] = [
       "tải",
       "điện"
     ],
+    "tokenCau": [
+      "cao",
+      "hiệu",
+      "máy",
+      "suất",
+      "truyền",
+      "tải",
+      "điện",
+      "động"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -501,6 +591,12 @@ export const signedMatches: SignedMatch[] = [
       "cao",
       "điện"
     ],
+    "tokenCau": [
+      "cao",
+      "siêu",
+      "điện"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
@@ -563,6 +659,19 @@ export const signedMatches: SignedMatch[] = [
       "tạo",
       "vật"
     ],
+    "tokenCau": [
+      "biến",
+      "cao",
+      "chế",
+      "chức",
+      "hiệu",
+      "liệu",
+      "nghiệp",
+      "năng",
+      "tạo",
+      "vật"
+    ],
+    "canhChuoi": null,
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",

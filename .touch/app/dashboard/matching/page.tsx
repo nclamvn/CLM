@@ -13,7 +13,7 @@ export default function MatchingPage() {
     <>
       <DashTopBar
         title="Matching Workbench"
-        subtitle={`Ghép cầu với cung trên registry thật · ${matchMeta.daKy} match đã ký bởi ${matchMeta.nguoiKy} · quy tắc ${matchMeta.rule}`}
+        subtitle={`Máy đề xuất, người ký · ${matchMeta.daKy} match đã ký bởi ${matchMeta.nguoiKy} · chỉ đọc`}
       />
       <div className="dash-content">
         <MatchingWorkbench />

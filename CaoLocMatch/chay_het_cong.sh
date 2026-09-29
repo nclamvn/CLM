@@ -257,6 +257,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Toan canh thi truong M1 (29/09/2026): Sankey bao toan dong, khoang trong dem doc lap (luot dung
   # man nay lo ra man do thi dem 10 thay vi 11), ngan sach dien tich giao cat.
   chay .touch      thi_truong       "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-thi-truong.mjs
+  # Matching Workbench v2 M4 (29/09/2026): diem tu dung lai khop engine, canh chuoi dung mapping,
+  # ly do tu choi nguyen van so ky, man khong co duong ky.
+  chay .touch      matching         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-matching.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -288,6 +291,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_do_thi      "$TOUCH" 'BITE DO THI'       node scripts/bite-do-thi.mjs
     chay .touch    rang_ho_so       "$TOUCH" 'BITE HO SO'        node scripts/bite-ho-so.mjs
     chay .touch    rang_thi_truong  "$TOUCH" 'BITE THI TRUONG'   node scripts/bite-thi-truong.mjs
+    chay .touch    rang_matching    "$TOUCH" 'BITE MATCHING'     node scripts/bite-matching.mjs
   fi
 fi
 

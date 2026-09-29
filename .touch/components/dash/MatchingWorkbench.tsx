@@ -1,223 +1,268 @@
 'use client';
 
-import { useState } from 'react';
-import { signedMatches, rejectedPairs, matchMeta, type SignedMatch, type MatchEvidence } from '@/lib/cncl-match';
-
 /**
- * Matching Workbench. DU LIEU THAT tu 18/08/2026: 12 match da qua toan bo chuoi cong va
- * mang chu ky that cua nguoi gac cong, sinh boi scripts/gen-cncl-data.mjs.
+ * Matching Workbench v2 (M4). Dung lai 29/09/2026 tu ban 18/08/2026.
  *
- * VI SAO BO NUT APPROVE/REJECT (quyet dinh 18/08/2026):
- * Ban DEMO cu co hai nut ghi UI-state kem ghi chu. Khi match con la minh hoa thi vo hai.
- * Nay match la that va da co chu ky that trong so, hai nut do tro thanh mot DUONG KY THU HAI:
- * yeu hon duong that (khong qua cong, khong vao so, khong khoa bang chung) nhung nhin giong
- * het. Nguoi dung se tuong minh vua duyet mot match.
- *
- * Duong ky duy nhat la lenh cua engine:
+ * GIU NGUYEN RANH GIOI CUA BAN CU (18/08/2026): man nay KHONG co nut duyet/tu choi. Duong ky duy
+ * nhat la lenh cua engine:
  *     python3 match_engine.py sign out/matches.jsonl "<ten>" <ngay> [--only ID]
- * No ghi vao so co khoa noi dung VA khoa bang chung, nen sua mot chu trong cau lam bang la
- * chu ky rung ra. Man nay chi DOC va HIEN chu ky do. Xem reports/KHOA_BANG_CHUNG_verify.md.
+ * No ghi vao so co khoa noi dung VA khoa bang chung. Man nay chi DOC va HIEN chu ky do. Cong
+ * check-matching.mjs quet file nay de chan moi nut ky, moi duong ghi (fetch/POST).
  *
- * Man nay khong duoc phep tao chu ky. Do la ranh gioi, khong phai thieu tinh nang.
+ * MOI O V2:
+ *   - So do hai cot cau | cung, 11 match da ky va cap bi tu choi, sap median (it cat nhau).
+ *   - VET BANG CHUNG nam chang: cau nguon ben cau, neo nhom (lop 1), giao chu (lop 3), cau nguon ben
+ *     cung, chu ky. Tu giao duoc to o CA HAI cau nguon, nen nhin la thay vi sao may ghep.
+ *   - PHAN RA DIEM: moi so hang cua cong thuc engine (doc tu match_engine.py) hien ra; tong phai
+ *     ra dung diem engine, cong kiem ca 11 cap.
+ * Ly do tu choi la CHU CUA NGUOI GAC CONG: hien nguyen van, khong sua ca dau.
  */
+import Link from 'next/link';
+import { useMemo, useState } from 'react';
+import { signedMatches, rejectedPairs, matchMeta, type SignedMatch, type MatchEvidence } from '@/lib/cncl-match';
+import hub from '@/lib/hub-matching.json';
+import graph from '@/lib/hub-graph.json';
+import { slugDonVi } from '@/lib/ho-so.mjs';
+import { useProof } from '@/components/proof/ProofLayer';
 
-function thang(score: number): { label: string; tone: string } {
-  if (score >= 0.75) return { label: 'Khớp mạnh', tone: 'green' };
-  if (score >= 0.60) return { label: 'Khớp khá', tone: 'blue' };
-  if (score >= 0.50) return { label: 'Khớp vừa', tone: 'amber' };
-  return { label: 'Khớp yếu', tone: 'red' };
+type PhanRa = {
+  tiLeGiao: number; soGiao: number; soTokenCau: number; quaNguong: boolean;
+  tierCau: string; tierCung: string; diemTier: number; diaDiem: number;
+  phan: { giao: number; tier: number; diaDiem: number }; tong: number; lamTron: number;
+};
+type Canh = { cau: string; cung: string; loai: 'da_ky' | 'tu_choi'; id: string };
+type CongThuc = { wGiao: number; wTier: number; wDiaDiem: number; tierW: Record<string, number>; nguongGiao: number };
+const H = hub as unknown as { congThuc: CongThuc; phanRa: Record<string, PhanRa>; haiCot: { cau: string[]; cung: string[]; canh: Canh[]; giao: number; giaoBanDau: number } };
+const G = graph as unknown as { nodes: { id: string; label: string; maSp?: string }[] };
+const maSpCua = new Map(G.nodes.filter((n) => n.id.startsWith('nc:')).map((n) => [n.id.slice(3), n.maSp ?? '']));
+const tenNc = new Map(G.nodes.filter((n) => n.id.startsWith('nc:')).map((n) => [n.id.slice(3), n.label]));
+
+const nhanVai = (r: string) => (r === 'chuyen gia gac cong' ? 'chuyên gia gác cổng' : r);
+const ngayVN = (d: string) => `${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}`;
+const so = (v: number, k = 3) => v.toFixed(k).replace('.', ',');
+const soHai = (n: number) => String(n).padStart(2, '0');
+const ngan = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);
+
+/** To tu giao trong cau nguon. Tach theo tu Unicode, so khop chu thuong NFC voi tap tu. */
+function CauTo({ text, giao, cau }: { text: string; giao: Set<string>; cau?: Set<string> }) {
+  const phan: React.ReactNode[] = [];
+  let cuoi = 0;
+  for (const m of text.matchAll(/[\p{L}\p{N}]+/gu)) {
+    const w = m[0].normalize('NFC').toLowerCase();
+    const i = m.index ?? 0;
+    if (giao.has(w) || cau?.has(w)) {
+      phan.push(text.slice(cuoi, i));
+      phan.push(<mark key={i} className={giao.has(w) ? 'mw2-giao' : 'mw2-le'}>{m[0]}</mark>);
+      cuoi = i + m[0].length;
+    }
+  }
+  phan.push(text.slice(cuoi));
+  return <>{phan}</>;
 }
 
-// `role` la hang so do engine gan khi ky, khong phai chu cua nguoi ky. Hien no dung chinh
-// ta tieng Viet la DINH DANG, giong nhu hien ngay 2026-08-16 thanh 16/08/2026. Nguoc lai,
-// `ly_do` tu choi la CHU CUA NGUOI GAC CONG, tuyet doi khong duoc sua o lop hien thi.
-const nhanVai = (r: string) => (r === 'chuyen gia gac cong' ? 'chuyên gia gác cổng' : r);
-
-const tenCau = (id: string) => id.replace(' · nhu cầu quốc gia', '').replace('san_pham_', 'SP ');
-
-/** To ro phan REGISTRY KHANG DINH nam trong cau nguon.
- *
- * VI SAO (24/08/2026): claim cua CT Semiconductor tung keo value dai toi mot du bao da toi
- * han. Da cat value, nhung SPAN van chua cum do vi span la chu cua nguon va khong duoc sua.
- * Ket qua la nguoi doc thay ca cau, khong phan biet duoc dau la dieu registry dam nhan va
- * dau la chu xung quanh. To len la cach noi that ma khong dong vao nguon.
- */
-function SpanCoDiem({ span, value }: { span: string; value: string }) {
-  const i = value ? span.indexOf(value) : -1;
-  // Value phu tron span thi KHONG to. To ca cau thi cai to khong phan biet duoc gi, no chi
-  // con la mot mang nen la. Chi to khi that su co phan chu nguon nam ngoai phan khang dinh.
-  if (i < 0 || value.trim() === span.trim()) return <>{span}</>;
+function Nguon({ e }: { e: MatchEvidence }) {
   return (
-    <>
-      {span.slice(0, i)}
-      <mark className="mw-diem" title="Phần registry khẳng định. Chữ xung quanh là câu nguồn.">{value}</mark>
-      {span.slice(i + value.length)}
-    </>
+    <div className="mw2-nguon">
+      <span className={`pf-tier pf-tier--${e.tier}`}>tier {e.tier}</span>
+      <a className="pf-link" href={e.href} target="_blank" rel="noopener noreferrer">{e.source}</a>
+      <span>{e.extraction === 'verbatim' ? 'trích nguyên văn' : 'giá trị chuẩn hoá từ câu nguồn'}</span>
+    </div>
   );
 }
 
-function EvidenceBlock({ nhan, ds }: { nhan: string; ds: MatchEvidence[] }) {
+function SoDoHaiCot({ chon, datChon }: { chon: string; datChon: (id: string) => void }) {
+  const { cau, cung, canh } = H.haiCot;
+  const W = 460; const BUOC = 30; const TREN = 26;
+  const Hh = TREN * 2 + (Math.max(cau.length, cung.length) - 1) * BUOC;
+  const yC = (i: number) => TREN + (i + (Math.max(cau.length, cung.length) - cau.length) / 2) * BUOC;
+  const yU = (i: number) => TREN + (i + (Math.max(cau.length, cung.length) - cung.length) / 2) * BUOC;
+  const XT = 118; const XP = 300;
   return (
-    <div className="mw-ev">
-      <div className="mw-eyebrow">{nhan}</div>
-      {ds.length === 0 ? (
-        <p className="mw-hint">Không có fact nào, đây là bất thường và cần soi lại.</p>
-      ) : ds.map((e, i) => (
-        <figure key={i} className="mw-quote">
-          <blockquote className="mw-quote__txt"><SpanCoDiem span={e.span} value={e.value} /></blockquote>
-          <figcaption className="mw-quote__cap">
-            <span className={`chip ${e.tier === 'A' ? 'chip--pass' : e.tier === 'B' ? 'chip--public' : 'chip--private'} reg-tier`}>
-              {`Tier ${e.tier}`}
-            </span>
-            <a className="reg-src" href={e.href} target="_blank" rel="noopener noreferrer">{e.source}</a>
-            <span className="t-mono-01">{e.field}</span>
-            {e.extraction !== 'verbatim' ? (
-              <span className="chip chip--private reg-tier" title="Giá trị chuẩn hoá từ câu nguồn, không trích nguyên văn">
-                {e.extraction}
-              </span>
-            ) : null}
-          </figcaption>
-        </figure>
-      ))}
+    <svg className="mw2-hc" viewBox={`0 0 ${W} ${Hh}`} role="img" aria-label={`Sơ đồ hai cột: ${cau.length} nhu cầu, ${cung.length} đơn vị, ${canh.length} cặp đã quyết.`}>
+      <text x={XT} y={11} textAnchor="end" className="mw2-hc__cot">NHU CẦU</text>
+      <text x={XP} y={11} className="mw2-hc__cot">ĐƠN VỊ CUNG</text>
+      {canh.map((c) => {
+        const y0 = yC(cau.indexOf(c.cau)); const y1 = yU(cung.indexOf(c.cung)); const xm = (XT + XP) / 2;
+        const on = c.id === chon;
+        return (
+          <path key={c.id} d={`M${XT + 6},${y0} C${xm},${y0} ${xm},${y1} ${XP - 6},${y1}`}
+            className={`mw2-hc__c mw2-hc__c--${c.loai}${on ? ' is-chon' : ''}`}
+            onClick={() => datChon(c.id)} role="button" tabIndex={0} aria-label={`${c.id}: ${c.cung} với P${maSpCua.get(c.cau)}`}
+            onKeyDown={(e) => { if (e.key === 'Enter') datChon(c.id); }} />);
+      })}
+      {cau.map((id, i) => {
+        const on = canh.find((c) => c.id === chon)?.cau === id;
+        return (
+          <g key={id} className={`mw2-hc__n${on ? ' is-chon' : ''}`}>
+            <rect x={XT - 1} y={yC(i) - 5} width={10} height={10} rx={1.5} transform={`rotate(45 ${XT + 4} ${yC(i)})`} className="mw2-hc__cau" />
+            <text x={XT - 10} y={yC(i) + 3.5} textAnchor="end"><tspan className="mw2-hc__ma">P{maSpCua.get(id)}</tspan> {ngan(tenNc.get(id) ?? '', 14)}</text>
+          </g>);
+      })}
+      {cung.map((id, i) => {
+        const on = canh.find((c) => c.id === chon)?.cung === id;
+        return (
+          <g key={id} className={`mw2-hc__n${on ? ' is-chon' : ''}`}>
+            <circle cx={XP} cy={yU(i)} r={5} className="mw2-hc__cung" />
+            <text x={XP + 10} y={yU(i) + 3.5}>{ngan(id, 22)}</text>
+          </g>);
+      })}
+    </svg>
+  );
+}
+
+function VetBangChung({ m }: { m: SignedMatch }) {
+  const pr = H.phanRa[m.id];
+  const ct = H.congThuc;
+  const giao = new Set(m.tokenGiao.map((t) => t.normalize('NFC').toLowerCase()));
+  const conLai = new Set(m.tokenCau.map((t) => t.normalize('NFC').toLowerCase()).filter((t) => !giao.has(t)));
+  const nc = m.demandEvidence[0]; const cu = m.supplyEvidence[0];
+  const maSp = maSpCua.get(m.demandId) ?? '';
+  const pct = (v: number) => `${Math.max(0, (v / 1) * 100)}%`;
+  return (
+    <div className="mw2-vet">
+      <header className="mw2-vet__head">
+        <div>
+          <div className="mw2-eyebrow">{m.id} · vệt bằng chứng</div>
+          <h2 className="mw2-vet__ten">
+            <Link href={`/dashboard/don-vi/${slugDonVi(m.supplyId)}`}>{m.supplyId}</Link>
+            <span className="mw2-vet__x">⇄</span>
+            <span className="mw2-vet__ma">P{maSp}</span> {ngan(tenNc.get(m.demandId) ?? '', 60)}
+          </h2>
+        </div>
+        <div className="mw2-diem" title="Điểm của engine; phân rã ngay bên dưới">
+          <span className="mw2-diem__v">{so(m.score, 2)}</span>
+          <span className="mw2-diem__k">điểm engine</span>
+        </div>
+      </header>
+
+      <ol className="mw2-chang">
+        <li>
+          <div className="mw2-chang__k"><b>1</b> Câu nguồn bên cầu · QĐ 21/2026</div>
+          <blockquote className="mw2-cau">{nc ? <CauTo text={nc.span} giao={giao} cau={conLai} /> : 'Không có câu nguồn: bất thường, cần soi lại.'}</blockquote>
+          {nc && <Nguon e={nc} />}
+        </li>
+        <li>
+          <div className="mw2-chang__k"><b>2</b> Lớp 1 · neo nhóm công nghệ</div>
+          {m.canhChuoi ? (
+            <p className="mw2-p">
+              Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có claim nhóm <b>{m.nhomCung.map(soHai).join(', ')}</b>, không trùng.
+              Nối qua <b>cạnh chuỗi giá trị {soHai(m.canhChuoi.tu)} → {soHai(m.canhChuoi.den)}</b>
+              {m.canhChuoi.trangThai === 'da_duyet' ? ' (người đã duyệt)' : ' (CHƯA duyệt, tự khai trong unverified)'}:
+              <span className="mw2-lydo"> {m.canhChuoi.lyDo}</span>
+            </p>
+          ) : (
+            <p className="mw2-p">Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có claim cùng nhóm <b>{soHai(m.nhomCau ?? 0)}</b>. Qua lớp neo trực tiếp.</p>
+          )}
+          <p className="mw2-mo">Không qua lớp này thì loại thẳng, không tính điểm: chặn kiểu “khác lĩnh vực nhưng trùng chữ”.</p>
+        </li>
+        <li>
+          <div className="mw2-chang__k"><b>3</b> Lớp 3 · giao chữ sau khi bỏ từ dùng chung</div>
+          <div className="mw2-tok">
+            {m.tokenCau.map((t) => <span key={t} className={`mw2-tok__t${giao.has(t.normalize('NFC').toLowerCase()) ? ' is-giao' : ''}`}>{t}</span>)}
+          </div>
+          <p className="mw2-p">
+            {pr.soGiao}/{pr.soTokenCau} từ của nhu cầu có trong câu năng lực = <b>{so(pr.tiLeGiao)}</b>
+            {pr.quaNguong ? ` ≥ ngưỡng ${so(ct.nguongGiao, 1)}` : ` DƯỚI ngưỡng ${so(ct.nguongGiao, 1)}`}.
+          </p>
+        </li>
+        <li>
+          <div className="mw2-chang__k"><b>4</b> Câu nguồn bên cung · {m.supplyId}</div>
+          <blockquote className="mw2-cau">{cu ? <CauTo text={cu.span} giao={giao} /> : 'Không có câu nguồn.'}</blockquote>
+          {cu && <Nguon e={cu} />}
+          {m.supplyEvidence.length > 1 && <p className="mw-hint">+{m.supplyEvidence.length - 1} câu nguồn nữa cho cùng cặp.</p>}
+        </li>
+        <li>
+          <div className="mw2-chang__k"><b>5</b> Chữ ký người gác cổng</div>
+          <dl className="mw2-ky">
+            <dt>Người ký</dt><dd>{m.signoff.by} · {nhanVai(m.signoff.role)}</dd>
+            <dt>Ngày</dt><dd>{ngayVN(m.signoff.date)}</dd>
+            <dt>Khoá bằng chứng</dt><dd className="t-mono-01" title="Băm tập câu làm bằng lúc ký. Đổi một chữ là chữ ký rụng.">{m.khoaBangChung ?? 'chưa đóng khoá'}</dd>
+            <dt>Engine</dt><dd className="t-mono-01">{m.engine}</dd>
+          </dl>
+        </li>
+      </ol>
+
+      <section className="mw2-pr" aria-label="Phân rã điểm">
+        <div className="mw2-eyebrow">Phân rã điểm · tự dựng lại được bằng tay</div>
+        <div className="mw2-pr__bar" role="img" aria-label={`Giao chữ ${so(pr.phan.giao)}, tier ${so(pr.phan.tier)}, địa điểm ${so(pr.phan.diaDiem)}`}>
+          <span className="mw2-pr__p mw2-pr__p--giao" style={{ width: pct(pr.phan.giao) }} />
+          <span className="mw2-pr__p mw2-pr__p--tier" style={{ width: pct(pr.phan.tier) }} />
+          <span className="mw2-pr__moc" style={{ left: pct(pr.tong) }} />
+        </div>
+        <table className="mw2-pr__t">
+          <tbody>
+            <tr><td><i className="mw2-mk mw2-pr__p--giao" />Giao chữ</td><td>{so(ct.wGiao, 1)} × {so(pr.tiLeGiao)}</td><td>{so(pr.phan.giao)}</td></tr>
+            <tr><td><i className="mw2-mk mw2-pr__p--tier" />Độ tin nguồn</td><td>{so(ct.wTier, 1)} × ({pr.tierCau} {so(ct.tierW[pr.tierCau], 2)} + {pr.tierCung} {so(ct.tierW[pr.tierCung], 2)}) / 2</td><td>{so(pr.phan.tier)}</td></tr>
+            <tr><td><i className="mw2-mk mw2-mk--rong" />Cùng địa điểm</td><td>{so(ct.wDiaDiem, 1)} × 0 · registry chưa có địa điểm phía cầu</td><td>{so(pr.phan.diaDiem)}</td></tr>
+            <tr className="mw2-pr__tong"><td>Tổng</td><td>làm tròn 2 chữ số</td><td>{so(pr.tong)} → <b>{so(pr.lamTron, 2)}</b></td></tr>
+          </tbody>
+        </table>
+        <p className="mw2-mo">Hệ số đọc thẳng từ <span className="t-mono-01">match_engine.py</span>, không gõ lại. Cổng check-matching tính lại cả {signedMatches.length} cặp và so với điểm engine.</p>
+      </section>
+
+      {m.chuaDuyet.length > 0 && <p className="mw-hint">{m.chuaDuyet.length} bằng chứng thêm vào SAU khi ký; chữ ký hiện tại không phủ phần đó.</p>}
+      {m.soChuoi > 1 && <p className="mw-hint">Cặp này có {m.soChuoi} chuỗi bằng chứng độc lập; vệt trên là chuỗi cho điểm cao nhất.</p>}
+      {m.unverified.length > 0 && <p className="mw-hint">Tự khai chưa kiểm: {m.unverified.join(', ')}.</p>}
     </div>
   );
 }
 
 export function MatchingWorkbench() {
-  const [sel, setSel] = useState(0);
-  const list = signedMatches;
-  const current: SignedMatch | undefined = list[Math.min(sel, Math.max(0, list.length - 1))];
-
+  const dau = H.haiCot.canh.find((c) => c.loai === 'da_ky')?.id ?? '';
+  const [chon, setChon] = useState(dau);
+  const { moMuc } = useProof();
+  const m = useMemo(() => signedMatches.find((x) => x.id === chon), [chon]);
+  const tc = chon.startsWith('tu_choi:') ? rejectedPairs.find((r) => `tu_choi:${r.supplyId}>${r.demandId}` === chon) : null;
+  const khopHet = signedMatches.every((x) => H.phanRa[x.id]?.lamTron === x.score);
   return (
-    <div className="mw">
-      <aside className="mw-col mw-left" aria-label="Tong quan va quyet dinh nguoi">
-        <div className="mw-panel">
-          <div className="mw-eyebrow">Trạng thái</div>
-          <ul className="mw-decided">
-            <li><span className="mw-ok">{matchMeta.daKy}</span> match đã ký</li>
-            <li><span className="mw-no">{matchMeta.tuChoi}</span> cặp bị từ chối</li>
-            <li>Người ký: {matchMeta.nguoiKy}</li>
-            <li>Quy tắc: <span className="t-mono-01">{matchMeta.rule}</span></li>
-          </ul>
-
-          <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Chữ ký tạo ở đâu</div>
-          <p className="mw-hint">
-            Chữ ký chỉ sinh ra từ lệnh <span className="t-mono-01">sign</span> của engine, ghi vào sổ
-            có khoá nội dung và khoá bằng chứng. Sửa một chữ trong câu làm bằng là chữ ký rụng ra.
-            Màn này chỉ đọc và hiện lại, không tạo được chữ ký.
-          </p>
-
-          {rejectedPairs.length > 0 ? (
-            <>
-              <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Đã từ chối</div>
-              <ul className="mw-decided">
-                {rejectedPairs.map((r, i) => (
-                  <li key={i}>
-                    <span className="mw-no">{tenCau(r.demandId)} ⇄ {r.supplyId}</span>
-                    <span className="mw-rej__why">{r.lyDo}</span>
-                    <span className="mw-rej__who">{r.by} · {r.date}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mw-hint">
-                Cặp đã từ chối bị chặn ở tầng engine, dưới mọi quy tắc so khớp. Một quy tắc mới làm
-                nó quay lại thì cổng nổ chứ không im lặng cho qua.
-              </p>
-            </>
-          ) : null}
-        </div>
-      </aside>
-
-      <section className="mw-col mw-center" aria-label="Match da ky">
-        <div className="mw-center-head">
-          <span className="mw-eyebrow">Cầu ⇄ cung · điểm khớp · chữ ký</span>
-          <span className="chip chip--pass">DỮ LIỆU THẬT</span>
-        </div>
-        <ul className="mw-cands" role="list">
-          {list.map((m, i) => {
-            const l = thang(m.score);
-            const isSel = current?.id === m.id;
-            return (
-              <li key={m.id}>
-                <button type="button" className={`mw-cand${isSel ? ' is-sel' : ''}`} aria-pressed={isSel} onClick={() => setSel(i)}>
-                  <span className={`mw-score mw-score--${l.tone}`}>{Math.round(m.score * 100)}</span>
-                  <span className="mw-cand__mid">
-                    <span className="mw-cand__title">{tenCau(m.demandId)} ⇄ {m.supplyId}</span>
-                    <span className="mw-cand__why">
-                      Neo nhóm {m.nhomCau} ∩ {m.nhomCung.join(', ') || 'không'}
-                      {m.tokenGiao.length ? ` · giao chữ: ${m.tokenGiao.join(', ')}` : ''}
-                    </span>
-                    <span className="mw-cand__cap">{m.supplyEvidence[0]?.value ?? ''}</span>
-                  </span>
-                  <span className="mw-cand__right">
-                    <span className={`mw-ladder mw-ladder--${l.tone}`}>{l.label}</span>
-                    <span className="chip chip--pass reg-tier" title={`Ký bởi ${m.signoff.by} ngày ${m.signoff.date}`}>ĐÃ KÝ</span>
-                    {m.chuaDuyet.length ? (
-                      <span className="chip chip--private reg-tier" title="Bằng chứng thêm vào sau khi ký, chữ ký cũ không phủ phần này">
-                        {`+${m.chuaDuyet.length} chưa duyệt`}
-                      </span>
-                    ) : null}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+    <div className="mw2">
+      <section className="hs-kpi mw2-kpi" aria-label="Tổng quan matching">
+        <button type="button" className="hs-kpi__o" onClick={() => moMuc({ loai: 'so', khoa: 'matches' })}>
+          <span className="hs-kpi__v hs-kpi__v--match"><i aria-hidden="true" />{matchMeta.daKy}</span><span className="hs-kpi__k">match đã ký</span><span className="hs-kpi__phu">bởi {matchMeta.nguoiKy}</span>
+        </button>
+        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{matchMeta.tuChoi}</span><span className="hs-kpi__k">cặp bị từ chối</span><span className="hs-kpi__phu">chặn ở tầng engine</span></div>
+        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{signedMatches.filter((x) => H.phanRa[x.id]?.lamTron === x.score).length}<small>/{signedMatches.length}</small></span><span className="hs-kpi__k">điểm tự dựng lại khớp</span><span className="hs-kpi__phu">{khopHet ? 'từ công thức engine' : 'CÓ CẶP LỆCH'}</span></div>
+        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v mw2-kpi__rule">v2</span><span className="hs-kpi__k">quy tắc ghép</span><span className="hs-kpi__phu t-mono-01">{matchMeta.rule}</span></div>
       </section>
 
-      <aside className="mw-col mw-right" aria-label="Chuoi bang chung">
-        {current ? (
-          <div className="mw-panel">
-            <div className="mw-center-head">
-              <span className="mw-eyebrow">Chuỗi bằng chứng</span>
-              <span className="t-mono-01">{current.id}</span>
+      <div className="mw2-grid">
+        <aside className="dash-panel hs-sec mw2-trai" aria-label="Sơ đồ các cặp">
+          <h2 className="hs-h">Các cặp đã quyết <span>bấm một đường để xem vệt</span></h2>
+          <SoDoHaiCot chon={chon} datChon={setChon} />
+          <div className="tt-cg"><span><i className="tt-mk2 tt-dong--da_ky" />đã ký</span><span><i className="mw2-mk mw2-mk--tc" />bị từ chối</span></div>
+          <ul className="mw2-ds" aria-label="Danh sách cặp">
+            {H.haiCot.canh.map((c) => (
+              <li key={c.id}>
+                <button type="button" className={`mw2-ds__r${c.id === chon ? ' is-chon' : ''}${c.loai === 'tu_choi' ? ' is-tc' : ''}`} aria-pressed={c.id === chon} onClick={() => setChon(c.id)}>
+                  <span className="mw2-ds__ma">P{maSpCua.get(c.cau)}</span>
+                  <span className="mw2-ds__ten">{ngan(c.cung, 30)}</span>
+                  <span className="mw2-ds__d">{c.loai === 'da_ky' ? so(signedMatches.find((x) => x.id === c.id)?.score ?? 0, 2) : 'từ chối'}</span>
+                </button>
+              </li>))}
+          </ul>
+          <p className="hs-note">Sắp median cho ít cắt nhau: {H.haiCot.giaoBanDau} giao cắt theo thứ tự chữ cái, còn {H.haiCot.giao}.</p>
+        </aside>
+
+        <section className="dash-panel hs-sec mw2-phai" aria-live="polite">
+          {m ? <VetBangChung m={m} /> : tc ? (
+            <div className="mw2-vet">
+              <div className="mw2-eyebrow">Cặp bị từ chối</div>
+              <h2 className="mw2-vet__ten">{tc.supplyId}<span className="mw2-vet__x">⇄</span><span className="mw2-vet__ma">P{maSpCua.get(tc.demandId)}</span> {tenNc.get(tc.demandId)}</h2>
+              <figure className="mw2-tc">
+                <blockquote>{tc.lyDo}</blockquote>
+                <figcaption>{tc.by} · {ngayVN(tc.date)} · nguyên lời người gác cổng, không sửa</figcaption>
+              </figure>
+              <p className="mw2-p">Cặp đã từ chối bị chặn ở tầng engine, dưới mọi quy tắc so khớp. Quy tắc mới làm nó quay lại thì cổng nổ, không im lặng cho qua. Trên màn Toàn cảnh thị trường, cặp này không mang dòng.</p>
             </div>
+          ) : <p className="hs-empty">Chọn một cặp ở bên trái.</p>}
+        </section>
+      </div>
 
-            <EvidenceBlock nhan="Bên CẦU · nhu cầu quốc gia" ds={current.demandEvidence} />
-            <EvidenceBlock nhan={`Bên CUNG · ${current.supplyId}`} ds={current.supplyEvidence} />
-
-            <div className="mw-eyebrow" style={{ marginTop: 'var(--space-4)' }}>Chữ ký người gác cổng</div>
-            <ul className="mw-trail">
-              <li><span className="mw-trail__k">Người ký</span><span className="mw-trail__v">{current.signoff.by}</span></li>
-              <li><span className="mw-trail__k">Vai</span><span className="mw-trail__v">{nhanVai(current.signoff.role)}</span></li>
-              <li><span className="mw-trail__k">Ngày</span><span className="mw-trail__v">{current.signoff.date}</span></li>
-              <li>
-                <span className="mw-trail__k">Khoá bằng chứng</span>
-                <span className="mw-trail__v t-mono-01" title="Băm của tập câu làm bằng lúc ký. Đổi một chữ là chữ ký rụng.">
-                  {current.khoaBangChung ?? 'chưa đóng khoá'}
-                </span>
-              </li>
-              <li className="is-dai"><span className="mw-trail__k">Engine</span><span className="mw-trail__v t-mono-01">{current.engine}</span></li>
-            </ul>
-
-            {current.chuaDuyet.length > 0 ? (
-              <p className="mw-hint">
-                {current.chuaDuyet.length} bằng chứng được thêm vào SAU khi ký, nên chữ ký hiện tại
-                không phủ phần đó. Cặp này vẫn có người ký, nhưng phần mới chưa ai xem. Ký lại dòng
-                này nếu muốn chữ ký phủ cả phần mới.
-              </p>
-            ) : null}
-            {current.soChuoi > 1 ? (
-              <p className="mw-hint">
-                Cặp này có {current.soChuoi} chuỗi bằng chứng độc lập, đã gộp vào một dòng.
-              </p>
-            ) : null}
-            {current.unverified.length > 0 ? (
-              <p className="mw-hint">
-                Tự khai unverified: {current.unverified.join(', ')}.
-              </p>
-            ) : null}
-          </div>
-        ) : (
-          <div className="mw-panel mw-decided__empty">Chưa có match nào được ký.</div>
-        )}
-      </aside>
-
-      <footer className="mw-footer" aria-label="Provenance-linked output">
-        <span className="chip chip--pass">ĐÃ KÝ</span>
+      <footer className="mw-footer" aria-label="Ranh gioi">
+        <span className="chip chip--pass">CHỈ ĐỌC</span>
         <span className="mw-footer__txt">
-          Chỉ match đã qua đủ cổng và có chữ ký người mới được đưa lên đây. Match chưa ký không
-          xuất hiện trên web, vì web là chỗ trình ra ngoài.
+          Màn này không tạo được chữ ký. Chữ ký chỉ sinh từ lệnh <span className="t-mono-01">sign</span> của engine,
+          ghi vào sổ có khoá bằng chứng. Match chưa ký không xuất hiện trên web.
         </span>
         <span className="t-mono-01">{matchMeta.daKy}/{matchMeta.tongChay} đã ký · sinh {matchMeta.generatedAt}</span>
       </footer>

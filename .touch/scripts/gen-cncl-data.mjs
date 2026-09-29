@@ -191,6 +191,21 @@ const kyTheoMatch = new Map(soKy.map((r) => [r.match_id, r]));
 const daKy = matches.filter((m) => (m.gate?.signoff?.by) && m.gate.signoff.by !== 'pending-human-review'
   && m.gate.signoff.decision === 'ky');
 
+// ── Cong thuc diem cua engine, DOC tu match_engine.py (khong go lai) ─────────
+// VI SAO (29/09/2026, Workbench v2): nha dau tu phai tu dung lai duoc con so 0.70 bang tay. Vay
+// trang web can token cua ben cau, trong so cong thuc va canh chuoi gia tri da dung. Go lai hang
+// so o day thi mot ngay engine doi trong so ma web van hien cong thuc cu. Nen doc thang tu nguon,
+// thieu cho nao thi dung lai.
+const ENGINE_SRC = readFileSync(join(CLM, 'match_engine.py'), 'utf8');
+const mCT = ENGINE_SRC.match(/score = round\((\d+(?:\.\d+)?) \* ov \+ (\d+(?:\.\d+)?) \* tier_score \+ (\d+(?:\.\d+)?) \* loc, 2\)/);
+const mTW = ENGINE_SRC.match(/^TIER_W = (\{[^}]+\})/m);
+const mOM = ENGINE_SRC.match(/^OVERLAP_MIN_V2 = (\d+(?:\.\d+)?)/m);
+if (!mCT || !mTW || !mOM) { console.error('KHONG DOC DUOC cong thuc diem trong match_engine.py (score/TIER_W/OVERLAP_MIN_V2).'); process.exit(2); }
+const congThuc = { wGiao: Number(mCT[1]), wTier: Number(mCT[2]), wDiaDiem: Number(mCT[3]), tierW: JSON.parse(mTW[1]), nguongGiao: Number(mOM[1]) };
+const MAP_TXT = readFileSync(join(CLM, 'domains', 'cncl_match', 'mapping_sp_nhom.yaml'), 'utf8');
+const canhChuoi = [...MAP_TXT.matchAll(/^\s+-\s*\{tu:\s*(\d+),\s*den:\s*(\d+),\s*ly_do:\s*"([^"]*)",\s*trang_thai:\s*(\w+)\}/gm)]
+  .map((x) => ({ tu: Number(x[1]), den: Number(x[2]), lyDo: x[3], trangThai: x[4] }));
+
 const webMatches = daKy.map((m) => {
   const cau = timFact(m.demand.entity_id, m.demand.need_fact_ids);
   const cung = timFact(m.supply.entity_id, m.supply.capability_fact_ids);
@@ -210,6 +225,13 @@ const webMatches = daKy.map((m) => {
     nhomCung: m.rationale.neo_nhom?.nhom_cung ?? [],
     quaChuoiGiaTri: Boolean(m.rationale.neo_nhom?.qua_canh_chuoi_gia_tri),
     tokenGiao: m.rationale.token_con_lai?.giao ?? [],
+    // Token con lai cua ben CAU sau khi bo tu dung: mau so cua ti le giao.
+    tokenCau: m.rationale.token_con_lai?.need ?? [],
+    // Canh engine da dung khi nhom cung khong trung nhom cau: canh DAU TIEN trong mapping co tu
+    // thuoc nhom cung va den = nhom cau (dung thu tu engine duyet).
+    canhChuoi: m.rationale.neo_nhom?.qua_canh_chuoi_gia_tri
+      ? (canhChuoi.find((e) => (m.rationale.neo_nhom.nhom_cung ?? []).includes(e.tu) && e.den === m.rationale.neo_nhom.nhom_cau) ?? null)
+      : null,
     signoff: { by: m.gate.signoff.by, role: m.gate.signoff.role, date: m.gate.signoff.date },
     // Fact them vao SAU khi nguoi ky. Chu ky cu khong phu chung, nen web phai noi ro.
     chuaDuyet: m.gate.signoff.chua_duyet ?? [],
@@ -317,6 +339,7 @@ const matchMetaObj = {
   rule: [...new Set(webMatches.map((m) => m.rule))].join(', '),
   nguoiKy: [...new Set(webMatches.map((m) => m.signoff.by))].join(', '),
   generatedAt: NOW,
+  congThuc,
 };
 
 writeFileSync(join(TOUCH, 'lib', 'cncl-match.ts'), banner('CaoLocMatch/out/matches.jsonl + signoff_ledger.jsonl') + `
@@ -330,6 +353,8 @@ export type SignedMatch = {
   id: string; score: number; rule: string; engine: string;
   demandId: string; supplyId: string;
   nhomCau: number | null; nhomCung: number[]; quaChuoiGiaTri: boolean; tokenGiao: string[];
+  tokenCau: string[];
+  canhChuoi: { tu: number; den: number; lyDo: string; trangThai: string } | null;
   signoff: { by: string; role: string; date: string };
   khoaBangChung: string | null;
   chuaDuyet: string[];
