@@ -65,13 +65,14 @@
 .mt-top__nav a:hover { color: var(--color-text-primary); }
 .mt-top__nav .mt-top__phu { padding-left: var(--space-6); border-left: 1px solid var(--color-border-subtle); color: var(--color-text-muted); }
 .mt-top__phai { margin-left: auto; display: flex; align-items: center; gap: var(--space-4); }
-.mt-trang { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-code); font-size: 11px; color: var(--color-text-secondary); padding: 6px 10px; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-full); white-space: nowrap; }
+/* Hai vien thuoc tren thanh dau cung mot chieu cao (36px, trung binh cua 31px va 40px cu, lam tron). */
+.mt-trang { display: inline-flex; align-items: center; gap: 8px; height: 36px; box-sizing: border-box; font-family: var(--font-code); font-size: 11px; color: var(--color-text-secondary); padding: 0 14px; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-full); white-space: nowrap; }
 .mt-trang i { width: 7px; height: 7px; border-radius: 50%; }
 .mt-trang i.is-xanh { background: var(--color-accent-green); box-shadow: var(--glow-green); }
 .mt-trang i.is-vang { background: var(--color-accent-amber); }
 
 .mt-nut {
-  display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: var(--radius-full);
+  display: inline-flex; align-items: center; gap: 8px; height: 36px; box-sizing: border-box; padding: 0 18px; border-radius: var(--radius-full);
   font-size: 13.5px; font-weight: 600; white-space: nowrap; color: var(--color-text-primary);
   border: 1px solid var(--color-border-strong); background: rgba(7, 18, 37, 0.6); transition: 160ms ease;
 }
@@ -88,7 +89,7 @@
 .mt-chu__h span { background: linear-gradient(92deg, var(--data-cung), var(--color-accent-cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .mt-chu__p { margin-top: var(--space-4); font-size: 15px; line-height: 1.6; color: var(--color-text-secondary); }
 .mt-chu__nut { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
-.mt-hud__chu li.mt-hud__ghi { flex-basis: 100%; justify-content: flex-end; color: var(--color-text-muted); font-size: 10.5px; }
+.mt-hud__chu li.mt-hud__ghi { display: block; flex-basis: 100%; text-align: right; color: var(--color-text-muted); font-size: 10.5px; }
 
 /* ---- HUD duoi ---- */
 .mt-hud {
@@ -109,7 +110,7 @@
 .mt-hud__so > div.is-cung::before { background: var(--data-cung); }
 .mt-hud__so > div.is-cau::before { background: var(--data-cau); }
 .mt-hud__so > div.is-match::before { background: var(--data-match); }
-.mt-hud__chu { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 16px; max-width: 360px; font-size: 11px; color: var(--color-text-secondary); list-style: none; }
+.mt-hud__chu { display: flex; flex-wrap: wrap; justify-content: flex-end; text-align: right; gap: 6px 16px; max-width: 360px; font-size: 11px; color: var(--color-text-secondary); list-style: none; }
 .mt-hud__chu li { display: inline-flex; align-items: center; gap: 7px; }
 .mk { display: inline-block; width: 9px; height: 9px; }
 .mk--cung { border-radius: 50%; background: var(--data-cung); }
