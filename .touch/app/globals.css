@@ -1282,6 +1282,9 @@
   .dk .reg-table .ent { color: var(--dk-tx); }
   .dk .tierC { background: var(--dk-bg-3); border: 1px solid var(--dk-ln2); color: var(--dk-tx2); }
   .dk .hub-note { color: var(--dk-tx3); }
+  .hub-demo-banner { margin: 0 0 18px; padding: 10px 14px; border: 1px solid rgba(240, 228, 66, 0.35); border-radius: 8px; background: rgba(240, 228, 66, 0.06); font-size: 13px; line-height: 1.5; color: var(--dk-tx2, #c9ccd6); }
+  .hub-demo-banner b { color: #F0E442; font-weight: 600; }
+  .hub-demo-banner a { color: #56B4E9; text-decoration: underline; text-underline-offset: 2px; }
   .dk .mcard-flush { border: none; box-shadow: none; }
   /* rail thanh ngang mobile: pill toi */
   @media (max-width: 960px) {

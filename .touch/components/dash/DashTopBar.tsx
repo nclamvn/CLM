@@ -24,8 +24,8 @@ export function DashTopBar({ title, subtitle }: { title?: string; subtitle?: str
         <div className="dash-user">
           <span className="dash-avatar">LN</span>
           <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15 }}>
-            <span style={{ fontSize: 13, fontWeight: 600 }}>Lam</span>
-            <span style={{ fontSize: 11, color: 'var(--color-text-secondary)' }}>Project Lead</span>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>Lâm</span>
+            <span style={{ fontSize: 11, color: 'var(--color-text-secondary)' }}>AI Officer</span>
           </span>
           <Icon name="chevron" size={16} />
         </div>

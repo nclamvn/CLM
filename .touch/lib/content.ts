@@ -185,7 +185,6 @@ export const dk = {
       { href: '#why', label: 'Chứng minh' },
       { href: '#vertical', label: 'Tài nguyên' },
     ],
-    status: 'ENGINE DEMO',
     cta: 'Xem engine thật',
   },
   hero: {
@@ -195,8 +194,8 @@ export const dk = {
     line3: 'Khớp đúng. Tăng niềm tin.',
     sub: 'Cào, tinh lọc, gắn provenance, dựng registry sống, ghép cung cầu và nội suy phân tích trên một engine. Mỗi match truy được về nguồn, mỗi giới thiệu có người bảo chứng.',
     ctaPrimary: 'Xem engine thật',
-    ctaGhost: 'Xem dashboard dự án',
-    footnote: '* Số liệu minh họa',
+    ctaGhost: 'Xem Hub minh họa',
+    footnote: '* Quả cầu là hình minh họa. Bảng match bên cạnh là match thật, đã có người ký.',
     assure: ['Provenance mọi fact', 'Fail-loud, không match rác', 'Người bảo chứng đứng sau'],
     streamTitle: 'MATCH STREAM',
     streamLive: 'DEMO',
@@ -294,7 +293,6 @@ export const dk = {
   },
   footer: {
     blurb: 'Kết nối cung cầu bằng những match chứng-minh-được, với một người bảo chứng đứng sau.',
-    status: 'ENGINE · LIVE · UPTIME 99,98%',
     cols: [
       { h: 'Sản phẩm', links: [{ href: '#pipeline', label: 'Engine' }, { href: '#data', label: 'Dữ liệu' }, { href: '#matching', label: 'Matching' }] },
       { h: 'Tin cậy', links: [{ href: '#why', label: 'Provenance' }, { href: '#why', label: 'Bảo chứng' }, { href: '#why', label: 'Fail-loud' }] },
@@ -343,7 +341,7 @@ export const hub = {
   panelSort: 'sorted · độ khớp',
   regTitle: 'Registry cung · trích',
   regCols: ['Registry cung · trích', 'Năng lực', 'Tier'],
-  note: 'Match trên màn này là DEMO minh hoạ (chưa có chiều cầu). Registry cung bên dưới là dữ liệu THẬT (CNCLData), mỗi ô bấm ra snapshot kiểm được.',
+  note: 'Match trên màn này là DEMO minh hoạ cho ngành Công nghiệp hỗ trợ. Registry cung bên dưới là dữ liệu THẬT (CNCLData), mỗi ô bấm ra snapshot kiểm được. Match thật của chương trình công nghệ chiến lược nằm ở Dashboard.',
 } as const;
 
 /** Match mau (don vi gia tri). Ten doanh nghiep la hu cau minh hoa. */

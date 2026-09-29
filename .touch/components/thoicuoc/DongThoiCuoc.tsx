@@ -64,7 +64,26 @@ function TrucThoiGian({ ds, tu, den, chon, datChon }: { ds: SuKien[]; tu: string
   // Lan chinh sach: diem giu tren truc (vach doc phai dung ngay), chi NHAN xep tang khi gan nhau.
   const tangNhan = new Map<string, number>();
   const cs = trongKhoang.filter((e) => e.lan === 'chinh_sach');
-  cs.forEach((e, i) => { let k = 0; for (let j = i - 1; j >= 0 && Math.abs(x(cs[j].ngay) - x(e.ngay)) < 46; j--) k++; tangNhan.set(e.id, k); lech.set(e.id, 0); });
+  // Dat nhan theo BE RONG, khong theo khoang cach diem (sua 29/09/2026). Luat cu dem so diem gan
+  // trong 46px, nen nhan "QĐ 21/2026 hiệu lực" (~93px) cach QĐ 769 hai thang van cung tang va de len
+  // nhau. Nay: w uoc tu so ky tu (co 10px dam); o moi tang thu ba cach neo (giua, ben phai, ben trai
+  // diem), chon cach dau tien khong cham nhan nao da dat va khong ra ngoai khung. Het cach moi len
+  // tang tren. Tang thap duoc uu tien vi tang cao cham vao dai mat do.
+  const nhanCS = (e: SuKien) => `${e.vanBan?.replace('/QĐ-TTg', '') ?? ''}${e.loai === 'hieu_luc' ? ' hiệu lực' : ''}`;
+  const neoNhan = new Map<string, 'middle' | 'start' | 'end'>();
+  const daDat: [number, number][][] = [];
+  [...cs].sort((a, b) => x(a.ngay) - x(b.ngay)).forEach((e) => {
+    const w = nhanCS(e).length * 6.4 + 8; const cx = x(e.ngay);
+    const cach: ['middle' | 'start' | 'end', number, number][] = [['middle', cx - w / 2, cx + w / 2], ['start', cx - 4, cx + w - 4], ['end', cx - w + 4, cx + 4]];
+    // Thu tu tang: sat tren diem (0), ngay duoi diem (-1, khoang trong giua hai lan), roi len dan.
+    for (let t = 0; ; t++) {
+      const k = t === 0 ? 0 : t === 1 ? -1 : t - 1;
+      const o = daDat[k + 1] = daDat[k + 1] ?? [];
+      const hop = cach.find(([, a, b]) => a >= TRAI - 40 && b <= W - 4 && o.every(([p, q]) => b <= p || a >= q));
+      if (hop) { o.push([hop[1], hop[2]]); tangNhan.set(e.id, k); neoNhan.set(e.id, hop[0]); break; }
+    }
+    lech.set(e.id, 0);
+  });
   return (
     <svg className="tc-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dòng thời gian ${trongKhoang.length} sự kiện từ ${ngayVN(tu)} đến ${ngayVN(den)}. Danh sách đầy đủ ở dưới.`}
       onClick={(e) => { if ((e.target as Element).tagName === 'svg') datChon(null); }}>
@@ -102,7 +121,7 @@ function TrucThoiGian({ ds, tu, den, chon, datChon }: { ds: SuKien[]; tu: string
               : e.lan === 'quyet_dinh' ? <rect x={-5} y={-5} width={10} height={10} transform="rotate(45)" />
                 : <circle r={r} />}
             <title>{`${ngayVN(e.ngay)} · ${e.tieuDe}`}</title>
-            {e.lan === 'chinh_sach' && <text y={-12 - (tangNhan.get(e.id) ?? 0) * 12} textAnchor="middle" className="tc-d__vb">{e.vanBan?.replace('/QĐ-TTg', '')}{e.loai === 'hieu_luc' ? ' hiệu lực' : ''}</text>}
+            {e.lan === 'chinh_sach' && <text x={neoNhan.get(e.id) === 'start' ? -4 : neoNhan.get(e.id) === 'end' ? 4 : 0} y={(tangNhan.get(e.id) ?? 0) < 0 ? 20 : -12 - (tangNhan.get(e.id) ?? 0) * 12} textAnchor={neoNhan.get(e.id) ?? 'middle'} className="tc-d__vb">{nhanCS(e)}</text>}
           </g>);
       })}
     </svg>

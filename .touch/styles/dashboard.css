@@ -106,7 +106,9 @@
 .dash-shell .dash-topbar { display: flex; align-items: center; justify-content: space-between; height: 56px; margin-bottom: var(--space-3); }
 .dash-shell .dash-topbar__title { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.02em; }
 .dash-shell .dash-topbar__sub { font-size: 13px; line-height: 18px; color: var(--color-text-secondary); margin-top: 2px; }
-.dash-shell .dash-topbar__controls { display: flex; align-items: center; gap: 8px; }
+.dash-shell .dash-topbar__controls { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.dash-shell .dash-topbar > div:first-child { min-width: 0; padding-right: 16px; }
+.dash-shell .dash-user span { white-space: nowrap; }
 .dash-shell .dash-prov {
   display: inline-flex; align-items: center; gap: 8px; min-width: 160px; height: 40px; padding: 0 var(--space-3_5);
   border-radius: var(--radius-control); border: var(--stroke-hairline) solid var(--a-green-35);
@@ -1178,8 +1180,8 @@
 .dash-shell .kh-luoi { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-2); }
 .dash-shell .kh-phan { padding: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); }
 .dash-shell .kh-phan__dau { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
-.dash-shell .kh-phan__ten { font-size: 15px; font-weight: 650; color: var(--color-text-primary); }
-.dash-shell .kh-phan__dau code { font-size: 11.5px; color: var(--color-text-muted); }
+.dash-shell .kh-phan__ten { font-size: 15px; font-weight: 650; color: var(--color-text-primary); white-space: nowrap; flex-shrink: 0; }
+.dash-shell .kh-phan__dau code { font-size: 11.5px; color: var(--color-text-muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .dash-shell .kh-phan__vt { margin: 0; font-size: 12.5px; line-height: 19px; color: var(--color-text-secondary); min-height: 57px; }
 .dash-shell .kh-phan__so { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px var(--space-2); margin: 0; }
 .dash-shell .kh-phan__so div { display: flex; justify-content: space-between; gap: 6px; font-size: 12px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); padding-bottom: 4px; }

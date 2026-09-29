@@ -89,7 +89,7 @@ function Sankey() {
               role="button" tabIndex={0} aria-label={`${n.nhan}: ${n.giaTri} cặp`} onKeyDown={(e) => { if (e.key === 'Enter') bam(n); }}
               onFocus={() => setTro(n.id)} onBlur={() => setTro(null)}>
               <rect x={n.x} y={n.y} width={n.w} height={n.h} rx={n.tang === 'nhom' ? 4 : 1.5} className="tt-nut__r" />
-              {n.tang === 'don_vi' && <text x={n.x - 6} y={n.y + n.h / 2 + 3.5} textAnchor="end" className="tt-nut__t">{ngan(n.nhan, 34)}</text>}
+              {n.tang === 'don_vi' && <text x={n.x - 6} y={n.y + n.h / 2 + 3.5} textAnchor="end" className="tt-nut__t">{ngan(n.nhan, 40)}</text>}
               {n.tang === 'nhom' && (
                 <text x={n.x + 10} y={n.y + n.h / 2 + 4} className="tt-nut__g">
                   <tspan className="tt-nut__gso">{soHai(n.so as string)}</tspan><tspan dx={6}>{ngan(n.nhan, 22)}</tspan>

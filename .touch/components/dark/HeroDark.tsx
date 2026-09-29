@@ -19,10 +19,10 @@ export function HeroDark() {
           </h1>
           <p className="lp-hero__sub">{h.sub}</p>
           <div className="lp-hero__cta">
-            <a className="lp-btn lp-btn--primary" href={ROUTE.hub}>
+            <a className="lp-btn lp-btn--primary" href={ROUTE.dashboard}>
               {h.ctaPrimary} <span className="lp-btn__ar" aria-hidden="true">→</span>
             </a>
-            <a className="lp-btn lp-btn--ghost" href={ROUTE.dashboard}>
+            <a className="lp-btn lp-btn--ghost" href={ROUTE.hub}>
               {h.ctaGhost}
             </a>
           </div>

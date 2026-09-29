@@ -54,8 +54,9 @@ export function DashSidebar() {
         </div>
         <div style={{ fontSize: 11, color: 'var(--color-text-muted)', marginTop: 12 }}>Domain</div>
         <div className="dash-project__row">
-          <span style={{ color: 'var(--color-text-link)', fontSize: 13 }}>Solo Entrepreneur</span>
-          <span className="chip chip--public">SE</span>
+          {/* Sua 29/09/2026: truoc ghi "Solo Entrepreneur · SE", domain cua ban mau cu. */}
+          <span style={{ color: 'var(--color-text-link)', fontSize: 13 }}>Công nghệ chiến lược</span>
+          <span className="chip chip--public">QĐ 21</span>
         </div>
       </div>
       <div className="dash-brandfoot">

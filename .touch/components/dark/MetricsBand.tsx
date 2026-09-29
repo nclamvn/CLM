@@ -1,4 +1,5 @@
 import { cnclMeta } from '@/lib/cncl-registry';
+import { matchMeta } from '@/lib/cncl-match';
 import { DataTruthBadge } from '@/components/portal/DataTruthBadge';
 import { ROUTE } from '@/lib/portal-routes';
 
@@ -6,7 +7,9 @@ import { ROUTE } from '@/lib/portal-routes';
    Dashboard KPI. 3 card REAL tu cnclMeta + 1 card honest-null (lock + link -> dashboard).
    Truth badge nho o eyebrow; sparkline co grid + endpoint (minh hoa). */
 
-const SRC = 'CNCL Registry · 18/07';
+// Ngay doc tu meta sinh ra, khong go tay (truoc ghi cung '18/07').
+const ngay = (d: string) => `${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}`;
+const SRC = `CNCL Registry · ${ngay(cnclMeta.generatedAt)}`;
 const DEMO_SERIES = [9, 11, 10, 14, 12, 16, 15, 19, 18, 22];
 
 function Spark() {
@@ -44,15 +47,6 @@ const cards: { key: string; label: string; value: string; unit: string; accent: 
   { key: 'sources', label: 'Nguồn bằng chứng', value: String(cnclMeta.sources), unit: 'nguồn', accent: 'green' },
 ];
 
-function LockIcon() {
-  return (
-    <svg className="lp-mc__lock" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-      <rect x="4.5" y="9" width="11" height="7.5" rx="1.5" />
-      <path d="M7 9V6.8a3 3 0 0 1 6 0V9" />
-    </svg>
-  );
-}
-
 export function MetricsBand() {
   return (
     <section className="lp-metrics portal-container" aria-label="Chi so tong hop">
@@ -75,18 +69,19 @@ export function MetricsBand() {
           </div>
         </div>
       ))}
-      <a className="lp-mc lp-mc--null surface-critical" href={ROUTE.dashboard} data-accent="red">
+      {/* Sua 29/09/2026: the nay truoc ghi cung "Chưa chạy · Thiếu dữ liệu CẦU thật". Nay doc tu so ky. */}
+      <a className="lp-mc lp-mc--null surface-critical" href={`${ROUTE.dashboard}/matching`} data-accent="red">
         <div className="lp-mc__eyebrow">
           <span className="lp-mc__label">Match chứng minh được</span>
-          <DataTruthBadge state="SCAFFOLD" label="Chưa nối" />
+          <DataTruthBadge state="REAL" />
         </div>
-        <div className="lp-mc__nullrow">
-          <LockIcon />
-          <span className="lp-mc__nullv">Chưa chạy</span>
+        <div className="lp-mc__value">
+          {matchMeta.daKy}
+          <span className="lp-mc__unit">match đã ký</span>
         </div>
         <div className="lp-mc__foot">
-          <span className="lp-mc__src">Thiếu dữ liệu CẦU thật</span>
-          <span className="lp-mc__link">Xem trạng thái trong Dashboard →</span>
+          <span className="lp-mc__src">{matchMeta.tuChoi} cặp bị từ chối, vẫn hiện</span>
+          <span className="lp-mc__link">Xem từng match →</span>
         </div>
       </a>
     </section>

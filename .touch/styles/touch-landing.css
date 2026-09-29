@@ -98,6 +98,8 @@
 .lp-engine[data-state="demo"] .lp-engine__dot { background: var(--accent-amber); }
 .lp-engine[data-state="live"] { color: var(--accent-green); }
 .lp-engine[data-state="live"] .lp-engine__dot { background: var(--accent-green); box-shadow: var(--glow-green); }
+.lp-engine[data-state="real"] { color: var(--accent-green); }
+.lp-engine[data-state="real"] .lp-engine__dot { background: var(--accent-green); }
 .lp-engine[data-state="offline"] .lp-engine__dot { background: var(--text-muted); }
 
 /* ---- hero (muc 7.3) ---- */
@@ -275,7 +277,7 @@
 .lp-stream__list { list-style: none; display: flex; flex-direction: column; gap: var(--space-1_5); }
 .lp-stream__row { display: grid; grid-template-columns: auto 1fr auto; gap: var(--space-2); align-items: center; }
 .lp-stream__id { font-family: var(--font-code); font-size: 11px; color: var(--text-primary); }
-.lp-stream__flow { font-size: 10px; color: var(--text-muted); }
+.lp-stream__flow { font-size: 10px; color: var(--text-muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .lp-stream__score { font-family: var(--font-code); font-size: 11px; font-weight: 600; color: var(--accent-cyan); }
 
 /* nav finesse (VF-L-002): mute switcher, gian action, giam CTA glow, divider ~5% */

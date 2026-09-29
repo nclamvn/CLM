@@ -18,7 +18,9 @@ const GATES: Gate[] = [
   { n: 4, name: 'Phân hạng', state: 'pass' },
   { n: 5, name: 'Đối chiếu', state: 'pass' },
   { n: 6, name: 'Dựng provenance', state: 'pass' },
-  { n: 7, name: 'Gate kết quả', state: 'blocked', reason: 'Chưa có dữ liệu CẦU thật', outcome: 'Không phát hành match' },
+  // Sua 29/09/2026: ly do truoc la "Chưa có dữ liệu CẦU thật", mot khang dinh ve hien trang da sai.
+  // Khoi nay la MO PHONG co che, nen ly do phai la mot vi du co che, khong noi ve hien trang.
+  { n: 7, name: 'Gate kết quả', state: 'blocked', reason: 'Match thiếu chữ ký người gác cổng', outcome: 'Không phát hành match đó' },
 ];
 
 export function PipelineDark() {
@@ -53,8 +55,8 @@ export function PipelineDark() {
       </ol>
       <div className="lp-pipe__block" role="status">
         <span className="lp-pipe__block-tag">Gate kết quả · BỊ CHẶN</span>
-        <span className="lp-pipe__block-reason">Lý do: Chưa có dữ liệu CẦU thật</span>
-        <span className="lp-pipe__block-out">Kết luận: Không phát hành match</span>
+        <span className="lp-pipe__block-reason">Ví dụ lý do: {GATES[6].reason}</span>
+        <span className="lp-pipe__block-out">Kết luận: {GATES[6].outcome}</span>
       </div>
     </div>
   );

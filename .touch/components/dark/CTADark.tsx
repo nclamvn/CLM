@@ -33,13 +33,13 @@ export function CTADark() {
           <div className="lp-cta__copy">
             <span className="lp-cta__eyebrow">Ra quyết định</span>
             <h2 className="lp-cta__h">Sẵn sàng xem engine trên dữ liệu có nguồn?</h2>
-            <p className="lp-cta__sub">Xem Hub thật hoặc theo dõi trạng thái dự án.</p>
+            <p className="lp-cta__sub">Xem engine chạy trên dữ liệu thật, hoặc xem Hub minh họa cho một ngành khác.</p>
             <div className="lp-cta__row">
-              <a className="lp-btn lp-btn--primary" href={ROUTE.hub}>
-                Xem Hub thật <span className="lp-btn__ar" aria-hidden="true">→</span>
+              <a className="lp-btn lp-btn--primary" href={ROUTE.dashboard}>
+                Xem engine thật <span className="lp-btn__ar" aria-hidden="true">→</span>
               </a>
-              <a className="lp-btn lp-btn--ghost" href={ROUTE.dashboard}>
-                Theo dõi trạng thái dự án
+              <a className="lp-btn lp-btn--ghost" href={ROUTE.hub}>
+                Xem Hub minh họa
               </a>
             </div>
           </div>

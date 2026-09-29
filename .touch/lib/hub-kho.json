@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "76e77e3",
+    "sha": "8fc30a2",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 175,
+  "tongCommit": 176,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 29,
+      "commitSauGop": 30,
       "cuoi": {
-        "sha": "76e77e3",
+        "sha": "8fc30a2",
         "ngay": "2026-09-29",
-        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
+        "tieuDe": "Sinh lai du lieu web sau chuoi 79/79: Kho ma dem 2 o cua chieu cau"
       },
       "soTep": 413
     }
@@ -84,6 +84,11 @@
     ".touch": 35
   },
   "ganDay": [
+    {
+      "sha": "8fc30a2",
+      "ngay": "2026-09-29",
+      "tieuDe": "Sinh lai du lieu web sau chuoi 79/79: Kho ma dem 2 o cua chieu cau"
+    },
     {
       "sha": "76e77e3",
       "ngay": "2026-09-29",
@@ -128,11 +133,6 @@
       "sha": "4709ebe",
       "ngay": "2026-09-29",
       "tieuDe": "M3 Ho so don vi: bang 44 don vi + 44 trang ho so, khong diem tong hop, o trong noi thang"
-    },
-    {
-      "sha": "5427a2f",
-      "ngay": "2026-09-29",
-      "tieuDe": "Do thi cung cau dung lai: ban do lanh tho nhom + ma tran, 0 giao canh; sua anh xa nhu cau -> nhom"
     }
   ],
   "dong": [
