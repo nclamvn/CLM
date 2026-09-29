@@ -65,7 +65,10 @@ try {
   inRa('RANG 6 · so don vi ghi 14 -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH'), `exit ${r.rc}`);
   r = chay(canh((t) => doiJson(t, (x) => { x.cua[0].href = '/dashboard/khong-co'; })));
   inRa('RANG 7 · cua tro toi trang khong co -> CUA_LECH', r.rc === 2 && r.out.includes('CUA_LECH'), `exit ${r.rc}`);
-  r = chay(canh((t) => doiJson(t, (x) => { if (x.chuoiCong) { x.chuoiCong.xanh = 4; x.chuoiCong.tong = 4; } })));
+  // Tiem VO DIEU KIEN. Ban dau chi sua "neu co chuoiCong": trong CI (clone moi, chua co ket qua chay
+  // nao) truong nay null, phep tiem thanh khong lam gi va rang bao KHONG CAN (lo ra 29/09/2026 khi
+  // chay chuoi trong bwrap). Nay luon ghi mot ket qua 4/4 bia: co meta thi lech, khong co thi la bia.
+  r = chay(canh((t) => doiJson(t, (x) => { x.chuoiCong = { xanh: 4, tong: 4, dat: true, luc: '2026-07-19T22:18:33+0700' }; })));
   inRa('RANG 8 · chuoi cong ghi 4/4 -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH'), `exit ${r.rc}`);
 
   const t = canh();
