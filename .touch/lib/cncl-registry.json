@@ -4,15 +4,15 @@
     "claims": 221,
     "needs": 30,
     "sources": 13,
-    "snapshots": 47,
+    "snapshots": 46,
     "tierA": 78,
     "tierB": 143,
     "nhomPhu": 10,
     "generatedAt": "2026-09-29",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-09-29 12:52: 60/60 xanh",
+    "gate": "chuỗi cổng 2026-09-29 13:03: 60/60 xanh",
     "chuoiCong": {
-      "luc": "2026-09-29T12:52:43+0700",
+      "luc": "2026-09-29T13:03:25+0700",
       "cheDo": "day_du",
       "tong": 60,
       "xanh": 60,
@@ -3015,7 +3015,7 @@
       "sources": [
         {
           "source": "vneconomy.vn",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
         }
       ],
       "tim": "vinbigdata tháng 8/2023, vinbigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng việt nhóm 1 công nghệ số sp 1",
@@ -3027,8 +3027,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": ""
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718 dat hau to theo ngay chup. Claim nay la bang chung cua MATCH-0007 da ky, nen tro sang ban chup that lam khoa chu ky doi; chu ky phai do NGUOI ky lai hoac bac, may khong ky thay."
         },
         {
           "field": "nhom_cncl",
@@ -3037,8 +3037,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718 dat hau to theo ngay chup. Claim nay la bang chung cua MATCH-0007 da ky, nen tro sang ban chup that lam khoa chu ky doi; chu ky phai do NGUOI ky lai hoac bac, may khong ky thay."
         },
         {
           "field": "san_pham_lien_quan",
@@ -3047,8 +3047,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "LLM/tro ly ao -> SP1 [CNCL-P01-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "LLM/tro ly ao -> SP1 [CNCL-P01-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718 dat hau to theo ngay chup. Claim nay la bang chung cua MATCH-0007 da ky, nen tro sang ban chup that lam khoa chu ky doi; chu ky phai do NGUOI ky lai hoac bac, may khong ky thay."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -3057,8 +3057,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": ""
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718 dat hau to theo ngay chup. Claim nay la bang chung cua MATCH-0007 da ky, nen tro sang ban chup that lam khoa chu ky doi; chu ky phai do NGUOI ky lai hoac bac, may khong ky thay."
         }
       ]
     },

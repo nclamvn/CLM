@@ -1,4 +1,4 @@
-28
+29
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -112,3 +112,5 @@
   LLM (vjst 27/07/2023). Nhung claim do trong registry nhu bai thang 7/2026.
   CON NO: 4 claim VinBigData van o vneconomy_ai_khatvong_20260718 (xem ngan_sach_ngay_dang.txt).
   Khi tro sang ban chup that, con so nay se tang them.
+29/09/2026 28 -> 29 (luot thu ba). VinBigData · nang_luc_mo_ta: tro sang ban chup that, bai
+  04/09/2023, 1121 ngay. Day la bang chung cua MATCH-0007; anh Lam quyet ky lai hay bac.

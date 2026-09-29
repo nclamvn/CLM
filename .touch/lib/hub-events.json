@@ -11,6 +11,15 @@
   },
   "events": [
     {
+      "ngay": "2026-09-29",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "VinBigData",
+      "nhuCau": "CNCL-P01 · nhu cầu quốc gia",
+      "nhan": "MATCH-0007: VinBigData ⇄ CNCL-P01",
+      "by": "Lam Nguyen"
+    },
+    {
       "ngay": "2026-09-28",
       "kind": "de_xuat_vong_tu_chay",
       "trangThai": "cho_duyet",
@@ -73,15 +82,6 @@
       "donVi": "CT Semiconductor",
       "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
       "nhan": "MATCH-0006: CT Semiconductor ⇄ CNCL-P23",
-      "by": "Lam Nguyen"
-    },
-    {
-      "ngay": "2026-08-16",
-      "kind": "match_da_ky",
-      "trangThai": "da_ky",
-      "donVi": "VinBigData",
-      "nhuCau": "CNCL-P01 · nhu cầu quốc gia",
-      "nhan": "MATCH-0007: VinBigData ⇄ CNCL-P01",
       "by": "Lam Nguyen"
     },
     {

@@ -257,7 +257,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "95a4acb064fe6817",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -305,7 +305,7 @@ export const signedMatches: SignedMatch[] = [
     "signoff": {
       "by": "Lam Nguyen",
       "role": "chuyen gia gac cong",
-      "date": "2026-08-16"
+      "date": "2026-09-29"
     },
     "chuaDuyet": [],
     "soChuoi": 1,
@@ -329,7 +329,7 @@ export const signedMatches: SignedMatch[] = [
         "tier": "B",
         "extraction": "verbatim",
         "source": "vneconomy.vn",
-        "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
+        "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
       }
     ],
     "unverified": []

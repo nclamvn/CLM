@@ -1921,7 +1921,7 @@
       "target": "nh:1",
       "bangChung": {
         "span": "Bên cạnh đó, trợ lý ảo ViVi- trợ lý giọng nói thuần Việt được phát triển bởi VinBigData.",
-        "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
+        "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
         "tier": "B",
         "source": "vneconomy.vn"
       }
@@ -1933,7 +1933,7 @@
       "target": "nc:CNCL-P01 · nhu cầu quốc gia",
       "bangChung": {
         "span": "Bên cạnh đó, trợ lý ảo ViVi- trợ lý giọng nói thuần Việt được phát triển bởi VinBigData.",
-        "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
+        "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
         "tier": "B",
         "source": "vneconomy.vn"
       }
@@ -2498,7 +2498,7 @@
         "role": "chuyen gia gac cong",
         "date": "2026-08-16"
       },
-      "khoaBangChung": "95a4acb064fe6817"
+      "khoaBangChung": null
     },
     {
       "id": "e:MATCH-0007",
@@ -2510,7 +2510,7 @@
       "signoff": {
         "by": "Lam Nguyen",
         "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
+        "date": "2026-09-29"
       },
       "khoaBangChung": "72003af33e5da3a0"
     },

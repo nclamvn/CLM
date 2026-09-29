@@ -16,4 +16,8 @@
 #   4 claim sang vneconomy_ai_khatvong_chuplai_20230904.html (da co san) va xoa dong duoi day.
 #
 # Moi dong: ten ban chup | ly do
-vneconomy_ai_khatvong_20260718.html | 4 claim VinBigData, cho anh Lam ky lai MATCH-0007 voi ngay dang that 04/09/2023
+#
+# 29/09/2026 (luot sau) 1 -> 0. 4 claim VinBigData da tro sang vneconomy_ai_khatvong_chuplai_20230904.
+#   Khoa chu ky MATCH-0007 doi theo, restore-signoff bao BANG CHUNG DOI CHU va chuoi cong DO cho
+#   toi khi anh Lam ky lai hoac bac MATCH-0007. Do la trang thai dung: chu ky cu duoc dat tren mot
+#   ngay sai (bai trong nhu thang 7/2026, that ra 04/09/2023).
