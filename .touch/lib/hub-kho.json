@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "a9b4833",
+    "sha": "52de0c0",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 178,
+  "tongCommit": 180,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 32,
+      "commitSauGop": 34,
       "cuoi": {
-        "sha": "a9b4833",
+        "sha": "52de0c0",
         "ngay": "2026-09-29",
-        "tieuDe": "Trang dau mot man: hinh dong hub cung cau ve tu du lieu that (44 don vi, 10 nhom, 30 nhu cau, 47 cap, 11 match ky); Hub dung chung token SOT v2 voi dashboard; cong mat_tien them mot man + mot he mau, 12 rang"
+        "tieuDe": "Trang dau: hai vien thuoc thanh dau cung cao 36px; khoi chu giai goc phai duoi canh phai"
       },
       "soTep": 397
     }
@@ -84,6 +84,16 @@
     ".touch": 37
   },
   "ganDay": [
+    {
+      "sha": "52de0c0",
+      "ngay": "2026-09-29",
+      "tieuDe": "Trang dau: hai vien thuoc thanh dau cung cao 36px; khoi chu giai goc phai duoi canh phai"
+    },
+    {
+      "sha": "86da5c4",
+      "ngay": "2026-09-29",
+      "tieuDe": "Trang dau: tieu de chi 'Cung gặp cầu.', cau phu khong gan con so (registry con mo rong; so nam o HUD sinh tu du lieu)"
+    },
     {
       "sha": "a9b4833",
       "ngay": "2026-09-29",
@@ -123,16 +133,6 @@
       "sha": "be90567",
       "ngay": "2026-09-29",
       "tieuDe": "Cau noi mot chieu kernel -> vong tu chay: kernel chi goi y URL, khong bao gio cung cap su that"
-    },
-    {
-      "sha": "c6e8b5e",
-      "ngay": "2026-09-29",
-      "tieuDe": "M5 Dong thoi cuoc: truc thoi gian bon lan + mat do + dong tin; ngay chinh sach doc tu cau nguon, khong tu ten ban chup"
-    },
-    {
-      "sha": "a1bfaea",
-      "ngay": "2026-09-29",
-      "tieuDe": "M4 Matching Workbench v2: so do hai cot, vet bang chung nam chang, diem tu dung lai duoc tu cong thuc engine"
     }
   ],
   "dong": [

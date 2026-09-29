@@ -21,6 +21,10 @@
  *                         con so hai chu so tro len (tru so hieu "QĐ 21" / "QĐ 21/2026").
  *   HUB_THIEU_NHAN        /hub thieu bang "Hub minh họa" tro ve dashboard.
  *   KHONG_MOT_MAN         trang dau khong con la mot man hinh (.mt phai cao 100vh va overflow hidden).
+ *   KHONG_DON_SAC         trang dau truot chuan HIVE Editorial (anh Lam chot 29/09/2026 sau khi ban
+ *                         vong hub phat sang bi danh gia la "AI slop"): co gradient, glow (shadowBlur,
+ *                         text-shadow, box-shadow co mau, 'lighter'), mau du lieu hay mau nhan (--data-*,
+ *                         --color-accent-*), hoac tieu de khong dung serif Noto Serif.
  *   MAU_KHONG_THONG_NHAT  app/layout.tsx khong nap styles/touch-unify.css SAU globals.css; hoac Hub khong
  *                         anh xa --dk-bg/--dk-rd ve token SOT v2; hoac mat tien con do cu #C40F0F/#E8221A.
  *
@@ -114,10 +118,25 @@ for (const p of [CAN.css, CAN.unify, CAN.page, ...landing]) {
   if (/#C40F0F|#E8221A|#F53B2E|196,\s*15,\s*15/i.test(s)) vi.push(`MAU_KHONG_THONG_NHAT: ${ten(p)} con do cu cua he graphite`);
 }
 
+// ── 7. Don sac (HIVE Editorial) ─────────────────────────────────────────────
+for (const p of [CAN.css, CAN.page, ...landing]) {
+  const s2 = boChuThich(doc(p));
+  const loi = [];
+  if (/gradient\(/i.test(s2)) loi.push('gradient');
+  if (/shadowBlur|text-shadow|'lighter'/.test(s2)) loi.push('glow');
+  if (/box-shadow:[^;]*rgba\((?!0,\s*0,\s*0)/.test(s2)) loi.push('box-shadow co mau');
+  if (/var\(--data-|var\(--color-accent|--data-(cung|cau|match)/.test(s2)) loi.push('mau du lieu/mau nhan');
+  if (loi.length) vi.push(`KHONG_DON_SAC: ${ten(p)} co ${loi.join(', ')}`);
+}
+{
+  const c2 = boChuThich(doc(CAN.css));
+  if (!/font-family:\s*'Noto Serif'/.test(c2) || !/\.mt-chu__h\s*\{[^}]*font-family:\s*var\(--p-serif\)/.test(c2)) vi.push('KHONG_DON_SAC: tieu de trang dau khong dung serif Noto Serif (--p-serif)');
+}
+
 console.log(`mat tien: ${quetChu.length} tep chu · ${landing.length} component trang dau`);
 if (vi.length) {
   console.log(`\nFAIL: ${vi.length} vi pham`);
   vi.slice(0, 30).forEach((v) => console.log('  ' + v));
   process.exit(2);
 }
-console.log('\nOK: mat tien khong noi sai hien trang, so sinh tu du lieu, mot man hinh, mot he mau.');
+console.log('\nOK: mat tien khong noi sai hien trang, so sinh tu du lieu, mot man hinh, don sac HIVE, Hub cung he mau dashboard.');

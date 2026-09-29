@@ -18,6 +18,8 @@ export type LuongMT = { cung: number; cau: number; nhom: number; daKy: boolean }
 export type MatchMT = {
   id: string; cung: number; cau: number; nhom: number; diem: number; ngay: string;
   cauMa: string; cauTen: string; cungTen: string; nguoiKy: string; tierCau: string; tierCung: string;
+  /** Cau nguon nguyen van hai phia (span da qua cong lop_phu_nguon) va ten mien nguon. */
+  cauSpan: string; cauNguon: string; cungSpan: string; cungNguon: string;
 };
 export type SoMT = {
   donVi: number; nhuCau: number; nhom: number; capCoNguon: number; daKy: number; tuChoi: number;
@@ -33,7 +35,7 @@ export function dungMatTien(): MatTien {
   const G = graph as unknown as { nodes: GNode[]; edges: GEdge[] };
   const M = matchData as unknown as {
     signedMatches: { id: string; score: number; demandId: string; supplyId: string; signoff: { by: string; date: string };
-      demandEvidence: { tier: string; value: string }[]; supplyEvidence: { tier: string }[] }[];
+      demandEvidence: { tier: string; value: string; span: string; source: string }[]; supplyEvidence: { tier: string; span: string; source: string }[] }[];
     rejectedPairs: unknown[];
   };
   const R = registry as unknown as { meta: { claims: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string } | null } };
@@ -77,6 +79,8 @@ export function dungMatTien(): MatTien {
       id: m.id, cung: iCung, cau: iCau, nhom: idNhom(nut[iCau].nhom), diem: m.score, ngay: m.signoff.date,
       cauMa: nut[iCau].ma ?? '', cauTen: nut[iCau].ten, cungTen: m.supplyId, nguoiKy: m.signoff.by,
       tierCau: m.demandEvidence[0]?.tier ?? '', tierCung: m.supplyEvidence[0]?.tier ?? '',
+      cauSpan: m.demandEvidence[0]?.span ?? '', cauNguon: m.demandEvidence[0]?.source ?? '',
+      cungSpan: m.supplyEvidence[0]?.span ?? '', cungNguon: m.supplyEvidence[0]?.source ?? '',
     };
   }).sort((a, b) => cmp(a.id, b.id));
 

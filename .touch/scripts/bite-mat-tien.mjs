@@ -23,6 +23,9 @@
  * RANG 10 · Hub quay ve do cu (--dk-rd: #C40F0F) -> MAU_KHONG_THONG_NHAT.
  * RANG 11 · thanh ben ghi lai "Solo Entrepreneur" -> TRANG_THAI_GO_TAY.
  * RANG 12 · KHONG BAO OAN: chu thich nhac lai "chưa chạy" -> van exit 0.
+ * RANG 13 · trang dau them nen gradient -> KHONG_DON_SAC.
+ * RANG 14 · hinh dong quay lai mau du lieu var(--data-cung) + shadowBlur -> KHONG_DON_SAC.
+ * RANG 15 · tieu de doi sang font sans -> KHONG_DON_SAC.
  *
  * Chay: node scripts/bite-mat-tien.mjs
  */
@@ -65,7 +68,7 @@ try {
   rang('RANG 2  · trang dau ghi "chưa chạy" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<h1 className="mt-chu__h">', '<p>Match thật · chưa chạy</p>\n        <h1 className="mt-chu__h">')), 2, 'TRANG_THAI_GO_TAY');
   rang('RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'app/page.tsx',
-    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut mt-nut--chinh">', '<Link href={ROUTE.hub} className="mt-nut mt-nut--chinh">')), 2, 'CHU_THAT_TRO_DEMO');
+    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut mt-nut--lon">', '<Link href={ROUTE.hub} className="mt-nut mt-nut--lon">')), 2, 'CHU_THAT_TRO_DEMO');
   rang('RANG 4  · HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<dt>{c.k}</dt><dd>{c.v}</dd>', '<dt>{c.k}</dt><dd>44</dd>')), 2, 'SO_KHONG_SINH');
   rang('RANG 5  · mat-tien gan cung daKy: 11 -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',
@@ -84,6 +87,12 @@ try {
     (s) => s.replace('>Công nghệ chiến lược<', '>Solo Entrepreneur<')), 2, 'TRANG_THAI_GO_TAY');
   rang('RANG 12 · chu thich nhac "chưa chạy" -> van exit 0', (t) => doi(t, 'app/page.tsx',
     (s) => `// Truoc day trang dau ghi "Match thật · chưa chạy".\n/* va "Thiếu dữ liệu CẦU thật" */\n${s}`), 0);
+  rang('RANG 13 · nen gradient -> KHONG_DON_SAC', (t) => doi(t, 'styles/landing-hub.css',
+    (s) => s.replace('background: var(--p-bg); color: var(--p-ink);', 'background: radial-gradient(800px 500px at 60% 40%, #0b1a3a, var(--p-bg)); color: var(--p-ink);')), 2, 'KHONG_DON_SAC');
+  rang('RANG 14 · hinh dong dung mau du lieu + glow -> KHONG_DON_SAC', (t) => doi(t, 'components/landing/HubCungCau.tsx',
+    (s) => s.replace("const MUC = docBien('--p-ink', '#EDEDEA');", "const MUC = docBien('--data-cung', '#56B4E9'); ctx.shadowBlur = 14;")), 2, 'KHONG_DON_SAC');
+  rang('RANG 15 · tieu de doi sang font sans -> KHONG_DON_SAC', (t) => doi(t, 'styles/landing-hub.css',
+    (s) => s.replace(/(\.mt-chu__h \{[^}]*?)font-family: var\(--p-serif\);/, '$1font-family: var(--p-sans);')), 2, 'KHONG_DON_SAC');
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }
