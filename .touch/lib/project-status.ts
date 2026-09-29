@@ -115,6 +115,7 @@ export const evidence = {
 /** href rỗng = màn chưa dựng, sidebar hiển thị trạng thái "sắp có" trung thực, không dead-link. */
 export const nav = [
   { label: 'Tổng quan', href: '/dashboard' },
+  { label: 'Toàn cảnh thị trường', href: '/dashboard/thi-truong' },
   { label: 'Đồ thị cung cầu', href: '/dashboard/do-thi' },
   { label: 'Hồ sơ đơn vị', href: '/dashboard/don-vi' },
   { label: 'Engine & Matching', href: '/dashboard/matching' },

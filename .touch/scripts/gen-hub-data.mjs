@@ -33,6 +33,7 @@ import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
 import { dungBanDo, LOAI_CHEO } from '../lib/do-thi-ban-do.mjs';
 import { dungMaTran } from '../lib/do-thi-ma-tran.mjs';
 import { dungHoSo, docCauHinhDomain } from '../lib/ho-so.mjs';
+import { dungThiTruong } from '../lib/thi-truong.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -217,6 +218,11 @@ const hoSo = dungHoSo({ reg, mat, graph: { nodes, edges }, ev: { events }, ...ca
 hoSo.meta.cumDeNham = cauHinh.cumDeNham;
 writeFileSync(join(LIB, 'hub-ho-so.json'), JSON.stringify(hoSo, null, 2) + '\n', 'utf8');
 
+// ── Toan canh thi truong (M1) ─────────────────────────────────────────────
+// Doc tu chinh graph + ho so vua sinh, de ba man (do thi, ho so, thi truong) khong bao gio lech.
+const thiTruong = dungThiTruong({ graph: { nodes, edges, boCuc }, hoSo });
+writeFileSync(join(LIB, 'hub-thi-truong.json'), JSON.stringify(thiTruong, null, 2) + '\n', 'utf8');
+
 // ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
 // Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.
 // Cong check-ghi-chu-ban-chup.mjs dem lai doc lap va doi chieu voi ngan sach.
@@ -227,6 +233,7 @@ writeFileSync(join(LIB, 'hub-ghi-chu.json'), JSON.stringify({ meta: { generatedA
 
 console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} tai lieu tim · ${events.length} su kien`);
 console.log(`  ho so: ${hoSo.units.length} don vi · ${hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh').length} chua dinh danh · ${hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan, 0)} cau qua han chua ly do`);
+console.log(`  thi truong: ${thiTruong.kpi.soCap} cap cung-cau (${thiTruong.kpi.capDaKy} da ky) · ${thiTruong.kpi.ncTrong}/${thiTruong.kpi.soNc} nhu cau chua co ben cung · dien tich giao Sankey ${thiTruong.sankey.chiSo.dienTichGiao}`);
 console.log(`  bo cuc: ${boCuc.chiSo.giaoCanh} giao canh, ${boCuc.chiSo.canhXuyenNut} canh xuyen nut tren ${boCuc.chiSo.soCanhVe} canh cung-cau · ma tran dao ${maTran.chiSo.daoBanDau} -> ${maTran.chiSo.daoSauSap}`);
 console.log(`  canh: ${Object.entries(graphMeta.canh).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 if (spNgoaiDanhMuc.length) console.log(`  CHU Y: ${spNgoaiDanhMuc.length} ma san pham khong khop nhu cau nao: ${spNgoaiDanhMuc.join(', ')}`);

@@ -90,7 +90,12 @@ export function DoThiCungCau() {
     return m;
   }, [cheo]);
   const coMatch = useMemo(() => new Set(cheo.filter((e) => e.kind === 'match_da_ky').flatMap((e) => [e.source, e.target])), [cheo]);
-  const khoangTrong = useMemo(() => G.nodes.filter((n) => n.kind === 'nhu_cau' && !hangXom.has(n.id)), [hangXom]);
+  // Nhu cau CO BEN CUNG = co canh cung san pham hoac match da ky. Cap bi tu choi KHONG tinh: tu
+  // choi nghia la nguoi gac cong da ket luan don vi do KHONG cung duoc. (Sua 29/09/2026: ban dau
+  // dem theo moi canh, P08 chi co mot cap bi tu choi nen bi tinh la co cung, so khoang trong
+  // hien 10 thay vi 11.)
+  const coCung = useMemo(() => new Set(cheo.filter((e) => e.kind !== 'tu_choi').map((e) => e.target)), [cheo]);
+  const khoangTrong = useMemo(() => G.nodes.filter((n) => n.kind === 'nhu_cau' && !coCung.has(n.id)), [coCung]);
   const ltCua = useMemo(() => new Map(G.boCuc.lanhTho.map((l) => [l.so ?? 'chua_co', l])), []);
   // Mot cap co the vua cung san pham vua match da ky: o ma tran hien quan he manh nhat.
   const oCua = useMemo(() => {
@@ -154,7 +159,7 @@ export function DoThiCungCau() {
       <g className="dt2-tang dt2-tang--nut">
         {G.nodes.filter((n) => n.kind !== 'nhom').map((n) => {
           const r = banKinh(n);
-          const trong = n.kind === 'nhu_cau' && !hangXom.has(n.id);
+          const trong = n.kind === 'nhu_cau' && !coCung.has(n.id);
           const cls = `dt2-nut dt2-nut--${n.kind}${trong ? ' is-trong' : ''}${sang(n.id) ? '' : ' is-mo'}${n.id === tro ? ' is-tro' : ''}`;
           // Ben nhan tinh luc build (tranh va nhan nhom, nut, nhan khac); khi soi nut thi hien them
           // ten cac hang xom chua co nhan.
@@ -212,7 +217,7 @@ export function DoThiCungCau() {
         const n = byId.get(c)!;
         return (
           <text key={c} transform={`translate(${TRAI + j * O + O / 2 + 3} ${TREN - 6}) rotate(-90)`}
-            className={`dt2-mt__cot${o?.c === c ? ' is-tro' : ''}${hangXom.has(c) ? '' : ' is-trong'}`} onClick={() => moMuc(mucCua(n))}>P{n.maSp}</text>
+            className={`dt2-mt__cot${o?.c === c ? ' is-tro' : ''}${coCung.has(c) ? '' : ' is-trong'}`} onClick={() => moMuc(mucCua(n))}>P{n.maSp}</text>
         );
       })}
       {hang.map((h, i) => cot.map((c, j) => {
@@ -264,9 +269,11 @@ export function DoThiCungCau() {
             <div className="dt2-tip__loai">{nutTro.kind === 'don_vi' ? 'Đơn vị cung' : `Nhu cầu P${nutTro.maSp}`} · nhóm {soHai(nutTro.lanhTho === 'chua_co' ? null : nutTro.lanhTho)}{nutTro.lanhThoPhu?.length ? ` (+${nutTro.lanhThoPhu.join(', ')})` : ''}</div>
             <div className="dt2-tip__ten">{nutTro.label}</div>
             <div className="dt2-tip__phu">
-              {hangXom.get(nutTro.id)?.size
-                ? `${hangXom.get(nutTro.id)!.size} liên kết cung cầu · bấm để mở lớp phủ nguồn`
-                : nutTro.kind === 'nhu_cau' ? 'Chưa có đơn vị cung nào trong registry: khoảng trống' : 'Chưa có liên kết cung cầu'}
+              {nutTro.kind === 'nhu_cau' && !coCung.has(nutTro.id)
+                ? (hangXom.get(nutTro.id)?.size ? 'Khoảng trống: chỉ có cặp đã bị người gác cổng từ chối, chưa có bên cung' : 'Khoảng trống: chưa có đơn vị cung nào trong registry')
+                : hangXom.get(nutTro.id)?.size
+                  ? `${hangXom.get(nutTro.id)!.size} liên kết cung cầu · bấm để mở lớp phủ nguồn`
+                  : 'Chưa có liên kết cung cầu'}
             </div>
           </div>)}
         {tip && cheDo === 'ma_tran' && o && (

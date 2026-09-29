@@ -896,3 +896,73 @@
   .dash-shell .hs-kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dash-shell .hs-grid, .dash-shell .hs-grid3 { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ---------- Toan canh thi truong M1 (29/09/2026) ---------- */
+.dash-shell .tt { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --hs-ben: rgba(148, 163, 184, 0.55); --dt-nen: #070d1a; }
+.dash-shell .tt-kpi .hs-kpi__v small { font-size: 16px; color: var(--color-text-muted); font-weight: 500; margin-left: 2px; }
+.dash-shell .tt-kpi__o { cursor: default; }
+.dash-shell .tt-kpi__o:hover { background: var(--color-bg-surface-1); border-color: var(--color-border-subtle); }
+.dash-shell .tt-kpi__trong { color: var(--dt-cau); }
+.dash-shell .tt .pf-num.hs-kpi__o { text-align: left; }
+.dash-shell .tt-sk { position: relative; border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-muted); background: radial-gradient(70% 60% at 50% 45%, rgba(47, 107, 255, 0.06), transparent 72%), var(--dt-nen); padding: var(--space-2) 0; }
+.dash-shell .tt-sk__svg { display: block; width: 100%; height: auto; font-family: var(--font-ui); }
+.dash-shell .tt-sk__cot { font-size: 10px; letter-spacing: 0.08em; fill: var(--color-text-muted); font-weight: 600; }
+.dash-shell .tt-dong { transition: opacity 200ms ease, fill 200ms ease; }
+.dash-shell .tt-dong--cung_sp { fill: rgba(86, 180, 233, 0.22); }
+.dash-shell .tt-dong--da_ky { fill: rgba(213, 94, 0, 0.62); }
+.dash-shell .tt-dong.is-mo { opacity: 0.1; }
+.dash-shell .tt-dong--cung_sp.is-sang { fill: rgba(86, 180, 233, 0.5); }
+.dash-shell .tt-dong--da_ky.is-sang { fill: rgba(213, 94, 0, 0.9); }
+.dash-shell .tt-nut { cursor: pointer; transition: opacity 200ms ease; }
+.dash-shell .tt-nut.is-mo { opacity: 0.25; }
+.dash-shell .tt-nut:focus-visible { outline: none; }
+.dash-shell .tt-nut:focus-visible .tt-nut__r { stroke: var(--color-text-primary); stroke-width: 1.5; }
+.dash-shell .tt-nut--don_vi .tt-nut__r { fill: var(--dt-cung); }
+.dash-shell .tt-nut--nhom .tt-nut__r { fill: rgba(148, 163, 184, 0.14); stroke: rgba(148, 163, 184, 0.45); stroke-width: 1; }
+.dash-shell .tt-nut--nhu_cau .tt-nut__r { fill: var(--dt-cau); }
+.dash-shell .tt-nut--nhu_cau.is-trong .tt-nut__r { fill: none; stroke: var(--dt-cau); stroke-width: 1.2; stroke-dasharray: 2 2; }
+.dash-shell .tt-nut__t { font-size: 10.5px; fill: var(--color-text-secondary); }
+.dash-shell .tt-nut:hover .tt-nut__t { fill: var(--color-text-primary); }
+.dash-shell .tt-nut__ma { font-weight: 700; fill: var(--dt-cau); }
+.dash-shell .tt-nut.is-trong .tt-nut__ma { fill: var(--color-text-muted); }
+.dash-shell .tt-nut__trong { font-size: 9.5px; fill: var(--dt-cau); font-style: italic; }
+.dash-shell .tt-nut__g { font-size: 11.5px; fill: var(--color-text-primary); }
+.dash-shell .tt-nut__gso { font-weight: 700; font-variant-numeric: tabular-nums; }
+.dash-shell .tt-nut__gv { font-size: 11px; fill: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.dash-shell .tt-cg { display: flex; flex-wrap: wrap; gap: var(--space-3); font-size: 11.5px; color: var(--color-text-secondary); margin-top: var(--space-2); }
+.dash-shell .tt-mk { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
+.dash-shell .tt-mk2 { display: inline-block; width: 18px; height: 8px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
+.dash-shell .tt-mk2.tt-dong--cung_sp { background: rgba(86, 180, 233, 0.45); }
+.dash-shell .tt-mk2.tt-dong--da_ky { background: rgba(213, 94, 0, 0.8); }
+.dash-shell .tt-cau { font-size: 14px; line-height: 21px; color: var(--color-text-primary); margin: 0 0 var(--space-2_5); }
+.dash-shell .tt-phu { width: 100%; border-collapse: collapse; font-size: 13px; }
+.dash-shell .tt-phu th, .dash-shell .tt-phu td { text-align: left; padding: 7px 10px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); vertical-align: middle; }
+.dash-shell .tt-phu thead th { font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .tt-phu__nhom { all: unset; cursor: pointer; color: var(--color-text-primary); font-size: 13px; }
+.dash-shell .tt-phu__nhom b { font-variant-numeric: tabular-nums; margin-right: 4px; }
+.dash-shell .tt-phu__nhom:hover { color: var(--dt-cung); }
+.dash-shell .tt-phu__so { text-align: right !important; font-variant-numeric: tabular-nums; color: var(--color-text-secondary); width: 90px; }
+.dash-shell .tt-phu__so--trong { color: var(--dt-cau); font-weight: 600; }
+.dash-shell .tt-phu__o { display: flex; flex-wrap: wrap; gap: 5px; }
+.dash-shell .tt-o { all: unset; box-sizing: border-box; cursor: pointer; min-width: 46px; height: 26px; padding: 0 7px; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; gap: 1px; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; transition: transform 140ms ease; }
+.dash-shell .tt-o sub { font-size: 9px; font-weight: 500; opacity: 0.85; }
+.dash-shell .tt-o:hover { transform: translateY(-1px); }
+.dash-shell .tt-o:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); }
+.dash-shell .tt-o--da_ky { background: rgba(213, 94, 0, 0.9); color: #fff; }
+.dash-shell .tt-o--co_cung { background: rgba(86, 180, 233, 0.8); color: #06121f; }
+.dash-shell .tt-o--trong { background: none; border: 1.5px dashed var(--dt-cau); color: var(--dt-cau); }
+.dash-shell .tt-mk.tt-o--trong { border-width: 1.5px; }
+.dash-shell .tt-tuoi { display: block; width: 100%; height: auto; font-family: var(--font-ui); }
+.dash-shell .tt-tuoi__luoi { stroke: rgba(148, 163, 184, 0.12); }
+.dash-shell .tt-tuoi__truc { font-size: 10.5px; fill: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .tt-tuoi__so { font-size: 10.5px; fill: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.dash-shell .tt-tuoi__c.hs-tt--tuoi { fill: var(--dt-cung); }
+.dash-shell .tt-tuoi__c.hs-tt--ben { fill: var(--hs-ben); }
+.dash-shell .tt-tuoi__c.hs-tt--giu_nguon_cu { fill: var(--dt-cau); }
+.dash-shell .tt-tuoi__c.hs-tt--qua_han { fill: var(--dt-match); }
+@media (prefers-reduced-motion: no-preference) {
+  .dash-shell .tt-sk__svg .tt-sk__dong { animation: dt2-hien 700ms ease-out 200ms both; }
+}
+/* Man hep: Sankey giu co chu doc duoc va cuon ngang, thay vi thu nho chu xuong 6px. */
+.dash-shell .tt-sk { overflow-x: auto; }
+.dash-shell .tt-sk__svg { min-width: 1080px; }

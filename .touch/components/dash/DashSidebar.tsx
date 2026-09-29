@@ -6,7 +6,7 @@ import { TouchBrand } from '@/components/brand/TouchBrand';
 import { Icon } from './Icon';
 import { nav } from '@/lib/project-status';
 
-const ICONS = ['home', 'layers', 'people', 'cpu', 'shield', 'gauge', 'alert', 'doc', 'branch', 'gear'] as const;
+const ICONS = ['home', 'gauge', 'layers', 'people', 'cpu', 'shield', 'gauge', 'alert', 'doc', 'branch', 'gear'] as const;
 
 /**
  * Sidebar v2. Client vì active tính theo route thật (usePathname).
