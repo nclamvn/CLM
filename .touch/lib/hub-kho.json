@@ -1,0 +1,164 @@
+{
+  "tenKho": "nclamvn/CLM",
+  "sinhTu": {
+    "sha": "ef74a1e",
+    "ngay": "2026-09-29"
+  },
+  "tongCommit": 172,
+  "commitDau": "2026-07-14",
+  "ngayGop": "2026-09-01",
+  "phan": [
+    {
+      "thuMuc": "CNCLData",
+      "ten": "Chiều cung",
+      "vaiTro": "Registry đơn vị có năng lực công nghệ chiến lược: claim, bản chụp nguồn, cổng và vòng tự chạy.",
+      "gop": {
+        "sha": "40e135f",
+        "ngay": "2026-09-01"
+      },
+      "commitTruocGop": 35,
+      "commitSauGop": 16,
+      "cuoi": {
+        "sha": "be90567",
+        "ngay": "2026-09-29",
+        "tieuDe": "Cau noi mot chieu kernel -> vong tu chay: kernel chi goi y URL, khong bao gio cung cap su that"
+      },
+      "soTep": 135
+    },
+    {
+      "thuMuc": "Dataset_CongNgheChienLuoc",
+      "ten": "Chiều cầu",
+      "vaiTro": "Danh mục 30 sản phẩm chiến lược theo QĐ 21/2026 và các sự kiện chính sách, có câu nguồn nguyên văn.",
+      "gop": {
+        "sha": "1f45a4f",
+        "ngay": "2026-09-01"
+      },
+      "commitTruocGop": 2,
+      "commitSauGop": 2,
+      "cuoi": {
+        "sha": "c6e8b5e",
+        "ngay": "2026-09-29",
+        "tieuDe": "M5 Dong thoi cuoc: truc thoi gian bon lan + mat do + dong tin; ngay chinh sach doc tu cau nguon, khong tu ten ban chup"
+      },
+      "soTep": 18
+    },
+    {
+      "thuMuc": "CaoLocMatch",
+      "ten": "Máy ghép",
+      "vaiTro": "Engine ghép cung với cầu, sổ ký của người gác cổng, và chuỗi cổng chạy toàn hệ.",
+      "gop": {
+        "sha": "502d00c",
+        "ngay": "2026-09-01"
+      },
+      "commitTruocGop": 46,
+      "commitSauGop": 30,
+      "cuoi": {
+        "sha": "ef74a1e",
+        "ngay": "2026-09-29",
+        "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
+      },
+      "soTep": 123
+    },
+    {
+      "thuMuc": ".touch",
+      "ten": "Mặt hiển thị",
+      "vaiTro": "Hub web: mọi con số sinh từ dữ liệu ba phần trên, bấm là ra câu nguồn.",
+      "gop": {
+        "sha": "57986d2",
+        "ngay": "2026-09-01"
+      },
+      "commitTruocGop": 51,
+      "commitSauGop": 26,
+      "cuoi": {
+        "sha": "ef74a1e",
+        "ngay": "2026-09-29",
+        "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
+      },
+      "soTep": 409
+    }
+  ],
+  "oTheoKho": {
+    "CNCLData": 24,
+    "CaoLocMatch": 17,
+    ".touch": 32
+  },
+  "ganDay": [
+    {
+      "sha": "ef74a1e",
+      "ngay": "2026-09-29",
+      "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
+    },
+    {
+      "sha": "be90567",
+      "ngay": "2026-09-29",
+      "tieuDe": "Cau noi mot chieu kernel -> vong tu chay: kernel chi goi y URL, khong bao gio cung cap su that"
+    },
+    {
+      "sha": "c6e8b5e",
+      "ngay": "2026-09-29",
+      "tieuDe": "M5 Dong thoi cuoc: truc thoi gian bon lan + mat do + dong tin; ngay chinh sach doc tu cau nguon, khong tu ten ban chup"
+    },
+    {
+      "sha": "a1bfaea",
+      "ngay": "2026-09-29",
+      "tieuDe": "M4 Matching Workbench v2: so do hai cot, vet bang chung nam chang, diem tu dung lai duoc tu cong thuc engine"
+    },
+    {
+      "sha": "c22d529",
+      "ngay": "2026-09-29",
+      "tieuDe": "M1 Toan canh thi truong: Sankey bao toan dong, ban do phu nhu cau, do tuoi nguon; sua dem khoang trong 10 -> 11"
+    },
+    {
+      "sha": "4709ebe",
+      "ngay": "2026-09-29",
+      "tieuDe": "M3 Ho so don vi: bang 44 don vi + 44 trang ho so, khong diem tong hop, o trong noi thang"
+    },
+    {
+      "sha": "5427a2f",
+      "ngay": "2026-09-29",
+      "tieuDe": "Do thi cung cau dung lai: ban do lanh tho nhom + ma tran, 0 giao canh; sua anh xa nhu cau -> nhom"
+    },
+    {
+      "sha": "170861e",
+      "ngay": "2026-09-29",
+      "tieuDe": "P2a man Do thi cung cau: 84 nut, 129 canh, moi canh co nguon hoac chu ky"
+    },
+    {
+      "sha": "6283746",
+      "ngay": "2026-09-29",
+      "tieuDe": "Ky lai MATCH-0007 (VinBigData <-> CNCL-P01) voi ngay dang that 04/09/2023"
+    },
+    {
+      "sha": "2dbaf6d",
+      "ngay": "2026-09-29",
+      "tieuDe": "Ngay dang that cho 7 ban chup dat hau to bang ngay chup; cong ngay_dang + 8 rang"
+    }
+  ],
+  "dong": [
+    {
+      "tu": "Chiều cung",
+      "den": "Mặt hiển thị",
+      "ghi": "registry và bản chụp nguồn, sinh lại mỗi lần chạy chuỗi cổng"
+    },
+    {
+      "tu": "Chiều cầu",
+      "den": "Máy ghép",
+      "ghi": "30 nhu cầu và bảng ánh xạ nhóm đã duyệt"
+    },
+    {
+      "tu": "Máy ghép",
+      "den": "Mặt hiển thị",
+      "ghi": "chỉ match đã có chữ ký người mới lên web"
+    },
+    {
+      "tu": "Chiều cầu",
+      "den": "bản đọc ở KnowledgeBase",
+      "ghi": "đồng bộ một chiều, cổng chống phân kỳ"
+    },
+    {
+      "tu": "kho tin nội bộ RtR (ngoài kho)",
+      "den": "Chiều cung",
+      "ghi": "cầu nối một chiều: chỉ gợi ý URL, qua hàng chờ và người duyệt"
+    }
+  ]
+}

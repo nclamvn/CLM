@@ -1,62 +1,90 @@
 import type { Metadata } from 'next';
 import { DashTopBar } from '@/components/dash/DashTopBar';
-import { reposView, lineage } from '@/lib/repos-view';
+import kho from '@/lib/hub-kho.json';
 
 export const metadata: Metadata = {
-  title: 'Repositories - .touch',
+  title: 'Kho mã - .touch',
   robots: { index: false, follow: false },
 };
 
+type Phan = {
+  thuMuc: string; ten: string; vaiTro: string; gop: { sha: string; ngay: string } | null;
+  commitTruocGop: number | null; commitSauGop: number | null; cuoi: { sha: string; ngay: string; tieuDe: string }; soTep: number;
+};
+type Kho = {
+  tenKho: string | null; sinhTu: { sha: string; ngay: string }; tongCommit: number; commitDau: string; ngayGop: string | null;
+  phan: Phan[]; oTheoKho: Record<string, number>; ganDay: { sha: string; ngay: string; tieuDe: string }[];
+  dong: { tu: string; den: string; ghi: string }[];
+};
+const K = kho as unknown as Kho;
+const ngayVN = (d: string) => `${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}`;
+
 /**
- * Repository View (Page Family #4): versioned assets & commits, lineage & dependencies.
- * DU LIEU THAT, HEAD ghi tai thoi diem cap nhat (site tu dung, khong doc git runtime).
+ * Trang Kho ma. Dung lai 29/09/2026: trang cu la bang ghi tay (lib/repos-view.ts) tro vao nam kho
+ * rieng le truoc ngay gop. Moi so o day la ket qua lenh git tai commit ghi trong lib/hub-kho.json
+ * (scripts/gen-kho.mjs); cong check-kho.mjs tinh lai tai dung commit do.
  */
 export default function ReposPage() {
+  const tongO = Object.values(K.oTheoKho).reduce((s, v) => s + v, 0);
   return (
     <>
-      <DashTopBar title="Repositories" subtitle="Versioned assets · commits · lineage. 3 GitHub + 2 local, HEAD ghi tại thời điểm cập nhật" />
-      <div className="dash-content">
-        <section className="rv-grid" aria-label="Danh sach repo">
-          {reposView.map((r) => (
-            <article key={r.name} className="rv-card">
-              <header className="rv-card__head">
-                <span className="rv-card__name">{r.name}</span>
-                <span className={`chip ${r.vis === 'Public' ? 'chip--public' : r.vis === 'Private' ? 'chip--private' : 'chip--poc'}`}>{r.vis}</span>
-              </header>
-              <div className="rv-card__owner">{r.owner}</div>
-              <p className="rv-card__role">{r.role}</p>
-              <div className="rv-card__meta">
-                <span className="t-mono-01">HEAD {r.head}</span>
-                <span className="rv-card__date">{r.date}</span>
+      <DashTopBar title="Kho mã" subtitle={`Một kho duy nhất, lịch sử đầy đủ · sinh từ commit ${K.sinhTu.sha}`} />
+      <div className="dash-content kh">
+        <section className="dash-panel kh-dau" aria-label="Kho">
+          <div>
+            <div className="md-eyebrow">Kho gộp · git subtree, lịch sử nguyên vẹn</div>
+            <h1 className="kh-ten">{K.tenKho ?? 'kho gộp'}</h1>
+            <p className="kh-mo">
+              Bốn phần của hệ nằm chung một kho từ ngày {K.ngayGop ? ngayVN(K.ngayGop) : 'gộp'}. Bốn kho riêng lẻ trước ngày đó không còn là nguồn;
+              toàn bộ lịch sử của chúng nằm nguyên trong kho này.
+            </p>
+          </div>
+          <dl className="kh-so">
+            <div><dt>commit</dt><dd>{K.tongCommit}</dd><span>từ {ngayVN(K.commitDau)}</span></div>
+            <div><dt>phần</dt><dd>{K.phan.length}</dd><span>chung một lần checkout</span></div>
+            <div><dt>ô trong chuỗi cổng</dt><dd>{tongO}</dd><span>đếm trong chay_het_cong.sh tại {K.sinhTu.sha}</span></div>
+          </dl>
+        </section>
+
+        <section className="kh-luoi" aria-label="Các phần">
+          {K.phan.map((p) => (
+            <article key={p.thuMuc} className="dash-panel kh-phan">
+              <header className="kh-phan__dau"><span className="kh-phan__ten">{p.ten}</span><code>{p.thuMuc}/</code></header>
+              <p className="kh-phan__vt">{p.vaiTro}</p>
+              <dl className="kh-phan__so">
+                <div><dt>tệp</dt><dd>{p.soTep}</dd></div>
+                <div><dt>commit trước gộp</dt><dd>{p.commitTruocGop ?? '·'}</dd></div>
+                <div><dt>commit sau gộp</dt><dd>{p.commitSauGop ?? '·'}</dd></div>
+                <div><dt>ô cổng</dt><dd>{K.oTheoKho[p.thuMuc] ?? 0}</dd></div>
+              </dl>
+              <div className="kh-phan__cuoi">
+                <span className="t-mono-01">{p.cuoi.sha}</span> <span className="kh-ngay">{ngayVN(p.cuoi.ngay)}</span>
+                <span className="kh-td">{p.cuoi.tieuDe}</span>
               </div>
-              <div className="rv-card__gate" title={r.gate}>{r.gate}</div>
-              {r.feeds.length > 0 ? (
-                <div className="rv-card__feeds">
-                  {r.feeds.map((f) => (
-                    <div key={f} className="rv-feed">{`-> ${f}`}</div>
-                  ))}
-                </div>
-              ) : null}
-            </article>
-          ))}
+              {!K.oTheoKho[p.thuMuc] && <p className="hs-note">Không có ô cổng riêng: được kiểm bởi các ô của Máy ghép (đối chiếu câu nguồn, đồng bộ bản đọc).</p>}
+            </article>))}
         </section>
-        <section className="dash-panel rv-lineage" aria-label="Lineage va phu thuoc">
-          <h2 className="rv-lineage__title">Lineage &amp; dependencies</h2>
-          <ul className="rv-lineage__list">
-            {lineage.map((e, i) => (
-              <li key={i} className="rv-edge">
-                <span className="rv-edge__from">{e.from}</span>
-                <span className="rv-edge__arrow" aria-hidden="true">{'->'}</span>
-                <span className="rv-edge__to">{e.to}</span>
-                <span className="rv-edge__note">{e.note}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="reg-foot">
-            HEAD hiển thị là bản ghi tại thời điểm cập nhật trang, không tự đồng bộ runtime.
-            Hai repo Local chưa push GitHub (backup version nội bộ).
-          </p>
-        </section>
+
+        <div className="kh-hai">
+          <section className="dash-panel hs-sec" aria-labelledby="kh-dong">
+            <h2 className="hs-h" id="kh-dong">Dòng dữ liệu <span>đi một chiều</span></h2>
+            <ul className="kh-dong">
+              {K.dong.map((d, i) => (
+                <li key={i}><span className="kh-dong__tu">{d.tu}</span><span className="kh-dong__mui" aria-hidden="true">→</span><span className="kh-dong__den">{d.den}</span><span className="kh-dong__ghi">{d.ghi}</span></li>))}
+            </ul>
+          </section>
+          <section className="dash-panel hs-sec" aria-labelledby="kh-gd">
+            <h2 className="hs-h" id="kh-gd">Commit gần đây <span>{K.ganDay.length} commit mới nhất tính tới {K.sinhTu.sha}</span></h2>
+            <ol className="kh-gd">
+              {K.ganDay.map((c) => (
+                <li key={c.sha}><span className="t-mono-01">{c.sha}</span><span className="kh-ngay">{ngayVN(c.ngay)}</span><span className="kh-td">{c.tieuDe}</span></li>))}
+            </ol>
+          </section>
+        </div>
+        <p className="hs-foot">
+          Số trên trang là kết quả lệnh git tại commit {K.sinhTu.sha} ({ngayVN(K.sinhTu.ngay)}). File dữ liệu được commit sau khi sinh nên luôn trễ một commit;
+          cổng check-kho tính lại tại đúng commit đó và kiểm nó nằm trong lịch sử hiện tại. “Commit sau gộp” chỉ đếm commit chạm vào thư mục đó.
+        </p>
       </div>
     </>
   );

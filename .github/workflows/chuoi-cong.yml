@@ -42,6 +42,10 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Trang Kho ma dem commit va tep tu git: checkout nong (mac dinh depth 1) khong du lich su,
+          # o kho_ma se bao KHONG CHAY DUOC. Them 29/09/2026.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:

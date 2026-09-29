@@ -25,6 +25,6 @@ export const nav = [
   { label: 'Tiến độ & Gates', href: '' },
   { label: 'Rủi ro & Hành động', href: '' },
   { label: 'Tài liệu & SOP', href: '' },
-  { label: 'Repositories', href: '/dashboard/repos' },
+  { label: 'Kho mã', href: '/dashboard/repos' },
   { label: 'Cài đặt', href: '' },
 ];

@@ -1164,3 +1164,37 @@
   .dash-shell .md-cua { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dash-shell .md-h { font-size: 28px; }
 }
+
+/* ---------- Kho ma (29/09/2026) ---------- */
+.dash-shell .kh { display: grid; gap: var(--space-3); }
+.dash-shell .kh-dau { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--space-4); align-items: center; padding: var(--space-4); }
+.dash-shell .kh-ten { margin: var(--space-2) 0; font-size: 28px; font-weight: 650; letter-spacing: -0.01em; color: var(--color-text-primary); font-family: var(--font-mono, ui-monospace, monospace); }
+.dash-shell .kh-mo { margin: 0; font-size: 14px; line-height: 21px; color: var(--color-text-secondary); max-width: 560px; }
+.dash-shell .kh-so { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); margin: 0; }
+.dash-shell .kh-so div { display: flex; flex-direction: column; gap: 3px; padding: var(--space-2_5) var(--space-3); border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-subtle); background: var(--color-bg-surface-1); }
+.dash-shell .kh-so dt { order: 2; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .kh-so dd { order: 1; margin: 0; font-size: 30px; line-height: 1; font-weight: 650; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+.dash-shell .kh-so span { order: 3; font-size: 11.5px; color: var(--color-text-secondary); }
+.dash-shell .kh-luoi { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-2); }
+.dash-shell .kh-phan { padding: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); }
+.dash-shell .kh-phan__dau { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
+.dash-shell .kh-phan__ten { font-size: 15px; font-weight: 650; color: var(--color-text-primary); }
+.dash-shell .kh-phan__dau code { font-size: 11.5px; color: var(--color-text-muted); }
+.dash-shell .kh-phan__vt { margin: 0; font-size: 12.5px; line-height: 19px; color: var(--color-text-secondary); min-height: 57px; }
+.dash-shell .kh-phan__so { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px var(--space-2); margin: 0; }
+.dash-shell .kh-phan__so div { display: flex; justify-content: space-between; gap: 6px; font-size: 12px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); padding-bottom: 4px; }
+.dash-shell .kh-phan__so dt { color: var(--color-text-muted); }
+.dash-shell .kh-phan__so dd { margin: 0; color: var(--color-text-primary); font-variant-numeric: tabular-nums; font-weight: 600; }
+.dash-shell .kh-phan__cuoi { font-size: 12px; color: var(--color-text-secondary); display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: auto; }
+.dash-shell .kh-ngay { color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .kh-td { flex-basis: 100%; color: var(--color-text-secondary); font-size: 12px; line-height: 17px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.dash-shell .kh-hai { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--space-3); align-items: start; }
+.dash-shell .kh-dong { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.dash-shell .kh-dong li { display: grid; grid-template-columns: auto auto auto; justify-content: start; align-items: baseline; gap: 4px 8px; font-size: 13px; padding: 8px 10px; border-radius: var(--radius-sm); border: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .kh-dong__tu, .dash-shell .kh-dong__den { color: var(--color-text-primary); font-weight: 600; }
+.dash-shell .kh-dong__mui { color: #56B4E9; }
+.dash-shell .kh-dong__ghi { grid-column: 1 / -1; font-size: 12px; color: var(--color-text-muted); }
+.dash-shell .kh-gd { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.dash-shell .kh-gd li { display: grid; grid-template-columns: 64px 84px 1fr; gap: 8px; align-items: baseline; font-size: 12.5px; padding: 7px 4px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .kh-gd .kh-td { flex-basis: auto; -webkit-line-clamp: 1; }
+@media (max-width: 1100px) { .dash-shell .kh-dau, .dash-shell .kh-hai { grid-template-columns: minmax(0, 1fr); } .dash-shell .kh-luoi { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
