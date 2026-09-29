@@ -1,28 +1,15 @@
 /**
- * viet.mjs · Chuan hoa tieng Viet cho tim kiem: go khong dau van ra ket qua co dau.
+ * viet.mjs · Cua vao de script build va tu kiem dung CHUNG ham bo dau voi giao dien.
  *
- * VI SAO TU LAM (29/09/2026, xem KnowledgeBase/CaoLocMatch_ChuongTrinh/09_NANG_CAP_UI_UX.md):
- * Orama o che do 'vietnamese' co y GIU dau, va bang bo dau chung cua no chi phu ma 192 den
- * 383, khong toi o, u, a co dau tieng Viet (7897, 432, 7841). Meilisearch thi bo HET dau nen
- * "ban" khop ca ban, ban, ban. Cach chac nhat: moi ban ghi luu HAI truong, co dau va khong
- * dau, va cau truy van cung chuan hoa y nhu vay.
+ * Ham that nam o lib/tim-kiem.mjs (giao dien import no). File nay chi re-export, de khong co
+ * hai ban cua cung mot ham co the lech nhau. Truoc 29/09/2026 buoi chieu, ham nay duoc viet
+ * rieng o day; gop lai khi dung lop phu nguon va Cmd+K.
  *
- * Luu y chu d: NFD KHONG tach duoc "đ" (U+0111) vi no la mot chu rieng, khong phai d + dau.
- * Phai thay tay. Quen buoc nay thi "Đông Anh" khong bao gio khop "dong anh".
+ * Luu y chu d: NFD KHONG tach duoc "đ" (U+0111). Quen buoc thay tay thi "Đông Anh" khong bao
+ * gio khop "dong anh".
  */
-export function boDau(s) {
-  return String(s ?? '')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/đ/g, 'd')
-    .replace(/Đ/g, 'D')
-    .normalize('NFC');
-}
-
-/** Khoa tim kiem: bo dau, ha chu, gop khoang trang. */
-export function khoaTim(s) {
-  return boDau(s).toLowerCase().replace(/\s+/g, ' ').trim();
-}
+export { boDau, khoaTim } from '../lib/tim-kiem.mjs';
+import { khoaTim } from '../lib/tim-kiem.mjs';
 
 // Tu kiem: node scripts/viet.mjs --tu-kiem
 if (process.argv[1] && process.argv[1].endsWith('viet.mjs') && process.argv.includes('--tu-kiem')) {

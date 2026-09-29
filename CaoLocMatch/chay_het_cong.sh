@@ -236,6 +236,11 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      sinh_du_lieu_hub "$TOUCH" 'HUB:|FAIL'        node scripts/gen-hub-data.mjs
   chay .touch      bo_dau_viet      "$TOUCH" 'OK:|FAIL'         node scripts/viet.mjs --tu-kiem
   chay .touch      so_sinh          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-so-sinh.mjs
+  # Pha P1 (29/09/2026): lop phu nguon va Cmd+K. tim_kiem: moi tai lieu tim ra bang ten co
+  # dau va ban ASCII doc lap. lop_phu_nguon: moi cau nguon to sang duoc NGUYEN VAN trong ban
+  # chup ma trang web phuc vu (public/evidence), khong chi trong ban goc.
+  chay .touch      tim_kiem         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-tim-kiem.mjs
+  chay .touch      lop_phu_nguon    "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-lop-phu-nguon.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -262,6 +267,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_truong_hien "$TOUCH" 'BITE TRUONG HIEN'  node scripts/bite-truong-hien.mjs
     chay .touch    rang_phu_moc     "$TOUCH" 'BITE PHU MOC'      node scripts/bite-phu-moc.mjs
     chay .touch    rang_so_sinh     "$TOUCH" 'BITE SO SINH'      node scripts/bite-so-sinh.mjs
+    chay .touch    rang_lop_phu     "$TOUCH" 'BITE LOP PHU'      node scripts/bite-lop-phu.mjs
   fi
 fi
 

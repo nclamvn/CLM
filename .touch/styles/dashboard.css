@@ -526,3 +526,83 @@
 .dash-shell .mw-diem { background: var(--a-neutral-06); color: var(--color-text-primary); font-weight: 600; border-bottom: var(--stroke-hairline) solid var(--color-border-strong); padding: 0 2px; border-radius: var(--radius-sm); }
 .dash-shell .mw-rej__why { display: block; font-size: 11px; line-height: 16px; color: var(--color-text-muted); }
 .dash-shell .mw-rej__who { display: block; font-size: 11px; color: var(--color-text-muted); }
+
+/* ---------- Lop phu nguon + Cmd+K (P1, 29/09/2026) ----------
+   Mot luat: bam vao con so nao cung ra cau nguon. Tam kinh truot tu phai, bang lenh o giua.
+   Chuyen dong tat han khi nguoi dung chon giam chuyen dong (WCAG 2.2 SC 2.3.3). */
+.dash-shell .pf-num { all: unset; cursor: pointer; border-radius: var(--radius-xs); border-bottom: var(--stroke-hairline) dashed var(--a-blue-50); transition: color var(--motion-fast) var(--ease-standard), border-color var(--motion-fast) var(--ease-standard); }
+.dash-shell .pf-num:hover { color: var(--color-accent-blue); border-bottom-color: var(--color-accent-blue); }
+.dash-shell .pf-num:focus-visible, .dash-shell .pf-unitbtn:focus-visible, .dash-shell .pf-row:focus-visible, .dash-shell .pf-btn:focus-visible, .dash-shell .pf-link:focus-visible, .dash-shell .pf-chip--btn:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .pf-num--chip { border-bottom: none; }
+.dash-shell .pf-unitbtn { all: unset; cursor: pointer; font-size: 11px; font-weight: 600; color: var(--color-accent-blue); border: var(--stroke-hairline) solid var(--a-blue-35); background: var(--fill-blue-subtle); border-radius: var(--radius-sm); padding: 2px var(--space-2); }
+.dash-shell .pf-unitbtn:hover { border-color: var(--color-accent-blue); }
+.dash-shell .pf-trigger { width: auto; gap: var(--space-1_5); padding: 0 var(--space-2_5); display: inline-flex; align-items: center; }
+.dash-shell .pf-trigger__k { font-family: var(--font-code); font-size: 11px; color: var(--color-text-muted); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-xs); padding: 0 var(--space-1); }
+
+.dash-shell .pf-scrim { position: fixed; inset: 0; z-index: 200; background: var(--scrim); backdrop-filter: blur(3px); animation: pf-fade var(--motion-base) var(--ease-standard); }
+.dash-shell .pf-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 210; width: min(640px, 100vw); display: flex; flex-direction: column; background: var(--color-bg-surface-1); border-left: var(--stroke-hairline) solid var(--color-border-strong); box-shadow: var(--shadow-float); animation: pf-slide var(--motion-slow) var(--ease-emphasis); }
+.dash-shell .pf-panel__head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-3); padding: 20px var(--space-4) var(--space-3); border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .pf-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--color-accent-blue); }
+.dash-shell .pf-title { font-size: 20px; line-height: 26px; font-weight: 650; color: var(--color-text-primary); margin-top: var(--space-1); }
+.dash-shell .pf-panel__btns { display: flex; gap: var(--space-1_5); flex: none; }
+.dash-shell .pf-btn { all: unset; cursor: pointer; font-size: 12px; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-sm); padding: var(--space-1) var(--space-2_5); }
+.dash-shell .pf-btn:hover { color: var(--color-text-primary); border-color: var(--color-border-strong); }
+.dash-shell .pf-panel__body { flex: 1 1 auto; overflow-y: auto; padding: var(--space-3) var(--space-4) var(--space-4); }
+.dash-shell .pf-panel__foot { font-size: 11px; line-height: 16px; color: var(--color-text-muted); padding: var(--space-2_5) var(--space-4); border-top: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .pf-panel__foot code { font-family: var(--font-code); color: var(--color-text-secondary); }
+.dash-shell .pf-h { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-secondary); margin: 20px 0 var(--space-2); }
+.dash-shell .pf-chips { display: flex; flex-wrap: wrap; gap: var(--space-1_5); }
+.dash-shell .pf-chip { font-size: 11px; font-weight: 600; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-sm); padding: 2px var(--space-2); }
+.dash-shell .pf-chip--btn { all: unset; cursor: pointer; font-size: 11px; font-weight: 600; color: var(--color-accent-cyan); border: var(--stroke-hairline) solid var(--a-cyan-40); background: var(--fill-cyan-subtle); border-radius: var(--radius-sm); padding: 2px var(--space-2); }
+.dash-shell .pf-chip--coi { color: var(--color-accent-red); border-color: var(--a-red-45); background: var(--fill-red-subtle); }
+.dash-shell .pf-chip--pending { color: var(--color-accent-amber); border-color: var(--a-amber-35); background: var(--fill-amber-subtle); }
+.dash-shell .pf-tier { font-size: 11px; font-weight: 700; border-radius: var(--radius-sm); padding: 2px var(--space-2); border: var(--stroke-hairline) solid var(--color-border-subtle); color: var(--color-text-secondary); }
+.dash-shell .pf-tier--A { color: var(--color-accent-green); border-color: var(--a-green-30); background: var(--fill-green-subtle); }
+.dash-shell .pf-tier--B { color: var(--color-accent-blue); border-color: var(--a-blue-35); background: var(--fill-blue-subtle); }
+.dash-shell .pf-evs, .dash-shell .pf-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+.dash-shell .pf-ev { border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-md); padding: var(--space-2_5) var(--space-3); background: var(--color-bg-surface-2); }
+.dash-shell .pf-ev__head { display: flex; align-items: center; gap: var(--space-1_5); flex-wrap: wrap; }
+.dash-shell .pf-ev__field { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); margin-right: auto; }
+.dash-shell .pf-ev__src { font-family: var(--font-code); font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .pf-ev__value { font-size: 14px; line-height: 20px; color: var(--color-text-primary); margin-top: var(--space-1_5); font-weight: 600; }
+.dash-shell .pf-ev__span { margin: var(--space-1_5) 0 0; padding-left: var(--space-2_5); border-left: var(--stroke-emphasis) solid var(--a-amber-35); font-size: 13px; line-height: 19px; color: var(--color-text-secondary); }
+.dash-shell .pf-ev__act { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2); }
+.dash-shell .pf-ev__ex { font-size: 11px; color: var(--color-text-muted); margin-left: auto; }
+.dash-shell .pf-link { all: unset; cursor: pointer; font-size: 12px; color: var(--color-text-link); border-bottom: var(--stroke-hairline) solid var(--a-blue-35); }
+.dash-shell .pf-link:hover { border-bottom-color: var(--color-text-link); }
+.dash-shell .pf-ctx { margin: var(--space-2) 0 0; padding: var(--space-2_5) var(--space-3); border-radius: var(--radius-sm); background: var(--color-bg-canvas); border: var(--stroke-hairline) solid var(--color-border-muted); font-size: 13px; line-height: 20px; color: var(--color-text-muted); }
+.dash-shell .pf-ctx__span { background: var(--fill-amber-subtle); color: var(--color-text-primary); border-bottom: var(--stroke-emphasis) solid var(--color-accent-amber); padding: 0 2px; }
+.dash-shell .pf-ctx--loi { color: var(--color-accent-red); border-color: var(--a-red-45); }
+.dash-shell .pf-ctx--cho { font-style: italic; }
+.dash-shell .pf-empty, .dash-shell .pf-explain { font-size: 13px; line-height: 20px; color: var(--color-text-secondary); }
+.dash-shell .pf-row { all: unset; box-sizing: border-box; cursor: pointer; width: 100%; display: grid; grid-template-columns: auto 1fr auto; gap: var(--space-2_5); align-items: baseline; padding: var(--space-2) var(--space-2_5); border-radius: var(--radius-sm); border: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .pf-row:hover { border-color: var(--a-blue-35); background: var(--fill-blue-subtle); }
+.dash-shell .pf-row__k { font-family: var(--font-code); font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .pf-row__v { font-size: 13px; color: var(--color-text-primary); }
+.dash-shell .pf-row__s { font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .pf-reject, .dash-shell .pf-pending { display: flex; flex-direction: column; gap: var(--space-1); font-size: 13px; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-muted); border-radius: var(--radius-sm); padding: var(--space-2) var(--space-2_5); }
+.dash-shell .pf-reject q { color: var(--color-text-muted); font-style: italic; }
+.dash-shell .pf-dl { display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-3); font-size: 13px; margin: var(--space-2_5) 0 0; }
+.dash-shell .pf-dl dt { color: var(--color-text-muted); }
+.dash-shell .pf-dl dd { margin: 0; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+
+.dash-shell .pf-scrim--k { z-index: 220; }
+.dash-shell .pf-cmdk { position: fixed; z-index: 230; top: 12vh; left: 50%; transform: translateX(-50%); width: min(680px, 94vw); max-height: 70vh; display: flex; flex-direction: column; background: var(--color-bg-surface-1); border: var(--stroke-hairline) solid var(--color-border-strong); border-radius: var(--radius-xl); box-shadow: var(--shadow-float); overflow: hidden; animation: pf-pop var(--motion-base) var(--ease-emphasis); }
+.dash-shell .pf-cmdk__in { all: unset; box-sizing: border-box; width: 100%; font-size: 16px; color: var(--color-text-primary); padding: var(--space-3_5) var(--space-4); border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .pf-cmdk__list { overflow-y: auto; padding: var(--space-1_5); }
+.dash-shell .pf-cmdk__hint { font-size: 13px; color: var(--color-text-muted); padding: var(--space-3) var(--space-2_5); }
+.dash-shell .pf-cmdk__grp { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); padding: var(--space-2) var(--space-2_5) var(--space-1); }
+.dash-shell .pf-cmdk__opt { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-2) var(--space-2_5); border-radius: var(--radius-sm); cursor: pointer; }
+.dash-shell .pf-cmdk__opt.is-on { background: var(--fill-blue-subtle); outline: var(--stroke-hairline) solid var(--a-blue-35); outline-offset: -1px; }
+.dash-shell .pf-cmdk__ten { font-size: 14px; color: var(--color-text-primary); }
+.dash-shell .pf-cmdk__nhan { font-size: 12px; color: var(--color-text-muted); text-align: right; flex: none; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dash-shell .pf-cmdk__foot { font-size: 11px; color: var(--color-text-muted); padding: var(--space-2) var(--space-4); border-top: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .pf-cmdk__foot kbd { font-family: var(--font-code); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-xs); padding: 0 var(--space-1); margin-right: 2px; }
+
+@keyframes pf-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pf-slide { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes pf-pop { from { transform: translateX(-50%) scale(0.98); opacity: 0; } to { transform: translateX(-50%); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .dash-shell .pf-scrim, .dash-shell .pf-panel, .dash-shell .pf-cmdk { animation: none; }
+  .dash-shell .pf-num, .dash-shell .pf-link { transition: none; }
+}

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { DashSidebar } from './DashSidebar';
 import { Icon } from './Icon';
+import { ProofLayer } from '@/components/proof/ProofLayer';
 
 /**
  * Shell responsive. Duoi 900px sidebar thanh off-canvas drawer, keyboard-accessible:
@@ -42,6 +43,9 @@ export function DashShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="dash-shell" data-drawer={open ? 'open' : 'closed'} ref={shellRef}>
+      {/* Lop phu nguon + Cmd+K bao ca sidebar lan noi dung, de moi man trong dashboard deu
+          mo duoc. Phan phu (tam kinh, bang lenh) ve ben trong .dash-shell nen dung chung token. */}
+      <ProofLayer>
       <DashSidebar />
       <div className="dash-backdrop" onClick={() => setOpen(false)} aria-hidden="true" />
       <main className="dash-main" id="main">
@@ -57,6 +61,7 @@ export function DashShell({ children }: { children: React.ReactNode }) {
         </button>
         {children}
       </main>
+      </ProofLayer>
     </div>
   );
 }

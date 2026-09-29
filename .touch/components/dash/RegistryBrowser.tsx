@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { cnclUnits, cnclNeeds, type CnclUnit, type CnclEvidence } from '@/lib/cncl-registry';
+import { ProofUnitButton } from '@/components/proof/ProofLayer';
 
 /**
  * Tra cuu registry bang trinh duyet. Loc TUC THOI phia client tren 42 don vi / 200 evidence.
@@ -67,6 +68,7 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
             </span>
           ) : null}
           <span className="reg-unit__count">{u.evidence.length} evidence</span>
+          <ProofUnitButton ten={u.name} className="reg-unit__proof">Lớp phủ nguồn</ProofUnitButton>
         </span>
         <span className="reg-unit__cap">{u.capability || 'Chưa có mô tả năng lực có bằng chứng verbatim.'}</span>
         {/* Mang nang luc thu hai. Mot don vi co hai mang thi ke ca hai, vi ke mot mang co

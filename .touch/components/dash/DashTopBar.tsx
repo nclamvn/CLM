@@ -1,6 +1,7 @@
 import { Icon } from './Icon';
 import { PortalSwitcher } from '@/components/portal/PortalSwitcher';
 import { statusMeta } from '@/lib/project-status';
+import { SearchTrigger } from '@/components/proof/ProofLayer';
 
 export function DashTopBar({ title, subtitle }: { title?: string; subtitle?: string } = {}) {
   return (
@@ -16,9 +17,7 @@ export function DashTopBar({ title, subtitle }: { title?: string; subtitle?: str
           Provenance ON
         </button>
         <span className="dash-vdiv" aria-hidden="true" />
-        <button type="button" className="dash-iconbtn" aria-label="Tim kiem">
-          <Icon name="search" />
-        </button>
+        <SearchTrigger />
         <button type="button" className="dash-iconbtn" aria-label="Thong bao">
           <Icon name="bell" />
         </button>
