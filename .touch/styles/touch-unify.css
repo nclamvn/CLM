@@ -1,0 +1,71 @@
+/*
+  touch-unify.css · MOT he mau cho ca ba mat: landing, Hub minh hoa, dashboard.
+
+  Vi sao co (29/09/2026): Hub dung he "huong C" cu (graphite #08080A, do #C40F0F, Be Vietnam Pro)
+  con dashboard dung SOT v2 (navy #020617, accent xanh #2F6BFF, Inter). Di tu trang nay sang trang
+  kia thay nhu hai san pham. Nay moi mat doc cung token cua touch-theme.css (SOT v2).
+
+  Hai lop mau, khong tron:
+    1. Mau GIAO DIEN (nen, chu, vien, nut, trang thai): token --color-* cua SOT v2.
+    2. Mau DU LIEU (cung, cau, match, chinh sach): bon mau Okabe-Ito, phan biet duoc voi nguoi
+       mu mau (Okabe & Ito 2008). Nghia co dinh tren moi trang: xanh troi = cung, cam = cau,
+       do son = match da ky, vang = van ban chinh sach.
+
+  File nay nap SAU globals.css va khong nam trong @layer, nen thang cac khai bao .dk cu ma khong
+  phai sua tung dong.
+*/
+:root {
+  --data-cung: #56B4E9;
+  --data-cau: #E69F00;
+  --data-match: #D55E00;
+  --data-chinh-sach: #F0E442;
+  --data-tu-choi: rgba(148, 163, 184, 0.62);
+  --data-cung-rgb: 86, 180, 233;
+  --data-cau-rgb: 230, 159, 0;
+  --data-match-rgb: 213, 94, 0;
+  --accent-blue-rgb: 47, 107, 255;
+}
+
+/* ---- Hub (.dk hub-view): anh xa bien cu sang token SOT v2 ---- */
+.dk {
+  --dk-bg: var(--color-bg-canvas);
+  --dk-bg-1: var(--color-bg-surface-1);
+  --dk-bg-2: var(--color-bg-surface-2);
+  --dk-bg-3: var(--color-bg-surface-3);
+  --dk-glass: rgba(7, 18, 37, 0.6);
+  --dk-tx: var(--color-text-primary);
+  --dk-tx2: var(--color-text-secondary);
+  --dk-tx3: var(--color-text-secondary);
+  --dk-ln: var(--color-border-muted);
+  --dk-ln2: var(--color-border-subtle);
+  /* Accent giao dien: xanh SOT v2 thay do #C40F0F. Do chi con o cham thuong hieu. */
+  --dk-rd: var(--color-accent-blue);
+  --dk-rdb: var(--color-text-link);
+  --dk-rds: var(--fill-blue-subtle);
+  --dk-rdl: rgba(var(--accent-blue-rgb), 0.5);
+  --dk-rdt: var(--color-text-link);
+  --dk-ok: var(--color-accent-green);
+  --sans: var(--font-ui);
+  --serif: var(--font-ui);
+  --mono: var(--font-code);
+  font-family: var(--font-ui);
+  background-color: var(--color-bg-canvas);
+  background-image:
+    radial-gradient(900px 500px at 78% 8%, rgba(var(--accent-blue-rgb), 0.08), transparent 60%),
+    radial-gradient(700px 600px at 10% 30%, rgba(24, 212, 245, 0.04), transparent 60%);
+}
+.dk ::selection { background: rgba(var(--accent-blue-rgb), 0.28); }
+.dk .hub-top { background: rgba(2, 6, 23, 0.78); }
+.dk .btn-primary:hover { box-shadow: 0 10px 28px -10px rgba(var(--accent-blue-rgb), 0.4); }
+.dk .kpi .t.warn { color: var(--color-accent-amber); }
+.dk .accentdot { background: var(--color-brand-dot); box-shadow: 0 0 10px 1px rgba(255, 56, 48, 0.6); }
+/* Diem va soi match: mau DU LIEU match, giong duong match tren dashboard */
+.dk .mscore .bar i { background: linear-gradient(90deg, rgba(var(--data-match-rgb), 0.35), var(--data-match)); box-shadow: 0 0 8px rgba(var(--data-match-rgb), 0.5); }
+.dk .mlink { border-color: rgba(var(--data-match-rgb), 0.55); color: var(--data-match); box-shadow: 0 0 16px rgba(var(--data-match-rgb), 0.2) inset; }
+.dk .badge.vch { background: rgba(var(--data-match-rgb), 0.12); border-color: rgba(var(--data-match-rgb), 0.5); }
+.dk .qrow.on { background: var(--fill-blue-subtle); box-shadow: inset 2px 0 0 var(--color-accent-blue); }
+.mnav-dark .mnav-cta .btn { border-color: rgba(var(--accent-blue-rgb), 0.5); color: var(--color-text-link); }
+
+.hub-demo-banner { border-color: rgba(240, 228, 66, 0.35); background: rgba(240, 228, 66, 0.06); color: var(--color-text-secondary); }
+.hub-demo-banner b { color: var(--data-chinh-sach); }
+.hub-demo-banner a { color: var(--color-text-link); }

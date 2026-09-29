@@ -1,23 +1,28 @@
 #!/usr/bin/env node
 /**
- * check-mat-tien.mjs · Mat tien (landing "/" va Hub minh hoa "/hub") khong duoc noi sai hien trang.
+ * check-mat-tien.mjs · Mat tien (trang dau "/", Hub minh hoa "/hub", khung dashboard) khong duoc noi
+ * sai hien trang, va ca ba mat dung MOT he mau.
  *
- * VI SAO CO (29/09/2026): khi di thu duong demo cho nha dau tu, trang dau tien ("/") con ghi cung
- * "Match thật · chưa chạy", "Match chứng minh được · Chưa chạy · Thiếu dữ liệu CẦU thật", "Gate kết
- * quả bị chặn: Chưa có dữ liệu CẦU thật", "ENGINE DEMO" va "CNCL Registry · 18/07". Luc do da co 11
- * match that co chu ky va 30 nhu cau quoc gia. Nut "Xem engine thật" va "Xem Hub thật" dan vao /hub,
- * noi KPI (1.284 facts, 47 match) la du lieu gia lap cua nganh Cong nghiep ho tro. Cong check-so-sinh
- * khong thay vi no chi bat chuoi kieu "14 o xanh"; cac trang dashboard thi da co cong rieng.
+ * VI SAO CO
+ *   29/09/2026 (lan 1): khi di thu duong demo, trang dau con ghi cung "Match thật · chưa chạy",
+ *   "Thiếu dữ liệu CẦU thật", "ENGINE DEMO", "CNCL Registry · 18/07" trong khi da co 11 match ky.
+ *   Nut "Xem engine thật" dan vao /hub, noi KPI la du lieu gia lap cua nganh khac.
+ *   29/09/2026 (lan 2): trang dau dung lai thanh MOT man hinh voi hinh dong ve tu du lieu that, va
+ *   Hub doi tu he graphite/do (#C40F0F, Be Vietnam Pro) sang token SOT v2 cua dashboard. Cong nay
+ *   giu ca hai quyet dinh do khong troi lai.
  *
- * CONG KIEM BON THU (tren components/dark/*.tsx, app/page.tsx, app/hub/page.tsx, lib/content.ts):
- *   TRANG_THAI_GO_TAY   chuoi ghi cung hien trang: "chưa chạy", "Chưa có/Thiếu dữ liệu CẦU",
- *                       "ENGINE DEMO", "CNCL Registry · <ngay go tay>", "UPTIME", "LIVE" gan voi engine;
- *                       khung dashboard con "Solo Entrepreneur" / "Project Lead" cua ban mau cu.
- *   CHU_THAT_TRO_DEMO   mot the <a> tro vao ROUTE.hub (du lieu minh hoa) ma chu cua no co "thật",
- *                       ke ca chu lay tu lib/content.ts (vd {dk.nav.cta}).
- *   SO_KHONG_SINH       NavDark, MatchStream, TapeDark, MetricsBand phai nhap lib/cncl-match (so match
- *                       sinh tu so ky); MatchStream khong duoc co ma MATCH-xxxx go tay.
- *   HUB_THIEU_NHAN      /hub phai co bang "Hub minh họa" (hub-demo-banner) tro ve dashboard.
+ * CONG KIEM:
+ *   TRANG_THAI_GO_TAY     chuoi ghi cung hien trang ("chưa chạy", "Thiếu/Chưa có dữ liệu CẦU",
+ *                         "ENGINE DEMO", "CNCL Registry · <ngay>", "UPTIME", "ENGINE ... LIVE") hoac chu
+ *                         mau cu cua khung ("Solo Entrepreneur", "Project Lead").
+ *   CHU_THAT_TRO_DEMO     mot <a>/<Link> tro vao ROUTE.hub (du lieu minh hoa) ma chu co "thật".
+ *   SO_KHONG_SINH         trang dau khong lay so tu lib/mat-tien (dungMatTien); lib/mat-tien khong doc
+ *                         ba file da qua cong; hoac co so go tay: truong so = hang so, hay chu JSX chua
+ *                         con so hai chu so tro len (tru so hieu "QĐ 21" / "QĐ 21/2026").
+ *   HUB_THIEU_NHAN        /hub thieu bang "Hub minh họa" tro ve dashboard.
+ *   KHONG_MOT_MAN         trang dau khong con la mot man hinh (.mt phai cao 100vh va overflow hidden).
+ *   MAU_KHONG_THONG_NHAT  app/layout.tsx khong nap styles/touch-unify.css SAU globals.css; hoac Hub khong
+ *                         anh xa --dk-bg/--dk-rd ve token SOT v2; hoac mat tien con do cu #C40F0F/#E8221A.
  *
  * Chay: node scripts/check-mat-tien.mjs [--touch <dir .touch>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -31,72 +36,88 @@ const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.a
 const TOUCH = resolve(arg('--touch') || join(HERE, '..'));
 const thoat3 = (m) => { console.log(`KHONG CHAY DUOC: ${m}`); process.exit(3); };
 
-const DARK = join(TOUCH, 'components', 'dark');
-const CAN = [join(TOUCH, 'app', 'page.tsx'), join(TOUCH, 'app', 'hub', 'page.tsx'), join(TOUCH, 'lib', 'content.ts'),
-  // Khung chung cua moi trang dashboard: the ten nguoi dung va o "Domain" o chan thanh ben.
-  join(TOUCH, 'components', 'dash', 'DashSidebar.tsx'), join(TOUCH, 'components', 'dash', 'DashTopBar.tsx')];
-for (const p of [DARK, ...CAN]) if (!existsSync(p)) thoat3(`thieu ${p}`);
-const tep = [...readdirSync(DARK).filter((t) => t.endsWith('.tsx')).map((t) => join(DARK, t)), ...CAN];
+const P = (...x) => join(TOUCH, ...x);
+const LANDING = P('components', 'landing');
+const CAN = {
+  page: P('app', 'page.tsx'), hub: P('app', 'hub', 'page.tsx'), layout: P('app', 'layout.tsx'), content: P('lib', 'content.ts'),
+  matTien: P('lib', 'mat-tien.ts'), css: P('styles', 'landing-hub.css'), unify: P('styles', 'touch-unify.css'),
+  sidebar: P('components', 'dash', 'DashSidebar.tsx'), topbar: P('components', 'dash', 'DashTopBar.tsx'),
+};
+for (const p of [LANDING, ...Object.values(CAN)]) if (!existsSync(p)) thoat3(`thieu ${p}`);
+const landing = readdirSync(LANDING).filter((t) => t.endsWith('.tsx')).map((t) => join(LANDING, t));
 const doc = (p) => readFileSync(p, 'utf8');
-// Bo dong chu thich: ly do sua duoc phep nhac lai chuoi cu.
-const boChuThich = (s) => s.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\{\/\*[\s\S]*?\*\/\}/g, '').split('\n').filter((l) => !/^\s*\/\//.test(l)).join('\n');
+// Bo chu thich: ly do sua duoc phep nhac lai chuoi cu.
+const boChuThich = (s) => s.replace(/\{\/\*[\s\S]*?\*\/\}/g, '').replace(/\/\*[\s\S]*?\*\//g, '').split('\n').filter((l) => !/^\s*\/\//.test(l)).join('\n');
 const ten = (p) => p.slice(TOUCH.length + 1);
-
 const vi = [];
+
 // ── 1. Trang thai go tay ────────────────────────────────────────────────────
 const CAM = [
-  [/chưa chạy/i, 'chưa chạy'],
-  [/(Chưa có|Thiếu) dữ liệu CẦU/i, 'thiếu dữ liệu CẦU'],
-  [/ENGINE DEMO/i, 'ENGINE DEMO'],
-  [/CNCL Registry · \d{1,2}\/\d{1,2}/, 'ngày registry gõ tay'],
-  [/UPTIME/i, 'UPTIME'],
-  [/ENGINE[^'"`\n]{0,12}LIVE/i, 'ENGINE LIVE'],
-  [/Solo Entrepreneur/, 'domain mẫu cũ Solo Entrepreneur'],
-  [/Project Lead/, 'vai trò mẫu Project Lead'],
+  [/chưa chạy/i, 'chưa chạy'], [/(Chưa có|Thiếu) dữ liệu CẦU/i, 'thiếu dữ liệu CẦU'], [/ENGINE DEMO/i, 'ENGINE DEMO'],
+  [/CNCL Registry · \d{1,2}\/\d{1,2}/, 'ngày registry gõ tay'], [/UPTIME/i, 'UPTIME'], [/ENGINE[^'"`\n]{0,12}LIVE/i, 'ENGINE LIVE'],
+  [/Solo Entrepreneur/, 'domain mẫu cũ Solo Entrepreneur'], [/Project Lead/, 'vai trò mẫu Project Lead'],
 ];
-for (const p of tep) {
+const quetChu = [CAN.page, CAN.hub, CAN.content, CAN.matTien, CAN.sidebar, CAN.topbar, ...landing];
+for (const p of quetChu) {
   const s = boChuThich(doc(p));
-  for (const [re, nhan] of CAM) {
-    s.split('\n').forEach((l, i) => {
-      // lib/content.ts co khoi copy cua landing cu (sang) khong con dung; chi xet khoi dk va hub.
-      if (re.test(l)) vi.push(`TRANG_THAI_GO_TAY: ${ten(p)} dong ~${i + 1} ghi cung "${nhan}": ${l.trim().slice(0, 90)}`);
-    });
-  }
+  s.split('\n').forEach((l, i) => {
+    for (const [re, nhan] of CAM) if (re.test(l)) vi.push(`TRANG_THAI_GO_TAY: ${ten(p)} dong ~${i + 1} ghi cung "${nhan}": ${l.trim().slice(0, 90)}`);
+  });
 }
 
 // ── 2. Chu "thật" tro vao du lieu minh hoa ──────────────────────────────────
-const content = doc(join(TOUCH, 'lib', 'content.ts'));
+const content = doc(CAN.content);
 const giaTri = (khoa) => [...content.matchAll(new RegExp(`\\b${khoa}:\\s*'([^']*)'`, 'g'))].map((m) => m[1]);
-for (const p of tep.filter((x) => x.endsWith('.tsx'))) {
+for (const p of [CAN.page, CAN.hub, ...landing]) {
   const s = boChuThich(doc(p));
-  for (const m of s.matchAll(/<a\b[^>]*href=\{ROUTE\.hub[A-Za-z]*\}[^>]*>([\s\S]*?)<\/a>/g)) {
-    const trong = m[1];
+  for (const m of s.matchAll(/<(a|Link)\b[^>]*href=\{ROUTE\.hub[A-Za-z]*\}[^>]*>([\s\S]*?)<\/\1>/g)) {
+    const trong = m[2];
     const chu = [trong.replace(/\{[^}]*\}/g, ' ')];
     for (const e of trong.matchAll(/\{[A-Za-z_.]*\.([A-Za-z_]+)\}/g)) chu.push(...giaTri(e[1]));
     if (chu.some((c) => /thật/i.test(c))) vi.push(`CHU_THAT_TRO_DEMO: ${ten(p)}: nut "${chu.join(' ').replace(/\s+/g, ' ').trim().slice(0, 60)}" tro vao /hub (du lieu minh hoa)`);
   }
 }
 
-// ── 3. So match phai sinh tu so ky ──────────────────────────────────────────
-for (const t of ['NavDark.tsx', 'MatchStream.tsx', 'TapeDark.tsx', 'MetricsBand.tsx']) {
-  const p = join(DARK, t);
-  if (!existsSync(p)) { vi.push(`SO_KHONG_SINH: thieu components/dark/${t}`); continue; }
-  const s = doc(p);
-  if (!/from '@\/lib\/cncl-match'/.test(s)) vi.push(`SO_KHONG_SINH: components/dark/${t} khong nhap lib/cncl-match`);
+// ── 3. So phai sinh tu du lieu ──────────────────────────────────────────────
+const page = boChuThich(doc(CAN.page));
+if (!/import \{ dungMatTien \} from '@\/lib\/mat-tien'/.test(page) || !/dungMatTien\(\)/.test(page)) vi.push('SO_KHONG_SINH: app/page.tsx khong lay so tu dungMatTien (lib/mat-tien)');
+const mt = boChuThich(doc(CAN.matTien));
+for (const f of ['hub-graph.json', 'cncl-match.json', 'cncl-registry.json']) if (!mt.includes(`'./${f}'`)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts khong doc ${f}`);
+for (const m of mt.matchAll(/\b(donVi|nhuCau|nhom|capCoNguon|daKy|tuChoi|ncTrong|cauNguon|tierA)\s*:\s*(\d+)/g)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts gan cung ${m[1]}: ${m[2]}`);
+for (const p of [CAN.page, ...landing]) {
+  const s = boChuThich(doc(p)).replace(/QĐ 21(\/2026)?/g, 'QĐ');
+  for (const m of s.matchAll(/>([^<>{}]*)</g)) if (/\b\d{2,}\b/.test(m[1])) vi.push(`SO_KHONG_SINH: ${ten(p)} co so go tay trong JSX: "${m[1].trim().slice(0, 60)}"`);
 }
-const ms = boChuThich(doc(join(DARK, 'MatchStream.tsx')));
-if (/['"`]MATCH-\d{3,}/.test(ms)) vi.push('SO_KHONG_SINH: MatchStream.tsx co ma MATCH-xxxx go tay');
 
 // ── 4. Hub minh hoa phai tu noi minh la minh hoa ────────────────────────────
-const hubPage = doc(join(TOUCH, 'app', 'hub', 'page.tsx'));
+const hubPage = doc(CAN.hub);
 if (!/className="hub-demo-banner"/.test(hubPage) || !/Hub minh họa/.test(hubPage) || !/href=\{ROUTE\.dashboard\}/.test(hubPage)) {
   vi.push('HUB_THIEU_NHAN: app/hub/page.tsx thieu bang "Hub minh họa" tro ve dashboard');
 }
 
-console.log(`mat tien: ${tep.length} tep`);
+// ── 5. Mot man hinh ─────────────────────────────────────────────────────────
+const css = boChuThich(doc(CAN.css));
+const khoiMt = (css.match(/(^|\n)\.mt\s*\{([^}]*)\}/) || [])[2] ?? '';
+if (!/height:\s*100d?vh/.test(khoiMt) || !/overflow:\s*hidden/.test(khoiMt)) vi.push('KHONG_MOT_MAN: styles/landing-hub.css .mt phai cao 100vh va overflow: hidden');
+
+// ── 6. Mot he mau ───────────────────────────────────────────────────────────
+const layout = doc(CAN.layout);
+const iG = layout.indexOf("import './globals.css'"); const iU = layout.indexOf("import '@/styles/touch-unify.css'");
+if (iU < 0 || iG < 0 || iU < iG) vi.push('MAU_KHONG_THONG_NHAT: app/layout.tsx phai nap styles/touch-unify.css SAU globals.css');
+const unify = boChuThich(doc(CAN.unify));
+for (const [bien, tok] of [['--dk-bg', '--color-bg-canvas'], ['--dk-rd', '--color-accent-blue'], ['--dk-tx', '--color-text-primary'], ['--sans', '--font-ui']]) {
+  if (!new RegExp(`${bien}:\\s*var\\(${tok}\\)`).test(unify)) vi.push(`MAU_KHONG_THONG_NHAT: touch-unify.css khong anh xa ${bien} ve var(${tok})`);
+}
+for (const tok of ['--data-cung', '--data-cau', '--data-match']) if (!new RegExp(`${tok}:\\s*#`).test(unify)) vi.push(`MAU_KHONG_THONG_NHAT: touch-unify.css thieu token du lieu ${tok}`);
+for (const p of [CAN.css, CAN.unify, CAN.page, ...landing]) {
+  const s = boChuThich(doc(p));
+  if (/#C40F0F|#E8221A|#F53B2E|196,\s*15,\s*15/i.test(s)) vi.push(`MAU_KHONG_THONG_NHAT: ${ten(p)} con do cu cua he graphite`);
+}
+
+console.log(`mat tien: ${quetChu.length} tep chu · ${landing.length} component trang dau`);
 if (vi.length) {
   console.log(`\nFAIL: ${vi.length} vi pham`);
   vi.slice(0, 30).forEach((v) => console.log('  ' + v));
   process.exit(2);
 }
-console.log('\nOK: mat tien khong noi sai hien trang, nut "thật" khong dan vao du lieu minh hoa.');
+console.log('\nOK: mat tien khong noi sai hien trang, so sinh tu du lieu, mot man hinh, mot he mau.');

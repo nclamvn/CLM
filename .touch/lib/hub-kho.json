@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "8fc30a2",
+    "sha": "6561a33",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 176,
+  "tongCommit": 177,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 32,
+      "commitSauGop": 33,
       "cuoi": {
-        "sha": "76e77e3",
+        "sha": "6561a33",
         "ngay": "2026-09-29",
-        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
+        "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
       },
       "soTep": 123
     },
@@ -68,22 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 30,
+      "commitSauGop": 31,
       "cuoi": {
-        "sha": "8fc30a2",
+        "sha": "6561a33",
         "ngay": "2026-09-29",
-        "tieuDe": "Sinh lai du lieu web sau chuoi 79/79: Kho ma dem 2 o cua chieu cau"
+        "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
       },
-      "soTep": 413
+      "soTep": 415
     }
   ],
   "oTheoKho": {
     "CNCLData": 25,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 17,
-    ".touch": 35
+    ".touch": 37
   },
   "ganDay": [
+    {
+      "sha": "6561a33",
+      "ngay": "2026-09-29",
+      "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
+    },
     {
       "sha": "8fc30a2",
       "ngay": "2026-09-29",
@@ -128,11 +133,6 @@
       "sha": "c22d529",
       "ngay": "2026-09-29",
       "tieuDe": "M1 Toan canh thi truong: Sankey bao toan dong, ban do phu nhu cau, do tuoi nguon; sua dem khoang trong 10 -> 11"
-    },
-    {
-      "sha": "4709ebe",
-      "ngay": "2026-09-29",
-      "tieuDe": "M3 Ho so don vi: bang 44 don vi + 44 trang ho so, khong diem tong hop, o trong noi thang"
     }
   ],
   "dong": [

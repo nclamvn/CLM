@@ -1,123 +1,87 @@
 import type { Metadata } from 'next';
-import { NavDark } from '@/components/dark/NavDark';
-import { HeroDark } from '@/components/dark/HeroDark';
-import { TapeDark } from '@/components/dark/TapeDark';
-import { MetricsBand } from '@/components/dark/MetricsBand';
-import { PipelineDark } from '@/components/dark/PipelineDark';
-import { MatrixHeatmap } from '@/components/dark/MatrixHeatmap';
-import { ProvenanceGraph } from '@/components/dark/ProvenanceGraph';
-import { InterpChart } from '@/components/dark/InterpChart';
-import { PillarsDark } from '@/components/dark/PillarsDark';
-import { VerticalsDark } from '@/components/dark/VerticalsDark';
-import { CTADark } from '@/components/dark/CTADark';
-import { FooterDark } from '@/components/dark/FooterDark';
-import { dk } from '@/lib/content';
-import '@/styles/touch-landing.css';
+import Link from 'next/link';
+import { TouchBrand } from '@/components/brand/TouchBrand';
+import { HubCungCau } from '@/components/landing/HubCungCau';
+import { dungMatTien } from '@/lib/mat-tien';
+import { ROUTE } from '@/lib/portal-routes';
+import '@/styles/landing-hub.css';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
 };
 
-/** Dau section: tag mono do + h2 (focal nghieng) + lead. */
-function SecHead({
-  tag,
-  pre,
-  em,
-  tail,
-  lead,
-}: {
-  tag: string;
-  pre: string;
-  em: string;
-  tail: string;
-  lead?: string;
-}) {
-  return (
-    <div className="lp-sec-head">
-      <span className="lp-sec-head__tag">{tag}</span>
-      <h2 className="lp-sec-head__h2">
-        {pre}
-        <span className="is-accent">{em}</span>
-        {tail}
-      </h2>
-      {lead ? <p className="lp-sec-head__lead">{lead}</p> : null}
-    </div>
-  );
-}
+const ngayGio = (s: string) => `${s.slice(8, 10)}/${s.slice(5, 7)}/${s.slice(0, 4)} ${s.slice(11, 16)}`;
 
-/** Landing toi (control-room, huong C): 9 khoi, moi visual la mot component. */
+/**
+ * Trang dau, MOT man hinh (dung lai 29/09/2026 theo yeu cau cua anh Lam).
+ * Truoc day la 9 khoi cuon dai (qua cau, pipeline mo phong, ma tran minh hoa, nganh gia lap...).
+ * Nay chi con mot hinh dong chu dao ve tu du lieu that va mot lop HUD; moi con so rut tu
+ * lib/mat-tien.ts (hub-graph + cncl-match + cncl-registry), khong go tay.
+ */
 export default function LandingPage() {
+  const d = dungMatTien();
+  const s = d.so;
+  const cc = s.chuoiCong;
+  const chiSo: { k: string; v: number; phu: string; mau?: string }[] = [
+    { k: 'Đơn vị cung', v: s.donVi, phu: 'có năng lực, có câu nguồn', mau: 'cung' },
+    { k: 'Nhu cầu quốc gia', v: s.nhuCau, phu: 'sản phẩm theo QĐ 21/2026', mau: 'cau' },
+    { k: 'Nhóm công nghệ', v: s.nhom, phu: 'trục giữa của hub' },
+    { k: 'Cặp cung cầu', v: s.capCoNguon, phu: 'có nguồn ở cả hai phía' },
+    { k: 'Match đã ký', v: s.daKy, phu: `${s.tuChoi} cặp bị từ chối, vẫn hiện`, mau: 'match' },
+    { k: 'Câu nguồn', v: s.cauNguon, phu: `${s.tierA} câu hạng A, nguyên văn` },
+  ];
   return (
-    <div className="dk">
-      <div className="dk-grid-tex" aria-hidden="true" />
-      <NavDark />
-      <main id="main">
-        <HeroDark />
-        <TapeDark />
-        <MetricsBand />
+    <div className="mt">
+      <div className="mt-luoi" aria-hidden="true" />
+      <HubCungCau data={d} />
 
-        <section className="lp-sec" id="pipeline">
-          <div className="portal-container">
-            <SecHead
-              tag={dk.pipeline.tag}
-              pre={dk.pipeline.h2pre}
-              em={dk.pipeline.h2em}
-              tail={dk.pipeline.h2tail}
-              lead={dk.pipeline.lead}
-            />
-            <div className="lp-board surface-executive">
-              <PipelineDark />
-              <div className="lp-board__divider" aria-hidden="true" />
-              <MatrixHeatmap />
-              <p className="lp-board__note">Dùng để minh họa kiến trúc engine. Không phải kết quả matching thật.</p>
-            </div>
-          </div>
-        </section>
+      <header className="mt-top">
+        <TouchBrand mode="full" theme="dark" size="md" href="/" />
+        <nav className="mt-top__nav" aria-label="Điều hướng">
+          <Link href={ROUTE.dashboard}>Tổng quan</Link>
+          <Link href={`${ROUTE.dashboard}/thi-truong`}>Thị trường</Link>
+          <Link href={`${ROUTE.dashboard}/do-thi`}>Đồ thị</Link>
+          <Link href={`${ROUTE.dashboard}/matching`}>Matching</Link>
+          <Link href={ROUTE.hub} className="mt-top__phu">Hub minh họa</Link>
+        </nav>
+        <div className="mt-top__phai">
+          <span className="mt-trang" title="Kết quả lần chạy chuỗi cổng gần nhất, đọc từ file kết quả, không gõ tay">
+            <i aria-hidden="true" className={cc && cc.xanh === cc.tong ? 'is-xanh' : 'is-vang'} />
+            {cc ? `Chuỗi cổng ${cc.xanh}/${cc.tong} xanh · ${ngayGio(cc.luc)}` : 'Chuỗi cổng chưa có kết quả'}
+          </span>
+          <Link href={ROUTE.dashboard} className="mt-nut mt-nut--chinh">Vào engine thật <span aria-hidden="true">→</span></Link>
+        </div>
+      </header>
 
-        <section className="lp-sec" id="data">
-          <div className="portal-container">
-            <SecHead
-              tag={dk.data.tag}
-              pre={dk.data.h2pre}
-              em={dk.data.h2em}
-              tail={dk.data.h2tail}
-              lead={dk.data.lead}
-            />
-            <div className="lp-pi-grid">
-              <ProvenanceGraph />
-              <InterpChart />
-            </div>
-            <p className="lp-mod-note">Cả hai là ví dụ minh họa kiến trúc dữ liệu. Không phải match hay dự báo thật.</p>
-          </div>
-        </section>
+      <section className="mt-chu">
+        <span className="mt-chu__nhan">Hub cung cầu công nghệ chiến lược · QĐ 21/2026</span>
+        <h1 className="mt-chu__h">Cung gặp cầu.<br /><span>Mỗi kết nối có bằng chứng.</span></h1>
+        <p className="mt-chu__p">
+          {s.donVi} đơn vị có năng lực, {s.nhuCau} sản phẩm quốc gia cần, {s.nhom} nhóm công nghệ ở giữa.
+          Máy cào, lọc và đề xuất ghép; người gác cổng ký; mỗi đường nối bấm ra câu nguồn nguyên văn.
+        </p>
+        <div className="mt-chu__nut">
+          <Link href={ROUTE.dashboard} className="mt-nut mt-nut--chinh">Vào engine thật <span aria-hidden="true">→</span></Link>
+          <Link href={`${ROUTE.dashboard}/matching`} className="mt-nut">Xem {s.daKy} match đã ký</Link>
+        </div>
+      </section>
 
-        <section className="lp-sec" id="why">
-          <div className="portal-container">
-            <SecHead
-              tag={dk.pillars.tag}
-              pre={dk.pillars.h2pre}
-              em={dk.pillars.h2em}
-              tail={dk.pillars.h2tail}
-            />
-            <PillarsDark />
-          </div>
-        </section>
-
-        <section className="lp-sec" id="vertical">
-          <div className="portal-container">
-            <SecHead
-              tag={dk.vertical.tag}
-              pre={dk.vertical.h2pre}
-              em={dk.vertical.h2em}
-              tail={dk.vertical.h2tail}
-            />
-            <VerticalsDark />
-          </div>
-        </section>
-
-        <CTADark />
-      </main>
-      <FooterDark />
+      <footer className="mt-hud">
+        <dl className="mt-hud__so">
+          {chiSo.map((c) => (
+            <div key={c.k} className={c.mau ? `is-${c.mau}` : undefined}>
+              <dt>{c.k}</dt><dd>{c.v}</dd><span>{c.phu}</span>
+            </div>))}
+        </dl>
+        <ul className="mt-hud__chu" aria-label="Chú giải">
+          <li className="mt-hud__ghi">Vẽ từ dữ liệu thật: mỗi chấm là một đơn vị hoặc nhu cầu trong registry, mỗi dòng hạt là một trong {s.capCoNguon} cặp có nguồn. Rê chuột để xem tên.</li>
+          <li><i className="mk mk--cung" aria-hidden="true" />đơn vị cung</li>
+          <li><i className="mk mk--cau" aria-hidden="true" />nhu cầu QĐ 21</li>
+          <li><i className="mk mk--trong" aria-hidden="true" />chưa có cung ({s.ncTrong})</li>
+          <li><i className="mk mk--nhom" aria-hidden="true" />nhóm công nghệ</li>
+          <li><i className="mk mk--match" aria-hidden="true" />match đã ký</li>
+        </ul>
+      </footer>
     </div>
   );
 }

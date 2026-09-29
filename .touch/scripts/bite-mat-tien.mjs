@@ -4,20 +4,25 @@
  *
  * CANH
  * ====
- * TU DUNG LAY CANH: chep components/dark/*.tsx, app/page.tsx, app/hub/page.tsx, lib/content.ts vao
- * thu muc tam (mkdtempSync), tiem loi vao BAN SAO. Khong sua file that.
+ * TU DUNG LAY CANH: chep app/page.tsx, app/hub/page.tsx, app/layout.tsx, lib/content.ts,
+ * lib/mat-tien.ts, components/landing/*.tsx, components/dash/DashSidebar.tsx + DashTopBar.tsx,
+ * styles/landing-hub.css, styles/touch-unify.css vao thu muc tam (mkdtempSync), tiem loi vao BAN SAO.
+ * Khong sua file that.
  *
  * RANG
  * ====
- * RANG 1 · CANH SACH -> exit 0.
- * RANG 2 · TapeDark ghi lai "Match thật · chưa chạy" -> TRANG_THAI_GO_TAY.
- * RANG 3 · MetricsBand ghi lai nguon "CNCL Registry · 18/07" -> TRANG_THAI_GO_TAY.
- * RANG 4 · nut chinh cua Hero ("Xem engine thật", chu lay tu content.ts) tro lai /hub -> CHU_THAT_TRO_DEMO.
- * RANG 5 · CTADark co nut chu go san "Xem Hub thật" tro vao /hub -> CHU_THAT_TRO_DEMO.
- * RANG 6 · MatchStream quay ve bon dong MATCH-0056.. go tay, khong nhap cncl-match -> SO_KHONG_SINH.
- * RANG 7 · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN.
- * RANG 8 · KHONG BAO OAN: chu thich nhac lai chuoi "chưa chạy" -> van exit 0.
- * RANG 9 · thanh ben ghi lai domain "Solo Entrepreneur" -> TRANG_THAI_GO_TAY.
+ * RANG 1  · CANH SACH -> exit 0.
+ * RANG 2  · trang dau ghi lai "Match thật · chưa chạy" -> TRANG_THAI_GO_TAY.
+ * RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO.
+ * RANG 4  · o HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH.
+ * RANG 5  · lib/mat-tien gan cung daKy: 11 -> SO_KHONG_SINH.
+ * RANG 6  · trang dau bo dungMatTien -> SO_KHONG_SINH.
+ * RANG 7  · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN.
+ * RANG 8  · trang dau thanh trang cuon (.mt bo overflow hidden) -> KHONG_MOT_MAN.
+ * RANG 9  · layout bo nap touch-unify.css -> MAU_KHONG_THONG_NHAT.
+ * RANG 10 · Hub quay ve do cu (--dk-rd: #C40F0F) -> MAU_KHONG_THONG_NHAT.
+ * RANG 11 · thanh ben ghi lai "Solo Entrepreneur" -> TRANG_THAI_GO_TAY.
+ * RANG 12 · KHONG BAO OAN: chu thich nhac lai "chưa chạy" -> van exit 0.
  *
  * Chay: node scripts/bite-mat-tien.mjs
  */
@@ -30,14 +35,16 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const TOUCH = join(HERE, '..');
 const CONG = join(HERE, 'check-mat-tien.mjs');
+const TEP = ['app/page.tsx', 'app/hub/page.tsx', 'app/layout.tsx', 'lib/content.ts', 'lib/mat-tien.ts',
+  'components/dash/DashSidebar.tsx', 'components/dash/DashTopBar.tsx', 'styles/landing-hub.css', 'styles/touch-unify.css'];
 const kq = [];
-const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(62)} : ${ok ? `CAN OK (${chi})` : `KHONG CAN !! ${chi}`}`); kq.push(ok); };
+const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(64)} : ${ok ? `CAN OK (${chi})` : `KHONG CAN !! ${chi}`}`); kq.push(ok); };
 const tam = [];
 const chep = (tu, den) => { mkdirSync(dirname(den), { recursive: true }); copyFileSync(tu, den); };
 const canh = (sua) => {
   const t = mkdtempSync(join(tmpdir(), 'bite_mat_tien_')); tam.push(t);
-  for (const f of readdirSync(join(TOUCH, 'components', 'dark'))) chep(join(TOUCH, 'components', 'dark', f), join(t, 'components', 'dark', f));
-  for (const f of ['app/page.tsx', 'app/hub/page.tsx', 'lib/content.ts', 'components/dash/DashSidebar.tsx', 'components/dash/DashTopBar.tsx']) chep(join(TOUCH, f), join(t, f));
+  for (const f of TEP) chep(join(TOUCH, f), join(t, f));
+  for (const f of readdirSync(join(TOUCH, 'components', 'landing'))) chep(join(TOUCH, 'components', 'landing', f), join(t, 'components', 'landing', f));
   if (sua) sua(t);
   return t;
 };
@@ -54,23 +61,29 @@ const rang = (nhan, sua, ma, ky) => {
 };
 
 try {
-  rang('RANG 1 · canh sach -> exit 0', null, 0);
-  rang('RANG 2 · Tape ghi lai "chưa chạy" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dark/TapeDark.tsx',
-    (s) => s.replace("const items: TapeItem[] = [", "const items: TapeItem[] = [\n  { v: 'Match thật', k: '', truth: 'SCAFFOLD', truthText: 'chưa chạy' },")), 2, 'TRANG_THAI_GO_TAY');
-  rang('RANG 3 · nguon registry ghi cung 18/07 -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dark/MetricsBand.tsx',
-    (s) => s.replace(/const SRC = `[^`]*`;/, "const SRC = 'CNCL Registry · 18/07';")), 2, 'TRANG_THAI_GO_TAY');
-  rang('RANG 4 · nut "Xem engine thật" tro lai /hub -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'components/dark/HeroDark.tsx',
-    (s) => s.replace('<a className="lp-btn lp-btn--primary" href={ROUTE.dashboard}>', '<a className="lp-btn lp-btn--primary" href={ROUTE.hub}>')), 2, 'CHU_THAT_TRO_DEMO');
-  rang('RANG 5 · nut go san "Xem Hub thật" -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'components/dark/CTADark.tsx',
-    (s) => s.replace('Xem Hub minh họa', 'Xem Hub thật')), 2, 'CHU_THAT_TRO_DEMO');
-  rang('RANG 6 · MatchStream go tay, khong nhap cncl-match -> SO_KHONG_SINH', (t) => writeFileSync(join(t, 'components/dark/MatchStream.tsx'),
-    "const rows = [{ id: 'MATCH-0056', score: '0.89' }];\nexport function MatchStream() { return null; }\n"), 2, 'SO_KHONG_SINH');
-  rang('RANG 7 · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN', (t) => doi(t, 'app/hub/page.tsx',
+  rang('RANG 1  · canh sach -> exit 0', null, 0);
+  rang('RANG 2  · trang dau ghi "chưa chạy" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'app/page.tsx',
+    (s) => s.replace('<h1 className="mt-chu__h">', '<p>Match thật · chưa chạy</p>\n        <h1 className="mt-chu__h">')), 2, 'TRANG_THAI_GO_TAY');
+  rang('RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'app/page.tsx',
+    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut mt-nut--chinh">', '<Link href={ROUTE.hub} className="mt-nut mt-nut--chinh">')), 2, 'CHU_THAT_TRO_DEMO');
+  rang('RANG 4  · HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
+    (s) => s.replace('<dt>{c.k}</dt><dd>{c.v}</dd>', '<dt>{c.k}</dt><dd>44</dd>')), 2, 'SO_KHONG_SINH');
+  rang('RANG 5  · mat-tien gan cung daKy: 11 -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',
+    (s) => s.replace('daKy: match.length', 'daKy: 11')), 2, 'SO_KHONG_SINH');
+  rang('RANG 6  · trang dau bo dungMatTien -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
+    (s) => s.replace("import { dungMatTien } from '@/lib/mat-tien';", "import { dungMatTien } from '@/lib/so-tay';")), 2, 'SO_KHONG_SINH');
+  rang('RANG 7  · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN', (t) => doi(t, 'app/hub/page.tsx',
     (s) => s.replace('className="hub-demo-banner"', 'className="hub-x"')), 2, 'HUB_THIEU_NHAN');
-  rang('RANG 8 · chu thich nhac "chưa chạy" -> van exit 0', (t) => doi(t, 'components/dark/TapeDark.tsx',
-    (s) => `// Truoc day o nay ghi "Match thật · chưa chạy".\n/* va "Thiếu dữ liệu CẦU thật" */\n${s}`), 0);
-  rang('RANG 9 · thanh ben ghi lai "Solo Entrepreneur" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dash/DashSidebar.tsx',
+  rang('RANG 8  · .mt bo overflow hidden -> KHONG_MOT_MAN', (t) => doi(t, 'styles/landing-hub.css',
+    (s) => s.replace(/(\.mt \{[^}]*?)overflow: hidden;/, '$1overflow: visible;')), 2, 'KHONG_MOT_MAN');
+  rang('RANG 9  · layout bo nap touch-unify -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'app/layout.tsx',
+    (s) => s.replace("import '@/styles/touch-unify.css';\n", '')), 2, 'MAU_KHONG_THONG_NHAT');
+  rang('RANG 10 · Hub quay ve do cu #C40F0F -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'styles/touch-unify.css',
+    (s) => s.replace('--dk-rd: var(--color-accent-blue);', '--dk-rd: #C40F0F;')), 2, 'MAU_KHONG_THONG_NHAT');
+  rang('RANG 11 · thanh ben ghi "Solo Entrepreneur" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dash/DashSidebar.tsx',
     (s) => s.replace('>Công nghệ chiến lược<', '>Solo Entrepreneur<')), 2, 'TRANG_THAI_GO_TAY');
+  rang('RANG 12 · chu thich nhac "chưa chạy" -> van exit 0', (t) => doi(t, 'app/page.tsx',
+    (s) => `// Truoc day trang dau ghi "Match thật · chưa chạy".\n/* va "Thiếu dữ liệu CẦU thật" */\n${s}`), 0);
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

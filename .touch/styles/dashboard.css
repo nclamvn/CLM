@@ -620,7 +620,7 @@
    Mau Okabe & Ito (an toan mu mau), toi da 3 sac mang nghia: cung xanh troi, cau cam, match da ky
    do son. Moi thu khac la xam trung tinh. Hinh dang lap lai y nghia (tron/thoi/rong ruot). */
 .dash-shell .dt2 {
-  --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00;
+  --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match);
   --dt-canh: rgba(148, 163, 184, 0.46); --dt-vung-sang: rgba(148, 163, 184, 0.085); --dt-vung-toi: rgba(148, 163, 184, 0.02);
   --dt-vien: rgba(148, 163, 184, 0.22); --dt-nen: #070d1a;
   padding: var(--space-3);
@@ -737,7 +737,7 @@
 /* ---------- Ho so don vi M3 (29/09/2026) ----------
    Cung bang mau voi do thi (Okabe-Ito). Do tuoi: tuoi = xanh troi, ben = xam, giu nguon cu co ly
    do = cam, qua han chua ly do = vermilion. Moi mau co chu di kem. */
-.dash-shell .hs, .dash-shell .hs-ds { --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --hs-ben: rgba(148, 163, 184, 0.55); --dt-nen: #070d1a; }
+.dash-shell .hs, .dash-shell .hs-ds { --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match); --hs-ben: rgba(148, 163, 184, 0.55); --dt-nen: #070d1a; }
 .dash-shell .pf-hoso { display: inline-block; margin: 0 0 var(--space-2_5); font-size: 13px; font-weight: 600; color: var(--color-text-link); text-decoration: none; }
 .dash-shell .pf-hoso:hover { text-decoration: underline; }
 .dash-shell .hs { display: grid; gap: var(--space-3); }
@@ -900,7 +900,7 @@
 }
 
 /* ---------- Toan canh thi truong M1 (29/09/2026) ---------- */
-.dash-shell .tt { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --hs-ben: rgba(148, 163, 184, 0.55); --dt-nen: #070d1a; }
+.dash-shell .tt { display: grid; gap: var(--space-3); --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match); --hs-ben: rgba(148, 163, 184, 0.55); --dt-nen: #070d1a; }
 .dash-shell .tt-kpi .hs-kpi__v small { font-size: 16px; color: var(--color-text-muted); font-weight: 500; margin-left: 2px; }
 .dash-shell .tt-kpi__o { cursor: default; }
 .dash-shell .tt-kpi__o:hover { background: var(--color-bg-surface-1); border-color: var(--color-border-subtle); }
@@ -970,7 +970,7 @@
 .dash-shell .tt-sk__svg { min-width: 1080px; }
 
 /* ---------- Matching Workbench v2 M4 (29/09/2026) ---------- */
-.dash-shell .mw2 { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --dt-nen: #070d1a; }
+.dash-shell .mw2 { display: grid; gap: var(--space-3); --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match); --dt-nen: #070d1a; }
 .dash-shell .mw2-kpi { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .dash-shell .mw2-kpi .hs-kpi__v small { font-size: 16px; color: var(--color-text-muted); font-weight: 500; margin-left: 2px; }
 .dash-shell .mw2-kpi__rule { font-size: 24px; }
@@ -1048,7 +1048,7 @@
 .dash-shell .mw2 .mw-footer { position: static; box-shadow: none; }
 
 /* ---------- Dong thoi cuoc M5 (29/09/2026) ---------- */
-.dash-shell .tc { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --dt-nen: #070d1a; --tc-cs: #F0E442; }
+.dash-shell .tc { display: grid; gap: var(--space-3); --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match); --dt-nen: #070d1a; --tc-cs: var(--data-chinh-sach); }
 .dash-shell .tc-kpi { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .dash-shell .tc-dau { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-2); }
 .dash-shell .tc-ctrl { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
@@ -1106,7 +1106,7 @@
 @media (max-width: 1100px) { .dash-shell .tc-kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); } .dash-shell .tc-thang { grid-template-columns: minmax(0, 1fr); } }
 
 /* ---------- Mo dau M0 (29/09/2026) ---------- */
-.dash-shell .md { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --dt-nen: #070d1a; }
+.dash-shell .md { display: grid; gap: var(--space-3); --dt-cung: var(--data-cung); --dt-cau: var(--data-cau); --dt-match: var(--data-match); --dt-nen: #070d1a; }
 .dash-shell .md-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: var(--space-4); align-items: center; padding: var(--space-5) var(--space-5) var(--space-4); border-radius: var(--radius-lg); border: var(--stroke-hairline) solid var(--color-border-subtle);
   background: radial-gradient(70% 90% at 0% 0%, rgba(86, 180, 233, 0.10), transparent 60%), radial-gradient(60% 80% at 100% 100%, rgba(213, 94, 0, 0.08), transparent 60%), var(--color-bg-surface-1); }
 .dash-shell .md-eyebrow { font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); font-weight: 600; }
@@ -1194,7 +1194,7 @@
 .dash-shell .kh-dong { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
 .dash-shell .kh-dong li { display: grid; grid-template-columns: auto auto auto; justify-content: start; align-items: baseline; gap: 4px 8px; font-size: 13px; padding: 8px 10px; border-radius: var(--radius-sm); border: var(--stroke-hairline) solid var(--color-border-muted); }
 .dash-shell .kh-dong__tu, .dash-shell .kh-dong__den { color: var(--color-text-primary); font-weight: 600; }
-.dash-shell .kh-dong__mui { color: #56B4E9; }
+.dash-shell .kh-dong__mui { color: var(--data-cung); }
 .dash-shell .kh-dong__ghi { grid-column: 1 / -1; font-size: 12px; color: var(--color-text-muted); }
 .dash-shell .kh-gd { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .dash-shell .kh-gd li { display: grid; grid-template-columns: 64px 84px 1fr; gap: 8px; align-items: baseline; font-size: 12.5px; padding: 7px 4px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
