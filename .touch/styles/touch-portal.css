@@ -14,7 +14,7 @@
   --text-primary: var(--color-text-primary);
   --text-secondary: var(--color-text-secondary);
   --text-muted: var(--color-text-muted);
-  --text-disabled: #475569;
+  --text-disabled: #535353;
   --text-link: var(--color-text-link);
   --text-on-accent: #ffffff;
   --radius-pill: var(--radius-full);
@@ -23,26 +23,26 @@
   /* ---- portal surfaces (cap moi) ---- */
   --portal-canvas: #020611;
   --portal-canvas-deep: #01030a;
-  --portal-surface-0: #040b18;
-  --portal-surface-1: #071225;
-  --portal-surface-2: #0a1730;
-  --portal-surface-3: #0e1d3b;
-  --portal-surface-inset: #030a16;
-  --portal-border-subtle: #173152;
-  --portal-border-muted: rgba(148, 163, 184, 0.13);
-  --portal-border-strong: #2b4d78;
+  --portal-surface-0: #0A0A0A;
+  --portal-surface-1: #111111;
+  --portal-surface-2: #161616;
+  --portal-surface-3: #1C1C1C;
+  --portal-surface-inset: #090909;
+  --portal-border-subtle: #2E2E2E;
+  --portal-border-muted: rgba(161, 161, 161, 0.13);
+  --portal-border-strong: #494949;
 
   /* ---- alpha fills ---- */
-  --fill-blue-06: rgba(47, 107, 255, 0.06);
-  --fill-blue-10: rgba(47, 107, 255, 0.10);
-  --fill-blue-16: rgba(47, 107, 255, 0.16);
-  --fill-cyan-08: rgba(24, 212, 245, 0.08);
-  --fill-purple-10: rgba(136, 92, 246, 0.10);
-  --fill-amber-09: rgba(245, 158, 11, 0.09);
-  --fill-green-09: rgba(34, 197, 94, 0.09);
-  --fill-green-14: rgba(34, 197, 94, 0.14);
-  --fill-red-08: rgba(239, 68, 68, 0.08);
-  --fill-red-12: rgba(239, 68, 68, 0.12);
+  --fill-blue-06: rgba(105, 105, 105, 0.06);
+  --fill-blue-10: rgba(105, 105, 105, 0.10);
+  --fill-blue-16: rgba(105, 105, 105, 0.16);
+  --fill-cyan-08: rgba(174, 174, 174, 0.08);
+  --fill-purple-10: rgba(112, 112, 112, 0.10);
+  --fill-amber-09: rgba(166, 166, 166, 0.09);
+  --fill-green-09: rgba(155, 155, 155, 0.09);
+  --fill-green-14: rgba(155, 155, 155, 0.14);
+  --fill-red-08: rgba(104, 104, 104, 0.08);
+  --fill-red-12: rgba(104, 104, 104, 0.12);
   --fill-white-03: rgba(255, 255, 255, 0.03);
   --fill-black-28: rgba(0, 0, 0, 0.28);
 
@@ -58,19 +58,19 @@
   --space-7: 28px;
 
   /* ---- CTA do da duyet (blueprint muc 6.1) ---- */
-  --cta-red-grad: linear-gradient(180deg, #b52a31, #7f1820);
+  --cta-red-grad: #EDEDEA;
   --cta-red-border: color-mix(in srgb, var(--accent-red-strong) 45%, transparent);
-  --cta-red-shadow: 0 8px 24px rgba(239, 68, 68, 0.18);
-  --cta-red-shadow-soft: 0 4px 14px rgba(239, 68, 68, 0.16);
+  --cta-red-shadow: 0 8px 24px rgba(104, 104, 104, 0.18);
+  --cta-red-shadow-soft: 0 4px 14px rgba(104, 104, 104, 0.16);
 
   /* ---- VF premium: ambient ---- */
-  --fx-ambient-blue-04: rgba(47, 107, 255, 0.04);
-  --fx-ambient-blue-08: rgba(47, 107, 255, 0.08);
-  --fx-ambient-blue-12: rgba(47, 107, 255, 0.12);
-  --fx-ambient-red-04: rgba(239, 68, 68, 0.04);
-  --fx-ambient-red-08: rgba(239, 68, 68, 0.08);
-  --fx-ambient-cyan-08: rgba(24, 212, 245, 0.08);
-  --fx-ambient-purple-08: rgba(136, 92, 246, 0.08);
+  --fx-ambient-blue-04: rgba(105, 105, 105, 0.04);
+  --fx-ambient-blue-08: rgba(105, 105, 105, 0.08);
+  --fx-ambient-blue-12: rgba(105, 105, 105, 0.12);
+  --fx-ambient-red-04: rgba(104, 104, 104, 0.04);
+  --fx-ambient-red-08: rgba(104, 104, 104, 0.08);
+  --fx-ambient-cyan-08: rgba(174, 174, 174, 0.08);
+  --fx-ambient-purple-08: rgba(112, 112, 112, 0.08);
   --fx-vignette-canvas: rgba(1, 3, 10, 0.55);
   --fx-starfield-dot: rgba(255, 255, 255, 0.05);
 
@@ -87,8 +87,8 @@
   --chart-axis: var(--text-muted);
   --chart-observed: var(--accent-cyan);
   --chart-interpolated: var(--accent-purple);
-  --chart-band-low: rgba(136, 92, 246, 0.05);
-  --chart-band-high: rgba(136, 92, 246, 0.14);
+  --chart-band-low: rgba(112, 112, 112, 0.05);
+  --chart-band-high: rgba(112, 112, 112, 0.14);
   --chart-cell-1: var(--fill-blue-06);
   --chart-cell-2: var(--fill-blue-10);
   --chart-cell-3: var(--fill-blue-16);
@@ -97,10 +97,10 @@
   /* ---- VF premium: composite shadow / local glow ---- */
   --shadow-executive-card: var(--portal-shadow-panel);
   --shadow-chart-inset: inset 0 1px 0 rgba(255, 255, 255, 0.02), inset 0 0 44px rgba(0, 0, 0, 0.30);
-  --shadow-glow-blue-local: 0 0 24px rgba(47, 107, 255, 0.22);
-  --shadow-glow-red-local: 0 0 22px rgba(239, 68, 68, 0.20);
-  --shadow-glow-green-local: 0 0 22px rgba(34, 197, 94, 0.20);
-  --shadow-selected-row: inset 2px 0 0 var(--accent-blue), 0 0 0 1px rgba(47, 107, 255, 0.20);
+  --shadow-glow-blue-local: 0 0 24px rgba(105, 105, 105, 0.22);
+  --shadow-glow-red-local: 0 0 22px rgba(104, 104, 104, 0.20);
+  --shadow-glow-green-local: 0 0 22px rgba(155, 155, 155, 0.20);
+  --shadow-selected-row: inset 2px 0 0 var(--accent-blue), 0 0 0 1px rgba(105, 105, 105, 0.20);
   --shadow-cell-hl: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
@@ -109,8 +109,7 @@
   min-height: 100dvh;
   color: var(--text-primary);
   background:
-    radial-gradient(1000px 560px at 72% -10%, var(--fill-blue-06), transparent 65%),
-    linear-gradient(180deg, var(--portal-canvas), var(--portal-canvas-deep));
+    transparent;
   font-family: var(--portal-font);
   font-synthesis: none;
   text-rendering: geometricPrecision;
@@ -128,9 +127,7 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(520px 220px at 82% -12%, var(--surface-glow), transparent 64%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.018), transparent 34%),
-    linear-gradient(180deg, var(--portal-surface-1), var(--portal-surface-0));
+    transparent;
   border: var(--stroke-hairline) solid var(--portal-border-subtle);
   border-radius: var(--radius-md);
   box-shadow: var(--portal-shadow-panel);
@@ -140,7 +137,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(110deg, rgba(255, 255, 255, 0.026), transparent 28%);
+  background: transparent;
 }
 .surface-blue { --surface-glow: var(--fill-blue-16); }
 .surface-cyan { --surface-glow: var(--fill-cyan-08); }
@@ -153,8 +150,7 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(520px 220px at 84% -10%, var(--fill-red-12), transparent 64%),
-    linear-gradient(180deg, var(--fill-red-08), var(--portal-surface-0));
+    transparent;
   border: var(--stroke-hairline) solid color-mix(in srgb, var(--accent-red) 56%, transparent);
   border-radius: var(--radius-md);
   box-shadow: var(--portal-shadow-panel), var(--glow-red);

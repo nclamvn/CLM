@@ -19,9 +19,9 @@ export const colors = {
   accentSoft: '#EFEFF2',
   ok: '#3E3E45',
   okSoft: '#EEEEF1',
-  dot: '#E4341E',
+  dot: '#585858',
   /* Do danh cho chu nho: cung ho voi dot, toi hon de dat AA 4.5:1 (TIP-06). */
-  dotText: '#D42B16',
+  dotText: '#4D4D4D',
 } as const;
 
 export const radius = {

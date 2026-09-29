@@ -129,8 +129,9 @@ for (const p of [CAN.css, CAN.page, ...landing]) {
   if (loi.length) vi.push(`KHONG_DON_SAC: ${ten(p)} co ${loi.join(', ')}`);
 }
 {
-  const c2 = boChuThich(doc(CAN.css));
-  if (!/font-family:\s*'Noto Serif'/.test(c2) || !/\.mt-chu__h\s*\{[^}]*font-family:\s*var\(--p-serif\)/.test(c2)) vi.push('KHONG_DON_SAC: tieu de trang dau khong dung serif Noto Serif (--p-serif)');
+  // Noto Serif khai bao mot lan cho ca he o touch-unify.css; trang dau tro --p-serif vao no.
+  const c2 = boChuThich(doc(CAN.css)); const u2 = boChuThich(doc(CAN.unify));
+  if (!/@font-face\s*\{\s*font-family:\s*'Noto Serif'/.test(u2) || !/--p-serif:\s*'Noto Serif'/.test(c2) || !/\.mt-chu__h\s*\{[^}]*font-family:\s*var\(--p-serif\)/.test(c2)) vi.push('KHONG_DON_SAC: tieu de trang dau khong dung serif Noto Serif (--p-serif)');
 }
 
 console.log(`mat tien: ${quetChu.length} tep chu · ${landing.length} component trang dau`);

@@ -283,6 +283,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # demo: trang dau con ghi cung "Match thật · chưa chạy" trong khi da co 11 match ky, va nut
   # "Xem engine thật" dan vao du lieu gia lap.
   chay .touch      mat_tien         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-mat-tien.mjs
+  # Toan giao dien don sac (anh Lam chot 29/09/2026 theo trang dau HIVE). Mau duy nhat la cham
+  # thuong hieu; khong gradient, khong glow. Truoc do he co 285 cho mau bao hoa trong 10 file.
+  chay .touch      don_sac          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-don-sac.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -319,6 +322,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_mo_dau      "$TOUCH" 'BITE MO DAU'       node scripts/bite-mo-dau.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
     chay .touch    rang_mat_tien    "$TOUCH" 'BITE MAT TIEN'     node scripts/bite-mat-tien.mjs
+    chay .touch    rang_don_sac     "$TOUCH" 'BITE DON SAC'      node scripts/bite-don-sac.mjs
   fi
 fi
 

@@ -27,9 +27,7 @@ export default async function OpengraphImage() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#08080A',
-          backgroundImage:
-            'radial-gradient(600px 400px at 80% 10%, rgba(196,15,15,0.22), transparent 65%), radial-gradient(500px 400px at 12% 85%, rgba(60,70,120,0.16), transparent 65%)',
+          background: '#070707',
           color: '#F2F2F5',
           fontFamily: 'BeVietnam',
         }}
@@ -51,8 +49,8 @@ export default async function OpengraphImage() {
               width: 10,
               height: 10,
               borderRadius: 9999,
-              background: '#C40F0F',
-              boxShadow: '0 0 12px 2px rgba(196,15,15,0.8)',
+              background: '#353535',
+              boxShadow: '0 0 12px 2px rgba(53, 53, 53,0.8)',
               marginRight: 12,
             }}
           />
@@ -64,8 +62,8 @@ export default async function OpengraphImage() {
               width: 42,
               height: 42,
               borderRadius: 9999,
-              background: '#C40F0F',
-              boxShadow: '0 0 28px 4px rgba(196,15,15,0.65)',
+              background: '#353535',
+              boxShadow: '0 0 28px 4px rgba(53, 53, 53,0.65)',
               marginRight: 10,
               marginTop: 40,
             }}
@@ -74,7 +72,7 @@ export default async function OpengraphImage() {
         </div>
         <div style={{ display: 'flex', fontSize: 32, color: '#9A9AA6', marginTop: 14 }}>
           <span>Chạm đúng đối tác, bằng những match&nbsp;</span>
-          <span style={{ color: '#F53B2E' }}>chứng-minh-được</span>
+          <span style={{ color: '#626262' }}>chứng-minh-được</span>
           <span>.</span>
         </div>
         <div
@@ -84,7 +82,7 @@ export default async function OpengraphImage() {
             left: 0,
             right: 0,
             height: 10,
-            background: '#C40F0F',
+            background: '#353535',
           }}
         />
       </div>

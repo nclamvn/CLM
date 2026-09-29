@@ -49,7 +49,7 @@ export function HubCungCau({ data }: { data: MatTien }) {
     const giam = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const MUC = docBien('--p-ink', '#EDEDEA');
     const MUC2 = docBien('--p-2', '#A3A3A0');
-    const MUC3 = docBien('--p-3', '#6E6E6B');
+    const MUC3 = docBien('--p-3', '#878784');
     const NEN = docBien('--p-bg', '#070707');
     const SERIF = '"Noto Serif", "Iowan Old Style", Georgia, serif';
     const SANS = 'Inter, system-ui, sans-serif';

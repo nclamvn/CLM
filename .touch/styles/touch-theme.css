@@ -15,44 +15,44 @@
 
 :root {
   /* ---- color: background va surface (dark) ---- */
-  --color-bg-canvas: #020617;
-  --color-bg-sidebar: #030914;
-  --color-bg-surface-1: #071225;
-  --color-bg-surface-2: #0B1730;
-  --color-bg-surface-3: #0F1D3D;
-  --color-bg-overlay: rgba(2, 6, 23, 0.84);
-  --color-bg-scrim: rgba(2, 6, 23, 0.64);
+  --color-bg-canvas: #070707;
+  --color-bg-sidebar: #050505;
+  --color-bg-surface-1: #0E0E0E;
+  --color-bg-surface-2: #141414;
+  --color-bg-surface-3: #1B1B1B;
+  --color-bg-overlay: rgba(7, 7, 7, 0.86);
+  --color-bg-scrim: rgba(7, 7, 7, 0.64);
 
   /* ---- color: text (dark) ---- */
-  --color-text-primary: #F8FAFC;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
-  --color-text-inverse: #0B1220;
-  --color-text-link: #7DB4FF;
+  --color-text-primary: #EDEDEA;
+  --color-text-secondary: #A3A3A0;
+  --color-text-muted: #878784;
+  --color-text-inverse: #070707;
+  --color-text-link: #EDEDEA;
 
   /* ---- color: border (dark) ---- */
-  --color-border-subtle: #173152;
-  --color-border-muted: rgba(148, 163, 184, 0.14);
-  --color-border-strong: #2B4D78;
-  --color-border-focus: #2F6BFF;
+  --color-border-subtle: #262626;
+  --color-border-muted: rgba(255, 255, 255, 0.08);
+  --color-border-strong: #3A3A3A;
+  --color-border-focus: #EDEDEA;
 
   /* ---- semantic accent (shared hue) ---- */
   --color-brand-dot: #FF3830;
-  --color-accent-blue: #2F6BFF;
-  --color-accent-cyan: #18D4F5;
-  --color-accent-purple: #885CF6;
-  --color-accent-amber: #F59E0B;
-  --color-accent-green: #22C55E;
-  --color-accent-red: #EF4444;
-  --color-accent-teal-dark: #083B44;
+  --color-accent-blue: #EDEDEA;
+  --color-accent-cyan: #CFCFCB;
+  --color-accent-purple: #A3A3A0;
+  --color-accent-amber: #D6D6D2;
+  --color-accent-green: #EDEDEA;
+  --color-accent-red: #EDEDEA;
+  --color-accent-teal-dark: #1B1B1B;
 
   /* ---- tinted fills ---- */
-  --fill-blue-subtle: rgba(47, 107, 255, 0.10);
-  --fill-cyan-subtle: rgba(24, 212, 245, 0.08);
-  --fill-purple-subtle: rgba(136, 92, 246, 0.10);
-  --fill-amber-subtle: rgba(245, 158, 11, 0.09);
-  --fill-green-subtle: rgba(34, 197, 94, 0.09);
-  --fill-red-subtle: rgba(239, 68, 68, 0.10);
+  --fill-blue-subtle: rgba(255, 255, 255, 0.07);
+  --fill-cyan-subtle: rgba(255, 255, 255, 0.05);
+  --fill-purple-subtle: rgba(255, 255, 255, 0.06);
+  --fill-amber-subtle: rgba(255, 255, 255, 0.06);
+  --fill-green-subtle: rgba(255, 255, 255, 0.06);
+  --fill-red-subtle: rgba(255, 255, 255, 0.07);
 
   /* ---- typography ---- */
   --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -94,10 +94,10 @@
   /* ---- shadow va glow ---- */
   --shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.28);
   --shadow-float: 0 20px 64px rgba(0, 0, 0, 0.36);
-  --glow-blue: 0 0 24px rgba(47, 107, 255, 0.18);
-  --glow-cyan: 0 0 24px rgba(24, 212, 245, 0.16);
-  --glow-green: 0 0 20px rgba(34, 197, 94, 0.16);
-  --glow-red: 0 0 24px rgba(239, 68, 68, 0.16);
+  --glow-blue: 0 0 0 transparent;
+  --glow-cyan: 0 0 0 transparent;
+  --glow-green: 0 0 0 transparent;
+  --glow-red: 0 0 0 transparent;
 
   /* ---- motion ---- */
   --motion-fast: 120ms;
@@ -108,9 +108,9 @@
   --ease-emphasis: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ---- brand lockup ---- */
-  --brand-word-dark: #F8FAFC;
-  --brand-word-light: #0B1220;
-  --brand-descriptor: #64748B;
+  --brand-word-dark: #EDEDEA;
+  --brand-word-light: #121212;
+  --brand-descriptor: #878784;
 }
 
 /* light theme: chi override token doi mau; accent giu nguyen hue */
@@ -120,12 +120,12 @@
   --color-bg-surface-1: #FFFFFF;
   --color-bg-surface-2: #F1F5F9;
   --color-bg-surface-3: #EAF0F7;
-  --color-text-primary: #0B1220;
-  --color-text-secondary: #334155;
-  --color-text-muted: #64748B;
-  --color-text-link: #174FC4;
-  --color-border-subtle: #D7E0EA;
-  --color-border-strong: #AFC0D4;
+  --color-text-primary: #121212;
+  --color-text-secondary: #3F3F3F;
+  --color-text-muted: #727272;
+  --color-text-link: #4C4C4C;
+  --color-border-subtle: #DFDFDF;
+  --color-border-strong: #BEBEBE;
 }
 
 /* ---- typography helper classes (size/line/weight/tracking tu muc 3.3) ---- */
@@ -180,11 +180,11 @@
 :root {
   --c-white: #fff;
   --c-black: #000;
-  --sf-deep: #050b1a;
+  --sf-deep: #0B0B0B;
   --sf-deep-red: #12060a;
   --sb-top: #01040c;
-  --sb-bot: #04101f;
-  --tile-text: #cfe0ff;
+  --sb-bot: #0F0F0F;
+  --tile-text: #DFDFDF;
 
   --hi-045: rgba(255, 255, 255, 0.045);
   --hi-04: rgba(255, 255, 255, 0.04);
@@ -197,55 +197,55 @@
   --lo-20: rgba(0, 0, 0, 0.2);
   --scrim: rgba(0, 0, 0, 0.62);
 
-  --a-blue-035: rgba(47, 107, 255, 0.035);
-  --a-blue-06: rgba(47, 107, 255, 0.06);
-  --a-blue-10: rgba(47, 107, 255, 0.10);
-  --a-blue-12: rgba(47, 107, 255, 0.12);
-  --a-blue-14: rgba(47, 107, 255, 0.14);
-  --a-blue-18: rgba(47, 107, 255, 0.18);
-  --a-blue-20: rgba(47, 107, 255, 0.20);
-  --a-blue-25: rgba(47, 107, 255, 0.25);
-  --a-blue-28: rgba(47, 107, 255, 0.28);
-  --a-blue-35: rgba(47, 107, 255, 0.35);
-  --a-blue-50: rgba(47, 107, 255, 0.5);
-  --a-blue-55: rgba(47, 107, 255, 0.55);
-  --a-blue-60: rgba(47, 107, 255, 0.6);
+  --a-blue-035: rgba(105, 105, 105, 0.035);
+  --a-blue-06: rgba(105, 105, 105, 0.06);
+  --a-blue-10: rgba(105, 105, 105, 0.10);
+  --a-blue-12: rgba(105, 105, 105, 0.12);
+  --a-blue-14: rgba(105, 105, 105, 0.14);
+  --a-blue-18: rgba(105, 105, 105, 0.18);
+  --a-blue-20: rgba(105, 105, 105, 0.20);
+  --a-blue-25: rgba(105, 105, 105, 0.25);
+  --a-blue-28: rgba(105, 105, 105, 0.28);
+  --a-blue-35: rgba(105, 105, 105, 0.35);
+  --a-blue-50: rgba(105, 105, 105, 0.5);
+  --a-blue-55: rgba(105, 105, 105, 0.55);
+  --a-blue-60: rgba(105, 105, 105, 0.6);
 
-  --a-purple-05: rgba(136, 92, 246, 0.05);
-  --a-purple-06: rgba(136, 92, 246, 0.06);
-  --a-purple-12: rgba(136, 92, 246, 0.12);
-  --a-purple-13: rgba(136, 92, 246, 0.13);
-  --a-purple-20: rgba(136, 92, 246, 0.20);
-  --a-purple-22: rgba(136, 92, 246, 0.22);
-  --a-purple-35: rgba(136, 92, 246, 0.35);
+  --a-purple-05: rgba(112, 112, 112, 0.05);
+  --a-purple-06: rgba(112, 112, 112, 0.06);
+  --a-purple-12: rgba(112, 112, 112, 0.12);
+  --a-purple-13: rgba(112, 112, 112, 0.13);
+  --a-purple-20: rgba(112, 112, 112, 0.20);
+  --a-purple-22: rgba(112, 112, 112, 0.22);
+  --a-purple-35: rgba(112, 112, 112, 0.35);
 
-  --a-green-04: rgba(34, 197, 94, 0.04);
-  --a-green-11: rgba(34, 197, 94, 0.11);
-  --a-green-12: rgba(34, 197, 94, 0.12);
-  --a-green-20: rgba(34, 197, 94, 0.20);
-  --a-green-30: rgba(34, 197, 94, 0.30);
-  --a-green-35: rgba(34, 197, 94, 0.35);
-  --a-green-50: rgba(34, 197, 94, 0.5);
+  --a-green-04: rgba(155, 155, 155, 0.04);
+  --a-green-11: rgba(155, 155, 155, 0.11);
+  --a-green-12: rgba(155, 155, 155, 0.12);
+  --a-green-20: rgba(155, 155, 155, 0.20);
+  --a-green-30: rgba(155, 155, 155, 0.30);
+  --a-green-35: rgba(155, 155, 155, 0.35);
+  --a-green-50: rgba(155, 155, 155, 0.5);
 
-  --a-red-05: rgba(239, 68, 68, 0.05);
-  --a-red-10: rgba(239, 68, 68, 0.10);
-  --a-red-14: rgba(239, 68, 68, 0.14);
-  --a-red-16: rgba(239, 68, 68, 0.16);
-  --a-red-20: rgba(239, 68, 68, 0.2);
-  --a-red-45: rgba(239, 68, 68, 0.45);
-  --a-red-50: rgba(239, 68, 68, 0.5);
-  --a-red-55: rgba(239, 68, 68, 0.55);
+  --a-red-05: rgba(104, 104, 104, 0.05);
+  --a-red-10: rgba(104, 104, 104, 0.10);
+  --a-red-14: rgba(104, 104, 104, 0.14);
+  --a-red-16: rgba(104, 104, 104, 0.16);
+  --a-red-20: rgba(104, 104, 104, 0.2);
+  --a-red-45: rgba(104, 104, 104, 0.45);
+  --a-red-50: rgba(104, 104, 104, 0.5);
+  --a-red-55: rgba(104, 104, 104, 0.55);
 
-  --a-amber-11: rgba(245, 158, 11, 0.11);
-  --a-amber-18: rgba(245, 158, 11, 0.18);
-  --a-amber-35: rgba(245, 158, 11, 0.35);
+  --a-amber-11: rgba(166, 166, 166, 0.11);
+  --a-amber-18: rgba(166, 166, 166, 0.18);
+  --a-amber-35: rgba(166, 166, 166, 0.35);
 
-  --a-cyan-40: rgba(24, 212, 245, 0.4);
-  --a-neutral-06: rgba(148, 163, 184, 0.06);
-  --a-rail-border: rgba(55, 92, 140, 0.36);
-  --a-rail-top: rgba(7, 18, 37, 0.98);
-  --a-rail-bot: rgba(3, 10, 23, 0.99);
-  --a-bridge-glow: rgba(56, 139, 253, 0.22);
+  --a-cyan-40: rgba(174, 174, 174, 0.4);
+  --a-neutral-06: rgba(161, 161, 161, 0.06);
+  --a-rail-border: rgba(88, 88, 88, 0.36);
+  --a-rail-top: rgba(17, 17, 17, 0.98);
+  --a-rail-bot: rgba(9, 9, 9, 0.99);
+  --a-bridge-glow: rgba(130, 130, 130, 0.22);
 
   --radius-control: 10px;
   --radius-14: 14px;

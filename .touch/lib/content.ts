@@ -97,7 +97,7 @@ export const landing = {
       { color: '#8A8A92', label: 'Cầu', diamond: false },
       { color: '#111113', label: 'Cung', diamond: false },
       // Do chu nho (AA): dau ◆ chu thich dung dot-text, node tren globe van --dot.
-      { color: '#D42B16', label: 'Khớp', diamond: true },
+      { color: '#4D4D4D', label: 'Khớp', diamond: true },
     ],
   },
   strip: [
