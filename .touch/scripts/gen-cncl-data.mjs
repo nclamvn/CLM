@@ -150,6 +150,9 @@ const units = [...theoDonVi.entries()].sort((a, b) => a[0].localeCompare(b[0], '
 // ── Chieu CAU: chi lay ten_san_pham cua danh muc hien hanh ──────────────────
 const dem = doc(join(DEM, 'claims.jsonl'));
 for (const c of dem) if (c.snapshot) canDung.add(c.snapshot);
+// Su kien chinh sach (man Dong thoi cuoc, 29/09/2026): ban chup cua chung cung phai len /evidence.
+const SU_KIEN = join(DEM, 'su_kien_chinh_sach.jsonl');
+if (existsSync(SU_KIEN)) for (const e of doc(SU_KIEN)) for (const b of e.bang_chung) canDung.add(b.snapshot);
 // Moi san pham co HAI ban wording: ban -A la wording chinh thuc baochinhphu, ban con lai
 // la bao thuat lai. Lay dung luat uu tien cua build_cncl_match.py chu KHONG tu che, neu
 // khong thi ten san pham tren web se lech voi ten ma engine dung de match.

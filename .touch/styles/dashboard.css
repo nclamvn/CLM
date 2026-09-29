@@ -1044,3 +1044,61 @@
 @media (max-width: 1100px) { .dash-shell .mw2-grid { grid-template-columns: minmax(0, 1fr); } .dash-shell .mw2-trai { position: static; } .dash-shell .mw2-kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* v2: footer khong dinh o day man hinh nua; ban cu sticky se de len bang phan ra diem. */
 .dash-shell .mw2 .mw-footer { position: static; box-shadow: none; }
+
+/* ---------- Dong thoi cuoc M5 (29/09/2026) ---------- */
+.dash-shell .tc { display: grid; gap: var(--space-3); --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00; --dt-nen: #070d1a; --tc-cs: #F0E442; }
+.dash-shell .tc-kpi { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.dash-shell .tc-dau { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-2); }
+.dash-shell .tc-ctrl { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.dash-shell .tc-chip--chinh_sach .dt2-chip__mk { background: var(--tc-cs); height: 8px; width: 8px; }
+.dash-shell .tc-chip--don_vi .dt2-chip__mk { background: var(--dt-cung); height: 8px; width: 8px; border-radius: 50%; }
+.dash-shell .tc-chip--quyet_dinh .dt2-chip__mk { background: var(--dt-match); height: 8px; width: 8px; transform: rotate(45deg); }
+.dash-shell .tc-chip--de_xuat .dt2-chip__mk { background: none; border: 1.5px solid var(--dt-cau); height: 7px; width: 7px; border-radius: 50%; }
+.dash-shell .tc-khung { border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-muted); background: var(--dt-nen); overflow-x: auto; }
+.dash-shell .tc-svg { display: block; width: 100%; min-width: 900px; height: auto; font-family: var(--font-ui); }
+.dash-shell .tc-lan { font-size: 11.5px; fill: var(--color-text-secondary); }
+.dash-shell .tc-truc { font-size: 10.5px; fill: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .tc-luoi { stroke: rgba(148, 163, 184, 0.1); }
+.dash-shell .tc-truc-lan { stroke: rgba(148, 163, 184, 0.28); }
+.dash-shell .tc-vach { stroke: rgba(240, 228, 66, 0.35); stroke-dasharray: 2 4; }
+.dash-shell .tc-moc { stroke: var(--color-text-secondary); stroke-dasharray: 1 3; }
+.dash-shell .tc-md__chinh_sach { fill: var(--tc-cs); }
+.dash-shell .tc-md__don_vi { fill: rgba(86, 180, 233, 0.8); }
+.dash-shell .tc-md__quyet_dinh { fill: var(--dt-match); }
+.dash-shell .tc-md__de_xuat { fill: var(--dt-cau); }
+.dash-shell .tc-d { cursor: pointer; transition: transform 650ms cubic-bezier(.4, 0, .2, 1), opacity 200ms ease; }
+.dash-shell .tc-d.is-mo { opacity: 0.3; }
+.dash-shell .tc-d:focus-visible { outline: none; }
+.dash-shell .tc-d:focus-visible > :first-child, .dash-shell .tc-d.is-chon > :first-child { stroke: var(--color-text-primary); stroke-width: 2; }
+.dash-shell .tc-d--chinh_sach > rect { fill: var(--tc-cs); stroke: var(--dt-nen); stroke-width: 1.5; }
+.dash-shell .tc-d--don_vi > circle { fill: rgba(86, 180, 233, 0.85); stroke: var(--dt-nen); stroke-width: 1.2; }
+.dash-shell .tc-d--quyet_dinh > rect { fill: var(--dt-match); stroke: var(--dt-nen); stroke-width: 1.2; }
+.dash-shell .tc-d--tu_choi > rect { fill: none; stroke: var(--color-text-secondary); stroke-dasharray: 2 2; }
+.dash-shell .tc-d--de_xuat > circle { fill: var(--dt-nen); stroke: var(--dt-cau); stroke-width: 1.8; }
+.dash-shell .tc-d text { pointer-events: none; }
+.dash-shell .tc-d__vb { font-size: 10px; font-weight: 700; fill: var(--tc-cs); paint-order: stroke; stroke: var(--dt-nen); stroke-width: 3px; }
+.dash-shell .tc-chon { margin-top: var(--space-2_5); }
+.dash-shell .tc-thang { display: grid; grid-template-columns: 120px 1fr; gap: var(--space-3); padding: var(--space-2_5) 0; border-top: var(--stroke-hairline) solid var(--color-border-muted); }
+.dash-shell .tc-thang__h { font-size: 13px; font-weight: 600; color: var(--color-text-primary); }
+.dash-shell .tc-thang__h span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-muted); margin-top: 2px; }
+.dash-shell .tc-thang__ds { display: grid; gap: var(--space-2); }
+.dash-shell .tc-the { padding: var(--space-2_5) var(--space-3); border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-subtle); background: var(--color-bg-surface-1); border-left-width: 3px; }
+.dash-shell .tc-the--chinh_sach { border-left-color: var(--tc-cs); }
+.dash-shell .tc-the--don_vi { border-left-color: var(--dt-cung); }
+.dash-shell .tc-the--quyet_dinh { border-left-color: var(--dt-match); }
+.dash-shell .tc-the--de_xuat { border-left-color: var(--dt-cau); border-left-style: dashed; }
+.dash-shell .tc-the__dau { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; font-size: 11.5px; color: var(--color-text-muted); }
+.dash-shell .tc-the__dau time { font-weight: 700; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+.dash-shell .tc-tag { font-size: 10.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-secondary); }
+.dash-shell .tc-tt { font-size: 11px; color: var(--color-text-muted); }
+.dash-shell .tc-tt--cho_duyet { color: var(--dt-cau); }
+.dash-shell .tc-the__ten { margin: 5px 0 0; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--color-text-primary); }
+.dash-shell .tc-the__span { margin: 6px 0 0; padding: 6px 10px; border-left: 2px solid rgba(148, 163, 184, 0.35); font-size: 12.5px; line-height: 19px; color: var(--color-text-secondary); }
+.dash-shell .tc-the__span cite { font-style: normal; color: var(--color-text-muted); }
+.dash-shell .tc-the__gc { font-size: 11.5px; color: var(--color-text-muted); margin: 6px 0 0; font-style: italic; }
+.dash-shell .tc-the__lk { display: flex; flex-wrap: wrap; gap: 6px var(--space-2); align-items: center; margin-top: 8px; font-size: 12px; }
+.dash-shell .tc-lk { color: var(--color-text-primary); text-decoration: none; border-bottom: 1px solid rgba(86, 180, 233, 0.45); }
+.dash-shell .tc-p { font-size: 11px; font-weight: 700; color: var(--dt-cau); }
+.dash-shell .tc-nut { all: unset; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .dash-shell .tc-d { transition: none; } }
+@media (max-width: 1100px) { .dash-shell .tc-kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); } .dash-shell .tc-thang { grid-template-columns: minmax(0, 1fr); } }

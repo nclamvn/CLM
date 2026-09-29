@@ -1,0 +1,2607 @@
+{
+  "meta": {
+    "mocNgay": "2026-09-29",
+    "tu": "2015-12-28",
+    "den": "2026-09-29",
+    "theoLan": {
+      "chinh_sach": 5,
+      "don_vi": 39,
+      "quyet_dinh": 12,
+      "de_xuat": 2
+    },
+    "baiMoiNhat": "2026-08-20"
+  },
+  "suKien": [
+    {
+      "id": "SK-DV-baodautu_fecon_rnd_vo_ham_20151228",
+      "ngay": "2015-12-28",
+      "lan": "don_vi",
+      "tieuDe": "FECON: sản xuất thử thành công vỏ hầm",
+      "nguon": [
+        {
+          "ten": "baodautu.vn",
+          "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
+          "tier": "B",
+          "span": "Trong đó, việc sản xuất thử thành công vỏ hầm là một bước đi quan trọng, mang tính chiến lược của công ty FECON nhằm đón đầu nhu cầu xây dựng công trình ngầm đô thị trong thời gian tới."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "FECON",
+          "slug": "fecon"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 2,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt"
+    },
+    {
+      "id": "SK-DV-baochinhphu_ivac_vaccine_20190116",
+      "ngay": "2019-01-16",
+      "lan": "don_vi",
+      "tieuDe": "Viện Vaccine và sinh phẩm y tế (IVAC): đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S)",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
+          "tier": "A",
+          "span": "Qua 13 năm nghiên cứu, IVAC đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S) gồm cúm A/H1N1/09, A/H3N2, cúm B."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac"
+        }
+      ],
+      "nhuCau": [
+        "P10"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "soCau": 6,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt"
+    },
+    {
+      "id": "SK-DV-mst_viettelcybersecurity_20190412",
+      "ngay": "2019-04-12",
+      "lan": "don_vi",
+      "tieuDe": "Công ty An ninh mạng Viettel: 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+          "tier": "A",
+          "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty An ninh mạng Viettel",
+          "slug": "cong-ty-an-ninh-mang-viettel"
+        }
+      ],
+      "nhuCau": [
+        "P09"
+      ],
+      "nhom": [
+        "7"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_viettelcybersecurity_20190412.txt"
+    },
+    {
+      "id": "SK-DV-vjst_rostek_agv_20220103",
+      "ngay": "2022-01-03",
+      "lan": "don_vi",
+      "tieuDe": "ROSTEK: xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa",
+      "nguon": [
+        {
+          "ten": "vjst.vn",
+          "href": "/evidence/vjst_rostek_agv_20220103.txt",
+          "tier": "B",
+          "span": "ROSTEK AGV là sản phẩm xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa, đáp ứng nhu cầu nhiều ngành nghề khác nhau."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "ROSTEK",
+          "slug": "rostek"
+        }
+      ],
+      "nhuCau": [
+        "P07"
+      ],
+      "nhom": [
+        "3"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vjst_rostek_agv_20220103.txt"
+    },
+    {
+      "id": "SK-DV-mst_vnpttech_5g_20220831",
+      "ngay": "2022-08-31",
+      "lan": "don_vi",
+      "tieuDe": "VNPT Technology: đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_vnpttech_5g_20220831.txt",
+          "tier": "A",
+          "span": "Hiện nay VNPT Technology đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "VNPT Technology",
+          "slug": "vnpt-technology"
+        }
+      ],
+      "nhuCau": [
+        "P06"
+      ],
+      "nhom": [
+        "2"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_vnpttech_5g_20220831.txt"
+    },
+    {
+      "id": "SK-DV-baochinhphu_vaccine_dtlcp_20230724",
+      "ngay": "2023-07-24",
+      "lan": "don_vi",
+      "tieuDe": "2 đơn vị: Công ty cổ phần AVAC Việt Nam, Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
+          "tier": "A",
+          "span": "Hiện có 2 loại vaccine DTLCP là NAVET-ASFVAC của Công ty cổ phần thuốc thú y Trung ương NAVETCO và AVAC ASF LIVE của Công ty cổ phần AVAC Việt Nam nghiên cứu, sản xuất và được cấp Giấy chứng nhận lưu hành."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam"
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco"
+        }
+      ],
+      "nhuCau": [
+        "P14"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "soCau": 9,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt"
+    },
+    {
+      "id": "SK-DV-vjst_viettel_llm_chuplai_20230727",
+      "ngay": "2023-07-27",
+      "lan": "don_vi",
+      "tieuDe": "Tập đoàn Viettel: Mô hình LLM hỗ trợ tiếng Việt với độ dài ngữ cảnh (context length) 4096 token",
+      "nguon": [
+        {
+          "ten": "vjst.vn",
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "tier": "B",
+          "span": "Có mô hình xác suất có khả năng hiểu và sinh ngôn ngữ tự nhiên (LLM) để hỗ trợ tiếng Việt được huấn luyện hỗ trợ độ dài ngữ cảnh (context length) 4096 token"
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel"
+        }
+      ],
+      "nhuCau": [
+        "P01"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt"
+    },
+    {
+      "id": "SK-DV-vneconomy_ai_khatvong_chuplai_20230904",
+      "ngay": "2023-09-04",
+      "lan": "don_vi",
+      "tieuDe": "4 đơn vị: FPT, VNPT, VinAI, VinBigData",
+      "nguon": [
+        {
+          "ten": "vneconomy.vn",
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "tier": "B",
+          "span": "VinAI đã lọt vào Top 20 công ty toàn cầu dẫn đầu về nghiên cứu AI"
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "FPT",
+          "slug": "fpt"
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt"
+        },
+        {
+          "ten": "VinAI",
+          "slug": "vinai"
+        },
+        {
+          "ten": "VinBigData",
+          "slug": "vinbigdata"
+        }
+      ],
+      "nhuCau": [
+        "P01"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "soCau": 11,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
+    },
+    {
+      "id": "SK-DV-vneconomy_vines_pin_20240306",
+      "ngay": "2024-03-06",
+      "lan": "don_vi",
+      "tieuDe": "Công ty Cổ phần Giải pháp Năng lượng VinES: chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
+      "nguon": [
+        {
+          "ten": "vneconomy.vn",
+          "href": "/evidence/vneconomy_vines_pin_20240306.txt",
+          "tier": "B",
+          "span": "Tháng 8/2021, trước thời điểm chuyển đổi sang xe điện, nhà sản xuất ô tô Việt Nam đã ký kết Biên bản ghi nhớ hợp tác với Gotion High-Tech. Trọng tâm của thỏa thuận này là dự án cung ứng pin LFP và nghiên cứu kế hoạch xây dựng Nhà máy Giga sản xuất cell pin LFP đầu tiên tại Việt Nam. Cũng trong thời gian này, VinES, một công ty con trực thuộc Vingroup chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện được thành lập với vốn pháp định 6.500 tỷ đồng."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+          "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines"
+        }
+      ],
+      "nhuCau": [
+        "P18"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vneconomy_vines_pin_20240306.txt"
+    },
+    {
+      "id": "SK-DV-vnexpress_fecon_tbm_20240829",
+      "ngay": "2024-08-29",
+      "lan": "don_vi",
+      "tieuDe": "FECON: đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội",
+      "nguon": [
+        {
+          "ten": "vnexpress.net",
+          "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
+          "tier": "B",
+          "span": "Ngày 28/8, đại diện FECON, đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội cho biết sau gần một tháng đào hơn 120 m, máy lắp được 7 đốt vỏ hầm tạm và 58 đốt vỏ hầm vĩnh cửu."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "FECON",
+          "slug": "fecon"
+        }
+      ],
+      "nhuCau": [
+        "P29"
+      ],
+      "nhom": [
+        "10"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vnexpress_fecon_tbm_20240829.txt"
+    },
+    {
+      "id": "SK-DV-cafef_xelua_dian_20240925",
+      "ngay": "2024-09-25",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần Xe lửa Dĩ An: sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
+      "nguon": [
+        {
+          "ten": "cafef.vn",
+          "href": "/evidence/cafef_xelua_dian_20240925.txt",
+          "tier": "B",
+          "span": "Nhà máy xe lửa Dĩ An có chức năng sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần Xe lửa Dĩ An",
+          "slug": "cong-ty-co-phan-xe-lua-di-an"
+        }
+      ],
+      "nhuCau": [
+        "P30"
+      ],
+      "nhom": [
+        "10"
+      ],
+      "soCau": 6,
+      "trangThai": "da_kiem",
+      "href": "/evidence/cafef_xelua_dian_20240925.txt"
+    },
+    {
+      "id": "SK-DV-baochinhphu_tedi_dstdc_20241001",
+      "ngay": "2024-10-01",
+      "lan": "don_vi",
+      "tieuDe": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH: rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
+          "tier": "A",
+          "span": "Theo Báo cáo nghiên cứu tiền khả thi Dự án đường sắt tốc độ cao trên trục Bắc - Nam, kết quả nghiên cứu mới nhất của liên danh tư vấn TEDI - TRICC - TEDI SOUTH đã rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+          "slug": "lien-danh-tu-van-tedi-tricc-tedi-south"
+        }
+      ],
+      "nhuCau": [
+        "P29"
+      ],
+      "nhom": [
+        "10"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt"
+    },
+    {
+      "id": "SK-DV-baochinhphu_eemc_mba500kv_20241216",
+      "ngay": "2024-12-16",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Thiết bị điện Đông Anh: làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
+          "tier": "A",
+          "span": "Đây là thành quả của tinh thần lao động sáng tạo, sự nỗ lực vượt bậc của tập thể kỹ sư, công nhân lao động Tổng công ty Thiết bị điện Đông Anh khi lần đầu tiên một doanh nghiệp trong nước làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh"
+        }
+      ],
+      "nhuCau": [
+        "P20"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt"
+    },
+    {
+      "id": "SK-DV-nhandan_uav_madeinvn_chuplai_20241222",
+      "ngay": "2024-12-22",
+      "lan": "don_vi",
+      "tieuDe": "Viettel High Tech: Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "tier": "B",
+          "span": "Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ"
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Viettel High Tech",
+          "slug": "viettel-high-tech"
+        }
+      ],
+      "nhuCau": [
+        "P22"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt"
+    },
+    {
+      "id": "SK-DV-nongnghiepmoitruong_dacovac_20250329",
+      "ngay": "2025-03-29",
+      "lan": "don_vi",
+      "tieuDe": "Tập đoàn Dabaco Việt Nam: vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại",
+      "nguon": [
+        {
+          "ten": "nongnghiepmoitruong.vn",
+          "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+          "tier": "B",
+          "span": "BẮC NINH  Dacovac - ASF2 là sản phẩm vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P14"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "soCau": 7,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt"
+    },
+    {
+      "id": "SK-DV-tuoitre_vinmotion_20250606",
+      "ngay": "2025-06-06",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần VinMotion: nghiên cứu, phát triển và thương mại hóa robot hình người",
+      "nguon": [
+        {
+          "ten": "tuoitre.vn",
+          "href": "/evidence/tuoitre_vinmotion_20250606.txt",
+          "tier": "B",
+          "span": "Được thành lập vào tháng 1-2025 với vốn điều lệ 1.000 tỉ đồng, Công ty cổ phần VinMotion là đơn vị trực thuộc hệ sinh thái Vingroup, có nhiệm vụ nghiên cứu, phát triển và thương mại hóa robot hình người - lĩnh vực được xem là một trong những cuộc đua công nghệ khốc liệt nhất thế kỷ 21."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần VinMotion",
+          "slug": "cong-ty-co-phan-vinmotion"
+        }
+      ],
+      "nhuCau": [
+        "P07"
+      ],
+      "nhom": [
+        "3"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/tuoitre_vinmotion_20250606.txt"
+    },
+    {
+      "id": "SK-CS-01",
+      "ngay": "2025-06-12",
+      "lan": "chinh_sach",
+      "tieuDe": "QĐ 1131/QĐ-TTg: Ban hành Danh mục công nghệ chiến lược và sản phẩm công nghệ chiến lược",
+      "vanBan": "QĐ 1131/QĐ-TTg",
+      "loai": "ban_hanh",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_1131_20260718.txt",
+          "tier": "A",
+          "span": "Thủ tướng Chính phủ Phạm Minh Chính vừa ký Quyết định số 1131/QĐ-TTg ngày 12/6/2025 ban hành Danh mục công nghệ chiến lược và sản phẩm công nghệ chiến lược."
+        }
+      ],
+      "tier": "A",
+      "donVi": [],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "may_trich",
+      "ghiChu": null,
+      "href": "/evidence/baochinhphu_1131_20260718.txt"
+    },
+    {
+      "id": "SK-DV-vneconomy_ptsc_chande_20250618",
+      "ngay": "2025-06-18",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC): đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
+      "nguon": [
+        {
+          "ten": "vneconomy.vn",
+          "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
+          "tier": "B",
+          "span": "Dưới sự dẫn dắt và chỉ đạo chiến lược của Petrovietnam với vai trò \"kiến tạo - chỉ đạo - thúc đẩy\", Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) - đơn vị thành viên của Petrovietnam và là đơn vị chủ lực trong lĩnh vực công nghiệp dầu khí và năng lượng tái tạo - đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+          "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc"
+        }
+      ],
+      "nhuCau": [
+        "P26"
+      ],
+      "nhom": [
+        "8"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vneconomy_ptsc_chande_20250618.txt"
+    },
+    {
+      "id": "SK-DV-mst_viencongnghexahiem_dathiem_20250626",
+      "ngay": "2025-06-26",
+      "lan": "don_vi",
+      "tieuDe": "Viện Công nghệ xạ hiếm: làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
+          "tier": "A",
+          "span": "Báo cáo đã hệ thống hóa toàn diện quá trình nghiên cứu của Viện từ những ngày đầu, đi từ các đề tài cấp Nhà nước, các dự án hợp tác quốc tế với Nhật Bản, Hàn Quốc, đến việc làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Viện Công nghệ xạ hiếm",
+          "slug": "vien-cong-nghe-xa-hiem"
+        }
+      ],
+      "nhuCau": [
+        "P25"
+      ],
+      "nhom": [
+        "8"
+      ],
+      "soCau": 6,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt"
+    },
+    {
+      "id": "SK-DV-tuoitre_ncs_hesinhthai_20250702",
+      "ngay": "2025-07-02",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS): Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC",
+      "nguon": [
+        {
+          "ten": "tuoitre.vn",
+          "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
+          "tier": "B",
+          "span": "Các sản phẩm trong hệ sinh thái bao gồm: Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC bao gồm giải pháp quản lý, phân tích sự kiện an ninh mạng tập trung NCS SIEM và nền tảng điều phối, ứng phó sự cố NCS SOAR."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+          "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs"
+        }
+      ],
+      "nhuCau": [
+        "P09"
+      ],
+      "nhom": [
+        "7"
+      ],
+      "soCau": 3,
+      "trangThai": "da_kiem",
+      "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt"
+    },
+    {
+      "id": "SK-DV-nhandan_ngocbao_peek3d_20250802",
+      "ngay": "2025-08-02",
+      "lan": "don_vi",
+      "tieuDe": "Công ty Cổ phần Y Sinh Ngọc Bảo: “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
+          "tier": "B",
+          "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao"
+        }
+      ],
+      "nhuCau": [
+        "P12"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt"
+    },
+    {
+      "id": "SK-DV-cafef_dn_uav_20250903",
+      "ngay": "2025-09-03",
+      "lan": "don_vi",
+      "tieuDe": "3 đơn vị: HTI Technology, Phenikaa-X, Realtime Robotics (RtR)",
+      "nguon": [
+        {
+          "ten": "cafef.vn",
+          "href": "/evidence/cafef_dn_uav_20250903.txt",
+          "tier": "B",
+          "span": "phức tạp như rừng núi, trong khi HTI Technology cung cấp  **Horus P02** với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt, tối ưu cho các hoạt động trinh sát, cứu hộ."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "HTI Technology",
+          "slug": "hti-technology"
+        },
+        {
+          "ten": "Phenikaa-X",
+          "slug": "phenikaa-x"
+        },
+        {
+          "ten": "Realtime Robotics (RtR)",
+          "slug": "realtime-robotics-rtr"
+        }
+      ],
+      "nhuCau": [
+        "P22"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "soCau": 13,
+      "trangThai": "da_kiem",
+      "href": "/evidence/cafef_dn_uav_20250903.txt"
+    },
+    {
+      "id": "SK-DV-cafef_dn_uav_chuplai_20250903",
+      "ngay": "2025-09-03",
+      "lan": "don_vi",
+      "tieuDe": "4 đơn vị: MiSmart, Realtime Robotics (RtR), Viettel High Tech, XBStation",
+      "nguon": [
+        {
+          "ten": "cafef.vn",
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "tier": "B",
+          "span": "**MiSmart** , với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "MiSmart",
+          "slug": "mismart"
+        },
+        {
+          "ten": "Realtime Robotics (RtR)",
+          "slug": "realtime-robotics-rtr"
+        },
+        {
+          "ten": "Viettel High Tech",
+          "slug": "viettel-high-tech"
+        },
+        {
+          "ten": "XBStation",
+          "slug": "xbstation"
+        }
+      ],
+      "nhuCau": [
+        "P22"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "soCau": 10,
+      "trangThai": "da_kiem",
+      "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt"
+    },
+    {
+      "id": "SK-DV-vneconomy_vdtnn_chinhsuagen_20251001",
+      "ngay": "2025-10-01",
+      "lan": "don_vi",
+      "tieuDe": "Viện Di truyền Nông nghiệp Việt Nam: những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen",
+      "nguon": [
+        {
+          "ten": "vneconomy.vn",
+          "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
+          "tier": "B",
+          "span": "Đến Viện Di truyền nông nghiệp Việt Nam, chúng tôi được tận mắt chiêm ngưỡng những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P16"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt"
+    },
+    {
+      "id": "SK-DV-nguoiquansat_bando_bandan_20251027",
+      "ngay": "2025-10-27",
+      "lan": "don_vi",
+      "tieuDe": "3 đơn vị: CT Semiconductor, FPT Semiconductor, Masan High-Tech Materials",
+      "nguon": [
+        {
+          "ten": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
+          "tier": "B",
+          "span": "CT Semiconductor (thành viên CT Group) đang triển khai giai đoạn 2 nhà máy chip ATP tại tỉnh Bình Dương cũ (nay thuộc TP. HCM), với tổng vốn đầu tư gần 100 triệu USD và dự kiến cho ra đời con chip “Made by Vietnam” đầu tiên trong năm 2025."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "CT Semiconductor",
+          "slug": "ct-semiconductor"
+        },
+        {
+          "ten": "FPT Semiconductor",
+          "slug": "fpt-semiconductor"
+        },
+        {
+          "ten": "Masan High-Tech Materials",
+          "slug": "masan-high-tech-materials"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "soCau": 11,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt"
+    },
+    {
+      "id": "SK-DV-mst_ncs_hesinhthai_20251103",
+      "ngay": "2025-11-03",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS): do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+          "tier": "A",
+          "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+          "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 2,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_ncs_hesinhthai_20251103.txt"
+    },
+    {
+      "id": "SK-DV-mst_gov_ai_diemsang_chuplai_20251124",
+      "ngay": "2025-11-24",
+      "lan": "don_vi",
+      "tieuDe": "3 đơn vị: FPT, VNPT, Viettel AI",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "tier": "A",
+          "span": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng, giúp nhiều doanh nghiệp tăng đến 20% doanh thu từ kênh telesales."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "FPT",
+          "slug": "fpt"
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt"
+        },
+        {
+          "ten": "Viettel AI",
+          "slug": "viettel-ai"
+        }
+      ],
+      "nhuCau": [
+        "P01",
+        "P02"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "soCau": 13,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt"
+    },
+    {
+      "id": "SK-DV-tapchikttc_uav_tongquan_chuplai_20251222",
+      "ngay": "2025-12-22",
+      "lan": "don_vi",
+      "tieuDe": "CT Group: ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)",
+      "nguon": [
+        {
+          "ten": "tapchikinhtetaichinh.vn",
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "tier": "B",
+          "span": "một công ty Việt Nam ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)"
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "CT Group",
+          "slug": "ct-group"
+        }
+      ],
+      "nhuCau": [
+        "P22"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt"
+    },
+    {
+      "id": "SK-CS-02",
+      "ngay": "2025-12-28",
+      "lan": "chinh_sach",
+      "tieuDe": "QĐ 2815/QĐ-TTg: Chương trình sản phẩm công nghệ chiến lược triển khai ngay, chọn 6 sản phẩm tiên phong",
+      "vanBan": "QĐ 2815/QĐ-TTg",
+      "loai": "ban_hanh",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_9ptn_6sp_20260718.txt",
+          "tier": "A",
+          "span": "Ngày 28/12/2025, Thủ tướng Chính phủ đã ký ban hành Quyết định số 2815/QĐ-TTg phê duyệt Chương trình phát triển sản phẩm công nghệ chiến lược triển khai ngay, lựa chọn 6 sản phẩm công nghệ chiến lược để tổ chức thực hiện tiên phong."
+        }
+      ],
+      "tier": "A",
+      "donVi": [],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "may_trich",
+      "ghiChu": null,
+      "href": "/evidence/baochinhphu_9ptn_6sp_20260718.txt"
+    },
+    {
+      "id": "SK-DV-mst_robot_makeinvn_20251230",
+      "ngay": "2025-12-30",
+      "lan": "don_vi",
+      "tieuDe": "3 đơn vị: Công ty cổ phần Health Care Center, Tập đoàn MISA, VNPT",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+          "tier": "A",
+          "span": "Đây là sản phẩm do Công ty cổ phần Health Care Center phát triển được giới thiệu như một giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần Health Care Center",
+          "slug": "cong-ty-co-phan-health-care-center"
+        },
+        {
+          "ten": "Tập đoàn MISA",
+          "slug": "tap-doan-misa"
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt"
+        }
+      ],
+      "nhuCau": [
+        "P07"
+      ],
+      "nhom": [
+        "3"
+      ],
+      "soCau": 9,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_robot_makeinvn_20251230.txt"
+    },
+    {
+      "id": "SK-DV-mst_fpt_nhamay_20260128",
+      "ngay": "2026-01-28",
+      "lan": "don_vi",
+      "tieuDe": "3 đơn vị: FPT, Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT, Tập đoàn Viettel",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+          "tier": "A",
+          "span": "Cũng theo đại diện FPT, đây là nhà máy kiểm thử, đóng gói tiên tiến do người Việt làm chủ. Trong giai đoạn 1 (2026–2027), nhà máy đặt tại Khu công nghiệp Yên Phong II-C, xã Yên Phong và xã Tam Giang, tỉnh Bắc Ninh với quy mô 1.600 m2, với 6 dây chuyền kiểm tra chức năng (ATE tester & handler) và một khu vực gồm nhiều hệ thống kiểm tra độ tin cậy và thử nghiệm độ bền chuyên biệt (hệ thống Burn-in, hệ thống Reliability Test, hệ thống Failure Analysis Test)."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "FPT",
+          "slug": "fpt"
+        },
+        {
+          "ten": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+          "slug": "nha-may-kiem-thu-va-dong-goi-tien-tien-chip-ban-dan-fpt"
+        },
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "soCau": 9,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_fpt_nhamay_20260128.txt"
+    },
+    {
+      "id": "SK-DV-nhandan_vsaplab_chuplai_20260202",
+      "ngay": "2026-02-02",
+      "lan": "don_vi",
+      "tieuDe": "VSAP LAB: phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+          "tier": "B",
+          "span": "![03cb792df852760c2f43.jpg]()\n\nTại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "VSAP LAB",
+          "slug": "vsap-lab"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt"
+    },
+    {
+      "id": "SK-DV-nhandan_matma_hauluongtu_20260210",
+      "ngay": "2026-02-10",
+      "lan": "don_vi",
+      "tieuDe": "2 đơn vị: MK Smart, Viện Khoa học-Công nghệ mật mã",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
+          "tier": "B",
+          "span": "Sản phẩm Lotus GovID của MK Smart đã đạt chứng chỉ Common Criteria (CC) mức EAL 5+ theo quyết định BOE-A-2026-1037, góp phần tạo nên “Giấy thông hành” quyền lực của công nghệ Việt Nam."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "MK Smart",
+          "slug": "mk-smart"
+        },
+        {
+          "ten": "Viện Khoa học-Công nghệ mật mã",
+          "slug": "vien-khoa-hoc-cong-nghe-mat-ma"
+        }
+      ],
+      "nhuCau": [
+        "P09",
+        "P24"
+      ],
+      "nhom": [
+        "7"
+      ],
+      "soCau": 10,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt"
+    },
+    {
+      "id": "SK-DV-vjst_vienhanlam_vatlieu_20260223",
+      "ngay": "2026-02-23",
+      "lan": "don_vi",
+      "tieuDe": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam: phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
+      "nguon": [
+        {
+          "ten": "vjst.vn",
+          "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
+          "tier": "B",
+          "span": "Trong lĩnh vực năng lượng tái tạo và vật liệu tiên tiến, Viện phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [
+        "5"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt"
+    },
+    {
+      "id": "SK-DV-tuoitre_ggpower_pin_20260412",
+      "ngay": "2026-04-12",
+      "lan": "don_vi",
+      "tieuDe": "GG Power: tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm",
+      "nguon": [
+        {
+          "ten": "tuoitre.vn",
+          "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
+          "tier": "B",
+          "span": "Nhà máy có tổng diện tích 1,2 hec-ta, bao gồm tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "GG Power",
+          "slug": "gg-power"
+        }
+      ],
+      "nhuCau": [
+        "P18"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/tuoitre_ggpower_pin_20260412.txt"
+    },
+    {
+      "id": "SK-DV-cafef_rtr_xponential_20260418",
+      "ngay": "2026-04-18",
+      "lan": "don_vi",
+      "tieuDe": "Realtime Robotics (RtR): Hera trở thành drone duy nhất bay thành công trong điều kiện thời tiết khắc nghiệt",
+      "nguon": [
+        {
+          "ten": "cafef.vn",
+          "href": "/evidence/cafef_rtr_xponential_20260418.txt",
+          "tier": "B",
+          "span": "Nhờ đó, Hera trở thành drone duy nhất bay thành công trong điều kiện thời tiết khắc nghiệt, tạo ấn tượng với giới chuyên môn và truyền thông tại sự kiện."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Realtime Robotics (RtR)",
+          "slug": "realtime-robotics-rtr"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 2,
+      "trangThai": "da_kiem",
+      "href": "/evidence/cafef_rtr_xponential_20260418.txt"
+    },
+    {
+      "id": "SK-CS-03",
+      "ngay": "2026-04-29",
+      "lan": "chinh_sach",
+      "tieuDe": "QĐ 769/QĐ-TTg: Thành lập Tổ Công tác của Chính phủ về phát triển công nghệ chiến lược",
+      "vanBan": "QĐ 769/QĐ-TTg",
+      "loai": "ban_hanh",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_qd769_tocongtac_20260718.txt",
+          "tier": "A",
+          "span": "Thủ tướng Chính phủ Lê Minh Hưng vừa ký Quyết định số 769/QĐ-TTg ngày 29/4/2026 thành lập Tổ Công tác của Chính phủ về phát triển công nghệ chiến lược (Tổ Công tác)."
+        }
+      ],
+      "tier": "A",
+      "donVi": [],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "may_trich",
+      "ghiChu": null,
+      "href": "/evidence/baochinhphu_qd769_tocongtac_20260718.txt"
+    },
+    {
+      "id": "SK-CS-04",
+      "ngay": "2026-04-30",
+      "lan": "chinh_sach",
+      "tieuDe": "QĐ 21/2026/QĐ-TTg: Ban hành Danh mục mới thay thế QĐ 1131: 10 nhóm công nghệ, 30 sản phẩm (CNCL-META-03, 04)",
+      "vanBan": "QĐ 21/2026/QĐ-TTg",
+      "loai": "ban_hanh",
+      "nguon": [
+        {
+          "ten": "luatvietnam.vn",
+          "href": "/evidence/luatvietnam_qd21_danhmuc_20260718.txt",
+          "tier": "B",
+          "span": "Ngày 30/4/2026, Thủ tướng Chính phủ ban hành Quyết định 21/2026/QĐ-TTg về Danh mục công nghệ chiến lược và Danh mục sản phẩm công nghệ chiến lược, có hiệu lực từ ngày 01/7/2026."
+        },
+        {
+          "ten": "vietq.vn",
+          "href": "/evidence/vietq_qd21_phantich_20260718.txt",
+          "tier": "B",
+          "span": "Ngày 30/4/2026 Thủ tướng Chính phủ đã ký Quyết định số 21/2026/QĐ-TTg về việc Ban hành danh mục công nghệ chiến lược và Danh mục sản phẩm công nghệ chiến lược."
+        }
+      ],
+      "tier": "B",
+      "donVi": [],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "may_trich",
+      "ghiChu": "Nguon gov (bdttg.gov.vn, baochinhphu.vn) KHONG ghi ngay ky; ngay 30/4/2026 chi co nguyen van o hai nguon tier B doc lap. Claim CNCL-META-01 cua registry cau ghi 30/04/2026 nhung span cua no khong chua ngay: no registry, ghi ra.",
+      "href": "/evidence/luatvietnam_qd21_danhmuc_20260718.txt"
+    },
+    {
+      "id": "SK-DV-vjst_fpt_tokyo_20260615",
+      "ngay": "2026-06-15",
+      "lan": "don_vi",
+      "tieuDe": "FPT Semiconductor: thiết kế chip",
+      "nguon": [
+        {
+          "ten": "vjst.vn",
+          "href": "/evidence/vjst_fpt_tokyo_20260615.txt",
+          "tier": "B",
+          "span": "Hiện FPT phát triển các mảng cốt lõi gồm thiết kế chip (FPT Semiconductor), kiểm thử - đóng gói và đào tạo nhân lực quy mô lớn."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "FPT Semiconductor",
+          "slug": "fpt-semiconductor"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 1,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vjst_fpt_tokyo_20260615.txt"
+    },
+    {
+      "id": "SK-CS-05",
+      "ngay": "2026-07-01",
+      "lan": "chinh_sach",
+      "tieuDe": "QĐ 21/2026/QĐ-TTg: Danh mục mới có hiệu lực, thay thế QĐ 1131/QĐ-TTg",
+      "vanBan": "QĐ 21/2026/QĐ-TTg",
+      "loai": "hieu_luc",
+      "nguon": [
+        {
+          "ten": "bdttg.gov.vn",
+          "href": "/evidence/bdttg_gov_qd21_20260718.txt",
+          "tier": "A",
+          "span": "Quyết định trên có hiệu lực từ ngày 01/7/2026 và thay thế Quyết định số 1131/QĐ-TTg ngày 12/6/2025 của Thủ tướng Chính phủ về việc ban hành Danh mục công nghệ chiến lược và sản phẩm công nghệ chiến lược."
+        }
+      ],
+      "tier": "A",
+      "donVi": [],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "may_trich",
+      "ghiChu": null,
+      "href": "/evidence/bdttg_gov_qd21_20260718.txt"
+    },
+    {
+      "id": "SK-DV-mst_vnpttech_vkist_20260702",
+      "ngay": "2026-07-02",
+      "lan": "don_vi",
+      "tieuDe": "VNPT Technology: phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+          "tier": "A",
+          "span": "Theo Biên bản ghi nhớ, hai bên sẽ phối hợp nghiên cứu và phát triển các công nghệ phục vụ chuyển đổi số trong sản xuất, bao gồm ứng dụng robot tự hành và các giải pháp tự động hóa trong nhà máy; nghiên cứu AI, IoT và cơ điện tử; phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông; đồng thời số hóa dữ liệu và ứng dụng AI phục vụ nhà máy thông minh cũng như nghiên cứu khoa học."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "VNPT Technology",
+          "slug": "vnpt-technology"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 1,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_vnpttech_vkist_20260702.txt"
+    },
+    {
+      "id": "SK-DV-vnanet_hesinhthai_ai_chuplai_20260710",
+      "ngay": "2026-07-10",
+      "lan": "don_vi",
+      "tieuDe": "2 đơn vị: FPT, Zalo",
+      "nguon": [
+        {
+          "ten": "vnanet.vn",
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+          "tier": "B",
+          "span": "Tập đoàn FPT hợp tác với Tập đoàn NVIDIA đầu tư khoảng 200 triệu USD xây dựng Nhà máy trí tuệ nhân tạo, cung cấp hạ tầng tính toán và trên 20 sản phẩm AI tạo sinh"
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "FPT",
+          "slug": "fpt"
+        },
+        {
+          "ten": "Zalo",
+          "slug": "zalo"
+        }
+      ],
+      "nhuCau": [
+        "P01"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt"
+    },
+    {
+      "id": "SK-DV-baochinhphu_nhomthoi_daknong_20260726",
+      "ngay": "2026-07-26",
+      "lan": "don_vi",
+      "tieuDe": "Công ty TNHH Luyện kim Trần Hồng Quân: sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
+      "nguon": [
+        {
+          "ten": "baochinhphu.vn",
+          "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
+          "tier": "A",
+          "span": "Đây là sự kiện có ý nghĩa đặc biệt đối với ngành công nghiệp luyện kim Việt Nam, đánh dấu lần đầu tiên Việt Nam sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty TNHH Luyện kim Trần Hồng Quân",
+          "slug": "cong-ty-tnhh-luyen-kim-tran-hong-quan"
+        }
+      ],
+      "nhuCau": [
+        "P25"
+      ],
+      "nhom": [
+        "8"
+      ],
+      "soCau": 5,
+      "trangThai": "da_kiem",
+      "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt"
+    },
+    {
+      "id": "SK-KY-MATCH-0001",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0001 được ký: ROSTEK ⇄ P07",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "ROSTEK",
+          "slug": "rostek"
+        }
+      ],
+      "nhuCau": [
+        "P07"
+      ],
+      "nhom": [
+        "3"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0001",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0003",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0003 được ký: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ P18",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P18"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0003",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0004",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0004 được ký: Tập đoàn Viettel ⇄ P23",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0004",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0006",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0006 được ký: CT Semiconductor ⇄ P23",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "CT Semiconductor",
+          "slug": "ct-semiconductor"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0006",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0008",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0008 được ký: Tập đoàn Viettel ⇄ P22",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel"
+        }
+      ],
+      "nhuCau": [
+        "P22"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0008",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0009",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0009 được ký: VNPT Technology ⇄ P06",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "VNPT Technology",
+          "slug": "vnpt-technology"
+        }
+      ],
+      "nhuCau": [
+        "P06"
+      ],
+      "nhom": [
+        "2"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0009",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0010",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0010 được ký: Tổng công ty Thiết bị điện Đông Anh ⇄ P20",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh"
+        }
+      ],
+      "nhuCau": [
+        "P20"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0010",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0011",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0011 được ký: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ P20",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P20"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0011",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0012",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0012 được ký: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ P17",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P17"
+      ],
+      "nhom": [
+        "5"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0012",
+      "href": null
+    },
+    {
+      "id": "SK-TC-VNPT>CNCL-P08 · nhu cầu quốc gia",
+      "ngay": "2026-08-16",
+      "lan": "quyet_dinh",
+      "tieuDe": "Từ chối: VNPT ⇄ P08",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "VNPT",
+          "slug": "vnpt"
+        }
+      ],
+      "nhuCau": [
+        "P08"
+      ],
+      "nhom": [],
+      "trangThai": "tu_choi",
+      "nguoi": "Lam Nguyen",
+      "lyDo": "Ca rac da biet: hai token khop la manh vun cua tu ghep, VNPT khong lam nen tang san xuat thong minh",
+      "href": null
+    },
+    {
+      "id": "SK-DV-cafef_vinmotion_minimotion_20260820",
+      "ngay": "2026-08-20",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần VinMotion: đã chính thức giới thiệu Motion thế hệ 2",
+      "nguon": [
+        {
+          "ten": "cafef.vn",
+          "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt",
+          "tier": "B",
+          "span": "Đến đầu năm 2026, VinMotion đã chính thức giới thiệu Motion thế hệ 2 – mẫu robot hình người mới nhất do đội ngũ kỹ sư Việt Nam phát triển."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần VinMotion",
+          "slug": "cong-ty-co-phan-vinmotion"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 1,
+      "trangThai": "da_kiem",
+      "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt"
+    },
+    {
+      "id": "SK-KY-MATCH-0005",
+      "ngay": "2026-08-24",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0005 được ký: FPT Semiconductor ⇄ P23",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "FPT Semiconductor",
+          "slug": "fpt-semiconductor"
+        }
+      ],
+      "nhuCau": [
+        "P23"
+      ],
+      "nhom": [
+        "6"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0005",
+      "href": null
+    },
+    {
+      "id": "SK-DX-HC-39613d1b6bed",
+      "ngay": "2026-09-28",
+      "lan": "de_xuat",
+      "tieuDe": "Tổng công ty Thiết bị điện Đông Anh: nang_luc_mo_ta_2: Nghiên cứu, thiết kế, công nghệ chế tạo cuộn kháng bù ngang điện áp 500 kV",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+          "tier": null,
+          "span": null
+        }
+      ],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "cho_duyet",
+      "href": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm"
+    },
+    {
+      "id": "SK-DX-HC-dc4dea764834",
+      "ngay": "2026-09-28",
+      "lan": "de_xuat",
+      "tieuDe": "Tổng công ty Thiết bị điện Đông Anh: bang_chung_nang_luc: EEMC phối hợp với Trường Điện - Điện tử, Đại học Bách khoa Hà Nội nghiên cứu, thiết kế và chế tạo một cuộn kháng bù ngang 500 kV, công suất 120 MVAr, đáp ứng tiêu chuẩn IEC 60076",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+          "tier": null,
+          "span": null
+        }
+      ],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "trangThai": "cho_duyet",
+      "href": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm"
+    },
+    {
+      "id": "SK-KY-MATCH-0007",
+      "ngay": "2026-09-29",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0007 được ký: VinBigData ⇄ P01",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "VinBigData",
+          "slug": "vinbigdata"
+        }
+      ],
+      "nhuCau": [
+        "P01"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0007",
+      "href": null
+    }
+  ],
+  "matDo": [
+    {
+      "thang": "2015-12",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2016-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2017-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2018-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-01",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-04",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2019-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2020-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2021-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-01",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-08",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2022-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-07",
+      "chinh_sach": 0,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-08",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-09",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2023-12",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-03",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-06",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-07",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-08",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-09",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-10",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-11",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2024-12",
+      "chinh_sach": 0,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-01",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-02",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-03",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-04",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-06",
+      "chinh_sach": 1,
+      "don_vi": 3,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-07",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-08",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-09",
+      "chinh_sach": 0,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-10",
+      "chinh_sach": 0,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-11",
+      "chinh_sach": 0,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2025-12",
+      "chinh_sach": 1,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-01",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-02",
+      "chinh_sach": 0,
+      "don_vi": 3,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-03",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-04",
+      "chinh_sach": 2,
+      "don_vi": 2,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-05",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-06",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-07",
+      "chinh_sach": 1,
+      "don_vi": 3,
+      "quyet_dinh": 0,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-08",
+      "chinh_sach": 0,
+      "don_vi": 1,
+      "quyet_dinh": 11,
+      "de_xuat": 0
+    },
+    {
+      "thang": "2026-09",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 1,
+      "de_xuat": 2
+    }
+  ]
+}

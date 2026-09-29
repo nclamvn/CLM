@@ -35,6 +35,7 @@ import { dungMaTran } from '../lib/do-thi-ma-tran.mjs';
 import { dungHoSo, docCauHinhDomain } from '../lib/ho-so.mjs';
 import { dungThiTruong } from '../lib/thi-truong.mjs';
 import { dungMatching } from '../lib/matching.mjs';
+import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -230,6 +231,12 @@ const lechDiem = mat.signedMatches.filter((m) => matching.phanRa[m.id].lamTron !
 if (lechDiem.length) { console.error(`FAIL: diem tinh lai tu cong thuc khac diem engine: ${lechDiem.join(', ')}`); process.exit(2); }
 writeFileSync(join(LIB, 'hub-matching.json'), JSON.stringify(matching, null, 2) + '\n', 'utf8');
 
+// ── Dong thoi cuoc (M5) ───────────────────────────────────────────────────
+const SK_CS = join(DEM, 'su_kien_chinh_sach.jsonl');
+if (!existsSync(SK_CS)) { console.error(`KHONG THAY ${SK_CS} (su kien chinh sach cho Dong thoi cuoc).`); process.exit(2); }
+const thoiCuoc = dungThoiCuoc({ reg, mat, ev: { events }, hoSo, graph: { nodes, edges }, suKienChinhSach: docJsonl(SK_CS) });
+writeFileSync(join(LIB, 'hub-thoi-cuoc.json'), JSON.stringify(thoiCuoc, null, 2) + '\n', 'utf8');
+
 // ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
 // Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.
 // Cong check-ghi-chu-ban-chup.mjs dem lai doc lap va doi chieu voi ngan sach.
@@ -242,6 +249,7 @@ console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} 
 console.log(`  ho so: ${hoSo.units.length} don vi · ${hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh').length} chua dinh danh · ${hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan, 0)} cau qua han chua ly do`);
 console.log(`  thi truong: ${thiTruong.kpi.soCap} cap cung-cau (${thiTruong.kpi.capDaKy} da ky) · ${thiTruong.kpi.ncTrong}/${thiTruong.kpi.soNc} nhu cau chua co ben cung · dien tich giao Sankey ${thiTruong.sankey.chiSo.dienTichGiao}`);
 console.log(`  matching: ${Object.keys(matching.phanRa).length} diem tinh lai khop engine · so do hai cot ${matching.haiCot.giao} giao (ban dau ${matching.haiCot.giaoBanDau})`);
+console.log(`  thoi cuoc: ${thoiCuoc.suKien.length} su kien (${Object.entries(thoiCuoc.meta.theoLan).map(([k, v]) => `${k} ${v}`).join(', ')}) · ${thoiCuoc.meta.tu} -> ${thoiCuoc.meta.den}`);
 console.log(`  bo cuc: ${boCuc.chiSo.giaoCanh} giao canh, ${boCuc.chiSo.canhXuyenNut} canh xuyen nut tren ${boCuc.chiSo.soCanhVe} canh cung-cau · ma tran dao ${maTran.chiSo.daoBanDau} -> ${maTran.chiSo.daoSauSap}`);
 console.log(`  canh: ${Object.entries(graphMeta.canh).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 if (spNgoaiDanhMuc.length) console.log(`  CHU Y: ${spNgoaiDanhMuc.length} ma san pham khong khop nhu cau nao: ${spNgoaiDanhMuc.join(', ')}`);
