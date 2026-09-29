@@ -1,0 +1,33 @@
+# SNAPSHOT · nhandan.vn (Bao Nhan Dan) · captured 2026-09-29 via web_fetch (text extraction)
+# URL: https://nhandan.vn/tu-phan-mem-den-ban-dan-fpt-va-buoc-ngoat-hoan-thien-chuoi-chip-make-in-vietnam-post940303.html
+# Ghi chu: CHUP LAI 29/09/2026 de thay nhandan_vsaplab_20260816. Ban cu dat hau to theo NGAY CHUP 16/08/2026 du dong ghi chu cua chinh no ghi 'Bai dang 02/02/2026'. Trang ghi 'Thứ Hai, ngày 02/02/2026 - 14:55' (dong ben duoi). Hai khoi chep nguyen van, khong dat nhan don vi.
+
+# Từ phần mềm đến bán dẫn: FPT và bước ngoặt hoàn thiện chuỗi chip “Make in Vietnam”
+
+ Thứ Hai, ngày 02/02/2026 - 14:55
+
+# nguoi chup luoc bot doan giua
+
+![dsc01875.jpg](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== "Bà Nguyễn Bích Yến - Chủ tịch VSAP LAB chia sẻ tại Lễ công bố thành lập Nhà máy Kiểm thử và đóng gói tiên tiến chip bán dẫn của FPT.")
+
+*Bà Nguyễn Bích Yến - Chủ tịch VSAP LAB chia sẻ tại Lễ công bố thành lập Nhà máy Kiểm thử và đóng gói tiên tiến chip bán dẫn của FPT.*
+
+Còn từ góc nhìn của chuyên gia hàng chục năm trong ngành bán dẫn, bà Nguyễn Bích Yến - Chủ tịch danh dự Viện Bán dẫn và Vật liệu tiên tiến - Đại học Quốc gia Hà Nội, Chủ tịch VSAP LAB, khẳng định: “Trong bối cảnh chuỗi cung ứng bán dẫn toàn cầu đang tái cấu trúc mạnh mẽ vì địa chính trị, an ninh công nghệ và nhu cầu đa dạng hóa sản xuất, đóng gói và kiểm thử tiên tiến (advanced packaging & testing) đang nổi lên như một trụ cột mới của ngành công nghiệp chip, không còn là khâu phụ trợ như trước đây.
+
+Với các quốc gia đi sau, việc tham gia vào các công đoạn sản xuất wafer ở công nghệ rất cao là vô cùng thách thức, cả về vốn, công nghệ lẫn rào cản xuất khẩu. Trong khi đó, advanced packaging cho phép tạo ra giá trị gia tăng rất lớn dựa trên tích hợp hệ thống, vật liệu, thiết kế và công nghệ quy trình, là “cửa ngõ khả thi nhất” để tham gia sâu vào chuỗi giá trị toàn cầu”.
+
+![dsc01887.jpg](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== "Đồng chí Bùi Hoàng Phương - Ủy viên dự khuyết Trung ương Đảng, Ủy viên Ban Thường vụ Đảng ủy, Thứ trưởng Khoa học Công nghệ nhận định FPT đã hoàn thiện mảnh ghép cuối cùng ở mảng bán dẫn của Việt Nam.")
+
+*Đồng chí Bùi Hoàng Phương - Ủy viên dự khuyết Trung ương Đảng, Ủy viên Ban Thường vụ Đảng ủy, Thứ trưởng Khoa học Công nghệ nhận định FPT đã hoàn thiện mảnh ghép cuối cùng ở mảng bán dẫn của Việt Nam.*
+
+Thứ trưởng Khoa học và Công nghệ Bùi Hoàng Phương chung quan điểm: đây là mảnh ghép cuối cùng để Việt Nam từng bước khép kín chuỗi giá trị bán dẫn từ thiết kế, sản xuất đến hoàn thiện sản phẩm, với vai trò chủ đạo của doanh nghiệp trong nước.
+
+Phân tích về chiến lược hoàn thiện chuỗi khép kín hệ sinh thái bán dẫn, ông Trương Gia Bình cho hay, khi công nghệ chế tạo chip ở mức vài nanomet ngày càng đắt đỏ và khó tiếp cận, đóng gói trở thành con đường “đi tắt đón đầu” để nâng cao hiệu suất, tích hợp đa chức năng và tạo giá trị gia tăng cao. Đây cũng là lĩnh vực mà Việt Nam có lợi thế về nhân lực, đặc biệt với sự tham gia của các chuyên gia hàng đầu người Việt ở trong và ngoài nước.
+
+![fpt-va-buoc-ngoat-hoan-thien-chuoi-chip-make-in-vietnam.png]()
+
+Hệ sinh thái này, hiện đã có Viettel là “bộ đội chủ lực” khi vừa khởi công nhà máy sản xuất chip vừa qua. Đó là cơ hội để các doanh nghiệp cùng bắt tay để tạo nên hệ sinh thái. Trong đó, FPT tham gia vào những khâu quan trọng để hoàn thiện hệ sinh thái. “Ngoài đào tạo, nghiên cứu, thiết kế chip, hôm nay chúng tôi bổ sung thêm khâu đóng gói, kiểm thử và bán hàng. Về cơ bản, chuỗi đã được khép kín. Ai làm tốt nhất việc gì thì làm việc đó, tất cả cùng tham gia vào một hệ sinh thái chung”, ông Trương Gia Bình nói.
+
+![03cb792df852760c2f43.jpg]()
+
+Tại Hội nghị Diên Hồng (hội nghị về bán dẫn do Hiệp hội Phần mềm và Dịch vụ Công nghệ thông tin Việt Nam - VINASA tổ chức, quy tụ các nhà khoa học, các chuyên gia, doanh nghiệp bán dẫn quốc tế và trong nước) diễn ra vào tháng 10/2024 tại Đà Nẵng, ông Trương Gia Bình đã chia sẻ một cách mạnh mẽ, kiên định và đầy cảm hứng về quyết tâm của FPT trong việc dấn thân vào lĩnh vực bán dẫn. Và cũng từ nguồn cảm hứng đó VSAP LAB – phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến đã được thành hình, đóng góp một mảnh ghép đầy tiềm năng vào hệ sinh thái bán dẫn Việt Nam.

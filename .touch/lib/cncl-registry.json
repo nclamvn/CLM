@@ -4,18 +4,18 @@
     "claims": 221,
     "needs": 30,
     "sources": 13,
-    "snapshots": 46,
+    "snapshots": 47,
     "tierA": 78,
     "tierB": 143,
     "nhomPhu": 10,
     "generatedAt": "2026-09-29",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-09-29 12:41: 58/58 xanh",
+    "gate": "chuỗi cổng 2026-09-29 12:52: 60/60 xanh",
     "chuoiCong": {
-      "luc": "2026-09-29T12:41:53+0700",
+      "luc": "2026-09-29T12:52:43+0700",
       "cheDo": "day_du",
-      "tong": 58,
-      "xanh": 58,
+      "tong": 60,
+      "xanh": 60,
       "do": 0,
       "khongChay": 0,
       "hoan": 0,
@@ -811,7 +811,7 @@
       "sources": [
         {
           "source": "tapchikinhtetaichinh.vn",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt"
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt"
         }
       ],
       "tim": "ct group dn doanh nghiệp ký được hợp đồng xuất khẩu tới 5.000 uav ra thị trường quốc tế (hàn quốc) nhóm 9 hàng không và vũ trụ sp 22",
@@ -823,8 +823,8 @@
           "source": "tapchikinhtetaichinh.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt",
-          "note": ""
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "note": "NGAY DANG THAT 22/12/2025 (29/09/2026): ban chup cu tapchikttc_uav_tongquan_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "loai_hinh",
@@ -833,8 +833,8 @@
           "source": "tapchikinhtetaichinh.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt",
-          "note": "Phan loai tu chinh span: span ghi 'mot doanh nghiep da nganh'."
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "note": "Phan loai tu chinh span: span ghi 'mot doanh nghiep da nganh'. | NGAY DANG THAT 22/12/2025 (29/09/2026): ban chup cu tapchikttc_uav_tongquan_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -843,8 +843,8 @@
           "source": "tapchikinhtetaichinh.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt",
-          "note": "UAV -> SP22 / nhom 9 theo QD 21/2026 [CNCL-P22-A] Span con cap nhat 16/08/2026: dong snapshot da tra ve nguyen van nguon nen doan trich con phai theo. Khac biet duy nhat la kieu dau nhay, ban cu dung nhay don thay vi nhay kep cong cua nguon. Noi dung khong doi."
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "note": "UAV -> SP22 / nhom 9 theo QD 21/2026 [CNCL-P22-A] Span con cap nhat 16/08/2026: dong snapshot da tra ve nguyen van nguon nen doan trich con phai theo. Khac biet duy nhat la kieu dau nhay, ban cu dung nhay don thay vi nhay kep cong cua nguon. Noi dung khong doi. | NGAY DANG THAT 22/12/2025 (29/09/2026): ban chup cu tapchikttc_uav_tongquan_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -853,8 +853,8 @@
           "source": "tapchikinhtetaichinh.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt",
-          "note": "UAV -> SP22 / nhom 9 theo QD 21/2026 [CNCL-P22-A] Span con cap nhat 16/08/2026: dong snapshot da tra ve nguyen van nguon nen doan trich con phai theo. Khac biet duy nhat la kieu dau nhay, ban cu dung nhay don thay vi nhay kep cong cua nguon. Noi dung khong doi."
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "note": "UAV -> SP22 / nhom 9 theo QD 21/2026 [CNCL-P22-A] Span con cap nhat 16/08/2026: dong snapshot da tra ve nguyen van nguon nen doan trich con phai theo. Khac biet duy nhat la kieu dau nhay, ban cu dung nhay don thay vi nhay kep cong cua nguon. Noi dung khong doi. | NGAY DANG THAT 22/12/2025 (29/09/2026): ban chup cu tapchikttc_uav_tongquan_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -863,8 +863,8 @@
           "source": "tapchikinhtetaichinh.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/tapchikttc_uav_tongquan_20260718.txt",
-          "note": ""
+          "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+          "note": "NGAY DANG THAT 22/12/2025 (29/09/2026): ban chup cu tapchikttc_uav_tongquan_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         }
       ]
     },
@@ -1060,11 +1060,11 @@
         },
         {
           "source": "vneconomy.vn",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
         },
         {
           "source": "vnanet.vn",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt"
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt"
         }
       ],
       "tim": "fpt hệ sinh thái ai agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng. dòng chip soc ai on edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (uav) nhóm 1 công nghệ số sp 1",
@@ -1076,8 +1076,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "verbatim",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": ""
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -1086,8 +1086,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A]"
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A] | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -1096,8 +1096,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "LLM tieng Viet / tro ly ao -> SP1 [CNCL-P01-A]"
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "LLM tieng Viet / tro ly ao -> SP1 [CNCL-P01-A] | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -1106,8 +1106,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi."
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -1116,8 +1116,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] Span truoc day bi chinh khoang trang quanh dau gach noi. Tra ve nguyen van 16/08/2026."
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] Span truoc day bi chinh khoang trang quanh dau gach noi. Tra ve nguyen van 16/08/2026. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "bang_chung_nang_luc",
@@ -1126,8 +1126,8 @@
           "source": "vnanet.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt",
-          "note": ""
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+          "note": "NGAY DANG THAT 10/07/2026 (29/09/2026): ban chup cu vnanet_hesinhthai_ai_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta_2",
@@ -2142,7 +2142,7 @@
       "sources": [
         {
           "source": "vjst.vn",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt"
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt"
         },
         {
           "source": "mst.gov.vn",
@@ -2158,8 +2158,8 @@
           "source": "vjst.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": ""
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "note": "NGAY DANG THAT 27/07/2023 (29/09/2026): ban chup cu vjst_viettel_llm_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -2168,8 +2168,8 @@
           "source": "vjst.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A] Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi."
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A] Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. | NGAY DANG THAT 27/07/2023 (29/09/2026): ban chup cu vjst_viettel_llm_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -2178,18 +2178,18 @@
           "source": "vjst.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": "LLM tieng Viet / tro ly ao -> SP1 [CNCL-P01-A] Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi."
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "note": "LLM tieng Viet / tro ly ao -> SP1 [CNCL-P01-A] Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. | NGAY DANG THAT 27/07/2023 (29/09/2026): ban chup cu vjst_viettel_llm_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "bang_chung_nang_luc",
           "value": "được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử nghiệm phát triển Mô hình ngôn ngữ lớn Tiếng Việt và trợ lý ảo cho cán bộ, công chức",
-          "span": "meta-description: Tập đoàn Viettel đã được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử nghiệm phát triển Mô hình ngôn ngữ lớn Tiếng Việt và trợ lý ảo cho cán bộ, công chức tại Bộ TT&TT.",
+          "span": "Tập đoàn Viettel đã được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử nghiệm phát triển Mô hình ngôn ngữ lớn Tiếng Việt và trợ lý ảo cho cán bộ, công chức tại Bộ TT&TT.",
           "source": "vjst.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026, DAY LA MOT CLAIM NOI QUA CHU KHONG PHAI LOI CHINH TA. Value cu viet 'Bo TT&TT GIAO Tap doan Viettel phat trien', trong khi nguon chi noi Viettel 'da duoc Bo TT&TT PHE DUYET LA DON VI NGHIEN CUU, THU NGHIEM phat trien'. Hai muc do khac han nhau: duoc phe duyet de thu nghiem khong phai la duoc giao nhiem vu. Value cu con bo mat hai chu 'nghien cuu, thu nghiem' va them chu 'cong cu' khong co trong nguon. Cong luat 3 KHONG bat duoc vi no chi cam value VUOT span theo chuoi con, ma claim nay mang nhan 'normalized' nen duoc mien phep so chuoi. Lo ra ngay 02/09/2026 khi do thu ca 14 claim van xuoi normalized sau khi tim thay loi chinh ta cua HTI Technology. Value moi la chuoi con nguyen van cua span nen tra extraction ve verbatim. LUU Y: claim nay nam duoi MATCH-0004 va MATCH-0008 da ky; doi value tuc la doi bang chung duoi chu ky, phai de co che khoa bang chung xu ly chu khong duoc lang le."
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026, DAY LA MOT CLAIM NOI QUA CHU KHONG PHAI LOI CHINH TA. Value cu viet 'Bo TT&TT GIAO Tap doan Viettel phat trien', trong khi nguon chi noi Viettel 'da duoc Bo TT&TT PHE DUYET LA DON VI NGHIEN CUU, THU NGHIEM phat trien'. Hai muc do khac han nhau: duoc phe duyet de thu nghiem khong phai la duoc giao nhiem vu. Value cu con bo mat hai chu 'nghien cuu, thu nghiem' va them chu 'cong cu' khong co trong nguon. Cong luat 3 KHONG bat duoc vi no chi cam value VUOT span theo chuoi con, ma claim nay mang nhan 'normalized' nen duoc mien phep so chuoi. Lo ra ngay 02/09/2026 khi do thu ca 14 claim van xuoi normalized sau khi tim thay loi chinh ta cua HTI Technology. Value moi la chuoi con nguyen van cua span nen tra extraction ve verbatim. LUU Y: claim nay nam duoi MATCH-0004 va MATCH-0008 da ky; doi value tuc la doi bang chung duoi chu ky, phai de co che khoa bang chung xu ly chu khong duoc lang le. | NGAY DANG THAT 27/07/2023 (29/09/2026): ban chup cu vjst_viettel_llm_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang. Span cu (tu dong meta, nay trang ghi TT&amp;TT): \"meta-description: Tập đoàn Viettel đã được Bộ TT&TT phê duyệt là đơn vị nghiên cứu, thử ng\""
         },
         {
           "field": "nang_luc_mo_ta",
@@ -2198,8 +2198,8 @@
           "source": "vjst.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vjst_viettel_llm_20260718.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span. CHUAN HOA CO CHU DICH: chu 'voi' khong co trong nguon. No duoc chen lam TU NOI khi rut gon cum 'duoc huan luyen ho tro do dai ngu canh' thanh 'voi do dai ngu canh'. Mot tu noi khong them khang dinh nao: con so 4096 token va cum '(context length)' deu nguyen van cua nguon."
+          "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+          "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span. CHUAN HOA CO CHU DICH: chu 'voi' khong co trong nguon. No duoc chen lam TU NOI khi rut gon cum 'duoc huan luyen ho tro do dai ngu canh' thanh 'voi do dai ngu canh'. Mot tu noi khong them khang dinh nao: con so 4096 token va cum '(context length)' deu nguyen van cua nguon. | NGAY DANG THAT 27/07/2023 (29/09/2026): ban chup cu vjst_viettel_llm_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl_phu_6",
@@ -2397,7 +2397,7 @@
       "sources": [
         {
           "source": "mst.gov.vn",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt"
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt"
         }
       ],
       "tim": "viettel ai giải pháp claimpkg, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng. nhóm 1 công nghệ số sp 01",
@@ -2409,8 +2409,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "verbatim",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": ""
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -2419,8 +2419,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A]"
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A] | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -2429,8 +2429,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "verbatim",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": ""
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -2439,8 +2439,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve tro ly ao va mo hinh AI -> SP01. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve tro ly ao va mo hinh AI -> SP01. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         }
       ]
     },
@@ -2948,7 +2948,7 @@
       "sources": [
         {
           "source": "vneconomy.vn",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
         }
       ],
       "tim": "vinai vinai đã lọt vào top 20 công ty toàn cầu dẫn đầu về nghiên cứu ai nhóm 1 công nghệ số sp 01",
@@ -2960,8 +2960,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": ""
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -2970,8 +2970,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A]"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -2980,8 +2980,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "KHANG DINH TOI THUONG: pham vi la MOT VI TRI TRONG BANG XEP HANG cua ben thu ba, Top 20 toan cau ve nghien cuu AI, chu khong phai ngoi vi so mot · nguon 18/07/2026 · CHUA doi chieu doc lap, bai khong ghi ro bang xep hang nao va ky nao. RUI RO: bang xep hang doi hang nam, va cau khong neu ten bang nen khong tu kiem duoc."
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "KHANG DINH TOI THUONG: pham vi la MOT VI TRI TRONG BANG XEP HANG cua ben thu ba, Top 20 toan cau ve nghien cuu AI, chu khong phai ngoi vi so mot · nguon 18/07/2026 · CHUA doi chieu doc lap, bai khong ghi ro bang xep hang nao va ky nao. RUI RO: bang xep hang doi hang nam, va cau khong neu ten bang nen khong tu kiem duoc. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -2990,8 +2990,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve mo hinh AI va xu ly ngon ngu -> SP01 LLM tieng Viet, tro ly ao, AI chuyen nganh. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve mo hinh AI va xu ly ngon ngu -> SP01 LLM tieng Viet, tro ly ao, AI chuyen nganh. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         }
       ]
     },
@@ -3088,7 +3088,7 @@
         },
         {
           "source": "vneconomy.vn",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
         }
       ],
       "tim": "vnpt dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
@@ -3100,8 +3100,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "verbatim",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": ""
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "loai_hinh",
@@ -3110,8 +3110,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "Phan loai tu chinh span: span goi la 'tap doan'."
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "Phan loai tu chinh span: span goi la 'tap doan'. | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -3120,8 +3120,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A]"
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "Cong nghe so -> nhom 1 theo QD 21/2026 [CNCL-G01-A] | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -3130,8 +3130,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "normalized",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": "AI camera xu ly tai bien -> SP2 [CNCL-P02-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "AI camera xu ly tai bien -> SP2 [CNCL-P02-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -3140,8 +3140,8 @@
           "source": "mst.gov.vn",
           "tier": "A",
           "extraction": "verbatim",
-          "href": "/evidence/mst_gov_ai_diemsang_20260718.txt",
-          "note": ""
+          "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+          "note": "NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -3150,8 +3150,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A]"
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "bang_chung_nang_luc",
@@ -3160,8 +3160,8 @@
           "source": "vneconomy.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vneconomy_ai_khatvong_20260718.txt",
-          "note": ""
+          "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+          "note": "NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl_phu_3",
@@ -3282,7 +3282,7 @@
       "sources": [
         {
           "source": "nhandan.vn",
-          "href": "/evidence/nhandan_vsaplab_20260816.txt"
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt"
         }
       ],
       "tim": "vsap lab phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại việt nam trong lĩnh vực đóng gói bán dẫn tiên tiến nhóm 6 chip bán dẫn sp 23",
@@ -3294,8 +3294,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/nhandan_vsaplab_20260816.txt",
-          "note": "NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+          "note": "NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
         },
         {
           "field": "nhom_cncl",
@@ -3304,8 +3304,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/nhandan_vsaplab_20260816.txt",
-          "note": "Chip ban dan -> nhom 6 (Cong nghe chip ban dan) theo QD 21/2026 [CNCL-G06]. Anh xa nhom, khong phai quote literal so 6. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+          "note": "Chip ban dan -> nhom 6 (Cong nghe chip ban dan) theo QD 21/2026 [CNCL-G06]. Anh xa nhom, khong phai quote literal so 6. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -3314,8 +3314,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/nhandan_vsaplab_20260816.txt",
-          "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. KHANG DINH TOI THUONG: pham vi la LAB-FAB DAU TIEN TAI VIET NAM trong linh vuc DONG GOI BAN DAN TIEN TIEN, tuc mot loai co so nghien cuu san xuat thu, khong phai nha may thuong mai · nguon 16/08/2026 · CHUA doi chieu doc lap. Khong choi voi FPT Semiconductor vi khac khau."
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+          "note": "MAU THUAN NGUON can theo doi: mst.gov.vn 28/01/2026 xep VSAP LAB vao nhom 'doi tac quoc te' cua FPT, trong khi nhandan mo ta la lab-fab dau tien TAI VIET NAM. Khong tu phan xu, ghi de nguoi doc thay. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. KHANG DINH TOI THUONG: pham vi la LAB-FAB DAU TIEN TAI VIET NAM trong linh vuc DONG GOI BAN DAN TIEN TIEN, tuc mot loai co so nghien cuu san xuat thu, khong phai nha may thuong mai · nguon 16/08/2026 · CHUA doi chieu doc lap. Khong choi voi FPT Semiconductor vi khac khau. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
         },
         {
           "field": "san_pham_lien_quan",
@@ -3324,8 +3324,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/nhandan_vsaplab_20260816.txt",
-          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi."
+          "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+          "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
         }
       ]
     },
@@ -3416,7 +3416,7 @@
       "sources": [
         {
           "source": "vnanet.vn",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt"
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt"
         }
       ],
       "tim": "zalo nhóm 1 công nghệ số sp 1",
@@ -3428,8 +3428,8 @@
           "source": "vnanet.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt",
-          "note": ""
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+          "note": "NGAY DANG THAT 10/07/2026 (29/09/2026): ban chup cu vnanet_hesinhthai_ai_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "nhom_cncl",
@@ -3438,8 +3438,8 @@
           "source": "vnanet.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt",
-          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A]"
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+          "note": "Cong nghe so -> nhom 1 [CNCL-G01-A] | NGAY DANG THAT 10/07/2026 (29/09/2026): ban chup cu vnanet_hesinhthai_ai_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         },
         {
           "field": "san_pham_lien_quan",
@@ -3448,8 +3448,8 @@
           "source": "vnanet.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/vnanet_hesinhthai_ai_20260718.txt",
-          "note": "LLM/tro ly ao -> SP1 [CNCL-P01-A]"
+          "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+          "note": "LLM/tro ly ao -> SP1 [CNCL-P01-A] | NGAY DANG THAT 10/07/2026 (29/09/2026): ban chup cu vnanet_hesinhthai_ai_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
         }
       ]
     }

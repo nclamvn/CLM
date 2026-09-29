@@ -152,6 +152,10 @@ chay CNCLData doi_chung_nguon     "$CNCL" 'cau khop'             python3 check_s
 chay CNCLData do_tuoi_nguon       "$CNCL" 'mau hong qua han'     python3 check_do_tuoi.py domains/don_vi_cncl
 # Bai co tai tro nam tren dung ten mien tier B, dung tac gia, dung dinh dang. Chi mot dong
 # chu nho phan biet no voi bao chi doc lap. Ngay 24/08/2026 suyt nap mot bai nhu vay.
+# Ngay dang cua nguon phai la NGAY NGUON DANG, khong phai ngay minh chup. Them 29/09/2026: cong
+# tuoi doc ngay tu hau to ten ban chup, va 7 ban chup dat hau to bang ngay chup, lam 43 claim tre
+# gia, co claim tre gia gan ba nam. Cong nay khong doi ngay dung, no chan ngay CHUP gia lam ngay DANG.
+chay CNCLData ngay_dang           "$CNCL" 'OK:|FAIL|KHONG CHAY' python3 check_ngay_dang.py domains/don_vi_cncl
 chay CNCLData nguon_tai_tro       "$CNCL" 'dau hieu tai tro|VI PHAM' python3 check_tai_tro.py domains/don_vi_cncl
 # Tham chieu treo: span tro toi mot thu khong co trong pham vi da chup, kieu 'cac san pham
 # nay' ma danh sach lai nam o cau khong duoc chup. Loai loi nay QUA DUOC het cac cong khac:
@@ -282,6 +286,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_fail_closed   "$CNCL" 'BITE FAIL CLOSED'  python3 bite_fail_closed.py
   chay CNCLData    rang_chuan_hoa     "$CNCL" 'BITE CHUAN HOA'   python3 bite_chuan_hoa.py
   chay CNCLData    rang_ma_so_thue    "$CNCL" 'BITE MA SO THUE'  python3 bite_ma_so_thue.py
+  chay CNCLData    rang_ngay_dang     "$CNCL" 'BITE NGAY DANG'   python3 bite_ngay_dang.py
   chay CNCLData    rang_hang_cho      "$CNCL" 'BITE HANG CHO'    python3 vong_tu_chay/bite_hang_cho.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py

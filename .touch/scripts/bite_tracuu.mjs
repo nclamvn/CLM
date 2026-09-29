@@ -20,14 +20,11 @@
  *
  * CANH
  * ====
- * MUON DU LIEU THAT, va con MOT CHO GO CUNG chua go duoc.
+ * MUON DU LIEU THAT. Rang chep kho vao thu muc tam roi tiem tren ban sao. Ban chup dem xoa
+ * duoc CHON TU registry web moi lan chay (href cua evidence dau tien), khong go cung ten.
  *
- * Rang chep kho vao thu muc tam roi tiem tren ban sao. Nhung hang `const MOI` go cung TEN MOT
- * BAN CHUP cu the. Ban chup do bi doi ten hoac bi bo thi rang gay, va gay vi canh chu khong vi
- * engine sai. Do dung la dang loi da vap bon lan trong hai ngay.
- *
- * Chua sua trong TIP-03 vi sua no phai doi cach rang chon ban chup, tuc doi hanh vi cua rang
- * chu khong chi doi mot hang. Ghi ra day nhu mot mon no da nhan dien, khong giau.
+ * Mon no nay da ghi tu 25/08/2026 va da DEN HAN ngay 29/09/2026: ban chup go cung duoc chup lai
+ * de sua ngay dang, rang 1 bao KHONG CAN. Tra no cung ngay, dung hanh vi thay vi artefact.
  */
 import { readFileSync, writeFileSync, existsSync, unlinkSync, renameSync, statSync,
          mkdtempSync, mkdirSync, cpSync, rmSync } from 'node:fs';
@@ -38,7 +35,6 @@ import { spawnSync } from 'node:child_process';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const THAT = join(HERE, '..');
-const MOI = 'vjst_viettel_llm_20260718.txt';
 
 // BAN LAM VIEC TAM. Rang phai xoa ban chup va giau file lib di moi thu duoc, ma hai thu do
 // la dau vao cua file NGUOI DUNG CAM. Chep sang thu muc tam roi pha o do: kho that khong
@@ -51,6 +47,15 @@ cpSync(join(THAT, 'scripts'), join(TOUCH, 'scripts'), { recursive: true });
 cpSync(join(THAT, 'public', 'evidence'), join(TOUCH, 'public', 'evidence'), { recursive: true });
 
 const GEN = join(TOUCH, 'scripts', 'gen-tracuu-html.mjs');
+// Ban chup dem xoa CHON TU DU LIEU: href cua evidence dau tien trong registry web. Truoc
+// 29/09/2026 hang nay go cung 'vjst_viettel_llm_20260718.txt'; ngay ban chup do duoc chup lai
+// de sua ngay dang, xoa no khong con lam thieu gi va rang 1 bao KHONG CAN.
+const MOI = (() => {
+  const reg = JSON.parse(readFileSync(join(TOUCH, 'lib', 'cncl-registry.json'), 'utf8'));
+  const h = reg.units.flatMap((u) => u.evidence.map((e) => e.href)).find(Boolean);
+  return h ? h.replace('/evidence/', '') : null;
+})();
+if (!MOI) { console.error('KHONG CHAY DUOC: registry web khong co evidence nao de chon canh.'); process.exit(3); }
 const EV = join(TOUCH, 'public', 'evidence');
 // Tu 25/08/2026 gen-tracuu-html.mjs doc BAN JSON song sinh, khong boc bien ra khoi .ts
 // bang regex nua. Rang nay giau dau vao de thu 'mat dau vao thi dung', nen no phai giau

@@ -1,0 +1,19 @@
+# Ban chup co hau to _YYYYMMDD TRUNG NGAY CHUP ma than ban chup khong co cau nao cua nguon noi
+# ngay do. Xem CNCLData/check_ngay_dang.py.
+#
+# 29/09/2026  chot moc: 1 ban chup.
+#   Truoc ngay nay co 6 ban chup dat hau to 20260718 (ngay dung dataset). Nam ban da chup lai voi
+#   dong ngay dang cua nguon va dung hau to that: 20241222, 20251124, 20230904 (mot phan),
+#   20251222, 20230727, 20260710.
+#
+#   CON LAI MOT, VA LY DO LA CHU KY:
+#   vneconomy_ai_khatvong_20260718.html con 4 claim cua VinBigData. Bang chung nang luc cua
+#   VinBigData nam trong MATCH-0007, match DA KY. Khoa bang chung cua match (match_engine.py
+#   bang_chung_digest) gom ca TEN BAN CHUP, nen tro 4 claim nay sang ban chup moi se lam chu ky
+#   MATCH-0007 lech khoa, va dung nhu thiet ke, restore-signoff se bao "BANG CHUNG DOI CHU".
+#   May khong duoc ky thay nguoi. Viec dung la: anh Lam doc lai MATCH-0007 voi thong tin moi
+#   (bai vneconomy dang 04/09/2023, khong phai 18/07/2026), roi quyet ky lai hay bac. Sau do tro
+#   4 claim sang vneconomy_ai_khatvong_chuplai_20230904.html (da co san) va xoa dong duoi day.
+#
+# Moi dong: ten ban chup | ly do
+vneconomy_ai_khatvong_20260718.html | 4 claim VinBigData, cho anh Lam ky lai MATCH-0007 voi ngay dang that 04/09/2023

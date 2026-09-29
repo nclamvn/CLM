@@ -17,8 +17,10 @@ Chay:  python3 bite_dong_bo_snapshot.py
 Exit 0 neu ca hai rang can. Exit 1 neu co rang khong can.
 CANH
 ====
-MUON DU LIEU THAT qua ban_tam. Rang tiem loi vao ban sao, kho that khong bi cham. Canh phu
-thuoc vao viec kho nguon con it nhat mot ban chup de lam lech; kho rong thi bao KHONG CHAY DUOC.
+MUON DU LIEU THAT qua ban_tam. Rang tiem loi vao ban sao, kho that khong bi cham. Ban chup va
+chuoi moc duoc CHON TU claims.jsonl moi lan chay (claim dau tien co span du dai), khong go cung
+ten file: tu 29/09/2026, sau khi ten go cung lam ca hai rang gay luc ban chup do duoc chup lai.
+Kho khong con claim nao dung duoc thi bao KHONG CHAY DUOC.
 """
 import shutil, subprocess, sys
 from pathlib import Path
@@ -27,9 +29,29 @@ ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
 from ban_tam import ban_tam
 
-FILE = "vjst_viettel_llm_20260718.html"
-CU = "Có mô hình xác suất có khả năng hiểu và sinh ngôn ngữ tự nhiên (LLM)"
-BT = None  # dat trong main(); moi thao tac deu tren BAN SAO, kho that khong bi cham
+# Ban chup va chuoi moc CHON TU DU LIEU, khong go cung. Truoc 29/09/2026 hai hang nay go cung
+# ten "vjst_viettel_llm_20260718.html". Ngay ban chup do duoc chup lai de sua ngay dang, rang
+# van tim thay file cu (con nam trong kho, khong claim nao dung) nen xoa no build van xanh, va
+# ca hai rang bao KHONG CAN. Rang gay vi CANH, dung loai loi check_rang_khai_canh.py canh bao.
+FILE = None
+CU = None
+BT = None
+
+
+def chon_canh(bt):
+    """Claim dau tien (theo thu tu file) co span >= 30 ky tu, ban chup co o ca hai mien."""
+    import json
+    goc_dir = bt.cncl / "domains" / "don_vi_cncl" / "snapshots"
+    dx_dir = bt.match / "domains" / "cncl_match" / "snapshots"
+    for l in (bt.cncl / "domains" / "don_vi_cncl" / "claims.jsonl").read_text(encoding="utf-8").splitlines():
+        if not l.strip():
+            continue
+        c = json.loads(l)
+        f, sp = c["capture"]["snapshot"], c.get("evidence_span", "")
+        if len(sp) >= 30 and (goc_dir / f).exists() and (dx_dir / f).exists() \
+                and sp in (dx_dir / f).read_text(encoding="utf-8"):
+            return f, sp
+    return None, None  # dat trong main(); moi thao tac deu tren BAN SAO, kho that khong bi cham
 
 
 def build():
@@ -42,6 +64,12 @@ def main():
     global BT
     with ban_tam(can_touch=False) as bt:
         BT = bt
+        global FILE, CU
+        FILE, CU = chon_canh(bt)
+        if FILE is None:
+            print("KHONG CHAY DUOC: khong tim duoc claim nao co ban chup o ca hai mien de lam canh")
+            return 3
+        print(f"canh: {FILE}")
         return _chay(bt.cncl / "domains" / "don_vi_cncl" / "snapshots" / FILE,
                      bt.match / "domains" / "cncl_match" / "snapshots" / FILE)
 

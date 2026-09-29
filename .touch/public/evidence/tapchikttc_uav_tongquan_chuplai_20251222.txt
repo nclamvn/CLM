@@ -1,0 +1,19 @@
+# SNAPSHOT · nghiencuu.tapchikinhtetaichinh.vn · captured 2026-09-29 via web_fetch (text extraction)
+# URL: https://nghiencuu.tapchikinhtetaichinh.vn/tong-quan-nen-cong-nghiep-thiet-bi-bay-khong-nguoi-lai-tai-viet-nam-133948.html
+# Ghi chu: CHUP LAI 29/09/2026 de thay tapchikttc_uav_tongquan_20260718. Ban cu dat hau to theo NGAY CHUP 18/07/2026; bai dang 18:00 | 22/12/2025, ngay duyet dang 22/12/2025 (hai dong ngay trong ban nay). Ba khoi chep nguyen van tu ban tai. Khong dat nhan don vi.
+
+# Tổng quan nền công nghiệp thiết bị bay không người lái tại Việt Nam
+
+[Nghiên cứu - Trao đổi](https://nghiencuu.tapchikinhtetaichinh.vn/nghien-cuu-trao-doi) 18:00 | 22/12/2025
+
+# nguoi chup luoc bot doan giua
+
+Nhận thức tiềm năng to lớn của lĩnh vực này, một số tập đoàn và startup công nghệ Việt Nam đã tiên phong đầu tư vào R&D UAV. Tiêu biểu là CT Group - một doanh nghiệp đa ngành, đã sớm xây dựng chiến lược phát triển UAV “Make in Vietnam” từ năm 2016 (Thái Khang, 2025). Dù gặp không ít thất bại ban đầu, những doanh nghiệp kiên trì như CT Group đã tích lũy kinh nghiệm qua từng mẫu UAV thử nghiệm, để rồi đến năm 2025 lần đầu tiên một công ty Việt Nam ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc) - một bước tiến quan trọng với ngành công nghiệp UAV Việt Nam (CT Group, 2025). Cùng với đó, một số chuyên gia Việt kiều và nhà khoa học trong nước cũng thành lập các startup về UAV. Chẳng hạn, Tiến sĩ Lương Việt Quốc sau thời gian làm việc ở Mỹ đã về nước lập công ty Real-Time Robotics, phát triển thành công drone “Hera” với thiết kế độc đáo (có thể gập gọn) và tính năng cạnh tranh ngang tầm quốc tế (Tỷ Huỳnh, 2025). Đến năm 2023-2025, hệ sinh thái doanh nghiệp UAV Việt đã trở nên khá đa dạng, từ các tập đoàn lớn (Viettel, CT Group) cho đến nhóm startup chuyên dụng trong những ngách thị trường (nông nghiệp, logistics, giám sát).
+
+UAV ngày càng gắn với khái niệm “Kinh tế tầm thấp” (Low Altitude Economy - LAE), nơi giá trị không chỉ nằm ở phần cứng mà còn ở dữ liệu, dịch vụ và nền tảng quản lý bay. Các đánh giá trong nước cho thấy thị trường LAE có thể trở thành động lực tăng trưởng mới nếu tháo gỡ được rào cản thể chế, hạ tầng và tiêu chuẩn hóa Ngô Huyền (2025). Trong bối cảnh đó, việc liên kết các chủ thể để chia sẻ hạ tầng thử nghiệm, dữ liệu và chuẩn kỹ thuật được xem là điều kiện quan trọng để giảm chi phí đổi mới.
+
+Khối cơ quan nhà nước Việt Nam đang đóng vai trò nòng cốt trong việc hình thành và phát triển hệ sinh thái UAV, tiêu biểu là Trung tâm Đổi mới sáng tạo Quốc gia (NIC) với việc thành lập Mạng lưới hàng không vũ trụ và hệ thống hàng không không người lái Việt Nam (AUVS VN) nhằm kết nối doanh nghiệp và các cơ sở nghiên cứu trong lĩnh vực UAV - hàng không vũ trụ (AUVS VN, 2025). Song song với đó, các bộ, ngành và địa phương tham gia quản lý, định hướng và hỗ trợ ứng dụng UAV theo chức năng, thể hiện qua những cam kết đặt hàng và thúc đẩy sử dụng sản phẩm UAV nội địa trong các lĩnh vực quản lý đô thị, an ninh và nông nghiệp. Khối doanh nghiệp quốc phòng, tiêu biểu là Tập đoàn Viettel, đã khẳng định vai trò chủ lực trong phát triển UAV quân sự “Made in Vietnam” thông qua đầu tư toàn diện từ vật liệu, khí động học đến điều khiển và trí tuệ nhân tạo (AI), qua đó chứng minh năng lực tự chủ công nghệ quốc phòng và tiềm năng chuyển giao sang các ứng dụng dân sự (Hồng Quang và Quang Hưng, 2025). Khối doanh nghiệp tư nhân, startup và các nhóm nghiên cứu đại học đang nổi lên mạnh mẽ, với nhiều mô hình UAV chuyên biệt từ quốc phòng, nông nghiệp, logistics đến cứu hộ, qua đó góp phần hình thành hệ sinh thái UAV Việt Nam đa dạng, năng động và có năng lực cạnh tranh quốc tế.
+
+# nguoi chup luoc bot doan giua (toi cuoi bai)
+
+| *Ngày nhận bài: 6/11/2025; Ngày hoàn thiện biên tập: 16/12/2025; Ngày duyệt đăng: 22/12/2025* |

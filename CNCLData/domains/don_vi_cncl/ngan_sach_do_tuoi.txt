@@ -1,4 +1,4 @@
-19
+28
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -98,3 +98,17 @@
   38 claim: mst_gov_ai_diemsang (URL mang ma 197251123, tuc bai 23/11/2025), vneconomy_ai_khatvong,
   tapchikttc_uav_tongquan, vjst_viettel_llm, vnanet_hesinhthai_ai. Tuoi cua ca 38 claim do dang
   bi tinh sai, nen con so 19 nay THAP HON THAT.
+
+29/09/2026 19 -> 28 (cung ngay, luot sau). TANG 9, van la SUA NGAY SAI, khong phai du lieu xau di.
+  Cong moi check_ngay_dang.py bat BAY ban chup lay ngay chup lam ngay dang. Da chup lai sau ban
+  voi dong ngay cua nguon va hau to that:
+    mst_gov_ai_diemsang         20260718 -> 20251124
+    vneconomy_ai_khatvong       20260718 -> 20230904  (7/11 claim; 4 claim VinBigData cho ky lai)
+    tapchikttc_uav_tongquan     20260718 -> 20251222
+    vjst_viettel_llm            20260718 -> 20230727
+    vnanet_hesinhthai_ai        20260718 -> 20260710
+    nhandan_vsaplab             20260816 -> 20260202  (ghi chu cua chinh ban cu da ghi 02/02/2026)
+  Hai bai dang tu 2023 la nang nhat: VNPT, FPT, VinAI (vneconomy 04/09/2023) va Tap doan Viettel
+  LLM (vjst 27/07/2023). Nhung claim do trong registry nhu bai thang 7/2026.
+  CON NO: 4 claim VinBigData van o vneconomy_ai_khatvong_20260718 (xem ngan_sach_ngay_dang.txt).
+  Khi tro sang ban chup that, con so nay se tang them.
