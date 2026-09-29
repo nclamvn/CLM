@@ -263,6 +263,8 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Dong thoi cuoc M5 (29/09/2026): ngay phai nam nguyen van trong cau nguon; tam ban chup chieu cau
   # mang ngay CHUP, doc ngay tu ten file la dat QD 21 lech hai thang ruoi.
   chay .touch      thoi_cuoc        "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-thoi-cuoc.mjs
+  # Trang mo dau M0 (29/09/2026): thay anh chup tay 19/07 co hang viec noi bo; chan kho so go tay quay lai.
+  chay .touch      mo_dau           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-mo-dau.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -296,6 +298,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_thi_truong  "$TOUCH" 'BITE THI TRUONG'   node scripts/bite-thi-truong.mjs
     chay .touch    rang_matching    "$TOUCH" 'BITE MATCHING'     node scripts/bite-matching.mjs
     chay .touch    rang_thoi_cuoc   "$TOUCH" 'BITE THOI CUOC'    node scripts/bite-thoi-cuoc.mjs
+    chay .touch    rang_mo_dau      "$TOUCH" 'BITE MO DAU'       node scripts/bite-mo-dau.mjs
   fi
 fi
 
