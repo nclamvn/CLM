@@ -55,10 +55,12 @@ export default function LandingPage() {
 
       <section className="mt-chu">
         <span className="mt-chu__nhan">Hub cung cầu công nghệ chiến lược · QĐ 21/2026</span>
-        <h1 className="mt-chu__h">Cung gặp cầu.<br /><span>Mỗi kết nối có bằng chứng.</span></h1>
+        {/* Sua 29/09/2026 theo anh Lam: tieu de chi mot cau; cau phu khong gan con so vi registry
+            con mo rong lien tuc. So hien tai nam o thanh HUD ben duoi, sinh tu du lieu. */}
+        <h1 className="mt-chu__h">Cung gặp <span>cầu.</span></h1>
         <p className="mt-chu__p">
-          {s.donVi} đơn vị có năng lực, {s.nhuCau} sản phẩm quốc gia cần, {s.nhom} nhóm công nghệ ở giữa.
-          Máy cào, lọc và đề xuất ghép; người gác cổng ký; mỗi đường nối bấm ra câu nguồn nguyên văn.
+          Nối đơn vị có năng lực với nhu cầu công nghệ chiến lược quốc gia. Máy cào, lọc và đề xuất;
+          người gác cổng ký; mỗi kết nối truy được về câu nguồn nguyên văn.
         </p>
         <div className="mt-chu__nut">
           <Link href={ROUTE.dashboard} className="mt-nut mt-nut--chinh">Vào engine thật <span aria-hidden="true">→</span></Link>

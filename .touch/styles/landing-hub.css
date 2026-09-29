@@ -84,7 +84,7 @@
 .mt-chu { position: absolute; z-index: 3; left: var(--space-8); top: 84px; bottom: 340px; width: min(540px, 33vw); display: flex; flex-direction: column; justify-content: center; pointer-events: none; }
 .mt-chu > * { pointer-events: auto; }
 .mt-chu__nhan { display: inline-block; font-family: var(--font-code); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-cyan); padding-bottom: var(--space-3); }
-.mt-chu__h { font-size: clamp(32px, 3.1vw, 52px); line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
+.mt-chu__h { font-size: clamp(44px, 4.6vw, 76px); line-height: 1.04; white-space: nowrap; font-weight: 700; letter-spacing: -0.03em; }
 .mt-chu__h span { background: linear-gradient(92deg, var(--data-cung), var(--color-accent-cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .mt-chu__p { margin-top: var(--space-4); font-size: 15px; line-height: 1.6; color: var(--color-text-secondary); }
 .mt-chu__nut { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
@@ -127,7 +127,7 @@
 }
 @media (max-height: 820px) and (min-width: 1000px) {
   .mt-chu { top: 72px; bottom: 318px; }
-  .mt-chu__h { font-size: clamp(30px, 2.8vw, 44px); }
+  .mt-chu__h { font-size: clamp(40px, 4vw, 60px); }
   .mt-chu__p { font-size: 14px; margin-top: var(--space-3); }
   .mt-chu__nut { margin-top: var(--space-4); }
   .mt-hud__so dd { font-size: 22px; }

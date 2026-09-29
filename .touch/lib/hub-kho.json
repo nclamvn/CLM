@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "6561a33",
+    "sha": "a9b4833",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 177,
+  "tongCommit": 178,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,13 +68,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 31,
+      "commitSauGop": 32,
       "cuoi": {
-        "sha": "6561a33",
+        "sha": "a9b4833",
         "ngay": "2026-09-29",
-        "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
+        "tieuDe": "Trang dau mot man: hinh dong hub cung cau ve tu du lieu that (44 don vi, 10 nhom, 30 nhu cau, 47 cap, 11 match ky); Hub dung chung token SOT v2 voi dashboard; cong mat_tien them mot man + mot he mau, 12 rang"
       },
-      "soTep": 415
+      "soTep": 397
     }
   ],
   "oTheoKho": {
@@ -84,6 +84,11 @@
     ".touch": 37
   },
   "ganDay": [
+    {
+      "sha": "a9b4833",
+      "ngay": "2026-09-29",
+      "tieuDe": "Trang dau mot man: hinh dong hub cung cau ve tu du lieu that (44 don vi, 10 nhom, 30 nhu cau, 47 cap, 11 match ky); Hub dung chung token SOT v2 voi dashboard; cong mat_tien them mot man + mot he mau, 12 rang"
+    },
     {
       "sha": "6561a33",
       "ngay": "2026-09-29",
@@ -128,11 +133,6 @@
       "sha": "a1bfaea",
       "ngay": "2026-09-29",
       "tieuDe": "M4 Matching Workbench v2: so do hai cot, vet bang chung nam chang, diem tu dung lai duoc tu cong thuc engine"
-    },
-    {
-      "sha": "c22d529",
-      "ngay": "2026-09-29",
-      "tieuDe": "M1 Toan canh thi truong: Sankey bao toan dong, ban do phu nhu cau, do tuoi nguon; sua dem khoang trong 10 -> 11"
     }
   ],
   "dong": [
