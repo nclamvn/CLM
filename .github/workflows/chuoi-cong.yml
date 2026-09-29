@@ -1,4 +1,4 @@
-# Chuoi cong CLM · chay TOAN BO 41 o trong mot job
+# Chuoi cong CLM · chay TOAN BO chuoi o trong mot job
 #
 # VI SAO CO (02/09/2026): truoc khi gop, chuoi cong nay phu thuoc MOT NGUOI NHO GO MOT LENH.
 # Do la rui ro (c) trong 01_NHA_MAY_TINH_LOC.md, va no chan duong toi nen tang nhieu ben:
@@ -29,6 +29,12 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  # Them 29/09/2026 cung vong tu chay. Truoc do chuoi chi chay khi co nguoi push, tuc 27 ngay
+  # tu 02/09 den 29/09 khong co mot lan chay nao: im lang khong phai xanh. 01:00 UTC = 08:00
+  # gio Viet Nam. Chu y: cron chi thay nhung gi DA COMMIT; hang cho do tac vu theo lich ghi
+  # tren may Lam se chi vao day sau khi Lam commit va push.
+  schedule:
+    - cron: "0 1 * * *"
 
 jobs:
   chuoi-cong:
@@ -56,6 +62,6 @@ jobs:
 
       # Mot lenh duy nhat, dung lenh nguoi go tren may that. Khong chep lai danh sach cong
       # vao day: mot ban sao danh sach la mot ban sao se lac.
-      - name: Chuoi cong 41 o
+      - name: Chuoi cong (so o do script in ra, khong go cung o day)
         working-directory: CaoLocMatch
         run: ./chay_het_cong.sh --hoan=doi_chung_nguon --hoan=dong_bo_cau --hoan=rang_chinh_bang

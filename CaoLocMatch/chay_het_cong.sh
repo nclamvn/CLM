@@ -191,6 +191,10 @@ chay CNCLData fail_closed          "$CNCL" 'OK:|FAIL|CHUA KHAI' python3 check_fa
 # bien mat. Cong nay khong doc duoc y nghia khoi CANH, no bat buoc khoi do phai ton tai va
 # loi khai phai khop voi ma.
 chay CNCLData rang_khai_canh       "$CNCL" 'OK:|FAIL|CHUA KHAI|HONG CU PHAP' python3 check_rang_khai_canh.py
+# Vong tu chay (29/09/2026). Tu hom nay mot agent theo lich de xuat claim ma khong co nguoi
+# ngoi canh. O nay giu hai bat bien khi khong ai nhin: may CHUA ghi registry, va hang cho
+# khong bi sua sau khi nap. Chua co luot nao thi KHONG CHAY DUOC, khong phai xanh.
+chay CNCLData hang_cho             "$CNCL" 'OK:|FAIL|KHONG CHAY' python3 vong_tu_chay/check_hang_cho.py
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
@@ -260,6 +264,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_fail_closed   "$CNCL" 'BITE FAIL CLOSED'  python3 bite_fail_closed.py
   chay CNCLData    rang_chuan_hoa     "$CNCL" 'BITE CHUAN HOA'   python3 bite_chuan_hoa.py
   chay CNCLData    rang_ma_so_thue    "$CNCL" 'BITE MA SO THUE'  python3 bite_ma_so_thue.py
+  chay CNCLData    rang_hang_cho      "$CNCL" 'BITE HANG CHO'    python3 vong_tu_chay/bite_hang_cho.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py

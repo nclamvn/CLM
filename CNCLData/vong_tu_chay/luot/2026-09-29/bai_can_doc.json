@@ -1,0 +1,454 @@
+{
+ "ngay_chay": "2026-09-29",
+ "so_danh_muc": 3,
+ "so_bai_rut": 34,
+ "so_ung_vien": 2,
+ "chon_doc": [
+  "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+  "https://mst.gov.vn/nhan-luc-la-chia-khoa-mo-rong-hop-tac-ban-dan-viet-nam-nhat-ban-197260921153627969.htm"
+ ],
+ "tat_ca": [
+  {
+   "url": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+   "tieu_de": "Thứ trưởng Lê Xuân Định: Làm chủ công nghệ lõi là thước đo của dự án thiết bị điện 500 kV",
+   "tom_tat": "Thứ trưởng Bộ Khoa học và Công nghệ (KH&CN) Lê Xuân Định yêu cầu dự án chế tạo cuộn kháng bù ngang 500 kV phải bảo đảm tiến độ, chất lượng, làm chủ công nghệ lõi và có khả năng thương mại hóa; đồng thời chú trọng đào tạo đội ngũ kỹ sư trẻ, từng bước nâng cao năng lực tự chủ công nghệ thiết bị điện siêu cao áp của Việt Nam.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-28",
+   "tuoi_ngay": 1,
+   "diem": 7,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "thiết bị điện",
+    "siêu cao áp",
+    "kV",
+    "công nghệ lõi",
+    "chế tạo",
+    "thương mại hóa",
+    "làm chủ công nghệ"
+   ],
+   "trang_thai": "chon_doc"
+  },
+  {
+   "url": "https://mst.gov.vn/viet-nam-nga-thuc-day-ket-noi-cong-nghe-chien-luoc-197260909202806632.htm",
+   "tieu_de": "Việt Nam - Nga thúc đẩy kết nối công nghệ chiến lược",
+   "tom_tat": "Tại Diễn đàn Khoa học và Công nghệ Việt Nam - Liên bang Nga, Bộ trưởng Vũ Hải Quân đề xuất đưa hợp tác song phương bước sang tầm vóc mới với trọng tâm là kết nối công nghệ chiến lược, tập trung cùng làm chủ công nghệ lõi và hình thành các mô hình nghiên cứu phát triển có chiều sâu.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-09",
+   "tuoi_ngay": 20,
+   "diem": 3,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "công nghệ chiến lược",
+    "công nghệ lõi",
+    "làm chủ công nghệ"
+   ],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/bach-khoa-innovation-2026-but-pha-voi-nhung-y-tuong-cong-nghe-moi-197260917165028667.htm",
+   "tieu_de": "Bách Khoa Innovation 2026: Bứt phá với những ý tưởng công nghệ mới",
+   "tom_tat": "Ngày 12/9/2026, Vòng chung kết Cuộc thi Bách Khoa Innovation 2026 diễn ra sôi động với sự tranh tài của 57 dự án xuất sắc. Từ trí tuệ nhân tạo (AI), công nghệ sinh học, vật liệu mới đến năng lượng xanh, các dự án cho thấy sức sáng tạo ngày càng mạnh mẽ của thế hệ trẻ, đánh dấu bước phát triển mới về quy mô và tầm vóc quốc tế của cuộc thi.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-17",
+   "tuoi_ngay": 12,
+   "diem": 2,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "trí tuệ nhân tạo",
+    "vật liệu"
+   ],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/nhan-luc-la-chia-khoa-mo-rong-hop-tac-ban-dan-viet-nam-nhat-ban-197260921153627969.htm",
+   "tieu_de": "Nhân lực là “chìa khóa” mở rộng hợp tác bán dẫn Việt Nam - Nhật Bản",
+   "tom_tat": "Từ thế mạnh về vật liệu, thiết bị và sản xuất chính xác của Nhật Bản đến lực lượng lao động trẻ, nền sản xuất điện tử đang phát triển của Việt Nam, hợp tác nhân lực đang được đặt ở vị trí trung tâm trong quan hệ bán dẫn giữa hai nước.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-21",
+   "tuoi_ngay": 8,
+   "diem": 2,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "bán dẫn",
+    "vật liệu"
+   ],
+   "trang_thai": "chon_doc"
+  },
+  {
+   "url": "https://mst.gov.vn/bo-truong-vu-hai-quan-toan-hoc-phai-tro-thanh-nang-luc-nen-tang-cho-cac-cong-nghe-chien-luoc-197260914101917909.htm",
+   "tieu_de": "Bộ trưởng Vũ Hải Quân: Toán học phải trở thành năng lực nền tảng cho các công nghệ chiến lược",
+   "tom_tat": "Tại buổi làm việc với Viện Nghiên cứu cao cấp về Toán ngày 13/9/2026, Bộ trưởng Bộ Khoa học và Công nghệ Vũ Hải Quân nhấn mạnh, sau 15 năm (2010-2025), Viện đã hoàn thành xuất sắc sứ mệnh ban đầu là thúc đẩy phong trào học Toán và nghiên cứu Toán tại Việt Nam.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-14",
+   "tuoi_ngay": 15,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "công nghệ chiến lược"
+   ],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/de-xuat-doi-moi-quan-ly-nhiem-vu-cong-nghe-chien-luoc-197260928175653527.htm",
+   "tieu_de": "Đề xuất đổi mới quản lý nhiệm vụ công nghệ chiến lược",
+   "tom_tat": "Tại Phiên họp chuyên đề về khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số đóng góp cho phát triển kinh tế - xã hội và đánh giá kết quả công tác Quý III/2026, Thứ trưởng Bộ Khoa học và Công nghệ Lê Xuân Định đã trình bày tham luận về triển khai nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-28",
+   "tuoi_ngay": 1,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "công nghệ chiến lược"
+   ],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/dua-ky-nang-ai-den-tung-ho-dan-197260925093543826.htm",
+   "tieu_de": "Đưa kỹ năng AI đến từng hộ dân",
+   "tom_tat": "Hướng tới đưa khoa học, công nghệ và đổi mới sáng tạo đi vào đời sống, xã Cao Minh, tỉnh Thái Nguyên triển khai mô hình “Bình dân học AI” tại thôn Cốc Lải, giúp người dân nâng cao kỹ năng sử dụng trí tuệ nhân tạo, chủ động tiếp cận và khai thác công nghệ phục vụ đời sống, lao động và sản xuất.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-25",
+   "tuoi_ngay": 4,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "trí tuệ nhân tạo"
+   ],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/ha-noi-thuc-day-phat-trien-ung-dung-nang-luong-nguyen-tu-197260925115846672.htm",
+   "tieu_de": "Hà Nội thúc đẩy phát triển ứng dụng năng lượng nguyên tử",
+   "tom_tat": "Hà Nội sẽ đẩy mạnh ứng dụng bức xạ và đồng vị phóng xạ trong chẩn đoán, điều trị bệnh, sản xuất nông nghiệp, công nghiệp và quản lý tài nguyên, hướng tới làm chủ các công nghệ bức xạ, kỹ thuật hạt nhân tiên tiến vào năm 2050.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-25",
+   "tuoi_ngay": 4,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "năng lượng nguyên tử"
+   ],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/ket-qua-thuc-nhiem-vu-khcn-cap-quoc-gia-ma-so-dtdlcn-80-21-197260929091516739.htm",
+   "tieu_de": "Kết quả thực nhiệm vụ KH&CN cấp Quốc gia, mã số ĐTĐL.CN 80/21",
+   "tom_tat": "Nhiệm vụ \"Nghiên cứu phương pháp nhận dạng nguy cơ trượt lở mái dốc và đề xuất các giải pháp thân thiện với môi trường, chi phí thấp, sử dụng các vật liệu và nhân công tại chỗ, phù hợp với khu vực dân cư tập trung thuộc các điểm di dân tái định cư thủy điện Sơn La (thuộc các tỉnh Sơn La, Điện Biên và Lai Châu)\". Mã số: ĐTĐL.CN 80/21.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-29",
+   "tuoi_ngay": 0,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "vật liệu"
+   ],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/keu-goi-de-xuat-nhiem-vu-doi-moi-cong-nghe-ung-dung-ai-tai-tro-toi-da-3-ty-dong-197260916181801488.htm",
+   "tieu_de": "Kêu gọi đề xuất nhiệm vụ đổi mới công nghệ ứng dụng AI, tài trợ tối đa 3 tỷ đồng",
+   "tom_tat": "Quỹ Đổi mới công nghệ quốc gia (NATIF) thông báo tiếp nhận hồ sơ đề nghị tài trợ nhiệm vụ đổi mới công nghệ ứng dụng trí tuệ nhân tạo (AI) năm 2026. Mức tài trợ từ ngân sách nhà nước tối đa 3 tỷ đồng/nhiệm vụ; thời gian thực hiện không quá 12 tháng.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-16",
+   "tuoi_ngay": 13,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "trí tuệ nhân tạo"
+   ],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/ngay-hoi-doi-moi-sang-tao-quoc-gia-2026-chu-trong-dua-cong-nghe-ra-thi-truong-197260924144846124.htm",
+   "tieu_de": "Ngày hội Đổi mới sáng tạo quốc gia 2026: chú trọng đưa công nghệ ra thị trường",
+   "tom_tat": "Hưởng ứng Ngày hội Đổi mới sáng tạo quốc gia năm 2026, nhiều hoạt động giới thiệu công nghệ, kết nối đầu tư và thúc đẩy thương mại hóa kết quả nghiên cứu sẽ được tổ chức trên cả nước. Tại Hà Nội, Bộ Khoa học và Công nghệ dự kiến tổ chức chuỗi sự kiện trọng tâm từ ngày 25/9 đến 5/10.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-24",
+   "tuoi_ngay": 5,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "thương mại hóa"
+   ],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/nguoi-tre-tro-thanh-luc-luong-sang-tao-moi-cua-van-hoa-viet-197260912193705616.htm",
+   "tieu_de": "Người trẻ trở thành lực lượng sáng tạo mới của văn hóa Việt",
+   "tom_tat": "Lớn lên trong môi trường số, các bạn trẻ đang chủ động đưa di sản, nghệ thuật truyền thống và bản sắc Việt vào các sản phẩm truyền thông, thiết kế, trải nghiệm tương tác. Khả năng làm chủ công nghệ đang giúp các bạn trẻ trở thành một lực lượng đáng chú ý của công nghiệp văn hóa và kinh tế sáng tạo.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-12",
+   "tuoi_ngay": 17,
+   "diem": 1,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [
+    "làm chủ công nghệ"
+   ],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/100-dia-phuong-ban-hanh-ke-hoach-phat-trien-cong-nghiep-cong-nghe-so-197260925073126267.htm",
+   "tieu_de": "100% địa phương ban hành kế hoạch phát triển công nghiệp công nghệ số",
+   "tom_tat": "Theo thống kê của Bộ Khoa học và Công nghệ, tính đến nay, 34 trên 34 địa phương trên cả nước đã hoàn thành việc ban hành kế hoạch phát triển doanh nghiệp công nghiệp công nghệ số. Đáng chú ý, cả nước hiện có 11 địa phương ghi nhận doanh thu công nghệ số vượt mốc 1 tỷ USD/năm, khẳng định vai trò trụ cột của ngành trong cơ cấu kinh tế khu vực...",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-25",
+   "tuoi_ngay": 4,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/can-bo-khcn-tranh-tai-tren-duong-dua-phap-luat-voi-19-cau-hoi-19726092617003088.htm",
+   "tieu_de": "Cán bộ KH&CN tranh tài trên “đường đua” pháp luật với 19 câu hỏi",
+   "tom_tat": "Hơn 903.000 lượt tham gia sau chưa đầy một tháng cho thấy sức hút của Cuộc thi trực tuyến “Tìm hiểu Hiến pháp và pháp luật”. Với cán bộ, viên chức, người lao động ngành khoa học và công nghệ, đây không chỉ là một cuộc thi kiến thức mà còn là cơ hội cập nhật những quy định pháp luật gắn với công việc, đặc biệt trong môi trường số.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-26",
+   "tuoi_ngay": 3,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/cong-nghiep-van-hoa-can-nhac-truong-am-hieu-cong-nghe-197260912201437966.htm",
+   "tieu_de": "Công nghiệp văn hóa cần “nhạc trưởng” am hiểu công nghệ",
+   "tom_tat": "Một sản phẩm văn hóa muốn đi từ ý tưởng ra thị trường cần người có khả năng tổ chức sản xuất, vận hành mô hình kinh doanh, khai thác dữ liệu và lựa chọn công nghệ phù hợp. Khi AI, nền tảng số và các công nghệ mới ngày càng tham gia sâu vào chuỗi giá trị, năng lực khoa học và công nghệ đang trở thành yêu cầu quan trọng đối với đội ngũ quản trị công nghiệp văn hóa.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-12",
+   "tuoi_ngay": 17,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/da-nang-dua-doi-moi-sang-tao-den-xa-phuong-197260928153711135.htm",
+   "tieu_de": "Đà Nẵng đưa đổi mới sáng tạo đến xã, phường",
+   "tom_tat": "Ngày 25/9/2026, Sở Khoa học và Công nghệ thành phố Đà Nẵng tổ chức Hội thảo \"Thúc đẩy phát triển và nâng cao hiệu quả hoạt động không gian đổi mới sáng tạo tại các phường, xã trên địa bàn thành phố Đà Nẵng\", nhằm kết nối nguồn lực, đưa hoạt động đổi mới sáng tạo gắn với nhu cầu và thế mạnh của từng địa phương.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-28",
+   "tuoi_ngay": 1,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/dang-uy-bo-khoa-hoc-va-cong-nghe-hoc-tap-quan-triet-cac-nghi-quyet-chi-thi-cua-bo-chinh-tri-197260903095153496.htm",
+   "tieu_de": "Đảng ủy Bộ Khoa học và Công nghệ học tập, quán triệt các Nghị quyết, Chỉ thị của Bộ Chính trị",
+   "tom_tat": "Sáng 03/9/2026, cán bộ, đảng viên thuộc Đảng ủy Bộ Khoa học và Công nghệ đã tham dự Hội nghị toàn quốc nghiên cứu, học tập, quán triệt và triển khai thực hiện một số Nghị quyết, Chỉ thị của Bộ Chính trị.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-03",
+   "tuoi_ngay": 26,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/danh-gia-ket-qua-mo-hinh-giong-lua-gia-loc-25-vu-mua-nam-2026-19726092711140185.htm",
+   "tieu_de": "Đánh giá kết quả mô hình giống lúa Gia Lộc 25 vụ Mùa năm 2026",
+   "tom_tat": "Sáng 25/9, Sở Khoa học và Công nghệ tỉnh Hưng Yên phối hợp với Trung tâm Nghiên cứu và Phát triển lúa thuần (Viện Cây lương thực và Cây thực phẩm) tổ chức Hội thảo đầu bờ đánh giá kết quả triển khai mô hình giống lúa thơm Gia Lộc 25 (TĐ25) gắn với kỹ thuật canh tác tiên tiến vụ Mùa năm 2026.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-27",
+   "tuoi_ngay": 2,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/dinh-danh-so-mo-them-phuong-thuc-tiep-can-dich-vu-tren-moi-truong-dien-tu-197260911150730431.htm",
+   "tieu_de": "Định danh số mở thêm phương thức tiếp cận dịch vụ trên môi trường điện tử",
+   "tom_tat": "Từ việc xác thực danh tính đến thực hiện một thủ tục trực tuyến, định danh số đang dần trở thành một mắt xích quan trọng trong cách người dân tương tác với các dịch vụ trên môi trường điện tử. Khi thông tin được xác nhận và sử dụng đúng mục đích, nhiều thao tác có thể được thực hiện thuận tiện hơn, giảm thời gian đi lại và hạn chế việc cung cấp lặp lại cùng một thông tin.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-11",
+   "tuoi_ngay": 18,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/du-lieu-khoa-hoc-cong-nghe-huong-toi-cap-nhat-mot-lan-su-dung-nhieu-lan-197260911123641204.htm",
+   "tieu_de": "Dữ liệu khoa học công nghệ hướng tới 'cập nhật một lần, sử dụng nhiều lần'",
+   "tom_tat": "Hệ thống thông tin quốc gia về khoa học, công nghệ và đổi mới sáng tạo được ra mắt sáng 11/9/2026, hướng tới kết nối, chuẩn hóa và khai thác dữ liệu dùng chung, giảm việc người dân, doanh nghiệp, nhà khoa học phải cung cấp lại thông tin cơ quan quản lý đã có.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-11",
+   "tuoi_ngay": 18,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/du-lieu-mo-rong-khong-gian-cho-doi-moi-sang-tao-1972609111544048.htm",
+   "tieu_de": "Dữ liệu mở rộng không gian cho đổi mới sáng tạo",
+   "tom_tat": "Một sản phẩm công nghệ có thể bắt đầu từ một ý tưởng, nhưng để phát triển thành giải pháp có khả năng ứng dụng, dữ liệu ngày càng trở thành nguồn lực quan trọng. Từ nghiên cứu, thử nghiệm đến phát triển sản phẩm, khả năng thu thập, quản lý và khai thác dữ liệu đang tác động trực tiếp đến hiệu quả của hoạt động đổi mới sáng tạo.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-11",
+   "tuoi_ngay": 18,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/dua-cong-tac-chinh-tri-tu-tuong-di-vao-thuc-chat-tu-tung-chi-bo-19726091818072959.htm",
+   "tieu_de": "Đưa công tác chính trị, tư tưởng đi vào thực chất từ từng chi bộ",
+   "tom_tat": "Công tác chính trị, tư tưởng chỉ thực sự phát huy hiệu quả khi chuyển từ thống nhất nhận thức sang hành động cụ thể, từ nội dung sinh hoạt đến cách mỗi cán bộ, đảng viên phát ngôn, viết, ứng xử và thực hiện nhiệm vụ. Đây là vấn đề được đặt ra tại Hội nghị chuyên đề triển khai công tác chính trị, tư tưởng theo Quy định số 19-QĐ/TW trong bối cảnh chuyển đổi số.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-18",
+   "tuoi_ngay": 11,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/hoi-nghi-dau-bo-mo-hinh-lua-tbr125-tbr88-thich-ung-bien-doi-khi-hau-tai-xa-tien-tien-197260927111911946.htm",
+   "tieu_de": "Hội nghị đầu bờ mô hình lúa TBR125, TBR88 thích ứng biến đổi khí hậu tại xã Tiên Tiến",
+   "tom_tat": "Ngày 24/9, Trung tâm Đổi mới sáng tạo và Chuyển đổi số (Sở Khoa học và Công nghệ tỉnh Hưng Yên) phối hợp với Tập đoàn ThaiBinh Seed và Hội Nông dân xã Tiên Tiến tổ chức Hội nghị đánh giá kết quả mô hình sản xuất giống lúa thuần TBR125 và TBR88 thích ứng biến đổi khí hậu vụ mùa năm 2026.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-27",
+   "tuoi_ngay": 2,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/khi-nguoi-lam-cong-nghe-thu-suc-voi-19-cau-hoi-phap-luat-197260925183711426.htm",
+   "tieu_de": "Khi người làm công nghệ thử sức với 19 câu hỏi pháp luật",
+   "tom_tat": "Một sinh viên công nghệ, nhà nghiên cứu hay cán bộ quản lý Internet có thể chỉ cần chiếc điện thoại để cùng bước vào một “phòng thi” đặc biệt. Ở đó, 19 câu hỏi không chỉ thử kiến thức về Hiến pháp, pháp luật mà còn mở ra một cách học luật gần gũi hơn với những người đang làm việc, học tập trong ngành KH&CN.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-25",
+   "tuoi_ngay": 4,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/khong-de-may-moc-cu-tro-thanh-cong-nghe-lac-hau-197260918093008766.htm",
+   "tieu_de": "Không để máy móc cũ trở thành công nghệ lạc hậu",
+   "tom_tat": "Thông tư số 56/2026/TT-BKHCN do Bộ Khoa học và Công nghệ ban hành ngày 5/9/2026 đặt ra các tiêu chí đối với việc nhập khẩu máy móc, thiết bị, dây chuyền công nghệ đã qua sử dụng, theo hướng kiểm soát tuổi thiết bị nhưng đồng thời đánh giá chất lượng, hiệu suất, mức tiêu hao và yêu cầu an toàn, tiết kiệm năng lượng, bảo vệ môi trường.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-18",
+   "tuoi_ngay": 11,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/kinh-thuc-te-ao-va-xu-ly-rac-tuan-hoan-dang-quang-tai-surf-da-nang-2026-197260821171202419.htm",
+   "tieu_de": "Kính thực tế ảo và xử lý rác tuần hoàn đăng quang tại SURF Đà Nẵng 2026",
+   "tom_tat": "Vượt qua hơn 150 hồ sơ dự thi, dự án “Kính thực tế ảo tăng cường hỗ trợ giao tiếp cho người khiếm thính” và “Circular BioEnergy - Xử lý rác tuần hoàn” đã xuất sắc giành giải Nhất tại Cuộc thi Khởi nghiệp đổi mới sáng tạo TP. Đà Nẵng (SURF 2026).",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-08-21",
+   "tuoi_ngay": 39,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/lam-chu-du-lieu-cong-nghe-de-viet-nam-manh-len-tu-bien-197260821210719672.htm",
+   "tieu_de": "Làm chủ dữ liệu, công nghệ để Việt Nam mạnh lên từ biển",
+   "tom_tat": "Để trở thành quốc gia biển mạnh, Việt Nam không thể chỉ dừng ở nghiên cứu và khai thác tài nguyên, mà phải đủ năng lực hiểu, dự báo, quản trị và từng bước làm chủ các công nghệ biển hiện đại.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-08-21",
+   "tuoi_ngay": 39,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/lam-dong-giup-can-bo-cap-xa-dua-van-de-thuc-tien-thanh-bai-toan-doi-moi-sang-tao-19726092422230866.htm",
+   "tieu_de": "Lâm Đồng giúp cán bộ cấp xã đưa vấn đề thực tiễn thành bài toán đổi mới sáng tạo",
+   "tom_tat": "Nhận diện đúng tiềm năng, lợi thế, điểm nghẽn và nhu cầu phát triển của từng địa bàn; từ đó xác định \"bài toán lớn\", lựa chọn nhiệm vụ ưu tiên và đề xuất giải pháp phù hợp là những nội dung trọng tâm trong chương trình bồi dưỡng năng lực đổi mới sáng tạo cho cán bộ cấp xã tại Lâm Đồng.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-24",
+   "tuoi_ngay": 5,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/luat-sua-doi-4-luat-ve-cong-nghe-vien-thong-doi-moi-quan-ly-theo-huong-tang-hau-kiem-day-manh-phan-cap-phan-quyen-197260910112257121.htm",
+   "tieu_de": "Luật sửa đổi 4 luật về công nghệ, viễn thông: Đổi mới quản lý theo hướng tăng hậu kiểm, đẩy mạnh phân cấp, phân quyền",
+   "tom_tat": "47 điều kiện kinh doanh được cắt giảm, 2 thủ tục hành chính được bãi bỏ cùng nhiều quy định mới về phân quyền, sử dụng dữ liệu và chia sẻ hạ tầng. Luật số 20/2026/QH16 tạo hành lang pháp lý thông thoáng hơn cho người dân, doanh nghiệp, đồng thời tăng cường hiệu quả quản lý bằng dữ liệu và giám sát tuân thủ.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-10",
+   "tuoi_ngay": 19,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/tai-lieu-hoi-nghi-giai-phap-cai-tien-quy-trinh-nang-cao-cong-tac-van-thu-va-luu-tru-tai-bo-khoa-hoc-va-cong-nghe-trong-boi-canh-chuyen-doi-so-quoc-gia-197260928105750873.htm",
+   "tieu_de": "Tài liệu Hội nghị giải pháp cải tiến quy trình, nâng cao công tác văn thư và lưu trữ tại Bộ Khoa học và Công nghệ trong bối cảnh chuyển đổi số quốc gia",
+   "tom_tat": "Tài liệu Hội nghị giải pháp cải tiến quy trình, nâng cao công tác văn thư và lưu trữ tại Bộ Khoa học và Công nghệ trong bối cảnh chuyển đổi số quốc gia\" - thành phố Quảng ninh 29-30/9/2026.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-28",
+   "tuoi_ngay": 1,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/tiep-can-chinh-sach-khoa-hoc-cong-nghe-moi-ngay-tren-cong-phap-luat-quoc-gia-19726091115332994.htm",
+   "tieu_de": "Tiếp cận chính sách khoa học, công nghệ mới ngay trên cổng pháp luật quốc gia",
+   "tom_tat": "Sự phát triển nhanh của khoa học, công nghệ và đổi mới sáng tạo kéo theo nhiều chính sách, quy định mới cần được cập nhật thường xuyên. Việc tiếp cận thông tin pháp luật chính thống, tập trung giúp doanh nghiệp, tổ chức nghiên cứu, cơ sở giáo dục và người làm khoa học chủ động hơn trong quá trình nghiên cứu, ứng dụng và đổi mới công nghệ.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-11",
+   "tuoi_ngay": 18,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  },
+  {
+   "url": "https://mst.gov.vn/toan-nganh-khcn-cung-lan-toa-tinh-than-tim-hieu-hien-phap-va-phap-luat-197260927085839458.htm",
+   "tieu_de": "Toàn ngành KH&CN cùng lan tỏa tinh thần tìm hiểu Hiến pháp và pháp luật",
+   "tom_tat": "Thực hiện Quyết định số 3566/QĐ-BKHCN ngày 23/8/2026, các cơ quan, đơn vị thuộc Bộ Khoa học và Công nghệ đẩy mạnh tuyên truyền, phổ biến, vận động cán bộ, công chức, viên chức, người lao động tích cực tham gia Cuộc thi trực tuyến “Tìm hiểu Hiến pháp và pháp luật”. Từ các kênh truyền thông của Bộ đến từng đơn vị, tinh thần hưởng ứng đang được lan tỏa, góp phần đưa việc tìm hiểu pháp luật trở thành hoạt động thiết thực trong toàn ngành.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-27",
+   "tuoi_ngay": 2,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/tu-muc-tieu-100-den-suc-lan-toa-cua-cuoc-thi-trong-nganh-khcn-dia-phuong-197260926122106909.htm",
+   "tieu_de": "Từ mục tiêu 100% đến sức lan tỏa của cuộc thi trong ngành KH&CN địa phương",
+   "tom_tat": "100% cán bộ, công chức, viên chức, người lao động tham gia là mục tiêu Sở KH&CN Quảng Ninh đặt ra khi hưởng ứng Cuộc thi trực tuyến “Tìm hiểu Hiến pháp và pháp luật”. Từ Quảng Ninh đến Quảng Trị, Quảng Ngãi, Khánh Hòa, Cuộc thi đang được các Sở KH&CN đưa tới đội ngũ làm KH,CN,ĐMST&CĐS tại địa phương.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-09-26",
+   "tuoi_ngay": 3,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "duoi_nguong"
+  },
+  {
+   "url": "https://mst.gov.vn/tuyen-bo-chung-viet-nam-singapore-ve-chien-luoc-ket-noi-cong-nghe-197260826074328482.htm",
+   "tieu_de": "Tuyên bố chung Việt Nam - Singapore về Chiến lược Kết nối công nghệ",
+   "tom_tat": "Việt Nam và Xinh-ga-po là những đối tác lâu năm, cùng là các quốc gia thành viên ASEAN, với quan hệ song phương vững mạnh được xây dựng trên nền tảng tin cậy chính trị, liên kết kinh tế chặt chẽ và giao lưu nhân dân mật thiết.",
+   "nguon": "mst.gov.vn",
+   "ngay_bai": "2026-08-26",
+   "tuoi_ngay": 34,
+   "diem": 0,
+   "trung_don_vi": [],
+   "trung_tu_khoa": [],
+   "trang_thai": "qua_cu"
+  }
+ ]
+}
