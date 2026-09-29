@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "ef74a1e",
+    "sha": "6f98d2a",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 172,
+  "tongCommit": 174,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 30,
+      "commitSauGop": 31,
       "cuoi": {
-        "sha": "ef74a1e",
+        "sha": "d3f78a8",
         "ngay": "2026-09-29",
-        "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
+        "tieuDe": "Trang Kho ma sinh tu git: bo bang ghi tay nam kho cu (HEAD thang 7-8), moi so la lenh git tai commit ghi lai"
       },
       "soTep": 123
     },
@@ -68,21 +68,31 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 26,
+      "commitSauGop": 28,
       "cuoi": {
-        "sha": "ef74a1e",
+        "sha": "6f98d2a",
         "ngay": "2026-09-29",
-        "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
+        "tieuDe": "Sua rang 8 cua bite-mo-dau: tiem vo dieu kien, khong con lang le thanh \"khong lam gi\" trong CI"
       },
-      "soTep": 409
+      "soTep": 413
     }
   ],
   "oTheoKho": {
     "CNCLData": 24,
     "CaoLocMatch": 17,
-    ".touch": 32
+    ".touch": 35
   },
   "ganDay": [
+    {
+      "sha": "6f98d2a",
+      "ngay": "2026-09-29",
+      "tieuDe": "Sua rang 8 cua bite-mo-dau: tiem vo dieu kien, khong con lang le thanh \"khong lam gi\" trong CI"
+    },
+    {
+      "sha": "d3f78a8",
+      "ngay": "2026-09-29",
+      "tieuDe": "Trang Kho ma sinh tu git: bo bang ghi tay nam kho cu (HEAD thang 7-8), moi so la lenh git tai commit ghi lai"
+    },
     {
       "sha": "ef74a1e",
       "ngay": "2026-09-29",
@@ -122,16 +132,6 @@
       "sha": "170861e",
       "ngay": "2026-09-29",
       "tieuDe": "P2a man Do thi cung cau: 84 nut, 129 canh, moi canh co nguon hoac chu ky"
-    },
-    {
-      "sha": "6283746",
-      "ngay": "2026-09-29",
-      "tieuDe": "Ky lai MATCH-0007 (VinBigData <-> CNCL-P01) voi ngay dang that 04/09/2023"
-    },
-    {
-      "sha": "2dbaf6d",
-      "ngay": "2026-09-29",
-      "tieuDe": "Ngay dang that cho 7 ban chup dat hau to bang ngay chup; cong ngay_dang + 8 rang"
     }
   ],
   "dong": [

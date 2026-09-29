@@ -100,6 +100,10 @@ tim_kho() {
 }
 CNCL=$(tim_kho CNCLData)    || { echo "KHONG THAY kho CNCLData o ca hai goc."; exit 3; }
 CLM=$(tim_kho CaoLocMatch)  || { echo "KHONG THAY kho CaoLocMatch o ca hai goc."; exit 3; }
+# Chieu CAU nam canh CaoLocMatch trong kho gop (ban tam cua bo rang cung chep no canh do, va
+# dat CLM_KHO_DEM). Thieu no thi ca chuoi khong chay duoc, giong hai kho tren.
+DEM="${CLM_KHO_DEM:-$(dirname "$CLM")/Dataset_CongNgheChienLuoc}"
+[ -d "$DEM" ] || { echo "KHONG THAY Dataset_CongNgheChienLuoc tai $DEM."; exit 3; }
 
 XANH=0; DO=0; TREO=0; DA_HOAN=0
 DS_HOAN=""; THUA=""
@@ -130,7 +134,7 @@ chay() {
        fi ;;
     *) trang_thai="DO";          DO=$((DO+1)) ;;
   esac
-  DONG="${DONG}$(printf '%-12s %-26s %-11s %s' "$kho" "$ten" "$trang_thai" "$ghi")
+  DONG="${DONG}$(printf '%-26s %-26s %-11s %s' "$kho" "$ten" "$trang_thai" "$ghi")
 "
   if [ "$rc" -ne 0 ] && [ "$IM" -eq 0 ]; then
     CHI_TIET="${CHI_TIET}
@@ -144,6 +148,13 @@ $(printf '%s\n' "$out" | tail -12)
 chay CNCLData refinery            "$CNCL" 'VALIDATION|GATE'      python3 methodbox/refinery.py domains/don_vi_cncl
 chay CNCLData bites               "$CNCL" 'BITE SUITE'           python3 methodbox/bites.py domains/don_vi_cncl
 chay CNCLData check_luat3         "$CNCL" 'OK:|VI PHAM'          python3 check_luat3.py domains/don_vi_cncl
+
+# Chieu CAU. Truoc 29/09/2026 registry nay KHONG co o nao trong chuoi: check_spans.py va
+# check_luat3.py nam trong thu muc cua no nhung chi chay khi nguoi nho ra. Cung ngay do luat 3
+# (moc thoi gian) do ra 7 claim cau mang ngay hoac nam ma cau nguon khong co. Cong khong nam
+# trong chuoi thi khong phai cong.
+chay Dataset_CongNgheChienLuoc cau_span  "$DEM" 'GATE'        python3 check_spans.py
+chay Dataset_CongNgheChienLuoc cau_luat3 "$DEM" 'OK:|FAIL'    python3 check_luat3.py claims.jsonl
 chay CNCLData check_dash          "$CNCL" 'OK:|em-dash'          python3 check_dash.py domains/don_vi_cncl
 chay CNCLData doi_chung_nguon     "$CNCL" 'cau khop'             python3 check_snapshot_fidelity.py domains/don_vi_cncl --fresh .fidelity_fresh
 # Do tuoi nguon. Cong nay se DO cho toi khi 44 claim mau-hong con lai duoc cao lai hoac
@@ -316,6 +327,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_hang_cho      "$CNCL" 'BITE HANG CHO'    python3 vong_tu_chay/bite_hang_cho.py
   # Cau noi mot chieu kernel -> vong tu chay (29/09/2026): kernel chi goi y URL, khong bao gio ro ri
   # truong noi bo (deal_link, pricing, favors rtr, INT). Rang dung kernel GIA, chay duoc ca trong CI.
+  chay CNCLData    rang_moc_thoi_gian "$CNCL" 'BITE MOC THOI GIAN' python3 bite_moc_thoi_gian.py
   chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
@@ -348,10 +360,10 @@ echo
 echo "CAOLOCMATCH · CHUOI CONG · $(date '+%d/%m/%Y %H:%M')"
 [ "$NHANH" -eq 1 ] && echo "che do --nhanh: DA BO QUA ba bo rang, ket qua nay YEU hon ban day du"
 echo
-printf '%-12s %-26s %-11s %s\n' "KHO" "CONG" "KET QUA" "GHI CHU"
-printf '%s\n' "------------------------------------------------------------------------------"
+printf '%-26s %-26s %-11s %s\n' "KHO" "CONG" "KET QUA" "GHI CHU"
+printf '%s\n' "--------------------------------------------------------------------------------------------"
 printf '%s' "$DONG"
-printf '%s\n' "------------------------------------------------------------------------------"
+printf '%s\n' "--------------------------------------------------------------------------------------------"
 printf 'tong %d · xanh %d · do %d · khong chay duoc %d · hoan %d\n' \
   "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN"
 

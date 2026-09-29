@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""bite_dong_bo_cau.py · Nam rang cua dong_bo_cau.py.
+"""bite_dong_bo_cau.py · Sau rang cua dong_bo_cau.py.
 
 CANH
 ====
@@ -21,6 +21,9 @@ RANG 4 · TU CHOI DAY DE LEN SUA DOI: da ghi dau, roi sua ban doc, roi --day -> 
          dung cua ban doc phai con nguyen. Tu choi ma van ghi de thi loi tu choi la vo nghia.
 RANG 5 · EP THI DAY DUOC: nhu tren nhung them --du-biet-ban-doc-da-sua -> exit 0 va ban doc
          tro ve dung nhu kho.
+RANG 6 · DAY NHIEU LAN LIEN TIEP: sua kho, --day, sua kho lan nua, --day -> ca hai exit 0.
+         Them 29/09/2026: doc_dau tung doc van tay cua lan day DAU TIEN nen tu lan thu hai tro
+         di moi lan day deu bi tu choi oan. Nam rang cu khong thay vi chung chi day mot lan.
 
 Chay: python3 bite_dong_bo_cau.py
 """
@@ -106,8 +109,17 @@ def main():
     ok5 = ma == 0 and nan.read_bytes() == (kho / TEN / nan.relative_to(bd)).read_bytes()
     in_("RANG 5 · ep thi day duoc va ban doc theo kho", ok5, "exit 0" if ok5 else f"exit {ma}")
 
+    nguon_nan = kho / TEN / nan.relative_to(bd)
+    nguon_nan.write_bytes(nguon_nan.read_bytes() + b"\n# kho doi lan 1\n")
+    ma_a, _ = chay("--day")
+    nguon_nan.write_bytes(nguon_nan.read_bytes() + b"# kho doi lan 2\n")
+    ma_b, ra_b = chay("--day")
+    ok6 = ma_a == 0 and ma_b == 0 and nan.read_bytes() == nguon_nan.read_bytes()
+    in_("RANG 6 · day hai lan lien tiep deu duoc", ok6,
+        "exit 0 ca hai" if ok6 else f"exit {ma_a} roi {ma_b}\n{ra_b[-200:]}")
+
     shutil.rmtree(tam, ignore_errors=True)
-    tat_ca = ok1 and ok2 and ok3 and ok4 and ok5
+    tat_ca = ok1 and ok2 and ok3 and ok4 and ok5 and ok6
     print("-" * 74)
     print("BITE DONG BO CAU:", "RANG CAN" if tat_ca else "CO RANG KHONG CAN")
     return 0 if tat_ca else 1

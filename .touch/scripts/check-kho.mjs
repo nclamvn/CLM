@@ -53,7 +53,7 @@ if (sha) {
     const n = git('ls-tree', '-r', '--name-only', sha, '--', p.thuMuc).split('\n').filter(Boolean).length;
     if (p.soTep !== n) vi.push(`SO_LECH: ${p.thuMuc} ghi ${p.soTep} tep, git ${n}`);
   }
-  const chuoi = git('show', `${sha}:CaoLocMatch/chay_het_cong.sh`).split('\n').filter((l) => /^\s*chay\s+(CNCLData|CaoLocMatch|\.touch)\s+\S+/.test(l)).length;
+  const chuoi = git('show', `${sha}:CaoLocMatch/chay_het_cong.sh`).split('\n').filter((l) => /^\s*chay\s+(CNCLData|Dataset_CongNgheChienLuoc|CaoLocMatch|\.touch)\s+\S+/.test(l)).length;
   const oGhi = Object.values(K.oTheoKho ?? {}).reduce((s, v) => s + v, 0);
   if (oGhi !== chuoi) vi.push(`SO_LECH: o cong ghi ${oGhi}, chay_het_cong.sh tai ${K.sinhTu.sha} co ${chuoi}`);
 }

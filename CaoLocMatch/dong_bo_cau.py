@@ -102,10 +102,15 @@ def doc_dau(nguon):
     f = nguon.parent / TEN / FILE_DAU
     if not f.exists():
         return None
+    # Lay dau CUOI CUNG. File chi them dong moi ben duoi, nen dong cuoi moi la lan day gan
+    # nhat. Truoc 29/09/2026 ham nay tra dong DAU TIEN: tu lan day thu hai tro di, moi lan day
+    # deu bi tu choi oan vi so van tay hien tai voi van tay cua lan day dau. Ro ra khi day ban
+    # sua 7 claim cau; RANG 6 cua bite_dong_bo_cau.py giu cho no khong quay lai.
+    cuoi = None
     for dong in f.read_text(encoding="utf-8").splitlines():
         if dong.startswith("van_tay_ban_doc:"):
-            return dong.split(":", 1)[1].strip()
-    return None
+            cuoi = dong.split(":", 1)[1].strip()
+    return cuoi
 
 
 def ghi_dau(nguon, vt, ghi_chu):

@@ -51,7 +51,7 @@ export function dungKho(goc, sha) {
   const chuoi = git('show', `${full}:CaoLocMatch/chay_het_cong.sh`);
   const oTheoKho = {};
   for (const l of chuoi.split('\n')) {
-    const m = l.match(/^\s*chay\s+(CNCLData|CaoLocMatch|\.touch)\s+(\S+)/);
+    const m = l.match(/^\s*chay\s+(CNCLData|Dataset_CongNgheChienLuoc|CaoLocMatch|\.touch)\s+(\S+)/);
     if (m) oTheoKho[m[1]] = (oTheoKho[m[1]] ?? 0) + 1;
   }
   // Chi lay "chu/ten-kho" tu URL remote. URL co the mang token (vd https://<token>@github.com/...):
