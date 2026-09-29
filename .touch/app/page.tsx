@@ -53,11 +53,12 @@ export default function LandingPage() {
           {/* Tieu de chi mot cau, cau phu khong gan con so (anh Lam chot 29/09/2026). */}
           <h1 className="mt-chu__h">Cung gặp cầu.</h1>
           <p className="mt-chu__p">
-            Nối đơn vị có năng lực với nhu cầu công nghệ chiến lược quốc gia. Máy cào, lọc và đề xuất;
-            người gác cổng ký; mỗi kết nối truy được về câu nguồn nguyên văn.
+            {/* Dau cach khong ngat giu cac cum "chiến lược", "Việt Nam", "câu nguồn" tren mot dong. */}
+            Bản đồ sống của thị trường công nghệ chiến lược Việt Nam. Mỗi kết nối đều có người ký
+            và truy được về tận câu nguồn.
           </p>
           <div className="mt-chu__nut">
-            <Link href={ROUTE.dashboard} className="mt-nut mt-nut--lon">Vào engine thật <span aria-hidden="true">→</span></Link>
+            <Link href={ROUTE.dashboard} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>
             <Link href={`${ROUTE.dashboard}/matching`} className="mt-lien">Xem các match đã ký</Link>
           </div>
           <dl className="mt-so">

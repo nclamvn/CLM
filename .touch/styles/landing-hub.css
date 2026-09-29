@@ -43,17 +43,21 @@
 .mt-top__nav a:hover { color: var(--p-ink); }
 .mt-top__nav .mt-top__phu { padding-left: 28px; border-left: 1px solid var(--p-line-2); color: var(--p-3); }
 .mt-top__phai { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-/* Hai vien thuoc tren thanh dau cung cao 36px (anh Lam chot 29/09/2026). */
-.mt-trang { display: inline-flex; align-items: center; gap: 9px; height: 36px; box-sizing: border-box; padding: 0 14px; border: 1px solid var(--p-line-2); border-radius: 999px; font-size: 12px; color: var(--p-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* Moi vien thuoc tren trang dung CHUNG mot hinh hoc (anh Lam chot 29/09/2026): cao 36px, vien 1px,
+   co chu 13px, line-height 1, bo goc tron. Nut chinh chi khac mau nen; nut lon cua cot chu cung cao 36px.
+   Truoc day o trang thai co vien con nut thi khong, va co chu khac nhau, nen nhin lech nhau. */
+.mt-trang, .mt-nut {
+  display: inline-flex; align-items: center; gap: 9px; height: 36px; box-sizing: border-box; padding: 0 16px;
+  border: 1px solid var(--p-line-2); border-radius: 999px; font-size: 13px; line-height: 1; white-space: nowrap;
+}
+.mt-trang { color: var(--p-2); font-variant-numeric: tabular-nums; }
 .mt-trang i { width: 6px; height: 6px; border-radius: 50%; background: var(--p-ink); }
 
 .mt-nut {
-  display: inline-flex; align-items: center; gap: 10px; height: 36px; box-sizing: border-box; padding: 0 16px;
-  border-radius: 999px; background: var(--p-ink); color: var(--p-bg); font-size: 13.5px; font-weight: 500; white-space: nowrap;
+  border-color: var(--p-ink); background: var(--p-ink); color: var(--p-bg); font-weight: 500;
   transition: transform 150ms var(--p-ease), background 150ms var(--p-ease);
 }
-.mt-nut:hover { transform: translateY(-1px); background: #FFFFFF; }
-.mt-nut--lon { height: 44px; padding: 0 20px; font-size: 14.5px; }
+.mt-nut:hover { transform: translateY(-1px); background: #FFFFFF; border-color: #FFFFFF; }
 .mt-lien { font-size: 14px; color: var(--p-2); text-decoration: underline; text-decoration-color: var(--p-line-2); text-underline-offset: 5px; transition: color 150ms var(--p-ease); }
 .mt-lien:hover { color: var(--p-ink); text-decoration-color: var(--p-ink); }
 
@@ -62,7 +66,7 @@
 .mt-chu { grid-column: 1 / span 5; display: flex; flex-direction: column; justify-content: center; padding: 24px 0; min-height: 0; }
 .mt-chu__nhan { font-size: 13px; color: var(--p-3); letter-spacing: 0.01em; }
 .mt-chu__h { margin-top: 20px; font-family: var(--p-serif); font-weight: 400; font-size: clamp(52px, 5.4vw, 104px); line-height: 0.98; letter-spacing: -0.025em; white-space: nowrap; }
-.mt-chu__p { margin-top: 24px; max-width: 34ch; font-size: 16px; line-height: 1.6; color: var(--p-2); }
+.mt-chu__p { margin-top: 24px; max-width: 40ch; font-size: 16px; line-height: 1.6; color: var(--p-2); text-wrap: pretty; }
 .mt-chu__nut { display: flex; align-items: center; gap: 24px; margin-top: 32px; }
 .mt-so { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 48px; border-top: 1px solid var(--p-line-2); }
 .mt-so > div { padding: 14px 16px 0 0; display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; }

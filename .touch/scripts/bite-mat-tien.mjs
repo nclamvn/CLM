@@ -68,7 +68,7 @@ try {
   rang('RANG 2  · trang dau ghi "chưa chạy" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<h1 className="mt-chu__h">', '<p>Match thật · chưa chạy</p>\n        <h1 className="mt-chu__h">')), 2, 'TRANG_THAI_GO_TAY');
   rang('RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'app/page.tsx',
-    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut mt-nut--lon">', '<Link href={ROUTE.hub} className="mt-nut mt-nut--lon">')), 2, 'CHU_THAT_TRO_DEMO');
+    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>\n            <Link href={`${ROUTE.dashboard}/matching`}', '<Link href={ROUTE.hub} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>\n            <Link href={`${ROUTE.dashboard}/matching`}')), 2, 'CHU_THAT_TRO_DEMO');
   rang('RANG 4  · HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<dt>{c.k}</dt><dd>{c.v}</dd>', '<dt>{c.k}</dt><dd>44</dd>')), 2, 'SO_KHONG_SINH');
   rang('RANG 5  · mat-tien gan cung daKy: 11 -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',

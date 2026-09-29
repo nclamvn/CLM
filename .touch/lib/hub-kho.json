@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "52de0c0",
+    "sha": "e6eb9ff",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 180,
+  "tongCommit": 181,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,13 +68,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 34,
+      "commitSauGop": 35,
       "cuoi": {
-        "sha": "52de0c0",
+        "sha": "e6eb9ff",
         "ngay": "2026-09-29",
-        "tieuDe": "Trang dau: hai vien thuoc thanh dau cung cao 36px; khoi chu giai goc phai duoi canh phai"
+        "tieuDe": "Trang dau ve lai theo HIVE Editorial don sac: bo glow/gradient/hat/radar; so do ban ve ky thuat (cung | nhom | cau) ve tung match da ky kem cau nguon hai phia; Noto Serif tu host; cong mat_tien them KHONG_DON_SAC, 15 rang"
       },
-      "soTep": 397
+      "soTep": 404
     }
   ],
   "oTheoKho": {
@@ -84,6 +84,11 @@
     ".touch": 37
   },
   "ganDay": [
+    {
+      "sha": "e6eb9ff",
+      "ngay": "2026-09-29",
+      "tieuDe": "Trang dau ve lai theo HIVE Editorial don sac: bo glow/gradient/hat/radar; so do ban ve ky thuat (cung | nhom | cau) ve tung match da ky kem cau nguon hai phia; Noto Serif tu host; cong mat_tien them KHONG_DON_SAC, 15 rang"
+    },
     {
       "sha": "52de0c0",
       "ngay": "2026-09-29",
@@ -128,11 +133,6 @@
       "sha": "ef74a1e",
       "ngay": "2026-09-29",
       "tieuDe": "M0 Mo dau thay trang Tong quan: bo anh chup tay 19/07 (so chet + hang viec noi bo co ten nguoi), moi so sinh tu du lieu"
-    },
-    {
-      "sha": "be90567",
-      "ngay": "2026-09-29",
-      "tieuDe": "Cau noi mot chieu kernel -> vong tu chay: kernel chi goi y URL, khong bao gio cung cap su that"
     }
   ],
   "dong": [

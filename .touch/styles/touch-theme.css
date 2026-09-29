@@ -152,7 +152,9 @@
   }
 }
 
-/* ---- brand lockup canonical (component TouchBrand). Dot immutable, khong glow, khong gradient chu, cam dung thu cong. ---- */
+/* ---- brand lockup canonical (component TouchBrand). Dot immutable, khong glow, khong gradient chu, cam dung thu cong.
+   Sua 29/09/2026: dot la dau cham cua ".touch" nen day dot phai nam DUNG tren duong chan chu (baseline);
+   offset cu 2-6px day dot xuong duoi baseline, nhin lech khoi chu. Offset nay = 0 o moi co. ---- */
 :root { --brand-dot-red: var(--color-brand-dot); }
 .touch-brand { display: inline-flex; flex-direction: column; gap: 2px; text-decoration: none; }
 .touch-brand__row { display: inline-flex; align-items: baseline; }
@@ -169,10 +171,10 @@
 .touch-brand__sub { font-size: 11px; line-height: 16px; font-weight: 400; color: var(--brand-descriptor); }
 .touch-brand--dark { --brand-wordmark: var(--brand-word-dark); }
 .touch-brand--light { --brand-wordmark: var(--brand-word-light); }
-.touch-brand--xs { --brand-dot-size: 5px; --brand-lockup-gap: 3px; --brand-dot-offset: 2px; --brand-word-size: 13px; --brand-word-line: 18px; }
-.touch-brand--sm { --brand-dot-size: 7px; --brand-lockup-gap: 3px; --brand-dot-offset: 3px; --brand-word-size: 24px; --brand-word-line: 28px; }
-.touch-brand--md { --brand-dot-size: 10px; --brand-lockup-gap: 4px; --brand-dot-offset: 5px; --brand-word-size: 36px; --brand-word-line: 40px; }
-.touch-brand--lg { --brand-dot-size: 12px; --brand-lockup-gap: 5px; --brand-dot-offset: 6px; --brand-word-size: 48px; --brand-word-line: 52px; }
+.touch-brand--xs { --brand-dot-size: 5px; --brand-lockup-gap: 3px; --brand-dot-offset: 0px; --brand-word-size: 13px; --brand-word-line: 18px; }
+.touch-brand--sm { --brand-dot-size: 7px; --brand-lockup-gap: 3px; --brand-dot-offset: 0px; --brand-word-size: 24px; --brand-word-line: 28px; }
+.touch-brand--md { --brand-dot-size: 10px; --brand-lockup-gap: 4px; --brand-dot-offset: 0px; --brand-word-size: 36px; --brand-word-line: 40px; }
+.touch-brand--lg { --brand-dot-size: 12px; --brand-lockup-gap: 5px; --brand-dot-offset: 0px; --brand-word-size: 48px; --brand-word-line: 52px; }
 
 /* ---- dashboard surface / alpha / shadow tokens (Pha 1). Raw values chi song o day (file token). ---- */
 :root {
