@@ -1,4 +1,4 @@
-17
+19
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -86,3 +86,15 @@
   He qua doc duoc: mot registry dua tren bao chi se luon co mot day claim gia di ma
   khong bao gio duoc lam moi, tru khi doi sang nguon co nghia vu cong bo dinh ky.
 
+29/09/2026 17 -> 19. TANG, va tang vi SUA MOT NGAY SAI, khong phai vi ngay troi hay du lieu xau.
+  Ban chup nhandan "UAV Made in Vietnam" truoc day ten nhandan_uav_madeinvn_20260718, tuc hau to
+  la NGAY CHUP 18/07/2026. Trang ghi "Ngay xuat ban: 22/12/2024". check_do_tuoi.py doc ngay tu hau
+  to ten file, nen hai claim Viettel High Tech (nang_luc_mo_ta, bang_chung_nang_luc) trong tre
+  hon that 574 ngay va KHONG bao gio vao danh sach qua han. Chup lai ngay 29/09/2026 thanh
+  nhandan_uav_madeinvn_chuplai_20241222.html, tuoi that 646 ngay.
+  Phat hien trong luc sua 5 claim co bang chung chi nam trong nhan nguoi chup dat
+  (ngan_sach_span_trong_ghi_chu.txt, 5 -> 0 cung ngay).
+  CON NO CUNG THE LOAI, CHUA SUA: 5 ban chup khac cung hau to 20260718 (ngay dung dataset), tong
+  38 claim: mst_gov_ai_diemsang (URL mang ma 197251123, tuc bai 23/11/2025), vneconomy_ai_khatvong,
+  tapchikttc_uav_tongquan, vjst_viettel_llm, vnanet_hesinhthai_ai. Tuoi cua ca 38 claim do dang
+  bi tinh sai, nen con so 19 nay THAP HON THAT.

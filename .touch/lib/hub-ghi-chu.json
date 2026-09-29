@@ -1,33 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-09-29",
-    "so": 5
+    "so": 0
   },
-  "ds": [
-    {
-      "ai": "MiSmart · ten_don_vi",
-      "href": "/evidence/cafef_dn_uav_20250903.txt",
-      "span": "MiSmart"
-    },
-    {
-      "ai": "Realtime Robotics (RtR) · ten_don_vi",
-      "href": "/evidence/cafef_dn_uav_20250903.txt",
-      "span": "Realtime Robotics (RtR)"
-    },
-    {
-      "ai": "Viettel High Tech · ten_don_vi",
-      "href": "/evidence/cafef_dn_uav_20250903.txt",
-      "span": "Viettel High Tech"
-    },
-    {
-      "ai": "Viettel High Tech · loai_hinh",
-      "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-      "span": "Tổng công ty Công nghiệp Công nghệ cao Viettel"
-    },
-    {
-      "ai": "XBStation · ten_don_vi",
-      "href": "/evidence/cafef_dn_uav_20250903.txt",
-      "span": "XBStation"
-    }
-  ]
+  "ds": []
 }

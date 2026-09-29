@@ -4,15 +4,15 @@
     "claims": 221,
     "needs": 30,
     "sources": 13,
-    "snapshots": 45,
+    "snapshots": 46,
     "tierA": 78,
     "tierB": 143,
     "nhomPhu": 10,
     "generatedAt": "2026-09-29",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-09-29 12:36: 58/58 xanh",
+    "gate": "chuỗi cổng 2026-09-29 12:41: 58/58 xanh",
     "chuoiCong": {
-      "luc": "2026-09-29T12:36:45+0700",
+      "luc": "2026-09-29T12:41:53+0700",
       "cheDo": "day_du",
       "tong": 58,
       "xanh": 58,
@@ -1494,7 +1494,7 @@
       "sources": [
         {
           "source": "cafef.vn",
-          "href": "/evidence/cafef_dn_uav_20250903.txt"
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt"
         }
       ],
       "tim": "mismart giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông nhóm 9 hàng không và vũ trụ sp 22",
@@ -1502,42 +1502,42 @@
         {
           "field": "ten_don_vi",
           "value": "MiSmart",
-          "span": "MiSmart",
+          "span": "**MiSmart** , với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"MiSmart\""
         },
         {
           "field": "nhom_cncl",
           "value": "9",
-          "span": ", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
+          "span": "**MiSmart** , với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone\""
         },
         {
           "field": "san_pham_lien_quan",
           "value": "22",
-          "span": ", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
+          "span": "**MiSmart** , với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone\""
         },
         {
           "field": "nang_luc_mo_ta",
           "value": "giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông",
-          "span": ", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
+          "span": "**MiSmart** , với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi."
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "Span tra ve DUNG CHU CUA NGUON ngay 16/08/2026 sau khi cong doi chung chay du 31 trang. Ban cu bi go markup hoac chinh dinh dang khi ghi snapshot. Gia tri claim khong doi. | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \", với triết lý \"Drone Việt vì người Việt\", đã thành công đưa các giải pháp drone\""
         }
       ]
     },
@@ -1800,12 +1800,12 @@
         {
           "field": "ten_don_vi",
           "value": "Realtime Robotics (RtR)",
-          "span": "Realtime Robotics (RtR)",
+          "span": "**Realtime Robotics (RtR): Dấu ấn của nhà khoa học Lương Việt Quốc**",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"Realtime Robotics (RtR)\""
         },
         {
           "field": "loai_hinh",
@@ -2464,11 +2464,11 @@
       "sources": [
         {
           "source": "cafef.vn",
-          "href": "/evidence/cafef_dn_uav_20250903.txt"
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt"
         },
         {
           "source": "nhandan.vn",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt"
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt"
         }
       ],
       "tim": "viettel high tech dn doanh nghiệp với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, vu-r70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ nhóm 9 hàng không và vũ trụ sp 22",
@@ -2476,42 +2476,42 @@
         {
           "field": "ten_don_vi",
           "value": "Viettel High Tech",
-          "span": "Viettel High Tech",
+          "span": "nơi  **Viettel High Tech** chứng minh năng lực làm chủ 100% công nghệ",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"Viettel High Tech\""
         },
         {
           "field": "loai_hinh",
           "value": "DN",
-          "span": "Tổng công ty Công nghiệp Công nghệ cao Viettel",
+          "span": "Tại triển lãm, gian trưng bày của Tổng công ty Công nghiệp Công nghệ cao Viettel (Viettel High Tech) có 3 loại UAV, bao gồm UAV trinh sát, UAV cảm tử và UAV đa năng.",
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-          "note": "Phan loai tu chinh span: span goi ten 'Tong cong ty Cong nghiep Cong nghe cao Viettel', tu 'Tong cong ty' cho biet la doanh nghiep."
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "note": "Phan loai tu chinh span: span goi ten 'Tong cong ty Cong nghiep Cong nghe cao Viettel', tu 'Tong cong ty' cho biet la doanh nghiep. | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Ban nhandan cu con dat ten file theo NGAY CHUP 18/07/2026; trang ghi Ngay xuat ban 22/12/2024, nen tuoi nguon cua claim nay tang dung theo ngay that. Span cu: \"Tổng công ty Công nghiệp Công nghệ cao Viettel\""
         },
         {
           "field": "nhom_cncl",
           "value": "9",
-          "span": "UAV trinh sát, UAV cảm tử và UAV đa năng",
+          "span": "Tại triển lãm, gian trưng bày của Tổng công ty Công nghiệp Công nghệ cao Viettel (Viettel High Tech) có 3 loại UAV, bao gồm UAV trinh sát, UAV cảm tử và UAV đa năng.",
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-          "note": "UAV -> san pham 22 / nhom 9 (hang khong vu tru) theo QD 21/2026 [CNCL-P22-A]"
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "note": "UAV -> san pham 22 / nhom 9 (hang khong vu tru) theo QD 21/2026 [CNCL-P22-A] | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Ban nhandan cu con dat ten file theo NGAY CHUP 18/07/2026; trang ghi Ngay xuat ban 22/12/2024, nen tuoi nguon cua claim nay tang dung theo ngay that. Span cu: \"UAV trinh sát, UAV cảm tử và UAV đa năng\""
         },
         {
           "field": "san_pham_lien_quan",
           "value": "22",
-          "span": "UAV trinh sát, UAV cảm tử và UAV đa năng",
+          "span": "Tại triển lãm, gian trưng bày của Tổng công ty Công nghiệp Công nghệ cao Viettel (Viettel High Tech) có 3 loại UAV, bao gồm UAV trinh sát, UAV cảm tử và UAV đa năng.",
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-          "note": "UAV -> san pham 22 / nhom 9 (hang khong vu tru) theo QD 21/2026 [CNCL-P22-A]"
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "note": "UAV -> san pham 22 / nhom 9 (hang khong vu tru) theo QD 21/2026 [CNCL-P22-A] | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Ban nhandan cu con dat ten file theo NGAY CHUP 18/07/2026; trang ghi Ngay xuat ban 22/12/2024, nen tuoi nguon cua claim nay tang dung theo ngay that. Span cu: \"UAV trinh sát, UAV cảm tử và UAV đa năng\""
         },
         {
           "field": "bang_chung_nang_luc",
@@ -2520,8 +2520,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-          "note": ""
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Ban nhandan cu con dat ten file theo NGAY CHUP 18/07/2026; trang ghi Ngay xuat ban 22/12/2024, nen tuoi nguon cua claim nay tang dung theo ngay that."
         },
         {
           "field": "nang_luc_mo_ta",
@@ -2530,8 +2530,8 @@
           "source": "nhandan.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/nhandan_uav_madeinvn_20260718.txt",
-          "note": ""
+          "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Ban nhandan cu con dat ten file theo NGAY CHUP 18/07/2026; trang ghi Ngay xuat ban 22/12/2024, nen tuoi nguon cua claim nay tang dung theo ngay that."
         }
       ]
     },
@@ -3349,7 +3349,7 @@
       "sources": [
         {
           "source": "cafef.vn",
-          "href": "/evidence/cafef_dn_uav_20250903.txt"
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt"
         }
       ],
       "tim": "xbstation uav giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg nhóm 9 hàng không và vũ trụ sp 22",
@@ -3357,42 +3357,42 @@
         {
           "field": "ten_don_vi",
           "value": "XBStation",
-          "span": "XBStation",
+          "span": "Trong lĩnh vực logistics,  **XBStation** mở ra hướng đi mới với các mẫu UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg, nhắm đến thị trường giao vận đô thị và vùng sâu vùng xa.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"XBStation\""
         },
         {
           "field": "nhom_cncl",
           "value": "9",
-          "span": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
+          "span": "Trong lĩnh vực logistics,  **XBStation** mở ra hướng đi mới với các mẫu UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg, nhắm đến thị trường giao vận đô thị và vùng sâu vùng xa.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A]"
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg\""
         },
         {
           "field": "san_pham_lien_quan",
           "value": "22",
-          "span": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
+          "span": "Trong lĩnh vực logistics,  **XBStation** mở ra hướng đi mới với các mẫu UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg, nhắm đến thị trường giao vận đô thị và vùng sâu vùng xa.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "normalized",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A]"
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "UAV -> SP22 / nhom 9 [CNCL-P22-A] | CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg\""
         },
         {
           "field": "nang_luc_mo_ta",
           "value": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
-          "span": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
+          "span": "Trong lĩnh vực logistics,  **XBStation** mở ra hướng đi mới với các mẫu UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg, nhắm đến thị trường giao vận đô thị và vùng sâu vùng xa.",
           "source": "cafef.vn",
           "tier": "B",
           "extraction": "verbatim",
-          "href": "/evidence/cafef_dn_uav_20250903.txt",
-          "note": ""
+          "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+          "note": "CHUP LAI 29/09/2026: ban chup cu la ban TAP HOP, ten don vi chi nam o nhan \"## Ten don vi\" do nguoi chup dat (cong ghi_chu_ban_chup bat). Tro sang cau nguon THAT goi dung ten don vi. Span cu: \"UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg\""
         }
       ]
     },

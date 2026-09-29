@@ -21,8 +21,12 @@
 # LUAT: danh sach duoi day phai TRUNG KHOP tap vi pham cong do duoc. Them mot dong moi la cong
 # no. Sua xong mot claim ma khong xoa dong cua no o day cung la cong no, vi khoa se het siet.
 # Moi dong: entity · field · ban chup
-MiSmart · ten_don_vi · cafef_dn_uav_20250903.txt
-Realtime Robotics (RtR) · ten_don_vi · cafef_dn_uav_20250903.txt
-Viettel High Tech · ten_don_vi · cafef_dn_uav_20250903.txt
-Viettel High Tech · loai_hinh · nhandan_uav_madeinvn_20260718.txt
-XBStation · ten_don_vi · cafef_dn_uav_20250903.txt
+#
+# 29/09/2026 cung ngay: 5 -> 0. Chup lai cafef 03/09/2025 (cafef_dn_uav_chuplai_20250903.html) va
+#   nhandan UAV (nhandan_uav_madeinvn_chuplai_20241222.html). Ca 5 deu tim duoc CAU NGUON THAT goi
+#   dung ten: "**Realtime Robotics (RtR): Dau an cua nha khoa hoc Luong Viet Quoc**", "noi
+#   **Viettel High Tech** chung minh...", "**MiSmart** , voi triet ly...", "**XBStation** mo ra
+#   huong di moi...", "gian trung bay cua Tong cong ty Cong nghiep Cong nghe cao Viettel (Viettel
+#   High Tech)". Cung luc tro 10 claim nang luc/phan loai cua MiSmart, XBStation, Viettel High Tech
+#   sang cau co ten don vi, dong luon cau hoi "gan doan trich cho don vi dua vao nhan".
+#   Ban chup cu GIU NGUYEN, khong sua mot chu.

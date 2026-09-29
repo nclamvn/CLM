@@ -1,0 +1,68 @@
+# SNAPSHOT · cafef.vn · captured 2026-09-29 via web_fetch (text extraction, KHONG phai HTML raw)
+# URL: https://cafef.vn/nhung-dn-viet-nen-lich-su-cho-uav-viet-nam-188250903071631922.chn
+# Ghi chu: CHUP LAI 29/09/2026 de thay ban tap hop cafef_dn_uav_20250903. Ban cu gom doan trich theo nhan "## Ten don vi" do nguoi chup dat, va cat mat ten MiSmart o dau cau. Ban nay giu MOT DOAN LIEN MACH nguyen van tu tieu de bai toi het doan HTI Technology, khong dat nhan nao.
+
+# Những DN viết nên lịch sử cho UAV Việt Nam
+
+**Anh Khôi** | 03-09-2025 - 07:16 AM | [Doanh nghiệp](https://cafef.vn/doanh-nghiep.chn "Doanh nghiệp")
+
+[Chia sẻ](javascript:;)
+
+[](https://cafef.vn/ "Trang chủ")
+
+[](javascript:; "Chia sẻ")
+
+![UAV Made in Vietnam](https://cafefcdn.com/thumb_w/640/203337114487263232/2025/9/3/avatar1756858452907-1756858453389174935434.png "UAV Made in Vietnam")
+
+UAV Made in Vietnam
+
+Ngành công nghiệp UAV Việt Nam đang thu hút sự chú ý lớn, không chỉ bởi những câu chuyện thành công đầy cảm hứng, mà còn bởi cơ hội tham gia vào thị trường UAV toàn cầu - một sân chơi trị giá hơn 36 tỷ USD trong năm 2024 và được dự báo sẽ vượt mốc 125 tỷ USD vào năm 2032.
+
+- 30-08-2025[Viettel "khoe" UAV, pháo tự hành, tên lửa, radar... mới tại Triển lãm 80 năm thành tựu đất nước](https://cafef.vn/viettel-khoe-uav-phao-tu-hanh-ten-lua-radar-moi-tai-trien-lam-80-nam-thanh-tuu-dat-nuoc-188250830124022665.chn "Viettel &quot;khoe&quot; UAV, pháo tự hành, tên lửa, radar... mới tại Triển lãm 80 năm thành tựu đất nước")
+- 13-08-2025[Lần đầu tiên trong lịch sử: UAV "made in Vietnam" nội địa hóa 85% "bay" thẳng sang Hàn Quốc](https://cafef.vn/lan-dau-tien-trong-lich-su-uav-made-in-vietnam-noi-dia-hoa-85-bay-thang-sang-han-quoc-188250813112420301.chn "Lần đầu tiên trong lịch sử: UAV &quot;made in Vietnam&quot; nội địa hóa 85% &quot;bay&quot; thẳng sang Hàn Quốc")
+
+[TIN MỚI](javascript:; "TIN MỚI")
+
+   **Realtime Robotics (RtR): Dấu ấn của nhà khoa học Lương Việt Quốc**
+
+![Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 1.](https://cafefcdn.com/203337114487263232/2025/9/3/uav-hera-02-1756858454609-17568584547941463711246.jpg "Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 1.")
+
+*UAV HERA của RtR với khả năng gấp gọn*
+
+Khi  **Tiến sĩ Lương Việt Quốc** sáng lập RtR, ông mang theo kinh nghiệm và tầm nhìn của một nhà khoa học để đối mặt với thách thức lớn từ sự hoài nghi. Thị trường UAV toàn cầu vốn đã được định hình bởi các nhà sản xuất lớn từ Mỹ, Israel và Trung Quốc, khiến một startup từ Việt Nam có ít cơ hội.
+
+Thay vì cạnh tranh về giá, RtR dưới sự dẫn dắt của ông đã chọn hướng đi cạnh tranh bằng R&D và sự đột phá. Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải và có phạm vi hoạt động 11 km, vượt trội so với các đối thủ cùng kích thước.
+
+Thành công là một quá trình dài của việc thử nghiệm và chứng minh. Sản phẩm đã được cấp bằng sáng chế tại Mỹ, Úc và vượt qua các bài kiểm tra khắt khe để được chấp nhận đưa vào sử dụng bởi Phòng thí nghiệm Quốc gia Los Alamos (Mỹ) và lực lượng cảnh sát Mỹ, Hà Lan.
+
+Lời giới thiệu của  **Tổng Giám đốc Boeing Việt Nam** , ông Michael Vũ Nguyễn, đã mang lại sự công nhận giá trị cho hành trình này khi ông nhấn mạnh:  *"Sản phẩm của RtRobotics đã có thể cạnh tranh ở một số phân khúc quốc tế, cho thấy UAV Việt Nam không chỉ là tiềm năng, mà đã bắt đầu có chỗ đứng trên thị trường thế giới".*
+
+**Viettel: Sứ mệnh tự chủ công nghệ quốc phòng**
+
+Bài toán tự chủ công nghệ quốc phòng là một thách thức chiến lược, đòi hỏi sự đầu tư dài hạn và quyết tâm lớn. Với vai trò là tập đoàn công nghiệp - công nghệ chủ lực của đất nước, Viettel được giao sứ mệnh phát triển các giải pháp "Made in Vietnam" để thay thế sản phẩm nhập khẩu, đảm bảo an ninh quốc gia.
+
+Hành trình này đòi hỏi việc xây dựng năng lực từ con số không, từ nghiên cứu vật liệu, thiết kế khí động học đến phát triển phần mềm điều khiển và trí tuệ nhân tạo.
+
+Kết quả của nỗ lực này đã được thể hiện tại Triển lãm Quốc phòng Quốc tế, nơi  **Viettel High Tech** chứng minh năng lực làm chủ 100% công nghệ. Các sản phẩm không chỉ đa dạng về chủng loại mà còn tích hợp những công nghệ phức tạp.
+
+![Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 2.](https://cafefcdn.com/203337114487263232/2025/8/29/461d5ee0-c1d8-4b49-8fe3-408f0f7cb34f-17563706335052010969976-1756439683913-1756439684128463435370.jpg "Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 2.")
+
+*UAV đa năng tầm xa nổi bật với biểu tượng Chim Lạc. Ảnh: Hồ Minh Đức*
+
+UAV trinh sát  **VU-R70** có thể hoạt động liên tục  **4,5 giờ** , trong khi UAV cảm tử  **VU-C2** được trang bị đầu tự dẫn quang điện tử, tích hợp AI để tự động tìm kiếm, khóa và tấn công mục tiêu theo mệnh lệnh.
+
+Thậm chí, Viettel còn giới thiệu mô hình UAV đa năng tầm xa  **VU-MALE** , cho thấy tầm nhìn hướng tới các giải pháp chiến lược phức tạp hơn. Đây không chỉ là thành công của một doanh nghiệp, mà là sự khẳng định về năng lực tự chủ công nghệ quốc phòng của Việt Nam.
+
+ **Từ những câu chuyện riêng đến Chiến lược Quốc gia**
+
+![Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 3.](https://cafefcdn.com/203337114487263232/2025/9/3/z2801272552056c77ba2e22e6764b75c1f8300a1fce19b-1024x390-1756858455288-17568584554521358467577.jpg "Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 3.")
+
+Bên cạnh những câu chuyện lớn, sức sống của ngành UAV Việt còn đến từ một hệ sinh thái đa dạng, nơi mỗi doanh nghiệp giải quyết một bài toán riêng.
+
+   **MiSmart** , với triết lý "Drone Việt vì người Việt", đã thành công đưa các giải pháp drone chuyên dụng vào nông nghiệp, giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông.
+
+Trong lĩnh vực logistics,  **XBStation** mở ra hướng đi mới với các mẫu UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg, nhắm đến thị trường giao vận đô thị và vùng sâu vùng xa.
+
+![Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 4.](https://cafefcdn.com/203337114487263232/2025/9/3/9d8f3212a811154f4c00187-938-1756858456452-1756858456613879483671.jpg "Những DN viết nên lịch sử cho UAV Việt Nam- Ảnh 4.")
+
+Trong phân khúc công nghệ cao,  **Phenikaa-X** (thuộc Tập đoàn Phenikaa) và  **HTI Technology** đang làm chủ công nghệ cất/hạ cánh thẳng đứng (VTOL). Phenikaa-X với mẫu  **VTOL-01** chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi, trong khi HTI Technology cung cấp  **Horus P02** với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt, tối ưu cho các hoạt động trinh sát, cứu hộ.
