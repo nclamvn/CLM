@@ -19,7 +19,8 @@ import {
 } from 'react';
 import type { CnclEvidence, CnclNeed, CnclUnit, CnclMeta } from '@/lib/cncl-registry';
 import type { RejectedPair, SignedMatch } from '@/lib/cncl-match';
-import { catNguCanh, timKiem } from '@/lib/tim-kiem.mjs';
+import { timKiem } from '@/lib/tim-kiem.mjs';
+import { catNguCanhPhanLoai } from '@/lib/ban-chup.mjs';
 
 // ── Kieu du lieu ────────────────────────────────────────────────────────────
 type SoKhoa = 'units' | 'claims' | 'needs' | 'tierA' | 'snapshots' | 'gate' | 'matches';
@@ -37,6 +38,8 @@ type Du = {
   matches: SignedMatch[]; tuChoi: RejectedPair[];
   docs: SearchDoc[]; edges: GraphEdge[]; nodes: { id: string; kind: string; label: string; nhom?: string | null }[];
   events: HubEvent[];
+  /** khoa `${href}|${span}` cua cau lam bang CHI nam trong ghi chu nguoi chup */
+  chiGhiChu: Set<string>;
 };
 
 let napCache: Promise<Du> | null = null;
@@ -45,7 +48,8 @@ function napDuLieu(): Promise<Du> {
     napCache = Promise.all([
       import('@/lib/cncl-registry.json'), import('@/lib/cncl-match.json'),
       import('@/lib/hub-search.json'), import('@/lib/hub-graph.json'), import('@/lib/hub-events.json'),
-    ]).then(([r, m, s, g, e]) => {
+      import('@/lib/hub-ghi-chu.json'),
+    ]).then(([r, m, s, g, e, gc]) => {
       const reg = r.default as unknown as { meta: CnclMeta; units: CnclUnit[]; needs: CnclNeed[] };
       const mat = m.default as unknown as { signedMatches: SignedMatch[]; rejectedPairs: RejectedPair[] };
       const gr = g.default as unknown as { nodes: Du['nodes']; edges: GraphEdge[] };
@@ -55,6 +59,7 @@ function napDuLieu(): Promise<Du> {
         docs: (s.default as unknown as { docs: SearchDoc[] }).docs,
         nodes: gr.nodes, edges: gr.edges,
         events: (e.default as unknown as { events: HubEvent[] }).events,
+        chiGhiChu: new Set((gc.default as unknown as { ds: { href: string; span: string }[] }).ds.map((x) => `${x.href}|${x.span}`)),
       };
     });
   }
@@ -104,12 +109,12 @@ function useHopThoai(mo: boolean, dong: () => void, ref: React.RefObject<HTMLEle
 // ── Cau nguon trong ban chup ────────────────────────────────────────────────
 function CauTrongBanChup({ span, href }: { span: string; href: string }) {
   const [tt, setTt] = useState<'cho' | 'xong' | 'loi'>('cho');
-  const [nc, setNc] = useState<ReturnType<typeof catNguCanh> | null>(null);
+  const [nc, setNc] = useState<ReturnType<typeof catNguCanhPhanLoai> | null>(null);
   useEffect(() => {
     let huy = false;
     fetch(href)
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
-      .then((t) => { if (!huy) { setNc(catNguCanh(t, span)); setTt('xong'); } })
+      .then((t) => { if (!huy) { setNc(catNguCanhPhanLoai(t, span)); setTt('xong'); } })
       .catch(() => { if (!huy) setTt('loi'); });
     return () => { huy = true; };
   }, [href, span]);
@@ -118,16 +123,34 @@ function CauTrongBanChup({ span, href }: { span: string; href: string }) {
   if (!nc || nc.cach === null) {
     return <p className="pf-ctx pf-ctx--loi">Câu làm bằng KHÔNG có nguyên văn trong bản chụp. Cổng lop_phu_nguon lẽ ra đã chặn; hãy chạy lại chuỗi cổng.</p>;
   }
+  // Ba loai chu hien KHAC NHAU: van ban nguon (binh thuong), ghi chu cua nguoi chup (nghieng,
+  // co nhan), tieu de chua phan dinh (co nhan). Cau lam bang to sang. Xem lib/ban-chup.mjs.
   return (
-    <p className="pf-ctx">
-      <span className="pf-ctx__mo">{nc.truoc}</span>
-      <mark className="pf-ctx__span">{nc.span}</mark>
-      <span className="pf-ctx__mo">{nc.sau}</span>
-    </p>
+    <>
+      {nc.spanChamGhiChu && (
+        <p className="pf-ctx pf-ctx--loi">
+          Câu làm bằng này chỉ nằm trong nhãn do người chụp đặt, không nằm trong văn bản của nguồn.
+          Claim đang được ghi nợ và chờ chụp lại nguồn.
+        </p>)}
+      <p className="pf-ctx">
+        {nc.doan.map((d, k) => d.loai === 'span'
+          ? <mark key={k} className={`pf-ctx__span${nc.spanChamGhiChu ? ' pf-ctx__span--xau' : ''}`}>{d.text}</mark>
+          : d.loai === 'nguon'
+            ? <span key={k} className="pf-ctx__mo">{d.text}</span>
+            : (
+              <span key={k} className={`pf-ctx__note pf-ctx__note--${d.loai}`}>
+                <span className="pf-ctx__tag">{d.loai === 'ghi_chu' ? 'ghi chú người chụp' : 'tiêu đề chưa phân định'}</span>
+                {d.text}
+              </span>))}
+      </p>
+      <p className="pf-ctx__legend">
+        Chữ thường là văn bản của nguồn. Phần có nhãn là chữ của người chụp hoặc chưa phân định được, không phải của nguồn.
+      </p>
+    </>
   );
 }
 
-function BangChung({ e }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'> }) {
+function BangChung({ e, chiGhiChu = false }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'>; chiGhiChu?: boolean }) {
   const [mo, setMo] = useState(false);
   return (
     <li className="pf-ev">
@@ -136,6 +159,10 @@ function BangChung({ e }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | '
         <span className={`pf-tier pf-tier--${e.tier}`}>tier {e.tier}</span>
         <span className="pf-ev__src">{e.source}</span>
       </div>
+      {chiGhiChu && (
+        <div className="pf-ev__warn" role="note">
+          Nợ nguồn: câu làm bằng chỉ nằm trong nhãn của người chụp, chưa có câu của nguồn gọi đúng tên này.
+        </div>)}
       <div className="pf-ev__value">{e.value}</div>
       <blockquote className="pf-ev__span">{e.span}</blockquote>
       <div className="pf-ev__act">
@@ -170,7 +197,7 @@ function NoiDung({ muc, du, moMuc }: { muc: Muc; du: Du; moMuc: (m: Muc) => void
           {u.favorsRtr && <span className="pf-chip pf-chip--coi" title="Đơn vị liên quan RtR, bên dựng hub. Đọc bằng chứng với con mắt nghi ngờ hơn.">liên quan RtR</span>}
         </div>
         <h3 className="pf-h">Bằng chứng · {u.evidence.length} câu nguồn</h3>
-        <ul className="pf-evs">{u.evidence.map((e, i) => <BangChung key={i} e={e} />)}</ul>
+        <ul className="pf-evs">{u.evidence.map((e, i) => <BangChung key={i} e={e} chiGhiChu={du.chiGhiChu.has(`${e.href}|${e.span}`)} />)}</ul>
         <h3 className="pf-h">Match đã ký · {ky.length}</h3>
         {ky.length === 0 ? <p className="pf-empty">Chưa có match nào được người ký.</p> : (
           <ul className="pf-list">{ky.map((m) => (

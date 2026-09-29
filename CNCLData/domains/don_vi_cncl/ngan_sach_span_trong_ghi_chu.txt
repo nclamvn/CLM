@@ -1,0 +1,28 @@
+# Cau lam bang CHI nam trong GHI CHU CUA NGUOI CHUP, khong co trong van ban cua nguon.
+# Xem .touch/lib/ban-chup.mjs (luat phan loai dong) va .touch/scripts/check-ghi-chu-ban-chup.mjs.
+#
+# 29/09/2026  chot moc dau tien: 5 claim.
+#   Phat hien khi tach ghi chu nguoi chup khoi van ban nguon cho lop phu nguon. check_spans.py
+#   van XANH voi ca 5, vi no chi hoi "chuoi nay co trong file ban chup khong", va co that: no
+#   nam o nhan "## Ten don vi" ma NGUOI CHUP dat de gom cac doan trich theo don vi. Tuc bang
+#   chung cua 5 claim nay la chu cua chinh minh.
+#
+#   Ca 5 den tu hai ban chup TAP HOP (cafef 03/09/2025, nhandan UAV made in Vietnam). O ban
+#   cafef, doan trich duoi "## MiSmart" bat dau bang dau phay (", voi triet ly...") tuc ten don
+#   vi da bi cat mat luc chup. Doan duoi "## XBStation" khong nhac ten XBStation.
+#
+#   Cach sua dung: chup lai nguon, tim cau nguon THAT goi ten don vi, tro claim sang do. Khong
+#   duoc sua ban chup cu cho khop, khong duoc go ten vao doan trich.
+#
+#   Ghi chu lien quan, CHUA do trong cong nay: cac claim NANG LUC lay tu doan trich duoi cung
+#   nhan do (vd MiSmart "Drone Viet vi nguoi Viet") thi span nam trong van ban nguon, nhung viec
+#   GAN doan do cho don vi dua vao nhan cua nguoi chup. Chup lai nguon se tra loi luon cau nay.
+#
+# LUAT: danh sach duoi day phai TRUNG KHOP tap vi pham cong do duoc. Them mot dong moi la cong
+# no. Sua xong mot claim ma khong xoa dong cua no o day cung la cong no, vi khoa se het siet.
+# Moi dong: entity · field · ban chup
+MiSmart · ten_don_vi · cafef_dn_uav_20250903.txt
+Realtime Robotics (RtR) · ten_don_vi · cafef_dn_uav_20250903.txt
+Viettel High Tech · ten_don_vi · cafef_dn_uav_20250903.txt
+Viettel High Tech · loai_hinh · nhandan_uav_madeinvn_20260718.txt
+XBStation · ten_don_vi · cafef_dn_uav_20250903.txt

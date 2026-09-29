@@ -29,6 +29,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { goc } from './goc.mjs';
 import { khoaTim } from './viet.mjs';
+import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -179,9 +180,18 @@ const evMeta = {
 };
 writeFileSync(join(LIB, 'hub-events.json'), JSON.stringify({ meta: evMeta, events }, null, 2) + '\n', 'utf8');
 
+// ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
+// Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.
+// Cong check-ghi-chu-ban-chup.mjs dem lai doc lap va doi chieu voi ngan sach.
+const PUB = join(HERE, '..', 'public');
+const docBanChup = (href) => { const p = join(PUB, href); return existsSync(p) ? readFileSync(p, 'utf8') : null; };
+const ghiChu = spanChiTrongGhiChu(moiCauNguon(reg, mat), docBanChup).filter((x) => !x.ai.startsWith('MATCH-'));
+writeFileSync(join(LIB, 'hub-ghi-chu.json'), JSON.stringify({ meta: { generatedAt: NOW, so: ghiChu.length }, ds: ghiChu }, null, 2) + '\n', 'utf8');
+
 console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} tai lieu tim · ${events.length} su kien`);
 console.log(`  canh: ${Object.entries(graphMeta.canh).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 if (spNgoaiDanhMuc.length) console.log(`  CHU Y: ${spNgoaiDanhMuc.length} ma san pham khong khop nhu cau nao: ${spNgoaiDanhMuc.join(', ')}`);
 if (thieuNguon) console.log(`  CHU Y: ${thieuNguon} canh bi BO vi khong tim thay claim lam nguon`);
 if (graphMeta.nhuCauChuaCoNhom) console.log(`  CHU Y: ${graphMeta.nhuCauChuaCoNhom} nhu cau chua gan duoc nhom tu nguon`);
+if (ghiChu.length) console.log(`  CHU Y: ${ghiChu.length} cau lam bang CHI nam trong ghi chu nguoi chup (xem ngan_sach_span_trong_ghi_chu.txt)`);
 if (tranhChap.length) console.log(`  TRANH CHAP (khong chon ho): ${tranhChap.join(', ')}`);

@@ -68,33 +68,5 @@ export function timKiem(docs, q, toiDa = 20) {
   return ra.slice(0, toiDa);
 }
 
-/** Bo the HTML va giai ma vai thuc the thuong gap, CHI dung cho phan ngu canh hien thi. */
-function lamSach(s) {
-  return s.replace(/<[^>]*>/g, ' ')
-    .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/\s+/g, ' ');
-}
-
-/**
- * Cat ngu canh quanh span trong ban chup THO. Span phai nam NGUYEN VAN trong ban chup; khong
- * co thi tra cach=null de giao dien bao loi, KHONG tim gan dung. Tim gan dung la cach lop phu
- * nguon co the to sang mot cau khac voi cau lam bang.
- * @param {string} tho
- * @param {string} span
- * @param {number} [r]
- * @returns {{truoc:string, span:string, sau:string, cach:'nguyen_van'|null, viTri:number}}
- */
-export function catNguCanh(tho, span, r = 280) {
-  const i = String(tho).indexOf(span);
-  if (!span || i < 0) return { truoc: '', span, sau: '', cach: null, viTri: -1 };
-  const truocTho = tho.slice(Math.max(0, i - r), i);
-  const sauTho = tho.slice(i + span.length, i + span.length + r);
-  return {
-    truoc: (i - r > 0 ? '… ' : '') + lamSach(truocTho).trimStart(),
-    span,
-    sau: lamSach(sauTho).trimEnd() + (i + span.length + r < tho.length ? ' …' : ''),
-    cach: 'nguyen_van',
-    viTri: i,
-  };
-}
+// Cat ngu canh ban chup da chuyen sang lib/ban-chup.mjs (catNguCanhPhanLoai) ngay 29/09/2026,
+// khi phai tach ghi chu cua nguoi chup khoi van ban nguon. Giu mot ban duy nhat.

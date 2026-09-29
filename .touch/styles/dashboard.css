@@ -606,3 +606,10 @@
   .dash-shell .pf-scrim, .dash-shell .pf-panel, .dash-shell .pf-cmdk { animation: none; }
   .dash-shell .pf-num, .dash-shell .pf-link { transition: none; }
 }
+/* Ghi chu nguoi chup va tieu de chua phan dinh trong lop phu nguon (29/09/2026) */
+.dash-shell .pf-ctx__note { font-style: italic; color: var(--color-text-muted); opacity: 0.85; }
+.dash-shell .pf-ctx__tag { display: inline-block; font-style: normal; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-accent-purple); border: var(--stroke-hairline) solid var(--a-purple-35); background: var(--fill-purple-subtle); border-radius: var(--radius-xs); padding: 0 var(--space-1); margin: 0 var(--space-1); }
+.dash-shell .pf-ctx__note--chua_ro .pf-ctx__tag { color: var(--color-accent-amber); border-color: var(--a-amber-35); background: var(--fill-amber-subtle); }
+.dash-shell .pf-ctx__span--xau { background: var(--fill-red-subtle); border-bottom-color: var(--color-accent-red); }
+.dash-shell .pf-ctx__legend { font-size: 11px; line-height: 16px; color: var(--color-text-muted); margin: var(--space-1_5) 0 0; }
+.dash-shell .pf-ev__warn { margin-top: var(--space-1_5); font-size: 12px; line-height: 17px; color: var(--color-accent-red); border: var(--stroke-hairline) solid var(--a-red-45); background: var(--fill-red-subtle); border-radius: var(--radius-sm); padding: var(--space-1) var(--space-2); }

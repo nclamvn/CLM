@@ -9,7 +9,7 @@
  * dong bo. Neu ban phuc vu lech ban goc, check_spans.py van xanh (no doc ban goc) trong khi
  * nha dau tu bam vao thi thay dong chu do "khong co nguyen van trong ban chup".
  *
- * Cong dung DUNG ham catNguCanh() cua giao dien, voi dung quy tac: khop nguyen van, khong
+ * Cong dung DUNG ham catNguCanhPhanLoai() cua giao dien (lib/ban-chup.mjs), voi dung quy tac: khop nguyen van, khong
  * gan dung. Ham do tra cach=null la loi.
  *
  * Pham vi: moi evidence cua don vi, moi nhu cau, moi bang chung hai phia cua match da ky.
@@ -20,7 +20,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { catNguCanh } from '../lib/tim-kiem.mjs';
+import { catNguCanhPhanLoai } from '../lib/ban-chup.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
@@ -49,7 +49,7 @@ for (const x of ds) {
   if (!cache.has(p)) cache.set(p, existsSync(p) ? readFileSync(p, 'utf8') : null);
   const t = cache.get(p);
   if (t === null) { sai.push(`MAT_BAN_CHUP: ${x.href} (${x.ai})`); continue; }
-  if (catNguCanh(t, x.span).cach === null) sai.push(`KHONG_TO_SANG: ${x.ai} · ${x.href}`);
+  if (catNguCanhPhanLoai(t, x.span).cach === null) sai.push(`KHONG_TO_SANG: ${x.ai} · ${x.href}`);
 }
 
 console.log(`cau nguon: ${ds.length} · ban chup: ${cache.size}`);
