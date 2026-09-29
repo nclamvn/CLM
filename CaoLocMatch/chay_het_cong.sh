@@ -307,6 +307,9 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_ma_so_thue    "$CNCL" 'BITE MA SO THUE'  python3 bite_ma_so_thue.py
   chay CNCLData    rang_ngay_dang     "$CNCL" 'BITE NGAY DANG'   python3 bite_ngay_dang.py
   chay CNCLData    rang_hang_cho      "$CNCL" 'BITE HANG CHO'    python3 vong_tu_chay/bite_hang_cho.py
+  # Cau noi mot chieu kernel -> vong tu chay (29/09/2026): kernel chi goi y URL, khong bao gio ro ri
+  # truong noi bo (deal_link, pricing, favors rtr, INT). Rang dung kernel GIA, chay duoc ca trong CI.
+  chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
