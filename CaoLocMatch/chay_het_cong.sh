@@ -251,6 +251,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      ghi_chu_ban_chup "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-ghi-chu-ban-chup.mjs
   # Toa do man Do thi cung cau tinh luc build; cong tinh lai bang chinh ham giao dien (29/09/2026).
   chay .touch      do_thi           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-do-thi.mjs
+  # Ho so don vi M3 (29/09/2026): khop registry, khong diem tong hop, khong dinh danh bia, o trong
+  # noi thang, tong cau qua han khop ngan sach cua check_do_tuoi.py.
+  chay .touch      ho_so            "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-ho-so.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -280,6 +283,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_lop_phu     "$TOUCH" 'BITE LOP PHU'      node scripts/bite-lop-phu.mjs
     chay .touch    rang_ghi_chu     "$TOUCH" 'BITE GHI CHU'      node scripts/bite-ghi-chu.mjs
     chay .touch    rang_do_thi      "$TOUCH" 'BITE DO THI'       node scripts/bite-do-thi.mjs
+    chay .touch    rang_ho_so       "$TOUCH" 'BITE HO SO'        node scripts/bite-ho-so.mjs
   fi
 fi
 

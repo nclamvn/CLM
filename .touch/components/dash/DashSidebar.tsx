@@ -6,7 +6,7 @@ import { TouchBrand } from '@/components/brand/TouchBrand';
 import { Icon } from './Icon';
 import { nav } from '@/lib/project-status';
 
-const ICONS = ['home', 'layers', 'cpu', 'shield', 'gauge', 'alert', 'doc', 'branch', 'gear'] as const;
+const ICONS = ['home', 'layers', 'people', 'cpu', 'shield', 'gauge', 'alert', 'doc', 'branch', 'gear'] as const;
 
 /**
  * Sidebar v2. Client vì active tính theo route thật (usePathname).
@@ -22,7 +22,8 @@ export function DashSidebar() {
       </div>
       <nav className="dash-nav" aria-label="Dieu huong chinh">
         {nav.map((n, i) => {
-          const active = n.href !== '' && pathname === n.href;
+          // Trang con (vd /dashboard/don-vi/<slug>) van sang muc cha; rieng /dashboard thi phai khop dung.
+          const active = n.href !== '' && (pathname === n.href || (n.href !== '/dashboard' && pathname.startsWith(`${n.href}/`)));
           if (n.href === '') {
             return (
               <span key={n.label} className="dash-nav__item is-disabled" aria-disabled="true" title="Màn này sắp có">

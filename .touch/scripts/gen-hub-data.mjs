@@ -32,6 +32,7 @@ import { khoaTim } from './viet.mjs';
 import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
 import { dungBanDo, LOAI_CHEO } from '../lib/do-thi-ban-do.mjs';
 import { dungMaTran } from '../lib/do-thi-ma-tran.mjs';
+import { dungHoSo, docCauHinhDomain } from '../lib/ho-so.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -54,6 +55,14 @@ const HANG_CHO = env('CLM_KHO_CNCL')
   ? join(env('CLM_KHO_CNCL'), 'vong_tu_chay', 'hang_cho.jsonl')
   : goc('CNCLData', 'vong_tu_chay', 'hang_cho.jsonl');
 const hangCho = HANG_CHO && existsSync(HANG_CHO) ? docJsonl(HANG_CHO) : null;
+
+// Cau hinh domain chieu CUNG (schema, nguong tuoi, cum ten de nham) cho ho so don vi.
+const DOMAIN_YAML = env('CLM_KHO_CNCL')
+  ? join(env('CLM_KHO_CNCL'), 'domains', 'don_vi_cncl', 'domain.yaml')
+  : goc('CNCLData', 'domains', 'don_vi_cncl', 'domain.yaml');
+if (!DOMAIN_YAML || !existsSync(DOMAIN_YAML)) { console.error('KHONG THAY CNCLData/domains/don_vi_cncl/domain.yaml (can cho ho so don vi).'); process.exit(2); }
+const cauHinh = docCauHinhDomain(readFileSync(DOMAIN_YAML, 'utf8'));
+if (cauHinh.loi) { console.error(`domain.yaml: ${cauHinh.loi.join('; ')}`); process.exit(2); }
 
 // ── Nut ─────────────────────────────────────────────────────────────────────
 const nodes = [];
@@ -202,6 +211,12 @@ const evMeta = {
 };
 writeFileSync(join(LIB, 'hub-events.json'), JSON.stringify({ meta: evMeta, events }, null, 2) + '\n', 'utf8');
 
+// ── Ho so don vi (M3) ─────────────────────────────────────────────────────
+// Sinh tu CHINH cac file vua ghi (graph, events) de ho so va do thi khong bao gio lech nhau.
+const hoSo = dungHoSo({ reg, mat, graph: { nodes, edges }, ev: { events }, ...cauHinh });
+hoSo.meta.cumDeNham = cauHinh.cumDeNham;
+writeFileSync(join(LIB, 'hub-ho-so.json'), JSON.stringify(hoSo, null, 2) + '\n', 'utf8');
+
 // ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
 // Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.
 // Cong check-ghi-chu-ban-chup.mjs dem lai doc lap va doi chieu voi ngan sach.
@@ -211,6 +226,7 @@ const ghiChu = spanChiTrongGhiChu(moiCauNguon(reg, mat), docBanChup).filter((x) 
 writeFileSync(join(LIB, 'hub-ghi-chu.json'), JSON.stringify({ meta: { generatedAt: NOW, so: ghiChu.length }, ds: ghiChu }, null, 2) + '\n', 'utf8');
 
 console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} tai lieu tim · ${events.length} su kien`);
+console.log(`  ho so: ${hoSo.units.length} don vi · ${hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh').length} chua dinh danh · ${hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan, 0)} cau qua han chua ly do`);
 console.log(`  bo cuc: ${boCuc.chiSo.giaoCanh} giao canh, ${boCuc.chiSo.canhXuyenNut} canh xuyen nut tren ${boCuc.chiSo.soCanhVe} canh cung-cau · ma tran dao ${maTran.chiSo.daoBanDau} -> ${maTran.chiSo.daoSauSap}`);
 console.log(`  canh: ${Object.entries(graphMeta.canh).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 if (spNgoaiDanhMuc.length) console.log(`  CHU Y: ${spNgoaiDanhMuc.length} ma san pham khong khop nhu cau nao: ${spNgoaiDanhMuc.join(', ')}`);

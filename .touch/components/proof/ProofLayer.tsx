@@ -21,6 +21,9 @@ import type { CnclEvidence, CnclNeed, CnclUnit, CnclMeta } from '@/lib/cncl-regi
 import type { RejectedPair, SignedMatch } from '@/lib/cncl-match';
 import { timKiem } from '@/lib/tim-kiem.mjs';
 import { catNguCanhPhanLoai } from '@/lib/ban-chup.mjs';
+import { slugDonVi } from '@/lib/ho-so.mjs';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // ── Kieu du lieu ────────────────────────────────────────────────────────────
 type SoKhoa = 'units' | 'claims' | 'needs' | 'tierA' | 'snapshots' | 'gate' | 'matches';
@@ -150,7 +153,7 @@ function CauTrongBanChup({ span, href }: { span: string; href: string }) {
   );
 }
 
-function BangChung({ e, chiGhiChu = false }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'>; chiGhiChu?: boolean }) {
+export function BangChung({ e, chiGhiChu = false, phu }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'>; chiGhiChu?: boolean; phu?: React.ReactNode }) {
   const [mo, setMo] = useState(false);
   return (
     <li className="pf-ev">
@@ -158,6 +161,7 @@ function BangChung({ e, chiGhiChu = false }: { e: Pick<CnclEvidence, 'field' | '
         <span className="pf-ev__field">{tenTruong(e.field)}</span>
         <span className={`pf-tier pf-tier--${e.tier}`}>tier {e.tier}</span>
         <span className="pf-ev__src">{e.source}</span>
+        {phu}
       </div>
       {chiGhiChu && (
         <div className="pf-ev__warn" role="note">
@@ -178,7 +182,7 @@ function BangChung({ e, chiGhiChu = false }: { e: Pick<CnclEvidence, 'field' | '
 }
 
 // ── Noi dung tam kinh theo tung loai muc ────────────────────────────────────
-function NoiDung({ muc, du, moMuc }: { muc: Muc; du: Du; moMuc: (m: Muc) => void }) {
+function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) => void; dong?: () => void }) {
   if (muc.loai === 'don_vi') {
     const u = du.units.find((x) => x.name === muc.ten);
     if (!u) return <p className="pf-empty">Không tìm thấy đơn vị “{muc.ten}” trong registry.</p>;
@@ -188,6 +192,8 @@ function NoiDung({ muc, du, moMuc }: { muc: Muc; du: Du; moMuc: (m: Muc) => void
     const nhu = (id: string) => du.needs.find((n) => n.entityId === id);
     return (
       <>
+        {/* Dong ngay khi bam: neu dang o chinh trang ho so do thi duong dan khong doi, effect doi trang khong chay. */}
+        <Link className="pf-hoso" href={`/dashboard/don-vi/${slugDonVi(u.name)}`} onClick={dong}>Mở hồ sơ đầy đủ của đơn vị →</Link>
         <div className="pf-chips">
           {u.loaiHinhLabel && <span className="pf-chip">{u.loaiHinhLabel}</span>}
           {u.nhoms.map((n, i) => (
@@ -355,7 +361,7 @@ function TamKinh({ ls, du, dong, moMuc, quayLai }: { ls: Muc[]; du: Du | null; d
           </div>
         </header>
         <div className="pf-panel__body">
-          {du ? <NoiDung muc={muc} du={du} moMuc={moMuc} /> : <p className="pf-ctx pf-ctx--cho">Đang nạp dữ liệu registry…</p>}
+          {du ? <NoiDung muc={muc} du={du} moMuc={moMuc} dong={dong} /> : <p className="pf-ctx pf-ctx--cho">Đang nạp dữ liệu registry…</p>}
         </div>
         <footer className="pf-panel__foot">
           Tự kiểm được: mỗi câu trên đây phải nằm nguyên văn trong bản chụp của nó. Chạy <code>check_spans.py</code> hoặc
@@ -452,6 +458,10 @@ export function ProofLayer({ children }: { children: React.ReactNode }) {
         : { loai: 'nhom', so: d.id.slice(3) };
     setKMo(false); setLs([m]);
   }, []);
+
+  // Doi trang (vd bam "Mo ho so day du") thi dong lop phu, khong de tam kinh treo tren trang moi.
+  const duongDan = usePathname();
+  useEffect(() => { setLs([]); setKMo(false); }, [duongDan]);
 
   const ctx = useMemo(() => ({ moMuc, moTimKiem }), [moMuc, moTimKiem]);
   return (
