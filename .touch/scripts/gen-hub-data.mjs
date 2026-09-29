@@ -30,6 +30,7 @@ import { fileURLToPath } from 'node:url';
 import { goc } from './goc.mjs';
 import { khoaTim } from './viet.mjs';
 import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
+import { boTri } from '../lib/do-thi-layout.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -153,6 +154,10 @@ const graphMeta = {
   nhuCauChuaCoNhom: nodes.filter((n) => n.kind === 'nhu_cau' && !n.nhom).length,
   tranhChap,
 };
+// Toa do tinh LUC BUILD, tat dinh (lib/do-thi-layout.mjs). Trang web chi ve, khong tinh: cung
+// du lieu thi cung hinh, o moi may, moi lan mo. Cong check-do-thi.mjs tinh lai va doi chieu.
+const toaDo = new Map(boTri(nodes, edges).map((p) => [p.id, p]));
+for (const n of nodes) { const p = toaDo.get(n.id); n.x = p.x; n.y = p.y; }
 writeFileSync(join(LIB, 'hub-graph.json'), JSON.stringify({ meta: graphMeta, nodes, edges }, null, 2) + '\n', 'utf8');
 
 // ── Tim kiem ────────────────────────────────────────────────────────────────

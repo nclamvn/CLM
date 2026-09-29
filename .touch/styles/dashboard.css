@@ -613,3 +613,38 @@
 .dash-shell .pf-ctx__span--xau { background: var(--fill-red-subtle); border-bottom-color: var(--color-accent-red); }
 .dash-shell .pf-ctx__legend { font-size: 11px; line-height: 16px; color: var(--color-text-muted); margin: var(--space-1_5) 0 0; }
 .dash-shell .pf-ev__warn { margin-top: var(--space-1_5); font-size: 12px; line-height: 17px; color: var(--color-accent-red); border: var(--stroke-hairline) solid var(--a-red-45); background: var(--fill-red-subtle); border-radius: var(--radius-sm); padding: var(--space-1) var(--space-2); }
+
+/* ---------- Do thi cung cau (P2a, 29/09/2026) ---------- */
+.dash-shell .dt-wrap { padding: var(--space-3); }
+.dash-shell .dt-head { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-2_5); }
+.dash-shell .dt-stats { display: flex; gap: var(--space-3_5); font-size: 13px; color: var(--color-text-secondary); }
+.dash-shell .dt-stats b { font-size: 20px; color: var(--color-text-primary); font-variant-numeric: tabular-nums; margin-right: var(--space-1); }
+.dash-shell .dt-filters { display: flex; gap: var(--space-1_5); flex-wrap: wrap; }
+.dash-shell .dt-chip { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-1_5); font-size: 12px; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-full); padding: var(--space-1) var(--space-2_5); }
+.dash-shell .dt-chip[aria-pressed="false"] { opacity: 0.45; }
+.dash-shell .dt-chip:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .dt-chip__mk { width: 14px; height: 2px; background: var(--color-text-muted); }
+.dash-shell .dt-chip--match_da_ky .dt-chip__mk { background: var(--color-accent-red); height: 3px; }
+.dash-shell .dt-chip--cung_san_pham .dt-chip__mk { background: var(--color-accent-cyan); }
+.dash-shell .dt-chip--tu_choi .dt-chip__mk { background: repeating-linear-gradient(90deg, var(--color-text-secondary) 0 3px, transparent 3px 6px); }
+.dash-shell .dt-canvas { position: relative; width: 100%; border-radius: var(--radius-md); background: radial-gradient(60% 60% at 50% 50%, var(--a-blue-06), transparent 70%), var(--color-bg-canvas); border: var(--stroke-hairline) solid var(--color-border-muted); overflow: hidden; }
+.dash-shell .dt-canvas canvas { display: block; cursor: default; }
+.dash-shell .dt-canvas canvas.is-tro { cursor: pointer; }
+.dash-shell .dt-tip { position: absolute; top: var(--space-2_5); left: var(--space-2_5); max-width: 360px; pointer-events: none; background: var(--color-bg-surface-2); border: var(--stroke-hairline) solid var(--color-border-strong); border-radius: var(--radius-sm); padding: var(--space-2) var(--space-2_5); box-shadow: var(--shadow-float); }
+.dash-shell .dt-tip__loai { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .dt-tip__ten { font-size: 13px; color: var(--color-text-primary); margin-top: 2px; }
+.dash-shell .dt-tip__phu { font-size: 11px; color: var(--color-text-muted); margin-top: var(--space-1); }
+.dash-shell .dt-legend { display: flex; gap: var(--space-3_5); flex-wrap: wrap; font-size: 12px; color: var(--color-text-secondary); margin-top: var(--space-2_5); }
+.dash-shell .dt-mk { display: inline-block; width: 9px; height: 9px; margin-right: var(--space-1_5); vertical-align: -1px; border-radius: var(--radius-full); }
+.dash-shell .dt-mk--dv { background: var(--color-accent-blue); }
+.dash-shell .dt-mk--nc { background: var(--color-accent-purple); border-radius: var(--radius-xs); transform: rotate(45deg); }
+.dash-shell .dt-mk--nh { border: var(--stroke-emphasis) solid var(--color-accent-amber); }
+.dash-shell .dt-mk--rtr { border: var(--stroke-emphasis) solid var(--color-accent-red); }
+.dash-shell .dt-note { font-size: 12px; line-height: 18px; color: var(--color-text-muted); margin: var(--space-2) 0 0; }
+.dash-shell .dt-list { margin-top: var(--space-2_5); font-size: 12px; color: var(--color-text-secondary); }
+.dash-shell .dt-list summary { cursor: pointer; }
+.dash-shell .dt-list__grp { margin-top: var(--space-2); }
+.dash-shell .dt-list__h { font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 11px; color: var(--color-text-muted); margin-bottom: var(--space-1); }
+.dash-shell .dt-list ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: var(--space-4); }
+.dash-shell .dt-list li { break-inside: avoid; padding: 2px 0; }
+.dash-shell .dt-list__n { color: var(--color-text-muted); font-size: 11px; }

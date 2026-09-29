@@ -249,6 +249,8 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # 29/09/2026: tach ghi chu khoi nguon cho lop phu lo ra 5 claim ma bang chung chi la nhan
   # "## Ten don vi" cua chinh minh. check_spans.py khong thay vi no chi hoi chuoi co trong file.
   chay .touch      ghi_chu_ban_chup "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-ghi-chu-ban-chup.mjs
+  # Toa do man Do thi cung cau tinh luc build; cong tinh lai bang chinh ham giao dien (29/09/2026).
+  chay .touch      do_thi           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-do-thi.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -277,6 +279,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_so_sinh     "$TOUCH" 'BITE SO SINH'      node scripts/bite-so-sinh.mjs
     chay .touch    rang_lop_phu     "$TOUCH" 'BITE LOP PHU'      node scripts/bite-lop-phu.mjs
     chay .touch    rang_ghi_chu     "$TOUCH" 'BITE GHI CHU'      node scripts/bite-ghi-chu.mjs
+    chay .touch    rang_do_thi      "$TOUCH" 'BITE DO THI'       node scripts/bite-do-thi.mjs
   fi
 fi
 
