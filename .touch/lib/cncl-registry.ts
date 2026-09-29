@@ -39,9 +39,9 @@ export const cnclMeta: CnclMeta = {
   "nhomPhu": 10,
   "generatedAt": "2026-09-29",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-09-29 13:10: 62/62 xanh",
+  "gate": "chuỗi cổng 2026-09-29 14:03: 62/62 xanh",
   "chuoiCong": {
-    "luc": "2026-09-29T13:10:56+0700",
+    "luc": "2026-09-29T14:03:22+0700",
     "cheDo": "day_du",
     "tong": 62,
     "xanh": 62,

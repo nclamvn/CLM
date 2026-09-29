@@ -14,7 +14,7 @@ export default function DoThiPage() {
     <>
       <DashTopBar
         title="Đồ thị cung cầu"
-        subtitle={`Đơn vị, nhu cầu và nhóm công nghệ chiến lược nối bằng câu nguồn và chữ ký · sinh ngày ${m.generatedAt}`}
+        subtitle={`Cung, cầu và nhóm công nghệ chiến lược, nối bằng câu nguồn và chữ ký · dữ liệu ${m.generatedAt}`}
       />
       <div className="dash-content">
         <DoThiCungCau />

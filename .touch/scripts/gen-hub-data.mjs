@@ -30,7 +30,8 @@ import { fileURLToPath } from 'node:url';
 import { goc } from './goc.mjs';
 import { khoaTim } from './viet.mjs';
 import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
-import { boTri } from '../lib/do-thi-layout.mjs';
+import { dungBanDo, LOAI_CHEO } from '../lib/do-thi-ban-do.mjs';
+import { dungMaTran } from '../lib/do-thi-ma-tran.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -68,16 +69,27 @@ for (const u of reg.units) {
   u.nhoms.forEach((n, i) => nhomDaDung.set(n, u.nhomLabels[i]));
 }
 
-// San pham -> nhom, tu chieu CAU, giu nguon. Hai nhom khac nhau cho mot san pham = tranh chap.
+// San pham -> NHOM CONG NGHE. SUA 29/09/2026: ban truoc doc truong `group` cua chieu CAU, nhung
+// truong do la NHOM SAN PHAM (1 = da co thi truong, 2 = con lai) chu KHONG phai nhom cong nghe
+// 1..10. Ca 30 nhu cau bi gan vao nhom cong nghe 1 va 2, va man do thi ve sai tu 29/09 den luc
+// sua. Lo ra khi dung bo cuc hai truc: 35/42 canh "cung san pham" noi hai nhom khac nhau.
+// QD 21/2026 KHONG noi san pham voi nhom cong nghe. Anh xa duy nhat hop le la bang
+// mapping_sp_nhom.yaml do NGUOI GAC CONG duyet (16/08/2026), va may chi nhan dong da_duyet.
+const MAP_SP = env('CLM_KHO_MATCH') ? join(env('CLM_KHO_MATCH'), 'domains', 'cncl_match', 'mapping_sp_nhom.yaml')
+  : goc('CaoLocMatch', 'domains', 'cncl_match', 'mapping_sp_nhom.yaml');
+if (!MAP_SP || !existsSync(MAP_SP)) { console.error('KHONG THAY mapping_sp_nhom.yaml (anh xa san pham -> nhom da duyet).'); process.exit(2); }
 const nhomCuaSp = new Map();
 const tranhChap = [];
-for (const c of demClaims.filter((x) => x.field === 'ten_san_pham' && x.group != null)) {
-  const sp = String(c.id).replace(/^CNCL-P/, '');
-  const cu = nhomCuaSp.get(sp);
-  if (cu && cu.group !== c.group) { cu.tranhChap = true; continue; }
-  if (!cu) nhomCuaSp.set(sp, { group: c.group, span: c.evidence_span, snapshot: c.snapshot, tranhChap: false });
+const nguoiDuyet = (readFileSync(MAP_SP, 'utf8').match(/nguoi duyet: ([^(\n]+)/) || [])[1]?.trim() ?? null;
+const ngayDuyet = (readFileSync(MAP_SP, 'utf8').match(/DA DUYET (\d{2}\/\d{2}\/\d{4})/) || [])[1] ?? null;
+for (const l of readFileSync(MAP_SP, 'utf8').split('\n')) {
+  const m = l.match(/^\s+CNCL-P(\d+):\s*\{nhom:\s*(\d+),\s*ly_do:\s*"([^"]*)",\s*trang_thai:\s*(\w+)\}/);
+  if (!m) continue;
+  const [, sp, nh, lyDo, tt] = m;
+  if (tt !== 'da_duyet') continue; // chua duyet thi de trong, khong doan
+  if (nhomCuaSp.has(sp) && nhomCuaSp.get(sp).group !== nh) { tranhChap.push(`san pham ${sp}`); continue; }
+  nhomCuaSp.set(sp, { group: nh, lyDo, tranhChap: false });
 }
-for (const [sp, v] of nhomCuaSp) if (v.tranhChap) tranhChap.push(`san pham ${sp}`);
 
 for (const n of reg.needs) {
   const sp = n.id.replace(/^CNCL-P/, '');
@@ -124,7 +136,8 @@ for (const u of reg.units) {
 for (const n of nodes.filter((x) => x.kind === 'nhu_cau' && x.nhom)) {
   const g = nhomCuaSp.get(n.maSp);
   edges.push({ id: `e:${n.id}>nh:${n.nhom}`, kind: 'thuoc_nhom', source: n.id, target: `nh:${n.nhom}`,
-    bangChung: { span: g.span, href: `/evidence/${String(g.snapshot).replace(/\.(html|md)$/, '.txt')}`, tier: 'A', source: 'chieu CAU' } });
+    // Khong co cau nguon: QD 21 khong noi san pham voi nhom. Can cu la QUYET DINH ANH XA da duyet.
+    canCu: { loai: 'anh_xa_da_duyet', lyDo: g.lyDo, nguoiDuyet, ngayDuyet, tep: 'CaoLocMatch/domains/cncl_match/mapping_sp_nhom.yaml' } });
 }
 for (const m of mat.signedMatches) {
   edges.push({ id: `e:${m.id}`, kind: 'match_da_ky', source: `dv:${m.supplyId}`, target: `nc:${m.demandId}`,
@@ -154,11 +167,15 @@ const graphMeta = {
   nhuCauChuaCoNhom: nodes.filter((n) => n.kind === 'nhu_cau' && !n.nhom).length,
   tranhChap,
 };
-// Toa do tinh LUC BUILD, tat dinh (lib/do-thi-layout.mjs). Trang web chi ve, khong tinh: cung
-// du lieu thi cung hinh, o moi may, moi lan mo. Cong check-do-thi.mjs tinh lai va doi chieu.
-const toaDo = new Map(boTri(nodes, edges).map((p) => [p.id, p]));
-for (const n of nodes) { const p = toaDo.get(n.id); n.x = p.x; n.y = p.y; }
-writeFileSync(join(LIB, 'hub-graph.json'), JSON.stringify({ meta: graphMeta, nodes, edges }, null, 2) + '\n', 'utf8');
+// Bo cuc tinh LUC BUILD, tat dinh: ban do lanh tho nhom (lib/do-thi-ban-do.mjs) va thu tu ma
+// tran (lib/do-thi-ma-tran.mjs). Trang web chi ve, khong tinh. Cong check-do-thi.mjs tinh lai,
+// doi chieu tung nut va giu ngan sach giao canh.
+const banDo = dungBanDo(nodes, edges);
+const toaDo = new Map(banDo.nodes.map((p) => [p.id, p]));
+for (const n of nodes) { const p = toaDo.get(n.id); n.x = p.x; n.y = p.y; n.lanhTho = p.lanhTho; if (p.lanhThoPhu) n.lanhThoPhu = p.lanhThoPhu; if (p.nhan) n.nhan = p.nhan; }
+const maTran = dungMaTran(nodes, edges.filter((e) => LOAI_CHEO.includes(e.kind)), banDo.thuTuLanhTho);
+const boCuc = { rong: banDo.rong, cao: banDo.cao, thamSo: banDo.thamSo, thuTuLanhTho: banDo.thuTuLanhTho, lanhTho: banDo.lanhTho, chiSo: banDo.chiSo };
+writeFileSync(join(LIB, 'hub-graph.json'), JSON.stringify({ meta: graphMeta, boCuc, maTran, nodes, edges }, null, 2) + '\n', 'utf8');
 
 // ── Tim kiem ────────────────────────────────────────────────────────────────
 const docs = [
@@ -194,6 +211,7 @@ const ghiChu = spanChiTrongGhiChu(moiCauNguon(reg, mat), docBanChup).filter((x) 
 writeFileSync(join(LIB, 'hub-ghi-chu.json'), JSON.stringify({ meta: { generatedAt: NOW, so: ghiChu.length }, ds: ghiChu }, null, 2) + '\n', 'utf8');
 
 console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} tai lieu tim · ${events.length} su kien`);
+console.log(`  bo cuc: ${boCuc.chiSo.giaoCanh} giao canh, ${boCuc.chiSo.canhXuyenNut} canh xuyen nut tren ${boCuc.chiSo.soCanhVe} canh cung-cau · ma tran dao ${maTran.chiSo.daoBanDau} -> ${maTran.chiSo.daoSauSap}`);
 console.log(`  canh: ${Object.entries(graphMeta.canh).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 if (spNgoaiDanhMuc.length) console.log(`  CHU Y: ${spNgoaiDanhMuc.length} ma san pham khong khop nhu cau nao: ${spNgoaiDanhMuc.join(', ')}`);
 if (thieuNguon) console.log(`  CHU Y: ${thieuNguon} canh bi BO vi khong tim thay claim lam nguon`);

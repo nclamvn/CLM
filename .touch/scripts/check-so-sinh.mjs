@@ -15,7 +15,9 @@
  *      app/, components/, scripts/, lib/*.ts. Dong chu thich duoc bo qua.
  *   2. DEM LAI: meta cua lib/cncl-registry.json, lib/hub-graph.json, lib/hub-events.json,
  *      lib/hub-search.json phai bang so dem lai tu chinh mang du lieu trong file. Moi canh do
- *      thi phai tro toi nut co that, va canh "thuoc_nhom" / "cung_san_pham" phai co span.
+ *      thi phai tro toi nut co that, va canh "thuoc_nhom" / "cung_san_pham" phai co span. Ngoai le
+ *      duy nhat (29/09/2026): canh nhu cau -> nhom, vi QD 21 khong noi san pham voi nhom; can cu la
+ *      anh xa DA DUYET (mapping_sp_nhom.yaml) co ten nguoi duyet.
  *   3. KET QUA CHUOI CONG KHONG DUOC BIA: meta.chuoiCong phai khop file
  *      CaoLocMatch/out/ket_qua_chuoi.json neu cung thoi diem; khong co file thi meta phai
  *      noi la chua co (chuoiCong null). Meta khong duoc moi hon file.
@@ -88,7 +90,10 @@ ss('graph.nut.don_vi vs registry', graph.meta.nut.don_vi, reg.units.length);
 const coNut = new Set(graph.nodes.map((n) => n.id));
 for (const e of graph.edges) {
   if (!coNut.has(e.source) || !coNut.has(e.target)) vi.push(`CANH_TREO: ${e.id}`);
-  if ((e.kind === 'thuoc_nhom' || e.kind === 'cung_san_pham') && !(e.bangChung && e.bangChung.span)) {
+  // Canh nhu cau -> nhom khong co cau nguon (QD 21 khong noi hai danh sach); can cu la anh xa DA
+  // DUYET co ten nguoi duyet. Moi canh khac phai co cau nguon.
+  const coCanCu = e.canCu && e.canCu.loai === 'anh_xa_da_duyet' && e.canCu.nguoiDuyet && e.source.startsWith('nc:');
+  if ((e.kind === 'thuoc_nhom' || e.kind === 'cung_san_pham') && !(e.bangChung && e.bangChung.span) && !coCanCu) {
     vi.push(`CANH_KHONG_NGUON: ${e.id}`);
   }
   if (e.kind === 'match_da_ky' && !(e.signoff && e.signoff.by)) vi.push(`MATCH_KHONG_CHU_KY: ${e.id}`);

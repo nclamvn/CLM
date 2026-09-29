@@ -614,33 +614,116 @@
 .dash-shell .pf-ctx__legend { font-size: 11px; line-height: 16px; color: var(--color-text-muted); margin: var(--space-1_5) 0 0; }
 .dash-shell .pf-ev__warn { margin-top: var(--space-1_5); font-size: 12px; line-height: 17px; color: var(--color-accent-red); border: var(--stroke-hairline) solid var(--a-red-45); background: var(--fill-red-subtle); border-radius: var(--radius-sm); padding: var(--space-1) var(--space-2); }
 
-/* ---------- Do thi cung cau (P2a, 29/09/2026) ---------- */
-.dash-shell .dt-wrap { padding: var(--space-3); }
-.dash-shell .dt-head { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-2_5); }
-.dash-shell .dt-stats { display: flex; gap: var(--space-3_5); font-size: 13px; color: var(--color-text-secondary); }
-.dash-shell .dt-stats b { font-size: 20px; color: var(--color-text-primary); font-variant-numeric: tabular-nums; margin-right: var(--space-1); }
-.dash-shell .dt-filters { display: flex; gap: var(--space-1_5); flex-wrap: wrap; }
-.dash-shell .dt-chip { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-1_5); font-size: 12px; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-full); padding: var(--space-1) var(--space-2_5); }
-.dash-shell .dt-chip[aria-pressed="false"] { opacity: 0.45; }
-.dash-shell .dt-chip:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
-.dash-shell .dt-chip__mk { width: 14px; height: 2px; background: var(--color-text-muted); }
-.dash-shell .dt-chip--match_da_ky .dt-chip__mk { background: var(--color-accent-red); height: 3px; }
-.dash-shell .dt-chip--cung_san_pham .dt-chip__mk { background: var(--color-accent-cyan); }
-.dash-shell .dt-chip--tu_choi .dt-chip__mk { background: repeating-linear-gradient(90deg, var(--color-text-secondary) 0 3px, transparent 3px 6px); }
-.dash-shell .dt-canvas { position: relative; width: 100%; border-radius: var(--radius-md); background: radial-gradient(60% 60% at 50% 50%, var(--a-blue-06), transparent 70%), var(--color-bg-canvas); border: var(--stroke-hairline) solid var(--color-border-muted); overflow: hidden; }
-.dash-shell .dt-canvas canvas { display: block; cursor: default; }
-.dash-shell .dt-canvas canvas.is-tro { cursor: pointer; }
-.dash-shell .dt-tip { position: absolute; top: var(--space-2_5); left: var(--space-2_5); max-width: 360px; pointer-events: none; background: var(--color-bg-surface-2); border: var(--stroke-hairline) solid var(--color-border-strong); border-radius: var(--radius-sm); padding: var(--space-2) var(--space-2_5); box-shadow: var(--shadow-float); }
-.dash-shell .dt-tip__loai { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
-.dash-shell .dt-tip__ten { font-size: 13px; color: var(--color-text-primary); margin-top: 2px; }
-.dash-shell .dt-tip__phu { font-size: 11px; color: var(--color-text-muted); margin-top: var(--space-1); }
-.dash-shell .dt-legend { display: flex; gap: var(--space-3_5); flex-wrap: wrap; font-size: 12px; color: var(--color-text-secondary); margin-top: var(--space-2_5); }
-.dash-shell .dt-mk { display: inline-block; width: 9px; height: 9px; margin-right: var(--space-1_5); vertical-align: -1px; border-radius: var(--radius-full); }
-.dash-shell .dt-mk--dv { background: var(--color-accent-blue); }
-.dash-shell .dt-mk--nc { background: var(--color-accent-purple); border-radius: var(--radius-xs); transform: rotate(45deg); }
-.dash-shell .dt-mk--nh { border: var(--stroke-emphasis) solid var(--color-accent-amber); }
-.dash-shell .dt-mk--rtr { border: var(--stroke-emphasis) solid var(--color-accent-red); }
-.dash-shell .dt-note { font-size: 12px; line-height: 18px; color: var(--color-text-muted); margin: var(--space-2) 0 0; }
+/* ---------- Do thi cung cau (dung lai 29/09/2026) ----------
+   Mau Okabe & Ito (an toan mu mau), toi da 3 sac mang nghia: cung xanh troi, cau cam, match da ky
+   do son. Moi thu khac la xam trung tinh. Hinh dang lap lai y nghia (tron/thoi/rong ruot). */
+.dash-shell .dt2 {
+  --dt-cung: #56B4E9; --dt-cau: #E69F00; --dt-match: #D55E00;
+  --dt-canh: rgba(148, 163, 184, 0.46); --dt-vung-sang: rgba(148, 163, 184, 0.085); --dt-vung-toi: rgba(148, 163, 184, 0.02);
+  --dt-vien: rgba(148, 163, 184, 0.22); --dt-nen: #070d1a;
+  padding: var(--space-3);
+}
+.dash-shell .dt2-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-3); }
+.dash-shell .dt2-kpi { display: flex; gap: var(--space-5, 28px); margin: 0; }
+.dash-shell .dt2-kpi div { display: flex; flex-direction: column-reverse; gap: 2px; }
+.dash-shell .dt2-kpi dt { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .dt2-kpi dd { margin: 0; font-size: 30px; line-height: 1; font-weight: 600; letter-spacing: -0.02em; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+/* Okabe & Ito: khong dung chu do tren nen toi. So match giu mau chu chinh, danh dau bang vach son. */
+.dash-shell .dt2-kpi .dt2-kpi--match { display: flex; align-items: center; gap: 8px; }
+.dash-shell .dt2-kpi .dt2-kpi--match i { width: 4px; height: 24px; border-radius: 2px; background: var(--dt-match); }
+.dash-shell .dt2-kpi .dt2-kpi--trong { color: var(--dt-cau); }
+.dash-shell .dt2-ctrl { display: flex; gap: var(--space-2_5); align-items: center; flex-wrap: wrap; }
+.dash-shell .dt2-seg { display: inline-flex; padding: 3px; border-radius: var(--radius-full); border: var(--stroke-hairline) solid var(--color-border-subtle); background: var(--color-bg-surface-1); }
+.dash-shell .dt2-seg button { all: unset; cursor: pointer; font-size: 12px; font-weight: 600; padding: 5px 14px; border-radius: var(--radius-full); color: var(--color-text-secondary); transition: background 180ms ease, color 180ms ease; }
+.dash-shell .dt2-seg button[aria-selected="true"] { background: var(--color-bg-surface-3, #13213f); color: var(--color-text-primary); box-shadow: inset 0 0 0 1px var(--color-border-strong); }
+.dash-shell .dt2-seg button:focus-visible, .dash-shell .dt2-chip:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .dt2-filters { display: flex; gap: var(--space-1_5); flex-wrap: wrap; }
+.dash-shell .dt2-chip { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-1_5); font-size: 12px; color: var(--color-text-secondary); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-full); padding: 4px 11px; }
+.dash-shell .dt2-chip b { color: var(--color-text-primary); font-variant-numeric: tabular-nums; font-weight: 600; }
+.dash-shell .dt2-chip[aria-pressed="false"] { opacity: 0.4; }
+.dash-shell .dt2-chip__mk { width: 16px; height: 2px; background: var(--dt-canh); }
+.dash-shell .dt2-chip--match_da_ky .dt2-chip__mk { background: var(--dt-match); height: 3px; }
+.dash-shell .dt2-chip--tu_choi .dt2-chip__mk { background: repeating-linear-gradient(90deg, var(--color-text-secondary) 0 3px, transparent 3px 6px); }
+
+.dash-shell .dt2-stage { position: relative; border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-muted);
+  background: radial-gradient(70% 60% at 50% 45%, rgba(47, 107, 255, 0.07), transparent 72%), var(--dt-nen); overflow: hidden; }
+.dash-shell .dt2-stage--ma_tran { padding: var(--space-3) var(--space-2_5); }
+.dash-shell .dt2-svg { display: block; width: 100%; height: auto; font-family: var(--font-ui); }
+.dash-shell .dt2-mt { max-width: 860px; margin: 0 auto; }
+
+/* Lanh tho */
+.dash-shell .dt2-lt__vien { stroke: var(--dt-vien); stroke-width: 1; transition: opacity 220ms ease; }
+.dash-shell .dt2-lt--null .dt2-lt__vien { stroke-dasharray: 3 4; }
+.dash-shell .dt2-lt__nhan text { font-size: 12.5px; font-weight: 500; fill: var(--color-text-secondary); letter-spacing: 0.01em; }
+.dash-shell .dt2-lt__so { font-weight: 700; fill: var(--color-text-primary); font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+.dash-shell .dt2-lt__nhan .dt2-lt__dem { font-size: 10.5px; fill: var(--color-text-muted); font-weight: 400; }
+.dash-shell .dt2-lt { transition: opacity 220ms ease; }
+.dash-shell .dt2-lt.is-mo { opacity: 0.25; }
+
+/* Canh */
+.dash-shell .dt2-canh { stroke: var(--dt-canh); stroke-width: 1.1; stroke-linecap: round; transition: opacity 200ms ease; }
+.dash-shell .dt2-canh--match_da_ky { stroke: var(--dt-match); stroke-width: 2.6; }
+.dash-shell .dt2-canh--tu_choi { stroke: var(--color-text-secondary); stroke-dasharray: 3 3.5; stroke-width: 1.2; }
+.dash-shell .dt2-canh.is-mo { opacity: 0.08; }
+
+/* Nut */
+.dash-shell .dt2-nut { cursor: pointer; transition: opacity 200ms ease; }
+.dash-shell .dt2-nut.is-mo { opacity: 0.12; }
+.dash-shell .dt2-nut__vung { fill: transparent; }
+.dash-shell .dt2-nut--don_vi .dt2-nut__hinh { fill: var(--dt-cung); stroke: var(--dt-nen); stroke-width: 1.5; }
+.dash-shell .dt2-nut--nhu_cau .dt2-nut__hinh { fill: var(--dt-cau); stroke: var(--dt-nen); stroke-width: 1.5; }
+.dash-shell .dt2-nut--nhu_cau.is-trong .dt2-nut__hinh { fill: var(--dt-nen); stroke: var(--dt-cau); stroke-width: 1.6; }
+.dash-shell .dt2-nut.is-tro .dt2-nut__hinh { stroke: var(--color-text-primary); stroke-width: 2; }
+.dash-shell .dt2-nut__rtr { fill: none; stroke: var(--color-text-secondary); stroke-width: 1.2; stroke-dasharray: 2 2.5; }
+.dash-shell .dt2-nut__ten { font-size: 11px; font-weight: 500; fill: var(--color-text-primary); paint-order: stroke; stroke: var(--dt-nen); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.dash-shell .dt2-nut__ma { font-size: 9.5px; font-weight: 600; fill: var(--dt-cau); letter-spacing: 0.03em; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: var(--dt-nen); stroke-width: 3px; pointer-events: none; }
+.dash-shell .dt2-nut.is-trong .dt2-nut__ma { fill: var(--color-text-muted); }
+
+/* Ma tran */
+.dash-shell .dt2-mt__nen { fill: transparent; stroke: rgba(148, 163, 184, 0.07); stroke-width: 0.6; }
+.dash-shell .dt2-mt__khoi { fill: rgba(148, 163, 184, 0.06); stroke: var(--dt-vien); stroke-width: 0.8; pointer-events: none; }
+.dash-shell .dt2-mt__dai { fill: rgba(148, 163, 184, 0.08); rx: 3; }
+.dash-shell .dt2-mt__dai-so { font-size: 9px; font-weight: 700; fill: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.dash-shell .dt2-mt__tieu { fill: rgba(86, 180, 233, 0.08); pointer-events: none; }
+.dash-shell .dt2-mt__hang, .dash-shell .dt2-mt__cot { font-size: 10.5px; fill: var(--color-text-secondary); cursor: pointer; }
+.dash-shell .dt2-mt__cot { font-size: 9.5px; font-weight: 600; fill: var(--dt-cau); }
+.dash-shell .dt2-mt__cot.is-trong { fill: var(--color-text-muted); }
+.dash-shell .dt2-mt__hang.is-tro, .dash-shell .dt2-mt__cot.is-tro { fill: var(--color-text-primary); font-weight: 700; }
+.dash-shell .dt2-mt__match { fill: var(--dt-match); }
+.dash-shell .dt2-mt__sp { fill: rgba(148, 163, 184, 0.75); }
+.dash-shell .dt2-mt__tc { stroke: var(--color-text-secondary); stroke-width: 1.3; }
+.dash-shell .dt2-mt__o.is-co { cursor: pointer; }
+
+/* Chu giai, tooltip */
+.dash-shell .dt2-tip { position: absolute; transform: translate(14px, 14px); max-width: 340px; pointer-events: none; background: rgba(10, 18, 36, 0.94); backdrop-filter: blur(6px);
+  border: var(--stroke-hairline) solid var(--color-border-strong); border-radius: var(--radius-sm); padding: var(--space-2) var(--space-2_5); box-shadow: var(--shadow-float); z-index: 2; }
+.dash-shell .dt2-tip__loai { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .dt2-tip__ten { font-size: 13px; line-height: 18px; color: var(--color-text-primary); margin-top: 3px; }
+.dash-shell .dt2-tip__ten--phu { color: var(--color-text-secondary); font-size: 12px; }
+.dash-shell .dt2-tip__phu { font-size: 11px; line-height: 16px; color: var(--color-text-muted); margin-top: var(--space-1); }
+.dash-shell .dt2-foot { display: grid; gap: var(--space-2); margin-top: var(--space-2_5); }
+.dash-shell .dt2-legend { display: flex; gap: var(--space-3_5); flex-wrap: wrap; font-size: 12px; color: var(--color-text-secondary); }
+.dash-shell .dt2-mk { display: inline-block; width: 9px; height: 9px; margin-right: var(--space-1_5); vertical-align: -1px; border-radius: 50%; }
+.dash-shell .dt2-mk--dv { background: var(--dt-cung); }
+.dash-shell .dt2-mk--nc { background: var(--dt-cau); border-radius: 1px; transform: rotate(45deg) scale(0.85); }
+.dash-shell .dt2-mk--trong { border: 1.5px solid var(--dt-cau); border-radius: 1px; transform: rotate(45deg) scale(0.85); }
+.dash-shell .dt2-mk--match { width: 16px; height: 3px; border-radius: 2px; background: var(--dt-match); vertical-align: 2px; }
+.dash-shell .dt2-mk--rtr { border: 1.2px dashed var(--color-text-secondary); }
+.dash-shell .dt2-method { font-size: 12px; line-height: 18px; color: var(--color-text-muted); margin: 0; max-width: 980px; }
+.dash-shell .dt2-method b { color: var(--color-text-secondary); font-weight: 600; }
+
+/* Vao man theo tang, mot lan (Heer & Robertson 2007). Khong chuyen dong lien tuc. */
+@media (prefers-reduced-motion: no-preference) {
+  .dash-shell .dt2-view { animation: dt2-hien 260ms ease-out both; }
+  .dash-shell .dt2-map .dt2-tang--vung { animation: dt2-hien 420ms ease-out both; }
+  .dash-shell .dt2-map .dt2-tang--nut { animation: dt2-hien 420ms ease-out 260ms both; }
+  .dash-shell .dt2-map .dt2-canh:not(.dt2-canh--tu_choi) { stroke-dasharray: 1; stroke-dashoffset: 1; animation: dt2-ve 560ms cubic-bezier(.4,0,.2,1) 520ms forwards; }
+  .dash-shell .dt2-map .dt2-canh--match_da_ky { animation-delay: 900ms; }
+  .dash-shell .dt2-map .dt2-canh--tu_choi { animation: dt2-hien 300ms ease-out 900ms both; }
+}
+@keyframes dt2-hien { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dt2-ve { to { stroke-dashoffset: 0; } }
+
 .dash-shell .dt-list { margin-top: var(--space-2_5); font-size: 12px; color: var(--color-text-secondary); }
 .dash-shell .dt-list summary { cursor: pointer; }
 .dash-shell .dt-list__grp { margin-top: var(--space-2); }
