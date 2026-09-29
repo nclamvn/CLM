@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "6f98d2a",
+    "sha": "76e77e3",
     "ngay": "2026-09-29"
   },
-  "tongCommit": 174,
+  "tongCommit": 175,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 16,
+      "commitSauGop": 17,
       "cuoi": {
-        "sha": "be90567",
+        "sha": "76e77e3",
         "ngay": "2026-09-29",
-        "tieuDe": "Cau noi mot chieu kernel -> vong tu chay: kernel chi goi y URL, khong bao gio cung cap su that"
+        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
       },
-      "soTep": 135
+      "soTep": 136
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -34,11 +34,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 2,
-      "commitSauGop": 2,
+      "commitSauGop": 3,
       "cuoi": {
-        "sha": "c6e8b5e",
+        "sha": "76e77e3",
         "ngay": "2026-09-29",
-        "tieuDe": "M5 Dong thoi cuoc: truc thoi gian bon lan + mat do + dong tin; ngay chinh sach doc tu cau nguon, khong tu ten ban chup"
+        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
       },
       "soTep": 18
     },
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 31,
+      "commitSauGop": 32,
       "cuoi": {
-        "sha": "d3f78a8",
+        "sha": "76e77e3",
         "ngay": "2026-09-29",
-        "tieuDe": "Trang Kho ma sinh tu git: bo bang ghi tay nam kho cu (HEAD thang 7-8), moi so la lenh git tai commit ghi lai"
+        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
       },
       "soTep": 123
     },
@@ -68,21 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 28,
+      "commitSauGop": 29,
       "cuoi": {
-        "sha": "6f98d2a",
+        "sha": "76e77e3",
         "ngay": "2026-09-29",
-        "tieuDe": "Sua rang 8 cua bite-mo-dau: tiem vo dieu kien, khong con lang le thanh \"khong lam gi\" trong CI"
+        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
       },
       "soTep": 413
     }
   ],
   "oTheoKho": {
-    "CNCLData": 24,
+    "CNCLData": 25,
+    "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 17,
     ".touch": 35
   },
   "ganDay": [
+    {
+      "sha": "76e77e3",
+      "ngay": "2026-09-29",
+      "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
+    },
     {
       "sha": "6f98d2a",
       "ngay": "2026-09-29",
@@ -127,11 +133,6 @@
       "sha": "5427a2f",
       "ngay": "2026-09-29",
       "tieuDe": "Do thi cung cau dung lai: ban do lanh tho nhom + ma tran, 0 giao canh; sua anh xa nhu cau -> nhom"
-    },
-    {
-      "sha": "170861e",
-      "ngay": "2026-09-29",
-      "tieuDe": "P2a man Do thi cung cau: 84 nut, 129 canh, moi canh co nguon hoac chu ky"
     }
   ],
   "dong": [
