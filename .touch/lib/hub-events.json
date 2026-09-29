@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-29",
+    "soSuKien": 14,
+    "theoLoai": {
+      "match_da_ky": 11,
+      "tu_choi": 1,
+      "de_xuat_vong_tu_chay": 2
+    },
+    "hangCho": "2 dong"
+  },
+  "events": [
+    {
+      "ngay": "2026-09-28",
+      "kind": "de_xuat_vong_tu_chay",
+      "trangThai": "cho_duyet",
+      "donVi": "Tổng công ty Thiết bị điện Đông Anh",
+      "nhuCau": null,
+      "nhan": "nang_luc_mo_ta_2: Nghiên cứu, thiết kế, công nghệ chế tạo cuộn kháng bù ngang điện áp 500 kV",
+      "nguon": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+      "maHangCho": "HC-39613d1b6bed"
+    },
+    {
+      "ngay": "2026-09-28",
+      "kind": "de_xuat_vong_tu_chay",
+      "trangThai": "cho_duyet",
+      "donVi": "Tổng công ty Thiết bị điện Đông Anh",
+      "nhuCau": null,
+      "nhan": "bang_chung_nang_luc: EEMC phối hợp với Trường Điện - Điện tử, Đại học Bách khoa Hà Nội nghiên cứu, thiết kế và chế tạo một cuộn kháng bù ngang 500 kV, công suất 120 MVAr, đáp ứng tiêu chuẩn IEC 60076",
+      "nguon": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm",
+      "maHangCho": "HC-dc4dea764834"
+    },
+    {
+      "ngay": "2026-08-24",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "FPT Semiconductor",
+      "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
+      "nhan": "MATCH-0005: FPT Semiconductor ⇄ CNCL-P23",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "ROSTEK",
+      "nhuCau": "CNCL-P07 · nhu cầu quốc gia",
+      "nhan": "MATCH-0001: ROSTEK ⇄ CNCL-P07",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "nhuCau": "CNCL-P18 · nhu cầu quốc gia",
+      "nhan": "MATCH-0003: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ CNCL-P18",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Tập đoàn Viettel",
+      "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
+      "nhan": "MATCH-0004: Tập đoàn Viettel ⇄ CNCL-P23",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "CT Semiconductor",
+      "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
+      "nhan": "MATCH-0006: CT Semiconductor ⇄ CNCL-P23",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "VinBigData",
+      "nhuCau": "CNCL-P01 · nhu cầu quốc gia",
+      "nhan": "MATCH-0007: VinBigData ⇄ CNCL-P01",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Tập đoàn Viettel",
+      "nhuCau": "CNCL-P22 · nhu cầu quốc gia",
+      "nhan": "MATCH-0008: Tập đoàn Viettel ⇄ CNCL-P22",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "VNPT Technology",
+      "nhuCau": "CNCL-P06 · nhu cầu quốc gia",
+      "nhan": "MATCH-0009: VNPT Technology ⇄ CNCL-P06",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Tổng công ty Thiết bị điện Đông Anh",
+      "nhuCau": "CNCL-P20 · nhu cầu quốc gia",
+      "nhan": "MATCH-0010: Tổng công ty Thiết bị điện Đông Anh ⇄ CNCL-P20",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "nhuCau": "CNCL-P20 · nhu cầu quốc gia",
+      "nhan": "MATCH-0011: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ CNCL-P20",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "nhuCau": "CNCL-P17 · nhu cầu quốc gia",
+      "nhan": "MATCH-0012: Viện Hàn lâm Khoa học và Công nghệ Việt Nam ⇄ CNCL-P17",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-08-16",
+      "kind": "tu_choi",
+      "trangThai": "da_ky",
+      "donVi": "VNPT",
+      "nhuCau": "CNCL-P08 · nhu cầu quốc gia",
+      "nhan": "Từ chối: VNPT ⇄ CNCL-P08",
+      "by": "Lam Nguyen",
+      "lyDo": "Ca rac da biet: hai token khop la manh vun cua tu ghep, VNPT khong lam nen tang san xuat thong minh"
+    }
+  ]
+}

@@ -10,7 +10,17 @@
     "nhomPhu": 10,
     "generatedAt": "2026-09-29",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chay_het_cong.sh · 14 o xanh"
+    "gate": "chuỗi cổng 2026-09-29 12:12: 53/53 xanh",
+    "chuoiCong": {
+      "luc": "2026-09-29T12:12:50+0700",
+      "cheDo": "day_du",
+      "tong": 53,
+      "xanh": 53,
+      "do": 0,
+      "khongChay": 0,
+      "hoan": 0,
+      "dat": true
+    }
   },
   "units": [
     {

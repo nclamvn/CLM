@@ -18,7 +18,17 @@ export type CnclNeed = {
   tier: CnclTier; source: string; href: string; chinhThuc: boolean; tim: string;
 };
 
-export const cnclMeta = {
+export type CnclChuoiCong = {
+  luc: string; cheDo: string; tong: number; xanh: number; do: number;
+  khongChay: number; hoan: number; dat: boolean;
+};
+export type CnclMeta = {
+  units: number; claims: number; needs: number; sources: number; snapshots: number;
+  tierA: number; tierB: number; nhomPhu: number; generatedAt: string; frame: string;
+  gate: string; chuoiCong: CnclChuoiCong | null;
+};
+
+export const cnclMeta: CnclMeta = {
   "units": 44,
   "claims": 221,
   "needs": 30,
@@ -29,8 +39,18 @@ export const cnclMeta = {
   "nhomPhu": 10,
   "generatedAt": "2026-09-29",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chay_het_cong.sh · 14 o xanh"
-} as const;
+  "gate": "chuỗi cổng 2026-09-29 12:12: 53/53 xanh",
+  "chuoiCong": {
+    "luc": "2026-09-29T12:12:50+0700",
+    "cheDo": "day_du",
+    "tong": 53,
+    "xanh": 53,
+    "do": 0,
+    "khongChay": 0,
+    "hoan": 0,
+    "dat": true
+  }
+};
 
 export const cnclUnits: CnclUnit[] = [
   {

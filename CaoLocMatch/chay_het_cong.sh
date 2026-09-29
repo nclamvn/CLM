@@ -230,6 +230,12 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # day va khong cong nao bat duoc. O nay chay ca hai nhanh bang thu muc gia.
   chay .touch      goc_duong_dan    "$TOUCH" 'TU KIEM GOC'        node scripts/goc.mjs --tu-kiem
   chay .touch      sinh_du_lieu_web "$TOUCH" 'REGISTRY:|FAIL:'   node scripts/gen-cncl-data.mjs
+  # Lop xuat du lieu dung chung cho cac man moi (29/09/2026): do thi, tim kiem, su kien. Doc
+  # dau ra cua buoc tren nen phai chay SAU. Ngay sau no la cong so_sinh: moi so tren web phai
+  # dem lai duoc tu du lieu, va khong so cong nao duoc go tay nhu "14 o xanh" tung nam o day.
+  chay .touch      sinh_du_lieu_hub "$TOUCH" 'HUB:|FAIL'        node scripts/gen-hub-data.mjs
+  chay .touch      bo_dau_viet      "$TOUCH" 'OK:|FAIL'         node scripts/viet.mjs --tu-kiem
+  chay .touch      so_sinh          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-so-sinh.mjs
   # File tra cuu doc dau ra cua buoc tren, nen phai chay SAU. Dung o day thi moi lan
   # registry doi, ban tra cuu nguoi dung mo duoc dung lai trong cung mot luot, khong bao
   # gio lech voi du lieu that.
@@ -255,6 +261,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_tra_cuu     "$TOUCH" 'BITE TRA CUU'      node scripts/bite_tracuu.mjs
     chay .touch    rang_truong_hien "$TOUCH" 'BITE TRUONG HIEN'  node scripts/bite-truong-hien.mjs
     chay .touch    rang_phu_moc     "$TOUCH" 'BITE PHU MOC'      node scripts/bite-phu-moc.mjs
+    chay .touch    rang_so_sinh     "$TOUCH" 'BITE SO SINH'      node scripts/bite-so-sinh.mjs
   fi
 fi
 
@@ -281,6 +288,17 @@ fi
 
 # ── Bang ────────────────────────────────────────────────────────────────────
 TONG=$((XANH+DO+TREO+DA_HOAN))
+
+# Ghi KET QUA cua chinh lan chay nay ra file, de noi khac DOC chu khong GO TAY. Them 29/09/2026
+# sau khi tim thay trang web ghi cung "chay_het_cong.sh · 14 o xanh" trong khi chuoi da 49 o.
+# File nam trong out/ (git bo qua): moi moi truong chi thay ket qua cua chinh no. CI clone
+# sach thi khong co file, va trang web phai noi "chua co ket qua" chu khong duoc bia.
+mkdir -p "$CLM/out"
+{
+  printf '{"luc": "%s", "che_do": "%s", "tong": %d, "xanh": %d, "do": %d, "khong_chay": %d, "hoan": %d, "ds_hoan": "%s"}\n' \
+    "$(date '+%Y-%m-%dT%H:%M:%S%z')" "$([ "$NHANH" -eq 1 ] && echo nhanh || echo day_du)" \
+    "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN" "$(echo $DS_HOAN)"
+} > "$CLM/out/ket_qua_chuoi.json.tmp" && mv "$CLM/out/ket_qua_chuoi.json.tmp" "$CLM/out/ket_qua_chuoi.json"
 echo
 echo "CAOLOCMATCH · CHUOI CONG · $(date '+%d/%m/%Y %H:%M')"
 [ "$NHANH" -eq 1 ] && echo "che do --nhanh: DA BO QUA ba bo rang, ket qua nay YEU hon ban day du"

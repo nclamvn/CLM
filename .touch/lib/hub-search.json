@@ -1,0 +1,680 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-29",
+    "soTaiLieu": 84
+  },
+  "docs": [
+    {
+      "id": "dv:Công ty An ninh mạng Viettel",
+      "kind": "don_vi",
+      "ten": "Công ty An ninh mạng Viettel",
+      "moTa": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
+      "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
+      "khoa": "cong ty an ninh mang viettel 100% cac san pham nay deu duoc nghien cuu, phat trien hoan toan boi doi ngu nhan su cua cong ty nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Công ty cổ phần AVAC Việt Nam",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần AVAC Việt Nam",
+      "moTa": "AVAC ASF LIVE",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "cong ty co phan avac viet nam avac asf live nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+      "moTa": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC · do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
+      "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
+      "khoa": "cong ty co phan cong nghe an ninh mang quoc gia viet nam (ncs) tuong lua the he moi ncs next generation firewall, nen tang tinh bao an ninh mang ncs ti, an ninh mang diem cuoi ncs edr, trung tam giam sat an ninh mang ncs soc · do cac chuyen gia viet nam nghien cuu, sang tao va lam chu nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Công ty Cổ phần Giải pháp Năng lượng VinES",
+      "kind": "don_vi",
+      "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+      "moTa": "chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "cong ty co phan giai phap nang luong vines chuyen nghien cuu, san xuat pin xe dien va cac giai phap nang luong toan dien nhom 5 · nang luong va vat lieu"
+    },
+    {
+      "id": "dv:Công ty cổ phần Health Care Center",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần Health Care Center",
+      "moTa": "giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "cong ty co phan health care center giai phap ho tro sang loc suc khoe ban dau, huong toi canh bao som nguy co dot quy, benh tim mach, tieu duong va tang huyet ap nhom 3 · robot va tu dong hoa"
+    },
+    {
+      "id": "dv:Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+      "moTa": "NAVET-ASFVAC",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "cong ty co phan thuoc thu y trung uong navetco navet-asfvac nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty cổ phần VinMotion",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần VinMotion",
+      "moTa": "nghiên cứu, phát triển và thương mại hóa robot hình người · đã chính thức giới thiệu Motion thế hệ 2",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "cong ty co phan vinmotion nghien cuu, phat trien va thuong mai hoa robot hinh nguoi · da chinh thuc gioi thieu motion the he 2 nhom 3 · robot va tu dong hoa"
+    },
+    {
+      "id": "dv:Công ty cổ phần Xe lửa Dĩ An",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần Xe lửa Dĩ An",
+      "moTa": "sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
+      "nhan": "Nhóm 10 · Đường sắt tốc độ cao",
+      "khoa": "cong ty co phan xe lua di an sua chua va dong moi toa xe cac loai, san xuat phu tung toa xe va cac san pham co khi khac nhom 10 · duong sat toc do cao"
+    },
+    {
+      "id": "dv:Công ty Cổ phần Y Sinh Ngọc Bảo",
+      "kind": "don_vi",
+      "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+      "moTa": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "cong ty co phan y sinh ngoc bao “manh ghep hop so che tao tu vat lieu peek”, ma so 2502433dklh/byt-httb nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty TNHH Luyện kim Trần Hồng Quân",
+      "kind": "don_vi",
+      "ten": "Công ty TNHH Luyện kim Trần Hồng Quân",
+      "moTa": "sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
+      "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "khoa": "cong ty tnhh luyen kim tran hong quan san xuat thanh cong nhom thoi bang cong nghe cao, su dung cong nghe dien phan nhom voi cuong do dong dien 500 ka nhom 8 · bien, dai duong, long dat"
+    },
+    {
+      "id": "dv:CT Group",
+      "kind": "don_vi",
+      "ten": "CT Group",
+      "moTa": "ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "ct group ky duoc hop dong xuat khau toi 5.000 uav ra thi truong quoc te (han quoc) nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:CT Semiconductor",
+      "kind": "don_vi",
+      "ten": "CT Semiconductor",
+      "moTa": "triển khai giai đoạn 2 nhà máy chip ATP",
+      "nhan": "Nhóm 6 · Chip bán dẫn",
+      "khoa": "ct semiconductor trien khai giai doan 2 nha may chip atp nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:FECON",
+      "kind": "don_vi",
+      "ten": "FECON",
+      "moTa": "đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội · trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: Vỏ hầm và sản xuất vỏ hầm tại Việt Nam, Ứng dụng công nghệ cọc cừ bê tông dự ứng lực và Quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - Fiber Optic",
+      "nhan": "Nhóm 10 · Đường sắt tốc độ cao",
+      "khoa": "fecon don vi truc tiep van hanh robot dao ngam (tbm) so 1 metro nhon - ga ha noi · truc tiep nghien cuu va thu nghiem 3 de tai quan trong, duoc ap dung vao cong tac thi cong la: vo ham va san xuat vo ham tai viet nam, ung dung cong nghe coc cu be tong du ung luc va quan trac cong trinh ung dung cong nghe cam bien cap quang - fiber optic nhom 10 · duong sat toc do cao"
+    },
+    {
+      "id": "dv:FPT",
+      "kind": "don_vi",
+      "ten": "FPT",
+      "moTa": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng. · dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "fpt he sinh thai ai agents hien xu ly hon 17 trieu cuoc goi moi thang va tu dong hoa toi 98% yeu cau khach hang. · dong chip soc ai on edge tren tien trinh 28-32 nm cho he sinh thai thiet bi camera, drone, thiet bi bay khong nguoi lai (uav) nhom 1 · cong nghe so"
+    },
+    {
+      "id": "dv:FPT Semiconductor",
+      "kind": "don_vi",
+      "ten": "FPT Semiconductor",
+      "moTa": "doanh nghiệp Việt đầu tiên thiết kế và phát triển chip thương mại · thiết kế chip",
+      "nhan": "Nhóm 6 · Chip bán dẫn",
+      "khoa": "fpt semiconductor doanh nghiep viet dau tien thiet ke va phat trien chip thuong mai · thiet ke chip nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:GG Power",
+      "kind": "don_vi",
+      "ten": "GG Power",
+      "moTa": "tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "gg power to hop xuong san xuat 2 tang hien dai va trung tam r&d, duoc dau tu voi cong suat thiet ke 5gwh moi nam nhom 5 · nang luong va vat lieu"
+    },
+    {
+      "id": "dv:HTI Technology",
+      "kind": "don_vi",
+      "ten": "HTI Technology",
+      "moTa": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "hti technology horus p02 voi kha nang hoat dong yen lang va trang bi cam bien nhiet nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+      "kind": "don_vi",
+      "ten": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+      "moTa": "rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km",
+      "nhan": "Nhóm 10 · Đường sắt tốc độ cao",
+      "khoa": "lien danh tu van tedi - tricc - tedi south rut ngan chieu dai tuyen khoang 4km so voi phuong an trinh nam 2019 voi chieu dai tuyen chinh sau ra soat khoang 1.541 km nhom 10 · duong sat toc do cao"
+    },
+    {
+      "id": "dv:Masan High-Tech Materials",
+      "kind": "don_vi",
+      "ten": "Masan High-Tech Materials",
+      "moTa": "cung cấp các vật liệu công nghệ cao như vonfram, fluorspar cho chuỗi giá trị sản xuất chip toàn cầu",
+      "nhan": "",
+      "khoa": "masan high-tech materials cung cap cac vat lieu cong nghe cao nhu vonfram, fluorspar cho chuoi gia tri san xuat chip toan cau"
+    },
+    {
+      "id": "dv:MiSmart",
+      "kind": "don_vi",
+      "ten": "MiSmart",
+      "moTa": "giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "mismart giai quyet cac bai toan thuc te ve phun thuoc, gieo sa cho nha nong nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:MK Smart",
+      "kind": "don_vi",
+      "ten": "MK Smart",
+      "moTa": "Lotus GovID",
+      "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
+      "khoa": "mk smart lotus govid nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+      "kind": "don_vi",
+      "ten": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+      "moTa": "nhà máy kiểm thử, đóng gói tiên tiến do người Việt làm chủ",
+      "nhan": "Nhóm 6 · Chip bán dẫn",
+      "khoa": "nha may kiem thu va dong goi tien tien chip ban dan fpt nha may kiem thu, dong goi tien tien do nguoi viet lam chu nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:Phenikaa-X",
+      "kind": "don_vi",
+      "ten": "Phenikaa-X",
+      "moTa": "VTOL-01 chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "phenikaa-x vtol-01 chuyen dung cho cac nhiem vu o dia hinh phuc tap nhu rung nui nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Realtime Robotics (RtR)",
+      "kind": "don_vi",
+      "ten": "Realtime Robotics (RtR)",
+      "moTa": "Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải · sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "realtime robotics (rtr) drone hera ra doi voi kha nang gap gon, mang tai trong 15 kg, co the bay 56 phut khi khong tai · su dung ket noi ve tinh starlink de truyen dong thoi tin hieu dieu khien va hinh anh tu uav len ve tinh roi truyen nguoc ve nguoi van hanh nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:ROSTEK",
+      "kind": "don_vi",
+      "ten": "ROSTEK",
+      "moTa": "xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "rostek xe tu hanh dan duong chu dong, cho phep van chuyen, nang, keo va cho hang hoa nhom 3 · robot va tu dong hoa"
+    },
+    {
+      "id": "dv:Tập đoàn Dabaco Việt Nam",
+      "kind": "don_vi",
+      "ten": "Tập đoàn Dabaco Việt Nam",
+      "moTa": "vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại · công suất 200 triệu liều vacxin/năm",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "tap doan dabaco viet nam vacxin dich ta lon chau phi thu 3 tai viet nam duoc bo nong nghiep va moi truong cap phep luu hanh thuong mai · cong suat 200 trieu lieu vacxin/nam nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Tập đoàn MISA",
+      "kind": "don_vi",
+      "ten": "Tập đoàn MISA",
+      "moTa": "robot do Tập đoàn MISA phát triển đã thực hiện các thao tác trình diễn theo kịch bản",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "tap doan misa robot do tap doan misa phat trien da thuc hien cac thao tac trinh dien theo kich ban nhom 3 · robot va tu dong hoa"
+    },
+    {
+      "id": "dv:Tập đoàn Viettel",
+      "kind": "don_vi",
+      "ten": "Tập đoàn Viettel",
+      "moTa": "Mô hình LLM hỗ trợ tiếng Việt với độ dài ngữ cảnh (context length) 4096 token · dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
+      "nhan": "Nhóm 1 · Công nghệ số, Nhóm 6 · Chip bán dẫn",
+      "khoa": "tap doan viettel mo hinh llm ho tro tieng viet voi do dai ngu canh (context length) 4096 token · dong chip soc ai on edge tren tien trinh 28-32 nm cho he sinh thai thiet bi camera, drone, thiet bi bay khong nguoi lai (uav) nhom 1 · cong nghe so, nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+      "kind": "don_vi",
+      "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+      "moTa": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
+      "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "khoa": "tong cong ty co phan dich vu ky thuat dau khi viet nam (ptsc) da xuat sac hoan thanh viec ban giao 33 chan de dien gio ngoai khoi cho doi tac quoc te ørsted nhom 8 · bien, dai duong, long dat"
+    },
+    {
+      "id": "dv:Tổng công ty Thiết bị điện Đông Anh",
+      "kind": "don_vi",
+      "ten": "Tổng công ty Thiết bị điện Đông Anh",
+      "moTa": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "tong cong ty thiet bi dien dong anh lam chu cong tac thiet ke, che tao thanh cong may bien ap 500kv co cong suat lon nhat tren luoi dien truyen tai viet nam nhom 5 · nang luong va vat lieu"
+    },
+    {
+      "id": "dv:Viettel AI",
+      "kind": "don_vi",
+      "ten": "Viettel AI",
+      "moTa": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "viettel ai giai phap claimpkg, cong nghe kiem chung thong tin tu dong duoc danh gia co tinh ung dung rong. nhom 1 · cong nghe so"
+    },
+    {
+      "id": "dv:Viettel High Tech",
+      "kind": "don_vi",
+      "ten": "Viettel High Tech",
+      "moTa": "Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "viettel high tech voi sai canh 3,1m, chieu dai 1,7m va trong luong cat canh toi da 26kg, vu-r70 co the hoat dong lien tuc trong 4,5 gio va dat toc do toi da 120km/gio nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Viện Công nghệ xạ hiếm",
+      "kind": "don_vi",
+      "ten": "Viện Công nghệ xạ hiếm",
+      "moTa": "làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao",
+      "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "khoa": "vien cong nghe xa hiem lam chu cac cong doan cong nghe cot loi tu tuyen khoang, thuy luyen, den phan chia va tinh che cac oxit dat hiem rieng re voi do tinh khiet cao nhom 8 · bien, dai duong, long dat"
+    },
+    {
+      "id": "dv:Viện Di truyền Nông nghiệp Việt Nam",
+      "kind": "don_vi",
+      "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+      "moTa": "những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien di truyen nong nghiep viet nam nhung giong lua, giong ngo, giong dau tuong... moi duoc tao ra tu cong nghe chinh sua gen nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "kind": "don_vi",
+      "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "moTa": "phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "vien han lam khoa hoc va cong nghe viet nam phat trien cong nghe loi dien phan nuoc san xuat hydro tu nang luong mat troi, gio; che tao vat lieu nano ung dung trong nhiet tri, chan doan hinh anh mri va dan truyen thuoc; phat trien vat lieu dien cuc pin li-ion the he moi (mos-se@gr) co hieu suat luu tru cao nhom 5 · nang luong va vat lieu"
+    },
+    {
+      "id": "dv:Viện Khoa học-Công nghệ mật mã",
+      "kind": "don_vi",
+      "ten": "Viện Khoa học-Công nghệ mật mã",
+      "moTa": "thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign",
+      "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
+      "khoa": "vien khoa hoc-cong nghe mat ma thuat toan chu ky so hau luong tu voi ten goi vn-pqsign nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Viện Vaccine và sinh phẩm y tế (IVAC)",
+      "kind": "don_vi",
+      "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+      "moTa": "đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S)",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien vaccine va sinh pham y te (ivac) da san xuat thanh cong vaccine cum a/h5n1 (ivacflu-ah5n1) va vaccine cum mua “3 trong 1” (ivacflu-s) nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:VinAI",
+      "kind": "don_vi",
+      "ten": "VinAI",
+      "moTa": "VinAI đã lọt vào Top 20 công ty toàn cầu dẫn đầu về nghiên cứu AI",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "vinai vinai da lot vao top 20 cong ty toan cau dan dau ve nghien cuu ai nhom 1 · cong nghe so"
+    },
+    {
+      "id": "dv:VinBigData",
+      "kind": "don_vi",
+      "ten": "VinBigData",
+      "moTa": "Tháng 8/2023, VinBigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng Việt",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "vinbigdata thang 8/2023, vinbigdata da cong bo xay dung thanh cong mo hinh ngon ngu lon tieng viet nhom 1 · cong nghe so"
+    },
+    {
+      "id": "dv:VNPT",
+      "kind": "don_vi",
+      "ten": "VNPT",
+      "moTa": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
+      "nhan": "Nhóm 1 · Công nghệ số, Nhóm 3 · Robot và tự động hoá",
+      "khoa": "vnpt lam chu hon 40 mo hinh ai xu ly anh phuc vu cac bai toan dac thu cua viet nam nhu nhan dien bien so, phat hien vi pham giao thong hay giam sat chay no nhom 1 · cong nghe so, nhom 3 · robot va tu dong hoa"
+    },
+    {
+      "id": "dv:VNPT Technology",
+      "kind": "don_vi",
+      "ten": "VNPT Technology",
+      "moTa": "đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây · phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông",
+      "nhan": "Nhóm 2 · Mạng di động thế hệ sau",
+      "khoa": "vnpt technology dang phat trien cac san pham cho mang 5g phuc vu lap day cac vung lom cua mang bang rong di dong va khong day · phat trien cac san pham odm/oem trong linh vuc dien tu - vien thong nhom 2 · mang di dong the he sau"
+    },
+    {
+      "id": "dv:VSAP LAB",
+      "kind": "don_vi",
+      "ten": "VSAP LAB",
+      "moTa": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
+      "nhan": "Nhóm 6 · Chip bán dẫn",
+      "khoa": "vsap lab phong thi nghiem – san xuat thu nghiem (lab-fab) dau tien tai viet nam trong linh vuc dong goi ban dan tien tien nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:XBStation",
+      "kind": "don_vi",
+      "ten": "XBStation",
+      "moTa": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "xbstation uav giao hang co kha nang van chuyen kien hang nang toi 6,5 kg nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Zalo",
+      "kind": "don_vi",
+      "ten": "Zalo",
+      "moTa": "",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "zalo nhom 1 · cong nghe so"
+    },
+    {
+      "id": "nc:CNCL-P01 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+      "moTa": "CNCL-P01",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "mo hinh ngon ngu lon tieng viet, tro ly ao va tri tue nhan tao (ai) chuyen nganh cncl-p01 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P02 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "AI camera xử lý tại biên",
+      "moTa": "CNCL-P02",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "ai camera xu ly tai bien cncl-p02 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P03 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Nền tảng bản sao số",
+      "moTa": "CNCL-P03",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "nen tang ban sao so cncl-p03 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P04 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Nền tảng điện toán đám mây",
+      "moTa": "CNCL-P04",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "nen tang dien toan dam may cncl-p04 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P05 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+      "moTa": "CNCL-P05",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "ha tang mang chuoi khoi va he thong truy xuat nguon goc cncl-p05 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P06 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Thiết bị và hệ thống mạng di động 5G/5G-Advanced",
+      "moTa": "CNCL-P06",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "thiet bi va he thong mang di dong 5g/5g-advanced cncl-p06 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P07 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Robot di động tự hành và robot công nghiệp",
+      "moTa": "CNCL-P07",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "robot di dong tu hanh va robot cong nghiep cncl-p07 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P08 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+      "moTa": "CNCL-P08",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "nen tang, giai phap va mo hinh phuc vu san xuat thong minh cncl-p08 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P09 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+      "moTa": "CNCL-P09",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "giai phap bao mat va an ninh mang cho ha tang quan trong va co so du lieu quoc gia cncl-p09 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P10 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Vắc xin thế hệ mới dùng cho người",
+      "moTa": "CNCL-P10",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "vac xin the he moi dung cho nguoi cncl-p10 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P11 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+      "moTa": "CNCL-P11",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "lieu phap te bao (te bao goc, te bao mien dich) dung cho nguoi cncl-p11 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P12 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D",
+      "moTa": "CNCL-P12",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong san xuat san pham y te ca the hoa ung dung cong nghe in 3d cncl-p12 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P13 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống cảm biến sinh học thông minh",
+      "moTa": "CNCL-P13",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong cam bien sinh hoc thong minh cncl-p13 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P14 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
+      "moTa": "CNCL-P14",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "vac xin va che pham sinh hoc the he moi dung trong chan nuoi, thu y, thuy san, trong trot va bao ve thuc vat cncl-p14 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P15 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+      "moTa": "CNCL-P15",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong san xuat, thu hoach va che bien sau san pham, phu pham nong nghiep va sinh khoi cncl-p15 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P16 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
+      "moTa": "CNCL-P16",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "giong cay trong, vat nuoi, thuy san the he moi duoc tao ra tu cong nghe te bao, chinh sua gen va cong nghe sinh hoc cncl-p16 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P17 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
+      "moTa": "CNCL-P17",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "vat lieu tien tien va vat lieu chuc nang hieu nang cao cho cong nghiep che bien, che tao cncl-p17 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P18 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
+      "moTa": "CNCL-P18",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "pin, ac quy tien tien va he thong tich tru nang luong tich hop (bess) cncl-p18 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P19 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+      "moTa": "CNCL-P19",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong san xuat, luu tru, van chuyen va phan phoi hydrogen xanh, nhien lieu sinh hoc cncl-p19 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P20 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+      "moTa": "CNCL-P20",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "thiet bi dien cao ap, sieu cao ap; may dien, dong co dien va he thong truyen tai - truyen dong dien hien dai, hieu suat cao cncl-p20 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P21 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống thu giữ, sử dụng và lưu trữ carbon",
+      "moTa": "CNCL-P21",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong thu giu, su dung va luu tru carbon cncl-p21 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P22 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV",
+      "moTa": "CNCL-P22",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "thiet bi, phuong tien bay khong nguoi lai (uav); he thong quan ly, phat hien, giam sat va che ap uav cncl-p22 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P23 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Chip chuyên dụng",
+      "moTa": "CNCL-P23",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "chip chuyen dung cncl-p23 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P24 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Truyền thông lượng tử, tính toán lượng tử và cảm biến lượng tử",
+      "moTa": "CNCL-P24",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "truyen thong luong tu, tinh toan luong tu va cam bien luong tu cncl-p24 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P25 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm",
+      "moTa": "CNCL-P25",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong khai thac, che bien sau va san pham che bien sau tu khoang san, dau khi va dat hiem cncl-p25 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P26 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi",
+      "moTa": "CNCL-P26",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "he thong, thiet bi, dich vu va giai phap cong nghe tham do long dat, bien sau, cong trinh bien va nang luong ngoai khoi cncl-p26 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P27 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Lò phản ứng hạt nhân mô-đun nhỏ (SMR)",
+      "moTa": "CNCL-P27",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "lo phan ung hat nhan mo-dun nho (smr) cncl-p27 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P28 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
+      "moTa": "CNCL-P28",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "ve tinh va chum ve tinh quy dao thap quan sat trai dat cncl-p28 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P29 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Công trình xây dựng đường sắt tốc độ cao",
+      "moTa": "CNCL-P29",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "cong trinh xay dung duong sat toc do cao cncl-p29 nhu cau chinh thuc"
+    },
+    {
+      "id": "nc:CNCL-P30 · nhu cầu quốc gia",
+      "kind": "nhu_cau",
+      "ten": "Nền tảng công nghiệp, phương tiện, thiết bị và các hệ thống tích hợp đường sắt tốc độ cao, đường sắt đô thị",
+      "moTa": "CNCL-P30",
+      "nhan": "nhu cầu chính thức",
+      "khoa": "nen tang cong nghiep, phuong tien, thiet bi va cac he thong tich hop duong sat toc do cao, duong sat do thi cncl-p30 nhu cau chinh thuc"
+    },
+    {
+      "id": "nh:1",
+      "kind": "nhom",
+      "ten": "Nhóm 1 · Công nghệ số",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 1 · cong nghe so nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:2",
+      "kind": "nhom",
+      "ten": "Nhóm 2 · Mạng di động thế hệ sau",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 2 · mang di dong the he sau nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:3",
+      "kind": "nhom",
+      "ten": "Nhóm 3 · Robot và tự động hoá",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 3 · robot va tu dong hoa nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:4",
+      "kind": "nhom",
+      "ten": "Nhóm 4 · Sinh học và y sinh",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 4 · sinh hoc va y sinh nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:5",
+      "kind": "nhom",
+      "ten": "Nhóm 5 · Năng lượng và vật liệu",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 5 · nang luong va vat lieu nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:6",
+      "kind": "nhom",
+      "ten": "Nhóm 6 · Chip bán dẫn",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 6 · chip ban dan nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:7",
+      "kind": "nhom",
+      "ten": "Nhóm 7 · An ninh mạng và lượng tử",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 7 · an ninh mang va luong tu nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:8",
+      "kind": "nhom",
+      "ten": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 8 · bien, dai duong, long dat nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:9",
+      "kind": "nhom",
+      "ten": "Nhóm 9 · Hàng không và vũ trụ",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 9 · hang khong va vu tru nhom cong nghe chien luoc"
+    },
+    {
+      "id": "nh:10",
+      "kind": "nhom",
+      "ten": "Nhóm 10 · Đường sắt tốc độ cao",
+      "moTa": "",
+      "nhan": "nhóm công nghệ chiến lược",
+      "khoa": "nhom 10 · duong sat toc do cao nhom cong nghe chien luoc"
+    }
+  ]
+}

@@ -30,7 +30,13 @@ export default function RegistryPage() {
             <div className="reg-stat"><span className="reg-stat__v">{cnclMeta.tierA}</span><span className="reg-stat__k">tier A</span></div>
             <div className="reg-stat"><span className="reg-stat__v">{cnclMeta.snapshots}</span><span className="reg-stat__k">bản chụp</span></div>
             <span className="chip chip--pass">DỮ LIỆU THẬT</span>
-            <span className="chip chip--public reg-gate" title={cnclMeta.gate}>GATE PASS</span>
+            {/* Nhan nay DOC ket qua chuoi cong that. Truoc 29/09/2026 no luon ghi GATE PASS. */}
+            <span
+              className={`chip ${cnclMeta.chuoiCong === null ? 'chip--private' : cnclMeta.chuoiCong.dat ? 'chip--public' : 'chip--risk'} reg-gate`}
+              title={cnclMeta.gate}
+            >
+              {cnclMeta.chuoiCong === null ? 'GATE CHƯA CHẠY' : cnclMeta.chuoiCong.dat ? 'GATE PASS' : 'GATE ĐỎ'}
+            </span>
           </div>
           <p className="reg-note">
             Mỗi ô truy về một câu nguyên văn trong bản chụp: bấm tên nguồn để mở, rê chuột lên

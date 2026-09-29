@@ -229,6 +229,28 @@ const tuChoi = soKy.filter((r) => r.decision === 'tu_choi').map((r) => ({
 chepBanChup(canDung);
 
 // ── Ghi ─────────────────────────────────────────────────────────────────────
+
+// Ket qua chuoi cong do chay_het_cong.sh ghi o CaoLocMatch/out/ket_qua_chuoi.json (git bo qua).
+// Khong co file thi NOI THANG la chua co, khong bia "xanh". Luu y: trang web sinh GIUA chuoi,
+// nen so o day la cua lan chay TRON GAN NHAT truoc do, va vi the phai kem thoi diem.
+function docChuoiCong() {
+  const p = join(CLM, 'out', 'ket_qua_chuoi.json');
+  if (!existsSync(p)) {
+    return { gate: 'chuỗi cổng: chưa có kết quả trong môi trường này', chuoiCong: null };
+  }
+  const k = JSON.parse(readFileSync(p, 'utf8'));
+  const dat = k.do === 0 && k.khong_chay === 0;
+  const luc = String(k.luc).slice(0, 16).replace('T', ' ');
+  const hoan = k.hoan > 0 ? ` · hoãn ${k.hoan}` : '';
+  const nhanh = k.che_do === 'nhanh' ? ' · chế độ nhanh' : '';
+  return {
+    gate: `chuỗi cổng ${luc}: ${k.xanh}/${k.tong} xanh${hoan}${nhanh}${dat ? '' : ` · ĐỎ ${k.do} · không chạy ${k.khong_chay}`}`,
+    chuoiCong: {
+      luc: k.luc, cheDo: k.che_do, tong: k.tong, xanh: k.xanh, do: k.do,
+      khongChay: k.khong_chay, hoan: k.hoan, dat,
+    },
+  };
+}
 const NOW = new Date().toISOString().slice(0, 10);
 const dem_tier = (t) => sup.filter((c) => c.tier === t).length;
 
@@ -243,7 +265,10 @@ const meta = {
   nhomPhu: [...new Set(sup.filter((c) => c.field === 'nhom_cncl').map((c) => String(c.value)))].length,
   generatedAt: NOW,
   frame: 'QĐ 21/2026/QĐ-TTg',
-  gate: 'chay_het_cong.sh · 14 o xanh',
+  // Doc tu KET QUA THAT cua lan chay chuoi cong gan nhat, khong go tay. Ngay 29/09/2026 dong
+  // nay con la chu 'chay_het_cong.sh · 14 o xanh' trong khi chuoi da 49 o, va chu do hien o
+  // tooltip GATE PASS cua trang Registry. Xem docChuoiCong() ben duoi.
+  ...docChuoiCong(),
 };
 
 const banner = (nguon) => `// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · ${NOW} · KHONG sua tay.
@@ -268,7 +293,17 @@ export type CnclNeed = {
   tier: CnclTier; source: string; href: string; chinhThuc: boolean; tim: string;
 };
 
-export const cnclMeta = ${JSON.stringify(meta, null, 2)} as const;
+export type CnclChuoiCong = {
+  luc: string; cheDo: string; tong: number; xanh: number; do: number;
+  khongChay: number; hoan: number; dat: boolean;
+};
+export type CnclMeta = {
+  units: number; claims: number; needs: number; sources: number; snapshots: number;
+  tierA: number; tierB: number; nhomPhu: number; generatedAt: string; frame: string;
+  gate: string; chuoiCong: CnclChuoiCong | null;
+};
+
+export const cnclMeta: CnclMeta = ${JSON.stringify(meta, null, 2)};
 
 export const cnclUnits: CnclUnit[] = ${JSON.stringify(units, null, 2)};
 
