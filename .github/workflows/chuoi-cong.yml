@@ -36,24 +36,34 @@ on:
   schedule:
     - cron: "0 1 * * *"
 
+# MOI TRUONG GHIM CO CHU DICH (30/09/2026). Truoc do: ubuntu-latest + Node 20 + action v4/v5.
+#   - ubuntu-latest se tu chuyen sang Ubuntu 26 tu 19/10/2026: may chay doi ma khong co commit nao, va
+#     luot kiem moi sang co the do vi moi truong chu khong vi du lieu. Nay ghim ubuntu-24.04; muon len
+#     ban moi thi sua dong nay, qua review, co luot CI chung minh.
+#   - Node 20 het ho tro 30/04/2026 (lich nodejs/Release). Nay Node 24 (LTS, ho tro toi 30/04/2028).
+#   - checkout/setup-python/setup-node len v7 (deu chay tren node24); ban v4/v5 bi GitHub ep chay
+#     node24 kem canh bao.
+#   - Da dien tap truoc tren clone sach: Node 24 + Python 3.11 chi pyyaml + npm ci, chuoi 80 xanh / 0 do / 3 hoan.
 jobs:
   chuoi-cong:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
+          # Chuoi khong push gi: khong de token trong git config cua may chay.
+          persist-credentials: false
           # Trang Kho ma dem commit va tep tu git: checkout nong (mac dinh depth 1) khong du lich su,
           # o kho_ma se bao KHONG CHAY DUOC. Them 29/09/2026.
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version: "24"
           cache: npm
           cache-dependency-path: .touch/package-lock.json
 
