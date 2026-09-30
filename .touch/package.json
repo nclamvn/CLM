@@ -14,7 +14,7 @@
     "check": "next lint && node scripts/check-emdash.mjs && npm run lint:tokens && next build"
   },
   "dependencies": {
-    "next": "^15.5.20",
+    "next": "^15.5.26",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -23,11 +23,16 @@
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "autoprefixer": "10.4.20",
-    "eslint": "9.18.0",
-    "eslint-config-next": "^15.5.20",
+    "eslint": "9.39.5",
+    "eslint-config-next": "^15.5.26",
     "playwright": "^1.61.1",
-    "postcss": "^8.5.19",
+    "postcss": "^8.5.28",
     "tailwindcss": "3.4.17",
     "typescript": "5.7.3"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "$postcss"
+    }
   }
 }
