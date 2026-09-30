@@ -116,7 +116,9 @@ chay() {
   local out rc ghi trang_thai
   out=$(cd "$cwd" && "$@" 2>&1); rc=$?
   if [ -n "$loc" ]; then
-    ghi=$(printf '%s\n' "$out" | grep -E "$loc" | tail -1 | cut -c1-46)
+    # cut -c cat theo BYTE o locale C, co the cat doi mot ky tu tieng Viet va de lai UTF-8 hong; bo
+    # ky tu cut dang bang iconv -c. Lo ra 30/09/2026: rang_chinh_bang doc bang ket nay va vo giai ma.
+    ghi=$(printf '%s\n' "$out" | grep -E "$loc" | tail -1 | cut -c1-46 | iconv -c -f UTF-8 -t UTF-8 2>/dev/null)
   else
     ghi=""
   fi

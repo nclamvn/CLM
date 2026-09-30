@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "f52b2b1",
+    "sha": "2055211",
     "ngay": "2026-09-30"
   },
-  "tongCommit": 188,
+  "tongCommit": 189,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 19,
+      "commitSauGop": 20,
       "cuoi": {
-        "sha": "f52b2b1",
+        "sha": "2055211",
         "ngay": "2026-09-30",
-        "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
+        "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
       },
-      "soTep": 196
+      "soTep": 220
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 37,
+      "commitSauGop": 38,
       "cuoi": {
-        "sha": "557faef",
+        "sha": "2055211",
         "ngay": "2026-09-30",
-        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
+        "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
       },
       "soTep": 125
     },
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 41,
+      "commitSauGop": 42,
       "cuoi": {
-        "sha": "f52b2b1",
+        "sha": "2055211",
         "ngay": "2026-09-30",
-        "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
+        "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
       },
       "soTep": 412
     }
@@ -84,6 +84,11 @@
     ".touch": 43
   },
   "ganDay": [
+    {
+      "sha": "2055211",
+      "ngay": "2026-09-30",
+      "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
+    },
     {
       "sha": "f52b2b1",
       "ngay": "2026-09-30",
@@ -128,11 +133,6 @@
       "sha": "52de0c0",
       "ngay": "2026-09-29",
       "tieuDe": "Trang dau: hai vien thuoc thanh dau cung cao 36px; khoi chu giai goc phai duoi canh phai"
-    },
-    {
-      "sha": "86da5c4",
-      "ngay": "2026-09-29",
-      "tieuDe": "Trang dau: tieu de chi 'Cung gặp cầu.', cau phu khong gan con so (registry con mo rong; so nam o HUD sinh tu du lieu)"
     }
   ],
   "dong": [

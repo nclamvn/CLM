@@ -4,18 +4,18 @@
     "cauNguon": 323,
     "tierA": 120,
     "banChup": 61,
-    "matchDaKy": 11,
+    "matchDaKy": 24,
     "tuChoi": 1,
     "nhuCau": 30,
-    "ncCoCung": 27,
-    "ncTrong": 3,
-    "capCungCau": 63
+    "ncCoCung": 28,
+    "ncTrong": 2,
+    "capCungCau": 67
   },
   "chuoiCong": {
-    "xanh": 78,
+    "xanh": 91,
     "tong": 91,
-    "dat": false,
-    "luc": "2026-09-30T16:01:44+0700"
+    "dat": true,
+    "luc": "2026-09-30T16:20:52+0700"
   },
   "diemYeu": {
     "chuaDinhDanh": 60,
@@ -27,17 +27,17 @@
     {
       "href": "/dashboard/thi-truong",
       "ten": "Toàn cảnh thị trường",
-      "su": "3/30 nhu cầu quốc gia chưa có bên cung"
+      "su": "2/30 nhu cầu quốc gia chưa có bên cung"
     },
     {
       "href": "/dashboard/thoi-cuoc",
       "ten": "Dòng thời cuộc",
-      "su": "80 sự kiện có nguồn, từ 2012 đến nay"
+      "su": "93 sự kiện có nguồn, từ 2012 đến nay"
     },
     {
       "href": "/dashboard/do-thi",
       "ten": "Đồ thị cung cầu",
-      "su": "0 giao cắt trên 70 cạnh cung cầu"
+      "su": "0 giao cắt trên 83 cạnh cung cầu"
     },
     {
       "href": "/dashboard/don-vi",
@@ -47,7 +47,7 @@
     {
       "href": "/dashboard/matching",
       "ten": "Matching Workbench",
-      "su": "11/11 điểm tự dựng lại khớp engine"
+      "su": "24/24 điểm tự dựng lại khớp engine"
     },
     {
       "href": "/dashboard/registry",

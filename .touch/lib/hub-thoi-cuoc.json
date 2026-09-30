@@ -2,11 +2,11 @@
   "meta": {
     "mocNgay": "2026-09-30",
     "tu": "2012-05-02",
-    "den": "2026-09-29",
+    "den": "2026-09-30",
     "theoLan": {
       "chinh_sach": 5,
       "don_vi": 61,
-      "quyet_dinh": 12,
+      "quyet_dinh": 25,
       "de_xuat": 2
     },
     "baiMoiNhat": "2026-08-20"
@@ -2326,6 +2326,318 @@
       "nguoi": "Lam Nguyen",
       "matchId": "MATCH-0016",
       "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0001",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0001 được ký: Viettel AI ⇄ P03",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viettel AI",
+          "slug": "viettel-ai"
+        }
+      ],
+      "nhuCau": [
+        "P03"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0001",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0004",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0004 được ký: VTI Solutions ⇄ P08",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions"
+        }
+      ],
+      "nhuCau": [
+        "P08"
+      ],
+      "nhom": [
+        "3"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0004",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0005",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0005 được ký: Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec ⇄ P11",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec"
+        }
+      ],
+      "nhuCau": [
+        "P11"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0005",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0006",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0006 được ký: Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) ⇄ P13",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist"
+        }
+      ],
+      "nhuCau": [
+        "P13"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0006",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0007",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0007 được ký: Viện Khoa học vật liệu ⇄ P13",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu"
+        }
+      ],
+      "nhuCau": [
+        "P13"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0007",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0008",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0008 được ký: Công ty TNHH Công nghệ Sinh học xanh Nhật Lan ⇄ P13",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan"
+        }
+      ],
+      "nhuCau": [
+        "P13"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0008",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0009",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0009 được ký: Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch ⇄ P13",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach"
+        }
+      ],
+      "nhuCau": [
+        "P13"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0009",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0011",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0011 được ký: Công ty 1Matrix ⇄ P05",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix"
+        }
+      ],
+      "nhuCau": [
+        "P05"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0011",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0012",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0012 được ký: Trung tâm Vũ trụ Việt Nam ⇄ P28",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam"
+        }
+      ],
+      "nhuCau": [
+        "P28"
+      ],
+      "nhom": [
+        "9"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0012",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0018",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0018 được ký: CMC Telecom ⇄ P04",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom"
+        }
+      ],
+      "nhuCau": [
+        "P04"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0018",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0019",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0019 được ký: VNPT ⇄ P04",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "VNPT",
+          "slug": "vnpt"
+        }
+      ],
+      "nhuCau": [
+        "P04"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0019",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0024",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0024 được ký: Công ty TNHH Công nghệ Sinh học xanh Nhật Lan ⇄ P15",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan"
+        }
+      ],
+      "nhuCau": [
+        "P15"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0024",
+      "href": null
+    },
+    {
+      "id": "SK-KY-MATCH-0025",
+      "ngay": "2026-09-30",
+      "lan": "quyet_dinh",
+      "tieuDe": "MATCH-0025 được ký: Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch ⇄ P15",
+      "nguon": [],
+      "tier": null,
+      "donVi": [
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach"
+        }
+      ],
+      "nhuCau": [
+        "P15"
+      ],
+      "nhom": [
+        "4"
+      ],
+      "trangThai": "da_ky",
+      "nguoi": "Lam Nguyen",
+      "matchId": "MATCH-0025",
+      "href": null
     }
   ],
   "matDo": [
@@ -3537,7 +3849,7 @@
       "thang": "2026-09",
       "chinh_sach": 0,
       "don_vi": 0,
-      "quyet_dinh": 1,
+      "quyet_dinh": 14,
       "de_xuat": 2
     }
   ]

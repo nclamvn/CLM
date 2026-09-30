@@ -11,6 +11,23 @@
     "nguongGiao": 0.5
   },
   "phanRa": {
+    "MATCH-0001": {
+      "tiLeGiao": 1,
+      "soGiao": 2,
+      "soTokenCau": 2,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "C",
+      "diemTier": 0.65,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.7,
+        "tier": 0.13,
+        "diaDiem": 0
+      },
+      "tong": 0.83,
+      "lamTron": 0.83
+    },
     "MATCH-0002": {
       "tiLeGiao": 0.5,
       "soGiao": 2,
@@ -28,6 +45,108 @@
       "tong": 0.525,
       "lamTron": 0.53
     },
+    "MATCH-0004": {
+      "tiLeGiao": 0.667,
+      "soGiao": 2,
+      "soTokenCau": 3,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "C",
+      "diemTier": 0.65,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.467,
+        "tier": 0.13,
+        "diaDiem": 0
+      },
+      "tong": 0.597,
+      "lamTron": 0.6
+    },
+    "MATCH-0005": {
+      "tiLeGiao": 0.857,
+      "soGiao": 6,
+      "soTokenCau": 7,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "B",
+      "diemTier": 0.875,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.6,
+        "tier": 0.175,
+        "diaDiem": 0
+      },
+      "tong": 0.775,
+      "lamTron": 0.78
+    },
+    "MATCH-0006": {
+      "tiLeGiao": 1,
+      "soGiao": 4,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.7,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.9,
+      "lamTron": 0.9
+    },
+    "MATCH-0007": {
+      "tiLeGiao": 0.5,
+      "soGiao": 2,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.35,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.55,
+      "lamTron": 0.55
+    },
+    "MATCH-0008": {
+      "tiLeGiao": 0.75,
+      "soGiao": 3,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.525,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.725,
+      "lamTron": 0.72
+    },
+    "MATCH-0009": {
+      "tiLeGiao": 0.75,
+      "soGiao": 3,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.525,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.725,
+      "lamTron": 0.72
+    },
     "MATCH-0010": {
       "tiLeGiao": 0.5,
       "soGiao": 4,
@@ -44,6 +163,40 @@
       },
       "tong": 0.525,
       "lamTron": 0.53
+    },
+    "MATCH-0011": {
+      "tiLeGiao": 0.5,
+      "soGiao": 4,
+      "soTokenCau": 8,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "B",
+      "diemTier": 0.875,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.35,
+        "tier": 0.175,
+        "diaDiem": 0
+      },
+      "tong": 0.525,
+      "lamTron": 0.53
+    },
+    "MATCH-0012": {
+      "tiLeGiao": 0.556,
+      "soGiao": 5,
+      "soTokenCau": 9,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.389,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.589,
+      "lamTron": 0.59
     },
     "MATCH-0013": {
       "tiLeGiao": 1,
@@ -130,6 +283,40 @@
       "tong": 0.7,
       "lamTron": 0.7
     },
+    "MATCH-0018": {
+      "tiLeGiao": 1,
+      "soGiao": 4,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.7,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.9,
+      "lamTron": 0.9
+    },
+    "MATCH-0019": {
+      "tiLeGiao": 1,
+      "soGiao": 4,
+      "soTokenCau": 4,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "B",
+      "diemTier": 0.875,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.7,
+        "tier": 0.175,
+        "diaDiem": 0
+      },
+      "tong": 0.875,
+      "lamTron": 0.88
+    },
     "MATCH-0020": {
       "tiLeGiao": 0.667,
       "soGiao": 2,
@@ -197,32 +384,89 @@
       },
       "tong": 0.665,
       "lamTron": 0.66
+    },
+    "MATCH-0024": {
+      "tiLeGiao": 0.818,
+      "soGiao": 9,
+      "soTokenCau": 11,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.573,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.773,
+      "lamTron": 0.77
+    },
+    "MATCH-0025": {
+      "tiLeGiao": 0.818,
+      "soGiao": 9,
+      "soTokenCau": 11,
+      "quaNguong": true,
+      "tierCau": "A",
+      "tierCung": "A",
+      "diemTier": 1,
+      "diaDiem": 0,
+      "phan": {
+        "giao": 0.573,
+        "tier": 0.2,
+        "diaDiem": 0
+      },
+      "tong": 0.773,
+      "lamTron": 0.77
     }
   },
   "haiCot": {
     "cau": [
-      "CNCL-P23 · nhu cầu quốc gia",
-      "CNCL-P07 · nhu cầu quốc gia",
-      "CNCL-P22 · nhu cầu quốc gia",
-      "CNCL-P08 · nhu cầu quốc gia",
-      "CNCL-P06 · nhu cầu quốc gia",
       "CNCL-P01 · nhu cầu quốc gia",
+      "CNCL-P03 · nhu cầu quốc gia",
+      "CNCL-P04 · nhu cầu quốc gia",
+      "CNCL-P08 · nhu cầu quốc gia",
+      "CNCL-P05 · nhu cầu quốc gia",
+      "CNCL-P06 · nhu cầu quốc gia",
+      "CNCL-P07 · nhu cầu quốc gia",
+      "CNCL-P11 · nhu cầu quốc gia",
+      "CNCL-P15 · nhu cầu quốc gia",
+      "CNCL-P13 · nhu cầu quốc gia",
       "CNCL-P20 · nhu cầu quốc gia",
       "CNCL-P17 · nhu cầu quốc gia",
-      "CNCL-P18 · nhu cầu quốc gia"
+      "CNCL-P18 · nhu cầu quốc gia",
+      "CNCL-P23 · nhu cầu quốc gia",
+      "CNCL-P22 · nhu cầu quốc gia",
+      "CNCL-P28 · nhu cầu quốc gia"
     ],
     "cung": [
+      "VinBigData",
+      "Viettel AI",
+      "CMC Telecom",
+      "VNPT",
+      "VTI Solutions",
+      "Công ty 1Matrix",
+      "VNPT Technology",
+      "ROSTEK",
+      "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "Viện Khoa học vật liệu",
+      "Tổng công ty Thiết bị điện Đông Anh",
+      "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
       "CT Semiconductor",
       "FPT Semiconductor",
-      "ROSTEK",
       "Tập đoàn Viettel",
-      "VNPT",
-      "VNPT Technology",
-      "VinBigData",
-      "Tổng công ty Thiết bị điện Đông Anh",
-      "Viện Hàn lâm Khoa học và Công nghệ Việt Nam"
+      "Trung tâm Vũ trụ Việt Nam"
     ],
     "canh": [
+      {
+        "cau": "CNCL-P03 · nhu cầu quốc gia",
+        "cung": "Viettel AI",
+        "loai": "da_ky",
+        "id": "MATCH-0001"
+      },
       {
         "cau": "CNCL-P07 · nhu cầu quốc gia",
         "cung": "ROSTEK",
@@ -230,10 +474,58 @@
         "id": "MATCH-0002"
       },
       {
+        "cau": "CNCL-P08 · nhu cầu quốc gia",
+        "cung": "VTI Solutions",
+        "loai": "da_ky",
+        "id": "MATCH-0004"
+      },
+      {
+        "cau": "CNCL-P11 · nhu cầu quốc gia",
+        "cung": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+        "loai": "da_ky",
+        "id": "MATCH-0005"
+      },
+      {
+        "cau": "CNCL-P13 · nhu cầu quốc gia",
+        "cung": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+        "loai": "da_ky",
+        "id": "MATCH-0006"
+      },
+      {
+        "cau": "CNCL-P13 · nhu cầu quốc gia",
+        "cung": "Viện Khoa học vật liệu",
+        "loai": "da_ky",
+        "id": "MATCH-0007"
+      },
+      {
+        "cau": "CNCL-P13 · nhu cầu quốc gia",
+        "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "loai": "da_ky",
+        "id": "MATCH-0008"
+      },
+      {
+        "cau": "CNCL-P13 · nhu cầu quốc gia",
+        "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "loai": "da_ky",
+        "id": "MATCH-0009"
+      },
+      {
         "cau": "CNCL-P18 · nhu cầu quốc gia",
         "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
         "loai": "da_ky",
         "id": "MATCH-0010"
+      },
+      {
+        "cau": "CNCL-P05 · nhu cầu quốc gia",
+        "cung": "Công ty 1Matrix",
+        "loai": "da_ky",
+        "id": "MATCH-0011"
+      },
+      {
+        "cau": "CNCL-P28 · nhu cầu quốc gia",
+        "cung": "Trung tâm Vũ trụ Việt Nam",
+        "loai": "da_ky",
+        "id": "MATCH-0012"
       },
       {
         "cau": "CNCL-P23 · nhu cầu quốc gia",
@@ -266,6 +558,18 @@
         "id": "MATCH-0017"
       },
       {
+        "cau": "CNCL-P04 · nhu cầu quốc gia",
+        "cung": "CMC Telecom",
+        "loai": "da_ky",
+        "id": "MATCH-0018"
+      },
+      {
+        "cau": "CNCL-P04 · nhu cầu quốc gia",
+        "cung": "VNPT",
+        "loai": "da_ky",
+        "id": "MATCH-0019"
+      },
+      {
         "cau": "CNCL-P06 · nhu cầu quốc gia",
         "cung": "VNPT Technology",
         "loai": "da_ky",
@@ -290,13 +594,25 @@
         "id": "MATCH-0023"
       },
       {
+        "cau": "CNCL-P15 · nhu cầu quốc gia",
+        "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "loai": "da_ky",
+        "id": "MATCH-0024"
+      },
+      {
+        "cau": "CNCL-P15 · nhu cầu quốc gia",
+        "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "loai": "da_ky",
+        "id": "MATCH-0025"
+      },
+      {
         "cau": "CNCL-P08 · nhu cầu quốc gia",
         "cung": "VNPT",
         "loai": "tu_choi",
         "id": "tu_choi:VNPT>CNCL-P08 · nhu cầu quốc gia"
       }
     ],
-    "giaoBanDau": 42,
+    "giaoBanDau": 150,
     "giao": 1
   }
 }

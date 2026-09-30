@@ -1,15 +1,132 @@
 {
   "meta": {
     "generatedAt": "2026-09-30",
-    "soSuKien": 14,
+    "soSuKien": 27,
     "theoLoai": {
-      "match_da_ky": 11,
+      "match_da_ky": 24,
       "tu_choi": 1,
       "de_xuat_vong_tu_chay": 2
     },
     "hangCho": "2 dong"
   },
   "events": [
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viettel AI",
+      "nhuCau": "CNCL-P03 · nhu cầu quốc gia",
+      "nhan": "MATCH-0001: Viettel AI ⇄ CNCL-P03",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "VTI Solutions",
+      "nhuCau": "CNCL-P08 · nhu cầu quốc gia",
+      "nhan": "MATCH-0004: VTI Solutions ⇄ CNCL-P08",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "nhuCau": "CNCL-P11 · nhu cầu quốc gia",
+      "nhan": "MATCH-0005: Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec ⇄ CNCL-P11",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+      "nhan": "MATCH-0006: Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) ⇄ CNCL-P13",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Khoa học vật liệu",
+      "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+      "nhan": "MATCH-0007: Viện Khoa học vật liệu ⇄ CNCL-P13",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+      "nhan": "MATCH-0008: Công ty TNHH Công nghệ Sinh học xanh Nhật Lan ⇄ CNCL-P13",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+      "nhan": "MATCH-0009: Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch ⇄ CNCL-P13",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Công ty 1Matrix",
+      "nhuCau": "CNCL-P05 · nhu cầu quốc gia",
+      "nhan": "MATCH-0011: Công ty 1Matrix ⇄ CNCL-P05",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Trung tâm Vũ trụ Việt Nam",
+      "nhuCau": "CNCL-P28 · nhu cầu quốc gia",
+      "nhan": "MATCH-0012: Trung tâm Vũ trụ Việt Nam ⇄ CNCL-P28",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "CMC Telecom",
+      "nhuCau": "CNCL-P04 · nhu cầu quốc gia",
+      "nhan": "MATCH-0018: CMC Telecom ⇄ CNCL-P04",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "VNPT",
+      "nhuCau": "CNCL-P04 · nhu cầu quốc gia",
+      "nhan": "MATCH-0019: VNPT ⇄ CNCL-P04",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "nhuCau": "CNCL-P15 · nhu cầu quốc gia",
+      "nhan": "MATCH-0024: Công ty TNHH Công nghệ Sinh học xanh Nhật Lan ⇄ CNCL-P15",
+      "by": "Lam Nguyen"
+    },
+    {
+      "ngay": "2026-09-30",
+      "kind": "match_da_ky",
+      "trangThai": "da_ky",
+      "donVi": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "nhuCau": "CNCL-P15 · nhu cầu quốc gia",
+      "nhan": "MATCH-0025: Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch ⇄ CNCL-P15",
+      "by": "Lam Nguyen"
+    },
     {
       "ngay": "2026-09-29",
       "kind": "match_da_ky",

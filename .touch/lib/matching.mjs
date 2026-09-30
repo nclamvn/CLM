@@ -62,6 +62,60 @@ export function dungMatching(mat) {
     const g = giao(cau, cung);
     if (g < tot.g) tot = { cau, cung, g };
   }
+  // Chen tot nhat (them 30/09/2026, khi so match ky tu 11 len 24 va median ket o 4 giao): lan luot
+  // nhac tung nut mot ben, thu dat vao MOI vi tri, nhan vi tri giam han so giao. Luan phien hai ben
+  // toi khi khong con cai thien. Chi nhan khi giam han nen khong bao gio xau hon median; thu tu co
+  // dinh nen tat dinh.
+  const chen = (ds, laCau) => {
+    let tot2 = laCau ? giao(ds, tot.cung) : giao(tot.cau, ds); let doi = false;
+    for (const x of [...ds]) {
+      const bo = ds.filter((y) => y !== x);
+      for (let k = 0; k <= bo.length; k++) {
+        const thu = [...bo.slice(0, k), x, ...bo.slice(k)];
+        const g = laCau ? giao(thu, tot.cung) : giao(tot.cau, thu);
+        if (g < tot2) { tot2 = g; ds = thu; doi = true; }
+      }
+    }
+    return { ds, g: tot2, doi };
+  };
+  for (let luot = 0; luot < 8 && tot.g > 0; luot++) {
+    const a = chen(tot.cau, true); tot = { ...tot, cau: a.ds, g: a.g };
+    const b = chen(tot.cung, false); tot = { ...tot, cung: b.ds, g: b.g };
+    if (!a.doi && !b.doi) break;
+  }
+  // Theo thanh phan lien thong (them 30/09/2026): hai thanh phan khong co canh chung thi xep thanh
+  // hai KHOI tren duoi la khong bao gio cat nhau, nen so giao toi thieu cua ca so do bang TONG toi
+  // thieu cua tung khoi. Khoi nho (hoan vi hai ben <= 40320) thi thu het de lay dung toi thieu; khoi
+  // lon giu thu tu heuristic o tren. Hoa thi giu hoan vi dau tien theo thu tu chu cai, nen tat dinh.
+  // Median + chen o tren ket o 4 giao khi so match ky len 24; toi thieu that la 1 (khoi K2,2 cua
+  // P13, P15 voi Nhat Lan va Vien Co dien).
+  const hoanVi = (xs) => { if (xs.length <= 1) return [xs]; const out = []; xs.forEach((x, i) => { for (const r of hoanVi([...xs.slice(0, i), ...xs.slice(i + 1)])) out.push([x, ...r]); }); return out; };
+  const giaiThua = (n) => (n <= 1 ? 1 : n * giaiThua(n - 1));
+  const khoi = []; const daXet = new Set();
+  for (const c0 of [...new Set(canh.map((c) => c.cau))].sort(soSanh)) {
+    if (daXet.has('c' + c0)) continue;
+    const kc = new Set(); const ku = new Set(); const hang = [['c', c0]];
+    while (hang.length) {
+      const [loai, x] = hang.pop();
+      if (daXet.has(loai + x)) continue; daXet.add(loai + x);
+      if (loai === 'c') { kc.add(x); for (const c of canh) if (c.cau === x) hang.push(['u', c.cung]); }
+      else { ku.add(x); for (const c of canh) if (c.cung === x) hang.push(['c', c.cau]); }
+    }
+    khoi.push({ cau: [...kc].sort(soSanh), cung: [...ku].sort(soSanh) });
+  }
+  let khoiCau = []; let khoiCung = [];
+  for (const k of khoi) {
+    const ck = canh.filter((c) => k.cau.includes(c.cau));
+    const gk = (A, B) => demGiaoHaiCot(ck, new Map(A.map((x, i) => [x, i])), new Map(B.map((x, i) => [x, i])));
+    let best = { cau: tot.cau.filter((x) => k.cau.includes(x)), cung: tot.cung.filter((x) => k.cung.includes(x)) };
+    best.g = gk(best.cau, best.cung);
+    if (best.g > 0 && giaiThua(k.cau.length) * giaiThua(k.cung.length) <= 40320) {
+      for (const A of hoanVi(k.cau)) for (const B of hoanVi(k.cung)) { const g = gk(A, B); if (g < best.g) best = { cau: A, cung: B, g }; }
+    }
+    khoiCau = khoiCau.concat(best.cau); khoiCung = khoiCung.concat(best.cung);
+  }
+  const gKhoi = giao(khoiCau, khoiCung);
+  if (gKhoi < tot.g) tot = { cau: khoiCau, cung: khoiCung, g: gKhoi };
   return {
     congThuc: ct,
     phanRa: Object.fromEntries(mat.signedMatches.map((m) => [m.id, phanRaDiem(m, ct)])),

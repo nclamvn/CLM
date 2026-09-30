@@ -242,7 +242,10 @@ const webMatches = daKy.map((m) => {
     khoaBangChung: so?.khoa?.bang_chung ?? null,
     demandEvidence: cau.map(anh),
     supplyEvidence: cung.map(anh),
-    unverified: m.unverified ?? [],
+    // Engine tra ve lan hai dang: chuoi (canh chuoi gia tri cho duyet) va {fact_id, note} (claim tu
+    // khai, hang C). Lo lam giau 30/09/2026 lan dau dua dang thu hai len web va vo kieu TypeScript.
+    // Chuan ve chuoi doc duoc, giu ma fact de truy nguoc.
+    unverified: (m.unverified ?? []).map((u) => (typeof u === 'string' ? u : `${u.note} (${u.fact_id})`)),
   };
 });
 

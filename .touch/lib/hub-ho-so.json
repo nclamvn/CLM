@@ -317,7 +317,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -402,8 +402,14 @@
           "maSp": "04",
           "ten": "Nền tảng điện toán đám mây",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0018",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -413,9 +419,26 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0018",
+          "nhuCau": "CNCL-P04 · nhu cầu quốc gia",
+          "maSp": "04",
+          "by": "Lam Nguyen"
         }
       ],
-      "tuongTu": [],
+      "tuongTu": [
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P04"
+          ]
+        }
+      ],
       "cungNhom": [
         {
           "ten": "Công ty 1Matrix",
@@ -436,14 +459,6 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "1"
-          ]
-        },
-        {
-          "ten": "VNPT",
-          "slug": "vnpt",
           "lyDo": "cung_nhom",
           "chung": [
             "1"
@@ -521,7 +536,7 @@
         },
         "tenMienNguon": 2,
         "banChup": 2,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -606,8 +621,14 @@
           "maSp": "05",
           "ten": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0011",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -624,6 +645,14 @@
           "nguon": "cafef.vn",
           "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
           "soCau": 3
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0011",
+          "nhuCau": "CNCL-P05 · nhu cầu quốc gia",
+          "maSp": "05",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [],
@@ -2912,7 +2941,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 2
       },
       "doTuoi": {
         "tuoi": 0,
@@ -2993,12 +3022,31 @@
       ],
       "nhuCau": [
         {
+          "id": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "ten": "Hệ thống cảm biến sinh học thông minh",
+          "quanHe": [
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0008",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
+        },
+        {
           "id": "CNCL-P15 · nhu cầu quốc gia",
           "maSp": "15",
           "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0024",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -3008,9 +3056,34 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0008",
+          "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "by": "Lam Nguyen"
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0024",
+          "nhuCau": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13",
+            "P15"
+          ]
+        },
         {
           "ten": "Công ty CP Việt Nam Food (VNF)",
           "slug": "cong-ty-cp-viet-nam-food-vnf",
@@ -3020,11 +3093,19 @@
           ]
         },
         {
-          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
-          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
           "lyDo": "cung_nhu_cau",
           "chung": [
-            "P15"
+            "P13"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
           ]
         }
       ],
@@ -3072,22 +3153,6 @@
         {
           "ten": "Viện Di truyền Nông nghiệp Việt Nam",
           "slug": "vien-di-truyen-nong-nghiep-viet-nam",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
-          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Khoa học vật liệu",
-          "slug": "vien-khoa-hoc-vat-lieu",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -7630,7 +7695,7 @@
         },
         "tenMienNguon": 2,
         "banChup": 2,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -7715,8 +7780,14 @@
           "maSp": "28",
           "ten": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0012",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -7733,6 +7804,14 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
           "soCau": 1
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0012",
+          "nhuCau": "CNCL-P28 · nhu cầu quốc gia",
+          "maSp": "28",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [],
@@ -8022,7 +8101,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 2
       },
       "doTuoi": {
         "tuoi": 0,
@@ -8103,12 +8182,31 @@
       ],
       "nhuCau": [
         {
+          "id": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "ten": "Hệ thống cảm biến sinh học thông minh",
+          "quanHe": [
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0009",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
+        },
+        {
           "id": "CNCL-P15 · nhu cầu quốc gia",
           "maSp": "15",
           "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0025",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -8118,9 +8216,34 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0009",
+          "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "by": "Lam Nguyen"
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0025",
+          "nhuCau": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13",
+            "P15"
+          ]
+        },
         {
           "ten": "Công ty CP Việt Nam Food (VNF)",
           "slug": "cong-ty-cp-viet-nam-food-vnf",
@@ -8130,11 +8253,19 @@
           ]
         },
         {
-          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
-          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
           "lyDo": "cung_nhu_cau",
           "chung": [
-            "P15"
+            "P13"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
           ]
         }
       ],
@@ -8182,22 +8313,6 @@
         {
           "ten": "Viện Di truyền Nông nghiệp Việt Nam",
           "slug": "vien-di-truyen-nong-nghiep-viet-nam",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
-          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Khoa học vật liệu",
-          "slug": "vien-khoa-hoc-vat-lieu",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -9048,7 +9163,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -9133,8 +9248,14 @@
           "maSp": "13",
           "ten": "Hệ thống cảm biến sinh học thông minh",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0006",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -9144,9 +9265,33 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0006",
+          "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        },
         {
           "ten": "Viện Khoa học vật liệu",
           "slug": "vien-khoa-hoc-vat-lieu",
@@ -9182,14 +9327,6 @@
           ]
         },
         {
-          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
-          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
           "ten": "Công ty cổ phần AVAC Việt Nam",
           "slug": "cong-ty-co-phan-avac-viet-nam",
           "lyDo": "cung_nhom",
@@ -9208,14 +9345,6 @@
         {
           "ten": "Tập đoàn Dabaco Việt Nam",
           "slug": "tap-doan-dabaco-viet-nam",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
-          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -9293,7 +9422,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -9378,8 +9507,14 @@
           "maSp": "13",
           "ten": "Hệ thống cảm biến sinh học thông minh",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0007",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -9389,9 +9524,33 @@
           "nguon": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0007",
+          "nhuCau": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        },
         {
           "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
           "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
@@ -9427,14 +9586,6 @@
           ]
         },
         {
-          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
-          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
           "ten": "Công ty cổ phần AVAC Việt Nam",
           "slug": "cong-ty-co-phan-avac-viet-nam",
           "lyDo": "cung_nhom",
@@ -9453,14 +9604,6 @@
         {
           "ten": "Tập đoàn Dabaco Việt Nam",
           "slug": "tap-doan-dabaco-viet-nam",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "4"
-          ]
-        },
-        {
-          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
-          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -9538,7 +9681,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 2,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 2,
@@ -9623,8 +9766,14 @@
           "maSp": "11",
           "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0005",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -9641,6 +9790,14 @@
           "nguon": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
           "soCau": 2
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0005",
+          "nhuCau": "CNCL-P11 · nhu cầu quốc gia",
+          "maSp": "11",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
@@ -10286,7 +10443,7 @@
         },
         "tenMienNguon": 3,
         "banChup": 3,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -10373,6 +10530,19 @@
           "quanHe": [
             "cung_san_pham"
           ]
+        },
+        {
+          "id": "CNCL-P03 · nhu cầu quốc gia",
+          "maSp": "03",
+          "ten": "Nền tảng bản sao số",
+          "quanHe": [
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0001",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -10396,6 +10566,14 @@
           "nguon": "thanhnien.vn",
           "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
           "soCau": 1
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0001",
+          "nhuCau": "CNCL-P03 · nhu cầu quốc gia",
+          "maSp": "03",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
@@ -11149,7 +11327,7 @@
         },
         "tenMienNguon": 3,
         "banChup": 4,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 1,
@@ -11271,6 +11449,19 @@
           ]
         },
         {
+          "id": "CNCL-P04 · nhu cầu quốc gia",
+          "maSp": "04",
+          "ten": "Nền tảng điện toán đám mây",
+          "quanHe": [
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0019",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
+        },
+        {
           "id": "CNCL-P08 · nhu cầu quốc gia",
           "maSp": "08",
           "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
@@ -11319,9 +11510,25 @@
           "nhuCau": "CNCL-P08 · nhu cầu quốc gia",
           "maSp": "08",
           "by": "Lam Nguyen"
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0019",
+          "nhuCau": "CNCL-P04 · nhu cầu quốc gia",
+          "maSp": "04",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P04"
+          ]
+        },
         {
           "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
           "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
@@ -11340,14 +11547,6 @@
         }
       ],
       "cungNhom": [
-        {
-          "ten": "CMC Telecom",
-          "slug": "cmc-telecom",
-          "lyDo": "cung_nhom",
-          "chung": [
-            "1"
-          ]
-        },
         {
           "ten": "Công ty 1Matrix",
           "slug": "cong-ty-1matrix",
@@ -11808,7 +12007,7 @@
         },
         "tenMienNguon": 1,
         "banChup": 1,
-        "matchDaKy": 0
+        "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
@@ -11893,8 +12092,14 @@
           "maSp": "08",
           "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
           "quanHe": [
-            "cung_san_pham"
-          ]
+            "cung_san_pham",
+            "match_da_ky"
+          ],
+          "matchId": "MATCH-0004",
+          "ky": {
+            "by": "Lam Nguyen",
+            "date": "2026-09-30"
+          }
         }
       ],
       "dongThoiGian": [
@@ -11904,6 +12109,14 @@
           "nguon": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "soCau": 6
+        },
+        {
+          "ngay": "2026-09-30",
+          "loai": "match_da_ky",
+          "matchId": "MATCH-0004",
+          "nhuCau": "CNCL-P08 · nhu cầu quốc gia",
+          "maSp": "08",
+          "by": "Lam Nguyen"
         }
       ],
       "tuongTu": [
