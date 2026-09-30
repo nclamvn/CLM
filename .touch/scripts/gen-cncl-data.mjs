@@ -392,6 +392,20 @@ writeFileSync(join(TOUCH, 'lib', 'cncl-registry.json'),
 writeFileSync(join(TOUCH, 'lib', 'cncl-match.json'),
   JSON.stringify({ matchMeta: matchMetaObj, signedMatches: webMatches, rejectedPairs: tuChoi }, null, 2) + '\n', 'utf8');
 
+// ── PHIEU GHEP (them 30/09/2026) ────────────────────────────────────────────
+// CaoLocMatch/pheu_matching.py dem engine da loc bao nhieu cap va vi sao, doi chieu voi chinh
+// make_matches_v2 (lech la no fail). O day chi CHEP sang web, khong tinh lai, khong lam tron.
+// Thieu file la FAIL: man Matching khong duoc hien mot phieu cu hay bia.
+{
+  const pPheu = join(CLM, 'out', 'pheu.json');
+  if (!existsSync(pPheu)) {
+    console.error(`FAIL: thieu ${pPheu}. Chay python3 pheu_matching.py trong CaoLocMatch sau match_engine.py run.`);
+    process.exit(2);
+  }
+  const pheu = JSON.parse(readFileSync(pPheu, 'utf8'));
+  writeFileSync(join(TOUCH, 'lib', 'hub-pheu.json'), JSON.stringify({ ...pheu, generatedAt: NOW }, null, 2) + '\n', 'utf8');
+}
+
 console.log(`REGISTRY: ${meta.units} don vi · ${meta.claims} claim · ${meta.needs} nhu cau · tier A ${meta.tierA}`);
 console.log(`MATCH   : ${webMatches.length} da ky / ${matches.length} chay ra · ${tuChoi.length} bi tu choi`);
 if (webMatches.length !== matches.length) {

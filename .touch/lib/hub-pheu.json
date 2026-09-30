@@ -1,0 +1,281 @@
+{
+  "quy_tac": "anchor_group_overlap_v2",
+  "nguong_giao": 0.5,
+  "so_nhu_cau": 30,
+  "so_don_vi_co_nang_luc": 43,
+  "nhu_cau_chua_anh_xa": 0,
+  "tang": [
+    {
+      "k": "kha_di",
+      "n": 1290
+    },
+    {
+      "k": "qua_neo_nhom",
+      "n": 187
+    },
+    {
+      "k": "qua_giao_tu",
+      "n": 12
+    },
+    {
+      "k": "da_ky",
+      "n": 11
+    },
+    {
+      "k": "tu_choi",
+      "n": 1
+    }
+  ],
+  "neo_qua_chuoi_gia_tri": 41,
+  "loai_lop1": {
+    "so": 10,
+    "vi_du": [
+      {
+        "cau": "P23",
+        "ten_cau": "Chip chuyên dụng",
+        "cung": "FPT",
+        "ty_le": 1,
+        "giao": [
+          "chip"
+        ],
+        "nhom_cau": 6,
+        "nhom_cung": [
+          1
+        ]
+      },
+      {
+        "cau": "P23",
+        "ten_cau": "Chip chuyên dụng",
+        "cung": "Masan High-Tech Materials",
+        "ty_le": 1,
+        "giao": [
+          "chip"
+        ],
+        "nhom_cau": 6,
+        "nhom_cung": []
+      },
+      {
+        "cau": "P22",
+        "ten_cau": "Thiết bị, phương tiện bay không người lái (UAV)",
+        "cung": "FPT",
+        "ty_le": 0.71,
+        "giao": [
+          "bay",
+          "không",
+          "lái",
+          "người",
+          "uav"
+        ],
+        "nhom_cau": 9,
+        "nhom_cung": [
+          1
+        ]
+      },
+      {
+        "cau": "P08",
+        "ten_cau": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+        "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+        "ty_le": 0.67,
+        "giao": [
+          "hình",
+          "xuất"
+        ],
+        "nhom_cau": 3,
+        "nhom_cung": [
+          5
+        ]
+      },
+      {
+        "cau": "P20",
+        "ten_cau": "máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+        "cung": "Công ty TNHH Luyện kim Trần Hồng Quân",
+        "ty_le": 0.67,
+        "giao": [
+          "cao",
+          "điện"
+        ],
+        "nhom_cau": 5,
+        "nhom_cung": [
+          8
+        ]
+      },
+      {
+        "cau": "P03",
+        "ten_cau": "Nền tảng bản sao số",
+        "cung": "Tập đoàn MISA",
+        "ty_le": 0.5,
+        "giao": [
+          "bản"
+        ],
+        "nhom_cau": 1,
+        "nhom_cung": [
+          3
+        ]
+      }
+    ]
+  },
+  "suyt_dat": {
+    "so": 51,
+    "vi_du": [
+      {
+        "cau": "P16",
+        "ten_cau": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
+        "cung": "Viện Di truyền Nông nghiệp Việt Nam",
+        "ty_le": 0.44,
+        "giao": [
+          "chỉnh",
+          "gen",
+          "giống",
+          "mới",
+          "sửa",
+          "tạo",
+          "được"
+        ],
+        "thieu": [
+          "bào",
+          "cây",
+          "học",
+          "nuôi",
+          "sinh",
+          "thế",
+          "thủy",
+          "trồng",
+          "vật"
+        ],
+        "nhom_cau": 4
+      },
+      {
+        "cau": "P01",
+        "ten_cau": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+        "cung": "Tập đoàn Viettel",
+        "ty_le": 0.42,
+        "giao": [
+          "hình",
+          "ngữ",
+          "tiếng",
+          "trợ",
+          "việt"
+        ],
+        "thieu": [
+          "lớn",
+          "ngành",
+          "ngôn",
+          "nhân",
+          "trí",
+          "tuệ",
+          "tạo"
+        ],
+        "nhom_cau": 1
+      },
+      {
+        "cau": "P21",
+        "ten_cau": "Hệ thống thu giữ, sử dụng và lưu trữ carbon",
+        "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+        "ty_le": 0.4,
+        "giao": [
+          "lưu",
+          "trữ"
+        ],
+        "thieu": [
+          "carbon",
+          "giữ",
+          "thu"
+        ],
+        "nhom_cau": 5
+      },
+      {
+        "cau": "P25",
+        "ten_cau": "Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm",
+        "cung": "Viện Công nghệ xạ hiếm",
+        "ty_le": 0.4,
+        "giao": [
+          "chế",
+          "hiếm",
+          "khoáng",
+          "đất"
+        ],
+        "thieu": [
+          "biến",
+          "dầu",
+          "khai",
+          "khí",
+          "sâu",
+          "thác"
+        ],
+        "nhom_cau": 8
+      },
+      {
+        "cau": "P18",
+        "ten_cau": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
+        "cung": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+        "ty_le": 0.38,
+        "giao": [
+          "lượng",
+          "năng",
+          "pin"
+        ],
+        "thieu": [
+          "bess",
+          "hợp",
+          "quy",
+          "trữ",
+          "tích"
+        ],
+        "nhom_cau": 5
+      },
+      {
+        "cau": "P19",
+        "ten_cau": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+        "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+        "ty_le": 0.38,
+        "giao": [
+          "liệu",
+          "lưu",
+          "phân",
+          "trữ",
+          "xuất"
+        ],
+        "thieu": [
+          "chuyển",
+          "hydrogen",
+          "học",
+          "nhiên",
+          "phối",
+          "sinh",
+          "vận",
+          "xanh"
+        ],
+        "nhom_cau": 5
+      },
+      {
+        "cau": "P02",
+        "ten_cau": "AI camera xử lý tại biên",
+        "cung": "FPT",
+        "ty_le": 0.33,
+        "giao": [
+          "camera"
+        ],
+        "thieu": [
+          "biên",
+          "tại"
+        ],
+        "nhom_cau": 1
+      },
+      {
+        "cau": "P02",
+        "ten_cau": "AI camera xử lý tại biên",
+        "cung": "Tập đoàn Viettel",
+        "ty_le": 0.33,
+        "giao": [
+          "camera"
+        ],
+        "thieu": [
+          "biên",
+          "tại"
+        ],
+        "nhom_cau": 1
+      }
+    ]
+  },
+  "generatedAt": "2026-09-30"
+}

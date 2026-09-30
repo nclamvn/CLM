@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-09-29 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-09-30 · KHONG sua tay.
 // Nguon: CNCLData/domains/don_vi_cncl + Dataset_CongNgheChienLuoc
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -37,14 +37,14 @@ export const cnclMeta: CnclMeta = {
   "tierA": 78,
   "tierB": 143,
   "nhomPhu": 10,
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-09-30",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-09-29 21:46: 81/81 xanh",
+  "gate": "chuỗi cổng 2026-09-29 21:59: 83/83 xanh",
   "chuoiCong": {
-    "luc": "2026-09-29T21:46:44+0700",
+    "luc": "2026-09-29T21:59:21+0700",
     "cheDo": "day_du",
-    "tong": 81,
-    "xanh": 81,
+    "tong": 83,
+    "xanh": 83,
     "do": 0,
     "khongChay": 0,
     "hoan": 0,

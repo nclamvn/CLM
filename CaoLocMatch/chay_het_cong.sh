@@ -217,6 +217,9 @@ chay CaoLocMatch refinery         "$CLM" 'VALIDATION|GATE'       python3 methodb
 chay CaoLocMatch match_run        "$CLM" 'digest_matches'        python3 match_engine.py run domains/cncl_match
 chay CaoLocMatch restore_signoff  "$CLM" 'RESTORE|BANG CHUNG'    python3 match_engine.py restore-signoff domains/cncl_match out/matches.jsonl
 chay CaoLocMatch validate_ky      "$CLM" 'VALIDATE|GATE'         python3 match_engine.py validate domains/cncl_match out/matches.jsonl --require-signoff
+# Phieu ghep: engine da loc bao nhieu cap va vi sao. Them 30/09/2026 cho man Matching. Script tu
+# doi chieu tap ung vien voi chinh make_matches_v2; lech la do.
+chay CaoLocMatch pheu_ghep        "$CLM" 'PHEU:|FAIL|KHONG CHAY' python3 pheu_matching.py
 
 # Chay trong kho nao thi phai DOC du lieu cua kho do. Them 01/09/2026 sau khi gop kho thu tu:
 # build_cncl_match.py van doc CNCLData CU du dang chay trong kho gop, va bang nay van bao 36
@@ -273,6 +276,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Matching Workbench v2 M4 (29/09/2026): diem tu dung lai khop engine, canh chuoi dung mapping,
   # ly do tu choi nguyen van so ky, man khong co duong ky.
   chay .touch      matching         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-matching.mjs
+  chay .touch      pheu_ghep_web    "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-pheu.mjs
   # Dong thoi cuoc M5 (29/09/2026): ngay phai nam nguyen van trong cau nguon; tam ban chup chieu cau
   # mang ngay CHUP, doc ngay tu ten file la dat QD 21 lech hai thang ruoi.
   chay .touch      thoi_cuoc        "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-thoi-cuoc.mjs
@@ -318,6 +322,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_ho_so       "$TOUCH" 'BITE HO SO'        node scripts/bite-ho-so.mjs
     chay .touch    rang_thi_truong  "$TOUCH" 'BITE THI TRUONG'   node scripts/bite-thi-truong.mjs
     chay .touch    rang_matching    "$TOUCH" 'BITE MATCHING'     node scripts/bite-matching.mjs
+    chay .touch    rang_pheu_web    "$TOUCH" 'BITE PHEU WEB'     node scripts/bite-pheu.mjs
     chay .touch    rang_thoi_cuoc   "$TOUCH" 'BITE THOI CUOC'    node scripts/bite-thoi-cuoc.mjs
     chay .touch    rang_mo_dau      "$TOUCH" 'BITE MO DAU'       node scripts/bite-mo-dau.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
@@ -339,6 +344,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_moc_thoi_gian "$CNCL" 'BITE MOC THOI GIAN' python3 bite_moc_thoi_gian.py
   chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
+  chay CaoLocMatch rang_pheu        "$CLM" 'BITE PHEU'           python3 bite_pheu_matching.py
   chay CaoLocMatch rang_bang_chung  "$CLM" 'BITE KHOA'           python3 bite_bang_chung.py
   chay CaoLocMatch rang_dong_bo     "$CLM" 'BITE DONG BO'        python3 bite_dong_bo_snapshot.py
   chay CaoLocMatch rang_gop_cap     "$CLM" 'BITE GOP CAP'        python3 bite_gop_cap.py

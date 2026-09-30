@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "56a16ed",
-    "ngay": "2026-09-29"
+    "sha": "3fc2990",
+    "ngay": "2026-09-30"
   },
-  "tongCommit": 182,
+  "tongCommit": 184,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 33,
+      "commitSauGop": 34,
       "cuoi": {
-        "sha": "6561a33",
+        "sha": "3a8ad74",
         "ngay": "2026-09-29",
-        "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
+        "tieuDe": "Toan he don sac theo trang dau (HIVE dark plate): token SOT v2 gan lai thang xam, 339 cho mau bao hoa/gradient/glow trong 10 file duoc khu; mau du lieu thanh thang xam + hinh/net; serif cho tieu de trang va so KPI; cong don_sac + 10 rang"
       },
       "soTep": 123
     },
@@ -68,22 +68,32 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 36,
+      "commitSauGop": 37,
       "cuoi": {
-        "sha": "56a16ed",
+        "sha": "3a8ad74",
         "ngay": "2026-09-29",
-        "tieuDe": "Trang dau: cham logo dat dung baseline (offset 0 moi co); moi vien thuoc chung mot hinh hoc 36px; cau phu viet lai gon, giu cum tu khong ngat dong"
+        "tieuDe": "Toan he don sac theo trang dau (HIVE dark plate): token SOT v2 gan lai thang xam, 339 cho mau bao hoa/gradient/glow trong 10 file duoc khu; mau du lieu thanh thang xam + hinh/net; serif cho tieu de trang va so KPI; cong don_sac + 10 rang"
       },
-      "soTep": 404
+      "soTep": 406
     }
   ],
   "oTheoKho": {
     "CNCLData": 25,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 17,
-    ".touch": 37
+    ".touch": 39
   },
   "ganDay": [
+    {
+      "sha": "3fc2990",
+      "ngay": "2026-09-30",
+      "tieuDe": "CI ghim moi truong: ubuntu-24.04 (thay ubuntu-latest truoc 19/10), Node 24 LTS (Node 20 het ho tro), checkout/setup-python/setup-node v7; persist-credentials false; dien tap clone sach 80/0/3"
+    },
+    {
+      "sha": "3a8ad74",
+      "ngay": "2026-09-29",
+      "tieuDe": "Toan he don sac theo trang dau (HIVE dark plate): token SOT v2 gan lai thang xam, 339 cho mau bao hoa/gradient/glow trong 10 file duoc khu; mau du lieu thanh thang xam + hinh/net; serif cho tieu de trang va so KPI; cong don_sac + 10 rang"
+    },
     {
       "sha": "56a16ed",
       "ngay": "2026-09-29",
@@ -123,16 +133,6 @@
       "sha": "76e77e3",
       "ngay": "2026-09-29",
       "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
-    },
-    {
-      "sha": "6f98d2a",
-      "ngay": "2026-09-29",
-      "tieuDe": "Sua rang 8 cua bite-mo-dau: tiem vo dieu kien, khong con lang le thanh \"khong lam gi\" trong CI"
-    },
-    {
-      "sha": "d3f78a8",
-      "ngay": "2026-09-29",
-      "tieuDe": "Trang Kho ma sinh tu git: bo bang ghi tay nam kho cu (HEAD thang 7-8), moi so la lenh git tai commit ghi lai"
     }
   ],
   "dong": [

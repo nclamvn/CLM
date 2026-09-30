@@ -1197,3 +1197,52 @@
 .dash-shell .kh-gd li { display: grid; grid-template-columns: 64px 84px 1fr; gap: 8px; align-items: baseline; font-size: 12.5px; padding: 7px 4px; border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
 .dash-shell .kh-gd .kh-td { flex-basis: auto; -webkit-line-clamp: 1; }
 @media (max-width: 1100px) { .dash-shell .kh-dau, .dash-shell .kh-hai { grid-template-columns: minmax(0, 1fr); } .dash-shell .kh-luoi { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---- Phieu ghep (man Matching, them 30/09/2026). Don sac: phan biet bang net lien / dut, khong mau. ---- */
+.dash-shell .pg { padding: var(--space-5) var(--space-6); margin-bottom: var(--space-4); }
+.dash-shell .pg-dau { display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--space-4); }
+.dash-shell .pg-h { font-family: var(--font-serif-ed); font-weight: 400; font-size: 22px; letter-spacing: -0.01em; color: var(--color-text-primary); }
+.dash-shell .pg-h span { font-family: var(--font-ui); font-size: 13px; color: var(--color-text-secondary); margin-left: 8px; }
+.dash-shell .pg-phu { font-size: 13px; line-height: 1.55; color: var(--color-text-secondary); max-width: 72ch; }
+.dash-shell .pg-tang { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--color-border-subtle); }
+.dash-shell .pg-b { position: relative; display: flex; flex-direction: column; gap: 6px; padding: var(--space-4) var(--space-5) var(--space-4) 0; }
+.dash-shell .pg-b + .pg-b { padding-left: var(--space-5); border-left: 1px solid var(--color-border-muted); }
+.dash-shell .pg-b__so { font-family: var(--font-serif-ed); font-size: 44px; line-height: 1; letter-spacing: -0.02em; color: var(--color-text-primary); font-variant-numeric: lining-nums tabular-nums; }
+.dash-shell .pg-b.is-cuoi .pg-b__so { color: #FFFFFF; }
+.dash-shell .pg-b__nhan { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.dash-shell .pg-b__thanh { display: block; height: 2px; background: var(--color-border-muted); margin: 6px 0 2px; }
+.dash-shell .pg-b__thanh i { display: block; height: 100%; background: var(--color-text-secondary); }
+.dash-shell .pg-b.is-cuoi .pg-b__thanh i { background: #FFFFFF; height: 3px; margin-top: -0.5px; }
+.dash-shell .pg-b__phu { font-size: 12px; line-height: 1.45; color: var(--color-text-secondary); }
+.dash-shell .pg-b__loai { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--color-border-strong); font-size: 12px; line-height: 1.45; color: var(--color-text-secondary); }
+.dash-shell .pg-b__loai b { font-family: var(--font-serif-ed); font-weight: 400; font-size: 18px; color: var(--color-text-primary); margin-right: 4px; }
+.dash-shell .pg-chan { margin-top: var(--space-3); font-size: 11.5px; color: var(--color-text-muted); }
+.dash-shell .pg-chan code { font-family: var(--font-code); font-size: 11px; color: var(--color-text-secondary); }
+
+.dash-shell .pg-hai { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: var(--space-4); margin-top: var(--space-4); }
+.dash-shell .pg-hai .pg { margin-bottom: 0; }
+.dash-shell .pg-ds { list-style: none; border-top: 1px solid var(--color-border-subtle); }
+.dash-shell .pg-dong { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; column-gap: var(--space-3); align-items: start; padding: var(--space-2_5) 0; border-bottom: 1px solid var(--color-border-muted); }
+.dash-shell .pg-dong__ma { font-family: var(--font-code); font-size: 12px; color: var(--color-text-primary); padding-top: 2px; }
+.dash-shell .pg-dong__than { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.dash-shell .pg-dong__cap { display: flex; flex-direction: column; min-width: 0; }
+.dash-shell .pg-dong__cap a { font-size: 13.5px; color: var(--color-text-primary); text-decoration: underline; text-decoration-color: var(--color-border-strong); text-underline-offset: 3px; }
+.dash-shell .pg-dong__cap a:hover { text-decoration-color: var(--color-text-primary); }
+.dash-shell .pg-dong__cap em { font-style: normal; font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dash-shell .pg-dong__ly { font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.dash-shell .pg-tu { display: flex; flex-wrap: wrap; gap: 4px; }
+.dash-shell .pg-tu i, .dash-shell .pg-chu i { font-style: normal; font-size: 11px; line-height: 1; padding: 3px 6px; border-radius: 999px; }
+.dash-shell .pg-tu--giao { border: 1px solid var(--color-text-secondary); color: var(--color-text-primary); }
+.dash-shell .pg-tu--thieu { border: 1px dashed var(--color-border-strong); color: var(--color-text-muted); }
+.dash-shell .pg-tu--them { color: var(--color-text-muted); }
+.dash-shell .pg-dong__do { display: flex; align-items: center; gap: 8px; padding-top: 4px; }
+.dash-shell .pg-do { position: relative; width: 88px; height: 4px; background: var(--color-border-muted); }
+.dash-shell .pg-do i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--color-text-secondary); }
+.dash-shell .pg-do b { position: absolute; top: -4px; width: 1px; height: 12px; background: var(--color-text-primary); }
+.dash-shell .pg-do__so { font-size: 12px; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+.dash-shell .pg-them { margin-top: var(--space-2_5); font-size: 12px; color: var(--color-text-muted); }
+.dash-shell .pg-chu { margin-top: var(--space-2_5); font-size: 11.5px; color: var(--color-text-muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+@media (max-width: 1100px) {
+  .dash-shell .pg-tang { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dash-shell .pg-hai { grid-template-columns: 1fr; }
+}
