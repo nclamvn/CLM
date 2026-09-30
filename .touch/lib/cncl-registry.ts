@@ -29,30 +29,295 @@ export type CnclMeta = {
 };
 
 export const cnclMeta: CnclMeta = {
-  "units": 44,
-  "claims": 221,
+  "units": 60,
+  "claims": 323,
   "needs": 30,
-  "sources": 13,
-  "snapshots": 47,
-  "tierA": 78,
-  "tierB": 143,
+  "sources": 21,
+  "snapshots": 69,
+  "tierA": 120,
+  "tierB": 190,
   "nhomPhu": 10,
   "generatedAt": "2026-09-30",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-09-30 15:04: 91/91 xanh",
+  "gate": "chuỗi cổng 2026-09-30 16:01: 78/91 xanh · ĐỎ 10 · không chạy 3",
   "chuoiCong": {
-    "luc": "2026-09-30T15:04:10+0700",
+    "luc": "2026-09-30T16:01:44+0700",
     "cheDo": "day_du",
     "tong": 91,
-    "xanh": 91,
-    "do": 0,
-    "khongChay": 0,
+    "xanh": 78,
+    "do": 10,
+    "khongChay": 3,
     "hoan": 0,
-    "dat": true
+    "dat": false
   }
 };
 
 export const cnclUnits: CnclUnit[] = [
+  {
+    "name": "Bệnh viện Trung ương Quân đội 108",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "11"
+    ],
+    "capability": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+    "capability2": "",
+    "bestTier": "C",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "benhvien108.vn",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt"
+      }
+    ],
+    "tim": "bệnh viện trung ương quân đội 108 vien viện liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống. nhóm 4 sinh học và y sinh sp 11",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Bệnh viện Trung ương Quân đội 108",
+        "span": "Năm 2019, Bệnh viện Trung ương Quân đội 108 là cơ quan chủ trì nhiệm vụ đề tài khoa học và công nghệ cấp Quốc gia “Nghiên cứu sử dụng tế bào gốc tạo máu tự thân điều trị bệnh nhược cơ và lupus ban đỏ hệ thống” do PGS.TS Mai Văn Viện làm chủ nhiệm đề tài, sau 4 năm triển khai đề tài đã được nghiệm thu thành công.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tự khai (trang của chính bệnh viện, Phòng KHQS). Nguồn gọi đích danh bệnh viện là cơ quan chủ trì."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Năm 2019, Bệnh viện Trung ương Quân đội 108 là cơ quan chủ trì nhiệm vụ đề tài khoa học và công nghệ cấp Quốc gia “Nghiên cứu sử dụng tế bào gốc tạo máu tự thân điều trị bệnh nhược cơ và lupus ban đỏ hệ thống” do PGS.TS Mai Văn Viện làm chủ nhiệm đề tài, sau 4 năm triển khai đề tài đã được nghiệm thu thành công.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "CHUAN HOA CO CHU DICH: bang loai_hinh chi co DN/vien/truong; benh vien cong lap la don vi su nghiep chu tri de tai cap Quoc gia, xep gan nhat vao 'vien'. Nguoi duyet xem co can them loai 'benh vien'. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình bệnh viện không có trong danh mục, cần người duyệt quyết."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "CHUAN HOA CO CHU DICH: lieu phap te bao goc thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Liệu pháp tế bào gốc thuộc nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "11",
+        "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "CHUAN HOA CO CHU DICH: lieu phap te bao goc tu than dieu tri cho nguoi, khop san pham 11 theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp tên nhu cầu P11 (tế bào gốc dùng cho người)."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Nguồn mạnh nhất tìm được là nhandan.vn (hạng B) đăng 28/01/2026, gọi đích danh bệnh viện là trung tâm ghép tế bào gốc tạo máu, mở rộng liệu pháp tế bào gốc điều trị nhược cơ và lupus, sản xuất tế bào NK, MSC phục vụ lâm sàng; bài này mới hơn nguồn cũ 2023 nhưng vẫn trước mốc 03/04/2026 nên không đạt độ tươi. Không tìm thấy bài báo chính thống hay trang .gov.vn nào từ 03/04/2026 về năng lực tế bào gốc của bệnh viện; các kết quả còn lại là bài cũ trên benhvien108.vn. Gợi ý: nếu giữ nguồn cũ, bài nhandan 28/01/2026 là nguồn tươi hơn có thể thay dòng tự khai 2023. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Mô tả liệu pháp mà bệnh viện đã triển khai trong đề tài; cùng đoạn nêu ca ghép trên bệnh nhân (có từ 'đầu tiên ở Việt Nam')."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Năm 2019, Bệnh viện Trung ương Quân đội 108 là cơ quan chủ trì nhiệm vụ đề tài khoa học và công nghệ cấp Quốc gia “Nghiên cứu sử dụng tế bào gốc tạo máu tự thân điều trị bệnh nhược cơ và lupus ban đỏ hệ thống” do PGS.TS Mai Văn Viện làm chủ nhiệm đề tài, sau 4 năm triển khai đề tài đã được nghiệm thu thành công.",
+        "span": "Năm 2019, Bệnh viện Trung ương Quân đội 108 là cơ quan chủ trì nhiệm vụ đề tài khoa học và công nghệ cấp Quốc gia “Nghiên cứu sử dụng tế bào gốc tạo máu tự thân điều trị bệnh nhược cơ và lupus ban đỏ hệ thống” do PGS.TS Mai Văn Viện làm chủ nhiệm đề tài, sau 4 năm triển khai đề tài đã được nghiệm thu thành công.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Nguồn mạnh nhất tìm được là nhandan.vn (hạng B) đăng 28/01/2026, gọi đích danh bệnh viện là trung tâm ghép tế bào gốc tạo máu, mở rộng liệu pháp tế bào gốc điều trị nhược cơ và lupus, sản xuất tế bào NK, MSC phục vụ lâm sàng; bài này mới hơn nguồn cũ 2023 nhưng vẫn trước mốc 03/04/2026 nên không đạt độ tươi. Không tìm thấy bài báo chính thống hay trang .gov.vn nào từ 03/04/2026 về năng lực tế bào gốc của bệnh viện; các kết quả còn lại là bài cũ trên benhvien108.vn. Gợi ý: nếu giữ nguồn cũ, bài nhandan 28/01/2026 là nguồn tươi hơn có thể thay dòng tự khai 2023. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đề tài cấp Quốc gia đã nghiệm thu. Tự khai, nên đối chiếu thêm với nguồn hạng A (mst.gov.vn) ở vòng sau."
+      }
+    ]
+  },
+  {
+    "name": "CMC Telecom",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "1"
+    ],
+    "nhomLabels": [
+      "Nhóm 1 · Công nghệ số"
+    ],
+    "sanPham": [
+      "4"
+    ],
+    "capability": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt"
+      }
+    ],
+    "tim": "cmc telecom dn doanh nghiệp cmc cloud là nền tảng điện toán đám mây \"make in vietnam\" do cmc telecom đầu tư và phát triển. hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư việt nam nhóm 1 công nghệ số sp 4",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "CMC Telecom",
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tên gọi theo nguồn là 'CMC Telecom' (thành viên Tập đoàn Công nghệ CMC); tên pháp nhân đầy đủ cần định danh từ cổng chính thức ở bước riêng. Đơn vị mới, không gộp vào CMC."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "CMC Telecom thuộc Tập đoàn Công nghệ CMC, là doanh nghiệp hạ tầng số duy nhất của Việt Nam có cổ đông nước ngoài (TIME dotCom, tập đoàn viễn thông Top 2 Malaysia)",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "CHUAN HOA CO CHU DICH: nguồn gọi CMC Telecom là 'doanh nghiệp hạ tầng số', chuẩn hoá thành loại hình DN. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Doanh nghiệp Việt Nam có cổ đông nước ngoài (TIME dotCom, Malaysia): người duyệt cần xét điều kiện 'đơn vị Việt Nam'. Câu nguồn có từ 'duy nhất'."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "1",
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "CHUAN HOA CO CHU DICH: nền tảng điện toán đám mây thuộc nhóm công nghệ 1 (Công nghệ số) theo QĐ 21/2026. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm là nền tảng điện toán đám mây, khớp nhu cầu P04 thuộc nhóm 1."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "4",
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "CHUAN HOA CO CHU DICH: 'nền tảng điện toán đám mây' ứng với nhu cầu P04 (Nền tảng điện toán đám mây), mã sản phẩm 4. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp trực tiếp tên nhu cầu P04."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam",
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam, dựa trên 3 trụ cột chính: Tư duy mở (tối ưu nguồn tri thức cộng đồng, làm chủ công nghệ cốt lõi); Kiến trúc mở (Không phụ thuộc vào công nghệ, không phụ thuộc vào nền tảng); Mã nguồn mở và sản phẩm thương mại hoá (Phát triển chuyên sâu và đáp ứng linh hoạt nhu cầu đặc thù của doanh nghiệp Việt Nam)",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Chỉ tìm được một phần: VietnamNet 14/07/2026 (ghi 'Nguồn: CMC Telecom', hạng C) khẳng định CMC Cloud là nền tảng Make in Vietnam, đã đề xuất thay nang_luc_mo_ta. Không tìm được nguồn đăng từ 03/04/2026 cho bang_chung_nang_luc (chứng nhận an toàn thông tin cấp độ 4, hay chứng nhận tương đương); cafef 22/02/2026 và các bài mst.gov.vn 2025 đều cũ hơn mốc. Trang danchuphapluat.vn về CMC 2026 trả về trang lỗi 404. | DU DIEU KIEN DA XET: chinh cau nguon noi CMC Telecom 'dau tu va phat trien' nen tang va he thong 'duoc thiet ke va van hanh hoan toan boi doi ngu ky su Viet Nam'; phan tu phat trien nam trong cau. RUI RO: CMC Telecom co co dong nuoc ngoai (TIME dotCom, Malaysia); dieu kien 'don vi Viet Nam' la quyet dinh cua nguoi duyet. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn nói rõ tự thiết kế và vận hành bởi kỹ sư Việt Nam, trên nền mã nguồn mở. Bài nằm mục 'Sản phẩm' của cổng, văn phong quảng bá; tiêu đề phụ có 'số 1'."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "CMC Telecom tiếp tục khẳng định uy tín khi hệ thống CMC Cloud chính thức đáp ứng tiêu chuẩn khắt khe này",
+        "span": "Tiếp nối thành công của Trung tâm Dữ liệu DC Tân Thuận đạt tiêu chuẩn an toàn thông tin cấp độ 4 theo quy định của chính phủ, CMC Telecom tiếp tục khẳng định uy tín khi hệ thống CMC Cloud chính thức đáp ứng tiêu chuẩn khắt khe này.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Chỉ tìm được một phần: VietnamNet 14/07/2026 (ghi 'Nguồn: CMC Telecom', hạng C) khẳng định CMC Cloud là nền tảng Make in Vietnam, đã đề xuất thay nang_luc_mo_ta. Không tìm được nguồn đăng từ 03/04/2026 cho bang_chung_nang_luc (chứng nhận an toàn thông tin cấp độ 4, hay chứng nhận tương đương); cafef 22/02/2026 và các bài mst.gov.vn 2025 đều cũ hơn mốc. Trang danchuphapluat.vn về CMC 2026 trả về trang lỗi 404. | THAM CHIEU DA NEO: 'tieu chuan khat khe nay' tro toi 'tieu chuan an toan thong tin cap do 4' nam ngay trong chinh span. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Hệ thống đã vận hành và đạt tiêu chuẩn an toàn thông tin cấp độ 4 (năng lực đã hình thành, không phải kế hoạch)."
+      }
+    ]
+  },
+  {
+    "name": "Công ty 1Matrix",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "1"
+    ],
+    "nhomLabels": [
+      "Nhóm 1 · Công nghệ số"
+    ],
+    "sanPham": [
+      "5"
+    ],
+    "capability": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "cafef.vn",
+        "href": "/evidence/cafef_1matrix_vbsn_20260101.txt"
+      },
+      {
+        "source": "vnexpress.net",
+        "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt"
+      }
+    ],
+    "tim": "công ty 1matrix dn doanh nghiệp hiện vbsn đã được tích hợp vào hệ thống truy xuất nguồn gốc của bộ công an và triển khai trên nền tảng định danh quốc gia vneid nhóm 1 công nghệ số sp 5",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Công ty 1Matrix",
+        "span": "Ông Phan Đức Trung đại diện Công ty 1Matrix nhận nhiệm vụ thực hiện 2 bài toán lớn năm 2026 là tích hợp blockchain trong truy xuất nguồn gốc và hệ thống tư pháp dưới sự chứng kiến của",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+        "note": "LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tên gọi theo nguồn; tên pháp nhân đầy đủ cần định danh ở bước riêng. Đơn vị mới."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Đến tháng 5, công ty 1Matrix được thành lập thông qua sự hợp tác giữa One Mount, Techcombank và một số đối tác.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+        "note": "CHUAN HOA CO CHU DICH: nguồn gọi 1Matrix là 'công ty', chuẩn hoá thành loại hình DN. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Doanh nghiệp Việt thành lập tháng 5/2025 từ One Mount, Techcombank và đối tác. Theo bài cafef 01/01/2026, cổ đông cũ đã chuyển toàn bộ vốn cho ông Phan Đức Trung."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "1",
+        "span": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+        "note": "CHUAN HOA CO CHU DICH: mạng blockchain Layer-1 thuộc hạ tầng mạng chuỗi khối, nhóm công nghệ 1 (Công nghệ số) theo QĐ 21/2026. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm là hạ tầng mạng chuỗi khối."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "5",
+        "span": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+        "note": "CHUAN HOA CO CHU DICH: VBSN (mạng chuỗi khối) tích hợp vào hệ thống truy xuất nguồn gốc, ứng với nhu cầu P05 (Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc), mã sản phẩm 5. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp cả hai vế của nhu cầu P05."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID",
+        "span": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID.",
+        "source": "cafef.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tim duoc nhandan.vn 28/08/2026 (hang B) noi ve VBSN, nhung bai moi chi noi VBSN 'dang duoc nghien cuu, thu nghiem trien khai' trong VNeID, NHE HON khang dinh cu 'da duoc tich hop' vao he thong truy xuat nguon goc cua Bo Cong an, va ghi cong ty DOI TEN thanh VMatrix ngay 28/08/2026. RUI RO: khang dinh cu chua co xac nhan doc lap; nguoi duyet can quyet giu, ha, hay gach. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu nói đã tích hợp vào hệ thống thật, nhưng bài là bản đăng lại từ markettimes.vn, văn phong gần thông cáo doanh nghiệp, chưa có xác nhận từ Bộ Công an. Trong bản chụp, đầu dòng chứa ký tự vô hình U+FEFF ngay trước 'Hiện'."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể.",
+        "span": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể. Các mạng này có thể kết nối với những nền tảng blockchain sẵn có trên thế giới.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tim duoc nhandan.vn 28/08/2026 (hang B) noi ve VBSN, nhung bai moi chi noi VBSN 'dang duoc nghien cuu, thu nghiem trien khai' trong VNeID, NHE HON khang dinh cu 'da duoc tich hop' vao he thong truy xuat nguon goc cua Bo Cong an, va ghi cong ty DOI TEN thanh VMatrix ngay 28/08/2026. RUI RO: khang dinh cu chua co xac nhan doc lap; nguoi duyet can quyet giu, ha, hay gach. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguyên mẫu đã dựng (6 mạng Layer-1) theo VnExpress; cùng bài gọi đây là 'kết quả bước đầu' sau hơn 4 tháng. Đơn vị còn rất mới; người duyệt nên xét mức trưởng thành. Chủ tịch 1Matrix đồng thời là Chủ tịch Hiệp hội Blockchain và Tài sản số Việt Nam; bài cafef dùng từ 'hàng đầu'."
+      }
+    ]
+  },
   {
     "name": "Công ty An ninh mạng Viettel",
     "loaiHinh": "",
@@ -194,6 +459,93 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi vac xin AVAC ASF LIVE cho dan lon -> SP14. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      }
+    ]
+  },
+  {
+    "name": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "3"
+    ],
+    "nhomLabels": [
+      "Nhóm 3 · Robot và tự động hoá"
+    ],
+    "sanPham": [
+      "8"
+    ],
+    "capability": "nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt"
+      }
+    ],
+    "tim": "công ty cổ phần công nghệ & truyền thông việt nam (vntt) dn doanh nghiệp nền tảng số do doanh nghiệp việt nam phát triển (công ty cổ phần công nghệ & truyền thông việt nam - vntt) để áp dụng vào quy trình sản xuất tại công ty tnhh thực phẩm orion vina (khu công nghiệp mỹ phước ii) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh nhóm 3 robot và tự động hoá sp 8",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam",
+        "span": "Với sự hỗ trợ của tỉnh Bình Dương và Tổng Công ty Becamex IDC, Tập đoàn Orion (Hàn Quốc) đã tin tưởng lựa chọn nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh…",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Cổng Bộ KH&CN gọi đích danh VNTT là doanh nghiệp Việt Nam phát triển nền tảng số áp dụng vào sản xuất tại nhà máy Orion Vina. VNTT là thành viên Becamex IDC và VNPT nhưng có pháp nhân riêng, nên tách khỏi VNPT."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Với sự hỗ trợ của tỉnh Bình Dương và Tổng Công ty Becamex IDC, Tập đoàn Orion (Hàn Quốc) đã tin tưởng lựa chọn nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh…",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "CHUAN HOA CO CHU DICH: span goi 'doanh nghiệp Việt Nam' va ten 'Công ty Cổ phần ...' -> loai_hinh DN. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Công ty cổ phần, doanh nghiệp Việt Nam."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "3",
+        "span": "Qua nhiều lần thảo luận, đánh giá từ đội ngũ chuyên gia của chúng tôi tại Hàn Quốc, chúng tôi đánh giá rất cao giải pháp nhà máy thông minh do Becamex và VNTT phát triển, với kiến trúc hiện đại, chức năng đầy đủ và thông minh, hoàn toàn đáp ứng các tiêu chuẩn quốc tế khắt khe, không thua kém các giải pháp đến từ các quốc gia có nền công nghiệp phát triển, nhưng chi phí hợp lý”, ông Park Ye Seol chia sẻ.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "CHUAN HOA CO CHU DICH: span noi 'giải pháp nhà máy thông minh do Becamex và VNTT phát triển' -> san pham 8 (Nen tang, giai phap va mo hinh phuc vu san xuat thong minh) thuoc nhom 3 (Robot va tu dong hoa) theo QD 21/2026. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Giải pháp nhà máy thông minh thuộc nhóm Robot và tự động hoá."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "8",
+        "span": "Qua nhiều lần thảo luận, đánh giá từ đội ngũ chuyên gia của chúng tôi tại Hàn Quốc, chúng tôi đánh giá rất cao giải pháp nhà máy thông minh do Becamex và VNTT phát triển, với kiến trúc hiện đại, chức năng đầy đủ và thông minh, hoàn toàn đáp ứng các tiêu chuẩn quốc tế khắt khe, không thua kém các giải pháp đến từ các quốc gia có nền công nghiệp phát triển, nhưng chi phí hợp lý”, ông Park Ye Seol chia sẻ.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "CHUAN HOA CO CHU DICH: 'giải pháp nhà máy thông minh' -> san pham 8 (Nen tang, giai phap va mo hinh phuc vu san xuat thong minh) theo QD 21/2026. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khách hàng (Orion Vina) đánh giá giải pháp nhà máy thông minh do Becamex và VNTT phát triển."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh",
+        "span": "Với sự hỗ trợ của tỉnh Bình Dương và Tổng Công ty Becamex IDC, Tập đoàn Orion (Hàn Quốc) đã tin tưởng lựa chọn nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh…",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được bài báo hay cổng nhà nước đăng từ 03/04/2026 gọi đích danh VNTT với nền tảng Beca Smart Factory. Báo Đồng Tháp 03/01/2026 (dẫn sggp) nói về nhà máy thông minh Orion Vina (3 giai đoạn đến 3/2026) nhưng không nêu tên VNTT và cũ hơn mốc; các bài sggp, vneconomy, vjst về dự án điển hình quốc gia là năm 2024-2025. Chỉ còn trang tự khai vntt.com.vn (VILOG 2026) nói về tham gia triển lãm, chưa chụp vì là tin sự kiện tự khai. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu nguồn nêu nền tảng do VNTT phát triển và áp dụng vào sản xuất thông minh tại nhà máy thật của khách hàng FDI."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Mọi thứ bắt đầu khi VNTT (thành viên của Tổng Công ty Becamex IDC và Tập đoàn VNPT) tiếp cận chúng tôi và đề nghị hỗ trợ chuyển đổi phát triển công nghiệp bằng nền tảng Beca Smart Factory, Beca Smart City do Becamex và VNTT xây dựng và làm chủ.",
+        "span": "Mọi thứ bắt đầu khi VNTT (thành viên của Tổng Công ty Becamex IDC và Tập đoàn VNPT) tiếp cận chúng tôi và đề nghị hỗ trợ chuyển đổi phát triển công nghiệp bằng nền tảng Beca Smart Factory, Beca Smart City do Becamex và VNTT xây dựng và làm chủ.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được bài báo hay cổng nhà nước đăng từ 03/04/2026 gọi đích danh VNTT với nền tảng Beca Smart Factory. Báo Đồng Tháp 03/01/2026 (dẫn sggp) nói về nhà máy thông minh Orion Vina (3 giai đoạn đến 3/2026) nhưng không nêu tên VNTT và cũ hơn mốc; các bài sggp, vneconomy, vjst về dự án điển hình quốc gia là năm 2024-2025. Chỉ còn trang tự khai vntt.com.vn (VILOG 2026) nói về tham gia triển lãm, chưa chụp vì là tin sự kiện tự khai. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Lời Tổng Giám đốc khách hàng: nền tảng Beca Smart Factory do Becamex và VNTT xây dựng và làm chủ. Người duyệt lưu ý: đồng phát triển với Tổng Công ty Becamex IDC; nguồn không tách phần công nghệ của riêng VNTT."
       }
     ]
   },
@@ -741,6 +1093,190 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'Manh ghep hop so che tao tu vat lieu PEEK' in 3D ca the hoa -> SP12 He thong san xuat y te ca the hoa bang in 3D. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: span mo dau bang 'Trong khi do' va chua 'Trong boi canh DO'. Cac cum nay noi cac han che cua phuong phap dieu tri truyen thong, tuc CAU DAN, va chinh cac han che do da nam trong span. Phan registry khang dinh la thiet bi va nang luc cua Y Sinh Ngoc Bao, tu dung duoc. Khong lui them vi se keo ca doan benh hoc vao ma khong them nghia."
+      }
+    ]
+  },
+  {
+    "name": "Công ty CP Việt Nam Food (VNF)",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "15"
+    ],
+    "capability": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "tienphong.vn",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt"
+      }
+    ],
+    "tim": "công ty cp việt nam food (vnf) dn doanh nghiệp đằng sau thành công của retriv là hành trình nhiều năm vnf theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao. nhóm 4 sinh học và y sinh sp 15",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Công ty CP Việt Nam Food (VNF)",
+        "span": "RetriV – startup spin-off đầu tiên từ hệ sinh thái công nghệ của Công ty CP Việt Nam Food (VNF) – đã đưa giải pháp công nghệ xanh của doanh nghiệp Việt Nam ra sân chơi quốc tế.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: tienphong.vn là báo chính thống nhưng chưa có trong registry (nguồn mới). Chỉ đề xuất VNF; RetriV là startup spin-off, tách riêng và không đề xuất."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "RetriV – startup spin-off đầu tiên từ hệ sinh thái công nghệ của Công ty CP Việt Nam Food (VNF) – đã đưa giải pháp công nghệ xanh của doanh nghiệp Việt Nam ra sân chơi quốc tế.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "CHUAN HOA CO CHU DICH: 'Công ty CP' trong span la doanh nghiep, phan loai 'DN'. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Từ đầu và vỏ tôm, VNF đã nghiên cứu và phát triển nhiều nhóm sản phẩm như protein, peptide, chitin, chitosan, astaxanthin tự nhiên, lipid và các nguyên liệu thực phẩm.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "CHUAN HOA CO CHU DICH: che bien sau phu pham thanh nguyen lieu sinh hoc thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm P15 nằm trong nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "15",
+        "span": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "CHUAN HOA CO CHU DICH: che bien phu pham nong nghiep, thuy san thanh san pham gia tri cao khop san pham 15 theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp 'phụ phẩm nông nghiệp', 'sản phẩm' trong tên nhu cầu P15."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+        "span": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Chế biến sâu phụ phẩm ở quy mô thương mại (40% sản phẩm xuất khẩu theo cùng bài). Phụ phẩm chủ yếu là tôm (thủy sản), người duyệt xét phạm vi 'nông nghiệp'."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Từ đầu và vỏ tôm, VNF đã nghiên cứu và phát triển nhiều nhóm sản phẩm như protein, peptide, chitin, chitosan, astaxanthin tự nhiên, lipid và các nguyên liệu thực phẩm.",
+        "span": "Từ đầu và vỏ tôm, VNF đã nghiên cứu và phát triển nhiều nhóm sản phẩm như protein, peptide, chitin, chitosan, astaxanthin tự nhiên, lipid và các nguyên liệu thực phẩm.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Danh mục sản phẩm cụ thể từ phụ phẩm. Không dựa vào MOU RetriV Oceania (chỉ là ký kết)."
+      },
+      {
+        "field": "location",
+        "value": "Cà Mau",
+        "span": "Thành lập năm 1993 tại Cà Mau, trong hơn 13 năm hoạt động, VNF được ghi nhận là một trong những đơn vị đi đầu về xử lý phụ phẩm tôm, cả về quy mô lẫn giải pháp thân thiện môi trường.",
+        "source": "tienphong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu có từ 'đi đầu'. Câu tự mâu thuẫn ('năm 1993' và 'hơn 13 năm hoạt động'); chỉ dùng cho địa điểm."
+      }
+    ]
+  },
+  {
+    "name": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "15"
+    ],
+    "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt"
+      }
+    ],
+    "tim": "công ty tnhh công nghệ sinh học xanh nhật lan dn doanh nghiệp đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn gọi đích danh công ty, đứng đầu danh sách nhóm thực hiện. Pháp nhân Việt Nam cần xác minh qua cổng chính thức."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: 'Công ty TNHH' trong span la doanh nghiep, phan loai 'DN'. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: cong nghe len men sinh khoi nam va che bien sau nong san thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm P15 nằm trong nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "15",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: he thong len men, chiet xuat va che bien sau nong san, sinh khoi khop san pham 15 theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp 'hệ thống', 'sản xuất', 'chế biến sâu', 'sản phẩm' trong tên nhu cầu P15."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm thấy nguồn báo chí hay .gov.vn nào từ 03/04/2026 nhắc tên công ty; kết quả tìm kiếm chỉ trả lại bài mst.gov.vn 11/12/2025 (nguồn hiện có) và trang của chính công ty (dongtrunghathaonhatlan.com.vn), theo đoạn tóm tắt tìm kiếm là trang bán hàng không có ngày đăng nên không tải. Nguồn cũ vẫn là nguồn duy nhất. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Năng lực đã hình thành; nguồn gán kết quả cho cả nhóm thực hiện, không tách phần việc của công ty; bài không nêu rõ đã nghiệm thu."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Trên cơ sở đó, đề tài đã sản xuất được 200 kg bột sinh khối nấm, 6 kg sinh khối trích ly và ứng dụng vào phát triển 08 sản phẩm giá trị gia tăng",
+        "span": "Trên cơ sở đó, đề tài đã sản xuất được 200 kg bột sinh khối nấm, 6 kg sinh khối trích ly và ứng dụng vào phát triển 08 sản phẩm giá trị gia tăng",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm thấy nguồn báo chí hay .gov.vn nào từ 03/04/2026 nhắc tên công ty; kết quả tìm kiếm chỉ trả lại bài mst.gov.vn 11/12/2025 (nguồn hiện có) và trang của chính công ty (dongtrunghathaonhatlan.com.vn), theo đoạn tóm tắt tìm kiếm là trang bán hàng không có ngày đăng nên không tải. Nguồn cũ vẫn là nguồn duy nhất. | THAM CHIEU DA NEO: 'Tren co so do' tro toi doan ngay truoc trong cung ban chup: day chuyen len men 1.000 lit/me va he trich ly 100 lit/me da lap dat, chay thu thanh cong. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản lượng sinh khối và sản phẩm cụ thể đã làm ra; chủ thể là 'đề tài' chung."
       }
     ]
   },
@@ -1397,6 +1933,103 @@ export const cnclUnits: CnclUnit[] = [
     ]
   },
   {
+    "name": "Indefol",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "5"
+    ],
+    "nhomLabels": [
+      "Nhóm 5 · Năng lượng và vật liệu"
+    ],
+    "sanPham": [
+      "19"
+    ],
+    "capability": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "vnexpress.net",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt"
+      }
+    ],
+    "tim": "indefol dn doanh nghiệp hệ thống sản xuất hydrogen xanh idf-ex1000x được xây dựng trên nền tảng công nghệ điện phân kiềm (alkaline) tiên tiến nhóm 5 năng lượng và vật liệu sp 19",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Indefol",
+        "span": "Hệ thống máy điện phân (electrolyzer) IDF-EX1000X do công ty Indefol, thành lập năm 2008, có trụ sở tại TP HCM, sản xuất, thuộc danh mục sản phẩm điện phân quy mô trung bình, được thiết kế theo dạng container hóa (modular), phù hợp triển khai tại nhà máy hoặc tích hợp với năng lượng tái tạo.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Hệ thống máy điện phân (electrolyzer) IDF-EX1000X do công ty Indefol, thành lập năm 2008, có trụ sở tại TP HCM, sản xuất, thuộc danh mục sản phẩm điện phân quy mô trung bình, được thiết kế theo dạng container hóa (modular), phù hợp triển khai tại nhà máy hoặc tích hợp với năng lượng tái tạo.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "CHUAN HOA CO CHU DICH: nguon goi 'cong ty Indefol' nen xep DN. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "5",
+        "span": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến, cho phép tích hợp trực tiếp với nguồn năng lượng tái tạo từ hệ thống điện mặt trời.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "CHUAN HOA CO CHU DICH: he thong san xuat hydrogen xanh bang dien phan thuoc nhom 5 (nang luong va vat lieu) theo QD 21/2026. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "19",
+        "span": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến, cho phép tích hợp trực tiếp với nguồn năng lượng tái tạo từ hệ thống điện mặt trời.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "CHUAN HOA CO CHU DICH: may dien phan san xuat hydrogen xanh khop san pham 19 (he thong san xuat, luu tru, van chuyen, phan phoi hydrogen xanh, nhien lieu sinh hoc). | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến",
+        "span": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến, cho phép tích hợp trực tiếp với nguồn năng lượng tái tạo từ hệ thống điện mặt trời.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Đại diện công ty khẳng định đây là hệ thống sản xuất hydrogen công suất 1 MW đầu tiên do Việt Nam sản xuất, làm chủ 50% công nghệ, còn lại 32% từ Đức và 18% từ Pháp.",
+        "span": "Đại diện công ty khẳng định đây là hệ thống sản xuất hydrogen công suất 1 MW đầu tiên do Việt Nam sản xuất, làm chủ 50% công nghệ, còn lại 32% từ Đức và 18% từ Pháp.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "KHANG DINH TOI THUONG: pham vi la HE THONG SAN XUAT HYDROGEN CONG SUAT 1 MW do Viet Nam san xuat, theo loi DAI DIEN CONG TY, va chinh cau do noi chi lam chu 50% cong nghe (32% Duc, 18% Phap) · nguon 18/04/2026 · CHUA doi chieu doc lap | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      },
+      {
+        "field": "location",
+        "value": "TP HCM",
+        "span": "Hệ thống máy điện phân (electrolyzer) IDF-EX1000X do công ty Indefol, thành lập năm 2008, có trụ sở tại TP HCM, sản xuất, thuộc danh mục sản phẩm điện phân quy mô trung bình, được thiết kế theo dạng container hóa (modular), phù hợp triển khai tại nhà máy hoặc tích hợp với năng lượng tái tạo.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+      }
+    ]
+  },
+  {
     "name": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
     "loaiHinh": "",
     "loaiHinhLabel": "",
@@ -1799,6 +2432,97 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/cafef_dn_uav_20250903.txt",
         "note": "Span tra ve DUNG CHU CUA NGUON 16/08/2026 sau vong doi chung du 31 trang. Ban snapshot cu la CAU VIET LAI hoac bi go markup, khong phai chu cua nha bao. Gia tri claim khong doi. Doi verbatim sang normalized: chu trong nguon co markup hoac ngat dong chen giua nen gia tri khong nam tron trong span."
+      }
+    ]
+  },
+  {
+    "name": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "5"
+    ],
+    "nhomLabels": [
+      "Nhóm 5 · Năng lượng và vật liệu"
+    ],
+    "sanPham": [
+      "19"
+    ],
+    "capability": "Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "nhandan.vn",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt"
+      },
+      {
+        "source": "congthuong.vn",
+        "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt"
+      }
+    ],
+    "tim": "phòng thí nghiệm trọng điểm công nghệ lọc, hóa dầu vien viện nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+        "span": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu (Viện Hóa học công nghiệp Việt Nam) để thúc đẩy tiến độ dự án Pilot biodiesel.",
+        "source": "nhandan.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B: đơn vị (thuộc Viện Hóa học công nghiệp Việt Nam) cùng BSR chạy pilot biodiesel quy mô bán công nghiệp bằng công nghệ xúc tác dị thể của mình; kết quả được mô tả là bước đầu, chưa sản xuất thương mại. Người duyệt cân nhắc có ghi đơn vị mẹ Viện Hóa học công nghiệp Việt Nam thay cho phòng thí nghiệm."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu (Viện Hóa học công nghiệp Việt Nam) để thúc đẩy tiến độ dự án Pilot biodiesel.",
+        "source": "nhandan.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "note": "CHUAN HOA CO CHU DICH: phong thi nghiem trong diem truc thuoc Vien Hoa hoc cong nghiep Viet Nam, xep loai vien. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B: đơn vị (thuộc Viện Hóa học công nghiệp Việt Nam) cùng BSR chạy pilot biodiesel quy mô bán công nghiệp bằng công nghệ xúc tác dị thể của mình; kết quả được mô tả là bước đầu, chưa sản xuất thương mại. Người duyệt cân nhắc có ghi đơn vị mẹ Viện Hóa học công nghiệp Việt Nam thay cho phòng thí nghiệm."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "5",
+        "span": "Dự án Pilot biodiesel là dự án về hoàn thiện công nghệ và sản xuất thử nghiệm nhiên liệu dầu diesel sinh học từ phế phụ phẩm nông nghiệp, công nghiệp chế biến thực phẩm và dầu vi tảo ở quy mô bán công nghiệp.",
+        "source": "nhandan.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "note": "CHUAN HOA CO CHU DICH: nhien lieu diesel sinh hoc thuoc nhom 5 (nang luong va vat lieu) theo QD 21/2026. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B: đơn vị (thuộc Viện Hóa học công nghiệp Việt Nam) cùng BSR chạy pilot biodiesel quy mô bán công nghiệp bằng công nghệ xúc tác dị thể của mình; kết quả được mô tả là bước đầu, chưa sản xuất thương mại. Người duyệt cân nhắc có ghi đơn vị mẹ Viện Hóa học công nghiệp Việt Nam thay cho phòng thí nghiệm."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "19",
+        "span": "Dự án Pilot biodiesel là dự án về hoàn thiện công nghệ và sản xuất thử nghiệm nhiên liệu dầu diesel sinh học từ phế phụ phẩm nông nghiệp, công nghiệp chế biến thực phẩm và dầu vi tảo ở quy mô bán công nghiệp.",
+        "source": "nhandan.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "note": "CHUAN HOA CO CHU DICH: san xuat thu nghiem nhien lieu diesel sinh hoc khop san pham 19 (nhien lieu sinh hoc). | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B: đơn vị (thuộc Viện Hóa học công nghiệp Việt Nam) cùng BSR chạy pilot biodiesel quy mô bán công nghiệp bằng công nghệ xúc tác dị thể của mình; kết quả được mô tả là bước đầu, chưa sản xuất thương mại. Người duyệt cân nhắc có ghi đơn vị mẹ Viện Hóa học công nghiệp Việt Nam thay cho phòng thí nghiệm."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học",
+        "span": "Đáng kể nhất là Giải thưởng Nhà nước về Khoa học và Công nghệ cấp cho cụm công trình “Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học, các sản phẩm thân thiện môi trường, tiết kiệm nhiên liệu….” do Phòng Thí nghiệm trọng điểm công nghệ lọc hóa dầu chủ trì thực hiện.",
+        "source": "congthuong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng nang_luc_mo_ta nguồn nhandan.vn 21/11/2025 (pilot biodiesel cùng BSR). Nguồn mới Báo Công Thương (congthuong.vn, nguồn mới trong registry) ngày 25/05/2026 gọi đích danh phòng thí nghiệm là đơn vị chủ trì cụm công trình xúc tác dị thể cho nhiên liệu sinh học, cùng mạch năng lực xúc tác dị thể của dòng cũ. Người duyệt lưu ý: bài viết tên không có dấu phẩy ('công nghệ lọc hóa dầu'), không nhắc pilot biodiesel với BSR và không nêu năm trao giải."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Đáng kể nhất là Giải thưởng Nhà nước về Khoa học và Công nghệ cấp cho cụm công trình “Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học, các sản phẩm thân thiện môi trường, tiết kiệm nhiên liệu….” do Phòng Thí nghiệm trọng điểm công nghệ lọc hóa dầu chủ trì thực hiện.",
+        "span": "Đáng kể nhất là Giải thưởng Nhà nước về Khoa học và Công nghệ cấp cho cụm công trình “Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học, các sản phẩm thân thiện môi trường, tiết kiệm nhiên liệu….” do Phòng Thí nghiệm trọng điểm công nghệ lọc hóa dầu chủ trì thực hiện.",
+        "source": "congthuong.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng bang_chung_nang_luc nguồn nhandan.vn 21/11/2025. Giải thưởng Nhà nước về Khoa học và Công nghệ cho cụm công trình đã hoàn thành là năng lực đã hình thành, mạnh hơn lời tự mô tả pilot; nguồn B đăng 25/05/2026. Có cụm 'Đáng kể nhất' (so sánh trong nội bộ Viện, không phải từ tối thượng trong danh sách); năm trao giải không có trong bài."
       }
     ]
   },
@@ -2408,6 +3132,184 @@ export const cnclUnits: CnclUnit[] = [
     ]
   },
   {
+    "name": "Trung tâm Vũ trụ Việt Nam",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "9"
+    ],
+    "nhomLabels": [
+      "Nhóm 9 · Hàng không và vũ trụ"
+    ],
+    "sanPham": [
+      "28"
+    ],
+    "capability": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "vast.gov.vn",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt"
+      },
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt"
+      }
+    ],
+    "tim": "trung tâm vũ trụ việt nam vien viện việc phát triển vệ tinh nanodragon tại việt nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “made in vietnam”. nhóm 9 hàng không và vũ trụ sp 28",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Trung tâm Vũ trụ Việt Nam",
+        "span": "Trước NanoDragon, Trung tâm Vũ trụ Việt Nam cũng đã chế tạo thành công vệ tinh siêu nhỏ PicoDragon (1kg), phóng lên quỹ đạo và thu được tín hiệu vào năm 2013.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "note": "LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn cổng Viện Hàn lâm gọi đích danh Trung tâm Vũ trụ Việt Nam là bên chế tạo vệ tinh; tên riêng tách khỏi Viện Hàn lâm theo luật đơn vị có tên riêng."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Vệ tinh NanoDragon (NDG) là vệ tinh dạng cubesat lớp nano nặng khoảng 4 kg với kích thước 3U, được Trung tâm Vũ trụ Việt Nam (TTVTVN) thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam phát triển, dự kiến phóng lên quỹ đạo vào tháng 9 năm 2021, đúng vào dịp 10 năm thành lập TTVTVN.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "note": "CHUAN HOA CO CHU DICH: span goi 'Trung tâm Vũ trụ Việt Nam (TTVTVN) thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam', don vi su nghiep nghien cuu truc thuoc Vien Han lam nen xep loai 'vien' (khong phai DN, khong phai truong). | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đơn vị trực thuộc Viện Hàn lâm, nhân sự là cán bộ nghiên cứu; không phải doanh nghiệp hay trường."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "9",
+        "span": "Vệ tinh MicroDragon (50kg) đã được chế tạo bởi nhóm 36 cán bộ Trung tâm Vũ trụ Việt Nam dưới sự hướng dẫn của các chuyên gia Nhật Bản, được phóng thành công lên quỹ đạo vào tháng 1 năm 2019 và gửi được ảnh về trạm mặt đất tại Nhật Bản.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "note": "CHUAN HOA CO CHU DICH: span noi don vi che tao ve tinh, phong len quy dao, gui anh ve tram mat dat; ve tinh quan sat Trai dat -> nhom 9 (Hang khong va vu tru) theo QD 21/2026. | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Chế tạo và phóng vệ tinh lên quỹ đạo thuộc nhóm Hàng không và vũ trụ."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "28",
+        "span": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "note": "CHUAN HOA CO CHU DICH: span noi 'tu thiet ke va che tao ve tinh nho quan sat trai dat' -> san pham 28 (Ve tinh va chum ve tinh quy dao thap quan sat Trai dat) theo QD 21/2026. | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn nêu thẳng lộ trình tự thiết kế, chế tạo vệ tinh nhỏ quan sát trái đất, khớp sản phẩm 28."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+        "span": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy hai bài sau mốc: Dân trí 08/09/2026 kể lịch sử PicoDragon, MicroDragon, NanoDragon, LOTUSat-1 nhưng phần gọi đích danh Trung tâm chỉ nói hơn 20 kỹ sư sang Nhật làm việc với LOTUSat-1 (vệ tinh do phía Nhật chế tạo, không tính); Báo Chính phủ 15/09/2026 phỏng vấn Tổng Giám đốc chủ yếu là định hướng, ưu tiên, kỳ vọng, câu duy nhất về chế tạo là chú thích ảnh 'tham gia chế tạo vệ tinh' dùng lại ảnh năm 2025. Không bài nào từ 2026-04-03 nói MicroDragon-2 đã hoàn thành hay phóng, trang vnsc.org.vn về GSTCE 2026 tải về rỗng. Không có nguồn thay thế cho nang_luc_mo_ta (11/03/2021); bang_chung_nang_luc giữ nguồn mst.gov.vn 13/03/2026. | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu nói thẳng tên công nghệ của nhu cầu (vệ tinh nhỏ quan sát trái đất). Người duyệt lưu ý: câu đặt năng lực trong khung 'hướng tới mục tiêu'; phần đã hình thành nằm ở các claim bằng chứng (PicoDragon, NanoDragon, MicroDragon)."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Thủ tướng tham quan vệ tinh MicroDragon-2 cỡ khoảng 50 kg, được triển khai để vừa tạo sản phẩm có thể ứng dụng – theo dõi biến động rừng, vừa thử nghiệm công nghệ tự thiết kế, chế tạo nhằm tích lũy năng lực làm chủ.",
+        "span": "Thủ tướng tham quan vệ tinh MicroDragon-2 cỡ khoảng 50 kg, được triển khai để vừa tạo sản phẩm có thể ứng dụng – theo dõi biến động rừng, vừa thử nghiệm công nghệ tự thiết kế, chế tạo nhằm tích lũy năng lực làm chủ.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy hai bài sau mốc: Dân trí 08/09/2026 kể lịch sử PicoDragon, MicroDragon, NanoDragon, LOTUSat-1 nhưng phần gọi đích danh Trung tâm chỉ nói hơn 20 kỹ sư sang Nhật làm việc với LOTUSat-1 (vệ tinh do phía Nhật chế tạo, không tính); Báo Chính phủ 15/09/2026 phỏng vấn Tổng Giám đốc chủ yếu là định hướng, ưu tiên, kỳ vọng, câu duy nhất về chế tạo là chú thích ảnh 'tham gia chế tạo vệ tinh' dùng lại ảnh năm 2025. Không bài nào từ 2026-04-03 nói MicroDragon-2 đã hoàn thành hay phóng, trang vnsc.org.vn về GSTCE 2026 tải về rỗng. Không có nguồn thay thế cho nang_luc_mo_ta (11/03/2021); bang_chung_nang_luc giữ nguồn mst.gov.vn 13/03/2026. | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn mới nhất (2026): vệ tinh MicroDragon-2 khoảng 50 kg phục vụ theo dõi biến động rừng, thử nghiệm công nghệ tự thiết kế, chế tạo, được giới thiệu tại khu nghiên cứu phát triển vệ tinh của Trung tâm Vũ trụ Việt Nam (đoạn liền trước trong bài gọi đích danh). Bài không nói MicroDragon-2 đã phóng."
+      }
+    ]
+  },
+  {
+    "name": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+    "loaiHinh": "truong",
+    "loaiHinhLabel": "Trường",
+    "nhoms": [
+      "5"
+    ],
+    "nhomLabels": [
+      "Nhóm 5 · Năng lượng và vật liệu"
+    ],
+    "sanPham": [
+      "19"
+    ],
+    "capability": "nghiên cứu và sản xuất loại nhiên liệu sinh học",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "nangluongvietnam.vn",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt"
+      }
+    ],
+    "tim": "trường đại học khoa học tự nhiên, đại học quốc gia hà nội truong trường nghiên cứu và sản xuất loại nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "span": "Khoa Hóa học, Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội còn là một trong những đơn vị ở Việt Nam dám đi tiên phong trong lĩnh vực nghiên cứu nhiên liệu sinh học.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "truong",
+        "span": "Khoa Hóa học, Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội còn là một trong những đơn vị ở Việt Nam dám đi tiên phong trong lĩnh vực nghiên cứu nhiên liệu sinh học.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "CHUAN HOA CO CHU DICH: truong dai hoc, xep loai truong. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "5",
+        "span": "Thấy rõ được tầm quan trọng cũng như tiềm năng BDF, Khoa Hóa học đã nhanh chóng bắt tay vào nghiên cứu và sản xuất loại nhiên liệu sinh học.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "CHUAN HOA CO CHU DICH: nhien lieu sinh hoc thuoc nhom 5 (nang luong va vat lieu) theo QD 21/2026. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "19",
+        "span": "Thấy rõ được tầm quan trọng cũng như tiềm năng BDF, Khoa Hóa học đã nhanh chóng bắt tay vào nghiên cứu và sản xuất loại nhiên liệu sinh học.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "CHUAN HOA CO CHU DICH: nghien cuu va san xuat nhien lieu sinh hoc (BDF) khop san pham 19. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "nghiên cứu và sản xuất loại nhiên liệu sinh học",
+        "span": "Thấy rõ được tầm quan trọng cũng như tiềm năng BDF, Khoa Hóa học đã nhanh chóng bắt tay vào nghiên cứu và sản xuất loại nhiên liệu sinh học.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Sáu lượt tìm (chỉ xem trích đoạn kết quả tìm kiếm, không trang nào đủ hứa hẹn để tải) chỉ ra tin tuyển sinh 2026, trang giới thiệu tĩnh không ghi ngày (Bộ môn Công nghệ Hóa học, GREEN LAB Khoa Sinh học, danh sách phòng thí nghiệm trọng điểm) và một câu định hướng đầu tư phòng thí nghiệm năng lượng xanh, không có bài nào từ 2026-04-03 gọi đích danh trường với sản phẩm, pilot hay đề tài nghiệm thu về BDF, nhiên liệu sinh học khác hoặc hydrogen xanh. Không có nguồn thay thế; nguồn hiện hành vẫn là bài 02/05/2012, người duyệt quyết giữ hay gạch. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Hiện tại ở Khoa Hóa học đang tiến hành sản xuất BDF quy mô pilot. Mỗi mẻ sản xuất được 350kg B100, thời gian phản ứng chỉ khoảng 30 phút, thời gian tách glyxerin khoảng 30 phút.",
+        "span": "Hiện tại ở Khoa Hóa học đang tiến hành sản xuất BDF quy mô pilot. Mỗi mẻ sản xuất được 350kg B100, thời gian phản ứng chỉ khoảng 30 phút, thời gian tách glyxerin khoảng 30 phút.",
+        "source": "nangluongvietnam.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Sáu lượt tìm (chỉ xem trích đoạn kết quả tìm kiếm, không trang nào đủ hứa hẹn để tải) chỉ ra tin tuyển sinh 2026, trang giới thiệu tĩnh không ghi ngày (Bộ môn Công nghệ Hóa học, GREEN LAB Khoa Sinh học, danh sách phòng thí nghiệm trọng điểm) và một câu định hướng đầu tư phòng thí nghiệm năng lượng xanh, không có bài nào từ 2026-04-03 gọi đích danh trường với sản phẩm, pilot hay đề tài nghiệm thu về BDF, nhiên liệu sinh học khác hoặc hydrogen xanh. Không có nguồn thay thế; nguồn hiện hành vẫn là bài 02/05/2012, người duyệt quyết giữ hay gạch. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      }
+    ]
+  },
+  {
     "name": "Viettel AI",
     "loaiHinh": "",
     "loaiHinhLabel": "",
@@ -2421,16 +3323,24 @@ export const cnclUnits: CnclUnit[] = [
       "01"
     ],
     "capability": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
-    "capability2": "",
+    "capability2": "Viettel BTS Digital Twin - nền tảng bản sao số do Viettel AI phát triển",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt"
+      },
+      {
+        "source": "thanhnien.vn",
+        "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt"
+      },
+      {
+        "source": "nhandan.vn",
+        "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt"
       }
     ],
-    "tim": "viettel ai giải pháp claimpkg, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng. nhóm 1 công nghệ số sp 01",
+    "tim": "viettel ai giải pháp claimpkg, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng. viettel bts digital twin - nền tảng bản sao số do viettel ai phát triển nhóm 1 công nghệ số sp 01",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2471,6 +3381,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve tro ly ao va mo hinh AI -> SP01. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. | NGAY DANG THAT 24/11/2025 (29/09/2026): ban chup cu mst_gov_ai_diemsang_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "Viettel BTS Digital Twin - nền tảng bản sao số do Viettel AI phát triển",
+        "span": "Viettel vừa được xướng tên tại Giải thưởng Viễn thông Toàn cầu 2025 (Glotel Awards) ở hạng mục \"Dự án chuyển đổi số xuất sắc nhất\" với giải pháp Viettel BTS Digital Twin - nền tảng bản sao số do Viettel AI phát triển.",
+        "source": "thanhnien.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Các bài từ 03/04/2026 (baochinhphu 11/09/2026, Nhân Dân 11/09/2026, VietnamNet 15/09/2026) chỉ nói 'BTS Digital Twin' là một đề thi của cuộc thi Viettel AI Race 2026 do Tập đoàn Viettel tổ chức; không gọi đích danh Viettel AI và không khẳng định nền tảng BTS Digital Twin do Viettel AI phát triển hay đã triển khai. Nguồn gọi đúng tên Viettel AI vẫn là Nhân Dân 19/11/2025 và Thanh Niên 19/12/2025. | LAM GIAU dot_01 · P03 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu nói thẳng 'nền tảng bản sao số do Viettel AI phát triển'. Bài đăng trên Thanh Niên nhưng ghi 'Nguồn: Viettel', nên xếp C (tự khai). Có từ 'lần đầu tiên', 'bậc nhất'."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Viettel BTS Digital Twin đã giúp Viettel AI trở thành đại diện Việt Nam duy nhất góp mặt trong danh sách đề cử tại Vòng chung khảo Glotel Awards 2025",
+        "span": "Vượt qua nhiều công ty công nghệ và viễn thông lớn, Viettel BTS Digital Twin đã giúp Viettel AI trở thành đại diện Việt Nam duy nhất góp mặt trong danh sách đề cử tại Vòng chung khảo Glotel Awards 2025, hạng mục dự án \"Chuyển đổi số tốt nhất”.",
+        "source": "nhandan.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Các bài từ 03/04/2026 (baochinhphu 11/09/2026, Nhân Dân 11/09/2026, VietnamNet 15/09/2026) chỉ nói 'BTS Digital Twin' là một đề thi của cuộc thi Viettel AI Race 2026 do Tập đoàn Viettel tổ chức; không gọi đích danh Viettel AI và không khẳng định nền tảng BTS Digital Twin do Viettel AI phát triển hay đã triển khai. Nguồn gọi đúng tên Viettel AI vẫn là Nhân Dân 19/11/2025 và Thanh Niên 19/12/2025. | KHANG DINH TOI THUONG: pham vi la DAI DIEN VIET NAM DUY NHAT trong DANH SACH DE CU vong chung khao Glotel Awards 2025, hang muc Chuyen doi so tot nhat; la de cu, chua phai giai · nguon 19/11/2025 · CHUA doi chieu doc lap | LAM GIAU dot_01 · P03 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm đã có và được hội đồng giải quốc tế đưa vào chung khảo; cùng bài mô tả nền tảng tự dựng mô hình 3D trạm BTS từ ảnh drone. Câu có từ 'duy nhất'. Nhân Dân 19/11 ghi 'đề cử', Thanh Niên 19/12 ghi đã thắng giải."
       }
     ]
   },
@@ -2653,6 +3583,93 @@ export const cnclUnits: CnclUnit[] = [
     ]
   },
   {
+    "name": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "15"
+    ],
+    "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt"
+      }
+    ],
+    "tim": "viện cơ điện nông nghiệp và công nghệ sau thu hoạch vien viện đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn cổng Bộ KH&CN gọi đích danh viện trong nhóm thực hiện đề tài."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: ten trong span la 'Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch', phan loai 'vien'. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: cong nghe len men sinh khoi nam va che bien sau nong san thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm P15 nằm trong nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "15",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "CHUAN HOA CO CHU DICH: he thong len men, chiet xuat va che bien sau nong san, sinh khoi khop san pham 15 theo QD 21/2026. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp 'hệ thống', 'sản xuất', 'chế biến sâu', 'sản phẩm' trong tên nhu cầu P15."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm thấy nguồn từ 03/04/2026 gọi đích danh viện với năng lực chế biến sâu cụ thể. Bài mst.gov.vn 24/07/2026 về kết nối công nghệ sau thu hoạch không nêu tên viện; trang tag nongnghiepmoitruong.vn chỉ trả về danh mục chung, không lọc được bài của viện; kết quả tìm kiếm còn lại là bài cũ hoặc tin sáp nhập viện vào Viện Khoa học Nông nghiệp Việt Nam (tin tổ chức, không phải năng lực). Nguồn Agaricus 11/12/2025 vẫn là nguồn mới nhất. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Năng lực đã hình thành (quy trình hoàn thiện, hệ thống chạy thử, 8 sản phẩm). Nguồn gán kết quả cho CẢ nhóm thực hiện, không tách phần việc của viện; bài không nêu rõ đã nghiệm thu."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Nhóm nghiên cứu đồng thời làm chủ công nghệ lên men chìm sục khí và thiết kế, chế tạo hoàn chỉnh dây chuyền thiết bị lên men 1.000 lít/mẻ, hệ thiết bị trích ly 100 lít/mẻ, cùng bộ quy trình vận hành đồng bộ. Các hệ thống này đã được lắp đặt, chạy thử thành công và chứng minh tính ổn định, an toàn về kỹ thuật.",
+        "span": "Nhóm nghiên cứu đồng thời làm chủ công nghệ lên men chìm sục khí và thiết kế, chế tạo hoàn chỉnh dây chuyền thiết bị lên men 1.000 lít/mẻ, hệ thiết bị trích ly 100 lít/mẻ, cùng bộ quy trình vận hành đồng bộ. Các hệ thống này đã được lắp đặt, chạy thử thành công và chứng minh tính ổn định, an toàn về kỹ thuật.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm thấy nguồn từ 03/04/2026 gọi đích danh viện với năng lực chế biến sâu cụ thể. Bài mst.gov.vn 24/07/2026 về kết nối công nghệ sau thu hoạch không nêu tên viện; trang tag nongnghiepmoitruong.vn chỉ trả về danh mục chung, không lọc được bài của viện; kết quả tìm kiếm còn lại là bài cũ hoặc tin sáp nhập viện vào Viện Khoa học Nông nghiệp Việt Nam (tin tổ chức, không phải năng lực). Nguồn Agaricus 11/12/2025 vẫn là nguồn mới nhất. | DU DIEU KIEN DA XET: 'van hanh' o day la 'bo quy trinh van hanh dong bo' do chinh nhom nghien cuu xay dung kem day chuyen len men va trich ly ho tu thiet ke, che tao; khong phai van hanh cong nghe cua don vi khac. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thiết bị tự thiết kế, chế tạo và chạy thử thành công; chủ thể là 'nhóm nghiên cứu' chung."
+      }
+    ]
+  },
+  {
     "name": "Viện Di truyền Nông nghiệp Việt Nam",
     "loaiHinh": "vien",
     "loaiHinhLabel": "Viện",
@@ -2795,6 +3812,180 @@ export const cnclUnits: CnclUnit[] = [
     ]
   },
   {
+    "name": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "13"
+    ],
+    "capability": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "mst.gov.vn",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt"
+      }
+    ],
+    "tim": "viện khoa học và công nghệ việt nam - hàn quốc (vkist) vien viện viện khoa học và công nghệ việt nam - hàn quốc (vkist) vừa tổ chức nghiệm thu chính thức cấp bộ đối với nhiệm vụ khoa học “phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. đây là đề tài do vkist chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn. nhóm 4 sinh học và y sinh sp 13",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn cổng Bộ KH&CN gọi đích danh viện. Tên có 'Hàn Quốc'; người duyệt xác nhận đây là viện công lập Việt Nam (nguồn này không nêu trực thuộc)."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "CHUAN HOA CO CHU DICH: ten trong span bat dau bang 'Viện', phan loai 'vien'. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "CHUAN HOA CO CHU DICH: chip sinh hoc, cam bien y sinh thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Cảm biến sinh học thuộc nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "13",
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "CHUAN HOA CO CHU DICH: chip sinh hoc gan da, cam bien y sinh thong minh khop san pham 13 (He thong cam bien sinh hoc thong minh) theo QD 21/2026. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp trực tiếp tên nhu cầu P13."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy mst.gov.vn (hạng A, bài do Trung tâm Truyền thông của chính VKIST viết) đăng 25/07/2026: VKIST làm chủ nền tảng que thử nhanh sắc ký miễn dịch dòng chảy bên (LFIA), có nguyên mẫu phát hiện vi-rút, vi khuẩn, dấu ấn ung thư và Bằng giải pháp hữu ích số 4859 (tháng 3/2026). Không dùng làm dòng thay thế vì đây là năng lực khác (que thử miễn dịch, bài không dùng từ 'cảm biến'), không khẳng định lại năng lực chíp sinh học, cảm biến y sinh thông minh của dòng cũ; bài 31/07/2026 chỉ là tin làm việc, không nêu cảm biến. Không tìm thấy tin mới về chíp sinh học gắn da sau nghiệm thu 07/2025. Người duyệt có thể cân nhắc nguồn LFIA nếu coi que thử miễn dịch thuộc P13. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đề tài cấp Bộ đã nghiệm thu (xếp loại Đạt). Sản phẩm ở mức nguyên mẫu, hội đồng khuyến nghị tiếp tục thương mại hóa."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Theo đó, đề tài đã đạt được tất cả mục tiêu đặt ra, gồm: (i)Thiết kế và chế tạo được thiết bị plasma lạnh; (ii) Chế tạo được chíp sinh học gắn da đo lường glucose trong mồ hôi; (iii) Chế tạo được chíp sinh học điện hóa định lượng %HbA1c trong máu.",
+        "span": "Theo đó, đề tài đã đạt được tất cả mục tiêu đặt ra, gồm: (i)Thiết kế và chế tạo được thiết bị plasma lạnh; (ii) Chế tạo được chíp sinh học gắn da đo lường glucose trong mồ hôi; (iii) Chế tạo được chíp sinh học điện hóa định lượng %HbA1c trong máu.",
+        "source": "mst.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy mst.gov.vn (hạng A, bài do Trung tâm Truyền thông của chính VKIST viết) đăng 25/07/2026: VKIST làm chủ nền tảng que thử nhanh sắc ký miễn dịch dòng chảy bên (LFIA), có nguyên mẫu phát hiện vi-rút, vi khuẩn, dấu ấn ung thư và Bằng giải pháp hữu ích số 4859 (tháng 3/2026). Không dùng làm dòng thay thế vì đây là năng lực khác (que thử miễn dịch, bài không dùng từ 'cảm biến'), không khẳng định lại năng lực chíp sinh học, cảm biến y sinh thông minh của dòng cũ; bài 31/07/2026 chỉ là tin làm việc, không nêu cảm biến. Không tìm thấy tin mới về chíp sinh học gắn da sau nghiệm thu 07/2025. Người duyệt có thể cân nhắc nguồn LFIA nếu coi que thử miễn dịch thuộc P13. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm chế tạo cụ thể, được trình bày tại buổi nghiệm thu."
+      }
+    ]
+  },
+  {
+    "name": "Viện Khoa học vật liệu",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "13"
+    ],
+    "capability": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+    "capability2": "",
+    "bestTier": "A",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "vast.gov.vn",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt"
+      }
+    ],
+    "tim": "viện khoa học vật liệu vien viện trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (carcinoembryonic antigen, cea), ngưỡng giới hạn phát hiện là 150 pg/ml. nhóm 4 sinh học và y sinh sp 13",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Viện Khoa học vật liệu",
+        "span": "nhóm nghiên cứu thuộc Viện Khoa học vật liệu, Viện Hàn lâm KHCNVN do PGS.TS. Trần Đại Lâm làm trưởng nhóm đã đăng ký thực hiện đề tài VAST 03.01/15-16",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Viện thành viên của Viện Hàn lâm KHCN VN (đơn vị mẹ đã có trong registry); nguồn gọi đích danh viện thành viên nên đề xuất như đơn vị mới."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "nhóm nghiên cứu thuộc Viện Khoa học vật liệu, Viện Hàn lâm KHCNVN do PGS.TS. Trần Đại Lâm làm trưởng nhóm đã đăng ký thực hiện đề tài VAST 03.01/15-16",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "CHUAN HOA CO CHU DICH: ten trong span la 'Viện Khoa học vật liệu', phan loai 'vien'. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "CHUAN HOA CO CHU DICH: cam bien phat hien chi dau sinh hoc (CEA) thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Cảm biến y sinh thuộc nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "13",
+        "span": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "normalized",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "CHUAN HOA CO CHU DICH: he vi luu tich hop cam bien dien hoa phat hien chi dau sinh hoc, khop san pham 13 (He thong cam bien sinh hoc thong minh) theo QD 21/2026; nguon khong dung chu 'thong minh'. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Cảm biến sinh học dạng vi lưu, khớp một phần tên nhu cầu P13."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "span": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy dantri.com.vn đăng 06/07/2026: nhóm PGS.TS Nguyễn Văn Chúc, Viện Khoa học Vật liệu phát triển điện cực cảm biến từ graphene, CNTs, nano vàng phát hiện dư lượng thuốc bảo vệ thực vật cỡ ppb, nhiệm vụ đã được hội đồng cấp Viện Hàn lâm nghiệm thu. Không dùng được vì đây là cảm biến hóa học cho thuốc trừ sâu, không phải cảm biến sinh học phát hiện chỉ dấu y sinh như dòng cũ (CEA), và là nhóm nghiên cứu khác. Không tìm thấy nguồn từ 03/04/2026 khẳng định lại năng lực hệ vi lưu cảm biến điện hóa phát hiện chỉ dấu sinh học. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Kết quả chế tạo và thử nghiệm đã đạt. Câu nguồn chỉ có 'hệ', 'cảm biến', không có 'sinh học', 'thông minh' nên máy ghép có thể chưa đủ nửa từ khóa; không sửa chữ."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Tại phiên họp nghiệm thu ngày 10/5/2017, đề tài đã được Hội đồng Khoa học và Công nghệ cấp Viện Hàn lâm (GS.VS. Nguyễn Văn Hiệu làm Chủ tịch Hội đồng) nghiệm thu và đánh giá xếp loại Xuất sắc.",
+        "span": "Tại phiên họp nghiệm thu ngày 10/5/2017, đề tài đã được Hội đồng Khoa học và Công nghệ cấp Viện Hàn lâm (GS.VS. Nguyễn Văn Hiệu làm Chủ tịch Hội đồng) nghiệm thu và đánh giá xếp loại Xuất sắc.",
+        "source": "vast.gov.vn",
+        "tier": "A",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy dantri.com.vn đăng 06/07/2026: nhóm PGS.TS Nguyễn Văn Chúc, Viện Khoa học Vật liệu phát triển điện cực cảm biến từ graphene, CNTs, nano vàng phát hiện dư lượng thuốc bảo vệ thực vật cỡ ppb, nhiệm vụ đã được hội đồng cấp Viện Hàn lâm nghiệm thu. Không dùng được vì đây là cảm biến hóa học cho thuốc trừ sâu, không phải cảm biến sinh học phát hiện chỉ dấu y sinh như dòng cũ (CEA), và là nhóm nghiên cứu khác. Không tìm thấy nguồn từ 03/04/2026 khẳng định lại năng lực hệ vi lưu cảm biến điện hóa phát hiện chỉ dấu sinh học. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đề tài đã nghiệm thu. Nguồn cũ (2017), mức phòng thí nghiệm; người duyệt cân nhắc độ tươi."
+      }
+    ]
+  },
+  {
     "name": "Viện Khoa học-Công nghệ mật mã",
     "loaiHinh": "vien",
     "loaiHinhLabel": "Viện",
@@ -2868,6 +4059,190 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi thuat toan chu ky so HAU LUONG TU VN-PQSign -> SP24 Cong nghe luong tu. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      }
+    ]
+  },
+  {
+    "name": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "11"
+    ],
+    "capability": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "baodautu.vn",
+        "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt"
+      }
+    ],
+    "tim": "viện nghiên cứu tế bào gốc và công nghệ gen vinmec vien viện sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch car-t do viện nghiên cứu tế bào gốc và công nghệ gen vinmec triển khai, phối hợp cùng khoa huyết học bệnh viện đa khoa vinmec smart city và khoa miễn dịch - dị ứng bệnh viện đa khoa quốc tế vinmec times city. nhóm 4 sinh học và y sinh sp 11",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "note": "LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn gọi đích danh viện (VRISG) là bên điều trị bằng CAR-T. Đây là pháp nhân khác với Bệnh viện Đa khoa Quốc tế Vinmec, không gộp."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "note": "CHUAN HOA CO CHU DICH: ten trong span bat dau bang 'Viện nghiên cứu', phan loai 'vien'. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên gọi trong nguồn."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "note": "CHUAN HOA CO CHU DICH: lieu phap te bao CAR-T thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Liệu pháp tế bào miễn dịch dùng cho người thuộc nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "11",
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "note": "CHUAN HOA CO CHU DICH: CAR-T la lieu phap te bao mien dich dung cho nguoi, khop san pham 11 theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Khớp trực tiếp tên nhu cầu P11."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+        "span": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+        "note": "LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng nang_luc_mo_ta cũ (de_xuat_sinh.jsonl:5, baodautu 21/08/2023). Cùng báo, bài 21/07/2026 gọi đích danh viện là bên triển khai thử nghiệm lâm sàng CAR-T (nay cho lupus ban đỏ hệ thống), tức cùng năng lực liệu pháp tế bào miễn dịch dùng cho người; bài có từ 'tiên phong', 'đầu tiên' (tít), người duyệt thu hẹp phạm vi."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Kết quả đánh giá ban đầu cho thấy tế bào miễn dịch CAR-T tăng sinh tốt sau truyền. Đặc biệt, quần thể tế bào gây bệnh đã giảm xuống mức không phát hiện được, cho thấy đáp ứng sinh học tích cực của liệu pháp.",
+        "span": "Kết quả đánh giá ban đầu cho thấy tế bào miễn dịch CAR-T tăng sinh tốt sau truyền. Đặc biệt, quần thể tế bào gây bệnh đã giảm xuống mức không phát hiện được, cho thấy đáp ứng sinh học tích cực của liệu pháp.",
+        "source": "baodautu.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+        "note": "LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng bang_chung_nang_luc cũ (de_xuat_sinh.jsonl:6). Kết quả lâm sàng ban đầu trên bệnh nhân thật; cùng bài ghi đội ngũ Vinmec tự thực hiện quy trình chuyển gen tạo tế bào CAR-T. Lưu ý: đây là kết quả ban đầu trong thử nghiệm lâm sàng, chưa phải điều trị thường quy."
+      }
+    ]
+  },
+  {
+    "name": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+    "loaiHinh": "vien",
+    "loaiHinhLabel": "Viện",
+    "nhoms": [
+      "4"
+    ],
+    "nhomLabels": [
+      "Nhóm 4 · Sinh học và y sinh"
+    ],
+    "sanPham": [
+      "11"
+    ],
+    "capability": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+    "capability2": "",
+    "bestTier": "B",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "vnexpress.net",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt"
+      }
+    ],
+    "tim": "viện tế bào gốc, trường đại học khoa học tự nhiên, đhqg tp.hcm vien viện sau 16 năm hình thành và phát triển, viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế… nhóm 4 sinh học và y sinh sp 11",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "Viện tế bào gốc",
+        "span": "Viện tế bào gốc (tiền thân của viện là Phòng thí nghiệm công nghệ sinh học phân tử), trong khuôn viên Đại học Khoa học Tự nhiên, Đại học Quốc gia TP HCM, phường Linh Trung, TP Thủ Đức.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn gọi đích danh viện và nơi trực thuộc (ĐH Khoa học Tự nhiên, ĐHQG TP HCM)."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "vien",
+        "span": "Viện có chức năng nghiên cứu cơ bản, nghiên cứu ứng dụng, thực hiện các dịch vụ khoa học công nghệ, sản xuất sản phẩm tế bào gốc, đào tạo nhân lực lĩnh vực này.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "CHUAN HOA CO CHU DICH: nguon goi la 'Viện', chuc nang nghien cuu va san xuat, phan loai 'vien'. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Loại hình suy từ tên và chức năng trong nguồn."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "4",
+        "span": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "CHUAN HOA CO CHU DICH: cong nghe va san pham te bao goc thuoc nhom 4 (Sinh hoc va y sinh) theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Công nghệ tế bào gốc thuộc nhóm 4."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "11",
+        "span": "Một số sản phẩm tiêu biểu do đơn vị nghiên cứu phát triển như thuốc Cartilatist sản xuất từ tế bào gốc trung mô từ mô mỡ người điều trị bệnh thoái hóa khớp gối và thoái hóa cột sống.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "normalized",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "CHUAN HOA CO CHU DICH: thuoc te bao goc trung mo tu mo mo nguoi de dieu tri, khop san pham 11 (lieu phap te bao dung cho nguoi) theo QD 21/2026. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm tế bào gốc định hướng điều trị cho người."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+        "span": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Khong co nguon hang A hoac B nao tu 03/04/2026. Chi tim duoc bai cua Vien truong tren trang cua chinh vien (sci.edu.vn, 11/06/2026, hang C, tu khai) khang dinh lai nang luc lam chu cong nghe te bao goc trung mo, yeu hon nguon vnexpress 2023 vi khong neu san pham cu the. URL: sci.edu.vn, bai 11/06/2026; ban chup khong giu vi nguyen van co em-dash. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Năng lực làm chủ công nghệ và sản xuất sản phẩm tế bào gốc đã hình thành (dây chuyền, ISO 13485 cùng bài)."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Một số sản phẩm tiêu biểu do đơn vị nghiên cứu phát triển như thuốc Cartilatist sản xuất từ tế bào gốc trung mô từ mô mỡ người điều trị bệnh thoái hóa khớp gối và thoái hóa cột sống. Đây được coi là thuốc tế bào gốc đầu tiên của Việt Nam ra đời năm 2018.",
+        "span": "Một số sản phẩm tiêu biểu do đơn vị nghiên cứu phát triển như thuốc Cartilatist sản xuất từ tế bào gốc trung mô từ mô mỡ người điều trị bệnh thoái hóa khớp gối và thoái hóa cột sống. Đây được coi là thuốc tế bào gốc đầu tiên của Việt Nam ra đời năm 2018.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Khong co nguon hang A hoac B nao tu 03/04/2026. Chi tim duoc bai cua Vien truong tren trang cua chinh vien (sci.edu.vn, 11/06/2026, hang C, tu khai) khang dinh lai nang luc lam chu cong nghe te bao goc trung mo, yeu hon nguon vnexpress 2023 vi khong neu san pham cu the. URL: sci.edu.vn, bai 11/06/2026; ban chup khong giu vi nguyen van co em-dash. | KHANG DINH TOI THUONG: pham vi la THUOC TE BAO GOC dau tien cua Viet Nam (Cartilatist, ra doi 2018), bai dung 'duoc coi la' · nguon 03/04/2023 · CHUA doi chieu doc lap; nguon khong noi thuoc da duoc cap phep luu hanh | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm cụ thể do viện phát triển; có từ 'đầu tiên'. Nguồn KHÔNG nói rõ thuốc đã được cấp phép hay đã điều trị trên bệnh nhân, người duyệt cần kiểm yêu cầu 'dùng cho người'."
+      },
+      {
+        "field": "location",
+        "value": "phường Linh Trung, TP Thủ Đức",
+        "span": "Viện tế bào gốc (tiền thân của viện là Phòng thí nghiệm công nghệ sinh học phân tử), trong khuôn viên Đại học Khoa học Tự nhiên, Đại học Quốc gia TP HCM, phường Linh Trung, TP Thủ Đức.",
+        "source": "vnexpress.net",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Khong co nguon hang A hoac B nao tu 03/04/2026. Chi tim duoc bai cua Vien truong tren trang cua chinh vien (sci.edu.vn, 11/06/2026, hang C, tu khai) khang dinh lai nang luc lam chu cong nghe te bao goc trung mo, yeu hon nguon vnexpress 2023 vi khong neu san pham cu the. URL: sci.edu.vn, bai 11/06/2026; ban chup khong giu vi nguyen van co em-dash. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Địa chỉ theo nguồn năm 2023, trước sắp xếp đơn vị hành chính."
       }
     ]
   },
@@ -3108,7 +4483,7 @@ export const cnclUnits: CnclUnit[] = [
       "2"
     ],
     "capability": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
-    "capability2": "",
+    "capability2": "VNPT Cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số.",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -3119,9 +4494,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
+      },
+      {
+        "source": "vtv.vn",
+        "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt"
       }
     ],
-    "tim": "vnpt dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
+    "tim": "vnpt dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ vnpt cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số. nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3202,6 +4581,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/mst_robot_makeinvn_20251230.txt",
         "note": "TRUONG PHU (TIP-CNCL-2D). VNPT dung o nhom 1 lam nhom chinh; day la bang chung nhom 3 robot va tu dong hoa. Muc do: robot chatbot dich vu cong da trinh dien tai Make in Viet Nam 2025."
+      },
+      {
+        "field": "nang_luc_mo_ta_2",
+        "value": "VNPT Cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số.",
+        "span": "VNPT Cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số.",
+        "source": "vtv.vn",
+        "tier": "B",
+        "extraction": "verbatim",
+        "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
+        "note": "DU DIEU KIEN DA XET: 'van hanh' o day la 'cong cu ho tro van hanh ung dung so', mot thanh phan cua he sinh thai VNPT Cloud, khong phai VNPT van hanh cong nghe cua ben khac. RUI RO: cau dung the bi dong 'duoc phat trien', khong noi ro VNPT tu phat trien; van phong gan thong cao. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng nang_luc_mo_ta_2 của VNPT (ttbc-hcm.gov.vn 02/12/2020, câu chung 5 doanh nghiệp). Nguồn mới gọi đích danh VNPT Cloud thuộc VNPT-IT, Tập đoàn VNPT, được Top 10 Sao Khuê 2026 (VINASA, bên thứ ba, 28/5/2026) và I4 Impact Awards 2026; câu nêu hệ sinh thái điện toán đám mây gồm hạ tầng và nền tảng. Người duyệt lưu ý: vtv.vn là nguồn mới; văn phong gần thông cáo ('VNPT Cloud cho biết'), câu dùng thể bị động 'được phát triển' chứ không nói rõ 'tự phát triển'; cùng bài nói VNPT Cloud phát triển từ hạ tầng viễn thông của VNPT. Bài VTV 24/09/2026 (chưa chụp) có câu 'Với lớp PaaS, VNPT Cloud phát triển các dịch vụ như VNPT Kubernetes Service'."
       }
     ]
   },
@@ -3356,6 +4745,93 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
+      }
+    ]
+  },
+  {
+    "name": "VTI Solutions",
+    "loaiHinh": "DN",
+    "loaiHinhLabel": "Doanh nghiệp",
+    "nhoms": [
+      "3"
+    ],
+    "nhomLabels": [
+      "Nhóm 3 · Robot và tự động hoá"
+    ],
+    "sanPham": [
+      "8"
+    ],
+    "capability": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+    "capability2": "",
+    "bestTier": "C",
+    "favorsRtr": false,
+    "sources": [
+      {
+        "source": "vti-solutions.vn",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt"
+      }
+    ],
+    "tim": "vti solutions dn doanh nghiệp tại lễ công bố và trao giải sao khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, cntt việt nam, sản phẩm hệ thống điều hành sản xuất mes-x của vti solutions trực thuộc vti group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của vti solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ. nhóm 3 robot và tự động hoá sp 8",
+    "evidence": [
+      {
+        "field": "ten_don_vi",
+        "value": "VTI Solutions",
+        "span": "Được thành lập vào tháng 12/2020, VTI Solutions, thành viên trực thuộc VTI Group, chuyên cung cấp các phần mềm & giải pháp toàn diện cho khách hàng có mong muốn tùy chỉnh sản phẩm theo yêu cầu đặc thù và mở rộng quy mô trong mọi ngành sản xuất.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tự khai: VTI Solutions là thành viên VTI Group, thành lập 12/2020. Tên pháp nhân đầy đủ chưa có trong đoạn bản chụp (chân trang ghi 'Công ty cổ phần VTI Solutions', nằm ngoài bản chụp)."
+      },
+      {
+        "field": "loai_hinh",
+        "value": "DN",
+        "span": "Được thành lập vào tháng 12/2020, VTI Solutions, thành viên trực thuộc VTI Group, chuyên cung cấp các phần mềm & giải pháp toàn diện cho khách hàng có mong muốn tùy chỉnh sản phẩm theo yêu cầu đặc thù và mở rộng quy mô trong mọi ngành sản xuất.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "CHUAN HOA CO CHU DICH: span noi VTI Solutions la 'thành viên trực thuộc VTI Group, chuyên cung cấp các phần mềm & giải pháp' -> loai_hinh DN. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Doanh nghiệp phần mềm, thành viên tập đoàn."
+      },
+      {
+        "field": "nhom_cncl",
+        "value": "3",
+        "span": "Đó chính là lý do Hệ thống Điều hành sản xuất MES-X – giải pháp Made by VTI ra đời, nhằm đáp ứng nhu cầu quản lý xuyên suốt toàn bộ quá trình sản xuất dưới nhà máy, mang sứ mệnh đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số trong các lĩnh vực sản xuất.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "CHUAN HOA CO CHU DICH: he thong dieu hanh san xuat MES-X quan ly toan bo qua trinh san xuat duoi nha may -> san pham 8 thuoc nhom 3 (Robot va tu dong hoa) theo QD 21/2026. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Hệ thống điều hành sản xuất (MES) thuộc nhóm Robot và tự động hoá."
+      },
+      {
+        "field": "san_pham_lien_quan",
+        "value": "8",
+        "span": "Đó chính là lý do Hệ thống Điều hành sản xuất MES-X – giải pháp Made by VTI ra đời, nhằm đáp ứng nhu cầu quản lý xuyên suốt toàn bộ quá trình sản xuất dưới nhà máy, mang sứ mệnh đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số trong các lĩnh vực sản xuất.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "normalized",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "CHUAN HOA CO CHU DICH: MES-X la giai phap dieu hanh san xuat tai nha may -> san pham 8 (Nen tang, giai phap va mo hinh phuc vu san xuat thong minh) theo QD 21/2026. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: MES là giải pháp lõi của sản xuất thông minh."
+      },
+      {
+        "field": "nang_luc_mo_ta",
+        "value": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+        "span": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được nguồn đăng từ 03/04/2026 gọi đích danh 'VTI Solutions' với MES-X. Kết quả tìm kiếm có tin MES-X đạt giải Bạc ASEAN Digital Awards tháng 01/2026 và Top 10 Sao Khuê 2024 (vinasa.org.vn, dangcongsan.vn), đều cũ hơn mốc, và chủ yếu từ trang của VTI; bài baochinhphu 28/05/2026 về Sao Khuê 2026 không nêu tên đơn vị đoạt giải. Bài cafef 21/09/2026 về kho thông minh WMSX gọi 'VTI', không gọi 'VTI Solutions', nên không dùng (đúng luật hai tên gọi). | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tự khai: MES-X lọt top 10 Sao Khuê 2024 (giải của VINASA, bên thứ ba), gắn với triển khai giải pháp và mô hình nhà máy không giấy tờ."
+      },
+      {
+        "field": "bang_chung_nang_luc",
+        "value": "Thay vì phụ thuộc vào những nền tảng có sẵn, VTI Solutions đã hoàn toàn tự nghiên cứu và phát triển MES-X, tạo điều kiện cho việc mở rộng và tích hợp với các hệ thống khác, nhằm đảm bảo tính linh hoạt và sẵn sàng tuỳ chỉnh theo nhu cầu đặc thù của từng doanh nghiệp.",
+        "span": "Thay vì phụ thuộc vào những nền tảng có sẵn, VTI Solutions đã hoàn toàn tự nghiên cứu và phát triển MES-X, tạo điều kiện cho việc mở rộng và tích hợp với các hệ thống khác, nhằm đảm bảo tính linh hoạt và sẵn sàng tuỳ chỉnh theo nhu cầu đặc thù của từng doanh nghiệp.",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được nguồn đăng từ 03/04/2026 gọi đích danh 'VTI Solutions' với MES-X. Kết quả tìm kiếm có tin MES-X đạt giải Bạc ASEAN Digital Awards tháng 01/2026 và Top 10 Sao Khuê 2024 (vinasa.org.vn, dangcongsan.vn), đều cũ hơn mốc, và chủ yếu từ trang của VTI; bài baochinhphu 28/05/2026 về Sao Khuê 2026 không nêu tên đơn vị đoạt giải. Bài cafef 21/09/2026 về kho thông minh WMSX gọi 'VTI', không gọi 'VTI Solutions', nên không dùng (đúng luật hai tên gọi). | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tự khai: tự nghiên cứu, phát triển MES-X (không dựa nền tảng có sẵn). Người duyệt lưu ý: đoạn bản chụp không nêu tên khách hàng nhà máy cụ thể; cafef 21/09/2026 (hạng B) có bài về kho thông minh WMSX do 'VTI' triển khai tại Sumi-Hanel vận hành từ 04/2026, nhưng nguồn gọi 'VTI' chứ không phải 'VTI Solutions' nên chưa gộp (xem honest-null)."
       }
     ]
   },

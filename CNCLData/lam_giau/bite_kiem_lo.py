@@ -3,7 +3,8 @@
 
 CANH
 ====
-TU DUNG LAY CANH: chep mot thu muc dot (mac dinh dot_01) va registry that vao thu muc tam
+TU DUNG LAY CANH: chep mot thu muc dot (mac dinh dot_01) va registry that (lo da nap thi bo
+chinh cac claim cua lo do, ve dung trang thai truoc khi nap) vao thu muc tam
 (tempfile.mkdtemp), tiem loi vao BAN SAO. Dot that va registry that khong bi cham.
 
 RANG
@@ -47,8 +48,18 @@ def in_(nhan, ok, chi):
 def canh(tam):
     d = Path(tempfile.mkdtemp(dir=tam))
     shutil.copytree(DOT, d / "dot", ignore=shutil.ignore_patterns("lo.json"))
-    shutil.copy(REG, d / "claims.jsonl")
+    (d / "claims.jsonl").write_text(reg_goc(), encoding="utf-8")
     return d
+
+
+def reg_goc():
+    """Registry TRUOC khi lo duoc nap. Lo da nap (co da_nap.json) thi bo cac claim mang dau
+    'LAM GIAU <dot> ·' cua chinh no, neu khong canh sach se tu va voi chinh no."""
+    ls = REG.read_text(encoding="utf-8").splitlines(keepends=True)
+    if (DOT / "da_nap.json").exists():
+        dau = f"LAM GIAU {DOT.name} \u00b7"
+        ls = [l for l in ls if not l.strip() or dau not in (json.loads(l).get("note") or "")]
+    return "".join(ls)
 
 
 def chay(d, cong=CONG):
@@ -93,7 +104,7 @@ def main():
         return 3
     tam = tempfile.mkdtemp(prefix="bite_kiem_lo_")
     try:
-        reg = [json.loads(l) for l in REG.read_text(encoding="utf-8").splitlines() if l.strip()]
+        reg = [json.loads(l) for l in reg_goc().splitlines() if l.strip()]
         cu = {c["entity"] for c in reg}
         d = canh(tam)
         rc, out = chay(d)

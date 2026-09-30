@@ -1,0 +1,26 @@
+{
+ "ngay_nap": "2026-09-30",
+ "nguoi_duyet": "Lam Nguyen",
+ "so_claim": 102,
+ "don_vi": [
+  "Bệnh viện Trung ương Quân đội 108",
+  "CMC Telecom",
+  "Công ty 1Matrix",
+  "Công ty CP Việt Nam Food (VNF)",
+  "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+  "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+  "Indefol",
+  "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+  "Trung tâm Vũ trụ Việt Nam",
+  "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+  "VNPT",
+  "VTI Solutions",
+  "Viettel AI",
+  "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+  "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+  "Viện Khoa học vật liệu",
+  "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+  "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec"
+ ],
+ "registry": "domains/don_vi_cncl/claims.jsonl"
+}

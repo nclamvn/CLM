@@ -1,9 +1,33 @@
 {
   "meta": {
     "generatedAt": "2026-09-30",
-    "soTaiLieu": 84
+    "soTaiLieu": 100
   },
   "docs": [
+    {
+      "id": "dv:Bệnh viện Trung ương Quân đội 108",
+      "kind": "don_vi",
+      "ten": "Bệnh viện Trung ương Quân đội 108",
+      "moTa": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "benh vien trung uong quan doi 108 lieu phap su dung te bao goc tao mau tu than duoc danh gia la mot mo hinh moi trong dieu tri benh nhuoc co va lupus ban do he thong. nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:CMC Telecom",
+      "kind": "don_vi",
+      "ten": "CMC Telecom",
+      "moTa": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "cmc telecom cmc cloud la nen tang dien toan dam may \"make in vietnam\" do cmc telecom dau tu va phat trien. he thong duoc thiet ke va van hanh hoan toan boi doi ngu ky su viet nam nhom 1 · cong nghe so"
+    },
+    {
+      "id": "dv:Công ty 1Matrix",
+      "kind": "don_vi",
+      "ten": "Công ty 1Matrix",
+      "moTa": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "cong ty 1matrix hien vbsn da duoc tich hop vao he thong truy xuat nguon goc cua bo cong an va trien khai tren nen tang dinh danh quoc gia vneid nhom 1 · cong nghe so"
+    },
     {
       "id": "dv:Công ty An ninh mạng Viettel",
       "kind": "don_vi",
@@ -19,6 +43,14 @@
       "moTa": "AVAC ASF LIVE",
       "nhan": "Nhóm 4 · Sinh học và y sinh",
       "khoa": "cong ty co phan avac viet nam avac asf live nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "kind": "don_vi",
+      "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "moTa": "nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "cong ty co phan cong nghe & truyen thong viet nam (vntt) nen tang so do doanh nghiep viet nam phat trien (cong ty co phan cong nghe & truyen thong viet nam - vntt) de ap dung vao quy trinh san xuat tai cong ty tnhh thuc pham orion vina (khu cong nghiep my phuoc ii) theo huong chuyen doi so gan voi san xuat xanh, san xuat thong minh nhom 3 · robot va tu dong hoa"
     },
     {
       "id": "dv:Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
@@ -75,6 +107,22 @@
       "moTa": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
       "nhan": "Nhóm 4 · Sinh học và y sinh",
       "khoa": "cong ty co phan y sinh ngoc bao “manh ghep hop so che tao tu vat lieu peek”, ma so 2502433dklh/byt-httb nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty CP Việt Nam Food (VNF)",
+      "kind": "don_vi",
+      "ten": "Công ty CP Việt Nam Food (VNF)",
+      "moTa": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "cong ty cp viet nam food (vnf) dang sau thanh cong cua retriv la hanh trinh nhieu nam vnf theo duoi mot huong di khac biet: bien phu pham nong nghiep, thuy san thanh nguon nguyen lieu cho nhung san pham co gia tri cao. nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "kind": "don_vi",
+      "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "moTa": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "cong ty tnhh cong nghe sinh hoc xanh nhat lan de tai \"nghien cuu cong nghe san xuat va che bien nam agaricus subrufescens, ung dung de nang cao gia tri gia tang mot so nong san viet nam\" do nhom nghien cuu cua cong ty tnhh cong nghe sinh hoc xanh nhat lan, vien co dien nong nghiep va cong nghe sau thu hoach va mot so doanh nghiep thuc hien da hoan thien toan bo quy trinh cong nghe, lam chu he thong len men 1.000 lit va tao ra 8 san pham gia tri gia tang tu nong san viet nam, mo ra huong di moi cho che bien sau, nang cao gia tri thuong mai va tiem nang xuat khau cua nganh nong san nuoc ta. nhom 4 · sinh hoc va y sinh"
     },
     {
       "id": "dv:Công ty TNHH Luyện kim Trần Hồng Quân",
@@ -141,6 +189,14 @@
       "khoa": "hti technology horus p02 voi kha nang hoat dong yen lang va trang bi cam bien nhiet nhom 9 · hang khong va vu tru"
     },
     {
+      "id": "dv:Indefol",
+      "kind": "don_vi",
+      "ten": "Indefol",
+      "moTa": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "indefol he thong san xuat hydrogen xanh idf-ex1000x duoc xay dung tren nen tang cong nghe dien phan kiem (alkaline) tien tien nhom 5 · nang luong va vat lieu"
+    },
+    {
       "id": "dv:Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
       "kind": "don_vi",
       "ten": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
@@ -187,6 +243,14 @@
       "moTa": "VTOL-01 chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi",
       "nhan": "Nhóm 9 · Hàng không và vũ trụ",
       "khoa": "phenikaa-x vtol-01 chuyen dung cho cac nhiem vu o dia hinh phuc tap nhu rung nui nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "kind": "don_vi",
+      "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "moTa": "Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "phong thi nghiem trong diem cong nghe loc, hoa dau nghien cuu che tao xuc tac di the, vat lieu nano trong linh vuc tong hop va ung dung nhien lieu sinh hoc nhom 5 · nang luong va vat lieu"
     },
     {
       "id": "dv:Realtime Robotics (RtR)",
@@ -245,12 +309,28 @@
       "khoa": "tong cong ty thiet bi dien dong anh lam chu cong tac thiet ke, che tao thanh cong may bien ap 500kv co cong suat lon nhat tren luoi dien truyen tai viet nam nhom 5 · nang luong va vat lieu"
     },
     {
+      "id": "dv:Trung tâm Vũ trụ Việt Nam",
+      "kind": "don_vi",
+      "ten": "Trung tâm Vũ trụ Việt Nam",
+      "moTa": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+      "nhan": "Nhóm 9 · Hàng không và vũ trụ",
+      "khoa": "trung tam vu tru viet nam viec phat trien ve tinh nanodragon tai viet nam la cot moc lon tiep theo trong qua trinh huong toi muc tieu lam chu cong nghe ve tinh nho, tu thiet ke va che tao ve tinh nho quan sat trai dat trong lo trinh phat trien ve tinh “made in vietnam”. nhom 9 · hang khong va vu tru"
+    },
+    {
+      "id": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "kind": "don_vi",
+      "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "moTa": "nghiên cứu và sản xuất loại nhiên liệu sinh học",
+      "nhan": "Nhóm 5 · Năng lượng và vật liệu",
+      "khoa": "truong dai hoc khoa hoc tu nhien, dai hoc quoc gia ha noi nghien cuu va san xuat loai nhien lieu sinh hoc nhom 5 · nang luong va vat lieu"
+    },
+    {
       "id": "dv:Viettel AI",
       "kind": "don_vi",
       "ten": "Viettel AI",
-      "moTa": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
+      "moTa": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng. · Viettel BTS Digital Twin - nền tảng bản sao số do Viettel AI phát triển",
       "nhan": "Nhóm 1 · Công nghệ số",
-      "khoa": "viettel ai giai phap claimpkg, cong nghe kiem chung thong tin tu dong duoc danh gia co tinh ung dung rong. nhom 1 · cong nghe so"
+      "khoa": "viettel ai giai phap claimpkg, cong nghe kiem chung thong tin tu dong duoc danh gia co tinh ung dung rong. · viettel bts digital twin - nen tang ban sao so do viettel ai phat trien nhom 1 · cong nghe so"
     },
     {
       "id": "dv:Viettel High Tech",
@@ -269,6 +349,14 @@
       "khoa": "vien cong nghe xa hiem lam chu cac cong doan cong nghe cot loi tu tuyen khoang, thuy luyen, den phan chia va tinh che cac oxit dat hiem rieng re voi do tinh khiet cao nhom 8 · bien, dai duong, long dat"
     },
     {
+      "id": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "kind": "don_vi",
+      "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "moTa": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien co dien nong nghiep va cong nghe sau thu hoach de tai \"nghien cuu cong nghe san xuat va che bien nam agaricus subrufescens, ung dung de nang cao gia tri gia tang mot so nong san viet nam\" do nhom nghien cuu cua cong ty tnhh cong nghe sinh hoc xanh nhat lan, vien co dien nong nghiep va cong nghe sau thu hoach va mot so doanh nghiep thuc hien da hoan thien toan bo quy trinh cong nghe, lam chu he thong len men 1.000 lit va tao ra 8 san pham gia tri gia tang tu nong san viet nam, mo ra huong di moi cho che bien sau, nang cao gia tri thuong mai va tiem nang xuat khau cua nganh nong san nuoc ta. nhom 4 · sinh hoc va y sinh"
+    },
+    {
       "id": "dv:Viện Di truyền Nông nghiệp Việt Nam",
       "kind": "don_vi",
       "ten": "Viện Di truyền Nông nghiệp Việt Nam",
@@ -285,12 +373,44 @@
       "khoa": "vien han lam khoa hoc va cong nghe viet nam phat trien cong nghe loi dien phan nuoc san xuat hydro tu nang luong mat troi, gio; che tao vat lieu nano ung dung trong nhiet tri, chan doan hinh anh mri va dan truyen thuoc; phat trien vat lieu dien cuc pin li-ion the he moi (mos-se@gr) co hieu suat luu tru cao nhom 5 · nang luong va vat lieu"
     },
     {
+      "id": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "kind": "don_vi",
+      "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "moTa": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien khoa hoc va cong nghe viet nam - han quoc (vkist) vien khoa hoc va cong nghe viet nam - han quoc (vkist) vua to chuc nghiem thu chinh thuc cap bo doi voi nhiem vu khoa hoc “phat trien cong nghe plasma lanh phu vat lieu chuc nang len chip sinh hoc gan tren da ung dung theo doi suc khoe”. day la de tai do vkist chu tri, nham tao nen tang cong nghe cho cac thiet bi cam bien y sinh thong minh, ho tro theo doi suc khoe lien tuc va khong xam lan. nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Viện Khoa học vật liệu",
+      "kind": "don_vi",
+      "ten": "Viện Khoa học vật liệu",
+      "moTa": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien khoa hoc vat lieu tren co so tich hop he vi luu tich hop cam bien dien hoa va tu truong, da phat hien thanh cong chi dau ung thu (carcinoembryonic antigen, cea), nguong gioi han phat hien la 150 pg/ml. nhom 4 · sinh hoc va y sinh"
+    },
+    {
       "id": "dv:Viện Khoa học-Công nghệ mật mã",
       "kind": "don_vi",
       "ten": "Viện Khoa học-Công nghệ mật mã",
       "moTa": "thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign",
       "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
       "khoa": "vien khoa hoc-cong nghe mat ma thuat toan chu ky so hau luong tu voi ten goi vn-pqsign nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "kind": "don_vi",
+      "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "moTa": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien nghien cuu te bao goc va cong nghe gen vinmec sau qua trinh danh gia chuyen mon, nguoi benh duoc lua chon tham gia chuong trinh nghien cuu thu nghiem lam sang dieu tri lupus ban do he thong bang lieu phap te bao mien dich car-t do vien nghien cuu te bao goc va cong nghe gen vinmec trien khai, phoi hop cung khoa huyet hoc benh vien da khoa vinmec smart city va khoa mien dich - di ung benh vien da khoa quoc te vinmec times city. nhom 4 · sinh hoc va y sinh"
+    },
+    {
+      "id": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "kind": "don_vi",
+      "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "moTa": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+      "nhan": "Nhóm 4 · Sinh học và y sinh",
+      "khoa": "vien te bao goc, truong dai hoc khoa hoc tu nhien, dhqg tp.hcm sau 16 nam hinh thanh va phat trien, vien te bao goc lam chu duoc 27 cong nghe voi hon 150 san pham te bao goc trong linh vuc thuoc, thuc pham chuc nang, my pham, trang thiet bi y te… nhom 4 · sinh hoc va y sinh"
     },
     {
       "id": "dv:Viện Vaccine và sinh phẩm y tế (IVAC)",
@@ -320,9 +440,9 @@
       "id": "dv:VNPT",
       "kind": "don_vi",
       "ten": "VNPT",
-      "moTa": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
+      "moTa": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ · VNPT Cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số.",
       "nhan": "Nhóm 1 · Công nghệ số, Nhóm 3 · Robot và tự động hoá",
-      "khoa": "vnpt lam chu hon 40 mo hinh ai xu ly anh phuc vu cac bai toan dac thu cua viet nam nhu nhan dien bien so, phat hien vi pham giao thong hay giam sat chay no nhom 1 · cong nghe so, nhom 3 · robot va tu dong hoa"
+      "khoa": "vnpt lam chu hon 40 mo hinh ai xu ly anh phuc vu cac bai toan dac thu cua viet nam nhu nhan dien bien so, phat hien vi pham giao thong hay giam sat chay no · vnpt cloud hien duoc phat trien nhu mot he sinh thai dien toan dam may toan dien, gom cac dich vu ha tang, nen tang va cong cu ho tro van hanh ung dung so. nhom 1 · cong nghe so, nhom 3 · robot va tu dong hoa"
     },
     {
       "id": "dv:VNPT Technology",
@@ -339,6 +459,14 @@
       "moTa": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
       "nhan": "Nhóm 6 · Chip bán dẫn",
       "khoa": "vsap lab phong thi nghiem – san xuat thu nghiem (lab-fab) dau tien tai viet nam trong linh vuc dong goi ban dan tien tien nhom 6 · chip ban dan"
+    },
+    {
+      "id": "dv:VTI Solutions",
+      "kind": "don_vi",
+      "ten": "VTI Solutions",
+      "moTa": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+      "nhan": "Nhóm 3 · Robot và tự động hoá",
+      "khoa": "vti solutions tai le cong bo va trao giai sao khue 2024 cho san pham xuat sac cua nganh phan mem, cntt viet nam, san pham he thong dieu hanh san xuat mes-x cua vti solutions truc thuoc vti group da vinh du nam trong top 10 day an tuong, tu do cang khang dinh nang luc cot loi cua vti solutions trong viec trien khai cac giai phap cong nghe va dich vu xuat sac dong hanh cung voi tien trinh chuyen doi so quoc gia, dac biet la thuc day mo hinh nha may khong giay to. nhom 3 · robot va tu dong hoa"
     },
     {
       "id": "dv:XBStation",

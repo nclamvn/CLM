@@ -11,7 +11,7 @@
     "nguongGiao": 0.5
   },
   "phanRa": {
-    "MATCH-0001": {
+    "MATCH-0002": {
       "tiLeGiao": 0.5,
       "soGiao": 2,
       "soTokenCau": 4,
@@ -28,7 +28,7 @@
       "tong": 0.525,
       "lamTron": 0.53
     },
-    "MATCH-0003": {
+    "MATCH-0010": {
       "tiLeGiao": 0.5,
       "soGiao": 4,
       "soTokenCau": 8,
@@ -45,7 +45,7 @@
       "tong": 0.525,
       "lamTron": 0.53
     },
-    "MATCH-0004": {
+    "MATCH-0013": {
       "tiLeGiao": 1,
       "soGiao": 1,
       "soTokenCau": 1,
@@ -62,7 +62,7 @@
       "tong": 0.9,
       "lamTron": 0.9
     },
-    "MATCH-0005": {
+    "MATCH-0014": {
       "tiLeGiao": 1,
       "soGiao": 1,
       "soTokenCau": 1,
@@ -79,7 +79,7 @@
       "tong": 0.875,
       "lamTron": 0.88
     },
-    "MATCH-0006": {
+    "MATCH-0015": {
       "tiLeGiao": 1,
       "soGiao": 1,
       "soTokenCau": 1,
@@ -96,7 +96,7 @@
       "tong": 0.875,
       "lamTron": 0.88
     },
-    "MATCH-0007": {
+    "MATCH-0016": {
       "tiLeGiao": 0.5,
       "soGiao": 6,
       "soTokenCau": 12,
@@ -113,7 +113,7 @@
       "tong": 0.525,
       "lamTron": 0.53
     },
-    "MATCH-0008": {
+    "MATCH-0017": {
       "tiLeGiao": 0.714,
       "soGiao": 5,
       "soTokenCau": 7,
@@ -130,7 +130,7 @@
       "tong": 0.7,
       "lamTron": 0.7
     },
-    "MATCH-0009": {
+    "MATCH-0020": {
       "tiLeGiao": 0.667,
       "soGiao": 2,
       "soTokenCau": 3,
@@ -147,7 +147,7 @@
       "tong": 0.667,
       "lamTron": 0.67
     },
-    "MATCH-0010": {
+    "MATCH-0021": {
       "tiLeGiao": 0.625,
       "soGiao": 5,
       "soTokenCau": 8,
@@ -164,7 +164,7 @@
       "tong": 0.638,
       "lamTron": 0.64
     },
-    "MATCH-0011": {
+    "MATCH-0022": {
       "tiLeGiao": 0.667,
       "soGiao": 2,
       "soTokenCau": 3,
@@ -181,7 +181,7 @@
       "tong": 0.642,
       "lamTron": 0.64
     },
-    "MATCH-0012": {
+    "MATCH-0023": {
       "tiLeGiao": 0.7,
       "soGiao": 7,
       "soTokenCau": 10,
@@ -227,67 +227,67 @@
         "cau": "CNCL-P07 · nhu cầu quốc gia",
         "cung": "ROSTEK",
         "loai": "da_ky",
-        "id": "MATCH-0001"
+        "id": "MATCH-0002"
       },
       {
         "cau": "CNCL-P18 · nhu cầu quốc gia",
         "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
         "loai": "da_ky",
-        "id": "MATCH-0003"
+        "id": "MATCH-0010"
       },
       {
         "cau": "CNCL-P23 · nhu cầu quốc gia",
         "cung": "Tập đoàn Viettel",
         "loai": "da_ky",
-        "id": "MATCH-0004"
+        "id": "MATCH-0013"
       },
       {
         "cau": "CNCL-P23 · nhu cầu quốc gia",
         "cung": "FPT Semiconductor",
         "loai": "da_ky",
-        "id": "MATCH-0005"
+        "id": "MATCH-0014"
       },
       {
         "cau": "CNCL-P23 · nhu cầu quốc gia",
         "cung": "CT Semiconductor",
         "loai": "da_ky",
-        "id": "MATCH-0006"
+        "id": "MATCH-0015"
       },
       {
         "cau": "CNCL-P01 · nhu cầu quốc gia",
         "cung": "VinBigData",
         "loai": "da_ky",
-        "id": "MATCH-0007"
+        "id": "MATCH-0016"
       },
       {
         "cau": "CNCL-P22 · nhu cầu quốc gia",
         "cung": "Tập đoàn Viettel",
         "loai": "da_ky",
-        "id": "MATCH-0008"
+        "id": "MATCH-0017"
       },
       {
         "cau": "CNCL-P06 · nhu cầu quốc gia",
         "cung": "VNPT Technology",
         "loai": "da_ky",
-        "id": "MATCH-0009"
+        "id": "MATCH-0020"
       },
       {
         "cau": "CNCL-P20 · nhu cầu quốc gia",
         "cung": "Tổng công ty Thiết bị điện Đông Anh",
         "loai": "da_ky",
-        "id": "MATCH-0010"
+        "id": "MATCH-0021"
       },
       {
         "cau": "CNCL-P20 · nhu cầu quốc gia",
         "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
         "loai": "da_ky",
-        "id": "MATCH-0011"
+        "id": "MATCH-0022"
       },
       {
         "cau": "CNCL-P17 · nhu cầu quốc gia",
         "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
         "loai": "da_ky",
-        "id": "MATCH-0012"
+        "id": "MATCH-0023"
       },
       {
         "cau": "CNCL-P08 · nhu cầu quốc gia",

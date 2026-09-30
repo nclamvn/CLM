@@ -6,9 +6,10 @@
     "29/09/2026: ban luc cu 43 giao canh (tinh ca 75 canh thuoc nhom); ban do lanh tho nhom: 0 giao, 0 xuyen nut tren 54 canh cung-cau.",
     "29/09/2026: them nhanChongNhau (nhan truc tiep va nhau hoac va nhan nhom) = 0 sau khi dat nhan bang thuat toan chon ben.",
     "29/09/2026: them sankeyDienTichGiao = 7 (man Toan canh thi truong). Toan bo 7 den tu Tap doan Viettel noi ba nhom 1, 6, 9: moi don vi khac cung cung nhom 9 phai nam tren hoac duoi Viettel va cat mot trong ba dong cua no.",
-    "29/09/2026: them workbenchGiao = 1 (so do hai cot Matching Workbench v2, 12 canh). Thu tu chu cai cho 42 giao; sap median con 1."
+    "29/09/2026: them workbenchGiao = 1 (so do hai cot Matching Workbench v2, 12 canh). Thu tu chu cai cho 42 giao; sap median con 1.",
+    "30/09/2026: sankeyDienTichGiao 7 -> 8 sau lo lam giau dot 01 (anh Lam duyet het): Trung tam Vu tru Viet Nam vao nhom 9. Da do CA 20 thu tu cho phep (10 phep xoay x 2 chieu cua vong lanh tho): nho nhat la 8, dung bang so don vi CHI thuoc nhom 9, vi moi don vi do phai nam tren hoac duoi Tap doan Viettel (noi 1, 6, 9) va cat dung mot dong cua no. Tang do du lieu, khong phai bo cuc xau di. Cung ngay: nhanChongNhau van 0 nho them buoc sua cuc bo va day nut trong lib/do-thi-ban-do.mjs."
   ],
   "nhanChongNhau": 0,
-  "sankeyDienTichGiao": 7,
+  "sankeyDienTichGiao": 8,
   "workbenchGiao": 1
 }

@@ -100,6 +100,7 @@ export function banKinhNut(n) {
  * nhan chong nhau; hoa thi tham so nho hon. Tat dinh: luoi va thu tu thu khong doi.
  */
 const BO_NHO_THU_TU = new Map();
+export const XA_NHAN = 12; // px lui them cho vi tri nhan hau to '+'; phai khop viTriNhan o DoThiCungCau.tsx
 export const LUOI_THAM_SO = [0, 8, 16, 24].flatMap((themCho) => [0, 9].map((themR) => ({ themCho, themR })));
 export function dungBanDo(nodes, edges) {
   let tot = null;
@@ -314,19 +315,23 @@ function dungBanDoMot(nodes, edges, thamSo) {
   const coNhan = ids.filter((id) => byId.get(id).kind === 'nhu_cau' || coMatch.has(id))
     .sort((a, b) => P.get(a)[1] - P.get(b)[1] || P.get(a)[0] - P.get(b)[0] || soSanh(a, b));
   const nhanDaDat = [];
+  const hopCua = []; const uuCua = [];
   for (const id of coNhan) {
-    const n = byId.get(id); const [x, y] = P.get(id); const r = rNut.get(id); const l = ltCua.get(chinh.get(id));
+    const n = byId.get(id); const [x, y] = P.get(id); const x0n = x; const y0n = y; const r = rNut.get(id); const l = ltCua.get(chinh.get(id));
     const ten = n.kind === 'nhu_cau' ? `P${n.maSp}` : tenNgan(n.label, 22);
     const w = (n.kind === 'nhu_cau' ? 6.4 : 6.3) * ten.length + 4;
     // Mo hinh 8 vi tri cua ban do hoc (Christensen, Marks & Shieber 1995): trai, phai, tren, duoi va
     // bon goc cheo. Goc cheo lech doc them mot ban kinh nut.
-    const hop = (ben) => {
+    // Hau to '+' (them 30/09/2026): cung vi tri nhung lui ra xa them XA_NHAN px, chi dung khi ca tam
+    // vi tri sat nut deu va cham (nhom 4 day len sau lo lam giau dot 01).
+    const hop = (benDu, x = x0n, y = y0n) => {
+      const xa = benDu.endsWith('+') ? XA_NHAN : 0; const ben = benDu.replace('+', '');
       const [ngang, doc] = ben.split('-');
       if (ngang === 'tren' || ngang === 'duoi') {
-        const y0 = ngang === 'tren' ? y - r - 16 : y + r + 3;
+        const y0 = ngang === 'tren' ? y - r - 16 - xa : y + r + 3 + xa;
         return { x0: x - w / 2, x1: x + w / 2, y0, y1: y0 + 13 };
       }
-      const x0 = ngang === 'trai' ? x - r - 5 - w : x + r + 5;
+      const x0 = ngang === 'trai' ? x - r - 5 - w - xa : x + r + 5 + xa;
       const dy = doc === 'tren' ? -(r + 4) : doc === 'duoi' ? r + 4 : 0;
       return { x0, x1: x0 + w, y0: y - 7 + dy, y1: y + 6 + dy };
     };
@@ -345,11 +350,92 @@ function dungBanDoMot(nodes, edges, thamSo) {
       return p;
     };
     // Thu tu uu tien: ben ra ngoai tam lanh tho, ben kia, tren, duoi. Chi doi khi giam han va cham.
-    const uu = x < l.cx - 4 ? ['trai', 'phai', 'tren', 'duoi', 'trai-tren', 'trai-duoi', 'phai-tren', 'phai-duoi'] : ['phai', 'trai', 'tren', 'duoi', 'phai-tren', 'phai-duoi', 'trai-tren', 'trai-duoi'];
+    const uu8 = x < l.cx - 4 ? ['trai', 'phai', 'tren', 'duoi', 'trai-tren', 'trai-duoi', 'phai-tren', 'phai-duoi'] : ['phai', 'trai', 'tren', 'duoi', 'phai-tren', 'phai-duoi', 'trai-tren', 'trai-duoi'];
+    const uu = [...uu8, ...['tren', 'duoi', 'trai', 'phai'].map((b) => b + '+')];
     let ben = uu[0]; let pMin = phat(ben);
     for (const b of uu.slice(1)) { const q = phat(b); if (q < pMin) { pMin = q; ben = b; } }
     nhanNut.set(id, { ten, ben });
     nhanDaDat.push(hop(ben));
+    hopCua.push(hop); uuCua.push(uu);
+  }
+  // g. Sua cuc bo (them 30/09/2026 khi lo lam giau dot 01 dua registry tu 44 len 60 don vi va tham lam
+  //    de lai 2 nhan chong nhau). Dung loi khuyen cua chinh bai Christensen, Marks & Shieber: sau tham
+  //    lam, lan luot dat lai tung nhan con va cham vao vi tri it va cham nhat khi cac nhan khac dung
+  //    yen. Chi doi khi giam han, nen khong bao gio lam xau di; thu tu co dinh nen tat dinh.
+  const vaCua = (i, b) => {
+    let v = 0;
+    for (const d of daDat) if (vaHop(b, d) > 0) v++;
+    for (const d of hopNut) if (d.id !== coNhan[i] && vaHop(b, d) > 0) v++;
+    for (let j = 0; j < nhanDaDat.length; j++) if (j !== i && vaHop(b, nhanDaDat[j]) > 0) v++;
+    return v;
+  };
+  for (let luot = 0; luot < 6; luot++) {
+    let doi = false;
+    for (let i = 0; i < coNhan.length; i++) {
+      let tot = vaCua(i, nhanDaDat[i]);
+      if (tot === 0) continue;
+      for (const ben of uuCua[i]) {
+        const b = hopCua[i](ben);
+        if (b.x0 < 0 || b.x1 > RONG || b.y0 < 0 || b.y1 > CAO) continue;
+        const v = vaCua(i, b);
+        if (v < tot) { tot = v; nhanDaDat[i] = b; nhanNut.set(coNhan[i], { ...nhanNut.get(coNhan[i]), ben }); doi = true; }
+      }
+    }
+    if (!doi) break;
+  }
+  // h. Day nut (them 30/09/2026). Khi o nhom 4 moi nut deu co hang xom sat den muc khong con vi tri
+  //    nhan nao trong (ca 12 vi tri deu va), sua nhan khong du: phai xe dich chinh cac NUT. Voi moi
+  //    nhan con va cham, thu dich nut cua no hoac nut no de len theo 8 huong x 3 buoc, trong lanh tho.
+  //    Chi nhan buoc lam GIAM HAN diem tong theo thu tu uu tien giao canh > canh xuyen nut > nhan
+  //    chong nhau, nen giao canh va xuyen nut khong bao gio tang. Thu tu co dinh nen tat dinh.
+  const iNhan = new Map(coNhan.map((id, i) => [id, i]));
+  const iHop = new Map(hopNut.map((h, k) => [h.id, k]));
+  const demVa = () => {
+    let v = 0;
+    for (let i = 0; i < nhanDaDat.length; i++) {
+      for (const d of daDat) if (vaHop(nhanDaDat[i], d) > 0) v++;
+      for (const d of hopNut) if (d.id !== coNhan[i] && vaHop(nhanDaDat[i], d) > 0) v++;
+      for (let j = i + 1; j < nhanDaDat.length; j++) if (vaHop(nhanDaDat[i], nhanDaDat[j]) > 0) v++;
+    }
+    return v;
+  };
+  const diemTong = () => demGiao(cheo, P) * 1e4 + demXuyenNut(cheo, P, rNut) * 1e2 + demVa();
+  const datNut = (id, x, y) => {
+    P.set(id, [lam(x), lam(y)]);
+    const r = rNut.get(id); const k = iHop.get(id);
+    hopNut[k] = { x0: x - r, x1: x + r, y0: y - r, y1: y + r, id };
+    const i = iNhan.get(id);
+    if (i !== undefined) nhanDaDat[i] = hopCua[i](nhanNut.get(id).ben, x, y);
+  };
+  const trongLanhTho = (id, x, y) => {
+    const l = ltCua.get(chinh.get(id)); if (!l) return false;
+    const room = l.r - rNut.get(id) - 4 + ((phu.get(id) ?? []).length ? 10 : 0);
+    return Math.hypot(x - l.cx, y - l.cy) <= room;
+  };
+  const HUONG = [[1, 0], [-1, 0], [0, 1], [0, -1], [0.7071, 0.7071], [-0.7071, 0.7071], [0.7071, -0.7071], [-0.7071, -0.7071]];
+  let dTong = diemTong();
+  for (let luot = 0; luot < 6 && dTong % 100 > 0; luot++) {
+    let doi = false;
+    for (let i = 0; i < coNhan.length; i++) {
+      const b = nhanDaDat[i];
+      const dung = [coNhan[i], ...hopNut.filter((d) => d.id !== coNhan[i] && vaHop(b, d) > 0).map((d) => d.id),
+        ...coNhan.filter((id, j) => j !== i && vaHop(b, nhanDaDat[j]) > 0)];
+      if (dung.length === 1 && !daDat.some((d) => vaHop(b, d) > 0)) continue;
+      for (const id of [...new Set(dung)]) {
+        const [x0, y0] = P.get(id);
+        let totNhat = null;
+        for (const buoc of [6, 12, 18]) for (const [dx, dy] of HUONG) {
+          const x = x0 + dx * buoc; const y = y0 + dy * buoc;
+          if (!trongLanhTho(id, x, y)) continue;
+          datNut(id, x, y);
+          const d = diemTong();
+          if (d < dTong && (!totNhat || d < totNhat.d)) totNhat = { d, x, y };
+          datNut(id, x0, y0);
+        }
+        if (totNhat) { datNut(id, totNhat.x, totNhat.y); dTong = totNhat.d; doi = true; }
+      }
+    }
+    if (!doi) break;
   }
   let nhanVa = 0;
   for (let i = 0; i < nhanDaDat.length; i++) {

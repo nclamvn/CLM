@@ -22,6 +22,7 @@
 import { useMemo, useRef, useState } from 'react';
 import graph from '@/lib/hub-graph.json';
 import { useProof, type Muc } from '@/components/proof/ProofLayer';
+import { XA_NHAN } from '@/lib/do-thi-ban-do.mjs';
 
 type Nut = {
   id: string; kind: 'don_vi' | 'nhu_cau' | 'nhom'; label: string; x: number; y: number;
@@ -47,12 +48,14 @@ const mucCua = (n: Nut): Muc => (n.kind === 'don_vi' ? { loai: 'don_vi', ten: n.
   : n.kind === 'nhu_cau' ? { loai: 'nhu_cau', entityId: n.id.slice(3) } : { loai: 'nhom', so: n.id.slice(3) });
 
 /** Toa do nhan theo mo hinh 8 vi tri; phai khop hop nhan trong lib/do-thi-ban-do.mjs. */
-function viTriNhan(ben: string, r: number) {
-  const [ngang, doc] = ben.split('-');
-  if (ngang === 'tren') return { x: 0, y: -(r + 6), textAnchor: 'middle' as const };
-  if (ngang === 'duoi') return { x: 0, y: r + 13, textAnchor: 'middle' as const };
+function viTriNhan(benDu: string, r: number) {
+  // Hau to '+': lui xa them XA_NHAN px (khop hop nhan trong lib/do-thi-ban-do.mjs).
+  const xa = benDu.endsWith('+') ? XA_NHAN : 0;
+  const [ngang, doc] = benDu.replace('+', '').split('-');
+  if (ngang === 'tren') return { x: 0, y: -(r + 6 + xa), textAnchor: 'middle' as const };
+  if (ngang === 'duoi') return { x: 0, y: r + 13 + xa, textAnchor: 'middle' as const };
   const dy = doc === 'tren' ? -(r + 4) : doc === 'duoi' ? r + 4 : 0;
-  return ngang === 'trai' ? { x: -(r + 5), y: 3.5 + dy, textAnchor: 'end' as const } : { x: r + 5, y: 3.5 + dy, textAnchor: 'start' as const };
+  return ngang === 'trai' ? { x: -(r + 5 + xa), y: 3.5 + dy, textAnchor: 'end' as const } : { x: r + 5 + xa, y: 3.5 + dy, textAnchor: 'start' as const };
 }
 
 export function banKinh(n: Nut) {

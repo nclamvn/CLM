@@ -12,7 +12,7 @@ RANG 1 · CANH SACH -> exit 0, in "PHEU:".
 RANG 2 · PHIEU BO QUA CANH CHUOI GIA TRI (dem khac engine) -> exit 2, "lech engine".
 RANG 3 · MAT out/facts.jsonl -> exit 3 KHONG CHAY DUOC, khong duoc bia phieu rong.
 RANG 4 · BOT MOT DONG out/matches.jsonl (ky + tu choi + cho ky != ung vien) -> exit 2.
-RANG 5 · MOT UNG VIEN CHUA KY -> dem vao cho ky, exit 0.
+RANG 5 · DANH DAU MOT MATCH DA KY LA CHUA KY -> da ky giam 1, cho ky tang 1, exit 0.
 
 Chay: python3 bite_pheu_matching.py     Exit 0 moi rang can · 2 co rang khong can.
 """
@@ -49,7 +49,7 @@ def main():
         return 3
     tam = tempfile.mkdtemp(prefix="bite_pheu_")
     try:
-        d = canh(tam); ma, ra = chay(d)
+        d = canh(tam); ma, ra = chay(d); ra_sach = ra
         in_("RANG 1 · canh sach -> exit 0", ma == 0 and "PHEU:" in ra, f"exit {ma}")
 
         d = canh(tam); p = d / "pheu_matching.py"; s = p.read_text(encoding="utf-8")
@@ -75,10 +75,19 @@ def main():
         # khong phai da ky. Mo phong lo lam giau dot 01 lo ra phieu ghi 24 ky khi chi co 11 chu ky.
         d = canh(tam); p = d / "out" / "matches.jsonl"
         dong = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
-        dong[0].setdefault("gate", {}).setdefault("signoff", {})["by"] = "pending-human-review"
+        da_ky = [m for m in dong if ((m.get("gate") or {}).get("signoff") or {}).get("by") != "pending-human-review"]
+        da_ky[0]["gate"]["signoff"]["by"] = "pending-human-review"
         p.write_text("".join(json.dumps(m, ensure_ascii=False) + "\n" for m in dong), encoding="utf-8")
         ma, ra = chay(d)
-        in_("RANG 5 · mot ung vien chua ky -> dem cho ky, khong dem ky", ma == 0 and "/ 1 cho ky" in ra, f"exit {ma}")
+        # So voi canh sach (rang 1): da ky giam dung 1, cho ky tang dung 1. Khong go cung con so,
+        # vi registry that co the dang co san ung vien cho ky (sau mot lo lam giau).
+        import re
+        def so(t):
+            m = re.search(r"(\d+) ky / (\d+) tu choi / (\d+) cho ky", t)
+            return tuple(map(int, m.groups())) if m else None
+        s0, s1 = so(ra_sach), so(ra)
+        ok = ma == 0 and s0 and s1 and s1[0] == s0[0] - 1 and s1[2] == s0[2] + 1 and s1[1] == s0[1]
+        in_("RANG 5 · mot ung vien chua ky -> dem cho ky, khong dem ky", bool(ok), f"exit {ma}, {s0} -> {s1}")
     finally:
         shutil.rmtree(tam, ignore_errors=True)
     can = sum(kq)

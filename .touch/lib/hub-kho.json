@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "557faef",
+    "sha": "f52b2b1",
     "ngay": "2026-09-30"
   },
-  "tongCommit": 187,
+  "tongCommit": 188,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 18,
+      "commitSauGop": 19,
       "cuoi": {
-        "sha": "557faef",
+        "sha": "f52b2b1",
         "ngay": "2026-09-30",
-        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
+        "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
       },
-      "soTep": 194
+      "soTep": 196
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 40,
+      "commitSauGop": 41,
       "cuoi": {
-        "sha": "557faef",
+        "sha": "f52b2b1",
         "ngay": "2026-09-30",
-        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
+        "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
       },
       "soTep": 412
     }
@@ -84,6 +84,11 @@
     ".touch": 43
   },
   "ganDay": [
+    {
+      "sha": "f52b2b1",
+      "ngay": "2026-09-30",
+      "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
+    },
     {
       "sha": "557faef",
       "ngay": "2026-09-30",
@@ -128,11 +133,6 @@
       "sha": "86da5c4",
       "ngay": "2026-09-29",
       "tieuDe": "Trang dau: tieu de chi 'Cung gặp cầu.', cau phu khong gan con so (registry con mo rong; so nam o HUD sinh tu du lieu)"
-    },
-    {
-      "sha": "a9b4833",
-      "ngay": "2026-09-29",
-      "tieuDe": "Trang dau mot man: hinh dong hub cung cau ve tu du lieu that (44 don vi, 10 nhom, 30 nhu cau, 47 cap, 11 match ky); Hub dung chung token SOT v2 voi dashboard; cong mat_tien them mot man + mot he mau, 12 rang"
     }
   ],
   "dong": [

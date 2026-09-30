@@ -1,48 +1,48 @@
 {
   "so": {
-    "donVi": 44,
-    "cauNguon": 221,
-    "tierA": 78,
-    "banChup": 39,
+    "donVi": 60,
+    "cauNguon": 323,
+    "tierA": 120,
+    "banChup": 61,
     "matchDaKy": 11,
     "tuChoi": 1,
     "nhuCau": 30,
-    "ncCoCung": 19,
-    "ncTrong": 11,
-    "capCungCau": 47
+    "ncCoCung": 27,
+    "ncTrong": 3,
+    "capCungCau": 63
   },
   "chuoiCong": {
-    "xanh": 91,
+    "xanh": 78,
     "tong": 91,
-    "dat": true,
-    "luc": "2026-09-30T15:04:10+0700"
+    "dat": false,
+    "luc": "2026-09-30T16:01:44+0700"
   },
   "diemYeu": {
-    "chuaDinhDanh": 44,
+    "chuaDinhDanh": 60,
     "quaHanChuaLyDo": 29,
-    "giuNguonCu": 38,
+    "giuNguonCu": 65,
     "deXuatChoDuyet": 2
   },
   "cua": [
     {
       "href": "/dashboard/thi-truong",
       "ten": "Toàn cảnh thị trường",
-      "su": "11/30 nhu cầu quốc gia chưa có bên cung"
+      "su": "3/30 nhu cầu quốc gia chưa có bên cung"
     },
     {
       "href": "/dashboard/thoi-cuoc",
       "ten": "Dòng thời cuộc",
-      "su": "58 sự kiện có nguồn, từ 2015 đến nay"
+      "su": "80 sự kiện có nguồn, từ 2012 đến nay"
     },
     {
       "href": "/dashboard/do-thi",
       "ten": "Đồ thị cung cầu",
-      "su": "0 giao cắt trên 54 cạnh cung cầu"
+      "su": "0 giao cắt trên 70 cạnh cung cầu"
     },
     {
       "href": "/dashboard/don-vi",
       "ten": "Hồ sơ đơn vị",
-      "su": "44 hồ sơ, không điểm tổng hợp"
+      "su": "60 hồ sơ, không điểm tổng hợp"
     },
     {
       "href": "/dashboard/matching",
@@ -52,7 +52,7 @@
     {
       "href": "/dashboard/registry",
       "ten": "Evidence Registry",
-      "su": "221 câu nguồn, 78 tier A"
+      "su": "323 câu nguồn, 120 tier A"
     }
   ],
   "ban_do": {

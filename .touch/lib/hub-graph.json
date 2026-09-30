@@ -2,13 +2,13 @@
   "meta": {
     "generatedAt": "2026-09-30",
     "nut": {
-      "don_vi": 44,
+      "don_vi": 60,
       "nhu_cau": 30,
       "nhom": 10
     },
     "canh": {
-      "thuoc_nhom": 75,
-      "cung_san_pham": 42,
+      "thuoc_nhom": 91,
+      "cung_san_pham": 58,
       "match_da_ky": 11,
       "tu_choi": 1
     },
@@ -42,33 +42,33 @@
         "so": "1",
         "nhan": "Công nghệ số",
         "cx": 600,
-        "cy": 133.8,
-        "r": 89.8,
+        "cy": 139.1,
+        "r": 95.1,
         "goc": -1.571,
         "nhanTren": true,
-        "soDv": 7,
+        "soDv": 9,
         "soNc": 5
       },
       {
         "id": "nh:3",
         "so": "3",
         "nhan": "Robot và tự động hoá",
-        "cx": 880.2,
-        "cy": 186.7,
-        "r": 70.5,
-        "goc": -0.686,
+        "cx": 880.8,
+        "cy": 185.9,
+        "r": 77.7,
+        "goc": -0.687,
         "nhanTren": true,
-        "soDv": 4,
+        "soDv": 6,
         "soNc": 2
       },
       {
         "id": "nh:2",
         "so": "2",
         "nhan": "Mạng di động thế hệ sau",
-        "cx": 1020.4,
-        "cy": 292.2,
+        "cx": 1027.7,
+        "cy": 293.8,
         "r": 50.9,
-        "goc": -0.286,
+        "goc": -0.278,
         "nhanTren": false,
         "soDv": 1,
         "soNc": 1
@@ -77,34 +77,34 @@
         "id": "nh:4",
         "so": "4",
         "nhan": "Sinh học và y sinh",
-        "cx": 1039.5,
-        "cy": 504.6,
-        "r": 92.5,
-        "goc": 0.199,
+        "cx": 1031.9,
+        "cy": 525.7,
+        "r": 111.1,
+        "goc": 0.249,
         "nhanTren": false,
-        "soDv": 6,
+        "soDv": 14,
         "soNc": 7
       },
       {
         "id": "nh:5",
         "so": "5",
         "nhan": "Năng lượng và vật liệu",
-        "cx": 847.7,
-        "cy": 659.8,
-        "r": 84.1,
-        "goc": 0.777,
+        "cx": 799.8,
+        "cy": 677.7,
+        "r": 92.5,
+        "goc": 0.919,
         "nhanTren": false,
-        "soDv": 4,
+        "soDv": 7,
         "soNc": 6
       },
       {
         "id": "nh:7",
         "so": "7",
         "nhan": "An ninh mạng và lượng tử",
-        "cx": 566.5,
-        "cy": 707.2,
+        "cx": 512.5,
+        "cy": 702.4,
         "r": 70.5,
-        "goc": 1.685,
+        "goc": 1.867,
         "nhanTren": false,
         "soDv": 4,
         "soNc": 2
@@ -113,10 +113,10 @@
         "id": "nh:8",
         "so": "8",
         "nhan": "Biển, đại dương, lòng đất",
-        "cx": 326.8,
-        "cy": 648.5,
+        "cx": 305.2,
+        "cy": 640.1,
         "r": 66.5,
-        "goc": 2.436,
+        "goc": 2.491,
         "nhanTren": false,
         "soDv": 3,
         "soNc": 2
@@ -125,11 +125,11 @@
         "id": "nh:10",
         "so": "10",
         "nhan": "Đường sắt tốc độ cao",
-        "cx": 177.4,
-        "cy": 536,
+        "cx": 158.4,
+        "cy": 522.9,
         "r": 66.5,
-        "goc": 2.865,
-        "nhanTren": false,
+        "goc": 2.904,
+        "nhanTren": true,
         "soDv": 3,
         "soNc": 2
       },
@@ -137,10 +137,10 @@
         "id": "nh:6",
         "so": "6",
         "nhan": "Chip bán dẫn",
-        "cx": 155,
-        "cy": 334.5,
+        "cx": 153.7,
+        "cy": 320,
         "r": 66.5,
-        "goc": -2.96,
+        "goc": -2.93,
         "nhanTren": true,
         "soDv": 4,
         "soNc": 1
@@ -149,12 +149,12 @@
         "id": "nh:9",
         "so": "9",
         "nhan": "Hàng không và vũ trụ",
-        "cx": 304.5,
-        "cy": 194.5,
-        "r": 81,
-        "goc": -2.498,
+        "cx": 312.4,
+        "cy": 188.5,
+        "r": 84.1,
+        "goc": -2.472,
         "nhanTren": true,
-        "soDv": 7,
+        "soDv": 8,
         "soNc": 2
       },
       {
@@ -172,35 +172,50 @@
     ],
     "chiSo": {
       "nhanChongNhau": 0,
-      "soCanhVe": 54,
+      "soCanhVe": 70,
       "giaoCanh": 0,
       "canhXuyenNut": 0,
       "canhNoiHaiLanhTho": 3,
-      "netTietKiem": 75
+      "netTietKiem": 91
     }
   },
   "maTran": {
     "hang": [
-      "dv:VNPT",
+      "dv:CMC Telecom",
+      "dv:Công ty 1Matrix",
       "dv:FPT",
+      "dv:VNPT",
       "dv:Viettel AI",
       "dv:VinAI",
       "dv:VinBigData",
       "dv:Zalo",
       "dv:Tập đoàn Viettel",
+      "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "dv:VTI Solutions",
       "dv:Công ty cổ phần Health Care Center",
       "dv:Công ty cổ phần VinMotion",
       "dv:ROSTEK",
       "dv:Tập đoàn MISA",
       "dv:VNPT Technology",
       "dv:Công ty Cổ phần Y Sinh Ngọc Bảo",
+      "dv:Công ty CP Việt Nam Food (VNF)",
+      "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
       "dv:Công ty cổ phần AVAC Việt Nam",
       "dv:Công ty cổ phần thuốc thú y Trung ương NAVETCO",
       "dv:Tập đoàn Dabaco Việt Nam",
       "dv:Viện Di truyền Nông nghiệp Việt Nam",
+      "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "dv:Viện Khoa học vật liệu",
+      "dv:Bệnh viện Trung ương Quân đội 108",
+      "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
       "dv:Viện Vaccine và sinh phẩm y tế (IVAC)",
       "dv:Công ty Cổ phần Giải pháp Năng lượng VinES",
       "dv:GG Power",
+      "dv:Indefol",
+      "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
       "dv:Tổng công ty Thiết bị điện Đông Anh",
       "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
       "dv:Công ty An ninh mạng Viettel",
@@ -224,29 +239,30 @@
       "dv:Realtime Robotics (RtR)",
       "dv:Viettel High Tech",
       "dv:XBStation",
+      "dv:Trung tâm Vũ trụ Việt Nam",
       "dv:Masan High-Tech Materials"
     ],
     "cot": [
-      "nc:CNCL-P02 · nhu cầu quốc gia",
-      "nc:CNCL-P03 · nhu cầu quốc gia",
       "nc:CNCL-P04 · nhu cầu quốc gia",
-      "nc:CNCL-P01 · nhu cầu quốc gia",
       "nc:CNCL-P05 · nhu cầu quốc gia",
+      "nc:CNCL-P03 · nhu cầu quốc gia",
+      "nc:CNCL-P02 · nhu cầu quốc gia",
+      "nc:CNCL-P01 · nhu cầu quốc gia",
       "nc:CNCL-P08 · nhu cầu quốc gia",
       "nc:CNCL-P07 · nhu cầu quốc gia",
       "nc:CNCL-P06 · nhu cầu quốc gia",
-      "nc:CNCL-P11 · nhu cầu quốc gia",
-      "nc:CNCL-P13 · nhu cầu quốc gia",
       "nc:CNCL-P12 · nhu cầu quốc gia",
       "nc:CNCL-P15 · nhu cầu quốc gia",
       "nc:CNCL-P14 · nhu cầu quốc gia",
       "nc:CNCL-P16 · nhu cầu quốc gia",
+      "nc:CNCL-P13 · nhu cầu quốc gia",
+      "nc:CNCL-P11 · nhu cầu quốc gia",
       "nc:CNCL-P10 · nhu cầu quốc gia",
-      "nc:CNCL-P19 · nhu cầu quốc gia",
-      "nc:CNCL-P18 · nhu cầu quốc gia",
       "nc:CNCL-P21 · nhu cầu quốc gia",
-      "nc:CNCL-P20 · nhu cầu quốc gia",
       "nc:CNCL-P27 · nhu cầu quốc gia",
+      "nc:CNCL-P18 · nhu cầu quốc gia",
+      "nc:CNCL-P19 · nhu cầu quốc gia",
+      "nc:CNCL-P20 · nhu cầu quốc gia",
       "nc:CNCL-P17 · nhu cầu quốc gia",
       "nc:CNCL-P09 · nhu cầu quốc gia",
       "nc:CNCL-P24 · nhu cầu quốc gia",
@@ -255,64 +271,64 @@
       "nc:CNCL-P30 · nhu cầu quốc gia",
       "nc:CNCL-P29 · nhu cầu quốc gia",
       "nc:CNCL-P23 · nhu cầu quốc gia",
-      "nc:CNCL-P28 · nhu cầu quốc gia",
-      "nc:CNCL-P22 · nhu cầu quốc gia"
+      "nc:CNCL-P22 · nhu cầu quốc gia",
+      "nc:CNCL-P28 · nhu cầu quốc gia"
     ],
     "khoiHang": [
       {
         "lanhTho": "1",
         "tu": 0,
-        "den": 6
+        "den": 8
       },
       {
         "lanhTho": "3",
-        "tu": 7,
-        "den": 10
+        "tu": 9,
+        "den": 14
       },
       {
         "lanhTho": "2",
-        "tu": 11,
-        "den": 11
+        "tu": 15,
+        "den": 15
       },
       {
         "lanhTho": "4",
-        "tu": 12,
-        "den": 17
+        "tu": 16,
+        "den": 29
       },
       {
         "lanhTho": "5",
-        "tu": 18,
-        "den": 21
+        "tu": 30,
+        "den": 36
       },
       {
         "lanhTho": "7",
-        "tu": 22,
-        "den": 25
+        "tu": 37,
+        "den": 40
       },
       {
         "lanhTho": "8",
-        "tu": 26,
-        "den": 28
+        "tu": 41,
+        "den": 43
       },
       {
         "lanhTho": "10",
-        "tu": 29,
-        "den": 31
+        "tu": 44,
+        "den": 46
       },
       {
         "lanhTho": "6",
-        "tu": 32,
-        "den": 35
+        "tu": 47,
+        "den": 50
       },
       {
         "lanhTho": "9",
-        "tu": 36,
-        "den": 42
+        "tu": 51,
+        "den": 58
       },
       {
         "lanhTho": "chua_co",
-        "tu": 43,
-        "den": 43
+        "tu": 59,
+        "den": 59
       }
     ],
     "khoiCot": [
@@ -368,11 +384,68 @@
       }
     ],
     "chiSo": {
-      "daoBanDau": 109,
-      "daoSauSap": 75
+      "daoBanDau": 212,
+      "daoSauSap": 104
     }
   },
   "nodes": [
+    {
+      "id": "dv:Bệnh viện Trung ương Quân đội 108",
+      "kind": "don_vi",
+      "label": "Bệnh viện Trung ương Quân đội 108",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "11"
+      ],
+      "favorsRtr": false,
+      "bestTier": "C",
+      "soClaim": 6,
+      "capability": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+      "x": 1058.1,
+      "y": 583.6,
+      "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:CMC Telecom",
+      "kind": "don_vi",
+      "label": "CMC Telecom",
+      "nhoms": [
+        "1"
+      ],
+      "sanPham": [
+        "4"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam",
+      "x": 549.6,
+      "y": 178.6,
+      "lanhTho": "1",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Công ty 1Matrix",
+      "kind": "don_vi",
+      "label": "Công ty 1Matrix",
+      "nhoms": [
+        "1"
+      ],
+      "sanPham": [
+        "5"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 6,
+      "capability": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID",
+      "x": 626.9,
+      "y": 89.7,
+      "lanhTho": "1",
+      "lanhThoPhu": []
+    },
     {
       "id": "dv:Công ty An ninh mạng Viettel",
       "kind": "don_vi",
@@ -387,8 +460,8 @@
       "bestTier": "A",
       "soClaim": 4,
       "capability": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
-      "x": 564,
-      "y": 708.1,
+      "x": 510,
+      "y": 702.9,
       "lanhTho": "7",
       "lanhThoPhu": []
     },
@@ -406,9 +479,28 @@
       "bestTier": "A",
       "soClaim": 5,
       "capability": "AVAC ASF LIVE",
-      "x": 1028.5,
-      "y": 482.9,
+      "x": 1077,
+      "y": 490,
       "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "kind": "don_vi",
+      "label": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "nhoms": [
+        "3"
+      ],
+      "sanPham": [
+        "8"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh",
+      "x": 847.8,
+      "y": 189.8,
+      "lanhTho": "3",
       "lanhThoPhu": []
     },
     {
@@ -425,8 +517,8 @@
       "bestTier": "A",
       "soClaim": 5,
       "capability": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC",
-      "x": 541,
-      "y": 677.5,
+      "x": 492.9,
+      "y": 668.6,
       "lanhTho": "7",
       "lanhThoPhu": []
     },
@@ -444,8 +536,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
-      "x": 897.5,
-      "y": 673.3,
+      "x": 813.3,
+      "y": 737.7,
       "lanhTho": "5",
       "lanhThoPhu": []
     },
@@ -463,8 +555,8 @@
       "bestTier": "A",
       "soClaim": 4,
       "capability": "giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp",
-      "x": 907.5,
-      "y": 165,
+      "x": 896.8,
+      "y": 152.6,
       "lanhTho": "3",
       "lanhThoPhu": []
     },
@@ -482,8 +574,8 @@
       "bestTier": "A",
       "soClaim": 4,
       "capability": "NAVET-ASFVAC",
-      "x": 1052.3,
-      "y": 506.8,
+      "x": 1057.4,
+      "y": 466.9,
       "lanhTho": "4",
       "lanhThoPhu": []
     },
@@ -501,8 +593,8 @@
       "bestTier": "B",
       "soClaim": 6,
       "capability": "nghiên cứu, phát triển và thương mại hóa robot hình người",
-      "x": 862.3,
-      "y": 219.5,
+      "x": 866,
+      "y": 221.6,
       "lanhTho": "3",
       "lanhThoPhu": []
     },
@@ -520,8 +612,8 @@
       "bestTier": "B",
       "soClaim": 6,
       "capability": "sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
-      "x": 196.6,
-      "y": 562.7,
+      "x": 176.5,
+      "y": 550.3,
       "lanhTho": "10",
       "lanhThoPhu": []
     },
@@ -539,8 +631,46 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
-      "x": 1061.4,
-      "y": 536.2,
+      "x": 1103,
+      "y": 544.6,
+      "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Công ty CP Việt Nam Food (VNF)",
+      "kind": "don_vi",
+      "label": "Công ty CP Việt Nam Food (VNF)",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "15"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 7,
+      "capability": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+      "x": 1004,
+      "y": 569.2,
+      "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "kind": "don_vi",
+      "label": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "15"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "x": 992.1,
+      "y": 517.6,
       "lanhTho": "4",
       "lanhThoPhu": []
     },
@@ -558,8 +688,8 @@
       "bestTier": "A",
       "soClaim": 5,
       "capability": "sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
-      "x": 298.8,
-      "y": 678.3,
+      "x": 275.6,
+      "y": 668.4,
       "lanhTho": "8",
       "lanhThoPhu": []
     },
@@ -577,8 +707,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)",
-      "x": 311.8,
-      "y": 177.5,
+      "x": 374.9,
+      "y": 218.2,
       "lanhTho": "9",
       "lanhThoPhu": []
     },
@@ -596,8 +726,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "triển khai giai đoạn 2 nhà máy chip ATP",
-      "x": 173.7,
-      "y": 336.4,
+      "x": 172.3,
+      "y": 322.6,
       "lanhTho": "6",
       "lanhThoPhu": [],
       "nhan": {
@@ -619,8 +749,8 @@
       "bestTier": "B",
       "soClaim": 6,
       "capability": "đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội",
-      "x": 177.3,
-      "y": 501.8,
+      "x": 159.6,
+      "y": 488.7,
       "lanhTho": "10",
       "lanhThoPhu": []
     },
@@ -638,8 +768,8 @@
       "bestTier": "A",
       "soClaim": 7,
       "capability": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng.",
-      "x": 603.8,
-      "y": 98.2,
+      "x": 548.8,
+      "y": 140,
       "lanhTho": "1",
       "lanhThoPhu": []
     },
@@ -657,8 +787,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "doanh nghiệp Việt đầu tiên thiết kế và phát triển chip thương mại",
-      "x": 171.5,
-      "y": 294.7,
+      "x": 171.8,
+      "y": 280.8,
       "lanhTho": "6",
       "lanhThoPhu": [],
       "nhan": {
@@ -680,8 +810,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm",
-      "x": 829.9,
-      "y": 672.5,
+      "x": 838.6,
+      "y": 708.3,
       "lanhTho": "5",
       "lanhThoPhu": []
     },
@@ -699,9 +829,28 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
-      "x": 339,
-      "y": 190.3,
+      "x": 348.8,
+      "y": 182.9,
       "lanhTho": "9",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Indefol",
+      "kind": "don_vi",
+      "label": "Indefol",
+      "nhoms": [
+        "5"
+      ],
+      "sanPham": [
+        "19"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 7,
+      "capability": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến",
+      "x": 809,
+      "y": 645,
+      "lanhTho": "5",
       "lanhThoPhu": []
     },
     {
@@ -718,8 +867,8 @@
       "bestTier": "A",
       "soClaim": 4,
       "capability": "rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km",
-      "x": 155.2,
-      "y": 561.1,
+      "x": 135.2,
+      "y": 547.1,
       "lanhTho": "10",
       "lanhThoPhu": []
     },
@@ -752,8 +901,8 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông",
-      "x": 337.5,
-      "y": 228,
+      "x": 325.5,
+      "y": 201.4,
       "lanhTho": "9",
       "lanhThoPhu": []
     },
@@ -771,8 +920,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "Lotus GovID",
-      "x": 604.6,
-      "y": 704,
+      "x": 550.6,
+      "y": 706.2,
       "lanhTho": "7",
       "lanhThoPhu": []
     },
@@ -790,8 +939,8 @@
       "bestTier": "A",
       "soClaim": 6,
       "capability": "nhà máy kiểm thử, đóng gói tiên tiến do người Việt làm chủ",
-      "x": 198.3,
-      "y": 354.6,
+      "x": 196.2,
+      "y": 341.7,
       "lanhTho": "6",
       "lanhThoPhu": []
     },
@@ -809,9 +958,28 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "VTOL-01 chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi",
-      "x": 327.5,
-      "y": 152,
+      "x": 337.5,
+      "y": 146.2,
       "lanhTho": "9",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "kind": "don_vi",
+      "label": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "nhoms": [
+        "5"
+      ],
+      "sanPham": [
+        "19"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 6,
+      "capability": "Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học",
+      "x": 770,
+      "y": 716.8,
+      "lanhTho": "5",
       "lanhThoPhu": []
     },
     {
@@ -828,8 +996,8 @@
       "bestTier": "B",
       "soClaim": 8,
       "capability": "Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải",
-      "x": 367.5,
-      "y": 222.1,
+      "x": 321.2,
+      "y": 171.3,
       "lanhTho": "9",
       "lanhThoPhu": []
     },
@@ -847,13 +1015,13 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa",
-      "x": 866.5,
-      "y": 154.3,
+      "x": 924.2,
+      "y": 183.9,
       "lanhTho": "3",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "ROSTEK",
-        "ben": "trai"
+        "ben": "phai"
       }
     },
     {
@@ -870,8 +1038,8 @@
       "bestTier": "B",
       "soClaim": 7,
       "capability": "vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại",
-      "x": 1066.7,
-      "y": 449.5,
+      "x": 1034.7,
+      "y": 560.4,
       "lanhTho": "4",
       "lanhThoPhu": []
     },
@@ -889,8 +1057,8 @@
       "bestTier": "A",
       "soClaim": 4,
       "capability": "robot do Tập đoàn MISA phát triển đã thực hiện các thao tác trình diễn theo kịch bản",
-      "x": 907.3,
-      "y": 209.5,
+      "x": 904,
+      "y": 223.3,
       "lanhTho": "3",
       "lanhThoPhu": []
     },
@@ -909,8 +1077,8 @@
       "bestTier": "A",
       "soClaim": 7,
       "capability": "Mô hình LLM hỗ trợ tiếng Việt với độ dài ngữ cảnh (context length) 4096 token",
-      "x": 517.2,
-      "y": 164.1,
+      "x": 511.3,
+      "y": 168.4,
       "lanhTho": "1",
       "lanhThoPhu": [
         "6",
@@ -935,8 +1103,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
-      "x": 325.1,
-      "y": 612.5,
+      "x": 305.5,
+      "y": 604.1,
       "lanhTho": "8",
       "lanhThoPhu": []
     },
@@ -954,14 +1122,52 @@
       "bestTier": "A",
       "soClaim": 5,
       "capability": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
-      "x": 887.1,
-      "y": 631,
+      "x": 860,
+      "y": 678.9,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "Thiết bị điện Đông Anh",
         "ben": "phai-duoi"
       }
+    },
+    {
+      "id": "dv:Trung tâm Vũ trụ Việt Nam",
+      "kind": "don_vi",
+      "label": "Trung tâm Vũ trụ Việt Nam",
+      "nhoms": [
+        "9"
+      ],
+      "sanPham": [
+        "28"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+      "x": 275.2,
+      "y": 176.5,
+      "lanhTho": "9",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "kind": "don_vi",
+      "label": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "nhoms": [
+        "5"
+      ],
+      "sanPham": [
+        "19"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 6,
+      "capability": "nghiên cứu và sản xuất loại nhiên liệu sinh học",
+      "x": 748,
+      "y": 648.9,
+      "lanhTho": "5",
+      "lanhThoPhu": []
     },
     {
       "id": "dv:Viettel AI",
@@ -975,10 +1181,10 @@
       ],
       "favorsRtr": false,
       "bestTier": "A",
-      "soClaim": 4,
+      "soClaim": 6,
       "capability": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
-      "x": 608,
-      "y": 128.6,
+      "x": 565.4,
+      "y": 110.8,
       "lanhTho": "1",
       "lanhThoPhu": []
     },
@@ -996,8 +1202,8 @@
       "bestTier": "B",
       "soClaim": 6,
       "capability": "Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ",
-      "x": 314.2,
-      "y": 208.2,
+      "x": 367.9,
+      "y": 146.7,
       "lanhTho": "9",
       "lanhThoPhu": []
     },
@@ -1015,9 +1221,28 @@
       "bestTier": "A",
       "soClaim": 6,
       "capability": "làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao",
-      "x": 342.1,
-      "y": 671.6,
+      "x": 319.2,
+      "y": 664,
       "lanhTho": "8",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "kind": "don_vi",
+      "label": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "15"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "x": 1016.7,
+      "y": 498.6,
+      "lanhTho": "4",
       "lanhThoPhu": []
     },
     {
@@ -1034,8 +1259,8 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen",
-      "x": 982.9,
-      "y": 507.3,
+      "x": 1035.5,
+      "y": 522.9,
       "lanhTho": "4",
       "lanhThoPhu": []
     },
@@ -1051,14 +1276,52 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
-      "x": 850.8,
-      "y": 644.9,
+      "x": 812.5,
+      "y": 675.2,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "Hàn lâm Khoa học và C…",
-        "ben": "phai-duoi"
+        "ben": "trai-tren"
       }
+    },
+    {
+      "id": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "kind": "don_vi",
+      "label": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "13"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+      "x": 963.3,
+      "y": 497.5,
+      "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Viện Khoa học vật liệu",
+      "kind": "don_vi",
+      "label": "Viện Khoa học vật liệu",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "13"
+      ],
+      "favorsRtr": false,
+      "bestTier": "A",
+      "soClaim": 6,
+      "capability": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+      "x": 1016.6,
+      "y": 458.7,
+      "lanhTho": "4",
+      "lanhThoPhu": []
     },
     {
       "id": "dv:Viện Khoa học-Công nghệ mật mã",
@@ -1074,9 +1337,47 @@
       "bestTier": "B",
       "soClaim": 5,
       "capability": "thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign",
-      "x": 536.8,
-      "y": 733.3,
+      "x": 478.6,
+      "y": 722.8,
       "lanhTho": "7",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "kind": "don_vi",
+      "label": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "11"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 6,
+      "capability": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+      "x": 1024.6,
+      "y": 592.4,
+      "lanhTho": "4",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "kind": "don_vi",
+      "label": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "nhoms": [
+        "4"
+      ],
+      "sanPham": [
+        "11"
+      ],
+      "favorsRtr": false,
+      "bestTier": "B",
+      "soClaim": 7,
+      "capability": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+      "x": 1094.1,
+      "y": 515.3,
+      "lanhTho": "4",
       "lanhThoPhu": []
     },
     {
@@ -1093,8 +1394,8 @@
       "bestTier": "A",
       "soClaim": 6,
       "capability": "đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S)",
-      "x": 1083,
-      "y": 505.9,
+      "x": 956.4,
+      "y": 527.3,
       "lanhTho": "4",
       "lanhThoPhu": []
     },
@@ -1112,8 +1413,8 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "VinAI đã lọt vào Top 20 công ty toàn cầu dẫn đầu về nghiên cứu AI",
-      "x": 567.8,
-      "y": 172.1,
+      "x": 614.7,
+      "y": 149.5,
       "lanhTho": "1",
       "lanhThoPhu": []
     },
@@ -1131,13 +1432,13 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "Tháng 8/2023, VinBigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng Việt",
-      "x": 573,
-      "y": 96.7,
+      "x": 608.2,
+      "y": 178.7,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "VinBigData",
-        "ben": "trai"
+        "ben": "phai"
       }
     },
     {
@@ -1153,10 +1454,10 @@
       ],
       "favorsRtr": false,
       "bestTier": "A",
-      "soClaim": 8,
+      "soClaim": 9,
       "capability": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
-      "x": 686.7,
-      "y": 148.4,
+      "x": 691.7,
+      "y": 154.5,
       "lanhTho": "1",
       "lanhThoPhu": [
         "3"
@@ -1176,8 +1477,8 @@
       "bestTier": "A",
       "soClaim": 6,
       "capability": "đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây",
-      "x": 1033,
-      "y": 280.2,
+      "x": 1040.4,
+      "y": 281.9,
       "lanhTho": "2",
       "lanhThoPhu": [],
       "nhan": {
@@ -1199,9 +1500,28 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
-      "x": 149.6,
-      "y": 318.4,
+      "x": 148.9,
+      "y": 303.6,
       "lanhTho": "6",
+      "lanhThoPhu": []
+    },
+    {
+      "id": "dv:VTI Solutions",
+      "kind": "don_vi",
+      "label": "VTI Solutions",
+      "nhoms": [
+        "3"
+      ],
+      "sanPham": [
+        "8"
+      ],
+      "favorsRtr": false,
+      "bestTier": "C",
+      "soClaim": 6,
+      "capability": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+      "x": 850.6,
+      "y": 151.6,
+      "lanhTho": "3",
       "lanhThoPhu": []
     },
     {
@@ -1218,8 +1538,8 @@
       "bestTier": "B",
       "soClaim": 4,
       "capability": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
-      "x": 357.4,
-      "y": 152.3,
+      "x": 344.5,
+      "y": 224.3,
       "lanhTho": "9",
       "lanhThoPhu": []
     },
@@ -1237,8 +1557,8 @@
       "bestTier": "B",
       "soClaim": 3,
       "capability": "",
-      "x": 597.1,
-      "y": 157,
+      "x": 599.6,
+      "y": 122.6,
       "lanhTho": "1",
       "lanhThoPhu": []
     },
@@ -1251,13 +1571,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 568.8,
-      "y": 134.3,
+      "x": 575.5,
+      "y": 152.4,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P01",
-        "ben": "trai"
+        "ben": "tren"
       }
     },
     {
@@ -1269,13 +1589,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 651.3,
-      "y": 122,
+      "x": 650.4,
+      "y": 161.5,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P02",
-        "ben": "phai"
+        "ben": "tren"
       }
     },
     {
@@ -1287,8 +1607,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 610.4,
-      "y": 187.1,
+      "x": 641.3,
+      "y": 123.2,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
@@ -1305,13 +1625,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 545.5,
-      "y": 114.6,
+      "x": 579.1,
+      "y": 180.3,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P04",
-        "ben": "trai"
+        "ben": "duoi"
       }
     },
     {
@@ -1323,13 +1643,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 635.6,
-      "y": 156.7,
+      "x": 591.8,
+      "y": 87.2,
       "lanhTho": "1",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P05",
-        "ben": "phai"
+        "ben": "trai"
       }
     },
     {
@@ -1341,8 +1661,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1007.8,
-      "y": 304.2,
+      "x": 1015,
+      "y": 305.7,
       "lanhTho": "2",
       "lanhThoPhu": [],
       "nhan": {
@@ -1359,13 +1679,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 878.5,
-      "y": 187.4,
+      "x": 889.2,
+      "y": 189.7,
       "lanhTho": "3",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P07",
-        "ben": "phai"
+        "ben": "tren"
       }
     },
     {
@@ -1377,8 +1697,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 820.8,
-      "y": 175.3,
+      "x": 814.2,
+      "y": 173.1,
       "lanhTho": "3",
       "lanhThoPhu": [],
       "nhan": {
@@ -1395,8 +1715,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 579,
-      "y": 676.2,
+      "x": 530.5,
+      "y": 674.2,
       "lanhTho": "7",
       "lanhThoPhu": [],
       "nhan": {
@@ -1413,13 +1733,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1032.6,
-      "y": 528.4,
+      "x": 979.8,
+      "y": 545.4,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P10",
-        "ben": "tren"
+        "ben": "trai"
       }
     },
     {
@@ -1431,13 +1751,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1024.1,
-      "y": 449.9,
+      "x": 1058.9,
+      "y": 544,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P11",
-        "ben": "trai"
+        "ben": "duoi"
       }
     },
     {
@@ -1449,8 +1769,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1091,
-      "y": 534.2,
+      "x": 1084.9,
+      "y": 570.5,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
@@ -1467,8 +1787,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1000.5,
-      "y": 535.7,
+      "x": 989.5,
+      "y": 484,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
@@ -1485,13 +1805,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1066.3,
-      "y": 481.5,
+      "x": 1064,
+      "y": 510.6,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P14",
-        "ben": "phai"
+        "ben": "duoi"
       }
     },
     {
@@ -1503,13 +1823,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 1029.5,
-      "y": 563,
+      "x": 1012.3,
+      "y": 540.9,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P15",
-        "ben": "trai"
+        "ben": "tren"
       }
     },
     {
@@ -1521,13 +1841,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 995.7,
-      "y": 476.3,
+      "x": 1047.6,
+      "y": 493.9,
       "lanhTho": "4",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P16",
-        "ben": "trai"
+        "ben": "trai-tren"
       }
     },
     {
@@ -1539,13 +1859,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 821.3,
-      "y": 624.6,
+      "x": 778.8,
+      "y": 677.9,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P17",
-        "ben": "trai"
+        "ben": "duoi"
       }
     },
     {
@@ -1557,13 +1877,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 864.9,
-      "y": 677.5,
+      "x": 802.7,
+      "y": 707.3,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P18",
-        "ben": "duoi"
+        "ben": "tren"
       }
     },
     {
@@ -1575,8 +1895,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 813.4,
-      "y": 699.3,
+      "x": 744.7,
+      "y": 692.9,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
@@ -1593,8 +1913,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 857.8,
-      "y": 611.1,
+      "x": 840.5,
+      "y": 650.9,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
@@ -1611,13 +1931,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 855.7,
-      "y": 710.1,
+      "x": 779.6,
+      "y": 648,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P21",
-        "ben": "phai"
+        "ben": "tren"
       }
     },
     {
@@ -1629,8 +1949,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 374.8,
-      "y": 184.6,
+      "x": 382.7,
+      "y": 181.2,
       "lanhTho": "9",
       "lanhThoPhu": [],
       "nhan": {
@@ -1647,8 +1967,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 206.1,
-      "y": 310.5,
+      "x": 205.7,
+      "y": 297.9,
       "lanhTho": "6",
       "lanhThoPhu": [],
       "nhan": {
@@ -1665,8 +1985,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 573.4,
-      "y": 744,
+      "x": 512.7,
+      "y": 739.9,
       "lanhTho": "7",
       "lanhThoPhu": [],
       "nhan": {
@@ -1683,8 +2003,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 312.4,
-      "y": 646.8,
+      "x": 290.9,
+      "y": 637.6,
       "lanhTho": "8",
       "lanhThoPhu": [],
       "nhan": {
@@ -1701,8 +2021,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 355.8,
-      "y": 633.4,
+      "x": 335,
+      "y": 626.7,
       "lanhTho": "8",
       "lanhThoPhu": [],
       "nhan": {
@@ -1719,13 +2039,13 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 798.5,
-      "y": 653.6,
+      "x": 799.3,
+      "y": 615.8,
       "lanhTho": "5",
       "lanhThoPhu": [],
       "nhan": {
         "ten": "P27",
-        "ben": "trai"
+        "ben": "phai"
       }
     },
     {
@@ -1737,8 +2057,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 269.2,
-      "y": 197.1,
+      "x": 283.8,
+      "y": 212.7,
       "lanhTho": "9",
       "lanhThoPhu": [],
       "nhan": {
@@ -1755,8 +2075,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 150.7,
-      "y": 525.8,
+      "x": 132,
+      "y": 511.6,
       "lanhTho": "10",
       "lanhThoPhu": [],
       "nhan": {
@@ -1773,8 +2093,8 @@
       "bestTier": "A",
       "chinhThuc": true,
       "href": "/evidence/baochinhphu_qd21_toanvan_20260718.txt",
-      "x": 207.4,
-      "y": 528.5,
+      "x": 188.6,
+      "y": 516.6,
       "lanhTho": "10",
       "lanhThoPhu": [],
       "nhan": {
@@ -1787,83 +2107,155 @@
       "kind": "nhom",
       "label": "Nhóm 1 · Công nghệ số",
       "x": 600,
-      "y": 133.8,
+      "y": 139.1,
       "lanhTho": "1"
     },
     {
       "id": "nh:2",
       "kind": "nhom",
       "label": "Nhóm 2 · Mạng di động thế hệ sau",
-      "x": 1020.4,
-      "y": 292.2,
+      "x": 1027.7,
+      "y": 293.8,
       "lanhTho": "2"
     },
     {
       "id": "nh:3",
       "kind": "nhom",
       "label": "Nhóm 3 · Robot và tự động hoá",
-      "x": 880.2,
-      "y": 186.7,
+      "x": 880.8,
+      "y": 185.9,
       "lanhTho": "3"
     },
     {
       "id": "nh:4",
       "kind": "nhom",
       "label": "Nhóm 4 · Sinh học và y sinh",
-      "x": 1039.5,
-      "y": 504.6,
+      "x": 1031.9,
+      "y": 525.7,
       "lanhTho": "4"
     },
     {
       "id": "nh:5",
       "kind": "nhom",
       "label": "Nhóm 5 · Năng lượng và vật liệu",
-      "x": 847.7,
-      "y": 659.8,
+      "x": 799.8,
+      "y": 677.7,
       "lanhTho": "5"
     },
     {
       "id": "nh:6",
       "kind": "nhom",
       "label": "Nhóm 6 · Chip bán dẫn",
-      "x": 155,
-      "y": 334.5,
+      "x": 153.7,
+      "y": 320,
       "lanhTho": "6"
     },
     {
       "id": "nh:7",
       "kind": "nhom",
       "label": "Nhóm 7 · An ninh mạng và lượng tử",
-      "x": 566.5,
-      "y": 707.2,
+      "x": 512.5,
+      "y": 702.4,
       "lanhTho": "7"
     },
     {
       "id": "nh:8",
       "kind": "nhom",
       "label": "Nhóm 8 · Biển, đại dương, lòng đất",
-      "x": 326.8,
-      "y": 648.5,
+      "x": 305.2,
+      "y": 640.1,
       "lanhTho": "8"
     },
     {
       "id": "nh:9",
       "kind": "nhom",
       "label": "Nhóm 9 · Hàng không và vũ trụ",
-      "x": 304.5,
-      "y": 194.5,
+      "x": 312.4,
+      "y": 188.5,
       "lanhTho": "9"
     },
     {
       "id": "nh:10",
       "kind": "nhom",
       "label": "Nhóm 10 · Đường sắt tốc độ cao",
-      "x": 177.4,
-      "y": 536,
+      "x": 158.4,
+      "y": 522.9,
       "lanhTho": "10"
     }
   ],
   "edges": [
+    {
+      "id": "e:Bệnh viện Trung ương Quân đội 108>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Bệnh viện Trung ương Quân đội 108",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "tier": "C",
+        "source": "benhvien108.vn"
+      }
+    },
+    {
+      "id": "e:Bệnh viện Trung ương Quân đội 108>sp:11",
+      "kind": "cung_san_pham",
+      "source": "dv:Bệnh viện Trung ương Quân đội 108",
+      "target": "nc:CNCL-P11 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+        "tier": "C",
+        "source": "benhvien108.vn"
+      }
+    },
+    {
+      "id": "e:CMC Telecom>nh:1",
+      "kind": "thuoc_nhom",
+      "source": "dv:CMC Telecom",
+      "target": "nh:1",
+      "bangChung": {
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển.",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:CMC Telecom>sp:4",
+      "kind": "cung_san_pham",
+      "source": "dv:CMC Telecom",
+      "target": "nc:CNCL-P04 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển.",
+        "href": "/evidence/mst_cmc_cloud_20250321.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Công ty 1Matrix>nh:1",
+      "kind": "thuoc_nhom",
+      "source": "dv:Công ty 1Matrix",
+      "target": "nh:1",
+      "bangChung": {
+        "span": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể.",
+        "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+        "tier": "B",
+        "source": "vnexpress.net"
+      }
+    },
+    {
+      "id": "e:Công ty 1Matrix>sp:5",
+      "kind": "cung_san_pham",
+      "source": "dv:Công ty 1Matrix",
+      "target": "nc:CNCL-P05 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID.",
+        "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+        "tier": "B",
+        "source": "cafef.vn"
+      }
+    },
     {
       "id": "e:Công ty An ninh mạng Viettel>nh:7",
       "kind": "thuoc_nhom",
@@ -1910,6 +2302,30 @@
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
         "tier": "A",
         "source": "baochinhphu.vn"
+      }
+    },
+    {
+      "id": "e:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)>nh:3",
+      "kind": "thuoc_nhom",
+      "source": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "target": "nh:3",
+      "bangChung": {
+        "span": "Qua nhiều lần thảo luận, đánh giá từ đội ngũ chuyên gia của chúng tôi tại Hàn Quốc, chúng tôi đánh giá rất cao giải pháp nhà máy thông minh do Becamex và VNTT phát triển, với kiến trúc hiện đại, chức năng đầy đủ và thông minh, hoàn toàn đáp ứng các tiêu chuẩn quốc tế khắt khe, không thua kém các giải pháp đến từ các quốc gia có nền công nghiệp phát triển, nhưng chi phí hợp lý”, ông Park Ye Seol chia sẻ.",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)>sp:8",
+      "kind": "cung_san_pham",
+      "source": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "target": "nc:CNCL-P08 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Qua nhiều lần thảo luận, đánh giá từ đội ngũ chuyên gia của chúng tôi tại Hàn Quốc, chúng tôi đánh giá rất cao giải pháp nhà máy thông minh do Becamex và VNTT phát triển, với kiến trúc hiện đại, chức năng đầy đủ và thông minh, hoàn toàn đáp ứng các tiêu chuẩn quốc tế khắt khe, không thua kém các giải pháp đến từ các quốc gia có nền công nghiệp phát triển, nhưng chi phí hợp lý”, ông Park Ye Seol chia sẻ.",
+        "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
       }
     },
     {
@@ -2078,6 +2494,54 @@
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
         "tier": "B",
         "source": "nhandan.vn"
+      }
+    },
+    {
+      "id": "e:Công ty CP Việt Nam Food (VNF)>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Công ty CP Việt Nam Food (VNF)",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Từ đầu và vỏ tôm, VNF đã nghiên cứu và phát triển nhiều nhóm sản phẩm như protein, peptide, chitin, chitosan, astaxanthin tự nhiên, lipid và các nguyên liệu thực phẩm.",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "tier": "B",
+        "source": "tienphong.vn"
+      }
+    },
+    {
+      "id": "e:Công ty CP Việt Nam Food (VNF)>sp:15",
+      "kind": "cung_san_pham",
+      "source": "dv:Công ty CP Việt Nam Food (VNF)",
+      "target": "nc:CNCL-P15 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
+        "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+        "tier": "B",
+        "source": "tienphong.vn"
+      }
+    },
+    {
+      "id": "e:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan>sp:15",
+      "kind": "cung_san_pham",
+      "source": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "target": "nc:CNCL-P15 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
       }
     },
     {
@@ -2273,6 +2737,30 @@
       }
     },
     {
+      "id": "e:Indefol>nh:5",
+      "kind": "thuoc_nhom",
+      "source": "dv:Indefol",
+      "target": "nh:5",
+      "bangChung": {
+        "span": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến, cho phép tích hợp trực tiếp với nguồn năng lượng tái tạo từ hệ thống điện mặt trời.",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "tier": "B",
+        "source": "vnexpress.net"
+      }
+    },
+    {
+      "id": "e:Indefol>sp:19",
+      "kind": "cung_san_pham",
+      "source": "dv:Indefol",
+      "target": "nc:CNCL-P19 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến, cho phép tích hợp trực tiếp với nguồn năng lượng tái tạo từ hệ thống điện mặt trời.",
+        "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+        "tier": "B",
+        "source": "vnexpress.net"
+      }
+    },
+    {
       "id": "e:Liên danh tư vấn TEDI - TRICC - TEDI SOUTH>nh:10",
       "kind": "thuoc_nhom",
       "source": "dv:Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
@@ -2390,6 +2878,30 @@
         "href": "/evidence/cafef_dn_uav_20250903.txt",
         "tier": "B",
         "source": "cafef.vn"
+      }
+    },
+    {
+      "id": "e:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu>nh:5",
+      "kind": "thuoc_nhom",
+      "source": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "target": "nh:5",
+      "bangChung": {
+        "span": "Dự án Pilot biodiesel là dự án về hoàn thiện công nghệ và sản xuất thử nghiệm nhiên liệu dầu diesel sinh học từ phế phụ phẩm nông nghiệp, công nghiệp chế biến thực phẩm và dầu vi tảo ở quy mô bán công nghiệp.",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "tier": "B",
+        "source": "nhandan.vn"
+      }
+    },
+    {
+      "id": "e:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu>sp:19",
+      "kind": "cung_san_pham",
+      "source": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "target": "nc:CNCL-P19 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Dự án Pilot biodiesel là dự án về hoàn thiện công nghệ và sản xuất thử nghiệm nhiên liệu dầu diesel sinh học từ phế phụ phẩm nông nghiệp, công nghiệp chế biến thực phẩm và dầu vi tảo ở quy mô bán công nghiệp.",
+        "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+        "tier": "B",
+        "source": "nhandan.vn"
       }
     },
     {
@@ -2573,6 +3085,54 @@
       }
     },
     {
+      "id": "e:Trung tâm Vũ trụ Việt Nam>nh:9",
+      "kind": "thuoc_nhom",
+      "source": "dv:Trung tâm Vũ trụ Việt Nam",
+      "target": "nh:9",
+      "bangChung": {
+        "span": "Vệ tinh MicroDragon (50kg) đã được chế tạo bởi nhóm 36 cán bộ Trung tâm Vũ trụ Việt Nam dưới sự hướng dẫn của các chuyên gia Nhật Bản, được phóng thành công lên quỹ đạo vào tháng 1 năm 2019 và gửi được ảnh về trạm mặt đất tại Nhật Bản.",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "tier": "A",
+        "source": "vast.gov.vn"
+      }
+    },
+    {
+      "id": "e:Trung tâm Vũ trụ Việt Nam>sp:28",
+      "kind": "cung_san_pham",
+      "source": "dv:Trung tâm Vũ trụ Việt Nam",
+      "target": "nc:CNCL-P28 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+        "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+        "tier": "A",
+        "source": "vast.gov.vn"
+      }
+    },
+    {
+      "id": "e:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội>nh:5",
+      "kind": "thuoc_nhom",
+      "source": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "target": "nh:5",
+      "bangChung": {
+        "span": "Thấy rõ được tầm quan trọng cũng như tiềm năng BDF, Khoa Hóa học đã nhanh chóng bắt tay vào nghiên cứu và sản xuất loại nhiên liệu sinh học.",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "tier": "B",
+        "source": "nangluongvietnam.vn"
+      }
+    },
+    {
+      "id": "e:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội>sp:19",
+      "kind": "cung_san_pham",
+      "source": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "target": "nc:CNCL-P19 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Thấy rõ được tầm quan trọng cũng như tiềm năng BDF, Khoa Hóa học đã nhanh chóng bắt tay vào nghiên cứu và sản xuất loại nhiên liệu sinh học.",
+        "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+        "tier": "B",
+        "source": "nangluongvietnam.vn"
+      }
+    },
+    {
       "id": "e:Viettel AI>nh:1",
       "kind": "thuoc_nhom",
       "source": "dv:Viettel AI",
@@ -2645,6 +3205,30 @@
       }
     },
     {
+      "id": "e:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch>sp:15",
+      "kind": "cung_san_pham",
+      "source": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "target": "nc:CNCL-P15 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+        "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
       "id": "e:Viện Di truyền Nông nghiệp Việt Nam>nh:4",
       "kind": "thuoc_nhom",
       "source": "dv:Viện Di truyền Nông nghiệp Việt Nam",
@@ -2681,6 +3265,54 @@
       }
     },
     {
+      "id": "e:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)>sp:13",
+      "kind": "cung_san_pham",
+      "source": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "target": "nc:CNCL-P13 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
+        "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+        "tier": "A",
+        "source": "mst.gov.vn"
+      }
+    },
+    {
+      "id": "e:Viện Khoa học vật liệu>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Viện Khoa học vật liệu",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "tier": "A",
+        "source": "vast.gov.vn"
+      }
+    },
+    {
+      "id": "e:Viện Khoa học vật liệu>sp:13",
+      "kind": "cung_san_pham",
+      "source": "dv:Viện Khoa học vật liệu",
+      "target": "nc:CNCL-P13 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
+        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+        "tier": "A",
+        "source": "vast.gov.vn"
+      }
+    },
+    {
       "id": "e:Viện Khoa học-Công nghệ mật mã>nh:7",
       "kind": "thuoc_nhom",
       "source": "dv:Viện Khoa học-Công nghệ mật mã",
@@ -2702,6 +3334,54 @@
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
         "tier": "B",
         "source": "nhandan.vn"
+      }
+    },
+    {
+      "id": "e:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "tier": "B",
+        "source": "baodautu.vn"
+      }
+    },
+    {
+      "id": "e:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec>sp:11",
+      "kind": "cung_san_pham",
+      "source": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "target": "nc:CNCL-P11 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec (VRISG) vừa điều trị thành công cho bệnh nhi 4 tuổi mắc ung thư bạch cầu cấp dòng lympho bằng liệu pháp tế bào CAR-T.",
+        "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+        "tier": "B",
+        "source": "baodautu.vn"
+      }
+    },
+    {
+      "id": "e:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM>nh:4",
+      "kind": "thuoc_nhom",
+      "source": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "target": "nh:4",
+      "bangChung": {
+        "span": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "tier": "B",
+        "source": "vnexpress.net"
+      }
+    },
+    {
+      "id": "e:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM>sp:11",
+      "kind": "cung_san_pham",
+      "source": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "target": "nc:CNCL-P11 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Một số sản phẩm tiêu biểu do đơn vị nghiên cứu phát triển như thuốc Cartilatist sản xuất từ tế bào gốc trung mô từ mô mỡ người điều trị bệnh thoái hóa khớp gối và thoái hóa cột sống.",
+        "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+        "tier": "B",
+        "source": "vnexpress.net"
       }
     },
     {
@@ -2858,6 +3538,30 @@
         "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
         "tier": "B",
         "source": "nhandan.vn"
+      }
+    },
+    {
+      "id": "e:VTI Solutions>nh:3",
+      "kind": "thuoc_nhom",
+      "source": "dv:VTI Solutions",
+      "target": "nh:3",
+      "bangChung": {
+        "span": "Đó chính là lý do Hệ thống Điều hành sản xuất MES-X – giải pháp Made by VTI ra đời, nhằm đáp ứng nhu cầu quản lý xuyên suốt toàn bộ quá trình sản xuất dưới nhà máy, mang sứ mệnh đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số trong các lĩnh vực sản xuất.",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "tier": "C",
+        "source": "vti-solutions.vn"
+      }
+    },
+    {
+      "id": "e:VTI Solutions>sp:8",
+      "kind": "cung_san_pham",
+      "source": "dv:VTI Solutions",
+      "target": "nc:CNCL-P08 · nhu cầu quốc gia",
+      "bangChung": {
+        "span": "Đó chính là lý do Hệ thống Điều hành sản xuất MES-X – giải pháp Made by VTI ra đời, nhằm đáp ứng nhu cầu quản lý xuyên suốt toàn bộ quá trình sản xuất dưới nhà máy, mang sứ mệnh đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số trong các lĩnh vực sản xuất.",
+        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+        "tier": "C",
+        "source": "vti-solutions.vn"
       }
     },
     {
@@ -3299,110 +4003,12 @@
       }
     },
     {
-      "id": "e:MATCH-0001",
+      "id": "e:MATCH-0002",
       "kind": "match_da_ky",
       "source": "dv:ROSTEK",
       "target": "nc:CNCL-P07 · nhu cầu quốc gia",
-      "matchId": "MATCH-0001",
+      "matchId": "MATCH-0002",
       "score": 0.53,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
-      },
-      "khoaBangChung": "862548dda49165e3"
-    },
-    {
-      "id": "e:MATCH-0003",
-      "kind": "match_da_ky",
-      "source": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
-      "target": "nc:CNCL-P18 · nhu cầu quốc gia",
-      "matchId": "MATCH-0003",
-      "score": 0.53,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
-      },
-      "khoaBangChung": "69645ee490ea1124"
-    },
-    {
-      "id": "e:MATCH-0004",
-      "kind": "match_da_ky",
-      "source": "dv:Tập đoàn Viettel",
-      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
-      "matchId": "MATCH-0004",
-      "score": 0.9,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
-      },
-      "khoaBangChung": "d7dfdf2004751dd9"
-    },
-    {
-      "id": "e:MATCH-0005",
-      "kind": "match_da_ky",
-      "source": "dv:FPT Semiconductor",
-      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
-      "matchId": "MATCH-0005",
-      "score": 0.88,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-24"
-      },
-      "khoaBangChung": "8e65ab7b193b67e7"
-    },
-    {
-      "id": "e:MATCH-0006",
-      "kind": "match_da_ky",
-      "source": "dv:CT Semiconductor",
-      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
-      "matchId": "MATCH-0006",
-      "score": 0.88,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
-      },
-      "khoaBangChung": null
-    },
-    {
-      "id": "e:MATCH-0007",
-      "kind": "match_da_ky",
-      "source": "dv:VinBigData",
-      "target": "nc:CNCL-P01 · nhu cầu quốc gia",
-      "matchId": "MATCH-0007",
-      "score": 0.53,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-09-29"
-      },
-      "khoaBangChung": "72003af33e5da3a0"
-    },
-    {
-      "id": "e:MATCH-0008",
-      "kind": "match_da_ky",
-      "source": "dv:Tập đoàn Viettel",
-      "target": "nc:CNCL-P22 · nhu cầu quốc gia",
-      "matchId": "MATCH-0008",
-      "score": 0.7,
-      "signoff": {
-        "by": "Lam Nguyen",
-        "role": "chuyen gia gac cong",
-        "date": "2026-08-16"
-      },
-      "khoaBangChung": "1216d421d3a07c35"
-    },
-    {
-      "id": "e:MATCH-0009",
-      "kind": "match_da_ky",
-      "source": "dv:VNPT Technology",
-      "target": "nc:CNCL-P06 · nhu cầu quốc gia",
-      "matchId": "MATCH-0009",
-      "score": 0.67,
       "signoff": {
         "by": "Lam Nguyen",
         "role": "chuyen gia gac cong",
@@ -3413,10 +4019,10 @@
     {
       "id": "e:MATCH-0010",
       "kind": "match_da_ky",
-      "source": "dv:Tổng công ty Thiết bị điện Đông Anh",
-      "target": "nc:CNCL-P20 · nhu cầu quốc gia",
+      "source": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "target": "nc:CNCL-P18 · nhu cầu quốc gia",
       "matchId": "MATCH-0010",
-      "score": 0.64,
+      "score": 0.53,
       "signoff": {
         "by": "Lam Nguyen",
         "role": "chuyen gia gac cong",
@@ -3425,32 +4031,130 @@
       "khoaBangChung": "efccb540b69159ff"
     },
     {
-      "id": "e:MATCH-0011",
+      "id": "e:MATCH-0013",
       "kind": "match_da_ky",
-      "source": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "source": "dv:Tập đoàn Viettel",
+      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
+      "matchId": "MATCH-0013",
+      "score": 0.9,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-16"
+      },
+      "khoaBangChung": "ec6bfb1e830d6a46"
+    },
+    {
+      "id": "e:MATCH-0014",
+      "kind": "match_da_ky",
+      "source": "dv:FPT Semiconductor",
+      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
+      "matchId": "MATCH-0014",
+      "score": 0.88,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-24"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0015",
+      "kind": "match_da_ky",
+      "source": "dv:CT Semiconductor",
+      "target": "nc:CNCL-P23 · nhu cầu quốc gia",
+      "matchId": "MATCH-0015",
+      "score": 0.88,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-16"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0016",
+      "kind": "match_da_ky",
+      "source": "dv:VinBigData",
+      "target": "nc:CNCL-P01 · nhu cầu quốc gia",
+      "matchId": "MATCH-0016",
+      "score": 0.53,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-09-29"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0017",
+      "kind": "match_da_ky",
+      "source": "dv:Tập đoàn Viettel",
+      "target": "nc:CNCL-P22 · nhu cầu quốc gia",
+      "matchId": "MATCH-0017",
+      "score": 0.7,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-16"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0020",
+      "kind": "match_da_ky",
+      "source": "dv:VNPT Technology",
+      "target": "nc:CNCL-P06 · nhu cầu quốc gia",
+      "matchId": "MATCH-0020",
+      "score": 0.67,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-16"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0021",
+      "kind": "match_da_ky",
+      "source": "dv:Tổng công ty Thiết bị điện Đông Anh",
       "target": "nc:CNCL-P20 · nhu cầu quốc gia",
-      "matchId": "MATCH-0011",
+      "matchId": "MATCH-0021",
       "score": 0.64,
       "signoff": {
         "by": "Lam Nguyen",
         "role": "chuyen gia gac cong",
         "date": "2026-08-16"
       },
-      "khoaBangChung": "a5a01bc2d7b0748e"
+      "khoaBangChung": null
     },
     {
-      "id": "e:MATCH-0012",
+      "id": "e:MATCH-0022",
+      "kind": "match_da_ky",
+      "source": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "target": "nc:CNCL-P20 · nhu cầu quốc gia",
+      "matchId": "MATCH-0022",
+      "score": 0.64,
+      "signoff": {
+        "by": "Lam Nguyen",
+        "role": "chuyen gia gac cong",
+        "date": "2026-08-16"
+      },
+      "khoaBangChung": null
+    },
+    {
+      "id": "e:MATCH-0023",
       "kind": "match_da_ky",
       "source": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
       "target": "nc:CNCL-P17 · nhu cầu quốc gia",
-      "matchId": "MATCH-0012",
+      "matchId": "MATCH-0023",
       "score": 0.66,
       "signoff": {
         "by": "Lam Nguyen",
         "role": "chuyen gia gac cong",
         "date": "2026-08-16"
       },
-      "khoaBangChung": "7fb63383a698e35f"
+      "khoaBangChung": null
     },
     {
       "id": "e:tuchoi:VNPT>CNCL-P08 · nhu cầu quốc gia",

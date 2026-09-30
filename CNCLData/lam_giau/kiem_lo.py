@@ -97,7 +97,7 @@ def hang_theo_luat(url, trang_don_vi):
 
 def tat_ca():
     """Chuoi cong goi dang nay: kiem MOI dot_* dang nam cho duyet. Khong co dot nao la sach."""
-    dots = sorted(p for p in HERE.glob("dot_*") if p.is_dir())
+    dots = sorted(p for p in HERE.glob("dot_*") if p.is_dir() and not (p / "da_nap.json").exists())
     if not dots:
         print("OK: khong co lo nao dang cho duyet.")
         return 0

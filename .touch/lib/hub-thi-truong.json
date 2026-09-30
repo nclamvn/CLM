@@ -1,18 +1,30 @@
 {
   "kpi": {
-    "soCap": 47,
+    "soCap": 63,
     "capDaKy": 11,
     "soNc": 30,
-    "ncCoCung": 19,
-    "ncTrong": 11,
-    "dvCoCap": 43,
-    "soDv": 44
+    "ncCoCung": 27,
+    "ncTrong": 3,
+    "dvCoCap": 59,
+    "soDv": 60
   },
   "sankey": {
     "rong": 1200,
-    "cao": 862,
+    "cao": 1020,
     "beRong": 12,
     "nodes": [
+      {
+        "id": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+        "tang": "don_vi",
+        "nhan": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+        "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+        "x": 250,
+        "w": 12,
+        "y": 16,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
       {
         "id": "dv:Công ty cổ phần Health Care Center",
         "tang": "don_vi",
@@ -20,7 +32,7 @@
         "slug": "cong-ty-co-phan-health-care-center",
         "x": 250,
         "w": 12,
-        "y": 65,
+        "y": 32,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -32,7 +44,7 @@
         "slug": "cong-ty-co-phan-vinmotion",
         "x": 250,
         "w": 12,
-        "y": 81,
+        "y": 48,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -44,7 +56,7 @@
         "slug": "rostek",
         "x": 250,
         "w": 12,
-        "y": 97,
+        "y": 64,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -56,7 +68,19 @@
         "slug": "tap-doan-misa",
         "x": 250,
         "w": 12,
-        "y": 113,
+        "y": 80,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:VTI Solutions",
+        "tang": "don_vi",
+        "nhan": "VTI Solutions",
+        "slug": "vti-solutions",
+        "x": 250,
+        "w": 12,
+        "y": 96,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -68,7 +92,31 @@
         "slug": "vnpt-technology",
         "x": 250,
         "w": 12,
-        "y": 129,
+        "y": 112,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Bệnh viện Trung ương Quân đội 108",
+        "tang": "don_vi",
+        "nhan": "Bệnh viện Trung ương Quân đội 108",
+        "slug": "benh-vien-trung-uong-quan-doi-108",
+        "x": 250,
+        "w": 12,
+        "y": 128,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Công ty CP Việt Nam Food (VNF)",
+        "tang": "don_vi",
+        "nhan": "Công ty CP Việt Nam Food (VNF)",
+        "slug": "cong-ty-cp-viet-nam-food-vnf",
+        "x": 250,
+        "w": 12,
+        "y": 144,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -80,7 +128,19 @@
         "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
         "x": 250,
         "w": 12,
-        "y": 145,
+        "y": 160,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "tang": "don_vi",
+        "nhan": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+        "x": 250,
+        "w": 12,
+        "y": 176,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -92,7 +152,7 @@
         "slug": "cong-ty-co-phan-avac-viet-nam",
         "x": 250,
         "w": 12,
-        "y": 161,
+        "y": 192,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -104,7 +164,7 @@
         "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
         "x": 250,
         "w": 12,
-        "y": 177,
+        "y": 208,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -116,7 +176,19 @@
         "slug": "tap-doan-dabaco-viet-nam",
         "x": 250,
         "w": 12,
-        "y": 193,
+        "y": 224,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "tang": "don_vi",
+        "nhan": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+        "x": 250,
+        "w": 12,
+        "y": 240,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -128,7 +200,43 @@
         "slug": "vien-di-truyen-nong-nghiep-viet-nam",
         "x": 250,
         "w": 12,
-        "y": 209,
+        "y": 256,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+        "tang": "don_vi",
+        "nhan": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+        "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+        "x": 250,
+        "w": 12,
+        "y": 272,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Viện Khoa học vật liệu",
+        "tang": "don_vi",
+        "nhan": "Viện Khoa học vật liệu",
+        "slug": "vien-khoa-hoc-vat-lieu",
+        "x": 250,
+        "w": 12,
+        "y": 288,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+        "tang": "don_vi",
+        "nhan": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+        "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+        "x": 250,
+        "w": 12,
+        "y": 304,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -140,7 +248,19 @@
         "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
         "x": 250,
         "w": 12,
-        "y": 225,
+        "y": 320,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+        "tang": "don_vi",
+        "nhan": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+        "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+        "x": 250,
+        "w": 12,
+        "y": 336,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -152,7 +272,7 @@
         "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
         "x": 250,
         "w": 12,
-        "y": 241,
+        "y": 352,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -164,7 +284,43 @@
         "slug": "gg-power",
         "x": 250,
         "w": 12,
-        "y": 257,
+        "y": 368,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Indefol",
+        "tang": "don_vi",
+        "nhan": "Indefol",
+        "slug": "indefol",
+        "x": 250,
+        "w": 12,
+        "y": 384,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+        "tang": "don_vi",
+        "nhan": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+        "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+        "x": 250,
+        "w": 12,
+        "y": 400,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "tang": "don_vi",
+        "nhan": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+        "x": 250,
+        "w": 12,
+        "y": 416,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -176,7 +332,7 @@
         "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
         "x": 250,
         "w": 12,
-        "y": 273,
+        "y": 432,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -188,7 +344,7 @@
         "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
         "x": 250,
         "w": 12,
-        "y": 289,
+        "y": 448,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -200,7 +356,7 @@
         "slug": "cong-ty-an-ninh-mang-viettel",
         "x": 250,
         "w": 12,
-        "y": 329,
+        "y": 488,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -212,7 +368,7 @@
         "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
         "x": 250,
         "w": 12,
-        "y": 345,
+        "y": 504,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -224,7 +380,7 @@
         "slug": "mk-smart",
         "x": 250,
         "w": 12,
-        "y": 361,
+        "y": 520,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -236,7 +392,7 @@
         "slug": "vien-khoa-hoc-cong-nghe-mat-ma",
         "x": 250,
         "w": 12,
-        "y": 377,
+        "y": 536,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -248,7 +404,7 @@
         "slug": "cong-ty-tnhh-luyen-kim-tran-hong-quan",
         "x": 250,
         "w": 12,
-        "y": 393,
+        "y": 552,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -260,7 +416,7 @@
         "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
         "x": 250,
         "w": 12,
-        "y": 409,
+        "y": 568,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -272,7 +428,7 @@
         "slug": "vien-cong-nghe-xa-hiem",
         "x": 250,
         "w": 12,
-        "y": 425,
+        "y": 584,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -284,7 +440,7 @@
         "slug": "cong-ty-co-phan-xe-lua-di-an",
         "x": 250,
         "w": 12,
-        "y": 441,
+        "y": 600,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -296,7 +452,7 @@
         "slug": "fecon",
         "x": 250,
         "w": 12,
-        "y": 457,
+        "y": 616,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -308,7 +464,7 @@
         "slug": "lien-danh-tu-van-tedi-tricc-tedi-south",
         "x": 250,
         "w": 12,
-        "y": 473,
+        "y": 632,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -320,7 +476,7 @@
         "slug": "ct-semiconductor",
         "x": 250,
         "w": 12,
-        "y": 489,
+        "y": 648,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -332,7 +488,7 @@
         "slug": "fpt-semiconductor",
         "x": 250,
         "w": 12,
-        "y": 505,
+        "y": 664,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -344,7 +500,7 @@
         "slug": "nha-may-kiem-thu-va-dong-goi-tien-tien-chip-ban-dan-fpt",
         "x": 250,
         "w": 12,
-        "y": 521,
+        "y": 680,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -356,7 +512,7 @@
         "slug": "vsap-lab",
         "x": 250,
         "w": 12,
-        "y": 537,
+        "y": 696,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -368,7 +524,7 @@
         "slug": "ct-group",
         "x": 250,
         "w": 12,
-        "y": 553,
+        "y": 712,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -380,7 +536,7 @@
         "slug": "hti-technology",
         "x": 250,
         "w": 12,
-        "y": 569,
+        "y": 728,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -392,7 +548,7 @@
         "slug": "mismart",
         "x": 250,
         "w": 12,
-        "y": 585,
+        "y": 744,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -404,7 +560,7 @@
         "slug": "phenikaa-x",
         "x": 250,
         "w": 12,
-        "y": 601,
+        "y": 760,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -416,7 +572,19 @@
         "slug": "realtime-robotics-rtr",
         "x": 250,
         "w": 12,
-        "y": 617,
+        "y": 776,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Trung tâm Vũ trụ Việt Nam",
+        "tang": "don_vi",
+        "nhan": "Trung tâm Vũ trụ Việt Nam",
+        "slug": "trung-tam-vu-tru-viet-nam",
+        "x": 250,
+        "w": 12,
+        "y": 792,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -428,7 +596,7 @@
         "slug": "tap-doan-viettel",
         "x": 250,
         "w": 12,
-        "y": 633,
+        "y": 808,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -440,7 +608,7 @@
         "slug": "viettel-high-tech",
         "x": 250,
         "w": 12,
-        "y": 673,
+        "y": 848,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -452,7 +620,31 @@
         "slug": "xbstation",
         "x": 250,
         "w": 12,
-        "y": 689,
+        "y": 864,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:CMC Telecom",
+        "tang": "don_vi",
+        "nhan": "CMC Telecom",
+        "slug": "cmc-telecom",
+        "x": 250,
+        "w": 12,
+        "y": 880,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "dv:Công ty 1Matrix",
+        "tang": "don_vi",
+        "nhan": "Công ty 1Matrix",
+        "slug": "cong-ty-1matrix",
+        "x": 250,
+        "w": 12,
+        "y": 896,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -464,7 +656,7 @@
         "slug": "fpt",
         "x": 250,
         "w": 12,
-        "y": 705,
+        "y": 912,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -476,7 +668,7 @@
         "slug": "vnpt",
         "x": 250,
         "w": 12,
-        "y": 721,
+        "y": 928,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -488,7 +680,7 @@
         "slug": "viettel-ai",
         "x": 250,
         "w": 12,
-        "y": 737,
+        "y": 944,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -500,7 +692,7 @@
         "slug": "vinai",
         "x": 250,
         "w": 12,
-        "y": 753,
+        "y": 960,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -512,7 +704,7 @@
         "slug": "vinbigdata",
         "x": 250,
         "w": 12,
-        "y": 769,
+        "y": 976,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -524,7 +716,7 @@
         "slug": "zalo",
         "x": 250,
         "w": 12,
-        "y": 785,
+        "y": 992,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -536,9 +728,9 @@
         "so": "3",
         "x": 500,
         "w": 196,
-        "y": 70,
-        "h": 48,
-        "giaTri": 4,
+        "y": 53,
+        "h": 72,
+        "giaTri": 6,
         "trong": false
       },
       {
@@ -548,7 +740,7 @@
         "so": "2",
         "x": 500,
         "w": 196,
-        "y": 134,
+        "y": 141,
         "h": 26,
         "giaTri": 1,
         "trong": false
@@ -560,9 +752,9 @@
         "so": "4",
         "x": 500,
         "w": 196,
-        "y": 176,
-        "h": 72,
-        "giaTri": 6,
+        "y": 183,
+        "h": 168,
+        "giaTri": 14,
         "trong": false
       },
       {
@@ -572,9 +764,9 @@
         "so": "5",
         "x": 500,
         "w": 196,
-        "y": 264,
-        "h": 72,
-        "giaTri": 6,
+        "y": 367,
+        "h": 108,
+        "giaTri": 9,
         "trong": false
       },
       {
@@ -584,7 +776,7 @@
         "so": "7",
         "x": 500,
         "w": 196,
-        "y": 352,
+        "y": 491,
         "h": 48,
         "giaTri": 4,
         "trong": false
@@ -596,7 +788,7 @@
         "so": "8",
         "x": 500,
         "w": 196,
-        "y": 416,
+        "y": 555,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -608,7 +800,7 @@
         "so": "10",
         "x": 500,
         "w": 196,
-        "y": 468,
+        "y": 607,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -620,7 +812,7 @@
         "so": "6",
         "x": 500,
         "w": 196,
-        "y": 520,
+        "y": 659,
         "h": 60,
         "giaTri": 5,
         "trong": false
@@ -632,9 +824,9 @@
         "so": "9",
         "x": 500,
         "w": 196,
-        "y": 596,
-        "h": 96,
-        "giaTri": 8,
+        "y": 735,
+        "h": 108,
+        "giaTri": 9,
         "trong": false
       },
       {
@@ -644,9 +836,9 @@
         "so": "1",
         "x": 500,
         "w": 196,
-        "y": 708,
-        "h": 84,
-        "giaTri": 7,
+        "y": 859,
+        "h": 108,
+        "giaTri": 9,
         "trong": false
       },
       {
@@ -657,7 +849,7 @@
         "nhom": "3",
         "x": 872,
         "w": 12,
-        "y": 16,
+        "y": 43,
         "h": 48,
         "giaTri": 4,
         "trong": false
@@ -670,10 +862,10 @@
         "nhom": "3",
         "x": 872,
         "w": 12,
-        "y": 69,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
+        "y": 96,
+        "h": 24,
+        "giaTri": 2,
+        "trong": false
       },
       {
         "id": "nc:CNCL-P06 · nhu cầu quốc gia",
@@ -683,59 +875,7 @@
         "nhom": "2",
         "x": 872,
         "w": 12,
-        "y": 85,
-        "h": 12,
-        "giaTri": 1,
-        "trong": false
-      },
-      {
-        "id": "nc:CNCL-P14 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
-        "maSp": "14",
-        "nhom": "4",
-        "x": 872,
-        "w": 12,
-        "y": 102,
-        "h": 36,
-        "giaTri": 3,
-        "trong": false
-      },
-      {
-        "id": "nc:CNCL-P10 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Vắc xin thế hệ mới dùng cho người",
-        "maSp": "10",
-        "nhom": "4",
-        "x": 872,
-        "w": 12,
-        "y": 143,
-        "h": 12,
-        "giaTri": 1,
-        "trong": false
-      },
-      {
-        "id": "nc:CNCL-P12 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D",
-        "maSp": "12",
-        "nhom": "4",
-        "x": 872,
-        "w": 12,
-        "y": 160,
-        "h": 12,
-        "giaTri": 1,
-        "trong": false
-      },
-      {
-        "id": "nc:CNCL-P16 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
-        "maSp": "16",
-        "nhom": "4",
-        "x": 872,
-        "w": 12,
-        "y": 177,
+        "y": 125,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -748,23 +888,23 @@
         "nhom": "4",
         "x": 872,
         "w": 12,
-        "y": 194,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
+        "y": 142,
+        "h": 36,
+        "giaTri": 3,
+        "trong": false
       },
       {
-        "id": "nc:CNCL-P13 · nhu cầu quốc gia",
+        "id": "nc:CNCL-P14 · nhu cầu quốc gia",
         "tang": "nhu_cau",
-        "nhan": "Hệ thống cảm biến sinh học thông minh",
-        "maSp": "13",
+        "nhan": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
+        "maSp": "14",
         "nhom": "4",
         "x": 872,
         "w": 12,
-        "y": 210,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
+        "y": 183,
+        "h": 36,
+        "giaTri": 3,
+        "trong": false
       },
       {
         "id": "nc:CNCL-P15 · nhu cầu quốc gia",
@@ -774,10 +914,62 @@
         "nhom": "4",
         "x": 872,
         "w": 12,
-        "y": 226,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
+        "y": 224,
+        "h": 36,
+        "giaTri": 3,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P13 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Hệ thống cảm biến sinh học thông minh",
+        "maSp": "13",
+        "nhom": "4",
+        "x": 872,
+        "w": 12,
+        "y": 265,
+        "h": 24,
+        "giaTri": 2,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P10 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Vắc xin thế hệ mới dùng cho người",
+        "maSp": "10",
+        "nhom": "4",
+        "x": 872,
+        "w": 12,
+        "y": 294,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P12 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D",
+        "maSp": "12",
+        "nhom": "4",
+        "x": 872,
+        "w": 12,
+        "y": 311,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P16 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
+        "maSp": "16",
+        "nhom": "4",
+        "x": 872,
+        "w": 12,
+        "y": 328,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
       },
       {
         "id": "nc:CNCL-P18 · nhu cầu quốc gia",
@@ -787,7 +979,20 @@
         "nhom": "5",
         "x": 872,
         "w": 12,
-        "y": 242,
+        "y": 345,
+        "h": 36,
+        "giaTri": 3,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P19 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+        "maSp": "19",
+        "nhom": "5",
+        "x": 872,
+        "w": 12,
+        "y": 386,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -800,7 +1005,7 @@
         "nhom": "5",
         "x": 872,
         "w": 12,
-        "y": 283,
+        "y": 427,
         "h": 24,
         "giaTri": 2,
         "trong": false
@@ -813,23 +1018,10 @@
         "nhom": "5",
         "x": 872,
         "w": 12,
-        "y": 312,
+        "y": 456,
         "h": 12,
         "giaTri": 1,
         "trong": false
-      },
-      {
-        "id": "nc:CNCL-P19 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
-        "maSp": "19",
-        "nhom": "5",
-        "x": 872,
-        "w": 12,
-        "y": 329,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
       },
       {
         "id": "nc:CNCL-P21 · nhu cầu quốc gia",
@@ -839,7 +1031,7 @@
         "nhom": "5",
         "x": 872,
         "w": 12,
-        "y": 345,
+        "y": 473,
         "h": 11,
         "giaTri": 0,
         "trong": true
@@ -852,7 +1044,7 @@
         "nhom": "5",
         "x": 872,
         "w": 12,
-        "y": 361,
+        "y": 489,
         "h": 11,
         "giaTri": 0,
         "trong": true
@@ -865,7 +1057,7 @@
         "nhom": "7",
         "x": 872,
         "w": 12,
-        "y": 377,
+        "y": 505,
         "h": 36,
         "giaTri": 3,
         "trong": false
@@ -878,7 +1070,7 @@
         "nhom": "7",
         "x": 872,
         "w": 12,
-        "y": 418,
+        "y": 546,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -891,7 +1083,7 @@
         "nhom": "8",
         "x": 872,
         "w": 12,
-        "y": 435,
+        "y": 563,
         "h": 24,
         "giaTri": 2,
         "trong": false
@@ -904,7 +1096,7 @@
         "nhom": "8",
         "x": 872,
         "w": 12,
-        "y": 464,
+        "y": 592,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -917,7 +1109,7 @@
         "nhom": "10",
         "x": 872,
         "w": 12,
-        "y": 481,
+        "y": 609,
         "h": 24,
         "giaTri": 2,
         "trong": false
@@ -930,7 +1122,7 @@
         "nhom": "10",
         "x": 872,
         "w": 12,
-        "y": 510,
+        "y": 638,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -943,7 +1135,7 @@
         "nhom": "6",
         "x": 872,
         "w": 12,
-        "y": 527,
+        "y": 655,
         "h": 60,
         "giaTri": 5,
         "trong": false
@@ -956,7 +1148,7 @@
         "nhom": "9",
         "x": 872,
         "w": 12,
-        "y": 592,
+        "y": 720,
         "h": 96,
         "giaTri": 8,
         "trong": false
@@ -969,10 +1161,10 @@
         "nhom": "9",
         "x": 872,
         "w": 12,
-        "y": 693,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
+        "y": 821,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
       },
       {
         "id": "nc:CNCL-P01 · nhu cầu quốc gia",
@@ -982,7 +1174,7 @@
         "nhom": "1",
         "x": 872,
         "w": 12,
-        "y": 709,
+        "y": 838,
         "h": 72,
         "giaTri": 6,
         "trong": false
@@ -995,7 +1187,33 @@
         "nhom": "1",
         "x": 872,
         "w": 12,
-        "y": 786,
+        "y": 915,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P04 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Nền tảng điện toán đám mây",
+        "maSp": "04",
+        "nhom": "1",
+        "x": 872,
+        "w": 12,
+        "y": 932,
+        "h": 12,
+        "giaTri": 1,
+        "trong": false
+      },
+      {
+        "id": "nc:CNCL-P05 · nhu cầu quốc gia",
+        "tang": "nhu_cau",
+        "nhan": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+        "maSp": "05",
+        "nhom": "1",
+        "x": 872,
+        "w": 12,
+        "y": 949,
         "h": 12,
         "giaTri": 1,
         "trong": false
@@ -1008,33 +1226,7 @@
         "nhom": "1",
         "x": 872,
         "w": 12,
-        "y": 803,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
-      },
-      {
-        "id": "nc:CNCL-P04 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Nền tảng điện toán đám mây",
-        "maSp": "04",
-        "nhom": "1",
-        "x": 872,
-        "w": 12,
-        "y": 819,
-        "h": 11,
-        "giaTri": 0,
-        "trong": true
-      },
-      {
-        "id": "nc:CNCL-P05 · nhu cầu quốc gia",
-        "tang": "nhu_cau",
-        "nhan": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
-        "maSp": "05",
-        "nhom": "1",
-        "x": 872,
-        "w": 12,
-        "y": 835,
+        "y": 966,
         "h": 11,
         "giaTri": 0,
         "trong": true
@@ -1042,494 +1234,662 @@
     ],
     "links": [
       {
+        "s": "dv:Bệnh viện Trung ương Quân đội 108",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,128 C381,128 381,183 500,183 L500,195 C381,195 381,140 262,140 Z"
+      },
+      {
+        "s": "dv:CMC Telecom",
+        "t": "nh:1",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,880 C381,880 381,871 500,871 L500,883 C381,883 381,892 262,892 Z"
+      },
+      {
         "s": "dv:CT Group",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,553 C381,553 381,596 500,596 L500,608 C381,608 381,565 262,565 Z"
+        "d": "M262,712 C381,712 381,735 500,735 L500,747 C381,747 381,724 262,724 Z"
       },
       {
         "s": "dv:CT Semiconductor",
         "t": "nh:6",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,489 C381,489 381,520 500,520 L500,532 C381,532 381,501 262,501 Z"
+        "d": "M262,648 C381,648 381,659 500,659 L500,671 C381,671 381,660 262,660 Z"
+      },
+      {
+        "s": "dv:Công ty 1Matrix",
+        "t": "nh:1",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,896 C381,896 381,883 500,883 L500,895 C381,895 381,908 262,908 Z"
       },
       {
         "s": "dv:Công ty An ninh mạng Viettel",
         "t": "nh:7",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,329 C381,329 381,352 500,352 L500,364 C381,364 381,341 262,341 Z"
+        "d": "M262,488 C381,488 381,491 500,491 L500,503 C381,503 381,500 262,500 Z"
+      },
+      {
+        "s": "dv:Công ty CP Việt Nam Food (VNF)",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,144 C381,144 381,195 500,195 L500,207 C381,207 381,156 262,156 Z"
+      },
+      {
+        "s": "dv:Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+        "t": "nh:3",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,16 C381,16 381,53 500,53 L500,65 C381,65 381,28 262,28 Z"
       },
       {
         "s": "dv:Công ty Cổ phần Giải pháp Năng lượng VinES",
         "t": "nh:5",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,241 C381,241 381,264 500,264 L500,276 C381,276 381,253 262,253 Z"
+        "d": "M262,352 C381,352 381,367 500,367 L500,379 C381,379 381,364 262,364 Z"
       },
       {
         "s": "dv:Công ty Cổ phần Y Sinh Ngọc Bảo",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,145 C381,145 381,176 500,176 L500,188 C381,188 381,157 262,157 Z"
+        "d": "M262,160 C381,160 381,207 500,207 L500,219 C381,219 381,172 262,172 Z"
+      },
+      {
+        "s": "dv:Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,176 C381,176 381,219 500,219 L500,231 C381,231 381,188 262,188 Z"
       },
       {
         "s": "dv:Công ty TNHH Luyện kim Trần Hồng Quân",
         "t": "nh:8",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,393 C381,393 381,416 500,416 L500,428 C381,428 381,405 262,405 Z"
+        "d": "M262,552 C381,552 381,555 500,555 L500,567 C381,567 381,564 262,564 Z"
       },
       {
         "s": "dv:Công ty cổ phần AVAC Việt Nam",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,161 C381,161 381,188 500,188 L500,200 C381,200 381,173 262,173 Z"
+        "d": "M262,192 C381,192 381,231 500,231 L500,243 C381,243 381,204 262,204 Z"
       },
       {
         "s": "dv:Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
         "t": "nh:7",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,345 C381,345 381,364 500,364 L500,376 C381,376 381,357 262,357 Z"
+        "d": "M262,504 C381,504 381,503 500,503 L500,515 C381,515 381,516 262,516 Z"
       },
       {
         "s": "dv:Công ty cổ phần Health Care Center",
         "t": "nh:3",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,65 C381,65 381,70 500,70 L500,82 C381,82 381,77 262,77 Z"
+        "d": "M262,32 C381,32 381,65 500,65 L500,77 C381,77 381,44 262,44 Z"
       },
       {
         "s": "dv:Công ty cổ phần VinMotion",
         "t": "nh:3",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,81 C381,81 381,82 500,82 L500,94 C381,94 381,93 262,93 Z"
+        "d": "M262,48 C381,48 381,77 500,77 L500,89 C381,89 381,60 262,60 Z"
       },
       {
         "s": "dv:Công ty cổ phần Xe lửa Dĩ An",
         "t": "nh:10",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,441 C381,441 381,468 500,468 L500,480 C381,480 381,453 262,453 Z"
+        "d": "M262,600 C381,600 381,607 500,607 L500,619 C381,619 381,612 262,612 Z"
       },
       {
         "s": "dv:Công ty cổ phần thuốc thú y Trung ương NAVETCO",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,177 C381,177 381,200 500,200 L500,212 C381,212 381,189 262,189 Z"
+        "d": "M262,208 C381,208 381,243 500,243 L500,255 C381,255 381,220 262,220 Z"
       },
       {
         "s": "dv:FECON",
         "t": "nh:10",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,457 C381,457 381,480 500,480 L500,492 C381,492 381,469 262,469 Z"
+        "d": "M262,616 C381,616 381,619 500,619 L500,631 C381,631 381,628 262,628 Z"
       },
       {
         "s": "dv:FPT",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,705 C381,705 381,720 500,720 L500,732 C381,732 381,717 262,717 Z"
+        "d": "M262,912 C381,912 381,895 500,895 L500,907 C381,907 381,924 262,924 Z"
       },
       {
         "s": "dv:FPT Semiconductor",
         "t": "nh:6",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,505 C381,505 381,532 500,532 L500,544 C381,544 381,517 262,517 Z"
+        "d": "M262,664 C381,664 381,671 500,671 L500,683 C381,683 381,676 262,676 Z"
       },
       {
         "s": "dv:GG Power",
         "t": "nh:5",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,257 C381,257 381,276 500,276 L500,288 C381,288 381,269 262,269 Z"
+        "d": "M262,368 C381,368 381,379 500,379 L500,391 C381,391 381,380 262,380 Z"
       },
       {
         "s": "dv:HTI Technology",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,569 C381,569 381,608 500,608 L500,620 C381,620 381,581 262,581 Z"
+        "d": "M262,728 C381,728 381,747 500,747 L500,759 C381,759 381,740 262,740 Z"
+      },
+      {
+        "s": "dv:Indefol",
+        "t": "nh:5",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,384 C381,384 381,391 500,391 L500,403 C381,403 381,396 262,396 Z"
       },
       {
         "s": "dv:Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
         "t": "nh:10",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,473 C381,473 381,492 500,492 L500,504 C381,504 381,485 262,485 Z"
+        "d": "M262,632 C381,632 381,631 500,631 L500,643 C381,643 381,644 262,644 Z"
       },
       {
         "s": "dv:MK Smart",
         "t": "nh:7",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,361 C381,361 381,376 500,376 L500,388 C381,388 381,373 262,373 Z"
+        "d": "M262,520 C381,520 381,515 500,515 L500,527 C381,527 381,532 262,532 Z"
       },
       {
         "s": "dv:MiSmart",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,585 C381,585 381,620 500,620 L500,632 C381,632 381,597 262,597 Z"
+        "d": "M262,744 C381,744 381,759 500,759 L500,771 C381,771 381,756 262,756 Z"
       },
       {
         "s": "dv:Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
         "t": "nh:6",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,521 C381,521 381,544 500,544 L500,556 C381,556 381,533 262,533 Z"
+        "d": "M262,680 C381,680 381,683 500,683 L500,695 C381,695 381,692 262,692 Z"
       },
       {
         "s": "dv:Phenikaa-X",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,601 C381,601 381,632 500,632 L500,644 C381,644 381,613 262,613 Z"
+        "d": "M262,760 C381,760 381,771 500,771 L500,783 C381,783 381,772 262,772 Z"
+      },
+      {
+        "s": "dv:Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+        "t": "nh:5",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,400 C381,400 381,403 500,403 L500,415 C381,415 381,412 262,412 Z"
       },
       {
         "s": "dv:ROSTEK",
         "t": "nh:3",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,97 C381,97 381,94 500,94 L500,106 C381,106 381,109 262,109 Z"
+        "d": "M262,64 C381,64 381,89 500,89 L500,101 C381,101 381,76 262,76 Z"
       },
       {
         "s": "dv:Realtime Robotics (RtR)",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,617 C381,617 381,644 500,644 L500,656 C381,656 381,629 262,629 Z"
+        "d": "M262,776 C381,776 381,783 500,783 L500,795 C381,795 381,788 262,788 Z"
+      },
+      {
+        "s": "dv:Trung tâm Vũ trụ Việt Nam",
+        "t": "nh:9",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,792 C381,792 381,795 500,795 L500,807 C381,807 381,804 262,804 Z"
+      },
+      {
+        "s": "dv:Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "t": "nh:5",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,416 C381,416 381,415 500,415 L500,427 C381,427 381,428 262,428 Z"
       },
       {
         "s": "dv:Tập đoàn Dabaco Việt Nam",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,193 C381,193 381,212 500,212 L500,224 C381,224 381,205 262,205 Z"
+        "d": "M262,224 C381,224 381,255 500,255 L500,267 C381,267 381,236 262,236 Z"
       },
       {
         "s": "dv:Tập đoàn MISA",
         "t": "nh:3",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,113 C381,113 381,106 500,106 L500,118 C381,118 381,125 262,125 Z"
+        "d": "M262,80 C381,80 381,101 500,101 L500,113 C381,113 381,92 262,92 Z"
       },
       {
         "s": "dv:Tập đoàn Viettel",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,657 C381,657 381,708 500,708 L500,720 C381,720 381,669 262,669 Z"
+        "d": "M262,832 C381,832 381,859 500,859 L500,871 C381,871 381,844 262,844 Z"
       },
       {
         "s": "dv:Tập đoàn Viettel",
         "t": "nh:9",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,645 C381,645 381,656 500,656 L500,668 C381,668 381,657 262,657 Z"
+        "d": "M262,820 C381,820 381,807 500,807 L500,819 C381,819 381,832 262,832 Z"
       },
       {
         "s": "dv:Tập đoàn Viettel",
         "t": "nh:6",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,633 C381,633 381,568 500,568 L500,580 C381,580 381,645 262,645 Z"
+        "d": "M262,808 C381,808 381,707 500,707 L500,719 C381,719 381,820 262,820 Z"
       },
       {
         "s": "dv:Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
         "t": "nh:8",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,409 C381,409 381,428 500,428 L500,440 C381,440 381,421 262,421 Z"
+        "d": "M262,568 C381,568 381,567 500,567 L500,579 C381,579 381,580 262,580 Z"
       },
       {
         "s": "dv:Tổng công ty Thiết bị điện Đông Anh",
         "t": "nh:5",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,273 C381,273 381,288 500,288 L500,300 C381,300 381,285 262,285 Z"
+        "d": "M262,432 C381,432 381,427 500,427 L500,439 C381,439 381,444 262,444 Z"
       },
       {
         "s": "dv:VNPT",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,721 C381,721 381,732 500,732 L500,744 C381,744 381,733 262,733 Z"
+        "d": "M262,928 C381,928 381,907 500,907 L500,919 C381,919 381,940 262,940 Z"
       },
       {
         "s": "dv:VNPT Technology",
         "t": "nh:2",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,129 C381,129 381,141 500,141 L500,153 C381,153 381,141 262,141 Z"
+        "d": "M262,112 C381,112 381,148 500,148 L500,160 C381,160 381,124 262,124 Z"
       },
       {
         "s": "dv:VSAP LAB",
         "t": "nh:6",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,537 C381,537 381,556 500,556 L500,568 C381,568 381,549 262,549 Z"
+        "d": "M262,696 C381,696 381,695 500,695 L500,707 C381,707 381,708 262,708 Z"
+      },
+      {
+        "s": "dv:VTI Solutions",
+        "t": "nh:3",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,96 C381,96 381,113 500,113 L500,125 C381,125 381,108 262,108 Z"
       },
       {
         "s": "dv:Viettel AI",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,737 C381,737 381,744 500,744 L500,756 C381,756 381,749 262,749 Z"
+        "d": "M262,944 C381,944 381,919 500,919 L500,931 C381,931 381,956 262,956 Z"
       },
       {
         "s": "dv:Viettel High Tech",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,673 C381,673 381,668 500,668 L500,680 C381,680 381,685 262,685 Z"
+        "d": "M262,848 C381,848 381,819 500,819 L500,831 C381,831 381,860 262,860 Z"
       },
       {
         "s": "dv:VinAI",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,753 C381,753 381,756 500,756 L500,768 C381,768 381,765 262,765 Z"
+        "d": "M262,960 C381,960 381,931 500,931 L500,943 C381,943 381,972 262,972 Z"
       },
       {
         "s": "dv:VinBigData",
         "t": "nh:1",
         "loai": "da_ky",
         "w": 1,
-        "d": "M262,769 C381,769 381,768 500,768 L500,780 C381,780 381,781 262,781 Z"
+        "d": "M262,976 C381,976 381,943 500,943 L500,955 C381,955 381,988 262,988 Z"
       },
       {
         "s": "dv:Viện Công nghệ xạ hiếm",
         "t": "nh:8",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,425 C381,425 381,440 500,440 L500,452 C381,452 381,437 262,437 Z"
+        "d": "M262,584 C381,584 381,579 500,579 L500,591 C381,591 381,596 262,596 Z"
+      },
+      {
+        "s": "dv:Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,240 C381,240 381,267 500,267 L500,279 C381,279 381,252 262,252 Z"
       },
       {
         "s": "dv:Viện Di truyền Nông nghiệp Việt Nam",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,209 C381,209 381,224 500,224 L500,236 C381,236 381,221 262,221 Z"
+        "d": "M262,256 C381,256 381,279 500,279 L500,291 C381,291 381,268 262,268 Z"
       },
       {
         "s": "dv:Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
         "t": "nh:5",
         "loai": "da_ky",
         "w": 3,
-        "d": "M262,289 C381,289 381,300 500,300 L500,336 C381,336 381,325 262,325 Z"
+        "d": "M262,448 C381,448 381,439 500,439 L500,475 C381,475 381,484 262,484 Z"
+      },
+      {
+        "s": "dv:Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,272 C381,272 381,291 500,291 L500,303 C381,303 381,284 262,284 Z"
+      },
+      {
+        "s": "dv:Viện Khoa học vật liệu",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,288 C381,288 381,303 500,303 L500,315 C381,315 381,300 262,300 Z"
       },
       {
         "s": "dv:Viện Khoa học-Công nghệ mật mã",
         "t": "nh:7",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,377 C381,377 381,388 500,388 L500,400 C381,400 381,389 262,389 Z"
+        "d": "M262,536 C381,536 381,527 500,527 L500,539 C381,539 381,548 262,548 Z"
+      },
+      {
+        "s": "dv:Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,304 C381,304 381,315 500,315 L500,327 C381,327 381,316 262,316 Z"
       },
       {
         "s": "dv:Viện Vaccine và sinh phẩm y tế (IVAC)",
         "t": "nh:4",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,225 C381,225 381,236 500,236 L500,248 C381,248 381,237 262,237 Z"
+        "d": "M262,320 C381,320 381,327 500,327 L500,339 C381,339 381,332 262,332 Z"
+      },
+      {
+        "s": "dv:Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+        "t": "nh:4",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M262,336 C381,336 381,339 500,339 L500,351 C381,351 381,348 262,348 Z"
       },
       {
         "s": "dv:XBStation",
         "t": "nh:9",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,689 C381,689 381,680 500,680 L500,692 C381,692 381,701 262,701 Z"
+        "d": "M262,864 C381,864 381,831 500,831 L500,843 C381,843 381,876 262,876 Z"
       },
       {
         "s": "dv:Zalo",
         "t": "nh:1",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M262,785 C381,785 381,780 500,780 L500,792 C381,792 381,797 262,797 Z"
+        "d": "M262,992 C381,992 381,955 500,955 L500,967 C381,967 381,1004 262,1004 Z"
+      },
+      {
+        "s": "nh:4",
+        "t": "nc:CNCL-P11 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 3,
+        "d": "M696,183 C784,183 784,142 872,142 L872,178 C784,178 784,219 696,219 Z"
+      },
+      {
+        "s": "nh:1",
+        "t": "nc:CNCL-P04 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M696,943 C784,943 784,932 872,932 L872,944 C784,944 784,955 696,955 Z"
       },
       {
         "s": "nh:9",
         "t": "nc:CNCL-P22 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 7,
-        "d": "M696,608 C784,608 784,604 872,604 L872,688 C784,688 784,692 696,692 Z"
+        "d": "M696,747 C784,747 784,732 872,732 L872,816 C784,816 784,831 696,831 Z"
       },
       {
         "s": "nh:6",
         "t": "nc:CNCL-P23 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 3,
-        "d": "M696,520 C784,520 784,527 872,527 L872,563 C784,563 784,556 696,556 Z"
+        "d": "M696,659 C784,659 784,655 872,655 L872,691 C784,691 784,695 696,695 Z"
+      },
+      {
+        "s": "nh:1",
+        "t": "nc:CNCL-P05 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M696,955 C784,955 784,949 872,949 L872,961 C784,961 784,967 696,967 Z"
       },
       {
         "s": "nh:7",
         "t": "nc:CNCL-P09 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 3,
-        "d": "M696,352 C784,352 784,377 872,377 L872,413 C784,413 784,388 696,388 Z"
+        "d": "M696,491 C784,491 784,505 872,505 L872,541 C784,541 784,527 696,527 Z"
+      },
+      {
+        "s": "nh:4",
+        "t": "nc:CNCL-P15 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 3,
+        "d": "M696,255 C784,255 784,224 872,224 L872,260 C784,260 784,291 696,291 Z"
+      },
+      {
+        "s": "nh:3",
+        "t": "nc:CNCL-P08 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 2,
+        "d": "M696,101 C784,101 784,96 872,96 L872,120 C784,120 784,125 696,125 Z"
       },
       {
         "s": "nh:5",
         "t": "nc:CNCL-P18 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 2,
-        "d": "M696,276 C784,276 784,254 872,254 L872,278 C784,278 784,300 696,300 Z"
+        "d": "M696,379 C784,379 784,357 872,357 L872,381 C784,381 784,403 696,403 Z"
       },
       {
         "s": "nh:4",
         "t": "nc:CNCL-P12 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,224 C784,224 784,160 872,160 L872,172 C784,172 784,236 696,236 Z"
+        "d": "M696,327 C784,327 784,311 872,311 L872,323 C784,323 784,339 696,339 Z"
       },
       {
         "s": "nh:8",
         "t": "nc:CNCL-P25 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 2,
-        "d": "M696,416 C784,416 784,435 872,435 L872,459 C784,459 784,440 696,440 Z"
+        "d": "M696,555 C784,555 784,563 872,563 L872,587 C784,587 784,579 696,579 Z"
       },
       {
         "s": "nh:4",
         "t": "nc:CNCL-P14 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 3,
-        "d": "M696,176 C784,176 784,102 872,102 L872,138 C784,138 784,212 696,212 Z"
+        "d": "M696,219 C784,219 784,183 872,183 L872,219 C784,219 784,255 696,255 Z"
       },
       {
         "s": "nh:3",
         "t": "nc:CNCL-P07 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 3,
-        "d": "M696,82 C784,82 784,28 872,28 L872,64 C784,64 784,118 696,118 Z"
+        "d": "M696,65 C784,65 784,55 872,55 L872,91 C784,91 784,101 696,101 Z"
       },
       {
         "s": "nh:10",
         "t": "nc:CNCL-P30 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,492 C784,492 784,510 872,510 L872,522 C784,522 784,504 696,504 Z"
+        "d": "M696,631 C784,631 784,638 872,638 L872,650 C784,650 784,643 696,643 Z"
       },
       {
         "s": "nh:10",
         "t": "nc:CNCL-P29 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 2,
-        "d": "M696,468 C784,468 784,481 872,481 L872,505 C784,505 784,492 696,492 Z"
+        "d": "M696,607 C784,607 784,609 872,609 L872,633 C784,633 784,631 696,631 Z"
       },
       {
         "s": "nh:1",
         "t": "nc:CNCL-P01 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 5,
-        "d": "M696,720 C784,720 784,721 872,721 L872,781 C784,781 784,780 696,780 Z"
+        "d": "M696,871 C784,871 784,850 872,850 L872,910 C784,910 784,931 696,931 Z"
+      },
+      {
+        "s": "nh:5",
+        "t": "nc:CNCL-P19 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 3,
+        "d": "M696,403 C784,403 784,386 872,386 L872,422 C784,422 784,439 696,439 Z"
       },
       {
         "s": "nh:6",
         "t": "nc:CNCL-P23 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 2,
-        "d": "M696,556 C784,556 784,563 872,563 L872,587 C784,587 784,580 696,580 Z"
+        "d": "M696,695 C784,695 784,691 872,691 L872,715 C784,715 784,719 696,719 Z"
       },
       {
         "s": "nh:3",
         "t": "nc:CNCL-P07 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,70 C784,70 784,16 872,16 L872,28 C784,28 784,82 696,82 Z"
+        "d": "M696,53 C784,53 784,43 872,43 L872,55 C784,55 784,65 696,65 Z"
+      },
+      {
+        "s": "nh:9",
+        "t": "nc:CNCL-P28 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 1,
+        "d": "M696,831 C784,831 784,821 872,821 L872,833 C784,833 784,843 696,843 Z"
       },
       {
         "s": "nh:9",
         "t": "nc:CNCL-P22 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,596 C784,596 784,592 872,592 L872,604 C784,604 784,608 696,608 Z"
+        "d": "M696,735 C784,735 784,720 872,720 L872,732 C784,732 784,747 696,747 Z"
       },
       {
         "s": "nh:8",
         "t": "nc:CNCL-P26 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,440 C784,440 784,464 872,464 L872,476 C784,476 784,452 696,452 Z"
+        "d": "M696,579 C784,579 784,592 872,592 L872,604 C784,604 784,591 696,591 Z"
       },
       {
         "s": "nh:5",
         "t": "nc:CNCL-P20 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 2,
-        "d": "M696,300 C784,300 784,283 872,283 L872,307 C784,307 784,324 696,324 Z"
+        "d": "M696,439 C784,439 784,427 872,427 L872,451 C784,451 784,463 696,463 Z"
       },
       {
         "s": "nh:1",
         "t": "nc:CNCL-P02 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,780 C784,780 784,786 872,786 L872,798 C784,798 784,792 696,792 Z"
+        "d": "M696,931 C784,931 784,915 872,915 L872,927 C784,927 784,943 696,943 Z"
       },
       {
         "s": "nh:2",
         "t": "nc:CNCL-P06 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,141 C784,141 784,85 872,85 L872,97 C784,97 784,153 696,153 Z"
+        "d": "M696,148 C784,148 784,125 872,125 L872,137 C784,137 784,160 696,160 Z"
       },
       {
         "s": "nh:1",
         "t": "nc:CNCL-P01 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,708 C784,708 784,709 872,709 L872,721 C784,721 784,720 696,720 Z"
+        "d": "M696,859 C784,859 784,838 872,838 L872,850 C784,850 784,871 696,871 Z"
       },
       {
         "s": "nh:4",
         "t": "nc:CNCL-P16 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,236 C784,236 784,177 872,177 L872,189 C784,189 784,248 696,248 Z"
+        "d": "M696,339 C784,339 784,328 872,328 L872,340 C784,340 784,351 696,351 Z"
       },
       {
         "s": "nh:5",
         "t": "nc:CNCL-P17 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,324 C784,324 784,312 872,312 L872,324 C784,324 784,336 696,336 Z"
+        "d": "M696,463 C784,463 784,456 872,456 L872,468 C784,468 784,475 696,475 Z"
       },
       {
         "s": "nh:5",
         "t": "nc:CNCL-P18 · nhu cầu quốc gia",
         "loai": "da_ky",
         "w": 1,
-        "d": "M696,264 C784,264 784,242 872,242 L872,254 C784,254 784,276 696,276 Z"
+        "d": "M696,367 C784,367 784,345 872,345 L872,357 C784,357 784,379 696,379 Z"
+      },
+      {
+        "s": "nh:4",
+        "t": "nc:CNCL-P13 · nhu cầu quốc gia",
+        "loai": "cung_sp",
+        "w": 2,
+        "d": "M696,291 C784,291 784,265 872,265 L872,289 C784,289 784,315 696,315 Z"
       },
       {
         "s": "nh:7",
         "t": "nc:CNCL-P24 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,388 C784,388 784,418 872,418 L872,430 C784,430 784,400 696,400 Z"
+        "d": "M696,527 C784,527 784,546 872,546 L872,558 C784,558 784,539 696,539 Z"
       },
       {
         "s": "nh:4",
         "t": "nc:CNCL-P10 · nhu cầu quốc gia",
         "loai": "cung_sp",
         "w": 1,
-        "d": "M696,212 C784,212 784,143 872,143 L872,155 C784,155 784,224 696,224 Z"
+        "d": "M696,315 C784,315 784,294 872,294 L872,306 C784,306 784,327 696,327 Z"
       }
     ],
     "chiSo": {
-      "soCap": 47,
+      "soCap": 63,
       "capDaKy": 11,
-      "dienTichGiaoBanDau": 7,
-      "dienTichGiao": 7,
+      "dienTichGiaoBanDau": 8,
+      "dienTichGiao": 8,
       "dienTichGiaoPhai": 0,
       "xoayVong": 1,
       "latGuong": false
@@ -1539,11 +1899,11 @@
     {
       "so": "3",
       "nhan": "Robot và tự động hoá",
-      "soDv": 5,
+      "soDv": 7,
       "soNc": 2,
-      "coCung": 1,
+      "coCung": 2,
       "daKy": 1,
-      "trong": 1,
+      "trong": 0,
       "o": [
         {
           "id": "CNCL-P07 · nhu cầu quốc gia",
@@ -1556,8 +1916,8 @@
           "id": "CNCL-P08 · nhu cầu quốc gia",
           "maSp": "08",
           "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
-          "soCung": 0,
-          "trangThai": "trong"
+          "soCung": 2,
+          "trangThai": "co_cung"
         }
       ]
     },
@@ -1582,17 +1942,38 @@
     {
       "so": "4",
       "nhan": "Sinh học và y sinh",
-      "soDv": 6,
+      "soDv": 14,
       "soNc": 7,
-      "coCung": 4,
+      "coCung": 7,
       "daKy": 0,
-      "trong": 3,
+      "trong": 0,
       "o": [
+        {
+          "id": "CNCL-P11 · nhu cầu quốc gia",
+          "maSp": "11",
+          "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+          "soCung": 3,
+          "trangThai": "co_cung"
+        },
         {
           "id": "CNCL-P14 · nhu cầu quốc gia",
           "maSp": "14",
           "ten": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
           "soCung": 3,
+          "trangThai": "co_cung"
+        },
+        {
+          "id": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+          "soCung": 3,
+          "trangThai": "co_cung"
+        },
+        {
+          "id": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "ten": "Hệ thống cảm biến sinh học thông minh",
+          "soCung": 2,
           "trangThai": "co_cung"
         },
         {
@@ -1615,38 +1996,17 @@
           "ten": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
           "soCung": 1,
           "trangThai": "co_cung"
-        },
-        {
-          "id": "CNCL-P11 · nhu cầu quốc gia",
-          "maSp": "11",
-          "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
-          "soCung": 0,
-          "trangThai": "trong"
-        },
-        {
-          "id": "CNCL-P13 · nhu cầu quốc gia",
-          "maSp": "13",
-          "ten": "Hệ thống cảm biến sinh học thông minh",
-          "soCung": 0,
-          "trangThai": "trong"
-        },
-        {
-          "id": "CNCL-P15 · nhu cầu quốc gia",
-          "maSp": "15",
-          "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
-          "soCung": 0,
-          "trangThai": "trong"
         }
       ]
     },
     {
       "so": "5",
       "nhan": "Năng lượng và vật liệu",
-      "soDv": 4,
+      "soDv": 7,
       "soNc": 6,
-      "coCung": 3,
+      "coCung": 4,
       "daKy": 3,
-      "trong": 3,
+      "trong": 2,
       "o": [
         {
           "id": "CNCL-P18 · nhu cầu quốc gia",
@@ -1654,6 +2014,13 @@
           "ten": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
           "soCung": 3,
           "trangThai": "da_ky"
+        },
+        {
+          "id": "CNCL-P19 · nhu cầu quốc gia",
+          "maSp": "19",
+          "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+          "soCung": 3,
+          "trangThai": "co_cung"
         },
         {
           "id": "CNCL-P20 · nhu cầu quốc gia",
@@ -1668,13 +2035,6 @@
           "ten": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
           "soCung": 1,
           "trangThai": "da_ky"
-        },
-        {
-          "id": "CNCL-P19 · nhu cầu quốc gia",
-          "maSp": "19",
-          "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
-          "soCung": 0,
-          "trangThai": "trong"
         },
         {
           "id": "CNCL-P21 · nhu cầu quốc gia",
@@ -1788,11 +2148,11 @@
     {
       "so": "9",
       "nhan": "Hàng không và vũ trụ",
-      "soDv": 7,
+      "soDv": 8,
       "soNc": 2,
-      "coCung": 1,
+      "coCung": 2,
       "daKy": 1,
-      "trong": 1,
+      "trong": 0,
       "o": [
         {
           "id": "CNCL-P22 · nhu cầu quốc gia",
@@ -1805,19 +2165,19 @@
           "id": "CNCL-P28 · nhu cầu quốc gia",
           "maSp": "28",
           "ten": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
-          "soCung": 0,
-          "trangThai": "trong"
+          "soCung": 1,
+          "trangThai": "co_cung"
         }
       ]
     },
     {
       "so": "1",
       "nhan": "Công nghệ số",
-      "soDv": 7,
+      "soDv": 9,
       "soNc": 5,
-      "coCung": 2,
+      "coCung": 4,
       "daKy": 1,
-      "trong": 3,
+      "trong": 1,
       "o": [
         {
           "id": "CNCL-P01 · nhu cầu quốc gia",
@@ -1834,23 +2194,23 @@
           "trangThai": "co_cung"
         },
         {
-          "id": "CNCL-P03 · nhu cầu quốc gia",
-          "maSp": "03",
-          "ten": "Nền tảng bản sao số",
-          "soCung": 0,
-          "trangThai": "trong"
-        },
-        {
           "id": "CNCL-P04 · nhu cầu quốc gia",
           "maSp": "04",
           "ten": "Nền tảng điện toán đám mây",
-          "soCung": 0,
-          "trangThai": "trong"
+          "soCung": 1,
+          "trangThai": "co_cung"
         },
         {
           "id": "CNCL-P05 · nhu cầu quốc gia",
           "maSp": "05",
           "ten": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+          "soCung": 1,
+          "trangThai": "co_cung"
+        },
+        {
+          "id": "CNCL-P03 · nhu cầu quốc gia",
+          "maSp": "03",
+          "ten": "Nền tảng bản sao số",
           "soCung": 0,
           "trangThai": "trong"
         }
@@ -1860,9 +2220,25 @@
   "tuoi": {
     "nam": [
       {
+        "nam": "2012",
+        "tuoi": 0,
+        "ben": 4,
+        "giu_nguon_cu": 2,
+        "qua_han": 0,
+        "khong_doc_duoc_ngay": 0
+      },
+      {
         "nam": "2015",
         "tuoi": 0,
         "ben": 0,
+        "giu_nguon_cu": 2,
+        "qua_han": 0,
+        "khong_doc_duoc_ngay": 0
+      },
+      {
+        "nam": "2017",
+        "tuoi": 0,
+        "ben": 4,
         "giu_nguon_cu": 2,
         "qua_han": 0,
         "khong_doc_duoc_ngay": 0
@@ -1872,6 +2248,14 @@
         "tuoi": 0,
         "ben": 7,
         "giu_nguon_cu": 3,
+        "qua_han": 0,
+        "khong_doc_duoc_ngay": 0
+      },
+      {
+        "nam": "2021",
+        "tuoi": 0,
+        "ben": 4,
+        "giu_nguon_cu": 1,
         "qua_han": 0,
         "khong_doc_duoc_ngay": 0
       },
@@ -1886,41 +2270,41 @@
       {
         "nam": "2023",
         "tuoi": 0,
-        "ben": 17,
-        "giu_nguon_cu": 3,
+        "ben": 29,
+        "giu_nguon_cu": 8,
         "qua_han": 5,
         "khong_doc_duoc_ngay": 0
       },
       {
         "nam": "2024",
         "tuoi": 0,
-        "ben": 19,
-        "giu_nguon_cu": 7,
+        "ben": 27,
+        "giu_nguon_cu": 11,
         "qua_han": 3,
         "khong_doc_duoc_ngay": 0
       },
       {
         "nam": "2025",
         "tuoi": 0,
-        "ben": 69,
-        "giu_nguon_cu": 17,
+        "ben": 91,
+        "giu_nguon_cu": 28,
         "qua_han": 13,
         "khong_doc_duoc_ngay": 0
       },
       {
         "nam": "2026",
-        "tuoi": 10,
-        "ben": 26,
-        "giu_nguon_cu": 2,
+        "tuoi": 21,
+        "ben": 36,
+        "giu_nguon_cu": 4,
         "qua_han": 8,
         "khong_doc_duoc_ngay": 0
       }
     ],
     "khongRo": null,
     "tong": {
-      "tuoi": 10,
-      "ben": 144,
-      "giu_nguon_cu": 38,
+      "tuoi": 21,
+      "ben": 208,
+      "giu_nguon_cu": 65,
       "qua_han": 29,
       "khong_doc_duoc_ngay": 0
     },

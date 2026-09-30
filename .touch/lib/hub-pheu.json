@@ -2,20 +2,20 @@
   "quy_tac": "anchor_group_overlap_v2",
   "nguong_giao": 0.5,
   "so_nhu_cau": 30,
-  "so_don_vi_co_nang_luc": 43,
+  "so_don_vi_co_nang_luc": 59,
   "nhu_cau_chua_anh_xa": 0,
   "tang": [
     {
       "k": "kha_di",
-      "n": 1290
+      "n": 1770
     },
     {
       "k": "qua_neo_nhom",
-      "n": 187
+      "n": 287
     },
     {
       "k": "qua_giao_tu",
-      "n": 12
+      "n": 25
     },
     {
       "k": "da_ky",
@@ -27,12 +27,12 @@
     },
     {
       "k": "cho_ky",
-      "n": 0
+      "n": 13
     }
   ],
-  "neo_qua_chuoi_gia_tri": 41,
+  "neo_qua_chuoi_gia_tri": 51,
   "loai_lop1": {
-    "so": 10,
+    "so": 19,
     "vi_du": [
       {
         "cau": "P23",
@@ -92,6 +92,20 @@
       {
         "cau": "P20",
         "ten_cau": "máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+        "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+        "ty_le": 0.67,
+        "giao": [
+          "cao",
+          "điện"
+        ],
+        "nhom_cau": 5,
+        "nhom_cung": [
+          4
+        ]
+      },
+      {
+        "cau": "P20",
+        "ten_cau": "máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
         "cung": "Công ty TNHH Luyện kim Trần Hồng Quân",
         "ty_le": 0.67,
         "giao": [
@@ -102,24 +116,11 @@
         "nhom_cung": [
           8
         ]
-      },
-      {
-        "cau": "P03",
-        "ten_cau": "Nền tảng bản sao số",
-        "cung": "Tập đoàn MISA",
-        "ty_le": 0.5,
-        "giao": [
-          "bản"
-        ],
-        "nhom_cau": 1,
-        "nhom_cung": [
-          3
-        ]
       }
     ]
   },
   "suyt_dat": {
-    "so": 51,
+    "so": 97,
     "vi_du": [
       {
         "cau": "P16",
@@ -149,6 +150,24 @@
         "nhom_cau": 4
       },
       {
+        "cau": "P11",
+        "ten_cau": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+        "cung": "Bệnh viện Trung ương Quân đội 108",
+        "ty_le": 0.43,
+        "giao": [
+          "bào",
+          "gốc",
+          "liệu"
+        ],
+        "thieu": [
+          "dùng",
+          "dịch",
+          "miễn",
+          "người"
+        ],
+        "nhom_cau": 4
+      },
+      {
         "cau": "P01",
         "ten_cau": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
         "cung": "Tập đoàn Viettel",
@@ -172,6 +191,27 @@
         "nhom_cau": 1
       },
       {
+        "cau": "P17",
+        "ten_cau": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
+        "cung": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+        "ty_le": 0.4,
+        "giao": [
+          "chế",
+          "liệu",
+          "tạo",
+          "vật"
+        ],
+        "thieu": [
+          "biến",
+          "cao",
+          "chức",
+          "hiệu",
+          "nghiệp",
+          "năng"
+        ],
+        "nhom_cau": 5
+      },
+      {
         "cau": "P21",
         "ten_cau": "Hệ thống thu giữ, sử dụng và lưu trữ carbon",
         "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
@@ -186,6 +226,22 @@
           "thu"
         ],
         "nhom_cau": 5
+      },
+      {
+        "cau": "P22",
+        "ten_cau": "Thiết bị, phương tiện bay không người lái (UAV)",
+        "cung": "Trung tâm Vũ trụ Việt Nam",
+        "ty_le": 0.4,
+        "giao": [
+          "chế",
+          "sát"
+        ],
+        "thieu": [
+          "giám",
+          "quản",
+          "uav"
+        ],
+        "nhom_cau": 9
       },
       {
         "cau": "P25",
@@ -226,58 +282,6 @@
           "tích"
         ],
         "nhom_cau": 5
-      },
-      {
-        "cau": "P19",
-        "ten_cau": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
-        "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
-        "ty_le": 0.38,
-        "giao": [
-          "liệu",
-          "lưu",
-          "phân",
-          "trữ",
-          "xuất"
-        ],
-        "thieu": [
-          "chuyển",
-          "hydrogen",
-          "học",
-          "nhiên",
-          "phối",
-          "sinh",
-          "vận",
-          "xanh"
-        ],
-        "nhom_cau": 5
-      },
-      {
-        "cau": "P02",
-        "ten_cau": "AI camera xử lý tại biên",
-        "cung": "FPT",
-        "ty_le": 0.33,
-        "giao": [
-          "camera"
-        ],
-        "thieu": [
-          "biên",
-          "tại"
-        ],
-        "nhom_cau": 1
-      },
-      {
-        "cau": "P02",
-        "ten_cau": "AI camera xử lý tại biên",
-        "cung": "Tập đoàn Viettel",
-        "ty_le": 0.33,
-        "giao": [
-          "camera"
-        ],
-        "thieu": [
-          "biên",
-          "tại"
-        ],
-        "nhom_cau": 1
       }
     ]
   },

@@ -28,7 +28,7 @@ export type RejectedPair = {
 export const matchMeta = {
   "daKy": 11,
   "tuChoi": 1,
-  "tongChay": 11,
+  "tongChay": 24,
   "rule": "anchor_group_overlap_v2",
   "nguoiKy": "Lam Nguyen",
   "generatedAt": "2026-09-30",
@@ -47,7 +47,7 @@ export const matchMeta = {
 
 export const signedMatches: SignedMatch[] = [
   {
-    "id": "MATCH-0001",
+    "id": "MATCH-0002",
     "score": 0.53,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -76,7 +76,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "862548dda49165e3",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -102,7 +102,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0003",
+    "id": "MATCH-0010",
     "score": 0.53,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -137,7 +137,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "69645ee490ea1124",
+    "khoaBangChung": "efccb540b69159ff",
     "demandEvidence": [
       {
         "field": "need",
@@ -163,7 +163,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0004",
+    "id": "MATCH-0013",
     "score": 0.9,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -189,7 +189,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "d7dfdf2004751dd9",
+    "khoaBangChung": "ec6bfb1e830d6a46",
     "demandEvidence": [
       {
         "field": "need",
@@ -215,7 +215,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0005",
+    "id": "MATCH-0014",
     "score": 0.88,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -240,7 +240,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 2,
-    "khoaBangChung": "8e65ab7b193b67e7",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -275,7 +275,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0006",
+    "id": "MATCH-0015",
     "score": 0.88,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -326,7 +326,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0007",
+    "id": "MATCH-0016",
     "score": 0.53,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -367,7 +367,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "72003af33e5da3a0",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -393,7 +393,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0008",
+    "id": "MATCH-0017",
     "score": 0.7,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -434,7 +434,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "1216d421d3a07c35",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -460,7 +460,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0009",
+    "id": "MATCH-0020",
     "score": 0.67,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -514,7 +514,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0010",
+    "id": "MATCH-0021",
     "score": 0.64,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -550,7 +550,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "efccb540b69159ff",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need_2",
@@ -576,7 +576,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0011",
+    "id": "MATCH-0022",
     "score": 0.64,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -604,7 +604,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 2,
-    "khoaBangChung": "a5a01bc2d7b0748e",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",
@@ -639,7 +639,7 @@ export const signedMatches: SignedMatch[] = [
     "unverified": []
   },
   {
-    "id": "MATCH-0012",
+    "id": "MATCH-0023",
     "score": 0.66,
     "rule": "anchor_group_overlap_v2",
     "engine": "cao-loc-match/0.2.0 rule=anchor_group_overlap_v2",
@@ -679,7 +679,7 @@ export const signedMatches: SignedMatch[] = [
     },
     "chuaDuyet": [],
     "soChuoi": 1,
-    "khoaBangChung": "7fb63383a698e35f",
+    "khoaBangChung": null,
     "demandEvidence": [
       {
         "field": "need",

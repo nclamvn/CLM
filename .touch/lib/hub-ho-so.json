@@ -2,7 +2,7 @@
   "meta": {
     "mocNgay": "2026-09-30",
     "nguongNgay": 180,
-    "soDonVi": 44,
+    "soDonVi": 60,
     "truongSchema": [
       "ten_don_vi",
       "ma_so_thue",
@@ -45,6 +45,666 @@
     ]
   },
   "units": [
+    {
+      "slug": "benh-vien-trung-uong-quan-doi-108",
+      "ten": "Bệnh viện Trung ương Quân đội 108",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "C",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 0,
+          "C": 6
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2023-06-08",
+        "moiNhat": "2023-06-08"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "ngayDang": "2023-06-08",
+          "tuoiNgay": 1210,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P11 · nhu cầu quốc gia",
+          "maSp": "11",
+          "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2023-06-08",
+          "loai": "nguon_dang",
+          "nguon": "benhvien108.vn",
+          "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "cmc-telecom",
+      "ten": "CMC Telecom",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "1",
+          "nhan": "Nhóm 1 · Công nghệ số"
+        }
+      ],
+      "lanhTho": "1",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-03-21",
+        "moiNhat": "2025-03-21"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "ngayDang": "2025-03-21",
+          "tuoiNgay": 558,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P04 · nhu cầu quốc gia",
+          "maSp": "04",
+          "ten": "Nền tảng điện toán đám mây",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-03-21",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_cmc_cloud_20250321.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [],
+      "cungNhom": [
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "FPT",
+          "slug": "fpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Viettel AI",
+          "slug": "viettel-ai",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VinAI",
+          "slug": "vinai",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VinBigData",
+          "slug": "vinbigdata",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Zalo",
+          "slug": "zalo",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "cong-ty-1matrix",
+      "ten": "Công ty 1Matrix",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "1",
+          "nhan": "Nhóm 1 · Công nghệ số"
+        }
+      ],
+      "lanhTho": "1",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 2,
+        "banChup": 2,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-07-21",
+        "moiNhat": "2026-01-01"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "cafef.vn",
+          "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+          "ngayDang": "2026-01-01",
+          "tuoiNgay": 272,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+          "ngayDang": "2025-07-21",
+          "tuoiNgay": 436,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+          "ngayDang": "2025-07-21",
+          "tuoiNgay": 436,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "cafef.vn",
+          "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+          "ngayDang": "2026-01-01",
+          "tuoiNgay": 272,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "cafef.vn",
+          "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+          "ngayDang": "2026-01-01",
+          "tuoiNgay": 272,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+          "ngayDang": "2025-07-21",
+          "tuoiNgay": 436,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P05 · nhu cầu quốc gia",
+          "maSp": "05",
+          "ten": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-07-21",
+          "loai": "nguon_dang",
+          "nguon": "vnexpress.net",
+          "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+          "soCau": 3
+        },
+        {
+          "ngay": "2026-01-01",
+          "loai": "nguon_dang",
+          "nguon": "cafef.vn",
+          "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+          "soCau": 3
+        }
+      ],
+      "tuongTu": [],
+      "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "FPT",
+          "slug": "fpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Viettel AI",
+          "slug": "viettel-ai",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VinAI",
+          "slug": "vinai",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VinBigData",
+          "slug": "vinbigdata",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Zalo",
+          "slug": "zalo",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
     {
       "slug": "cong-ty-an-ninh-mang-viettel",
       "ten": "Công ty An ninh mạng Viettel",
@@ -330,8 +990,40 @@
       ],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
           "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -346,8 +1038,40 @@
           ]
         },
         {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
           "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -540,6 +1264,195 @@
       ]
     },
     {
+      "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+      "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "3",
+          "nhan": "Nhóm 3 · Robot và tự động hoá"
+        }
+      ],
+      "lanhTho": "3",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2024-10-20",
+        "moiNhat": "2024-10-20"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "ngayDang": "2024-10-20",
+          "tuoiNgay": 710,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P08 · nhu cầu quốc gia",
+          "maSp": "08",
+          "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2024-10-20",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty cổ phần Health Care Center",
+          "slug": "cong-ty-co-phan-health-care-center",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần VinMotion",
+          "slug": "cong-ty-co-phan-vinmotion",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "ROSTEK",
+          "slug": "rostek",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "Tập đoàn MISA",
+          "slug": "tap-doan-misa",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
       "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
       "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
       "loaiHinh": null,
@@ -672,6 +1585,30 @@
         }
       ],
       "cungNhom": [
+        {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
         {
           "ten": "Tổng công ty Thiết bị điện Đông Anh",
           "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
@@ -828,8 +1765,24 @@
       ],
       "cungNhom": [
         {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
           "lyDo": "cung_nhom",
           "chung": [
             "3"
@@ -979,8 +1932,40 @@
       ],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
           "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -995,8 +1980,40 @@
           ]
         },
         {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
           "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -1183,8 +2200,24 @@
       ],
       "cungNhom": [
         {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
           "lyDo": "cung_nhom",
           "chung": [
             "3"
@@ -1480,6 +2513,298 @@
       "tuongTu": [],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "loai_hinh",
+          "nhan": "Loại hình (doanh nghiệp, viện, trường)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "cong-ty-cp-viet-nam-food-vnf",
+      "ten": "Công ty CP Việt Nam Food (VNF)",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 7,
+        "theoTier": {
+          "A": 0,
+          "B": 7,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 3,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2026-08-20",
+        "moiNhat": "2026-08-20"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "location",
+          "tier": "B",
+          "source": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "ngayDang": "2026-08-20",
+          "tuoiNgay": 41,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2026-08-20",
+          "loai": "nguon_dang",
+          "nguon": "tienphong.vn",
+          "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+          "soCau": 7
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty cổ phần AVAC Việt Nam",
           "slug": "cong-ty-co-phan-avac-viet-nam",
           "lyDo": "cung_nhom",
@@ -1512,8 +2837,40 @@
           ]
         },
         {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
           "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -1525,10 +2882,247 @@
         {
           "truong": "ma_so_thue",
           "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        }
+      ]
+    },
+    {
+      "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+      "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-12-11",
+        "moiNhat": "2025-12-11"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         },
         {
-          "truong": "loai_hinh",
-          "nhan": "Loại hình (doanh nghiệp, viện, trường)"
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-12-11",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
         },
         {
           "truong": "location",
@@ -1858,7 +3452,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [
         {
           "ten": "CT Semiconductor",
@@ -1984,7 +3587,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0006",
+          "matchId": "MATCH-0015",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -2002,7 +3605,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0006",
+          "matchId": "MATCH-0015",
           "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
           "maSp": "23",
           "by": "Lam Nguyen"
@@ -2433,6 +4036,22 @@
       ],
       "cungNhom": [
         {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
           "lyDo": "cung_nhom",
@@ -2570,7 +4189,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0005",
+          "matchId": "MATCH-0014",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-24"
@@ -2595,7 +4214,7 @@
         {
           "ngay": "2026-08-24",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0005",
+          "matchId": "MATCH-0014",
           "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
           "maSp": "23",
           "by": "Lam Nguyen"
@@ -2799,6 +4418,30 @@
       ],
       "cungNhom": [
         {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
           "ten": "Tổng công ty Thiết bị điện Đông Anh",
           "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
           "lyDo": "cung_nhom",
@@ -2984,7 +4627,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -3002,6 +4654,202 @@
         {
           "truong": "location",
           "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "indefol",
+      "ten": "Indefol",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "5",
+          "nhan": "Nhóm 5 · Năng lượng và vật liệu"
+        }
+      ],
+      "lanhTho": "5",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 7,
+        "theoTier": {
+          "A": 0,
+          "B": 7,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 3,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2026-04-18",
+        "moiNhat": "2026-04-18"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "location",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "ngayDang": "2026-04-18",
+          "tuoiNgay": 165,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P19 · nhu cầu quốc gia",
+          "maSp": "19",
+          "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2026-04-18",
+          "loai": "nguon_dang",
+          "nguon": "vnexpress.net",
+          "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+          "soCau": 7
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+          "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "GG Power",
+          "slug": "gg-power",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
         }
       ]
     },
@@ -3402,7 +5250,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -3923,7 +5780,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -3937,6 +5803,202 @@
         {
           "truong": "bang_chung_nang_luc",
           "nhan": "Bằng chứng năng lực (dự án, sản phẩm, chứng nhận)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+      "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "5",
+          "nhan": "Nhóm 5 · Năng lượng và vật liệu"
+        }
+      ],
+      "lanhTho": "5",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 2,
+        "banChup": 2,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 2,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-11-21",
+        "moiNhat": "2026-05-25"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+          "ngayDang": "2025-11-21",
+          "tuoiNgay": 313,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+          "ngayDang": "2025-11-21",
+          "tuoiNgay": 313,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+          "ngayDang": "2025-11-21",
+          "tuoiNgay": 313,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+          "ngayDang": "2025-11-21",
+          "tuoiNgay": 313,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "congthuong.vn",
+          "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+          "ngayDang": "2026-05-25",
+          "tuoiNgay": 128,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "congthuong.vn",
+          "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+          "ngayDang": "2026-05-25",
+          "tuoiNgay": 128,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P19 · nhu cầu quốc gia",
+          "maSp": "19",
+          "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-11-21",
+          "loai": "nguon_dang",
+          "nguon": "nhandan.vn",
+          "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+          "soCau": 4
+        },
+        {
+          "ngay": "2026-05-25",
+          "loai": "nguon_dang",
+          "nguon": "congthuong.vn",
+          "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+          "soCau": 2
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+          "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "GG Power",
+          "slug": "gg-power",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
         },
         {
           "truong": "location",
@@ -4163,7 +6225,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -4280,7 +6351,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0001",
+          "matchId": "MATCH-0002",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -4298,7 +6369,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0001",
+          "matchId": "MATCH-0002",
           "nhuCau": "CNCL-P07 · nhu cầu quốc gia",
           "maSp": "07",
           "by": "Lam Nguyen"
@@ -4332,8 +6403,24 @@
       ],
       "cungNhom": [
         {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
           "lyDo": "cung_nhom",
           "chung": [
             "3"
@@ -4512,8 +6599,40 @@
       ],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
           "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -4528,8 +6647,40 @@
           ]
         },
         {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
           "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -4679,8 +6830,24 @@
       ],
       "cungNhom": [
         {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
           "lyDo": "cung_nhom",
           "chung": [
             "3"
@@ -4844,7 +7011,7 @@
           "quanHe": [
             "match_da_ky"
           ],
-          "matchId": "MATCH-0008",
+          "matchId": "MATCH-0017",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -4857,7 +7024,7 @@
           "quanHe": [
             "match_da_ky"
           ],
-          "matchId": "MATCH-0004",
+          "matchId": "MATCH-0013",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -4882,7 +7049,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0004",
+          "matchId": "MATCH-0013",
           "nhuCau": "CNCL-P23 · nhu cầu quốc gia",
           "maSp": "23",
           "by": "Lam Nguyen"
@@ -4890,7 +7057,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0008",
+          "matchId": "MATCH-0017",
           "nhuCau": "CNCL-P22 · nhu cầu quốc gia",
           "maSp": "22",
           "by": "Lam Nguyen"
@@ -5027,6 +7194,22 @@
         }
       ],
       "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
         {
           "ten": "VNPT",
           "slug": "vnpt",
@@ -5314,7 +7497,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0010",
+          "matchId": "MATCH-0021",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -5332,7 +7515,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0010",
+          "matchId": "MATCH-0021",
           "nhuCau": "CNCL-P20 · nhu cầu quốc gia",
           "maSp": "20",
           "by": "Lam Nguyen"
@@ -5378,6 +7561,30 @@
           "chung": [
             "5"
           ]
+        },
+        {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
         }
       ],
       "deNham": [],
@@ -5389,6 +7596,643 @@
         {
           "truong": "loai_hinh",
           "nhan": "Loại hình (doanh nghiệp, viện, trường)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "trung-tam-vu-tru-viet-nam",
+      "ten": "Trung tâm Vũ trụ Việt Nam",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "9",
+          "nhan": "Nhóm 9 · Hàng không và vũ trụ"
+        }
+      ],
+      "lanhTho": "9",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 2,
+        "banChup": 2,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2021-03-11",
+        "moiNhat": "2026-03-13"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "ngayDang": "2021-03-11",
+          "tuoiNgay": 2029,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "ngayDang": "2021-03-11",
+          "tuoiNgay": 2029,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "ngayDang": "2021-03-11",
+          "tuoiNgay": 2029,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "ngayDang": "2021-03-11",
+          "tuoiNgay": 2029,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "ngayDang": "2021-03-11",
+          "tuoiNgay": 2029,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
+          "ngayDang": "2026-03-13",
+          "tuoiNgay": 201,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P28 · nhu cầu quốc gia",
+          "maSp": "28",
+          "ten": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2021-03-11",
+          "loai": "nguon_dang",
+          "nguon": "vast.gov.vn",
+          "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+          "soCau": 5
+        },
+        {
+          "ngay": "2026-03-13",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
+          "soCau": 1
+        }
+      ],
+      "tuongTu": [],
+      "cungNhom": [
+        {
+          "ten": "CT Group",
+          "slug": "ct-group",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "HTI Technology",
+          "slug": "hti-technology",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "MiSmart",
+          "slug": "mismart",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "Phenikaa-X",
+          "slug": "phenikaa-x",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "Realtime Robotics (RtR)",
+          "slug": "realtime-robotics-rtr",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "Viettel High Tech",
+          "slug": "viettel-high-tech",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        },
+        {
+          "ten": "XBStation",
+          "slug": "xbstation",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+      "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+      "loaiHinh": "Trường",
+      "nhoms": [
+        {
+          "so": "5",
+          "nhan": "Nhóm 5 · Năng lượng và vật liệu"
+        }
+      ],
+      "lanhTho": "5",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2012-05-02",
+        "moiNhat": "2012-05-02"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "ngayDang": "2012-05-02",
+          "tuoiNgay": 5264,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P19 · nhu cầu quốc gia",
+          "maSp": "19",
+          "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2012-05-02",
+          "loai": "nguon_dang",
+          "nguon": "nangluongvietnam.vn",
+          "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        },
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P19"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+          "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "GG Power",
+          "slug": "gg-power",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+          "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+      "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-12-11",
+        "moiNhat": "2025-12-11"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "ngayDang": "2025-12-11",
+          "tuoiNgay": 293,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P15 · nhu cầu quốc gia",
+          "maSp": "15",
+          "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-12-11",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P15"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
         },
         {
           "truong": "location",
@@ -5670,8 +8514,32 @@
       "tuongTu": [],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
           "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -5702,8 +8570,48 @@
           ]
         },
         {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
           "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -5818,7 +8726,7 @@
           "quanHe": [
             "match_da_ky"
           ],
-          "matchId": "MATCH-0012",
+          "matchId": "MATCH-0023",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -5831,7 +8739,7 @@
           "quanHe": [
             "match_da_ky"
           ],
-          "matchId": "MATCH-0003",
+          "matchId": "MATCH-0010",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -5844,7 +8752,7 @@
           "quanHe": [
             "match_da_ky"
           ],
-          "matchId": "MATCH-0011",
+          "matchId": "MATCH-0022",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -5862,7 +8770,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0003",
+          "matchId": "MATCH-0010",
           "nhuCau": "CNCL-P18 · nhu cầu quốc gia",
           "maSp": "18",
           "by": "Lam Nguyen"
@@ -5870,7 +8778,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0011",
+          "matchId": "MATCH-0022",
           "nhuCau": "CNCL-P20 · nhu cầu quốc gia",
           "maSp": "20",
           "by": "Lam Nguyen"
@@ -5878,7 +8786,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0012",
+          "matchId": "MATCH-0023",
           "nhuCau": "CNCL-P17 · nhu cầu quốc gia",
           "maSp": "17",
           "by": "Lam Nguyen"
@@ -5910,7 +8818,32 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Indefol",
+          "slug": "indefol",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+          "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        },
+        {
+          "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+          "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "5"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -6089,6 +9022,1000 @@
       ]
     },
     {
+      "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+      "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-07-18",
+        "moiNhat": "2025-07-18"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "ngayDang": "2025-07-18",
+          "tuoiNgay": 439,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "ten": "Hệ thống cảm biến sinh học thông minh",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-07-18",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "vien-khoa-hoc-vat-lieu",
+      "ten": "Viện Khoa học vật liệu",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "A",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 6,
+          "B": 0,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2017-07-24",
+        "moiNhat": "2017-07-24"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "ngayDang": "2017-07-24",
+          "tuoiNgay": 3355,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P13 · nhu cầu quốc gia",
+          "maSp": "13",
+          "ten": "Hệ thống cảm biến sinh học thông minh",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2017-07-24",
+          "loai": "nguon_dang",
+          "nguon": "vast.gov.vn",
+          "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P13"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+      "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 2,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 2,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2023-08-21",
+        "moiNhat": "2026-07-21"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+          "ngayDang": "2023-08-21",
+          "tuoiNgay": 1136,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+          "ngayDang": "2023-08-21",
+          "tuoiNgay": 1136,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+          "ngayDang": "2023-08-21",
+          "tuoiNgay": 1136,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+          "ngayDang": "2023-08-21",
+          "tuoiNgay": 1136,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+          "ngayDang": "2026-07-21",
+          "tuoiNgay": 71,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+          "ngayDang": "2026-07-21",
+          "tuoiNgay": 71,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P11 · nhu cầu quốc gia",
+          "maSp": "11",
+          "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2023-08-21",
+          "loai": "nguon_dang",
+          "nguon": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+          "soCau": 4
+        },
+        {
+          "ngay": "2026-07-21",
+          "loai": "nguon_dang",
+          "nguon": "baodautu.vn",
+          "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+          "soCau": 2
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+      "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+      "loaiHinh": "Viện",
+      "nhoms": [
+        {
+          "so": "4",
+          "nhan": "Nhóm 4 · Sinh học và y sinh"
+        }
+      ],
+      "lanhTho": "4",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 7,
+        "theoTier": {
+          "A": 0,
+          "B": 7,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 3,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2023-04-03",
+        "moiNhat": "2023-04-03"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "location",
+          "tier": "B",
+          "source": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "ngayDang": "2023-04-03",
+          "tuoiNgay": 1276,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P11 · nhu cầu quốc gia",
+          "maSp": "11",
+          "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2023-04-03",
+          "loai": "nguon_dang",
+          "nguon": "vnexpress.net",
+          "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+          "soCau": 7
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P11"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+          "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần AVAC Việt Nam",
+          "slug": "cong-ty-co-phan-avac-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+          "slug": "cong-ty-co-phan-thuoc-thu-y-trung-uong-navetco",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Dabaco Việt Nam",
+          "slug": "tap-doan-dabaco-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Di truyền Nông nghiệp Việt Nam",
+          "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+          "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        }
+      ]
+    },
+    {
       "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
       "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
       "loaiHinh": "Viện",
@@ -6216,8 +10143,32 @@
       "tuongTu": [],
       "cungNhom": [
         {
+          "ten": "Bệnh viện Trung ương Quân đội 108",
+          "slug": "benh-vien-trung-uong-quan-doi-108",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty CP Việt Nam Food (VNF)",
+          "slug": "cong-ty-cp-viet-nam-food-vnf",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Công ty Cổ phần Y Sinh Ngọc Bảo",
           "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+          "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -6248,8 +10199,48 @@
           ]
         },
         {
+          "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+          "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
           "ten": "Viện Di truyền Nông nghiệp Việt Nam",
           "slug": "vien-di-truyen-nong-nghiep-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+          "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Khoa học vật liệu",
+          "slug": "vien-khoa-hoc-vat-lieu",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+          "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "4"
+          ]
+        },
+        {
+          "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+          "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
           "lyDo": "cung_nhom",
           "chung": [
             "4"
@@ -6287,24 +10278,24 @@
         "href": null
       },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 6,
         "theoTier": {
           "A": 4,
-          "B": 0,
-          "C": 0
+          "B": 1,
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
         "ben": 3,
-        "giuNguonCu": 0,
+        "giuNguonCu": 2,
         "quaHan": 1,
         "khongDocDuoc": 0,
-        "cuNhat": "2025-11-24",
-        "moiNhat": "2025-11-24"
+        "cuNhat": "2025-11-19",
+        "moiNhat": "2025-12-19"
       },
       "bangChung": [
         {
@@ -6350,6 +10341,28 @@
           "tuoiNgay": 310,
           "loaiTruong": "ben",
           "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta_2",
+          "tier": "C",
+          "source": "thanhnien.vn",
+          "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
+          "ngayDang": "2025-12-19",
+          "tuoiNgay": 285,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
+          "ngayDang": "2025-11-19",
+          "tuoiNgay": 315,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
         }
       ],
       "nhuCau": [
@@ -6364,11 +10377,25 @@
       ],
       "dongThoiGian": [
         {
+          "ngay": "2025-11-19",
+          "loai": "nguon_dang",
+          "nguon": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
+          "soCau": 1
+        },
+        {
           "ngay": "2025-11-24",
           "loai": "nguon_dang",
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "soCau": 4
+        },
+        {
+          "ngay": "2025-12-19",
+          "loai": "nguon_dang",
+          "nguon": "thanhnien.vn",
+          "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
+          "soCau": 1
         }
       ],
       "tuongTu": [
@@ -6415,6 +10442,22 @@
       ],
       "cungNhom": [
         {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
           "lyDo": "cung_nhom",
@@ -6441,10 +10484,6 @@
         {
           "truong": "loai_hinh",
           "nhan": "Loại hình (doanh nghiệp, viện, trường)"
-        },
-        {
-          "truong": "bang_chung_nang_luc",
-          "nhan": "Bằng chứng năng lực (dự án, sản phẩm, chứng nhận)"
         },
         {
           "truong": "location",
@@ -6642,7 +10681,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [
         {
           "ten": "Tập đoàn Viettel",
@@ -6811,6 +10859,22 @@
       ],
       "cungNhom": [
         {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
           "lyDo": "cung_nhom",
@@ -6937,7 +11001,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0007",
+          "matchId": "MATCH-0016",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-09-29"
@@ -6955,7 +11019,7 @@
         {
           "ngay": "2026-09-29",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0007",
+          "matchId": "MATCH-0016",
           "nhuCau": "CNCL-P01 · nhu cầu quốc gia",
           "maSp": "01",
           "by": "Lam Nguyen"
@@ -7004,6 +11068,22 @@
         }
       ],
       "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
         {
           "ten": "VNPT",
           "slug": "vnpt",
@@ -7061,24 +11141,24 @@
         "href": null
       },
       "dem": {
-        "cauNguon": 8,
+        "cauNguon": 9,
         "theoTier": {
           "A": 6,
-          "B": 2,
+          "B": 3,
           "C": 0
         },
-        "tenMienNguon": 2,
-        "banChup": 3,
+        "tenMienNguon": 3,
+        "banChup": 4,
         "matchDaKy": 0
       },
       "doTuoi": {
-        "tuoi": 0,
+        "tuoi": 1,
         "ben": 6,
         "giuNguonCu": 0,
         "quaHan": 2,
         "khongDocDuoc": 0,
         "cuNhat": "2023-09-04",
-        "moiNhat": "2025-12-30"
+        "moiNhat": "2026-06-02"
       },
       "bangChung": [
         {
@@ -7168,6 +11248,17 @@
           "tuoiNgay": 274,
           "loaiTruong": "ben",
           "trangThai": "ben"
+        },
+        {
+          "i": 8,
+          "field": "nang_luc_mo_ta_2",
+          "tier": "B",
+          "source": "vtv.vn",
+          "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
+          "ngayDang": "2026-06-02",
+          "tuoiNgay": 120,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
         }
       ],
       "nhuCau": [
@@ -7216,6 +11307,13 @@
           "soCau": 1
         },
         {
+          "ngay": "2026-06-02",
+          "loai": "nguon_dang",
+          "nguon": "vtv.vn",
+          "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
+          "soCau": 1
+        },
+        {
           "ngay": "2026-08-16",
           "loai": "tu_choi",
           "nhuCau": "CNCL-P08 · nhu cầu quốc gia",
@@ -7223,8 +11321,41 @@
           "by": "Lam Nguyen"
         }
       ],
-      "tuongTu": [],
+      "tuongTu": [
+        {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        },
+        {
+          "ten": "VTI Solutions",
+          "slug": "vti-solutions",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        }
+      ],
       "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
         {
           "ten": "Công ty cổ phần Health Care Center",
           "slug": "cong-ty-co-phan-health-care-center",
@@ -7438,7 +11569,7 @@
             "cung_san_pham",
             "match_da_ky"
           ],
-          "matchId": "MATCH-0009",
+          "matchId": "MATCH-0020",
           "ky": {
             "by": "Lam Nguyen",
             "date": "2026-08-16"
@@ -7463,7 +11594,7 @@
         {
           "ngay": "2026-08-16",
           "loai": "match_da_ky",
-          "matchId": "MATCH-0009",
+          "matchId": "MATCH-0020",
           "nhuCau": "CNCL-P06 · nhu cầu quốc gia",
           "maSp": "06",
           "by": "Lam Nguyen"
@@ -7651,6 +11782,195 @@
       ]
     },
     {
+      "slug": "vti-solutions",
+      "ten": "VTI Solutions",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "3",
+          "nhan": "Nhóm 3 · Robot và tự động hoá"
+        }
+      ],
+      "lanhTho": "3",
+      "bestTier": "C",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 0,
+          "C": 6
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 0,
+        "ben": 4,
+        "giuNguonCu": 2,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2024-04-13",
+        "moiNhat": "2024-04-13"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "ngayDang": "2024-04-13",
+          "tuoiNgay": 900,
+          "loaiTruong": "mau_hong",
+          "trangThai": "giu_nguon_cu"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P08 · nhu cầu quốc gia",
+          "maSp": "08",
+          "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2024-04-13",
+          "loai": "nguon_dang",
+          "nguon": "vti-solutions.vn",
+          "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+          "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P08"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty cổ phần Health Care Center",
+          "slug": "cong-ty-co-phan-health-care-center",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần VinMotion",
+          "slug": "cong-ty-co-phan-vinmotion",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "ROSTEK",
+          "slug": "rostek",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        },
+        {
+          "ten": "Tập đoàn MISA",
+          "slug": "tap-doan-misa",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "3"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
       "slug": "xbstation",
       "ten": "XBStation",
       "loaiHinh": null,
@@ -7811,7 +12131,16 @@
           ]
         }
       ],
-      "cungNhom": [],
+      "cungNhom": [
+        {
+          "ten": "Trung tâm Vũ trụ Việt Nam",
+          "slug": "trung-tam-vu-tru-viet-nam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "9"
+          ]
+        }
+      ],
       "deNham": [],
       "oTrong": [
         {
@@ -7967,6 +12296,22 @@
         }
       ],
       "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
         {
           "ten": "VNPT",
           "slug": "vnpt",

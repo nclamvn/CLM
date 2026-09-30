@@ -20,6 +20,7 @@ Mot dong duoc nap thanh claim dung khuon registry:
   boi <nguoi>. Ly do de xuat: <ly_do>").
 Ban chup duoc chep vao domains/don_vi_cncl/snapshots/ (tu choi neu trung ten ma khac noi dung).
 Don vi moi con thieu mot trong sau truong sau khi gach -> bo CA don vi, in ra, khong nap nua voi.
+Nap xong ghi <thu_muc_dot>/da_nap.json; lo co file nay thi tu choi nap lai, va kiem_lo --tat-ca bo qua.
 
 Chay: python3 nap_lo.py <thu_muc_dot> [--registry <claims.jsonl>] [--duyet <file>] [--ghi]
 Exit 0 xong · 2 tu choi · 3 KHONG CHAY DUOC.
@@ -77,6 +78,8 @@ def main():
     reg = Path(a[a.index("--registry") + 1]).resolve() if "--registry" in a else REGISTRY
     pd = Path(a[a.index("--duyet") + 1]).resolve() if "--duyet" in a else dot / "duyet.json"
     ghi = "--ghi" in a
+    if (dot / "da_nap.json").exists():
+        thoat(2, f"lo {dot.name} DA NAP (xem da_nap.json); nap lai se nhan doi claim")
     r = subprocess.run([sys.executable, str(HERE / "kiem_lo.py"), str(dot), str(reg)], capture_output=True, text=True)
     if r.returncode != 0:
         print(r.stdout)
@@ -106,6 +109,10 @@ def main():
     with reg.open("a", encoding="utf-8") as g:
         for m in moi:
             g.write(json.dumps(m, ensure_ascii=False) + "\n")
+    (dot / "da_nap.json").write_text(json.dumps({
+        "ngay_nap": duyet["ngay"], "nguoi_duyet": duyet["nguoi_duyet"], "so_claim": len(moi),
+        "don_vi": sorted({m["entity"] for m in moi}), "registry": str(reg.relative_to(HERE.parent))
+        if reg.is_relative_to(HERE.parent) else str(reg)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"DA GHI {len(moi)} claim vao {reg}")
     return 0
 
