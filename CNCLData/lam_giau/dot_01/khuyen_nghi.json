@@ -1,0 +1,27 @@
+{
+ "_ghi_chu": "Danh gia cua Claude ngay 30/09/2026, KHONG phai quyet dinh. Anh Lam quyet. Muc: Duyet | Can nhac | Gach.",
+ "don_vi": {
+  "Trung tâm Vũ trụ Việt Nam": {"muc": "Duyệt", "ly_do": "Hai nguồn hạng A; tự thiết kế, chế tạo và đưa vệ tinh lên quỹ đạo (PicoDragon, NanoDragon, MicroDragon). Câu năng lực nằm trong khung 'hướng tới mục tiêu' và nguồn năng lực là 2021, nên cần ghi chú giữ nguồn cũ."},
+  "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)": {"muc": "Duyệt", "ly_do": "mst.gov.vn (hạng A) ghi khách hàng Orion Vina đã ký hợp đồng thương mại nền tảng Beca Smart Factory. Nguồn 2024, không có nguồn mới hơn; nền tảng đồng phát triển với Becamex IDC."},
+  "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)": {"muc": "Duyệt", "ly_do": "mst.gov.vn (hạng A): chip sinh học gắn da, nghiệm thu cấp Bộ xếp loại Đạt. Theo hiểu biết của tôi (chưa có nguồn trong lô, cần kiểm), VKIST là viện công lập trực thuộc Bộ KH&CN, thành lập với hỗ trợ của Hàn Quốc; vòng làm tươi thấy thêm bài 25/07/2026 về que thử LFIA (năng lực khác, chưa dùng)."},
+  "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec": {"muc": "Duyệt", "ly_do": "Đã thay bằng nguồn baodautu 21/07/2026: thử nghiệm lâm sàng CAR-T trên bệnh nhân lupus thật. Đây mới là kết quả ban đầu trong thử nghiệm; nguồn 2023 cũ ghi CAR-T sản xuất theo công nghệ Miltenyi (Đức), nên phạm vi làm chủ cần ghi hẹp."},
+  "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu": {"muc": "Duyệt", "ly_do": "Đã thay bằng nguồn congthuong 25/05/2026: cụm công trình xúc tác dị thể cho nhiên liệu sinh học được Giải thưởng Nhà nước về KH&CN. Là phòng thí nghiệm thuộc Viện Hóa học công nghiệp Việt Nam; anh quyết ghi tên phòng hay tên viện mẹ."},
+  "Indefol": {"muc": "Duyệt", "ly_do": "vnexpress 18/04/2026, nguồn duy nhất còn tươi: máy điện phân IDF-EX1000X do công ty sản xuất, đang chạy bằng điện mặt trời. Công ty tự nhận chỉ làm chủ 50% công nghệ; tên pháp nhân đầy đủ chưa định danh."},
+  "Viettel AI": {"muc": "Duyệt", "ly_do": "Viettel BTS Digital Twin là sản phẩm bản sao số do Viettel AI làm, có nguồn hạng B. Bằng chứng mạnh nhất chỉ là đề cử Glotel (bài hạng C nói đã thắng giải, chưa đối chiếu độc lập)."},
+  "VNPT": {"muc": "Cân nhắc", "ly_do": "Nguồn vtv 02/06/2026 (Sao Khuê 2026) gọi đích danh VNPT Cloud nhưng dùng thể bị động 'được phát triển', văn phong gần thông cáo. Chỉ thêm nang_luc_mo_ta_2, không đụng match VNPT đã có."},
+  "CMC Telecom": {"muc": "Cân nhắc", "ly_do": "mst.gov.vn (hạng A) ghi CMC Cloud do CMC Telecom đầu tư và phát triển, kỹ sư Việt thiết kế. Điểm cần anh quyết: CMC Telecom có cổ đông nước ngoài (TIME dotCom, Malaysia), có còn là 'đơn vị Việt Nam' theo registry không."},
+  "VTI Solutions": {"muc": "Cân nhắc", "ly_do": "Chỉ có nguồn tự khai (hạng C) về hệ thống MES-X và Top 10 Sao Khuê 2024; không có tên nhà máy khách hàng; không có nguồn báo chí gọi đúng tên 'VTI Solutions'."},
+  "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM": {"muc": "Cân nhắc", "ly_do": "Nguồn vnexpress 2023: làm chủ 27 công nghệ, thuốc Cartilatist (2018). Nguồn không nói thuốc đã được cấp phép; nguồn mới duy nhất là tự khai và có em-dash nên không chụp được."},
+  "Bệnh viện Trung ương Quân đội 108": {"muc": "Cân nhắc", "ly_do": "Nguồn hiện là trang của chính bệnh viện (hạng C, 2023): đề tài cấp Quốc gia về tế bào gốc tạo máu đã nghiệm thu. Vòng làm tươi thấy bài nhandan 28/01/2026 (hạng B) mạnh hơn nhưng chưa chụp; nên chụp và thay ở vòng sau."},
+  "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch": {"muc": "Cân nhắc", "ly_do": "mst.gov.vn (hạng A): tự thiết kế, chế tạo dây chuyền lên men 1.000 lít/mẻ cho nấm Agaricus, đã chạy thử. Nguồn gán kết quả cho cả nhóm thực hiện, không tách phần việc từng đơn vị, chưa nói đã nghiệm thu."},
+  "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan": {"muc": "Cân nhắc", "ly_do": "Cùng một bài mst.gov.vn với Viện Cơ điện; vai trò riêng của công ty không rõ, không có nguồn nào khác nhắc tên công ty."},
+  "Công ty CP Việt Nam Food (VNF)": {"muc": "Cân nhắc", "ly_do": "tienphong 20/08/2026 (nguồn mới): chế biến sâu đầu, vỏ tôm. Phụ phẩm thủy sản có thuộc P15 'nông nghiệp' hay không là ranh giới xám; câu địa điểm có từ 'đi đầu' và bài tự mâu thuẫn về năm thành lập."},
+  "Viện Khoa học vật liệu": {"muc": "Cân nhắc", "ly_do": "vast.gov.vn (hạng A) nhưng bài 2017: cảm biến điện hóa vi lưu, nghiệm thu xếp loại Xuất sắc. Không có nguồn mới về cảm biến sinh học của viện."},
+  "Công ty 1Matrix": {"muc": "Gạch", "ly_do": "Công ty lập 05/2025, đã đổi tên thành VMatrix ngày 28/08/2026. Khẳng định 'đã tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an' đến từ bài có văn phong thông cáo; nguồn mới nhất (nhandan 28/08/2026) chỉ nói 'đang nghiên cứu, thử nghiệm'. Chưa đủ 'năng lực đã hình thành'."},
+  "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội": {"muc": "Gạch", "ly_do": "Nguồn duy nhất là 2012, công nghệ làm trong dự án hợp tác NEDO (Nhật Bản); sáu lượt tìm không có nguồn mới nào nêu sản phẩm hay pilot."}
+ },
+ "ung_vien": {
+  "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan|CNCL-P13": "Khả năng từ chối: máy ghép khớp chữ 'biến' và 'sinh học' giữa 'chế biến' và 'cảm biến sinh học'. Đây là cặp dương tính giả.",
+  "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch|CNCL-P13": "Khả năng từ chối: cùng lỗi trùng âm tiết 'chế biến' với 'cảm biến'."
+ }
+}

@@ -9,7 +9,7 @@
  * CONG KIEM:
  *   PHEU_LECH   lib/hub-pheu.json khac CaoLocMatch/out/pheu.json (ban do pheu_matching.py ghi sau khi
  *               doi chieu tung cap voi make_matches_v2).
- *   TANG_SAI    tang khong giam dan; ky + tu choi khac so ung vien; so ky / tu choi khac cncl-match.json;
+ *   TANG_SAI    tang khong giam dan; ky + tu choi + cho ky khac so ung vien; so ky / tu choi khac cncl-match.json;
  *               so cap kha di khac (so nhu cau x so don vi co nang luc).
  *   VI_DU_SAI   vi du "may da chan" co ti le giao duoi nguong hoac nhom trung nhau (thi khong bi chan);
  *               vi du "suyt dat" co ti le ngoai (0, nguong) hoac tu vua giao vua thieu.
@@ -43,11 +43,11 @@ const { generatedAt: _b, ...webKhongNgay } = web;
 if (JSON.stringify(webKhongNgay) !== JSON.stringify(goc2)) vi.push('PHEU_LECH: lib/hub-pheu.json khac CaoLocMatch/out/pheu.json');
 
 // TANG_SAI
-const KHOA = ['kha_di', 'qua_neo_nhom', 'qua_giao_tu', 'da_ky', 'tu_choi'];
+const KHOA = ['kha_di', 'qua_neo_nhom', 'qua_giao_tu', 'da_ky', 'tu_choi', 'cho_ky'];
 const t = Object.fromEntries((web.tang ?? []).map((x) => [x.k, x.n]));
 if ((web.tang ?? []).map((x) => x.k).join() !== KHOA.join()) vi.push(`TANG_SAI: thu tu tang ${(web.tang ?? []).map((x) => x.k).join(',')}`);
 if (!(t.kha_di >= t.qua_neo_nhom && t.qua_neo_nhom >= t.qua_giao_tu)) vi.push(`TANG_SAI: tang khong giam dan ${t.kha_di} > ${t.qua_neo_nhom} > ${t.qua_giao_tu}`);
-if (t.da_ky + t.tu_choi !== t.qua_giao_tu) vi.push(`TANG_SAI: ${t.da_ky} ky + ${t.tu_choi} tu choi != ${t.qua_giao_tu} ung vien`);
+if (t.da_ky + t.tu_choi + t.cho_ky !== t.qua_giao_tu) vi.push(`TANG_SAI: ${t.da_ky} ky + ${t.tu_choi} tu choi + ${t.cho_ky} cho ky != ${t.qua_giao_tu} ung vien`);
 if (t.da_ky !== mat.signedMatches.length) vi.push(`TANG_SAI: phieu ghi ${t.da_ky} ky, cncl-match co ${mat.signedMatches.length}`);
 if (t.tu_choi !== mat.rejectedPairs.length) vi.push(`TANG_SAI: phieu ghi ${t.tu_choi} tu choi, cncl-match co ${mat.rejectedPairs.length}`);
 if (t.kha_di !== web.so_nhu_cau * web.so_don_vi_co_nang_luc) vi.push(`TANG_SAI: ${t.kha_di} cap kha di != ${web.so_nhu_cau} x ${web.so_don_vi_co_nang_luc}`);
@@ -72,7 +72,7 @@ if (la.length) vi.push(`SO_GO_TAY: PheuGhep.tsx nhap ${la.join(', ')}`);
 if (!nhap.includes('@/lib/hub-pheu.json')) vi.push('SO_GO_TAY: PheuGhep.tsx khong doc hub-pheu.json');
 for (const m of man.matchAll(/>([^<>{}]*)</g)) if (/\d[\d.,]*\d|\b\d{2,}\b/.test(m[1])) vi.push(`SO_GO_TAY: PheuGhep.tsx chu JSX co so "${m[1].trim().slice(0, 50)}"`);
 
-console.log(`pheu: ${t.kha_di} -> ${t.qua_neo_nhom} -> ${t.qua_giao_tu} -> ${t.da_ky} ky / ${t.tu_choi} tu choi · chan ${web.loai_lop1?.so} · suyt dat ${web.suyt_dat?.so}`);
+console.log(`pheu: ${t.kha_di} -> ${t.qua_neo_nhom} -> ${t.qua_giao_tu} -> ${t.da_ky} ky / ${t.tu_choi} tu choi / ${t.cho_ky} cho ky · chan ${web.loai_lop1?.so} · suyt dat ${web.suyt_dat?.so}`);
 if (vi.length) {
   console.log(`\nFAIL: ${vi.length} vi pham`);
   vi.slice(0, 30).forEach((v) => console.log('  ' + v));

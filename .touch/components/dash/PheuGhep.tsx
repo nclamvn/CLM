@@ -29,17 +29,17 @@ const so2 = (v: number) => String(v).padStart(2, '0');
 const rong = (v: number) => `${Math.max(2, (Math.log10(Math.max(1, v)) / Math.log10(Math.max(2, n('kha_di')))) * 100)}%`;
 
 export function PheuGhep() {
-  const kd = n('kha_di'); const nn = n('qua_neo_nhom'); const uv = n('qua_giao_tu'); const ky = n('da_ky'); const tc = n('tu_choi');
+  const kd = n('kha_di'); const nn = n('qua_neo_nhom'); const uv = n('qua_giao_tu'); const ky = n('da_ky'); const tc = n('tu_choi'); const ck = n('cho_ky');
   const buoc = [
     { v: kd, nhan: 'cặp khả dĩ', phu: `${P.so_nhu_cau} nhu cầu × ${P.so_don_vi_co_nang_luc} đơn vị có năng lực` },
     { v: nn, nhan: 'cùng lĩnh vực', phu: `${P.neo_qua_chuoi_gia_tri} cặp trong đó nối qua chuỗi giá trị đã duyệt` },
     { v: uv, nhan: 'ứng viên trình người', phu: `giao ít nhất ${so(P.nguong_giao * 100)}% từ khoá của nhu cầu` },
-    { v: ky, nhan: 'match đã ký', phu: `${tc} cặp bị từ chối, giữ lại cùng lý do` },
+    { v: ky, nhan: 'match đã ký', phu: ck > 0 ? `${tc} cặp bị từ chối, ${ck} cặp đang chờ người gác cổng` : `${tc} cặp bị từ chối, giữ lại cùng lý do` },
   ];
   const loai = [
     { v: kd - nn, ly: 'khác lĩnh vực: lớp neo nhóm loại' },
     { v: nn - uv, ly: 'giao chưa tới ngưỡng: câu nguồn chưa đủ' },
-    { v: uv - ky, ly: 'người gác cổng từ chối' },
+    { v: uv - ky, ly: ck > 0 ? 'bị từ chối hoặc đang chờ người gác cổng' : 'người gác cổng từ chối' },
   ];
   return (
     <section className="dash-panel pg" aria-labelledby="pg-h">

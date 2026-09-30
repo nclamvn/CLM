@@ -11,10 +11,12 @@ RANG
 RANG 1 · CANH SACH -> exit 0, in "PHEU:".
 RANG 2 · PHIEU BO QUA CANH CHUOI GIA TRI (dem khac engine) -> exit 2, "lech engine".
 RANG 3 · MAT out/facts.jsonl -> exit 3 KHONG CHAY DUOC, khong duoc bia phieu rong.
-RANG 4 · BOT MOT DONG out/matches.jsonl (ky + tu choi != ung vien) -> exit 2.
+RANG 4 · BOT MOT DONG out/matches.jsonl (ky + tu choi + cho ky != ung vien) -> exit 2.
+RANG 5 · MOT UNG VIEN CHUA KY -> dem vao cho ky, exit 0.
 
 Chay: python3 bite_pheu_matching.py     Exit 0 moi rang can · 2 co rang khong can.
 """
+import json
 import shutil
 import subprocess
 import sys
@@ -68,6 +70,15 @@ def main():
         p.write_text("\n".join(dong[1:]) + "\n", encoding="utf-8")
         ma, ra = chay(d)
         in_("RANG 4 · bot mot dong matches.jsonl -> exit 2", ma == 2, f"exit {ma}")
+
+        # RANG 5 (30/09/2026): mot ung vien CHUA KY nam trong matches.jsonl phai dem la cho ky,
+        # khong phai da ky. Mo phong lo lam giau dot 01 lo ra phieu ghi 24 ky khi chi co 11 chu ky.
+        d = canh(tam); p = d / "out" / "matches.jsonl"
+        dong = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+        dong[0].setdefault("gate", {}).setdefault("signoff", {})["by"] = "pending-human-review"
+        p.write_text("".join(json.dumps(m, ensure_ascii=False) + "\n" for m in dong), encoding="utf-8")
+        ma, ra = chay(d)
+        in_("RANG 5 · mot ung vien chua ky -> dem cho ky, khong dem ky", ma == 0 and "/ 1 cho ky" in ra, f"exit {ma}")
     finally:
         shutil.rmtree(tam, ignore_errors=True)
     can = sum(kq)

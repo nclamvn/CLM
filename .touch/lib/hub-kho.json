@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "e595cd5",
+    "sha": "e209b31",
     "ngay": "2026-09-30"
   },
-  "tongCommit": 185,
+  "tongCommit": 186,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 35,
+      "commitSauGop": 36,
       "cuoi": {
-        "sha": "e595cd5",
+        "sha": "e209b31",
         "ngay": "2026-09-30",
-        "tieuDe": "Man Matching day: phieu ghep 1.290 -> 187 -> 12 -> 11 ky (dem tu engine, doi chieu tung cap voi make_matches_v2), 'may da chan' 10 cap trung chu khac linh vuc, 'suyt dat' 51 cap cung linh vuc thieu bang chung; cong pheu_ghep + pheu_ghep_web, rang 4 + 7; tag touch-hub/* tu kho cu"
+        "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
       },
       "soTep": 125
     },
@@ -68,22 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 38,
+      "commitSauGop": 39,
       "cuoi": {
-        "sha": "e595cd5",
+        "sha": "e209b31",
         "ngay": "2026-09-30",
-        "tieuDe": "Man Matching day: phieu ghep 1.290 -> 187 -> 12 -> 11 ky (dem tu engine, doi chieu tung cap voi make_matches_v2), 'may da chan' 10 cap trung chu khac linh vuc, 'suyt dat' 51 cap cung linh vuc thieu bang chung; cong pheu_ghep + pheu_ghep_web, rang 4 + 7; tag touch-hub/* tu kho cu"
+        "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
       },
-      "soTep": 410
+      "soTep": 412
     }
   ],
   "oTheoKho": {
     "CNCLData": 25,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 19,
-    ".touch": 41
+    ".touch": 43
   },
   "ganDay": [
+    {
+      "sha": "e209b31",
+      "ngay": "2026-09-30",
+      "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
+    },
     {
       "sha": "e595cd5",
       "ngay": "2026-09-30",
@@ -128,11 +133,6 @@
       "sha": "6561a33",
       "ngay": "2026-09-29",
       "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
-    },
-    {
-      "sha": "8fc30a2",
-      "ngay": "2026-09-29",
-      "tieuDe": "Sinh lai du lieu web sau chuoi 79/79: Kho ma dem 2 o cua chieu cau"
     }
   ],
   "dong": [

@@ -210,6 +210,9 @@ chay CNCLData rang_khai_canh       "$CNCL" 'OK:|FAIL|CHUA KHAI|HONG CU PHAP' pyt
 # ngoi canh. O nay giu hai bat bien khi khong ai nhin: may CHUA ghi registry, va hang cho
 # khong bi sua sau khi nap. Chua co luot nao thi KHONG CHAY DUOC, khong phai xanh.
 chay CNCLData hang_cho             "$CNCL" 'OK:|FAIL|KHONG CHAY' python3 vong_tu_chay/check_hang_cho.py
+# Lo lam giau cho duyet (30/09/2026): anh Lam duyet nguon THEO LO, nen moi dong trinh len phai qua
+# mot cong tat dinh truoc (nguyen van trong ban chup, dung truong, dung hang, o don tri khong bi de).
+chay CNCLData kiem_lo              "$CNCL" 'LO |OK:|FAIL|KHONG CHAY' python3 lam_giau/kiem_lo.py --tat-ca
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
@@ -347,6 +350,7 @@ if [ "$NHANH" -eq 0 ]; then
   # Cau noi mot chieu kernel -> vong tu chay (29/09/2026): kernel chi goi y URL, khong bao gio ro ri
   # truong noi bo (deal_link, pricing, favors rtr, INT). Rang dung kernel GIA, chay duoc ca trong CI.
   chay CNCLData    rang_moc_thoi_gian "$CNCL" 'BITE MOC THOI GIAN' python3 bite_moc_thoi_gian.py
+  chay CNCLData    rang_kiem_lo       "$CNCL" 'BITE KIEM LO|KHONG CHAY' python3 lam_giau/bite_kiem_lo.py
   chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_pheu        "$CLM" 'BITE PHEU'           python3 bite_pheu_matching.py

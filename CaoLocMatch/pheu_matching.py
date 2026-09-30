@@ -11,7 +11,8 @@ LUAT:
      chinh cac ham cua engine (_tokens_v2, _sup_groups, load_mapping, OVERLAP_MIN_V2).
   2. DOI CHIEU VOI ENGINE, fail-loud: tap cap ung vien script dem duoc phai TRUNG KHOP tap cap
      ma `make_matches_v2` sinh ra. Lech la exit 2: phieu khong duoc noi khac engine.
-  3. Tang cuoi (da ky / tu choi) doc tu out/matches.jsonl va out/blocked_by_signoff.jsonl.
+  3. Tang cuoi (da ky / tu choi / cho ky) doc tu out/matches.jsonl va out/blocked_by_signoff.jsonl;
+     dong matches.jsonl co chu ky 'pending-human-review' la CHO KY, khong phai da ky.
   4. Tat dinh: sap xep theo ty le giao giam dan roi theo ten (codepoint), khong ngau nhien.
 
 Ra: out/pheu.json. Chay sau `match_engine.py run`.
@@ -111,10 +112,15 @@ def main():
             print(f"  phieu co, engine khong: {k}")
         return 2
 
-    ky = doc_jsonl(OUT / "matches.jsonl")
+    # Them 30/09/2026: mo phong lo lam giau dot 01 lo ra phieu dem MOI dong matches.jsonl la "da ky".
+    # Khi co ung vien moi chua ai quyet, dong do van nam trong matches.jsonl voi chu ky
+    # "pending-human-review", va phieu ghi 24 ky trong khi chi co 11 chu ky that. Tach rieng.
+    dong_match = doc_jsonl(OUT / "matches.jsonl")
+    cho = [m for m in dong_match if ((m.get("gate") or {}).get("signoff") or {}).get("by") == "pending-human-review"]
+    ky = [m for m in dong_match if m not in cho]
     tu_choi = doc_jsonl(OUT / "blocked_by_signoff.jsonl")
-    if len(ky) + len(tu_choi) != len(ung_vien):
-        print(f"FAIL: {len(ung_vien)} ung vien nhung {len(ky)} ky + {len(tu_choi)} tu choi")
+    if len(ky) + len(tu_choi) + len(cho) != len(ung_vien):
+        print(f"FAIL: {len(ung_vien)} ung vien nhung {len(ky)} ky + {len(tu_choi)} tu choi + {len(cho)} cho ky")
         return 2
 
     ngan = lambda s: str(s).split(" ")[0].replace("CNCL-", "")  # noqa: E731
@@ -144,6 +150,7 @@ def main():
             {"k": "qua_giao_tu", "n": len(ung_vien)},
             {"k": "da_ky", "n": len(ky)},
             {"k": "tu_choi", "n": len(tu_choi)},
+            {"k": "cho_ky", "n": len(cho)},
         ],
         "neo_qua_chuoi_gia_tri": sum(1 for k in qua_neo if cap[k]["qua_canh"]),
         "loai_lop1": {"so": len(loai_lop1), "vi_du": loai_lop1[:6]},
@@ -152,7 +159,7 @@ def main():
     (OUT / "pheu.json").write_text(json.dumps(ra, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     t = ra["tang"]
     print(f"PHEU: {t[0]['n']} kha di -> {t[1]['n']} qua neo nhom -> {t[2]['n']} qua giao tu -> "
-          f"{t[3]['n']} ky / {t[4]['n']} tu choi · trung chu khac linh vuc bi loai {len(loai_lop1)} · suyt dat {len(suyt_dat)}")
+          f"{t[3]['n']} ky / {t[4]['n']} tu choi / {t[5]['n']} cho ky · trung chu khac linh vuc bi loai {len(loai_lop1)} · suyt dat {len(suyt_dat)}")
     print("OK: phieu trung khop tap ung vien cua engine.")
     return 0
 
