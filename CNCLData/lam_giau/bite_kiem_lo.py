@@ -20,6 +20,8 @@ RANG 9  · normalized khong khai "CHUAN HOA CO CHU DICH:" -> CHUAN_HOA_KHONG_KHA
 RANG 10 · xoa file ban chup -> CHUP_THIEU.
 RANG 11 · span da co nguyen van trong registry cho cung don vi/truong -> TRUNG_REGISTRY.
 RANG 12 · thieu bang san pham -> nhom -> exit 3, khong duoc doan.
+RANG 13 · de xuat o don tri ma registry da co gia tri khac -> O_DA_CO_GIA_TRI.
+RANG 14 · hai gia tri khac nhau cho cung mot o trong lo -> O_TRUNG_TRONG_LO.
 
 Chay: python3 bite_kiem_lo.py [thu_muc_dot]     Exit 0 moi rang can · 2 co rang khong can · 3 khong chay duoc.
 """
@@ -144,6 +146,30 @@ def main():
                                 "capture": {"url": r0["url"]}}, ensure_ascii=False) + "\n")
         rc, out = chay(d)
         in_("RANG 11 · span da co trong registry -> TRUNG_REGISTRY", rc == 2 and "TRUNG_REGISTRY" in out, f"exit {rc}")
+
+        # Rang 13: o don tri cua don vi cu da co gia tri. Day la ca that 30/09/2026: nap them
+        # nang_luc_mo_ta_2 cho Tap doan Viettel lam roi hai match anh Lam da ky.
+        o_cu = {}
+        for c in reg:
+            o_cu.setdefault((c["entity"], c["field"]), c)
+        dich = next((c for (e, f), c in sorted(o_cu.items()) if f == "nang_luc_mo_ta_2"), None)
+        if dich is None:
+            in_("RANG 13 · de o don tri da co gia tri -> O_DA_CO_GIA_TRI", False, "KHONG TIEM DUOC: registry khong co nang_luc_mo_ta_2")
+        else:
+            rang(tam, "RANG 13 · de o don tri da co gia tri -> O_DA_CO_GIA_TRI",
+                 lambda r: r["extraction"] == "verbatim" and r["field"] == "nang_luc_mo_ta",
+                 lambda r: r | {"entity": dich["entity"], "field": "nang_luc_mo_ta_2"}, 2, "O_DA_CO_GIA_TRI")
+
+        # Rang 14: hai gia tri khac nhau cho cung mot o trong lo.
+        d = canh(tam)
+        _, _, r0 = next(x for x in dong(d) if x[2]["field"] == "nang_luc_mo_ta" and x[2]["extraction"] == "verbatim")
+        f0 = sorted((d / "dot").glob("de_xuat_*.jsonl"))[0]
+        chu = r0["value"].split(" ")
+        khac = r0 | {"value": " ".join(chu[:-1]) if len(chu) > 1 else r0["value"][:-1]}
+        with f0.open("a", encoding="utf-8") as g:
+            g.write(json.dumps(khac, ensure_ascii=False) + "\n")
+        rc, out = chay(d)
+        in_("RANG 14 · hai gia tri cho mot o trong lo -> O_TRUNG_TRONG_LO", rc == 2 and "O_TRUNG_TRONG_LO" in out, f"exit {rc}")
 
         # Rang 12: chep cong sang mot cay khong co bang mapping.
         d = canh(tam)

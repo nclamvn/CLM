@@ -12,10 +12,10 @@
     "capCungCau": 47
   },
   "chuoiCong": {
-    "xanh": 90,
+    "xanh": 91,
     "tong": 91,
-    "dat": false,
-    "luc": "2026-09-30T14:58:51+0700"
+    "dat": true,
+    "luc": "2026-09-30T15:04:10+0700"
   },
   "diemYeu": {
     "chuaDinhDanh": 44,

@@ -1,6 +1,6 @@
 # SNAPSHOT · vti-solutions.vn · captured 2026-09-30 via web_fetch (text extraction)
 # URL: https://vti-solutions.vn/he-thong-dieu-hanh-san-xuat-mes-x-cua-vti-solutions-vinh-du-dat-top-10-giai-thuong-sao-khue-2024/
-# Bai dang 27/05/2025 (ngay hien trong bai; meta article:published_time ghi 2024-04-13, noi dung ke le trao giai 13/4/2024). Hang de xuat C (trang cua chinh don vi, tu khai).
+# Bai dang 13/04/2024 theo meta article:published_time va noi dung (le trao giai 13/4/2024); ngay 27/05/2025 hien trong bai la ngay SUA bai (nguoi kiem doc lap 30/09/2026 xac nhan). Lay ngay som hon de khong lam nguon tre gia. Hang de xuat C (trang cua chinh don vi, tu khai).
 
 # Hệ thống điều hành sản xuất MES-X của VTI Solutions vinh dự đạt top 10 Giải thưởng Sao Khuê 2024
 

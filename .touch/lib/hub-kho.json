@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "e209b31",
+    "sha": "557faef",
     "ngay": "2026-09-30"
   },
-  "tongCommit": 186,
+  "tongCommit": 187,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 17,
+      "commitSauGop": 18,
       "cuoi": {
-        "sha": "76e77e3",
-        "ngay": "2026-09-29",
-        "tieuDe": "Luat 3 moc thoi gian: 7 claim cau mang ngay/nam ngoai cau nguon da sua; chieu cau vao chuoi (cau_span, cau_luat3, rang 10/10); dong_bo_cau doc van tay lan day CUOI (rang 6)"
+        "sha": "557faef",
+        "ngay": "2026-09-30",
+        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
       },
-      "soTep": 136
+      "soTep": 194
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 36,
+      "commitSauGop": 37,
       "cuoi": {
-        "sha": "e209b31",
+        "sha": "557faef",
         "ngay": "2026-09-30",
-        "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
+        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
       },
       "soTep": 125
     },
@@ -68,22 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 39,
+      "commitSauGop": 40,
       "cuoi": {
-        "sha": "e209b31",
+        "sha": "557faef",
         "ngay": "2026-09-30",
-        "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
+        "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
       },
       "soTep": 412
     }
   ],
   "oTheoKho": {
-    "CNCLData": 25,
+    "CNCLData": 27,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 19,
     ".touch": 43
   },
   "ganDay": [
+    {
+      "sha": "557faef",
+      "ngay": "2026-09-30",
+      "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
+    },
     {
       "sha": "e209b31",
       "ngay": "2026-09-30",
@@ -128,11 +133,6 @@
       "sha": "a9b4833",
       "ngay": "2026-09-29",
       "tieuDe": "Trang dau mot man: hinh dong hub cung cau ve tu du lieu that (44 don vi, 10 nhom, 30 nhu cau, 47 cap, 11 match ky); Hub dung chung token SOT v2 voi dashboard; cong mat_tien them mot man + mot he mau, 12 rang"
-    },
-    {
-      "sha": "6561a33",
-      "ngay": "2026-09-29",
-      "tieuDe": "Di thu duong demo: mat tien het noi sai hien trang (match that 11 da ky, nut 'thật' vao dashboard, Hub ghi ro minh hoa), nhan chinh sach het chong, khung dashboard dung ten; cong mat_tien + 9 rang"
     }
   ],
   "dong": [

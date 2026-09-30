@@ -3,7 +3,7 @@
 
 Doc trong <thu_muc_dot>: lo.json (kiem_lo.py), mo_phong.json (mo_phong_lo.py, nen chay voi
 --duyet duyet_de_xuat.json), duyet_de_xuat.json, du_phong.jsonl, honest_null_*.jsonl,
-khuyen_nghi.json, doi_chieu_ket_qua.jsonl (neu co: ket qua doi chung doc lap).
+khuyen_nghi.json, doi_chieu_ket_qua*.jsonl (neu co: ket qua doi chung doc lap).
 Ghi <thu_muc_dot>/BANG_DUYET.md. Moi chu nguon trong bang la chep tu lo.json.
 
 Chay: python3 bang_lo.py <thu_muc_dot>     Exit 0 xong · 3 KHONG CHAY DUOC.
@@ -46,7 +46,7 @@ def main():
     lo, mp = doc(D / "lo.json"), doc(D / "mo_phong.json")
     de, kn = doc(D / "duyet_de_xuat.json"), doc(D / "khuyen_nghi.json")
     du, null = jl(D / "du_phong.jsonl"), jl(D / "honest_null_*.jsonl")
-    dc = {r["url"]: r for r in jl(D / "doi_chieu_ket_qua.jsonl")}
+    dc = {r["url"]: r for r in jl(D / "doi_chieu_ket_qua*.jsonl")}
     gc = de.get("ghi_chu", {})
     if mp.get("duyet") != de.get("nguoi_duyet"):
         thoat3("mo_phong.json khong chay voi duyet_de_xuat.json; chay lai mo_phong_lo.py --duyet")
