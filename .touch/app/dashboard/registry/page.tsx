@@ -3,9 +3,10 @@ import { DashTopBar } from '@/components/dash/DashTopBar';
 import { ProofNumber } from '@/components/proof/ProofLayer';
 import { RegistryBrowser } from '@/components/dash/RegistryBrowser';
 import { cnclMeta } from '@/lib/cncl-registry';
+import { ngayVN } from '@/lib/dinh-dang';
 
 export const metadata: Metadata = {
-  title: 'Evidence Registry - .touch',
+  title: 'Sổ nguồn · .touch',
   robots: { index: false, follow: false },
 };
 
@@ -19,16 +20,16 @@ export default function RegistryPage() {
   return (
     <>
       <DashTopBar
-        title="Evidence Registry"
-        subtitle={`Hai chiều CUNG và CẦU · khung ${cnclMeta.frame} · sinh ngày ${cnclMeta.generatedAt}`}
+        title="Sổ nguồn"
+        subtitle={`Hai chiều cung và cầu · khung ${cnclMeta.frame} · cập nhật ${ngayVN(cnclMeta.generatedAt)}`}
       />
       <div className="dash-content">
         <section className="dash-panel reg-head" aria-label="Tong quan registry">
           <div className="reg-stats">
             <div className="reg-stat"><ProofNumber khoa="units" className="reg-stat__v">{cnclMeta.units}</ProofNumber><span className="reg-stat__k">đơn vị</span></div>
-            <div className="reg-stat"><ProofNumber khoa="claims" className="reg-stat__v">{cnclMeta.claims}</ProofNumber><span className="reg-stat__k">evidence</span></div>
+            <div className="reg-stat"><ProofNumber khoa="claims" className="reg-stat__v">{cnclMeta.claims}</ProofNumber><span className="reg-stat__k">câu nguồn</span></div>
             <div className="reg-stat"><ProofNumber khoa="needs" className="reg-stat__v">{cnclMeta.needs}</ProofNumber><span className="reg-stat__k">nhu cầu</span></div>
-            <div className="reg-stat"><ProofNumber khoa="tierA" className="reg-stat__v">{cnclMeta.tierA}</ProofNumber><span className="reg-stat__k">tier A</span></div>
+            <div className="reg-stat"><ProofNumber khoa="tierA" className="reg-stat__v">{cnclMeta.tierA}</ProofNumber><span className="reg-stat__k">hạng A</span></div>
             <div className="reg-stat"><ProofNumber khoa="snapshots" className="reg-stat__v">{cnclMeta.snapshots}</ProofNumber><span className="reg-stat__k">bản chụp</span></div>
             <span className="chip chip--pass">DỮ LIỆU THẬT</span>
             {/* Nhan nay DOC ket qua chuoi cong that. Truoc 29/09/2026 no luon ghi GATE PASS. */}
@@ -36,7 +37,7 @@ export default function RegistryPage() {
               className={`chip ${cnclMeta.chuoiCong === null ? 'chip--private' : cnclMeta.chuoiCong.dat ? 'chip--public' : 'chip--risk'} reg-gate`}
               title={cnclMeta.gate}
             >
-              {cnclMeta.chuoiCong === null ? 'GATE CHƯA CHẠY' : cnclMeta.chuoiCong.dat ? 'GATE PASS' : 'GATE ĐỎ'}
+              {cnclMeta.chuoiCong === null ? 'CHƯA KIỂM ĐỊNH' : cnclMeta.chuoiCong.dat ? 'KIỂM ĐỊNH ĐẠT' : 'KIỂM ĐỊNH CHƯA ĐẠT'}
             </span></ProofNumber>
           </div>
           <p className="reg-note">
@@ -49,8 +50,8 @@ export default function RegistryPage() {
         <RegistryBrowser />
 
         <p className="reg-foot">
-          Honest-null: ô trống là chưa có bằng chứng verbatim, không phải suy ra được mà bỏ sót.
-          Nhãn normalized nghĩa là giá trị được chuẩn hoá từ câu nguồn chứ không trích nguyên
+          Ô trống nghĩa là chưa có câu nguồn nguyên văn, không phải dữ liệu bị bỏ sót.
+          Nhãn chuẩn hoá nghĩa là giá trị được chuẩn hoá từ câu nguồn chứ không trích nguyên
           văn, và lý do ghi ngay trong chú thích của ô đó.
         </p>
       </div>

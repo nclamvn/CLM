@@ -1,17 +1,17 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "e01c8cc",
-    "ngay": "2026-09-30"
+    "sha": "6f7b639",
+    "ngay": "2026-10-01"
   },
-  "tongCommit": 190,
+  "tongCommit": 191,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
     {
       "thuMuc": "CNCLData",
       "ten": "Chiều cung",
-      "vaiTro": "Registry đơn vị có năng lực công nghệ chiến lược: claim, bản chụp nguồn, cổng và vòng tự chạy.",
+      "vaiTro": "Sổ đơn vị có năng lực công nghệ chiến lược: câu nguồn, bản chụp, kiểm định và vòng tự chạy.",
       "gop": {
         "sha": "40e135f",
         "ngay": "2026-09-01"
@@ -45,45 +45,50 @@
     {
       "thuMuc": "CaoLocMatch",
       "ten": "Máy ghép",
-      "vaiTro": "Engine ghép cung với cầu, sổ ký của người gác cổng, và chuỗi cổng chạy toàn hệ.",
+      "vaiTro": "Máy ghép cung với cầu, sổ ký của người gác cổng, và kiểm định tự động cho toàn hệ.",
       "gop": {
         "sha": "502d00c",
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 39,
+      "commitSauGop": 40,
       "cuoi": {
-        "sha": "e01c8cc",
-        "ngay": "2026-09-30",
-        "tieuDe": "Anh Lam 'ký hết' 13 ung vien moi (match_engine.py sign, 30/09/2026): 24 match ky, 1 tu choi. Sua sau nap: unverified dang {fact_id, note} chuan ve chuoi (vo kieu TS); so do hai cot xep theo thanh phan lien thong, ve dung toi thieu 1 giao; cut -c cat doi ky tu UTF-8 trong bang ket, loc bang iconv -c; chup lai va chot anh moc 60/60 don vi, ngan sach vung phu 44 -> 60. Chuoi tai cho 91/91, dien tap CI 88/0/3"
+        "sha": "6f7b639",
+        "ngay": "2026-10-01",
+        "tieuDe": "Mau du lieu tram cho do hoa thong tin (anh Lam 01/10/2026): khung van don sac, mau CHI ma hoa nhom cong nghe 1..10. Bang lay hue tu Paul Tol 'muted' (an toan mu mau), dat lai L/C trong OKLCH cho nen den: tuong phan >= 3,82:1, C 0,075..0,091, L <= 0,80; khoang cach OKLab >= 0,051 o ca binh thuong/protan/deutan/tritan (Machado 2009). Cong mau_du_lieu + 10 rang; don_sac mien dung tep bang mau (+2 rang). Ap vao Sankey, do thi lanh tho, trang dau, so do hai cot Matching, chip nhom o registry va ho so. Trang thai van bang net. Chot lai anh moc. Chuoi 93/93, dien tap CI 90/0/3"
       },
       "soTep": 145
     },
     {
       "thuMuc": ".touch",
       "ten": "Mặt hiển thị",
-      "vaiTro": "Hub web: mọi con số sinh từ dữ liệu ba phần trên, bấm là ra câu nguồn.",
+      "vaiTro": "Giao diện web: mọi con số sinh từ dữ liệu ba phần trên, bấm là ra câu nguồn.",
       "gop": {
         "sha": "57986d2",
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 43,
+      "commitSauGop": 44,
       "cuoi": {
-        "sha": "e01c8cc",
-        "ngay": "2026-09-30",
-        "tieuDe": "Anh Lam 'ký hết' 13 ung vien moi (match_engine.py sign, 30/09/2026): 24 match ky, 1 tu choi. Sua sau nap: unverified dang {fact_id, note} chuan ve chuoi (vo kieu TS); so do hai cot xep theo thanh phan lien thong, ve dung toi thieu 1 giao; cut -c cat doi ky tu UTF-8 trong bang ket, loc bang iconv -c; chup lai va chot anh moc 60/60 don vi, ngan sach vung phu 44 -> 60. Chuoi tai cho 91/91, dien tap CI 88/0/3"
+        "sha": "6f7b639",
+        "ngay": "2026-10-01",
+        "tieuDe": "Mau du lieu tram cho do hoa thong tin (anh Lam 01/10/2026): khung van don sac, mau CHI ma hoa nhom cong nghe 1..10. Bang lay hue tu Paul Tol 'muted' (an toan mu mau), dat lai L/C trong OKLCH cho nen den: tuong phan >= 3,82:1, C 0,075..0,091, L <= 0,80; khoang cach OKLab >= 0,051 o ca binh thuong/protan/deutan/tritan (Machado 2009). Cong mau_du_lieu + 10 rang; don_sac mien dung tep bang mau (+2 rang). Ap vao Sankey, do thi lanh tho, trang dau, so do hai cot Matching, chip nhom o registry va ho so. Trang thai van bang net. Chot lai anh moc. Chuoi 93/93, dien tap CI 90/0/3"
       },
-      "soTep": 434
+      "soTep": 438
     }
   ],
   "oTheoKho": {
     "CNCLData": 27,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 19,
-    ".touch": 43
+    ".touch": 45
   },
   "ganDay": [
+    {
+      "sha": "6f7b639",
+      "ngay": "2026-10-01",
+      "tieuDe": "Mau du lieu tram cho do hoa thong tin (anh Lam 01/10/2026): khung van don sac, mau CHI ma hoa nhom cong nghe 1..10. Bang lay hue tu Paul Tol 'muted' (an toan mu mau), dat lai L/C trong OKLCH cho nen den: tuong phan >= 3,82:1, C 0,075..0,091, L <= 0,80; khoang cach OKLab >= 0,051 o ca binh thuong/protan/deutan/tritan (Machado 2009). Cong mau_du_lieu + 10 rang; don_sac mien dung tep bang mau (+2 rang). Ap vao Sankey, do thi lanh tho, trang dau, so do hai cot Matching, chip nhom o registry va ho so. Trang thai van bang net. Chot lai anh moc. Chuoi 93/93, dien tap CI 90/0/3"
+    },
     {
       "sha": "e01c8cc",
       "ngay": "2026-09-30",
@@ -128,18 +133,13 @@
       "sha": "56a16ed",
       "ngay": "2026-09-29",
       "tieuDe": "Trang dau: cham logo dat dung baseline (offset 0 moi co); moi vien thuoc chung mot hinh hoc 36px; cau phu viet lai gon, giu cum tu khong ngat dong"
-    },
-    {
-      "sha": "e6eb9ff",
-      "ngay": "2026-09-29",
-      "tieuDe": "Trang dau ve lai theo HIVE Editorial don sac: bo glow/gradient/hat/radar; so do ban ve ky thuat (cung | nhom | cau) ve tung match da ky kem cau nguon hai phia; Noto Serif tu host; cong mat_tien them KHONG_DON_SAC, 15 rang"
     }
   ],
   "dong": [
     {
       "tu": "Chiều cung",
       "den": "Mặt hiển thị",
-      "ghi": "registry và bản chụp nguồn, sinh lại mỗi lần chạy chuỗi cổng"
+      "ghi": "sổ nguồn và bản chụp, sinh lại mỗi lần kiểm định tự động"
     },
     {
       "tu": "Chiều cầu",

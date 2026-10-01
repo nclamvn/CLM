@@ -24,6 +24,7 @@ import hub from '@/lib/hub-matching.json';
 import graph from '@/lib/hub-graph.json';
 import { slugDonVi } from '@/lib/ho-so.mjs';
 import { useProof } from '@/components/proof/ProofLayer';
+import { tenNguoi } from '@/lib/dinh-dang';
 
 type PhanRa = {
   tiLeGiao: number; soGiao: number; soTokenCau: number; quaNguong: boolean;
@@ -66,7 +67,7 @@ function CauTo({ text, giao, cau }: { text: string; giao: Set<string>; cau?: Set
 function Nguon({ e }: { e: MatchEvidence }) {
   return (
     <div className="mw2-nguon">
-      <span className={`pf-tier pf-tier--${e.tier}`}>tier {e.tier}</span>
+      <span className={`pf-tier pf-tier--${e.tier}`}>hạng {e.tier}</span>
       <a className="pf-link" href={e.href} target="_blank" rel="noopener noreferrer">{e.source}</a>
       <span>{e.extraction === 'verbatim' ? 'trích nguyên văn' : 'giá trị chuẩn hoá từ câu nguồn'}</span>
     </div>
@@ -81,7 +82,7 @@ function SoDoHaiCot({ chon, datChon }: { chon: string; datChon: (id: string) => 
   const yU = (i: number) => TREN + (i + (Math.max(cau.length, cung.length) - cung.length) / 2) * BUOC;
   const XT = 118; const XP = 300;
   return (
-    <svg className="mw2-hc" viewBox={`0 0 ${W} ${Hh}`} role="img" aria-label={`Sơ đồ hai cột: ${cau.length} nhu cầu, ${cung.length} đơn vị, ${canh.length} cặp đã quyết.`}>
+    <svg className="mw2-hc" viewBox={`0 0 ${W} ${Hh}`} role="group" aria-label={`Sơ đồ hai cột: ${cau.length} nhu cầu, ${cung.length} đơn vị, ${canh.length} cặp đã quyết.`}>
       <text x={XT} y={11} textAnchor="end" className="mw2-hc__cot">NHU CẦU</text>
       <text x={XP} y={11} className="mw2-hc__cot">ĐƠN VỊ CUNG</text>
       {canh.map((c) => {
@@ -132,9 +133,9 @@ function VetBangChung({ m }: { m: SignedMatch }) {
             <span className="mw2-vet__ma">P{maSp}</span> {ngan(tenNc.get(m.demandId) ?? '', 60)}
           </h2>
         </div>
-        <div className="mw2-diem" title="Điểm của engine; phân rã ngay bên dưới">
+        <div className="mw2-diem" title="Điểm của máy ghép; phân rã ngay bên dưới">
           <span className="mw2-diem__v">{so(m.score, 2)}</span>
-          <span className="mw2-diem__k">điểm engine</span>
+          <span className="mw2-diem__k">điểm máy ghép</span>
         </div>
       </header>
 
@@ -148,13 +149,13 @@ function VetBangChung({ m }: { m: SignedMatch }) {
           <div className="mw2-chang__k"><b>2</b> Lớp 1 · neo nhóm công nghệ</div>
           {m.canhChuoi ? (
             <p className="mw2-p">
-              Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có claim nhóm <b>{m.nhomCung.map(soHai).join(', ')}</b>, không trùng.
+              Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có câu nguồn về nhóm <b>{m.nhomCung.map(soHai).join(', ')}</b>, không trùng.
               Nối qua <b>cạnh chuỗi giá trị {soHai(m.canhChuoi.tu)} → {soHai(m.canhChuoi.den)}</b>
               {m.canhChuoi.trangThai === 'da_duyet' ? ' (người đã duyệt)' : ' (CHƯA duyệt, tự khai trong unverified)'}:
               <span className="mw2-lydo"> {m.canhChuoi.lyDo}</span>
             </p>
           ) : (
-            <p className="mw2-p">Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có claim cùng nhóm <b>{soHai(m.nhomCau ?? 0)}</b>. Qua lớp neo trực tiếp.</p>
+            <p className="mw2-p">Nhu cầu thuộc nhóm <b>{soHai(m.nhomCau ?? 0)}</b>; đơn vị cung có câu nguồn cùng nhóm <b>{soHai(m.nhomCau ?? 0)}</b>. Qua lớp neo trực tiếp.</p>
           )}
           <p className="mw2-mo">Không qua lớp này thì loại thẳng, không tính điểm: chặn kiểu “khác lĩnh vực nhưng trùng chữ”.</p>
         </li>
@@ -177,17 +178,17 @@ function VetBangChung({ m }: { m: SignedMatch }) {
         <li>
           <div className="mw2-chang__k"><b>5</b> Chữ ký người gác cổng</div>
           <dl className="mw2-ky">
-            <dt>Người ký</dt><dd>{m.signoff.by} · {nhanVai(m.signoff.role)}</dd>
+            <dt>Người ký</dt><dd>{tenNguoi(m.signoff.by)} · {nhanVai(m.signoff.role)}</dd>
             <dt>Ngày</dt><dd>{ngayVN(m.signoff.date)}</dd>
             <dt>Khoá bằng chứng</dt><dd className="t-mono-01" title="Băm tập câu làm bằng lúc ký. Đổi một chữ là chữ ký rụng.">{m.khoaBangChung ?? 'chưa đóng khoá'}</dd>
-            <dt>Engine</dt><dd className="t-mono-01">{m.engine}</dd>
+            <dt>Máy ghép</dt><dd className="t-mono-01">{m.engine}</dd>
           </dl>
         </li>
       </ol>
 
       <section className="mw2-pr" aria-label="Phân rã điểm">
         <div className="mw2-eyebrow">Phân rã điểm · tự dựng lại được bằng tay</div>
-        <div className="mw2-pr__bar" role="img" aria-label={`Giao chữ ${so(pr.phan.giao)}, tier ${so(pr.phan.tier)}, địa điểm ${so(pr.phan.diaDiem)}`}>
+        <div className="mw2-pr__bar" role="img" aria-label={`Giao chữ ${so(pr.phan.giao)}, hạng ${so(pr.phan.tier)}, địa điểm ${so(pr.phan.diaDiem)}`}>
           <span className="mw2-pr__p mw2-pr__p--giao" style={{ width: pct(pr.phan.giao) }} />
           <span className="mw2-pr__p mw2-pr__p--tier" style={{ width: pct(pr.phan.tier) }} />
           <span className="mw2-pr__moc" style={{ left: pct(pr.tong) }} />
@@ -200,7 +201,7 @@ function VetBangChung({ m }: { m: SignedMatch }) {
             <tr className="mw2-pr__tong"><td>Tổng</td><td>làm tròn 2 chữ số</td><td>{so(pr.tong)} → <b>{so(pr.lamTron, 2)}</b></td></tr>
           </tbody>
         </table>
-        <p className="mw2-mo">Hệ số đọc thẳng từ <span className="t-mono-01">match_engine.py</span>, không gõ lại. Cổng check-matching tính lại cả {signedMatches.length} cặp và so với điểm engine.</p>
+        <p className="mw2-mo">Hệ số đọc thẳng từ <span className="t-mono-01">match_engine.py</span>, không gõ lại. Cổng check-matching tính lại cả {signedMatches.length} cặp và so với điểm máy ghép.</p>
       </section>
 
       {m.chuaDuyet.length > 0 && <p className="mw-hint">{m.chuaDuyet.length} bằng chứng thêm vào SAU khi ký; chữ ký hiện tại không phủ phần đó.</p>}
@@ -223,8 +224,8 @@ export function MatchingWorkbench() {
         <button type="button" className="hs-kpi__o" onClick={() => moMuc({ loai: 'so', khoa: 'matches' })}>
           <span className="hs-kpi__v hs-kpi__v--match"><i aria-hidden="true" />{matchMeta.daKy}</span><span className="hs-kpi__k">match đã ký</span><span className="hs-kpi__phu">bởi {matchMeta.nguoiKy}</span>
         </button>
-        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{matchMeta.tuChoi}</span><span className="hs-kpi__k">cặp bị từ chối</span><span className="hs-kpi__phu">chặn ở tầng engine</span></div>
-        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{signedMatches.filter((x) => H.phanRa[x.id]?.lamTron === x.score).length}<small>/{signedMatches.length}</small></span><span className="hs-kpi__k">điểm tự dựng lại khớp</span><span className="hs-kpi__phu">{khopHet ? 'từ công thức engine' : 'CÓ CẶP LỆCH'}</span></div>
+        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{matchMeta.tuChoi}</span><span className="hs-kpi__k">cặp bị từ chối</span><span className="hs-kpi__phu">chặn ở tầng máy ghép</span></div>
+        <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v">{signedMatches.filter((x) => H.phanRa[x.id]?.lamTron === x.score).length}<small>/{signedMatches.length}</small></span><span className="hs-kpi__k">điểm tự dựng lại khớp</span><span className="hs-kpi__phu">{khopHet ? 'từ công thức máy ghép' : 'CÓ CẶP LỆCH'}</span></div>
         <div className="hs-kpi__o tt-kpi__o"><span className="hs-kpi__v mw2-kpi__rule">v2</span><span className="hs-kpi__k">quy tắc ghép</span><span className="hs-kpi__phu t-mono-01">{matchMeta.rule}</span></div>
       </section>
 
@@ -253,9 +254,9 @@ export function MatchingWorkbench() {
               <h2 className="mw2-vet__ten">{tc.supplyId}<span className="mw2-vet__x">⇄</span><span className="mw2-vet__ma">P{maSpCua.get(tc.demandId)}</span> {tenNc.get(tc.demandId)}</h2>
               <figure className="mw2-tc">
                 <blockquote>{tc.lyDo}</blockquote>
-                <figcaption>{tc.by} · {ngayVN(tc.date)} · nguyên lời người gác cổng, không sửa</figcaption>
+                <figcaption>{tenNguoi(tc.by)} · {ngayVN(tc.date)} · nguyên lời người gác cổng, không sửa</figcaption>
               </figure>
-              <p className="mw2-p">Cặp đã từ chối bị chặn ở tầng engine, dưới mọi quy tắc so khớp. Quy tắc mới làm nó quay lại thì cổng nổ, không im lặng cho qua. Trên màn Toàn cảnh thị trường, cặp này không mang dòng.</p>
+              <p className="mw2-p">Cặp đã từ chối bị chặn ở tầng máy ghép, dưới mọi quy tắc so khớp. Quy tắc mới làm nó quay lại thì cổng nổ, không im lặng cho qua. Trên màn Toàn cảnh thị trường, cặp này không mang dòng.</p>
             </div>
           ) : <p className="hs-empty">Chọn một cặp ở bên trái.</p>}
         </section>
@@ -264,7 +265,7 @@ export function MatchingWorkbench() {
       <footer className="mw-footer" aria-label="Ranh gioi">
         <span className="chip chip--pass">CHỈ ĐỌC</span>
         <span className="mw-footer__txt">
-          Màn này không tạo được chữ ký. Chữ ký chỉ sinh từ lệnh <span className="t-mono-01">sign</span> của engine,
+          Màn này không tạo được chữ ký. Chữ ký chỉ sinh từ lệnh <span className="t-mono-01">sign</span> của máy ghép,
           ghi vào sổ có khoá bằng chứng. Match chưa ký không xuất hiện trên web.
         </span>
         <span className="t-mono-01">{matchMeta.daKy}/{matchMeta.tongChay} đã ký · sinh {matchMeta.generatedAt}</span>

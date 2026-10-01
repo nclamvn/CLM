@@ -70,7 +70,7 @@ export function DanhSachDonVi({ ds, nhoms }: { ds: HoSo[]; nhoms: { so: string; 
                   <td className="hs-tbl__nhom">{h.nhoms.map((n) => n.so.padStart(2, '0')).join(' · ') || '··'}</td>
                   <td className="hs-tbl__so">
                     <span>{h.dem.cauNguon}</span>
-                    <span className="hs-tier3" aria-label={`tier A ${h.dem.theoTier.A}, B ${h.dem.theoTier.B}, C ${h.dem.theoTier.C}`}>
+                    <span className="hs-tier3" role="img" aria-label={`hạng A ${h.dem.theoTier.A}, B ${h.dem.theoTier.B}, C ${h.dem.theoTier.C}`}>
                       <i className="hs-tier3--A" style={{ flexGrow: h.dem.theoTier.A / tong }} /><i className="hs-tier3--B" style={{ flexGrow: h.dem.theoTier.B / tong }} /><i className="hs-tier3--C" style={{ flexGrow: h.dem.theoTier.C / tong }} />
                     </span>
                   </td>

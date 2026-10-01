@@ -91,17 +91,17 @@ export function MoDau() {
           <h1 id="md-h" className="md-h">Mỗi con số ở đây bấm được,<br />và bấm là ra câu nguồn.</h1>
           <p className="md-lead">
             Máy cào, lọc và đề xuất ghép cung với cầu. Người gác cổng ký. Câu nguồn nguyên văn nằm sau mọi con số,
-            và một chuỗi cổng tự kiểm chặn bất cứ con số nào không truy được về nguồn.
+            và một lớp kiểm định tự động chặn bất cứ con số nào không truy được về nguồn.
           </p>
           {cc && (
             <ProofNumber khoa="gate" className="md-chuoi">
               <span className={`md-chuoi__cham${cc.dat ? '' : ' is-do'}`} aria-hidden="true" />
-              Chuỗi cổng {cc.xanh}/{cc.tong} xanh · lần chạy {cc.luc.slice(8, 10)}/{cc.luc.slice(5, 7)} {cc.luc.slice(11, 16)}
+              Kiểm định tự động {cc.xanh}/{cc.tong} đạt · lần chạy {cc.luc.slice(8, 10)}/{cc.luc.slice(5, 7)} {cc.luc.slice(11, 16)}
             </ProofNumber>)}
         </div>
         <div className="md-so-luoi">
           <SoLon gia={s.donVi} nhan="đơn vị cung" phu={`${s.banChup} bài nguồn chiều cung`} khoa="units" tre={0} />
-          <SoLon gia={s.cauNguon} nhan="câu nguồn nguyên văn" phu={`${s.tierA} câu tier A`} khoa="claims" tre={120} />
+          <SoLon gia={s.cauNguon} nhan="câu nguồn nguyên văn" phu={`${s.tierA} câu hạng A`} khoa="claims" tre={120} />
           <SoLon gia={s.matchDaKy} nhan="match đã ký bởi người" phu={`${s.tuChoi} cặp bị từ chối, vẫn hiện`} khoa="matches" tre={240} />
           <SoLon gia={s.ncTrong} nhan="nhu cầu quốc gia chưa có bên cung" phu={`trên ${s.nhuCau} sản phẩm chiến lược`} khoa="needs" tre={360} nhan2={`/${s.nhuCau}`} />
         </div>

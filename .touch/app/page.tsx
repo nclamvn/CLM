@@ -35,21 +35,21 @@ export default function LandingPage() {
           <Link href={ROUTE.dashboard}>Tổng quan</Link>
           <Link href={`${ROUTE.dashboard}/thi-truong`}>Thị trường</Link>
           <Link href={`${ROUTE.dashboard}/do-thi`}>Đồ thị</Link>
-          <Link href={`${ROUTE.dashboard}/matching`}>Matching</Link>
-          <Link href={ROUTE.hub} className="mt-top__phu">Hub minh họa</Link>
+          <Link href={`${ROUTE.dashboard}/matching`}>Ghép cung cầu</Link>
+          <Link href={ROUTE.phuongPhap} className="mt-top__phu">Phương pháp</Link>
         </nav>
         <div className="mt-top__phai">
-          <span className="mt-trang" title="Kết quả lần chạy chuỗi cổng gần nhất, đọc từ file kết quả, không gõ tay">
+          <span className="mt-trang" title="Kết quả lần kiểm định tự động gần nhất, đọc từ tệp kết quả, không gõ tay">
             <i aria-hidden="true" />
-            {cc ? `Chuỗi cổng ${cc.xanh}/${cc.tong} đạt · ${ngayGio(cc.luc)}` : 'Chuỗi cổng chưa có kết quả'}
+            {cc ? `Kiểm định tự động ${cc.xanh}/${cc.tong} đạt · ${ngayGio(cc.luc)}` : 'Chưa có kết quả kiểm định'}
           </span>
-          <Link href={ROUTE.dashboard} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>
+          <Link href={ROUTE.dashboard} className="mt-nut">Mở bảng điều khiển <span aria-hidden="true">→</span></Link>
         </div>
       </header>
 
       <main id="main" className="mt-than">
         <section className="mt-chu">
-          <p className="mt-chu__nhan">Hub cung cầu công nghệ chiến lược · QĐ 21/2026</p>
+          <p className="mt-chu__nhan">Cung cầu công nghệ chiến lược · QĐ 21/2026</p>
           {/* Tieu de chi mot cau, cau phu khong gan con so (anh Lam chot 29/09/2026). */}
           <h1 className="mt-chu__h">Cung gặp cầu.</h1>
           <p className="mt-chu__p">
@@ -58,7 +58,7 @@ export default function LandingPage() {
             và truy được về tận câu nguồn.
           </p>
           <div className="mt-chu__nut">
-            <Link href={ROUTE.dashboard} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>
+            <Link href={ROUTE.dashboard} className="mt-nut">Mở bảng điều khiển <span aria-hidden="true">→</span></Link>
             <Link href={`${ROUTE.dashboard}/matching`} className="mt-lien">Xem các match đã ký</Link>
           </div>
           <dl className="mt-so">

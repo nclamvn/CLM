@@ -14,6 +14,7 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { BangChung, useProof } from '@/components/proof/ProofLayer';
 import type { CnclEvidence } from '@/lib/cncl-registry';
+import { tenNguoi } from '@/lib/dinh-dang';
 
 export type HoSo = {
   slug: string; ten: string; loaiHinh: string | null;
@@ -74,7 +75,7 @@ function DoThiMotBuoc({ hs }: { hs: HoSo }) {
   const yTam = H / 2;
   const cong = (xa: number, ya: number, xb: number, yb: number) => { const m = (xa + xb) / 2; return `M${xa},${ya} C${m},${ya} ${m},${yb} ${xb},${yb}`; };
   return (
-    <svg className="hs-mini" viewBox={`0 0 ${W} ${H}`} role="img"
+    <svg className="hs-mini" viewBox={`0 0 ${W} ${H}`} role="group"
       aria-label={`${hs.ten} nối tới ${nc.length} nhu cầu; ${ngoai.length} đơn vị khác cùng cung các nhu cầu đó.`}>
       {ngoai.map((o, j) => o.chung.map((c) => {
         const k = vtNc.get(c); if (k === undefined) return null;
@@ -123,7 +124,7 @@ function DongThoiGian({ hs, moc }: { hs: HoSo; moc: string }) {
   const H = 44 + LAN.length * 46;
   const buoc = y1 - y0 > 6 ? 2 : 1;
   return (
-    <svg className="hs-tl" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dòng thời gian ${ds.length} mốc, từ ${ngayVN(ds[0].ngay)} đến ${ngayVN(ds[ds.length - 1].ngay)}.`}>
+    <svg className="hs-tl" viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Dòng thời gian ${ds.length} mốc, từ ${ngayVN(ds[0].ngay)} đến ${ngayVN(ds[ds.length - 1].ngay)}.`}>
       {Array.from({ length: y1 - y0 + 2 }, (_, k) => y0 + k).filter((y) => (y - y0) % buoc === 0).map((y) => {
         const xx = TRAI + ((Date.UTC(y, 0, 1) - a) / (b - a)) * (W - TRAI - PHAI);
         return <g key={y}><line x1={xx} x2={xx} y1={14} y2={H - 8} className="hs-tl__luoi" />{xx < W - 40 && <text x={xx + 3} y={12} className="hs-tl__nam">{y}</text>}</g>;
@@ -142,9 +143,9 @@ function DongThoiGian({ hs, moc }: { hs: HoSo; moc: string }) {
         return (
           <g key={k} className={`hs-tl__d hs-tl__d--${d.loai}`}>
             {d.loai === 'nguon_dang' && d.href
-              ? <a href={d.href} target="_blank" rel="noopener noreferrer"><circle cx={xx} cy={yy} r={6} /></a>
+              ? <a href={d.href} target="_blank" rel="noopener noreferrer" aria-label={`Mở bài nguồn ${ngayVN(d.ngay)}`}><circle cx={xx} cy={yy} r={6} /></a>
               : d.loai === 'de_xuat' && d.nguonUrl
-                ? <a href={d.nguonUrl} target="_blank" rel="noopener noreferrer"><circle cx={xx} cy={yy} r={6} /></a>
+                ? <a href={d.nguonUrl} target="_blank" rel="noopener noreferrer" aria-label={`Mở nguồn đề xuất ${ngayVN(d.ngay)}`}><circle cx={xx} cy={yy} r={6} /></a>
                 : <circle cx={xx} cy={yy} r={6} />}
             <title>{`${ngayVN(d.ngay)} · ${d.loai === 'de_xuat' && d.soGop === 1 ? d.nhan : nhan}`}</title>
             <text x={xx} y={yy - 11 - vuaDat * 11} textAnchor="middle">{ngayVN(d.ngay)} · {nhan}</text>
@@ -164,27 +165,27 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
   return (
     <div className="hs">
       <section className="dash-panel hs-head" aria-label="Đầu hồ sơ">
-        <nav className="hs-crumb" aria-label="Đường dẫn"><Link href="/dashboard/don-vi">Hồ sơ đơn vị</Link><span aria-hidden="true">/</span><span>{soHai(nhomChinh?.so ?? null)} {nhomChinh?.nhan.replace(/^Nhóm \d+ · /, '') ?? 'chưa có claim nhóm'}</span></nav>
+        <nav className="hs-crumb" aria-label="Đường dẫn"><Link href="/dashboard/don-vi">Hồ sơ đơn vị</Link><span aria-hidden="true">/</span><span>{soHai(nhomChinh?.so ?? null)} {nhomChinh?.nhan.replace(/^Nhóm \d+ · /, '') ?? 'chưa có câu nguồn về nhóm'}</span></nav>
         <h1 className="hs-ten">{hs.ten}</h1>
         <div className="hs-chips">
           {hs.loaiHinh ? <span className="hs-chip">{hs.loaiHinh}</span> : <span className="hs-chip hs-chip--trong">loại hình: chưa có nguồn</span>}
           {hs.nhoms.map((n) => (
             <button key={n.so} type="button" className="hs-chip hs-chip--btn" style={{ '--mau': `var(--nhom-${n.so})` } as React.CSSProperties} onClick={() => moMuc({ loai: 'nhom', so: n.so })}><i className="mau-cham" aria-hidden="true" />{n.nhan}</button>))}
-          <span className={`pf-tier pf-tier--${hs.bestTier}`}>nguồn tốt nhất: tier {hs.bestTier}</span>
+          <span className={`pf-tier pf-tier--${hs.bestTier}`}>nguồn tốt nhất: hạng {hs.bestTier}</span>
           {hs.favorsRtr && <span className="hs-chip hs-chip--coi" title="Đơn vị liên quan RtR, bên dựng hub. Đọc bằng chứng với con mắt nghi ngờ hơn.">liên quan RtR, bên dựng hub</span>}
         </div>
         <p className={`hs-dd hs-dd--${hs.dinhDanh.trangThai}`}>
           <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M10 3 4.5 5v4.5c0 3.4 2.4 5.6 5.5 6.8 3.1-1.2 5.5-3.4 5.5-6.8V5z" /></svg>
           {hs.dinhDanh.trangThai === 'da_dinh_danh'
             ? <>Đã định danh pháp nhân: mã số {hs.dinhDanh.maSo}{hs.dinhDanh.href && <> · <a className="pf-link" href={hs.dinhDanh.href} target="_blank" rel="noopener noreferrer">bản chụp</a></>}</>
-            : <><b>Chưa định danh pháp nhân.</b> Registry chưa có mã số doanh nghiệp tra từ cổng thông tin chính thức; trang tổng hợp tư nhân không được dùng làm nguồn.</>}
+            : <><b>Chưa định danh pháp nhân.</b> Sổ nguồn chưa có mã số doanh nghiệp tra từ cổng thông tin chính thức; trang tổng hợp tư nhân không được dùng làm nguồn.</>}
         </p>
       </section>
 
       <section className="hs-kpi" aria-label="Chỉ số bằng chứng">
         <button type="button" className="hs-kpi__o" onClick={moDv} title="Bấm để xem toàn bộ câu nguồn">
           <span className="hs-kpi__v">{hs.dem.cauNguon}</span><span className="hs-kpi__k">câu nguồn</span>
-          <span className="hs-kpi__phu">tier A {hs.dem.theoTier.A} · B {hs.dem.theoTier.B} · C {hs.dem.theoTier.C}</span>
+          <span className="hs-kpi__phu">hạng A {hs.dem.theoTier.A} · B {hs.dem.theoTier.B} · C {hs.dem.theoTier.C}</span>
         </button>
         <button type="button" className="hs-kpi__o" onClick={moDv} title="Bấm để xem các nguồn">
           <span className="hs-kpi__v">{hs.dem.tenMienNguon}</span><span className="hs-kpi__k">tên miền nguồn</span>
@@ -240,12 +241,12 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
                     <span className="hs-nc__ma">P{n.maSp}</span>
                     <span className="hs-nc__ten">{n.ten}</span>
                     <span className="hs-nc__qh">
-                      {n.quanHe.includes('match_da_ky') && <span className="hs-badge hs-badge--match">{n.matchId} · ký {n.ky?.by}, {ngayVN(n.ky?.date)}</span>}
+                      {n.quanHe.includes('match_da_ky') && <span className="hs-badge hs-badge--match">{n.matchId} · ký {tenNguoi(n.ky?.by)}, {ngayVN(n.ky?.date)}</span>}
                       {n.quanHe.includes('cung_san_pham') && <span className="hs-badge">cùng sản phẩm, có câu nguồn</span>}
                       {n.quanHe.includes('tu_choi') && <span className="hs-badge hs-badge--tc">bị từ chối</span>}
                     </span>
                   </button>
-                  {n.tuChoi && <p className="hs-nc__ld">{n.tuChoi.by}, {ngayVN(n.tuChoi.date)}: <q>{n.tuChoi.lyDo}</q></p>}
+                  {n.tuChoi && <p className="hs-nc__ld">{tenNguoi(n.tuChoi.by)}, {ngayVN(n.tuChoi.date)}: <q>{n.tuChoi.lyDo}</q></p>}
                 </li>))}
               </ul>)}
           </section>
@@ -277,9 +278,9 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
 
         <section className="dash-panel hs-sec" aria-labelledby="hs-dn">
           <h2 className="hs-h" id="hs-dn">Tên dễ nhầm <span>cùng tập đoàn, khác pháp nhân</span></h2>
-          {hs.deNham.length === 0 ? <p className="hs-empty">Không có tên nào trong danh sách dễ nhầm của domain.</p> : (<>
+          {hs.deNham.length === 0 ? <p className="hs-empty">Không có tên nào trong danh sách dễ nhầm của lĩnh vực.</p> : (<>
             <ul className="hs-links">{hs.deNham.map((t) => <li key={t.slug}><Link href={`/dashboard/don-vi/${t.slug}`}>{t.ten}</Link></li>)}</ul>
-            <p className="hs-note">Registry cấm gộp các tên này. Người gác cổng quyết, máy không tự gộp.</p></>)}
+            <p className="hs-note">Sổ nguồn cấm gộp các tên này. Người gác cổng quyết, máy không tự gộp.</p></>)}
         </section>
 
         <section className="dash-panel hs-sec" id="o-trong" aria-labelledby="hs-ot">

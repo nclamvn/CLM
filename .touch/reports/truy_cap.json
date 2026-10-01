@@ -1,0 +1,51 @@
+{
+ "van_tay": "a07667a061514098",
+ "luc": "2026-10-01T01:52:24.090Z",
+ "cong_cu": "axe-core",
+ "trang": {
+  "/": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/thi-truong": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/thoi-cuoc": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/do-thi": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/don-vi": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/don-vi/trung-tam-vu-tru-viet-nam": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/matching": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/registry": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/repos": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/phuong-phap": {
+   "http": 200,
+   "vi_pham": []
+  }
+ }
+}

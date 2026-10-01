@@ -3,7 +3,7 @@ import '@/styles/dashboard.css';
 import { DashShell } from '@/components/dash/DashShell';
 
 export const metadata: Metadata = {
-  title: 'Dashboard tong quan - .touch',
+  title: 'Bảng điều khiển · .touch',
   robots: { index: false, follow: false },
 };
 

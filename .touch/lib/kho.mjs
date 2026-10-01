@@ -13,14 +13,14 @@
 import { execFileSync } from 'node:child_process';
 
 export const PHAN = [
-  { thuMuc: 'CNCLData', ten: 'Chiều cung', vaiTro: 'Registry đơn vị có năng lực công nghệ chiến lược: claim, bản chụp nguồn, cổng và vòng tự chạy.' },
+  { thuMuc: 'CNCLData', ten: 'Chiều cung', vaiTro: 'Sổ đơn vị có năng lực công nghệ chiến lược: câu nguồn, bản chụp, kiểm định và vòng tự chạy.' },
   { thuMuc: 'Dataset_CongNgheChienLuoc', ten: 'Chiều cầu', vaiTro: 'Danh mục 30 sản phẩm chiến lược theo QĐ 21/2026 và các sự kiện chính sách, có câu nguồn nguyên văn.' },
-  { thuMuc: 'CaoLocMatch', ten: 'Máy ghép', vaiTro: 'Engine ghép cung với cầu, sổ ký của người gác cổng, và chuỗi cổng chạy toàn hệ.' },
-  { thuMuc: '.touch', ten: 'Mặt hiển thị', vaiTro: 'Hub web: mọi con số sinh từ dữ liệu ba phần trên, bấm là ra câu nguồn.' },
+  { thuMuc: 'CaoLocMatch', ten: 'Máy ghép', vaiTro: 'Máy ghép cung với cầu, sổ ký của người gác cổng, và kiểm định tự động cho toàn hệ.' },
+  { thuMuc: '.touch', ten: 'Mặt hiển thị', vaiTro: 'Giao diện web: mọi con số sinh từ dữ liệu ba phần trên, bấm là ra câu nguồn.' },
 ];
 
 export const DONG = [
-  { tu: 'Chiều cung', den: 'Mặt hiển thị', ghi: 'registry và bản chụp nguồn, sinh lại mỗi lần chạy chuỗi cổng' },
+  { tu: 'Chiều cung', den: 'Mặt hiển thị', ghi: 'sổ nguồn và bản chụp, sinh lại mỗi lần kiểm định tự động' },
   { tu: 'Chiều cầu', den: 'Máy ghép', ghi: '30 nhu cầu và bảng ánh xạ nhóm đã duyệt' },
   { tu: 'Máy ghép', den: 'Mặt hiển thị', ghi: 'chỉ match đã có chữ ký người mới lên web' },
   { tu: 'Chiều cầu', den: 'bản đọc ở KnowledgeBase', ghi: 'đồng bộ một chiều, cổng chống phân kỳ' },

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DashTopBar } from '@/components/dash/DashTopBar';
 import { DoThiCungCau } from '@/components/graph/DoThiCungCau';
 import graph from '@/lib/hub-graph.json';
+import { ngayVN } from '@/lib/dinh-dang';
 
 export const metadata: Metadata = {
   title: 'Đồ thị cung cầu - .touch',
@@ -14,7 +15,7 @@ export default function DoThiPage() {
     <>
       <DashTopBar
         title="Đồ thị cung cầu"
-        subtitle={`Cung, cầu và nhóm công nghệ chiến lược, nối bằng câu nguồn và chữ ký · dữ liệu ${m.generatedAt}`}
+        subtitle={`Cung, cầu và nhóm công nghệ chiến lược, nối bằng câu nguồn và chữ ký · dữ liệu ${ngayVN(m.generatedAt)}`}
       />
       <div className="dash-content">
         <DoThiCungCau />

@@ -4,7 +4,7 @@
  */
 export const statusMeta = {
   title: 'Tổng quan',
-  subtitle: 'Hub cung cầu công nghệ chiến lược, chứng minh được',
+  subtitle: 'Cung cầu công nghệ chiến lược, mọi con số có nguồn',
 } as const;
 
 // XOA 29/09/2026: kpis, projectComponents, supply, demand, deadline, workQueue, repos, evidence.
@@ -13,18 +13,19 @@ export const statusMeta = {
 // phai sinh tu du lieu (lib/hub-*.json); cong check-mo-dau.mjs chan viec them lai kho so go tay
 // vao file nay: file chi duoc xuat nav va statusMeta.
 
-/** href rỗng = màn chưa dựng, sidebar hiển thị trạng thái "sắp có" trung thực, không dead-link. */
+/**
+ * Dieu huong chinh. 01/10/2026 (nghiem thu enterprise): GO bon muc "sap co" (Tien do & Gates, Rui
+ * ro & Hanh dong, Tai lieu & SOP, Cai dat). Muc nao hien tren man thi phai mo duoc; cong
+ * check-thuat-ngu.mjs chan href rong quay lai. Ten muc theo bang thuat ngu lib/thuat-ngu.mjs.
+ */
 export const nav = [
   { label: 'Tổng quan', href: '/dashboard' },
   { label: 'Toàn cảnh thị trường', href: '/dashboard/thi-truong' },
   { label: 'Dòng thời cuộc', href: '/dashboard/thoi-cuoc' },
   { label: 'Đồ thị cung cầu', href: '/dashboard/do-thi' },
   { label: 'Hồ sơ đơn vị', href: '/dashboard/don-vi' },
-  { label: 'Engine & Matching', href: '/dashboard/matching' },
-  { label: 'Evidence Registry', href: '/dashboard/registry' },
-  { label: 'Tiến độ & Gates', href: '' },
-  { label: 'Rủi ro & Hành động', href: '' },
-  { label: 'Tài liệu & SOP', href: '' },
+  { label: 'Ghép cung cầu', href: '/dashboard/matching' },
+  { label: 'Sổ nguồn', href: '/dashboard/registry' },
+  { label: 'Phương pháp', href: '/dashboard/phuong-phap' },
   { label: 'Kho mã', href: '/dashboard/repos' },
-  { label: 'Cài đặt', href: '' },
 ];

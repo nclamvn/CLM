@@ -110,7 +110,7 @@ export function HubCungCau({ data }: { data: MatTien }) {
       if (hover >= 0) dangSang.add(hover);
 
       // tieu de cot
-      ctx.font = `500 11px ${SANS}`; ctx.fillStyle = MUC3; ctx.textBaseline = 'alphabetic';
+      ctx.font = `500 12px ${SANS}`; ctx.fillStyle = MUC3; ctx.textBaseline = 'alphabetic';
       ctx.textAlign = 'right'; ctx.fillText(`Cung · ${nut.filter((v) => v.loai === 'cung').length} đơn vị`, xCung + 2, 14);
       ctx.textAlign = 'center'; ctx.fillText('Nhóm công nghệ', xNhom, 14);
       ctx.textAlign = 'left'; ctx.fillText(`Cầu · ${nut.filter((v) => v.loai === 'cau').length} sản phẩm QĐ 21`, xCau - 4, 14);
@@ -150,7 +150,7 @@ export function HubCungCau({ data }: { data: MatTien }) {
         } else if (v.loai === 'cau') {
           if (v.trong) { ctx.strokeStyle = sang ? MUC : mauNhomA(v.nhom, 0.7); ctx.lineWidth = 1; hinhThoi(p, 3.6); ctx.stroke(); }
           else { ctx.fillStyle = sang ? MUC : mauNhomA(v.nhom, 0.85); hinhThoi(p, 3.6); ctx.fill(); }
-          ctx.font = `500 10px ${SANS}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : MUC3;
+          ctx.font = `500 12px ${SANS}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : MUC3;
           ctx.fillText(v.ma ?? '', p.x + 9, p.y + 0.5);
         } else {
           ctx.font = `400 15px ${SERIF}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : mauNhomA(v.nhom, 0.95);

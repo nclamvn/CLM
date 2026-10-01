@@ -29,8 +29,8 @@ const TEN_NHOM: Record<string, string> = {
 
 function TierChip({ tier }: { tier: 'A' | 'B' | 'C' }) {
   const cls = tier === 'A' ? 'chip--pass' : tier === 'B' ? 'chip--public' : 'chip--private';
-  const title = tier === 'A' ? 'Nguồn nhà nước' : tier === 'B' ? 'Báo lớn' : 'Nguồn yếu, phải tự khai unverified';
-  return <span className={`chip ${cls} reg-tier`} title={title}>{`Tier ${tier}`}</span>;
+  const title = tier === 'A' ? 'Nguồn nhà nước' : tier === 'B' ? 'Báo lớn' : 'Nguồn tự khai, chưa đối chiếu độc lập';
+  return <span className={`chip ${cls} reg-tier`} title={title}>{`Hạng ${tier}`}</span>;
 }
 
 function EvidenceRow({ e }: { e: CnclEvidence }) {
@@ -64,13 +64,12 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
           <TierChip tier={u.bestTier} />
           {u.favorsRtr ? (
             <span className="chip chip--risk reg-tier" title="Khai báo xung đột lợi ích: người vận hành hệ này là COO của RtR">
-              favors=rtr
+              Liên quan người vận hành
             </span>
           ) : null}
-          <span className="reg-unit__count">{u.evidence.length} evidence</span>
-          <ProofUnitButton ten={u.name} className="reg-unit__proof">Lớp phủ nguồn</ProofUnitButton>
+          <span className="reg-unit__count">{u.evidence.length} câu nguồn</span>
         </span>
-        <span className="reg-unit__cap">{u.capability || 'Chưa có mô tả năng lực có bằng chứng verbatim.'}</span>
+        <span className="reg-unit__cap">{u.capability || 'Chưa có mô tả năng lực có bằng chứng nguyên văn.'}</span>
         {/* Mang nang luc thu hai. Mot don vi co hai mang thi ke ca hai, vi ke mot mang co
             the noi nguoc han y nghia: FECON co ca "van hanh TBM" lan "tu nghien cuu vo ham",
             va chi hien ve dau thi trang web mo ta dung cai ly do de LOAI no. */}
@@ -89,11 +88,14 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
             <span key={n} className="reg-tag" style={{ '--mau': `var(--nhom-${n})` } as React.CSSProperties}><i className="mau-cham" aria-hidden="true" />{`Nhóm ${n} · ${TEN_NHOM[n] ?? ''}`}</span>
           ))}
           {u.sanPham.map((s) => (
-            <span key={s} className="reg-tag reg-tag--sp" title="Sản phẩm chiến lược theo QĐ 21/2026">{`SP ${s}`}</span>
+            <span key={s} className="reg-tag reg-tag--sp" title="Sản phẩm chiến lược theo QĐ 21/2026">{`P${String(s).padStart(2, '0')}`}</span>
           ))}
         </span>
       </summary>
       <div className="reg-unit__body">
+        {/* Nut mo lop nguon dat NGOAI summary (01/10/2026): nut long trong summary la dieu khien long
+            nhau, vi pham chuan truy cap (axe nested-interactive) va de bam nham. */}
+        <div className="reg-unit__hanh"><ProofUnitButton ten={u.name} className="reg-unit__proof">Xem nguồn của đơn vị này</ProofUnitButton></div>
         <table className="reg-table">
           <thead>
             <tr>
@@ -171,7 +173,7 @@ export function RegistryBrowser() {
           <span className="reg-find__lab">Cấp nguồn</span>
           {(['tat-ca', 'A', 'B', 'C'] as const).map((t) => (
             <button key={t} type="button" className={`reg-pill${tier === t ? ' is-on' : ''}`} aria-pressed={tier === t} onClick={() => setTier(t)}>
-              {t === 'tat-ca' ? 'Tất cả' : `Tier ${t}`}
+              {t === 'tat-ca' ? 'Tất cả' : `Hạng ${t}`}
             </button>
           ))}
           <span className="reg-find__sep" aria-hidden="true" />
@@ -185,7 +187,7 @@ export function RegistryBrowser() {
 
         <p className="reg-find__count">
           {ben === 'cung'
-            ? `${loc.length} / ${cnclUnits.length} đơn vị · ${soEvidence} evidence`
+            ? `${loc.length} / ${cnclUnits.length} đơn vị · ${soEvidence} câu nguồn`
             : `${locCau.length} / ${cnclNeeds.length} sản phẩm chiến lược`}
           {daLoc && ben === 'cung' ? ' (đang lọc)' : null}
         </p>
@@ -201,8 +203,8 @@ export function RegistryBrowser() {
               {tier !== 'tat-ca' ? <> ở cấp nguồn {tier}</> : null}.
             </p>
             <p className="reg-empty__note">
-              Không có kết quả là một câu trả lời thật, không phải lỗi. Registry chỉ chứa đơn vị
-              có bằng chứng verbatim đạt cấp nguồn, nên nhiều tên quen thuộc có thể chưa vào.
+              Không có kết quả là một câu trả lời thật, không phải lỗi. Sổ nguồn chỉ chứa đơn vị
+              có câu nguồn nguyên văn đạt hạng nguồn, nên nhiều tên quen thuộc có thể chưa vào.
             </p>
           </section>
         ) : (

@@ -71,7 +71,7 @@ function Sankey() {
   };
   return (
     <div className="tt-sk" onMouseLeave={() => { setTro(null); setTip(null); }}>
-      <svg className="tt-sk__svg" viewBox={`0 0 ${rong} ${cao}`} role="img"
+      <svg className="tt-sk__svg" viewBox={`0 0 ${rong} ${cao}`} role="group"
         aria-label={`Sankey ${D.kpi.dvCoCap} đơn vị, ${D.phu.length} nhóm, ${D.kpi.soNc} nhu cầu; ${D.kpi.soCap} cặp cung cầu có nguồn, ${D.kpi.capDaKy} đã ký; ${D.kpi.ncTrong} nhu cầu chưa có bên cung.`}>
         <text x={250 + 6} y={10} textAnchor="end" className="tt-sk__cot">ĐƠN VỊ CUNG</text>
         <text x={500 + 98} y={10} textAnchor="middle" className="tt-sk__cot">NHÓM CÔNG NGHỆ</text>

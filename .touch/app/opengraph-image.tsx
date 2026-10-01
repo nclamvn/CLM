@@ -54,7 +54,7 @@ export default async function OpengraphImage() {
               marginRight: 12,
             }}
           />
-          ENGINE · LIVE
+          CUNG GẶP CẦU
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div

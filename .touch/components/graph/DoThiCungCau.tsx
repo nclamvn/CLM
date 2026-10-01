@@ -23,6 +23,7 @@ import { useMemo, useRef, useState } from 'react';
 import graph from '@/lib/hub-graph.json';
 import { useProof, type Muc } from '@/components/proof/ProofLayer';
 import { XA_NHAN } from '@/lib/do-thi-ban-do.mjs';
+import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
 
 // Mau du lieu: chi ma hoa nhom cong nghe (lanh tho), qua token var(--nhom-N). 'chua_co' va null ve xam.
 const mau = (so: string | null | undefined) => ({ '--mau': `var(--nhom-${so && so !== 'chua_co' ? so : 0})` }) as React.CSSProperties;
@@ -287,8 +288,8 @@ export function DoThiCungCau() {
             <div className="dt2-tip__loai">{canhO ? NHAN_CANH[canhO.kind as LoaiCanh] : 'Chưa có quan hệ'}</div>
             <div className="dt2-tip__ten">{byId.get(o.h)?.label}</div>
             <div className="dt2-tip__ten dt2-tip__ten--phu">P{byId.get(o.c)?.maSp} · {byId.get(o.c)?.label}</div>
-            {canhO?.signoff && <div className="dt2-tip__phu">{canhO.matchId} · ký bởi {canhO.signoff.by}, {canhO.signoff.date}</div>}
-            {canhO?.kind === 'tu_choi' && <div className="dt2-tip__phu">Từ chối bởi {canhO.by}, {canhO.date}: {canhO.lyDo}</div>}
+            {canhO?.signoff && <div className="dt2-tip__phu">{canhO.matchId} · ký bởi {tenNguoi(canhO.signoff.by)}, {ngayVN(canhO.signoff.date)}</div>}
+            {canhO?.kind === 'tu_choi' && <div className="dt2-tip__phu">Từ chối bởi {tenNguoi(canhO.by)}, {ngayVN(canhO.date)}: {canhO.lyDo}</div>}
           </div>)}
       </div>
 

@@ -3,7 +3,7 @@ import { DashTopBar } from '@/components/dash/DashTopBar';
 import kho from '@/lib/hub-kho.json';
 
 export const metadata: Metadata = {
-  title: 'Kho mã - .touch',
+  title: 'Kho mã · .touch',
   robots: { index: false, follow: false },
 };
 
@@ -28,21 +28,21 @@ export default function ReposPage() {
   const tongO = Object.values(K.oTheoKho).reduce((s, v) => s + v, 0);
   return (
     <>
-      <DashTopBar title="Kho mã" subtitle={`Một kho duy nhất, lịch sử đầy đủ · sinh từ commit ${K.sinhTu.sha}`} />
+      <DashTopBar title="Kho mã" subtitle={`Một kho duy nhất, lịch sử đầy đủ · cập nhật mã ${K.sinhTu.sha}`} />
       <div className="dash-content kh">
         <section className="dash-panel kh-dau" aria-label="Kho">
           <div>
             <div className="md-eyebrow">Kho gộp · git subtree, lịch sử nguyên vẹn</div>
-            <h1 className="kh-ten">{K.tenKho ?? 'kho gộp'}</h1>
+            <h2 className="kh-ten">{K.tenKho ?? "kho gộp"}</h2>
             <p className="kh-mo">
               Bốn phần của hệ nằm chung một kho từ ngày {K.ngayGop ? ngayVN(K.ngayGop) : 'gộp'}. Bốn kho riêng lẻ trước ngày đó không còn là nguồn;
               toàn bộ lịch sử của chúng nằm nguyên trong kho này.
             </p>
           </div>
           <dl className="kh-so">
-            <div><dt>commit</dt><dd>{K.tongCommit}</dd><span>từ {ngayVN(K.commitDau)}</span></div>
-            <div><dt>phần</dt><dd>{K.phan.length}</dd><span>chung một lần checkout</span></div>
-            <div><dt>ô trong chuỗi cổng</dt><dd>{tongO}</dd><span>đếm trong chay_het_cong.sh tại {K.sinhTu.sha}</span></div>
+            <div><dt>lần cập nhật mã</dt><dd>{K.tongCommit}</dd><dd className="kh-so__phu">từ {ngayVN(K.commitDau)}</dd></div>
+            <div><dt>phần</dt><dd>{K.phan.length}</dd><dd className="kh-so__phu">chung một lần checkout</dd></div>
+            <div><dt>bước kiểm định tự động</dt><dd>{tongO}</dd><dd className="kh-so__phu">đếm trong chay_het_cong.sh tại {K.sinhTu.sha}</dd></div>
           </dl>
         </section>
 
@@ -53,9 +53,9 @@ export default function ReposPage() {
               <p className="kh-phan__vt">{p.vaiTro}</p>
               <dl className="kh-phan__so">
                 <div><dt>tệp</dt><dd>{p.soTep}</dd></div>
-                <div><dt>commit trước gộp</dt><dd>{p.commitTruocGop ?? '·'}</dd></div>
-                <div><dt>commit sau gộp</dt><dd>{p.commitSauGop ?? '·'}</dd></div>
-                <div><dt>ô cổng</dt><dd>{K.oTheoKho[p.thuMuc] ?? 0}</dd></div>
+                <div><dt>cập nhật trước gộp</dt><dd>{p.commitTruocGop ?? '·'}</dd></div>
+                <div><dt>cập nhật sau gộp</dt><dd>{p.commitSauGop ?? '·'}</dd></div>
+                <div><dt>bước kiểm định</dt><dd>{K.oTheoKho[p.thuMuc] ?? 0}</dd></div>
               </dl>
               <div className="kh-phan__cuoi">
                 <span className="t-mono-01">{p.cuoi.sha}</span> <span className="kh-ngay">{ngayVN(p.cuoi.ngay)}</span>

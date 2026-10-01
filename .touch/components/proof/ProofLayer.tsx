@@ -24,6 +24,7 @@ import { catNguCanhPhanLoai } from '@/lib/ban-chup.mjs';
 import { slugDonVi } from '@/lib/ho-so.mjs';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
 
 // ── Kieu du lieu ────────────────────────────────────────────────────────────
 type SoKhoa = 'units' | 'claims' | 'needs' | 'tierA' | 'snapshots' | 'gate' | 'matches';
@@ -124,7 +125,7 @@ function CauTrongBanChup({ span, href }: { span: string; href: string }) {
   if (tt === 'cho') return <p className="pf-ctx pf-ctx--cho">Đang đọc bản chụp…</p>;
   if (tt === 'loi') return <p className="pf-ctx pf-ctx--loi">Không mở được bản chụp {href}. Đây là lỗi, không phải thiếu nguồn.</p>;
   if (!nc || nc.cach === null) {
-    return <p className="pf-ctx pf-ctx--loi">Câu làm bằng KHÔNG có nguyên văn trong bản chụp. Cổng lop_phu_nguon lẽ ra đã chặn; hãy chạy lại chuỗi cổng.</p>;
+    return <p className="pf-ctx pf-ctx--loi">Câu làm bằng KHÔNG có nguyên văn trong bản chụp. Cổng lop_phu_nguon lẽ ra đã chặn; hãy chạy lại kiểm định tự động.</p>;
   }
   // Ba loai chu hien KHAC NHAU: van ban nguon (binh thuong), ghi chu cua nguoi chup (nghieng,
   // co nhan), tieu de chua phan dinh (co nhan). Cau lam bang to sang. Xem lib/ban-chup.mjs.
@@ -133,7 +134,7 @@ function CauTrongBanChup({ span, href }: { span: string; href: string }) {
       {nc.spanChamGhiChu && (
         <p className="pf-ctx pf-ctx--loi">
           Câu làm bằng này chỉ nằm trong nhãn do người chụp đặt, không nằm trong văn bản của nguồn.
-          Claim đang được ghi nợ và chờ chụp lại nguồn.
+          Câu nguồn đang được ghi nợ và chờ chụp lại nguồn.
         </p>)}
       <p className="pf-ctx">
         {nc.doan.map((d, k) => d.loai === 'span'
@@ -159,7 +160,7 @@ export function BangChung({ e, chiGhiChu = false, phu }: { e: Pick<CnclEvidence,
     <li className="pf-ev">
       <div className="pf-ev__head">
         <span className="pf-ev__field">{tenTruong(e.field)}</span>
-        <span className={`pf-tier pf-tier--${e.tier}`}>tier {e.tier}</span>
+        <span className={`pf-tier pf-tier--${e.tier}`}>hạng {e.tier}</span>
         <span className="pf-ev__src">{e.source}</span>
         {phu}
       </div>
@@ -199,7 +200,7 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
           {u.nhoms.map((n, i) => (
             <button key={n} type="button" className="pf-chip pf-chip--btn" onClick={() => moMuc({ loai: 'nhom', so: n })}>{u.nhomLabels[i]}</button>
           ))}
-          <span className={`pf-tier pf-tier--${u.bestTier}`}>nguồn tốt nhất: tier {u.bestTier}</span>
+          <span className={`pf-tier pf-tier--${u.bestTier}`}>nguồn tốt nhất: hạng {u.bestTier}</span>
           {u.favorsRtr && <span className="pf-chip pf-chip--coi" title="Đơn vị liên quan RtR, bên dựng hub. Đọc bằng chứng với con mắt nghi ngờ hơn.">liên quan RtR</span>}
         </div>
         <h3 className="pf-h">Bằng chứng · {u.evidence.length} câu nguồn</h3>
@@ -211,14 +212,14 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
               <button type="button" className="pf-row" onClick={() => moMuc({ loai: 'nhu_cau', entityId: m.demandId })}>
                 <span className="pf-row__k">{m.id}</span>
                 <span className="pf-row__v">{nhu(m.demandId)?.value ?? m.demandId}</span>
-                <span className="pf-row__s">ký bởi {m.signoff.by} · {m.signoff.date}</span>
+                <span className="pf-row__s">ký bởi {tenNguoi(m.signoff.by)} · {ngayVN(m.signoff.date)}</span>
               </button>
             </li>))}
           </ul>)}
         {tc.length > 0 && (<>
           <h3 className="pf-h">Cặp bị từ chối · {tc.length}</h3>
           <ul className="pf-list">{tc.map((r, i) => (
-            <li key={i} className="pf-reject"><b>{nhu(r.demandId)?.value ?? r.demandId}</b><span>{r.by} · {r.date}</span><q>{r.lyDo}</q></li>))}
+            <li key={i} className="pf-reject"><b>{nhu(r.demandId)?.value ?? r.demandId}</b><span>{tenNguoi(r.by)} · {ngayVN(r.date)}</span><q>{r.lyDo}</q></li>))}
           </ul></>)}
         {dx.length > 0 && (<>
           <h3 className="pf-h">Tin mới từ vòng tự chạy · chưa duyệt</h3>
@@ -242,7 +243,7 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
         <div className="pf-chips"><span className="pf-chip">{n.id}</span>{n.chinhThuc && <span className="pf-chip">nhu cầu chính thức</span>}</div>
         <h3 className="pf-h">Câu nguồn</h3>
         <ul className="pf-evs"><BangChung e={{ field: 'nhu_cau', value: n.value, span: n.span, tier: n.tier, source: n.source, href: n.href, extraction: n.span === n.value ? 'verbatim' : 'normalized' }} /></ul>
-        <h3 className="pf-h">Đơn vị có claim cùng sản phẩm · {cung.length}</h3>
+        <h3 className="pf-h">Đơn vị có câu nguồn cùng sản phẩm · {cung.length}</h3>
         <ul className="pf-list">{cung.map((t) => (
           <li key={t}><button type="button" className="pf-row" onClick={() => moMuc({ loai: 'don_vi', ten: t })}><span className="pf-row__v">{t}</span></button></li>))}
         </ul>
@@ -250,7 +251,7 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
         <ul className="pf-list">{ky.map((m) => (
           <li key={m.id}><button type="button" className="pf-row" onClick={() => moMuc({ loai: 'don_vi', ten: m.supplyId })}>
             <span className="pf-row__k">{m.id}</span><span className="pf-row__v">{m.supplyId}</span>
-            <span className="pf-row__s">ký bởi {m.signoff.by} · {m.signoff.date}</span></button></li>))}
+            <span className="pf-row__s">ký bởi {tenNguoi(m.signoff.by)} · {ngayVN(m.signoff.date)}</span></button></li>))}
         </ul>
       </>
     );
@@ -278,11 +279,11 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
   const nguon = 'CNCLData/domains/don_vi_cncl/claims.jsonl';
   const giaiThich: Record<SoKhoa, string> = {
     units: `Số tên đơn vị khác nhau trong ${nguon}, đếm lúc sinh dữ liệu ngày ${m.generatedAt}. Không ai gõ tay con số này; cổng so_sinh đếm lại mỗi lần chạy.`,
-    claims: `Số claim trong ${nguon}. Mỗi claim là một câu nguyên văn nằm trong một bản chụp nguồn; cổng check_spans chặn claim nào không tìm thấy câu của nó.`,
+    claims: `Số câu nguồn trong ${nguon}. Mỗi câu nguồn là một câu nguyên văn nằm trong một bản chụp nguồn; cổng check_spans chặn câu nguồn nào không tìm thấy câu của nó.`,
     needs: 'Số sản phẩm công nghệ chiến lược trong danh mục của QĐ 21/2026/QĐ-TTg, lấy từ chiều CẦU (Dataset_CongNgheChienLuoc).',
-    tierA: 'Số claim có tier A theo bảng phân hạng nguồn của domain. Tier là độ tin của NGUỒN, không phải độ đúng của câu.',
-    snapshots: 'Số bản chụp nguồn được dùng làm bằng. Bấm từng claim để mở đúng bản chụp của nó.',
-    gate: m.chuoiCong ? `Kết quả lần chạy trọn gần nhất của chuỗi cổng, đọc từ file kết quả chứ không gõ tay.` : 'Môi trường này chưa có kết quả chuỗi cổng nào, nên không được ghi là đạt.',
+    tierA: 'Số câu nguồn hạng A theo bảng phân hạng nguồn của lĩnh vực. Hạng là độ tin của NGUỒN, không phải độ đúng của câu.',
+    snapshots: 'Số bản chụp nguồn được dùng làm bằng. Bấm từng câu nguồn để mở đúng bản chụp của nó.',
+    gate: m.chuoiCong ? `Kết quả lần chạy trọn gần nhất của kiểm định tự động, đọc từ file kết quả chứ không gõ tay.` : 'Môi trường này chưa có kết quả kiểm định tự động nào, nên không được ghi là đạt.',
     matches: 'Match chỉ lên web khi có chữ ký người gác cổng trong sổ ký. Máy không tạo chữ ký.',
   };
   const theoTier = ['A', 'B', 'C'].map((t) => [t, du.units.flatMap((u) => u.evidence).filter((e) => e.tier === t).length] as const);
@@ -298,12 +299,12 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
           <dt>Hoãn</dt><dd>{m.chuoiCong.hoan}</dd>
         </dl>)}
       {(muc.khoa === 'claims' || muc.khoa === 'tierA') && (
-        <dl className="pf-dl">{theoTier.map(([t, n]) => <Fragment key={t}><dt>tier {t}</dt><dd>{n}</dd></Fragment>)}</dl>)}
+        <dl className="pf-dl">{theoTier.map(([t, n]) => <Fragment key={t}><dt>hạng {t}</dt><dd>{n}</dd></Fragment>)}</dl>)}
       {(muc.khoa === 'units' || muc.khoa === 'claims' || muc.khoa === 'tierA') && (<>
         <h3 className="pf-h">Các đơn vị được đếm · {du.units.length}</h3>
         <ul className="pf-list">{du.units.map((u) => (
           <li key={u.name}><button type="button" className="pf-row" onClick={() => moMuc({ loai: 'don_vi', ten: u.name })}>
-            <span className="pf-row__v">{u.name}</span><span className="pf-row__s">{u.evidence.length} câu · tier {u.bestTier}</span></button></li>))}
+            <span className="pf-row__v">{u.name}</span><span className="pf-row__s">{u.evidence.length} câu · hạng {u.bestTier}</span></button></li>))}
         </ul></>)}
       {muc.khoa === 'needs' && (
         <ul className="pf-list">{du.needs.map((n) => (
@@ -314,7 +315,7 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
         <ul className="pf-list">{du.matches.map((x) => (
           <li key={x.id}><button type="button" className="pf-row" onClick={() => moMuc({ loai: 'don_vi', ten: x.supplyId })}>
             <span className="pf-row__k">{x.id}</span><span className="pf-row__v">{x.supplyId}</span>
-            <span className="pf-row__s">{x.signoff.by} · {x.signoff.date}</span></button></li>))}
+            <span className="pf-row__s">{tenNguoi(x.signoff.by)} · {ngayVN(x.signoff.date)}</span></button></li>))}
         </ul>)}
       {muc.khoa === 'snapshots' && (
         <ul className="pf-list">{[...new Set(du.units.flatMap((u) => u.evidence.map((e) => e.href)))].sort().map((h) => (
@@ -328,7 +329,7 @@ function tieuDe(muc: Muc, du: Du | null): { eyebrow: string; title: string } {
   if (muc.loai === 'don_vi') return { eyebrow: 'Hồ sơ đơn vị · lớp phủ nguồn', title: muc.ten };
   if (muc.loai === 'nhu_cau') return { eyebrow: 'Nhu cầu · lớp phủ nguồn', title: du?.needs.find((n) => n.entityId === muc.entityId)?.value ?? muc.entityId };
   if (muc.loai === 'nhom') return { eyebrow: 'Nhóm công nghệ chiến lược', title: du?.nodes.find((n) => n.id === `nh:${muc.so}`)?.label ?? `Nhóm ${muc.so}` };
-  const ten: Record<SoKhoa, string> = { units: 'đơn vị', claims: 'claim có nguồn', needs: 'nhu cầu', tierA: 'claim tier A', snapshots: 'bản chụp', gate: 'chuỗi cổng', matches: 'match đã ký' };
+  const ten: Record<SoKhoa, string> = { units: 'đơn vị', claims: 'câu nguồn', needs: 'nhu cầu', tierA: 'câu nguồn hạng A', snapshots: 'bản chụp', gate: 'kiểm định tự động', matches: 'match đã ký' };
   const m = du?.meta;
   const so: Record<SoKhoa, number | string | undefined> = {
     units: m?.units, claims: m?.claims, needs: m?.needs, tierA: m?.tierA, snapshots: m?.snapshots,

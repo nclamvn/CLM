@@ -13,11 +13,11 @@
  * ====
  * RANG 1  · CANH SACH -> exit 0.
  * RANG 2  · trang dau ghi lai "Match thật · chưa chạy" -> TRANG_THAI_GO_TAY.
- * RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO.
+ * RANG 3  · trang dau them lai link toi /hub (du lieu minh hoa da go) -> CON_DEMO.
  * RANG 4  · o HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH.
  * RANG 5  · lib/mat-tien gan cung daKy: 11 -> SO_KHONG_SINH.
  * RANG 6  · trang dau bo dungMatTien -> SO_KHONG_SINH.
- * RANG 7  · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN.
+ * RANG 7  · app/hub/page.tsx khong con chuyen huong ve dashboard -> CON_DEMO.
  * RANG 8  · trang dau thanh trang cuon (.mt bo overflow hidden) -> KHONG_MOT_MAN.
  * RANG 9  · layout bo nap touch-unify.css -> MAU_KHONG_THONG_NHAT.
  * RANG 10 · Hub quay ve do cu (--dk-rd: #C40F0F) -> MAU_KHONG_THONG_NHAT.
@@ -67,16 +67,16 @@ try {
   rang('RANG 1  · canh sach -> exit 0', null, 0);
   rang('RANG 2  · trang dau ghi "chưa chạy" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<h1 className="mt-chu__h">', '<p>Match thật · chưa chạy</p>\n        <h1 className="mt-chu__h">')), 2, 'TRANG_THAI_GO_TAY');
-  rang('RANG 3  · nut "Vào engine thật" tro vao /hub -> CHU_THAT_TRO_DEMO', (t) => doi(t, 'app/page.tsx',
-    (s) => s.replace('<Link href={ROUTE.dashboard} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>\n            <Link href={`${ROUTE.dashboard}/matching`}', '<Link href={ROUTE.hub} className="mt-nut">Vào engine thật <span aria-hidden="true">→</span></Link>\n            <Link href={`${ROUTE.dashboard}/matching`}')), 2, 'CHU_THAT_TRO_DEMO');
+  rang('RANG 3  · link toi /hub quay lai -> CON_DEMO', (t) => doi(t, 'app/page.tsx',
+    (s) => s.replace('<Link href={ROUTE.phuongPhap} className="mt-top__phu">Phương pháp</Link>', '<Link href="/hub" className="mt-top__phu">Hub minh họa</Link>')), 2, 'CON_DEMO');
   rang('RANG 4  · HUD ghi cung <dd>44</dd> -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace('<dt>{c.k}</dt><dd>{c.v}</dd>', '<dt>{c.k}</dt><dd>44</dd>')), 2, 'SO_KHONG_SINH');
   rang('RANG 5  · mat-tien gan cung daKy: 11 -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',
     (s) => s.replace('daKy: match.length', 'daKy: 11')), 2, 'SO_KHONG_SINH');
   rang('RANG 6  · trang dau bo dungMatTien -> SO_KHONG_SINH', (t) => doi(t, 'app/page.tsx',
     (s) => s.replace("import { dungMatTien } from '@/lib/mat-tien';", "import { dungMatTien } from '@/lib/so-tay';")), 2, 'SO_KHONG_SINH');
-  rang('RANG 7  · /hub mat bang "Hub minh họa" -> HUB_THIEU_NHAN', (t) => doi(t, 'app/hub/page.tsx',
-    (s) => s.replace('className="hub-demo-banner"', 'className="hub-x"')), 2, 'HUB_THIEU_NHAN');
+  rang('RANG 7  · /hub het chuyen huong -> CON_DEMO', (t) => doi(t, 'app/hub/page.tsx',
+    (s) => s.replace("redirect('/dashboard');", 'return null;')), 2, 'CON_DEMO');
   rang('RANG 8  · .mt bo overflow hidden -> KHONG_MOT_MAN', (t) => doi(t, 'styles/landing-hub.css',
     (s) => s.replace(/(\.mt \{[^}]*?)overflow: hidden;/, '$1overflow: visible;')), 2, 'KHONG_MOT_MAN');
   rang('RANG 9  · layout bo nap touch-unify -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'app/layout.tsx',
@@ -84,7 +84,7 @@ try {
   rang('RANG 10 · Hub quay ve do cu #C40F0F -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'styles/touch-unify.css',
     (s) => s.replace('--dk-rd: var(--color-accent-blue);', '--dk-rd: #C40F0F;')), 2, 'MAU_KHONG_THONG_NHAT');
   rang('RANG 11 · thanh ben ghi "Solo Entrepreneur" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dash/DashSidebar.tsx',
-    (s) => s.replace('>Công nghệ chiến lược<', '>Solo Entrepreneur<')), 2, 'TRANG_THAI_GO_TAY');
+    (s) => s.replace('>Công nghệ chiến lược Việt Nam<', '>Solo Entrepreneur<')), 2, 'TRANG_THAI_GO_TAY');
   rang('RANG 12 · chu thich nhac "chưa chạy" -> van exit 0', (t) => doi(t, 'app/page.tsx',
     (s) => `// Truoc day trang dau ghi "Match thật · chưa chạy".\n/* va "Thiếu dữ liệu CẦU thật" */\n${s}`), 0);
   rang('RANG 13 · nen gradient -> KHONG_DON_SAC', (t) => doi(t, 'styles/landing-hub.css',

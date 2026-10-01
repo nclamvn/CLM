@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * check-mat-tien.mjs · Mat tien (trang dau "/", Hub minh hoa "/hub", khung dashboard) khong duoc noi
- * sai hien trang, va ca ba mat dung MOT he mau.
+ * check-mat-tien.mjs · Mat tien (trang dau "/", khung dashboard) khong duoc noi sai hien trang, va
+ * dung MOT he mau. Hub minh hoa da GO 01/10/2026; cong nay chan no quay lai.
  *
  * VI SAO CO
  *   29/09/2026 (lan 1): khi di thu duong demo, trang dau con ghi cung "Match thật · chưa chạy",
@@ -15,11 +15,13 @@
  *   TRANG_THAI_GO_TAY     chuoi ghi cung hien trang ("chưa chạy", "Thiếu/Chưa có dữ liệu CẦU",
  *                         "ENGINE DEMO", "CNCL Registry · <ngay>", "UPTIME", "ENGINE ... LIVE") hoac chu
  *                         mau cu cua khung ("Solo Entrepreneur", "Project Lead").
- *   CHU_THAT_TRO_DEMO     mot <a>/<Link> tro vao ROUTE.hub (du lieu minh hoa) ma chu co "thật".
+ *   CON_DEMO              (01/10/2026, thay CHU_THAT_TRO_DEMO va HUB_THIEU_NHAN) con duong dan nao toi /hub,
+ *                         con thu muc components/hub, hoac app/hub/page.tsx khong chuyen huong ve dashboard.
+ *                         Hub minh hoa la du lieu GIA LAP nam trong san pham that; nghiem thu enterprise
+ *                         01/10/2026 chot go han.
  *   SO_KHONG_SINH         trang dau khong lay so tu lib/mat-tien (dungMatTien); lib/mat-tien khong doc
  *                         ba file da qua cong; hoac co so go tay: truong so = hang so, hay chu JSX chua
  *                         con so hai chu so tro len (tru so hieu "QĐ 21" / "QĐ 21/2026").
- *   HUB_THIEU_NHAN        /hub thieu bang "Hub minh họa" tro ve dashboard.
  *   KHONG_MOT_MAN         trang dau khong con la mot man hinh (.mt phai cao 100vh va overflow hidden).
  *   KHONG_DON_SAC         trang dau truot chuan HIVE Editorial (anh Lam chot 29/09/2026 sau khi ban
  *                         vong hub phat sang bi danh gia la "AI slop"): co gradient, glow (shadowBlur,
@@ -33,7 +35,7 @@
  * Chay: node scripts/check-mat-tien.mjs [--touch <dir .touch>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
  */
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -63,7 +65,7 @@ const CAM = [
   [/CNCL Registry · \d{1,2}\/\d{1,2}/, 'ngày registry gõ tay'], [/UPTIME/i, 'UPTIME'], [/ENGINE[^'"`\n]{0,12}LIVE/i, 'ENGINE LIVE'],
   [/Solo Entrepreneur/, 'domain mẫu cũ Solo Entrepreneur'], [/Project Lead/, 'vai trò mẫu Project Lead'],
 ];
-const quetChu = [CAN.page, CAN.hub, CAN.content, CAN.matTien, CAN.sidebar, CAN.topbar, ...landing];
+const quetChu = [CAN.page, CAN.content, CAN.matTien, CAN.sidebar, CAN.topbar, ...landing];
 for (const p of quetChu) {
   const s = boChuThich(doc(p));
   s.split('\n').forEach((l, i) => {
@@ -71,17 +73,17 @@ for (const p of quetChu) {
   });
 }
 
-// ── 2. Chu "thật" tro vao du lieu minh hoa ──────────────────────────────────
-const content = doc(CAN.content);
-const giaTri = (khoa) => [...content.matchAll(new RegExp(`\\b${khoa}:\\s*'([^']*)'`, 'g'))].map((m) => m[1]);
-for (const p of [CAN.page, CAN.hub, ...landing]) {
-  const s = boChuThich(doc(p));
-  for (const m of s.matchAll(/<(a|Link)\b[^>]*href=\{ROUTE\.hub[A-Za-z]*\}[^>]*>([\s\S]*?)<\/\1>/g)) {
-    const trong = m[2];
-    const chu = [trong.replace(/\{[^}]*\}/g, ' ')];
-    for (const e of trong.matchAll(/\{[A-Za-z_.]*\.([A-Za-z_]+)\}/g)) chu.push(...giaTri(e[1]));
-    if (chu.some((c) => /thật/i.test(c))) vi.push(`CHU_THAT_TRO_DEMO: ${ten(p)}: nut "${chu.join(' ').replace(/\s+/g, ' ').trim().slice(0, 60)}" tro vao /hub (du lieu minh hoa)`);
+// ── 2. Khong con du lieu minh hoa ───────────────────────────────────────────
+{
+  const quetLink = [];
+  const di = (d) => { if (!existsSync(d)) return; for (const t of readdirSync(d)) { const p = join(d, t); if (p.startsWith(P('app', 'dev')) || p.startsWith(P('app', 'hub'))) continue; if (statSync(p).isDirectory()) di(p); else if (/\.(tsx|ts)$/.test(t)) quetLink.push(p); } };
+  di(P('app')); di(P('components')); di(P('lib'));
+  for (const p of quetLink) {
+    const s0 = boChuThich(doc(p));
+    if (/['"`]\/hub(['"`?#/]|$)|ROUTE\.hub/.test(s0)) vi.push(`CON_DEMO: ${ten(p)} con duong dan toi /hub (du lieu minh hoa da go)`);
   }
+  if (existsSync(P('components', 'hub'))) vi.push('CON_DEMO: con thu muc components/hub');
+  if (!/redirect\(\s*['"]\/dashboard['"]\s*\)/.test(doc(CAN.hub))) vi.push('CON_DEMO: app/hub/page.tsx khong chuyen huong ve /dashboard');
 }
 
 // ── 3. So phai sinh tu du lieu ──────────────────────────────────────────────
@@ -93,12 +95,6 @@ for (const m of mt.matchAll(/\b(donVi|nhuCau|nhom|capCoNguon|daKy|tuChoi|ncTrong
 for (const p of [CAN.page, ...landing]) {
   const s = boChuThich(doc(p)).replace(/QĐ 21(\/2026)?/g, 'QĐ');
   for (const m of s.matchAll(/>([^<>{}]*)</g)) if (/\b\d{2,}\b/.test(m[1])) vi.push(`SO_KHONG_SINH: ${ten(p)} co so go tay trong JSX: "${m[1].trim().slice(0, 60)}"`);
-}
-
-// ── 4. Hub minh hoa phai tu noi minh la minh hoa ────────────────────────────
-const hubPage = doc(CAN.hub);
-if (!/className="hub-demo-banner"/.test(hubPage) || !/Hub minh họa/.test(hubPage) || !/href=\{ROUTE\.dashboard\}/.test(hubPage)) {
-  vi.push('HUB_THIEU_NHAN: app/hub/page.tsx thieu bang "Hub minh họa" tro ve dashboard');
 }
 
 // ── 5. Mot man hinh ─────────────────────────────────────────────────────────
@@ -142,4 +138,4 @@ if (vi.length) {
   vi.slice(0, 30).forEach((v) => console.log('  ' + v));
   process.exit(2);
 }
-console.log('\nOK: mat tien khong noi sai hien trang, so sinh tu du lieu, mot man hinh, don sac HIVE, Hub cung he mau dashboard.');
+console.log('\nOK: mat tien khong noi sai hien trang, so sinh tu du lieu, mot man hinh, don sac HIVE, khong con du lieu minh hoa.');

@@ -80,21 +80,21 @@
 }
 .mt-tip--trai { transform: translate(calc(-100% - 14px), -50%); }
 .mt-tip b { font-size: 12.5px; font-weight: 500; line-height: 1.35; }
-.mt-tip span { font-size: 11px; color: var(--p-2); }
+.mt-tip span { font-size: 12px; color: var(--p-2); }
 
 /* bang chung duoi hinh: ba cot, thang voi cot cung / truc nhom / cot cau */
 .mt-bang { display: grid; grid-template-columns: 1fr auto 1fr; column-gap: 28px; padding-top: 16px; border-top: 1px solid var(--p-line); animation: mt-hien 180ms var(--p-ease) both; }
 .mt-bang__ben { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-.mt-bang__nhan { font-size: 11.5px; color: var(--p-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mt-bang__nhan { font-size: 12px; color: var(--p-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mt-bang q { font-family: var(--p-serif); font-style: italic; font-size: 14px; line-height: 1.5; color: var(--p-ink); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; quotes: '\201C' '\201D'; }
-.mt-bang__nguon { font-size: 11px; color: var(--p-3); }
-.mt-bang__giua { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 0 24px; border-left: 1px solid var(--p-line); border-right: 1px solid var(--p-line); font-size: 11.5px; color: var(--p-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mt-bang__nguon { font-size: 12px; color: var(--p-3); }
+.mt-bang__giua { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 0 24px; border-left: 1px solid var(--p-line); border-right: 1px solid var(--p-line); font-size: 12px; color: var(--p-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .mt-bang__ma { font-family: var(--p-mono); font-size: 12px; color: var(--p-ink); }
 .mt-bang__dem { margin-top: 4px; color: var(--p-3); }
 @keyframes mt-hien { from { opacity: 0; } to { opacity: 1; } }
 
 /* ---- chan ---- */
-.mt-chan { padding: 12px 48px 16px; border-top: 1px solid var(--p-line); font-size: 11.5px; color: var(--p-3); }
+.mt-chan { padding: 12px 48px 16px; border-top: 1px solid var(--p-line); font-size: 12px; color: var(--p-3); }
 
 @media (max-height: 820px) and (min-width: 1000px) {
   .mt-chu__h { font-size: clamp(48px, 5vw, 84px); margin-top: 14px; }

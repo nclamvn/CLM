@@ -5,6 +5,7 @@ import { HoSoDonVi, type HoSo, type HoSoMeta } from '@/components/hoso/HoSoDonVi
 import hoSo from '@/lib/hub-ho-so.json';
 import registry from '@/lib/cncl-registry.json';
 import type { CnclUnit } from '@/lib/cncl-registry';
+import { ngayVN } from '@/lib/dinh-dang';
 
 type DuLieu = { meta: HoSoMeta; units: HoSo[] };
 const D = hoSo as unknown as DuLieu;
@@ -30,7 +31,7 @@ export default async function HoSoPage({ params }: { params: Promise<{ slug: str
   if (!u) notFound();
   return (
     <>
-      <DashTopBar title="Hồ sơ đơn vị" subtitle={`${hs.ten} · ${hs.dem.cauNguon} câu nguồn · dữ liệu ${D.meta.mocNgay}`} />
+      <DashTopBar title="Hồ sơ đơn vị" subtitle={`${hs.ten} · ${hs.dem.cauNguon} câu nguồn · dữ liệu ${ngayVN(D.meta.mocNgay)}`} />
       <div className="dash-content">
         <HoSoDonVi hs={hs} bangChung={u.evidence} meta={D.meta} />
       </div>

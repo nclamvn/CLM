@@ -38,7 +38,7 @@ const shell = {
   minHeight: '100vh',
   background: 'var(--color-bg-canvas)',
   color: 'var(--color-text-primary)',
-  fontFamily: 'var(--font-sans)',
+  fontFamily: 'var(--font-ui)',
   padding: '40px 48px',
 } as const;
 const card = {

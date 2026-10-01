@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DashTopBar } from '@/components/dash/DashTopBar';
 import { MoDau } from '@/components/modau/MoDau';
 import md from '@/lib/hub-mo-dau.json';
+import { ngayVN } from '@/lib/dinh-dang';
 
 export const metadata: Metadata = {
   title: 'Tổng quan - .touch',
@@ -16,7 +17,7 @@ export default function DashboardPage() {
   const m = (md as unknown as { mocNgay: string }).mocNgay;
   return (
     <>
-      <DashTopBar title="Tổng quan" subtitle={`Hub cung cầu công nghệ chiến lược, chứng minh được · dữ liệu ${m}`} />
+      <DashTopBar title="Tổng quan" subtitle={`Cung cầu công nghệ chiến lược, mọi con số có nguồn · dữ liệu ${ngayVN(m)}`} />
       <div className="dash-content"><MoDau /></div>
     </>
   );

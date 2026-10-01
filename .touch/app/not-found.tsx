@@ -3,7 +3,7 @@ import { Container } from '@/components/shared/Container';
 import { Button } from '@/components/shared/Button';
 import { notFound } from '@/lib/content';
 
-/** 404 dung thuong hieu: wordmark, giong fail-loud, hai loi ra (home, hub). */
+/** 404 dung thuong hieu: wordmark, giong fail-loud, hai loi ra (trang dau, bang dieu khien). */
 export default function NotFound() {
   return (
     <main id="main" className="nf">
@@ -23,8 +23,8 @@ export default function NotFound() {
           <Button variant="primary" href="/" arrow>
             {notFound.home}
           </Button>
-          <Button variant="ghost" href="/hub">
-            {notFound.hub}
+          <Button variant="ghost" href="/dashboard">
+            {notFound.dashboard}
           </Button>
         </div>
       </Container>

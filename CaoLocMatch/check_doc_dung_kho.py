@@ -80,6 +80,15 @@ def main():
         return 3
 
     loi, dat = [], []
+    try:
+        do_het(cay, loi, dat)
+    finally:
+        # 01/10/2026: tung de lai 84 thu muc tam khi chuoi bi ngat giua chung; don trong finally.
+        shutil.rmtree(tam, ignore_errors=True)
+    return ket_luan(loi, dat)
+
+
+def do_het(cay, loi, dat):
     for nhan, cmd, thu_muc, file_du_lieu, dau_hieu in PHEP_DO:
         f = cay / file_du_lieu
         if not f.exists():
@@ -109,8 +118,8 @@ def main():
         else:
             dat.append((nhan, nen, sau))
 
-    shutil.rmtree(tam, ignore_errors=True)
 
+def ket_luan(loi, dat):
     print(f"phep do: {len(PHEP_DO)} · dat: {len(dat)} · hong: {len(loi)}")
     for nhan, nen, sau in dat:
         print(f"  OK  {nhan}: nen {nen} -> sau khi lam rong {sau}")

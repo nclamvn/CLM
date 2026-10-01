@@ -12,10 +12,10 @@
     "capCungCau": 67
   },
   "chuoiCong": {
-    "xanh": 91,
-    "tong": 91,
+    "xanh": 93,
+    "tong": 93,
     "dat": true,
-    "luc": "2026-09-30T16:23:43+0700"
+    "luc": "2026-10-01T08:27:25+0700"
   },
   "diemYeu": {
     "chuaDinhDanh": 60,
@@ -46,13 +46,13 @@
     },
     {
       "href": "/dashboard/matching",
-      "ten": "Matching Workbench",
-      "su": "24/24 điểm tự dựng lại khớp engine"
+      "ten": "Ghép cung cầu",
+      "su": "24/24 điểm tính lại khớp máy ghép"
     },
     {
       "href": "/dashboard/registry",
-      "ten": "Evidence Registry",
-      "su": "323 câu nguồn, 120 tier A"
+      "ten": "Sổ nguồn",
+      "su": "323 câu nguồn, 120 câu hạng A"
     }
   ],
   "ban_do": {

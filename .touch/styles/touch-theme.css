@@ -139,7 +139,7 @@
 .t-label-01   { font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0.01em; }
 .t-label-upper{ font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .t-mono-01    { font-family: var(--font-code); font-size: 12px; line-height: 18px; font-weight: 500; font-variant-numeric: tabular-nums; }
-.t-caption-01 { font-size: 11px; line-height: 16px; font-weight: 400; letter-spacing: 0.01em; }
+.t-caption-01 { font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.01em; }
 .t-metric-xl  { font-size: 40px; line-height: 44px; font-weight: 650; letter-spacing: -0.035em; }
 .t-metric-lg  { font-size: 32px; line-height: 36px; font-weight: 650; letter-spacing: -0.03em; }
 
@@ -168,7 +168,7 @@
   font-family: var(--font-ui); font-weight: 700; letter-spacing: -0.04em; color: var(--brand-wordmark);
   font-size: var(--brand-word-size); line-height: var(--brand-word-line);
 }
-.touch-brand__sub { font-size: 11px; line-height: 16px; font-weight: 400; color: var(--brand-descriptor); }
+.touch-brand__sub { font-size: 12px; line-height: 16px; font-weight: 400; color: var(--brand-descriptor); }
 .touch-brand--dark { --brand-wordmark: var(--brand-word-dark); }
 .touch-brand--light { --brand-wordmark: var(--brand-word-light); }
 .touch-brand--xs { --brand-dot-size: 5px; --brand-lockup-gap: 3px; --brand-dot-offset: 0px; --brand-word-size: 13px; --brand-word-line: 18px; }

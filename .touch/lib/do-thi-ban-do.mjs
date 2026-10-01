@@ -186,7 +186,7 @@ function dungBanDoMot(nodes, edges, thamSo) {
     lanhTho.push({ id: `nh:${g}`, so: g, nhan: nhanNhom.get(g), cx: tam.x + Math.cos(a) * RX, cy: tam.y + Math.sin(a) * RY, r, goc: a });
   }
   if (thanhVien.get(CHUA_CO).length) {
-    lanhTho.push({ id: `nh:${CHUA_CO}`, so: null, nhan: 'Chưa có claim nhóm', cx: tam.x, cy: tam.y, r: rCuaNhom(CHUA_CO), goc: null });
+    lanhTho.push({ id: `nh:${CHUA_CO}`, so: null, nhan: 'Chưa có câu nguồn về nhóm', cx: tam.x, cy: tam.y, r: rCuaNhom(CHUA_CO), goc: null });
   }
   // Tach lanh tho chong nhau: day cap tat dinh, giu trong khung (chua le cho nhan).
   const LE_X = 24; const LE_TREN = 44; const LE_DUOI = 40; const KHE_LT = 30; const CHO_NHAN = 40;

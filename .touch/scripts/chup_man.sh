@@ -62,6 +62,10 @@ if [ "${1:-}" = "--chot-moc" ]; then
 else
   node scripts/chup_va_do.mjs "http://localhost:$P" || RC=2
 fi
+# 4b · kiem chuan truy cap tren cung may chu (01/10/2026). Ghi reports/truy_cap.json kem van tay giao
+# dien; cong check-truy-cap.mjs trong chuoi doc file nay.
+echo "4b · kiem chuan truy cap (axe-core) tren moi trang"
+node scripts/kiem-truy-cap.mjs "http://localhost:$P" || echo "CO VI PHAM TRUY CAP, xem reports/truy_cap.json"
 kill $SV 2>/dev/null
 wait $SV 2>/dev/null
 

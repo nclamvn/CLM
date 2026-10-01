@@ -85,7 +85,7 @@ function TrucThoiGian({ ds, tu, den, chon, datChon }: { ds: SuKien[]; tu: string
     lech.set(e.id, 0);
   });
   return (
-    <svg className="tc-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dòng thời gian ${trongKhoang.length} sự kiện từ ${ngayVN(tu)} đến ${ngayVN(den)}. Danh sách đầy đủ ở dưới.`}
+    <svg className="tc-svg" viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Dòng thời gian ${trongKhoang.length} sự kiện từ ${ngayVN(tu)} đến ${ngayVN(den)}. Danh sách đầy đủ ở dưới.`}
       onClick={(e) => { if ((e.target as Element).tagName === 'svg') datChon(null); }}>
       <text x={TRAI - 12} y={40} textAnchor="end" className="tc-lan">Mật độ / tháng</text>
       {matDo.map((m) => {
@@ -136,13 +136,13 @@ function TheSuKien({ e }: { e: SuKien }) {
         <time dateTime={e.ngay}>{ngayVN(e.ngay)}</time>
         <span className={`tc-tag tc-tag--${e.lan}`}>{LAN.find((l) => l.k === e.lan)?.nhan}</span>
         <span className={`tc-tt tc-tt--${e.trangThai}`}>{TT[e.trangThai]}</span>
-        {e.tier && <span className={`pf-tier pf-tier--${e.tier[0]}`}>tier {e.tier}</span>}
+        {e.tier && <span className={`pf-tier pf-tier--${e.tier[0]}`}>hạng {e.tier}</span>}
       </div>
       <h3 className="tc-the__ten">{e.tieuDe}</h3>
       {e.nguon.filter((n) => n.span).map((n, i) => (
         <blockquote key={i} className="tc-the__span">{n.span}<cite> · <a className="pf-link" href={n.href} target="_blank" rel="noopener noreferrer">{n.ten}</a></cite></blockquote>))}
       {e.lyDo && <blockquote className="tc-the__span">{e.lyDo}<cite> · {e.nguoi}, nguyên lời</cite></blockquote>}
-      {e.ghiChu && <p className="tc-the__gc">Ghi chú: nguồn chính phủ không ghi ngày ký; ngày này chỉ có nguyên văn ở hai nguồn tier B độc lập.</p>}
+      {e.ghiChu && <p className="tc-the__gc">Ghi chú: nguồn chính phủ không ghi ngày ký; ngày này chỉ có nguyên văn ở hai nguồn hạng B độc lập.</p>}
       <div className="tc-the__lk">
         {e.donVi.map((d) => d.slug
           ? <Link key={d.ten} href={`/dashboard/don-vi/${d.slug}`} className="tc-lk">{d.ten}</Link>
