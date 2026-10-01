@@ -15,9 +15,13 @@ CONG KIEM (moi dong):
   TRUONG_LA         field ngoai danh sach.
   SPAN_DO_DAI       span ngoai 20..600 ky tu.
   CHUP_THIEU        ban chup khong co, hoac dau file khong ghi dung URL cua dong.
-  SPAN_KHONG_CHUP   span khong la chuoi con cua ban chup (gop khoang trang, NFC).
+  SPAN_KHONG_CHUP   span khong la chuoi con TUNG KY TU cua ban chup (chi giai HTML entity va NFC,
+                    dung luat cua refinery.py). Truoc 01/10/2026 cong nay gop khoang trang nen 30
+                    span cat tu ban PDF (co ngat dong) lot qua, roi refinery bat SPAN_NOT_FOUND khi nap.
   SPAN_TREN_TIEU_DE span chi nam tren dong bat dau bang "#" (cong ghi_chu_ban_chup coi la ghi chu).
-  VALUE_KHONG_SPAN  verbatim ma value khong nam trong span.
+  VALUE_KHONG_SPAN  verbatim ma value khong nam trong span (cung luat tung ky tu).
+  MOC_VUOT_SPAN     value co moc thoi gian (ngay, thang/nam, nam) ma span khong co (luat 3b cua
+                    check_luat3.py, dung chung ham). Them 01/10/2026 vi ctd-21 lot toi registry.
   CHUAN_HOA_KHONG_KHAI normalized ma note khong bat dau "CHUAN HOA CO CHU DICH:".
   GIA_TRI_SAI       loai_dat_hang ngoai bon gia tri; san_pham_lien_quan ngoai 1..30.
   HANG_CAO_HON_LUAT tier cao hon luat ten mien (A chi cho *.gov.vn, baochinhphu.vn, *.chinhphu.vn).
@@ -32,12 +36,16 @@ CONG KIEM (moi nhu cau):
 Chay: python3 kiem_lo_cau.py <dot>    Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
 """
 import glob
+import html
 import json
 import re
 import sys
 import unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from check_luat3 import moc_vuot_span  # noqa: E402  dung chung luat 3b, khong chep tay
 
 TRUONG = {"ten_nhu_cau", "ben_dat_hang", "loai_dat_hang", "san_pham_lien_quan", "doi_tuong", "thoi_han",
           "kinh_phi", "trang_thai"}
@@ -53,6 +61,11 @@ EM = chr(0x2014)
 def thoat3(m):
     print(f"KHONG CHAY DUOC: {m}")
     sys.exit(3)
+
+
+def dung(s):
+    """Luat so khop cua registry (refinery.py, check_luat3.py): giai HTML entity roi NFC, KHONG gop khoang trang."""
+    return unicodedata.normalize("NFC", html.unescape(s or ""))
 
 
 def chuan(s):
@@ -117,8 +130,9 @@ def main(argv):
             noi = sp.read_text(encoding="utf-8")
             if f"# URL: {d['url']}" not in "\n".join(noi.splitlines()[:4]):
                 vi.append(f"CHUP_THIEU: {vt} dau {d['snapshot']} khong ghi URL cua dong")
-            if chuan(span) not in chuan(noi):
-                vi.append(f"SPAN_KHONG_CHUP: {vt} {e}/{f}")
+            if dung(span) not in dung(noi):
+                goi = " (chi khop khi gop khoang trang: chep dung ngat dong cua ban chup)" if chuan(span) in chuan(noi) else ""
+                vi.append(f"SPAN_KHONG_CHUP: {vt} {e}/{f}{goi}")
             else:
                 than = "\n".join(x for x in noi.splitlines() if not x.lstrip().startswith("#"))
                 if chuan(span) not in chuan(than):
@@ -126,8 +140,11 @@ def main(argv):
             m = re.search(r"_(\d{4})(\d{2})(\d{2})\.", d["snapshot"])
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d["ngay_bai"])) or not m or d["ngay_bai"] != f"{m[1]}-{m[2]}-{m[3]}":
                 vi.append(f"NGAY_SAI: {vt} ngay_bai {d['ngay_bai']} va ban chup {d['snapshot']}")
-        if d["extraction"] == "verbatim" and chuan(v) not in chuan(span):
+        if d["extraction"] == "verbatim" and dung(v) not in dung(span):
             vi.append(f"VALUE_KHONG_SPAN: {vt} {e}/{f}")
+        thieu_moc = moc_vuot_span(dung(v), dung(span))
+        if thieu_moc:
+            vi.append(f"MOC_VUOT_SPAN: {vt} {e}/{f} value co {', '.join(thieu_moc)} ma span khong co")
         if d["extraction"] == "normalized" and not str(d.get("note", "")).startswith(NHAN):
             vi.append(f"CHUAN_HOA_KHONG_KHAI: {vt} {e}/{f}")
         if f == "loai_dat_hang" and v not in LOAI:

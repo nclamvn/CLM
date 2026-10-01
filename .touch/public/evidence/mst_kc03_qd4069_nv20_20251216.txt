@@ -1,0 +1,83 @@
+# SNAPSHOT · mic.mediacdn.vn (tep dinh kem cong mst.gov.vn) · captured 2026-10-01 via web_fetch (text extraction)
+# URL: https://mic.mediacdn.vn/639352410187198464/2025/12/16/01-1-phu-luc-quyet-dinh-4069-phe-duyet-21-nhiem-vu-1765847056448896720085.pdf
+# Bai dang 16/12/2025. Hang de xuat B.
+
+20. Nghiên cứu xây 
+dựng hệ thống tự 
+động phát hiện, 
+giám sát và cảnh 
+báo một số sâu, 
+bệnh chính gây 
+hại trên cây chè 
+dựa trên nền tảng 
+Internet vạn vật 
+(IoT) và trí tuệ 
+nhân tạo (AI).
+- Làm chủ công 
+nghệ thiết kế và 
+chế tạo hệ thống 
+tự động phát hiện, 
+giám sát và cảnh 
+báo một số sâu, 
+bệnh chính gây 
+hại trên cây chè 
+dựa trên nền tảng 
+IoT và AI.
+1. Hệ thống tự động phát hiện, giám sát và cảnh 
+báo một số sâu, bệnh chính gây hại trên cây chè 
+dựa trên nền tảng IoT và AI, có các thông số và 
+tính năng chính sau:
+- Tối thiểu 06 trạm IoT có kết nối truyền thông 
+không dây LoRa/4G thu nhận được dữ liệu một 
+số loại sâu bệnh phổ biến trên cây chè trong các 
+điều kiện thời tiết, thổ nhưỡng khác nhau với các 
+thông số kỹ thuật cụ thể cho mỗi trạm:
++ Đo tốc độ gió: (0 - 37) m/s;
++ Đo mưa: độ nhạy 0,2 mm;
+Tuyển chọn Học viện Công nghệ
+Bưu chính Viễn 
+thông, Bộ Khoa học 
+và Công nghệ
+Đề tài khoa 
+học và công 
+nghệ cấp 
+quốc gia.
+Lĩnh vực: 
+Khoa học 
+công nghệ
+33
+TT Tên nhiệm vụ Định hướng mục 
+tiêu Yêu cầu đối với kết quả
+Phương 
+thức tổ 
+chức thực 
+hiện
+Xác định nguồn đề 
+xuất nhiệm vụ
+Loại hình 
+nhiệm vụ
+- Chế tạo và thử 
+nghiệm 01 hệ 
+thống tự động 
+phát hiện, giám 
+sát và cảnh báo 
+một số sâu, bệnh 
+chính gây hại trên 
+cây chè dựa trên 
+nền tảng IoT và 
+AI.
++ Đo nhiệt độ: (0 - 800)0C;
++ Đo ướt lá: 220/390 kΩ;
++ Đo cường độ ánh sáng: dải sáng (300 – 1.100) 
+nm; 
++ Độ ẩm của đất; 
++ Camera có độ phân giải tối thiểu 02 MP; có khả 
+năng quan sát ban đêm; chạy các thuật toán Edge 
+AI trên trạm IoT;
++ 02 UAV có kết nối truyền thông không dây 
+LoRa/4G: tải trọng ≥ 01kg, đạt tiêu chuẩn IP67; 
+camera đa phổ, phân giải 03MP; thời gian bay tối 
+thiểu 30 phút;
++ 01 bộ Gateway hỗ trợ truyền thông LoRa/4G;
++ 01 Trạm thu thập và xử lý dữ liệu trung tâm: 
+phù hợp với yêu cầu của hệ thống. 

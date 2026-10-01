@@ -215,6 +215,12 @@ chay CNCLData hang_cho             "$CNCL" 'OK:|FAIL|KHONG CHAY' python3 vong_tu
 # Lo lam giau cho duyet (30/09/2026): anh Lam duyet nguon THEO LO, nen moi dong trinh len phai qua
 # mot cong tat dinh truoc (nguyen van trong ban chup, dung truong, dung hang, o don tri khong bi de).
 chay CNCLData kiem_lo              "$CNCL" 'LO |OK:|FAIL|KHONG CHAY' python3 lam_giau/kiem_lo.py --tat-ca
+# Cau that (01/10/2026, lo 03 da duyet): domain rieng domains/cau_dat_hang. Cung ky luat voi chieu
+# cung: refinery (span tung ky tu), luat 3 (khong khai qua span, moc thoi gian), va cong rieng
+# (moi nhu cau truy ve mot lan duyet cua nguoi, khong claim them tay sau nap).
+chay CNCLData dat_hang_refinery    "$CNCL" 'VALIDATION|GATE'      python3 methodbox/refinery.py domains/cau_dat_hang
+chay CNCLData dat_hang_luat3       "$CNCL" 'OK:|VI PHAM|FAIL'     python3 check_luat3.py domains/cau_dat_hang
+chay CNCLData dat_hang             "$CNCL" 'OK:|FAIL|KHONG CHAY'  python3 check_cau_dat_hang.py
 
 # ── Kho dan xuat: dung domain, chay match, doi chieu so chu ky ──────────────
 chay CaoLocMatch build_dan_xuat   "$CLM" 'OK:|FAIL:'             python3 build_cncl_match.py
@@ -299,6 +305,8 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      bao_cao          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-bao-cao.mjs
   # Ho so kiem toan duoc (01/10/2026): ma SHA-256 tren moi ho so khop cau nguon + ban chup; cong cu doi chieu bao KHOP.
   chay .touch      kiem_toan        "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-kiem-toan.mjs
+  # Cau that (01/10/2026, lo 03): nhu cau khop domain da duyet; goi y don vi co cau nguon that, khong tu nhan da ky.
+  chay .touch      cau_that         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-cau-that.mjs
   # Dong thoi gian ho so (01/10/2026): nhan khong de nhau, khong de cham, khong tran; do hinh hoc doc lap.
   chay .touch      dong_thoi_gian   "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-dong-thoi-gian.mjs
   # Ban doc cau nguon (01/10/2026): go dau markdown nhung khong mat chu nguon; moi cho hien cau qua hienCau.
@@ -362,6 +370,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_hoi_dap     "$TOUCH" 'BITE HOI DAP'      node scripts/bite-hoi-dap.mjs
     chay .touch    rang_bao_cao     "$TOUCH" 'BITE BAO CAO'      node scripts/bite-bao-cao.mjs
     chay .touch    rang_kiem_toan   "$TOUCH" 'BITE KIEM TOAN'    node scripts/bite-kiem-toan.mjs
+    chay .touch    rang_cau_that    "$TOUCH" 'BITE CAU THAT'     node scripts/bite-cau-that.mjs
     chay .touch    rang_dong_thoi_gian "$TOUCH" 'BITE DONG THOI GIAN' node scripts/bite-dong-thoi-gian.mjs
     chay .touch    rang_hien_cau    "$TOUCH" 'BITE HIEN CAU'     node scripts/bite-hien-cau.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
@@ -388,6 +397,7 @@ if [ "$NHANH" -eq 0 ]; then
   chay CNCLData    rang_kiem_lo       "$CNCL" 'BITE KIEM LO|KHONG CHAY' python3 lam_giau/bite_kiem_lo.py
   chay CNCLData    rang_lo_dinh_danh  "$CNCL" 'BITE KIEM LO DINH DANH|KHONG CHAY' python3 lam_giau/bite_kiem_lo_dinh_danh.py
   chay CNCLData    rang_lo_cau        "$CNCL" 'BITE KIEM LO CAU|KHONG CHAY' python3 lam_giau/bite_kiem_lo_cau.py
+  chay CNCLData    rang_dat_hang      "$CNCL" 'BITE CAU DAT HANG|KHONG CHAY' python3 bite_cau_dat_hang.py
   chay CNCLData    rang_nap_tra_cong  "$CNCL" 'BITE NAP TRA CONG' python3 lam_giau/bite_nap_tra_cong.py
   chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py

@@ -1,0 +1,4690 @@
+{
+ "meta": {
+  "soNhuCau": 54,
+  "soBenDatHang": 16,
+  "coGoiY": 41,
+  "ganSanPham": 41,
+  "theoLoai": {
+   "nhiem_vu_khcn": 10,
+   "bai_toan_lon": 19,
+   "chuong_trinh": 20,
+   "du_an_goi_thau": 5
+  }
+ },
+ "nhuCau": [
+  {
+   "ma": "mst-01",
+   "ten": "Nghiên cứu, thiết kế và chế tạo chip thu phát vô tuyến cho UAV",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "23",
+   "tenSp": "Chip chuyên dụng",
+   "doiTuong": "50 chip thu phát vô tuyến cho UAV mẫu sử dụng công nghệ CMOS 65 nm hoặc công nghệ tương đương",
+   "thoiHan": "Từ 8 giờ 00 phút ngày 25 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 05 tháng 10 năm 2026",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-25",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu, thiết kế và chế tạo chip thu phát vô tuyến cho UAV",
+     "span": "Tên nhiệm vụ: \"Nghiên cứu, thiết kế và chế tạo chip thu phát vô tuyến cho UAV\".",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_chip_thu_phat_uav_20260925.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "Căn cứ Quyết định số 3855/QĐ-BKHCN ngày 20 tháng 9 năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ phê duyệt nhiệm vụ nghiên cứu và phát triển công nghệ chiến lược đặt hàng",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_chip_thu_phat_uav_20260925.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "Quỹ Phát triển khoa học và công nghệ Quốc gia (sau đây viết tắt là Quỹ) thông báo công khai kế hoạch đặt hàng để tuyển chọn tổ chức chủ trì thực hiện nhiệm vụ nghiên cứu và phát triển công nghệ chiến lược đặt hàng",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_chip_thu_phat_uav_20260925.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "50 chip thu phát vô tuyến cho UAV mẫu sử dụng công nghệ CMOS 65 nm hoặc công nghệ tương đương",
+     "span": "- 50 chip thu phát vô tuyến cho UAV mẫu sử dụng công nghệ CMOS 65 \nnm hoặc công nghệ tương đương đã đóng gói, đo kiểm đạt yêu cầu kỹ \nthuật và bảo đảm đáp ứng các chỉ tiêu kỹ thuật và tính năng sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_qd3855_chip_uav_20260925.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "23",
+     "span": "1. Làm chủ thiết kế chip thu phát vô tuyến chuyên dụng cho UAV trên \ncông nghệ CMOS 65 nm: kiến trúc \nhệ thống, thiết kế các khối cao tần, \ntương tự, mixed-signal và số, kiểm \nchứng toàn chip, thiết kế vật lý.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_qd3855_chip_uav_20260925.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "Từ 8 giờ 00 phút ngày 25 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 05 tháng 10 năm 2026",
+     "span": "Thời gian tiếp nhận hồ sơ: Từ 8 giờ 00 phút ngày 25 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 05 tháng 10 năm 2026.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_chip_thu_phat_uav_20260925.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "uav",
+    "chip",
+    "50",
+    "thu",
+    "vo",
+    "tuyen",
+    "mau",
+    "su dung",
+    "cmos",
+    "65",
+    "nm",
+    "hoac",
+    "tuong",
+    "duong"
+   ],
+   "goiY": [
+    {
+     "dv": "CT Semiconductor",
+     "slug": "ct-semiconductor",
+     "kyCho": [
+      "MATCH-0015"
+     ],
+     "khop": [],
+     "trich": null
+    },
+    {
+     "dv": "FPT Semiconductor",
+     "slug": "fpt-semiconductor",
+     "kyCho": [
+      "MATCH-0014"
+     ],
+     "khop": [],
+     "trich": null
+    },
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [
+      "MATCH-0013"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "mst-02",
+   "ten": "Nghiên cứu, phát triển và làm chủ công nghệ đội robot di động tự hành ứng dụng trong vệ sinh môi trường đô thị",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "07",
+   "tenSp": "Robot di động tự hành và robot công nghiệp",
+   "doiTuong": "40 robot di động tự hành trong miền vận hành thiết kế (ODD)",
+   "thoiHan": "từ ngày 03 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 14 tháng 9 năm 2026",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-08-30",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu, phát triển và làm chủ công nghệ đội robot di động tự hành ứng dụng trong vệ sinh môi trường đô thị",
+     "span": "Tên nhiệm vụ: \"Nghiên cứu, phát triển và làm chủ công nghệ đội robot di động tự hành ứng dụng trong vệ sinh môi trường đô thị\".",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_robot_ve_sinh_do_thi_20260830.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "Căn cứ Quyết định số 3626/QĐ-BKHCN ngày 29 tháng 8 năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ phê duyệt nhiệm vụ nghiên cứu và phát triển công nghệ chiến lược đặt hàng",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_robot_ve_sinh_do_thi_20260830.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "Quỹ Phát triển khoa học và công nghệ Quốc gia (sau đây viết tắt là Quỹ) thông báo công khai kế hoạch đặt hàng để tuyển chọn tổ chức chủ trì thực hiện nhiệm vụ nghiên cứu và phát triển công nghệ chiến lược đặt hàng",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_robot_ve_sinh_do_thi_20260830.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "40 robot di động tự hành trong miền vận hành thiết kế (ODD)",
+     "span": "1. 40 robot di động tự hành trong miền vận hành \nthiết kế (ODD) xác định có tính năng và chỉ tiêu \nkỹ thuật như sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_qd3626_robot_ve_sinh_20260830.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "7",
+     "span": "1. Làm chủ thiết kế,\ncông nghệ chế tạo, \ntích hợp đội robot di \nđộng tự hành ứng \ndụng trong vệ sinh \nmôi trường đô thị \nMake in Vietnam.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_qd3626_robot_ve_sinh_20260830.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "từ ngày 03 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 14 tháng 9 năm 2026",
+     "span": "Thời gian tiếp nhận hồ sơ: từ ngày 03 tháng 9 năm 2026 đến 17 giờ 00 phút ngày 14 tháng 9 năm 2026.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_robot_ve_sinh_do_thi_20260830.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "robot",
+    "40",
+    "di dong",
+    "tu hanh",
+    "mien",
+    "van hanh",
+    "odd"
+   ],
+   "goiY": [
+    {
+     "dv": "ROSTEK",
+     "slug": "rostek",
+     "kyCho": [
+      "MATCH-0002"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "mst-03",
+   "ten": "Xây dựng mô hình phát triển sản phẩm từ cây Bách bộ (*Stemona tuberosa* Lour.) theo hướng bền vững góp phần cải thiện sinh kế cộng đồng tại vùng đệm Vườn quốc gia Xuân Sơn, tỉnh Phú Thọ",
+   "benDatHang": "Liên hiệp các Hội khoa học và kỹ thuật Việt Nam",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "02 quy trình công nghệ chế biến sâu cho 02 loại sản phẩm",
+   "thoiHan": "48 tháng",
+   "kinhPhi": "6.000.000.000 đồng (Bằng chữ: Sáu tỷ đồng)",
+   "trangThai": null,
+   "ngayBai": "2026-09-03",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Xây dựng mô hình phát triển sản phẩm từ cây Bách bộ (*Stemona tuberosa* Lour.) theo hướng bền vững góp phần cải thiện sinh kế cộng đồng tại vùng đệm Vườn quốc gia Xuân Sơn, tỉnh Phú Thọ",
+     "span": "1.1. Tên nhiệm vụ: \"Xây dựng mô hình phát triển sản phẩm từ cây Bách bộ (*Stemona tuberosa* Lour.) theo hướng bền vững góp phần cải thiện sinh kế cộng đồng tại vùng đệm Vườn quốc gia Xuân Sơn, tỉnh Phú Thọ\".",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Liên hiệp các Hội khoa học và kỹ thuật Việt Nam",
+     "span": "Trên phong bì ghi rõ: Hồ sơ đăng ký tuyển chọn nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo do Liên hiệp các Hội khoa học và kỹ thuật Việt Nam đặt hàng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "1.4. Loại hình nhiệm vụ: Nhiệm vụ giải pháp xã hội",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "02 quy trình công nghệ chế biến sâu cho 02 loại sản phẩm",
+     "span": "- 02 quy trình công nghệ chế biến sâu cho 02 loại sản phẩm;",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "kinh_phi",
+     "value": "6.000.000.000 đồng (Bằng chữ: Sáu tỷ đồng)",
+     "span": "- Mức trần kinh phí dự kiến hỗ trợ từ ngân sách nhà nước : 6.000.000.000 đồng (Bằng chữ: Sáu tỷ đồng).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "thoi_han",
+     "value": "48 tháng",
+     "span": "1.6. Thời gian thực hiện nhiệm vụ: 48 tháng",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_bach_bo_lhhvn_20260903.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "02",
+    "quy trinh",
+    "che bien",
+    "sau",
+    "loai san"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+     "slug": "cong-ty-tnhh-cong-nghe-sinh-hoc-xanh-nhat-lan",
+     "kyCho": [],
+     "khop": [
+      "quy trinh",
+      "che bien",
+      "sau"
+     ],
+     "trich": {
+      "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+     "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
+     "kyCho": [],
+     "khop": [
+      "quy trinh",
+      "che bien",
+      "sau"
+     ],
+     "trich": {
+      "span": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
+      "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "mst-04",
+   "ten": "Nghiên cứu xây dựng mô hình chuyển đổi số trong hoạt động đo lường. Áp dụng thí điểm cấp chứng chỉ đo lường kỹ thuật số trong lĩnh vực môi trường.",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "01",
+   "tenSp": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+   "doiTuong": "Nền tảng quản lý hoạt động đo lường ứng dụng công nghệ của công nghiệp 4.0",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-01-08",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu xây dựng mô hình chuyển đổi số trong hoạt động đo lường. Áp dụng thí điểm cấp chứng chỉ đo lường kỹ thuật số trong lĩnh vực môi trường.",
+     "span": "1 Nghiên cứu xây \ndựng mô hình \nchuyển đổi số\ntrong hoạt động \nđo lường. Áp \ndụng thí điểm cấp \nchứng chỉ đo \nlường kỹ thuật số \ntrong lĩnh vực \nmôi trường.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc40_qd4246_do_luong_20260108.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc40_qd4246_do_luong_20260108.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "Điều 1. Phê duyệt Danh mục 01 nhiệm vụ khoa học và công nghệ đặt \nhàng thuộc Chương trình khoa học và công nghệ cấp quốc gia giai đoạn đến \nnăm 2030",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc40_qd4246_do_luong_20260108.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Nền tảng quản lý hoạt động đo lường ứng dụng công nghệ của công nghiệp 4.0",
+     "span": "2. Nền tảng quản lý hoạt động đo lường ứng dụng công nghệ \ncủa công nghiệp 4.0 kết nối giữa chủ sở hữu phương tiện đo, tổ \nchức đo lường và cơ quan quản lý, có chức năng:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc40_qd4246_do_luong_20260108.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "1",
+     "span": "- Trợ lý ảo sử dụng mô hình ngôn ngữ lớn (LLM), độ chính xác \ntrên 90%;",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc40_qd4246_do_luong_20260108.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "nen tang",
+    "quan ly",
+    "hoat dong",
+    "do luong"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty An ninh mạng Viettel",
+     "slug": "cong-ty-an-ninh-mang-viettel",
+     "kyCho": [],
+     "khop": [
+      "nen tang",
+      "quan ly"
+     ],
+     "trich": {
+      "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
+      "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "kyCho": [],
+     "khop": [
+      "nen tang",
+      "quan ly"
+     ],
+     "trich": {
+      "span": "Các sản phẩm trong hệ sinh thái bao gồm: Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC bao gồm giải pháp quản lý, phân tích sự kiện an ninh mạng tập trung NCS SIEM và nền tảng điều phối, ứng phó sự cố NCS SOAR.",
+      "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
+      "tier": "B",
+      "source": "tuoitre.vn"
+     }
+    },
+    {
+     "dv": "CMC Telecom",
+     "slug": "cmc-telecom",
+     "kyCho": [
+      "MATCH-0018"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "mst-05",
+   "ten": "Nghiên cứu thiết kế, chế tạo và tích hợp hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "01 hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu thiết kế, chế tạo và tích hợp hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
+     "span": "5. Nghiên cứu thiết \nkế, chế tạo và tích \nhợp hệ thống \nđiều khiển từ xa \ncho máy xúc thủy \nlực làm việc \ntrong môi trường \nkhắc nghiệt, \nnguy hiểm cho \nngười vận hành.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv05_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "01 hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
+     "span": "1. 01 hệ thống điều khiển từ xa cho máy xúc thủy \nlực làm việc trong môi trường khắc nghiệt, nguy \nhiểm cho người vận hành, có các tính năng và \nthông số kỹ thuật chính sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv05_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "01",
+    "he thong dieu",
+    "khien",
+    "xa",
+    "xuc",
+    "thuy",
+    "viec",
+    "moi truong",
+    "khac nghiet",
+    "nguy",
+    "hiem",
+    "nguoi van hanh"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "mst-06",
+   "ten": "Nghiên cứu thiết kế và chế tạo hệ thống robot khảo sát, làm sạch phần dưới nước thân vỏ tàu thủy khi neo đậu",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "07",
+   "tenSp": "Robot di động tự hành và robot công nghiệp",
+   "doiTuong": "01 hệ thống robot khảo sát, làm sạch phần dưới nước thân vỏ tàu thủy khi neo đậu",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu thiết kế và chế tạo hệ thống robot khảo sát, làm sạch phần dưới nước thân vỏ tàu thủy khi neo đậu",
+     "span": "7. Nghiên cứu thiết \nkế và chế tạo hệ \nthống robot khảo \nsát, làm sạch \nphần dưới nước \nthân vỏ tàu thủy \nkhi neo đậu.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "01 hệ thống robot khảo sát, làm sạch phần dưới nước thân vỏ tàu thủy khi neo đậu",
+     "span": "1. 01 hệ thống robot khảo sát, làm sạch phần dưới \nnước thân vỏ tàu thủy khi neo đậu có các tính \nnăng và thông số kỹ thuật chính như sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "7",
+     "span": "+ Tuân thủ các quy định về TCVN liên quan đến \nrobot công nghiệp.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "robot",
+    "01",
+    "khao",
+    "sat",
+    "phan",
+    "duoi",
+    "nuoc",
+    "than",
+    "vo",
+    "tau",
+    "thuy",
+    "khi",
+    "neo",
+    "dau"
+   ],
+   "goiY": [
+    {
+     "dv": "ROSTEK",
+     "slug": "rostek",
+     "kyCho": [
+      "MATCH-0002"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "mst-07",
+   "ten": "Nghiên cứu thiết kế và chế tạo hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa sử dụng trí tuệ nhân tạo (AI)",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "02",
+   "tenSp": "AI camera xử lý tại biên",
+   "doiTuong": "01 hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa (RTN) sử dụng AI",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu thiết kế và chế tạo hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa sử dụng trí tuệ nhân tạo (AI)",
+     "span": "8. Nghiên cứu thiết \nkế và chế tạo hệ \nthống tự động \nnhận dạng, phân \nloại và thu gom \nrác thải nhựa sử \ndụng trí tuệ nhân \ntạo (AI).",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "01 hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa (RTN) sử dụng AI",
+     "span": "1. 01 hệ thống tự động nhận dạng, phân loại và \nthu gom rác thải nhựa (RTN) sử dụng AI có các \nthông số kỹ thuật và tính năng chính như sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "2",
+     "span": "-Camera ứng dụng AI tại biên (Edge AI) cho phát \nhiện và phân loại rác thải nhựa sinh hoạt.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv07_08_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "01",
+    "tu dong",
+    "nhan",
+    "phan",
+    "loai",
+    "va thu",
+    "gom",
+    "rac",
+    "thai",
+    "nhua",
+    "rtn",
+    "su dung"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "mst-08",
+   "ten": "Nghiên cứu thiết kế và chế tạo hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "01 hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu thiết kế và chế tạo hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)",
+     "span": "13. Nghiên cứu thiết \nkế và chế tạo hệ \nthống phân loại \ntrái cây xuất khẩu \nsử dụng trí tuệ \nnhân tạo (AI).",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv13_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "01 hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)",
+     "span": "1. 01 hệ thống phân loại trái cây xuất khẩu sử \ndụng trí tuệ nhân tạo (AI) có các thông số và tính \nnăng chính như sau:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv13_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "01",
+    "phan",
+    "loai",
+    "trai",
+    "cay",
+    "xuat khau",
+    "su dung"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "mst-09",
+   "ten": "Nghiên cứu thiết kế và chế tạo/tích hợp hệ thống chẩn đoán hư hỏng và bảo trì dự báo cho quạt ly tâm công suất lớn trên cơ sở phân tích dao động",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "08",
+   "tenSp": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+   "doiTuong": "01 hệ thống chẩn đoán hư hỏng và bảo trì dự báo cho quạt ly tâm công suất lớn",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu thiết kế và chế tạo/tích hợp hệ thống chẩn đoán hư hỏng và bảo trì dự báo cho quạt ly tâm công suất lớn trên cơ sở phân tích dao động",
+     "span": "16. Nghiên cứu thiết \nkế và chế tạo/tích \nhợp hệ thống \nchẩn đoán hư \nhỏng và bảo trì \ndự báo cho quạt \nly tâm công suất \nlớn trên cơ sở \nphân tích dao \nđộng.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv16_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "01 hệ thống chẩn đoán hư hỏng và bảo trì dự báo cho quạt ly tâm công suất lớn",
+     "span": "- Chế tạo và thử \nnghiệm 01 hệ \nthống chẩn đoán \như hỏng và bảo trì \ndự báo cho quạt ly \ntâm công suất lớn.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv16_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "8",
+     "span": "16. Nghiên cứu thiết \nkế và chế tạo/tích \nhợp hệ thống \nchẩn đoán hư \nhỏng và bảo trì \ndự báo cho quạt \nly tâm công suất \nlớn trên cơ sở \nphân tích dao \nđộng.",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv16_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "01",
+    "chan doan",
+    "hu",
+    "hong",
+    "tri",
+    "du",
+    "quat",
+    "ly",
+    "tam",
+    "cong suat lon"
+   ],
+   "goiY": [
+    {
+     "dv": "VTI Solutions",
+     "slug": "vti-solutions",
+     "kyCho": [
+      "MATCH-0004"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "mst-10",
+   "ten": "Nghiên cứu xây dựng hệ thống tự động phát hiện, giám sát và cảnh báo một số sâu, bệnh chính gây hại trên cây chè dựa trên nền tảng Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "nhiem_vu_khcn",
+   "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+   "maSp": "02",
+   "tenSp": "AI camera xử lý tại biên",
+   "doiTuong": "Tối thiểu 06 trạm IoT có kết nối truyền thông không dây LoRa/4G",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2025-12-16",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu xây dựng hệ thống tự động phát hiện, giám sát và cảnh báo một số sâu, bệnh chính gây hại trên cây chè dựa trên nền tảng Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)",
+     "span": "20. Nghiên cứu xây \ndựng hệ thống tự \nđộng phát hiện, \ngiám sát và cảnh \nbáo một số sâu, \nbệnh chính gây \nhại trên cây chè \ndựa trên nền tảng \nInternet vạn vật \n(IoT) và trí tuệ \nnhân tạo (AI).",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv20_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "(Kèm theo Quyết định số /QĐ-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "nhiem_vu_khcn",
+     "span": "DANH MỤC NHIỆM VỤ KHOA HỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA THUỘC CHƯƠNG TRÌNH KHOA \nHỌC VÀ CÔNG NGHỆ CẤP QUỐC GIA “NGHIÊN CỨU ỨNG DỤNG VÀ PHÁT TRIỂN CÔNG NGHỆ CƠ KHÍ \nVÀ TỰ ĐỘNG HÓA” – MÃ SỐ KC.03/21-30 ĐỂ TUYỂN CHỌN THỰC HIỆN",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_dau_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Tối thiểu 06 trạm IoT có kết nối truyền thông không dây LoRa/4G",
+     "span": "- Tối thiểu 06 trạm IoT có kết nối truyền thông \nkhông dây LoRa/4G thu nhận được dữ liệu một \nsố loại sâu bệnh phổ biến trên cây chè trong các \nđiều kiện thời tiết, thổ nhưỡng khác nhau với các \nthông số kỹ thuật cụ thể cho mỗi trạm:",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv20_20251216.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "2",
+     "span": "+ Camera có độ phân giải tối thiểu 02 MP; có khả \nnăng quan sát ban đêm; chạy các thuật toán Edge \nAI trên trạm IoT;",
+     "tier": "B",
+     "source": "mic.mediacdn.vn",
+     "href": "/evidence/mst_kc03_qd4069_nv20_20251216.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "toi",
+    "thieu",
+    "06",
+    "tram",
+    "iot",
+    "ket noi",
+    "truyen thong",
+    "khong day",
+    "lora",
+    "4g"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "btl-01",
+   "ten": "bài toán về ùn tắc giao thông trong bối cảnh quỹ đất hạn chế",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "01",
+   "tenSp": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+   "doiTuong": "hệ thống giao thông thông minh, tích hợp dữ liệu thời gian thực, ứng dụng trí tuệ nhân tạo",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "bài toán về ùn tắc giao thông trong bối cảnh quỹ đất hạn chế",
+     "span": "Nổi bật là bài toán về ùn tắc giao thông trong bối cảnh quỹ đất hạn chế và tốc độ gia tăng phương tiện nhanh.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hệ thống giao thông thông minh, tích hợp dữ liệu thời gian thực, ứng dụng trí tuệ nhân tạo",
+     "span": "Thành phố đặt ra yêu cầu xây dựng hệ thống giao thông thông minh, tích hợp dữ liệu thời gian thực, ứng dụng trí tuệ nhân tạo để điều tiết, phân luồng và tối ưu hóa nhu cầu đi lại.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "1",
+     "span": "Thành phố đặt ra yêu cầu xây dựng hệ thống giao thông thông minh, tích hợp dữ liệu thời gian thực, ứng dụng trí tuệ nhân tạo để điều tiết, phân luồng và tối ưu hóa nhu cầu đi lại.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "giao thong",
+    "thong minh",
+    "tich hop",
+    "du lieu",
+    "thoi gian",
+    "thuc"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "kyCho": [],
+     "khop": [
+      "tri tue nhan tao",
+      "du lieu",
+      "thuc"
+     ],
+     "trich": {
+      "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ.",
+      "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "kyCho": [],
+     "khop": [
+      "tri tue nhan tao",
+      "thong minh",
+      "du lieu"
+     ],
+     "trich": {
+      "span": "Theo Biên bản ghi nhớ, hai bên sẽ phối hợp nghiên cứu và phát triển các công nghệ phục vụ chuyển đổi số trong sản xuất, bao gồm ứng dụng robot tự hành và các giải pháp tự động hóa trong nhà máy; nghiên cứu AI, IoT và cơ điện tử; phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông; đồng thời số hóa dữ liệu và ứng dụng AI phục vụ nhà máy thông minh cũng như nghiên cứu khoa học.",
+      "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "VinBigData",
+     "slug": "vinbigdata",
+     "kyCho": [
+      "MATCH-0016"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-02",
+   "ten": "bài toán về trật tự, vệ sinh đô thị và quản lý chất thải",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "các hệ thống giám sát thông minh",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "bài toán về trật tự, vệ sinh đô thị và quản lý chất thải",
+     "span": "Cùng với đó là bài toán về trật tự, vệ sinh đô thị và quản lý chất thải.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "các hệ thống giám sát thông minh",
+     "span": "Hà Nội định hướng xây dựng các hệ thống giám sát thông minh, phát triển chuỗi logistics rác thải hiện đại và thúc đẩy mô hình kinh tế tuần hoàn.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "he thong giam",
+    "sat",
+    "thong minh"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty An ninh mạng Viettel",
+     "slug": "cong-ty-an-ninh-mang-viettel",
+     "kyCho": [],
+     "khop": [
+      "he thong giam",
+      "sat"
+     ],
+     "trich": {
+      "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
+      "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-03",
+   "ten": "Kiểm soát phát thải và phục hồi môi trường",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "hệ thống giám sát, định danh nguồn phát thải theo thời gian thực",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Kiểm soát phát thải và phục hồi môi trường",
+     "span": "Kiểm soát phát thải và phục hồi môi trường (định danh chính xác nguồn thải (nước, không khí) và hướng tới mục tiêu Net Zero)",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hệ thống giám sát, định danh nguồn phát thải theo thời gian thực",
+     "span": "Thành phố đặt mục tiêu xây dựng hệ thống giám sát, định danh nguồn phát thải theo thời gian thực, kết hợp với các công cụ kinh tế như tín chỉ carbon để thúc đẩy giảm phát thải.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "he thong giam",
+    "sat",
+    "dinh danh",
+    "nguon",
+    "thai",
+    "theo",
+    "thoi gian",
+    "thuc"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "kyCho": [],
+     "khop": [
+      "sat",
+      "thai",
+      "theo",
+      "thuc"
+     ],
+     "trich": {
+      "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ.",
+      "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-04",
+   "ten": "Giải quyết ngập úng đô thị",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "hệ thống dự báo và cảnh báo sớm",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Giải quyết ngập úng đô thị",
+     "span": "Giải quyết ngập úng đô thị (ứng dụng công nghệ dự báo thời gian thực và mô hình “Thành phố bọt biển” để ứng phó biến đổi khí hậu)",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hệ thống dự báo và cảnh báo sớm",
+     "span": "Các giải pháp như mô hình \"thành phố bọt biển\", hệ thống dự báo và cảnh báo sớm, cùng hạ tầng thoát nước đa tầng được kỳ vọng sẽ góp phần giải quyết căn cơ vấn đề này.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "du",
+    "canh bao som"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty cổ phần Health Care Center",
+     "slug": "cong-ty-co-phan-health-care-center",
+     "kyCho": [],
+     "khop": [
+      "du",
+      "canh bao som"
+     ],
+     "trich": {
+      "span": "Đây là sản phẩm do Công ty cổ phần Health Care Center phát triển được giới thiệu như một giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp.",
+      "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-05",
+   "ten": "An toàn thực phẩm",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "05",
+   "tenSp": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+   "doiTuong": "hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "An toàn thực phẩm",
+     "span": "An toàn thực phẩm (xây dựng hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng).",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng",
+     "span": "An toàn thực phẩm (xây dựng hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng).",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "5",
+     "span": "An toàn thực phẩm (xây dựng hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng).",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "he thong truy",
+    "xuat nguon",
+    "goc",
+    "hien dai",
+    "giam sat",
+    "thong minh",
+    "toan",
+    "chuoi"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty 1Matrix",
+     "slug": "cong-ty-1matrix",
+     "kyCho": [
+      "MATCH-0011"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-06",
+   "ten": "Quản trị không gian đa tầng",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "03",
+   "tenSp": "Nền tảng bản sao số",
+   "doiTuong": "bản sao số (Digital Twin) để quản lý không gian đô thị theo thời gian thực",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Quản trị không gian đa tầng",
+     "span": "Quản trị không gian đa tầng (khai thác hiệu quả tài nguyên không gian Ngầm – Mặt đất – Tầm thấp – Tầng cao (Đô thị nén);",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "bản sao số (Digital Twin) để quản lý không gian đô thị theo thời gian thực",
+     "span": "Thành phố đặt ra các bài toán về xây dựng bản sao số (Digital Twin) để quản lý không gian đô thị theo thời gian thực; thiết lập cơ chế xác lập quyền sử dụng không gian đa tầng; và phát triển các công cụ quy hoạch, khai thác hiệu quả các lớp không gian đô thị.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "3",
+     "span": "Thành phố đặt ra các bài toán về xây dựng bản sao số (Digital Twin) để quản lý không gian đô thị theo thời gian thực; thiết lập cơ chế xác lập quyền sử dụng không gian đa tầng; và phát triển các công cụ quy hoạch, khai thác hiệu quả các lớp không gian đô thị.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "ban sao so",
+    "de",
+    "quan ly",
+    "khong gian",
+    "do thi",
+    "theo",
+    "thoi gian",
+    "thuc"
+   ],
+   "goiY": [
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-07",
+   "ten": "Kinh tế không gian tầm thấp",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "22",
+   "tenSp": "Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV",
+   "doiTuong": "hành lang bay, hệ thống quản lý an toàn và các nền tảng điều phối",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Kinh tế không gian tầm thấp",
+     "span": "Kinh tế không gian tầm thấp (Thiết lập hành lang bay (UTM) và quản lý an toàn cho thiết bị bay không người lái (UAV);",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hành lang bay, hệ thống quản lý an toàn và các nền tảng điều phối",
+     "span": "Việc thiết lập hành lang bay, hệ thống quản lý an toàn và các nền tảng điều phối được kỳ vọng sẽ mở ra một lĩnh vực kinh tế mới cho Thủ đô.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "22",
+     "span": "Kinh tế không gian tầm thấp (Thiết lập hành lang bay (UTM) và quản lý an toàn cho thiết bị bay không người lái (UAV);",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "hanh",
+    "lang",
+    "bay",
+    "he thong quan",
+    "ly an",
+    "toan va",
+    "nen tang",
+    "dieu phoi"
+   ],
+   "goiY": [
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [
+      "MATCH-0017"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-08",
+   "ten": "Phát triển kinh tế dữ liệu",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "nền tảng chia sẻ và giao dịch dữ liệu",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển kinh tế dữ liệu",
+     "span": "tập trung vào động lực tăng trưởng mới gồm: Đổi mới mô hình quản trị; Mô hình tăng trưởng dựa trên TFP; Phát triển kinh tế dữ liệu; Xây dựng hệ sinh thái nền tảng “Make in Hanoi”;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "nền tảng chia sẻ và giao dịch dữ liệu",
+     "span": "Để hiện thực hóa mục tiêu này, thành phố đặt ra các bài toán về xây dựng hạ tầng dữ liệu, phát triển nền tảng chia sẻ và giao dịch dữ liệu, cũng như thiết lập hành lang pháp lý cho tài sản số.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "nen tang",
+    "chia se",
+    "giao",
+    "dich",
+    "du lieu"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "btl-09",
+   "ten": "Xây dựng hệ sinh thái nền tảng “Make in Hanoi”",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "\"hệ điều hành đô thị\" và các nền tảng số dùng chung",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Xây dựng hệ sinh thái nền tảng “Make in Hanoi”",
+     "span": "tập trung vào động lực tăng trưởng mới gồm: Đổi mới mô hình quản trị; Mô hình tăng trưởng dựa trên TFP; Phát triển kinh tế dữ liệu; Xây dựng hệ sinh thái nền tảng “Make in Hanoi”;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "\"hệ điều hành đô thị\" và các nền tảng số dùng chung",
+     "span": "Việc xây dựng \"hệ điều hành đô thị\" và các nền tảng số dùng chung được xem là nền tảng để kết nối, tối ưu hóa các nguồn lực kinh tế.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "dieu hanh",
+    "do thi",
+    "nen tang",
+    "chung"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+     "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+     "kyCho": [],
+     "khop": [
+      "nen tang",
+      "chung"
+     ],
+     "trich": {
+      "span": "Mọi thứ bắt đầu khi VNTT (thành viên của Tổng Công ty Becamex IDC và Tập đoàn VNPT) tiếp cận chúng tôi và đề nghị hỗ trợ chuyển đổi phát triển công nghiệp bằng nền tảng Beca Smart Factory, Beca Smart City do Becamex và VNTT xây dựng và làm chủ.",
+      "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "kyCho": [],
+     "khop": [
+      "do thi",
+      "nen tang"
+     ],
+     "trich": {
+      "span": "Trên nền tảng công nghệ của Qualcomm, VNPT Technology đã và đang phát triển và sản xuất các thiết bị truy nhập băng rộng cố định không dây dành cho các hộ gia đình, cho doanh nghiệp và cho các đô thị thông minh.",
+      "href": "/evidence/mst_vnpttech_5g_20220831.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-10",
+   "ten": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "Metaverse, AR/VR",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú",
+     "span": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Metaverse, AR/VR",
+     "span": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "metaverse",
+    "ar",
+    "vr"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "btl-11",
+   "ten": "Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "08",
+   "tenSp": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+   "doiTuong": "công nghiệp sản xuất thông minh",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi",
+     "span": "Kết hợp kinh tế sinh thái và du lịch nông thôn; Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "công nghiệp sản xuất thông minh",
+     "span": "Các lĩnh vực như công nghiệp văn hóa, du lịch thông minh, logistics, nông nghiệp công nghệ cao và công nghiệp sản xuất thông minh cũng được đặt trong tổng thể các bài toán lớn, với mục tiêu nâng cao giá trị gia tăng và sức cạnh tranh của nền kinh tế Thủ đô.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "8",
+     "span": "Kết hợp kinh tế sinh thái và du lịch nông thôn; Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "xuat thong minh"
+   ],
+   "goiY": [
+    {
+     "dv": "VTI Solutions",
+     "slug": "vti-solutions",
+     "kyCho": [
+      "MATCH-0004"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-12",
+   "ten": "Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "AI và tự động hóa",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa",
+     "span": "Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "AI và tự động hóa",
+     "span": "Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "va tu dong",
+    "hoa"
+   ],
+   "goiY": [
+    {
+     "dv": "FPT",
+     "slug": "fpt",
+     "kyCho": [],
+     "khop": [
+      "tri tue nhan tao",
+      "va tu dong",
+      "hoa"
+     ],
+     "trich": {
+      "span": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng, giúp nhiều doanh nghiệp tăng đến 20% doanh thu từ kênh telesales.",
+      "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [],
+     "khop": [
+      "tri tue nhan tao",
+      "hoa"
+     ],
+     "trich": {
+      "span": "Tại sự kiện, FPT ký kết hàng loạt thỏa thuận với các đối tác công nghệ trong lĩnh vực bán dẫn tại Việt Nam và quốc tế, như hợp tác toàn diện với Viettel trong hoạt động xây dựng năng lực tự chủ về công nghệ bán dẫn thông qua việc liên thông chuỗi giá trị ngành công nghệ bán dẫn: Đào tạo - Thiết kế - Chế tạo - Kiểm thử - Đóng gói - Thương mại, trọng tâm là cùng phát triển dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV); các thiết bị thông minh.",
+      "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "VNPT",
+     "slug": "vnpt",
+     "kyCho": [],
+     "khop": [
+      "tri tue nhan tao",
+      "hoa"
+     ],
+     "trich": {
+      "span": "Các trợ lý AI của VNPT AI đã và đang hoạt động hiệu quả trong thực tiễn, phục vụ hơn 1,2 tỷ lượt yêu cầu trong toàn mạng",
+      "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+      "tier": "B",
+      "source": "vneconomy.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-13",
+   "ten": "Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "03",
+   "tenSp": "Nền tảng bản sao số",
+   "doiTuong": "mô phỏng dữ liệu",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp",
+     "span": "Ưu tiên 04 sản phẩm công nghệ cốt lõi của Thủ đô; Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "mô phỏng dữ liệu",
+     "span": "Ưu tiên 04 sản phẩm công nghệ cốt lõi của Thủ đô; Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "3",
+     "span": "Ưu tiên 04 sản phẩm công nghệ cốt lõi của Thủ đô; Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp;",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "mo phong",
+    "du lieu"
+   ],
+   "goiY": [
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-14",
+   "ten": "An ninh thông minh",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "09",
+   "tenSp": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+   "doiTuong": "hạ tầng số an toàn, tích hợp các công cụ phân tích, giám sát và cảnh báo sớm",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-23",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "An ninh thông minh",
+     "span": "An ninh thông minh (thiết lập “Pháo đài dữ liệu” bảo vệ chủ quyền số và an ninh đô thị);",
+     "tier": "B",
+     "source": "nguoihanoi.vn",
+     "href": "/evidence/nguoihanoi_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "UBND Thành phố Hà Nội",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Theo Quyết định số 1193/QĐ-UBND, UBND Thành phố Hà Nội công bố Danh mục các bài toán lớn của thành phố Hà Nội giai đoạn 2026-2030 (Đợt 1), gồm 30 bài toán có tính liên ngành, quy mô lớn và tác động sâu rộng.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_ha_noi_30_bai_toan_lon_20260923.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "hạ tầng số an toàn, tích hợp các công cụ phân tích, giám sát và cảnh báo sớm",
+     "span": "Thành phố hướng tới thiết lập hạ tầng số an toàn, tích hợp các công cụ phân tích, giám sát và cảnh báo sớm.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "9",
+     "span": "Việc xây dựng \"pháo đài dữ liệu\" và hệ thống an ninh thông minh được xác định là yêu cầu cấp thiết trong bối cảnh gia tăng các nguy cơ về an ninh mạng và bảo mật dữ liệu.",
+     "tier": "A",
+     "source": "thanglong.chinhphu.vn",
+     "href": "/evidence/thanglong_chinhphu_ha_noi_30_bai_toan_lon_20260320.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "ha tang",
+    "an toan",
+    "tich hop",
+    "cong cu",
+    "phan tich",
+    "giam sat",
+    "canh bao som"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "btl-21",
+   "ten": "vật liệu carbon nanotubes",
+   "benDatHang": "Bộ Công Thương",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "17",
+   "tenSp": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
+   "doiTuong": "vật liệu carbon nanotubes",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-09-09",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "vật liệu carbon nanotubes",
+     "span": "Triển khai Quyết định số 808/QĐ-TTg và hướng dẫn của Bộ Khoa học và Công nghệ, Bộ Công Thương đã đăng ký 6 nhiệm vụ phát triển công nghệ chiến lược năm 2026, tập trung vào 4 nhóm có nhu cầu thực tiễn rõ: Digital Twin hệ thống điện (1 nhiệm vụ); thiết bị đóng cắt trung áp - cao áp (2 nhiệm vụ); robot/AI công nghiệp (2 nhiệm vụ); vật liệu carbon nanotubes (1 nhiệm vụ).",
+     "tier": "B",
+     "source": "bnews.vn",
+     "href": "/evidence/bnews_cong_thuong_3_bai_toan_lon_20260909.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công Thương",
+     "span": "Triển khai Quyết định số 808/QĐ-TTg và hướng dẫn của Bộ Khoa học và Công nghệ, Bộ Công Thương đã đăng ký 6 nhiệm vụ phát triển công nghệ chiến lược năm 2026, tập trung vào 4 nhóm có nhu cầu thực tiễn rõ: Digital Twin hệ thống điện (1 nhiệm vụ); thiết bị đóng cắt trung áp - cao áp (2 nhiệm vụ); robot/AI công nghiệp (2 nhiệm vụ); vật liệu carbon nanotubes (1 nhiệm vụ).",
+     "tier": "B",
+     "source": "bnews.vn",
+     "href": "/evidence/bnews_cong_thuong_3_bai_toan_lon_20260909.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Bên cạnh đó, tại Quyết định số 808/QĐ-TTg ngày 6/5/2026 về giao nhiệm vụ phát triển công nghệ chiến lược, Bộ Công Thương được giao 3 bài toán lớn gắn với ba trụ cột gồm bảo đảm an ninh năng lượng cho tăng trưởng cao; hiện đại hóa hệ thống điện - nhiên liệu xanh, thông minh và tự chủ.",
+     "tier": "B",
+     "source": "bnews.vn",
+     "href": "/evidence/bnews_cong_thuong_3_bai_toan_lon_20260909.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "vật liệu carbon nanotubes",
+     "span": "Triển khai Quyết định số 808/QĐ-TTg và hướng dẫn của Bộ Khoa học và Công nghệ, Bộ Công Thương đã đăng ký 6 nhiệm vụ phát triển công nghệ chiến lược năm 2026, tập trung vào 4 nhóm có nhu cầu thực tiễn rõ: Digital Twin hệ thống điện (1 nhiệm vụ); thiết bị đóng cắt trung áp - cao áp (2 nhiệm vụ); robot/AI công nghiệp (2 nhiệm vụ); vật liệu carbon nanotubes (1 nhiệm vụ).",
+     "tier": "B",
+     "source": "bnews.vn",
+     "href": "/evidence/bnews_cong_thuong_3_bai_toan_lon_20260909.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "17",
+     "span": "Triển khai Quyết định số 808/QĐ-TTg và hướng dẫn của Bộ Khoa học và Công nghệ, Bộ Công Thương đã đăng ký 6 nhiệm vụ phát triển công nghệ chiến lược năm 2026, tập trung vào 4 nhóm có nhu cầu thực tiễn rõ: Digital Twin hệ thống điện (1 nhiệm vụ); thiết bị đóng cắt trung áp - cao áp (2 nhiệm vụ); robot/AI công nghiệp (2 nhiệm vụ); vật liệu carbon nanotubes (1 nhiệm vụ).",
+     "tier": "B",
+     "source": "bnews.vn",
+     "href": "/evidence/bnews_cong_thuong_3_bai_toan_lon_20260909.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "vat lieu",
+    "carbon",
+    "nanotubes"
+   ],
+   "goiY": [
+    {
+     "dv": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+     "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+     "kyCho": [
+      "MATCH-0023"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "btl-22",
+   "ten": "Thí điểm Bản sao số",
+   "benDatHang": "thành phố Đà Nẵng",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "03",
+   "tenSp": "Nền tảng bản sao số",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-01-07",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Thí điểm Bản sao số",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "thành phố Đà Nẵng",
+     "span": "Tại hội nghị, các đại biểu lắng nghe về các phương hướng, nhóm nhiệm vụ trọng tâm của ngành khoa học và công nghệ thành phố Đà Nẵng trong năm 2026.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "3",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "ban sao so",
+    "thi",
+    "diem"
+   ],
+   "goiY": [
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "khop": [
+      "ban sao so"
+     ],
+     "trich": {
+      "span": "Vượt qua nhiều công ty công nghệ và viễn thông lớn, Viettel BTS Digital Twin đã giúp Viettel AI trở thành đại diện Việt Nam duy nhất góp mặt trong danh sách đề cử tại Vòng chung khảo Glotel Awards 2025, hạng mục dự án \"Chuyển đổi số tốt nhất”.",
+      "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
+      "tier": "B",
+      "source": "nhandan.vn"
+     }
+    },
+    {
+     "dv": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+     "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
+     "kyCho": [],
+     "khop": [
+      "thi",
+      "diem"
+     ],
+     "trich": {
+      "span": "Đáng kể nhất là Giải thưởng Nhà nước về Khoa học và Công nghệ cấp cho cụm công trình “Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học, các sản phẩm thân thiện môi trường, tiết kiệm nhiên liệu….” do Phòng Thí nghiệm trọng điểm công nghệ lọc hóa dầu chủ trì thực hiện.",
+      "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+      "tier": "B",
+      "source": "congthuong.vn"
+     }
+    },
+    {
+     "dv": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+     "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+     "kyCho": [],
+     "khop": [
+      "thi",
+      "diem"
+     ],
+     "trich": {
+      "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
+      "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
+      "tier": "B",
+      "source": "nhandan.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-23",
+   "ten": "thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế",
+   "benDatHang": "thành phố Đà Nẵng",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "Sàn giao dịch dữ liệu",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-01-07",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "thành phố Đà Nẵng",
+     "span": "Tại hội nghị, các đại biểu lắng nghe về các phương hướng, nhóm nhiệm vụ trọng tâm của ngành khoa học và công nghệ thành phố Đà Nẵng trong năm 2026.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Sàn giao dịch dữ liệu",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "giao",
+    "dich",
+    "du lieu"
+   ],
+   "goiY": [
+    {
+     "dv": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+     "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
+     "kyCho": [],
+     "khop": [
+      "giao",
+      "dich"
+     ],
+     "trich": {
+      "span": "Dưới sự dẫn dắt và chỉ đạo chiến lược của Petrovietnam với vai trò \"kiến tạo - chỉ đạo - thúc đẩy\", Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) - đơn vị thành viên của Petrovietnam và là đơn vị chủ lực trong lĩnh vực công nghiệp dầu khí và năng lượng tái tạo - đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted.",
+      "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
+      "tier": "B",
+      "source": "vneconomy.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-24",
+   "ten": "thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số",
+   "benDatHang": "thành phố Đà Nẵng",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": "05",
+   "tenSp": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+   "doiTuong": "Mạng Blockchain phục vụ quản lý, phát triển tài sản số",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-01-07",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "thành phố Đà Nẵng",
+     "span": "Tại hội nghị, các đại biểu lắng nghe về các phương hướng, nhóm nhiệm vụ trọng tâm của ngành khoa học và công nghệ thành phố Đà Nẵng trong năm 2026.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Mạng Blockchain phục vụ quản lý, phát triển tài sản số",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "5",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "chuoi khoi",
+    "mang",
+    "phuc vu",
+    "quan ly"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty 1Matrix",
+     "slug": "cong-ty-1matrix",
+     "kyCho": [
+      "MATCH-0011"
+     ],
+     "khop": [
+      "chuoi khoi",
+      "mang"
+     ],
+     "trich": {
+      "span": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể. Các mạng này có thể kết nối với những nền tảng blockchain sẵn có trên thế giới.",
+      "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+      "tier": "B",
+      "source": "vnexpress.net"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "btl-25",
+   "ten": "mô hình Cảng thông minh Liên Chiểu",
+   "benDatHang": "thành phố Đà Nẵng",
+   "loai": "bai_toan_lon",
+   "loaiTen": "Bài toán lớn",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "Cảng thông minh Liên Chiểu",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-01-07",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "mô hình Cảng thông minh Liên Chiểu",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "thành phố Đà Nẵng",
+     "span": "Tại hội nghị, các đại biểu lắng nghe về các phương hướng, nhóm nhiệm vụ trọng tâm của ngành khoa học và công nghệ thành phố Đà Nẵng trong năm 2026.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "bai_toan_lon",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Cảng thông minh Liên Chiểu",
+     "span": "Tổ chức triển khai 5 bài toán lớn lĩnh vực khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số gồm: Thí điểm Bản sao số; thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế; thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số; mô hình Cảng thông minh Liên Chiểu; mô hình Khu Thương mại tự do thông minh Đà Nẵng.",
+     "tier": "B",
+     "source": "nhandan.vn",
+     "href": "/evidence/nhandan_da_nang_5_bai_toan_lon_20260107.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "cang",
+    "thong minh",
+    "lien",
+    "chieu"
+   ],
+   "goiY": [
+    {
+     "dv": "FPT",
+     "slug": "fpt",
+     "kyCho": [],
+     "khop": [
+      "thong minh",
+      "lien"
+     ],
+     "trich": {
+      "span": "Tại sự kiện, FPT ký kết hàng loạt thỏa thuận với các đối tác công nghệ trong lĩnh vực bán dẫn tại Việt Nam và quốc tế, như hợp tác toàn diện với Viettel trong hoạt động xây dựng năng lực tự chủ về công nghệ bán dẫn thông qua việc liên thông chuỗi giá trị ngành công nghệ bán dẫn: Đào tạo - Thiết kế - Chế tạo - Kiểm thử - Đóng gói - Thương mại, trọng tâm là cùng phát triển dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV); các thiết bị thông minh.",
+      "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+     "slug": "lien-danh-tu-van-tedi-tricc-tedi-south",
+     "kyCho": [],
+     "khop": [
+      "lien",
+      "chieu"
+     ],
+     "trich": {
+      "span": "Theo Báo cáo nghiên cứu tiền khả thi Dự án đường sắt tốc độ cao trên trục Bắc - Nam, kết quả nghiên cứu mới nhất của liên danh tư vấn TEDI - TRICC - TEDI SOUTH đã rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km.",
+      "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
+      "tier": "A",
+      "source": "baochinhphu.vn"
+     }
+    },
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [],
+     "khop": [
+      "thong minh",
+      "lien"
+     ],
+     "trich": {
+      "span": "Tại sự kiện, FPT ký kết hàng loạt thỏa thuận với các đối tác công nghệ trong lĩnh vực bán dẫn tại Việt Nam và quốc tế, như hợp tác toàn diện với Viettel trong hoạt động xây dựng năng lực tự chủ về công nghệ bán dẫn thông qua việc liên thông chuỗi giá trị ngành công nghệ bán dẫn: Đào tạo - Thiết kế - Chế tạo - Kiểm thử - Đóng gói - Thương mại, trọng tâm là cùng phát triển dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV); các thiết bị thông minh.",
+      "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-01",
+   "ten": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học",
+   "benDatHang": "Bộ Nông nghiệp và Môi trường",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "16",
+   "tenSp": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "dự kiến triển khai 12 nhiệm vụ",
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học",
+     "span": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học (Bộ Nông nghiệp và Môi trường là cơ quan chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Nông nghiệp và Môi trường",
+     "span": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học (Bộ Nông nghiệp và Môi trường là cơ quan chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "16",
+     "span": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học (Bộ Nông nghiệp và Môi trường là cơ quan chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "dự kiến triển khai 12 nhiệm vụ",
+     "span": "Trong đó, Bộ Nông nghiệp và Môi trường dự kiến triển khai 12 nhiệm vụ về giống cây trồng, vật nuôi, thủy sản thế hệ mới; vaccine thú y, chế phẩm sinh học và hệ thống truy xuất nguồn gốc nông sản.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "giong cay",
+    "trong vat",
+    "nuoi thuy",
+    "the he moi",
+    "bang cong",
+    "nghe gen",
+    "te bao",
+    "cong nghe sinh",
+    "hoc"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-02",
+   "ten": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp",
+   "benDatHang": "Bộ Nông nghiệp và Môi trường",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "14",
+   "tenSp": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp",
+     "span": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp (giao Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Nông nghiệp và Môi trường",
+     "span": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp (giao Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "14",
+     "span": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp (giao Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "vac xin",
+    "thu y",
+    "the he moi",
+    "che pham sinh",
+    "hoc va",
+    "sinh",
+    "pham nong nghiep"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-03",
+   "ten": "Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản",
+   "benDatHang": "Bộ Nông nghiệp và Môi trường",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "05",
+   "tenSp": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "đồng thời triển khai hệ thống truy xuất nguồn gốc đối với khoảng 18.000 sản phẩm tại 26 tỉnh, thành phố",
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản",
+     "span": "Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản (Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Nông nghiệp và Môi trường",
+     "span": "Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản (Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "5",
+     "span": "Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản (Bộ Nông nghiệp và Môi trường chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "đồng thời triển khai hệ thống truy xuất nguồn gốc đối với khoảng 18.000 sản phẩm tại 26 tỉnh, thành phố",
+     "span": "Bộ đã huy động trên 20 doanh nghiệp và hơn 50 chuyên gia tham gia xây dựng nhiệm vụ; đồng thời triển khai hệ thống truy xuất nguồn gốc đối với khoảng 18.000 sản phẩm tại 26 tỉnh, thành phố.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "xay dung",
+    "va van",
+    "hanh",
+    "he thong truy",
+    "xuat nguon",
+    "goc",
+    "nong san"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty 1Matrix",
+     "slug": "cong-ty-1matrix",
+     "kyCho": [
+      "MATCH-0011"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-04",
+   "ten": "Chủ động nguồn vắc xin thế hệ mới dùng cho người",
+   "benDatHang": "Bộ Y tế",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "10",
+   "tenSp": "Vắc xin thế hệ mới dùng cho người",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "Bộ Y tế đã đề xuất 11 nhiệm vụ",
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Chủ động nguồn vắc xin thế hệ mới dùng cho người",
+     "span": "Chủ động nguồn vắc xin thế hệ mới dùng cho người (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Y tế",
+     "span": "Chủ động nguồn vắc xin thế hệ mới dùng cho người (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "10",
+     "span": "Chủ động nguồn vắc xin thế hệ mới dùng cho người (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "Bộ Y tế đã đề xuất 11 nhiệm vụ",
+     "span": "Bộ Y tế đã đề xuất 11 nhiệm vụ liên quan đến vaccine thế hệ mới dùng cho người, liệu pháp tế bào và thiết bị y tế in 3D; trong đó có 8 nhiệm vụ dự kiến triển khai từ năm 2026.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "vac xin",
+    "chu dong",
+    "nguon",
+    "the he moi"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-05",
+   "ten": "Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y",
+   "benDatHang": "Bộ Y tế",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "11",
+   "tenSp": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y",
+     "span": "Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Y tế",
+     "span": "Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "11",
+     "span": "Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "te bao goc",
+    "lieu phap",
+    "te bao",
+    "mien dich",
+    "phuc vu",
+    "dieu tri",
+    "ung thu",
+    "benh",
+    "man",
+    "tinh",
+    "nan"
+   ],
+   "goiY": [
+    {
+     "dv": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+     "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
+     "kyCho": [
+      "MATCH-0005"
+     ],
+     "khop": [
+      "te bao goc",
+      "lieu phap",
+      "te bao",
+      "mien dich",
+      "dieu tri",
+      "benh"
+     ],
+     "trich": {
+      "span": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
+      "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+      "tier": "B",
+      "source": "baodautu.vn"
+     }
+    },
+    {
+     "dv": "Bệnh viện Trung ương Quân đội 108",
+     "slug": "benh-vien-trung-uong-quan-doi-108",
+     "kyCho": [],
+     "khop": [
+      "te bao goc",
+      "lieu phap",
+      "te bao",
+      "dieu tri",
+      "benh"
+     ],
+     "trich": {
+      "span": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
+      "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+      "tier": "C",
+      "source": "benhvien108.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-06",
+   "ten": "Phát triển y tế cá thể hóa, thiết bị y tế in 3D",
+   "benDatHang": "Bộ Y tế",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "12",
+   "tenSp": "Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển y tế cá thể hóa, thiết bị y tế in 3D",
+     "span": "Phát triển y tế cá thể hóa, thiết bị y tế in 3D (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Y tế",
+     "span": "Phát triển y tế cá thể hóa, thiết bị y tế in 3D (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "12",
+     "span": "Phát triển y tế cá thể hóa, thiết bị y tế in 3D (Bộ Y tế chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "y te",
+    "ca the",
+    "hoa",
+    "thiet bi",
+    "in 3d"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+     "slug": "cong-ty-co-phan-y-sinh-ngoc-bao",
+     "kyCho": [],
+     "khop": [
+      "y te",
+      "ca the",
+      "hoa",
+      "thiet bi",
+      "in 3d"
+     ],
+     "trich": {
+      "span": "Trong khi đó, các phương pháp điều trị truyền thống còn nhiều hạn chế: Ghép sọ tự thân có nguy cơ tiêu xương, sập lún, tỷ lệ biến chứng cao tới 37%; ghép sọ bằng lưới Titanium thủ công trong phòng mổ có độ chính xác và tính thẩm mỹ thấp, dễ gây nhiễu khi chụp cộng hưởng từ (MRI).\n\nTrong bối cảnh đó, mảnh ghép PEEK in 3D cá thể hóa của Ngọc Bảo được đánh giá là giải pháp tối ưu với nhiều ưu điểm vượt trội: Tương thích sinh học cao, dễ lắp ghép, phục hồi hình dạng hộp sọ chính xác, không giới hạn kích thước và phù hợp với mọi vùng sọ – kể cả những vị trí khó như vùng sọ mặt phức tạp.\n\nNgày 4/7/2025, Bộ Y tế đã chính thức cấp phép lưu hành cho thiết bị này với tên thương mại là “Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB.",
+      "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
+      "tier": "B",
+      "source": "nhandan.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-07",
+   "ten": "Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao",
+   "benDatHang": "Bộ Xây dựng",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "29",
+   "tenSp": "Công trình xây dựng đường sắt tốc độ cao",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao",
+     "span": "Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao (Bộ Xây dựng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Xây dựng",
+     "span": "Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao (Bộ Xây dựng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "29",
+     "span": "Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao (Bộ Xây dựng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "duong sat",
+    "xay dung",
+    "cong trinh",
+    "toc do cao"
+   ],
+   "goiY": [
+    {
+     "dv": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+     "slug": "lien-danh-tu-van-tedi-tricc-tedi-south",
+     "kyCho": [],
+     "khop": [
+      "duong sat",
+      "toc do cao"
+     ],
+     "trich": {
+      "span": "Theo Báo cáo nghiên cứu tiền khả thi Dự án đường sắt tốc độ cao trên trục Bắc - Nam, kết quả nghiên cứu mới nhất của liên danh tư vấn TEDI - TRICC - TEDI SOUTH đã rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km.",
+      "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
+      "tier": "A",
+      "source": "baochinhphu.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-08",
+   "ten": "Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo",
+   "benDatHang": "Bộ Giáo dục và Đào tạo",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "01",
+   "tenSp": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "Bộ GD&ĐT đề xuất phát triển nền tảng giáo dục thông minh quốc gia",
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo",
+     "span": "Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo (Bộ Giáo dục và Đào tạo chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Giáo dục và Đào tạo",
+     "span": "Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo (Bộ Giáo dục và Đào tạo chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "1",
+     "span": "Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo (Bộ Giáo dục và Đào tạo chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "Bộ GD&ĐT đề xuất phát triển nền tảng giáo dục thông minh quốc gia",
+     "span": "Bộ GD&ĐT đề xuất phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo và công nghệ thực ảo.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "nen tang",
+    "giao",
+    "duc",
+    "thong minh",
+    "quoc gia",
+    "soat",
+    "thuc",
+    "ao"
+   ],
+   "goiY": [
+    {
+     "dv": "VinBigData",
+     "slug": "vinbigdata",
+     "kyCho": [
+      "MATCH-0016"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-09",
+   "ten": "Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp",
+   "benDatHang": "Bộ Quốc phòng",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "22",
+   "tenSp": "Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV",
+   "doiTuong": null,
+   "thoiHan": "dự kiến thử nghiệm hệ thống trong năm 2026",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp",
+     "span": "Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp (Bộ Quốc phòng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Quốc phòng",
+     "span": "Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp (Bộ Quốc phòng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "22",
+     "span": "Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp (Bộ Quốc phòng chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "dự kiến thử nghiệm hệ thống trong năm 2026",
+     "span": "Bộ Quốc phòng chủ trì triển khai nhiệm vụ xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp; dự kiến thử nghiệm hệ thống trong năm 2026.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "uav",
+    "xay dung",
+    "he thong quan",
+    "ly",
+    "thiet bi",
+    "quoc gia",
+    "utm",
+    "phuc vu",
+    "quan ly",
+    "vung",
+    "troi",
+    "kinh",
+    "te",
+    "tam",
+    "thap"
+   ],
+   "goiY": [
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [
+      "MATCH-0017"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-10",
+   "ten": "Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu",
+   "benDatHang": "Bộ Công an",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "04",
+   "tenSp": "Nền tảng điện toán đám mây",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "Bộ đã thành lập các nhóm nghiên cứu chuyên trách",
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu",
+     "span": "Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công an",
+     "span": "Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "4",
+     "span": "Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "Bộ đã thành lập các nhóm nghiên cứu chuyên trách",
+     "span": "Bộ đã thành lập các nhóm nghiên cứu chuyên trách, xây dựng các trung tâm nghiên cứu, thử nghiệm và xác định lộ trình triển khai cụ thể đối với từng nhiệm vụ.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "dien toan dam may",
+    "xay dung",
+    "nen tang",
+    "noi",
+    "dia",
+    "phuc vu",
+    "chuyen doi",
+    "so quoc",
+    "gia",
+    "dam",
+    "quyen",
+    "du lieu"
+   ],
+   "goiY": [
+    {
+     "dv": "CMC Telecom",
+     "slug": "cmc-telecom",
+     "kyCho": [
+      "MATCH-0018"
+     ],
+     "khop": [],
+     "trich": null
+    },
+    {
+     "dv": "VNPT",
+     "slug": "vnpt",
+     "kyCho": [
+      "MATCH-0019"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-11",
+   "ten": "Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia",
+   "benDatHang": "Bộ Công an",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "09",
+   "tenSp": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia",
+     "span": "Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công an",
+     "span": "Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "9",
+     "span": "Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "an ninh mang",
+    "nen tang",
+    "cho ha",
+    "tang so",
+    "quoc gia"
+   ],
+   "goiY": [
+    {
+     "dv": "Công ty 1Matrix",
+     "slug": "cong-ty-1matrix",
+     "kyCho": [],
+     "khop": [
+      "an ninh mang",
+      "nen tang"
+     ],
+     "trich": {
+      "span": "Hiện 1Matrix đã xây dựng 6 mạng Layer-1 với những đặc tính khác nhau về tốc độ, khả năng bảo mật, mức phí... để phù hợp từng nhu cầu ứng dụng cụ thể. Các mạng này có thể kết nối với những nền tảng blockchain sẵn có trên thế giới.",
+      "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+      "tier": "B",
+      "source": "vnexpress.net"
+     }
+    },
+    {
+     "dv": "Công ty An ninh mạng Viettel",
+     "slug": "cong-ty-an-ninh-mang-viettel",
+     "kyCho": [],
+     "khop": [
+      "an ninh mang",
+      "nen tang"
+     ],
+     "trich": {
+      "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
+      "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "kyCho": [],
+     "khop": [
+      "an ninh mang",
+      "nen tang"
+     ],
+     "trich": {
+      "span": "Các sản phẩm trong hệ sinh thái bao gồm: Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC bao gồm giải pháp quản lý, phân tích sự kiện an ninh mạng tập trung NCS SIEM và nền tảng điều phối, ứng phó sự cố NCS SOAR.",
+      "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
+      "tier": "B",
+      "source": "tuoitre.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-12",
+   "ten": "Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng",
+   "benDatHang": "Bộ Công an",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "22",
+   "tenSp": "Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng",
+     "span": "Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công an",
+     "span": "Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "22",
+     "span": "Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng (Bộ Công an chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "uav",
+    "thiet bi",
+    "phuong tien",
+    "he thong giam",
+    "sat",
+    "che ap",
+    "phuc vu",
+    "dam",
+    "an ninh",
+    "trat",
+    "muc tieu",
+    "luong"
+   ],
+   "goiY": [
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "kyCho": [
+      "MATCH-0017"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-13",
+   "ten": "Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "06",
+   "tenSp": "Thiết bị và hệ thống mạng di động 5G/5G-Advanced",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G",
+     "span": "Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G (Bộ Khoa học và Công nghệ chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G (Bộ Khoa học và Công nghệ chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "6",
+     "span": "Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G (Bộ Khoa học và Công nghệ chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "5g",
+    "ha tang",
+    "sau va",
+    "he sinh thai"
+   ],
+   "goiY": [
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "kyCho": [
+      "MATCH-0020"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-14",
+   "ten": "Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo",
+   "benDatHang": "Ngân hàng Nhà nước Việt Nam",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "01",
+   "tenSp": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo",
+     "span": "Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo (Ngân hàng Nhà nước Việt Nam chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Ngân hàng Nhà nước Việt Nam",
+     "span": "Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo (Ngân hàng Nhà nước Việt Nam chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "1",
+     "span": "Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo (Ngân hàng Nhà nước Việt Nam chủ quản);",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "tri tue nhan tao",
+    "nang cao",
+    "giam sat",
+    "ngan",
+    "hang",
+    "va quan",
+    "tri",
+    "rui",
+    "ro",
+    "bang"
+   ],
+   "goiY": [
+    {
+     "dv": "VinBigData",
+     "slug": "vinbigdata",
+     "kyCho": [
+      "MATCH-0016"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-15",
+   "ten": "Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian",
+   "benDatHang": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "28",
+   "tenSp": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
+   "doiTuong": null,
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-05-08",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian",
+     "span": "Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian (Viện Hàn lâm Khoa học và Công nghệ Việt Nam chủ quản).",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+     "span": "Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian (Viện Hàn lâm Khoa học và Công nghệ Việt Nam chủ quản).",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Thủ tướng Chính phủ giao nhiệm vụ cho 10 bộ, cơ quan trung ương thực hiện 20 nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo phát triển công nghệ chiến lược",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "28",
+     "span": "Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian (Viện Hàn lâm Khoa học và Công nghệ Việt Nam chủ quản).",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_qd808_giao_nhiem_vu_cncl_20260508.txt",
+     "extraction": "normalized"
+    }
+   ],
+   "khaiNiem": [
+    "ve tinh",
+    "chum ve",
+    "tinh",
+    "quan sat",
+    "trai dat",
+    "ha tang",
+    "du lieu",
+    "khong gian"
+   ],
+   "goiY": [
+    {
+     "dv": "Trung tâm Vũ trụ Việt Nam",
+     "slug": "trung-tam-vu-tru-viet-nam",
+     "kyCho": [
+      "MATCH-0012"
+     ],
+     "khop": [
+      "ve tinh",
+      "tinh",
+      "quan sat",
+      "trai dat"
+     ],
+     "trich": {
+      "span": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
+      "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+      "tier": "A",
+      "source": "vast.gov.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-16",
+   "ten": "Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia",
+   "benDatHang": "Bộ Công Thương",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "03",
+   "tenSp": "Nền tảng bản sao số",
+   "doiTuong": null,
+   "thoiHan": "giai đoạn 2026-2030",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công Thương",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Theo Quyết định số 808/QĐ-TTg, có 20 sản phẩm công nghệ chiến lược đã được giao cho 10 cơ quan chủ trì thực hiện với mục tiêu tạo ra sản phẩm cụ thể ngay trong năm 2026.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "3",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "giai đoạn 2026-2030",
+     "span": "Các nhiệm vụ đã được xác định mục tiêu, sản phẩm đầu ra, lộ trình triển khai và nhu cầu nguồn lực giai đoạn 2026-2030.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "ban sao so",
+    "he thong dieu",
+    "hanh",
+    "luoi dien",
+    "quoc gia"
+   ],
+   "goiY": [
+    {
+     "dv": "VTI Solutions",
+     "slug": "vti-solutions",
+     "kyCho": [],
+     "khop": [
+      "he thong dieu",
+      "hanh",
+      "quoc gia"
+     ],
+     "trich": {
+      "span": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
+      "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+      "tier": "C",
+      "source": "vti-solutions.vn"
+     }
+    },
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-17",
+   "ten": "thiết bị đóng cắt điện áp từ 22 kV đến 500 kV",
+   "benDatHang": "Bộ Công Thương",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "20",
+   "tenSp": "Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+   "doiTuong": null,
+   "thoiHan": "giai đoạn 2026-2030",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "thiết bị đóng cắt điện áp từ 22 kV đến 500 kV",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công Thương",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Theo Quyết định số 808/QĐ-TTg, có 20 sản phẩm công nghệ chiến lược đã được giao cho 10 cơ quan chủ trì thực hiện với mục tiêu tạo ra sản phẩm cụ thể ngay trong năm 2026.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "20",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "giai đoạn 2026-2030",
+     "span": "Các nhiệm vụ đã được xác định mục tiêu, sản phẩm đầu ra, lộ trình triển khai và nhu cầu nguồn lực giai đoạn 2026-2030.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "thiet bi",
+    "dong",
+    "cat",
+    "dien",
+    "ap",
+    "22",
+    "kv",
+    "den",
+    "500"
+   ],
+   "goiY": [
+    {
+     "dv": "Tổng công ty Thiết bị điện Đông Anh",
+     "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
+     "kyCho": [
+      "MATCH-0021"
+     ],
+     "khop": [
+      "thiet bi",
+      "dong",
+      "dien",
+      "ap",
+      "500"
+     ],
+     "trich": {
+      "span": "Đây là thành quả của tinh thần lao động sáng tạo, sự nỗ lực vượt bậc của tập thể kỹ sư, công nhân lao động Tổng công ty Thiết bị điện Đông Anh khi lần đầu tiên một doanh nghiệp trong nước làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam.",
+      "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
+      "tier": "A",
+      "source": "baochinhphu.vn"
+     }
+    },
+    {
+     "dv": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+     "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+     "kyCho": [
+      "MATCH-0022"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-18",
+   "ten": "robot công nghiệp hai tay với chương trình điều khiển nội địa",
+   "benDatHang": "Bộ Công Thương",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "07",
+   "tenSp": "Robot di động tự hành và robot công nghiệp",
+   "doiTuong": null,
+   "thoiHan": "giai đoạn 2026-2030",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-06-04",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "robot công nghiệp hai tay với chương trình điều khiển nội địa",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công Thương",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Theo Quyết định số 808/QĐ-TTg, có 20 sản phẩm công nghệ chiến lược đã được giao cho 10 cơ quan chủ trì thực hiện với mục tiêu tạo ra sản phẩm cụ thể ngay trong năm 2026.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "7",
+     "span": "Bộ Công Thương dự kiến triển khai 3 nhiệm vụ trọng điểm gồm: Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia; thiết bị đóng cắt điện áp từ 22 kV đến 500 kV; robot công nghiệp hai tay với chương trình điều khiển nội địa.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "giai đoạn 2026-2030",
+     "span": "Các nhiệm vụ đã được xác định mục tiêu, sản phẩm đầu ra, lộ trình triển khai và nhu cầu nguồn lực giai đoạn 2026-2030.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_to_cong_tac_cncl_phien_1_20260604.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "robot",
+    "hai",
+    "tay",
+    "chuong trinh",
+    "dieu khien",
+    "noi",
+    "dia"
+   ],
+   "goiY": [
+    {
+     "dv": "ROSTEK",
+     "slug": "rostek",
+     "kyCho": [
+      "MATCH-0002"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-19",
+   "ten": "AI camera xử lý tại biên",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "02",
+   "tenSp": "AI camera xử lý tại biên",
+   "doiTuong": "làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng",
+   "thoiHan": "đến năm 2030",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-04-03",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "AI camera xử lý tại biên",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "Về cách làm, Bộ Khoa học và Công nghệ đang triển khai chương trình theo hướng kết hợp cơ chế tài trợ và đặt hàng, chuyển mạnh từ cách tiếp cận dàn trải sang tập trung giải các “bài toán lớn” của quốc gia.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Quyết định số 2815/QĐ-TTg của Thủ tướng Chính phủ đã phê duyệt Chương trình khoa học, công nghệ và đổi mới sáng tạo quốc gia phát triển sản phẩm công nghệ chiến lược ưu tiên triển khai ngay",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "2",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "thoi_han",
+     "value": "đến năm 2030",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "tich hop",
+    "thu nghiem",
+    "dua vao"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-20",
+   "ten": "robot di động tự hành",
+   "benDatHang": "Bộ Khoa học và Công nghệ",
+   "loai": "chuong_trinh",
+   "loaiTen": "Chương trình, đề án",
+   "maSp": "07",
+   "tenSp": "Robot di động tự hành và robot công nghiệp",
+   "doiTuong": null,
+   "thoiHan": "đến năm 2030",
+   "kinhPhi": null,
+   "trangThai": null,
+   "ngayBai": "2026-04-03",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "robot di động tự hành",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Khoa học và Công nghệ",
+     "span": "Về cách làm, Bộ Khoa học và Công nghệ đang triển khai chương trình theo hướng kết hợp cơ chế tài trợ và đặt hàng, chuyển mạnh từ cách tiếp cận dàn trải sang tập trung giải các “bài toán lớn” của quốc gia.",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "chuong_trinh",
+     "span": "Quyết định số 2815/QĐ-TTg của Thủ tướng Chính phủ đã phê duyệt Chương trình khoa học, công nghệ và đổi mới sáng tạo quốc gia phát triển sản phẩm công nghệ chiến lược ưu tiên triển khai ngay",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "7",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "đến năm 2030",
+     "span": "Theo đó, mục tiêu đến năm 2030 làm chủ công nghệ thiết kế, tích hợp, chế tạo, thử nghiệm và đưa vào ứng dụng 6 sản phẩm công nghệ chiến lược, gồm: Mô hình ngôn ngữ lớn và trợ lý ảo tiếng Việt; AI camera xử lý tại biên; robot di động tự hành; hệ thống và thiết bị mạng di động 5G; hạ tầng mạng blockchain và các lớp ứng dụng truy xuất nguồn gốc, tài sản mã hóa; thiết bị bay không người lái (UAV).",
+     "tier": "A",
+     "source": "mst.gov.vn",
+     "href": "/evidence/mst_gov_vn_lo_trinh_6_san_pham_20260403.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "robot",
+    "di dong",
+    "tu hanh"
+   ],
+   "goiY": [
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "kyCho": [],
+     "khop": [
+      "robot",
+      "tu hanh"
+     ],
+     "trich": {
+      "span": "Theo Biên bản ghi nhớ, hai bên sẽ phối hợp nghiên cứu và phát triển các công nghệ phục vụ chuyển đổi số trong sản xuất, bao gồm ứng dụng robot tự hành và các giải pháp tự động hóa trong nhà máy; nghiên cứu AI, IoT và cơ điện tử; phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông; đồng thời số hóa dữ liệu và ứng dụng AI phục vụ nhà máy thông minh cũng như nghiên cứu khoa học.",
+      "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "ROSTEK",
+     "slug": "rostek",
+     "kyCho": [
+      "MATCH-0002"
+     ],
+     "khop": [
+      "robot"
+     ],
+     "trich": {
+      "span": "Hiện nay, loại robot này đã được sử dụng trong dây truyền sản xuất của công ty Nidec Sankyo Việt Nam, thuộc tập đoàn Nidec tại Nhật Bản, một nhà sản xuất micro moto lớn nhất thế giới cho đĩa cứng và ổ đĩa quang.",
+      "href": "/evidence/vjst_rostek_agv_20220103.txt",
+      "tier": "B",
+      "source": "vjst.vn"
+     }
+    },
+    {
+     "dv": "Công ty cổ phần VinMotion",
+     "slug": "cong-ty-co-phan-vinmotion",
+     "kyCho": [],
+     "khop": [
+      "robot"
+     ],
+     "trich": {
+      "span": "Chỉ sau hơn 3 tháng thành lập, đội ngũ kỹ sư Việt Nam của VinMotion đã cho ra đời nguyên mẫu robot đầu tiên.",
+      "href": "/evidence/tuoitre_vinmotion_20250606.txt",
+      "tier": "B",
+      "source": "tuoitre.vn"
+     }
+    }
+   ]
+  },
+  {
+   "ma": "ctd-21",
+   "ten": "Đề án xây dựng Trung tâm dữ liệu, quản lý, giám sát, xử lý vi phạm và điều hành giao thông",
+   "benDatHang": "Bộ Công an",
+   "loai": "du_an_goi_thau",
+   "loaiTen": "Dự án, gói thầu",
+   "maSp": "02",
+   "tenSp": "AI camera xử lý tại biên",
+   "doiTuong": "Trung tâm cấp 1 tại Cục Cảnh sát giao thông thuộc Bộ Công an và các Trung tâm cấp 2 tại phòng cảnh sát giao thông công an các tỉnh, thành phố",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "dự thảo Nghị quyết được xây dựng trên cơ sở các nhiệm vụ đã được cấp có thẩm quyền phê duyệt",
+   "ngayBai": "2026-09-24",
+   "bacCao": "A",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Đề án xây dựng Trung tâm dữ liệu, quản lý, giám sát, xử lý vi phạm và điều hành giao thông",
+     "span": "Hệ thống được tổ chức theo hướng điều phối tập trung, phân cấp thực hiện, với Trung tâm cấp 1 tại Cục Cảnh sát giao thông thuộc Bộ Công an và các Trung tâm cấp 2 tại phòng cảnh sát giao thông công an các tỉnh, thành phố.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Bộ Công an",
+     "span": "Phát biểu tại cuộc họp, Phó Thủ tướng Thường trực Phạm Gia Túc nhấn mạnh đây là dự án rất quan trọng, do Bộ Công an chủ trì nhưng có sự tham gia của các bộ, ngành, địa phương.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "du_an_goi_thau",
+     "span": "Phát biểu tại cuộc họp, Phó Thủ tướng Thường trực Phạm Gia Túc nhấn mạnh đây là dự án rất quan trọng, do Bộ Công an chủ trì nhưng có sự tham gia của các bộ, ngành, địa phương.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "Trung tâm cấp 1 tại Cục Cảnh sát giao thông thuộc Bộ Công an và các Trung tâm cấp 2 tại phòng cảnh sát giao thông công an các tỉnh, thành phố",
+     "span": "Hệ thống được tổ chức theo hướng điều phối tập trung, phân cấp thực hiện, với Trung tâm cấp 1 tại Cục Cảnh sát giao thông thuộc Bộ Công an và các Trung tâm cấp 2 tại phòng cảnh sát giao thông công an các tỉnh, thành phố.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "2",
+     "span": "Cùng với yêu cầu quản lý, điều hành giao thông, Phó Thủ tướng Thường trực nhấn mạnh hệ thống camera an ninh, camera thông minh còn góp phần bảo đảm an ninh, trật tự.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "dự thảo Nghị quyết được xây dựng trên cơ sở các nhiệm vụ đã được cấp có thẩm quyền phê duyệt",
+     "span": "Báo cáo giải trình, tiếp thu ý kiến thành viên Chính phủ, Bộ Công an cho biết dự thảo Nghị quyết được xây dựng trên cơ sở các nhiệm vụ đã được cấp có thẩm quyền phê duyệt và ý kiến của các bộ, ngành.",
+     "tier": "A",
+     "source": "baochinhphu.vn",
+     "href": "/evidence/baochinhphu_vn_trung_tam_du_lieu_giao_thong_20260924.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "trung tam",
+    "cuc",
+    "canh sat",
+    "giao thong",
+    "thuoc",
+    "bo cong",
+    "an va",
+    "phong",
+    "cong an",
+    "tinh",
+    "thanh",
+    "pho"
+   ],
+   "goiY": [
+    {
+     "dv": "VinBigData",
+     "slug": "vinbigdata",
+     "kyCho": [
+      "MATCH-0016"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-22",
+   "ten": "Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2",
+   "benDatHang": "Tổng công ty Điện lực miền Bắc (EVNNPC)",
+   "loai": "du_an_goi_thau",
+   "loaiTen": "Dự án, gói thầu",
+   "maSp": "18",
+   "tenSp": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
+   "doiTuong": "6 gói thầu cung cấp, vận chuyển và lắp đặt hệ thống lưu trữ năng lượng (BESS) thuộc các trạm biến áp 110kV",
+   "thoiHan": null,
+   "kinhPhi": "tổng mức đầu tư hơn 1.300 tỷ đồng",
+   "trangThai": "đang trong thời gian đánh giá hồ sơ dự thầu (HSDT)",
+   "ngayBai": "2026-08-12",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2",
+     "span": "(BĐT) - Tổng công ty Điện lực miền Bắc (EVNNPC) đang trong thời gian đánh giá hồ sơ dự thầu (HSDT) loạt gói thầu quy mô lớn thuộc Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2 (tổng mức đầu tư hơn 1.300 tỷ đồng).",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Tổng công ty Điện lực miền Bắc (EVNNPC)",
+     "span": "(BĐT) - Tổng công ty Điện lực miền Bắc (EVNNPC) đang trong thời gian đánh giá hồ sơ dự thầu (HSDT) loạt gói thầu quy mô lớn thuộc Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2 (tổng mức đầu tư hơn 1.300 tỷ đồng).",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "du_an_goi_thau",
+     "span": "Ngày 22/7/2026, EVNNPC mở thầu đồng loạt 6 gói thầu cung cấp, vận chuyển và lắp đặt hệ thống lưu trữ năng lượng (BESS) thuộc các trạm biến áp 110kV tại nhiều tỉnh, thành phố phía Bắc và Bắc Trung Bộ thuộc Dự án với tổng giá dự toán gần 1.000 tỷ đồng.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "6 gói thầu cung cấp, vận chuyển và lắp đặt hệ thống lưu trữ năng lượng (BESS) thuộc các trạm biến áp 110kV",
+     "span": "Ngày 22/7/2026, EVNNPC mở thầu đồng loạt 6 gói thầu cung cấp, vận chuyển và lắp đặt hệ thống lưu trữ năng lượng (BESS) thuộc các trạm biến áp 110kV tại nhiều tỉnh, thành phố phía Bắc và Bắc Trung Bộ thuộc Dự án với tổng giá dự toán gần 1.000 tỷ đồng.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "kinh_phi",
+     "value": "tổng mức đầu tư hơn 1.300 tỷ đồng",
+     "span": "(BĐT) - Tổng công ty Điện lực miền Bắc (EVNNPC) đang trong thời gian đánh giá hồ sơ dự thầu (HSDT) loạt gói thầu quy mô lớn thuộc Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2 (tổng mức đầu tư hơn 1.300 tỷ đồng).",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "18",
+     "span": "Ngày 22/7/2026, EVNNPC mở thầu đồng loạt 6 gói thầu cung cấp, vận chuyển và lắp đặt hệ thống lưu trữ năng lượng (BESS) thuộc các trạm biến áp 110kV tại nhiều tỉnh, thành phố phía Bắc và Bắc Trung Bộ thuộc Dự án với tổng giá dự toán gần 1.000 tỷ đồng.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "đang trong thời gian đánh giá hồ sơ dự thầu (HSDT)",
+     "span": "(BĐT) - Tổng công ty Điện lực miền Bắc (EVNNPC) đang trong thời gian đánh giá hồ sơ dự thầu (HSDT) loạt gói thầu quy mô lớn thuộc Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2 (tổng mức đầu tư hơn 1.300 tỷ đồng).",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_bess_evnnpc_gd2_20260812.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "pin",
+    "goi",
+    "thau",
+    "van chuyen",
+    "lap dat",
+    "bess",
+    "thuoc",
+    "tram",
+    "bien ap",
+    "110kv"
+   ],
+   "goiY": [
+    {
+     "dv": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+     "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
+     "kyCho": [
+      "MATCH-0010"
+     ],
+     "khop": [],
+     "trich": null
+    }
+   ]
+  },
+  {
+   "ma": "ctd-23",
+   "ten": "Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên",
+   "benDatHang": "Ban Quản lý dự án đường Hồ Chí Minh",
+   "loai": "du_an_goi_thau",
+   "loaiTen": "Dự án, gói thầu",
+   "maSp": null,
+   "tenSp": null,
+   "doiTuong": "cung cấp và lắp đặt thiết bị cho hệ thống ITS, ETC, kiểm soát tải trọng xe",
+   "thoiHan": "Thời gian thực hiện Gói thầu là 90 ngày",
+   "kinhPhi": "115,267 tỷ đồng",
+   "trangThai": "Gói thầu sẽ đóng thầu vào 10 giờ ngày 22/9/2026",
+   "ngayBai": "2026-09-07",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên",
+     "span": "(BĐT) - Ban Quản lý dự án đường Hồ Chí Minh vừa thông báo mời thầu Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Ban Quản lý dự án đường Hồ Chí Minh",
+     "span": "(BĐT) - Ban Quản lý dự án đường Hồ Chí Minh vừa thông báo mời thầu Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "du_an_goi_thau",
+     "span": "(BĐT) - Ban Quản lý dự án đường Hồ Chí Minh vừa thông báo mời thầu Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "cung cấp và lắp đặt thiết bị cho hệ thống ITS, ETC, kiểm soát tải trọng xe",
+     "span": "Phạm vi công việc của Gói thầu gồm cung cấp và lắp đặt thiết bị cho hệ thống ITS, ETC, kiểm soát tải trọng xe (bao gồm toàn bộ thiết bị trên tuyến và tại nhà điều hành trung tâm, nhà trạm thu phí).",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "kinh_phi",
+     "value": "115,267 tỷ đồng",
+     "span": "Gói thầu có giá 115,267 tỷ đồng, lựa chọn nhà thầu theo hình thức đấu thầu rộng rãi, địa điểm thực hiện tại TP. Đà Nẵng.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "thoi_han",
+     "value": "Thời gian thực hiện Gói thầu là 90 ngày",
+     "span": "Thời gian thực hiện Gói thầu là 90 ngày, áp dụng loại hợp đồng theo đơn giá cố định.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "trang_thai",
+     "value": "Gói thầu sẽ đóng thầu vào 10 giờ ngày 22/9/2026",
+     "span": "Theo thông báo mời thầu, Gói thầu sẽ đóng thầu vào 10 giờ ngày 22/9/2026.",
+     "tier": "B",
+     "source": "baodauthau.vn",
+     "href": "/evidence/baodauthau_vn_its_la_son_hoa_lien_20260907.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "lap dat",
+    "thiet bi",
+    "its",
+    "etc",
+    "soat",
+    "xe"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-24",
+   "ten": "dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương",
+   "benDatHang": "Ban Quản lý Đường sắt đô thị (MAUR)",
+   "loai": "du_an_goi_thau",
+   "loaiTen": "Dự án, gói thầu",
+   "maSp": "30",
+   "tenSp": "Nền tảng công nghiệp, phương tiện, thiết bị và các hệ thống tích hợp đường sắt tốc độ cao, đường sắt đô thị",
+   "doiTuong": "yêu cầu từng bước nội địa hóa trong quá trình xây dựng, đầu tư phương tiện và vận hành",
+   "thoiHan": "thời gian hoàn thành dự án là quý IV-2030",
+   "kinhPhi": null,
+   "trangThai": "MAUR đã lựa chọn Tập đoàn Trường Hải (THACO) làm nhà thầu chính thực hiện gói thầu EPC",
+   "ngayBai": "2026-01-15",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương",
+     "span": "Trong đó, lễ khởi công dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương do Ban Quản lý Đường sắt đô thị (MAUR) làm chủ đầu tư được tổ chức tại tòa nhà văn phòng Depot Tham Lương, phường Đông Hưng Thuận.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Ban Quản lý Đường sắt đô thị (MAUR)",
+     "span": "Trong đó, lễ khởi công dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương do Ban Quản lý Đường sắt đô thị (MAUR) làm chủ đầu tư được tổ chức tại tòa nhà văn phòng Depot Tham Lương, phường Đông Hưng Thuận.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "du_an_goi_thau",
+     "span": "MAUR đã lựa chọn Tập đoàn Trường Hải (THACO) làm nhà thầu chính thực hiện gói thầu EPC.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "yêu cầu từng bước nội địa hóa trong quá trình xây dựng, đầu tư phương tiện và vận hành",
+     "span": "Đồng thời, MAUR xác định rõ yêu cầu từng bước nội địa hóa trong quá trình xây dựng, đầu tư phương tiện và vận hành.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "30",
+     "span": "Đồng thời, MAUR xác định rõ yêu cầu từng bước nội địa hóa trong quá trình xây dựng, đầu tư phương tiện và vận hành.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "thoi_han",
+     "value": "thời gian hoàn thành dự án là quý IV-2030",
+     "span": "Ngày 31-12-2025, dự án điều chỉnh tuyến metro số 2 (đoạn từ Bến Thành – Tham Lương) đã được UBND TP.HCM phê với tổng mức đầu tư là 55.179 triệu đồng, thời gian hoàn thành dự án là quý IV-2030.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "trang_thai",
+     "value": "MAUR đã lựa chọn Tập đoàn Trường Hải (THACO) làm nhà thầu chính thực hiện gói thầu EPC",
+     "span": "MAUR đã lựa chọn Tập đoàn Trường Hải (THACO) làm nhà thầu chính thực hiện gói thầu EPC.",
+     "tier": "B",
+     "source": "ttbc-hcm.gov.vn",
+     "href": "/evidence/ttbc_hcm_gov_vn_metro_so_2_20260115.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "yeu cau",
+    "tung",
+    "buoc",
+    "noi",
+    "dia",
+    "hoa trong",
+    "qua trinh",
+    "xay dung",
+    "dau tu",
+    "phuong tien",
+    "va van hanh"
+   ],
+   "goiY": []
+  },
+  {
+   "ma": "ctd-25",
+   "ten": "Dự án vệ tinh quan sát Trái Đất VNREDSat-2",
+   "benDatHang": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+   "loai": "du_an_goi_thau",
+   "loaiTen": "Dự án, gói thầu",
+   "maSp": "28",
+   "tenSp": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
+   "doiTuong": "một thế hệ vệ tinh hiện đại hơn",
+   "thoiHan": null,
+   "kinhPhi": null,
+   "trangThai": "đã ký Ý định thư hợp tác",
+   "ngayBai": "2026-09-11",
+   "bacCao": "B",
+   "nguon": [
+    {
+     "field": "ten_nhu_cau",
+     "value": "Dự án vệ tinh quan sát Trái Đất VNREDSat-2",
+     "span": "Ngày 10/9 tại Paris (Cộng hòa Pháp), trong khuôn khổ chuyến thăm chính thức Cộng hòa Pháp và tham dự Hội nghị Thượng đỉnh Không gian vũ trụ của Tổng Bí thư, Chủ tịch nước Tô Lâm, ông Trần Hồng Thái, Chủ tịch Viện Hàn lâm Khoa học và Công nghệ Việt Nam đã ký Ý định thư hợp tác với Bộ Kinh tế, Tài chính, Chủ quyền Công nghiệp, Năng lượng và Kỹ thuật số Cộng hòa Pháp nhằm thúc đẩy Dự án vệ tinh quan sát Trái Đất VNREDSat-2.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "ben_dat_hang",
+     "value": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+     "span": "Ngày 10/9 tại Paris (Cộng hòa Pháp), trong khuôn khổ chuyến thăm chính thức Cộng hòa Pháp và tham dự Hội nghị Thượng đỉnh Không gian vũ trụ của Tổng Bí thư, Chủ tịch nước Tô Lâm, ông Trần Hồng Thái, Chủ tịch Viện Hàn lâm Khoa học và Công nghệ Việt Nam đã ký Ý định thư hợp tác với Bộ Kinh tế, Tài chính, Chủ quyền Công nghiệp, Năng lượng và Kỹ thuật số Cộng hòa Pháp nhằm thúc đẩy Dự án vệ tinh quan sát Trái Đất VNREDSat-2.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "loai_dat_hang",
+     "value": "du_an_goi_thau",
+     "span": "Ý định thư ghi nhận quyết tâm của hai bên trong việc phối hợp thúc đẩy Dự án VNREDSat-2, trong đó phía Pháp huy động các công cụ tài chính và hỗ trợ cần thiết cho dự án.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "doi_tuong",
+     "value": "một thế hệ vệ tinh hiện đại hơn",
+     "span": "Trên nền tảng đó, VNREDSat-2 hướng tới duy trì liên tục và nâng cao năng lực quan sát Trái Đất của Việt Nam bằng một thế hệ vệ tinh hiện đại hơn; gắn quá trình triển khai với phát triển nguồn nhân lực, tiếp nhận tri thức và tăng cường sự tham gia của đội ngũ khoa học, kỹ thuật Việt Nam.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "verbatim"
+    },
+    {
+     "field": "san_pham_lien_quan",
+     "value": "28",
+     "span": "Trên nền tảng đó, VNREDSat-2 hướng tới duy trì liên tục và nâng cao năng lực quan sát Trái Đất của Việt Nam bằng một thế hệ vệ tinh hiện đại hơn; gắn quá trình triển khai với phát triển nguồn nhân lực, tiếp nhận tri thức và tăng cường sự tham gia của đội ngũ khoa học, kỹ thuật Việt Nam.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "normalized"
+    },
+    {
+     "field": "trang_thai",
+     "value": "đã ký Ý định thư hợp tác",
+     "span": "Ngày 10/9 tại Paris (Cộng hòa Pháp), trong khuôn khổ chuyến thăm chính thức Cộng hòa Pháp và tham dự Hội nghị Thượng đỉnh Không gian vũ trụ của Tổng Bí thư, Chủ tịch nước Tô Lâm, ông Trần Hồng Thái, Chủ tịch Viện Hàn lâm Khoa học và Công nghệ Việt Nam đã ký Ý định thư hợp tác với Bộ Kinh tế, Tài chính, Chủ quyền Công nghiệp, Năng lượng và Kỹ thuật số Cộng hòa Pháp nhằm thúc đẩy Dự án vệ tinh quan sát Trái Đất VNREDSat-2.",
+     "tier": "B",
+     "source": "suckhoedoisong.vn",
+     "href": "/evidence/suckhoedoisong_vn_vnredsat_2_20260911.txt",
+     "extraction": "verbatim"
+    }
+   ],
+   "khaiNiem": [
+    "ve tinh",
+    "hien dai",
+    "hon"
+   ],
+   "goiY": [
+    {
+     "dv": "Trung tâm Vũ trụ Việt Nam",
+     "slug": "trung-tam-vu-tru-viet-nam",
+     "kyCho": [
+      "MATCH-0012"
+     ],
+     "khop": [
+      "ve tinh"
+     ],
+     "trich": {
+      "span": "Thủ tướng tham quan vệ tinh MicroDragon-2 cỡ khoảng 50 kg, được triển khai để vừa tạo sản phẩm có thể ứng dụng – theo dõi biến động rừng, vừa thử nghiệm công nghệ tự thiết kế, chế tạo nhằm tích lũy năng lực làm chủ.",
+      "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Realtime Robotics (RtR)",
+     "slug": "realtime-robotics-rtr",
+     "kyCho": [],
+     "khop": [
+      "ve tinh"
+     ],
+     "trich": {
+      "span": "Thay vì giới hạn khoảng cách truyền tín hiệu trực tiếp khoảng 10km như các hệ thống thông thường, Hera sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành.",
+      "href": "/evidence/cafef_rtr_xponential_20260418.txt",
+      "tier": "B",
+      "source": "cafef.vn"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -22,6 +22,7 @@ const TRANG = [
   ['hoi_dap_tu_choi', '/dashboard/hoi-dap?q=' + encodeURIComponent('máy bay chở khách')],
   ['tong_quan', '/dashboard'],
   ['bao_cao', '/dashboard/bao-cao'],
+  ['cau_that', '/dashboard/cau-that'],
   ['ho_so_fpt', '/dashboard/don-vi/fpt'],
 ];
 mkdirSync(OUT, { recursive: true });

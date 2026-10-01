@@ -49,6 +49,9 @@ const DEM = env('CLM_KHO_DEM') || goc('Dataset_CongNgheChienLuoc')
     ? '/Users/os/RtR/KnowledgeBase/Dataset_CongNgheChienLuoc'
     : tim('dataset CAU', 'KnowledgeBase', 'Dataset_CongNgheChienLuoc'));
 const CLM = env('CLM_KHO_MATCH') || tim('kho match', 'CaoLocMatch');
+// Cau that (01/10/2026, lo 03 da duyet): domain rieng, nam canh don_vi_cncl. Chua nap lo nao thi
+// domain khong co claims.jsonl: web hien man Cau that rong, khong loi.
+const DH = join(SUP, '..', 'cau_dat_hang');
 
 const doc = (p) => readFileSync(p, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l));
 
@@ -75,7 +78,7 @@ mkdirSync(EV, { recursive: true });
 function chepBanChup(canDung) {
   const them = [], doi = [], thieu = [];
   for (const ten of [...canDung].sort()) {
-    const nguon = [join(SUP, 'snapshots', ten), join(DEM, 'snapshots', ten)].find((p) => existsSync(p));
+    const nguon = [join(SUP, 'snapshots', ten), join(DEM, 'snapshots', ten), join(DH, 'snapshots', ten)].find((p) => existsSync(p));
     if (!nguon) { thieu.push(ten); continue; }
     const dich = join(EV, ten.replace(/\.(html|md)$/, '.txt'));
     if (!existsSync(dich)) { copyFileSync(nguon, dich); them.push(ten); }
@@ -259,6 +262,14 @@ const tuChoi = soKy.filter((r) => r.decision === 'tu_choi').map((r) => ({
   by: r.by, date: r.date, lyDo: r.ly_do ?? '',
 }));
 
+// ── Cau that: claim nhu cau dat hang da duyet, giu nguyen van, ban chup len /evidence ──
+const dhClaims = existsSync(join(DH, 'claims.jsonl')) ? doc(join(DH, 'claims.jsonl')) : [];
+for (const c of dhClaims) canDung.add(c.capture.snapshot);
+const cauDatHang = dhClaims.map((c) => ({
+  ma: c.entity, field: c.field, value: String(c.value), span: c.evidence_span, extraction: c.extraction,
+  tier: c.tier, source: c.capture.source, href: href(c.capture.snapshot), ngayBai: c.ngay_bai ?? null,
+}));
+
 chepBanChup(canDung);
 
 // ── Ghi ─────────────────────────────────────────────────────────────────────
@@ -397,6 +408,8 @@ export const rejectedPairs: RejectedPair[] = ${JSON.stringify(tuChoi, null, 2)};
 // Hai ban phai LUON KHOP. Cong check-lib-song-sinh.mjs canh dieu do.
 writeFileSync(join(TOUCH, 'lib', 'cncl-registry.json'),
   JSON.stringify({ meta, units, needs }, null, 2) + '\n', 'utf8');
+writeFileSync(join(TOUCH, 'lib', 'cncl-cau-dat-hang.json'),
+  JSON.stringify({ generatedAt: NOW, claims: cauDatHang }, null, 1) + '\n', 'utf8');
 writeFileSync(join(TOUCH, 'lib', 'cncl-match.json'),
   JSON.stringify({ matchMeta: matchMetaObj, signedMatches: webMatches, rejectedPairs: tuChoi }, null, 2) + '\n', 'utf8');
 

@@ -1,0 +1,38 @@
+domain: cau_dat_hang
+entity_label: "Nhu cau dat hang cong nghe CO THAT, cong khai, co ben dat hang ro rang (cau that)"
+
+# VI SAO CO (01/10/2026): chieu cau cua san pham truoc nay chi la 30 san pham trong danh muc
+# QD 21/2026/QD-TTg, chua phai nguoi dat hang that. Domain nay chua nhu cau dat hang cong nghe
+# cong khai: nhiem vu KH&CN do Nha nuoc dat hang, bai toan lon do bo nganh, dia phuong cong bo,
+# chuong trinh co danh muc san pham can lam, du an goi thau cong nghe da cong bo.
+# Nap qua lam_giau/nap_lo_cau.py, CHI sau khi anh Lam duyet bang lo (lam_giau/dot_*/duyet.json).
+# Cong rieng: check_cau_dat_hang.py (moi nhu cau phai truy duoc ve mot lan duyet).
+#
+# Mot nhu cau KHONG phai mot cap ghep. Don vi trong so nguon "co the dap ung" chi la GOI Y tu
+# may hoi dap; ghep that van can nguoi ky qua match_engine.
+
+schema:
+  type_field: loai_dat_hang       # nhiem_vu_khcn / bai_toan_lon / chuong_trinh / du_an_goi_thau
+  fields:
+    - ten_nhu_cau
+    - ben_dat_hang
+    - loai_dat_hang
+    - san_pham_lien_quan          # 1..30 theo QD 21/2026, hoac de trong
+    - doi_tuong                   # san pham hay ket qua cu the duoc dat hang
+    - thoi_han                    # chi khi nguon noi ro
+    - kinh_phi                    # chi khi nguon noi ro
+    - trang_thai                  # chi khi nguon noi ro
+
+# KHONG khai rollup_field: khong ai biet tong so nhu cau dat hang cong nghe cong khai (mau so),
+# nen dem theo loai chi la dem trong so, khong duoc trinh nhu mot phan bo cua thi truong.
+
+universe:
+  note: "Nhu cau dat hang cong nghe trong nuoc, cong khai, gan hoac thuoc 10 nhom cong nghe chien luoc QD 21/2026."
+
+scope_note: "Khong nhan tuyen bo chung chung, chi tieu vi mo, tin hoi thao khong neu doi tuong dat hang, nhu cau nuoc ngoai. Moi nhiem vu trong mot van ban liet ke la mot thuc the. Hai nguon cung mot nhiem vu thi gop, ghi trong gop.json cua lo."
+
+refresh_days:
+  default: 180
+
+alias_map: {}
+ambiguous_clusters: []

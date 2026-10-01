@@ -38,7 +38,8 @@ import { dungMatching } from '../lib/matching.mjs';
 import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
 import { dungMoDau } from '../lib/mo-dau.mjs';
 import { dungTenSp } from '../lib/hien-gia-tri.mjs';
-import { dungChiMuc } from '../lib/hoi-dap.mjs';
+import { dungChiMuc, hoiDap, DONG_NGHIA } from '../lib/hoi-dap.mjs';
+import { dungCauThat } from '../lib/cau-that.mjs';
 import { dungBaoCao } from '../lib/bao-cao.mjs';
 import { dungHoSoKiemToan } from '../lib/kiem-toan.mjs';
 import { createHash } from 'node:crypto';
@@ -250,7 +251,14 @@ const moDau = dungMoDau({ reg, mat, graph: { nodes, edges, boCuc }, thiTruong, t
 writeFileSync(join(LIB, 'hub-mo-dau.json'), JSON.stringify(moDau, null, 2) + '\n', 'utf8');
 
 // ── Hoi dap co trich dan (01/10/2026): chi muc cau nguon nang luc + kho cum tu cua so nguon ──
-writeFileSync(join(LIB, 'hub-hoi-dap.json'), JSON.stringify(dungChiMuc(reg, mat)) + '\n', 'utf8');
+const chiMuc = dungChiMuc(reg, mat);
+writeFileSync(join(LIB, 'hub-hoi-dap.json'), JSON.stringify(chiMuc) + '\n', 'utf8');
+
+// ── Cau that (01/10/2026, lo 03): nhu cau dat hang co nguon + goi y don vi tu may hoi dap ──
+const DH_F = join(LIB, 'cncl-cau-dat-hang.json');
+const dh = existsSync(DH_F) ? JSON.parse(readFileSync(DH_F, 'utf8')) : { claims: [] };
+const cauThat = dungCauThat(dh, JSON.parse(JSON.stringify(chiMuc)), dungTenSp(reg.needs), hoiDap, DONG_NGHIA);
+writeFileSync(join(LIB, 'hub-cau-that.json'), JSON.stringify(cauThat, null, 1) + '\n', 'utf8');
 
 // ── Bao cao khoang trong (01/10/2026): doc thi truong, mo dau va lich su git cua xu huong ──
 const XH_F = join(LIB, 'hub-xu-huong.json');

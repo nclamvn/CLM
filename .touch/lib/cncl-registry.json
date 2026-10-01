@@ -4,22 +4,22 @@
     "claims": 378,
     "needs": 30,
     "sources": 61,
-    "snapshots": 114,
+    "snapshots": 139,
     "tierA": 120,
     "tierB": 190,
     "nhomPhu": 10,
     "generatedAt": "2026-10-01",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-10-01 21:27: 114/116 xanh · ĐỎ 2 · không chạy 0",
+    "gate": "chuỗi cổng 2026-10-01 21:34: 116/116 xanh",
     "chuoiCong": {
-      "luc": "2026-10-01T21:27:07+0700",
+      "luc": "2026-10-01T21:34:24+0700",
       "cheDo": "day_du",
       "tong": 116,
-      "xanh": 114,
-      "do": 2,
+      "xanh": 116,
+      "do": 0,
       "khongChay": 0,
       "hoan": 0,
-      "dat": false
+      "dat": true
     }
   },
   "units": [

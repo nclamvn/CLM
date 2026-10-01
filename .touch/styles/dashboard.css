@@ -1378,3 +1378,35 @@
 .dash-shell .kt-giai { font-size: 13px; line-height: 20px; color: var(--color-text-secondary); margin: 0; }
 .dash-shell .kt-giai code { font-family: var(--mono); font-size: 12px; }
 @media (max-width: 900px) { .dash-shell .kt-dong { grid-template-columns: minmax(0, 1fr); } }
+
+/* Cau that (01/10/2026, lo 03): nhu cau dat hang co nguon + goi y don vi (chua ky, khong phai cap ghep). */
+.dash-shell .ct { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); max-width: 1100px; }
+.dash-shell .ct-dau, .dash-shell .ct-khoi { padding: var(--space-3) var(--space-3_5); }
+.dash-shell .ct-so { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-2); margin: var(--space-2) 0; }
+.dash-shell .ct-so__o { border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-md); padding: var(--space-2) var(--space-2_5); display: flex; flex-direction: column; gap: 2px; }
+.dash-shell .ct-so__o b { font-size: 22px; line-height: 28px; font-weight: 600; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+.dash-shell .ct-so__o span { font-size: 12px; line-height: 16px; color: var(--color-text-secondary); }
+.dash-shell .ct-dau .hd-vidu { margin-top: var(--space-2); }
+.dash-shell .ct-ds { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.dash-shell .ct-the { border-top: var(--stroke-hairline) solid var(--color-border-subtle); padding-top: var(--space-3); min-width: 0; }
+.dash-shell .ct-the__dau { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.dash-shell .ct-ma { font-size: 12px; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .ct-ten { font-size: 16px; line-height: 23px; font-weight: 600; color: var(--color-text-primary); margin: 6px 0; }
+.dash-shell .ct-dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px var(--space-2_5); margin: 0 0 var(--space-2); font-size: 13px; line-height: 19px; }
+.dash-shell .ct-dl > div { display: contents; }
+.dash-shell .ct-dl dt { color: var(--color-text-muted); }
+.dash-shell .ct-dl dd { margin: 0; color: var(--color-text-secondary); overflow-wrap: anywhere; }
+.dash-shell .ct-nguon summary { font-size: 13px; color: var(--color-text-secondary); cursor: pointer; }
+.dash-shell .ct-nguon summary:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .ct-nguon ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: var(--space-2); }
+.dash-shell .ct-nguon__truong { font-size: 12px; color: var(--color-text-muted); }
+.dash-shell .ct-nguon blockquote { margin: 2px 0; font-size: 13px; line-height: 20px; color: var(--color-text-secondary); border-left: 2px solid var(--color-border-strong); padding-left: 12px; overflow-wrap: anywhere; }
+.dash-shell .ct-nguon__chan { font-size: 12px; color: var(--color-text-muted); padding-left: 14px; }
+.dash-shell .ct-goiy { margin-top: var(--space-2_5); }
+.dash-shell .ct-goiy__h { font-size: 13px; font-weight: 600; color: var(--color-text-primary); margin: 0 0 6px; }
+.dash-shell .ct-goiy__h span { font-weight: 400; color: var(--color-text-muted); margin-left: 6px; }
+.dash-shell .ct-goiy__ds { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.dash-shell .ct-ky { font-size: 12px; color: var(--color-text-secondary); }
+.dash-shell .ct-trong { font-size: 13px; line-height: 20px; color: var(--color-text-secondary); border: 1px dashed var(--color-border-strong); border-radius: var(--radius-md); padding: var(--space-2) var(--space-2_5); margin: 0; }
+@media (max-width: 899px) { .dash-shell .ct-so { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 639px) { .dash-shell .ct-dl { grid-template-columns: minmax(0, 1fr); } .dash-shell .ct-dl dt { margin-top: 4px; } }

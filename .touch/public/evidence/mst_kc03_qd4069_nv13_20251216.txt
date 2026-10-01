@@ -1,0 +1,40 @@
+# SNAPSHOT · mic.mediacdn.vn (tep dinh kem cong mst.gov.vn) · captured 2026-10-01 via web_fetch (text extraction)
+# URL: https://mic.mediacdn.vn/639352410187198464/2025/12/16/01-1-phu-luc-quyet-dinh-4069-phe-duyet-21-nhiem-vu-1765847056448896720085.pdf
+# Bai dang 16/12/2025. Hang de xuat B.
+
+13. Nghiên cứu thiết 
+kế và chế tạo hệ 
+thống phân loại 
+trái cây xuất khẩu 
+sử dụng trí tuệ 
+nhân tạo (AI).
+- Làm chủ thiết kế 
+và công nghệ chế 
+tạo hệ thống phân 
+loại trái cây xuất 
+khẩu sử dụng AI. 
+- Chế tạo và thử 
+nghiệm 01 hệ 
+thống phân loại 
+trái cây sử dụng 
+AI.
+1. 01 hệ thống phân loại trái cây xuất khẩu sử 
+dụng trí tuệ nhân tạo (AI) có các thông số và tính 
+năng chính như sau:
+- Năng suất: ≥ 2.000 kg/giờ.
+- Độ chính xác phân loại: ≥ 90%.
+- Độ chính xác cân khối lượng với sai số đo: ± 
+0,03 kg/ĐVT.
+- Khả năng phân loại: theo kích thước, khối 
+lượng, hình dạng, màu sắc, khuyết tật,... theo tiêu 
+chuẩn xuất khẩu. 
+Tuyển chọn Đại học Kinh tế TP. 
+Hồ Chí Minh, Bộ
+Giáo dục và Đào tạo 
+Đề tài khoa 
+học và công 
+nghệ cấp 
+quốc gia.
+Lĩnh vực: 
+Khoa học 
+công nghệ

@@ -21,6 +21,9 @@ RANG 8  · xoa gop.json (hai nhu cau trung lai hien ra) -> TRUNG_NHU_CAU.
 RANG 9  · em-dash trong ly_do -> EM_DASH.
 RANG 10 · normalized khong khai ly do -> CHUAN_HOA_KHONG_KHAI.
 RANG 11 · ngay_bai lech hau to ban chup -> NGAY_SAI.
+RANG 12 · span chi khop khi gop khoang trang (doi mot dau cach thanh hai) -> SPAN_KHONG_CHUP kem goi y
+          (01/10/2026: cong cu gop khoang trang nen 30 span PDF lot toi refinery).
+RANG 13 · value normalized co nam 2031 ma span khong co -> MOC_VUOT_SPAN (ctd-21 lot toi registry).
 
 Chay: python3 bite_kiem_lo_cau.py     Exit 0 moi rang can · 2 co rang khong can · 3 KHONG CHAY DUOC.
 """
@@ -111,6 +114,8 @@ try:
     rang("RANG 8  · xoa gop.json -> TRUNG_NHU_CAU", r8, 2, "TRUNG_NHU_CAU")
     rang("RANG 9  · em-dash trong ly_do -> EM_DASH", sua_dong(lambda x: True, lambda x, ds, i: x.update(ly_do=x["ly_do"] + " " + chr(0x2014) + " x")), 2, "EM_DASH")
     rang("RANG 10 · normalized khong khai -> CHUAN_HOA_KHONG_KHAI", sua_dong(lambda x: x["extraction"] == "normalized", lambda x, ds, i: x.update(note="")), 2, "CHUAN_HOA_KHONG_KHAI")
+    rang("RANG 12 · span chi khop khi gop khoang trang -> SPAN_KHONG_CHUP", sua_dong(lambda x: " " in x["evidence_span"].strip(), lambda x, ds, i: x.update(evidence_span=x["evidence_span"].replace(" ", "  ", 1))), 2, "gop khoang trang")
+    rang("RANG 13 · nam trong value ngoai span -> MOC_VUOT_SPAN", sua_dong(lambda x: x["extraction"] == "normalized" and "2031" not in x["evidence_span"], lambda x, ds, i: x.update(value=str(x["value"]) + " năm 2031")), 2, "MOC_VUOT_SPAN")
     rang("RANG 11 · ngay_bai lech ban chup -> NGAY_SAI", sua_dong(lambda x: True, lambda x, ds, i: x.update(ngay_bai="1999-01-01")), 2, "NGAY_SAI")
 finally:
     for t in tam:

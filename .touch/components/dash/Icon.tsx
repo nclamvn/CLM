@@ -3,7 +3,7 @@ import type { ReactElement } from 'react';
 
 type IconName =
   | 'home' | 'layers' | 'cpu' | 'shield' | 'gauge' | 'alert' | 'doc' | 'branch' | 'gear'
-  | 'check' | 'search' | 'bell' | 'lock' | 'chevron' | 'people';
+  | 'check' | 'search' | 'bell' | 'lock' | 'chevron' | 'people' | 'target';
 
 const P: Record<IconName, ReactElement> = {
   home: <path d="M3 9.5 10 3.5l7 6V16a1 1 0 0 1-1 1h-3v-5H7v5H4a1 1 0 0 1-1-1z" />,
@@ -20,6 +20,7 @@ const P: Record<IconName, ReactElement> = {
   bell: <><path d="M6 8a4 4 0 0 1 8 0c0 4 1.5 5 1.5 5H4.5S6 12 6 8z" /><path d="M8.5 16a1.6 1.6 0 0 0 3 0" /></>,
   lock: <><rect x="5" y="9" width="10" height="7.5" rx="1.5" /><path d="M7 9V6.8a3 3 0 0 1 6 0V9" /></>,
   chevron: <path d="M6 8.5l4 4 4-4" />,
+  target: <><circle cx="10" cy="10" r="6.5" /><circle cx="10" cy="10" r="3" /><path d="M10 2v3M10 15v3M2 10h3M15 10h3" /></>,
   people: <><circle cx="7.5" cy="7" r="2.2" /><path d="M3.5 16c0-2.4 1.8-4 4-4s4 1.6 4 4" /><path d="M13 6.2a2.2 2.2 0 0 1 0 4.3M13.5 12.4c1.9.3 3 1.8 3 3.6" /></>,
 };
 

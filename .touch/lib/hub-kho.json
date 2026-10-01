@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "7528c02",
+    "sha": "79f1235",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 208,
+  "tongCommit": 209,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 59,
+      "commitSauGop": 60,
       "cuoi": {
-        "sha": "7528c02",
+        "sha": "79f1235",
         "ngay": "2026-10-01",
-        "tieuDe": "Registry tren man hep (< 640px): bang bon cot thanh the xep chong (truong, gia tri, cap nguon + nguon), sua 166 doan chu bi cat ma phep do tran khung moi bat o 390px; can do lai tren may that."
+        "tieuDe": "Quet lai truy cap kem do tran khung, anh moc, ket qua chuoi tren may that"
       },
       "soTep": 501
     }
@@ -84,6 +84,11 @@
     ".touch": 63
   },
   "ganDay": [
+    {
+      "sha": "79f1235",
+      "ngay": "2026-10-01",
+      "tieuDe": "Quet lai truy cap kem do tran khung, anh moc, ket qua chuoi tren may that"
+    },
     {
       "sha": "7528c02",
       "ngay": "2026-10-01",
@@ -126,11 +131,6 @@
     },
     {
       "sha": "16e57c5",
-      "ngay": "2026-10-01",
-      "tieuDe": "Ket qua chuoi day du tren may that"
-    },
-    {
-      "sha": "8c47bb2",
       "ngay": "2026-10-01",
       "tieuDe": "Ket qua chuoi day du tren may that"
     }
