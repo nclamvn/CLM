@@ -369,6 +369,7 @@ if [ "$NHANH" -eq 0 ]; then
   # truong noi bo (deal_link, pricing, favors rtr, INT). Rang dung kernel GIA, chay duoc ca trong CI.
   chay CNCLData    rang_moc_thoi_gian "$CNCL" 'BITE MOC THOI GIAN' python3 bite_moc_thoi_gian.py
   chay CNCLData    rang_kiem_lo       "$CNCL" 'BITE KIEM LO|KHONG CHAY' python3 lam_giau/bite_kiem_lo.py
+  chay CNCLData    rang_lo_dinh_danh  "$CNCL" 'BITE KIEM LO DINH DANH|KHONG CHAY' python3 lam_giau/bite_kiem_lo_dinh_danh.py
   chay CNCLData    rang_cau_noi_kernel "$CNCL" 'BITE CAU NOI'    python3 vong_tu_chay/bite_cau_noi_kernel.py
   chay CaoLocMatch rang_match       "$CLM" 'MATCH BITES'         python3 match_bites.py
   chay CaoLocMatch rang_pheu        "$CLM" 'BITE PHEU'           python3 bite_pheu_matching.py

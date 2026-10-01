@@ -1,0 +1,14 @@
+Bệnh viện Trung ương Quân đội 108	/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt
+Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu	/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt /evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt
+Trung tâm Vũ trụ Việt Nam	/evidence/vast_nanodragon_ttvtvn_20210311.txt /evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt
+Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội	/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt
+Viện Công nghệ xạ hiếm	/evidence/mst_viencongnghexahiem_dathiem_20250626.txt
+Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch	/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt
+Viện Di truyền Nông nghiệp Việt Nam	/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt
+Viện Hàn lâm Khoa học và Công nghệ Việt Nam	/evidence/vjst_vienhanlam_vatlieu_20260223.txt
+Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)	/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt
+Viện Khoa học vật liệu	/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt
+Viện Khoa học-Công nghệ mật mã	/evidence/nhandan_matma_hauluongtu_20260210.txt
+Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec	/evidence/baodautu_car_t_vinmec_20230821.txt /evidence/baodautu_car_t_lupus_vinmec_20260721.txt
+Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM	/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt
+Viện Vaccine và sinh phẩm y tế (IVAC)	/evidence/baochinhphu_ivac_vaccine_20190116.txt

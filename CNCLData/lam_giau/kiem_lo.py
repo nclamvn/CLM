@@ -104,7 +104,9 @@ def tat_ca():
     ma = 0
     for d in dots:
         import subprocess
-        r = subprocess.run([sys.executable, __file__, str(d)], capture_output=True, text=True)
+        # Lo dinh danh phap nhan (01/10/2026) co schema rieng va cong rieng: kiem_lo_dinh_danh.py.
+        cong = HERE / "kiem_lo_dinh_danh.py" if (d / "LOAI_DINH_DANH").exists() else Path(__file__)
+        r = subprocess.run([sys.executable, str(cong), str(d)], capture_output=True, text=True)
         print((r.stdout + r.stderr).strip())
         ma = max(ma, r.returncode)
     return ma
@@ -116,6 +118,9 @@ def main():
     if sys.argv[1] == "--tat-ca":
         sys.exit(tat_ca())
     DOT = Path(sys.argv[1]).resolve()
+    if (DOT / "LOAI_DINH_DANH").exists():
+        import subprocess
+        sys.exit(subprocess.run([sys.executable, str(HERE / "kiem_lo_dinh_danh.py"), str(DOT)]).returncode)
     reg_path = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else REGISTRY
     if not DOT.is_dir():
         thoat3(f"khong thay {DOT}")

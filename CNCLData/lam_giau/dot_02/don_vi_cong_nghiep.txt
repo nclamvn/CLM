@@ -1,0 +1,14 @@
+Công ty cổ phần AVAC Việt Nam	/evidence/baochinhphu_vaccine_dtlcp_20230724.txt
+Công ty cổ phần Health Care Center	/evidence/mst_robot_makeinvn_20251230.txt
+Công ty cổ phần thuốc thú y Trung ương NAVETCO	/evidence/baochinhphu_vaccine_dtlcp_20230724.txt
+Công ty cổ phần Xe lửa Dĩ An	/evidence/cafef_xelua_dian_20240925.txt
+Công ty Cổ phần Y Sinh Ngọc Bảo	/evidence/nhandan_ngocbao_peek3d_20250802.txt
+Công ty CP Việt Nam Food (VNF)	/evidence/tienphong_vnf_phu_pham_tom_20260820.txt
+Công ty TNHH Công nghệ Sinh học xanh Nhật Lan	/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt
+Công ty TNHH Luyện kim Trần Hồng Quân	/evidence/baochinhphu_nhomthoi_daknong_20260726.txt
+FECON	/evidence/vnexpress_fecon_tbm_20240829.txt /evidence/baodautu_fecon_rnd_vo_ham_20151228.txt
+Indefol	/evidence/vnexpress_indefol_hydrogen_20260418.txt
+Liên danh tư vấn TEDI - TRICC - TEDI SOUTH	/evidence/baochinhphu_tedi_dstdc_20241001.txt
+Tập đoàn Dabaco Việt Nam	/evidence/nongnghiepmoitruong_dacovac_20250329.txt
+Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)	/evidence/vneconomy_ptsc_chande_20250618.txt
+Tổng công ty Thiết bị điện Đông Anh	/evidence/baochinhphu_eemc_mba500kv_20241216.txt

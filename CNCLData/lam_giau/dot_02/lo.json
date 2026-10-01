@@ -1,0 +1,1452 @@
+{
+ "loai": "dinh_danh",
+ "dong": [
+  {
+   "entity": "Công ty cổ phần AVAC Việt Nam",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM",
+   "evidence_span": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM với định hướng: Con người hạng A – Hệ thống hạng A – Chất lượng hạng A nhằm nghiên cứu, sản xuất, cung ứng các sản phẩm vaccine cho ngành chăn nuôi Việt Nam và hướng tới xuất khẩu.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "avac_com_vn_gioi_thieu_00000000.md",
+   "url": "https://www.avac.com.vn/gioi-thieu/",
+   "website_chinh_chu": "avac.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Thiết kế 2022 © Công ty Cổ Phần AVAC Việt Nam' và site giới thiệu chính vắc xin AVAC ASF LIVE mà nguồn cũ gán cho công ty này.",
+   "ly_do": "Website không công bố mã số nên chỉ đề xuất tên; mã cần người tra cổng tìm theo tên này.",
+   "co": []
+  },
+  {
+   "entity": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO",
+   "evidence_span": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO\n\n##### Trụ Sở Chính\n\nĐịa chỉ\n\n15 Trần Cao Vân, Phường Sài Gòn, TP. Hồ Chí Minh",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "navetco_com_vn_gioi_thieu_00000000.md",
+   "url": "https://navetco.com.vn/gioi-thieu",
+   "website_chinh_chu": "navetco.com.vn",
+   "can_cu_chinh_chu": "Meta copyright và chân trang ghi tên CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO, site có mục Quan hệ cổ đông đăng công bố thông tin mã VET.",
+   "ly_do": "Website không ghi mã số dạng chữ (file công bố thông tin là bản scan); chỉ đề xuất tên. Công ty có chi nhánh Hà Nội, Miền Tây: không dùng mã chi nhánh.",
+   "co": []
+  },
+  {
+   "entity": "Công ty cổ phần Xe lửa Dĩ An",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN XE LỬA DĨ AN",
+   "evidence_span": "**© CÔNG TY CỔ PHẦN XE LỬA DĨ AN**:",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "xeluadian_com_vn_lien_he_00000000.md",
+   "url": "http://xeluadian.com.vn/lien-he/",
+   "website_chinh_chu": "xeluadian.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi bản quyền thuộc CÔNG TY CỔ PHẦN XE LỬA DĨ AN, site có mục Quan hệ cổ đông và biểu tượng đã thông báo Bộ Công Thương (online.gov.vn).",
+   "ly_do": "Tên và mã nằm cùng một khối chân trang của cùng bản chụp.",
+   "co": []
+  },
+  {
+   "entity": "Công ty cổ phần Xe lửa Dĩ An",
+   "field": "ma_so_tu_khai",
+   "value": "3700146539",
+   "evidence_span": "Mã số doanh nghiêp: **3700146539** đăng ký lần đầu 07/7/2011 thay đổi lần 4 ngày 09/9/2025",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "xeluadian_com_vn_lien_he_00000000.md",
+   "url": "http://xeluadian.com.vn/lien-he/",
+   "website_chinh_chu": "xeluadian.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi bản quyền thuộc CÔNG TY CỔ PHẦN XE LỬA DĨ AN, site có mục Quan hệ cổ đông và biểu tượng đã thông báo Bộ Công Thương (online.gov.vn).",
+   "ly_do": "Chữ 'nghiêp' sai dấu là chữ của nguồn. Ngày 'đăng ký lần đầu 07/7/2011' là ngày đăng ký công ty cổ phần, người tra cổng nên đối chiếu cả ngày này.",
+   "co": []
+  },
+  {
+   "entity": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+   "evidence_span": "Công ty Cổ phần Y Sinh Ngọc Bảo là doanh nghiệp khoa học công nghệ hoạt động trong các lĩnh vực nghiên cứu chế tạo vật liệu y sinh, thiết bị cấy ghép y tế, vật liệu nha khoa và in 3D (từ sợi PEEK – Polyether Ether Ketone và bột titanium).",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ngocbaobiomed_com_trang_chu_00000000.md",
+   "url": "https://ngocbaobiomed.com/",
+   "website_chinh_chu": "ngocbaobiomed.com",
+   "can_cu_chinh_chu": "Logo site mang tiêu đề 'NGỌC BẢO - CÔNG TY CỔ PHẦN Y SINH NGỌC BẢO' và site đăng tin ra mắt mảnh ghép hộp sọ PEEK của chính công ty, khớp nguồn cũ.",
+   "ly_do": "Công ty là đơn vị chủ quản của Viện Nghiên cứu và Phát triển Vật liệu y sinh Ngọc Bảo (tổ chức KH&CN, giấy phép B-23/2016 ĐK-KH&CN), viện không phải là pháp nhân này. Website không ghi mã số.",
+   "co": []
+  },
+  {
+   "entity": "Công ty CP Việt Nam Food (VNF)",
+   "field": "ten_phap_nhan",
+   "value": "Công ty cổ phần Việt Nam Food",
+   "evidence_span": "# Công ty cổ phần Việt Nam Food (VNF) phát triển Kito-Sil – phức hợp Nano Chitosan Bạc kiểm soát mầm bệnh và giảm kháng sinh",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vnfoods_vn_tin_kito_sil_20260724.md",
+   "url": "https://www.vnfoods.vn/vi/news/cong-ty-co-phan-viet-nam-food-vnf-phat-trien-kito-sil-phuc-hop-nano-chitosan-bac-kiem-soat-mam-benh-va-giam-khang-sinh",
+   "website_chinh_chu": "vnfoods.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Copyright © 2020 Vietnam Food JSC.', site là trang tin và sản phẩm của chính VNF; báo Tiền Phong (nguồn cũ) gọi đúng tên công ty này.",
+   "ly_do": "Tên lấy từ tiêu đề bài tin tự đăng, không phải trang pháp lý; RetriV là startup spin-off, không phải pháp nhân này. Website không ghi mã số.",
+   "co": []
+  },
+  {
+   "entity": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN",
+   "evidence_span": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN\n\n-      Số 11, Ngách 35, Ngõ Hòa Bình 2, Minh Khai, Hai Bà Trưng, Hà Nội",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "dongtrunghathaonhatlan_com_vn_trang_chu_00000000.md",
+   "url": "https://dongtrunghathaonhatlan.com.vn/",
+   "website_chinh_chu": "dongtrunghathaonhatlan.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi '© Bản quyền thuộc về CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN'; chưa có nguồn độc lập dẫn tới tên miền này.",
+   "ly_do": "Site là cửa hàng đông trùng hạ thảo, không nhắc nấm Agaricus; việc đây là cùng pháp nhân với đơn vị trong bài mst.gov.vn chỉ dựa trên trùng tên đầy đủ, người tra cổng cần kiểm. Không có mã số.",
+   "co": []
+  },
+  {
+   "entity": "FECON",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Tập đoàn FECON",
+   "evidence_span": "Thành lập ngày 18/06/2004 từ nhóm kỹ sư và chuyên gia đầu ngành về xử lý và thi công nền móng công trình, Công ty Cổ phần Tập đoàn FECON đã trở thành một công ty sở hữu năng lực xuất sắc về nền móng và công trình ngầm tại Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "fecon_com_vn_gioi_thieu_00000000.md",
+   "url": "https://fecon.com.vn/gioi-thieu",
+   "website_chinh_chu": "fecon.com.vn",
+   "can_cu_chinh_chu": "Chân trang mọi trang ghi khối liên hệ 'Công ty Cổ phần Tập đoàn FECON' và site có mục Quan hệ cổ đông của mã FCN; nguồn cũ (VnExpress, Báo Đầu tư) nói về chính FECON.",
+   "ly_do": "Pháp nhân mẹ niêm yết mã FCN; hơn 20 công ty con mang tên FECON (FECON Mining, FECON South, FECON Raito...) là pháp nhân riêng, không gộp. Tên đã đổi nhiều lần, xem dòng mã số.",
+   "co": []
+  },
+  {
+   "entity": "FECON",
+   "field": "ma_so_tu_khai",
+   "value": "0101502599",
+   "evidence_span": "Công ty Cổ Phần Kỹ Thuật Nền Móng và Công Trình Ngầm FECON - Việt Nam; Giấy chứng nhận đăng ký doanh nghiệp số 0101502599 do Phòng đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 18/6/2004.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.md",
+   "url": "https://fecon.com.vn/thong-cao-thanh-lap-cong-ty-cp-cong-trinh-ngam-fecon-d164",
+   "website_chinh_chu": "fecon.com.vn",
+   "can_cu_chinh_chu": "Chân trang mọi trang ghi khối liên hệ 'Công ty Cổ phần Tập đoàn FECON' và site có mục Quan hệ cổ đông của mã FCN.",
+   "ly_do": "Span ghi TÊN CŨ của pháp nhân (thông cáo 2015, FECON là cổ đông sáng lập của công ty con FECON UCC). Nối với tên hiện hành qua ngày cấp 18/6/2004 trùng ngày thành lập trên trang giới thiệu và tin đổi tên 06/05/2016 (snapshot fecon_com_vn_doi_ten_20160506.md); người tra cổng cần xác nhận mã này mang tên hiện hành.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn Dabaco Việt Nam",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Tập đoàn DABACO Việt Nam",
+   "evidence_span": "**1. Tên tổ chức:** Công ty Cổ phần Tập đoàn DABACO Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "dabaco_vn_cbtt_thay_doi_dkdn_20260926.md",
+   "url": "https://dabaco.vn/quan-he-co-dong/dbc-cbtt-thay-doi-noi-dung-dang-ky-doanh-nghiep/",
+   "website_chinh_chu": "dabaco.vn",
+   "can_cu_chinh_chu": "Chân trang ghi '@2026 Bản quyền thuộc về DABACO GROUP', site có mục Quan hệ cổ đông đăng công bố thông tin mã DBC; dabaco.com.vn chuyển hướng về dabaco.vn.",
+   "ly_do": "Đây là pháp nhân mẹ niêm yết mã DBC. Nguồn cũ nói về vắc xin (Dacovac); site ghi năm 2023 thành lập Công ty TNHH Dược & Thú y DACOVET, là pháp nhân con riêng, có thể là đơn vị sản xuất thật: anh Lâm cần quyết gán mẹ hay con.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn Dabaco Việt Nam",
+   "field": "ma_so_tu_khai",
+   "value": "2300105790",
+   "evidence_span": "  Tax Code\n\n\n\n\n: No 35 Ly Thai To street, Bac Ninh city, Bac Ninh province.\n\n: www.dabaco.com.vn / www.dabaco.vn\n\n: contact@dabaco.com.vn\n\n: (0241) 3895111 - 3826077\n\n: (0241) 3825496 - 3896336\n\n: 2300105790.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "dabaco_com_vn_general_information_00000000.md",
+   "url": "http://dabaco.com.vn/en/about-us/general-information.html",
+   "website_chinh_chu": "dabaco.com.vn",
+   "can_cu_chinh_chu": "Trang ghi 'COPYRIGHT © 2012 DABACO GROUP JSC. All Rights Reserved' và địa chỉ 35 Lý Thái Tổ trùng trụ sở trên dabaco.vn; email contact@dabaco.com.vn được dabaco.vn dùng.",
+   "ly_do": "Trang tiếng Anh cũ (bản quyền 2012) còn truy cập được; bảng bị trích xuất tách nhãn với giá trị, giá trị cuối ': 2300105790.' ứng với nhãn cuối 'Tax Code'. Mã của pháp nhân mẹ, không dùng cho công ty con (DACOVET...). Cần đối chiếu cổng.",
+   "co": []
+  },
+  {
+   "entity": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+   "field": "ten_phap_nhan",
+   "value": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
+   "evidence_span": "Tên Tổ chức phát hành: Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam  \nTrụ sở chính: Số 1-5 Lê Duẩn, Quận 1, Tp. Hồ Chí Minh  \nMã số doanh nghiệp: 0100150577",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ptsc_com_vn_thong_bao_dhdcd_2023_00000000.md",
+   "url": "https://www.ptsc.com.vn/co-dong/tin-co-dong/thong-bao-ve-viec-hop-dai-hoi-dong-co-dong-thuong-nien-2023",
+   "website_chinh_chu": "ptsc.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Copyright © 2022 PTSC', site có chứng nhận Tín nhiệm mạng cho ptsc.com.vn và mục Cổ đông đăng công bố thông tin của tổ chức phát hành mã PVS.",
+   "ly_do": "Pháp nhân mẹ (mã PVS), không phải các công ty con như PTSC M&C, PTSC Offshore Services hay chi nhánh PTSC Marine, PTSC Supply Base. Thông báo năm 2023, địa chỉ trong span đã cũ.",
+   "co": []
+  },
+  {
+   "entity": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+   "field": "ma_so_tu_khai",
+   "value": "0100150577",
+   "evidence_span": "Tên Tổ chức phát hành: Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam  \nTrụ sở chính: Số 1-5 Lê Duẩn, Quận 1, Tp. Hồ Chí Minh  \nMã số doanh nghiệp: 0100150577",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ptsc_com_vn_thong_bao_dhdcd_2023_00000000.md",
+   "url": "https://www.ptsc.com.vn/co-dong/tin-co-dong/thong-bao-ve-viec-hop-dai-hoi-dong-co-dong-thuong-nien-2023",
+   "website_chinh_chu": "ptsc.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Copyright © 2022 PTSC', site có chứng nhận Tín nhiệm mạng cho ptsc.com.vn và mục Cổ đông đăng công bố thông tin của tổ chức phát hành mã PVS.",
+   "ly_do": "Mã của pháp nhân mẹ, tự khai trong thông báo họp ĐHĐCĐ 2023. Site còn có mục 'Giấy CNĐKKD' (chưa mở) có thể dùng để đối chiếu thêm.",
+   "co": []
+  },
+  {
+   "entity": "Tổng công ty Thiết bị điện Đông Anh",
+   "field": "ten_phap_nhan",
+   "value": "Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần",
+   "evidence_span": "Ngày 24/01/2013, Công ty được đổi tên thành Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần( EEMC).",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "eemc_com_vn_gioi_thieu_00000000.md",
+   "url": "https://eemc.com.vn/gioi-thieu",
+   "website_chinh_chu": "eemc.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Copyright 2026 © Tổng Công Ty Thiết Bị Điện Đông Anh' và site có mục Quan hệ cổ đông (báo cáo tài chính, báo cáo thường niên) của EEMC.",
+   "ly_do": "Dấu gạch trong tên là gạch ngang ngắn (U+2013) của nguồn. Hai công ty TNHH MTV con (Thiết bị lưới điện - EEMC; Thiết kế và Chế tạo thiết bị điện) là pháp nhân riêng.",
+   "co": []
+  },
+  {
+   "entity": "Tổng công ty Thiết bị điện Đông Anh",
+   "field": "ma_so_tu_khai",
+   "value": "0100101322",
+   "evidence_span": "Certificate of business registration number: 0100101322 by the Department of Planning and Investment of Hanoi  \nissued for the first time on June 1, 2005, registered for the 14th revision on November 1, 2017.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "eemc_com_vn_about_us_00000000.md",
+   "url": "https://www.eemc.com.vn/about-us-2",
+   "website_chinh_chu": "eemc.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi 'Copyright 2026 © Tổng Công Ty Thiết Bị Điện Đông Anh' và site có mục Quan hệ cổ đông của EEMC (mã chứng khoán ghi trên trang: TBD).",
+   "ly_do": "Trang tiếng Anh, thông tin đăng ký mới tới lần thay đổi thứ 14 (01/11/2017), có thể cũ; cùng trang ghi số ĐKKD cũ 0103008085 nay là 0100101322. Mã của tổng công ty, không dùng cho hai công ty TNHH MTV con.",
+   "co": []
+  },
+  {
+   "entity": "CMC Telecom",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Hạ tầng Viễn thông CMC",
+   "evidence_span": "**Website của Công ty Cổ phần Hạ tầng Viễn thông CMC**",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmctelecom_vn_chan_trang_00000000.md",
+   "url": "https://cmctelecom.vn/",
+   "website_chinh_chu": "cmctelecom.vn",
+   "can_cu_chinh_chu": "Chân trang tự ghi 'Website của Công ty Cổ phần Hạ tầng Viễn thông CMC', có Giấy CNĐKDN và người chịu trách nhiệm nội dung, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "CMC Telecom là công ty con của Tập đoàn CMC (Công ty CP Tập đoàn Công nghệ CMC là pháp nhân khác). CMC Cloud trong bản chụp cũ là dịch vụ do CMC Telecom cung cấp.",
+   "co": []
+  },
+  {
+   "entity": "CMC Telecom",
+   "field": "ma_so_tu_khai",
+   "value": "0102900049",
+   "evidence_span": "**Giấy CNĐKDN:** 0102900049 do Phòng Đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 05/09/2008",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmctelecom_vn_chan_trang_00000000.md",
+   "url": "https://cmctelecom.vn/",
+   "website_chinh_chu": "cmctelecom.vn",
+   "can_cu_chinh_chu": "Chân trang tự ghi 'Website của Công ty Cổ phần Hạ tầng Viễn thông CMC', có Giấy CNĐKDN và người chịu trách nhiệm nội dung, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "Mã của công ty con CMC Telecom, không phải mã Tập đoàn CMC. Cấp lần đầu 05/09/2008 tại Hà Nội theo trang.",
+   "co": []
+  },
+  {
+   "entity": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM",
+   "evidence_span": "**CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM** (sau đây gọi là “NCS”) luôn xem trọng việc bảo vệ Dữ liệu cá nhân",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ncsgroup_vn_chinh_sach_du_lieu_00000000.md",
+   "url": "https://ncsgroup.vn/chinh-sach-bao-ve-du-lieu-ca-nhan/",
+   "website_chinh_chu": "ncsgroup.vn",
+   "can_cu_chinh_chu": "Chính sách bảo vệ dữ liệu cá nhân trên ncsgroup.vn do chính công ty ban hành với tư cách bên kiểm soát dữ liệu; chân trang mọi trang ghi cùng tên công ty và trụ sở.",
+   "ly_do": "Trang chủ có chỗ viết thiếu chữ 'Công nghệ' (Công ty Cổ phần An ninh mạng Quốc gia Việt Nam), người tra cổng nên tìm cả hai dạng. Website không công bố mã số.",
+   "co": []
+  },
+  {
+   "entity": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+   "evidence_span": "6 BÁO CÁO THƯỜNG NIÊN 2025 7 CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vntt_com_vn_bao_cao_thuong_nien_2025_00000000.md",
+   "url": "https://vntt.com.vn/wp-content/uploads/VI_BaoCaoThuongNien2025.pdf",
+   "website_chinh_chu": "vntt.com.vn",
+   "can_cu_chinh_chu": "Báo cáo thường niên 2025 đăng ở mục Quan hệ cổ đông của vntt.com.vn; chính báo cáo ghi Website vntt.com.vn.",
+   "ly_do": "Pháp nhân riêng (mã chứng khoán TTN), do Becamex IDC và VNPT góp vốn sáng lập; không phải đơn vị phụ thuộc VNPT.",
+   "co": []
+  },
+  {
+   "entity": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+   "field": "ma_so_tu_khai",
+   "value": "3700861497",
+   "evidence_span": "nhận ĐKDN\nSố 3700861497 do Sở Kế hoạch và Đầu tư Tỉnh",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vntt_com_vn_bao_cao_thuong_nien_2025_00000000.md",
+   "url": "https://vntt.com.vn/wp-content/uploads/VI_BaoCaoThuongNien2025.pdf",
+   "website_chinh_chu": "vntt.com.vn",
+   "can_cu_chinh_chu": "Báo cáo thường niên 2025 đăng ở mục Quan hệ cổ đông của vntt.com.vn; chính báo cáo ghi Website vntt.com.vn.",
+   "ly_do": "Mã do Sở KHĐT Bình Dương cấp lần đầu 02/01/2008, thay đổi lần 11 ngày 04/08/2025 theo báo cáo. Không phải mã VNPT hay Becamex.",
+   "co": []
+  },
+  {
+   "entity": "FPT",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần FPT",
+   "evidence_span": "Tên công ty\nCông ty Cổ phần FPT\nTên viết tắt\nFPT",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "bctn2025_fpt_com_thong_tin_chung_00000000.md",
+   "url": "https://bctn2025.fpt.com/wp-content/uploads/2026/04/BCTN-2025.pdf",
+   "website_chinh_chu": "fpt.com",
+   "can_cu_chinh_chu": "Trang fpt.com/vi/nha-dau-tu/bao-cao-thuong-nien dẫn tới bản Digital bctn2025.fpt.com và tệp báo cáo thường niên 2025; báo cáo ghi Website https://fpt.com.",
+   "ly_do": "Nhãn 'FPT' là pháp nhân mẹ (Tập đoàn FPT). FPT Software, FPT Telecom, FPT Semiconductor là công ty con, pháp nhân khác, không dùng mã này.",
+   "co": []
+  },
+  {
+   "entity": "FPT",
+   "field": "ma_so_tu_khai",
+   "value": "0101248141",
+   "evidence_span": "Giấy chứng nhận đăng ký kinh doanh \n0101248141",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "bctn2025_fpt_com_thong_tin_chung_00000000.md",
+   "url": "https://bctn2025.fpt.com/wp-content/uploads/2026/04/BCTN-2025.pdf",
+   "website_chinh_chu": "fpt.com",
+   "can_cu_chinh_chu": "Trang fpt.com/vi/nha-dau-tu/bao-cao-thuong-nien dẫn tới bản Digital bctn2025.fpt.com và tệp báo cáo thường niên 2025; báo cáo ghi Website https://fpt.com.",
+   "ly_do": "Mã của công ty mẹ Công ty Cổ phần FPT. Không gán cho FPT Semiconductor hay nhà máy kiểm thử đóng gói.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn MISA",
+   "field": "ten_phap_nhan",
+   "value": "Công ty cổ phần MISA",
+   "evidence_span": "## Thông tin thanh toán\n\nCông ty cổ phần MISA\n\nMã số thuế: 0101243150",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "misa_vn_thong_tin_thanh_toan_00000000.md",
+   "url": "https://www.misa.vn/thong-tin-thanh-toan/",
+   "website_chinh_chu": "misa.vn",
+   "can_cu_chinh_chu": "Trang Thông tin thanh toán thuộc mục Công ty của misa.vn; chân trang ghi Giấy CNĐKKD và bản quyền MISA JSC, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "'Tập đoàn MISA' là tên gọi truyền thông; pháp nhân tự khai là Công ty cổ phần MISA.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn MISA",
+   "field": "ma_so_tu_khai",
+   "value": "0101243150",
+   "evidence_span": "## Thông tin thanh toán\n\nCông ty cổ phần MISA\n\nMã số thuế: 0101243150",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "misa_vn_thong_tin_thanh_toan_00000000.md",
+   "url": "https://www.misa.vn/thong-tin-thanh-toan/",
+   "website_chinh_chu": "misa.vn",
+   "can_cu_chinh_chu": "Trang Thông tin thanh toán thuộc mục Công ty của misa.vn; chân trang ghi Giấy CNĐKKD và bản quyền MISA JSC, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "Chân trang cùng URL ghi trùng số: Giấy CNĐKKD 0101243150, cấp lần đầu 22/04/2002 tại Hà Nội.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn Viettel",
+   "field": "ten_phap_nhan",
+   "value": "Tập đoàn Công nghiệp – Viễn thông Quân đội",
+   "evidence_span": "- **Cơ quan chủ quản****:** Tập đoàn Công nghiệp – Viễn thông Quân đội.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "viettelai_vn_chu_so_huu_website_00000000.md",
+   "url": "https://viettelai.vn/privacy/owner",
+   "website_chinh_chu": "viettelai.vn",
+   "can_cu_chinh_chu": "Trang 'Thông tin chủ sở hữu Website' của viettelai.vn tự khai cơ quan chủ quản là Tập đoàn; viettel.com.vn chỉ trả trang rỗng nên không lấy được từ tên miền chính.",
+   "ly_do": "Trang viết tên bằng gạch nối dài (–); trên cổng tên có thể viết bằng gạch ngắn (-). Nguồn là website của đơn vị Viettel AI, nên người tra cổng cần đối chiếu kỹ.",
+   "co": []
+  },
+  {
+   "entity": "Tập đoàn Viettel",
+   "field": "ma_so_tu_khai",
+   "value": "0100109106",
+   "evidence_span": "- **Đăng ký kinh doanh:** số 0100109106 đăng ký lần đầu ngày 13 tháng 07 năm 2010.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "viettelai_vn_chu_so_huu_website_00000000.md",
+   "url": "https://viettelai.vn/privacy/owner",
+   "website_chinh_chu": "viettelai.vn",
+   "can_cu_chinh_chu": "Trang 'Thông tin chủ sở hữu Website' của viettelai.vn tự khai cơ quan chủ quản là Tập đoàn; viettel.com.vn chỉ trả trang rỗng nên không lấy được từ tên miền chính.",
+   "ly_do": "Mã của pháp nhân mẹ (Tập đoàn). Các đơn vị Viettel AI, Viettel High Tech, An ninh mạng Viettel có mã riêng dạng 0100109106-xxx hoặc pháp nhân riêng, không dùng mã này cho họ. Ngày đăng ký lần đầu trang ghi 13/07/2010, cần đối chiếu cổng.",
+   "co": []
+  },
+  {
+   "entity": "VNPT",
+   "field": "ten_phap_nhan",
+   "value": "Tập đoàn Bưu chính Viễn thông Việt Nam",
+   "evidence_span": "VNPT Hà Nội là đơn vị kinh tế trực thuộc Tập đoàn Bưu chính Viễn thông Việt Nam, được thành lập theo quyết định số 652/ QĐ-TCCB/ HĐQT ngày 06-12-2007",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "hanoi_vnpt_com_vn_ve_chung_toi_00000000.md",
+   "url": "https://hanoi.vnpt.com.vn/",
+   "website_chinh_chu": "vnpt.com.vn",
+   "can_cu_chinh_chu": "hanoi.vnpt.com.vn là tên miền con của vnpt.com.vn, cổng thông tin của VNPT Hà Nội (đơn vị trực thuộc Tập đoàn); vnpt.com.vn và vnpt.vn trả trang rỗng.",
+   "ly_do": "Tên lấy từ trang của đơn vị trực thuộc VNPT Hà Nội, không phải trang của chính Tập đoàn; website không công bố mã số Tập đoàn.",
+   "co": []
+  },
+  {
+   "entity": "VNPT Technology",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông",
+   "evidence_span": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông .",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vnpt_technology_vn_chan_trang_00000000.md",
+   "url": "https://vnpt-technology.vn/vi",
+   "website_chinh_chu": "vnpt-technology.vn",
+   "can_cu_chinh_chu": "Chân trang vnpt-technology.vn ghi tên công ty, GCNĐKDN và bản quyền VNPT TECHNOLOGY, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "Công ty con của Tập đoàn VNPT, pháp nhân riêng; không dùng mã của VNPT.",
+   "co": []
+  },
+  {
+   "entity": "VNPT Technology",
+   "field": "ma_so_tu_khai",
+   "value": "0105140413",
+   "evidence_span": "GCNĐKDN số : 0105140413 do Sở KHĐT Tp.Hà Nội cấp lần đầu ngày 06/01/2011.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vnpt_technology_vn_chan_trang_00000000.md",
+   "url": "https://vnpt-technology.vn/vi",
+   "website_chinh_chu": "vnpt-technology.vn",
+   "can_cu_chinh_chu": "Chân trang vnpt-technology.vn ghi tên công ty, GCNĐKDN và bản quyền VNPT TECHNOLOGY, kèm liên kết đăng ký online.gov.vn.",
+   "ly_do": "Mã 10 số của pháp nhân riêng, không phải mã đơn vị phụ thuộc VNPT.",
+   "co": []
+  },
+  {
+   "entity": "VTI Solutions",
+   "field": "ten_phap_nhan",
+   "value": "Công ty cổ phần VTI Solutions",
+   "evidence_span": "Công ty cổ phần VTI Solutions\n\n#### Chứng nhận bởi:",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vti_solutions_vn_chan_trang_00000000.md",
+   "url": "https://vti-solutions.vn/lien-he/",
+   "website_chinh_chu": "vti-solutions.vn",
+   "can_cu_chinh_chu": "Chân trang vti-solutions.vn ghi tên công ty, trụ sở, chi nhánh và 'Một thành viên của VTI Group'; bản chụp cũ cùng tên miền.",
+   "ly_do": "Thành viên của VTI Group; công ty mẹ VTI là pháp nhân khác. Website không công bố mã số.",
+   "co": []
+  },
+  {
+   "entity": "Bệnh viện Trung ương Quân đội 108",
+   "field": "ten_phap_nhan",
+   "value": "Bệnh viện Trung ương Quân đội 108",
+   "evidence_span": "©2023 Bệnh viện Trung ương Quân đội 108 - Quyết định cho phép thiết lập lại Trang thông tin điện tử trên Internet số 250/QĐ-CT của Tổng cục Chính trị cấp ngày 13/02/2023.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "benhvien108_vn_gioi_thieu_00000000.md",
+   "url": "https://www.benhvien108.vn/gioi-thieu-benh-vien-trung-uong-quan-doi-108.htm",
+   "website_chinh_chu": "benhvien108.vn",
+   "can_cu_chinh_chu": "Chân trang ghi bản quyền thuộc Bệnh viện Trung ương Quân đội 108, trang được Tổng cục Chính trị cấp phép theo Quyết định 250/QĐ-CT.",
+   "ly_do": "Bệnh viện quân đội trực thuộc Bộ Quốc phòng (trang giới thiệu nêu Quân uỷ Trung ương, Bộ Quốc phòng đầu tư); website còn dùng tên Viện nghiên cứu Khoa học Y dược Lâm sàng 108 cho mô hình Viện - Trường, người tra cổng cần biết hai tên này cùng một đơn vị.",
+   "co": []
+  },
+  {
+   "entity": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+   "field": "ten_phap_nhan",
+   "value": "Viện Hóa học công nghiệp Việt Nam",
+   "evidence_span": "Phòng thí nghiệm trọng điểm Công nghệ lọc, hóa dầu (PTNTĐ) được thành lập theo quyết định số 185/2003/QĐ-BCN, ngày 13/11/2003 của Bộ trưởng Bộ Công nghiệp (nay là Bộ Công Thương). Cơ quan chủ trì của PTNTĐ là Viện Hóa học công nghiệp Việt Nam, trực thuộc Tập đoàn Hóa chất Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "viic_vn_ptn_trong_diem_loc_hoa_dau_00000000.md",
+   "url": "http://viic.vn/phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau-79328.html",
+   "website_chinh_chu": "viic.vn",
+   "can_cu_chinh_chu": "Chân trang ghi VIỆN HÓA HỌC CÔNG NGHIỆP VIỆT NAM với bản quyền Viic.vn; trang đơn vị dẫn website riêng của phòng thí nghiệm là keylabprt.com.vn, và thẻ meta của keylabprt.com.vn ghi kèm Viện hóa học công nghiệp Việt Nam.",
+   "ly_do": "Nhãn là một phòng thí nghiệm trọng điểm, không phải pháp nhân độc lập theo lời website; pháp nhân đề xuất là cơ quan chủ trì Viện Hóa học công nghiệp Việt Nam (thuộc Tập đoàn Hóa chất Việt Nam). Viện là pháp nhân khác với Tập đoàn, không lấy mã Tập đoàn.",
+   "co": []
+  },
+  {
+   "entity": "Trung tâm Vũ trụ Việt Nam",
+   "field": "ten_phap_nhan",
+   "value": "Trung tâm Vũ trụ Việt Nam",
+   "evidence_span": "Từ những ngày đầu thành lập, Trung tâm Vũ trụ Việt Nam (TTVTVN) đã luôn xác định giá trị cốt lõi của mình là “Nhân”, “Tâm”, “Tầm”.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vnsc_org_vn_su_menh_va_tam_nhin_00000000.md",
+   "url": "https://vnsc.org.vn/vi/gioi-thieu/su-menh-va-tam-nhin/",
+   "website_chinh_chu": "vnsc.org.vn",
+   "can_cu_chinh_chu": "Trang giới thiệu tự xưng là Trung tâm Vũ trụ Việt Nam (TTVTVN), bản tiếng Anh cùng tên miền giới thiệu VNSC; tên miền vnsc.vast.gov.vn mà vast.gov.vn liên kết tới trả về rỗng khi fetch.",
+   "ly_do": "Đơn vị nghiên cứu trực thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam: vast.gov.vn liệt kê (19) Trung tâm Vũ trụ Việt Nam trong các đơn vị nghiên cứu (bản chụp vast_gov_vn_chuc_nang_nhiem_vu_00000000.md), bản tiếng Anh vnsc.org.vn ghi under Vietnam Academy of Science and Technology (bản chụp vnsc_org_vn_about_vnsc_00000000.md).",
+   "co": []
+  },
+  {
+   "entity": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+   "field": "ten_phap_nhan",
+   "value": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+   "evidence_span": "Anh hùng Lao động thời kỳ đổi mới cho Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội (2000)",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "hus_vnu_edu_vn_lich_su_phat_trien_00000000.md",
+   "url": "https://hus.vnu.edu.vn/gioi-thieu/lich-su-phat-trien",
+   "website_chinh_chu": "hus.vnu.edu.vn",
+   "can_cu_chinh_chu": "Tên miền con của vnu.edu.vn (Đại học Quốc gia Hà Nội), chân trang ghi Bản quyền Trường ĐHKHTN-ĐHQGHN.",
+   "ly_do": "Trường đại học thành viên của Đại học Quốc gia Hà Nội (trang lịch sử: trường đại học thành viên nòng cốt của Đại học Quốc gia Hà Nội); trường và ĐHQGHN là hai đơn vị, không lấy mã ĐHQGHN cho trường.",
+   "co": []
+  },
+  {
+   "entity": "Viện Công nghệ xạ hiếm",
+   "field": "ten_phap_nhan",
+   "value": "Viện Công nghệ xạ hiếm",
+   "evidence_span": "Viện Công nghệ xạ hiếm được thành lập theo Quyết định số 18/CT ngày 21/01/1991 của Chủ tịch Hội đồng Bộ trưởng (nay là Thủ tướng Chính phủ), là tổ chức khoa hoc và công nghệ công lập trực thuộc Viện Năng lượng nguyên tử Việt Nam, Bộ Khoa học và Công nghệ.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "itrre_gov_vn_chuc_nang_nhiem_vu_00000000.md",
+   "url": "https://itrre.gov.vn/gioi-thieu/chuc-nang-nhiem-vu/",
+   "website_chinh_chu": "itrre.gov.vn",
+   "can_cu_chinh_chu": "Đầu trang và chân trang ghi Trang thông tin VIỆN CÔNG NGHỆ XẠ HIẾM, website: www.itrre.gov.vn, email tên miền mst.gov.vn của Bộ Khoa học và Công nghệ.",
+   "ly_do": "Tổ chức khoa học và công nghệ công lập trực thuộc Viện Năng lượng nguyên tử Việt Nam (VINATOM), Bộ Khoa học và Công nghệ; VINATOM là đơn vị cấp trên, không lấy mã VINATOM.",
+   "co": []
+  },
+  {
+   "entity": "Viện Di truyền Nông nghiệp Việt Nam",
+   "field": "ten_phap_nhan",
+   "value": "Viện Di truyền Nông nghiệp",
+   "evidence_span": "2. Viện Di truyền Nông nghiệp là đơn vị sự nghiệp khoa học trực thuộc Viện Khoa học Nông nghiệp Việt Nam có nhiệm vụ nghiên cứu cơ bản có định hướng và ứng dụng các thành tựu khoa học kỹ thuật thuộc lĩnh vực di truyền và công nghệ sinh học nhằm thực hiện các nhiệm vụ phát triển kinh tế xã hội của Ngành.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "agi_gov_vn_gioi_thieu_00000000.md",
+   "url": "https://www.agi.gov.vn/vi/gioi-thieu-chung/42/gioi-thieu-vien-di-truyen-nong-nghiep",
+   "website_chinh_chu": "agi.gov.vn",
+   "can_cu_chinh_chu": "Chân trang ghi Copyright agi.gov.vn và địa chỉ Viện Di Truyền Nông Nghiệp; vaas.vn (Viện Khoa học Nông nghiệp Việt Nam) ghi Website: http://www.agi.gov.vn cho Viện.",
+   "ly_do": "Tên trong registry có thêm chữ Việt Nam, tên trên website là Viện Di truyền Nông nghiệp. Đơn vị sự nghiệp khoa học trực thuộc Viện Khoa học Nông nghiệp Việt Nam, có con dấu và tài khoản riêng. Lưu ý: tin mae.gov.vn 16/06/2025 nêu dự thảo hợp nhất Viện với Trung tâm Tài nguyên thực vật, chưa thấy xác nhận hoàn tất; người tra cổng cần kiểm tên hiện hành.",
+   "co": []
+  },
+  {
+   "entity": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+   "field": "ten_phap_nhan",
+   "value": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+   "evidence_span": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam có tên giao dịch quốc tế bằng tiếng Anh là: Vietnam Academy of Science and Technology, viết tắt là VAST.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vast_gov_vn_chuc_nang_nhiem_vu_00000000.md",
+   "url": "https://vast.gov.vn/web/guest/chuc-nang-nhiem-vu",
+   "website_chinh_chu": "vast.gov.vn",
+   "can_cu_chinh_chu": "Cổng TTĐT Viện Hàn lâm Khoa học và Công nghệ Việt Nam, tên miền .gov.vn, chân trang ghi nguồn Viện Hàn lâm Khoa học và Công nghệ Việt Nam.",
+   "ly_do": "Cơ quan cấp quốc gia, có nhiều viện và trung tâm trực thuộc (trong lô này: Viện Khoa học vật liệu, Trung tâm Vũ trụ Việt Nam); không dùng mã của Viện Hàn lâm cho các đơn vị con.",
+   "co": []
+  },
+  {
+   "entity": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+   "field": "ten_phap_nhan",
+   "value": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc",
+   "evidence_span": "Được Chính phủ thành lập theo quy định tại Nghị định số 50/2015/NĐ-CP ngày 18 tháng 5 năm 2015 về việc thành lập Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc, hoạt động theo điều lệ ban hành tại Quyết định số 1131/QĐ-BKHCN ngày 11 tháng 5 năm 2017",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vkist_mst_gov_vn_tong_quan_00000000.md",
+   "url": "https://vkist.mst.gov.vn/vi/page/tong-quan-vkist",
+   "website_chinh_chu": "vkist.mst.gov.vn",
+   "can_cu_chinh_chu": "vkist.gov.vn chuyển hướng sang vkist.mst.gov.vn, tên miền con của Bộ Khoa học và Công nghệ; chân trang ghi Viện khoa học và công nghệ Việt Nam - Hàn Quốc (VKIST) © 2024.",
+   "ly_do": "Tổ chức khoa học và công nghệ trực thuộc Bộ Khoa học và Công nghệ, do Chính phủ thành lập theo Nghị định 50/2015/NĐ-CP.",
+   "co": []
+  },
+  {
+   "entity": "Viện Khoa học vật liệu",
+   "field": "ten_phap_nhan",
+   "value": "Viện Khoa học vật liệu",
+   "evidence_span": "b) Các đơn vị nghiên cứu:\n\n(7) Viện Toán học\n\n(8) Viện Vật lý\n\n(9) Viện Hóa học\n\n(10) Viện Cơ học\n\n(11) Viện Các Khoa học Trái đất\n\n(12) Viện Sinh học\n\n(13) Viện Hải dương học\n\n(14) Viện Khoa học công nghệ Năng lượng và Môi trường\n\n(15) Viện Khoa học vật liệu",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vast_gov_vn_chuc_nang_nhiem_vu_00000000.md",
+   "url": "https://vast.gov.vn/web/guest/chuc-nang-nhiem-vu",
+   "website_chinh_chu": "vast.gov.vn",
+   "can_cu_chinh_chu": "Cổng TTĐT của Viện Hàn lâm Khoa học và Công nghệ Việt Nam, cơ quan chủ quản trực tiếp, công bố cơ cấu tổ chức; website riêng ims.ac.vn và ims.vast.ac.vn còn hoạt động nhưng chỉ có tin cũ (2016, 2021), không có trang giới thiệu đọc được.",
+   "ly_do": "Đơn vị nghiên cứu trực thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam theo trang chức năng nhiệm vụ của Viện Hàn lâm; nguồn là website cơ quan chủ quản chứ không phải website riêng của Viện, người duyệt cân nhắc.",
+   "co": []
+  },
+  {
+   "entity": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+   "field": "ten_phap_nhan",
+   "value": "Viện Tế bào gốc",
+   "evidence_span": "**Viện Tế bào gốc** (**VNUHCM-US Stem Cell Institute**) là đơn vị khoa học công nghệ tự chủ tài chính , có con dấu và tài khoản riêng, trực thuộc Trường Đại học Khoa học tự nhiên, Đại học Quốc gia TP. HCM.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "sci_edu_vn_chung_toi_la_ai_00000000.md",
+   "url": "https://sci.edu.vn/home/ve-chung-toi/chung-toi-la-ai/",
+   "website_chinh_chu": "sci.edu.vn",
+   "can_cu_chinh_chu": "Trang giới thiệu ghi Địa chỉ website: https://sci.edu.vn cho Viện Tế bào gốc, đầu trang ghi Đại học Quốc gia Thành phố Hồ Chí Minh, Trường Đại học Khoa học tự nhiên.",
+   "ly_do": "Website nói Viện là đơn vị khoa học công nghệ tự chủ tài chính, có con dấu và tài khoản riêng, trực thuộc Trường Đại học Khoa học tự nhiên, ĐHQG-HCM; tên giao dịch chỉ là Viện Tế bào gốc nên khi tra cổng cần kèm tên trường chủ quản để tránh trùng tên.",
+   "co": []
+  },
+  {
+   "entity": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+   "field": "ten_phap_nhan",
+   "value": "Viện Vắc xin và Sinh phẩm Y tế",
+   "evidence_span": "Ngày 19/9/2022 , Bộ trưởng Bộ Y tế ra Quyết định số 2545/QĐ-BYT về việc ban hành Quy chế tổ chức và hoạt động Viện Vắc xin và Sinh phẩm Y tế thay thế Quyết định số 3390/QĐ-BYT ngày 11/9/2006",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ivac_com_vn_to_chuc_bo_may_00000000.md",
+   "url": "https://ivac.com.vn/gioi_thieu/8/to-chuc-bo-may/vien-vac-xin.html",
+   "website_chinh_chu": "ivac.com.vn",
+   "can_cu_chinh_chu": "Chân trang ghi Copyright VIỆN VẮC XIN VÀ SINH PHẨM Y TẾ, Website: ivac.com.vn, Trưởng Ban biên tập là Viện trưởng.",
+   "ly_do": "Tên registry viết Vaccine, tên pháp nhân trên website viết Vắc xin. Đơn vị thuộc Bộ Y tế (quy chế do Bộ trưởng Bộ Y tế ban hành, chịu trách nhiệm trước Bộ trưởng Bộ Y Tế).",
+   "co": []
+  },
+  {
+   "entity": "Công ty 1Matrix",
+   "field": "ten_phap_nhan",
+   "value": "CTCP 1Matrix",
+   "evidence_span": "Bản quyền thuộc © CTCP 1Matrix",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "1matrix_com_gioi_thieu_00000000.md",
+   "url": "https://erp.1matrix.com/about-us",
+   "website_chinh_chu": "1matrix.com",
+   "can_cu_chinh_chu": "Chân trang ghi bản quyền thuộc CTCP 1Matrix, trang giới thiệu nêu Chủ tịch HĐQT CTCP 1Matrix; tên miền gốc 1matrix.com trả về rỗng nên dùng trang con erp.1matrix.com.",
+   "ly_do": "Website chỉ ghi dạng viết tắt CTCP (Công ty cổ phần) 1Matrix, không có mã số. Trang vbsn.vn của cùng đơn vị đăng tin 28/08/2026 1Matrix đổi tên thành VMatrix, nên tên trên cổng có thể đã đổi; người tra cần thử cả hai tên.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+   "field": "ten_phap_nhan",
+   "value": "VinES Energy Solutions JSC",
+   "evidence_span": "Hanoi – July 10, 2023, VinES Energy Solutions JSC. (“VinES”) and Magellan Power (“Magellan”) announced their signing of the non-binding memorandum of understanding (“MOU”).",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vines_net_vn_tin_2023_00000000.md",
+   "url": "https://vines.net.vn/2023/",
+   "website_chinh_chu": "vines.net.vn",
+   "can_cu_chinh_chu": "Tên miền vines.net.vn do VinES vận hành, nội dung tự giới thiệu năng lực, sản phẩm pin và tin hoạt động của chính VinES.",
+   "ly_do": "Website chỉ ghi tên tiếng Anh, không thấy tên tiếng Việt đầy đủ và mã số ở trang đọc được (trang chủ, liên hệ, bản tiếng Việt trả về rỗng). VinES là công ty con của Vingroup, pháp nhân riêng; không dùng mã của Vingroup hay VinFast.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần VinMotion",
+   "field": "ten_phap_nhan",
+   "value": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+   "evidence_span": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vinmotion_net_lien_he_00000000.md",
+   "url": "https://vinmotion.net/vi/contact",
+   "website_chinh_chu": "vinmotion.net",
+   "can_cu_chinh_chu": "Chân trang ghi bản quyền thuộc Vinmotion, trang liên hệ của chính website nêu tên công ty này kèm hotline và email tên miền vinmotion.net.",
+   "ly_do": "Tên pháp nhân đầy đủ khác hẳn nhãn registry (Công ty cổ phần VinMotion); người tra cổng nên tìm theo tên dài này. Website không công bố mã số. Pháp nhân riêng trong hệ sinh thái Vingroup.",
+   "co": []
+  },
+  {
+   "entity": "CT Semiconductor",
+   "field": "ten_phap_nhan",
+   "value": "CT Semiconductor Corporation",
+   "evidence_span": "meta-og:site_name: CT Semiconductor Corporation",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ctsemiconductor_com_gioi_thieu_00000000.md",
+   "url": "https://ctsemiconductor.com/vi/gioi-thieu/",
+   "website_chinh_chu": "ctsemiconductor.com",
+   "can_cu_chinh_chu": "Website tự giới thiệu CT Semiconductor là thành viên CT Group, địa chỉ trụ sở trùng Léman Building 20 Trương Định của CT Group, và trang ctgroupvietnam.com có mục CT Semiconductor.",
+   "ly_do": "Tên chỉ lấy được từ thẻ meta og:site_name, dạng tiếng Anh; thân trang không ghi tên tiếng Việt đầy đủ hay mã số. Là công ty thành viên, pháp nhân khác với công ty mẹ CT Group.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "GG Power",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Công nghiệp GG",
+   "evidence_span": "Bản quyền thuộc Công ty Cổ phần Công nghiệp GG",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "ggp_vn_chan_trang_00000000.md",
+   "url": "https://ggp.vn/",
+   "website_chinh_chu": "ggp.vn",
+   "can_cu_chinh_chu": "Chân trang website ggp.vn ghi bản quyền thuộc Công ty Cổ phần Công nghiệp GG, kèm địa chỉ nhà máy Hưng Yên khớp bài báo về nhà máy pin GG Power.",
+   "ly_do": "GG Power là thương hiệu; pháp nhân đứng tên website là Công ty Cổ phần Công nghiệp GG (bản tiếng Anh ghi GG Industries). Website không công bố mã số.",
+   "co": []
+  },
+  {
+   "entity": "HTI Technology",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Đầu tư và Công nghệ HTI",
+   "evidence_span": "Về HTI Group - Công ty Cổ phần Đầu tư và Công nghệ HTI",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "htigroup_vn_gioi_thieu_00000000.md",
+   "url": "https://htigroup.vn/ve-htigroup/",
+   "website_chinh_chu": "htigroup.vn",
+   "can_cu_chinh_chu": "Trang giới thiệu của htigroup.vn mang tiêu đề tên công ty này; chính website bày bán UAV Horus P02, sản phẩm mà bản chụp cafef 03/09/2025 gắn cho HTI Technology.",
+   "ly_do": "BẪY ĐÃ BIẾT: Công ty cổ phần HTI UAS là công ty thành viên, pháp nhân RIÊNG, mới công bố thành lập 24/01/2026, nay chuyên UAV (xem htigroup_vn_cong_ty_thanh_vien_00000000.md). Bài cafef 09/2025 có trước ngày đó nên nhãn HTI Technology ứng với công ty mẹ; anh Lâm quyết nếu registry muốn trỏ tới HTI UAS. Tên chỉ có ở tiêu đề và thẻ meta trang, không có mã số.",
+   "co": []
+  },
+  {
+   "entity": "Masan High-Tech Materials",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Masan High-Tech Materials",
+   "evidence_span": "Công ty Cổ phần Masan High-Tech Materials",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "masanhightechmaterials_com_bctc_2025_00000000.md",
+   "url": "https://masanhightechmaterials.com/wp-content/uploads/2025/07/MHT_BCTC-ban-nien-2025_rieng.pdf",
+   "website_chinh_chu": "masanhightechmaterials.com",
+   "can_cu_chinh_chu": "Báo cáo tài chính bán niên 2025 đăng ở mục Quan hệ cổ đông trên chính website masanhightechmaterials.com của công ty niêm yết.",
+   "ly_do": "Pháp nhân mẹ của nhóm (công ty con Núi Pháo, Vonfram Masan là pháp nhân khác). Mã lấy từ mục Thông tin về Công ty trong báo cáo tài chính.",
+   "co": []
+  },
+  {
+   "entity": "Masan High-Tech Materials",
+   "field": "ma_so_tu_khai",
+   "value": "0309966889",
+   "evidence_span": "Đăng ký Doanh nghiệp số 0309966889 ngày 27 tháng 4 năm 2010",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "masanhightechmaterials_com_bctc_2025_00000000.md",
+   "url": "https://masanhightechmaterials.com/wp-content/uploads/2025/07/MHT_BCTC-ban-nien-2025_rieng.pdf",
+   "website_chinh_chu": "masanhightechmaterials.com",
+   "can_cu_chinh_chu": "Báo cáo tài chính bán niên 2025 đăng ở mục Quan hệ cổ đông trên chính website masanhightechmaterials.com của công ty niêm yết.",
+   "ly_do": "Số Giấy chứng nhận đăng ký doanh nghiệp do Sở KH&ĐT TP.HCM cấp, điều chỉnh gần nhất 20/01/2025 theo báo cáo; là mã của pháp nhân mẹ, không phải của Núi Pháo hay Vonfram Masan.",
+   "co": []
+  },
+  {
+   "entity": "MK Smart",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần Thông minh MK",
+   "evidence_span": "Trong quá trình hoạt động, Công ty Cổ phần Thông minh MK (sau đây gọi tắt là, “MK” hoặc “Chúng tôi”) luôn tuân thủ quy định của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "mksmart_com_vn_chinh_sach_bao_mat_00000000.md",
+   "url": "https://mksmart.com.vn/chinh-sach-bao-mat/",
+   "website_chinh_chu": "mksmart.com.vn",
+   "can_cu_chinh_chu": "Chính sách bảo mật trên mksmart.com.vn do chính công ty ban hành, chân trang ghi bản quyền MK Smart.",
+   "ly_do": "Tên tiếng Anh trên cùng trang là MK Smart Joint Stock Company. Website không công bố mã số.",
+   "co": []
+  },
+  {
+   "entity": "Realtime Robotics (RtR)",
+   "field": "ten_phap_nhan",
+   "value": "Real-time Robotics Inc.",
+   "evidence_span": "© 2026 Real-time Robotics Inc. All rights reserved.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "rtrobotics_com_footer_00000000.md",
+   "url": "https://rtrobotics.com/about",
+   "website_chinh_chu": "rtrobotics.com",
+   "can_cu_chinh_chu": "Chân trang rtrobotics.com ghi bản quyền thuộc Real-time Robotics Inc.; trang giới thiệu nêu nhà sáng lập Quoc Luong, khớp bản chụp cafef về RtR.",
+   "ly_do": "CHÚ Ý: đây là pháp nhân Mỹ (trụ sở Castro Valley, CA), không có mã số Việt Nam. Website chỉ ghi Trung tâm R&D tại Khu Công nghệ cao Sài Gòn mà không nêu tên pháp nhân Việt Nam; pháp nhân Việt Nam (nếu có) là pháp nhân riêng, cần anh Lâm xác nhận nội bộ hoặc tra cổng.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "ROSTEK",
+   "field": "ten_phap_nhan",
+   "value": "Rostek JSC",
+   "evidence_span": "meta-author: Rostek JSC",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "rostek_com_vn_trang_chu_00000000.md",
+   "url": "https://rostek.com.vn/",
+   "website_chinh_chu": "rostek.com.vn",
+   "can_cu_chinh_chu": "Tên miền rostek.com.vn mang tên thương hiệu, thẻ meta tác giả và tên trang ghi Rostek JSC, nội dung về robot AMR/AGV khớp sản phẩm ROSTEK AGV trong bản chụp vjst.",
+   "ly_do": "Chỉ có dạng viết tắt tiếng Anh từ thẻ meta (trang dùng JavaScript, không đọc được thân trang); tên tiếng Việt đầy đủ và mã số chưa thấy. Người tra cổng tìm theo từ khóa Rostek.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "VinAI",
+   "field": "ten_phap_nhan",
+   "value": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI",
+   "evidence_span": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI(sau đây gọi là “Công Ty”) có địa chỉ tại Tòa nhà văn phòng Symphony",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vinai_io_privacy_00000000.md",
+   "url": "https://www.vinai.io/privacy-policy/",
+   "website_chinh_chu": "vinai.io",
+   "can_cu_chinh_chu": "Chính sách bảo vệ dữ liệu cá nhân trên vinai.io tự nêu trang thông tin điện tử chính thức của công ty là https://www.vinai.io/, chân trang ghi bản quyền VINAI Artificial Intelligence Application and Research JSC.",
+   "ly_do": "Pháp nhân riêng trong hệ sinh thái Vingroup, không dùng mã Vingroup. Website không công bố mã số.",
+   "co": []
+  },
+  {
+   "entity": "VinBigData",
+   "field": "ten_phap_nhan",
+   "value": "VinBigData Joint Stock Company",
+   "evidence_span": "establish VinBigData Joint Stock Company as a subsidiary",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vinbigdata_com_thanh_lap_00000000.md",
+   "url": "https://vinbigdata.com/en/news/vingroup-establishes-vinbigdata-subsidiary-with-charter-capital-of-vnd-471-billion",
+   "website_chinh_chu": "vinbigdata.com",
+   "can_cu_chinh_chu": "Tin đăng trên chính vinbigdata.com về việc Vingroup thành lập công ty con VinBigData, nêu người đại diện pháp luật và trụ sở.",
+   "ly_do": "Chỉ có tên tiếng Anh; tên tiếng Việt dự kiến là Công ty cổ phần VinBigData nhưng chưa đọc được nguyên văn (trang chủ, liên hệ, chính sách dữ liệu trả về rỗng do JavaScript). Công ty con của Vingroup, pháp nhân riêng; tách từ Viện Nghiên cứu Dữ liệu lớn thuộc VinTech.",
+   "co": [
+    "TEN_TIENG_ANH"
+   ]
+  },
+  {
+   "entity": "VSAP LAB",
+   "field": "ten_phap_nhan",
+   "value": "Công ty Cổ phần VSAP LAB",
+   "evidence_span": "Công ty Cổ phần VSAP LAB được Sở Nông nghiệp và Môi trường thành phố Đà Nẵng cấp Quyết định phê duyệt",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vsaplab_com_thong_bao_dtm_00000000.md",
+   "url": "https://vsaplab.com/vi/thong-bao-phe-duyet-bao-cao-danh-gia-tac-dong-moi-truong-du-an-vsap-lab/",
+   "website_chinh_chu": "vsaplab.com",
+   "can_cu_chinh_chu": "Thông báo đăng trên vsaplab.com, chân trang ghi bản quyền thuộc VSAP Lab, địa chỉ Công viên Phần mềm Đà Nẵng số 2 khớp tin về dự án phòng thí nghiệm đóng gói chip tại Đà Nẵng.",
+   "ly_do": "Website không công bố mã số. Lưu ý: chân trang vsaplab.com dẫn liên kết mạng xã hội và email của DSAC Đà Nẵng (dnaihub, dsac@danang.gov.vn), có thể do đơn vị thiết kế để lại; không ảnh hưởng tên pháp nhân.",
+   "co": []
+  }
+ ],
+ "honest_null": [
+  {
+   "entity": "Công ty cổ phần AVAC Việt Nam",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ avac.com.vn không công bố mã số doanh nghiệp ở trang chủ, trang giới thiệu, chân trang hay trang sản phẩm; chỉ đề xuất tên pháp nhân.",
+   "da_thu": [
+    "https://www.avac.com.vn/",
+    "https://www.avac.com.vn/gioi-thieu/",
+    "https://www.avac.com.vn/san-pham-cho-heo/avac-swinepm/"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần Health Care Center",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Website healthcarecenter.vn (Health Care Center, trụ sở QTSC) chỉ ghi '© 2026 - All rights reserved by Health Care Center Jsc.' bằng tiếng Anh, không có tên pháp nhân tiếng Việt đầy đủ. Chính sách bảo mật nói ứng dụng HCC APP do CÔNG TY TNHH MTV KHAI THÁC DỮ LIỆU SỐ (BDATA) phát triển, là pháp nhân khác. Chưa chắc site này đúng là đơn vị trình diễn robot khám bệnh tại Make in Viet Nam 2025.",
+   "da_thu": [
+    "https://healthcarecenter.vn/",
+    "https://healthcarecenter.vn/pages/chinh-sach-bao-mat"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần Health Care Center",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website healthcarecenter.vn không công bố mã số doanh nghiệp ở chân trang hay trang chính sách bảo mật.",
+   "da_thu": [
+    "https://healthcarecenter.vn/",
+    "https://healthcarecenter.vn/pages/chinh-sach-bao-mat"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website navetco.com.vn không ghi mã số dạng chữ ở trang giới thiệu, chân trang, trang Thông tin nhà đầu tư; file PDF công bố thông tin là bản scan không có chữ đọc được.",
+   "da_thu": [
+    "https://navetco.com.vn/gioi-thieu",
+    "https://navetco.com.vn/quan-he-co-dong/thong-tin-nha-dau-tu",
+    "https://navetco.com.vn/upload/shareholderrelations/vi_vet_cbtt-ds-codngnncodongloncodongcl_6thangcuoinam2025_signed-5-17688832904911.pdf"
+   ]
+  },
+  {
+   "entity": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website ngocbaobiomed.com không công bố mã số doanh nghiệp ở trang chủ, chân trang hay trang liên hệ; chỉ có giấy phép B-23/2016 ĐK-KH&CN của Viện trực thuộc, đó không phải mã số doanh nghiệp.",
+   "da_thu": [
+    "https://ngocbaobiomed.com/",
+    "https://ngocbaobiomed.com/lien-he/"
+   ]
+  },
+  {
+   "entity": "Công ty CP Việt Nam Food (VNF)",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website vnfoods.vn không công bố mã số doanh nghiệp ở trang chủ, chính sách bảo mật hay chân trang.",
+   "da_thu": [
+    "https://www.vnfoods.vn/",
+    "https://www.vnfoods.vn/privacy-policy",
+    "https://www.vnfoods.vn/vi/news/cong-ty-co-phan-viet-nam-food-vnf-phat-trien-kito-sil-phuc-hop-nano-chitosan-bac-kiem-soat-mam-benh-va-giam-khang-sinh"
+   ]
+  },
+  {
+   "entity": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website dongtrunghathaonhatlan.com.vn (cửa hàng Sapo) không công bố mã số doanh nghiệp ở chân trang.",
+   "da_thu": [
+    "https://dongtrunghathaonhatlan.com.vn/"
+   ]
+  },
+  {
+   "entity": "Công ty TNHH Luyện kim Trần Hồng Quân",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Không tìm thấy website chính chủ của công ty; kết quả tìm kiếm chỉ ra báo chí, trang tuyển dụng, cổng tỉnh và trang tổng hợp mã số (bị cấm dùng). Tên trong registry đã là tên dạng pháp nhân, cần người tra cổng xác nhận.",
+   "da_thu": [
+    "WebSearch: Công ty TNHH Luyện kim Trần Hồng Quân nhôm Đắk Nông website",
+    "WebSearch: Luyện kim Trần Hồng Quân LKTHQ trang chủ Nhà máy điện phân nhôm Đắk Nông",
+    "WebSearch: Trần Hồng Quân tập đoàn website chính thức luyện kim nhôm"
+   ]
+  },
+  {
+   "entity": "Công ty TNHH Luyện kim Trần Hồng Quân",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Không tìm thấy website chính chủ để lấy mã tự khai; mã xuất hiện trên trang tổng hợp mã số nhưng nguồn đó bị cấm. Báo chí cho biết công ty mẹ là Công ty TNHH Trần Hồng Quân Holdings, là pháp nhân khác.",
+   "da_thu": [
+    "WebSearch: Công ty TNHH Luyện kim Trần Hồng Quân nhôm Đắk Nông website",
+    "WebSearch: Luyện kim Trần Hồng Quân LKTHQ trang chủ Nhà máy điện phân nhôm Đắk Nông"
+   ]
+  },
+  {
+   "entity": "Indefol",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Nhãn là thương hiệu của nhóm đa quốc gia: website indefol.com tự gọi là 'Indefol GmbH' và 'INDEFOL GROUP', có văn phòng Đức, Pháp, Việt Nam (200B Nguyễn Văn Hưởng, TP HCM) và nhiều nước khác, nhưng không nêu tên pháp nhân Việt Nam nào. Không tự gán; anh Lâm cần quyết pháp nhân Việt Nam đứng sau hệ điện phân IDF-EX1000X.",
+   "da_thu": [
+    "https://www.indefol.com/",
+    "https://www.indefol.com/about"
+   ]
+  },
+  {
+   "entity": "Indefol",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website indefol.com không công bố mã số doanh nghiệp Việt Nam nào.",
+   "da_thu": [
+    "https://www.indefol.com/",
+    "https://www.indefol.com/about"
+   ]
+  },
+  {
+   "entity": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Liên danh tư vấn, không phải pháp nhân. Thành viên theo tên viết tắt trong nguồn: TEDI, TRICC, TEDI SOUTH (thường được hiểu là Tổng công ty Tư vấn thiết kế Giao thông vận tải - CTCP, Công ty CP Tư vấn đầu tư và Xây dựng GTVT, Công ty CP Tư vấn thiết kế GTVT phía Nam; tên đầy đủ chưa đối chiếu website chính chủ). Mỗi thành viên là pháp nhân riêng, cần tạo đơn vị riêng nếu muốn định danh.",
+   "da_thu": [
+    "https://baochinhphu.vn/duong-sat-toc-do-cao-truc-bac-nam-se-co-23-ga-hanh-khach-102241001151917569.htm"
+   ]
+  },
+  {
+   "entity": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Liên danh không có mã số doanh nghiệp riêng; mã chỉ có ở từng thành viên TEDI, TRICC, TEDI SOUTH.",
+   "da_thu": [
+    "https://baochinhphu.vn/duong-sat-toc-do-cao-truc-bac-nam-se-co-23-ga-hanh-khach-102241001151917569.htm"
+   ]
+  },
+  {
+   "entity": "Công ty An ninh mạng Viettel",
+   "truong": "ten_phap_nhan",
+   "ly_do": "viettelcybersecurity.com, viettelsecurity.com và services.viettelcybersecurity.com trả trang rỗng (JavaScript), cả trang con lien-he. Trang con lab và blog chỉ ghi 'Công ty An ninh mạng Viettel' và 'thành viên Viettel Group', không ghi tên pháp nhân đầy đủ. Đơn vị có thể là chi nhánh của Tập đoàn hoặc công ty TNHH riêng; không suy đoán, để người tra cổng xác định.",
+   "da_thu": [
+    "https://viettelcybersecurity.com/",
+    "https://viettelcybersecurity.com/lien-he",
+    "https://viettelcybersecurity.com/sitemap.xml",
+    "https://viettelcybersecurity.com/recruitment-information-page/",
+    "https://viettelsecurity.com/",
+    "https://services.viettelcybersecurity.com/",
+    "https://lab.viettelcybersecurity.com/policy-vi",
+    "https://blog.viettelcybersecurity.com/",
+    "https://blog.viettelcybersecurity.com/about-us/"
+   ]
+  },
+  {
+   "entity": "Công ty An ninh mạng Viettel",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ trả trang rỗng; các trang con đọc được không công bố mã số. Không lấy mã Tập đoàn Viettel gán cho đơn vị này.",
+   "da_thu": [
+    "https://viettelcybersecurity.com/",
+    "https://viettelcybersecurity.com/lien-he",
+    "https://viettelsecurity.com/",
+    "https://lab.viettelcybersecurity.com/policy-vi",
+    "https://blog.viettelcybersecurity.com/about-us/"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số doanh nghiệp ở trang chủ, chân trang, liên hệ, chính sách bảo mật và chính sách bảo vệ dữ liệu cá nhân.",
+   "da_thu": [
+    "https://ncsgroup.vn/",
+    "https://ncsgroup.vn/lien-he/",
+    "https://ncsgroup.vn/chinh-sach-bao-mat/",
+    "https://ncsgroup.vn/chinh-sach-bao-ve-du-lieu-ca-nhan/"
+   ]
+  },
+  {
+   "entity": "FPT Semiconductor",
+   "truong": "ten_phap_nhan",
+   "ly_do": "fpt-semiconductor.com chỉ ghi nhãn 'FPT Semiconductor' và bản quyền '© 2026 FPT'; trang Privacy Policy là chữ mẫu Lorem ipsum. Không có tên pháp nhân đầy đủ. Là công ty con của FPT, không dùng tên/mã Công ty Cổ phần FPT.",
+   "da_thu": [
+    "https://fpt-semiconductor.com/",
+    "https://fpt-semiconductor.com/about-us/",
+    "https://fpt-semiconductor.com/privacy-policy/",
+    "https://fpt-semiconductor.com/fat/"
+   ]
+  },
+  {
+   "entity": "FPT Semiconductor",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số; báo cáo thường niên 2025 của FPT chỉ có mã công ty mẹ 0101248141, không gán cho công ty con.",
+   "da_thu": [
+    "https://fpt-semiconductor.com/",
+    "https://fpt-semiconductor.com/about-us/",
+    "https://fpt-semiconductor.com/privacy-policy/",
+    "https://bctn2025.fpt.com/wp-content/uploads/2026/04/BCTN-2025.pdf"
+   ]
+  },
+  {
+   "entity": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Nhãn là một nhà máy (cơ sở sản xuất), không phải pháp nhân. Trang fpt-semiconductor.com/fat/ gọi đơn vị vận hành là 'FPT Analysis Technologies (FAT)', 'a member of FPT Corporation', chỉ là tên tiếng Anh, không có tên pháp nhân tiếng Việt hay mã. Để anh Lâm quyết gắn với pháp nhân nào.",
+   "da_thu": [
+    "https://fpt-semiconductor.com/fat/",
+    "https://fpt-semiconductor.com/",
+    "https://bctn2025.fpt.com/wp-content/uploads/2026/04/BCTN-2025.pdf"
+   ]
+  },
+  {
+   "entity": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Không trang chính chủ nào công bố mã số của đơn vị vận hành nhà máy; không gán mã Công ty Cổ phần FPT.",
+   "da_thu": [
+    "https://fpt-semiconductor.com/fat/",
+    "https://fpt-semiconductor.com/privacy-policy/"
+   ]
+  },
+  {
+   "entity": "Viettel AI",
+   "truong": "ten_phap_nhan",
+   "ly_do": "viettelai.vn/privacy/owner ghi chủ sở hữu website là Tập đoàn Công nghiệp – Viễn thông Quân đội (pháp nhân mẹ), không nêu Viettel AI có pháp nhân riêng hay mã đơn vị phụ thuộc. Không tự gán tên/mã của mẹ cho đơn vị; để anh Lâm quyết.",
+   "da_thu": [
+    "https://viettelai.vn/",
+    "https://viettelai.vn/privacy/owner"
+   ]
+  },
+  {
+   "entity": "Viettel AI",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Trang chủ sở hữu chỉ ghi mã của Tập đoàn 0100109106; nếu Viettel AI là đơn vị phụ thuộc thì mã của nó có dạng 0100109106-xxx và không được công bố trên website.",
+   "da_thu": [
+    "https://viettelai.vn/",
+    "https://viettelai.vn/privacy/owner"
+   ]
+  },
+  {
+   "entity": "Viettel High Tech",
+   "truong": "ten_phap_nhan",
+   "ly_do": "viettelhightech.vn trả trang rỗng (JavaScript), cả trang lien-he. Tên miền viettelrd.com.vn (từng được báo dẫn) nay chứa nội dung rác và liên kết cá cược, không phải chính chủ. Không có tên pháp nhân từ nguồn chính chủ.",
+   "da_thu": [
+    "https://viettelhightech.vn/",
+    "https://viettelhightech.vn/vi/lien-he",
+    "http://viettelrd.com.vn/"
+   ]
+  },
+  {
+   "entity": "Viettel High Tech",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ trả trang rỗng; không lấy mã Tập đoàn Viettel gán cho đơn vị này (nhiều khả năng là chi nhánh có mã dạng 0100109106-xxx, cần tra cổng).",
+   "da_thu": [
+    "https://viettelhightech.vn/",
+    "https://viettelhightech.vn/vi/lien-he"
+   ]
+  },
+  {
+   "entity": "VNPT",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "vnpt.com.vn, vnpt.vn, my.vnpt.com.vn và trang giới thiệu Vinaphone trả trang rỗng; hanoi.vnpt.com.vn không ghi mã Tập đoàn. Không lấy mã của đơn vị phụ thuộc (dạng 0100684378-xxx) cho Tập đoàn.",
+   "da_thu": [
+    "https://vnpt.com.vn/",
+    "https://vnpt.vn/",
+    "https://my.vnpt.com.vn/",
+    "https://my.vnpt.com.vn/tinh-nang/dieu-khoan-su-dung",
+    "https://vnpt.com.vn/ve-vinaphone/gioi-thieu-chung",
+    "https://hanoi.vnpt.com.vn/",
+    "https://vnptai.io/en/"
+   ]
+  },
+  {
+   "entity": "VTI Solutions",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số ở trang chủ, chân trang, liên hệ và Privacy Policy.",
+   "da_thu": [
+    "https://vti-solutions.vn/",
+    "https://vti-solutions.vn/lien-he/",
+    "https://vti-solutions.vn/privacy-policy/"
+   ]
+  },
+  {
+   "entity": "Zalo",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Nhãn là sản phẩm/thương hiệu, không phải pháp nhân. Trang zalo.me/legal.html ghi 'Bộ phận pháp lý Zalo - Công ty Cổ phần VNG' (bản chụp zalo_me_bao_cao_vi_pham_00000000.md). Để anh Lâm quyết có gắn với Công ty Cổ phần VNG không.",
+   "da_thu": [
+    "https://zalo.me/",
+    "https://zalo.me/vi/about",
+    "https://zalo.me/legal.html"
+   ]
+  },
+  {
+   "entity": "Zalo",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Sản phẩm của VNG; website Zalo không công bố mã số, và không gán mã cho nhãn sản phẩm.",
+   "da_thu": [
+    "https://zalo.me/",
+    "https://zalo.me/vi/about",
+    "https://zalo.me/legal.html"
+   ]
+  },
+  {
+   "entity": "Bệnh viện Trung ương Quân đội 108",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang giới thiệu và chân trang (chỉ có số quyết định cấp phép trang tin 250/QĐ-CT, không phải mã số). Bệnh viện quân đội, thuộc Bộ Quốc phòng.",
+   "da_thu": [
+    "https://www.benhvien108.vn/",
+    "https://www.benhvien108.vn/gioi-thieu-benh-vien-trung-uong-quan-doi-108.htm"
+   ]
+  },
+  {
+   "entity": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Cả website phòng thí nghiệm và website Viện Hóa học công nghiệp Việt Nam (cơ quan chủ trì) đều không công bố mã số thuế ở các trang đã đọc.",
+   "da_thu": [
+    "https://keylabprt.com.vn/gioi-thieu-1.html",
+    "https://keylabprt.com.vn/trang-chu.html",
+    "http://viic.vn/phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau-79328.html"
+   ]
+  },
+  {
+   "entity": "Trung tâm Vũ trụ Việt Nam",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở các trang đọc được; trang chủ vnsc.org.vn và vnsc.vast.gov.vn trả về rỗng khi fetch.",
+   "da_thu": [
+    "https://vnsc.org.vn/",
+    "https://vnsc.vast.gov.vn/",
+    "https://vnsc.org.vn/vi/gioi-thieu/",
+    "https://vnsc.org.vn/vi/gioi-thieu/su-menh-va-tam-nhin/",
+    "https://vnsc.org.vn/en/about-vnsc/"
+   ]
+  },
+  {
+   "entity": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang chủ, chân trang và trang lịch sử phát triển.",
+   "da_thu": [
+    "https://hus.vnu.edu.vn/",
+    "https://hus.vnu.edu.vn/gioi-thieu/lich-su-phat-trien"
+   ]
+  },
+  {
+   "entity": "Viện Công nghệ xạ hiếm",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang chủ, chân trang và trang chức năng nhiệm vụ.",
+   "da_thu": [
+    "https://itrre.gov.vn/",
+    "https://itrre.gov.vn/gioi-thieu/chuc-nang-nhiem-vu/",
+    "https://itrre.gov.vn/gioi-thieu-chung/"
+   ]
+  },
+  {
+   "entity": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Website chính chủ viaep.org.vn trả về rỗng ở mọi trang đã thử (có thể nội dung dựng bằng JavaScript), không lấy được nguyên văn. Context từ trang chính thức khác: vaas.vn (tin 24/12/2025) ghi Viện Khoa học Nông nghiệp Việt Nam đã xây dựng Đề án tiếp nhận nguyên trạng Viện Cơ điện nông nghiệp và Công nghệ sau thu hoạch vào VAAS, đề án đã trình Bộ Nông nghiệp và Môi trường; trước đó Viện trực thuộc Bộ. Cơ quan chủ quản đang chuyển đổi, cần anh Lâm hoặc người tra cổng xác nhận tên và đơn vị chủ quản hiện hành.",
+   "da_thu": [
+    "https://www.viaep.org.vn/",
+    "http://viaep.org.vn/",
+    "https://www.viaep.org.vn/page/gioi-thieu/vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach-55-nam-xay-dung-va-phat-trien-1968-2023-140261",
+    "https://viaep.org.vn/khoa-hoc-cong-nghe/ton-vinh-nha-khoa-hoc-cua-nha-nong-lan-thu-v-140269",
+    "https://viaep.org.vn/page/lien-he",
+    "https://vaas.vn/vi/tin-khac/vien-khoa-hoc-nong-nghiep-viet-nam-tong-ket-cong-tac-nam-2025-trien-khai-ke-hoach-nam-2026",
+    "https://mae.gov.vn/sap-nhap-3-vien-nghien-cuu-kien-tao-khoa-hoc-nong-nghiep-hien-ai-ben-vung-18624.htm"
+   ]
+  },
+  {
+   "entity": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ viaep.org.vn trả về rỗng khi fetch, không đọc được mã số. Không dùng kết quả tìm kiếm trỏ tới trang tổng hợp mã số thuế (bị cấm).",
+   "da_thu": [
+    "https://www.viaep.org.vn/",
+    "http://viaep.org.vn/",
+    "https://viaep.org.vn/page/lien-he"
+   ]
+  },
+  {
+   "entity": "Viện Di truyền Nông nghiệp Việt Nam",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang giới thiệu và chân trang; trang có nói Viện có con dấu và tài khoản riêng tại Kho bạc Nhà nước nhưng không ghi mã.",
+   "da_thu": [
+    "https://www.agi.gov.vn/vi/gioi-thieu-chung/42/gioi-thieu-vien-di-truyen-nong-nghiep",
+    "https://vaas.vn/vi/cac-don-vi-thanh-vien/vien-di-truyen-nong-nghiep"
+   ]
+  },
+  {
+   "entity": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Cổng TTĐT không công bố mã số thuế ở trang chủ, chân trang và trang chức năng nhiệm vụ.",
+   "da_thu": [
+    "https://vast.gov.vn/",
+    "https://vast.gov.vn/web/guest/chuc-nang-nhiem-vu"
+   ]
+  },
+  {
+   "entity": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang chủ, chân trang và trang tổng quan.",
+   "da_thu": [
+    "https://vkist.gov.vn/",
+    "https://vkist.mst.gov.vn/vi/page/tong-quan-vkist"
+   ]
+  },
+  {
+   "entity": "Viện Khoa học vật liệu",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Không tìm thấy mã số thuế trên website riêng (ims.ac.vn, ims.vast.ac.vn chỉ có tin cũ; ims.vast.gov.vn trả về rỗng) và trên cổng Viện Hàn lâm.",
+   "da_thu": [
+    "https://ims.vast.gov.vn/",
+    "https://ims.ac.vn/",
+    "https://ims.vast.ac.vn/",
+    "https://vast.gov.vn/web/guest/chuc-nang-nhiem-vu"
+   ]
+  },
+  {
+   "entity": "Viện Khoa học-Công nghệ mật mã",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Không tìm thấy website riêng của Viện. Cổng bcy.gov.vn (Ban Cơ yếu Chính phủ) gọi đơn vị là Viện Khoa học Công nghệ mật mã (KHCNMM), đưa tin trong mục Tin hoạt động của các cơ quan, đơn vị thuộc Ban, nhưng không nêu tư cách pháp nhân hay tên đầy đủ chính thức. Đơn vị thuộc lĩnh vực cơ yếu, bảo mật; cần anh Lâm quyết có tra cổng đăng ký hay không.",
+   "da_thu": [
+    "https://bcy.gov.vn/",
+    "https://bcy.gov.vn/tin-hoat-dong-cua-cac-co-quan-don-vi/pho-truong-ban-ho-van-huong-du-hoi-nghi-tong-ket-cong-tac-nam-2025-cua-vien-khoa-hoc-cong-nghe-m-929012"
+   ]
+  },
+  {
+   "entity": "Viện Khoa học-Công nghệ mật mã",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Không có website riêng; cổng Ban Cơ yếu Chính phủ không công bố mã số thuế của Viện.",
+   "da_thu": [
+    "https://bcy.gov.vn/",
+    "https://bcy.gov.vn/tin-hoat-dong-cua-cac-co-quan-don-vi/pho-truong-ban-ho-van-huong-du-hoi-nghi-tong-ket-cong-tac-nam-2025-cua-vien-khoa-hoc-cong-nghe-m-929012"
+   ]
+  },
+  {
+   "entity": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Website chính chủ vinmec.com mô tả Viện (VRISG) là viện nghiên cứu Y Sinh phi lợi nhuận nằm trong hệ thống chăm sóc sức khoẻ Vinmec, được Tập đoàn Vingroup đầu tư; không nói Viện có pháp nhân riêng hay thuộc pháp nhân nào. Chân trang chính trang Viện ghi Bản quyền © 2026 thuộc về Công ty Cổ phần Bệnh viện Đa khoa Quốc tế Vinmec (pháp nhân chủ website, trụ sở 458 Minh Khai, cùng địa chỉ Viện). Không tự gán; anh Lâm quyết có lấy Công ty Cổ phần Bệnh viện Đa khoa Quốc tế Vinmec làm pháp nhân đứng sau hay không.",
+   "da_thu": [
+    "https://www.vinmec.com/vie/co-so-y-te/vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec-98671-vi-nghien-cuu-khoa-hoc",
+    "https://www.vinmec.com/vie/bai-viet/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-cong-ty-co-phan-benh-vien-da-khoa-quoc-te-vinmec",
+    "https://www.vinmec.com/vie/lien-he-voi-chung-toi/"
+   ]
+  },
+  {
+   "entity": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "vinmec.com không công bố mã số doanh nghiệp ở chân trang, trang liên hệ và trang chính sách bảo vệ dữ liệu cá nhân (chỉ nêu tên Công ty Cổ phần Bệnh viện Đa khoa Quốc tế Vinmec và địa chỉ). Không lấy mã Vingroup cho Vinmec.",
+   "da_thu": [
+    "https://www.vinmec.com/vie/co-so-y-te/vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec-98671-vi-nghien-cuu-khoa-hoc",
+    "https://www.vinmec.com/vie/bai-viet/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-cong-ty-co-phan-benh-vien-da-khoa-quoc-te-vinmec",
+    "https://www.vinmec.com/vie/lien-he-voi-chung-toi/"
+   ]
+  },
+  {
+   "entity": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang Chúng tôi là ai và chân trang, dù có nêu Viện có con dấu và tài khoản riêng.",
+   "da_thu": [
+    "https://sci.edu.vn/home/ve-chung-toi/chung-toi-la-ai/"
+   ]
+  },
+  {
+   "entity": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website chính chủ không công bố mã số thuế ở trang giới thiệu, trang tổ chức bộ máy và chân trang.",
+   "da_thu": [
+    "https://ivac.com.vn/gioi_thieu/vien-vac-xin.html",
+    "https://ivac.com.vn/gioi_thieu/8/to-chuc-bo-may/vien-vac-xin.html"
+   ]
+  },
+  {
+   "entity": "Công ty 1Matrix",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (trang giới thiệu, liên hệ, chính sách quyền riêng tư của erp.1matrix.com; 1matrix.com và vmatrix.vn trả về rỗng; vbsn.vn không có mã). Đơn vị đã đổi tên thành VMatrix theo tin trên vbsn.vn 28/08/2026.",
+   "da_thu": [
+    "https://1matrix.com",
+    "https://erp.1matrix.com/",
+    "https://erp.1matrix.com/about-us",
+    "https://erp.1matrix.com/contactus",
+    "https://erp.1matrix.com/privacy",
+    "https://vbsn.vn/",
+    "https://vmatrix.vn/"
+   ]
+  },
+  {
+   "entity": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Các trang đọc được của vines.net.vn không công bố mã số; trang chủ chỉ có một phần nội dung, about-us, contact, contact-us, career, bản tiếng Việt trả về rỗng (JavaScript). Mẫu hợp đồng thuê pin nằm trên vinfastauto.com (website của VinFast Trading, không phải chính chủ VinES) nên không dùng.",
+   "da_thu": [
+    "https://vines.net.vn/",
+    "https://vines.net.vn/about-us/",
+    "https://vines.net.vn/vi/",
+    "https://vines.net.vn/vi/linh-vuc-kinh-doanh/",
+    "https://vines.net.vn/our-business/",
+    "https://vines.net.vn/company-esg/",
+    "https://vines.net.vn/capability/",
+    "https://vines.net.vn/contact/",
+    "https://vines.net.vn/contact-us/",
+    "https://vines.net.vn/career-2/",
+    "https://vines.net.vn/2023/"
+   ]
+  },
+  {
+   "entity": "Công ty cổ phần VinMotion",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (trang chủ, liên hệ, chính sách quyền riêng tư không có nội dung pháp lý).",
+   "da_thu": [
+    "https://vinmotion.net/vi",
+    "https://vinmotion.net/vi/contact",
+    "https://vinmotion.net/privacy-policy"
+   ]
+  },
+  {
+   "entity": "CT Group",
+   "truong": "ten_phap_nhan",
+   "ly_do": "CT Group là tên tập đoàn (nhãn nhóm nhiều công ty, chính sách quyền riêng tư gọi là Tập đoàn CTGroup và các công ty thành viên); website không nêu tên pháp nhân công ty mẹ. Mảng UAV do CT UAV, mảng chip do CT Semiconductor, đều là thành viên, pháp nhân riêng. Anh Lâm cần quyết registry trỏ tới pháp nhân nào.",
+   "da_thu": [
+    "https://ctgroupvietnam.com",
+    "https://ctgroupvietnam.com/privacy/"
+   ]
+  },
+  {
+   "entity": "CT Group",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số; chưa xác định được pháp nhân đứng sau nhãn tập đoàn.",
+   "da_thu": [
+    "https://ctgroupvietnam.com",
+    "https://ctgroupvietnam.com/privacy/"
+   ]
+  },
+  {
+   "entity": "CT Semiconductor",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (giới thiệu tiếng Việt và tiếng Anh, trang For Investor, chân trang).",
+   "da_thu": [
+    "https://ctsemiconductor.com/about-us/",
+    "https://ctsemiconductor.com/vi/gioi-thieu/",
+    "https://ctsemiconductor.com/for-investor/"
+   ]
+  },
+  {
+   "entity": "GG Power",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Chân trang ggp.vn chỉ ghi tên Công ty Cổ phần Công nghiệp GG, không có mã số; tìm trong tên miền ggp.vn không thấy trang nào ghi mã.",
+   "da_thu": [
+    "https://ggp.vn/"
+   ]
+  },
+  {
+   "entity": "HTI Technology",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "htigroup.vn không công bố mã số ở giới thiệu, liên hệ, công ty thành viên, chân trang. Lưu ý bẫy: Công ty cổ phần HTI UAS là pháp nhân khác, không lấy mã của HTI UAS cho công ty mẹ và ngược lại.",
+   "da_thu": [
+    "https://htigroup.vn/ve-htigroup/",
+    "https://htigroup.vn/cong-ty-thanh-vien/",
+    "https://htigroup.vn/lien-he/",
+    "https://htigroup.vn/en/about-us-3/",
+    "https://htigroup.vn/thiet-bi-bay-quan-sat-tam-xa-uav-horus-p02/",
+    "https://htigroup.vn/en/hti-group-announces-the-establishment-of-its-member-company-hti-uas/"
+   ]
+  },
+  {
+   "entity": "MiSmart",
+   "truong": "ten_phap_nhan",
+   "ly_do": "Website mismart.ai đang ở chế độ Coming Soon (đang nâng cấp), trang con cũng trả về rỗng; không có tên pháp nhân.",
+   "da_thu": [
+    "https://mismart.ai/",
+    "https://mismart.ai/lien-he/"
+   ]
+  },
+  {
+   "entity": "MiSmart",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website mismart.ai đang ở chế độ Coming Soon, không có mã số.",
+   "da_thu": [
+    "https://mismart.ai/",
+    "https://mismart.ai/lien-he/"
+   ]
+  },
+  {
+   "entity": "MK Smart",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (trang chủ, chính sách bảo mật; tìm trong tên miền không thấy).",
+   "da_thu": [
+    "https://mksmart.com.vn/",
+    "https://mksmart.com.vn/chinh-sach-bao-mat/"
+   ]
+  },
+  {
+   "entity": "Phenikaa-X",
+   "truong": "ten_phap_nhan",
+   "ly_do": "phenikaa-x.com chỉ ghi Phenikaa-X là công ty công nghệ thuộc Phenikaa Group, không ghi tên pháp nhân đầy đủ; /contact trả về nội dung trang chủ.",
+   "da_thu": [
+    "https://phenikaa-x.com",
+    "https://phenikaa-x.com/about",
+    "https://phenikaa-x.com/contact"
+   ]
+  },
+  {
+   "entity": "Phenikaa-X",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số. Phenikaa-X là công ty thành viên Tập đoàn Phenikaa, pháp nhân riêng, không dùng mã tập đoàn.",
+   "da_thu": [
+    "https://phenikaa-x.com",
+    "https://phenikaa-x.com/about",
+    "https://phenikaa-x.com/contact"
+   ]
+  },
+  {
+   "entity": "Realtime Robotics (RtR)",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "rtrobotics.com chỉ ghi pháp nhân Mỹ Real-time Robotics Inc., không có mã số Việt Nam (giới thiệu, chính sách bảo mật, điều khoản, điều khoản bán hàng và bản PDF; /vi và rtrobotics.vn trả về rỗng). Pháp nhân Việt Nam tại Khu Công nghệ cao Sài Gòn không được nêu tên trên website.",
+   "da_thu": [
+    "https://rtrobotics.com",
+    "https://rtrobotics.com/about",
+    "https://rtrobotics.com/privacy",
+    "https://rtrobotics.com/terms",
+    "https://rtrobotics.com/terms-of-sale",
+    "https://rtrobotics.com/docs/RtR-Terms-of-Sale.pdf",
+    "https://rtrobotics.com/vi",
+    "https://rtrobotics.vn"
+   ]
+  },
+  {
+   "entity": "ROSTEK",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "rostek.com.vn dùng JavaScript, web_fetch chỉ đọc được tiêu đề và thẻ meta ở trang chủ và /lien-he; không có mã số.",
+   "da_thu": [
+    "https://rostek.com.vn",
+    "https://rostek.com.vn/lien-he"
+   ]
+  },
+  {
+   "entity": "VinAI",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (chính sách bảo vệ dữ liệu cá nhân, điều khoản sử dụng, trang đội ngũ, chân trang).",
+   "da_thu": [
+    "https://vinai.io",
+    "https://www.vinai.io/about-us/",
+    "https://www.vinai.io/privacy-policy/",
+    "https://www.vinai.io/terms-of-use/"
+   ]
+  },
+  {
+   "entity": "VinBigData",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Trang chủ, liên hệ, chính sách bảo vệ dữ liệu cá nhân của vinbigdata.com trả về rỗng (JavaScript); vinbigdata.org và tin thành lập không có mã số.",
+   "da_thu": [
+    "https://vinbigdata.com/",
+    "https://vinbigdata.com/lien-he",
+    "https://vinbigdata.com/chinh-sach-bao-ve-du-lieu-ca-nhan-2",
+    "https://vinbigdata.com/en/personal-data-protection-policy",
+    "https://vinbigdata.org",
+    "https://vinbigdata.org/lien-he",
+    "https://vinbigdata.com/en/news/vingroup-establishes-vinbigdata-subsidiary-with-charter-capital-of-vnd-471-billion"
+   ]
+  },
+  {
+   "entity": "VSAP LAB",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số (trang chủ, thông báo ĐTM tiếng Việt và tiếng Anh, chân trang).",
+   "da_thu": [
+    "https://www.vsaplab.com/",
+    "https://vsaplab.com/notice-of-approval-for-the-environmental-impact-assessment-report-of-the-vsap-lab-project/",
+    "https://vsaplab.com/vi/thong-bao-phe-duyet-bao-cao-danh-gia-tac-dong-moi-truong-du-an-vsap-lab/"
+   ]
+  },
+  {
+   "entity": "XBStation",
+   "truong": "ten_phap_nhan",
+   "ly_do": "xbstation.com chỉ dùng tên thương hiệu XBStation (giới thiệu, liên hệ, nhà đầu tư, chân trang ghi Copyright không kèm tên công ty); không có tên pháp nhân.",
+   "da_thu": [
+    "https://xbstation.com/contact",
+    "https://xbstation.com/about-us",
+    "https://xbstation.com/investor-relations"
+   ]
+  },
+  {
+   "entity": "XBStation",
+   "truong": "ma_so_tu_khai",
+   "ly_do": "Website không công bố mã số.",
+   "da_thu": [
+    "https://xbstation.com/contact",
+    "https://xbstation.com/about-us",
+    "https://xbstation.com/investor-relations"
+   ]
+  }
+ ]
+}

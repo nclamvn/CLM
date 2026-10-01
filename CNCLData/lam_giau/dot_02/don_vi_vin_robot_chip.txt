@@ -1,0 +1,17 @@
+Công ty 1Matrix	/evidence/cafef_1matrix_vbsn_20260101.txt /evidence/vnexpress_1matrix_vbsn_20250721.txt
+Công ty Cổ phần Giải pháp Năng lượng VinES	/evidence/vneconomy_vines_pin_20240306.txt
+Công ty cổ phần VinMotion	/evidence/tuoitre_vinmotion_20250606.txt /evidence/cafef_vinmotion_minimotion_20260820.txt
+CT Group	/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt
+CT Semiconductor	/evidence/nguoiquansat_bando_bandan_20251027.txt
+GG Power	/evidence/tuoitre_ggpower_pin_20260412.txt
+HTI Technology	/evidence/cafef_dn_uav_20250903.txt
+Masan High-Tech Materials	/evidence/nguoiquansat_bando_bandan_20251027.txt
+MiSmart	/evidence/cafef_dn_uav_chuplai_20250903.txt
+MK Smart	/evidence/nhandan_matma_hauluongtu_20260210.txt
+Phenikaa-X	/evidence/cafef_dn_uav_20250903.txt
+Realtime Robotics (RtR)	/evidence/cafef_dn_uav_chuplai_20250903.txt /evidence/cafef_dn_uav_20250903.txt /evidence/cafef_rtr_xponential_20260418.txt
+ROSTEK	/evidence/vjst_rostek_agv_20220103.txt
+VinAI	/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt
+VinBigData	/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt
+VSAP LAB	/evidence/nhandan_vsaplab_chuplai_20260202.txt
+XBStation	/evidence/cafef_dn_uav_chuplai_20250903.txt

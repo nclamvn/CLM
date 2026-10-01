@@ -1,0 +1,15 @@
+CMC Telecom	/evidence/mst_cmc_cloud_20250321.txt
+Công ty An ninh mạng Viettel	/evidence/mst_viettelcybersecurity_20190412.txt
+Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)	/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt
+Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)	/evidence/mst_ncs_hesinhthai_20251103.txt /evidence/tuoitre_ncs_hesinhthai_20250702.txt
+FPT	/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt /evidence/vneconomy_ai_khatvong_chuplai_20230904.txt /evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt
+FPT Semiconductor	/evidence/nguoiquansat_bando_bandan_20251027.txt /evidence/vjst_fpt_tokyo_20260615.txt
+Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT	/evidence/mst_fpt_nhamay_20260128.txt
+Tập đoàn MISA	/evidence/mst_robot_makeinvn_20251230.txt
+Tập đoàn Viettel	/evidence/vjst_viettel_llm_chuplai_20230727.txt /evidence/mst_fpt_nhamay_20260128.txt
+Viettel AI	/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt /evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt /evidence/nhandan_viettel_bts_digital_twin_20251119.txt
+Viettel High Tech	/evidence/cafef_dn_uav_chuplai_20250903.txt /evidence/nhandan_uav_madeinvn_chuplai_20241222.txt
+VNPT	/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt /evidence/vneconomy_ai_khatvong_chuplai_20230904.txt /evidence/mst_robot_makeinvn_20251230.txt
+VNPT Technology	/evidence/mst_vnpttech_5g_20220831.txt /evidence/mst_vnpttech_vkist_20260702.txt
+VTI Solutions	/evidence/vtisolutions_mesx_saokhue_20240413.txt
+Zalo	/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt
