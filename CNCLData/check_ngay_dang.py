@@ -15,6 +15,12 @@ LUAT, cho moi ban chup ma claims.jsonl tro toi:
      -> NGAY_CHUP_LAM_NGAY_DANG. Trung ngay chup thi phai co cau cua NGUON noi dung ngay do.
   5. Ngan sach ngan_sach_ngay_dang.txt liet ke DUNG tap ban chup dang vi pham luat 4 (co ly
      do). Them la no; sua xong ma khong xoa cung la no.
+  6. TRANG TINH (them 01/10/2026, lo dinh danh 02): trang chinh chu khong co ngay dang (chan
+     trang, gioi thieu, lien he) ghi dong dau "# TRANG TINH:" va dat hau to = ngay quan sat.
+     Duoc mien luat 4 CHI KHI moi claim tro toi no la truong dinh danh (TRUONG_DINH_DANH):
+     ten, ma so khong co tuoi theo bai bao. Mot claim nang luc tro toi trang tinh ->
+     TRANG_TINH_SAI_TRUONG (nang luc can ngay dang de do do tuoi). Danh dau trang tinh ma hau to
+     khac ngay chup -> TRANG_TINH_NGAY_LECH.
 
 IN RA muc bang chung cua ngay dang cho moi ban chup: 'than' (ngay nam trong van ban nguon),
 'url' (ma ngay trong URL), 'chi_nguoi_chup' (chi dong ghi chu cua nguoi chup noi ngay do).
@@ -26,6 +32,8 @@ Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
 import json
 import re
 import sys
+
+TRUONG_DINH_DANH = {"ten_phap_nhan", "ma_so_tu_khai", "ma_so_thue"}
 from datetime import date
 from pathlib import Path
 
@@ -56,7 +64,10 @@ def main(argv):
         print("KHONG CHAY DUOC: khong co ban chup nao.")
         return 3
 
-    vi, khong_doc, muc = [], [], {"than": 0, "url": 0, "chi_nguoi_chup": 0, "khong_thay": 0}
+    vi, khong_doc, muc = [], [], {"than": 0, "url": 0, "chi_nguoi_chup": 0, "khong_thay": 0, "trang_tinh": 0}
+    truong_cua = {}
+    for c in claims:
+        truong_cua.setdefault(c["capture"]["snapshot"], set()).add(c["field"])
     tap_vi = set()
     for s in snaps:
         p = snap_dir / s
@@ -80,6 +91,14 @@ def main(argv):
         dau = "\n".join(l for l in dong if l.lstrip().startswith("#"))
         url = (re.search(r"# URL:\s*(\S+)", t) or [None, ""])[1] if re.search(r"# URL:\s*(\S+)", t) else ""
         mau = mau_ngay(d)
+        if any(l.lstrip().startswith("# TRANG TINH:") for l in dong):
+            sai = sorted(truong_cua.get(s, set()) - TRUONG_DINH_DANH)
+            if sai:
+                vi.append(f"TRANG_TINH_SAI_TRUONG: {s} · trang tinh khong co ngay dang ma co claim {', '.join(sai)}")
+            if d != c:
+                vi.append(f"TRANG_TINH_NGAY_LECH: {s} · trang tinh phai dat hau to = ngay chup {c}, dang la {d}")
+            muc["trang_tinh"] += 1
+            continue
         if any(x in than for x in mau):
             muc["than"] += 1
         elif f"{d.year % 100:02d}{d.month:02d}{d.day:02d}" in url or f"{d.year}{d.month:02d}{d.day:02d}" in url:
@@ -108,7 +127,7 @@ def main(argv):
         vi.append(f"DA_SUA_CHUA_XOA: {s} · khong con vi pham, xoa dong nay khoi ngan sach de khoa siet lai")
 
     print(f"ban chup: {len(snaps)} · bang chung ngay dang: nam trong than bai {muc['than']}, trong URL {muc['url']}, "
-          f"chi nguoi chup ghi {muc['chi_nguoi_chup']}, khong thay {muc['khong_thay']}")
+          f"chi nguoi chup ghi {muc['chi_nguoi_chup']}, khong thay {muc['khong_thay']}, trang tinh dinh danh {muc['trang_tinh']}")
     print(f"hau to trung ngay chup khong co can cu: {len(tap_vi)} · ngan sach: {len(tap_ns)}")
     if vi:
         print(f"\nFAIL: {len(vi)} vi pham")

@@ -86,6 +86,7 @@ const TEN_TRUONG: Record<string, string> = {
   ten_don_vi: 'Tên đơn vị', nang_luc_mo_ta: 'Năng lực', nang_luc_mo_ta_2: 'Năng lực bổ sung',
   bang_chung_nang_luc: 'Bằng chứng năng lực', nhom_cncl: 'Nhóm công nghệ', san_pham_lien_quan: 'Sản phẩm liên quan',
   loai_hinh: 'Loại hình', location: 'Địa điểm',
+  ten_phap_nhan: 'Tên pháp nhân (tự khai)', ma_so_tu_khai: 'Mã số tự khai',
 };
 export const tenTruong = (f: string) => TEN_TRUONG[f] ?? (f.startsWith('nhom_cncl_phu') ? 'Nhóm phụ' : f);
 const TEN_LOAI: Record<string, string> = { don_vi: 'Đơn vị', nhu_cau: 'Nhu cầu', nhom: 'Nhóm' };

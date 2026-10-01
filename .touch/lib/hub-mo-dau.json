@@ -1,9 +1,9 @@
 {
   "so": {
     "donVi": 60,
-    "cauNguon": 323,
+    "cauNguon": 378,
     "tierA": 120,
-    "banChup": 61,
+    "banChup": 106,
     "matchDaKy": 24,
     "tuChoi": 1,
     "nhuCau": 30,
@@ -12,10 +12,11 @@
     "capCungCau": 67
   },
   "chuoiCong": {
-    "xanh": 98,
-    "tong": 98,
+    "xanh": 61,
+    "tong": 61,
     "dat": true,
-    "luc": "2026-10-01T08:55:23+0700"
+    "luc": "2026-10-01T11:20:09+0700",
+    "nhanh": true
   },
   "diemYeu": {
     "chuaDinhDanh": 60,
@@ -52,7 +53,7 @@
     {
       "href": "/dashboard/registry",
       "ten": "Sổ nguồn",
-      "su": "323 câu nguồn, 120 câu hạng A"
+      "su": "378 câu nguồn, 120 câu hạng A"
     }
   ],
   "nhom": [
@@ -170,20 +171,20 @@
       "k": "hangA",
       "nhan": "Câu nguồn hạng A (văn bản chính thức)",
       "tu": 120,
-      "mau": 323
+      "mau": 378
     },
     {
       "k": "conHan",
       "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
-      "tu": 294,
-      "mau": 323
+      "tu": 349,
+      "mau": 378
     }
   ],
   "viecTiep": [
     {
       "so": 60,
       "viec": "đơn vị chưa định danh pháp nhân",
-      "cach": "tra mã số doanh nghiệp từ cổng đăng ký doanh nghiệp quốc gia",
+      "cach": "tra mã số trên cổng đăng ký doanh nghiệp quốc gia; 12 đơn vị đã có mã tự khai để đối chiếu",
       "href": "/dashboard/don-vi"
     },
     {

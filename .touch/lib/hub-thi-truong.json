@@ -2342,10 +2342,16 @@
         "khong_doc_duoc_ngay": 0
       }
     ],
-    "khongRo": null,
+    "khongRo": {
+      "tuoi": 0,
+      "ben": 55,
+      "giu_nguon_cu": 0,
+      "qua_han": 0,
+      "khong_doc_duoc_ngay": 0
+    },
     "tong": {
       "tuoi": 21,
-      "ben": 208,
+      "ben": 263,
       "giu_nguon_cu": 65,
       "qua_han": 29,
       "khong_doc_duoc_ngay": 0

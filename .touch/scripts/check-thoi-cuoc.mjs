@@ -72,7 +72,10 @@ for (const e of suKien) {
 }
 
 // ── Tin don vi ──────────────────────────────────────────────────────────────
-const hrefs = new Set(reg.units.flatMap((u) => u.evidence.map((x) => x.href)));
+// Truong dinh danh (ten phap nhan, ma so) khong phai tin: ban chup cua chung mang ngay quan sat.
+// Liet ke lai o day, khong nhap tu lib/ho-so.mjs, de cong dem doc lap voi ham sinh.
+const DINH_DANH = new Set(['ten_phap_nhan', 'ma_so_tu_khai', 'ma_so_thue']);
+const hrefs = new Set(reg.units.flatMap((u) => u.evidence.filter((x) => !DINH_DANH.has(x.field)).map((x) => x.href)));
 const dv = T.suKien.filter((e) => e.lan === 'don_vi');
 if (dv.length !== hrefs.size) vi.push(`DON_VI_LECH: ${dv.length} su kien tin don vi, registry co ${hrefs.size} ban chup`);
 for (const e of dv) {

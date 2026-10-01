@@ -7,6 +7,12 @@ schema:
     - ten_don_vi
     - ma_so_thue                  # dinh danh phap nhan, CHI tu cong chinh thuc.
                                   # Xem CNCLData/check_ma_so_thue.py. De trong la hop le.
+    # DINH DANH TU KHAI (them 01/10/2026, lo dinh danh 02, anh Lam chot duong "ca hai").
+    # Ten phap nhan va ma so do CHINH DON VI cong bo tren website chinh chu (hang C). KHONG tinh
+    # la da dinh danh: chi ma_so_thue tu cong chinh thuc moi tinh. Hai truong nay la dau vao cho
+    # nguoi tra cong (phieu tra cong), va hien tren web voi nhan "tu khai, chua doi chieu cong".
+    - ten_phap_nhan
+    - ma_so_tu_khai
     - loai_hinh
     - nhom_cncl                   # 1..10 theo QD 21/2026
     - san_pham_lien_quan          # 1..30 theo QD 21/2026, hoac de trong

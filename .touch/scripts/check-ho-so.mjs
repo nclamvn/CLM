@@ -14,6 +14,8 @@
  *      SLUG_HONG/TRUNG slug khong hop le hoac trung
  *      DIEM_TONG_HOP  bat ky khoa nao ten diem/score/rank/xepHang trong ho so
  *      DINH_DANH_BIA  ghi da dinh danh ma registry khong co claim ma_so_thue
+ *      TU_KHAI_LECH   ten phap nhan / ma so tu khai tren ho so khac registry
+ *      TU_KHAI_THANH_DINH_DANH  ma tu khai bi dua len lam ma dinh danh khi chua co ma_so_thue
  *      O_TRONG_GIAU   truong schema chua co claim ma khong liet ke; O_TRONG_BIA: liet ke ma co
  *      TUOI_LECH      so cau qua han chua ly do tinh lai tu href + note khac so ghi
  *      TUOI_LECH_CONG_PY  tong qua han vuot ngan sach cua check_do_tuoi.py (hoac, cung ngay do,
@@ -79,7 +81,7 @@ const quetKhoa = (o, duong) => {
 };
 
 // Luat tuoi viet lai o day, DOC LAP voi lib/ho-so.mjs (cung dac ta voi check_do_tuoi.py).
-const BEN = new Set(['ten_don_vi', 'loai_hinh', 'nhom_cncl', 'san_pham_lien_quan']);
+const BEN = new Set(['ten_don_vi', 'loai_hinh', 'nhom_cncl', 'san_pham_lien_quan', 'ten_phap_nhan', 'ma_so_tu_khai', 'ma_so_thue']); // hai truong cuoi: dinh danh tu khai, them 01/10/2026 cung check_do_tuoi.py
 const laBen = (f) => BEN.has(f) || f.startsWith('nhom_cncl_phu_') || f.startsWith('san_pham_phu_');
 const moc = Date.parse(`${reg.meta.generatedAt}T00:00:00Z`);
 const quaHanDocLap = (u) => u.evidence.filter((e) => {
@@ -105,6 +107,12 @@ for (const h of hs.units) {
   const coMst = u.evidence.some((e) => e.field === 'ma_so_thue');
   if (h.dinhDanh?.trangThai === 'da_dinh_danh' && !coMst) vi.push(`DINH_DANH_BIA: ${h.slug} ghi da dinh danh (${h.dinhDanh.maSo}) nhung registry khong co claim ma_so_thue`);
   if (h.dinhDanh?.trangThai !== 'da_dinh_danh' && coMst) vi.push(`DINH_DANH_BIA: ${h.slug} co claim ma_so_thue ma ho so ghi chua dinh danh`);
+  // Dinh danh tu khai (01/10/2026): ho so phai khop registry, va KHONG duoc dung no lam ma
+  // dinh danh. Ma tu khai ma len o dinhDanh.maSo khi chua co ma_so_thue la bia dinh danh.
+  const tkTen = u.evidence.find((e) => e.field === 'ten_phap_nhan')?.value ?? null;
+  const tkMa = u.evidence.find((e) => e.field === 'ma_so_tu_khai')?.value ?? null;
+  if ((h.tuKhai?.tenPhapNhan ?? null) !== tkTen || (h.tuKhai?.maSo ?? null) !== tkMa) vi.push(`TU_KHAI_LECH: ${h.slug} ho so ghi ${JSON.stringify(h.tuKhai)}, registry ten=${tkTen} ma=${tkMa}`);
+  if (!coMst && tkMa && h.dinhDanh?.maSo === tkMa) vi.push(`TU_KHAI_THANH_DINH_DANH: ${h.slug} dung ma tu khai ${tkMa} lam ma dinh danh`);
   const co = new Set(u.evidence.map((e) => e.field));
   const trong = new Set((h.oTrong ?? []).map((o) => o.truong));
   for (const f of NHAN_TRONG) {

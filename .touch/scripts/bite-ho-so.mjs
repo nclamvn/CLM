@@ -22,6 +22,8 @@
  * RANG 9  · SUA SO CAU NGUON -> DEM_LECH (va HO_SO_LECH).
  * RANG 10 · MODULE BI DOC: coi moi cau qua han la "giu nguon cu", ho so sinh TU module do (lop A
  *           khop nhau) -> lop B doc lap phai bat TUOI_LECH.
+ * RANG 14 · ho so dua ma tu khai len lam ma dinh danh -> TU_KHAI_THANH_DINH_DANH.
+ * RANG 15 · ten phap nhan tu khai tren ho so lech registry -> TU_KHAI_LECH.
  * RANG 13 · them don vi "Công ty TNHH AVAC Việt Nam" (cung ten ngan voi ban CP) -> TEN_NGAN_TRUNG.
  * RANG 12 · hub-ten.json rot ma san pham 28 -> TEN_LECH.
  * RANG 11 · NGAN SACH CONG PYTHON THAP HON so qua han -> TUOI_LECH_CONG_PY.
@@ -117,6 +119,12 @@ try {
   rg.units.push({ ...rg.units.find((u) => u.name === 'Công ty cổ phần AVAC Việt Nam'), name: 'Công ty TNHH AVAC Việt Nam' }); writeFileSync(pr, JSON.stringify(rg));
   r = chay(t13);
   inRa('RANG 13 · hai don vi cung ten ngan -> TEN_NGAN_TRUNG', r.rc === 2 && r.out.includes('TEN_NGAN_TRUNG'), `exit ${r.rc}`);
+  // RANG 14: ho so lay ma tu khai lam ma dinh danh (giu trang thai chua dinh danh de lot DINH_DANH_BIA).
+  r = chay(canh((h) => { const u = h.units.find((x) => x.tuKhai?.maSo); u.dinhDanh = { ...u.dinhDanh, maSo: u.tuKhai.maSo }; }));
+  inRa('RANG 14 · ma tu khai thanh ma dinh danh -> TU_KHAI_THANH_DINH_DANH', r.rc === 2 && r.out.includes('TU_KHAI_THANH_DINH_DANH'), `exit ${r.rc}`);
+  // RANG 15: ho so doi ten phap nhan tu khai.
+  r = chay(canh((h) => { const u = h.units.find((x) => x.tuKhai?.tenPhapNhan); u.tuKhai.tenPhapNhan += ' X'; }));
+  inRa('RANG 15 · ten phap nhan tu khai lech -> TU_KHAI_LECH', r.rc === 2 && r.out.includes('TU_KHAI_LECH'), `exit ${r.rc}`);
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

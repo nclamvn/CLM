@@ -1,0 +1,674 @@
+{
+ "dot": "dot_02",
+ "duyet": "Lam Nguyen",
+ "so_dong_nap": 55,
+ "bo_them_don_vi": [],
+ "cong_do_tung_dong": {},
+ "cong_do_ca_lo": {},
+ "ghep_truoc": {
+  "restore": "RESTORE: gan lai 24/24 chu ky tu so",
+  "ung_vien": [
+   {
+    "id": "MATCH-0001",
+    "cung": "Viettel AI",
+    "cau": "CNCL-P03",
+    "diem": 0.83,
+    "tu_giao": [
+     "bản",
+     "sao"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0002",
+    "cung": "ROSTEK",
+    "cau": "CNCL-P07",
+    "diem": 0.53,
+    "tu_giao": [
+     "hành",
+     "động"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0004",
+    "cung": "VTI Solutions",
+    "cau": "CNCL-P08",
+    "diem": 0.6,
+    "tu_giao": [
+     "hình",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0005",
+    "cung": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+    "cau": "CNCL-P11",
+    "diem": 0.78,
+    "tu_giao": [
+     "bào",
+     "dịch",
+     "gốc",
+     "liệu",
+     "miễn",
+     "người"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0006",
+    "cung": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+    "cau": "CNCL-P13",
+    "diem": 0.9,
+    "tu_giao": [
+     "biến",
+     "cảm",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0007",
+    "cung": "Viện Khoa học vật liệu",
+    "cau": "CNCL-P13",
+    "diem": 0.55,
+    "tu_giao": [
+     "biến",
+     "cảm"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0008",
+    "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+    "cau": "CNCL-P13",
+    "diem": 0.72,
+    "tu_giao": [
+     "biến",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0009",
+    "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+    "cau": "CNCL-P13",
+    "diem": 0.72,
+    "tu_giao": [
+     "biến",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0010",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P18",
+    "diem": 0.53,
+    "tu_giao": [
+     "lượng",
+     "năng",
+     "pin",
+     "trữ"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0011",
+    "cung": "Công ty 1Matrix",
+    "cau": "CNCL-P05",
+    "diem": 0.53,
+    "tu_giao": [
+     "gốc",
+     "nguồn",
+     "truy",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0012",
+    "cung": "Trung tâm Vũ trụ Việt Nam",
+    "cau": "CNCL-P28",
+    "diem": 0.59,
+    "tu_giao": [
+     "quan",
+     "sát",
+     "tinh",
+     "trái",
+     "đất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0013",
+    "cung": "Tập đoàn Viettel",
+    "cau": "CNCL-P23",
+    "diem": 0.9,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0014",
+    "cung": "FPT Semiconductor",
+    "cau": "CNCL-P23",
+    "diem": 0.88,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0015",
+    "cung": "CT Semiconductor",
+    "cau": "CNCL-P23",
+    "diem": 0.88,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0016",
+    "cung": "VinBigData",
+    "cau": "CNCL-P01",
+    "diem": 0.53,
+    "tu_giao": [
+     "hình",
+     "lớn",
+     "ngôn",
+     "ngữ",
+     "tiếng",
+     "việt"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0017",
+    "cung": "Tập đoàn Viettel",
+    "cau": "CNCL-P22",
+    "diem": 0.7,
+    "tu_giao": [
+     "bay",
+     "không",
+     "lái",
+     "người",
+     "uav"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0018",
+    "cung": "CMC Telecom",
+    "cau": "CNCL-P04",
+    "diem": 0.9,
+    "tu_giao": [
+     "mây",
+     "toán",
+     "điện",
+     "đám"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0019",
+    "cung": "VNPT",
+    "cau": "CNCL-P04",
+    "diem": 0.88,
+    "tu_giao": [
+     "mây",
+     "toán",
+     "điện",
+     "đám"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0020",
+    "cung": "VNPT Technology",
+    "cau": "CNCL-P06",
+    "diem": 0.67,
+    "tu_giao": [
+     "mạng",
+     "động"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0021",
+    "cung": "Tổng công ty Thiết bị điện Đông Anh",
+    "cau": "CNCL-P20",
+    "diem": 0.64,
+    "tu_giao": [
+     "máy",
+     "suất",
+     "truyền",
+     "tải",
+     "điện"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0022",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P20",
+    "diem": 0.64,
+    "tu_giao": [
+     "cao",
+     "điện"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0023",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P17",
+    "diem": 0.66,
+    "tu_giao": [
+     "cao",
+     "chế",
+     "hiệu",
+     "liệu",
+     "năng",
+     "tạo",
+     "vật"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0024",
+    "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+    "cau": "CNCL-P15",
+    "diem": 0.77,
+    "tu_giao": [
+     "biến",
+     "chế",
+     "hoạch",
+     "nghiệp",
+     "nông",
+     "sinh",
+     "sâu",
+     "thu",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0025",
+    "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+    "cau": "CNCL-P15",
+    "diem": 0.77,
+    "tu_giao": [
+     "biến",
+     "chế",
+     "hoạch",
+     "nghiệp",
+     "nông",
+     "sinh",
+     "sâu",
+     "thu",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   }
+  ]
+ },
+ "ghep_sau": {
+  "restore": "RESTORE: gan lai 24/24 chu ky tu so",
+  "ung_vien": [
+   {
+    "id": "MATCH-0001",
+    "cung": "Viettel AI",
+    "cau": "CNCL-P03",
+    "diem": 0.83,
+    "tu_giao": [
+     "bản",
+     "sao"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0002",
+    "cung": "ROSTEK",
+    "cau": "CNCL-P07",
+    "diem": 0.53,
+    "tu_giao": [
+     "hành",
+     "động"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0004",
+    "cung": "VTI Solutions",
+    "cau": "CNCL-P08",
+    "diem": 0.6,
+    "tu_giao": [
+     "hình",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0005",
+    "cung": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+    "cau": "CNCL-P11",
+    "diem": 0.78,
+    "tu_giao": [
+     "bào",
+     "dịch",
+     "gốc",
+     "liệu",
+     "miễn",
+     "người"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0006",
+    "cung": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+    "cau": "CNCL-P13",
+    "diem": 0.9,
+    "tu_giao": [
+     "biến",
+     "cảm",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0007",
+    "cung": "Viện Khoa học vật liệu",
+    "cau": "CNCL-P13",
+    "diem": 0.55,
+    "tu_giao": [
+     "biến",
+     "cảm"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0008",
+    "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+    "cau": "CNCL-P13",
+    "diem": 0.72,
+    "tu_giao": [
+     "biến",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0009",
+    "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+    "cau": "CNCL-P13",
+    "diem": 0.72,
+    "tu_giao": [
+     "biến",
+     "học",
+     "sinh"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0010",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P18",
+    "diem": 0.53,
+    "tu_giao": [
+     "lượng",
+     "năng",
+     "pin",
+     "trữ"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0011",
+    "cung": "Công ty 1Matrix",
+    "cau": "CNCL-P05",
+    "diem": 0.53,
+    "tu_giao": [
+     "gốc",
+     "nguồn",
+     "truy",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0012",
+    "cung": "Trung tâm Vũ trụ Việt Nam",
+    "cau": "CNCL-P28",
+    "diem": 0.59,
+    "tu_giao": [
+     "quan",
+     "sát",
+     "tinh",
+     "trái",
+     "đất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0013",
+    "cung": "Tập đoàn Viettel",
+    "cau": "CNCL-P23",
+    "diem": 0.9,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0014",
+    "cung": "FPT Semiconductor",
+    "cau": "CNCL-P23",
+    "diem": 0.88,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0015",
+    "cung": "CT Semiconductor",
+    "cau": "CNCL-P23",
+    "diem": 0.88,
+    "tu_giao": [
+     "chip"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0016",
+    "cung": "VinBigData",
+    "cau": "CNCL-P01",
+    "diem": 0.53,
+    "tu_giao": [
+     "hình",
+     "lớn",
+     "ngôn",
+     "ngữ",
+     "tiếng",
+     "việt"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0017",
+    "cung": "Tập đoàn Viettel",
+    "cau": "CNCL-P22",
+    "diem": 0.7,
+    "tu_giao": [
+     "bay",
+     "không",
+     "lái",
+     "người",
+     "uav"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0018",
+    "cung": "CMC Telecom",
+    "cau": "CNCL-P04",
+    "diem": 0.9,
+    "tu_giao": [
+     "mây",
+     "toán",
+     "điện",
+     "đám"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0019",
+    "cung": "VNPT",
+    "cau": "CNCL-P04",
+    "diem": 0.88,
+    "tu_giao": [
+     "mây",
+     "toán",
+     "điện",
+     "đám"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0020",
+    "cung": "VNPT Technology",
+    "cau": "CNCL-P06",
+    "diem": 0.67,
+    "tu_giao": [
+     "mạng",
+     "động"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0021",
+    "cung": "Tổng công ty Thiết bị điện Đông Anh",
+    "cau": "CNCL-P20",
+    "diem": 0.64,
+    "tu_giao": [
+     "máy",
+     "suất",
+     "truyền",
+     "tải",
+     "điện"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0022",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P20",
+    "diem": 0.64,
+    "tu_giao": [
+     "cao",
+     "điện"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0023",
+    "cung": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "cau": "CNCL-P17",
+    "diem": 0.66,
+    "tu_giao": [
+     "cao",
+     "chế",
+     "hiệu",
+     "liệu",
+     "năng",
+     "tạo",
+     "vật"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0024",
+    "cung": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+    "cau": "CNCL-P15",
+    "diem": 0.77,
+    "tu_giao": [
+     "biến",
+     "chế",
+     "hoạch",
+     "nghiệp",
+     "nông",
+     "sinh",
+     "sâu",
+     "thu",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   },
+   {
+    "id": "MATCH-0025",
+    "cung": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+    "cau": "CNCL-P15",
+    "diem": 0.77,
+    "tu_giao": [
+     "biến",
+     "chế",
+     "hoạch",
+     "nghiệp",
+     "nông",
+     "sinh",
+     "sâu",
+     "thu",
+     "xuất"
+    ],
+    "ky": "Lam Nguyen"
+   }
+  ]
+ },
+ "nhu_cau_co_ung_vien_truoc": [
+  "CNCL-P01",
+  "CNCL-P03",
+  "CNCL-P04",
+  "CNCL-P05",
+  "CNCL-P06",
+  "CNCL-P07",
+  "CNCL-P08",
+  "CNCL-P11",
+  "CNCL-P13",
+  "CNCL-P15",
+  "CNCL-P17",
+  "CNCL-P18",
+  "CNCL-P20",
+  "CNCL-P22",
+  "CNCL-P23",
+  "CNCL-P28"
+ ],
+ "nhu_cau_co_ung_vien_sau": [
+  "CNCL-P01",
+  "CNCL-P03",
+  "CNCL-P04",
+  "CNCL-P05",
+  "CNCL-P06",
+  "CNCL-P07",
+  "CNCL-P08",
+  "CNCL-P11",
+  "CNCL-P13",
+  "CNCL-P15",
+  "CNCL-P17",
+  "CNCL-P18",
+  "CNCL-P20",
+  "CNCL-P22",
+  "CNCL-P23",
+  "CNCL-P28"
+ ],
+ "nhu_cau_moi_co_ung_vien": [],
+ "chu_ky_mat": []
+}

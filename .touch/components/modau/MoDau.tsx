@@ -23,7 +23,7 @@ import { ngayVN } from '@/lib/dinh-dang';
 
 type Nhom = { so: number; nhan: string; soDv: number; soNc: number; coCung: number; daKy: number; trong: number };
 type MD = {
-  so: Record<string, number>; chuoiCong: { xanh: number; tong: number; dat: boolean; luc: string } | null;
+  so: Record<string, number>; chuoiCong: { xanh: number; tong: number; dat: boolean; luc: string; nhanh?: boolean } | null;
   diemYeu: Record<string, number>; cua: { href: string; ten: string; su: string }[];
   nhom: Nhom[]; chatLuong: { k: string; nhan: string; tu: number; mau: number }[];
   viecTiep: { so: number; viec: string; cach: string; href: string }[];
@@ -146,7 +146,7 @@ export function MoDau() {
           {cc && (
             <ProofNumber khoa="gate" className="md-chuoi">
               <span className={`md-chuoi__cham${cc.dat ? '' : ' is-do'}`} aria-hidden="true" />
-              Kiểm định tự động {cc.xanh}/{cc.tong} đạt · lần chạy {cc.luc.slice(8, 10)}/{cc.luc.slice(5, 7)} {cc.luc.slice(11, 16)}
+              Kiểm định tự động {cc.xanh}/{cc.tong} đạt{cc.nhanh ? ' (lượt nhanh, chưa gồm phép thử cài lỗi)' : ''} · lần chạy {cc.luc.slice(8, 10)}/{cc.luc.slice(5, 7)} {cc.luc.slice(11, 16)}
             </ProofNumber>)}
         </div>
         <div className="md-so-luoi">

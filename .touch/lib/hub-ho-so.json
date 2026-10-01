@@ -6,6 +6,8 @@
     "truongSchema": [
       "ten_don_vi",
       "ma_so_thue",
+      "ten_phap_nhan",
+      "ma_so_tu_khai",
       "loai_hinh",
       "nhom_cncl",
       "san_pham_lien_quan",
@@ -63,20 +65,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Bệnh viện Trung ương Quân đội 108",
+        "maSo": null,
+        "href": "/evidence/benhvien108_vn_gioi_thieu_20261001.txt",
+        "nguon": "benhvien108.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 0,
-          "C": 6
+          "C": 7
         },
         "tenMienNguon": 1,
-        "banChup": 1,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -149,6 +157,17 @@
           "tuoiNgay": 1211,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "benhvien108.vn",
+          "href": "/evidence/benhvien108_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -308,20 +327,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Hạ tầng Viễn thông CMC",
+        "maSo": "0102900049",
+        "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+        "nguon": "cmctelecom.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 8,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -394,6 +419,28 @@
           "tuoiNgay": 559,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "cmctelecom.vn",
+          "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "cmctelecom.vn",
+          "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -527,20 +574,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CTCP 1Matrix",
+        "maSo": null,
+        "href": "/evidence/1matrix_com_gioi_thieu_20261001.txt",
+        "nguon": "erp.1matrix.com"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -613,6 +666,17 @@
           "tuoiNgay": 437,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "erp.1matrix.com",
+          "href": "/evidence/1matrix_com_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -752,6 +816,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -903,20 +968,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM",
+        "maSo": null,
+        "href": "/evidence/avac_com_vn_gioi_thieu_20261001.txt",
+        "nguon": "avac.com.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 5,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -976,6 +1047,17 @@
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
           "tuoiNgay": 1165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "avac.com.vn",
+          "href": "/evidence/avac_com_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -1141,20 +1223,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM",
+        "maSo": null,
+        "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
+        "nguon": "ncsgroup.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 2,
           "B": 3,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -1216,6 +1304,17 @@
           "tuoiNgay": 332,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ncsgroup.vn",
+          "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -1310,20 +1409,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+        "maSo": "3700861497",
+        "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+        "nguon": "vntt.com.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 8,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -1396,6 +1501,28 @@
           "tuoiNgay": 711,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vntt.com.vn",
+          "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "vntt.com.vn",
+          "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -1499,20 +1626,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "VinES Energy Solutions JSC",
+        "maSo": null,
+        "href": "/evidence/vines_net_vn_tin_2023_20261001.txt",
+        "nguon": "vines.net.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -1572,6 +1705,17 @@
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
           "tuoiNgay": 939,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vines.net.vn",
+          "href": "/evidence/vines_net_vn_tin_2023_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -1681,6 +1825,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -1856,20 +2001,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO",
+        "maSo": null,
+        "href": "/evidence/navetco_com_vn_gioi_thieu_20261001.txt",
+        "nguon": "navetco.com.vn"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 4,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 1,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -1918,6 +2069,17 @@
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
           "tuoiNgay": 1165,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "navetco.com.vn",
+          "href": "/evidence/navetco_com_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -2087,20 +2249,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+        "maSo": null,
+        "href": "/evidence/vinmotion_net_lien_he_20261001.txt",
+        "nguon": "vinmotion.net"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 1,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -2173,6 +2341,17 @@
           "tuoiNgay": 42,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vinmotion.net",
+          "href": "/evidence/vinmotion_net_lien_he_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -2287,20 +2466,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY CỔ PHẦN XE LỬA DĨ AN",
+        "maSo": "3700146539",
+        "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+        "nguon": "xeluadian.com.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 8,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 1,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -2373,6 +2558,28 @@
           "tuoiNgay": 736,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "xeluadian.com.vn",
+          "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "xeluadian.com.vn",
+          "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -2443,20 +2650,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+        "maSo": null,
+        "href": "/evidence/ngocbaobiomed_com_trang_chu_20261001.txt",
+        "nguon": "ngocbaobiomed.com"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 2,
         "khongDocDuoc": 0,
@@ -2516,6 +2729,17 @@
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
           "tuoiNgay": 425,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ngocbaobiomed.com",
+          "href": "/evidence/ngocbaobiomed_com_trang_chu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -2680,20 +2904,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty cổ phần Việt Nam Food",
+        "maSo": null,
+        "href": "/evidence/vnfoods_vn_tin_kito_sil_20260724.txt",
+        "nguon": "vnfoods.vn"
+      },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 8,
         "theoTier": {
           "A": 0,
           "B": 7,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 3,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 0,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -2777,6 +3007,17 @@
           "tuoiNgay": 42,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 7,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vnfoods.vn",
+          "href": "/evidence/vnfoods_vn_tin_kito_sil_20260724.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -2932,20 +3173,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN",
+        "maSo": null,
+        "href": "/evidence/dongtrunghathaonhatlan_com_vn_trang_chu_20261001.txt",
+        "nguon": "dongtrunghathaonhatlan.com.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 2
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -3018,6 +3265,17 @@
           "tuoiNgay": 294,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "dongtrunghathaonhatlan.com.vn",
+          "href": "/evidence/dongtrunghathaonhatlan_com_vn_trang_chu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -3213,6 +3471,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 5,
         "theoTier": {
@@ -3363,6 +3622,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 5,
         "theoTier": {
@@ -3566,20 +3826,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "CT Semiconductor Corporation",
+        "maSo": null,
+        "href": "/evidence/ctsemiconductor_com_gioi_thieu_20261001.txt",
+        "nguon": "ctsemiconductor.com"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -3639,6 +3905,17 @@
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
           "tuoiNgay": 339,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ctsemiconductor.com",
+          "href": "/evidence/ctsemiconductor_com_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -3750,20 +4027,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Tập đoàn FECON",
+        "maSo": "0101502599",
+        "href": "/evidence/fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.txt",
+        "nguon": "fecon.com.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 8,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 4,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 5,
         "giuNguonCu": 3,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -3836,6 +4119,28 @@
           "tuoiNgay": 3930,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "fecon.com.vn",
+          "href": "/evidence/fecon_com_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "fecon.com.vn",
+          "href": "/evidence/fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -3918,20 +4223,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần FPT",
+        "maSo": "0101248141",
+        "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+        "nguon": "bctn2025.fpt.com"
+      },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 9,
         "theoTier": {
           "A": 5,
           "B": 2,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 3,
-        "banChup": 4,
+        "tenMienNguon": 4,
+        "banChup": 5,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 1,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 0,
         "quaHan": 2,
         "khongDocDuoc": 0,
@@ -4015,6 +4326,28 @@
           "tuoiNgay": 246,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
+        },
+        {
+          "i": 7,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "bctn2025.fpt.com",
+          "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 8,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "bctn2025.fpt.com",
+          "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -4168,6 +4501,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 5,
         "theoTier": {
@@ -4367,20 +4701,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Công nghiệp GG",
+        "maSo": null,
+        "href": "/evidence/ggp_vn_chan_trang_20261001.txt",
+        "nguon": "ggp.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 2,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -4440,6 +4780,17 @@
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
           "tuoiNgay": 172,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ggp.vn",
+          "href": "/evidence/ggp_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -4549,20 +4900,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Đầu tư và Công nghệ HTI",
+        "maSo": null,
+        "href": "/evidence/htigroup_vn_gioi_thieu_20261001.txt",
+        "nguon": "htigroup.vn"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 0,
           "B": 4,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 1,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -4613,6 +4970,17 @@
           "tuoiNgay": 393,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "htigroup.vn",
+          "href": "/evidence/htigroup_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -4740,6 +5108,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 7,
         "theoTier": {
@@ -4936,6 +5305,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -5074,20 +5444,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Masan High-Tech Materials",
+        "maSo": "0309966889",
+        "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+        "nguon": "masanhightechmaterials.com"
+      },
       "dem": {
-        "cauNguon": 2,
+        "cauNguon": 4,
         "theoTier": {
           "A": 0,
           "B": 2,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 1,
+        "ben": 3,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -5116,6 +5492,28 @@
           "tuoiNgay": 339,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
+        },
+        {
+          "i": 2,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "masanhightechmaterials.com",
+          "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "masanhightechmaterials.com",
+          "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [],
@@ -5172,6 +5570,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -5363,20 +5762,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Thông minh MK",
+        "maSo": null,
+        "href": "/evidence/mksmart_com_vn_chinh_sach_bao_mat_20261001.txt",
+        "nguon": "mksmart.com.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 2,
         "khongDocDuoc": 0,
@@ -5436,6 +5841,17 @@
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
           "tuoiNgay": 233,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "mksmart.com.vn",
+          "href": "/evidence/mksmart_com_vn_chinh_sach_bao_mat_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -5521,6 +5937,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 6,
         "theoTier": {
@@ -5702,6 +6119,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -5893,20 +6311,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Hóa học công nghiệp Việt Nam",
+        "maSo": null,
+        "href": "/evidence/viic_vn_ptn_trong_diem_loc_hoa_dau_20261001.txt",
+        "nguon": "viic.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 2,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 0,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -5979,6 +6403,17 @@
           "tuoiNgay": 129,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "viic.vn",
+          "href": "/evidence/viic_vn_ptn_trong_diem_loc_hoa_dau_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -6089,20 +6524,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Real-time Robotics Inc.",
+        "maSo": null,
+        "href": "/evidence/rtrobotics_com_footer_20261001.txt",
+        "nguon": "rtrobotics.com"
+      },
       "dem": {
-        "cauNguon": 8,
+        "cauNguon": 9,
         "theoTier": {
           "A": 0,
           "B": 8,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 3,
+        "tenMienNguon": 2,
+        "banChup": 4,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 2,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -6197,6 +6638,17 @@
           "tuoiNgay": 166,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 8,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "rtrobotics.com",
+          "href": "/evidence/rtrobotics_com_footer_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -6330,20 +6782,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Rostek JSC",
+        "maSo": null,
+        "href": "/evidence/rostek_com_vn_trang_chu_20261001.txt",
+        "nguon": "rostek.com.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -6403,6 +6861,17 @@
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
           "tuoiNgay": 1732,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "rostek.com.vn",
+          "href": "/evidence/rostek_com_vn_trang_chu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -6526,20 +6995,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Tập đoàn DABACO Việt Nam",
+        "maSo": "2300105790",
+        "href": "/evidence/dabaco_com_vn_general_information_20261001.txt",
+        "nguon": "dabaco.com.vn"
+      },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 9,
         "theoTier": {
           "A": 0,
           "B": 7,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 3,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -6623,6 +7098,28 @@
           "tuoiNgay": 551,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 7,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "dabaco.vn",
+          "href": "/evidence/dabaco_vn_cbtt_thay_doi_dkdn_20260926.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 8,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "dabaco.com.vn",
+          "href": "/evidence/dabaco_com_vn_general_information_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -6782,20 +7279,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty cổ phần MISA",
+        "maSo": "0101243150",
+        "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+        "nguon": "misa.vn"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 6,
         "theoTier": {
           "A": 4,
           "B": 0,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 5,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -6844,6 +7347,28 @@
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
           "tuoiNgay": 275,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "misa.vn",
+          "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "misa.vn",
+          "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -6961,20 +7486,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Tập đoàn Công nghiệp – Viễn thông Quân đội",
+        "maSo": "0100109106",
+        "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+        "nguon": "viettelai.vn"
+      },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 9,
         "theoTier": {
           "A": 2,
           "B": 5,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 2
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 6,
         "giuNguonCu": 1,
         "quaHan": 2,
         "khongDocDuoc": 0,
@@ -7058,6 +7589,28 @@
           "tuoiNgay": 246,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 7,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "viettelai.vn",
+          "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 8,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "viettelai.vn",
+          "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -7327,20 +7880,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
+        "maSo": "0100150577",
+        "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+        "nguon": "ptsc.com.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -7400,6 +7959,28 @@
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
           "tuoiNgay": 470,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ptsc.com.vn",
+          "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 6,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "ptsc.com.vn",
+          "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -7476,20 +8057,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần",
+        "maSo": "0100101322",
+        "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
+        "nguon": "eemc.com.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 7,
         "theoTier": {
           "A": 5,
           "B": 0,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 3,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -7549,6 +8136,28 @@
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
           "tuoiNgay": 654,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "eemc.com.vn",
+          "href": "/evidence/eemc_com_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 6,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "eemc.com.vn",
+          "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -7686,20 +8295,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Trung tâm Vũ trụ Việt Nam",
+        "maSo": null,
+        "href": "/evidence/vnsc_org_vn_su_menh_va_tam_nhin_20261001.txt",
+        "nguon": "vnsc.org.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -7772,6 +8387,17 @@
           "tuoiNgay": 202,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vnsc.org.vn",
+          "href": "/evidence/vnsc_org_vn_su_menh_va_tam_nhin_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -7903,20 +8529,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "maSo": null,
+        "href": "/evidence/hus_vnu_edu_vn_lich_su_phat_trien_20261001.txt",
+        "nguon": "hus.vnu.edu.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 6,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -7989,6 +8621,17 @@
           "tuoiNgay": 5265,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "hus.vnu.edu.vn",
+          "href": "/evidence/hus_vnu_edu_vn_lich_su_phat_trien_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -8092,6 +8735,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 6,
         "theoTier": {
@@ -8373,20 +9017,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Công nghệ xạ hiếm",
+        "maSo": null,
+        "href": "/evidence/itrre_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "nguon": "itrre.gov.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -8457,6 +9107,17 @@
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
           "tuoiNgay": 462,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "itrre.gov.vn",
+          "href": "/evidence/itrre_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -8530,20 +9191,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Di truyền Nông nghiệp",
+        "maSo": null,
+        "href": "/evidence/agi_gov_vn_gioi_thieu_20261001.txt",
+        "nguon": "agi.gov.vn"
+      },
       "dem": {
-        "cauNguon": 5,
+        "cauNguon": 6,
         "theoTier": {
           "A": 0,
           "B": 5,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -8603,6 +9270,17 @@
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
           "tuoiNgay": 365,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 5,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "agi.gov.vn",
+          "href": "/evidence/agi_gov_vn_gioi_thieu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -8767,20 +9445,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+        "maSo": null,
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "nguon": "vast.gov.vn"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 0,
           "B": 4,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 3
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 1,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -8831,6 +9515,17 @@
           "tuoiNgay": 220,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -8997,6 +9692,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 5,
         "theoTier": {
@@ -9154,20 +9850,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc",
+        "maSo": null,
+        "href": "/evidence/vkist_mst_gov_vn_tong_quan_20261001.txt",
+        "nguon": "vkist.mst.gov.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -9240,6 +9942,17 @@
           "tuoiNgay": 440,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vkist.mst.gov.vn",
+          "href": "/evidence/vkist_mst_gov_vn_tong_quan_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -9413,20 +10126,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Khoa học vật liệu",
+        "maSo": null,
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "nguon": "vast.gov.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
         "tenMienNguon": 1,
-        "banChup": 1,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -9499,6 +10218,17 @@
           "tuoiNgay": 3356,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vast.gov.vn",
+          "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -9672,6 +10402,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 6,
         "theoTier": {
@@ -9938,20 +10669,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Tế bào gốc",
+        "maSo": null,
+        "href": "/evidence/sci_edu_vn_chung_toi_la_ai_20261001.txt",
+        "nguon": "sci.edu.vn"
+      },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 8,
         "theoTier": {
           "A": 0,
           "B": 7,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 3,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -10035,6 +10772,17 @@
           "tuoiNgay": 1277,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 7,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "sci.edu.vn",
+          "href": "/evidence/sci_edu_vn_chung_toi_la_ai_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -10190,20 +10938,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Viện Vắc xin và Sinh phẩm Y tế",
+        "maSo": null,
+        "href": "/evidence/ivac_com_vn_to_chuc_bo_may_20261001.txt",
+        "nguon": "ivac.com.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -10274,6 +11028,17 @@
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
           "tuoiNgay": 2815,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "ivac.com.vn",
+          "href": "/evidence/ivac_com_vn_to_chuc_bo_may_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -10434,6 +11199,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 6,
         "theoTier": {
@@ -10687,6 +11453,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 6,
         "theoTier": {
@@ -10908,20 +11675,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI",
+        "maSo": null,
+        "href": "/evidence/vinai_io_privacy_20261001.txt",
+        "nguon": "vinai.io"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 0,
           "B": 4,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -10970,6 +11743,17 @@
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
           "tuoiNgay": 1123,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vinai.io",
+          "href": "/evidence/vinai_io_privacy_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -11104,20 +11888,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "VinBigData Joint Stock Company",
+        "maSo": null,
+        "href": "/evidence/vinbigdata_com_thanh_lap_20261001.txt",
+        "nguon": "vinbigdata.com"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 0,
           "B": 4,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -11168,6 +11958,17 @@
           "tuoiNgay": 1123,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vinbigdata.com",
+          "href": "/evidence/vinbigdata_com_thanh_lap_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -11318,20 +12119,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Tập đoàn Bưu chính Viễn thông Việt Nam",
+        "maSo": null,
+        "href": "/evidence/hanoi_vnpt_com_vn_ve_chung_toi_20261001.txt",
+        "nguon": "hanoi.vnpt.com.vn"
+      },
       "dem": {
-        "cauNguon": 9,
+        "cauNguon": 10,
         "theoTier": {
           "A": 6,
           "B": 3,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 3,
-        "banChup": 4,
+        "tenMienNguon": 4,
+        "banChup": 5,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 1,
-        "ben": 6,
+        "ben": 7,
         "giuNguonCu": 0,
         "quaHan": 2,
         "khongDocDuoc": 0,
@@ -11437,6 +12244,17 @@
           "tuoiNgay": 121,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 9,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "hanoi.vnpt.com.vn",
+          "href": "/evidence/hanoi_vnpt_com_vn_ve_chung_toi_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -11671,20 +12489,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông",
+        "maSo": "0105140413",
+        "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+        "nguon": "vnpt-technology.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 8,
         "theoTier": {
           "A": 6,
           "B": 0,
-          "C": 0
+          "C": 2
         },
-        "tenMienNguon": 1,
-        "banChup": 2,
+        "tenMienNguon": 2,
+        "banChup": 3,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 1,
-        "ben": 3,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -11757,6 +12581,28 @@
           "tuoiNgay": 91,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vnpt-technology.vn",
+          "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "ma_so_tu_khai",
+          "tier": "C",
+          "source": "vnpt-technology.vn",
+          "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -11840,20 +12686,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty Cổ phần VSAP LAB",
+        "maSo": null,
+        "href": "/evidence/vsaplab_com_thong_bao_dtm_20261001.txt",
+        "nguon": "vsaplab.com"
+      },
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 5,
         "theoTier": {
           "A": 0,
           "B": 4,
-          "C": 0
+          "C": 1
         },
-        "tenMienNguon": 1,
-        "banChup": 1,
+        "tenMienNguon": 2,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 3,
+        "ben": 4,
         "giuNguonCu": 0,
         "quaHan": 1,
         "khongDocDuoc": 0,
@@ -11902,6 +12754,17 @@
           "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
           "ngayDang": "2026-02-02",
           "tuoiNgay": 241,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vsaplab.com",
+          "href": "/evidence/vsaplab_com_thong_bao_dtm_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -11998,20 +12861,26 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": {
+        "tenPhapNhan": "Công ty cổ phần VTI Solutions",
+        "maSo": null,
+        "href": "/evidence/vti_solutions_vn_chan_trang_20261001.txt",
+        "nguon": "vti-solutions.vn"
+      },
       "dem": {
-        "cauNguon": 6,
+        "cauNguon": 7,
         "theoTier": {
           "A": 0,
           "B": 0,
-          "C": 6
+          "C": 7
         },
         "tenMienNguon": 1,
-        "banChup": 1,
+        "banChup": 2,
         "matchDaKy": 1
       },
       "doTuoi": {
         "tuoi": 0,
-        "ben": 4,
+        "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
@@ -12084,6 +12953,17 @@
           "tuoiNgay": 901,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
+        },
+        {
+          "i": 6,
+          "field": "ten_phap_nhan",
+          "tier": "C",
+          "source": "vti-solutions.vn",
+          "href": "/evidence/vti_solutions_vn_chan_trang_20261001.txt",
+          "ngayDang": null,
+          "tuoiNgay": null,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
         }
       ],
       "nhuCau": [
@@ -12201,6 +13081,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 4,
         "theoTier": {
@@ -12392,6 +13273,7 @@
         "maSo": null,
         "href": null
       },
+      "tuKhai": null,
       "dem": {
         "cauNguon": 3,
         "theoTier": {

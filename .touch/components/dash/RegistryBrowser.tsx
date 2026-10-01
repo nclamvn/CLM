@@ -75,6 +75,12 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
             the noi nguoc han y nghia: FECON co ca "van hanh TBM" lan "tu nghien cuu vo ham",
             va chi hien ve dau thi trang web mo ta dung cai ly do de LOAI no. */}
         {u.capability2 ? <span className="reg-unit__cap reg-unit__cap--2">{u.capability2}</span> : null}
+        {/* Dinh danh tu khai (01/10/2026): nhan rieng, khong phai dinh danh tu cong chinh thuc. */}
+        {u.tenPhapNhan || u.maTuKhai ? (
+          <span className="reg-unit__phap" title="Tên và mã số do chính đơn vị công bố trên website chính chủ; chưa đối chiếu cổng đăng ký doanh nghiệp quốc gia">
+            Tự khai: {u.tenPhapNhan || u.name}{u.maTuKhai ? ` · mã ${u.maTuKhai}` : ''}
+          </span>
+        ) : null}
         <span className="reg-unit__tags">
           {/* Loai hinh don vi. Gia tri goc la ma normalized ('DN' / 'vien'), nen hien nhan
               doc duoc va gan title noi ro day la PHAN LOAI chu khong phai chu cua nguon.

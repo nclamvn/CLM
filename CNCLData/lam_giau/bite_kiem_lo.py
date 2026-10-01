@@ -57,8 +57,11 @@ def reg_goc():
     'LAM GIAU <dot> ·' cua chinh no, neu khong canh sach se tu va voi chinh no."""
     ls = REG.read_text(encoding="utf-8").splitlines(keepends=True)
     if (DOT / "da_nap.json").exists():
-        dau = f"LAM GIAU {DOT.name} \u00b7"
-        ls = [l for l in ls if not l.strip() or dau not in (json.loads(l).get("note") or "")]
+        # Bo ca cac lo NAP SAU lo nay (01/10/2026, lo dinh danh 02): khong bo thi don vi moi cua
+        # lo nay da co claim cua lo sau, canh "truoc khi nap" thanh sai va rang 1 do oan.
+        sau = [p.name for p in HERE.glob("dot_*") if p.name >= DOT.name and (p / "da_nap.json").exists()]
+        dau = [f"LAM GIAU {t} \u00b7" for t in sau]
+        ls = [l for l in ls if not l.strip() or not any(x in (json.loads(l).get("note") or "") for x in dau)]
     return "".join(ls)
 
 

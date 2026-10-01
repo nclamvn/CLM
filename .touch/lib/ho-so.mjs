@@ -20,9 +20,13 @@ import { boDau } from './tim-kiem.mjs';
 const soSanh = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 // Cung bang voi CNCLData/check_do_tuoi.py. Doi o day thi phai doi ca ben do.
-export const TRUONG_BEN = ['ten_don_vi', 'loai_hinh', 'nhom_cncl', 'san_pham_lien_quan'];
+export const TRUONG_BEN = ['ten_don_vi', 'loai_hinh', 'nhom_cncl', 'san_pham_lien_quan', 'ten_phap_nhan', 'ma_so_tu_khai', 'ma_so_thue'];
 const BEN_TIEN_TO = ['nhom_cncl_phu_', 'san_pham_phu_'];
 export const MIEN_TRU = 'GIU NGUON CU:';
+// Truong DINH DANH (01/10/2026): ten phap nhan, ma so. Chung khong co "ngay dang" theo nghia
+// bai bao: ban chup trang chinh chu hay trang tra cuu mang hau to la ngay QUAN SAT. Nen chung
+// khong vao dong thoi gian, khong vao "bai moi nhat", khong vao bieu do theo nam dang.
+export const TRUONG_DINH_DANH = ['ten_phap_nhan', 'ma_so_tu_khai', 'ma_so_thue'];
 export const loaiTruong = (f) => (TRUONG_BEN.includes(f) || BEN_TIEN_TO.some((t) => f.startsWith(t)) ? 'ben' : 'mau_hong');
 
 /** Nhan cho o trong. Chi cac truong schema co nghia o cap don vi (bo `source`, `ten_don_vi`). */
@@ -81,10 +85,11 @@ export function dungHoSo({ reg, mat, graph, ev, cumDeNham, truongSchema, nguongN
 
     // Bang chung + do tuoi tung cau.
     const bangChung = u.evidence.map((e, i) => {
-      const nd = ngayDang(e.href);
+      const dd = TRUONG_DINH_DANH.includes(e.field);
+      const nd = dd ? null : ngayDang(e.href);
       const lt = loaiTruong(e.field);
       const tuoi = nd === null ? null : soNgay(nd, moc);
-      const trangThai = nd === null ? 'khong_doc_duoc_ngay'
+      const trangThai = dd ? 'ben' : nd === null ? 'khong_doc_duoc_ngay'
         : lt === 'ben' ? 'ben'
           : tuoi <= nguongNgay ? 'tuoi'
             : (e.note ?? '').includes(MIEN_TRU) ? 'giu_nguon_cu' : 'qua_han';
@@ -145,6 +150,10 @@ export function dungHoSo({ reg, mat, graph, ev, cumDeNham, truongSchema, nguongN
     const coTruong = new Set(u.evidence.map((e) => e.field));
     const oTrong = truongSchema.filter((f) => NHAN_TRUONG_TRONG[f] && !coTruong.has(f)).map((f) => ({ truong: f, nhan: NHAN_TRUONG_TRONG[f] }));
     const mst = u.evidence.find((e) => e.field === 'ma_so_thue');
+    // Dinh danh TU KHAI (01/10/2026): chu cua chinh don vi tren website chinh chu. Hien rieng,
+    // KHONG doi trangThai: chi ma_so_thue tu cong chinh thuc moi la da dinh danh.
+    const tkTen = u.evidence.find((e) => e.field === 'ten_phap_nhan');
+    const tkMa = u.evidence.find((e) => e.field === 'ma_so_tu_khai');
 
     return {
       slug, ten: u.name,
@@ -153,6 +162,7 @@ export function dungHoSo({ reg, mat, graph, ev, cumDeNham, truongSchema, nguongN
       lanhTho: node?.lanhTho ?? null,
       bestTier: u.bestTier, favorsRtr: !!u.favorsRtr,
       dinhDanh: mst ? { trangThai: 'da_dinh_danh', maSo: mst.value, href: mst.href } : { trangThai: 'chua_dinh_danh', maSo: null, href: null },
+      tuKhai: tkTen || tkMa ? { tenPhapNhan: tkTen?.value ?? null, maSo: tkMa?.value ?? null, href: (tkMa ?? tkTen).href, nguon: (tkMa ?? tkTen).source } : null,
       dem: {
         cauNguon: u.evidence.length,
         theoTier: { A: u.evidence.filter((e) => e.tier === 'A').length, B: u.evidence.filter((e) => e.tier === 'B').length, C: u.evidence.filter((e) => e.tier === 'C').length },

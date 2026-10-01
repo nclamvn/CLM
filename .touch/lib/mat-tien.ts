@@ -23,7 +23,7 @@ export type MatchMT = {
 };
 export type SoMT = {
   donVi: number; nhuCau: number; nhom: number; capCoNguon: number; daKy: number; tuChoi: number;
-  ncTrong: number; cauNguon: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string } | null;
+  ncTrong: number; cauNguon: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string; cheDo?: string } | null;
 };
 export type MatTien = { nut: NutMT[]; canhNhom: [number, number][]; luong: LuongMT[]; tuChoi: [number, number][]; match: MatchMT[]; so: SoMT };
 
@@ -38,7 +38,7 @@ export function dungMatTien(): MatTien {
       demandEvidence: { tier: string; value: string; span: string; source: string }[]; supplyEvidence: { tier: string; span: string; source: string }[] }[];
     rejectedPairs: unknown[];
   };
-  const R = registry as unknown as { meta: { claims: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string } | null } };
+  const R = registry as unknown as { meta: { claims: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string; cheDo?: string } | null } };
 
   const nhomCua = (n: GNode) => Number(n.kind === 'nhu_cau' ? n.nhom : (n.nhoms ?? [])[0] ?? 0);
   const theoNhom = (a: GNode, b: GNode) => nhomCua(a) - nhomCua(b) || cmp(a.label, b.label);
@@ -87,7 +87,7 @@ export function dungMatTien(): MatTien {
   const so: SoMT = {
     donVi: cung.length, nhuCau: cau.length, nhom: nhom.length, capCoNguon: capCo.size, daKy: match.length,
     tuChoi: M.rejectedPairs.length, ncTrong: cau.filter((n) => !cauCoCung.has(n.id)).length,
-    cauNguon: R.meta.claims, tierA: R.meta.tierA, chuoiCong: R.meta.chuoiCong ? { xanh: R.meta.chuoiCong.xanh, tong: R.meta.chuoiCong.tong, luc: R.meta.chuoiCong.luc } : null,
+    cauNguon: R.meta.claims, tierA: R.meta.tierA, chuoiCong: R.meta.chuoiCong ? { xanh: R.meta.chuoiCong.xanh, tong: R.meta.chuoiCong.tong, luc: R.meta.chuoiCong.luc, cheDo: R.meta.chuoiCong.cheDo } : null,
   };
   return { nut, canhNhom, luong, tuChoi, match, so };
 }

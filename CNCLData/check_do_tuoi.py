@@ -12,7 +12,8 @@ VI SAO PHAN LOAI TRUONG chu khong ap deu:
   nghiep dan dau ve X" thi co. Ap deu 180 ngay cho moi truong se bao 70% registry qua han, mot
   con so vua to vua vo nghia, va con so vo nghia thi nguoi ta se hoc cach lo no.
 
-  TRUONG BEN     : ten_don_vi, loai_hinh, nhom_cncl*, san_pham* . Day la DINH DANH va ANH XA
+  TRUONG BEN     : ten_don_vi, loai_hinh, nhom_cncl*, san_pham*, ten_phap_nhan, ma_so_tu_khai
+                   (hai truong cuoi them 01/10/2026, lo dinh danh 02). Day la DINH DANH va ANH XA
                    phan loai. Chung khong het han theo thoi gian. Doi thi doi vi phap nhan doi
                    ten hoac danh muc doi, khong phai vi bai bao cu.
   TRUONG MAU HONG: nang_luc_mo_ta*, bang_chung_nang_luc. Chung khang dinh NANG LUC HIEN CO, tuc
@@ -32,7 +33,7 @@ import json, re, sys
 from datetime import date
 from pathlib import Path
 
-BEN = {"ten_don_vi", "loai_hinh", "nhom_cncl", "san_pham_lien_quan"}
+BEN = {"ten_don_vi", "loai_hinh", "nhom_cncl", "san_pham_lien_quan", "ten_phap_nhan", "ma_so_tu_khai", "ma_so_thue"}
 BEN_TIEN_TO = ("nhom_cncl_phu_", "san_pham_phu_")
 MIEN_TRU = "GIU NGUON CU:"
 

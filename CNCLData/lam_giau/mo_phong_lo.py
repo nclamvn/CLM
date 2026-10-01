@@ -106,12 +106,12 @@ def main():
         giu, bo_them = chon_dong(lo, dom / "claims.jsonl", duyet)
         tung = {}
         for i, d in giu:
-            (dom / "claims.jsonl").write_text(goc_reg + json.dumps(claim_cua_dong(lo, i, d, duyet), ensure_ascii=False) + "\n", encoding="utf-8")
+            (dom / "claims.jsonl").write_text(goc_reg + json.dumps(claim_cua_dong(lo, i, d, duyet, dot), ensure_ascii=False) + "\n", encoding="utf-8")
             do = cong_do(cn, dom)
             if do:
                 tung[str(i)] = sorted(do)
         (dom / "claims.jsonl").write_text(goc_reg + "".join(
-            json.dumps(claim_cua_dong(lo, i, d, duyet), ensure_ascii=False) + "\n" for i, d in giu), encoding="utf-8")
+            json.dumps(claim_cua_dong(lo, i, d, duyet, dot), ensure_ascii=False) + "\n" for i, d in giu), encoding="utf-8")
         ca_lo = cong_do(cn, dom)
         sau = ghep(tam)
     finally:
@@ -122,7 +122,7 @@ def main():
     nc_truoc, nc_sau = phu(truoc), phu(sau)
     ky_truoc = {(u["cung"], u["cau"]) for u in truoc.get("ung_vien", []) if u["ky"] != "pending-human-review"}
     ky_sau = {(u["cung"], u["cau"]) for u in sau.get("ung_vien", []) if u["ky"] != "pending-human-review"}
-    kq = {"dot": lo["dot"], "duyet": duyet.get("nguoi_duyet"), "so_dong_nap": len(giu),
+    kq = {"dot": lo.get("dot", dot.name), "duyet": duyet.get("nguoi_duyet"), "so_dong_nap": len(giu),
           "bo_them_don_vi": sorted(bo_them), "cong_do_tung_dong": tung,
           "cong_do_ca_lo": {k: v for k, v in ca_lo.items()},
           "ghep_truoc": truoc, "ghep_sau": sau,
@@ -130,7 +130,7 @@ def main():
           "nhu_cau_moi_co_ung_vien": sorted(set(nc_sau) - set(nc_truoc)),
           "chu_ky_mat": sorted(f"{a} x {b}" for a, b in ky_truoc - ky_sau)}
     (dot / "mo_phong.json").write_text(json.dumps(kq, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"MO PHONG {lo['dot']}: nap {len(giu)} dong · dong lam do cong: {len(tung)} · cong do ca lo: {sorted(ca_lo)}")
+    print(f"MO PHONG {lo.get('dot', dot.name)}: nap {len(giu)} dong · dong lam do cong: {len(tung)} · cong do ca lo: {sorted(ca_lo)}")
     print(f"  ung vien {len(truoc.get('ung_vien', []))} -> {len(sau.get('ung_vien', []))} · "
           f"nhu cau co ung vien {len(nc_truoc)} -> {len(nc_sau)} (moi: {', '.join(kq['nhu_cau_moi_co_ung_vien']) or 'khong'})")
     print(f"  {truoc.get('restore')} -> {sau.get('restore')}")

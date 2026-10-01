@@ -33,7 +33,7 @@ export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching
       ncTrong: k.ncTrong,
       capCungCau: k.soCap,
     },
-    chuoiCong: cc ? { xanh: cc.xanh, tong: cc.tong, dat: cc.dat, luc: cc.luc } : null,
+    chuoiCong: cc ? { xanh: cc.xanh, tong: cc.tong, dat: cc.dat, luc: cc.luc, nhanh: cc.cheDo === 'nhanh' } : null,
     diemYeu: {
       chuaDinhDanh: hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh').length,
       quaHanChuaLyDo: hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan, 0),
@@ -69,7 +69,10 @@ export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching
       const ncDaKy = thiTruong.phu.reduce((s, g) => s + g.daKy, 0);
       const trongTen = thiTruong.phu.flatMap((g) => g.o.filter((o) => o.trangThai === 'trong').map((o) => `P${o.maSp}`));
       const ds = [
-        { so: chua, viec: 'đơn vị chưa định danh pháp nhân', cach: 'tra mã số doanh nghiệp từ cổng đăng ký doanh nghiệp quốc gia', href: '/dashboard/don-vi' },
+        { so: chua, viec: 'đơn vị chưa định danh pháp nhân', cach: (() => {
+          const tk = hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh' && u.tuKhai?.maSo).length;
+          return `tra mã số trên cổng đăng ký doanh nghiệp quốc gia${tk ? `; ${tk} đơn vị đã có mã tự khai để đối chiếu` : ''}`;
+        })(), href: '/dashboard/don-vi' },
         { so: k.ncTrong, viec: `nhu cầu quốc gia chưa có bên cung${trongTen.length ? ` (${trongTen.join(', ')})` : ''}`, cach: 'mở lô làm giàu mới, nguồn duyệt theo lô', href: '/dashboard/thi-truong' },
         { so: k.ncCoCung - ncDaKy, viec: 'nhu cầu đã có bên cung nhưng chưa có cặp được ký', cach: 'người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối', href: '/dashboard/matching' },
         { so: qh, viec: 'câu nguồn quá 180 ngày chưa có lý do giữ', cach: 'chụp lại nguồn hoặc ghi lý do giữ', href: '/dashboard/registry' },

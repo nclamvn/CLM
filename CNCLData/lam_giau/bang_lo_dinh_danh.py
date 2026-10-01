@@ -116,6 +116,7 @@ def main(argv):
         ("", f),
         ("Không lấy mã từ masothue, thuvienphapluat hay trang tổng hợp nào. Viện, trường công thường không có trên cổng đăng ký doanh nghiệp: ghi \"không áp dụng\" vào J.", f),
         ("Chỉ sửa ô VÀNG. Dòng 3 của tab \"Phiếu tra\" là dòng MẪU (in nghiêng), không phải dữ liệu thật.", f),
+        ("Tra xong: lưu file này, báo người vận hành chạy nap_tra_cong.py. Máy chỉ nạp dòng có PDF mang dấu cổng, đúng mã và đúng tên đã ghi.", f),
     ]
     for r, (v, ft) in enumerate(dong_hd, 1):
         c = hd.cell(row=r, column=1, value=v)

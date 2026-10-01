@@ -37,6 +37,8 @@
   },
 
   "loai_hinh": { "lop": "tom_tat", "khoa": "loaiHinh" },
+  "ten_phap_nhan": { "lop": "tom_tat", "khoa": "tenPhapNhan" },
+  "ma_so_tu_khai": { "lop": "tom_tat", "khoa": "maTuKhai" },
   "location": {
     "lop": "chua_hien",
     "ly_do": "Dung 1 don vi co gia tri, khong du de dung mot cho hien tu te tren the. Van doc duoc trong bang bang chung. Nap them vai don vi nua roi hay quyet."

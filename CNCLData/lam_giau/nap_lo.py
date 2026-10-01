@@ -43,14 +43,25 @@ def thoat(ma, m):
     sys.exit(ma)
 
 
-def claim_cua_dong(lo, i, d, duyet):
-    tag = f"LAM GIAU {lo['dot']} · {d['nhu_cau']} · duyet {duyet['ngay']} boi {duyet['nguoi_duyet']}"
+def ngay_chup(dot, snap):
+    """Ngay CHUP doc tu dong dau ban chup ("captured YYYY-MM-DD"), khong phai ngay duyet."""
+    import re
+    m = re.search(r"captured (\d{4}-\d{2}-\d{2})", (dot / "snapshots" / snap).read_text(encoding="utf-8").split("\n", 1)[0])
+    if not m:
+        thoat(3, f"ban chup {snap} khong co dong 'captured YYYY-MM-DD'")
+    return m.group(1) + "T00:00:00Z"
+
+
+def claim_cua_dong(lo, i, d, duyet, dot):
+    # Lo dinh danh (01/10/2026) khong gan voi nhu cau nao: nhan la DINH DANH TU KHAI.
+    nhan = d.get("nhu_cau") or "DINH DANH TU KHAI (khong tinh la da dinh danh)"
+    tag = f"LAM GIAU {lo.get('dot', dot.name)} · {nhan} · duyet {duyet['ngay']} boi {duyet['nguoi_duyet']}"
     phan = [x for x in (d.get("note"), (duyet.get("ghi_chu") or {}).get(str(i))) if x]
     phan.append(tag + ". Ly do de xuat: " + d["ly_do"])
     return {
         "entity": d["entity"], "field": d["field"], "value": d["value"],
         "evidence_span": d["evidence_span"], "extraction": d["extraction"], "tier": d["tier_de_xuat"],
-        "capture": {"url": d["url"], "fetched_at": "2026-09-30T00:00:00Z", "snapshot": d["snapshot"],
+        "capture": {"url": d["url"], "fetched_at": ngay_chup(dot, d["snapshot"]), "snapshot": d["snapshot"],
                     "source": urlparse(d["url"]).netloc.removeprefix("www.")},
         "note": " | ".join(phan),
     }
@@ -94,7 +105,7 @@ def main():
     giu, bo_them = chon_dong(lo, reg, duyet)
     for e in sorted(bo_them):
         print(f"BO CA DON VI {e}: sau khi gach con thieu truong bat buoc")
-    moi = [claim_cua_dong(lo, i, d, duyet) for i, d in giu]
+    moi = [claim_cua_dong(lo, i, d, duyet, dot) for i, d in giu]
     print(f"NAP {'THAT' if ghi else 'THU'}: {len(moi)} claim · {len({m['entity'] for m in moi})} don vi · "
           f"gach {len(duyet.get('loai', []))} dong, {len(duyet.get('loai_don_vi', []))} don vi, bo them {len(bo_them)} don vi")
     if not ghi:

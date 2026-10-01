@@ -131,11 +131,16 @@ const units = [...theoDonVi.entries()].sort((a, b) => a[0].localeCompare(b[0], '
     //
     // Khong doi thu tu, khong chon cau nao "dep hon": hien CA HAI, dung thu tu truong.
     capability2: dau(cs, 'nang_luc_mo_ta_2'),
+    // DINH DANH TU KHAI (01/10/2026, lo 02). Ten phap nhan va ma so do CHINH DON VI cong bo
+    // tren website chinh chu. Khong tinh la da dinh danh: giao dien phai ghi nhan "tu khai,
+    // chua doi chieu cong", va chi ma_so_thue tu cong chinh thuc moi doi trang thai dinh danh.
+    tenPhapNhan: dau(cs, 'ten_phap_nhan'),
+    maTuKhai: dau(cs, 'ma_so_tu_khai'),
     bestTier: capTot(cs),
     favorsRtr: cs.some((c) => c.favors === 'rtr'),
     sources: nguon,
     // Chuoi tra cuu: gop het chu de o loc tren trinh duyet khoi phai duyet tung truong.
-    tim: [ten, dau(cs, 'loai_hinh'), TEN_LOAI[dau(cs, 'loai_hinh')] ?? '',
+    tim: [ten, dau(cs, 'ten_phap_nhan'), dau(cs, 'ma_so_tu_khai'), dau(cs, 'loai_hinh'), TEN_LOAI[dau(cs, 'loai_hinh')] ?? '',
       dau(cs, 'nang_luc_mo_ta'), dau(cs, 'nang_luc_mo_ta_2'),
       ...nhoms.map((n) => `nhóm ${n} ${TEN_NHOM[Number(n)] ?? ''}`), ...sps.map((s) => `sp ${s}`)]
       .filter(Boolean).join(' ').toLowerCase(),
@@ -313,7 +318,7 @@ export type CnclEvidence = {
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
   name: string; loaiHinh: string; loaiHinhLabel: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
-  capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
+  capability: string; capability2: string; tenPhapNhan: string; maTuKhai: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };
 export type CnclNeed = {

@@ -31,7 +31,7 @@ type TT = {
   kpi: { soCap: number; capDaKy: number; soNc: number; ncCoCung: number; ncTrong: number; dvCoCap: number; soDv: number };
   sankey: { rong: number; cao: number; nodes: Nut[]; links: Dong[]; chiSo: { dienTichGiao: number; dienTichGiaoPhai: number } };
   phu: Hang[];
-  tuoi: { nam: Nam[]; tong: Record<string, number>; mocNgay: string; nguongNgay: number };
+  tuoi: { nam: Nam[]; khongRo: Record<string, number> | null; tong: Record<string, number>; mocNgay: string; nguongNgay: number };
 };
 const D = tt as unknown as TT;
 const soHai = (s: string) => s.padStart(2, '0');
@@ -253,6 +253,7 @@ export function ToanCanhThiTruong() {
         <p className="hs-note">
           Bảng tự khai điểm yếu: {t.qua_han} câu mô tả năng lực đã quá ngưỡng mà chưa có lý do giữ, đang được ghi nợ và giảm dần.
           Tên, nhóm, sản phẩm là thông tin không hết hạn nên không tính vào độ tươi.
+          {D.tuoi.khongRo ? ` ${Object.values(D.tuoi.khongRo).reduce((a, b) => a + b, 0)} câu không có ngày đăng (tên pháp nhân, mã số lấy từ trang chính chủ) nên không vẽ theo năm.` : ''}
         </p>
       </section>
     </div>

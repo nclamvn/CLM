@@ -41,7 +41,7 @@ export default function LandingPage() {
         <div className="mt-top__phai">
           <span className="mt-trang" title="Kết quả lần kiểm định tự động gần nhất, đọc từ tệp kết quả, không gõ tay">
             <i aria-hidden="true" />
-            {cc ? `Kiểm định tự động ${cc.xanh}/${cc.tong} đạt · ${ngayGio(cc.luc)}` : 'Chưa có kết quả kiểm định'}
+            {cc ? `Kiểm định tự động ${cc.xanh}/${cc.tong} đạt${cc.cheDo === 'nhanh' ? ' (lượt nhanh)' : ''} · ${ngayGio(cc.luc)}` : 'Chưa có kết quả kiểm định'}
           </span>
           <Link href={ROUTE.dashboard} className="mt-nut">Mở bảng điều khiển <span aria-hidden="true">→</span></Link>
         </div>

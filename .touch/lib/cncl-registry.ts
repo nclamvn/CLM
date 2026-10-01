@@ -10,7 +10,7 @@ export type CnclEvidence = {
 export type CnclSource = { source: string; href: string };
 export type CnclUnit = {
   name: string; loaiHinh: string; loaiHinhLabel: string; nhoms: string[]; nhomLabels: string[]; sanPham: string[];
-  capability: string; capability2: string; bestTier: CnclTier; favorsRtr: boolean;
+  capability: string; capability2: string; tenPhapNhan: string; maTuKhai: string; bestTier: CnclTier; favorsRtr: boolean;
   sources: CnclSource[]; tim: string; evidence: CnclEvidence[];
 };
 export type CnclNeed = {
@@ -30,21 +30,21 @@ export type CnclMeta = {
 
 export const cnclMeta: CnclMeta = {
   "units": 60,
-  "claims": 323,
+  "claims": 378,
   "needs": 30,
-  "sources": 21,
-  "snapshots": 69,
+  "sources": 61,
+  "snapshots": 114,
   "tierA": 120,
   "tierB": 190,
   "nhomPhu": 10,
   "generatedAt": "2026-10-01",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-10-01 08:55: 98/98 xanh",
+  "gate": "chuỗi cổng 2026-10-01 11:20: 61/61 xanh · chế độ nhanh",
   "chuoiCong": {
-    "luc": "2026-10-01T08:55:23+0700",
-    "cheDo": "day_du",
-    "tong": 98,
-    "xanh": 98,
+    "luc": "2026-10-01T11:20:09+0700",
+    "cheDo": "nhanh",
+    "tong": 61,
+    "xanh": 61,
     "do": 0,
     "khongChay": 0,
     "hoan": 0,
@@ -68,15 +68,17 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống.",
     "capability2": "",
+    "tenPhapNhan": "Bệnh viện Trung ương Quân đội 108",
+    "maTuKhai": "",
     "bestTier": "C",
     "favorsRtr": false,
     "sources": [
       {
         "source": "benhvien108.vn",
-        "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt"
+        "href": "/evidence/benhvien108_vn_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "bệnh viện trung ương quân đội 108 vien viện nghiên cứu liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống. nhóm 4 sinh học và y sinh sp 11",
+    "tim": "bệnh viện trung ương quân đội 108 bệnh viện trung ương quân đội 108 vien viện nghiên cứu liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống. nhóm 4 sinh học và y sinh sp 11",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -137,6 +139,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Nguồn mạnh nhất tìm được là nhandan.vn (hạng B) đăng 28/01/2026, gọi đích danh bệnh viện là trung tâm ghép tế bào gốc tạo máu, mở rộng liệu pháp tế bào gốc điều trị nhược cơ và lupus, sản xuất tế bào NK, MSC phục vụ lâm sàng; bài này mới hơn nguồn cũ 2023 nhưng vẫn trước mốc 03/04/2026 nên không đạt độ tươi. Không tìm thấy bài báo chính thống hay trang .gov.vn nào từ 03/04/2026 về năng lực tế bào gốc của bệnh viện; các kết quả còn lại là bài cũ trên benhvien108.vn. Gợi ý: nếu giữ nguồn cũ, bài nhandan 28/01/2026 là nguồn tươi hơn có thể thay dòng tự khai 2023. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đề tài cấp Quốc gia đã nghiệm thu. Tự khai, nên đối chiếu thêm với nguồn hạng A (mst.gov.vn) ở vòng sau."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Bệnh viện Trung ương Quân đội 108",
+        "span": "©2023 Bệnh viện Trung ương Quân đội 108 - Quyết định cho phép thiết lập lại Trang thông tin điện tử trên Internet số 250/QĐ-CT của Tổng cục Chính trị cấp ngày 13/02/2023.",
+        "source": "benhvien108.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/benhvien108_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Bệnh viện quân đội trực thuộc Bộ Quốc phòng (trang giới thiệu nêu Quân uỷ Trung ương, Bộ Quốc phòng đầu tư); website còn dùng tên Viện nghiên cứu Khoa học Y dược Lâm sàng 108 cho mô hình Viện - Trường, người tra cổng cần biết hai tên này cùng một đơn vị."
       }
     ]
   },
@@ -155,15 +167,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "CMC Cloud là nền tảng điện toán đám mây \"Make in Vietnam\" do CMC Telecom đầu tư và phát triển. Hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư Việt Nam",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Hạ tầng Viễn thông CMC",
+    "maTuKhai": "0102900049",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_cmc_cloud_20250321.txt"
+      },
+      {
+        "source": "cmctelecom.vn",
+        "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt"
       }
     ],
-    "tim": "cmc telecom dn doanh nghiệp cmc cloud là nền tảng điện toán đám mây \"make in vietnam\" do cmc telecom đầu tư và phát triển. hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư việt nam nhóm 1 công nghệ số sp 4",
+    "tim": "cmc telecom công ty cổ phần hạ tầng viễn thông cmc 0102900049 dn doanh nghiệp cmc cloud là nền tảng điện toán đám mây \"make in vietnam\" do cmc telecom đầu tư và phát triển. hệ thống được thiết kế và vận hành hoàn toàn bởi đội ngũ kỹ sư việt nam nhóm 1 công nghệ số sp 4",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -224,6 +242,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_cmc_cloud_20250321.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Chỉ tìm được một phần: VietnamNet 14/07/2026 (ghi 'Nguồn: CMC Telecom', hạng C) khẳng định CMC Cloud là nền tảng Make in Vietnam, đã đề xuất thay nang_luc_mo_ta. Không tìm được nguồn đăng từ 03/04/2026 cho bang_chung_nang_luc (chứng nhận an toàn thông tin cấp độ 4, hay chứng nhận tương đương); cafef 22/02/2026 và các bài mst.gov.vn 2025 đều cũ hơn mốc. Trang danchuphapluat.vn về CMC 2026 trả về trang lỗi 404. | THAM CHIEU DA NEO: 'tieu chuan khat khe nay' tro toi 'tieu chuan an toan thong tin cap do 4' nam ngay trong chinh span. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Hệ thống đã vận hành và đạt tiêu chuẩn an toàn thông tin cấp độ 4 (năng lực đã hình thành, không phải kế hoạch)."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Hạ tầng Viễn thông CMC",
+        "span": "**Website của Công ty Cổ phần Hạ tầng Viễn thông CMC**",
+        "source": "cmctelecom.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: CMC Telecom là công ty con của Tập đoàn CMC (Công ty CP Tập đoàn Công nghệ CMC là pháp nhân khác). CMC Cloud trong bản chụp cũ là dịch vụ do CMC Telecom cung cấp."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0102900049",
+        "span": "**Giấy CNĐKDN:** 0102900049 do Phòng Đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 05/09/2008",
+        "source": "cmctelecom.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã của công ty con CMC Telecom, không phải mã Tập đoàn CMC. Cấp lần đầu 05/09/2008 tại Hà Nội theo trang."
       }
     ]
   },
@@ -242,6 +280,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Hiện VBSN đã được tích hợp vào hệ thống truy xuất nguồn gốc của Bộ Công an và triển khai trên Nền tảng định danh Quốc gia VNeID",
     "capability2": "",
+    "tenPhapNhan": "CTCP 1Matrix",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -252,9 +292,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "vnexpress.net",
         "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt"
+      },
+      {
+        "source": "erp.1matrix.com",
+        "href": "/evidence/1matrix_com_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "công ty 1matrix dn doanh nghiệp hiện vbsn đã được tích hợp vào hệ thống truy xuất nguồn gốc của bộ công an và triển khai trên nền tảng định danh quốc gia vneid nhóm 1 công nghệ số sp 5",
+    "tim": "công ty 1matrix ctcp 1matrix dn doanh nghiệp hiện vbsn đã được tích hợp vào hệ thống truy xuất nguồn gốc của bộ công an và triển khai trên nền tảng định danh quốc gia vneid nhóm 1 công nghệ số sp 5",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -315,6 +359,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tim duoc nhandan.vn 28/08/2026 (hang B) noi ve VBSN, nhung bai moi chi noi VBSN 'dang duoc nghien cuu, thu nghiem trien khai' trong VNeID, NHE HON khang dinh cu 'da duoc tich hop' vao he thong truy xuat nguon goc cua Bo Cong an, va ghi cong ty DOI TEN thanh VMatrix ngay 28/08/2026. RUI RO: khang dinh cu chua co xac nhan doc lap; nguoi duyet can quyet giu, ha, hay gach. | LAM GIAU dot_01 · P05 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguyên mẫu đã dựng (6 mạng Layer-1) theo VnExpress; cùng bài gọi đây là 'kết quả bước đầu' sau hơn 4 tháng. Đơn vị còn rất mới; người duyệt nên xét mức trưởng thành. Chủ tịch 1Matrix đồng thời là Chủ tịch Hiệp hội Blockchain và Tài sản số Việt Nam; bài cafef dùng từ 'hàng đầu'."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CTCP 1Matrix",
+        "span": "Bản quyền thuộc © CTCP 1Matrix",
+        "source": "erp.1matrix.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/1matrix_com_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website chỉ ghi dạng viết tắt CTCP (Công ty cổ phần) 1Matrix, không có mã số. Trang vbsn.vn của cùng đơn vị đăng tin 28/08/2026 1Matrix đổi tên thành VMatrix, nên tên trên cổng có thể đã đổi; người tra cần thử cả hai tên."
       }
     ]
   },
@@ -333,6 +387,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -400,15 +456,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "AVAC ASF LIVE",
     "capability2": "",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "baochinhphu.vn",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt"
+      },
+      {
+        "source": "avac.com.vn",
+        "href": "/evidence/avac_com_vn_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần avac việt nam avac asf live nhóm 4 sinh học và y sinh sp 14",
+    "tim": "công ty cổ phần avac việt nam công ty cổ phần avac việt nam avac asf live nhóm 4 sinh học và y sinh sp 14",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -459,6 +521,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi vac xin AVAC ASF LIVE cho dan lon -> SP14. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM",
+        "span": "CÔNG TY CỔ PHẦN AVAC VIỆT NAM với định hướng: Con người hạng A – Hệ thống hạng A – Chất lượng hạng A nhằm nghiên cứu, sản xuất, cung ứng các sản phẩm vaccine cho ngành chăn nuôi Việt Nam và hướng tới xuất khẩu.",
+        "source": "avac.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/avac_com_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website không công bố mã số nên chỉ đề xuất tên; mã cần người tra cổng tìm theo tên này."
       }
     ]
   },
@@ -477,15 +549,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "nền tảng số do doanh nghiệp Việt Nam phát triển (Công ty Cổ phần Công nghệ & Truyền thông Việt Nam - VNTT) để áp dụng vào quy trình sản xuất tại Công ty TNHH Thực phẩm Orion Vina (Khu công nghiệp Mỹ Phước II) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh",
     "capability2": "",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+    "maTuKhai": "3700861497",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt"
+      },
+      {
+        "source": "vntt.com.vn",
+        "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần công nghệ & truyền thông việt nam (vntt) dn doanh nghiệp nền tảng số do doanh nghiệp việt nam phát triển (công ty cổ phần công nghệ & truyền thông việt nam - vntt) để áp dụng vào quy trình sản xuất tại công ty tnhh thực phẩm orion vina (khu công nghiệp mỹ phước ii) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh nhóm 3 robot và tự động hoá sp 8",
+    "tim": "công ty cổ phần công nghệ & truyền thông việt nam (vntt) công ty cổ phần công nghệ & truyền thông việt nam 3700861497 dn doanh nghiệp nền tảng số do doanh nghiệp việt nam phát triển (công ty cổ phần công nghệ & truyền thông việt nam - vntt) để áp dụng vào quy trình sản xuất tại công ty tnhh thực phẩm orion vina (khu công nghiệp mỹ phước ii) theo hướng chuyển đổi số gắn với sản xuất xanh, sản xuất thông minh nhóm 3 robot và tự động hoá sp 8",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -546,6 +624,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được bài báo hay cổng nhà nước đăng từ 03/04/2026 gọi đích danh VNTT với nền tảng Beca Smart Factory. Báo Đồng Tháp 03/01/2026 (dẫn sggp) nói về nhà máy thông minh Orion Vina (3 giai đoạn đến 3/2026) nhưng không nêu tên VNTT và cũ hơn mốc; các bài sggp, vneconomy, vjst về dự án điển hình quốc gia là năm 2024-2025. Chỉ còn trang tự khai vntt.com.vn (VILOG 2026) nói về tham gia triển lãm, chưa chụp vì là tin sự kiện tự khai. | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Lời Tổng Giám đốc khách hàng: nền tảng Beca Smart Factory do Becamex và VNTT xây dựng và làm chủ. Người duyệt lưu ý: đồng phát triển với Tổng Công ty Becamex IDC; nguồn không tách phần công nghệ của riêng VNTT."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+        "span": "6 BÁO CÁO THƯỜNG NIÊN 2025 7 CÔNG TY CỔ PHẦN CÔNG NGHỆ & TRUYỀN THÔNG VIỆT NAM",
+        "source": "vntt.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Pháp nhân riêng (mã chứng khoán TTN), do Becamex IDC và VNPT góp vốn sáng lập; không phải đơn vị phụ thuộc VNPT."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "3700861497",
+        "span": "nhận ĐKDN\nSố 3700861497 do Sở Kế hoạch và Đầu tư Tỉnh",
+        "source": "vntt.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã do Sở KHĐT Bình Dương cấp lần đầu 02/01/2008, thay đổi lần 11 ngày 04/08/2025 theo báo cáo. Không phải mã VNPT hay Becamex."
       }
     ]
   },
@@ -564,6 +662,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC",
     "capability2": "do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -574,9 +674,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "tuoitre.vn",
         "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt"
+      },
+      {
+        "source": "ncsgroup.vn",
+        "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần công nghệ an ninh mạng quốc gia việt nam (ncs) tường lửa thế hệ mới ncs next generation firewall, nền tảng tình báo an ninh mạng ncs ti, an ninh mạng điểm cuối ncs edr, trung tâm giám sát an ninh mạng ncs soc do các chuyên gia việt nam nghiên cứu, sáng tạo và làm chủ nhóm 7 an ninh mạng và lượng tử sp 09",
+    "tim": "công ty cổ phần công nghệ an ninh mạng quốc gia việt nam (ncs) công ty cổ phần công nghệ an ninh mạng quốc gia việt nam tường lửa thế hệ mới ncs next generation firewall, nền tảng tình báo an ninh mạng ncs ti, an ninh mạng điểm cuối ncs edr, trung tâm giám sát an ninh mạng ncs soc do các chuyên gia việt nam nghiên cứu, sáng tạo và làm chủ nhóm 7 an ninh mạng và lượng tử sp 09",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -627,6 +731,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
         "note": "VONG LAM MOI 25/08/2026. Nguon TIER A, moi hon nguon goc 4 thang. GIU NGUON CU: cau la mo ta muc do lam chu tai thoi diem ra mat he sinh thai 11/2025, mot su kien da xay ra. LUU Y THAT THA: bai nay 03/11/2025, tuc VAN qua nguong 180 ngay. No nang tier tu B len A va lam moi phan doi chung, nhung KHONG xoa duoc no do tuoi. Vong lam moi khong phai lan nao cung xoa duoc no."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM",
+        "span": "**CÔNG TY CỔ PHẦN CÔNG NGHỆ AN NINH MẠNG QUỐC GIA VIỆT NAM** (sau đây gọi là “NCS”) luôn xem trọng việc bảo vệ Dữ liệu cá nhân",
+        "source": "ncsgroup.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang chủ có chỗ viết thiếu chữ 'Công nghệ' (Công ty Cổ phần An ninh mạng Quốc gia Việt Nam), người tra cổng nên tìm cả hai dạng. Website không công bố mã số."
       }
     ]
   },
@@ -645,15 +759,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện",
     "capability2": "",
+    "tenPhapNhan": "VinES Energy Solutions JSC",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt"
+      },
+      {
+        "source": "vines.net.vn",
+        "href": "/evidence/vines_net_vn_tin_2023_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần giải pháp năng lượng vines chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện nhóm 5 năng lượng và vật liệu sp 18",
+    "tim": "công ty cổ phần giải pháp năng lượng vines vines energy solutions jsc chuyên nghiên cứu, sản xuất pin xe điện và các giải pháp năng lượng toàn diện nhóm 5 năng lượng và vật liệu sp 18",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -704,6 +824,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vneconomy_vines_pin_20240306.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nghien cuu, san xuat pin xe dien va cac giai phap nang luong' -> SP18. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, neo TAY vi bo do tu dong khong lam duoc. THAM CHIEU DA NEO: cum 'thoi gian nay' tro toi moc 'Thang 8/2021' o cau truoc, tuc mot NGAY chu khong phai mot lan lap lai chu 'thoi gian'. Bo do di theo danh tu nen khong thay, va no cung dung khi tu choi doan. Da lui span ve tan cau 'Thang 8/2021...' nen claim thanh lap VinES nay co moc that. Luu y con lai: cau giua co cum 'thoa thuan nay' cung hoi chieu, nhung tien nguu la 'Bien ban ghi nho hop tac' ngay truoc do trong span, tuc da neo trong pham vi."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "VinES Energy Solutions JSC",
+        "span": "Hanoi – July 10, 2023, VinES Energy Solutions JSC. (“VinES”) and Magellan Power (“Magellan”) announced their signing of the non-binding memorandum of understanding (“MOU”).",
+        "source": "vines.net.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vines_net_vn_tin_2023_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website chỉ ghi tên tiếng Anh, không thấy tên tiếng Việt đầy đủ và mã số ở trang đọc được (trang chủ, liên hệ, bản tiếng Việt trả về rỗng). VinES là công ty con của Vingroup, pháp nhân riêng; không dùng mã của Vingroup hay VinFast."
       }
     ]
   },
@@ -722,6 +852,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -789,15 +921,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "NAVET-ASFVAC",
     "capability2": "",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "baochinhphu.vn",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt"
+      },
+      {
+        "source": "navetco.com.vn",
+        "href": "/evidence/navetco_com_vn_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần thuốc thú y trung ương navetco navet-asfvac nhóm 4 sinh học và y sinh sp 14",
+    "tim": "công ty cổ phần thuốc thú y trung ương navetco công ty cổ phần thuốc thú y trung ương navetco navet-asfvac nhóm 4 sinh học và y sinh sp 14",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -838,6 +976,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi vac xin dich ta lon chau Phi NAVET-ASFVAC -> SP14 Vac xin va che pham sinh hoc trong nong nghiep. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO",
+        "span": "CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG NAVETCO\n\n##### Trụ Sở Chính\n\nĐịa chỉ\n\n15 Trần Cao Vân, Phường Sài Gòn, TP. Hồ Chí Minh",
+        "source": "navetco.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/navetco_com_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website không ghi mã số dạng chữ (file công bố thông tin là bản scan); chỉ đề xuất tên. Công ty có chi nhánh Hà Nội, Miền Tây: không dùng mã chi nhánh."
       }
     ]
   },
@@ -856,6 +1004,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "nghiên cứu, phát triển và thương mại hóa robot hình người",
     "capability2": "đã chính thức giới thiệu Motion thế hệ 2",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -866,9 +1016,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "cafef.vn",
         "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt"
+      },
+      {
+        "source": "vinmotion.net",
+        "href": "/evidence/vinmotion_net_lien_he_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần vinmotion nghiên cứu, phát triển và thương mại hóa robot hình người đã chính thức giới thiệu motion thế hệ 2 nhóm 3 robot và tự động hoá sp 07",
+    "tim": "công ty cổ phần vinmotion công ty cổ phần nghiên cứu phát triển và ứng dụng người máy đa năng vinmotion nghiên cứu, phát triển và thương mại hóa robot hình người đã chính thức giới thiệu motion thế hệ 2 nhóm 3 robot và tự động hoá sp 07",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -929,6 +1083,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt",
         "note": "VONG LAM MOI 25/08/2026. Nguon cafef.vn 20/08/2026, MOI 5 NGAY. Su kien dau nam 2026 da xay ra. CAT VALUE CO Y: cau nguon con ve 'mau robot hinh nguoi moi nhat do doi ngu ky su Viet Nam phat trien'. Cum 'moi nhat' la khang dinh so sanh khong kiem duoc va khong phai dieu registry can khang dinh; span giu nguyen vi span la chu cua nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+        "span": "CÔNG TY CỔ PHẦN NGHIÊN CỨU PHÁT TRIỂN VÀ ỨNG DỤNG NGƯỜI MÁY ĐA NĂNG VINMOTION",
+        "source": "vinmotion.net",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vinmotion_net_lien_he_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên pháp nhân đầy đủ khác hẳn nhãn registry (Công ty cổ phần VinMotion); người tra cổng nên tìm theo tên dài này. Website không công bố mã số. Pháp nhân riêng trong hệ sinh thái Vingroup."
       }
     ]
   },
@@ -947,15 +1111,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác",
     "capability2": "",
+    "tenPhapNhan": "CÔNG TY CỔ PHẦN XE LỬA DĨ AN",
+    "maTuKhai": "3700146539",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "cafef.vn",
         "href": "/evidence/cafef_xelua_dian_20240925.txt"
+      },
+      {
+        "source": "xeluadian.com.vn",
+        "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần xe lửa dĩ an dn doanh nghiệp sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác nhóm 10 đường sắt tốc độ cao sp 30",
+    "tim": "công ty cổ phần xe lửa dĩ an công ty cổ phần xe lửa dĩ an 3700146539 dn doanh nghiệp sửa chữa và đóng mới toa xe các loại, sản xuất phụ tùng toa xe và các sản phẩm cơ khí khác nhóm 10 đường sắt tốc độ cao sp 30",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1016,6 +1186,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/cafef_xelua_dian_20240925.txt",
         "note": "GIU NGUON CU: su kien DA XAY RA, hang chuc toa tau da dong xong tu thi diem nam 2016. Su kien xong thi khong het han. CAT VALUE CO Y: cau nguon con ve sau 'duong sat Viet Nam tu do den nay khong con phai di nhap khau toa tau o nuoc ngoai', do la mot khang dinh TUYET DOI ve ca nganh, khong kiem duoc, va khong phai dieu registry can khang dinh. Span giu nguyen vi span la chu cua nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY CỔ PHẦN XE LỬA DĨ AN",
+        "span": "**© CÔNG TY CỔ PHẦN XE LỬA DĨ AN**:",
+        "source": "xeluadian.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên và mã nằm cùng một khối chân trang của cùng bản chụp."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "3700146539",
+        "span": "Mã số doanh nghiêp: **3700146539** đăng ký lần đầu 07/7/2011 thay đổi lần 4 ngày 09/9/2025",
+        "source": "xeluadian.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Chữ 'nghiêp' sai dấu là chữ của nguồn. Ngày 'đăng ký lần đầu 07/7/2011' là ngày đăng ký công ty cổ phần, người tra cổng nên đối chiếu cả ngày này."
       }
     ]
   },
@@ -1034,15 +1224,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "“Mảnh ghép hộp sọ chế tạo từ vật liệu PEEK”, mã số 2502433ĐKLH/BYT-HTTB",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nhandan.vn",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt"
+      },
+      {
+        "source": "ngocbaobiomed.com",
+        "href": "/evidence/ngocbaobiomed_com_trang_chu_20261001.txt"
       }
     ],
-    "tim": "công ty cổ phần y sinh ngọc bảo “mảnh ghép hộp sọ chế tạo từ vật liệu peek”, mã số 2502433đklh/byt-httb nhóm 4 sinh học và y sinh sp 12",
+    "tim": "công ty cổ phần y sinh ngọc bảo công ty cổ phần y sinh ngọc bảo “mảnh ghép hộp sọ chế tạo từ vật liệu peek”, mã số 2502433đklh/byt-httb nhóm 4 sinh học và y sinh sp 12",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1093,6 +1289,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'Manh ghep hop so che tao tu vat lieu PEEK' in 3D ca the hoa -> SP12 He thong san xuat y te ca the hoa bang in 3D. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. NEO LAI SPAN 24/08/2026, luot hai, lui sau hon vi lui mot cau van con cum hoi chieu khac. Span nay dai hon binh thuong, do la cai gia phai tra de moi cum tro toi deu co cho neo trong pham vi da chup. Gia tri claim khong doi. THAM CHIEU DA NEO: span mo dau bang 'Trong khi do' va chua 'Trong boi canh DO'. Cac cum nay noi cac han che cua phuong phap dieu tri truyen thong, tuc CAU DAN, va chinh cac han che do da nam trong span. Phan registry khang dinh la thiet bi va nang luc cua Y Sinh Ngoc Bao, tu dung duoc. Khong lui them vi se keo ca doan benh hoc vao ma khong them nghia."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+        "span": "Công ty Cổ phần Y Sinh Ngọc Bảo là doanh nghiệp khoa học công nghệ hoạt động trong các lĩnh vực nghiên cứu chế tạo vật liệu y sinh, thiết bị cấy ghép y tế, vật liệu nha khoa và in 3D (từ sợi PEEK – Polyether Ether Ketone và bột titanium).",
+        "source": "ngocbaobiomed.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ngocbaobiomed_com_trang_chu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Công ty là đơn vị chủ quản của Viện Nghiên cứu và Phát triển Vật liệu y sinh Ngọc Bảo (tổ chức KH&CN, giấy phép B-23/2016 ĐK-KH&CN), viện không phải là pháp nhân này. Website không ghi mã số."
       }
     ]
   },
@@ -1111,15 +1317,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Đằng sau thành công của RetriV là hành trình nhiều năm VNF theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao.",
     "capability2": "",
+    "tenPhapNhan": "Công ty cổ phần Việt Nam Food",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "tienphong.vn",
         "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt"
+      },
+      {
+        "source": "vnfoods.vn",
+        "href": "/evidence/vnfoods_vn_tin_kito_sil_20260724.txt"
       }
     ],
-    "tim": "công ty cp việt nam food (vnf) dn doanh nghiệp đằng sau thành công của retriv là hành trình nhiều năm vnf theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao. nhóm 4 sinh học và y sinh sp 15",
+    "tim": "công ty cp việt nam food (vnf) công ty cổ phần việt nam food dn doanh nghiệp đằng sau thành công của retriv là hành trình nhiều năm vnf theo đuổi một hướng đi khác biệt: biến phụ phẩm nông nghiệp, thủy sản thành nguồn nguyên liệu cho những sản phẩm có giá trị cao. nhóm 4 sinh học và y sinh sp 15",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1190,6 +1402,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
         "note": "LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Câu có từ 'đi đầu'. Câu tự mâu thuẫn ('năm 1993' và 'hơn 13 năm hoạt động'); chỉ dùng cho địa điểm."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty cổ phần Việt Nam Food",
+        "span": "# Công ty cổ phần Việt Nam Food (VNF) phát triển Kito-Sil – phức hợp Nano Chitosan Bạc kiểm soát mầm bệnh và giảm kháng sinh",
+        "source": "vnfoods.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vnfoods_vn_tin_kito_sil_20260724.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên lấy từ tiêu đề bài tin tự đăng, không phải trang pháp lý; RetriV là startup spin-off, không phải pháp nhân này. Website không ghi mã số."
       }
     ]
   },
@@ -1208,15 +1430,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
     "capability2": "",
+    "tenPhapNhan": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt"
+      },
+      {
+        "source": "dongtrunghathaonhatlan.com.vn",
+        "href": "/evidence/dongtrunghathaonhatlan_com_vn_trang_chu_20261001.txt"
       }
     ],
-    "tim": "công ty tnhh công nghệ sinh học xanh nhật lan dn doanh nghiệp đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
+    "tim": "công ty tnhh công nghệ sinh học xanh nhật lan công ty tnhh công nghệ sinh học xanh nhật lan dn doanh nghiệp đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1277,6 +1505,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm thấy nguồn báo chí hay .gov.vn nào từ 03/04/2026 nhắc tên công ty; kết quả tìm kiếm chỉ trả lại bài mst.gov.vn 11/12/2025 (nguồn hiện có) và trang của chính công ty (dongtrunghathaonhatlan.com.vn), theo đoạn tóm tắt tìm kiếm là trang bán hàng không có ngày đăng nên không tải. Nguồn cũ vẫn là nguồn duy nhất. | THAM CHIEU DA NEO: 'Tren co so do' tro toi doan ngay truoc trong cung ban chup: day chuyen len men 1.000 lit/me va he trich ly 100 lit/me da lap dat, chay thu thanh cong. | LAM GIAU dot_01 · P15 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản lượng sinh khối và sản phẩm cụ thể đã làm ra; chủ thể là 'đề tài' chung."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN",
+        "span": "CÔNG TY TNHH CÔNG NGHỆ SINH HỌC XANH NHẬT LAN\n\n-      Số 11, Ngách 35, Ngõ Hòa Bình 2, Minh Khai, Hai Bà Trưng, Hà Nội",
+        "source": "dongtrunghathaonhatlan.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/dongtrunghathaonhatlan_com_vn_trang_chu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Site là cửa hàng đông trùng hạ thảo, không nhắc nấm Agaricus; việc đây là cùng pháp nhân với đơn vị trong bài mst.gov.vn chỉ dựa trên trùng tên đầy đủ, người tra cổng cần kiểm. Không có mã số."
       }
     ]
   },
@@ -1295,6 +1533,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1372,6 +1612,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "ký được hợp đồng xuất khẩu tới 5.000 UAV ra thị trường quốc tế (Hàn Quốc)",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1449,15 +1691,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "triển khai giai đoạn 2 nhà máy chip ATP",
     "capability2": "",
+    "tenPhapNhan": "CT Semiconductor Corporation",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nguoiquansat.vn",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt"
+      },
+      {
+        "source": "ctsemiconductor.com",
+        "href": "/evidence/ctsemiconductor_com_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "ct semiconductor triển khai giai đoạn 2 nhà máy chip atp nhóm 6 chip bán dẫn sp 23",
+    "tim": "ct semiconductor ct semiconductor corporation triển khai giai đoạn 2 nhà máy chip atp nhóm 6 chip bán dẫn sp 23",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1508,6 +1756,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'nha may chip ATP' -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "CT Semiconductor Corporation",
+        "span": "meta-og:site_name: CT Semiconductor Corporation",
+        "source": "ctsemiconductor.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ctsemiconductor_com_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên chỉ lấy được từ thẻ meta og:site_name, dạng tiếng Anh; thân trang không ghi tên tiếng Việt đầy đủ hay mã số. Là công ty thành viên, pháp nhân khác với công ty mẹ CT Group."
       }
     ]
   },
@@ -1526,6 +1784,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "đơn vị trực tiếp vận hành robot đào ngầm (TBM) số 1 metro Nhổn - ga Hà Nội",
     "capability2": "trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: Vỏ hầm và sản xuất vỏ hầm tại Việt Nam, Ứng dụng công nghệ cọc cừ bê tông dự ứng lực và Quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - Fiber Optic",
+    "tenPhapNhan": "Công ty Cổ phần Tập đoàn FECON",
+    "maTuKhai": "0101502599",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1536,9 +1796,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "baodautu.vn",
         "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt"
+      },
+      {
+        "source": "fecon.com.vn",
+        "href": "/evidence/fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.txt"
       }
     ],
-    "tim": "fecon đơn vị trực tiếp vận hành robot đào ngầm (tbm) số 1 metro nhổn - ga hà nội trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: vỏ hầm và sản xuất vỏ hầm tại việt nam, ứng dụng công nghệ cọc cừ bê tông dự ứng lực và quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - fiber optic nhóm 10 đường sắt tốc độ cao sp 29",
+    "tim": "fecon công ty cổ phần tập đoàn fecon 0101502599 đơn vị trực tiếp vận hành robot đào ngầm (tbm) số 1 metro nhổn - ga hà nội trực tiếp nghiên cứu và thử nghiệm 3 đề tài quan trọng, được áp dụng vào công tác thi công là: vỏ hầm và sản xuất vỏ hầm tại việt nam, ứng dụng công nghệ cọc cừ bê tông dự ứng lực và quan trắc công trình ứng dụng công nghệ cảm biến cáp quang - fiber optic nhóm 10 đường sắt tốc độ cao sp 29",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1599,6 +1863,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
         "note": "GIU NGUON CU: nguon 28/12/2015, va do la DUNG loai nguon can dung. Claim mo ta mot viec DA XAY RA VA DA KET THUC (nam 2015 Ban R&D FECON nghien cuu va san xuat thu vo ham), khong phai mot trang thai dang chay. Su kien xong thi khong het han; cao mot bai 2026 cung khong lam viec nam 2015 dung hay sai hon. Doc dung la 'nam 2015 da lam', KHONG duoc doc thanh 'hien dang nghien cuu'. NEU sau nay muon khang dinh FECON HIEN NAY con nang luc nghien cuu thi do la mot claim KHAC, truong khac, va phai co nguon moi. Cung nguon voi nang_luc_mo_ta_2. Chon cau nay lam span thay vi cau truoc no ('ca 3 de tai nghien cuu tren...') vi cau do co tham chieu treo: cum '3 de tai nghien cuu tren' tro ra ngoai span. GHI NHAN MOT LO HONG CONG: check_tham_chieu_treo.py KHONG bat duoc cum nay, vi danh sach chi dinh cua no co 'neu tren', 'ke tren', 'noi tren' ma khong co 'tren' tran. KHONG mo rong danh sach do: 'tren' la gioi tu pho bien nhat tieng Viet, them vao se lam cong bao gia hang loat roi bi tat. Cho nay tam thoi van phai mat nguoi nhin."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Tập đoàn FECON",
+        "span": "Thành lập ngày 18/06/2004 từ nhóm kỹ sư và chuyên gia đầu ngành về xử lý và thi công nền móng công trình, Công ty Cổ phần Tập đoàn FECON đã trở thành một công ty sở hữu năng lực xuất sắc về nền móng và công trình ngầm tại Việt Nam.",
+        "source": "fecon.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/fecon_com_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Pháp nhân mẹ niêm yết mã FCN; hơn 20 công ty con mang tên FECON (FECON Mining, FECON South, FECON Raito...) là pháp nhân riêng, không gộp. Tên đã đổi nhiều lần, xem dòng mã số."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0101502599",
+        "span": "Công ty Cổ Phần Kỹ Thuật Nền Móng và Công Trình Ngầm FECON - Việt Nam; Giấy chứng nhận đăng ký doanh nghiệp số 0101502599 do Phòng đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 18/6/2004.",
+        "source": "fecon.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Span ghi TÊN CŨ của pháp nhân (thông cáo 2015, FECON là cổ đông sáng lập của công ty con FECON UCC). Nối với tên hiện hành qua ngày cấp 18/6/2004 trùng ngày thành lập trên trang giới thiệu và tin đổi tên 06/05/2016 (snapshot fecon_com_vn_doi_ten_20160506.md); người tra cổng cần xác nhận mã này mang tên hiện hành."
       }
     ]
   },
@@ -1617,6 +1901,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng.",
     "capability2": "dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
+    "tenPhapNhan": "Công ty Cổ phần FPT",
+    "maTuKhai": "0101248141",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -1631,9 +1917,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "vnanet.vn",
         "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt"
+      },
+      {
+        "source": "bctn2025.fpt.com",
+        "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt"
       }
     ],
-    "tim": "fpt hệ sinh thái ai agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng. dòng chip soc ai on edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (uav) nhóm 1 công nghệ số sp 1",
+    "tim": "fpt công ty cổ phần fpt 0101248141 hệ sinh thái ai agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng. dòng chip soc ai on edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (uav) nhóm 1 công nghệ số sp 1",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1704,6 +1994,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_fpt_nhamay_20260128.txt",
         "note": "TIP-CNCL-3B Task A. Truong nang_luc_mo_ta_2 vi nang_luc_mo_ta da co gia tri khac (don tri). Day la nang luc HOP TAC FPT va Viettel, cong bo 28/01/2026, muc do LA THOA THUAN va DINH HUONG PHAT TRIEN, chua phai chip da ra."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần FPT",
+        "span": "Tên công ty\nCông ty Cổ phần FPT\nTên viết tắt\nFPT",
+        "source": "bctn2025.fpt.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Nhãn 'FPT' là pháp nhân mẹ (Tập đoàn FPT). FPT Software, FPT Telecom, FPT Semiconductor là công ty con, pháp nhân khác, không dùng mã này."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0101248141",
+        "span": "Giấy chứng nhận đăng ký kinh doanh \n0101248141",
+        "source": "bctn2025.fpt.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã của công ty mẹ Công ty Cổ phần FPT. Không gán cho FPT Semiconductor hay nhà máy kiểm thử đóng gói."
       }
     ]
   },
@@ -1722,6 +2032,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "doanh nghiệp Việt đầu tiên thiết kế và phát triển chip thương mại",
     "capability2": "thiết kế chip",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -1803,15 +2115,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm R&D, được đầu tư với công suất thiết kế 5GWh mỗi năm",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Công nghiệp GG",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "tuoitre.vn",
         "href": "/evidence/tuoitre_ggpower_pin_20260412.txt"
+      },
+      {
+        "source": "ggp.vn",
+        "href": "/evidence/ggp_vn_chan_trang_20261001.txt"
       }
     ],
-    "tim": "gg power tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm r&d, được đầu tư với công suất thiết kế 5gwh mỗi năm nhóm 5 năng lượng và vật liệu sp 18",
+    "tim": "gg power công ty cổ phần công nghiệp gg tổ hợp xưởng sản xuất 2 tầng hiện đại và trung tâm r&d, được đầu tư với công suất thiết kế 5gwh mỗi năm nhóm 5 năng lượng và vật liệu sp 18",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1862,6 +2180,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi nha may pin luu tru cong suat 5GWh -> SP18 Pin, ac quy va he thong luu tru nang luong BESS. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Công nghiệp GG",
+        "span": "Bản quyền thuộc Công ty Cổ phần Công nghiệp GG",
+        "source": "ggp.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ggp_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: GG Power là thương hiệu; pháp nhân đứng tên website là Công ty Cổ phần Công nghiệp GG (bản tiếng Anh ghi GG Industries). Website không công bố mã số."
       }
     ]
   },
@@ -1880,15 +2208,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Horus P02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Đầu tư và Công nghệ HTI",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "cafef.vn",
         "href": "/evidence/cafef_dn_uav_20250903.txt"
+      },
+      {
+        "source": "htigroup.vn",
+        "href": "/evidence/htigroup_vn_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "hti technology horus p02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "hti technology công ty cổ phần đầu tư và công nghệ hti horus p02 với khả năng hoạt động yên lặng và trang bị cảm biến nhiệt nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -1929,6 +2263,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/cafef_dn_uav_20250903.txt",
         "note": "Span truoc day sai chinh ta 'yen lat'; nguon viet 'yen lang'. Tra ve nguyen van 16/08/2026. Doi verbatim sang normalized vi gia tri khong con nam tron trong span moi. SUA 02/09/2026: value van con giu loi chinh ta 'yen lat' trong khi span da duoc tra ve nguyen van 'yen lang' tu 16/08/2026. Mot lan va lam nua chung: sua span ma quen sua value, nen registry khai mot chu KHONG CO trong nguon suot 17 ngay. Van giu extraction 'normalized', va day la cho toi vua tu sai roi tu sua trong cung mot luot: doi sang 'verbatim' thi cong luat 3 bao DO ngay, vi span mang dau markdown **Horus P02** con value bo dau do di. Bo ky tu dinh dang la mot phep chuan hoa that, nen nhan 'normalized' moi dung. GIU NGUON CU: da di tim nguon moi ngay 02/09/2026. Co nguon moi hon (nhandan.vn 04/06/2026) nhung bai do noi ve chien luoc lam chu chuoi cong nghe va ve Horus QS24, KHONG nhac lai kha nang hoat dong yen lang hay cam bien nhiet cua Horus P02. Nguon moi khong khang dinh lai claim nay thi khong duoc dung de lam moi claim nay."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Đầu tư và Công nghệ HTI",
+        "span": "Về HTI Group - Công ty Cổ phần Đầu tư và Công nghệ HTI",
+        "source": "htigroup.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/htigroup_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: BẪY ĐÃ BIẾT: Công ty cổ phần HTI UAS là công ty thành viên, pháp nhân RIÊNG, mới công bố thành lập 24/01/2026, nay chuyên UAV (xem htigroup_vn_cong_ty_thanh_vien_00000000.md). Bài cafef 09/2025 có trước ngày đó nên nhãn HTI Technology ứng với công ty mẹ; anh Lâm quyết nếu registry muốn trỏ tới HTI UAS. Tên chỉ có ở tiêu đề và thẻ meta trang, không có mã số."
       }
     ]
   },
@@ -1947,6 +2291,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Hệ thống sản xuất hydrogen xanh IDF-EX1000X được xây dựng trên nền tảng công nghệ điện phân kiềm (Alkaline) tiên tiến",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2044,6 +2390,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "rút ngắn chiều dài tuyến khoảng 4km so với phương án trình năm 2019 với chiều dài tuyến chính sau rà soát khoảng 1.541 km",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2105,15 +2453,21 @@ export const cnclUnits: CnclUnit[] = [
     "sanPham": [],
     "capability": "cung cấp các vật liệu công nghệ cao như vonfram, fluorspar cho chuỗi giá trị sản xuất chip toàn cầu",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Masan High-Tech Materials",
+    "maTuKhai": "0309966889",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nguoiquansat.vn",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt"
+      },
+      {
+        "source": "masanhightechmaterials.com",
+        "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt"
       }
     ],
-    "tim": "masan high-tech materials cung cấp các vật liệu công nghệ cao như vonfram, fluorspar cho chuỗi giá trị sản xuất chip toàn cầu",
+    "tim": "masan high-tech materials công ty cổ phần masan high-tech materials 0309966889 cung cấp các vật liệu công nghệ cao như vonfram, fluorspar cho chuỗi giá trị sản xuất chip toàn cầu",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2134,6 +2488,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
         "note": "nhom_cncl de HONEST-NULL co chu dich: nguon dat don vi o khau vat lieu thuong nguon, co the thuoc nhom 6 (chip) hoac nhom 5 (nang luong, vat lieu tien tien). Cho nguoi quyet, khong tu gan."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Masan High-Tech Materials",
+        "span": "Công ty Cổ phần Masan High-Tech Materials",
+        "source": "masanhightechmaterials.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Pháp nhân mẹ của nhóm (công ty con Núi Pháo, Vonfram Masan là pháp nhân khác). Mã lấy từ mục Thông tin về Công ty trong báo cáo tài chính."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0309966889",
+        "span": "Đăng ký Doanh nghiệp số 0309966889 ngày 27 tháng 4 năm 2010",
+        "source": "masanhightechmaterials.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Số Giấy chứng nhận đăng ký doanh nghiệp do Sở KH&ĐT TP.HCM cấp, điều chỉnh gần nhất 20/01/2025 theo báo cáo; là mã của pháp nhân mẹ, không phải của Núi Pháo hay Vonfram Masan."
       }
     ]
   },
@@ -2152,6 +2526,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "giải quyết các bài toán thực tế về phun thuốc, gieo sạ cho nhà nông",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2219,15 +2595,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Lotus GovID",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần Thông minh MK",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nhandan.vn",
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt"
+      },
+      {
+        "source": "mksmart.com.vn",
+        "href": "/evidence/mksmart_com_vn_chinh_sach_bao_mat_20261001.txt"
       }
     ],
-    "tim": "mk smart lotus govid nhóm 7 an ninh mạng và lượng tử sp 09",
+    "tim": "mk smart công ty cổ phần thông minh mk lotus govid nhóm 7 an ninh mạng và lượng tử sp 09",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2278,6 +2660,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi Lotus GovID dat chung chi Common Criteria EAL 5+ -> SP09 (bao mat ha tang dinh danh quoc gia). Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Thông minh MK",
+        "span": "Trong quá trình hoạt động, Công ty Cổ phần Thông minh MK (sau đây gọi tắt là, “MK” hoặc “Chúng tôi”) luôn tuân thủ quy định của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân",
+        "source": "mksmart.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/mksmart_com_vn_chinh_sach_bao_mat_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên tiếng Anh trên cùng trang là MK Smart Joint Stock Company. Website không công bố mã số."
       }
     ]
   },
@@ -2296,6 +2688,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "nhà máy kiểm thử, đóng gói tiên tiến do người Việt làm chủ",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2383,6 +2777,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "VTOL-01 chuyên dụng cho các nhiệm vụ ở địa hình phức tạp như rừng núi",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2450,6 +2846,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học",
     "capability2": "",
+    "tenPhapNhan": "Viện Hóa học công nghiệp Việt Nam",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -2460,9 +2858,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "congthuong.vn",
         "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt"
+      },
+      {
+        "source": "viic.vn",
+        "href": "/evidence/viic_vn_ptn_trong_diem_loc_hoa_dau_20261001.txt"
       }
     ],
-    "tim": "phòng thí nghiệm trọng điểm công nghệ lọc, hóa dầu vien viện nghiên cứu nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "tim": "phòng thí nghiệm trọng điểm công nghệ lọc, hóa dầu viện hóa học công nghiệp việt nam vien viện nghiên cứu nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2523,6 +2925,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
         "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng bang_chung_nang_luc nguồn nhandan.vn 21/11/2025. Giải thưởng Nhà nước về Khoa học và Công nghệ cho cụm công trình đã hoàn thành là năng lực đã hình thành, mạnh hơn lời tự mô tả pilot; nguồn B đăng 25/05/2026. Có cụm 'Đáng kể nhất' (so sánh trong nội bộ Viện, không phải từ tối thượng trong danh sách); năm trao giải không có trong bài."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Hóa học công nghiệp Việt Nam",
+        "span": "Phòng thí nghiệm trọng điểm Công nghệ lọc, hóa dầu (PTNTĐ) được thành lập theo quyết định số 185/2003/QĐ-BCN, ngày 13/11/2003 của Bộ trưởng Bộ Công nghiệp (nay là Bộ Công Thương). Cơ quan chủ trì của PTNTĐ là Viện Hóa học công nghiệp Việt Nam, trực thuộc Tập đoàn Hóa chất Việt Nam.",
+        "source": "viic.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/viic_vn_ptn_trong_diem_loc_hoa_dau_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Nhãn là một phòng thí nghiệm trọng điểm, không phải pháp nhân độc lập theo lời website; pháp nhân đề xuất là cơ quan chủ trì Viện Hóa học công nghiệp Việt Nam (thuộc Tập đoàn Hóa chất Việt Nam). Viện là pháp nhân khác với Tập đoàn, không lấy mã Tập đoàn."
       }
     ]
   },
@@ -2541,15 +2953,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Drone Hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải",
     "capability2": "sử dụng kết nối vệ tinh Starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ UAV lên vệ tinh rồi truyền ngược về người vận hành",
+    "tenPhapNhan": "Real-time Robotics Inc.",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": true,
     "sources": [
       {
         "source": "cafef.vn",
         "href": "/evidence/cafef_rtr_xponential_20260418.txt"
+      },
+      {
+        "source": "rtrobotics.com",
+        "href": "/evidence/rtrobotics_com_footer_20261001.txt"
       }
     ],
-    "tim": "realtime robotics (rtr) dn doanh nghiệp drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải sử dụng kết nối vệ tinh starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ uav lên vệ tinh rồi truyền ngược về người vận hành nhóm 9 hàng không và vũ trụ sp 22",
+    "tim": "realtime robotics (rtr) real-time robotics inc. dn doanh nghiệp drone hera ra đời với khả năng gập gọn, mang tải trọng 15 kg, có thể bay 56 phút khi không tải sử dụng kết nối vệ tinh starlink để truyền đồng thời tín hiệu điều khiển và hình ảnh từ uav lên vệ tinh rồi truyền ngược về người vận hành nhóm 9 hàng không và vũ trụ sp 22",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2630,6 +3048,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/cafef_rtr_xponential_20260418.txt",
         "note": "HANG NGUON: TU KHAI. Toan bo noi dung nang luc trong bai den tu phat ngon cua TS Luong Viet Quoc, nha sang lap kiem CEO RtR; bao dang lai, khong kiem chung doc lap. RtR cung la ben van hanh registry nay, nen claim ve chinh minh phai doc voi canh giac cao hon claim ve don vi khac. KHANG DINH TOI THUONG: pham vi la MOT BUOI, MOT NGAY, MOT SU KIEN. 'Duy nhat' o day co nghia: trong buoi Media Preview cua Xponential 2026 ngay 13/04/2026, cac don vi khac deu TU HUY bay vi gio manh, con doi Hera van bay. No KHONG co nghia Hera la drone duy nhat tren the gioi bay duoc trong gio manh, cung khong phai ket qua cua mot phep so sanh co doi chung. Nguon cung ghi ro 'Hien chua co don dat hang ngay vi vua hoan tat bay trinh dien'."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Real-time Robotics Inc.",
+        "span": "© 2026 Real-time Robotics Inc. All rights reserved.",
+        "source": "rtrobotics.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/rtrobotics_com_footer_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: CHÚ Ý: đây là pháp nhân Mỹ (trụ sở Castro Valley, CA), không có mã số Việt Nam. Website chỉ ghi Trung tâm R&D tại Khu Công nghệ cao Sài Gòn mà không nêu tên pháp nhân Việt Nam; pháp nhân Việt Nam (nếu có) là pháp nhân riêng, cần anh Lâm xác nhận nội bộ hoặc tra cổng."
       }
     ]
   },
@@ -2648,15 +3076,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa",
     "capability2": "",
+    "tenPhapNhan": "Rostek JSC",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vjst.vn",
         "href": "/evidence/vjst_rostek_agv_20220103.txt"
+      },
+      {
+        "source": "rostek.com.vn",
+        "href": "/evidence/rostek_com_vn_trang_chu_20261001.txt"
       }
     ],
-    "tim": "rostek xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa nhóm 3 robot và tự động hoá sp 07",
+    "tim": "rostek rostek jsc xe tự hành dẫn đường chủ động, cho phép vận chuyển, nâng, kéo và chở hàng hóa nhóm 3 robot và tự động hoá sp 07",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2707,6 +3141,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vjst_rostek_agv_20220103.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'xe tu hanh dan duong chu dong' -> SP07 Robot tu hanh va robot cong nghiep. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Rostek JSC",
+        "span": "meta-author: Rostek JSC",
+        "source": "rostek.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/rostek_com_vn_trang_chu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Chỉ có dạng viết tắt tiếng Anh từ thẻ meta (trang dùng JavaScript, không đọc được thân trang); tên tiếng Việt đầy đủ và mã số chưa thấy. Người tra cổng tìm theo từ khóa Rostek."
       }
     ]
   },
@@ -2725,15 +3169,25 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "vacxin dịch tả lợn Châu Phi thứ 3 tại Việt Nam được Bộ Nông nghiệp và Môi trường cấp phép lưu hành thương mại",
     "capability2": "công suất 200 triệu liều vacxin/năm",
+    "tenPhapNhan": "Công ty Cổ phần Tập đoàn DABACO Việt Nam",
+    "maTuKhai": "2300105790",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nongnghiepmoitruong.vn",
         "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt"
+      },
+      {
+        "source": "dabaco.vn",
+        "href": "/evidence/dabaco_vn_cbtt_thay_doi_dkdn_20260926.txt"
+      },
+      {
+        "source": "dabaco.com.vn",
+        "href": "/evidence/dabaco_com_vn_general_information_20261001.txt"
       }
     ],
-    "tim": "tập đoàn dabaco việt nam dn doanh nghiệp vacxin dịch tả lợn châu phi thứ 3 tại việt nam được bộ nông nghiệp và môi trường cấp phép lưu hành thương mại công suất 200 triệu liều vacxin/năm nhóm 4 sinh học và y sinh sp 14",
+    "tim": "tập đoàn dabaco việt nam công ty cổ phần tập đoàn dabaco việt nam 2300105790 dn doanh nghiệp vacxin dịch tả lợn châu phi thứ 3 tại việt nam được bộ nông nghiệp và môi trường cấp phép lưu hành thương mại công suất 200 triệu liều vacxin/năm nhóm 4 sinh học và y sinh sp 14",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2804,6 +3258,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
         "note": "GIU NGUON CU: nha may da khanh thanh 29/03/2025, su kien da xay ra. HANG NGUON: cau mo dau bang 'Theo thong tin tu Tap doan Dabaco Viet Nam', tuc con so nay la TU KHAI duoc bao thuat lai, khong phai bao kiem chung. Bao Nong nghiep va Moi truong la tier B ve UY TIN BEN XUAT BAN, nhung rieng cau nay ben noi la ben co loi ich truc tiep. Day la ca dau tien trong registry can den truc hang nguon ma 00_KHUNG_SAN_PHAM.md vua dinh nghia; truong hang_nguon chua co trong schema nen tam ghi vao note, va do la mot mon no schema."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Tập đoàn DABACO Việt Nam",
+        "span": "**1. Tên tổ chức:** Công ty Cổ phần Tập đoàn DABACO Việt Nam.",
+        "source": "dabaco.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/dabaco_vn_cbtt_thay_doi_dkdn_20260926.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Đây là pháp nhân mẹ niêm yết mã DBC. Nguồn cũ nói về vắc xin (Dacovac); site ghi năm 2023 thành lập Công ty TNHH Dược & Thú y DACOVET, là pháp nhân con riêng, có thể là đơn vị sản xuất thật: anh Lâm cần quyết gán mẹ hay con."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "2300105790",
+        "span": "  Tax Code\n\n\n\n\n: No 35 Ly Thai To street, Bac Ninh city, Bac Ninh province.\n\n: www.dabaco.com.vn / www.dabaco.vn\n\n: contact@dabaco.com.vn\n\n: (0241) 3895111 - 3826077\n\n: (0241) 3825496 - 3896336\n\n: 2300105790.",
+        "source": "dabaco.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/dabaco_com_vn_general_information_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang tiếng Anh cũ (bản quyền 2012) còn truy cập được; bảng bị trích xuất tách nhãn với giá trị, giá trị cuối ': 2300105790.' ứng với nhãn cuối 'Tax Code'. Mã của pháp nhân mẹ, không dùng cho công ty con (DACOVET...). Cần đối chiếu cổng."
       }
     ]
   },
@@ -2822,15 +3296,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "robot do Tập đoàn MISA phát triển đã thực hiện các thao tác trình diễn theo kịch bản",
     "capability2": "",
+    "tenPhapNhan": "Công ty cổ phần MISA",
+    "maTuKhai": "0101243150",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_robot_makeinvn_20251230.txt"
+      },
+      {
+        "source": "misa.vn",
+        "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt"
       }
     ],
-    "tim": "tập đoàn misa robot do tập đoàn misa phát triển đã thực hiện các thao tác trình diễn theo kịch bản nhóm 3 robot và tự động hoá sp 07",
+    "tim": "tập đoàn misa công ty cổ phần misa 0101243150 robot do tập đoàn misa phát triển đã thực hiện các thao tác trình diễn theo kịch bản nhóm 3 robot và tự động hoá sp 07",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2871,6 +3351,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/mst_robot_makeinvn_20251230.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'robot do Tap doan MISA phat trien' trinh dien -> SP07 Robot. LUU Y: bang chung la man trinh dien, khong phai san pham thuong mai. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty cổ phần MISA",
+        "span": "## Thông tin thanh toán\n\nCông ty cổ phần MISA\n\nMã số thuế: 0101243150",
+        "source": "misa.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: 'Tập đoàn MISA' là tên gọi truyền thông; pháp nhân tự khai là Công ty cổ phần MISA."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0101243150",
+        "span": "## Thông tin thanh toán\n\nCông ty cổ phần MISA\n\nMã số thuế: 0101243150",
+        "source": "misa.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Chân trang cùng URL ghi trùng số: Giấy CNĐKKD 0101243150, cấp lần đầu 22/04/2002 tại Hà Nội."
       }
     ]
   },
@@ -2891,6 +3391,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Mô hình LLM hỗ trợ tiếng Việt với độ dài ngữ cảnh (context length) 4096 token",
     "capability2": "dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV)",
+    "tenPhapNhan": "Tập đoàn Công nghiệp – Viễn thông Quân đội",
+    "maTuKhai": "0100109106",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -2901,9 +3403,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_fpt_nhamay_20260128.txt"
+      },
+      {
+        "source": "viettelai.vn",
+        "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt"
       }
     ],
-    "tim": "tập đoàn viettel mô hình llm hỗ trợ tiếng việt với độ dài ngữ cảnh (context length) 4096 token dòng chip soc ai on edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (uav) nhóm 1 công nghệ số nhóm 6 chip bán dẫn sp 1",
+    "tim": "tập đoàn viettel tập đoàn công nghiệp – viễn thông quân đội 0100109106 mô hình llm hỗ trợ tiếng việt với độ dài ngữ cảnh (context length) 4096 token dòng chip soc ai on edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (uav) nhóm 1 công nghệ số nhóm 6 chip bán dẫn sp 1",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2974,6 +3480,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_fpt_nhamay_20260128.txt",
         "note": "TIP-CNCL-3B Task A. Truong nang_luc_mo_ta_2 vi nang_luc_mo_ta da co gia tri khac (don tri). Day la nang luc HOP TAC FPT va Viettel, cong bo 28/01/2026, muc do LA THOA THUAN va DINH HUONG PHAT TRIEN, chua phai chip da ra. GIU NGUON CU: da cao lai 18/08/2026. Claim ghi noi dung MOT THOA THUAN KY NGAY 28/01/2026 giua FPT va Viettel. Le ky la su kien da xay ra nen khong het han. Cai co the doi la ket qua trien khai, va claim nay von da ghi ro no la thoa thuan chu khong phai chip da ra."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Tập đoàn Công nghiệp – Viễn thông Quân đội",
+        "span": "- **Cơ quan chủ quản****:** Tập đoàn Công nghiệp – Viễn thông Quân đội.",
+        "source": "viettelai.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang viết tên bằng gạch nối dài (–); trên cổng tên có thể viết bằng gạch ngắn (-). Nguồn là website của đơn vị Viettel AI, nên người tra cổng cần đối chiếu kỹ."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0100109106",
+        "span": "- **Đăng ký kinh doanh:** số 0100109106 đăng ký lần đầu ngày 13 tháng 07 năm 2010.",
+        "source": "viettelai.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã của pháp nhân mẹ (Tập đoàn). Các đơn vị Viettel AI, Viettel High Tech, An ninh mạng Viettel có mã riêng dạng 0100109106-xxx hoặc pháp nhân riêng, không dùng mã này cho họ. Ngày đăng ký lần đầu trang ghi 13/07/2010, cần đối chiếu cổng."
       }
     ]
   },
@@ -2992,15 +3518,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
     "capability2": "",
+    "tenPhapNhan": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
+    "maTuKhai": "0100150577",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_ptsc_chande_20250618.txt"
+      },
+      {
+        "source": "ptsc.com.vn",
+        "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt"
       }
     ],
-    "tim": "tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam (ptsc) đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế ørsted nhóm 8 biển, đại dương, lòng đất sp 26",
+    "tim": "tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam (ptsc) tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam 0100150577 đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế ørsted nhóm 8 biển, đại dương, lòng đất sp 26",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3051,6 +3583,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi che tao chan de DIEN GIO NGOAI KHOI -> SP26 Cong nghe tham do bien sau, long dat, nang luong ngoai khoi. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
+        "span": "Tên Tổ chức phát hành: Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam  \nTrụ sở chính: Số 1-5 Lê Duẩn, Quận 1, Tp. Hồ Chí Minh  \nMã số doanh nghiệp: 0100150577",
+        "source": "ptsc.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Pháp nhân mẹ (mã PVS), không phải các công ty con như PTSC M&C, PTSC Offshore Services hay chi nhánh PTSC Marine, PTSC Supply Base. Thông báo năm 2023, địa chỉ trong span đã cũ."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0100150577",
+        "span": "Tên Tổ chức phát hành: Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam  \nTrụ sở chính: Số 1-5 Lê Duẩn, Quận 1, Tp. Hồ Chí Minh  \nMã số doanh nghiệp: 0100150577",
+        "source": "ptsc.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã của pháp nhân mẹ, tự khai trong thông báo họp ĐHĐCĐ 2023. Site còn có mục 'Giấy CNĐKKD' (chưa mở) có thể dùng để đối chiếu thêm."
       }
     ]
   },
@@ -3069,15 +3621,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
     "capability2": "",
+    "tenPhapNhan": "Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần",
+    "maTuKhai": "0100101322",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "baochinhphu.vn",
         "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt"
+      },
+      {
+        "source": "eemc.com.vn",
+        "href": "/evidence/eemc_com_vn_about_us_20261001.txt"
       }
     ],
-    "tim": "tổng công ty thiết bị điện đông anh làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kv có công suất lớn nhất trên lưới điện truyền tải việt nam nhóm 5 năng lượng và vật liệu sp 20",
+    "tim": "tổng công ty thiết bị điện đông anh tổng công ty thiết bị điện đông anh – công ty cổ phần 0100101322 làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kv có công suất lớn nhất trên lưới điện truyền tải việt nam nhóm 5 năng lượng và vật liệu sp 20",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3128,6 +3686,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'may bien ap 500kV tren luoi dien truyen tai' -> SP20 Thiet bi dien cao ap va he thong truyen tai dien. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần",
+        "span": "Ngày 24/01/2013, Công ty được đổi tên thành Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần( EEMC).",
+        "source": "eemc.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/eemc_com_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Dấu gạch trong tên là gạch ngang ngắn (U+2013) của nguồn. Hai công ty TNHH MTV con (Thiết bị lưới điện - EEMC; Thiết kế và Chế tạo thiết bị điện) là pháp nhân riêng."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0100101322",
+        "span": "Certificate of business registration number: 0100101322 by the Department of Planning and Investment of Hanoi  \nissued for the first time on June 1, 2005, registered for the 14th revision on November 1, 2017.",
+        "source": "eemc.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang tiếng Anh, thông tin đăng ký mới tới lần thay đổi thứ 14 (01/11/2017), có thể cũ; cùng trang ghi số ĐKKD cũ 0103008085 nay là 0100101322. Mã của tổng công ty, không dùng cho hai công ty TNHH MTV con."
       }
     ]
   },
@@ -3146,6 +3724,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Việc phát triển vệ tinh NanoDragon tại Việt Nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “Made in Vietnam”.",
     "capability2": "",
+    "tenPhapNhan": "Trung tâm Vũ trụ Việt Nam",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -3156,9 +3736,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt"
+      },
+      {
+        "source": "vnsc.org.vn",
+        "href": "/evidence/vnsc_org_vn_su_menh_va_tam_nhin_20261001.txt"
       }
     ],
-    "tim": "trung tâm vũ trụ việt nam vien viện nghiên cứu việc phát triển vệ tinh nanodragon tại việt nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “made in vietnam”. nhóm 9 hàng không và vũ trụ sp 28",
+    "tim": "trung tâm vũ trụ việt nam trung tâm vũ trụ việt nam vien viện nghiên cứu việc phát triển vệ tinh nanodragon tại việt nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “made in vietnam”. nhóm 9 hàng không và vũ trụ sp 28",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3219,6 +3803,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy hai bài sau mốc: Dân trí 08/09/2026 kể lịch sử PicoDragon, MicroDragon, NanoDragon, LOTUSat-1 nhưng phần gọi đích danh Trung tâm chỉ nói hơn 20 kỹ sư sang Nhật làm việc với LOTUSat-1 (vệ tinh do phía Nhật chế tạo, không tính); Báo Chính phủ 15/09/2026 phỏng vấn Tổng Giám đốc chủ yếu là định hướng, ưu tiên, kỳ vọng, câu duy nhất về chế tạo là chú thích ảnh 'tham gia chế tạo vệ tinh' dùng lại ảnh năm 2025. Không bài nào từ 2026-04-03 nói MicroDragon-2 đã hoàn thành hay phóng, trang vnsc.org.vn về GSTCE 2026 tải về rỗng. Không có nguồn thay thế cho nang_luc_mo_ta (11/03/2021); bang_chung_nang_luc giữ nguồn mst.gov.vn 13/03/2026. | LAM GIAU dot_01 · P28 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn mới nhất (2026): vệ tinh MicroDragon-2 khoảng 50 kg phục vụ theo dõi biến động rừng, thử nghiệm công nghệ tự thiết kế, chế tạo, được giới thiệu tại khu nghiên cứu phát triển vệ tinh của Trung tâm Vũ trụ Việt Nam (đoạn liền trước trong bài gọi đích danh). Bài không nói MicroDragon-2 đã phóng."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Trung tâm Vũ trụ Việt Nam",
+        "span": "Từ những ngày đầu thành lập, Trung tâm Vũ trụ Việt Nam (TTVTVN) đã luôn xác định giá trị cốt lõi của mình là “Nhân”, “Tâm”, “Tầm”.",
+        "source": "vnsc.org.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vnsc_org_vn_su_menh_va_tam_nhin_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Đơn vị nghiên cứu trực thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam: vast.gov.vn liệt kê (19) Trung tâm Vũ trụ Việt Nam trong các đơn vị nghiên cứu (bản chụp vast_gov_vn_chuc_nang_nhiem_vu_00000000.md), bản tiếng Anh vnsc.org.vn ghi under Vietnam Academy of Science and Technology (bản chụp vnsc_org_vn_about_vnsc_00000000.md)."
       }
     ]
   },
@@ -3237,15 +3831,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "nghiên cứu và sản xuất loại nhiên liệu sinh học",
     "capability2": "",
+    "tenPhapNhan": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nangluongvietnam.vn",
         "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt"
+      },
+      {
+        "source": "hus.vnu.edu.vn",
+        "href": "/evidence/hus_vnu_edu_vn_lich_su_phat_trien_20261001.txt"
       }
     ],
-    "tim": "trường đại học khoa học tự nhiên, đại học quốc gia hà nội truong trường đại học nghiên cứu và sản xuất loại nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "tim": "trường đại học khoa học tự nhiên, đại học quốc gia hà nội trường đại học khoa học tự nhiên, đại học quốc gia hà nội truong trường đại học nghiên cứu và sản xuất loại nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3306,6 +3906,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Sáu lượt tìm (chỉ xem trích đoạn kết quả tìm kiếm, không trang nào đủ hứa hẹn để tải) chỉ ra tin tuyển sinh 2026, trang giới thiệu tĩnh không ghi ngày (Bộ môn Công nghệ Hóa học, GREEN LAB Khoa Sinh học, danh sách phòng thí nghiệm trọng điểm) và một câu định hướng đầu tư phòng thí nghiệm năng lượng xanh, không có bài nào từ 2026-04-03 gọi đích danh trường với sản phẩm, pilot hay đề tài nghiệm thu về BDF, nhiên liệu sinh học khác hoặc hydrogen xanh. Không có nguồn thay thế; nguồn hiện hành vẫn là bài 02/05/2012, người duyệt quyết giữ hay gạch. | LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Nguồn B (nguồn mới nangluongvietnam.vn, dẫn VNU Media) mô tả Khoa Hóa học sản xuất BDF quy mô pilot 350 kg/mẻ, công nghệ đồng dung môi hoàn chỉnh quy trình và thiết bị. Người duyệt cần biết: bài năm 2012 (cũ), công nghệ phát triển trong dự án hợp tác với Nhật Bản (NEDO, Đại học Osaka Prefecture), có từ tối thượng \"tiên phong\"."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+        "span": "Anh hùng Lao động thời kỳ đổi mới cho Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội (2000)",
+        "source": "hus.vnu.edu.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/hus_vnu_edu_vn_lich_su_phat_trien_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trường đại học thành viên của Đại học Quốc gia Hà Nội (trang lịch sử: trường đại học thành viên nòng cốt của Đại học Quốc gia Hà Nội); trường và ĐHQGHN là hai đơn vị, không lấy mã ĐHQGHN cho trường."
       }
     ]
   },
@@ -3324,6 +3934,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "giải pháp ClaimPKG, công nghệ kiểm chứng thông tin tự động được đánh giá có tính ứng dụng rộng.",
     "capability2": "Viettel BTS Digital Twin - nền tảng bản sao số do Viettel AI phát triển",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -3419,6 +4031,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Với sải cánh 3,1m, chiều dài 1,7m và trọng lượng cất cánh tối đa 26kg, VU-R70 có thể hoạt động liên tục trong 4,5 giờ và đạt tốc độ tối đa 120km/giờ",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -3510,15 +4124,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao",
     "capability2": "",
+    "tenPhapNhan": "Viện Công nghệ xạ hiếm",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt"
+      },
+      {
+        "source": "itrre.gov.vn",
+        "href": "/evidence/itrre_gov_vn_chuc_nang_nhiem_vu_20261001.txt"
       }
     ],
-    "tim": "viện công nghệ xạ hiếm vien viện nghiên cứu làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
+    "tim": "viện công nghệ xạ hiếm viện công nghệ xạ hiếm vien viện nghiên cứu làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3579,6 +4199,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi tuyen khoang, thuy luyen, tinh che oxit DAT HIEM -> SP25 Cong nghe khai thac, che bien khoang san va dat hiem. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Công nghệ xạ hiếm",
+        "span": "Viện Công nghệ xạ hiếm được thành lập theo Quyết định số 18/CT ngày 21/01/1991 của Chủ tịch Hội đồng Bộ trưởng (nay là Thủ tướng Chính phủ), là tổ chức khoa hoc và công nghệ công lập trực thuộc Viện Năng lượng nguyên tử Việt Nam, Bộ Khoa học và Công nghệ.",
+        "source": "itrre.gov.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/itrre_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tổ chức khoa học và công nghệ công lập trực thuộc Viện Năng lượng nguyên tử Việt Nam (VINATOM), Bộ Khoa học và Công nghệ; VINATOM là đơn vị cấp trên, không lấy mã VINATOM."
       }
     ]
   },
@@ -3597,6 +4227,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Đề tài \"Nghiên cứu công nghệ sản xuất và chế biến nấm Agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản Việt Nam\" do nhóm nghiên cứu của Công ty TNHH Công nghệ Sinh học xanh Nhật Lan, Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản Việt Nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta.",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -3684,15 +4316,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen",
     "capability2": "",
+    "tenPhapNhan": "Viện Di truyền Nông nghiệp",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt"
+      },
+      {
+        "source": "agi.gov.vn",
+        "href": "/evidence/agi_gov_vn_gioi_thieu_20261001.txt"
       }
     ],
-    "tim": "viện di truyền nông nghiệp việt nam vien viện nghiên cứu những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
+    "tim": "viện di truyền nông nghiệp việt nam viện di truyền nông nghiệp vien viện nghiên cứu những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3743,6 +4381,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi 'giong lua, giong ngo, giong dau tuong moi duoc tao ra tu cong nghe chinh sua gen' -> SP16 Giong cay trong vat nuoi cong nghe sinh hoc. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Di truyền Nông nghiệp",
+        "span": "2. Viện Di truyền Nông nghiệp là đơn vị sự nghiệp khoa học trực thuộc Viện Khoa học Nông nghiệp Việt Nam có nhiệm vụ nghiên cứu cơ bản có định hướng và ứng dụng các thành tựu khoa học kỹ thuật thuộc lĩnh vực di truyền và công nghệ sinh học nhằm thực hiện các nhiệm vụ phát triển kinh tế xã hội của Ngành.",
+        "source": "agi.gov.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/agi_gov_vn_gioi_thieu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên trong registry có thêm chữ Việt Nam, tên trên website là Viện Di truyền Nông nghiệp. Đơn vị sự nghiệp khoa học trực thuộc Viện Khoa học Nông nghiệp Việt Nam, có con dấu và tài khoản riêng. Lưu ý: tin mae.gov.vn 16/06/2025 nêu dự thảo hợp nhất Viện với Trung tâm Tài nguyên thực vật, chưa thấy xác nhận hoàn tất; người tra cổng cần kiểm tên hiện hành."
       }
     ]
   },
@@ -3759,15 +4407,21 @@ export const cnclUnits: CnclUnit[] = [
     "sanPham": [],
     "capability": "phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh MRI và dẫn truyền thuốc; phát triển vật liệu điện cực pin Li-ion thế hệ mới (MoS-Se@Gr) có hiệu suất lưu trữ cao",
     "capability2": "",
+    "tenPhapNhan": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vjst.vn",
         "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt"
+      },
+      {
+        "source": "vast.gov.vn",
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt"
       }
     ],
-    "tim": "viện hàn lâm khoa học và công nghệ việt nam vien viện nghiên cứu phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
+    "tim": "viện hàn lâm khoa học và công nghệ việt nam viện hàn lâm khoa học và công nghệ việt nam vien viện nghiên cứu phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3808,6 +4462,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
         "note": "NANG LUC CAP NGHIEN CUU (lab/pilot), chua phai day chuyen cong nghiep. Nguon goi ten PHAP NHAN ME, khong chi dich danh vien thanh vien nao. GIU NGUON CU: da di tim nguon moi ngay 02/09/2026, khong thay nguon tier A hoac B nao dang sau 23/02/2026 khang dinh lai nang luc nay. Ung vien gan nhat la nhandan.vn post944271, nhung bai do CUNG DANG 23/02/2026 va cau ve nang luong/vat lieu gan nhu trung tung chu voi ban vjst dang dung, nen nhieu kha nang hai bai cung mot thong cao. KHONG tinh la nguon doc lap thu hai, va cung khong moi hon. Ket luan doc duoc: nang luc nay chua duoc khang dinh lai cong khai trong hon 6 thang."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+        "span": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam có tên giao dịch quốc tế bằng tiếng Anh là: Vietnam Academy of Science and Technology, viết tắt là VAST.",
+        "source": "vast.gov.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Cơ quan cấp quốc gia, có nhiều viện và trung tâm trực thuộc (trong lô này: Viện Khoa học vật liệu, Trung tâm Vũ trụ Việt Nam); không dùng mã của Viện Hàn lâm cho các đơn vị con."
       }
     ]
   },
@@ -3826,15 +4490,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) vừa tổ chức nghiệm thu chính thức cấp Bộ đối với nhiệm vụ khoa học “Phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. Đây là đề tài do VKIST chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn.",
     "capability2": "",
+    "tenPhapNhan": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt"
+      },
+      {
+        "source": "vkist.mst.gov.vn",
+        "href": "/evidence/vkist_mst_gov_vn_tong_quan_20261001.txt"
       }
     ],
-    "tim": "viện khoa học và công nghệ việt nam - hàn quốc (vkist) vien viện nghiên cứu viện khoa học và công nghệ việt nam - hàn quốc (vkist) vừa tổ chức nghiệm thu chính thức cấp bộ đối với nhiệm vụ khoa học “phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. đây là đề tài do vkist chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn. nhóm 4 sinh học và y sinh sp 13",
+    "tim": "viện khoa học và công nghệ việt nam - hàn quốc (vkist) viện khoa học và công nghệ việt nam - hàn quốc vien viện nghiên cứu viện khoa học và công nghệ việt nam - hàn quốc (vkist) vừa tổ chức nghiệm thu chính thức cấp bộ đối với nhiệm vụ khoa học “phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. đây là đề tài do vkist chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn. nhóm 4 sinh học và y sinh sp 13",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3895,6 +4565,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy mst.gov.vn (hạng A, bài do Trung tâm Truyền thông của chính VKIST viết) đăng 25/07/2026: VKIST làm chủ nền tảng que thử nhanh sắc ký miễn dịch dòng chảy bên (LFIA), có nguyên mẫu phát hiện vi-rút, vi khuẩn, dấu ấn ung thư và Bằng giải pháp hữu ích số 4859 (tháng 3/2026). Không dùng làm dòng thay thế vì đây là năng lực khác (que thử miễn dịch, bài không dùng từ 'cảm biến'), không khẳng định lại năng lực chíp sinh học, cảm biến y sinh thông minh của dòng cũ; bài 31/07/2026 chỉ là tin làm việc, không nêu cảm biến. Không tìm thấy tin mới về chíp sinh học gắn da sau nghiệm thu 07/2025. Người duyệt có thể cân nhắc nguồn LFIA nếu coi que thử miễn dịch thuộc P13. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Sản phẩm chế tạo cụ thể, được trình bày tại buổi nghiệm thu."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc",
+        "span": "Được Chính phủ thành lập theo quy định tại Nghị định số 50/2015/NĐ-CP ngày 18 tháng 5 năm 2015 về việc thành lập Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc, hoạt động theo điều lệ ban hành tại Quyết định số 1131/QĐ-BKHCN ngày 11 tháng 5 năm 2017",
+        "source": "vkist.mst.gov.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vkist_mst_gov_vn_tong_quan_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tổ chức khoa học và công nghệ trực thuộc Bộ Khoa học và Công nghệ, do Chính phủ thành lập theo Nghị định 50/2015/NĐ-CP."
       }
     ]
   },
@@ -3913,15 +4593,17 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (CarcinoEmbryonic Antigen, CEA), ngưỡng giới hạn phát hiện là 150 pg/ml.",
     "capability2": "",
+    "tenPhapNhan": "Viện Khoa học vật liệu",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vast.gov.vn",
-        "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt"
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt"
       }
     ],
-    "tim": "viện khoa học vật liệu vien viện nghiên cứu trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (carcinoembryonic antigen, cea), ngưỡng giới hạn phát hiện là 150 pg/ml. nhóm 4 sinh học và y sinh sp 13",
+    "tim": "viện khoa học vật liệu viện khoa học vật liệu vien viện nghiên cứu trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (carcinoembryonic antigen, cea), ngưỡng giới hạn phát hiện là 150 pg/ml. nhóm 4 sinh học và y sinh sp 13",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3982,6 +4664,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Tìm thấy dantri.com.vn đăng 06/07/2026: nhóm PGS.TS Nguyễn Văn Chúc, Viện Khoa học Vật liệu phát triển điện cực cảm biến từ graphene, CNTs, nano vàng phát hiện dư lượng thuốc bảo vệ thực vật cỡ ppb, nhiệm vụ đã được hội đồng cấp Viện Hàn lâm nghiệm thu. Không dùng được vì đây là cảm biến hóa học cho thuốc trừ sâu, không phải cảm biến sinh học phát hiện chỉ dấu y sinh như dòng cũ (CEA), và là nhóm nghiên cứu khác. Không tìm thấy nguồn từ 03/04/2026 khẳng định lại năng lực hệ vi lưu cảm biến điện hóa phát hiện chỉ dấu sinh học. | LAM GIAU dot_01 · P13 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Đề tài đã nghiệm thu. Nguồn cũ (2017), mức phòng thí nghiệm; người duyệt cân nhắc độ tươi."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Khoa học vật liệu",
+        "span": "b) Các đơn vị nghiên cứu:\n\n(7) Viện Toán học\n\n(8) Viện Vật lý\n\n(9) Viện Hóa học\n\n(10) Viện Cơ học\n\n(11) Viện Các Khoa học Trái đất\n\n(12) Viện Sinh học\n\n(13) Viện Hải dương học\n\n(14) Viện Khoa học công nghệ Năng lượng và Môi trường\n\n(15) Viện Khoa học vật liệu",
+        "source": "vast.gov.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Đơn vị nghiên cứu trực thuộc Viện Hàn lâm Khoa học và Công nghệ Việt Nam theo trang chức năng nhiệm vụ của Viện Hàn lâm; nguồn là website cơ quan chủ quản chứ không phải website riêng của Viện, người duyệt cân nhắc."
       }
     ]
   },
@@ -4000,6 +4692,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "thuật toán chữ ký số hậu lượng tử với tên gọi VN-PQSign",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -4077,6 +4771,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị Lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch CAR-T do Viện Nghiên cứu Tế bào gốc và Công nghệ gen Vinmec triển khai, phối hợp cùng Khoa Huyết học Bệnh viện Đa khoa Vinmec Smart City và Khoa Miễn dịch - Dị ứng Bệnh viện Đa khoa Quốc tế Vinmec Times City.",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -4164,15 +4860,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Sau 16 năm hình thành và phát triển, Viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế…",
     "capability2": "",
+    "tenPhapNhan": "Viện Tế bào gốc",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vnexpress.net",
         "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt"
+      },
+      {
+        "source": "sci.edu.vn",
+        "href": "/evidence/sci_edu_vn_chung_toi_la_ai_20261001.txt"
       }
     ],
-    "tim": "viện tế bào gốc, trường đại học khoa học tự nhiên, đhqg tp.hcm vien viện nghiên cứu sau 16 năm hình thành và phát triển, viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế… nhóm 4 sinh học và y sinh sp 11",
+    "tim": "viện tế bào gốc, trường đại học khoa học tự nhiên, đhqg tp.hcm viện tế bào gốc vien viện nghiên cứu sau 16 năm hình thành và phát triển, viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế… nhóm 4 sinh học và y sinh sp 11",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4243,6 +4945,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Khong co nguon hang A hoac B nao tu 03/04/2026. Chi tim duoc bai cua Vien truong tren trang cua chinh vien (sci.edu.vn, 11/06/2026, hang C, tu khai) khang dinh lai nang luc lam chu cong nghe te bao goc trung mo, yeu hon nguon vnexpress 2023 vi khong neu san pham cu the. URL: sci.edu.vn, bai 11/06/2026; ban chup khong giu vi nguyen van co em-dash. | LAM GIAU dot_01 · P11 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Địa chỉ theo nguồn năm 2023, trước sắp xếp đơn vị hành chính."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Tế bào gốc",
+        "span": "**Viện Tế bào gốc** (**VNUHCM-US Stem Cell Institute**) là đơn vị khoa học công nghệ tự chủ tài chính , có con dấu và tài khoản riêng, trực thuộc Trường Đại học Khoa học tự nhiên, Đại học Quốc gia TP. HCM.",
+        "source": "sci.edu.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/sci_edu_vn_chung_toi_la_ai_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website nói Viện là đơn vị khoa học công nghệ tự chủ tài chính, có con dấu và tài khoản riêng, trực thuộc Trường Đại học Khoa học tự nhiên, ĐHQG-HCM; tên giao dịch chỉ là Viện Tế bào gốc nên khi tra cổng cần kèm tên trường chủ quản để tránh trùng tên."
       }
     ]
   },
@@ -4261,15 +4973,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "đã sản xuất thành công vaccine cúm A/H5N1 (IVACFLU-AH5N1) và vaccine cúm mùa “3 trong 1” (IVACFLU-S)",
     "capability2": "",
+    "tenPhapNhan": "Viện Vắc xin và Sinh phẩm Y tế",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "baochinhphu.vn",
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt"
+      },
+      {
+        "source": "ivac.com.vn",
+        "href": "/evidence/ivac_com_vn_to_chuc_bo_may_20261001.txt"
       }
     ],
-    "tim": "viện vaccine và sinh phẩm y tế (ivac) vien viện nghiên cứu đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
+    "tim": "viện vaccine và sinh phẩm y tế (ivac) viện vắc xin và sinh phẩm y tế vien viện nghiên cứu đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4330,6 +5048,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi vac xin cum A/H5N1 va cum mua dung cho nguoi -> SP10 Vac xin the he moi dung cho nguoi. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Viện Vắc xin và Sinh phẩm Y tế",
+        "span": "Ngày 19/9/2022 , Bộ trưởng Bộ Y tế ra Quyết định số 2545/QĐ-BYT về việc ban hành Quy chế tổ chức và hoạt động Viện Vắc xin và Sinh phẩm Y tế thay thế Quyết định số 3390/QĐ-BYT ngày 11/9/2006",
+        "source": "ivac.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/ivac_com_vn_to_chuc_bo_may_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên registry viết Vaccine, tên pháp nhân trên website viết Vắc xin. Đơn vị thuộc Bộ Y tế (quy chế do Bộ trưởng Bộ Y tế ban hành, chịu trách nhiệm trước Bộ trưởng Bộ Y Tế)."
       }
     ]
   },
@@ -4348,15 +5076,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "VinAI đã lọt vào Top 20 công ty toàn cầu dẫn đầu về nghiên cứu AI",
     "capability2": "",
+    "tenPhapNhan": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
+      },
+      {
+        "source": "vinai.io",
+        "href": "/evidence/vinai_io_privacy_20261001.txt"
       }
     ],
-    "tim": "vinai vinai đã lọt vào top 20 công ty toàn cầu dẫn đầu về nghiên cứu ai nhóm 1 công nghệ số sp 01",
+    "tim": "vinai công ty cổ phần nghiên cứu và ứng dụng trí tuệ nhân tạo vinai vinai đã lọt vào top 20 công ty toàn cầu dẫn đầu về nghiên cứu ai nhóm 1 công nghệ số sp 01",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4397,6 +5131,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi ve mo hinh AI va xu ly ngon ngu -> SP01 LLM tieng Viet, tro ly ao, AI chuyen nganh. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. | NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718.html dat hau to theo ngay chup 18/07/2026, lam tuoi nguon cua claim nay bi tinh sai. Chup lai, tro sang ban co dong ngay dang."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI",
+        "span": "Công ty cổ phần Nghiên cứu và Ứng dụng trí tuệ nhân tạo VinAI(sau đây gọi là “Công Ty”) có địa chỉ tại Tòa nhà văn phòng Symphony",
+        "source": "vinai.io",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vinai_io_privacy_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Pháp nhân riêng trong hệ sinh thái Vingroup, không dùng mã Vingroup. Website không công bố mã số."
       }
     ]
   },
@@ -4415,15 +5159,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Tháng 8/2023, VinBigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng Việt",
     "capability2": "",
+    "tenPhapNhan": "VinBigData Joint Stock Company",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vneconomy.vn",
         "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt"
+      },
+      {
+        "source": "vinbigdata.com",
+        "href": "/evidence/vinbigdata_com_thanh_lap_20261001.txt"
       }
     ],
-    "tim": "vinbigdata tháng 8/2023, vinbigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng việt nhóm 1 công nghệ số sp 1",
+    "tim": "vinbigdata vinbigdata joint stock company tháng 8/2023, vinbigdata đã công bố xây dựng thành công mô hình ngôn ngữ lớn tiếng việt nhóm 1 công nghệ số sp 1",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4464,6 +5214,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
         "note": "NGAY DANG THAT 04/09/2023 (29/09/2026): ban chup cu vneconomy_ai_khatvong_20260718 dat hau to theo ngay chup. Claim nay la bang chung cua MATCH-0007 da ky, nen tro sang ban chup that lam khoa chu ky doi; chu ky phai do NGUOI ky lai hoac bac, may khong ky thay."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "VinBigData Joint Stock Company",
+        "span": "establish VinBigData Joint Stock Company as a subsidiary",
+        "source": "vinbigdata.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vinbigdata_com_thanh_lap_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Chỉ có tên tiếng Anh; tên tiếng Việt dự kiến là Công ty cổ phần VinBigData nhưng chưa đọc được nguyên văn (trang chủ, liên hệ, chính sách dữ liệu trả về rỗng do JavaScript). Công ty con của Vingroup, pháp nhân riêng; tách từ Viện Nghiên cứu Dữ liệu lớn thuộc VinTech."
       }
     ]
   },
@@ -4484,6 +5244,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "làm chủ hơn 40 mô hình AI xử lý ảnh phục vụ các bài toán đặc thù của Việt Nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ",
     "capability2": "VNPT Cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số.",
+    "tenPhapNhan": "Tập đoàn Bưu chính Viễn thông Việt Nam",
+    "maTuKhai": "",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
@@ -4498,9 +5260,13 @@ export const cnclUnits: CnclUnit[] = [
       {
         "source": "vtv.vn",
         "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt"
+      },
+      {
+        "source": "hanoi.vnpt.com.vn",
+        "href": "/evidence/hanoi_vnpt_com_vn_ve_chung_toi_20261001.txt"
       }
     ],
-    "tim": "vnpt dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ vnpt cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số. nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
+    "tim": "vnpt tập đoàn bưu chính viễn thông việt nam dn doanh nghiệp làm chủ hơn 40 mô hình ai xử lý ảnh phục vụ các bài toán đặc thù của việt nam như nhận diện biển số, phát hiện vi phạm giao thông hay giám sát cháy nổ vnpt cloud hiện được phát triển như một hệ sinh thái điện toán đám mây toàn diện, gồm các dịch vụ hạ tầng, nền tảng và công cụ hỗ trợ vận hành ứng dụng số. nhóm 1 công nghệ số nhóm 3 robot và tự động hoá sp 2",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4591,6 +5357,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
         "note": "DU DIEU KIEN DA XET: 'van hanh' o day la 'cong cu ho tro van hanh ung dung so', mot thanh phan cua he sinh thai VNPT Cloud, khong phai VNPT van hanh cong nghe cua ben khac. RUI RO: cau dung the bi dong 'duoc phat trien', khong noi ro VNPT tu phat trien; van phong gan thong cao. | LAM GIAU dot_01 · P04 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Thay dòng nang_luc_mo_ta_2 của VNPT (ttbc-hcm.gov.vn 02/12/2020, câu chung 5 doanh nghiệp). Nguồn mới gọi đích danh VNPT Cloud thuộc VNPT-IT, Tập đoàn VNPT, được Top 10 Sao Khuê 2026 (VINASA, bên thứ ba, 28/5/2026) và I4 Impact Awards 2026; câu nêu hệ sinh thái điện toán đám mây gồm hạ tầng và nền tảng. Người duyệt lưu ý: vtv.vn là nguồn mới; văn phong gần thông cáo ('VNPT Cloud cho biết'), câu dùng thể bị động 'được phát triển' chứ không nói rõ 'tự phát triển'; cùng bài nói VNPT Cloud phát triển từ hạ tầng viễn thông của VNPT. Bài VTV 24/09/2026 (chưa chụp) có câu 'Với lớp PaaS, VNPT Cloud phát triển các dịch vụ như VNPT Kubernetes Service'."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Tập đoàn Bưu chính Viễn thông Việt Nam",
+        "span": "VNPT Hà Nội là đơn vị kinh tế trực thuộc Tập đoàn Bưu chính Viễn thông Việt Nam, được thành lập theo quyết định số 652/ QĐ-TCCB/ HĐQT ngày 06-12-2007",
+        "source": "hanoi.vnpt.com.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/hanoi_vnpt_com_vn_ve_chung_toi_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Tên lấy từ trang của đơn vị trực thuộc VNPT Hà Nội, không phải trang của chính Tập đoàn; website không công bố mã số Tập đoàn."
       }
     ]
   },
@@ -4609,15 +5385,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "đang phát triển các sản phẩm cho mạng 5G phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây",
     "capability2": "phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông",
+    "tenPhapNhan": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông",
+    "maTuKhai": "0105140413",
     "bestTier": "A",
     "favorsRtr": false,
     "sources": [
       {
         "source": "mst.gov.vn",
         "href": "/evidence/mst_vnpttech_vkist_20260702.txt"
+      },
+      {
+        "source": "vnpt-technology.vn",
+        "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt"
       }
     ],
-    "tim": "vnpt technology đang phát triển các sản phẩm cho mạng 5g phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây phát triển các sản phẩm odm/oem trong lĩnh vực điện tử - viễn thông nhóm 2 mạng di động thế hệ sau sp 06",
+    "tim": "vnpt technology công ty cổ phần công nghệ công nghiệp bưu chính viễn thông 0105140413 đang phát triển các sản phẩm cho mạng 5g phục vụ lấp đầy các vùng lõm của mạng băng rộng di động và không dây phát triển các sản phẩm odm/oem trong lĩnh vực điện tử - viễn thông nhóm 2 mạng di động thế hệ sau sp 06",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4678,6 +5460,26 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
         "note": "Vong lam moi 18/08/2026. DAY LA NOI DUNG THOA THUAN MoU ky 30/06/2026, tuc DINH HUONG, chua phai nang luc da hinh thanh. Ghi theo tien le nang_luc_mo_ta_2 cua Tap doan Viettel (thoa thuan chip FPT-Viettel 28/01/2026). KHONG duoc dung dong nay lam can cu noi VNPT Technology da lam chu ODM/OEM."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông",
+        "span": "Công ty Cổ phần Công nghệ Công nghiệp Bưu chính Viễn thông .",
+        "source": "vnpt-technology.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Công ty con của Tập đoàn VNPT, pháp nhân riêng; không dùng mã của VNPT."
+      },
+      {
+        "field": "ma_so_tu_khai",
+        "value": "0105140413",
+        "span": "GCNĐKDN số : 0105140413 do Sở KHĐT Tp.Hà Nội cấp lần đầu ngày 06/01/2011.",
+        "source": "vnpt-technology.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã 10 số của pháp nhân riêng, không phải mã đơn vị phụ thuộc VNPT."
       }
     ]
   },
@@ -4696,15 +5498,21 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại Việt Nam trong lĩnh vực đóng gói bán dẫn tiên tiến",
     "capability2": "",
+    "tenPhapNhan": "Công ty Cổ phần VSAP LAB",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
       {
         "source": "nhandan.vn",
         "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt"
+      },
+      {
+        "source": "vsaplab.com",
+        "href": "/evidence/vsaplab_com_thong_bao_dtm_20261001.txt"
       }
     ],
-    "tim": "vsap lab phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại việt nam trong lĩnh vực đóng gói bán dẫn tiên tiến nhóm 6 chip bán dẫn sp 23",
+    "tim": "vsap lab công ty cổ phần vsap lab phòng thí nghiệm – sản xuất thử nghiệm (lab-fab) đầu tiên tại việt nam trong lĩnh vực đóng gói bán dẫn tiên tiến nhóm 6 chip bán dẫn sp 23",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4745,6 +5553,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "normalized",
         "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
         "note": "TIP-2F Phan B, lam giau nen san pham. Span noi lab-fab dong goi ban dan tien tien -> SP23 Chip chuyen dung. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon. NEO LAI SPAN 24/08/2026, gom mot luot bon ca. Span cu mo dau bang mot cum hoi chieu ma tien nguu khong nam trong ban chup, doc len khong biet no tro vao dau. Da lui span ve truoc, nguyen van tu ban tuoi, cho toi khi cum do co cho neo. Gia tri claim khong doi. | NGAY DANG THAT 02/02/2026 (29/09/2026): ban chup cu nhandan_vsaplab_20260816 dat hau to theo ngay chup 16/08/2026 du dong ghi chu cua no ghi bai dang 02/02/2026. Cong check_ngay_dang.py bat. Chup lai, tro sang ban co dong ngay cua nguon."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty Cổ phần VSAP LAB",
+        "span": "Công ty Cổ phần VSAP LAB được Sở Nông nghiệp và Môi trường thành phố Đà Nẵng cấp Quyết định phê duyệt",
+        "source": "vsaplab.com",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vsaplab_com_thong_bao_dtm_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Website không công bố mã số. Lưu ý: chân trang vsaplab.com dẫn liên kết mạng xã hội và email của DSAC Đà Nẵng (dnaihub, dsac@danang.gov.vn), có thể do đơn vị thiết kế để lại; không ảnh hưởng tên pháp nhân."
       }
     ]
   },
@@ -4763,15 +5581,17 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "Tại Lễ công bố và trao giải Sao Khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, CNTT Việt Nam, sản phẩm Hệ thống điều hành sản xuất MES-X của VTI Solutions trực thuộc VTI Group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của VTI Solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ.",
     "capability2": "",
+    "tenPhapNhan": "Công ty cổ phần VTI Solutions",
+    "maTuKhai": "",
     "bestTier": "C",
     "favorsRtr": false,
     "sources": [
       {
         "source": "vti-solutions.vn",
-        "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt"
+        "href": "/evidence/vti_solutions_vn_chan_trang_20261001.txt"
       }
     ],
-    "tim": "vti solutions dn doanh nghiệp tại lễ công bố và trao giải sao khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, cntt việt nam, sản phẩm hệ thống điều hành sản xuất mes-x của vti solutions trực thuộc vti group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của vti solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ. nhóm 3 robot và tự động hoá sp 8",
+    "tim": "vti solutions công ty cổ phần vti solutions dn doanh nghiệp tại lễ công bố và trao giải sao khuê 2024 cho sản phẩm xuất sắc của ngành phần mềm, cntt việt nam, sản phẩm hệ thống điều hành sản xuất mes-x của vti solutions trực thuộc vti group đã vinh dự nằm trong top 10 đầy ấn tượng, từ đó càng khẳng định năng lực cốt lõi của vti solutions trong việc triển khai các giải pháp công nghệ và dịch vụ xuất sắc đồng hành cùng với tiến trình chuyển đổi số quốc gia, đặc biệt là thúc đẩy mô hình nhà máy không giấy tờ. nhóm 3 robot và tự động hoá sp 8",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4832,6 +5652,16 @@ export const cnclUnits: CnclUnit[] = [
         "extraction": "verbatim",
         "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
         "note": "GIU NGUON CU: da di tim nguon moi ngay 30/09/2026 (vong lam tuoi dot 01). Không tìm được nguồn đăng từ 03/04/2026 gọi đích danh 'VTI Solutions' với MES-X. Kết quả tìm kiếm có tin MES-X đạt giải Bạc ASEAN Digital Awards tháng 01/2026 và Top 10 Sao Khuê 2024 (vinasa.org.vn, dangcongsan.vn), đều cũ hơn mốc, và chủ yếu từ trang của VTI; bài baochinhphu 28/05/2026 về Sao Khuê 2026 không nêu tên đơn vị đoạt giải. Bài cafef 21/09/2026 về kho thông minh WMSX gọi 'VTI', không gọi 'VTI Solutions', nên không dùng (đúng luật hai tên gọi). | LAM GIAU dot_01 · P08 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Tự khai: tự nghiên cứu, phát triển MES-X (không dựa nền tảng có sẵn). Người duyệt lưu ý: đoạn bản chụp không nêu tên khách hàng nhà máy cụ thể; cafef 21/09/2026 (hạng B) có bài về kho thông minh WMSX do 'VTI' triển khai tại Sumi-Hanel vận hành từ 04/2026, nhưng nguồn gọi 'VTI' chứ không phải 'VTI Solutions' nên chưa gộp (xem honest-null)."
+      },
+      {
+        "field": "ten_phap_nhan",
+        "value": "Công ty cổ phần VTI Solutions",
+        "span": "Công ty cổ phần VTI Solutions\n\n#### Chứng nhận bởi:",
+        "source": "vti-solutions.vn",
+        "tier": "C",
+        "extraction": "verbatim",
+        "href": "/evidence/vti_solutions_vn_chan_trang_20261001.txt",
+        "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Thành viên của VTI Group; công ty mẹ VTI là pháp nhân khác. Website không công bố mã số."
       }
     ]
   },
@@ -4850,6 +5680,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "UAV giao hàng có khả năng vận chuyển kiện hàng nặng tới 6,5 kg",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [
@@ -4917,6 +5749,8 @@ export const cnclUnits: CnclUnit[] = [
     ],
     "capability": "",
     "capability2": "",
+    "tenPhapNhan": "",
+    "maTuKhai": "",
     "bestTier": "B",
     "favorsRtr": false,
     "sources": [

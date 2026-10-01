@@ -20,6 +20,7 @@ export type HoSo = {
   slug: string; ten: string; loaiHinh: string | null;
   nhoms: { so: string; nhan: string }[]; lanhTho: string | null; bestTier: string; favorsRtr: boolean;
   dinhDanh: { trangThai: 'chua_dinh_danh' | 'da_dinh_danh'; maSo: string | null; href: string | null };
+  tuKhai: { tenPhapNhan: string | null; maSo: string | null; href: string; nguon: string } | null;
   dem: { cauNguon: number; theoTier: { A: number; B: number; C: number }; tenMienNguon: number; banChup: number; matchDaKy: number };
   doTuoi: { tuoi: number; ben: number; giuNguonCu: number; quaHan: number; khongDocDuoc: number; cuNhat: string | null; moiNhat: string | null };
   bangChung: { i: number; field: string; tier: string; source: string; href: string; ngayDang: string | null; tuoiNgay: number | null; loaiTruong: string; trangThai: string }[];
@@ -192,6 +193,13 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
             ? <>Đã định danh pháp nhân: mã số {hs.dinhDanh.maSo}{hs.dinhDanh.href && <> · <a className="pf-link" href={hs.dinhDanh.href} target="_blank" rel="noopener noreferrer">bản chụp</a></>}</>
             : <><b>Chưa định danh pháp nhân.</b> Sổ nguồn chưa có mã số doanh nghiệp tra từ cổng thông tin chính thức; trang tổng hợp tư nhân không được dùng làm nguồn.</>}
         </p>
+        {hs.tuKhai && (
+          <p className="hs-tk">
+            <span className="hs-tk__nhan">Tự khai, chưa đối chiếu cổng</span>
+            {hs.tuKhai.tenPhapNhan && <span>Pháp nhân: <b>{hs.tuKhai.tenPhapNhan}</b></span>}
+            {hs.tuKhai.maSo && <span>Mã số: <b className="hs-tk__ma">{hs.tuKhai.maSo}</b></span>}
+            <a className="pf-link" href={hs.tuKhai.href} target="_blank" rel="noopener noreferrer">bản chụp {hs.tuKhai.nguon}</a>
+          </p>)}
       </section>
 
       <section className="hs-kpi" aria-label="Chỉ số bằng chứng">
@@ -226,7 +234,7 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
               const e = bangChung[b.i];
               return <BangChung key={b.i} e={e} them={them.map((x) => ({ field: bangChung[x.i].field, value: bangChung[x.i].value }))} phu={
                 <span className={`hs-tt hs-tt--${b.trangThai}`} title={b.ngayDang ? `Nguồn đăng ${ngayVN(b.ngayDang)}, ${b.tuoiNgay} ngày trước mốc đo` : ''}>
-                  {ngayVN(b.ngayDang)} · {TT_NHAN[b.trangThai]}
+                  {b.ngayDang ? `${ngayVN(b.ngayDang)} · ${TT_NHAN[b.trangThai]}` : b.trangThai === 'ben' ? 'định danh, không có ngày đăng' : TT_NHAN[b.trangThai]}
                 </span>} />;
             })}
           </ul>

@@ -12,6 +12,9 @@
  *   de_xuat    · tin moi tu vong tu chay, CHUA duyet, khong bao gio tron vao su that da ky.
  * Kho Portal/kernel CHUA noi vao day: phai qua cau noi mot chieu vao hang cho (10_KHO_PORTAL_KERNEL.md).
  */
+// Cung danh sach voi lib/ho-so.mjs TRUONG_DINH_DANH; chep lai de module nay dung mot minh (rang
+// cua cong thoi_cuoc chep rieng file nay vao thu muc tam).
+const TRUONG_DINH_DANH = ['ten_phap_nhan', 'ma_so_tu_khai', 'ma_so_thue'];
 
 const soSanh = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 export const LAN = ['chinh_sach', 'don_vi', 'quyet_dinh', 'de_xuat'];
@@ -39,6 +42,9 @@ export function dungThoiCuoc({ reg, mat, ev, hoSo, graph, suKienChinhSach }) {
   const theoBan = new Map();
   for (const u of reg.units) {
     for (const e of u.evidence) {
+      // Ban chup chi chua truong dinh danh (trang chinh chu, trang tra cuu) khong phai TIN:
+      // hau to cua no la ngay quan sat, khong phai ngay xay ra su viec.
+      if (TRUONG_DINH_DANH.includes(e.field)) continue;
       if (!theoBan.has(e.href)) theoBan.set(e.href, { href: e.href, nguon: e.source, tier: e.tier, don: new Map() });
       const b = theoBan.get(e.href);
       if (!b.don.has(u.name)) b.don.set(u.name, []);

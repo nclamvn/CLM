@@ -49,7 +49,10 @@ TRUONG_VAN = {"nang_luc_mo_ta", "nang_luc_mo_ta_2", "bang_chung_nang_luc", "ten_
               # "ma so" trong TRUONG_MA_SO nghia la NHAN PHAN LOAI suy ra theo luat domain
               # (nhom 9, san pham 22), thu khong co trong nguon. Ma so doanh nghiep thi nguoc
               # lai: no PHAI co nguyen van trong span, va do la diem chinh cua no.
-              "ma_so_thue"}
+              "ma_so_thue",
+              # Lo dinh danh 02 (01/10/2026): ten phap nhan va ma so TU KHAI tren website chinh
+              # chu. Cung ly do voi ma_so_thue: phai co nguyen van trong span.
+              "ten_phap_nhan", "ma_so_tu_khai"}
 
 # Truong MA SO: value la nhan phan loai suy ra theo luat domain, khong phai chu trich.
 TRUONG_MA_SO = {"nhom_cncl", "san_pham_lien_quan", "loai_hinh", "nhom_cncl_phu_3",
