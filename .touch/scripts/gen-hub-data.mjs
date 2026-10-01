@@ -40,6 +40,8 @@ import { dungMoDau } from '../lib/mo-dau.mjs';
 import { dungTenSp } from '../lib/hien-gia-tri.mjs';
 import { dungChiMuc } from '../lib/hoi-dap.mjs';
 import { dungBaoCao } from '../lib/bao-cao.mjs';
+import { dungHoSoKiemToan } from '../lib/kiem-toan.mjs';
+import { createHash } from 'node:crypto';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -261,6 +263,11 @@ writeFileSync(join(LIB, 'hub-bao-cao.json'), JSON.stringify(dungBaoCao({ thiTruo
 const PUB = join(HERE, '..', 'public');
 const docBanChup = (href) => { const p = join(PUB, href); return existsSync(p) ? readFileSync(p, 'utf8') : null; };
 const ghiChu = spanChiTrongGhiChu(moiCauNguon(reg, mat), docBanChup).filter((x) => !x.ai.startsWith('MATCH-'));
+
+// ── Ma kiem toan ho so (01/10/2026): SHA-256 cua cau nguon + ban chup ma web phuc vu ──
+const sha256 = (t) => createHash('sha256').update(t, 'utf8').digest('hex');
+const kiemToan = Object.fromEntries(reg.units.map((u) => [u.name, dungHoSoKiemToan(u, docBanChup, sha256)]));
+writeFileSync(join(LIB, 'hub-kiem-toan.json'), JSON.stringify(kiemToan, null, 1) + '\n', 'utf8');
 writeFileSync(join(LIB, 'hub-ghi-chu.json'), JSON.stringify({ meta: { generatedAt: NOW, so: ghiChu.length }, ds: ghiChu }, null, 2) + '\n', 'utf8');
 
 console.log(`HUB: ${nodes.length} nut · ${edges.length} canh · ${docs.length} tai lieu tim · ${events.length} su kien`);

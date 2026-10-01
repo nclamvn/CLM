@@ -6,10 +6,13 @@ import hoSo from '@/lib/hub-ho-so.json';
 import registry from '@/lib/cncl-registry.json';
 import type { CnclUnit } from '@/lib/cncl-registry';
 import { ngayVN } from '@/lib/dinh-dang';
+import kiemToan from '@/lib/hub-kiem-toan.json';
+import { KiemToan, type HoSoKiemToan } from '@/components/hoso/KiemToan';
 
 type DuLieu = { meta: HoSoMeta; units: HoSo[] };
 const D = hoSo as unknown as DuLieu;
 const R = registry as unknown as { units: CnclUnit[] };
+const KT = kiemToan as unknown as Record<string, HoSoKiemToan>;
 
 /** Dung tinh ca 44 trang luc build: slug nao khong co trong du lieu thi 404, khong dung trang rong. */
 export function generateStaticParams() {
@@ -34,6 +37,7 @@ export default async function HoSoPage({ params }: { params: Promise<{ slug: str
       <DashTopBar title="Hồ sơ đơn vị" subtitle={`${hs.ten} · ${hs.dem.cauNguon} câu nguồn · dữ liệu ${ngayVN(D.meta.mocNgay)}`} />
       <div className="dash-content">
         <HoSoDonVi hs={hs} bangChung={u.evidence} meta={D.meta} />
+        {KT[u.name] && <KiemToan kt={KT[u.name]} bangChung={u.evidence} />}
       </div>
     </>
   );

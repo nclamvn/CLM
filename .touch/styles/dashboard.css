@@ -1354,3 +1354,13 @@
 .dash-shell .bc-tt b { color: var(--color-text-primary); }
 .dash-shell .bc-bang td:nth-child(3) { text-align: left; }
 .dash-shell .bc-bang tr.bc-trong th, .dash-shell .bc-bang tr.bc-trong td { color: var(--color-text-primary); font-weight: 600; }
+
+/* Ho so kiem toan duoc (01/10/2026) */
+.dash-shell .kt { margin-top: var(--space-3); }
+.dash-shell .kt-dong { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3); align-items: center; }
+.dash-shell .kt-nhan { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); }
+.dash-shell .kt-ma { font-family: var(--mono); font-size: 22px; font-weight: 600; color: var(--color-text-primary); letter-spacing: 0.04em; }
+.dash-shell .kt-day { font-family: var(--mono); font-size: 12px; color: var(--color-text-muted); max-width: 220px; overflow-wrap: anywhere; }
+.dash-shell .kt-giai { font-size: 13px; line-height: 20px; color: var(--color-text-secondary); margin: 0; }
+.dash-shell .kt-giai code { font-family: var(--mono); font-size: 12px; }
+@media (max-width: 900px) { .dash-shell .kt-dong { grid-template-columns: minmax(0, 1fr); } }

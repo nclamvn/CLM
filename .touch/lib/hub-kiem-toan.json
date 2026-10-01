@@ -1,0 +1,1050 @@
+{
+ "Bệnh viện Trung ương Quân đội 108": {
+  "donVi": "Bệnh viện Trung ương Quân đội 108",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "bc4cb729f32f6987e1e14b9e5ca189be34ca8d02f8db18b484ec0265a5e29315",
+  "maNgan": "bc4c-b729-f32f",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
+    "sha256": "ec977152482ba5e07791e1487c9f2ec1d356edd8596998aed244083b2c6b27cd"
+   },
+   {
+    "href": "/evidence/benhvien108_vn_gioi_thieu_20261001.txt",
+    "sha256": "ace7e0da1c284075835aefa8f365fcd2ef9957352473469dd7d852c2bdf58427"
+   }
+  ]
+ },
+ "CMC Telecom": {
+  "donVi": "CMC Telecom",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "ede2971f427504f24b345e171ec3fc578e31cb71560d023e3f5ff4ee8ba04adb",
+  "maNgan": "ede2-971f-4275",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/mst_cmc_cloud_20250321.txt",
+    "sha256": "dbe470223a7c1b302c3927642885b181ae1f99be5da4181b20965e7ece96b0f4"
+   },
+   {
+    "href": "/evidence/cmctelecom_vn_chan_trang_20261001.txt",
+    "sha256": "1965f03519f61aa63ecd374b91fda66c837f3b2a58ac46bb9f4e52b2a47bf6ba"
+   }
+  ]
+ },
+ "Công ty 1Matrix": {
+  "donVi": "Công ty 1Matrix",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "a1c4e6f561e9b2612249daeacdeca99f02d8026d35c0e6dd690c654ffc5577a2",
+  "maNgan": "a1c4-e6f5-61e9",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
+    "sha256": "e4191226e9c39c88c3e4bf0e3dae461c354eaac2848acad87d17aa1729a46a11"
+   },
+   {
+    "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
+    "sha256": "ba0e1a0df4c45ab5eeeddb6ba9726f3834be09577bb22a54144be102e57c866f"
+   },
+   {
+    "href": "/evidence/1matrix_com_gioi_thieu_20261001.txt",
+    "sha256": "17f0c981be98db861582c5bd998e0ce8c84ec03a3e32d11bebf34f91681eed1e"
+   }
+  ]
+ },
+ "Công ty An ninh mạng Viettel": {
+  "donVi": "Công ty An ninh mạng Viettel",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "4977942d2c0d4a9b55a781f15b69b15f18de49ef730582e470246dbf0ea40ab6",
+  "maNgan": "4977-942d-2c0d",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+    "sha256": "f57e4c6b2bb41289d7aba185db70d4e1a894ba484d0a4686cf920a4145dbe127"
+   }
+  ]
+ },
+ "Công ty cổ phần AVAC Việt Nam": {
+  "donVi": "Công ty cổ phần AVAC Việt Nam",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "7c81c3a638afb7674f675c3d3ffcd4522b3a1b95d19a2618db071e9126a4c9bc",
+  "maNgan": "7c81-c3a6-38af",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
+    "sha256": "4ed4771401545b14013ff26754e4f80fe48c8434cbbf535f7918a4e2d7b77401"
+   },
+   {
+    "href": "/evidence/avac_com_vn_gioi_thieu_20261001.txt",
+    "sha256": "ca77f0f5b30272562991869c26a47c93f2fabc45c80a544e0b7306df11b9587b"
+   }
+  ]
+ },
+ "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)": {
+  "donVi": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "880a9673e879a59dbc844245749a0d8e44f25c2bd022ed1bf61e67319c0159dd",
+  "maNgan": "880a-9673-e879",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+    "sha256": "42fda6f95e49aacda345d5da82ce386ecb85520e791e887dc7a456f22f61a03f"
+   },
+   {
+    "href": "/evidence/vntt_com_vn_bao_cao_thuong_nien_2025_20261001.txt",
+    "sha256": "f122a1639f57d47434d25ba9c29fb4afe4b3928ba3d7597f41f8add49b84149f"
+   }
+  ]
+ },
+ "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)": {
+  "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "4e3dec2a49cc6aa503d4f8a047d1962f4522727a9610f363ce75a8e07c318aef",
+  "maNgan": "4e3d-ec2a-49cc",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+    "sha256": "a1fc8344752887b7ccd67ccc1917daa928138803242a811a2b3c828a0e4025ab"
+   },
+   {
+    "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
+    "sha256": "b5dd93e21445ef754516ff35e26704f77ee0445ac1e5447be365c84f31568b02"
+   },
+   {
+    "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
+    "sha256": "d5e9eea3818d1d3c52f5c966c9bda46e5b4de17a4870bb022c8e6e0d45a4dcaa"
+   }
+  ]
+ },
+ "Công ty Cổ phần Giải pháp Năng lượng VinES": {
+  "donVi": "Công ty Cổ phần Giải pháp Năng lượng VinES",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "282efd3c0a29dbc7ba6c7f798130a21b8f6364bfaf829909663198b10ef40ea4",
+  "maNgan": "282e-fd3c-0a29",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/vneconomy_vines_pin_20240306.txt",
+    "sha256": "6ea9de21b38f4a0fdac24ef25766a0608d6452b7ba3df6bc92323e810ea3979c"
+   },
+   {
+    "href": "/evidence/vines_net_vn_tin_2023_20261001.txt",
+    "sha256": "efabdcabca30a8b606b998a8a1aee97763e7f27d521255bc21b024a76058698f"
+   }
+  ]
+ },
+ "Công ty cổ phần Health Care Center": {
+  "donVi": "Công ty cổ phần Health Care Center",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "ac9ed17c20e9cd84200d574be6ebd6e56f2ccab00f32403b5a9f97881cb59bee",
+  "maNgan": "ac9e-d17c-20e9",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+    "sha256": "86fd0f7cda617f68f67a0ce1040e17818dca4acfbb477a37ad1462ee848b46cd"
+   }
+  ]
+ },
+ "Công ty cổ phần thuốc thú y Trung ương NAVETCO": {
+  "donVi": "Công ty cổ phần thuốc thú y Trung ương NAVETCO",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "72a1e0276b1e251487e82630ddc3107e83f98a568c0c7d154111b7267b25e4de",
+  "maNgan": "72a1-e027-6b1e",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
+    "sha256": "4ed4771401545b14013ff26754e4f80fe48c8434cbbf535f7918a4e2d7b77401"
+   },
+   {
+    "href": "/evidence/navetco_com_vn_gioi_thieu_20261001.txt",
+    "sha256": "02aefef02866607a1c1c0328fdc20d0364f512f83171b0d685e90a1d4c29ccdd"
+   }
+  ]
+ },
+ "Công ty cổ phần VinMotion": {
+  "donVi": "Công ty cổ phần VinMotion",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "1c16a4b436af442e24c0cde511e42a4fa4ff3b4e30cd4f55afbdb8e789221c25",
+  "maNgan": "1c16-a4b4-36af",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/tuoitre_vinmotion_20250606.txt",
+    "sha256": "7598aa54c23ae3e3a0eacb7e3420d6c69f5ed2c4af52f1945014fe887fac6efa"
+   },
+   {
+    "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt",
+    "sha256": "80e43ea0e91dafe15036b444d3dd03d4be4e3d27a0d163ee70eaefc4bbb811fe"
+   },
+   {
+    "href": "/evidence/vinmotion_net_lien_he_20261001.txt",
+    "sha256": "9be491c5330e2809842bf03509b9215a74bbd42618e84a262553db86acaa0b9a"
+   }
+  ]
+ },
+ "Công ty cổ phần Xe lửa Dĩ An": {
+  "donVi": "Công ty cổ phần Xe lửa Dĩ An",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "a7be748efb5695a652609c96a8fbbcca32c384e1b50993cb2123514a6af1ab82",
+  "maNgan": "a7be-748e-fb56",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_xelua_dian_20240925.txt",
+    "sha256": "361a8f42a7f186a27b2630c795fd29407b33603097aa7f941efb4d334b8d744d"
+   },
+   {
+    "href": "/evidence/xeluadian_com_vn_lien_he_20261001.txt",
+    "sha256": "7a1aa81cd722a533d85c8b3ab071a686987c48a925e75f9675ddc97a082b384a"
+   }
+  ]
+ },
+ "Công ty Cổ phần Y Sinh Ngọc Bảo": {
+  "donVi": "Công ty Cổ phần Y Sinh Ngọc Bảo",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "b20c64a32ef06e655be8e2857cd3e84f6d43374da71a0775896492db8c124ac8",
+  "maNgan": "b20c-64a3-2ef0",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
+    "sha256": "27b14beb5e99b6154f6437a0a7aa879c584e00ecdc1cd3f187db3bcd5f017101"
+   },
+   {
+    "href": "/evidence/ngocbaobiomed_com_trang_chu_20261001.txt",
+    "sha256": "0f93188d0c0f20481575d26ca3ccfe888b8c054982d2cf4ee310445ab9030136"
+   }
+  ]
+ },
+ "Công ty CP Việt Nam Food (VNF)": {
+  "donVi": "Công ty CP Việt Nam Food (VNF)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "a388c69cafea64f6f2c98c1afb3cfb5f2f8fce84ef1fb7dfd0c3396316004271",
+  "maNgan": "a388-c69c-afea",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
+    "sha256": "89b1b260c2d6011c175d01aaee864f3da5955ccddf6caeed76075fee106e2108"
+   },
+   {
+    "href": "/evidence/vnfoods_vn_tin_kito_sil_20260724.txt",
+    "sha256": "ed18c01e12bbf655448563de2a721458f8fbf0172438aed7dcaa04c185bd64f1"
+   }
+  ]
+ },
+ "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan": {
+  "donVi": "Công ty TNHH Công nghệ Sinh học xanh Nhật Lan",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "2684a7229e28dcae1d8db04667a651f4c04918e4263205e32e0a970ad899b566",
+  "maNgan": "2684-a722-9e28",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+    "sha256": "e37b7211dcc671f113d10dbe7ef33ee5d85153dde83d4114e81e46f6a9ea4ae6"
+   },
+   {
+    "href": "/evidence/dongtrunghathaonhatlan_com_vn_trang_chu_20261001.txt",
+    "sha256": "a72d6c76cf4aaed433055dfecfbf843b6716ad85404a69fdefbe0b6c68224b23"
+   }
+  ]
+ },
+ "Công ty TNHH Luyện kim Trần Hồng Quân": {
+  "donVi": "Công ty TNHH Luyện kim Trần Hồng Quân",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "3ae5fc19871b7104722c9e7589741920b38ad49f558c7b8be72ec24554761137",
+  "maNgan": "3ae5-fc19-871b",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
+    "sha256": "b5ea120b9d44983fb7d203e62362aeff05afb64977818000e02896b27086c3a9"
+   }
+  ]
+ },
+ "CT Group": {
+  "donVi": "CT Group",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "9295e6a358ddee8fca4fcc0e125d4effb547b80b943ed9181a6f766efafb2393",
+  "maNgan": "9295-e6a3-58dd",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
+    "sha256": "b86fa28a2cbac28cc24fdc7fd515b20719e45dd53af15919b230e65f407a8fd3"
+   }
+  ]
+ },
+ "CT Semiconductor": {
+  "donVi": "CT Semiconductor",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "71ba1a3cadf60b763f4ee5a99f088cb278b3f681be6d045763060f9349e2caf6",
+  "maNgan": "71ba-1a3c-adf6",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
+    "sha256": "74dea1bac08710b1e0da564d2af9f4b964c820db8fda3bc57ff074091d5aaef6"
+   },
+   {
+    "href": "/evidence/ctsemiconductor_com_gioi_thieu_20261001.txt",
+    "sha256": "0cf155b102349d2b883ef994cbfbf92d4f35d83d106a60abfa1466dae4d04324"
+   }
+  ]
+ },
+ "FECON": {
+  "donVi": "FECON",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "94b632b106cebb4172cd294395e2b591698dff20e819fa90baad57a787d56d3e",
+  "maNgan": "94b6-32b1-06ce",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
+    "sha256": "282558c6bcd63769f7333e6b080fb5d00e63168e23722a31b88d069a2da2b858"
+   },
+   {
+    "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
+    "sha256": "8f195a698078da069a8cff08ccf46dc661f5fb8147c07174a6da7a93f55666e5"
+   },
+   {
+    "href": "/evidence/fecon_com_vn_gioi_thieu_20261001.txt",
+    "sha256": "46e728b364357ba0729b249b449f067a8145c914ea90e3acd3e8c4ee06e4faeb"
+   },
+   {
+    "href": "/evidence/fecon_com_vn_thong_cao_thanh_lap_fecon_ucc_20150108.txt",
+    "sha256": "e026f0a7209ba4c8c5e814e37ece8ec1a4555491323eccbe64cf3bcf69b2820c"
+   }
+  ]
+ },
+ "FPT": {
+  "donVi": "FPT",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "232cc2917323eaf18fad5fdcd481069bca148aff01a23f6ec279648a777e45c8",
+  "maNgan": "232c-c291-7323",
+  "soCau": 9,
+  "banChup": [
+   {
+    "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+    "sha256": "2a612c56e59d6f6843fea89523795d815252944ee632f7ed4468650dce56b0d6"
+   },
+   {
+    "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+    "sha256": "9c828a16a1a767b2953bc6e33c690d28a78b79109d8844537e3505202f13be60"
+   },
+   {
+    "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+    "sha256": "07a1a574377f12fd9f8c18620796e12ef77bc112bbb1423db0e49ad43aa86168"
+   },
+   {
+    "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+    "sha256": "dc53ca95d231c670d4fea4945ff8f708e891323ed0057d5c68970a3b9f137f10"
+   },
+   {
+    "href": "/evidence/bctn2025_fpt_com_thong_tin_chung_20261001.txt",
+    "sha256": "65f3cf4e2179ae6e7cd6f9c97e8d6d879f751a91fd17f886d8ecb224da094bf2"
+   }
+  ]
+ },
+ "FPT Semiconductor": {
+  "donVi": "FPT Semiconductor",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "202c73ad87c7a4a11261979fc85d5d7c96012a1743242a031af97b1f223198ed",
+  "maNgan": "202c-73ad-87c7",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
+    "sha256": "74dea1bac08710b1e0da564d2af9f4b964c820db8fda3bc57ff074091d5aaef6"
+   },
+   {
+    "href": "/evidence/vjst_fpt_tokyo_20260615.txt",
+    "sha256": "36242df48479475d29e067af2457b32ad88f33a3800c205767151f792ed496d5"
+   }
+  ]
+ },
+ "GG Power": {
+  "donVi": "GG Power",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "3e151402b4b01b8689523a0a1cbcac936e9a91621bebe4d4eed8b467a8253280",
+  "maNgan": "3e15-1402-b4b0",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
+    "sha256": "2f72edd66ce7e35431552b1d5ccbd836db0123a317556f02d435e7dbcbec0d3e"
+   },
+   {
+    "href": "/evidence/ggp_vn_chan_trang_20261001.txt",
+    "sha256": "35ef4c9af09e709c77cc49c3a990d4c0df72c969e78d9434e3ca7aada37b60e6"
+   }
+  ]
+ },
+ "HTI Technology": {
+  "donVi": "HTI Technology",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "e155a79c23c48519630e09de16abf9d4633e8bf1237512a8d383f4c754e3a4ff",
+  "maNgan": "e155-a79c-23c4",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_20250903.txt",
+    "sha256": "96065a32917436ac8c37f7a2849119453ffad37c3f18b90f280f5fd4fc09466a"
+   },
+   {
+    "href": "/evidence/htigroup_vn_gioi_thieu_20261001.txt",
+    "sha256": "67eaf54d9406836203725d88c4b0266359b4b6d6cfbb93afe32591bedc273003"
+   }
+  ]
+ },
+ "Indefol": {
+  "donVi": "Indefol",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "8e73a9ac54265b0d93ff40c585c2d6247e7dcbdf80d90d798f820c49baf87873",
+  "maNgan": "8e73-a9ac-5426",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
+    "sha256": "2b76630c600ffb44b34c1320817d9145c763d988dacba584e93486ccf374a9f0"
+   }
+  ]
+ },
+ "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH": {
+  "donVi": "Liên danh tư vấn TEDI - TRICC - TEDI SOUTH",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "98f8809499329cf49850a4e925256b859b0ab6ee7fd62961e3cdf453039bcaa9",
+  "maNgan": "98f8-8094-9932",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
+    "sha256": "3b5397a3f56977a3cda3fc894ef7d80a47c48d7dada593bf75abeaf03c3813ee"
+   }
+  ]
+ },
+ "Masan High-Tech Materials": {
+  "donVi": "Masan High-Tech Materials",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "3e44b7a06b76ab8cf19941857af6d0ebae8082c5aa62a2c9dc9c41a16bb42f4a",
+  "maNgan": "3e44-b7a0-6b76",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
+    "sha256": "74dea1bac08710b1e0da564d2af9f4b964c820db8fda3bc57ff074091d5aaef6"
+   },
+   {
+    "href": "/evidence/masanhightechmaterials_com_bctc_2025_20261001.txt",
+    "sha256": "c2bd0d73401f3c886f91e61c154938b5cbdadcb8b754e6aeee8ce0b983c25787"
+   }
+  ]
+ },
+ "MiSmart": {
+  "donVi": "MiSmart",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "180c313d5115365ab0433ad67eb4a2d7551e0f9f9d9146061a523ca754f1787b",
+  "maNgan": "180c-313d-5115",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+    "sha256": "3b758f7e534d4244ea68971c18caf1d18a8ee3aefa69d46846d62641b1f18c64"
+   }
+  ]
+ },
+ "MK Smart": {
+  "donVi": "MK Smart",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "eff5fbb5f1596f88b76a0f7068972ff3dcf6d94a4e2d05bd9689c53f83eaa3a2",
+  "maNgan": "eff5-fbb5-f159",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
+    "sha256": "7ee75eb8c581be8450204867c4269e726360bb2620d18c35554badeeba6dcde6"
+   },
+   {
+    "href": "/evidence/mksmart_com_vn_chinh_sach_bao_mat_20261001.txt",
+    "sha256": "5103403387d06489f37455cb10b22f1417963bb5c453c6d77f4749418a18d5ad"
+   }
+  ]
+ },
+ "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT": {
+  "donVi": "Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "738d6eed550ee87740161384e4b08d23237d36512c91255d6527f317f5674a04",
+  "maNgan": "738d-6eed-550e",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+    "sha256": "dc53ca95d231c670d4fea4945ff8f708e891323ed0057d5c68970a3b9f137f10"
+   }
+  ]
+ },
+ "Phenikaa-X": {
+  "donVi": "Phenikaa-X",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "42833c305294b9be7810a6d69a4d20d3304ace001767fc5b80d1bb3aff8b7184",
+  "maNgan": "4283-3c30-5294",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_20250903.txt",
+    "sha256": "96065a32917436ac8c37f7a2849119453ffad37c3f18b90f280f5fd4fc09466a"
+   }
+  ]
+ },
+ "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu": {
+  "donVi": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "868055cb0d7f5cddc23e45694dd5019dd89701868fd09f67d506f606a8875e86",
+  "maNgan": "8680-55cb-0d7f",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
+    "sha256": "e33012d1be51eeebeb322f16e9608e3a9bddcddcb7ba5152f6c494c7f8c8486a"
+   },
+   {
+    "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
+    "sha256": "1fe2b3ee7d733445ac9c9dc7cda03f905d947e6ff360cb3b743a264da04bd083"
+   },
+   {
+    "href": "/evidence/viic_vn_ptn_trong_diem_loc_hoa_dau_20261001.txt",
+    "sha256": "b5ca24f2bc57659b1141d8b360ba7eeba58c3ae6a9b0761be52260e0e25ead5e"
+   }
+  ]
+ },
+ "Realtime Robotics (RtR)": {
+  "donVi": "Realtime Robotics (RtR)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "8c4d90f48ce4a0c99ac4d48c682fc9b9f93b08e86178e301d40480e3caf6e5a2",
+  "maNgan": "8c4d-90f4-8ce4",
+  "soCau": 9,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+    "sha256": "3b758f7e534d4244ea68971c18caf1d18a8ee3aefa69d46846d62641b1f18c64"
+   },
+   {
+    "href": "/evidence/cafef_dn_uav_20250903.txt",
+    "sha256": "96065a32917436ac8c37f7a2849119453ffad37c3f18b90f280f5fd4fc09466a"
+   },
+   {
+    "href": "/evidence/cafef_rtr_xponential_20260418.txt",
+    "sha256": "334c47308c456948136a2dc83d0090a88a763b37de0ca93662a4ba62f237c981"
+   },
+   {
+    "href": "/evidence/rtrobotics_com_footer_20261001.txt",
+    "sha256": "a72c70b194ca7b4ce696705a32f8ff2c1c637a877c7609dc955b09390f47cba7"
+   }
+  ]
+ },
+ "ROSTEK": {
+  "donVi": "ROSTEK",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "97293763e7997253463ac690e3c9ece09212c37b43b71689d7ca4f23225905dc",
+  "maNgan": "9729-3763-e799",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/vjst_rostek_agv_20220103.txt",
+    "sha256": "0dafe4fc97b503694977c401c55c63e2ec7035f5e1848d022a19ff11132ea8dc"
+   },
+   {
+    "href": "/evidence/rostek_com_vn_trang_chu_20261001.txt",
+    "sha256": "c979848b7d489d30fa233d1407b6ebdfe0937ae162c1931ef0b83a5788e7f458"
+   }
+  ]
+ },
+ "Tập đoàn Dabaco Việt Nam": {
+  "donVi": "Tập đoàn Dabaco Việt Nam",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "867bdd134301ff27639294a21fe76b5f3e290fccde656a0e67e788db79149104",
+  "maNgan": "867b-dd13-4301",
+  "soCau": 9,
+  "banChup": [
+   {
+    "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
+    "sha256": "7e30c750b2a159bd4be844a6321234af929e25ca7dbd0db080d5cbf92b294b16"
+   },
+   {
+    "href": "/evidence/dabaco_vn_cbtt_thay_doi_dkdn_20260926.txt",
+    "sha256": "268911242896ae860561ef14006087c047a4caa64b8c90d18f4e00e1d682ebad"
+   },
+   {
+    "href": "/evidence/dabaco_com_vn_general_information_20261001.txt",
+    "sha256": "55c60532948745240697faf43f0ee6ff0a789f91047da595b944f31ba64d60eb"
+   }
+  ]
+ },
+ "Tập đoàn MISA": {
+  "donVi": "Tập đoàn MISA",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "1c6af5060c2ffee4152f9e118c011d9d39cc63b034d1b26d5576a3d02c24ea45",
+  "maNgan": "1c6a-f506-0c2f",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+    "sha256": "86fd0f7cda617f68f67a0ce1040e17818dca4acfbb477a37ad1462ee848b46cd"
+   },
+   {
+    "href": "/evidence/misa_vn_thong_tin_thanh_toan_20261001.txt",
+    "sha256": "334636b50e3d502ccba3187d9035f6ad36c188f0577e2adbd7fbafd6ce723f8c"
+   }
+  ]
+ },
+ "Tập đoàn Viettel": {
+  "donVi": "Tập đoàn Viettel",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "e1e9134b37d78ef38802c96db8b8f4a067047a4c2bc988dff0f68049459e783f",
+  "maNgan": "e1e9-134b-37d7",
+  "soCau": 9,
+  "banChup": [
+   {
+    "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
+    "sha256": "21fa8c865bf1395c1ad9aa4005e359da1702508542922df94db9244e4d65fe0f"
+   },
+   {
+    "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+    "sha256": "dc53ca95d231c670d4fea4945ff8f708e891323ed0057d5c68970a3b9f137f10"
+   },
+   {
+    "href": "/evidence/viettelai_vn_chu_so_huu_website_20261001.txt",
+    "sha256": "2713a39151f8b87c58579a26ccc585db7d266838569f608df35b1112a9effcb5"
+   }
+  ]
+ },
+ "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)": {
+  "donVi": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "3cdeecaf545672a3d5d0bd1c320df5f50f32cc305ba12c5e79cd6b9451da653e",
+  "maNgan": "3cde-ecaf-5456",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
+    "sha256": "1ef86ae62d56156e13af27426ee35c6cfa51fc1f7e518b628a9b68f9b52cfaff"
+   },
+   {
+    "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
+    "sha256": "b88596f516176322170a10b73eafec8a1cd8f02f841159bd990b0b2bc176d351"
+   }
+  ]
+ },
+ "Tổng công ty Thiết bị điện Đông Anh": {
+  "donVi": "Tổng công ty Thiết bị điện Đông Anh",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "ad9f7c6d5873d2f0ca3f1e43fd9e00a61d5e26c6edb6bc47dd9f2ddcc613ab13",
+  "maNgan": "ad9f-7c6d-5873",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
+    "sha256": "e07e6f783729976223c04793f10206658082ecb4a20e6fd706715d96541879de"
+   },
+   {
+    "href": "/evidence/eemc_com_vn_gioi_thieu_20261001.txt",
+    "sha256": "36d6c7abd447dd8aa46723bdeddee6bf00f0cdad91c1e9067f6c95639d3211d8"
+   },
+   {
+    "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
+    "sha256": "a37d6ab6d4bdcc7bc0bf12b4ba2e6181e5267ebd777aff20a661c25307d08b93"
+   }
+  ]
+ },
+ "Trung tâm Vũ trụ Việt Nam": {
+  "donVi": "Trung tâm Vũ trụ Việt Nam",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "28977d69d91dddc9457810ebba43b5e07bea262d5db3337545d6af07ed6662a5",
+  "maNgan": "2897-7d69-d91d",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
+    "sha256": "2ba7842ff2563ebcdde81d0681f02881ae4bd7a91b4a26b47f7ccddc07dcfd86"
+   },
+   {
+    "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
+    "sha256": "0f31c27d6f0f4509d4100907759ce9b70423c68a1bd9a0bd14c8bc1c6b6d731f"
+   },
+   {
+    "href": "/evidence/vnsc_org_vn_su_menh_va_tam_nhin_20261001.txt",
+    "sha256": "226e556e62d95d9d3497585cea0616a9db4f0fb248ceecefda0046057110e421"
+   }
+  ]
+ },
+ "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội": {
+  "donVi": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "f90efe70702806559077eade0cfc8980c5404fe228b2332afc3e1a39bca95b9c",
+  "maNgan": "f90e-fe70-7028",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
+    "sha256": "06e6bd0d6245079e90bd7592ada29594b726c50ef6cb49e4c4a62942387751d6"
+   },
+   {
+    "href": "/evidence/hus_vnu_edu_vn_lich_su_phat_trien_20261001.txt",
+    "sha256": "a985501bddf99c526bdf20f163fcce7ae78fcded7b8abb3acc6d23e912e016bb"
+   }
+  ]
+ },
+ "Viettel AI": {
+  "donVi": "Viettel AI",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "44d79ed8c056b660c96434d7960a09ad821e622361f9d766b3530a4c70dace70",
+  "maNgan": "44d7-9ed8-c056",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+    "sha256": "2a612c56e59d6f6843fea89523795d815252944ee632f7ed4468650dce56b0d6"
+   },
+   {
+    "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
+    "sha256": "768123ce1a0b5afbcc71280cfb56ebb17664435d93f2ddd9a19ac9280427e72d"
+   },
+   {
+    "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
+    "sha256": "0274680b495d09de1ed6f90d6c03c44ab27a0f646fe5eab628e3b9d07f533385"
+   }
+  ]
+ },
+ "Viettel High Tech": {
+  "donVi": "Viettel High Tech",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "4650c7dd1269233235adb061816f34230c4f65b345d1b592e5428578d9faa2ce",
+  "maNgan": "4650-c7dd-1269",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+    "sha256": "3b758f7e534d4244ea68971c18caf1d18a8ee3aefa69d46846d62641b1f18c64"
+   },
+   {
+    "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
+    "sha256": "8fdc3bae2e0aae5e610b7fc9ed66157339c5270d53971f3a9fd9013ffbfb2a6f"
+   }
+  ]
+ },
+ "Viện Công nghệ xạ hiếm": {
+  "donVi": "Viện Công nghệ xạ hiếm",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "1d6a39d86800b6c4824a4689228c8296d150b338aff43b0adaa75d1d5a391d0b",
+  "maNgan": "1d6a-39d8-6800",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
+    "sha256": "a3cb1b2086f44f5afba377c82c02ca2e5d063ebf4e05be6fdc0fbc7501535e53"
+   },
+   {
+    "href": "/evidence/itrre_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+    "sha256": "6ba5bc713f382628e717c566f1d691911210d9a12e642014f2afba6bb7f2dc58"
+   }
+  ]
+ },
+ "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch": {
+  "donVi": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "0a1325c5370f68f8aba03b2dff524f8a8e20b6df9e268573199449a94af7553b",
+  "maNgan": "0a13-25c5-370f",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
+    "sha256": "e37b7211dcc671f113d10dbe7ef33ee5d85153dde83d4114e81e46f6a9ea4ae6"
+   }
+  ]
+ },
+ "Viện Di truyền Nông nghiệp Việt Nam": {
+  "donVi": "Viện Di truyền Nông nghiệp Việt Nam",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "8c2d46d579e741f73aef020649db55ded926ad5cc61f06e1bcdefe3ffd5c1dc6",
+  "maNgan": "8c2d-46d5-79e7",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
+    "sha256": "5d884bd679f1197761d33f4fd4612f77e2d5915bc586ac5eb90dac603f1241c8"
+   },
+   {
+    "href": "/evidence/agi_gov_vn_gioi_thieu_20261001.txt",
+    "sha256": "ebf57440f460a99e11ab5321b5697f5661b48c734789ed5f0ac7b4fe6f8ad87b"
+   }
+  ]
+ },
+ "Viện Hàn lâm Khoa học và Công nghệ Việt Nam": {
+  "donVi": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "faed62603797cf67085737127cbca17d0575c975f84b796e6785ed15f3fcc9c3",
+  "maNgan": "faed-6260-3797",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
+    "sha256": "fb04269e9647467bf63d07d24e6da879047c843beb550a3a36f60dcec9b18c27"
+   },
+   {
+    "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+    "sha256": "9aa7119f01b0b01e0443057704fe5e463ccd9db026de16fe8fab960460f41303"
+   }
+  ]
+ },
+ "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)": {
+  "donVi": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "e7e1559a3db731cfbaccdb8396191a7f89aaf21bc58f58d8af51d28681dee0ac",
+  "maNgan": "e7e1-559a-3db7",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
+    "sha256": "d9ace79c0810e6a4c3ba28e14828e4ae270bcc6209e37b4f9334d096e1bbf44a"
+   },
+   {
+    "href": "/evidence/vkist_mst_gov_vn_tong_quan_20261001.txt",
+    "sha256": "ead6c04ef14cfced94309ac020ed72575bc978e7433912225fd024f632c73ea4"
+   }
+  ]
+ },
+ "Viện Khoa học vật liệu": {
+  "donVi": "Viện Khoa học vật liệu",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "37c9e8e745774fe30c31f7f443f1059bd9557fd2e7eb9de0c1eb1d8198602a81",
+  "maNgan": "37c9-e8e7-4577",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
+    "sha256": "fd3bd1c2e0d6a68e9bdd1bd1f9ff30a83c94f26aa2ff04f5ea81354113d11998"
+   },
+   {
+    "href": "/evidence/vast_gov_vn_chuc_nang_nhiem_vu_20261001.txt",
+    "sha256": "9aa7119f01b0b01e0443057704fe5e463ccd9db026de16fe8fab960460f41303"
+   }
+  ]
+ },
+ "Viện Khoa học-Công nghệ mật mã": {
+  "donVi": "Viện Khoa học-Công nghệ mật mã",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "c6527515c344aa9f6b74854ad2d4e95a0c7e8bb6ceb805697f7cf754fe1f577e",
+  "maNgan": "c652-7515-c344",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
+    "sha256": "7ee75eb8c581be8450204867c4269e726360bb2620d18c35554badeeba6dcde6"
+   }
+  ]
+ },
+ "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec": {
+  "donVi": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "1038b3fb50ac0f95572b0500ceada3940678cf5c68a525f1c623161baa03eee1",
+  "maNgan": "1038-b3fb-50ac",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
+    "sha256": "1219c5ae790a506d32132f2f0fce51fc927abf000824d58e1dc1c83c8dfe9bc5"
+   },
+   {
+    "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
+    "sha256": "ddd826a7ed0b3b7fae70eaa4d47ea6378a340ce0899a0e5dec51714bd3f8fab9"
+   }
+  ]
+ },
+ "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM": {
+  "donVi": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "038cff16763d05c40217e8a9f2777fe7c90f7df225acf63c7e8734340bc040a7",
+  "maNgan": "038c-ff16-763d",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
+    "sha256": "bb4a269324f9149e84303fb27d5a40351e29c15d2537665ac5c447ea236234fa"
+   },
+   {
+    "href": "/evidence/sci_edu_vn_chung_toi_la_ai_20261001.txt",
+    "sha256": "27cfbe0ff38211090f9a4a8d03f56bc7800d7b9522ad11808529499cca33c376"
+   }
+  ]
+ },
+ "Viện Vaccine và sinh phẩm y tế (IVAC)": {
+  "donVi": "Viện Vaccine và sinh phẩm y tế (IVAC)",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "b18cedf9f49df96d1bd4f0605c3f0fd3c36ff2c93c1f60d2a50d67bc59de7808",
+  "maNgan": "b18c-edf9-f49d",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
+    "sha256": "75dbefe58f0b869e4b6ff5de298021b52992a50d744f6d94cee85cc27dbcf66e"
+   },
+   {
+    "href": "/evidence/ivac_com_vn_to_chuc_bo_may_20261001.txt",
+    "sha256": "d6392e0a6912dc5acc94cbf12ea3bf003e61f37e59b69f07e86b803acd058d36"
+   }
+  ]
+ },
+ "VinAI": {
+  "donVi": "VinAI",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "f1ba41a7d7b9e7d6efd3b13d7ef3ccb0c685fcd4d13e55df78040c22ce8f0e84",
+  "maNgan": "f1ba-41a7-d7b9",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+    "sha256": "9c828a16a1a767b2953bc6e33c690d28a78b79109d8844537e3505202f13be60"
+   },
+   {
+    "href": "/evidence/vinai_io_privacy_20261001.txt",
+    "sha256": "8e32be14852312305ee7a934591f8094b226365481b967bb144602ef5c74b978"
+   }
+  ]
+ },
+ "VinBigData": {
+  "donVi": "VinBigData",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "ded54d11f4fe04d1bd5a23d8cfcbc869025d829f6641ad9b892faa4f7bb70921",
+  "maNgan": "ded5-4d11-f4fe",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+    "sha256": "9c828a16a1a767b2953bc6e33c690d28a78b79109d8844537e3505202f13be60"
+   },
+   {
+    "href": "/evidence/vinbigdata_com_thanh_lap_20261001.txt",
+    "sha256": "fcac9cd406f7659183ffd640306400c2639f45225df5ba18ae38879d5c584bb2"
+   }
+  ]
+ },
+ "VNPT": {
+  "donVi": "VNPT",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "2ed58df3607dbe1162d158b43c42f87b4752fe5ea0364ae6b85d6b36d51e4990",
+  "maNgan": "2ed5-8df3-607d",
+  "soCau": 10,
+  "banChup": [
+   {
+    "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+    "sha256": "2a612c56e59d6f6843fea89523795d815252944ee632f7ed4468650dce56b0d6"
+   },
+   {
+    "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+    "sha256": "9c828a16a1a767b2953bc6e33c690d28a78b79109d8844537e3505202f13be60"
+   },
+   {
+    "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+    "sha256": "86fd0f7cda617f68f67a0ce1040e17818dca4acfbb477a37ad1462ee848b46cd"
+   },
+   {
+    "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
+    "sha256": "768aa9d6ad6280d8377a0c43c3ed2afc5932fd8b39b0b4a98864b14da26c14b8"
+   },
+   {
+    "href": "/evidence/hanoi_vnpt_com_vn_ve_chung_toi_20261001.txt",
+    "sha256": "2a3dc6253158e708e6329ee40e5876f43e09cb1dd183dec22fb0083767931363"
+   }
+  ]
+ },
+ "VNPT Technology": {
+  "donVi": "VNPT Technology",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "527ef99be7447ae66cef2713be5d2f5bb138b95b6f9be20886e9eacb1d5b656b",
+  "maNgan": "527e-f99b-e744",
+  "soCau": 8,
+  "banChup": [
+   {
+    "href": "/evidence/mst_vnpttech_5g_20220831.txt",
+    "sha256": "50c99a5b84bc000c87279b3331aef84c06548510ce2ea5021928f2b936a79997"
+   },
+   {
+    "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+    "sha256": "76b7278a62e2905cf2b8b7478785adce78dddcb8b0e58a769c850c80ab82e044"
+   },
+   {
+    "href": "/evidence/vnpt_technology_vn_chan_trang_20261001.txt",
+    "sha256": "44fcb41a36b0e442d3ffe868d76595928c8941d6b60a19aabab5721c8decd79c"
+   }
+  ]
+ },
+ "VSAP LAB": {
+  "donVi": "VSAP LAB",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "627a0e799eee3dc129e1a81fc47de2d2b7a17833cebacb2f99e71add613723d6",
+  "maNgan": "627a-0e79-9eee",
+  "soCau": 5,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
+    "sha256": "fde421ebca7e178e16f1fba6cad1109feb3d6d34719d5872bfdbd4849ece8dfe"
+   },
+   {
+    "href": "/evidence/vsaplab_com_thong_bao_dtm_20261001.txt",
+    "sha256": "bfe211273d5a1b20794cb44a1fa443d3078672feb85be16baa18035310f38a54"
+   }
+  ]
+ },
+ "VTI Solutions": {
+  "donVi": "VTI Solutions",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "06601c6f9a611d4d1eaf08fe28f4ccb0a29fd52885e65cbc224b58243b899ae7",
+  "maNgan": "0660-1c6f-9a61",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
+    "sha256": "2b42cdf1c9367822de2833c9b2c8a723534018e78a3b26e839e8295d1fa06122"
+   },
+   {
+    "href": "/evidence/vti_solutions_vn_chan_trang_20261001.txt",
+    "sha256": "1f3732bf9683b70acd857283fc95433844484673be9b3a1d635c9344f96f0c94"
+   }
+  ]
+ },
+ "XBStation": {
+  "donVi": "XBStation",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "faa4470369250624367ba85ba3b6f06dba29bbb3c44344fda3d2218ff7db720c",
+  "maNgan": "faa4-4703-6925",
+  "soCau": 4,
+  "banChup": [
+   {
+    "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
+    "sha256": "3b758f7e534d4244ea68971c18caf1d18a8ee3aefa69d46846d62641b1f18c64"
+   }
+  ]
+ },
+ "Zalo": {
+  "donVi": "Zalo",
+  "phienBan": "clm-kiem-toan/1",
+  "ma": "451a05b1068c4376f4fbe0cec6ea555bd96dcc6e66ba4cd44cc267ae864055fa",
+  "maNgan": "451a-05b1-068c",
+  "soCau": 3,
+  "banChup": [
+   {
+    "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
+    "sha256": "07a1a574377f12fd9f8c18620796e12ef77bc112bbb1423db0e49ad43aa86168"
+   }
+  ]
+ }
+}

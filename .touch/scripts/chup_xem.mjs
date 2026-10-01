@@ -22,6 +22,7 @@ const TRANG = [
   ['hoi_dap_tu_choi', '/dashboard/hoi-dap?q=' + encodeURIComponent('máy bay chở khách')],
   ['tong_quan', '/dashboard'],
   ['bao_cao', '/dashboard/bao-cao'],
+  ['ho_so_fpt', '/dashboard/don-vi/fpt'],
 ];
 mkdirSync(OUT, { recursive: true });
 const br = await chromium.launch();
