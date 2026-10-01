@@ -1,6 +1,6 @@
 {
- "van_tay": "b78fa25987bfbf9b",
- "luc": "2026-10-01T04:19:28.201Z",
+ "van_tay": "f3e8fb97379e690b",
+ "luc": "2026-10-01T14:03:42.407Z",
  "cong_cu": "axe-core",
  "trang": {
   "/": {
@@ -44,6 +44,18 @@
    "vi_pham": []
   },
   "/dashboard/phuong-phap": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/bao-cao": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/hoi-dap": {
+   "http": 200,
+   "vi_pham": []
+  },
+  "/dashboard/hoi-dap?q=Ai%20l%C3%A0m%20%C4%91%C6%B0%E1%BB%A3c%20UAV%3F": {
    "http": 200,
    "vi_pham": []
   }
