@@ -66,6 +66,8 @@ fi
 # dien; cong check-truy-cap.mjs trong chuoi doc file nay.
 echo "4b · kiem chuan truy cap (axe-core) tren moi trang"
 node scripts/kiem-truy-cap.mjs "http://localhost:$P" || echo "CO VI PHAM TRUY CAP, xem reports/truy_cap.json"
+# 4c · anh XEM cac trang vua sua (01/10/2026), cho nguoi va Claude soi bang mat. Khong phai cong.
+node scripts/chup_xem.mjs "http://localhost:$P" || echo "CHUP XEM THAT BAI (khong anh huong cong)"
 kill $SV 2>/dev/null
 wait $SV 2>/dev/null
 

@@ -1,0 +1,24 @@
+{
+  "_doc": [
+    "Bo cau hoi chuan cho man Hoi dap co nguon (01/10/2026). Cong check-hoi-dap.mjs chay lai MOI cau",
+    "moi lan du lieu doi. phai_co: don vi bat buoc co trong cau tra loi (ten dung nhu registry).",
+    "phai_tu_choi: cau hoi ngoai pham vi hoac vo nghia, may phai noi so nguon chua co chu khong duoc",
+    "tra bua. Them cau khi so nguon them don vi; bot cau thi phai ghi ly do trong commit."
+  ],
+  "cau": [
+    { "cau": "Ai làm được UAV?", "phai_co": ["Viettel High Tech", "CT Group", "Realtime Robotics (RtR)"] },
+    { "cau": "Đơn vị nào làm chip bán dẫn?", "phai_co": ["CT Semiconductor", "FPT Semiconductor"] },
+    { "cau": "Vắc xin dịch tả lợn châu Phi", "phai_co": ["Tập đoàn Dabaco Việt Nam", "Công ty cổ phần AVAC Việt Nam", "Công ty cổ phần thuốc thú y Trung ương NAVETCO"] },
+    { "cau": "Robot hình người", "phai_co": ["Công ty cổ phần VinMotion"] },
+    { "cau": "Điện toán đám mây", "phai_co": ["CMC Telecom", "VNPT"] },
+    { "cau": "Cảm biến sinh học", "phai_co": ["Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)"] },
+    { "cau": "tế bào gốc", "phai_co": ["Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM", "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec"] },
+    { "cau": "hydrogen xanh", "phai_co": ["Indefol"] },
+    { "cau": "P22", "phai_co": ["Tập đoàn Viettel"] },
+    { "cau": "máy bay chở khách", "phai_tu_choi": true },
+    { "cau": "xin chào", "phai_tu_choi": true },
+    { "cau": "ai", "phai_tu_choi": true },
+    { "cau": "giá cổ phiếu hôm nay", "phai_tu_choi": true },
+    { "cau": "thời tiết Hà Nội", "phai_tu_choi": true }
+  ]
+}

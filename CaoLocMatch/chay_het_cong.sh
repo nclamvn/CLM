@@ -291,6 +291,8 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Trang mo dau M0 (29/09/2026): thay anh chup tay 19/07 co hang viec noi bo; chan kho so go tay quay lai.
   chay .touch      mo_dau           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-mo-dau.mjs
   chay .touch      xu_huong         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-xu-huong.mjs
+  # Hoi dap co nguon (01/10/2026): moi dong tra loi la cau nguon nguyen van, ngoai pham vi thi tu choi.
+  chay .touch      hoi_dap          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-hoi-dap.mjs
   chay .touch      kho_ma           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-kho.mjs
   # Mat tien (landing + Hub minh hoa) khong duoc noi sai hien trang. Them 29/09/2026 khi di thu duong
   # demo: trang dau con ghi cung "Match thật · chưa chạy" trong khi da co 11 match ky, va nut
@@ -347,6 +349,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_thoi_cuoc   "$TOUCH" 'BITE THOI CUOC'    node scripts/bite-thoi-cuoc.mjs
     chay .touch    rang_mo_dau      "$TOUCH" 'BITE MO DAU'       node scripts/bite-mo-dau.mjs
     chay .touch    rang_xu_huong    "$TOUCH" 'BITE XU HUONG'     node scripts/bite-xu-huong.mjs
+    chay .touch    rang_hoi_dap     "$TOUCH" 'BITE HOI DAP'      node scripts/bite-hoi-dap.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
     chay .touch    rang_mat_tien    "$TOUCH" 'BITE MAT TIEN'     node scripts/bite-mat-tien.mjs
     chay .touch    rang_don_sac     "$TOUCH" 'BITE DON SAC'      node scripts/bite-don-sac.mjs

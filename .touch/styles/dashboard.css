@@ -1319,3 +1319,27 @@
 .dash-shell .hs-tk__ma { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
 .dash-shell .hs-tk__nhan { font-size: 12px; border: 1px dashed var(--color-border-strong); border-radius: var(--radius-full); padding: 1px 8px; color: var(--color-text-muted); }
 .dash-shell .reg-unit__phap { display: block; font-size: 12.5px; color: var(--color-text-muted); margin-top: 2px; }
+
+/* Hoi dap co nguon (01/10/2026) */
+.dash-shell .hd { display: grid; gap: var(--space-3); max-width: 1100px; }
+.dash-shell .hd-hoi, .dash-shell .hd-tl { padding: var(--space-3) var(--space-3_5); }
+.dash-shell .hd-form { display: flex; gap: var(--space-2); margin: var(--space-2) 0; }
+.dash-shell .hd-input { flex: 1; min-width: 0; font: inherit; font-size: 15px; color: var(--color-text-primary); background: var(--color-bg-surface-2); border: var(--stroke-hairline) solid var(--color-border-strong); border-radius: var(--radius-md); padding: 10px 14px; }
+.dash-shell .hd-input:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .hd-nut { font: inherit; font-size: 14px; font-weight: 600; color: var(--color-bg-canvas); background: var(--color-text-primary); border: 0; border-radius: var(--radius-md); padding: 0 20px; cursor: pointer; }
+.dash-shell .hd-nut:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .hd-vidu { display: flex; flex-wrap: wrap; gap: 6px; }
+.dash-shell .hd-hieu { font-size: 13px; color: var(--color-text-secondary); margin: 6px 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.dash-shell .hd-kn, .dash-shell .hd-nc { font-size: 12px; border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-full); padding: 1px 9px; color: var(--color-text-primary); }
+.dash-shell .hd-tom { font-size: 14px; color: var(--color-text-secondary); margin: var(--space-2) 0; }
+.dash-shell .hd-tuchoi { font-size: 14px; line-height: 21px; color: var(--color-text-primary); border: 1px dashed var(--color-border-strong); border-radius: var(--radius-md); padding: var(--space-2) var(--space-2_5); margin: var(--space-2) 0; }
+.dash-shell .hd-ds { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.dash-shell .hd-dv { border-top: var(--stroke-hairline) solid var(--color-border-subtle); padding-top: var(--space-2); }
+.dash-shell .hd-dv__dau { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 6px; }
+.dash-shell .hd-dv__ten { font-size: 15px; font-weight: 600; color: var(--color-text-primary); text-decoration: none; }
+.dash-shell .hd-dv__ten:hover { text-decoration: underline; }
+.dash-shell .hd-khong { font-size: 12.5px; color: var(--color-text-muted); margin: 0; }
+.dash-shell .hd-trich { margin: 0 0 8px; }
+.dash-shell .hd-trich blockquote { margin: 0; font-size: 14px; line-height: 21px; color: var(--color-text-secondary); border-left: 2px solid var(--color-border-strong); padding-left: 12px; }
+.dash-shell .hd-mark { background: transparent; color: var(--color-text-primary); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
+.dash-shell .hd-trich figcaption { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; font-size: 12px; color: var(--color-text-muted); margin-top: 4px; padding-left: 14px; }
