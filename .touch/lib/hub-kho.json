@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "8643a7e",
+    "sha": "e42c4bc",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 197,
+  "tongCommit": 198,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 44,
+      "commitSauGop": 45,
       "cuoi": {
-        "sha": "a93c8b9",
+        "sha": "e42c4bc",
         "ngay": "2026-10-01",
-        "tieuDe": "Lo 02 dinh danh: anh Lam duyet 'da duyet va xac nhan thong qua' (duyet.json), nap 55 claim (43 ten_phap_nhan, 12 ma_so_tu_khai) vao registry, 9 muc can anh quyet giu trong. Hai truong dinh danh tu khai trong domain.yaml, BEN trong do tuoi, khong vao dong thoi gian/thoi cuoc/bieu do theo nam. Web: ho so va so nguon hien 'Tu khai, chua doi chieu cong', khong doi trang thai dinh danh (cong TU_KHAI_LECH, TU_KHAI_THANH_DINH_DANH + 2 rang). check_ngay_dang: luat TRANG TINH cho truong dinh danh + 3 rang. Duong tra cong: nap_tra_cong.py (PDF phai mang dau cong, dung ma, dung ten) + 12 rang; check_ma_so_thue giu nguyen. bite_kiem_lo dung canh dung khi co lo nap sau. Trang dau, tong quan ghi ro luot kiem nhanh. Chuoi nhanh 61/61 + 42 rang xanh (chay tach hai phan), axe 0."
+        "tieuDe": "Rang bite_hoan do oan tren macOS: o gia 'xanh' goi /bin/true, macOS chi co /usr/bin/true nen tra 127 va RANG 2, 5 do. Doi sang /bin/sh -c 'exit 0'. Lo ra o luot chay day du dau tien tren may that (102/103)."
       },
       "soTep": 145
     },
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 49,
+      "commitSauGop": 50,
       "cuoi": {
-        "sha": "8643a7e",
+        "sha": "e42c4bc",
         "ngay": "2026-10-01",
-        "tieuDe": "Xu huong sinh lai toi commit du lieu lo dinh danh 02"
+        "tieuDe": "Rang bite_hoan do oan tren macOS: o gia 'xanh' goi /bin/true, macOS chi co /usr/bin/true nen tra 127 va RANG 2, 5 do. Doi sang /bin/sh -c 'exit 0'. Lo ra o luot chay day du dau tien tren may that (102/103)."
       },
       "soTep": 474
     }
@@ -84,6 +84,11 @@
     ".touch": 53
   },
   "ganDay": [
+    {
+      "sha": "e42c4bc",
+      "ngay": "2026-10-01",
+      "tieuDe": "Rang bite_hoan do oan tren macOS: o gia 'xanh' goi /bin/true, macOS chi co /usr/bin/true nen tra 127 va RANG 2, 5 do. Doi sang /bin/sh -c 'exit 0'. Lo ra o luot chay day du dau tien tren may that (102/103)."
+    },
     {
       "sha": "8643a7e",
       "ngay": "2026-10-01",
@@ -128,11 +133,6 @@
       "sha": "2055211",
       "ngay": "2026-09-30",
       "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
-    },
-    {
-      "sha": "f52b2b1",
-      "ngay": "2026-09-30",
-      "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
     }
   ],
   "dong": [
