@@ -1,6 +1,6 @@
 {
   "meta": {
-    "mocNgay": "2026-09-30",
+    "mocNgay": "2026-10-01",
     "tu": "2012-05-02",
     "den": "2026-09-30",
     "theoLan": {
@@ -3851,6 +3851,13 @@
       "don_vi": 0,
       "quyet_dinh": 14,
       "de_xuat": 2
+    },
+    {
+      "thang": "2026-10",
+      "chinh_sach": 0,
+      "don_vi": 0,
+      "quyet_dinh": 0,
+      "de_xuat": 0
     }
   ]
 }

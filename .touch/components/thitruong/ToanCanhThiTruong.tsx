@@ -16,6 +16,10 @@ import { useMemo, useState } from 'react';
 import tt from '@/lib/hub-thi-truong.json';
 import { ProofNumber, useProof } from '@/components/proof/ProofLayer';
 
+// Mau du lieu: MOT bien duy nhat (nhom cong nghe) ma hoa bang mau, qua token var(--nhom-N) cua
+// styles/mau-du-lieu.css. Khong ghi ma mau o day (check-don-sac.mjs cam).
+const mau = (so: string | number | null | undefined) => ({ '--mau': `var(--nhom-${so ?? 0})` }) as React.CSSProperties;
+
 type Nut = { id: string; tang: 'don_vi' | 'nhom' | 'nhu_cau'; nhan: string; slug?: string | null; so?: string; maSp?: string; nhom?: string; x: number; w: number; y: number; h: number; giaTri: number; trong: boolean };
 type Dong = { s: string; t: string; loai: 'da_ky' | 'cung_sp'; w: number; d: string };
 type O = { id: string; maSp: string; ten: string; soCung: number; trangThai: 'da_ky' | 'co_cung' | 'trong' };
@@ -74,7 +78,8 @@ function Sankey() {
         <text x={870} y={10} className="tt-sk__cot">NHU CẦU QĐ 21/2026</text>
         <g className="tt-sk__dong">
           {links.map((l, i) => (
-            <path key={i} d={l.d} className={`tt-dong tt-dong--${l.loai}${sang ? (sang.has(String(i)) ? ' is-sang' : ' is-mo') : ''}`} />))}
+            <path key={i} d={l.d} style={mau((l.s.startsWith('nh:') ? l.s : l.t).slice(3))}
+              className={`tt-dong tt-dong--${l.loai}${sang ? (sang.has(String(i)) ? ' is-sang' : ' is-mo') : ''}`} />))}
         </g>
         {nodes.map((n) => {
           const mo = nutSang ? !nutSang.has(n.id) : false;
@@ -86,9 +91,11 @@ function Sankey() {
           };
           return (
             <g key={n.id} className={cls} onMouseEnter={vao} onMouseMove={vao} onClick={() => bam(n)}
+              style={n.tang === 'nhom' ? mau(n.so) : n.tang === 'nhu_cau' ? mau(n.nhom) : undefined}
               role="button" tabIndex={0} aria-label={`${n.nhan}: ${n.giaTri} cặp`} onKeyDown={(e) => { if (e.key === 'Enter') bam(n); }}
               onFocus={() => setTro(n.id)} onBlur={() => setTro(null)}>
               <rect x={n.x} y={n.y} width={n.w} height={n.h} rx={n.tang === 'nhom' ? 4 : 1.5} className="tt-nut__r" />
+              {n.tang === 'nhom' && <rect x={n.x} y={n.y + 1} width={3} height={n.h - 2} rx={1} className="tt-nut__vach" />}
               {n.tang === 'don_vi' && <text x={n.x - 6} y={n.y + n.h / 2 + 3.5} textAnchor="end" className="tt-nut__t">{ngan(n.nhan, 40)}</text>}
               {n.tang === 'nhom' && (
                 <text x={n.x + 10} y={n.y + n.h / 2 + 4} className="tt-nut__g">
@@ -132,7 +139,7 @@ function BanDoPhu() {
         <tbody>
           {D.phu.map((h) => (
             <tr key={h.so}>
-              <th scope="row"><button type="button" className="tt-phu__nhom" onClick={() => moMuc({ loai: 'nhom', so: h.so })}><b>{soHai(h.so)}</b> {h.nhan}</button></th>
+              <th scope="row"><button type="button" className="tt-phu__nhom" style={mau(h.so)} onClick={() => moMuc({ loai: 'nhom', so: h.so })}><i className="mau-cham" aria-hidden="true" /><b>{soHai(h.so)}</b> {h.nhan}</button></th>
               <td className="tt-phu__so">{h.soDv}</td>
               <td>
                 <div className="tt-phu__o">
@@ -205,8 +212,9 @@ export function ToanCanhThiTruong() {
         <h2 className="hs-h" id="tt-sk">Dòng cung cầu <span>độ dày = số cặp cung cầu được chấp nhận, không phải ước lượng</span></h2>
         <Sankey />
         <div className="tt-cg">
-          <span><i className="tt-mk2 tt-dong--da_ky" />có match đã ký</span>
-          <span><i className="tt-mk2 tt-dong--cung_sp" />cùng sản phẩm, có câu nguồn</span>
+          <span>màu dòng = nhóm công nghệ</span>
+          <span><i className="tt-mk2 tt-dong--da_ky" style={mau(0)} />đậm: có match đã ký</span>
+          <span><i className="tt-mk2 tt-dong--cung_sp" style={mau(0)} />nhạt: cùng sản phẩm, có câu nguồn</span>
           <span><i className="tt-mk tt-o--trong" />nhu cầu chưa có bên cung</span>
         </div>
         <p className="hs-note">

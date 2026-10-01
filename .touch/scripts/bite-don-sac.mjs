@@ -19,6 +19,8 @@
  * RANG 8  · KHONG BAO OAN: hoa van repeating-linear-gradient cho trang thai "tu choi" -> exit 0.
  * RANG 9  · KHONG BAO OAN: ma mau trong chu thich, box-shadow do cao 0 12px 40px den -> exit 0.
  * RANG 10 · token SOT v2 quay ve navy #020617 -> MAU_BAO_HOA.
+ * RANG 11 · KHONG BAO OAN: bang mau du lieu styles/mau-du-lieu.css -> exit 0.
+ * RANG 12 · chep bang mau sang mot tep KHAC (mien tru theo dung duong dan, khong theo noi dung) -> MAU_BAO_HOA.
  *
  * Chay: node scripts/bite-don-sac.mjs
  */
@@ -62,6 +64,8 @@ try {
   rang('RANG 8  · hoa van repeating-linear-gradient -> exit 0', (t) => noi(t, 'styles/dashboard.css', '\n.tc { background: repeating-linear-gradient(90deg, #A3A3A0 0 3px, transparent 3px 6px); }\n'), 0);
   rang('RANG 9  · chu thich co ma mau + bong do cao den -> exit 0', (t) => noi(t, 'styles/dashboard.css', '\n/* he cu dung #2F6BFF va #D55E00 */\n.card { box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28); }\n'), 0);
   rang('RANG 10 · token nen quay ve navy #020617 -> MAU_BAO_HOA', (t) => doi(t, 'styles/touch-theme.css', (s) => s.replace(/--color-bg-canvas: #[0-9A-Fa-f]{6};/, '--color-bg-canvas: #020617;')), 2, 'MAU_BAO_HOA');
+  rang('RANG 11 · bang mau du lieu duoc mien -> exit 0', null, 0);
+  rang('RANG 12 · chep bang mau sang tep khac -> MAU_BAO_HOA', (t) => writeFileSync(join(t, 'styles', 'chep-bang.css'), readFileSync(join(t, 'styles', 'mau-du-lieu.css'), 'utf8')), 2, 'MAU_BAO_HOA');
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

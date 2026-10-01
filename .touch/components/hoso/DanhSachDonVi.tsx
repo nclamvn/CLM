@@ -51,7 +51,7 @@ export function DanhSachDonVi({ ds, nhoms }: { ds: HoSo[]; nhoms: { so: string; 
         <div className="hs-ds__nhom" role="group" aria-label="Lọc theo nhóm">
           <button type="button" aria-pressed={nhom === null} onClick={() => setNhom(null)}>Tất cả</button>
           {nhoms.map((n) => (
-            <button key={n.so} type="button" aria-pressed={nhom === n.so} onClick={() => setNhom(nhom === n.so ? null : n.so)} title={n.nhan}>{n.so.padStart(2, '0')}</button>))}
+            <button key={n.so} type="button" aria-pressed={nhom === n.so} onClick={() => setNhom(nhom === n.so ? null : n.so)} title={n.nhan} style={{ '--mau': `var(--nhom-${n.so})` } as React.CSSProperties}><i className="mau-cham" aria-hidden="true" />{n.so.padStart(2, '0')}</button>))}
         </div>
         <span className="hs-ds__dem">{loc.length}/{ds.length} đơn vị</span>
       </div>

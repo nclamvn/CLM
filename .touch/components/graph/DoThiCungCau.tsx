@@ -24,6 +24,9 @@ import graph from '@/lib/hub-graph.json';
 import { useProof, type Muc } from '@/components/proof/ProofLayer';
 import { XA_NHAN } from '@/lib/do-thi-ban-do.mjs';
 
+// Mau du lieu: chi ma hoa nhom cong nghe (lanh tho), qua token var(--nhom-N). 'chua_co' va null ve xam.
+const mau = (so: string | null | undefined) => ({ '--mau': `var(--nhom-${so && so !== 'chua_co' ? so : 0})` }) as React.CSSProperties;
+
 type Nut = {
   id: string; kind: 'don_vi' | 'nhu_cau' | 'nhom'; label: string; x: number; y: number;
   soClaim?: number; favorsRtr?: boolean; maSp?: string; lanhTho: string; lanhThoPhu?: string[];
@@ -138,7 +141,7 @@ export function DoThiCungCau() {
           const tren = l.nhanTren;
           const la = !ke || [...(ke ?? [])].some((id) => byId.get(id)?.lanhTho === (l.so ?? 'chua_co')) || byId.get(tro ?? '')?.lanhTho === (l.so ?? 'chua_co');
           return (
-            <g key={l.id} className={`dt2-lt${la ? '' : ' is-mo'}${l.so ? '' : ' dt2-lt--null'}`}>
+            <g key={l.id} className={`dt2-lt${la ? '' : ' is-mo'}${l.so ? '' : ' dt2-lt--null'}`} style={mau(l.so)}>
               <circle cx={l.cx} cy={l.cy} r={l.r} fill="url(#dt2-lt)" className="dt2-lt__vien" />
               <g transform={`translate(${l.cx} ${tren ? l.cy - l.r - 12 : l.cy + l.r + 20})`} className="dt2-lt__nhan">
                 <text textAnchor="middle"><tspan className="dt2-lt__so">{soHai(l.so)}</tspan><tspan dx="6">{l.nhan}</tspan></text>
@@ -171,7 +174,7 @@ export function DoThiCungCau() {
           const hienTen = n.kind === 'nhu_cau' || (ke ? sang(n.id) : coMatch.has(n.id));
           const ten = n.nhan?.ten ?? (n.kind === 'nhu_cau' ? `P${n.maSp}` : tenNgan(n.label, 30));
           return (
-            <g key={n.id} className={cls} transform={`translate(${n.x} ${n.y})`}
+            <g key={n.id} className={cls} transform={`translate(${n.x} ${n.y})`} style={mau(n.lanhTho)}
               onMouseEnter={(ev) => { setTro(n.id); viTri(ev); }} onMouseMove={viTri}
               onClick={() => moMuc(mucCua(n))}>
               <circle r={r + 7} className="dt2-nut__vung" />
@@ -200,7 +203,7 @@ export function DoThiCungCau() {
       {khoiHang.map((kh) => {
         const kc = khoiCot.find((k) => k.lanhTho === kh.lanhTho);
         return (
-          <g key={`k${kh.lanhTho}`}>
+          <g key={`k${kh.lanhTho}`} style={mau(kh.lanhTho)}>
             <rect x={4} y={TREN + kh.tu * O} width={18} height={(kh.den - kh.tu + 1) * O} className="dt2-mt__dai" />
             <text x={13} y={TREN + ((kh.tu + kh.den + 1) / 2) * O + 3.5} textAnchor="middle" className="dt2-mt__dai-so">{soHai(kh.lanhTho === 'chua_co' ? null : kh.lanhTho)}</text>
             {kc && <rect x={TRAI + kc.tu * O} y={TREN + kh.tu * O} width={(kc.den - kc.tu + 1) * O} height={(kh.den - kh.tu + 1) * O} className="dt2-mt__khoi" />}

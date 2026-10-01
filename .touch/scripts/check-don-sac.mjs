@@ -9,7 +9,11 @@
  *
  * CONG KIEM (bo chu thich truoc khi quet):
  *   MAU_BAO_HOA   mot ma mau hex/rgb co do bao hoa HSL > 0,12 va chenh kenh > 18 (tuc la co sac do
- *                 nhin thay). Ngoai le duy nhat: cham thuong hieu #FF3830 / rgba(255, 56, 48, a).
+ *                 nhin thay). Ngoai le: cham thuong hieu #FF3830 / rgba(255, 56, 48, a); va DUY NHAT tep
+ *                 styles/mau-du-lieu.css (bang mau du lieu theo nhom cong nghe, them 01/10/2026 khi anh
+ *                 Lam cho mau tram tro lai tren do hoa thong tin). Tep do do check-mau-du-lieu.mjs canh:
+ *                 khop lib/mau-du-lieu.mjs, tram, du tuong phan, phan biet duoc khi mu mau. Moi noi
+ *                 khac muon co mau phai goi var(--nhom-N), khong ghi ma mau.
  *   GRADIENT      radial/linear/conic-gradient lam nen. Duoc phep: repeating-* (hoa van net dut cho
  *                 trang thai "tu choi", chuan HIVE: trang thai bang hoa van) va mask/-webkit-mask.
  *   GLOW          text-shadow khac none; box-shadow lop khong lech ma co do nhoe (quang sang).
@@ -53,6 +57,7 @@ const baoHoa = (r, g, b) => {
   const s = l > 0.5 ? (mx - mn) / (2 - mx - mn) : (mx - mn) / (mx + mn);
   return s > 0.12 && Math.max(r, g, b) - Math.min(r, g, b) > 18;
 };
+const BANG_MAU = join(TOUCH, 'styles', 'mau-du-lieu.css'); // mien MAU_BAO_HOA, KHONG mien gradient/glow
 const laThuongHieu = (l) => /#FF3830\b/i.test(l) || /rgba?\(\s*255\s*,\s*56\s*,\s*48/.test(l);
 const ten = (p) => p.slice(TOUCH.length + 1);
 
@@ -63,7 +68,7 @@ for (const p of tep) {
   dong.forEach((l, i) => {
     soDong++;
     const cho = `${ten(p)}:${i + 1}`;
-    if (!laThuongHieu(l)) {
+    if (!laThuongHieu(l) && p !== BANG_MAU) {
       for (const m of l.matchAll(/#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b/g)) {
         const h = m[1].length === 3 ? m[1].split('').map((c) => c + c).join('') : m[1];
         const [r, g, b] = [0, 2, 4].map((k) => parseInt(h.slice(k, k + 2), 16));
@@ -86,4 +91,4 @@ if (vi.length) {
   vi.slice(0, 40).forEach((v) => console.log('  ' + v));
   process.exit(2);
 }
-console.log('\nOK: toan giao dien don sac; mau duy nhat la cham thuong hieu. Khong gradient, khong glow.');
+console.log('\nOK: khung giao dien don sac; mau chi o cham thuong hieu va bang mau du lieu (styles/mau-du-lieu.css). Khong gradient, khong glow.');

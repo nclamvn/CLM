@@ -295,6 +295,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # Toan giao dien don sac (anh Lam chot 29/09/2026 theo trang dau HIVE). Mau duy nhat la cham
   # thuong hieu; khong gradient, khong glow. Truoc do he co 285 cho mau bao hoa trong 10 file.
   chay .touch      don_sac          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-don-sac.mjs
+  # Bang mau du lieu (01/10/2026): anh Lam cho mau tram tro lai TREN DO HOA DU LIEU, ma hoa duy nhat
+  # nhom cong nghe. Cong giu bang tram, du tuong phan, phan biet duoc ca voi nguoi mu mau.
+  chay .touch      mau_du_lieu      "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-mau-du-lieu.mjs
   # Phu thuoc cua web (30/09/2026): next 15.5.20 co lo hong nghiem trong ma khong o nao hoi, chi lo
   # ra khi co nguoi tinh co cai lai. Chuoi chay moi sang nen lo hong moi cong bo thanh o DO hom sau.
   # Can mang de hoi co so du lieu lo hong; mat mang thi KHONG CHAY DUOC, khong bao gio XANH.
@@ -337,6 +340,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
     chay .touch    rang_mat_tien    "$TOUCH" 'BITE MAT TIEN'     node scripts/bite-mat-tien.mjs
     chay .touch    rang_don_sac     "$TOUCH" 'BITE DON SAC'      node scripts/bite-don-sac.mjs
+    chay .touch    rang_mau_du_lieu "$TOUCH" 'BITE MAU DU LIEU'  node scripts/bite-mau-du-lieu.mjs
     chay .touch    rang_phu_thuoc   "$TOUCH" 'BITE PHU THUOC|KHONG CHAY' node scripts/bite-phu-thuoc.mjs
   fi
 fi

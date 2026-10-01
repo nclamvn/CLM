@@ -33,9 +33,12 @@ type PhanRa = {
 type Canh = { cau: string; cung: string; loai: 'da_ky' | 'tu_choi'; id: string };
 type CongThuc = { wGiao: number; wTier: number; wDiaDiem: number; tierW: Record<string, number>; nguongGiao: number };
 const H = hub as unknown as { congThuc: CongThuc; phanRa: Record<string, PhanRa>; haiCot: { cau: string[]; cung: string[]; canh: Canh[]; giao: number; giaoBanDau: number } };
-const G = graph as unknown as { nodes: { id: string; label: string; maSp?: string }[] };
+const G = graph as unknown as { nodes: { id: string; label: string; maSp?: string; nhom?: string }[] };
 const maSpCua = new Map(G.nodes.filter((n) => n.id.startsWith('nc:')).map((n) => [n.id.slice(3), n.maSp ?? '']));
 const tenNc = new Map(G.nodes.filter((n) => n.id.startsWith('nc:')).map((n) => [n.id.slice(3), n.label]));
+const nhomNc = new Map(G.nodes.filter((n) => n.id.startsWith('nc:')).map((n) => [n.id.slice(3), n.nhom ?? '0']));
+// Mau du lieu: chi ma hoa nhom cong nghe cua nhu cau, qua token var(--nhom-N). Trang thai giu net.
+const mau = (so: string | number | null | undefined) => ({ '--mau': `var(--nhom-${so ?? 0})` }) as React.CSSProperties;
 
 const nhanVai = (r: string) => (r === 'chuyen gia gac cong' ? 'chuyên gia gác cổng' : r);
 const ngayVN = (d: string) => `${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}`;
@@ -85,7 +88,7 @@ function SoDoHaiCot({ chon, datChon }: { chon: string; datChon: (id: string) => 
         const y0 = yC(cau.indexOf(c.cau)); const y1 = yU(cung.indexOf(c.cung)); const xm = (XT + XP) / 2;
         const on = c.id === chon;
         return (
-          <path key={c.id} d={`M${XT + 6},${y0} C${xm},${y0} ${xm},${y1} ${XP - 6},${y1}`}
+          <path key={c.id} d={`M${XT + 6},${y0} C${xm},${y0} ${xm},${y1} ${XP - 6},${y1}`} style={mau(nhomNc.get(c.cau))}
             className={`mw2-hc__c mw2-hc__c--${c.loai}${on ? ' is-chon' : ''}`}
             onClick={() => datChon(c.id)} role="button" tabIndex={0} aria-label={`${c.id}: ${c.cung} với P${maSpCua.get(c.cau)}`}
             onKeyDown={(e) => { if (e.key === 'Enter') datChon(c.id); }} />);
@@ -93,7 +96,7 @@ function SoDoHaiCot({ chon, datChon }: { chon: string; datChon: (id: string) => 
       {cau.map((id, i) => {
         const on = canh.find((c) => c.id === chon)?.cau === id;
         return (
-          <g key={id} className={`mw2-hc__n${on ? ' is-chon' : ''}`}>
+          <g key={id} className={`mw2-hc__n${on ? ' is-chon' : ''}`} style={mau(nhomNc.get(id))}>
             <rect x={XT - 1} y={yC(i) - 5} width={10} height={10} rx={1.5} transform={`rotate(45 ${XT + 4} ${yC(i)})`} className="mw2-hc__cau" />
             <text x={XT - 10} y={yC(i) + 3.5} textAnchor="end"><tspan className="mw2-hc__ma">P{maSpCua.get(id)}</tspan> {ngan(tenNc.get(id) ?? '', 14)}</text>
           </g>);

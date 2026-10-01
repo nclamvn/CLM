@@ -3,6 +3,7 @@ import './globals.css';
 import '@/styles/touch-theme.css';
 import '@/styles/touch-portal.css';
 import '@/styles/touch-unify.css';
+import '@/styles/mau-du-lieu.css';
 import { beVietnamPro, fraunces, ibmPlexMono } from './fonts';
 import { ui } from '@/lib/content';
 

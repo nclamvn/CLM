@@ -20,6 +20,7 @@
  */
 import { useEffect, useRef, useState } from 'react';
 import type { MatTien } from '@/lib/mat-tien';
+import { mauNhomA } from '@/lib/mau-du-lieu.mjs';
 
 type P = { x: number; y: number };
 const VE = 1500;
@@ -116,16 +117,17 @@ export function HubCungCau({ data }: { data: MatTien }) {
       ctx.strokeStyle = 'rgba(255, 255, 255, 0.10)'; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(0, 24.5); ctx.lineTo(W, 24.5); ctx.stroke();
 
-      // duong nen: hairline rat nhat cho moi cap co nguon
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)'; ctx.lineWidth = 1;
-      ctx.beginPath();
+      // duong nen: hairline rat nhat cho moi cap co nguon, nhuom mau NHOM (bang mau du lieu, 01/10/2026).
+      // Mau chi ma hoa nhom; match da ky van la net trang ve de len tren.
+      ctx.lineWidth = 1;
       const daVe = new Set<string>();
       for (const l of luong) {
+        const g = nut[l.nhom].nhom;
         const k1 = `${l.cung}>${l.nhom}`; const k2 = `${l.nhom}>${l.cau}`;
-        if (!daVe.has(k1)) { daVe.add(k1); veCong({ x: pos[l.cung].x + 2, y: pos[l.cung].y }, { x: pos[l.nhom].x - 16, y: pos[l.nhom].y }); }
-        if (!daVe.has(k2)) { daVe.add(k2); veCong({ x: pos[l.nhom].x + 16, y: pos[l.nhom].y }, { x: pos[l.cau].x - 7, y: pos[l.cau].y }); }
+        ctx.strokeStyle = mauNhomA(g, 0.16);
+        if (!daVe.has(k1)) { daVe.add(k1); ctx.beginPath(); veCong({ x: pos[l.cung].x + 2, y: pos[l.cung].y }, { x: pos[l.nhom].x - 16, y: pos[l.nhom].y }); ctx.stroke(); }
+        if (!daVe.has(k2)) { daVe.add(k2); ctx.beginPath(); veCong({ x: pos[l.nhom].x + 16, y: pos[l.nhom].y }, { x: pos[l.cau].x - 7, y: pos[l.cau].y }); ctx.stroke(); }
       }
-      ctx.stroke();
 
       // cap bi tu choi: net dut
       ctx.setLineDash([3, 4]); ctx.strokeStyle = 'rgba(255, 255, 255, 0.28)';
@@ -146,12 +148,12 @@ export function HubCungCau({ data }: { data: MatTien }) {
           ctx.strokeStyle = sang ? MUC : 'rgba(237, 237, 234, 0.42)'; ctx.lineWidth = sang ? 1.6 : 1;
           ctx.beginPath(); ctx.moveTo(p.x - 12, p.y); ctx.lineTo(p.x + 2, p.y); ctx.stroke();
         } else if (v.loai === 'cau') {
-          if (v.trong) { ctx.strokeStyle = sang ? MUC : 'rgba(237, 237, 234, 0.5)'; ctx.lineWidth = 1; hinhThoi(p, 3.6); ctx.stroke(); }
-          else { ctx.fillStyle = sang ? MUC : 'rgba(237, 237, 234, 0.62)'; hinhThoi(p, 3.6); ctx.fill(); }
+          if (v.trong) { ctx.strokeStyle = sang ? MUC : mauNhomA(v.nhom, 0.7); ctx.lineWidth = 1; hinhThoi(p, 3.6); ctx.stroke(); }
+          else { ctx.fillStyle = sang ? MUC : mauNhomA(v.nhom, 0.85); hinhThoi(p, 3.6); ctx.fill(); }
           ctx.font = `500 10px ${SANS}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : MUC3;
           ctx.fillText(v.ma ?? '', p.x + 9, p.y + 0.5);
         } else {
-          ctx.font = `400 15px ${SERIF}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : MUC2;
+          ctx.font = `400 15px ${SERIF}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = sang ? MUC : mauNhomA(v.nhom, 0.95);
           ctx.fillText(so2(v.nhom), p.x, p.y + 1);
         }
       });

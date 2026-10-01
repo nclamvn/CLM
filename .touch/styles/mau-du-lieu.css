@@ -1,0 +1,19 @@
+/*
+  mau-du-lieu.css · Ban CSS cua bang mau du lieu (nguon: lib/mau-du-lieu.mjs).
+  Day la tep DUY NHAT ngoai lib/mau-du-lieu.mjs duoc ghi ma mau co sac do. check-don-sac.mjs mien
+  dung tep nay; check-mau-du-lieu.mjs doi chieu tung gia tri voi ban .mjs, lech mot ky tu la do.
+  Chi dung cho DO HOA DU LIEU, ma hoa DUY NHAT bien "nhom cong nghe". Xem luat dung trong ban .mjs.
+*/
+:root {
+  --nhom-1: #7779B5;
+  --nhom-2: #CA8183;
+  --nhom-3: #A4A35F;
+  --nhom-4: #85BA89;
+  --nhom-5: #AE834C;
+  --nhom-6: #B685B6;
+  --nhom-7: #A4637D;
+  --nhom-8: #62B6A8;
+  --nhom-9: #8BC7E5;
+  --nhom-10: #C3C37D;
+  --nhom-0: #9A9A96;
+}

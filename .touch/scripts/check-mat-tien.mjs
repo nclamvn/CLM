@@ -24,7 +24,9 @@
  *   KHONG_DON_SAC         trang dau truot chuan HIVE Editorial (anh Lam chot 29/09/2026 sau khi ban
  *                         vong hub phat sang bi danh gia la "AI slop"): co gradient, glow (shadowBlur,
  *                         text-shadow, box-shadow co mau, 'lighter'), mau du lieu hay mau nhan (--data-*,
- *                         --color-accent-*), hoac tieu de khong dung serif Noto Serif.
+ *                         --color-accent-*), hoac tieu de khong dung serif Noto Serif. Bang mau nhom
+ *                         cong nghe (lib/mau-du-lieu.mjs, var(--nhom-N)) DUOC phep tu 01/10/2026: no chi ma
+ *                         hoa nhom, va check-mau-du-lieu.mjs canh do tram cua no.
  *   MAU_KHONG_THONG_NHAT  app/layout.tsx khong nap styles/touch-unify.css SAU globals.css; hoac Hub khong
  *                         anh xa --dk-bg/--dk-rd ve token SOT v2; hoac mat tien con do cu #C40F0F/#E8221A.
  *

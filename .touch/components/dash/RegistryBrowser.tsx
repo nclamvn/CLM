@@ -86,7 +86,7 @@ function UnitCard({ u, mo }: { u: CnclUnit; mo: boolean }) {
             </span>
           ) : null}
           {u.nhoms.map((n) => (
-            <span key={n} className="reg-tag">{`Nhóm ${n} · ${TEN_NHOM[n] ?? ''}`}</span>
+            <span key={n} className="reg-tag" style={{ '--mau': `var(--nhom-${n})` } as React.CSSProperties}><i className="mau-cham" aria-hidden="true" />{`Nhóm ${n} · ${TEN_NHOM[n] ?? ''}`}</span>
           ))}
           {u.sanPham.map((s) => (
             <span key={s} className="reg-tag reg-tag--sp" title="Sản phẩm chiến lược theo QĐ 21/2026">{`SP ${s}`}</span>

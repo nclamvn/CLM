@@ -169,7 +169,7 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
         <div className="hs-chips">
           {hs.loaiHinh ? <span className="hs-chip">{hs.loaiHinh}</span> : <span className="hs-chip hs-chip--trong">loại hình: chưa có nguồn</span>}
           {hs.nhoms.map((n) => (
-            <button key={n.so} type="button" className="hs-chip hs-chip--btn" onClick={() => moMuc({ loai: 'nhom', so: n.so })}>{n.nhan}</button>))}
+            <button key={n.so} type="button" className="hs-chip hs-chip--btn" style={{ '--mau': `var(--nhom-${n.so})` } as React.CSSProperties} onClick={() => moMuc({ loai: 'nhom', so: n.so })}><i className="mau-cham" aria-hidden="true" />{n.nhan}</button>))}
           <span className={`pf-tier pf-tier--${hs.bestTier}`}>nguồn tốt nhất: tier {hs.bestTier}</span>
           {hs.favorsRtr && <span className="hs-chip hs-chip--coi" title="Đơn vị liên quan RtR, bên dựng hub. Đọc bằng chứng với con mắt nghi ngờ hơn.">liên quan RtR, bên dựng hub</span>}
         </div>
