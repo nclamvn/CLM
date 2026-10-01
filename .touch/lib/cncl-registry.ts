@@ -39,16 +39,16 @@ export const cnclMeta: CnclMeta = {
   "nhomPhu": 10,
   "generatedAt": "2026-10-01",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-10-01 11:32: 102/103 xanh · ĐỎ 1 · không chạy 0",
+  "gate": "chuỗi cổng 2026-10-01 11:37: 103/103 xanh",
   "chuoiCong": {
-    "luc": "2026-10-01T11:32:51+0700",
+    "luc": "2026-10-01T11:37:40+0700",
     "cheDo": "day_du",
     "tong": 103,
-    "xanh": 102,
-    "do": 1,
+    "xanh": 103,
+    "do": 0,
     "khongChay": 0,
     "hoan": 0,
-    "dat": false
+    "dat": true
   }
 };
 

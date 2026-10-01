@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "e42c4bc",
+    "sha": "8c47bb2",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 198,
+  "tongCommit": 199,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 50,
+      "commitSauGop": 51,
       "cuoi": {
-        "sha": "e42c4bc",
+        "sha": "8c47bb2",
         "ngay": "2026-10-01",
-        "tieuDe": "Rang bite_hoan do oan tren macOS: o gia 'xanh' goi /bin/true, macOS chi co /usr/bin/true nen tra 127 va RANG 2, 5 do. Doi sang /bin/sh -c 'exit 0'. Lo ra o luot chay day du dau tien tren may that (102/103)."
+        "tieuDe": "Ket qua chuoi day du tren may that"
       },
       "soTep": 474
     }
@@ -84,6 +84,11 @@
     ".touch": 53
   },
   "ganDay": [
+    {
+      "sha": "8c47bb2",
+      "ngay": "2026-10-01",
+      "tieuDe": "Ket qua chuoi day du tren may that"
+    },
     {
       "sha": "e42c4bc",
       "ngay": "2026-10-01",
@@ -128,11 +133,6 @@
       "sha": "e01c8cc",
       "ngay": "2026-09-30",
       "tieuDe": "Anh Lam 'ký hết' 13 ung vien moi (match_engine.py sign, 30/09/2026): 24 match ky, 1 tu choi. Sua sau nap: unverified dang {fact_id, note} chuan ve chuoi (vo kieu TS); so do hai cot xep theo thanh phan lien thong, ve dung toi thieu 1 giao; cut -c cat doi ky tu UTF-8 trong bang ket, loc bang iconv -c; chup lai va chot anh moc 60/60 don vi, ngan sach vung phu 44 -> 60. Chuoi tai cho 91/91, dien tap CI 88/0/3"
-    },
-    {
-      "sha": "2055211",
-      "ngay": "2026-09-30",
-      "tieuDe": "Nap lo lam giau dot 01 theo quyet dinh anh Lam 'duyệt hết' (30/09/2026): 102 claim, 18 don vi (16 moi), registry 44 -> 60 don vi, 221 -> 323 claim; 29 ghi chu cong duoc duyet nguyen van; nhu cau chua co cung 11 -> 3. da_nap.json chan nap lai. Do thi: them sua nhan cuc bo + day nut, nhan chong nhau van 0. Sankey 7 -> 8: da do ca 20 thu tu vong, 8 la toi thieu (don vi chi thuoc nhom 9 cat Viettel), ghi lich su ngan sach. Rang 5 phieu ghep so tuong doi. CHUA PUSH: 13 ung vien moi cho anh Lam ky/tu choi, va anh moc can chup lai tren may that"
     }
   ],
   "dong": [
