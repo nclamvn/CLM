@@ -1,3 +1,4 @@
+import { ngayVN } from '@/lib/dinh-dang';
 import type { Metadata } from 'next';
 import { DashTopBar } from '@/components/dash/DashTopBar';
 import { DanhSachDonVi } from '@/components/hoso/DanhSachDonVi';
@@ -20,7 +21,7 @@ export default function DonViPage() {
     <>
       <DashTopBar
         title="Hồ sơ đơn vị"
-        subtitle={`${D.meta.soDonVi} đơn vị cung · ${tong.chuaDd} chưa định danh · ${tong.quaHan} câu nguồn quá hạn chưa có lý do · ${D.meta.mocNgay}`}
+        subtitle={`${D.meta.soDonVi} đơn vị cung · ${tong.chuaDd} chưa định danh · ${tong.quaHan} câu nguồn quá hạn chưa có lý do · dữ liệu ${ngayVN(D.meta.mocNgay)}`}
       />
       <div className="dash-content">
         <DanhSachDonVi ds={D.units} nhoms={nhoms} />

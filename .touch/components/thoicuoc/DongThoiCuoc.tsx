@@ -205,11 +205,15 @@ export function DongThoiCuoc() {
 
       <section className="dash-panel hs-sec" aria-labelledby="tc-tin">
         <h2 className="hs-h" id="tc-tin">Dòng tin <span>{trongKhoang.length} sự kiện trong khoảng, mới nhất trước</span></h2>
-        {theoThang.map(([t, es]) => (
-          <div key={t} className="tc-thang">
-            <div className="tc-thang__h">Tháng {thangVN(t)} <span>{es.length}</span></div>
+        {/* 01/10/2026 (nghiem thu muc 8): trang dai 13.000px. Hai thang moi nhat mo san, cac thang
+            khac thu gon thanh mot dong co dem va cac loai tin; bam de mo. */}
+        {theoThang.map(([t, es], i) => (
+          <details key={`${khoang}-${t}`} className="tc-thang" open={i < 2}>
+            <summary className="tc-thang__h">Tháng {thangVN(t)} <span>{es.length} sự kiện</span>
+              <span className="tc-thang__loai">{LAN.filter((l) => es.some((e) => e.lan === l.k)).map((l) => `${l.nhan} ${es.filter((e) => e.lan === l.k).length}`).join(' · ')}</span>
+            </summary>
             <div className="tc-thang__ds">{es.map((e) => <TheSuKien key={e.id} e={e} />)}</div>
-          </div>))}
+          </details>))}
       </section>
     </div>
   );

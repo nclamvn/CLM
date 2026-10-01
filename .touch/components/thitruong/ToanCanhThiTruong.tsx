@@ -15,6 +15,8 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import tt from '@/lib/hub-thi-truong.json';
 import { ProofNumber, useProof } from '@/components/proof/ProofLayer';
+import { tenNgan } from '@/lib/ten-ngan.mjs';
+import { ngayVN } from '@/lib/dinh-dang';
 
 // Mau du lieu: MOT bien duy nhat (nhom cong nghe) ma hoa bang mau, qua token var(--nhom-N) cua
 // styles/mau-du-lieu.css. Khong ghi ma mau o day (check-don-sac.mjs cam).
@@ -41,7 +43,10 @@ const TRANG_THAI = [
 
 function Sankey() {
   const { moMuc } = useProof();
-  const [tro, setTro] = useState<string | null>(null);
+  const [troChuot, setTro] = useState<string | null>(null);
+  // Ghim mot nhom bang chip loc (01/10/2026, nghiem thu muc 17): giu sang khi chuot roi bieu do.
+  const [ghim, setGhim] = useState<string | null>(null);
+  const tro = troChuot ?? ghim;
   const [tip, setTip] = useState<{ x: number; y: number } | null>(null);
   const { rong, cao, nodes, links } = D.sankey;
   const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
@@ -69,7 +74,16 @@ function Sankey() {
     else if (n.tang === 'nhom') moMuc({ loai: 'nhom', so: n.so as string });
     else moMuc({ loai: 'don_vi', ten: n.nhan });
   };
+  const nhomNut = nodes.filter((n) => n.tang === 'nhom').sort((a, b) => Number(a.so) - Number(b.so));
   return (
+    <>
+    <div className="dt2-filters tt-loc" role="group" aria-label="Soi một nhóm công nghệ">
+      <button type="button" className="dt2-chip" aria-pressed={ghim === null} onClick={() => setGhim(null)}>Tất cả nhóm</button>
+      {nhomNut.map((n) => (
+        <button key={n.id} type="button" className="dt2-chip" style={mau(n.so)} aria-pressed={ghim === n.id} onClick={() => setGhim(ghim === n.id ? null : n.id)}>
+          <i className="mau-cham" aria-hidden="true" />{soHai(String(n.so))} {n.nhan}
+        </button>))}
+    </div>
     <div className="tt-sk" onMouseLeave={() => { setTro(null); setTip(null); }}>
       <svg className="tt-sk__svg" viewBox={`0 0 ${rong} ${cao}`} role="group"
         aria-label={`Sankey ${D.kpi.dvCoCap} đơn vị, ${D.phu.length} nhóm, ${D.kpi.soNc} nhu cầu; ${D.kpi.soCap} cặp cung cầu có nguồn, ${D.kpi.capDaKy} đã ký; ${D.kpi.ncTrong} nhu cầu chưa có bên cung.`}>
@@ -96,7 +110,7 @@ function Sankey() {
               onFocus={() => setTro(n.id)} onBlur={() => setTro(null)}>
               <rect x={n.x} y={n.y} width={n.w} height={n.h} rx={n.tang === 'nhom' ? 4 : 1.5} className="tt-nut__r" />
               {n.tang === 'nhom' && <rect x={n.x} y={n.y + 1} width={3} height={n.h - 2} rx={1} className="tt-nut__vach" />}
-              {n.tang === 'don_vi' && <text x={n.x - 6} y={n.y + n.h / 2 + 3.5} textAnchor="end" className="tt-nut__t">{ngan(n.nhan, 40)}</text>}
+              {n.tang === 'don_vi' && <text x={n.x - 6} y={n.y + n.h / 2 + 3.5} textAnchor="end" className="tt-nut__t">{ngan(tenNgan(n.nhan), 40)}<title>{n.nhan}</title></text>}
               {n.tang === 'nhom' && (
                 <text x={n.x + 10} y={n.y + n.h / 2 + 4} className="tt-nut__g">
                   <tspan className="tt-nut__gso">{soHai(n.so as string)}</tspan><tspan dx={6}>{ngan(n.nhan, 22)}</tspan>
@@ -122,6 +136,7 @@ function Sankey() {
           </div>
         </div>)}
     </div>
+    </>
   );
 }
 
@@ -210,13 +225,15 @@ export function ToanCanhThiTruong() {
 
       <section className="dash-panel hs-sec" aria-labelledby="tt-sk">
         <h2 className="hs-h" id="tt-sk">Dòng cung cầu <span>độ dày = số cặp cung cầu được chấp nhận, không phải ước lượng</span></h2>
-        <Sankey />
-        <div className="tt-cg">
+        {/* Chu giai dat TREN bieu do (01/10/2026, nghiem thu muc 17): doc khoa truoc khi doc hinh. */}
+        <div className="tt-cg tt-cg--tren">
           <span>màu dòng = nhóm công nghệ</span>
           <span><i className="tt-mk2 tt-dong--da_ky" style={mau(0)} />đậm: có match đã ký</span>
           <span><i className="tt-mk2 tt-dong--cung_sp" style={mau(0)} />nhạt: cùng sản phẩm, có câu nguồn</span>
           <span><i className="tt-mk tt-o--trong" />nhu cầu chưa có bên cung</span>
         </div>
+        <p className="hep-note">Màn hẹp không đủ chỗ cho sơ đồ dòng 60 đơn vị. Cùng số liệu ở dạng bảng: <a className="pf-link" href="#phu">bản đồ phủ nhu cầu</a>; danh sách đơn vị ở <Link className="pf-link" href="/dashboard/don-vi">Hồ sơ đơn vị</Link>.</p>
+        <div className="hep-an"><Sankey /></div>
         <p className="hs-note">
           Cặp bị người gác cổng từ chối không mang dòng. Thứ tự nhóm giữ theo vòng lãnh thổ của đồ thị;
           thứ tự đơn vị tối thiểu hoá diện tích giao cắt (tổng tích độ dày hai dòng cắt nhau): còn {c.dienTichGiao} ở tầng trái, {c.dienTichGiaoPhai} ở tầng phải.
@@ -230,7 +247,7 @@ export function ToanCanhThiTruong() {
       </section>
 
       <section className="dash-panel hs-sec" aria-labelledby="tt-tuoi">
-        <h2 className="hs-h" id="tt-tuoi">Độ tươi nguồn <span>theo năm nguồn đăng bài, ngưỡng {D.tuoi.nguongNgay} ngày, mốc {D.tuoi.mocNgay}</span></h2>
+        <h2 className="hs-h" id="tt-tuoi">Độ tươi nguồn <span>theo năm nguồn đăng bài, ngưỡng {D.tuoi.nguongNgay} ngày, mốc {ngayVN(D.tuoi.mocNgay)}</span></h2>
         <DoTuoi />
         <div className="tt-cg">{TRANG_THAI.map((s) => <span key={s.k}><i className={`hs-mk2 hs-tt--${s.k}`} />{s.nhan} · {t[s.k]}</span>)}</div>
         <p className="hs-note">

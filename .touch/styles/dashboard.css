@@ -549,6 +549,10 @@
 .dash-shell .pf-ev__field { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); margin-right: auto; }
 .dash-shell .pf-ev__src { font-family: var(--font-code); font-size: 12px; color: var(--color-text-muted); }
 .dash-shell .pf-ev__value { font-size: 14px; line-height: 20px; color: var(--color-text-primary); margin-top: var(--space-1_5); font-weight: 600; }
+.dash-shell .pf-ev__nhieu { margin: var(--space-1_5) 0 0; display: grid; gap: 4px; }
+.dash-shell .pf-ev__nhieu > div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: var(--space-2); align-items: baseline; }
+.dash-shell .pf-ev__nhieu dt { font-size: 12px; color: var(--color-text-muted); }
+.dash-shell .pf-ev__nhieu dd { margin: 0; font-size: 14px; line-height: 20px; color: var(--color-text-primary); font-weight: 600; }
 .dash-shell .pf-ev__span { margin: var(--space-1_5) 0 0; padding-left: var(--space-2_5); border-left: var(--stroke-emphasis) solid var(--a-amber-35); font-size: 13px; line-height: 19px; color: var(--color-text-secondary); }
 .dash-shell .pf-ev__act { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2); }
 .dash-shell .pf-ev__ex { font-size: 12px; color: var(--color-text-muted); margin-left: auto; }
@@ -1067,7 +1071,13 @@
 .dash-shell .tc-d__vb { font-size: 12px; font-weight: 700; fill: var(--tc-cs); paint-order: stroke; stroke: var(--dt-nen); stroke-width: 3px; }
 .dash-shell .tc-chon { margin-top: var(--space-2_5); }
 .dash-shell .tc-thang { display: grid; grid-template-columns: 120px 1fr; gap: var(--space-3); padding: var(--space-2_5) 0; border-top: var(--stroke-hairline) solid var(--color-border-muted); }
-.dash-shell .tc-thang__h { font-size: 13px; font-weight: 600; color: var(--color-text-primary); }
+.dash-shell .tc-thang__h { font-size: 13px; font-weight: 600; color: var(--color-text-primary); cursor: pointer; list-style: none; }
+.dash-shell .tc-thang__h::-webkit-details-marker { display: none; }
+.dash-shell .tc-thang__h::before { content: '▸'; display: inline-block; width: 14px; color: var(--color-text-muted); transition: transform 150ms ease; }
+.dash-shell .tc-thang[open] > .tc-thang__h::before { transform: rotate(90deg); }
+.dash-shell .tc-thang:not([open]) { grid-template-columns: minmax(0, 1fr); }
+.dash-shell .tc-thang__loai { display: block; font-size: 12px; font-weight: 400; color: var(--color-text-muted); margin-top: 2px; }
+.dash-shell .tc-thang:not([open]) .tc-thang__h span { display: inline; margin-left: 8px; }
 .dash-shell .tc-thang__h span { display: block; font-size: 12px; font-weight: 400; color: var(--color-text-muted); margin-top: 2px; }
 .dash-shell .tc-thang__ds { display: grid; gap: var(--space-2); }
 .dash-shell .tc-the { padding: var(--space-2_5) var(--space-3); border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-subtle); background: var(--color-bg-surface-1); border-left-width: 3px; }
@@ -1109,26 +1119,10 @@
 .dash-shell .md-so__v small { font-size: 20px; color: var(--color-text-muted); font-weight: 500; margin-left: 2px; }
 .dash-shell .md-so__k { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-secondary); }
 .dash-shell .md-so__phu { font-size: 12px; color: var(--color-text-muted); }
-.dash-shell .md-giua { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); gap: var(--space-3); align-items: stretch; }
-.dash-shell .md-map-khung { padding: var(--space-3) var(--space-3_5); }
+.dash-shell .md-giua { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: var(--space-3); align-items: stretch; }
 .dash-shell .md-map-dau { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
 .dash-shell .md-link { font-size: 12.5px; font-weight: 600; color: var(--color-text-link); text-decoration: none; white-space: nowrap; }
-.dash-shell .md-map { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: var(--dt-nen); border: var(--stroke-hairline) solid var(--color-border-muted); }
-.dash-shell .md-lt { fill: rgba(161, 161, 161, 0.06); stroke: rgba(161, 161, 161, 0.22); }
-.dash-shell .md-c { stroke: rgba(161, 161, 161, 0.45); stroke-width: 1.2; }
-.dash-shell .md-m { stroke: var(--dt-match); stroke-width: 2.8; }
-.dash-shell .md-dv { fill: var(--dt-cung); stroke: var(--dt-nen); stroke-width: 1.5; }
-.dash-shell .md-nc { fill: var(--dt-cau); stroke: var(--dt-nen); stroke-width: 1.5; }
-.dash-shell .md-nc--trong { fill: var(--dt-nen); stroke: var(--dt-cau); stroke-width: 2; }
 .dash-shell .md-mk { display: inline-block; width: 9px; height: 9px; margin-right: 6px; vertical-align: -1px; border-radius: 50%; }
-.dash-shell .md-mk--dv { background: var(--dt-cung); }
-.dash-shell .md-mk--nc { background: var(--dt-cau); border-radius: 1px; transform: rotate(45deg) scale(0.85); }
-.dash-shell .md-mk--trong { border: 1.5px solid var(--dt-cau); border-radius: 1px; transform: rotate(45deg) scale(0.85); }
-.dash-shell .md-yeu { padding: var(--space-3) var(--space-3_5); }
-.dash-shell .md-yeu ul { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-2_5); }
-.dash-shell .md-yeu li { font-size: 13px; line-height: 20px; color: var(--color-text-secondary); padding-left: 14px; position: relative; }
-.dash-shell .md-yeu li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 1px; border: 1.5px solid var(--dt-cau); transform: rotate(45deg); }
-.dash-shell .md-yeu b { color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
 .dash-shell .md-cua { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); }
 .dash-shell .md-cua__o { position: relative; display: flex; flex-direction: column; gap: 5px; padding: var(--space-3) var(--space-3_5); border-radius: var(--radius-md); border: var(--stroke-hairline) solid var(--color-border-subtle); background: var(--color-bg-surface-1); text-decoration: none; transition: border-color 160ms ease, background 160ms ease; }
 .dash-shell .md-cua__o:hover { border-color: var(--color-border-strong); background: var(--color-bg-surface-2); }
@@ -1138,15 +1132,8 @@
 .dash-shell .md-cua__mui { position: absolute; right: 16px; top: 14px; color: var(--color-text-muted); transition: transform 160ms ease; }
 .dash-shell .md-cua__o:hover .md-cua__mui { transform: translateX(3px); color: var(--color-text-primary); }
 @media (prefers-reduced-motion: no-preference) {
-  .dash-shell .md-t { animation: dt2-hien 500ms ease-out both; }
-  .dash-shell .md-t--1 { animation-delay: 150ms; }
-  .dash-shell .md-t--2 { animation-delay: 450ms; }
-  .dash-shell .md-t--3 { animation-delay: 750ms; }
-  .dash-shell .md-t--4 { animation-delay: 1050ms; }
-  .dash-shell .md-nc--trong { animation: md-nhap 900ms ease-out 1500ms 1; }
-  .dash-shell .md-cua__o { animation: dt2-hien 400ms ease-out both; }
+    .dash-shell .md-cua__o { animation: dt2-hien 400ms ease-out both; }
 }
-@keyframes md-nhap { 0% { stroke-width: 2; } 45% { stroke-width: 6; } 100% { stroke-width: 2; } }
 @media (max-width: 1100px) {
   .dash-shell .md-hero, .dash-shell .md-giua { grid-template-columns: minmax(0, 1fr); }
   .dash-shell .md-cua { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1255,3 +1242,74 @@
 .dash-shell .pp-buoc, .dash-shell .pp-ds { margin: 12px 0 0; padding-left: 22px; display: grid; gap: 10px; font-size: 14px; line-height: 1.65; color: var(--color-text-secondary); }
 .dash-shell .pp-cuoi { font-size: 13px; color: var(--color-text-muted); }
 .dash-shell .pp-cuoi a { color: var(--color-text-primary); }
+
+/* Tong quan cho nguoi ra quyet dinh (01/10/2026, nghiem thu muc 7, 11) */
+.dash-shell .md-so__dong { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-2); }
+.dash-shell .md-xh { flex: 0 1 120px; min-width: 56px; height: auto; overflow: visible; }
+.dash-shell .md-xh polyline { fill: none; stroke: var(--color-text-secondary); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.dash-shell .md-xh circle { fill: var(--color-text-primary); }
+.dash-shell .md-so__tang { font-size: 12px; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; border-top: var(--stroke-hairline) solid var(--color-border-subtle); padding-top: 6px; margin-top: 2px; }
+.dash-shell .md-nhom, .dash-shell .md-viec, .dash-shell .md-cl { padding: var(--space-3) var(--space-3_5); }
+.dash-shell .md-bn-cuon { overflow-x: auto; position: relative; }
+.dash-shell .md-bn { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; margin: var(--space-2) 0; }
+.dash-shell .md-bn th, .dash-shell .md-bn td { padding: 7px 8px; border-bottom: var(--stroke-hairline) solid var(--color-border-subtle); text-align: right; color: var(--color-text-secondary); white-space: nowrap; }
+.dash-shell .md-bn thead th { font-size: 12px; font-weight: 600; color: var(--color-text-muted); letter-spacing: 0.02em; }
+.dash-shell .md-bn th[scope="row"], .dash-shell .md-bn thead th:first-child { text-align: left; color: var(--color-text-primary); font-weight: 500; }
+.dash-shell .md-bn th[scope="row"] b { font-weight: 600; margin-right: 4px; color: var(--color-text-muted); }
+.dash-shell .md-bn td.is-trong { color: var(--color-text-primary); font-weight: 650; }
+.dash-shell .md-bn tfoot th, .dash-shell .md-bn tfoot td { border-bottom: 0; color: var(--color-text-primary); font-weight: 600; }
+.dash-shell .md-bn__thanh { width: 18%; min-width: 80px; text-align: left !important; }
+.dash-shell .md-bn__thanh span { display: inline-block; height: 8px; vertical-align: middle; }
+.dash-shell .md-bn__ky { background: var(--mau, var(--nhom-0)); border-radius: 2px 0 0 2px; }
+.dash-shell .md-bn__cung { background: color-mix(in oklab, var(--mau, var(--nhom-0)) 38%, transparent); }
+.dash-shell .md-mk--ky { background: var(--color-text-secondary); border-radius: 2px; }
+.dash-shell .md-mk--cung { background: color-mix(in oklab, var(--color-text-secondary) 38%, transparent); border-radius: 2px; }
+.dash-shell .md-mk--trong { border: 1.5px solid var(--color-text-secondary); border-radius: 2px; }
+.dash-shell .md-viec ol { margin: var(--space-2) 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.dash-shell .md-viec a { display: grid; grid-template-columns: 44px minmax(0, 1fr) 14px; gap: var(--space-2); align-items: start; padding: 9px 8px; border-radius: var(--radius-md); text-decoration: none; color: inherit; }
+.dash-shell .md-viec a:hover { background: var(--color-bg-surface-2); }
+.dash-shell .md-viec a:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .md-viec b { font-size: 22px; line-height: 1; font-weight: 650; text-align: right; color: var(--color-text-primary); font-variant-numeric: tabular-nums; }
+.dash-shell .md-viec__chu { display: grid; gap: 2px; }
+.dash-shell .md-viec__ten { font-size: 13px; line-height: 18px; color: var(--color-text-primary); }
+.dash-shell .md-viec__cach { font-size: 12px; line-height: 17px; color: var(--color-text-muted); }
+.dash-shell .md-viec__mui { color: var(--color-text-muted); }
+.dash-shell .md-cl ul { margin: var(--space-2) 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-3); }
+.dash-shell .md-cl li { display: grid; gap: 6px; align-content: start; }
+.dash-shell .md-cl__nhan { font-size: 12.5px; line-height: 17px; color: var(--color-text-secondary); min-height: 34px; }
+.dash-shell .md-cl__so { font-size: 12px; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .md-cl__so b { font-size: 20px; font-weight: 650; color: var(--color-text-primary); margin-right: 4px; }
+.dash-shell .md-cl__ray { display: block; height: 6px; border-radius: 3px; background: var(--color-bg-surface-2); border: var(--stroke-hairline) solid var(--color-border-subtle); overflow: hidden; }
+.dash-shell .md-cl__ray span { display: block; height: 100%; background: var(--color-text-secondary); }
+@media (max-width: 1100px) { .dash-shell .md-cl ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* So nguon: thanh loc dinh tren, phan trang (01/10/2026) */
+.dash-shell .reg-trang { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: var(--space-3) 0; }
+.dash-shell .reg-trang .reg-pill:disabled { opacity: 0.4; cursor: default; }
+.dash-shell .reg-trang__dem { margin-left: auto; font-size: 12px; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .mw2-chep { float: right; font-size: 12px; margin: 0 0 var(--space-2) var(--space-2); }
+.dash-shell .reg-csv { margin-left: var(--space-2); }
+.dash-shell .hs-ten-dong { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+
+/* In hoac luu PDF (01/10/2026, nghiem thu muc 15): giay trang chu den, bo khung dieu huong va nut. */
+@media print {
+  @page { margin: 14mm; }
+  html, body, .dash-shell, .dash-main { background: #fff !important; }
+  .dash-sidebar, .dash-topbar__controls, .hs-in, .mw2-chep, .reg-csv, .pf-ev__act, .reg-trang, .md-cua, .skip-link { display: none !important; }
+  .dash-shell { display: block !important; }
+  .dash-shell * { color: #111 !important; background: transparent !important; box-shadow: none !important; border-color: #bbb !important; text-shadow: none !important; }
+  .dash-shell .dash-panel, .dash-shell .pf-ev { break-inside: avoid; }
+  .dash-shell svg text { fill: #111 !important; }
+  .dash-shell .mau-cham { background: var(--mau) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
+.dash-shell .tt-cg--tren { margin: var(--space-1_5) 0 var(--space-2); }
+.dash-shell .tt-loc { margin: 0 0 var(--space-2); }
+.dash-shell .tt-loc .dt2-chip .mau-cham { margin-right: 4px; }
+@media (max-width: 639px) { .dash-shell .md-so-luoi { grid-template-columns: minmax(0, 1fr); } .dash-shell .md-cl ul { grid-template-columns: minmax(0, 1fr); } .dash-shell .md-cua { grid-template-columns: minmax(0, 1fr); } }
+/* Man hep (< 640px, nghiem thu muc 12): bieu do qua day thi an, thay bang loi dan toi bang cung so lieu. */
+.dash-shell .hep-note { display: none; font-size: 13px; line-height: 20px; color: var(--color-text-secondary); border: var(--stroke-hairline) dashed var(--color-border-subtle); border-radius: var(--radius-md); padding: var(--space-2) var(--space-2_5); }
+@media (max-width: 639px) {
+  .dash-shell .hep-note { display: block; }
+  .dash-shell .hep-an { display: none; }
+}
+.dash-shell .tt-loc .dt2-chip[aria-pressed="false"] { opacity: 1; }
+.dash-shell .tt-loc .dt2-chip[aria-pressed="true"] { color: var(--color-text-primary); border-color: var(--color-border-strong); background: var(--color-bg-surface-2); }

@@ -25,6 +25,9 @@ import { slugDonVi } from '@/lib/ho-so.mjs';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
+import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
+import tenJson from '@/lib/hub-ten.json';
+export const TEN_SP = (tenJson as { sanPham: Record<string, string> }).sanPham;
 
 // ── Kieu du lieu ────────────────────────────────────────────────────────────
 type SoKhoa = 'units' | 'claims' | 'needs' | 'tierA' | 'snapshots' | 'gate' | 'matches';
@@ -84,7 +87,7 @@ const TEN_TRUONG: Record<string, string> = {
   bang_chung_nang_luc: 'Bằng chứng năng lực', nhom_cncl: 'Nhóm công nghệ', san_pham_lien_quan: 'Sản phẩm liên quan',
   loai_hinh: 'Loại hình', location: 'Địa điểm',
 };
-const tenTruong = (f: string) => TEN_TRUONG[f] ?? (f.startsWith('nhom_cncl_phu') ? 'Nhóm phụ' : f);
+export const tenTruong = (f: string) => TEN_TRUONG[f] ?? (f.startsWith('nhom_cncl_phu') ? 'Nhóm phụ' : f);
 const TEN_LOAI: Record<string, string> = { don_vi: 'Đơn vị', nhu_cau: 'Nhu cầu', nhom: 'Nhóm' };
 
 // ── Focus trap dung chung cho hai hop thoai ─────────────────────────────────
@@ -154,12 +157,16 @@ function CauTrongBanChup({ span, href }: { span: string; href: string }) {
   );
 }
 
-export function BangChung({ e, chiGhiChu = false, phu }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'>; chiGhiChu?: boolean; phu?: React.ReactNode }) {
+/**
+ * Mot the bang chung. `them`: cac truong khac rut tu CUNG mot cau nguon (cung span, cung ban chup),
+ * gop vao mot the thay vi lap lai cau nguyen van (01/10/2026, nghiem thu muc 10).
+ */
+export function BangChung({ e, chiGhiChu = false, phu, them }: { e: Pick<CnclEvidence, 'field' | 'value' | 'span' | 'tier' | 'source' | 'href' | 'extraction'>; chiGhiChu?: boolean; phu?: React.ReactNode; them?: { field: string; value: string }[] }) {
   const [mo, setMo] = useState(false);
   return (
     <li className="pf-ev">
       <div className="pf-ev__head">
-        <span className="pf-ev__field">{tenTruong(e.field)}</span>
+        <span className="pf-ev__field">{[e.field, ...(them ?? []).map((t) => t.field)].map(tenTruong).join(' · ')}</span>
         <span className={`pf-tier pf-tier--${e.tier}`}>hạng {e.tier}</span>
         <span className="pf-ev__src">{e.source}</span>
         {phu}
@@ -168,7 +175,10 @@ export function BangChung({ e, chiGhiChu = false, phu }: { e: Pick<CnclEvidence,
         <div className="pf-ev__warn" role="note">
           Nợ nguồn: câu làm bằng chỉ nằm trong nhãn của người chụp, chưa có câu của nguồn gọi đúng tên này.
         </div>)}
-      <div className="pf-ev__value">{e.value}</div>
+      {them?.length
+        ? <dl className="pf-ev__nhieu">{[{ field: e.field, value: e.value }, ...them].map((t) => (
+          <div key={t.field}><dt>{tenTruong(t.field)}</dt><dd>{hienGiaTri(t.field, t.value, TEN_SP)}</dd></div>))}</dl>
+        : <div className="pf-ev__value">{hienGiaTri(e.field, e.value, TEN_SP)}</div>}
       <blockquote className="pf-ev__span">{e.span}</blockquote>
       <div className="pf-ev__act">
         <button type="button" className="pf-link" aria-expanded={mo} onClick={() => setMo((v) => !v)}>

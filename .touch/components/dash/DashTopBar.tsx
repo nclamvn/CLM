@@ -15,7 +15,7 @@ export function DashTopBar({ title, subtitle }: { title?: string; subtitle?: str
       </div>
       <div className="dash-topbar__controls">
         <SearchTrigger />
-        <div className="dash-user" aria-label="Người đang xem: Nguyễn Cảnh Lâm, người gác cổng">
+        <div className="dash-user" role="group" aria-label="Người đang xem: Nguyễn Cảnh Lâm, người gác cổng">
           <span className="dash-avatar" aria-hidden="true">L</span>
           <span className="dash-user__chu">
             <span className="dash-user__ten">Nguyễn Cảnh Lâm</span>

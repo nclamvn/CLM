@@ -98,7 +98,7 @@ function DoThiMotBuoc({ hs }: { hs: HoSo }) {
           <circle cx={X2} cy={yO(j)} r={5} />
           <text x={X2 + 10} y={yO(j) + 3.5}>{o.ten.length > 22 ? `${o.ten.slice(0, 21)}…` : o.ten}</text>
         </Link>))}
-      {ngoai.length === 0 && <text x={X2} y={yTam + 3.5} className="hs-mini__rong">chưa đơn vị nào khác cùng cung</text>}
+      {ngoai.length === 0 && <text x={X2} y={yTam + 3.5} className="hs-mini__rong">không có đơn vị cùng cung</text>}
     </svg>
   );
 }
@@ -148,7 +148,7 @@ function DongThoiGian({ hs, moc }: { hs: HoSo; moc: string }) {
                 ? <a href={d.nguonUrl} target="_blank" rel="noopener noreferrer" aria-label={`Mở nguồn đề xuất ${ngayVN(d.ngay)}`}><circle cx={xx} cy={yy} r={6} /></a>
                 : <circle cx={xx} cy={yy} r={6} />}
             <title>{`${ngayVN(d.ngay)} · ${d.loai === 'de_xuat' && d.soGop === 1 ? d.nhan : nhan}`}</title>
-            <text x={xx} y={yy - 11 - vuaDat * 11} textAnchor="middle">{ngayVN(d.ngay)} · {nhan}</text>
+            <text x={xx} y={yy - 11 - vuaDat * 11} textAnchor={xx > W - 140 ? 'end' : xx < TRAI + 90 ? 'start' : 'middle'}>{ngayVN(d.ngay)} · {nhan}</text>
           </g>);
       })}
     </svg>
@@ -160,13 +160,25 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
   const { moMuc } = useProof();
   const moDv = () => moMuc({ loai: 'don_vi', ten: hs.ten });
   const ev = useMemo(() => hs.bangChung.slice().sort((a, b) => hangTruong(a.field) - hangTruong(b.field) || a.i - b.i), [hs]);
+  // Gop cac truong rut tu cung mot cau nguon (cung span, cung ban chup) vao mot the.
+  const nhomEv = useMemo(() => {
+    const m = new Map<string, { b: (typeof ev)[number]; them: (typeof ev)[number][] }>();
+    for (const b of ev) {
+      const e = bangChung[b.i]; const k = `${e.href}\u0000${e.span}`;
+      const g = m.get(k); if (g) g.them.push(b); else m.set(k, { b, them: [] });
+    }
+    return [...m.values()];
+  }, [ev, bangChung]);
   const deXuat = hs.dongThoiGian.filter((d) => d.loai === 'de_xuat');
   const nhomChinh = hs.nhoms.find((n) => n.so === hs.lanhTho) ?? hs.nhoms[0];
   return (
     <div className="hs">
       <section className="dash-panel hs-head" aria-label="Đầu hồ sơ">
         <nav className="hs-crumb" aria-label="Đường dẫn"><Link href="/dashboard/don-vi">Hồ sơ đơn vị</Link><span aria-hidden="true">/</span><span>{soHai(nhomChinh?.so ?? null)} {nhomChinh?.nhan.replace(/^Nhóm \d+ · /, '') ?? 'chưa có câu nguồn về nhóm'}</span></nav>
-        <h1 className="hs-ten">{hs.ten}</h1>
+        <div className="hs-ten-dong">
+          <h1 className="hs-ten">{hs.ten}</h1>
+          <button type="button" className="reg-pill hs-in" onClick={() => window.print()}>In hoặc lưu PDF</button>
+        </div>
         <div className="hs-chips">
           {hs.loaiHinh ? <span className="hs-chip">{hs.loaiHinh}</span> : <span className="hs-chip hs-chip--trong">loại hình: chưa có nguồn</span>}
           {hs.nhoms.map((n) => (
@@ -208,11 +220,11 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
 
       <div className="hs-grid">
         <section className="dash-panel hs-sec" aria-labelledby="hs-nl">
-          <h2 className="hs-h" id="hs-nl">Năng lực và bằng chứng <span>{ev.length} câu nguyên văn</span></h2>
+          <h2 className="hs-h" id="hs-nl">Năng lực và bằng chứng <span>{ev.length} trường từ {nhomEv.length} câu nguyên văn</span></h2>
           <ul className="pf-evs">
-            {ev.map((b) => {
+            {nhomEv.map(({ b, them }) => {
               const e = bangChung[b.i];
-              return <BangChung key={b.i} e={e} phu={
+              return <BangChung key={b.i} e={e} them={them.map((x) => ({ field: bangChung[x.i].field, value: bangChung[x.i].value }))} phu={
                 <span className={`hs-tt hs-tt--${b.trangThai}`} title={b.ngayDang ? `Nguồn đăng ${ngayVN(b.ngayDang)}, ${b.tuoiNgay} ngày trước mốc đo` : ''}>
                   {ngayVN(b.ngayDang)} · {TT_NHAN[b.trangThai]}
                 </span>} />;

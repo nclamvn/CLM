@@ -25,7 +25,7 @@ export function DashSidebar() {
           // Trang con (vd /dashboard/don-vi/<slug>) van sang muc cha; rieng /dashboard thi phai khop dung.
           const active = pathname === n.href || (n.href !== '/dashboard' && pathname.startsWith(`${n.href}/`));
           return (
-            <Link key={n.label} href={n.href} className={`dash-nav__item${active ? ' is-active' : ''}`} aria-current={active ? 'page' : undefined}>
+            <Link key={n.label} href={n.href} className={`dash-nav__item${active ? ' is-active' : ''}`} aria-current={active ? 'page' : undefined} aria-label={n.label}>
               <Icon name={ICONS[i] ?? 'doc'} className="dash-nav__icon" />
               <span>{n.label}</span>
             </Link>

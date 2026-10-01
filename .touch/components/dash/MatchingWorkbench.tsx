@@ -18,13 +18,14 @@
  * Ly do tu choi la CHU CUA NGUOI GAC CONG: hien nguyen van, khong sua ca dau.
  */
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { signedMatches, rejectedPairs, matchMeta, type SignedMatch, type MatchEvidence } from '@/lib/cncl-match';
 import hub from '@/lib/hub-matching.json';
 import graph from '@/lib/hub-graph.json';
 import { slugDonVi } from '@/lib/ho-so.mjs';
 import { useProof } from '@/components/proof/ProofLayer';
 import { tenNguoi } from '@/lib/dinh-dang';
+import { tenNgan } from '@/lib/ten-ngan.mjs';
 
 type PhanRa = {
   tiLeGiao: number; soGiao: number; soTokenCau: number; quaNguong: boolean;
@@ -107,7 +108,7 @@ function SoDoHaiCot({ chon, datChon }: { chon: string; datChon: (id: string) => 
         return (
           <g key={id} className={`mw2-hc__n${on ? ' is-chon' : ''}`}>
             <circle cx={XP} cy={yU(i)} r={5} className="mw2-hc__cung" />
-            <text x={XP + 10} y={yU(i) + 3.5}>{ngan(id, 22)}</text>
+            <text x={XP + 10} y={yU(i) + 3.5}>{ngan(tenNgan(id), 26)}<title>{id}</title></text>
           </g>);
       })}
     </svg>
@@ -214,7 +215,22 @@ function VetBangChung({ m }: { m: SignedMatch }) {
 export function MatchingWorkbench() {
   const dau = H.haiCot.canh.find((c) => c.loai === 'da_ky')?.id ?? '';
   const [chon, setChon] = useState(dau);
+  const [daChep, setDaChep] = useState(false);
   const { moMuc } = useProof();
+  // Lien ket chia se (01/10/2026, nghiem thu muc 16): ?m=MATCH-0012 mo thang cap do; chon cap khac
+  // thi duong dan doi theo (replaceState, khong them lich su).
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get('m');
+    if (q && H.haiCot.canh.some((c) => c.id === q)) setChon(q);
+  }, []);
+  useEffect(() => {
+    if (!chon) return;
+    const u = new URL(window.location.href); u.searchParams.set('m', chon);
+    window.history.replaceState(null, '', u.toString()); setDaChep(false);
+  }, [chon]);
+  const chepLienKet = () => {
+    navigator.clipboard?.writeText(window.location.href).then(() => setDaChep(true), () => setDaChep(false));
+  };
   const m = useMemo(() => signedMatches.find((x) => x.id === chon), [chon]);
   const tc = chon.startsWith('tu_choi:') ? rejectedPairs.find((r) => `tu_choi:${r.supplyId}>${r.demandId}` === chon) : null;
   const khopHet = signedMatches.every((x) => H.phanRa[x.id]?.lamTron === x.score);
@@ -232,14 +248,14 @@ export function MatchingWorkbench() {
       <div className="mw2-grid">
         <aside className="dash-panel hs-sec mw2-trai" aria-label="Sơ đồ các cặp">
           <h2 className="hs-h">Các cặp đã quyết <span>bấm một đường để xem vệt</span></h2>
+          <div className="tt-cg tt-cg--tren"><span><i className="tt-mk2 tt-dong--da_ky" />đã ký</span><span><i className="mw2-mk mw2-mk--tc" />bị từ chối</span></div>
           <SoDoHaiCot chon={chon} datChon={setChon} />
-          <div className="tt-cg"><span><i className="tt-mk2 tt-dong--da_ky" />đã ký</span><span><i className="mw2-mk mw2-mk--tc" />bị từ chối</span></div>
           <ul className="mw2-ds" aria-label="Danh sách cặp">
             {H.haiCot.canh.map((c) => (
               <li key={c.id}>
                 <button type="button" className={`mw2-ds__r${c.id === chon ? ' is-chon' : ''}${c.loai === 'tu_choi' ? ' is-tc' : ''}`} aria-pressed={c.id === chon} onClick={() => setChon(c.id)}>
                   <span className="mw2-ds__ma">P{maSpCua.get(c.cau)}</span>
-                  <span className="mw2-ds__ten">{ngan(c.cung, 30)}</span>
+                  <span className="mw2-ds__ten" title={c.cung}>{ngan(tenNgan(c.cung), 30)}</span>
                   <span className="mw2-ds__d">{c.loai === 'da_ky' ? so(signedMatches.find((x) => x.id === c.id)?.score ?? 0, 2) : 'từ chối'}</span>
                 </button>
               </li>))}
@@ -248,6 +264,7 @@ export function MatchingWorkbench() {
         </aside>
 
         <section className="dash-panel hs-sec mw2-phai" aria-live="polite">
+          {chon && <button type="button" className="pf-link mw2-chep" onClick={chepLienKet}>{daChep ? 'Đã chép liên kết' : 'Chép liên kết tới cặp này'}</button>}
           {m ? <VetBangChung m={m} /> : tc ? (
             <div className="mw2-vet">
               <div className="mw2-eyebrow">Cặp bị từ chối</div>
@@ -268,7 +285,7 @@ export function MatchingWorkbench() {
           Màn này không tạo được chữ ký. Chữ ký chỉ sinh từ lệnh <span className="t-mono-01">sign</span> của máy ghép,
           ghi vào sổ có khoá bằng chứng. Match chưa ký không xuất hiện trên web.
         </span>
-        <span className="t-mono-01">{matchMeta.daKy}/{matchMeta.tongChay} đã ký · sinh {matchMeta.generatedAt}</span>
+        <span className="t-mono-01">{matchMeta.daKy}/{matchMeta.tongChay} đã ký · sinh {ngayVN(matchMeta.generatedAt)}</span>
       </footer>
     </div>
   );

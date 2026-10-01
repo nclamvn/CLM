@@ -7,6 +7,12 @@
  * cua dashboard, tuc la thu nha dau tu thay DAU TIEN. Man nay thay the no: moi so doc tu cac file
  * da sinh va da qua cong cua tung man, khong so nao go tay.
  * Ba khoi: so chinh (bam ra nguon), bang tu khai diem yeu, sau cua vao man, moi cua mot su that.
+ *
+ * 01/10/2026 (nghiem thu enterprise muc 7): them ba khoi cho nguoi ra quyet dinh:
+ *   nhom      do phu cung cau theo 10 nhom cong nghe (thay ban do thu nho khong nhan),
+ *   chatLuong bon thanh tien do chat luong du lieu, moi thanh mot ti so dem duoc,
+ *   viecTiep  viec can lam tiep, SINH tu diem yeu (so bang 0 thi viec bien mat), moi viec mot cua.
+ * Duong xu huong theo ngay khong o day: no doc lich su git (lib/hub-xu-huong.json, cong xu_huong).
  */
 
 export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching }) {
@@ -42,7 +48,35 @@ export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching
       { href: '/dashboard/matching', ten: 'Ghép cung cầu', su: `${mat.signedMatches.filter((m) => matching.phanRa[m.id]?.lamTron === m.score).length}/${mat.signedMatches.length} điểm tính lại khớp máy ghép` },
       { href: '/dashboard/registry', ten: 'Sổ nguồn', su: `${claims.length} câu nguồn, ${claims.filter((e) => e.tier === 'A').length} câu hạng A` },
     ],
-    ban_do: { canhNoiHaiNhom: cs.canhNoiHaiLanhTho, soNhom: graph.boCuc.lanhTho.filter((l) => l.so !== null).length },
+    nhom: [...thiTruong.phu].sort((a, b) => Number(a.so) - Number(b.so)).map((g) => ({
+      so: Number(g.so), nhan: g.nhan, soDv: g.soDv, soNc: g.soNc, coCung: g.coCung, daKy: g.daKy, trong: g.trong,
+    })),
+    chatLuong: (() => {
+      const tong = hoSo.units.reduce((s, u) => s + u.doTuoi.tuoi + u.doTuoi.ben + u.doTuoi.giuNguonCu + u.doTuoi.quaHan + u.doTuoi.khongDocDuoc, 0);
+      const quaHan = hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan + u.doTuoi.khongDocDuoc, 0);
+      const ncDaKy = thiTruong.phu.reduce((s, g) => s + g.daKy, 0);
+      return [
+        { k: 'dinhDanh', nhan: 'Đơn vị đã định danh pháp nhân', tu: hoSo.units.filter((u) => u.dinhDanh.trangThai !== 'chua_dinh_danh').length, mau: hoSo.units.length },
+        { k: 'coCung', nhan: 'Nhu cầu quốc gia đã có bên cung', tu: k.ncCoCung, mau: k.soNc },
+        { k: 'daKy', nhan: 'Nhu cầu có cặp ghép đã ký', tu: ncDaKy, mau: k.soNc },
+        { k: 'hangA', nhan: 'Câu nguồn hạng A (văn bản chính thức)', tu: claims.filter((e) => e.tier === 'A').length, mau: claims.length },
+        { k: 'conHan', nhan: 'Câu nguồn còn hạn hoặc có lý do giữ', tu: tong - quaHan, mau: tong },
+      ];
+    })(),
+    viecTiep: (() => {
+      const chua = hoSo.units.filter((u) => u.dinhDanh.trangThai === 'chua_dinh_danh').length;
+      const qh = hoSo.units.reduce((s, u) => s + u.doTuoi.quaHan, 0);
+      const ncDaKy = thiTruong.phu.reduce((s, g) => s + g.daKy, 0);
+      const trongTen = thiTruong.phu.flatMap((g) => g.o.filter((o) => o.trangThai === 'trong').map((o) => `P${o.maSp}`));
+      const ds = [
+        { so: chua, viec: 'đơn vị chưa định danh pháp nhân', cach: 'tra mã số doanh nghiệp từ cổng đăng ký doanh nghiệp quốc gia', href: '/dashboard/don-vi' },
+        { so: k.ncTrong, viec: `nhu cầu quốc gia chưa có bên cung${trongTen.length ? ` (${trongTen.join(', ')})` : ''}`, cach: 'mở lô làm giàu mới, nguồn duyệt theo lô', href: '/dashboard/thi-truong' },
+        { so: k.ncCoCung - ncDaKy, viec: 'nhu cầu đã có bên cung nhưng chưa có cặp được ký', cach: 'người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối', href: '/dashboard/matching' },
+        { so: qh, viec: 'câu nguồn quá 180 ngày chưa có lý do giữ', cach: 'chụp lại nguồn hoặc ghi lý do giữ', href: '/dashboard/registry' },
+        { so: thoiCuoc.meta.theoLan.de_xuat, viec: 'tin mới từ vòng tự chạy đang chờ duyệt', cach: 'duyệt rồi mới tính là sự thật', href: '/dashboard/thoi-cuoc' },
+      ];
+      return ds.filter((v) => v.so > 0);
+    })(),
     mocNgay: reg.meta.generatedAt,
   };
 }

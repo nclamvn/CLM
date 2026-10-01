@@ -37,6 +37,7 @@ import { dungThiTruong } from '../lib/thi-truong.mjs';
 import { dungMatching } from '../lib/matching.mjs';
 import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
 import { dungMoDau } from '../lib/mo-dau.mjs';
+import { dungTenSp } from '../lib/hien-gia-tri.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -220,6 +221,8 @@ writeFileSync(join(LIB, 'hub-events.json'), JSON.stringify({ meta: evMeta, event
 const hoSo = dungHoSo({ reg, mat, graph: { nodes, edges }, ev: { events }, ...cauHinh });
 hoSo.meta.cumDeNham = cauHinh.cumDeNham;
 writeFileSync(join(LIB, 'hub-ho-so.json'), JSON.stringify(hoSo, null, 2) + '\n', 'utf8');
+// Ten san pham cho lop hien thi (ma "28" -> "P28 · ..."), sinh tu danh muc nhu cau, khong go tay.
+writeFileSync(join(LIB, 'hub-ten.json'), JSON.stringify({ sanPham: dungTenSp(reg.needs) }, null, 2) + '\n', 'utf8');
 
 // ── Toan canh thi truong (M1) ─────────────────────────────────────────────
 // Doc tu chinh graph + ho so vua sinh, de ba man (do thi, ho so, thi truong) khong bao gio lech.

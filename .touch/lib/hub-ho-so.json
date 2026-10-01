@@ -48,7 +48,7 @@
     {
       "slug": "benh-vien-trung-uong-quan-doi-108",
       "ten": "Bệnh viện Trung ương Quân đội 108",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -5878,7 +5878,7 @@
     {
       "slug": "phong-thi-nghiem-trong-diem-cong-nghe-loc-hoa-dau",
       "ten": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "5",
@@ -7671,7 +7671,7 @@
     {
       "slug": "trung-tam-vu-tru-viet-nam",
       "ten": "Trung tâm Vũ trụ Việt Nam",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "9",
@@ -7888,7 +7888,7 @@
     {
       "slug": "truong-dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-ha-noi",
       "ten": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
-      "loaiHinh": "Trường",
+      "loaiHinh": "Trường đại học",
       "nhoms": [
         {
           "so": "5",
@@ -8077,7 +8077,7 @@
     {
       "slug": "vien-co-dien-nong-nghiep-va-cong-nghe-sau-thu-hoach",
       "ten": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -8358,7 +8358,7 @@
     {
       "slug": "vien-cong-nghe-xa-hiem",
       "ten": "Viện Công nghệ xạ hiếm",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "8",
@@ -8515,7 +8515,7 @@
     {
       "slug": "vien-di-truyen-nong-nghiep-viet-nam",
       "ten": "Viện Di truyền Nông nghiệp Việt Nam",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -8752,7 +8752,7 @@
     {
       "slug": "vien-han-lam-khoa-hoc-va-cong-nghe-viet-nam",
       "ten": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "5",
@@ -8982,7 +8982,7 @@
     {
       "slug": "vien-khoa-hoc-cong-nghe-mat-ma",
       "ten": "Viện Khoa học-Công nghệ mật mã",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "7",
@@ -9139,7 +9139,7 @@
     {
       "slug": "vien-khoa-hoc-va-cong-nghe-viet-nam-han-quoc-vkist",
       "ten": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -9398,7 +9398,7 @@
     {
       "slug": "vien-khoa-hoc-vat-lieu",
       "ten": "Viện Khoa học vật liệu",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -9657,7 +9657,7 @@
     {
       "slug": "vien-nghien-cuu-te-bao-goc-va-cong-nghe-gen-vinmec",
       "ten": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -9923,7 +9923,7 @@
     {
       "slug": "vien-te-bao-goc-truong-dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-hcm",
       "ten": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",
@@ -10175,7 +10175,7 @@
     {
       "slug": "vien-vaccine-va-sinh-pham-y-te-ivac",
       "ten": "Viện Vaccine và sinh phẩm y tế (IVAC)",
-      "loaiHinh": "Viện",
+      "loaiHinh": "Viện nghiên cứu",
       "nhoms": [
         {
           "so": "4",

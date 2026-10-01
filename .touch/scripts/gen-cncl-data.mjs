@@ -66,7 +66,7 @@ const TEN_NHOM = {
 //
 // Ma la khong biet thi TRA LAI CHINH MA, khong tra chuoi rong. Ma moi la phai nhin thay ngay
 // tren the chu khong bien mat im lang; do la khac biet giua honest-null va bo sot.
-const TEN_LOAI = { DN: 'Doanh nghiệp', vien: 'Viện', truong: 'Trường' };
+const TEN_LOAI = { DN: 'Doanh nghiệp', vien: 'Viện nghiên cứu', truong: 'Trường đại học' };
 
 // ── Ban chup ────────────────────────────────────────────────────────────────
 const EV = join(TOUCH, 'public', 'evidence');

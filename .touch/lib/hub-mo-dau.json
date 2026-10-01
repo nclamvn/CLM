@@ -12,10 +12,10 @@
     "capCungCau": 67
   },
   "chuoiCong": {
-    "xanh": 93,
-    "tong": 93,
+    "xanh": 98,
+    "tong": 98,
     "dat": true,
-    "luc": "2026-10-01T08:27:25+0700"
+    "luc": "2026-10-01T08:55:23+0700"
   },
   "diemYeu": {
     "chuaDinhDanh": 60,
@@ -55,9 +55,161 @@
       "su": "323 câu nguồn, 120 câu hạng A"
     }
   ],
-  "ban_do": {
-    "canhNoiHaiNhom": 3,
-    "soNhom": 10
-  },
+  "nhom": [
+    {
+      "so": 1,
+      "nhan": "Công nghệ số",
+      "soDv": 9,
+      "soNc": 5,
+      "coCung": 5,
+      "daKy": 4,
+      "trong": 0
+    },
+    {
+      "so": 2,
+      "nhan": "Mạng di động thế hệ sau",
+      "soDv": 1,
+      "soNc": 1,
+      "coCung": 1,
+      "daKy": 1,
+      "trong": 0
+    },
+    {
+      "so": 3,
+      "nhan": "Robot và tự động hoá",
+      "soDv": 7,
+      "soNc": 2,
+      "coCung": 2,
+      "daKy": 2,
+      "trong": 0
+    },
+    {
+      "so": 4,
+      "nhan": "Sinh học và y sinh",
+      "soDv": 14,
+      "soNc": 7,
+      "coCung": 7,
+      "daKy": 3,
+      "trong": 0
+    },
+    {
+      "so": 5,
+      "nhan": "Năng lượng và vật liệu",
+      "soDv": 7,
+      "soNc": 6,
+      "coCung": 4,
+      "daKy": 3,
+      "trong": 2
+    },
+    {
+      "so": 6,
+      "nhan": "Chip bán dẫn",
+      "soDv": 5,
+      "soNc": 1,
+      "coCung": 1,
+      "daKy": 1,
+      "trong": 0
+    },
+    {
+      "so": 7,
+      "nhan": "An ninh mạng và lượng tử",
+      "soDv": 4,
+      "soNc": 2,
+      "coCung": 2,
+      "daKy": 0,
+      "trong": 0
+    },
+    {
+      "so": 8,
+      "nhan": "Biển, đại dương, lòng đất",
+      "soDv": 3,
+      "soNc": 2,
+      "coCung": 2,
+      "daKy": 0,
+      "trong": 0
+    },
+    {
+      "so": 9,
+      "nhan": "Hàng không và vũ trụ",
+      "soDv": 8,
+      "soNc": 2,
+      "coCung": 2,
+      "daKy": 2,
+      "trong": 0
+    },
+    {
+      "so": 10,
+      "nhan": "Đường sắt tốc độ cao",
+      "soDv": 3,
+      "soNc": 2,
+      "coCung": 2,
+      "daKy": 0,
+      "trong": 0
+    }
+  ],
+  "chatLuong": [
+    {
+      "k": "dinhDanh",
+      "nhan": "Đơn vị đã định danh pháp nhân",
+      "tu": 0,
+      "mau": 60
+    },
+    {
+      "k": "coCung",
+      "nhan": "Nhu cầu quốc gia đã có bên cung",
+      "tu": 28,
+      "mau": 30
+    },
+    {
+      "k": "daKy",
+      "nhan": "Nhu cầu có cặp ghép đã ký",
+      "tu": 16,
+      "mau": 30
+    },
+    {
+      "k": "hangA",
+      "nhan": "Câu nguồn hạng A (văn bản chính thức)",
+      "tu": 120,
+      "mau": 323
+    },
+    {
+      "k": "conHan",
+      "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
+      "tu": 294,
+      "mau": 323
+    }
+  ],
+  "viecTiep": [
+    {
+      "so": 60,
+      "viec": "đơn vị chưa định danh pháp nhân",
+      "cach": "tra mã số doanh nghiệp từ cổng đăng ký doanh nghiệp quốc gia",
+      "href": "/dashboard/don-vi"
+    },
+    {
+      "so": 2,
+      "viec": "nhu cầu quốc gia chưa có bên cung (P21, P27)",
+      "cach": "mở lô làm giàu mới, nguồn duyệt theo lô",
+      "href": "/dashboard/thi-truong"
+    },
+    {
+      "so": 12,
+      "viec": "nhu cầu đã có bên cung nhưng chưa có cặp được ký",
+      "cach": "người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối",
+      "href": "/dashboard/matching"
+    },
+    {
+      "so": 29,
+      "viec": "câu nguồn quá 180 ngày chưa có lý do giữ",
+      "cach": "chụp lại nguồn hoặc ghi lý do giữ",
+      "href": "/dashboard/registry"
+    },
+    {
+      "so": 2,
+      "viec": "tin mới từ vòng tự chạy đang chờ duyệt",
+      "cach": "duyệt rồi mới tính là sự thật",
+      "href": "/dashboard/thoi-cuoc"
+    }
+  ],
   "mocNgay": "2026-10-01"
 }

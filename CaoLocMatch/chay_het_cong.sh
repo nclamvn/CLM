@@ -259,6 +259,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      sinh_du_lieu_hub "$TOUCH" 'HUB:|FAIL'        node scripts/gen-hub-data.mjs
   # Trang Kho ma (29/09/2026): doc tu git tai HEAD; can lich su day du (CI: fetch-depth 0).
   chay .touch      sinh_du_lieu_kho "$TOUCH" 'KHO:|KHONG CHAY'  node scripts/gen-kho.mjs
+  # Duong xu huong trang Tong quan (01/10/2026): doc lich su git cua hai file du lieu, toi commit
+  # cuoi cung cham chung (khong phai HEAD, de khong tu doi moi lan commit).
+  chay .touch      sinh_xu_huong    "$TOUCH" 'XU HUONG:|KHONG CHAY' node scripts/gen-xu-huong.mjs
   chay .touch      bo_dau_viet      "$TOUCH" 'OK:|FAIL'         node scripts/viet.mjs --tu-kiem
   chay .touch      so_sinh          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-so-sinh.mjs
   # Pha P1 (29/09/2026): lop phu nguon va Cmd+K. tim_kiem: moi tai lieu tim ra bang ten co
@@ -287,6 +290,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      thoi_cuoc        "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-thoi-cuoc.mjs
   # Trang mo dau M0 (29/09/2026): thay anh chup tay 19/07 co hang viec noi bo; chan kho so go tay quay lai.
   chay .touch      mo_dau           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-mo-dau.mjs
+  chay .touch      xu_huong         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-xu-huong.mjs
   chay .touch      kho_ma           "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-kho.mjs
   # Mat tien (landing + Hub minh hoa) khong duoc noi sai hien trang. Them 29/09/2026 khi di thu duong
   # demo: trang dau con ghi cung "Match thật · chưa chạy" trong khi da co 11 match ky, va nut
@@ -342,6 +346,7 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_pheu_web    "$TOUCH" 'BITE PHEU WEB'     node scripts/bite-pheu.mjs
     chay .touch    rang_thoi_cuoc   "$TOUCH" 'BITE THOI CUOC'    node scripts/bite-thoi-cuoc.mjs
     chay .touch    rang_mo_dau      "$TOUCH" 'BITE MO DAU'       node scripts/bite-mo-dau.mjs
+    chay .touch    rang_xu_huong    "$TOUCH" 'BITE XU HUONG'     node scripts/bite-xu-huong.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs
     chay .touch    rang_mat_tien    "$TOUCH" 'BITE MAT TIEN'     node scripts/bite-mat-tien.mjs
     chay .touch    rang_don_sac     "$TOUCH" 'BITE DON SAC'      node scripts/bite-don-sac.mjs

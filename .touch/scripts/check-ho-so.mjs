@@ -19,6 +19,10 @@
  *      TUOI_LECH_CONG_PY  tong qua han vuot ngan sach cua check_do_tuoi.py (hoac, cung ngay do,
  *                     khac ngan sach): hai cong do cung mot thu phai ra cung mot so
  *      MATCH_THIEU / MATCH_KHONG_CHU_KY  match da ky cua don vi phai co mat, kem nguoi ky
+ *      TEN_NGAN_TRUNG / TEN_NGAN_THUA / TEN_NGAN_DAI  ten ngan (lib/ten-ngan.mjs) trung giua hai don vi,
+ *                     bang tay con ten khong co trong registry, hoac van dai qua nguong
+ *      TEN_LECH       lib/hub-ten.json khac danh muc nhu cau, hoac mot ma san pham / loai hinh / nhom
+ *                     trong so nguon khong doi duoc ra chu nguoi doc (man se hien ma tran)
  *
  * Chay: node scripts/check-ho-so.mjs [--lib <dir>] [--mo-dun <ho-so.mjs>] [--domain <dir>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -128,6 +132,28 @@ else {
   // Thoi gian chi lam nguon cu di: do o moc cu thi so qua han khong the vuot so do hom nay.
   if (tongQuaHan > ns) vi.push(`TUOI_LECH_CONG_PY: ho so dem ${tongQuaHan} cau qua han, ngan sach cong Python ${ns}`);
   else if (reg.meta.generatedAt === homNay && tongQuaHan !== ns) vi.push(`TUOI_LECH_CONG_PY: cung ngay ${homNay} ma ho so dem ${tongQuaHan}, ngan sach cong Python ${ns}`);
+}
+
+// ── Chu nguoi doc cho gia tri ma (01/10/2026) ──
+{
+  const { dungTenSp, hienGiaTri } = await import(pathToFileURL(join(HERE, '..', 'lib', 'hien-gia-tri.mjs')).href);
+  const ten = doc('hub-ten.json');
+  if (JSON.stringify(ten.sanPham) !== JSON.stringify(dungTenSp(reg.needs))) vi.push('TEN_LECH: hub-ten.json khac danh muc nhu cau trong registry');
+  const ma = new Set();
+  for (const u of reg.units) for (const e of u.evidence) {
+    if (!['loai_hinh', 'nhom_cncl', 'san_pham_lien_quan'].includes(e.field) && !e.field.startsWith('nhom_cncl_phu')) continue;
+    if (hienGiaTri(e.field, e.value, ten.sanPham) === e.value) ma.add(`${e.field}=${e.value}`);
+  }
+  if (ma.size) vi.push(`TEN_LECH: ${ma.size} gia tri ma khong doi duoc ra chu: ${[...ma].slice(0, 6).join(', ')}`);
+}
+
+{
+  const { tenNgan, BANG_TAY, NGUONG } = await import(pathToFileURL(join(HERE, '..', 'lib', 'ten-ngan.mjs')).href);
+  const theoNgan = new Map();
+  for (const u of reg.units) { const t = tenNgan(u.name); theoNgan.set(t, [...(theoNgan.get(t) ?? []), u.name]); if (t.length > NGUONG) vi.push(`TEN_NGAN_DAI: "${t}" (${t.length} ky tu) cho ${u.name}`); }
+  for (const [t, ds] of theoNgan) if (ds.length > 1) vi.push(`TEN_NGAN_TRUNG: "${t}" cho ${ds.join(' | ')}`);
+  const coTen = new Set(reg.units.map((u) => u.name));
+  for (const k of Object.keys(BANG_TAY)) if (!coTen.has(k)) vi.push(`TEN_NGAN_THUA: bang tay co "${k}" khong con trong registry`);
 }
 
 console.log(`ho so: ${hs.units.length} · cau qua han chua ly do: ${tongQuaHan} · moc ${reg.meta.generatedAt}`);

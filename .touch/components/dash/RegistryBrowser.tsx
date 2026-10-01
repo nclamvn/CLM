@@ -1,8 +1,9 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { cnclUnits, cnclNeeds, type CnclUnit, type CnclEvidence } from '@/lib/cncl-registry';
-import { ProofUnitButton } from '@/components/proof/ProofLayer';
+import { ProofUnitButton, tenTruong, TEN_SP } from '@/components/proof/ProofLayer';
+import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
 
 /**
  * Tra cuu registry bang trinh duyet. Loc TUC THOI phia client tren 42 don vi / 200 evidence.
@@ -36,12 +37,12 @@ function TierChip({ tier }: { tier: 'A' | 'B' | 'C' }) {
 function EvidenceRow({ e }: { e: CnclEvidence }) {
   return (
     <tr>
-      <td className="reg-td-field">{e.field}</td>
+      <td className="reg-td-field">{tenTruong(e.field)}</td>
       <td>
-        {e.value}
+        {hienGiaTri(e.field, e.value, TEN_SP)}
         {e.extraction !== 'verbatim' ? (
           <span className="chip chip--private reg-tier reg-ex" title={e.note || 'Giá trị chuẩn hoá từ span, không phải trích nguyên văn'}>
-            {e.extraction}
+            chuẩn hoá
           </span>
         ) : null}
       </td>
@@ -135,10 +136,30 @@ export function RegistryBrowser() {
 
   const soEvidence = loc.reduce((n, u) => n + u.evidence.length, 0);
   const daLoc = tuKhoa !== '' || nhom !== 'tat-ca' || tier !== 'tat-ca';
+  // Phan trang (01/10/2026, nghiem thu muc 8): 60 don vi tren mot trang dai 8.000px.
+  const MOI_TRANG = 12;
+  const [trang, setTrang] = useState(0);
+  // ?trang=tat-ca: hien het tren mot trang (de in, va de khung anh moc toan trang van phu du 60 don vi).
+  const [tatCa, setTatCa] = useState(false);
+  useEffect(() => { if (new URLSearchParams(window.location.search).get('trang') === 'tat-ca') setTatCa(true); }, []);
+  useEffect(() => { setTrang(0); }, [tuKhoa, nhom, tier, ben]);
+  const soTrang = tatCa ? 1 : Math.max(1, Math.ceil(loc.length / MOI_TRANG));
+  const locTrang = tatCa ? loc : loc.slice(trang * MOI_TRANG, (trang + 1) * MOI_TRANG);
+  // Xuat CSV (01/10/2026, nghiem thu muc 15): dung cac don vi DANG LOC, moi dong mot cau nguon,
+  // kem cau nguyen van va duong dan ban chup. BOM de Excel doc dung tieng Viet.
+  const taiCsv = () => {
+    const o = (v: string) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    const goc = window.location.origin;
+    const dong = [['Đơn vị', 'Trường', 'Giá trị', 'Câu nguyên văn', 'Hạng nguồn', 'Nguồn', 'Bản chụp'].map(o).join(',')];
+    for (const u of loc) for (const e of u.evidence) dong.push([u.name, tenTruong(e.field), hienGiaTri(e.field, e.value, TEN_SP), e.span, e.tier, e.source, goc + e.href].map(o).join(','));
+    const url = URL.createObjectURL(new Blob(['\ufeff' + dong.join('\r\n')], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a'); a.href = url; a.download = `so-nguon-cung-${loc.length}-don-vi.csv`; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
 
   return (
     <>
-      <section className="dash-panel reg-find" aria-label="Tra cuu registry">
+      <section className="dash-panel reg-find" aria-label="Tra cứu sổ nguồn">
         <div className="reg-find__row">
           <label className="reg-find__lab" htmlFor="reg-q">Tra cứu</label>
           <input
@@ -157,7 +178,7 @@ export function RegistryBrowser() {
           ) : null}
         </div>
 
-        <div className="reg-find__row" role="group" aria-label="Loc theo nhom cong nghe">
+        <div className="reg-find__row" role="group" aria-label="Lọc theo nhóm công nghệ">
           <span className="reg-find__lab">Nhóm</span>
           <button type="button" className={`reg-pill${nhom === 'tat-ca' ? ' is-on' : ''}`} aria-pressed={nhom === 'tat-ca'} onClick={() => setNhom('tat-ca')}>
             Tất cả
@@ -169,7 +190,7 @@ export function RegistryBrowser() {
           ))}
         </div>
 
-        <div className="reg-find__row" role="group" aria-label="Loc theo cap nguon">
+        <div className="reg-find__row" role="group" aria-label="Lọc theo hạng nguồn">
           <span className="reg-find__lab">Cấp nguồn</span>
           {(['tat-ca', 'A', 'B', 'C'] as const).map((t) => (
             <button key={t} type="button" className={`reg-pill${tier === t ? ' is-on' : ''}`} aria-pressed={tier === t} onClick={() => setTier(t)}>
@@ -190,6 +211,7 @@ export function RegistryBrowser() {
             ? `${loc.length} / ${cnclUnits.length} đơn vị · ${soEvidence} câu nguồn`
             : `${locCau.length} / ${cnclNeeds.length} sản phẩm chiến lược`}
           {daLoc && ben === 'cung' ? ' (đang lọc)' : null}
+          {ben === 'cung' && loc.length > 0 && <button type="button" className="reg-pill reg-csv" onClick={taiCsv}>Tải CSV {soEvidence} câu nguồn</button>}
         </p>
       </section>
 
@@ -208,12 +230,21 @@ export function RegistryBrowser() {
             </p>
           </section>
         ) : (
-          <section aria-label="Ket qua ben cung">
-            {loc.map((u) => <UnitCard key={u.name} u={u} mo={loc.length <= 3} />)}
+          <section aria-label="Kết quả bên cung">
+            {locTrang.map((u) => <UnitCard key={u.name} u={u} mo={loc.length <= 3} />)}
+            {soTrang > 1 && (
+              <nav className="reg-trang" aria-label="Phân trang">
+                <button type="button" className="reg-pill" disabled={trang === 0} onClick={() => setTrang(trang - 1)}>← Trước</button>
+                {Array.from({ length: soTrang }, (_, i) => (
+                  <button key={i} type="button" className={`reg-pill${trang === i ? ' is-on' : ''}`} aria-current={trang === i ? 'page' : undefined} aria-label={`Trang ${i + 1}`} onClick={() => setTrang(i)}>{i + 1}</button>))}
+                <button type="button" className="reg-pill" disabled={trang === soTrang - 1} onClick={() => setTrang(trang + 1)}>Sau →</button>
+                <button type="button" className="reg-pill" onClick={() => setTatCa(true)}>Hiện tất cả</button>
+                <span className="reg-trang__dem">{trang * MOI_TRANG + 1}–{Math.min(loc.length, (trang + 1) * MOI_TRANG)} trên {loc.length} đơn vị</span>
+              </nav>)}
           </section>
         )
       ) : (
-        <section className="dash-panel" aria-label="Ben cau">
+        <section className="dash-panel" aria-label="Bên cầu">
           <table className="reg-table reg-table--cau">
             <thead>
               <tr>
@@ -229,7 +260,7 @@ export function RegistryBrowser() {
                     {n.value}
                     {n.chinhThuc ? null : (
                       <span className="chip chip--private reg-tier reg-ex" title="Chưa có bản wording chính thức baochinhphu, đang dùng bản báo thuật lại">
-                        wording báo
+                        câu chữ theo báo
                       </span>
                     )}
                   </td>

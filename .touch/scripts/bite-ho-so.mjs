@@ -22,6 +22,8 @@
  * RANG 9  · SUA SO CAU NGUON -> DEM_LECH (va HO_SO_LECH).
  * RANG 10 · MODULE BI DOC: coi moi cau qua han la "giu nguon cu", ho so sinh TU module do (lop A
  *           khop nhau) -> lop B doc lap phai bat TUOI_LECH.
+ * RANG 13 · them don vi "Công ty TNHH AVAC Việt Nam" (cung ten ngan voi ban CP) -> TEN_NGAN_TRUNG.
+ * RANG 12 · hub-ten.json rot ma san pham 28 -> TEN_LECH.
  * RANG 11 · NGAN SACH CONG PYTHON THAP HON so qua han -> TUOI_LECH_CONG_PY.
  *
  * Chay: node scripts/bite-ho-so.mjs
@@ -36,7 +38,7 @@ import { goc } from './goc.mjs';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
 const CONG = join(HERE, 'check-ho-so.mjs');
-const FILES = ['hub-ho-so.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-events.json'];
+const FILES = ['hub-ho-so.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-events.json', 'hub-ten.json'];
 const DOMAIN = process.env.CLM_KHO_CNCL ? join(process.env.CLM_KHO_CNCL, 'domains', 'don_vi_cncl') : goc('CNCLData', 'domains', 'don_vi_cncl');
 const kq = [];
 const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(58)} : ${ok ? `CAN OK (${chi})` : `KHONG CAN !! ${chi}`}`); kq.push(ok); };
@@ -104,6 +106,17 @@ try {
   writeFileSync(join(d11, 'ngan_sach_do_tuoi.txt'), `${Math.max(0, tong - 5)}\n# ban tam cua rang 11\n`);
   const r11 = spawnSync(process.execPath, [CONG, '--lib', join(t11, 'lib'), '--domain', d11], { encoding: 'utf8' });
   inRa('RANG 11 · ngan sach Python thap hon -> TUOI_LECH_CONG_PY', r11.status === 2 && (r11.stdout + r11.stderr).includes('TUOI_LECH_CONG_PY'), `exit ${r11.status}`);
+  // RANG 12: hub-ten.json rot mot san pham -> man hien ma tran "28" thay vi ten.
+  const t12 = canh();
+  const pt = join(t12, 'lib', 'hub-ten.json'); const tn = JSON.parse(readFileSync(pt, 'utf8')); delete tn.sanPham['28']; writeFileSync(pt, JSON.stringify(tn));
+  r = chay(t12);
+  inRa('RANG 12 · ten san pham rot mot ma -> TEN_LECH', r.rc === 2 && r.out.includes('TEN_LECH'), `exit ${r.rc}`);
+  // RANG 13: them don vi co ten khac nhung cung ten ngan voi mot don vi co san.
+  const t13 = canh();
+  const pr = join(t13, 'lib', 'cncl-registry.json'); const rg = JSON.parse(readFileSync(pr, 'utf8'));
+  rg.units.push({ ...rg.units.find((u) => u.name === 'Công ty cổ phần AVAC Việt Nam'), name: 'Công ty TNHH AVAC Việt Nam' }); writeFileSync(pr, JSON.stringify(rg));
+  r = chay(t13);
+  inRa('RANG 13 · hai don vi cung ten ngan -> TEN_NGAN_TRUNG', r.rc === 2 && r.out.includes('TEN_NGAN_TRUNG'), `exit ${r.rc}`);
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

@@ -16,6 +16,9 @@
  *      SO_CU_QUAY_LAI  lib/project-status.ts xuat thu gi ngoai nav va statusMeta, hoac statusMeta co so
  *      NHAP_SO_CU      trang mo dau hoac component cua no nhap lib/project-status
  *      HANG_VIEC_NOI_BO ma nguon giao dien con ten kho viec noi bo (workQueue, deadline, projectComponents)
+ *      NHOM_LECH       bang phu theo nhom khong cong lai dung tong nhu cau / nhu cau trong
+ *      CHAT_LUONG_LECH thanh chat luong lech dem truc tiep (registry, match, do thi), hoac tu > mau
+ *      VIEC_LECH       viec tiep tro toi trang khong co, viec so 0 van hien, hoac diem yeu > 0 ma mat viec
  *
  * Chay: node scripts/check-mo-dau.mjs [--touch <dir .touch>] [--mo-dun <mo-dau.mjs>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -48,6 +51,29 @@ for (const [k, v] of Object.entries(that)) if (MD.so?.[k] !== v) vi.push(`SO_LEC
 const cc = reg.meta.chuoiCong;
 if (cc && (!MD.chuoiCong || MD.chuoiCong.xanh !== cc.xanh || MD.chuoiCong.tong !== cc.tong || MD.chuoiCong.dat !== cc.dat)) vi.push(`SO_LECH: chuoi cong trang ghi ${JSON.stringify(MD.chuoiCong)}, meta ${cc.xanh}/${cc.tong}`);
 if (!cc && MD.chuoiCong) vi.push('SO_LECH: trang ghi ket qua chuoi cong ma meta khong co');
+
+// ── Nhom, thanh chat luong, viec tiep (01/10/2026) ─────────────────────────
+const nh = MD.nhom ?? [];
+if (nh.length !== 10) vi.push(`NHOM_LECH: ${nh.length} nhom, phai 10`);
+if (nh.reduce((s, g) => s + g.soNc, 0) !== reg.needs.length) vi.push(`NHOM_LECH: tong nhu cau theo nhom ${nh.reduce((s, g) => s + g.soNc, 0)}, registry ${reg.needs.length}`);
+if (nh.reduce((s, g) => s + g.trong, 0) !== ncTrong) vi.push(`NHOM_LECH: tong nhu cau trong theo nhom ${nh.reduce((s, g) => s + g.trong, 0)}, do thi ${ncTrong}`);
+const daKyNc = new Set(mat.signedMatches.map((m) => m.demandId)).size;
+const thatCL = { coCung: [reg.needs.length - ncTrong, reg.needs.length], daKy: [daKyNc, reg.needs.length], hangA: [that.tierA, claims.length] };
+for (const c of MD.chatLuong ?? []) {
+  if (!(c.tu >= 0 && c.tu <= c.mau)) vi.push(`CHAT_LUONG_LECH: ${c.k} ${c.tu}/${c.mau}`);
+  const t = thatCL[c.k];
+  if (t && (c.tu !== t[0] || c.mau !== t[1])) vi.push(`CHAT_LUONG_LECH: ${c.k} trang ghi ${c.tu}/${c.mau}, dem truc tiep ${t[0]}/${t[1]}`);
+  if (c.k === 'conHan' && c.mau !== claims.length) vi.push(`CHAT_LUONG_LECH: conHan mau ${c.mau}, registry ${claims.length} cau nguon`);
+  if (c.k === 'dinhDanh' && c.mau !== reg.units.length) vi.push(`CHAT_LUONG_LECH: dinhDanh mau ${c.mau}, registry ${reg.units.length} don vi`);
+}
+if ((MD.chatLuong ?? []).length !== 5) vi.push(`CHAT_LUONG_LECH: ${(MD.chatLuong ?? []).length} thanh, phai 5`);
+for (const v of MD.viecTiep ?? []) {
+  if (!(v.so > 0)) vi.push(`VIEC_LECH: viec "${v.viec}" so ${v.so} van hien`);
+  if (!existsSync(join(TOUCH, 'app', ...v.href.replace(/^\//, '').split('/'), 'page.tsx'))) vi.push(`VIEC_LECH: ${v.href} khong co trang`);
+}
+const coViec = (href) => (MD.viecTiep ?? []).some((v) => v.href === href);
+if (MD.diemYeu?.chuaDinhDanh > 0 && !coViec('/dashboard/don-vi')) vi.push('VIEC_LECH: con don vi chua dinh danh ma mat viec dinh danh');
+if (ncTrong > 0 && !coViec('/dashboard/thi-truong')) vi.push('VIEC_LECH: con nhu cau trong ma mat viec tim ben cung');
 
 // ── Cua vao man ─────────────────────────────────────────────────────────────
 const ps = doc(join(TOUCH, 'lib', 'project-status.ts'));

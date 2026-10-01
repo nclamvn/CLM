@@ -35,7 +35,7 @@
     },
     {
       "ten": "man-registry-toan-trang",
-      "duong": "/dashboard/registry",
+      "duong": "/dashboard/registry?trang=tat-ca",
       "loc": null,
       "toan_trang": true,
       "vi_sao": "Chup HET chieu dai danh sach, khong cat theo khung nhin. Day la khung duy nhat phu duoc moi don vi, va no go dung nguyen nhan lam moc bo sot: viewport cat mat phan duoi."

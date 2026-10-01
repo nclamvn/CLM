@@ -19,6 +19,9 @@
  * RANG 7 · cua vao man tro toi trang khong co -> CUA_LECH.
  * RANG 8 · chuoi cong ghi 4/4 -> SO_LECH.
  * RANG 9 · MODULE BI DOC bot mot khoang trong, file sinh TU module do -> SO_LECH.
+ * RANG 10 · thanh "da dinh danh" thoi phong 0 -> 60 tren mau 60, ti so hang A sua -> CHAT_LUONG_LECH.
+ * RANG 11 · giau viec dinh danh khi van con don vi chua dinh danh -> VIEC_LECH.
+ * RANG 12 · bang nhom bot mot nhom -> NHOM_LECH.
  *
  * Chay: node scripts/bite-mo-dau.mjs
  */
@@ -70,6 +73,12 @@ try {
   // chay chuoi trong bwrap). Nay luon ghi mot ket qua 4/4 bia: co meta thi lech, khong co thi la bia.
   r = chay(canh((t) => doiJson(t, (x) => { x.chuoiCong = { xanh: 4, tong: 4, dat: true, luc: '2026-07-19T22:18:33+0700' }; })));
   inRa('RANG 8 · chuoi cong ghi 4/4 -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH'), `exit ${r.rc}`);
+  r = chay(canh((t) => doiJson(t, (x) => { const c = x.chatLuong.find((y) => y.k === 'hangA'); c.tu = c.mau; })));
+  inRa('RANG 10 · thanh hang A thoi phong -> CHAT_LUONG_LECH', r.rc === 2 && r.out.includes('CHAT_LUONG_LECH'), `exit ${r.rc}`);
+  r = chay(canh((t) => doiJson(t, (x) => { x.viecTiep = x.viecTiep.filter((v) => v.href !== '/dashboard/don-vi'); })));
+  inRa('RANG 11 · giau viec dinh danh -> VIEC_LECH', r.rc === 2 && r.out.includes('VIEC_LECH'), `exit ${r.rc}`);
+  r = chay(canh((t) => doiJson(t, (x) => { x.nhom.pop(); })));
+  inRa('RANG 12 · bang nhom bot mot nhom -> NHOM_LECH', r.rc === 2 && r.out.includes('NHOM_LECH'), `exit ${r.rc}`);
 
   const t = canh();
   const goc = readFileSync(join(t, 'lib', 'mo-dau.mjs'), 'utf8');

@@ -39,12 +39,12 @@ export const cnclMeta: CnclMeta = {
   "nhomPhu": 10,
   "generatedAt": "2026-10-01",
   "frame": "QĐ 21/2026/QĐ-TTg",
-  "gate": "chuỗi cổng 2026-10-01 08:27: 93/93 xanh",
+  "gate": "chuỗi cổng 2026-10-01 08:55: 98/98 xanh",
   "chuoiCong": {
-    "luc": "2026-10-01T08:27:25+0700",
+    "luc": "2026-10-01T08:55:23+0700",
     "cheDo": "day_du",
-    "tong": 93,
-    "xanh": 93,
+    "tong": 98,
+    "xanh": 98,
     "do": 0,
     "khongChay": 0,
     "hoan": 0,
@@ -56,7 +56,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Bệnh viện Trung ương Quân đội 108",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -76,7 +76,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt"
       }
     ],
-    "tim": "bệnh viện trung ương quân đội 108 vien viện liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống. nhóm 4 sinh học và y sinh sp 11",
+    "tim": "bệnh viện trung ương quân đội 108 vien viện nghiên cứu liệu pháp sử dụng tế bào gốc tạo máu tự thân được đánh giá là một mô hình mới trong điều trị bệnh nhược cơ và lupus ban đỏ hệ thống. nhóm 4 sinh học và y sinh sp 11",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -2438,7 +2438,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "5"
     ],
@@ -2462,7 +2462,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt"
       }
     ],
-    "tim": "phòng thí nghiệm trọng điểm công nghệ lọc, hóa dầu vien viện nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "tim": "phòng thí nghiệm trọng điểm công nghệ lọc, hóa dầu vien viện nghiên cứu nghiên cứu chế tạo xúc tác dị thể, vật liệu nano trong lĩnh vực tổng hợp và ứng dụng nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3134,7 +3134,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Trung tâm Vũ trụ Việt Nam",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "9"
     ],
@@ -3158,7 +3158,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt"
       }
     ],
-    "tim": "trung tâm vũ trụ việt nam vien viện việc phát triển vệ tinh nanodragon tại việt nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “made in vietnam”. nhóm 9 hàng không và vũ trụ sp 28",
+    "tim": "trung tâm vũ trụ việt nam vien viện nghiên cứu việc phát triển vệ tinh nanodragon tại việt nam là cột mốc lớn tiếp theo trong quá trình hướng tới mục tiêu làm chủ công nghệ vệ tinh nhỏ, tự thiết kế và chế tạo vệ tinh nhỏ quan sát trái đất trong lộ trình phát triển vệ tinh “made in vietnam”. nhóm 9 hàng không và vũ trụ sp 28",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3225,7 +3225,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội",
     "loaiHinh": "truong",
-    "loaiHinhLabel": "Trường",
+    "loaiHinhLabel": "Trường đại học",
     "nhoms": [
       "5"
     ],
@@ -3245,7 +3245,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt"
       }
     ],
-    "tim": "trường đại học khoa học tự nhiên, đại học quốc gia hà nội truong trường nghiên cứu và sản xuất loại nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
+    "tim": "trường đại học khoa học tự nhiên, đại học quốc gia hà nội truong trường đại học nghiên cứu và sản xuất loại nhiên liệu sinh học nhóm 5 năng lượng và vật liệu sp 19",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3498,7 +3498,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Công nghệ xạ hiếm",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "8"
     ],
@@ -3518,7 +3518,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt"
       }
     ],
-    "tim": "viện công nghệ xạ hiếm vien viện làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
+    "tim": "viện công nghệ xạ hiếm vien viện nghiên cứu làm chủ các công đoạn công nghệ cốt lõi từ tuyển khoáng, thủy luyện, đến phân chia và tinh chế các oxit đất hiếm riêng rẽ với độ tinh khiết cao nhóm 8 biển, đại dương, lòng đất sp 25",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3585,7 +3585,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -3605,7 +3605,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt"
       }
     ],
-    "tim": "viện cơ điện nông nghiệp và công nghệ sau thu hoạch vien viện đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
+    "tim": "viện cơ điện nông nghiệp và công nghệ sau thu hoạch vien viện nghiên cứu đề tài \"nghiên cứu công nghệ sản xuất và chế biến nấm agaricus subrufescens, ứng dụng để nâng cao giá trị gia tăng một số nông sản việt nam\" do nhóm nghiên cứu của công ty tnhh công nghệ sinh học xanh nhật lan, viện cơ điện nông nghiệp và công nghệ sau thu hoạch và một số doanh nghiệp thực hiện đã hoàn thiện toàn bộ quy trình công nghệ, làm chủ hệ thống lên men 1.000 lít và tạo ra 8 sản phẩm giá trị gia tăng từ nông sản việt nam, mở ra hướng đi mới cho chế biến sâu, nâng cao giá trị thương mại và tiềm năng xuất khẩu của ngành nông sản nước ta. nhóm 4 sinh học và y sinh sp 15",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3672,7 +3672,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Di truyền Nông nghiệp Việt Nam",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -3692,7 +3692,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt"
       }
     ],
-    "tim": "viện di truyền nông nghiệp việt nam vien viện những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
+    "tim": "viện di truyền nông nghiệp việt nam vien viện nghiên cứu những giống lúa, giống ngô, giống đậu tương... mới được tạo ra từ công nghệ chỉnh sửa gen nhóm 4 sinh học và y sinh sp 16",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3749,7 +3749,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "5"
     ],
@@ -3767,7 +3767,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt"
       }
     ],
-    "tim": "viện hàn lâm khoa học và công nghệ việt nam vien viện phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
+    "tim": "viện hàn lâm khoa học và công nghệ việt nam vien viện nghiên cứu phát triển công nghệ lõi điện phân nước sản xuất hydro từ năng lượng mặt trời, gió; chế tạo vật liệu nano ứng dụng trong nhiệt trị, chẩn đoán hình ảnh mri và dẫn truyền thuốc; phát triển vật liệu điện cực pin li-ion thế hệ mới (mos-se@gr) có hiệu suất lưu trữ cao nhóm 5 năng lượng và vật liệu",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3814,7 +3814,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST)",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -3834,7 +3834,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt"
       }
     ],
-    "tim": "viện khoa học và công nghệ việt nam - hàn quốc (vkist) vien viện viện khoa học và công nghệ việt nam - hàn quốc (vkist) vừa tổ chức nghiệm thu chính thức cấp bộ đối với nhiệm vụ khoa học “phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. đây là đề tài do vkist chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn. nhóm 4 sinh học và y sinh sp 13",
+    "tim": "viện khoa học và công nghệ việt nam - hàn quốc (vkist) vien viện nghiên cứu viện khoa học và công nghệ việt nam - hàn quốc (vkist) vừa tổ chức nghiệm thu chính thức cấp bộ đối với nhiệm vụ khoa học “phát triển công nghệ plasma lạnh phủ vật liệu chức năng lên chíp sinh học gắn trên da ứng dụng theo dõi sức khỏe”. đây là đề tài do vkist chủ trì, nhằm tạo nền tảng công nghệ cho các thiết bị cảm biến y sinh thông minh, hỗ trợ theo dõi sức khỏe liên tục và không xâm lấn. nhóm 4 sinh học và y sinh sp 13",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3901,7 +3901,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Khoa học vật liệu",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -3921,7 +3921,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt"
       }
     ],
-    "tim": "viện khoa học vật liệu vien viện trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (carcinoembryonic antigen, cea), ngưỡng giới hạn phát hiện là 150 pg/ml. nhóm 4 sinh học và y sinh sp 13",
+    "tim": "viện khoa học vật liệu vien viện nghiên cứu trên cơ sở tích hợp hệ vi lưu tích hợp cảm biến điện hóa và từ trường, đã phát hiện thành công chỉ dấu ung thư (carcinoembryonic antigen, cea), ngưỡng giới hạn phát hiện là 150 pg/ml. nhóm 4 sinh học và y sinh sp 13",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -3988,7 +3988,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Khoa học-Công nghệ mật mã",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "7"
     ],
@@ -4008,7 +4008,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt"
       }
     ],
-    "tim": "viện khoa học-công nghệ mật mã vien viện thuật toán chữ ký số hậu lượng tử với tên gọi vn-pqsign nhóm 7 an ninh mạng và lượng tử sp 24",
+    "tim": "viện khoa học-công nghệ mật mã vien viện nghiên cứu thuật toán chữ ký số hậu lượng tử với tên gọi vn-pqsign nhóm 7 an ninh mạng và lượng tử sp 24",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4065,7 +4065,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -4085,7 +4085,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt"
       }
     ],
-    "tim": "viện nghiên cứu tế bào gốc và công nghệ gen vinmec vien viện sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch car-t do viện nghiên cứu tế bào gốc và công nghệ gen vinmec triển khai, phối hợp cùng khoa huyết học bệnh viện đa khoa vinmec smart city và khoa miễn dịch - dị ứng bệnh viện đa khoa quốc tế vinmec times city. nhóm 4 sinh học và y sinh sp 11",
+    "tim": "viện nghiên cứu tế bào gốc và công nghệ gen vinmec vien viện nghiên cứu sau quá trình đánh giá chuyên môn, người bệnh được lựa chọn tham gia chương trình nghiên cứu thử nghiệm lâm sàng điều trị lupus ban đỏ hệ thống bằng liệu pháp tế bào miễn dịch car-t do viện nghiên cứu tế bào gốc và công nghệ gen vinmec triển khai, phối hợp cùng khoa huyết học bệnh viện đa khoa vinmec smart city và khoa miễn dịch - dị ứng bệnh viện đa khoa quốc tế vinmec times city. nhóm 4 sinh học và y sinh sp 11",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4152,7 +4152,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -4172,7 +4172,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt"
       }
     ],
-    "tim": "viện tế bào gốc, trường đại học khoa học tự nhiên, đhqg tp.hcm vien viện sau 16 năm hình thành và phát triển, viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế… nhóm 4 sinh học và y sinh sp 11",
+    "tim": "viện tế bào gốc, trường đại học khoa học tự nhiên, đhqg tp.hcm vien viện nghiên cứu sau 16 năm hình thành và phát triển, viện tế bào gốc làm chủ được 27 công nghệ với hơn 150 sản phẩm tế bào gốc trong lĩnh vực thuốc, thực phẩm chức năng, mỹ phẩm, trang thiết bị y tế… nhóm 4 sinh học và y sinh sp 11",
     "evidence": [
       {
         "field": "ten_don_vi",
@@ -4249,7 +4249,7 @@ export const cnclUnits: CnclUnit[] = [
   {
     "name": "Viện Vaccine và sinh phẩm y tế (IVAC)",
     "loaiHinh": "vien",
-    "loaiHinhLabel": "Viện",
+    "loaiHinhLabel": "Viện nghiên cứu",
     "nhoms": [
       "4"
     ],
@@ -4269,7 +4269,7 @@ export const cnclUnits: CnclUnit[] = [
         "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt"
       }
     ],
-    "tim": "viện vaccine và sinh phẩm y tế (ivac) vien viện đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
+    "tim": "viện vaccine và sinh phẩm y tế (ivac) vien viện nghiên cứu đã sản xuất thành công vaccine cúm a/h5n1 (ivacflu-ah5n1) và vaccine cúm mùa “3 trong 1” (ivacflu-s) nhóm 4 sinh học và y sinh sp 10",
     "evidence": [
       {
         "field": "ten_don_vi",

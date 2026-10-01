@@ -67,6 +67,7 @@ for (const p of tep) {
   const doan = [];
   // Chu JSX giua the. Bo doan la ma TS lot vao (generic useState<...>, so sanh a > b).
   for (const m of s.matchAll(/>((?:[^<>{}]|\{[^{}]*\})+)</g)) {
+    if (s[m.index - 1] === '=') continue; // '=>' cua ham mui ten, khong phai the dong
     const chu = m[1].replace(/\{[^{}]*\}/g, ' ');
     if (!/;|=>|&&|\|\||===|\bconst\b|\breturn\b/.test(m[1]) || /^\s*\{/.test(m[1])) doan.push(chu);
   }

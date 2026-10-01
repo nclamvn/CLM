@@ -60,6 +60,7 @@ export default function LandingPage() {
           <div className="mt-chu__nut">
             <Link href={ROUTE.dashboard} className="mt-nut">Mở bảng điều khiển <span aria-hidden="true">→</span></Link>
             <Link href={`${ROUTE.dashboard}/matching`} className="mt-lien">Xem các match đã ký</Link>
+            <Link href={ROUTE.phuongPhap} className="mt-lien">Cách mỗi con số được kiểm</Link>
           </div>
           <dl className="mt-so">
             {chiSo.map((c) => (
