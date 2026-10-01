@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { cnclUnits, cnclNeeds, type CnclUnit, type CnclEvidence } from '@/lib/cncl-registry';
 import { ProofUnitButton, tenTruong, TEN_SP } from '@/components/proof/ProofLayer';
 import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
+import { hienCau } from '@/lib/hien-cau.mjs';
 
 /**
  * Tra cuu registry bang trinh duyet. Loc TUC THOI phia client tren 42 don vi / 200 evidence.
@@ -48,7 +49,7 @@ function EvidenceRow({ e }: { e: CnclEvidence }) {
       </td>
       <td><TierChip tier={e.tier} /></td>
       <td>
-        <a className="reg-src" href={e.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${e.span}`}>
+        <a className="reg-src" href={e.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${hienCau(e.span)}`}>
           {e.source}
         </a>
       </td>
@@ -272,7 +273,7 @@ export function RegistryBrowser() {
                   </td>
                   <td><TierChip tier={n.tier} /></td>
                   <td>
-                    <a className="reg-src" href={n.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${n.span}`}>
+                    <a className="reg-src" href={n.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${hienCau(n.span)}`}>
                       {n.source}
                     </a>
                   </td>

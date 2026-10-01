@@ -14,6 +14,7 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import tc from '@/lib/hub-thoi-cuoc.json';
 import { useProof } from '@/components/proof/ProofLayer';
+import { hienCau } from '@/lib/hien-cau.mjs';
 
 type Nguon = { ten: string; href: string; tier: string | null; span: string | null };
 type SuKien = {
@@ -140,7 +141,7 @@ function TheSuKien({ e }: { e: SuKien }) {
       </div>
       <h3 className="tc-the__ten">{e.tieuDe}</h3>
       {e.nguon.filter((n) => n.span).map((n, i) => (
-        <blockquote key={i} className="tc-the__span">{n.span}<cite> · <a className="pf-link" href={n.href} target="_blank" rel="noopener noreferrer">{n.ten}</a></cite></blockquote>))}
+        <blockquote key={i} className="tc-the__span">{hienCau(n.span)}<cite> · <a className="pf-link" href={n.href} target="_blank" rel="noopener noreferrer">{n.ten}</a></cite></blockquote>))}
       {e.lyDo && <blockquote className="tc-the__span">{e.lyDo}<cite> · {e.nguoi}, nguyên lời</cite></blockquote>}
       {e.ghiChu && <p className="tc-the__gc">Ghi chú: nguồn chính phủ không ghi ngày ký; ngày này chỉ có nguyên văn ở hai nguồn hạng B độc lập.</p>}
       <div className="tc-the__lk">

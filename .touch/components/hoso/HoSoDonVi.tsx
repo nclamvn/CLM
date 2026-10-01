@@ -15,6 +15,7 @@ import { useMemo, useState } from 'react';
 import { BangChung, useProof } from '@/components/proof/ProofLayer';
 import type { CnclEvidence } from '@/lib/cncl-registry';
 import { tenNguoi } from '@/lib/dinh-dang';
+import { xepDongThoiGian } from '@/lib/dong-thoi-gian.mjs';
 
 export type HoSo = {
   slug: string; ten: string; loaiHinh: string | null;
@@ -105,54 +106,36 @@ function DoThiMotBuoc({ hs }: { hs: HoSo }) {
 }
 
 // ── Dong thoi gian ──────────────────────────────────────────────────────────
+// Bo tri o lib/dong-thoi-gian.mjs (ham thuan); cong check-dong-thoi-gian.mjs do lai hinh hoc.
 function DongThoiGian({ hs, moc }: { hs: HoSo; moc: string }) {
-  // Gop cac moc CUNG NGAY CUNG LAN thanh mot cham co dem, de nhan khong chong len nhau.
-  const ds = hs.dongThoiGian.reduce<(HoSo['dongThoiGian'][number] & { soGop: number })[]>((acc, d) => {
-    const lanD = d.loai === 'nguon_dang' ? 'n' : d.loai === 'de_xuat' ? 'd' : 'k';
-    const cu = acc.find((q) => q.ngay === d.ngay && (q.loai === 'nguon_dang' ? 'n' : q.loai === 'de_xuat' ? 'd' : 'k') === lanD && q.loai === d.loai);
-    if (cu) { cu.soGop++; if (d.soCau) cu.soCau = (cu.soCau ?? 0) + d.soCau; return acc; }
-    acc.push({ ...d, soGop: 1 }); return acc;
-  }, []);
-  if (!ds.length) return <p className="hs-empty">Chưa có mốc thời gian nào đọc được.</p>;
-  const W = 1000; const TRAI = 150; const PHAI = 24; const LAN = ['nguon_dang', 'ky', 'de_xuat'] as const;
-  const NHAN_LAN = { nguon_dang: 'Nguồn đăng bài', ky: 'Ký và từ chối', de_xuat: 'Đề xuất chờ duyệt' };
-  const lan = (l: string) => (l === 'nguon_dang' ? 0 : l === 'de_xuat' ? 2 : 1);
-  const t = (d: string) => Date.parse(`${d}T00:00:00Z`);
-  const t0 = Math.min(...ds.map((d) => t(d.ngay))); const t1 = Math.max(t(moc), ...ds.map((d) => t(d.ngay)));
-  const y0 = new Date(t0).getUTCFullYear(); const y1 = new Date(t1).getUTCFullYear();
-  const a = Date.UTC(y0, 0, 1); const b = Date.UTC(y1 + 1, 0, 1);
-  const x = (d: string) => TRAI + ((t(d) - a) / (b - a)) * (W - TRAI - PHAI);
-  const H = 44 + LAN.length * 46;
-  const buoc = y1 - y0 > 6 ? 2 : 1;
+  const bt = xepDongThoiGian(hs.dongThoiGian, moc, ngayVN);
+  if (!bt) return <p className="hs-empty">Chưa có mốc thời gian nào đọc được.</p>;
+  const { W, H, TRAI, PHAI, nam, xMoc, lan, diem, soAn } = bt;
   return (
-    <svg className="hs-tl" viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Dòng thời gian ${ds.length} mốc, từ ${ngayVN(ds[0].ngay)} đến ${ngayVN(ds[ds.length - 1].ngay)}.`}>
-      {Array.from({ length: y1 - y0 + 2 }, (_, k) => y0 + k).filter((y) => (y - y0) % buoc === 0).map((y) => {
-        const xx = TRAI + ((Date.UTC(y, 0, 1) - a) / (b - a)) * (W - TRAI - PHAI);
-        return <g key={y}><line x1={xx} x2={xx} y1={14} y2={H - 8} className="hs-tl__luoi" />{xx < W - 40 && <text x={xx + 3} y={12} className="hs-tl__nam">{y}</text>}</g>;
-      })}
-      <line x1={x(moc)} x2={x(moc)} y1={14} y2={H - 8} className="hs-tl__moc" />
-      <text x={x(moc) - 4} y={H - 2} textAnchor="end" className="hs-tl__moc-nhan">mốc đo {ngayVN(moc)}</text>
-      {LAN.map((l, k) => (
-        <g key={l}>
-          <text x={0} y={44 + k * 46 + 4} className="hs-tl__lan">{NHAN_LAN[l]}</text>
-          <line x1={TRAI} x2={W - PHAI} y1={44 + k * 46} y2={44 + k * 46} className="hs-tl__truc" />
-        </g>))}
-      {ds.map((d, k) => {
-        const yy = 44 + lan(d.loai) * 46; const xx = x(d.ngay);
-        const nhan = d.loai === 'nguon_dang' ? (d.soGop > 1 ? `${d.soGop} bài · ${d.soCau} câu` : `${d.nguon} · ${d.soCau} câu`) : d.loai === 'match_da_ky' ? (d.soGop > 1 ? `${d.soGop} match đã ký` : `${d.matchId} · P${d.maSp}`) : d.loai === 'tu_choi' ? `từ chối P${d.maSp}` : `${d.soGop} đề xuất chờ duyệt`;
-        const vuaDat = ds.slice(0, k).filter((q) => lan(q.loai) === lan(d.loai) && Math.abs(x(q.ngay) - xx) < 90).length;
-        return (
+    <>
+      <svg className="hs-tl" viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Dòng thời gian ${diem.length} mốc, từ ${ngayVN(diem[0].ngay)} đến ${ngayVN(diem[diem.length - 1].ngay)}.`}>
+        {nam.map((n) => (
+          <g key={n.nam}><line x1={n.x} x2={n.x} y1={14} y2={H - 8} className="hs-tl__luoi" />{n.x < W - 40 && <text x={n.x + 3} y={12} className="hs-tl__nam">{n.nam}</text>}</g>))}
+        <line x1={xMoc} x2={xMoc} y1={14} y2={H - 8} className="hs-tl__moc" />
+        <text x={xMoc - 4} y={H - 2} textAnchor="end" className="hs-tl__moc-nhan">mốc đo {ngayVN(moc)}</text>
+        {lan.map((l) => (
+          <g key={l.l}>
+            <text x={0} y={l.y + 4} className="hs-tl__lan">{l.nhan}</text>
+            <line x1={TRAI} x2={W - PHAI} y1={l.y} y2={l.y} className="hs-tl__truc" />
+          </g>))}
+        {diem.map((d, k) => (
           <g key={k} className={`hs-tl__d hs-tl__d--${d.loai}`}>
             {d.loai === 'nguon_dang' && d.href
-              ? <a href={d.href} target="_blank" rel="noopener noreferrer" aria-label={`Mở bài nguồn ${ngayVN(d.ngay)}`}><circle cx={xx} cy={yy} r={6} /></a>
+              ? <a href={d.href} target="_blank" rel="noopener noreferrer" aria-label={`Mở bài nguồn ${d.nhan}`}><circle cx={d.x} cy={d.y} r={6} /></a>
               : d.loai === 'de_xuat' && d.nguonUrl
-                ? <a href={d.nguonUrl} target="_blank" rel="noopener noreferrer" aria-label={`Mở nguồn đề xuất ${ngayVN(d.ngay)}`}><circle cx={xx} cy={yy} r={6} /></a>
-                : <circle cx={xx} cy={yy} r={6} />}
-            <title>{`${ngayVN(d.ngay)} · ${d.loai === 'de_xuat' && d.soGop === 1 ? d.nhan : nhan}`}</title>
-            <text x={xx} y={yy - 11 - vuaDat * 11} textAnchor={xx > W - 140 ? 'end' : xx < TRAI + 90 ? 'start' : 'middle'}>{ngayVN(d.ngay)} · {nhan}</text>
-          </g>);
-      })}
-    </svg>
+                ? <a href={d.nguonUrl} target="_blank" rel="noopener noreferrer" aria-label={`Mở nguồn đề xuất ${d.nhan}`}><circle cx={d.x} cy={d.y} r={6} /></a>
+                : <circle cx={d.x} cy={d.y} r={6} />}
+            <title>{d.loai === 'de_xuat' && d.soGop === 1 && d.nhanDx ? `${ngayVN(d.ngay)} · ${d.nhanDx}` : d.nhan}</title>
+            {d.hang >= 0 && <text x={d.x} y={d.yChu} textAnchor={d.neo}>{d.nhan}</text>}
+          </g>))}
+      </svg>
+      {soAn > 0 && <p className="hs-note">{soAn} mốc đứng sát nhau nên ẩn nhãn; rê chuột vào chấm để đọc.</p>}
+    </>
   );
 }
 

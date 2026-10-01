@@ -15,6 +15,7 @@ import { hoiDap, DONG_NGHIA } from '@/lib/hoi-dap.mjs';
 import { khoaTim } from '@/lib/tim-kiem.mjs';
 import { tenTruong } from '@/components/proof/ProofLayer';
 import { tenNgan } from '@/lib/ten-ngan.mjs';
+import { hienCau } from '@/lib/hien-cau.mjs';
 
 type Trich = { span: string; href: string; tier: string; source: string; field: string; khop: string[] };
 type DonVi = { dv: string; slug: string; trich: Trich[]; kyCho: { match: string; nhuCau: string }[] };
@@ -101,7 +102,7 @@ export function HoiDap() {
                     {d.trich.length === 0 && <p className="hd-khong">Có cặp ghép đã ký với nhu cầu này, nhưng câu nguồn năng lực không nhắc đúng từ khoá câu hỏi.</p>}
                     {d.trich.map((t, i) => (
                       <figure key={i} className="hd-trich">
-                        <blockquote><ToDam span={t.span} khop={t.khop} thay={THAY} /></blockquote>
+                        <blockquote><ToDam span={hienCau(t.span)} khop={t.khop} thay={THAY} /></blockquote>
                         <figcaption>
                           <span className={`pf-tier pf-tier--${t.tier}`}>hạng {t.tier}</span>
                           <span>{tenTruong(t.field)} · {t.source}</span>

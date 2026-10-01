@@ -26,6 +26,7 @@ import { slugDonVi } from '@/lib/ho-so.mjs';
 import { useProof } from '@/components/proof/ProofLayer';
 import { tenNguoi } from '@/lib/dinh-dang';
 import { tenNgan } from '@/lib/ten-ngan.mjs';
+import { hienCau } from '@/lib/hien-cau.mjs';
 
 type PhanRa = {
   tiLeGiao: number; soGiao: number; soTokenCau: number; quaNguong: boolean;
@@ -143,7 +144,7 @@ function VetBangChung({ m }: { m: SignedMatch }) {
       <ol className="mw2-chang">
         <li>
           <div className="mw2-chang__k"><b>1</b> Câu nguồn bên cầu · QĐ 21/2026</div>
-          <blockquote className="mw2-cau">{nc ? <CauTo text={nc.span} giao={giao} cau={conLai} /> : 'Không có câu nguồn: bất thường, cần soi lại.'}</blockquote>
+          <blockquote className="mw2-cau">{nc ? <CauTo text={hienCau(nc.span)} giao={giao} cau={conLai} /> : 'Không có câu nguồn: bất thường, cần soi lại.'}</blockquote>
           {nc && <Nguon e={nc} />}
         </li>
         <li>
@@ -172,7 +173,7 @@ function VetBangChung({ m }: { m: SignedMatch }) {
         </li>
         <li>
           <div className="mw2-chang__k"><b>4</b> Câu nguồn bên cung · {m.supplyId}</div>
-          <blockquote className="mw2-cau">{cu ? <CauTo text={cu.span} giao={giao} /> : 'Không có câu nguồn.'}</blockquote>
+          <blockquote className="mw2-cau">{cu ? <CauTo text={hienCau(cu.span)} giao={giao} /> : 'Không có câu nguồn.'}</blockquote>
           {cu && <Nguon e={cu} />}
           {m.supplyEvidence.length > 1 && <p className="mw-hint">+{m.supplyEvidence.length - 1} câu nguồn nữa cho cùng cặp.</p>}
         </li>

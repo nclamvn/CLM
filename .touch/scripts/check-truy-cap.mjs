@@ -6,6 +6,11 @@
  * CONG KIEM:
  *   VI_PHAM_TRUY_CAP  bao cao con vi pham axe tren mot trang nao do, hoac trang tra ve khong phai 200.
  *   THIEU_TRANG       bao cao thieu mot trang trong danh sach TRANG_KIEM.
+ *   TRAN_KHUNG        (01/10/2026) mot trang co chu bi cat o mep man hinh 1440px hoac 390px
+ *                     (scripts/do-tran.mjs; loi Bao cao 390px).
+ *   THIEU_DO_TRAN     bao cao khong co phep do tran cho mot trang o ca hai be rong.
+ *   THUOC_DO_HONG     phep do tran khong qua tu kiem tren mau dung san (bat duoc loi Bao cao,
+ *                     khong bat oan khung cuon va dau ba cham): ket qua do khong dung duoc.
  * KHONG CHAY DUOC (exit 3) khi chua co bao cao, hoac van tay giao dien hien tai khac van tay luc quet:
  * giao dien da doi ke tu lan quet, ket qua cu khong dung de ket luan. Cach xu: bash scripts/chup_man.sh
  * (buoc kiem truy cap chay kem) hoac node scripts/kiem-truy-cap.mjs <dia chi may chu dang chay>.
@@ -28,11 +33,18 @@ try { bc = JSON.parse(readFileSync(P, 'utf8')); } catch (e) { thoat3(`truy_cap.j
 const vt = vanTayGiaoDien(TOUCH);
 if (bc.van_tay !== vt) thoat3(`giao dien da doi ke tu lan quet (${String(bc.luc).slice(0, 10)}): van tay luc quet ${bc.van_tay}, hien tai ${vt}. Chay: bash scripts/chup_man.sh`);
 const vi = [];
+const tk = bc.tu_kiem_tran;
+if (!tk || !tk.tong || tk.can !== tk.tong) vi.push(`THUOC_DO_HONG: tu kiem tran ${tk ? `${tk.can}/${tk.tong}` : 'khong co'}${tk ? ' · ' + (tk.chi ?? []).filter((c) => !c.ok).map((c) => c.ten).join('; ') : ''}`);
 for (const u of TRANG_KIEM) {
   const t = bc.trang?.[u];
   if (!t) { vi.push(`THIEU_TRANG: ${u}`); continue; }
   if (t.http !== 200) vi.push(`VI_PHAM_TRUY_CAP: ${u} tra ve ${t.http}`);
   for (const v of t.vi_pham ?? []) vi.push(`VI_PHAM_TRUY_CAP: ${u} ${v.id} x${v.so} (${(v.vi_du ?? [])[0] ?? ''})`);
+  for (const w of ['1440', '390']) {
+    const d = t.tran?.[w];
+    if (!d || typeof d.so !== 'number') { vi.push(`THIEU_DO_TRAN: ${u} o ${w}px`); continue; }
+    if (d.so > 0) vi.push(`TRAN_KHUNG: ${u} o ${w}px co ${d.so} doan chu bi cat (vd "${d.mau?.[0]?.chu ?? ''}")`);
+  }
 }
 console.log(`truy cap: ${TRANG_KIEM.length} trang · quet ${String(bc.luc).slice(0, 16)} · van tay ${vt} · ${vi.length} vi pham`);
 if (vi.length) {

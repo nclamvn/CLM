@@ -14,6 +14,9 @@
  * RANG 3 · bao cao co mot vi pham nested-interactive -> VI_PHAM_TRUY_CAP.
  * RANG 4 · bao cao thieu trang /dashboard/registry -> THIEU_TRANG.
  * RANG 5 · xoa bao cao -> exit 3.
+ * RANG 6 · bao cao co chu bi cat o 390px tren Bao cao -> TRAN_KHUNG.
+ * RANG 7 · bao cao thieu phep do tran o 1440px cho mot trang -> THIEU_DO_TRAN.
+ * RANG 8 · thuoc do tran khong qua tu kiem (mot mau khong can) -> THUOC_DO_HONG.
  *
  * Chay: node scripts/bite-truy-cap.mjs     Exit 0 moi rang can · 2 co rang khong can · 3 khong dung duoc canh.
  */
@@ -51,6 +54,9 @@ try {
     rang('RANG 3 · bao cao co vi pham -> VI_PHAM_TRUY_CAP', doiBC((x) => { x.trang['/dashboard'].vi_pham = [{ id: 'nested-interactive', muc: 'serious', so: 1, vi_du: ['summary'] }]; }), 2, 'VI_PHAM_TRUY_CAP');
     rang('RANG 4 · thieu trang registry -> THIEU_TRANG', doiBC((x) => { delete x.trang['/dashboard/registry']; }), 2, 'THIEU_TRANG');
     rang('RANG 5 · xoa bao cao -> exit 3', (t) => unlinkSync(join(t, 'reports', 'truy_cap.json')), 3, 'KHONG CHAY DUOC');
+    rang('RANG 6 · chu bi cat o 390px -> TRAN_KHUNG', doiBC((x) => { x.trang['/dashboard/bao-cao'].tran = { 1440: { so: 0, mau: [] }, 390: { so: 3, mau: [{ chu: 'Pham vi: 30 san pham', phai: 520 }] } }; }), 2, 'TRAN_KHUNG');
+    rang('RANG 7 · thieu do tran 1440px -> THIEU_DO_TRAN', doiBC((x) => { delete x.trang['/dashboard'].tran?.[1440]; if (!x.trang['/dashboard'].tran) x.trang['/dashboard'].tran = { 390: { so: 0, mau: [] } }; }), 2, 'THIEU_DO_TRAN');
+    rang('RANG 8 · thuoc do khong qua tu kiem -> THUOC_DO_HONG', doiBC((x) => { x.tu_kiem_tran = { tong: 5, can: 4, chi: [{ ten: 'loi Bao cao', ok: false }] }; }), 2, 'THUOC_DO_HONG');
   }
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });

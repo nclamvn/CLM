@@ -26,6 +26,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
 import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
+import { hienCau } from '@/lib/hien-cau.mjs';
 import tenJson from '@/lib/hub-ten.json';
 export const TEN_SP = (tenJson as { sanPham: Record<string, string> }).sanPham;
 
@@ -180,7 +181,7 @@ export function BangChung({ e, chiGhiChu = false, phu, them }: { e: Pick<CnclEvi
         ? <dl className="pf-ev__nhieu">{[{ field: e.field, value: e.value }, ...them].map((t) => (
           <div key={t.field}><dt>{tenTruong(t.field)}</dt><dd>{hienGiaTri(t.field, t.value, TEN_SP)}</dd></div>))}</dl>
         : <div className="pf-ev__value">{hienGiaTri(e.field, e.value, TEN_SP)}</div>}
-      <blockquote className="pf-ev__span">{e.span}</blockquote>
+      <blockquote className="pf-ev__span">{hienCau(e.span)}</blockquote>
       <div className="pf-ev__act">
         <button type="button" className="pf-link" aria-expanded={mo} onClick={() => setMo((v) => !v)}>
           {mo ? 'Ẩn đoạn quanh câu' : 'Xem câu này nằm ở đâu trong bản chụp'}

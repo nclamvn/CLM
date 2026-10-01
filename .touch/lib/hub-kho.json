@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "69fddd6",
+    "sha": "7c65cb3",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 205,
+  "tongCommit": 206,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 56,
+      "commitSauGop": 57,
       "cuoi": {
-        "sha": "69fddd6",
+        "sha": "7c65cb3",
         "ngay": "2026-10-01",
-        "tieuDe": "Chu ky co kiem soat xung dot loi ich: domains/cncl_match/nguoi_ky.yaml (nguoi ky + don vi lien quan + so nguoi ky toi thieu), cong xung_dot_ky (NGUOI_KY_LA, KY_XUNG_DOT, THIEU_CHU_KY) + 4 rang; hien tai 0 vi pham, nguoi gac cong khong ky duoc cap co RtR; nang so toi thieu len 2 la bat luat hai nguoi ky. Trang Phuong phap giai thich."
+        "tieuDe": "Lam moi anh moc, truy cap va ket qua chuoi tren may that"
       },
       "soTep": 494
     }
@@ -84,6 +84,11 @@
     ".touch": 59
   },
   "ganDay": [
+    {
+      "sha": "7c65cb3",
+      "ngay": "2026-10-01",
+      "tieuDe": "Lam moi anh moc, truy cap va ket qua chuoi tren may that"
+    },
     {
       "sha": "69fddd6",
       "ngay": "2026-10-01",
@@ -128,11 +133,6 @@
       "sha": "8643a7e",
       "ngay": "2026-10-01",
       "tieuDe": "Xu huong sinh lai toi commit du lieu lo dinh danh 02"
-    },
-    {
-      "sha": "a93c8b9",
-      "ngay": "2026-10-01",
-      "tieuDe": "Lo 02 dinh danh: anh Lam duyet 'da duyet va xac nhan thong qua' (duyet.json), nap 55 claim (43 ten_phap_nhan, 12 ma_so_tu_khai) vao registry, 9 muc can anh quyet giu trong. Hai truong dinh danh tu khai trong domain.yaml, BEN trong do tuoi, khong vao dong thoi gian/thoi cuoc/bieu do theo nam. Web: ho so va so nguon hien 'Tu khai, chua doi chieu cong', khong doi trang thai dinh danh (cong TU_KHAI_LECH, TU_KHAI_THANH_DINH_DANH + 2 rang). check_ngay_dang: luat TRANG TINH cho truong dinh danh + 3 rang. Duong tra cong: nap_tra_cong.py (PDF phai mang dau cong, dung ma, dung ten) + 12 rang; check_ma_so_thue giu nguyen. bite_kiem_lo dung canh dung khi co lo nap sau. Trang dau, tong quan ghi ro luot kiem nhanh. Chuoi nhanh 61/61 + 42 rang xanh (chay tach hai phan), axe 0."
     }
   ],
   "dong": [
