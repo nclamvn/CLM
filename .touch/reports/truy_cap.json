@@ -1,63 +1,239 @@
 {
- "van_tay": "f3e8fb97379e690b",
- "luc": "2026-10-01T14:03:42.407Z",
+ "van_tay": "a456ea135d90bea1",
+ "luc": "2026-10-01T14:32:16.511Z",
  "cong_cu": "axe-core",
+ "tu_kiem_tran": {
+  "tong": 5,
+  "can": 5,
+  "chi": [
+   {
+    "ten": "chu dai khong xuong dong trong khung cat cap trang",
+    "mong": ">0",
+    "do": 1,
+    "ok": true
+   },
+   {
+    "ten": "loi Bao cao: luoi cot auto + bang nowrap trong khung cuon",
+    "mong": ">0",
+    "do": 1,
+    "ok": true
+   },
+   {
+    "ten": "da sua: luoi minmax(0,1fr) + bang nowrap trong khung cuon",
+    "mong": "0",
+    "do": 0,
+    "ok": true
+   },
+   {
+    "ten": "bang nowrap trong khung cuon (cuon duoc, khong mat chu)",
+    "mong": "0",
+    "do": 0,
+    "ok": true
+   },
+   {
+    "ten": "dau ba cham co chu dich trong o hep",
+    "mong": "0",
+    "do": 0,
+    "ok": true
+   }
+  ]
+ },
  "trang": {
   "/": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/thi-truong": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/thoi-cuoc": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/do-thi": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/don-vi": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/don-vi/trung-tam-vu-tru-viet-nam": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/matching": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/registry": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/repos": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/phuong-phap": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/bao-cao": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/hoi-dap": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   },
   "/dashboard/hoi-dap?q=Ai%20l%C3%A0m%20%C4%91%C6%B0%E1%BB%A3c%20UAV%3F": {
    "http": 200,
-   "vi_pham": []
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
   }
  }
 }

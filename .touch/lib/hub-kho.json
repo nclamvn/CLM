@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "7c65cb3",
+    "sha": "7528c02",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 206,
+  "tongCommit": 208,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 50,
+      "commitSauGop": 51,
       "cuoi": {
-        "sha": "69fddd6",
+        "sha": "0b06b4a",
         "ngay": "2026-10-01",
-        "tieuDe": "Chu ky co kiem soat xung dot loi ich: domains/cncl_match/nguoi_ky.yaml (nguoi ky + don vi lien quan + so nguoi ky toi thieu), cong xung_dot_ky (NGUOI_KY_LA, KY_XUNG_DOT, THIEU_CHU_KY) + 4 rang; hien tai 0 vi pham, nguoi gac cong khong ky duoc cap co RtR; nang so toi thieu len 2 la bat luat hai nguoi ky. Trang Phuong phap giai thich."
+        "tieuDe": "Soi anh that va sua 3 loi hien thi, moi loi mot cong co rang: (1) dong thoi gian ho so de nhan (FPT, VNPT, NCS, 1Matrix): bo tri tach ra lib/dong-thoi-gian.mjs xep nhan theo hop bao, cong dong_thoi_gian do hinh hoc doc lap (NHAN_CHONG, NHAN_DE_CHAM, NHAN_TRAN, NHAN_AN_NHIEU, THIEU_DIEM) + 6 rang, cach cu bi cong bat 4 vu; (2) cau nguon hien dau markdown (**MiSmart**, [FPT](url)): lib/hien-cau.mjs chi go dau dinh dang, ban goc giu nguyen cho ma kiem toan, cong hien_cau (CON_DAU, MAT_CHU, CAU_THO) + 5 rang; (3) Bao cao 390px bi cat mep phai: luoi trang minmax(0,1fr), kiem-truy-cap do them TRAN KHUNG tung doan chu o 1440 va 390 kem tu kiem thuoc do tren mau dung san, check-truy-cap them TRAN_KHUNG, THIEU_DO_TRAN, THUOC_DO_HONG + 3 rang. Registry hien ket qua chuoi day du 112/112."
       },
       "soTep": 148
     },
@@ -68,22 +68,32 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 57,
+      "commitSauGop": 59,
       "cuoi": {
-        "sha": "7c65cb3",
+        "sha": "7528c02",
         "ngay": "2026-10-01",
-        "tieuDe": "Lam moi anh moc, truy cap va ket qua chuoi tren may that"
+        "tieuDe": "Registry tren man hep (< 640px): bang bon cot thanh the xep chong (truong, gia tri, cap nguon + nguon), sua 166 doan chu bi cat ma phep do tran khung moi bat o 390px; can do lai tren may that."
       },
-      "soTep": 494
+      "soTep": 501
     }
   ],
   "oTheoKho": {
     "CNCLData": 30,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 21,
-    ".touch": 59
+    ".touch": 63
   },
   "ganDay": [
+    {
+      "sha": "7528c02",
+      "ngay": "2026-10-01",
+      "tieuDe": "Registry tren man hep (< 640px): bang bon cot thanh the xep chong (truong, gia tri, cap nguon + nguon), sua 166 doan chu bi cat ma phep do tran khung moi bat o 390px; can do lai tren may that."
+    },
+    {
+      "sha": "0b06b4a",
+      "ngay": "2026-10-01",
+      "tieuDe": "Soi anh that va sua 3 loi hien thi, moi loi mot cong co rang: (1) dong thoi gian ho so de nhan (FPT, VNPT, NCS, 1Matrix): bo tri tach ra lib/dong-thoi-gian.mjs xep nhan theo hop bao, cong dong_thoi_gian do hinh hoc doc lap (NHAN_CHONG, NHAN_DE_CHAM, NHAN_TRAN, NHAN_AN_NHIEU, THIEU_DIEM) + 6 rang, cach cu bi cong bat 4 vu; (2) cau nguon hien dau markdown (**MiSmart**, [FPT](url)): lib/hien-cau.mjs chi go dau dinh dang, ban goc giu nguyen cho ma kiem toan, cong hien_cau (CON_DAU, MAT_CHU, CAU_THO) + 5 rang; (3) Bao cao 390px bi cat mep phai: luoi trang minmax(0,1fr), kiem-truy-cap do them TRAN KHUNG tung doan chu o 1440 va 390 kem tu kiem thuoc do tren mau dung san, check-truy-cap them TRAN_KHUNG, THIEU_DO_TRAN, THUOC_DO_HONG + 3 rang. Registry hien ket qua chuoi day du 112/112."
+    },
     {
       "sha": "7c65cb3",
       "ngay": "2026-10-01",
@@ -123,16 +133,6 @@
       "sha": "8c47bb2",
       "ngay": "2026-10-01",
       "tieuDe": "Ket qua chuoi day du tren may that"
-    },
-    {
-      "sha": "e42c4bc",
-      "ngay": "2026-10-01",
-      "tieuDe": "Rang bite_hoan do oan tren macOS: o gia 'xanh' goi /bin/true, macOS chi co /usr/bin/true nen tra 127 va RANG 2, 5 do. Doi sang /bin/sh -c 'exit 0'. Lo ra o luot chay day du dau tien tren may that (102/103)."
-    },
-    {
-      "sha": "8643a7e",
-      "ngay": "2026-10-01",
-      "tieuDe": "Xu huong sinh lai toi commit du lieu lo dinh danh 02"
     }
   ],
   "dong": [

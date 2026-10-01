@@ -10,16 +10,16 @@
     "nhomPhu": 10,
     "generatedAt": "2026-10-01",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-10-01 21:06: 112/112 xanh",
+    "gate": "chuỗi cổng 2026-10-01 21:27: 114/116 xanh · ĐỎ 2 · không chạy 0",
     "chuoiCong": {
-      "luc": "2026-10-01T21:06:02+0700",
+      "luc": "2026-10-01T21:27:07+0700",
       "cheDo": "day_du",
-      "tong": 112,
-      "xanh": 112,
-      "do": 0,
+      "tong": 116,
+      "xanh": 114,
+      "do": 2,
       "khongChay": 0,
       "hoan": 0,
-      "dat": true
+      "dat": false
     }
   },
   "units": [
