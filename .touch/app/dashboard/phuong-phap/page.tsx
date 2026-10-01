@@ -55,6 +55,11 @@ export default function PhuongPhapPage() {
             người gác cổng là {tenNguoi(matchMeta.nguoiKy)}. Lý do từ chối được giữ nguyên lời người viết, không sửa.
           </p>
           <p className="pp-phu">Chữ ký khoá vào đúng câu nguồn tại thời điểm ký. Nếu câu nguồn sau đó đổi, chữ ký tự rơi và cặp phải được ký lại; giao diện không có nút nào tạo được chữ ký.</p>
+          <p className="pp-phu">
+            Người ký phải có tên trong danh sách khai báo, kèm các đơn vị người đó liên quan. Kiểm định tự động chặn mọi chữ ký của một người lên cặp có
+            đơn vị mình liên quan (người gác cổng hiện làm việc tại RtR, nên không ký được cặp nào có RtR). Số người ký tối thiểu cho mỗi cặp là một tham số;
+            khi có người gác cổng thứ hai, nâng lên hai thì luật hai người ký có hiệu lực ngay.
+          </p>
         </section>
 
         <section className="dash-panel pp-khoi" aria-labelledby="pp-4">

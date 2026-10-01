@@ -1,0 +1,18 @@
+# Nguoi duoc ky cap cung cau va nhung don vi ho LIEN QUAN (01/10/2026).
+#
+# VI SAO CO: nguoi gac cong cua he nay lam viec tai RtR, va RtR co mat trong so nguon. Mot chu ky
+# cua nguoi lien quan len cap co don vi cua chinh ho la xung dot loi ich, du cap do dung. Cong
+# check_xung_dot_ky.py chan truoc khi chu ky do vao so.
+#
+# so_nguoi_ky_toi_thieu: so nguoi KHAC NHAU phai ky mot cap thi cap moi tinh la da ky tren web.
+# Hien la 1 vi chi co mot nguoi gac cong. Them nguoi thu hai vao danh sach roi nang len 2 la bat
+# luat hai nguoi ky; cong se chi ra ngay nhung cap con thieu chu ky thu hai.
+#
+# Moi nguoi xuat hien trong signoff_ledger.jsonl PHAI co ten o day. Them nguoi ky la viec cua anh
+# Lam, qua commit co ghi ro.
+so_nguoi_ky_toi_thieu: 1
+nguoi_ky:
+  Lam Nguyen:
+    vai: chuyen gia gac cong
+    lien_quan:
+      - Realtime Robotics (RtR)
