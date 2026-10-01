@@ -416,6 +416,17 @@
 .dash-shell .reg-empty p { font-size: 14px; line-height: 20px; color: var(--color-text-secondary); margin: 0; }
 .dash-shell .reg-empty__note { font-size: 12px; line-height: 18px; color: var(--color-text-muted); margin-top: var(--space-2); max-width: 640px; }
 .dash-shell .reg-table--cau td:nth-child(2) { color: var(--color-text-primary); }
+/* Man hep (< 640px, 01/10/2026): bang bon cot khong vua 390px, phep do tran khung bat 166 doan chu
+   bi cat o Registry. Moi dong thanh mot the xep chong: truong, gia tri, roi cap nguon va nguon cung hang. */
+@media (max-width: 639px) {
+  .dash-shell .reg-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .dash-shell .reg-table, .dash-shell .reg-table tbody { display: block; width: 100%; }
+  .dash-shell .reg-table tr { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: var(--space-2); row-gap: 4px; padding: var(--space-2_5) var(--space-3); border-bottom: var(--stroke-hairline) solid var(--color-border-muted); }
+  .dash-shell .reg-table tr:last-child { border-bottom: none; }
+  .dash-shell .reg-table td { display: block; padding: 0; border: none; min-width: 0; overflow-wrap: anywhere; }
+  .dash-shell .reg-table td:nth-child(1), .dash-shell .reg-table td:nth-child(2) { grid-column: 1 / -1; }
+  .dash-shell .reg-table td:nth-child(4) { align-self: center; }
+}
 
 @media (max-width: 1023px) {
   .dash-shell .reg-unit__head { grid-template-columns: 1fr; }
