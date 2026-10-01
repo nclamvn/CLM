@@ -1,0 +1,30 @@
+P01 | Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành
+P02 | AI camera xử lý tại biên
+P03 | Nền tảng bản sao số
+P04 | Nền tảng điện toán đám mây
+P05 | Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc
+P06 | Thiết bị và hệ thống mạng di động 5G/5G-Advanced
+P07 | Robot di động tự hành và robot công nghiệp
+P08 | Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh
+P09 | Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia
+P10 | Vắc xin thế hệ mới dùng cho người
+P11 | Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người
+P12 | Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D
+P13 | Hệ thống cảm biến sinh học thông minh
+P14 | Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật
+P15 | Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối
+P16 | Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học
+P17 | Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo
+P18 | Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)
+P19 | Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học
+P20 | Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao
+P21 | Hệ thống thu giữ, sử dụng và lưu trữ carbon
+P22 | Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV
+P23 | Chip chuyên dụng
+P24 | Truyền thông lượng tử, tính toán lượng tử và cảm biến lượng tử
+P25 | Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm
+P26 | Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi
+P27 | Lò phản ứng hạt nhân mô-đun nhỏ (SMR)
+P28 | Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất
+P29 | Công trình xây dựng đường sắt tốc độ cao
+P30 | Nền tảng công nghiệp, phương tiện, thiết bị và các hệ thống tích hợp đường sắt tốc độ cao, đường sắt đô thị
