@@ -6,7 +6,7 @@ import { TouchBrand } from '@/components/brand/TouchBrand';
 import { Icon } from './Icon';
 import { nav } from '@/lib/project-status';
 
-const ICONS = ['home', 'search', 'gauge', 'bell', 'layers', 'people', 'cpu', 'shield', 'doc', 'branch'] as const;
+const ICONS = ['home', 'search', 'gauge', 'bell', 'layers', 'people', 'cpu', 'shield', 'alert', 'doc', 'branch'] as const;
 
 /**
  * Thanh ben. Client vi muc dang mo tinh theo route that (usePathname).

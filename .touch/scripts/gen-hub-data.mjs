@@ -39,6 +39,7 @@ import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
 import { dungMoDau } from '../lib/mo-dau.mjs';
 import { dungTenSp } from '../lib/hien-gia-tri.mjs';
 import { dungChiMuc } from '../lib/hoi-dap.mjs';
+import { dungBaoCao } from '../lib/bao-cao.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
@@ -248,6 +249,11 @@ writeFileSync(join(LIB, 'hub-mo-dau.json'), JSON.stringify(moDau, null, 2) + '\n
 
 // ── Hoi dap co trich dan (01/10/2026): chi muc cau nguon nang luc + kho cum tu cua so nguon ──
 writeFileSync(join(LIB, 'hub-hoi-dap.json'), JSON.stringify(dungChiMuc(reg, mat)) + '\n', 'utf8');
+
+// ── Bao cao khoang trong (01/10/2026): doc thi truong, mo dau va lich su git cua xu huong ──
+const XH_F = join(LIB, 'hub-xu-huong.json');
+const xuHuong = existsSync(XH_F) ? JSON.parse(readFileSync(XH_F, 'utf8')) : { diem: [] };
+writeFileSync(join(LIB, 'hub-bao-cao.json'), JSON.stringify(dungBaoCao({ thiTruong, moDau, xuHuong }), null, 1) + '\n', 'utf8');
 
 // ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
 // Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.

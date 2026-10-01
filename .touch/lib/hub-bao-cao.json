@@ -1,0 +1,443 @@
+{
+ "ky": "Quý IV/2026",
+ "mocNgay": "2026-10-01",
+ "so": {
+  "tong": 30,
+  "daKy": 16,
+  "coCung": 12,
+  "trong": 2,
+  "mong": 12,
+  "donVi": 60,
+  "cauNguon": 378,
+  "matchDaKy": 24
+ },
+ "tomTat": [
+  "16/30 sản phẩm công nghệ chiến lược (53%) đã có ít nhất một cặp cung cầu được người gác cổng ký, dựa trên câu nguồn ở cả hai phía.",
+  "12 sản phẩm có đơn vị cung có câu nguồn nhưng chưa có cặp nào được ký.",
+  "2 sản phẩm chưa có đơn vị cung nào trong sổ nguồn: P21 Hệ thống thu giữ, sử dụng và lưu trữ carbon; P27 Lò phản ứng hạt nhân mô-đun nhỏ (SMR).",
+  "12 sản phẩm chỉ dựa vào đúng một đơn vị cung, tức một điểm hỏng là mất năng lực.",
+  "Từ 01/09/2026 đến 01/10/2026, sổ nguồn tăng từ 44 lên 60 đơn vị và từ 11 lên 24 cặp đã ký."
+ ],
+ "sanPham": [
+  {
+   "ma": "01",
+   "ten": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+   "nhom": 1,
+   "nhomTen": "Công nghệ số",
+   "trangThai": "da_ky",
+   "soCung": 6
+  },
+  {
+   "ma": "02",
+   "ten": "AI camera xử lý tại biên",
+   "nhom": 1,
+   "nhomTen": "Công nghệ số",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "03",
+   "ten": "Nền tảng bản sao số",
+   "nhom": 1,
+   "nhomTen": "Công nghệ số",
+   "trangThai": "da_ky",
+   "soCung": 1
+  },
+  {
+   "ma": "04",
+   "ten": "Nền tảng điện toán đám mây",
+   "nhom": 1,
+   "nhomTen": "Công nghệ số",
+   "trangThai": "da_ky",
+   "soCung": 2
+  },
+  {
+   "ma": "05",
+   "ten": "Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc",
+   "nhom": 1,
+   "nhomTen": "Công nghệ số",
+   "trangThai": "da_ky",
+   "soCung": 1
+  },
+  {
+   "ma": "06",
+   "ten": "Thiết bị và hệ thống mạng di động 5G/5G-Advanced",
+   "nhom": 2,
+   "nhomTen": "Mạng di động thế hệ sau",
+   "trangThai": "da_ky",
+   "soCung": 1
+  },
+  {
+   "ma": "07",
+   "ten": "Robot di động tự hành và robot công nghiệp",
+   "nhom": 3,
+   "nhomTen": "Robot và tự động hoá",
+   "trangThai": "da_ky",
+   "soCung": 4
+  },
+  {
+   "ma": "08",
+   "ten": "Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh",
+   "nhom": 3,
+   "nhomTen": "Robot và tự động hoá",
+   "trangThai": "da_ky",
+   "soCung": 2
+  },
+  {
+   "ma": "09",
+   "ten": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+   "nhom": 7,
+   "nhomTen": "An ninh mạng và lượng tử",
+   "trangThai": "co_cung",
+   "soCung": 3
+  },
+  {
+   "ma": "10",
+   "ten": "Vắc xin thế hệ mới dùng cho người",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "11",
+   "ten": "Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "da_ky",
+   "soCung": 3
+  },
+  {
+   "ma": "12",
+   "ten": "Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "13",
+   "ten": "Hệ thống cảm biến sinh học thông minh",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "da_ky",
+   "soCung": 4
+  },
+  {
+   "ma": "14",
+   "ten": "Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "co_cung",
+   "soCung": 3
+  },
+  {
+   "ma": "15",
+   "ten": "Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "da_ky",
+   "soCung": 3
+  },
+  {
+   "ma": "16",
+   "ten": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
+   "nhom": 4,
+   "nhomTen": "Sinh học và y sinh",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "17",
+   "ten": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "da_ky",
+   "soCung": 1
+  },
+  {
+   "ma": "18",
+   "ten": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "da_ky",
+   "soCung": 3
+  },
+  {
+   "ma": "19",
+   "ten": "Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "co_cung",
+   "soCung": 3
+  },
+  {
+   "ma": "20",
+   "ten": "Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "da_ky",
+   "soCung": 2
+  },
+  {
+   "ma": "21",
+   "ten": "Hệ thống thu giữ, sử dụng và lưu trữ carbon",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "trong",
+   "soCung": 0
+  },
+  {
+   "ma": "22",
+   "ten": "Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV",
+   "nhom": 9,
+   "nhomTen": "Hàng không và vũ trụ",
+   "trangThai": "da_ky",
+   "soCung": 8
+  },
+  {
+   "ma": "23",
+   "ten": "Chip chuyên dụng",
+   "nhom": 6,
+   "nhomTen": "Chip bán dẫn",
+   "trangThai": "da_ky",
+   "soCung": 5
+  },
+  {
+   "ma": "24",
+   "ten": "Truyền thông lượng tử, tính toán lượng tử và cảm biến lượng tử",
+   "nhom": 7,
+   "nhomTen": "An ninh mạng và lượng tử",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "25",
+   "ten": "Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm",
+   "nhom": 8,
+   "nhomTen": "Biển, đại dương, lòng đất",
+   "trangThai": "co_cung",
+   "soCung": 2
+  },
+  {
+   "ma": "26",
+   "ten": "Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi",
+   "nhom": 8,
+   "nhomTen": "Biển, đại dương, lòng đất",
+   "trangThai": "co_cung",
+   "soCung": 1
+  },
+  {
+   "ma": "27",
+   "ten": "Lò phản ứng hạt nhân mô-đun nhỏ (SMR)",
+   "nhom": 5,
+   "nhomTen": "Năng lượng và vật liệu",
+   "trangThai": "trong",
+   "soCung": 0
+  },
+  {
+   "ma": "28",
+   "ten": "Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất",
+   "nhom": 9,
+   "nhomTen": "Hàng không và vũ trụ",
+   "trangThai": "da_ky",
+   "soCung": 1
+  },
+  {
+   "ma": "29",
+   "ten": "Công trình xây dựng đường sắt tốc độ cao",
+   "nhom": 10,
+   "nhomTen": "Đường sắt tốc độ cao",
+   "trangThai": "co_cung",
+   "soCung": 2
+  },
+  {
+   "ma": "30",
+   "ten": "Nền tảng công nghiệp, phương tiện, thiết bị và các hệ thống tích hợp đường sắt tốc độ cao, đường sắt đô thị",
+   "nhom": 10,
+   "nhomTen": "Đường sắt tốc độ cao",
+   "trangThai": "co_cung",
+   "soCung": 1
+  }
+ ],
+ "nhom": [
+  {
+   "so": 8,
+   "ten": "Biển, đại dương, lòng đất",
+   "soNc": 2,
+   "daKy": 0,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 3,
+   "chuaKy": 2
+  },
+  {
+   "so": 10,
+   "ten": "Đường sắt tốc độ cao",
+   "soNc": 2,
+   "daKy": 0,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 3,
+   "chuaKy": 2
+  },
+  {
+   "so": 7,
+   "ten": "An ninh mạng và lượng tử",
+   "soNc": 2,
+   "daKy": 0,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 4,
+   "chuaKy": 2
+  },
+  {
+   "so": 4,
+   "ten": "Sinh học và y sinh",
+   "soNc": 7,
+   "daKy": 3,
+   "coCung": 7,
+   "trong": 0,
+   "soDv": 14,
+   "chuaKy": 4
+  },
+  {
+   "so": 5,
+   "ten": "Năng lượng và vật liệu",
+   "soNc": 6,
+   "daKy": 3,
+   "coCung": 4,
+   "trong": 2,
+   "soDv": 7,
+   "chuaKy": 3
+  },
+  {
+   "so": 1,
+   "ten": "Công nghệ số",
+   "soNc": 5,
+   "daKy": 4,
+   "coCung": 5,
+   "trong": 0,
+   "soDv": 9,
+   "chuaKy": 1
+  },
+  {
+   "so": 2,
+   "ten": "Mạng di động thế hệ sau",
+   "soNc": 1,
+   "daKy": 1,
+   "coCung": 1,
+   "trong": 0,
+   "soDv": 1,
+   "chuaKy": 0
+  },
+  {
+   "so": 6,
+   "ten": "Chip bán dẫn",
+   "soNc": 1,
+   "daKy": 1,
+   "coCung": 1,
+   "trong": 0,
+   "soDv": 5,
+   "chuaKy": 0
+  },
+  {
+   "so": 3,
+   "ten": "Robot và tự động hoá",
+   "soNc": 2,
+   "daKy": 2,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 7,
+   "chuaKy": 0
+  },
+  {
+   "so": 9,
+   "ten": "Hàng không và vũ trụ",
+   "soNc": 2,
+   "daKy": 2,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 8,
+   "chuaKy": 0
+  }
+ ],
+ "mong": [
+  "02",
+  "03",
+  "05",
+  "06",
+  "10",
+  "12",
+  "16",
+  "17",
+  "24",
+  "26",
+  "28",
+  "30"
+ ],
+ "chatLuong": [
+  {
+   "k": "dinhDanh",
+   "nhan": "Đơn vị đã định danh pháp nhân",
+   "tu": 0,
+   "mau": 60
+  },
+  {
+   "k": "coCung",
+   "nhan": "Nhu cầu quốc gia đã có bên cung",
+   "tu": 28,
+   "mau": 30
+  },
+  {
+   "k": "daKy",
+   "nhan": "Nhu cầu có cặp ghép đã ký",
+   "tu": 16,
+   "mau": 30
+  },
+  {
+   "k": "hangA",
+   "nhan": "Câu nguồn hạng A (văn bản chính thức)",
+   "tu": 120,
+   "mau": 378
+  },
+  {
+   "k": "conHan",
+   "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
+   "tu": 349,
+   "mau": 378
+  }
+ ],
+ "viecTiep": [
+  {
+   "so": 60,
+   "viec": "đơn vị chưa định danh pháp nhân",
+   "cach": "tra mã số trên cổng đăng ký doanh nghiệp quốc gia; 12 đơn vị đã có mã tự khai để đối chiếu",
+   "href": "/dashboard/don-vi"
+  },
+  {
+   "so": 2,
+   "viec": "nhu cầu quốc gia chưa có bên cung (P21, P27)",
+   "cach": "mở lô làm giàu mới, nguồn duyệt theo lô",
+   "href": "/dashboard/thi-truong"
+  },
+  {
+   "so": 12,
+   "viec": "nhu cầu đã có bên cung nhưng chưa có cặp được ký",
+   "cach": "người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối",
+   "href": "/dashboard/matching"
+  },
+  {
+   "so": 29,
+   "viec": "câu nguồn quá 180 ngày chưa có lý do giữ",
+   "cach": "chụp lại nguồn hoặc ghi lý do giữ",
+   "href": "/dashboard/registry"
+  },
+  {
+   "so": 2,
+   "viec": "tin mới từ vòng tự chạy đang chờ duyệt",
+   "cach": "duyệt rồi mới tính là sự thật",
+   "href": "/dashboard/thoi-cuoc"
+  }
+ ]
+}

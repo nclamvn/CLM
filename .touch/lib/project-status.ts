@@ -27,6 +27,7 @@ export const nav = [
   { label: 'Hồ sơ đơn vị', href: '/dashboard/don-vi' },
   { label: 'Ghép cung cầu', href: '/dashboard/matching' },
   { label: 'Sổ nguồn', href: '/dashboard/registry' },
+  { label: 'Báo cáo khoảng trống', href: '/dashboard/bao-cao' },
   { label: 'Phương pháp', href: '/dashboard/phuong-phap' },
   { label: 'Kho mã', href: '/dashboard/repos' },
 ];

@@ -21,6 +21,7 @@ const TRANG = [
   ['hoi_dap_uav', '/dashboard/hoi-dap?q=' + encodeURIComponent('Ai làm được UAV?')],
   ['hoi_dap_tu_choi', '/dashboard/hoi-dap?q=' + encodeURIComponent('máy bay chở khách')],
   ['tong_quan', '/dashboard'],
+  ['bao_cao', '/dashboard/bao-cao'],
 ];
 mkdirSync(OUT, { recursive: true });
 const br = await chromium.launch();
