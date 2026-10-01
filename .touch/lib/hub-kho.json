@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "608238d",
+    "sha": "8643a7e",
     "ngay": "2026-10-01"
   },
-  "tongCommit": 195,
+  "tongCommit": 197,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 21,
+      "commitSauGop": 22,
       "cuoi": {
-        "sha": "608238d",
+        "sha": "a93c8b9",
         "ngay": "2026-10-01",
-        "tieuDe": "Lo 02 dinh danh phap nhan (ban nhap, cho anh Lam duyet): 60 don vi, 43 ten phap nhan va 12 ma so TU KHAI tu website chinh chu, 65 honest-null; doi chieu doc lap tai lai trang goc 55/55 khop. Cong kiem_lo_dinh_danh.py (15 luat: cam ghi ma_so_thue, cam trang tong hop, ngoai chinh chu, ma hai don vi, bo sot don vi...) + 11 rang, kiem_lo --tat-ca re nhanh theo LOAI_DINH_DANH. Bang duyet + phieu tra cong (xlsx, cot doi chieu tu dong). check_ma_so_thue.py giu nguyen."
+        "tieuDe": "Lo 02 dinh danh: anh Lam duyet 'da duyet va xac nhan thong qua' (duyet.json), nap 55 claim (43 ten_phap_nhan, 12 ma_so_tu_khai) vao registry, 9 muc can anh quyet giu trong. Hai truong dinh danh tu khai trong domain.yaml, BEN trong do tuoi, khong vao dong thoi gian/thoi cuoc/bieu do theo nam. Web: ho so va so nguon hien 'Tu khai, chua doi chieu cong', khong doi trang thai dinh danh (cong TU_KHAI_LECH, TU_KHAI_THANH_DINH_DANH + 2 rang). check_ngay_dang: luat TRANG TINH cho truong dinh danh + 3 rang. Duong tra cong: nap_tra_cong.py (PDF phai mang dau cong, dung ma, dung ten) + 12 rang; check_ma_so_thue giu nguyen. bite_kiem_lo dung canh dung khi co lo nap sau. Trang dau, tong quan ghi ro luot kiem nhanh. Chuoi nhanh 61/61 + 42 rang xanh (chay tach hai phan), axe 0."
       },
-      "soTep": 293
+      "soTep": 344
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 43,
+      "commitSauGop": 44,
       "cuoi": {
-        "sha": "608238d",
+        "sha": "a93c8b9",
         "ngay": "2026-10-01",
-        "tieuDe": "Lo 02 dinh danh phap nhan (ban nhap, cho anh Lam duyet): 60 don vi, 43 ten phap nhan va 12 ma so TU KHAI tu website chinh chu, 65 honest-null; doi chieu doc lap tai lai trang goc 55/55 khop. Cong kiem_lo_dinh_danh.py (15 luat: cam ghi ma_so_thue, cam trang tong hop, ngoai chinh chu, ma hai don vi, bo sot don vi...) + 11 rang, kiem_lo --tat-ca re nhanh theo LOAI_DINH_DANH. Bang duyet + phieu tra cong (xlsx, cot doi chieu tu dong). check_ma_so_thue.py giu nguyen."
+        "tieuDe": "Lo 02 dinh danh: anh Lam duyet 'da duyet va xac nhan thong qua' (duyet.json), nap 55 claim (43 ten_phap_nhan, 12 ma_so_tu_khai) vao registry, 9 muc can anh quyet giu trong. Hai truong dinh danh tu khai trong domain.yaml, BEN trong do tuoi, khong vao dong thoi gian/thoi cuoc/bieu do theo nam. Web: ho so va so nguon hien 'Tu khai, chua doi chieu cong', khong doi trang thai dinh danh (cong TU_KHAI_LECH, TU_KHAI_THANH_DINH_DANH + 2 rang). check_ngay_dang: luat TRANG TINH cho truong dinh danh + 3 rang. Duong tra cong: nap_tra_cong.py (PDF phai mang dau cong, dung ma, dung ten) + 12 rang; check_ma_so_thue giu nguyen. bite_kiem_lo dung canh dung khi co lo nap sau. Trang dau, tong quan ghi ro luot kiem nhanh. Chuoi nhanh 61/61 + 42 rang xanh (chay tach hai phan), axe 0."
       },
       "soTep": 145
     },
@@ -68,22 +68,32 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 47,
+      "commitSauGop": 49,
       "cuoi": {
-        "sha": "d9e714e",
+        "sha": "8643a7e",
         "ngay": "2026-10-01",
-        "tieuDe": "Xu huong sinh lai toi commit du lieu 1aaf27e"
+        "tieuDe": "Xu huong sinh lai toi commit du lieu lo dinh danh 02"
       },
-      "soTep": 429
+      "soTep": 474
     }
   ],
   "oTheoKho": {
-    "CNCLData": 28,
+    "CNCLData": 29,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 19,
     ".touch": 53
   },
   "ganDay": [
+    {
+      "sha": "8643a7e",
+      "ngay": "2026-10-01",
+      "tieuDe": "Xu huong sinh lai toi commit du lieu lo dinh danh 02"
+    },
+    {
+      "sha": "a93c8b9",
+      "ngay": "2026-10-01",
+      "tieuDe": "Lo 02 dinh danh: anh Lam duyet 'da duyet va xac nhan thong qua' (duyet.json), nap 55 claim (43 ten_phap_nhan, 12 ma_so_tu_khai) vao registry, 9 muc can anh quyet giu trong. Hai truong dinh danh tu khai trong domain.yaml, BEN trong do tuoi, khong vao dong thoi gian/thoi cuoc/bieu do theo nam. Web: ho so va so nguon hien 'Tu khai, chua doi chieu cong', khong doi trang thai dinh danh (cong TU_KHAI_LECH, TU_KHAI_THANH_DINH_DANH + 2 rang). check_ngay_dang: luat TRANG TINH cho truong dinh danh + 3 rang. Duong tra cong: nap_tra_cong.py (PDF phai mang dau cong, dung ma, dung ten) + 12 rang; check_ma_so_thue giu nguyen. bite_kiem_lo dung canh dung khi co lo nap sau. Trang dau, tong quan ghi ro luot kiem nhanh. Chuoi nhanh 61/61 + 42 rang xanh (chay tach hai phan), axe 0."
+    },
     {
       "sha": "608238d",
       "ngay": "2026-10-01",
@@ -123,16 +133,6 @@
       "sha": "f52b2b1",
       "ngay": "2026-09-30",
       "tieuDe": "Lam giau dot 01: doi chung doc lap 22 trang goc, 56/56 cau khop nguyen van, ngay khop; sua ngay dang VTI Solutions 13/04/2024 (27/05/2025 la ngay sua bai); bo ban chup co em-dash cua nguon; them rang 13 (o don tri da co gia tri) va 14 (hai gia tri mot o) cho kiem_lo; bang duyet sinh lai. Van la BAN NHAP cho anh Lam duyet, chua nap registry. Chuoi 91/91, dien tap CI 88/0/3"
-    },
-    {
-      "sha": "557faef",
-      "ngay": "2026-09-30",
-      "tieuDe": "Lam giau dot 01 (BAN NHAP, chua nap registry): 102 claim, 18 don vi cho 9/11 nhu cau trong; cong kiem_lo (nguyen van, dung truong, dung hang, o don tri khong bi de) + 12 rang; mo_phong_lo nap thu vao ban sao: ung vien 11 -> 24, nhu cau co ung vien 8 -> 16, chu ky giu 11/11; vong lam tuoi thay 5 dong bang nguon sau 03/04/2026; bang duyet sinh tu du lieu. Sua phieu ghep: tach tang cho ky (mo phong lo ra phieu ghi 24 ky khi chi co 11) + rang 5. Chuoi tai cho 91/91; dien tap CI 88/0/3"
-    },
-    {
-      "sha": "e209b31",
-      "ngay": "2026-09-30",
-      "tieuDe": "Va bao mat phu thuoc web cung dong phien ban: next 15.5.20 -> 15.5.26 (10 advisory, 2 RCE, DoS/SSRF Server Actions), postcss 8.5.28 (ep ca ban long trong next qua overrides), sharp 0.35.5, eslint 9.39.5, js-yaml/browserslist/nanoid/brace-expansion/baseline-browser-mapping; npm audit 0 lo hong, khong nhay major. O moi phu_thuoc (npm audit, nguong high, mat mang = KHONG CHAY DUOC) + 6 rang. Dien tap clone sach Node 24: 86 xanh / 0 do / 3 hoan; tai cho 89/89; build 64 trang"
     }
   ],
   "dong": [

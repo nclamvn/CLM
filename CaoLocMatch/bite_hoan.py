@@ -73,7 +73,9 @@ def main():
 
     def dung(ma_o_hoan, ma_o_thuong=0):
         """Dung ban sao script voi ba o gia. `ma_o_hoan` la ma thoat cua o duoc phep hoan."""
-        gia = (f'chay CNCLData mot_o_xanh "$CNCL" \'\' /bin/true\n'
+        # /bin/sh -c "exit 0" chu khong /bin/true: macOS khong co /bin/true (chi co /usr/bin/true),
+        # nen o "xanh" tra 127 va RANG 2, 5 do oan tren may that (lo ra 01/10/2026).
+        gia = (f'chay CNCLData mot_o_xanh "$CNCL" \'\' /bin/sh -c "exit 0"\n'
                f'chay CNCLData {o_hoan_duoc} "$CNCL" \'\' /bin/sh -c "exit {ma_o_hoan}"\n'
                f'chay CNCLData mot_o_nua "$CNCL" \'\' /bin/sh -c "exit {ma_o_thuong}"\n\n')
         kich.write_text(van[:i] + gia + van[j:], encoding="utf-8")
