@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "4ace110",
+    "sha": "f34c34c",
     "ngay": "2026-10-02"
   },
-  "tongCommit": 212,
+  "tongCommit": 213,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 52,
+      "commitSauGop": 53,
       "cuoi": {
-        "sha": "818c3ad",
-        "ngay": "2026-10-01",
-        "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
+        "sha": "f34c34c",
+        "ngay": "2026-10-02",
+        "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
       },
       "soTep": 148
     },
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 63,
+      "commitSauGop": 64,
       "cuoi": {
-        "sha": "4ace110",
+        "sha": "f34c34c",
         "ngay": "2026-10-02",
-        "tieuDe": "Quet lai truy cap sau sua tuong phan Cau that, anh moc, ket qua chuoi tren may that"
+        "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
       },
       "soTep": 533
     }
@@ -84,6 +84,11 @@
     ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "f34c34c",
+      "ngay": "2026-10-02",
+      "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
+    },
     {
       "sha": "4ace110",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "787f89c",
       "ngay": "2026-10-01",
       "tieuDe": "Tinh nang Ho so kiem toan duoc: moi ho so don vi co ma SHA-256 (lib/kiem-toan.mjs) cua cau nguon nguyen van + dau vet ban chup, nut tai tep JSON, cong cu doi chieu cho nguoi nhan (scripts/kiem-ho-so.mjs: KHOP/LECH, --ban-chup soi tung ban chup). Cong kiem_toan (KIEM_TOAN_LECH, BAN_CHUP_THIEU, DOI_CHIEU_HONG dau cuoi) + 5 rang."
-    },
-    {
-      "sha": "6779516",
-      "ngay": "2026-10-01",
-      "tieuDe": "Tinh nang Bao cao khoang trong (/dashboard/bao-cao): bao cao dinh ky theo quy, in hoac luu PDF, sinh tu dong tu thi truong + mo dau + lich su git (lib/bao-cao.mjs): tom tat, 30 san pham va trang thai, san pham chi mot ben cung, nhom can uu tien, do tin cay so lieu, viec tiep. Cong bao_cao (BAO_CAO_LECH, SO_LECH dem doc lap tu registry/match/do thi, KY_SAI) + 4 rang. Nav them muc; truy cap quet them trang; chup_xem them anh."
     }
   ],
   "dong": [
