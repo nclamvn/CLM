@@ -15,6 +15,10 @@ type Nhom = { so: number; ten: string; soNc: number; daKy: number; coCung: numbe
 type BC = {
   ky: string; mocNgay: string; so: Record<string, number>; tomTat: string[]; sanPham: SP[]; nhom: Nhom[]; mong: string[];
   chatLuong: { k: string; nhan: string; tu: number; mau: number }[]; viecTiep: { so: number; viec: string; cach: string; href: string }[];
+  cauThat: null | {
+    soNhuCau: number; soBenDatHang: number; coGoiY: number; theoLoai: { loai: string; ten: string; so: number }[];
+    chuaCoBenCung: { ma: string; ten: string; benDatHang: string; loaiTen: string; maSp: string | null }[];
+  };
 };
 const D = bc as unknown as BC;
 const TT: Record<string, string> = { da_ky: 'Đã có cặp được ký', co_cung: 'Có bên cung, chưa ký', trong: 'Chưa có bên cung' };
@@ -64,6 +68,24 @@ export default function BaoCaoPage() {
             </table>
           </div>
         </section>
+
+        {D.cauThat && (
+          <section className="dash-panel bc-khoi" aria-labelledby="bc-ct">
+            <h2 className="hs-h" id="bc-ct">Nhu cầu đặt hàng thật <span>{D.cauThat.soNhuCau} nhu cầu có nguồn · {D.cauThat.soBenDatHang} bên đặt hàng · {D.cauThat.coGoiY} đã có đơn vị liên quan trong sổ nguồn (gợi ý, chưa ký)</span></h2>
+            <ul className="bc-tt">{D.cauThat.theoLoai.map((l) => <li key={l.loai}>{l.ten}: <b>{l.so}</b></li>)}</ul>
+            <h3 className="bc-h3">Chưa có bên cung nào trong sổ nguồn ({D.cauThat.chuaCoBenCung.length})</h3>
+            <div className="md-bn-cuon" tabIndex={0} role="region" aria-label="Bảng nhu cầu đặt hàng chưa có bên cung, cuộn ngang trên màn hẹp">
+              <table className="md-bn bc-bang bc-ct">
+                <thead><tr><th scope="col">Nhu cầu</th><th scope="col">Bên đặt hàng</th><th scope="col">Loại</th></tr></thead>
+                <tbody>
+                  {D.cauThat.chuaCoBenCung.map((n) => (
+                    <tr key={n.ma}><th scope="row">{n.ten}</th><td>{n.benDatHang}</td><td>{n.loaiTen}</td></tr>))}
+                </tbody>
+              </table>
+            </div>
+            <p className="hs-note">Chi tiết từng nhu cầu, câu nguồn và gợi ý đơn vị ở <Link className="pf-link" href="/dashboard/cau-that">trang Cầu thật</Link>.</p>
+          </section>
+        )}
 
         <section className="dash-panel bc-khoi" aria-labelledby="bc-nhom">
           <h2 className="hs-h" id="bc-nhom">Nhóm cần ưu tiên <span>xếp theo tỉ lệ nhu cầu chưa có cặp được ký, rồi ít đơn vị cung nhất</span></h2>

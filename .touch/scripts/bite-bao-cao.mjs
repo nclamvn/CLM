@@ -15,6 +15,8 @@
  * RANG 3 · MODULE dem trong sai (bo mot nhu cau trong) VA file sinh tu module do -> SO_LECH
  *          (chi lop dem doc lap bat duoc, vi file va module khop nhau).
  * RANG 4 · ky bao cao ghi "Quý I/2026" -> KY_SAI.
+ * RANG 5 · (02/10/2026) muc cau that bot mot nhu cau chua co ben cung -> CAU_THAT_LECH.
+ * RANG 6 · bao cao bo han muc cau that du co lo da nap -> CAU_THAT_LECH.
  *
  * Chay: node scripts/bite-bao-cao.mjs     Exit 0 moi rang can · 2 co rang khong can.
  */
@@ -27,7 +29,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LIB = join(HERE, '..', 'lib');
 const CONG = join(HERE, 'check-bao-cao.mjs');
-const FILES = ['hub-bao-cao.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-thi-truong.json', 'hub-mo-dau.json', 'hub-xu-huong.json', 'bao-cao.mjs'];
+const FILES = ['hub-bao-cao.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-thi-truong.json', 'hub-mo-dau.json', 'hub-xu-huong.json', 'hub-cau-that.json', 'cncl-cau-dat-hang.json', 'bao-cao.mjs'];
 const kq = []; const tam = [];
 const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(60)} : ${ok ? `CAN OK (${chi})` : `KHONG CAN !! ${chi}`}`); kq.push(ok); };
 const canh = () => {
@@ -52,12 +54,16 @@ try {
     writeFileSync(p, goc.replace(moc, "const trong = sp.filter((x) => x.trangThai === 'trong').slice(1);"));
     const m = await import(pathToFileURL(p).href + '?t=' + Date.now());
     const d = (f) => JSON.parse(readFileSync(join(t, 'lib', f), 'utf8'));
-    writeFileSync(join(t, 'lib', 'hub-bao-cao.json'), JSON.stringify(m.dungBaoCao({ thiTruong: d('hub-thi-truong.json'), moDau: d('hub-mo-dau.json'), xuHuong: d('hub-xu-huong.json') }), null, 1) + '\n');
+    writeFileSync(join(t, 'lib', 'hub-bao-cao.json'), JSON.stringify(m.dungBaoCao({ thiTruong: d('hub-thi-truong.json'), moDau: d('hub-mo-dau.json'), xuHuong: d('hub-xu-huong.json'), cauThat: d('hub-cau-that.json') }), null, 1) + '\n');
     r = chay(t);
     inRa('RANG 3 · module dem trong sai -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH') && !r.out.includes('BAO_CAO_LECH'), `exit ${r.rc}`);
   }
   t = canh(); doiJson(t, (x) => { x.ky = 'Quý I/2026'; }); r = chay(t);
   inRa('RANG 4 · sai ky bao cao -> KY_SAI', r.rc === 2 && r.out.includes('KY_SAI'), `exit ${r.rc}`);
+  t = canh(); doiJson(t, (x) => { x.cauThat.chuaCoBenCung.pop(); }); r = chay(t);
+  inRa('RANG 5 · bot nhu cau chua co ben cung -> CAU_THAT_LECH', r.rc === 2 && r.out.includes('CAU_THAT_LECH'), `exit ${r.rc}`);
+  t = canh(); doiJson(t, (x) => { x.cauThat = null; }); r = chay(t);
+  inRa('RANG 6 · bo muc cau that -> CAU_THAT_LECH', r.rc === 2 && r.out.includes('CAU_THAT_LECH'), `exit ${r.rc}`);
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

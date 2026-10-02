@@ -7,6 +7,10 @@
  * khung. Cong check-bao-cao.mjs tinh lai va dem doc lap.
  *
  * Ky bao cao: quy chua ngay moc du lieu ("Quý IV/2026" cho 01/10/2026).
+ *
+ * CAU THAT (02/10/2026): neu co hub-cau-that.json (lo nhu cau dat hang da duyet), bao cao them muc
+ * "nhu cau dat hang that": dem theo loai, so co goi y don vi trong so nguon, va DANH SACH nhu cau
+ * chua co ben cung nao. Goi y don vi khong phai cap ghep, bao cao noi ro "chưa ký".
  */
 const LA_MA = ['I', 'II', 'III', 'IV'];
 
@@ -18,7 +22,7 @@ export function kyBaoCao(mocNgay) {
 const ngay = (s) => { const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? `${m[3]}/${m[2]}/${m[1]}` : String(s); };
 const tiLe = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
-export function dungBaoCao({ thiTruong, moDau, xuHuong }) {
+export function dungBaoCao({ thiTruong, moDau, xuHuong, cauThat = null }) {
   const sp = thiTruong.phu.flatMap((g) => g.o.map((o) => ({
     ma: o.maSp, ten: o.ten, nhom: Number(g.so), nhomTen: g.nhan, trangThai: o.trangThai, soCung: o.soCung,
   }))).sort((a, b) => a.ma.localeCompare(b.ma));
@@ -44,10 +48,23 @@ export function dungBaoCao({ thiTruong, moDau, xuHuong }) {
       ? `Từ ${ngay(dau.ngay)} đến ${ngay(cuoi.ngay)}, sổ nguồn tăng từ ${dau.donVi} lên ${cuoi.donVi} đơn vị và từ ${dau.matchDaKy} lên ${cuoi.matchDaKy} cặp đã ký.`
       : 'Chưa đủ lịch sử để nói xu hướng.',
   ];
+  let ct = null;
+  if (cauThat && cauThat.nhuCau?.length) {
+    const ten = { nhiem_vu_khcn: 'Nhiệm vụ KH&CN đặt hàng', bai_toan_lon: 'Bài toán lớn', chuong_trinh: 'Chương trình, đề án', du_an_goi_thau: 'Dự án, gói thầu' };
+    const chua = cauThat.nhuCau.filter((n) => !n.goiY.length);
+    ct = {
+      soNhuCau: cauThat.nhuCau.length,
+      soBenDatHang: new Set(cauThat.nhuCau.map((n) => n.benDatHang)).size,
+      coGoiY: cauThat.nhuCau.length - chua.length,
+      theoLoai: Object.keys(ten).map((k) => ({ loai: k, ten: ten[k], so: cauThat.nhuCau.filter((n) => n.loai === k).length })),
+      chuaCoBenCung: chua.map((n) => ({ ma: n.ma, ten: n.ten, benDatHang: n.benDatHang, loaiTen: ten[n.loai] ?? n.loai, maSp: n.maSp })),
+    };
+    tomTat.push(`${ct.soNhuCau} nhu cầu đặt hàng công nghệ có nguồn từ ${ct.soBenDatHang} bên đặt hàng; ${ct.coGoiY} nhu cầu đã có đơn vị trong sổ nguồn có câu nguồn liên quan (gợi ý, chưa ký), ${chua.length} nhu cầu chưa có bên cung nào.`);
+  }
   return {
     ky: kyBaoCao(moDau.mocNgay), mocNgay: moDau.mocNgay,
     so: { tong, daKy: dem('da_ky'), coCung: dem('co_cung'), trong: trong.length, mong: mong.length, donVi: moDau.so.donVi, cauNguon: moDau.so.cauNguon, matchDaKy: moDau.so.matchDaKy },
     tomTat, sanPham: sp, nhom, mong: mong.map((x) => x.ma),
-    chatLuong: moDau.chatLuong, viecTiep: moDau.viecTiep,
+    chatLuong: moDau.chatLuong, viecTiep: moDau.viecTiep, cauThat: ct,
   };
 }

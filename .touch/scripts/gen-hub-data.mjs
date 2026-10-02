@@ -263,7 +263,7 @@ writeFileSync(join(LIB, 'hub-cau-that.json'), JSON.stringify(cauThat, null, 1) +
 // ── Bao cao khoang trong (01/10/2026): doc thi truong, mo dau va lich su git cua xu huong ──
 const XH_F = join(LIB, 'hub-xu-huong.json');
 const xuHuong = existsSync(XH_F) ? JSON.parse(readFileSync(XH_F, 'utf8')) : { diem: [] };
-writeFileSync(join(LIB, 'hub-bao-cao.json'), JSON.stringify(dungBaoCao({ thiTruong, moDau, xuHuong }), null, 1) + '\n', 'utf8');
+writeFileSync(join(LIB, 'hub-bao-cao.json'), JSON.stringify(dungBaoCao({ thiTruong, moDau, xuHuong, cauThat }), null, 1) + '\n', 'utf8');
 
 // ── Cau lam bang chi nam trong ghi chu nguoi chup ───────────────────────────
 // Giao dien doc file nay de CANH BAO ngay tren the bang chung, khong doi nguoi bam moi biet.

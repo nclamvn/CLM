@@ -14,6 +14,10 @@
  *                   trong  = so nhu cau khong co canh cung nao (hub-graph);
  *                   mong   = so nhu cau co dung mot don vi cung khac nhau (hub-graph).
  *   KY_SAI        ky bao cao khong dung quy cua ngay moc du lieu.
+ *   CAU_THAT_LECH (02/10/2026) muc cau that: so nhu cau khac so ma nhu cau khac nhau dem doc lap tren
+ *                 cncl-cau-dat-hang.json; so ben dat hang khac dem doc lap; danh sach "chua co ben
+ *                 cung" khac cac nhu cau khong co goi y trong hub-cau-that.json; co lo cau that ma
+ *                 bao cao bo muc nay.
  *
  * Chay: node scripts/check-bao-cao.mjs [--lib <dir>] [--mo-dun <bao-cao.mjs>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -32,10 +36,12 @@ const dj = (f) => { const p = join(LIB, f); if (!existsSync(p)) thoat3(`thieu ${
 const bc = dj('hub-bao-cao.json'); const reg = dj('cncl-registry.json'); const mat = dj('cncl-match.json');
 const graph = dj('hub-graph.json'); const thiTruong = dj('hub-thi-truong.json'); const moDau = dj('hub-mo-dau.json');
 const xuHuong = existsSync(join(LIB, 'hub-xu-huong.json')) ? dj('hub-xu-huong.json') : { diem: [] };
+const cauThat = existsSync(join(LIB, 'hub-cau-that.json')) ? dj('hub-cau-that.json') : null;
+const dh = existsSync(join(LIB, 'cncl-cau-dat-hang.json')) ? dj('cncl-cau-dat-hang.json') : { claims: [] };
 const { dungBaoCao } = await import(pathToFileURL(MO_DUN).href);
 
 const vi = [];
-if (JSON.stringify(dungBaoCao({ thiTruong, moDau, xuHuong })) !== JSON.stringify(bc)) vi.push('BAO_CAO_LECH: hub-bao-cao.json khac ban tinh lai');
+if (JSON.stringify(dungBaoCao({ thiTruong, moDau, xuHuong, cauThat })) !== JSON.stringify(bc)) vi.push('BAO_CAO_LECH: hub-bao-cao.json khac ban tinh lai');
 
 const nc = graph.nodes.filter((n) => n.kind === 'nhu_cau');
 const cungCua = new Map(nc.map((n) => [n.id, new Set()]));
@@ -47,6 +53,17 @@ const that = {
   mong: [...cungCua.values()].filter((s) => s.size === 1).length,
 };
 for (const [k, v] of Object.entries(that)) if (bc.so?.[k] !== v) vi.push(`SO_LECH: ${k} bao cao ghi ${bc.so?.[k]}, dem doc lap ${v}`);
+// Cau that: dem doc lap tren claim tho cua domain cau_dat_hang.
+const maDh = new Map();
+for (const c of dh.claims) { if (!maDh.has(c.ma)) maDh.set(c.ma, {}); maDh.get(c.ma)[c.field] = c.value; }
+if (maDh.size && !bc.cauThat) vi.push(`CAU_THAT_LECH: co ${maDh.size} nhu cau dat hang da nap ma bao cao khong co muc cau that`);
+if (bc.cauThat) {
+  if (bc.cauThat.soNhuCau !== maDh.size) vi.push(`CAU_THAT_LECH: bao cao ghi ${bc.cauThat.soNhuCau} nhu cau, dem doc lap ${maDh.size}`);
+  const ben = new Set([...maDh.values()].map((x) => x.ben_dat_hang)).size;
+  if (bc.cauThat.soBenDatHang !== ben) vi.push(`CAU_THAT_LECH: bao cao ghi ${bc.cauThat.soBenDatHang} ben dat hang, dem doc lap ${ben}`);
+  const chua = (cauThat?.nhuCau ?? []).filter((n) => !n.goiY.length).map((n) => n.ma).sort().join(',');
+  if (bc.cauThat.chuaCoBenCung.map((n) => n.ma).sort().join(',') !== chua) vi.push('CAU_THAT_LECH: danh sach nhu cau chua co ben cung khac hub-cau-that.json');
+}
 const [y, m] = String(moDau.mocNgay).split('-').map(Number);
 const kyDung = `Quý ${['I', 'II', 'III', 'IV'][Math.floor((m - 1) / 3)]}/${y}`;
 if (bc.ky !== kyDung) vi.push(`KY_SAI: bao cao ghi ${bc.ky}, moc ${moDau.mocNgay} la ${kyDung}`);

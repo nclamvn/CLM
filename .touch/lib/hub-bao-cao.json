@@ -1,6 +1,6 @@
 {
  "ky": "Quý IV/2026",
- "mocNgay": "2026-10-01",
+ "mocNgay": "2026-10-02",
  "so": {
   "tong": 30,
   "daKy": 16,
@@ -16,7 +16,8 @@
   "12 sản phẩm có đơn vị cung có câu nguồn nhưng chưa có cặp nào được ký.",
   "2 sản phẩm chưa có đơn vị cung nào trong sổ nguồn: P21 Hệ thống thu giữ, sử dụng và lưu trữ carbon; P27 Lò phản ứng hạt nhân mô-đun nhỏ (SMR).",
   "12 sản phẩm chỉ dựa vào đúng một đơn vị cung, tức một điểm hỏng là mất năng lực.",
-  "Từ 01/09/2026 đến 01/10/2026, sổ nguồn tăng từ 44 lên 60 đơn vị và từ 11 lên 24 cặp đã ký."
+  "Từ 01/09/2026 đến 01/10/2026, sổ nguồn tăng từ 44 lên 60 đơn vị và từ 11 lên 24 cặp đã ký.",
+  "54 nhu cầu đặt hàng công nghệ có nguồn từ 16 bên đặt hàng; 41 nhu cầu đã có đơn vị trong sổ nguồn có câu nguồn liên quan (gợi ý, chưa ký), 13 nhu cầu chưa có bên cung nào."
  ],
  "sanPham": [
   {
@@ -439,5 +440,125 @@
    "cach": "duyệt rồi mới tính là sự thật",
    "href": "/dashboard/thoi-cuoc"
   }
- ]
+ ],
+ "cauThat": {
+  "soNhuCau": 54,
+  "soBenDatHang": 16,
+  "coGoiY": 41,
+  "theoLoai": [
+   {
+    "loai": "nhiem_vu_khcn",
+    "ten": "Nhiệm vụ KH&CN đặt hàng",
+    "so": 10
+   },
+   {
+    "loai": "bai_toan_lon",
+    "ten": "Bài toán lớn",
+    "so": 19
+   },
+   {
+    "loai": "chuong_trinh",
+    "ten": "Chương trình, đề án",
+    "so": 20
+   },
+   {
+    "loai": "du_an_goi_thau",
+    "ten": "Dự án, gói thầu",
+    "so": 5
+   }
+  ],
+  "chuaCoBenCung": [
+   {
+    "ma": "mst-05",
+    "ten": "Nghiên cứu thiết kế, chế tạo và tích hợp hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": null
+   },
+   {
+    "ma": "mst-07",
+    "ten": "Nghiên cứu thiết kế và chế tạo hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa sử dụng trí tuệ nhân tạo (AI)",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "02"
+   },
+   {
+    "ma": "mst-08",
+    "ten": "Nghiên cứu thiết kế và chế tạo hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": null
+   },
+   {
+    "ma": "mst-10",
+    "ten": "Nghiên cứu xây dựng hệ thống tự động phát hiện, giám sát và cảnh báo một số sâu, bệnh chính gây hại trên cây chè dựa trên nền tảng Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "02"
+   },
+   {
+    "ma": "btl-08",
+    "ten": "Phát triển kinh tế dữ liệu",
+    "benDatHang": "UBND Thành phố Hà Nội",
+    "loaiTen": "Bài toán lớn",
+    "maSp": null
+   },
+   {
+    "ma": "btl-10",
+    "ten": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú",
+    "benDatHang": "UBND Thành phố Hà Nội",
+    "loaiTen": "Bài toán lớn",
+    "maSp": null
+   },
+   {
+    "ma": "btl-14",
+    "ten": "An ninh thông minh",
+    "benDatHang": "UBND Thành phố Hà Nội",
+    "loaiTen": "Bài toán lớn",
+    "maSp": "09"
+   },
+   {
+    "ma": "ctd-01",
+    "ten": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học",
+    "benDatHang": "Bộ Nông nghiệp và Môi trường",
+    "loaiTen": "Chương trình, đề án",
+    "maSp": "16"
+   },
+   {
+    "ma": "ctd-02",
+    "ten": "Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp",
+    "benDatHang": "Bộ Nông nghiệp và Môi trường",
+    "loaiTen": "Chương trình, đề án",
+    "maSp": "14"
+   },
+   {
+    "ma": "ctd-04",
+    "ten": "Chủ động nguồn vắc xin thế hệ mới dùng cho người",
+    "benDatHang": "Bộ Y tế",
+    "loaiTen": "Chương trình, đề án",
+    "maSp": "10"
+   },
+   {
+    "ma": "ctd-19",
+    "ten": "AI camera xử lý tại biên",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Chương trình, đề án",
+    "maSp": "02"
+   },
+   {
+    "ma": "ctd-23",
+    "ten": "Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên",
+    "benDatHang": "Ban Quản lý dự án đường Hồ Chí Minh",
+    "loaiTen": "Dự án, gói thầu",
+    "maSp": null
+   },
+   {
+    "ma": "ctd-24",
+    "ten": "dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương",
+    "benDatHang": "Ban Quản lý Đường sắt đô thị (MAUR)",
+    "loaiTen": "Dự án, gói thầu",
+    "maSp": "30"
+   }
+  ]
+ }
 }

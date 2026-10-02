@@ -107,10 +107,10 @@ export function CauThat() {
           Nhu cầu do người gác cổng duyệt theo lô; đơn vị đi kèm chỉ là gợi ý có dẫn chứng, chưa ký, không phải cặp ghép.
         </p>
         <div className="hd-vidu" role="group" aria-label="Lọc theo loại đặt hàng">
-          <button type="button" className="dt2-chip" aria-pressed={loai === 'tat_ca'} onClick={() => setLoai('tat_ca')}>Tất cả</button>
+          <button type="button" className="ct-loc" aria-pressed={loai === 'tat_ca'} onClick={() => setLoai('tat_ca')}>Tất cả</button>
           {Object.entries(TEN_LOAI).map(([k, t]) => (
-            <button key={k} type="button" className="dt2-chip" aria-pressed={loai === k} onClick={() => setLoai(k)}>{t}</button>))}
-          <button type="button" className="dt2-chip" aria-pressed={chiTrong} onClick={() => setChiTrong((v) => !v)}>Chỉ nhu cầu chưa có bên cung</button>
+            <button key={k} type="button" className="ct-loc" aria-pressed={loai === k} onClick={() => setLoai(k)}>{t}</button>))}
+          <button type="button" className="ct-loc" aria-pressed={chiTrong} onClick={() => setChiTrong((v) => !v)}>Chỉ nhu cầu chưa có bên cung</button>
         </div>
       </section>
       <section className="dash-panel ct-khoi" aria-label="Danh sách nhu cầu">
