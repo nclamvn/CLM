@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "f34c34c",
+    "sha": "704b670",
     "ngay": "2026-10-02"
   },
-  "tongCommit": 213,
+  "tongCommit": 214,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 64,
+      "commitSauGop": 65,
       "cuoi": {
-        "sha": "f34c34c",
+        "sha": "704b670",
         "ngay": "2026-10-02",
-        "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
+        "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
       },
       "soTep": 533
     }
@@ -84,6 +84,11 @@
     ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "704b670",
+      "ngay": "2026-10-02",
+      "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
+    },
     {
       "sha": "f34c34c",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "69fddd6",
       "ngay": "2026-10-01",
       "tieuDe": "Chu ky co kiem soat xung dot loi ich: domains/cncl_match/nguoi_ky.yaml (nguoi ky + don vi lien quan + so nguoi ky toi thieu), cong xung_dot_ky (NGUOI_KY_LA, KY_XUNG_DOT, THIEU_CHU_KY) + 4 rang; hien tai 0 vi pham, nguoi gac cong khong ky duoc cap co RtR; nang so toi thieu len 2 la bat luat hai nguoi ky. Trang Phuong phap giai thich."
-    },
-    {
-      "sha": "787f89c",
-      "ngay": "2026-10-01",
-      "tieuDe": "Tinh nang Ho so kiem toan duoc: moi ho so don vi co ma SHA-256 (lib/kiem-toan.mjs) cua cau nguon nguyen van + dau vet ban chup, nut tai tep JSON, cong cu doi chieu cho nguoi nhan (scripts/kiem-ho-so.mjs: KHOP/LECH, --ban-chup soi tung ban chup). Cong kiem_toan (KIEM_TOAN_LECH, BAN_CHUP_THIEU, DOI_CHIEU_HONG dau cuoi) + 5 rang."
     }
   ],
   "dong": [
