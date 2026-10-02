@@ -16,6 +16,7 @@
  * RANG 3 · module bo luat go dau dam -> CON_DAU.
  * RANG 4 · component hien thang {e.span} trong blockquote -> CAU_THO.
  * RANG 5 · module nuot noi dung lien ket ([FPT](url) -> rong) -> MAT_CHU.
+ * RANG 6 · (02/10/2026) module bo luat go dau nghieng (*Stemona tuberosa*) -> CON_DAU.
  *
  * Chay: node scripts/bite-hien-cau.mjs     Exit 0 moi rang can · 2 co rang khong can.
  */
@@ -33,7 +34,7 @@ const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(60)} : ${ok ? `CAN 
 const canh = () => {
   const t = mkdtempSync(join(tmpdir(), 'bite_hien_cau_')); tam.push(t);
   mkdirSync(join(t, 'lib')); mkdirSync(join(t, 'ui'));
-  for (const f of ['cncl-registry.json', 'hub-thoi-cuoc.json', 'hien-cau.mjs']) if (existsSync(join(LIB, f))) copyFileSync(join(LIB, f), join(t, 'lib', f));
+  for (const f of ['cncl-registry.json', 'hub-thoi-cuoc.json', 'cncl-cau-dat-hang.json', 'hien-cau.mjs']) if (existsSync(join(LIB, f))) copyFileSync(join(LIB, f), join(t, 'lib', f));
   writeFileSync(join(t, 'ui', 'Sach.tsx'), 'export const A = ({ e }) => <blockquote>{hienCau(e.span)}</blockquote>;\n');
   return t;
 };
@@ -54,6 +55,7 @@ try {
   thu('RANG 3 · bo luat go dam -> CON_DAU', 'CON_DAU', (t) => tiem(t, ".replace(/\\*\\*|__/g, '')", ''));
   thu('RANG 4 · component hien thang span -> CAU_THO', 'CAU_THO', (t) => { writeFileSync(join(t, 'ui', 'Tho.tsx'), 'export const B = ({ e }) => <blockquote>{e.span}</blockquote>;\n'); return true; });
   thu('RANG 5 · nuot chu cua lien ket -> MAT_CHU', 'MAT_CHU', (t) => tiem(t, ".replace(/\\[([^\\]]+)\\]\\([^)]*\\)/g, '$1')", ".replace(/\\[([^\\]]+)\\]\\([^)]*\\)/g, '')"));
+  thu('RANG 6 · bo luat go dau nghieng -> CON_DAU', 'CON_DAU', (t) => { const p = join(t, 'lib', 'hien-cau.mjs'); const g = readFileSync(p, 'utf8').split('\n'); const k = g.findIndex((l) => l.includes('// nghieng')); if (k < 0) return false; g.splice(k, 1); writeFileSync(p, g.join('\n')); return true; });
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

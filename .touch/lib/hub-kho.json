@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "8b6b995",
+    "sha": "4ace110",
     "ngay": "2026-10-02"
   },
-  "tongCommit": 211,
+  "tongCommit": 212,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 62,
+      "commitSauGop": 63,
       "cuoi": {
-        "sha": "8b6b995",
+        "sha": "4ace110",
         "ngay": "2026-10-02",
-        "tieuDe": "Sua do tren may that 22:44 (120/122): axe bat color-contrast 5 nut loc o trang Cau that (nut chua chon mo 0.4 kieu dt2-chip); doi sang nut ct-loc, trang thai chon bang nen va vien, chu luon du tuong phan. Bao cao khoang trong them muc 'Nhu cau dat hang that': dem theo loai, 41/54 co goi y (chua ky), bang 13 nhu cau chua co ben cung, dong tom tat; check-bao-cao them CAU_THAT_LECH (dem doc lap tren cncl-cau-dat-hang) + 2 rang."
+        "tieuDe": "Quet lai truy cap sau sua tuong phan Cau that, anh moc, ket qua chuoi tren may that"
       },
       "soTep": 533
     }
@@ -84,6 +84,11 @@
     ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "4ace110",
+      "ngay": "2026-10-02",
+      "tieuDe": "Quet lai truy cap sau sua tuong phan Cau that, anh moc, ket qua chuoi tren may that"
+    },
     {
       "sha": "8b6b995",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "6779516",
       "ngay": "2026-10-01",
       "tieuDe": "Tinh nang Bao cao khoang trong (/dashboard/bao-cao): bao cao dinh ky theo quy, in hoac luu PDF, sinh tu dong tu thi truong + mo dau + lich su git (lib/bao-cao.mjs): tom tat, 30 san pham va trang thai, san pham chi mot ben cung, nhom can uu tien, do tin cay so lieu, viec tiep. Cong bao_cao (BAO_CAO_LECH, SO_LECH dem doc lap tu registry/match/do thi, KY_SAI) + 4 rang. Nav them muc; truy cap quet them trang; chup_xem them anh."
-    },
-    {
-      "sha": "9c35bd9",
-      "ngay": "2026-10-01",
-      "tieuDe": "Lo 03 cau that (BAN NHAP, cho anh Lam duyet): 54 nhu cau dat hang cong nghe co nguon sau khi gop 6 cap trung (10 nhiem vu KH&CN dat hang cua Bo KH&CN, 19 bai toan lon Ha Noi/Bo Cong an/Bo Cong Thuong/Da Nang, 20 nhiem vu chuong trinh QD 808 va QD 2815, 5 du an goi thau), 34 honest-null; doi chieu doc lap 128/131 khop (3 chua tai lai duoc). Cong kiem_lo_cau.py (13 luat, gop trung bat buoc khai) + 11 rang; kiem_lo --tat-ca re nhanh LOAI_CAU. Bang duyet kem xem truoc don vi lien quan bang chinh may hoi dap (41/54 nhu cau da co don vi trong so nguon)."
     }
   ],
   "dong": [

@@ -39,13 +39,13 @@ function The({ n }: { n: NhuCau }) {
         {n.maSp && <span className="hs-chip" title={n.tenSp ?? undefined}>P{n.maSp}</span>}
         <span className={`pf-tier pf-tier--${n.bacCao}`}>hạng {n.bacCao}</span>
       </div>
-      <h3 className="ct-ten">{n.ten}</h3>
+      <h3 className="ct-ten">{hienCau(n.ten)}</h3>
       <dl className="ct-dl">
-        <div><dt>Bên đặt hàng</dt><dd>{n.benDatHang}</dd></div>
-        {n.doiTuong && <div><dt>Đối tượng</dt><dd>{n.doiTuong}</dd></div>}
-        {n.thoiHan && <div><dt>Thời hạn</dt><dd>{n.thoiHan}</dd></div>}
-        {n.kinhPhi && <div><dt>Kinh phí</dt><dd>{n.kinhPhi}</dd></div>}
-        {n.trangThai && <div><dt>Trạng thái</dt><dd>{n.trangThai}</dd></div>}
+        <div><dt>Bên đặt hàng</dt><dd>{hienCau(n.benDatHang)}</dd></div>
+        {n.doiTuong && <div><dt>Đối tượng</dt><dd>{hienCau(n.doiTuong)}</dd></div>}
+        {n.thoiHan && <div><dt>Thời hạn</dt><dd>{hienCau(n.thoiHan)}</dd></div>}
+        {n.kinhPhi && <div><dt>Kinh phí</dt><dd>{hienCau(n.kinhPhi)}</dd></div>}
+        {n.trangThai && <div><dt>Trạng thái</dt><dd>{hienCau(n.trangThai)}</dd></div>}
         {n.ngayBai && <div><dt>Nguồn đăng</dt><dd>{ngayVN(n.ngayBai)}</dd></div>}
       </dl>
       <details className="ct-nguon">
@@ -73,14 +73,17 @@ function The({ n }: { n: NhuCau }) {
                   <Link className="hd-dv__ten" href={`/dashboard/don-vi/${g.slug}`}>{g.dv}</Link>
                   {g.kyCho.length > 0 && <span className="ct-ky"> · đã có cặp được ký cho P{n.maSp} ({g.kyCho.join(', ')})</span>}
                   {g.trich && (
-                    <figure className="hd-trich">
-                      <blockquote>{hienCau(g.trich.span)}</blockquote>
-                      <figcaption>
-                        <span className={`pf-tier pf-tier--${g.trich.tier}`}>hạng {g.trich.tier}</span>
-                        <span>{g.trich.source}</span>
-                        <a className="pf-link" href={g.trich.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
-                      </figcaption>
-                    </figure>)}
+                    <details className="ct-trich">
+                      <summary>Câu nguồn năng lực · hạng {g.trich.tier} · {g.trich.source}</summary>
+                      <figure className="hd-trich">
+                        <blockquote>{hienCau(g.trich.span)}</blockquote>
+                        <figcaption>
+                          <span className={`pf-tier pf-tier--${g.trich.tier}`}>hạng {g.trich.tier}</span>
+                          <span>{g.trich.source}</span>
+                          <a className="pf-link" href={g.trich.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
+                        </figcaption>
+                      </figure>
+                    </details>)}
                 </li>))}
             </ul>)}
       </div>

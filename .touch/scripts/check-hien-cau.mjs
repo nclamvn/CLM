@@ -8,7 +8,9 @@
  * va khong duoc "lam dep" bang cach cat chu cua nguon.
  *
  * CONG KIEM:
- *   CON_DAU   ban doc con "**", "__", "](", "![" hay "#" dau cau.
+ *   CON_DAU   ban doc con "**", "__", "](", "![", "#" dau cau, hay dau nghieng *chu* (02/10/2026:
+ *             ten nhu cau mst-03 hien "*Stemona tuberosa*" tren man Cau that).
+ *             Tap kiem gom ca span lan VALUE cua nhu cau dat hang (man Cau that hien value).
  *   MAT_CHU   chu va so cua ban doc khac chu va so cua cau goc sau khi bo DIA CHI lien ket va TEN
  *             anh (phep bo nay cong tu lam, khong muon cua module).
  *   CAU_THO   mot component hien thang X.span cho nguoi doc (>{X.span}<, text={X.span},
@@ -36,6 +38,8 @@ const tc = existsSync(join(LIB, 'hub-thoi-cuoc.json')) ? JSON.parse(readFileSync
 const cau = new Set();
 for (const u of reg.units) for (const e of u.evidence) if (e.span) cau.add(e.span);
 for (const n of reg.needs) if (n.span) cau.add(n.span);
+const dh = existsSync(join(LIB, 'cncl-cau-dat-hang.json')) ? JSON.parse(readFileSync(join(LIB, 'cncl-cau-dat-hang.json'), 'utf8')) : { claims: [] };
+for (const c of dh.claims) { if (c.span) cau.add(c.span); if (c.value) cau.add(String(c.value)); }
 if (tc) JSON.stringify(tc, (k, v) => { if (k === 'span' && typeof v === 'string') cau.add(v); return v; });
 
 const chu = (s) => (s.normalize('NFC').match(/[\p{L}\p{N}]/gu) || []).join('');
@@ -44,11 +48,11 @@ const vi = []; let sua = 0;
 for (const s of cau) {
   const d = hienCau(s);
   if (d !== s) sua++;
-  if (/\*\*|__|\]\(|!\[/.test(d) || /^#/.test(d)) vi.push(`CON_DAU: "${d.slice(0, 80)}"`);
+  if (/\*\*|__|\]\(|!\[/.test(d) || /^#/.test(d) || /(^|[\s(])\*[^*\s][^*]*?\*(?=[\s).,;:]|$)/.test(d)) vi.push(`CON_DAU: "${d.slice(0, 80)}"`);
   if (chu(d) !== chu(boLienKet(s))) vi.push(`MAT_CHU: "${s.slice(0, 60)}" -> "${d.slice(0, 60)}"`);
 }
 
-const THO = [/>\{[\w?.]+\.span\}</, /text=\{[\w?.]+\.span\}/, /\$\{[\w?.]+\.span\}`\}/, /<ToDam span=\{[\w?.]+\.span\}/];
+const THO = [/>\{[\w?.]+\.span\}</, /<h3 className="ct-ten">\{n\.ten\}/, /text=\{[\w?.]+\.span\}/, /\$\{[\w?.]+\.span\}`\}/, /<ToDam span=\{[\w?.]+\.span\}/];
 const duyet = (d) => readdirSync(d).flatMap((f) => { const p = join(d, f); return statSync(p).isDirectory() ? duyet(p) : /\.tsx$/.test(f) ? [p] : []; });
 let soTep = 0;
 for (const d of QUET) {

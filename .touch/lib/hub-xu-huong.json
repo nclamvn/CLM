@@ -1,5 +1,5 @@
 {
- "sinhTu": "818c3ad",
+ "sinhTu": "4ace110",
  "diem": [
   {
    "ngay": "2026-09-01",
@@ -31,6 +31,13 @@
   },
   {
    "ngay": "2026-10-01",
+   "donVi": 60,
+   "cauNguon": 378,
+   "hangA": 120,
+   "matchDaKy": 24
+  },
+  {
+   "ngay": "2026-10-02",
    "donVi": 60,
    "cauNguon": 378,
    "hangA": 120,

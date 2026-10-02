@@ -1419,3 +1419,8 @@
 /* Bang nhu cau chua co ben cung trong Bao cao (02/10/2026): ten nhu cau dai, cho xuong dong thay vi day bang. */
 .dash-shell .bc-ct th[scope="row"], .dash-shell .bc-ct td { white-space: normal; text-align: left; vertical-align: top; }
 .dash-shell .bc-ct th[scope="row"] { min-width: 220px; }
+/* Cau that (02/10/2026): cau nguon cua goi y gap lai, trang 390px truoc dai 32.000px. */
+.dash-shell .ct-trich { margin: 2px 0 0; }
+.dash-shell .ct-trich summary { font-size: 12px; color: var(--color-text-secondary); cursor: pointer; }
+.dash-shell .ct-trich summary:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .ct-trich .hd-trich { margin-top: 6px; }

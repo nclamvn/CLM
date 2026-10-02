@@ -261,15 +261,18 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   # day va khong cong nao bat duoc. O nay chay ca hai nhanh bang thu muc gia.
   chay .touch      goc_duong_dan    "$TOUCH" 'TU KIEM GOC'        node scripts/goc.mjs --tu-kiem
   chay .touch      sinh_du_lieu_web "$TOUCH" 'REGISTRY:|FAIL:'   node scripts/gen-cncl-data.mjs
+  # Duong xu huong trang Tong quan (01/10/2026): doc lich su git cua hai file du lieu, toi commit
+  # cuoi cung cham chung (khong phai HEAD, de khong tu doi moi lan commit).
+  # THU TU (02/10/2026): phai chay TRUOC sinh_du_lieu_hub vi Bao cao khoang trong doc hub-xu-huong.
+  # Truoc day no chay sau, nen ngay nao co commit moi thi bao cao sinh tu xu huong cu va cong
+  # bao_cao do BAO_CAO_LECH (luot nhanh 02/10/2026 bat duoc). xu huong chi doc git, khong doc hub.
+  chay .touch      sinh_xu_huong    "$TOUCH" 'XU HUONG:|KHONG CHAY' node scripts/gen-xu-huong.mjs
   # Lop xuat du lieu dung chung cho cac man moi (29/09/2026): do thi, tim kiem, su kien. Doc
   # dau ra cua buoc tren nen phai chay SAU. Ngay sau no la cong so_sinh: moi so tren web phai
   # dem lai duoc tu du lieu, va khong so cong nao duoc go tay nhu "14 o xanh" tung nam o day.
   chay .touch      sinh_du_lieu_hub "$TOUCH" 'HUB:|FAIL'        node scripts/gen-hub-data.mjs
   # Trang Kho ma (29/09/2026): doc tu git tai HEAD; can lich su day du (CI: fetch-depth 0).
   chay .touch      sinh_du_lieu_kho "$TOUCH" 'KHO:|KHONG CHAY'  node scripts/gen-kho.mjs
-  # Duong xu huong trang Tong quan (01/10/2026): doc lich su git cua hai file du lieu, toi commit
-  # cuoi cung cham chung (khong phai HEAD, de khong tu doi moi lan commit).
-  chay .touch      sinh_xu_huong    "$TOUCH" 'XU HUONG:|KHONG CHAY' node scripts/gen-xu-huong.mjs
   chay .touch      bo_dau_viet      "$TOUCH" 'OK:|FAIL'         node scripts/viet.mjs --tu-kiem
   chay .touch      so_sinh          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-so-sinh.mjs
   # Pha P1 (29/09/2026): lop phu nguon va Cmd+K. tim_kiem: moi tai lieu tim ra bang ten co

@@ -16,6 +16,7 @@ export function hienCau(span) {
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')                 // anh: ![ten](dia-chi)
     .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')                // lien ket: [chu](dia-chi) -> chu
     .replace(/\*\*|__/g, '')                                // dam
+    .replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s).,;:]|$)/g, '$1$2') // nghieng: *Stemona tuberosa* (02/10/2026)
     .replace(/(^|\n)\s*#{1,6}\s+/g, '$1')                   // tieu de dau dong
     .replace(/(^|\n)\s*[-*+]\s+/g, '$1')                    // gach dau dong
     .replace(/\s+/g, ' ')
