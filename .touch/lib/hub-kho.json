@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "79f1235",
-    "ngay": "2026-10-01"
+    "sha": "8b6b995",
+    "ngay": "2026-10-02"
   },
-  "tongCommit": 209,
+  "tongCommit": 211,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 23,
+      "commitSauGop": 24,
       "cuoi": {
-        "sha": "9c35bd9",
+        "sha": "818c3ad",
         "ngay": "2026-10-01",
-        "tieuDe": "Lo 03 cau that (BAN NHAP, cho anh Lam duyet): 54 nhu cau dat hang cong nghe co nguon sau khi gop 6 cap trung (10 nhiem vu KH&CN dat hang cua Bo KH&CN, 19 bai toan lon Ha Noi/Bo Cong an/Bo Cong Thuong/Da Nang, 20 nhiem vu chuong trinh QD 808 va QD 2815, 5 du an goi thau), 34 honest-null; doi chieu doc lap 128/131 khop (3 chua tai lai duoc). Cong kiem_lo_cau.py (13 luat, gop trung bat buoc khai) + 11 rang; kiem_lo --tat-ca re nhanh LOAI_CAU. Bang duyet kem xem truoc don vi lien quan bang chinh may hoi dap (41/54 nhu cau da co don vi trong so nguon)."
+        "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
       },
-      "soTep": 388
+      "soTep": 420
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 51,
+      "commitSauGop": 52,
       "cuoi": {
-        "sha": "0b06b4a",
+        "sha": "818c3ad",
         "ngay": "2026-10-01",
-        "tieuDe": "Soi anh that va sua 3 loi hien thi, moi loi mot cong co rang: (1) dong thoi gian ho so de nhan (FPT, VNPT, NCS, 1Matrix): bo tri tach ra lib/dong-thoi-gian.mjs xep nhan theo hop bao, cong dong_thoi_gian do hinh hoc doc lap (NHAN_CHONG, NHAN_DE_CHAM, NHAN_TRAN, NHAN_AN_NHIEU, THIEU_DIEM) + 6 rang, cach cu bi cong bat 4 vu; (2) cau nguon hien dau markdown (**MiSmart**, [FPT](url)): lib/hien-cau.mjs chi go dau dinh dang, ban goc giu nguyen cho ma kiem toan, cong hien_cau (CON_DAU, MAT_CHU, CAU_THO) + 5 rang; (3) Bao cao 390px bi cat mep phai: luoi trang minmax(0,1fr), kiem-truy-cap do them TRAN KHUNG tung doan chu o 1440 va 390 kem tu kiem thuoc do tren mau dung san, check-truy-cap them TRAN_KHUNG, THIEU_DO_TRAN, THUOC_DO_HONG + 3 rang. Registry hien ket qua chuoi day du 112/112."
+        "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
       },
       "soTep": 148
     },
@@ -68,22 +68,32 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 60,
+      "commitSauGop": 62,
       "cuoi": {
-        "sha": "79f1235",
-        "ngay": "2026-10-01",
-        "tieuDe": "Quet lai truy cap kem do tran khung, anh moc, ket qua chuoi tren may that"
+        "sha": "8b6b995",
+        "ngay": "2026-10-02",
+        "tieuDe": "Sua do tren may that 22:44 (120/122): axe bat color-contrast 5 nut loc o trang Cau that (nut chua chon mo 0.4 kieu dt2-chip); doi sang nut ct-loc, trang thai chon bang nen va vien, chu luon du tuong phan. Bao cao khoang trong them muc 'Nhu cau dat hang that': dem theo loai, 41/54 co goi y (chua ky), bang 13 nhu cau chua co ben cung, dong tom tat; check-bao-cao them CAU_THAT_LECH (dem doc lap tren cncl-cau-dat-hang) + 2 rang."
       },
-      "soTep": 501
+      "soTep": 533
     }
   ],
   "oTheoKho": {
-    "CNCLData": 30,
+    "CNCLData": 34,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 21,
-    ".touch": 63
+    ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "8b6b995",
+      "ngay": "2026-10-02",
+      "tieuDe": "Sua do tren may that 22:44 (120/122): axe bat color-contrast 5 nut loc o trang Cau that (nut chua chon mo 0.4 kieu dt2-chip); doi sang nut ct-loc, trang thai chon bang nen va vien, chu luon du tuong phan. Bao cao khoang trong them muc 'Nhu cau dat hang that': dem theo loai, 41/54 co goi y (chua ky), bang 13 nhu cau chua co ben cung, dong tom tat; check-bao-cao them CAU_THAT_LECH (dem doc lap tren cncl-cau-dat-hang) + 2 rang."
+    },
+    {
+      "sha": "818c3ad",
+      "ngay": "2026-10-01",
+      "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
+    },
     {
       "sha": "79f1235",
       "ngay": "2026-10-01",
@@ -123,16 +133,6 @@
       "sha": "9c35bd9",
       "ngay": "2026-10-01",
       "tieuDe": "Lo 03 cau that (BAN NHAP, cho anh Lam duyet): 54 nhu cau dat hang cong nghe co nguon sau khi gop 6 cap trung (10 nhiem vu KH&CN dat hang cua Bo KH&CN, 19 bai toan lon Ha Noi/Bo Cong an/Bo Cong Thuong/Da Nang, 20 nhiem vu chuong trinh QD 808 va QD 2815, 5 du an goi thau), 34 honest-null; doi chieu doc lap 128/131 khop (3 chua tai lai duoc). Cong kiem_lo_cau.py (13 luat, gop trung bat buoc khai) + 11 rang; kiem_lo --tat-ca re nhanh LOAI_CAU. Bang duyet kem xem truoc don vi lien quan bang chinh may hoi dap (41/54 nhu cau da co don vi trong so nguon)."
-    },
-    {
-      "sha": "2baaefc",
-      "ngay": "2026-10-01",
-      "tieuDe": "Tinh nang Hoi dap co nguon (/dashboard/hoi-dap): hoi bang tieng Viet, tra loi bang cau nguon nguyen van chon bang truy hoi tat dinh (lib/hoi-dap.mjs: khai niem + dong nghia + tu ghep tu kho cum tu cua so nguon, nguong theo trong so), kem cap ghep da ky cho nhu cau duoc hoi, to dam tu khop, lien ket ?q=. Khong sinh chu; khong co nguon thi tu choi. Cong hoi_dap (CHI_MUC_LECH, TRICH_BIA, TRICH_LAC_DE, TU_CHOI_SAI, KHONG_TU_CHOI, CAU_CHUAN_HONG, DON_VI_LA) chay bo 14 cau chuan + 6 rang. Truy cap quet them 2 trang; chup_man buoc 4c chup anh xem. Can chay chup_man tren may that de lam moi truy_cap va anh moc."
-    },
-    {
-      "sha": "16e57c5",
-      "ngay": "2026-10-01",
-      "tieuDe": "Ket qua chuoi day du tren may that"
     }
   ],
   "dong": [

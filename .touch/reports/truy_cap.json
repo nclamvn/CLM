@@ -1,6 +1,6 @@
 {
- "van_tay": "a456ea135d90bea1",
- "luc": "2026-10-01T14:32:16.511Z",
+ "van_tay": "6801c55fc6268182",
+ "luc": "2026-10-02T02:54:57.367Z",
  "cong_cu": "axe-core",
  "tu_kiem_tran": {
   "tong": 5,
@@ -194,6 +194,20 @@
    }
   },
   "/dashboard/bao-cao": {
+   "http": 200,
+   "vi_pham": [],
+   "tran": {
+    "390": {
+     "so": 0,
+     "mau": []
+    },
+    "1440": {
+     "so": 0,
+     "mau": []
+    }
+   }
+  },
+  "/dashboard/cau-that": {
    "http": 200,
    "vi_pham": [],
    "tran": {

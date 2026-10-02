@@ -12,10 +12,10 @@
     "capCungCau": 67
   },
   "chuoiCong": {
-    "xanh": 116,
-    "tong": 116,
-    "dat": true,
-    "luc": "2026-10-01T21:34:24+0700",
+    "xanh": 120,
+    "tong": 122,
+    "dat": false,
+    "luc": "2026-10-01T22:44:04+0700",
     "nhanh": false
   },
   "diemYeu": {
@@ -212,5 +212,5 @@
       "href": "/dashboard/thoi-cuoc"
     }
   ],
-  "mocNgay": "2026-10-01"
+  "mocNgay": "2026-10-02"
 }
