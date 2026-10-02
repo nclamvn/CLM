@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "704b670",
+    "sha": "f1c7847",
     "ngay": "2026-10-02"
   },
-  "tongCommit": 214,
+  "tongCommit": 215,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,9 +68,9 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 65,
+      "commitSauGop": 66,
       "cuoi": {
-        "sha": "704b670",
+        "sha": "f1c7847",
         "ngay": "2026-10-02",
         "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
       },
@@ -84,6 +84,11 @@
     ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "f1c7847",
+      "ngay": "2026-10-02",
+      "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
+    },
     {
       "sha": "704b670",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "7c65cb3",
       "ngay": "2026-10-01",
       "tieuDe": "Lam moi anh moc, truy cap va ket qua chuoi tren may that"
-    },
-    {
-      "sha": "69fddd6",
-      "ngay": "2026-10-01",
-      "tieuDe": "Chu ky co kiem soat xung dot loi ich: domains/cncl_match/nguoi_ky.yaml (nguoi ky + don vi lien quan + so nguoi ky toi thieu), cong xung_dot_ky (NGUOI_KY_LA, KY_XUNG_DOT, THIEU_CHU_KY) + 4 rang; hien tai 0 vi pham, nguoi gac cong khong ky duoc cap co RtR; nang so toi thieu len 2 la bat luat hai nguoi ky. Trang Phuong phap giai thich."
     }
   ],
   "dong": [
