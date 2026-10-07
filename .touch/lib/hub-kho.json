@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "b96aa2b",
+    "sha": "e423899",
     "ngay": "2026-10-07"
   },
-  "tongCommit": 219,
+  "tongCommit": 220,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,11 +51,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 54,
+      "commitSauGop": 55,
       "cuoi": {
-        "sha": "18ad242",
+        "sha": "e423899",
         "ngay": "2026-10-07",
-        "tieuDe": "Dieu phoi mui nhon (anh Lam: 'trien khai ngay'): cong nghe so cho do thi Ha Noi, 12 bai toan lon, loai btl-07 (UAV, RtR la ben cung) va btl-11. So su kien CaoLocMatch/domains/dieu_phoi/su_kien.jsonl chi nguoi ghi (dieu_phoi.py kiem luat truoc khi ghi), noi chuoi SHA-256; cong dieu_phoi (CHUOI_GAY, SAI_THU_TU, XUNG_DOT, NGOAI_MUI, NGUOI_LA, KHONG_TRUNG_LAP...) + 10 rang. Man /dashboard/dieu-phoi: phieu vong doi, hang viec theo nguoi (17 viec: 14 xet ung vien, 3 tim ben cung), so su kien; cong dieu_phoi_web (VIEC_ROT, PHEU_THOI, SO_LECH dem doc lap...) + 8 rang. Phu thuoc: audit fix trong dong (next 15.5.27, source-map-js 1.2.2); go Tailwind (chi dung preflight + .sr-only) bang cach dong bang CSS no tung sinh vao styles/nen-tailwind.css, khong doi pixel; con lo hong braces qua eslint-config-next (khong co ban va) cho anh Lam quyet. MO_TA_DU_AN.md."
+        "tieuDe": "Soi QA va van hanh 07/10/2026, sua 4 diem: (1) chip kiem dinh tren trang dau va Tong quan ghi lan chay TRUOC (anh chup ghi 02/10, commit b96aa2b ghi lan do 122/126 du ma nguon da xanh): chuoi nay DONG DAU, chi khi xanh tron ven che do day du thi sinh lai du lieu web de ghi dung lan vua kiem; bite_hoan bat loi TOUCH chua dat trong canh thu, da sua. (2) Hang viec dieu phoi: moi dong co lenh ghi su kien dung loai, nhu cau, don vi, nguoi (cong dieu_phoi_web them LENH_SAI + rang); lien ket nhu cau sang Cau that (neo), don vi sang ho so; ten nguoi co dau. (3) Ung vien co cau nguon nang luc 'vi sao may goi y' ngay tai cho. (4) Tong quan dua hang viec dieu phoi len dau 'Viec can lam tiep'. Lenh ghi tu choi noi dung con '...' (THIEU_TRUONG + rang)."
       },
       "soTep": 153
     },
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 70,
+      "commitSauGop": 71,
       "cuoi": {
-        "sha": "b96aa2b",
+        "sha": "e423899",
         "ngay": "2026-10-07",
-        "tieuDe": "Quet lai truy cap kem man Dieu phoi, anh moc, ket qua chuoi tren may that"
+        "tieuDe": "Soi QA va van hanh 07/10/2026, sua 4 diem: (1) chip kiem dinh tren trang dau va Tong quan ghi lan chay TRUOC (anh chup ghi 02/10, commit b96aa2b ghi lan do 122/126 du ma nguon da xanh): chuoi nay DONG DAU, chi khi xanh tron ven che do day du thi sinh lai du lieu web de ghi dung lan vua kiem; bite_hoan bat loi TOUCH chua dat trong canh thu, da sua. (2) Hang viec dieu phoi: moi dong co lenh ghi su kien dung loai, nhu cau, don vi, nguoi (cong dieu_phoi_web them LENH_SAI + rang); lien ket nhu cau sang Cau that (neo), don vi sang ho so; ten nguoi co dau. (3) Ung vien co cau nguon nang luc 'vi sao may goi y' ngay tai cho. (4) Tong quan dua hang viec dieu phoi len dau 'Viec can lam tiep'. Lenh ghi tu choi noi dung con '...' (THIEU_TRUONG + rang)."
       },
       "soTep": 538
     }
@@ -84,6 +84,11 @@
     ".touch": 67
   },
   "ganDay": [
+    {
+      "sha": "e423899",
+      "ngay": "2026-10-07",
+      "tieuDe": "Soi QA va van hanh 07/10/2026, sua 4 diem: (1) chip kiem dinh tren trang dau va Tong quan ghi lan chay TRUOC (anh chup ghi 02/10, commit b96aa2b ghi lan do 122/126 du ma nguon da xanh): chuoi nay DONG DAU, chi khi xanh tron ven che do day du thi sinh lai du lieu web de ghi dung lan vua kiem; bite_hoan bat loi TOUCH chua dat trong canh thu, da sua. (2) Hang viec dieu phoi: moi dong co lenh ghi su kien dung loai, nhu cau, don vi, nguoi (cong dieu_phoi_web them LENH_SAI + rang); lien ket nhu cau sang Cau that (neo), don vi sang ho so; ten nguoi co dau. (3) Ung vien co cau nguon nang luc 'vi sao may goi y' ngay tai cho. (4) Tong quan dua hang viec dieu phoi len dau 'Viec can lam tiep'. Lenh ghi tu choi noi dung con '...' (THIEU_TRUONG + rang)."
+    },
     {
       "sha": "b96aa2b",
       "ngay": "2026-10-07",
@@ -128,11 +133,6 @@
       "sha": "8b6b995",
       "ngay": "2026-10-02",
       "tieuDe": "Sua do tren may that 22:44 (120/122): axe bat color-contrast 5 nut loc o trang Cau that (nut chua chon mo 0.4 kieu dt2-chip); doi sang nut ct-loc, trang thai chon bang nen va vien, chu luon du tuong phan. Bao cao khoang trong them muc 'Nhu cau dat hang that': dem theo loai, 41/54 co goi y (chua ky), bang 13 nhu cau chua co ben cung, dong tom tat; check-bao-cao them CAU_THAT_LECH (dem doc lap tren cncl-cau-dat-hang) + 2 rang."
-    },
-    {
-      "sha": "818c3ad",
-      "ngay": "2026-10-01",
-      "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
     }
   ],
   "dong": [
