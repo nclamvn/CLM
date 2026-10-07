@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "e423899",
+    "sha": "fb06c08",
     "ngay": "2026-10-07"
   },
-  "tongCommit": 220,
+  "tongCommit": 221,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,11 +68,11 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 71,
+      "commitSauGop": 72,
       "cuoi": {
-        "sha": "e423899",
+        "sha": "fb06c08",
         "ngay": "2026-10-07",
-        "tieuDe": "Soi QA va van hanh 07/10/2026, sua 4 diem: (1) chip kiem dinh tren trang dau va Tong quan ghi lan chay TRUOC (anh chup ghi 02/10, commit b96aa2b ghi lan do 122/126 du ma nguon da xanh): chuoi nay DONG DAU, chi khi xanh tron ven che do day du thi sinh lai du lieu web de ghi dung lan vua kiem; bite_hoan bat loi TOUCH chua dat trong canh thu, da sua. (2) Hang viec dieu phoi: moi dong co lenh ghi su kien dung loai, nhu cau, don vi, nguoi (cong dieu_phoi_web them LENH_SAI + rang); lien ket nhu cau sang Cau that (neo), don vi sang ho so; ten nguoi co dau. (3) Ung vien co cau nguon nang luc 'vi sao may goi y' ngay tai cho. (4) Tong quan dua hang viec dieu phoi len dau 'Viec can lam tiep'. Lenh ghi tu choi noi dung con '...' (THIEU_TRUONG + rang)."
+        "tieuDe": "Quet lai truy cap sau soi QA, anh moc, ket qua chuoi va dong dau tren may that"
       },
       "soTep": 538
     }
@@ -84,6 +84,11 @@
     ".touch": 67
   },
   "ganDay": [
+    {
+      "sha": "fb06c08",
+      "ngay": "2026-10-07",
+      "tieuDe": "Quet lai truy cap sau soi QA, anh moc, ket qua chuoi va dong dau tren may that"
+    },
     {
       "sha": "e423899",
       "ngay": "2026-10-07",
@@ -128,11 +133,6 @@
       "sha": "4ace110",
       "ngay": "2026-10-02",
       "tieuDe": "Quet lai truy cap sau sua tuong phan Cau that, anh moc, ket qua chuoi tren may that"
-    },
-    {
-      "sha": "8b6b995",
-      "ngay": "2026-10-02",
-      "tieuDe": "Sua do tren may that 22:44 (120/122): axe bat color-contrast 5 nut loc o trang Cau that (nut chua chon mo 0.4 kieu dt2-chip); doi sang nut ct-loc, trang thai chon bang nen va vien, chu luon du tuong phan. Bao cao khoang trong them muc 'Nhu cau dat hang that': dem theo loai, 41/54 co goi y (chua ky), bang 13 nhu cau chua co ben cung, dong tom tat; check-bao-cao them CAU_THAT_LECH (dem doc lap tren cncl-cau-dat-hang) + 2 rang."
     }
   ],
   "dong": [
