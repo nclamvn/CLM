@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "18ad242",
+    "sha": "7820d7b",
     "ngay": "2026-10-07"
   },
-  "tongCommit": 217,
+  "tongCommit": 218,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,13 +68,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 68,
+      "commitSauGop": 69,
       "cuoi": {
-        "sha": "18ad242",
+        "sha": "7820d7b",
         "ngay": "2026-10-07",
-        "tieuDe": "Dieu phoi mui nhon (anh Lam: 'trien khai ngay'): cong nghe so cho do thi Ha Noi, 12 bai toan lon, loai btl-07 (UAV, RtR la ben cung) va btl-11. So su kien CaoLocMatch/domains/dieu_phoi/su_kien.jsonl chi nguoi ghi (dieu_phoi.py kiem luat truoc khi ghi), noi chuoi SHA-256; cong dieu_phoi (CHUOI_GAY, SAI_THU_TU, XUNG_DOT, NGOAI_MUI, NGUOI_LA, KHONG_TRUNG_LAP...) + 10 rang. Man /dashboard/dieu-phoi: phieu vong doi, hang viec theo nguoi (17 viec: 14 xet ung vien, 3 tim ben cung), so su kien; cong dieu_phoi_web (VIEC_ROT, PHEU_THOI, SO_LECH dem doc lap...) + 8 rang. Phu thuoc: audit fix trong dong (next 15.5.27, source-map-js 1.2.2); go Tailwind (chi dung preflight + .sr-only) bang cach dong bang CSS no tung sinh vao styles/nen-tailwind.css, khong doi pixel; con lo hong braces qua eslint-config-next (khong co ban va) cho anh Lam quyet. MO_TA_DU_AN.md."
+        "tieuDe": "Go bo kiem loi Next (anh Lam chon 07/10/2026): eslint, eslint-config-next, .eslintrc.json; lo hong braces (muc cao, khong co ban va) chi den qua goi eslint-plugin-next cua Next. Kiem kieu TypeScript va cac cong cua chuoi giu nguyen; npm audit 0 lo hong. axe-core 4.12.1 nay khai TRUC TIEP trong devDependencies: truoc day kiem-truy-cap.mjs dung nho goi nay den gian tiep qua eslint, go eslint la mat (may that 07/10 bao truy_cap KHONG CHAY). Rang 3-4 cua phu_thuoc doi sang source-map-js 1.2.1."
       },
-      "soTep": 539
+      "soTep": 538
     }
   ],
   "oTheoKho": {
@@ -84,6 +84,11 @@
     ".touch": 67
   },
   "ganDay": [
+    {
+      "sha": "7820d7b",
+      "ngay": "2026-10-07",
+      "tieuDe": "Go bo kiem loi Next (anh Lam chon 07/10/2026): eslint, eslint-config-next, .eslintrc.json; lo hong braces (muc cao, khong co ban va) chi den qua goi eslint-plugin-next cua Next. Kiem kieu TypeScript va cac cong cua chuoi giu nguyen; npm audit 0 lo hong. axe-core 4.12.1 nay khai TRUC TIEP trong devDependencies: truoc day kiem-truy-cap.mjs dung nho goi nay den gian tiep qua eslint, go eslint la mat (may that 07/10 bao truy_cap KHONG CHAY). Rang 3-4 cua phu_thuoc doi sang source-map-js 1.2.1."
+    },
     {
       "sha": "18ad242",
       "ngay": "2026-10-07",
@@ -128,11 +133,6 @@
       "sha": "79f1235",
       "ngay": "2026-10-01",
       "tieuDe": "Quet lai truy cap kem do tran khung, anh moc, ket qua chuoi tren may that"
-    },
-    {
-      "sha": "7528c02",
-      "ngay": "2026-10-01",
-      "tieuDe": "Registry tren man hep (< 640px): bang bon cot thanh the xep chong (truong, gia tri, cap nguon + nguon), sua 166 doan chu bi cat ma phep do tran khung moi bat o 390px; can do lai tren may that."
     }
   ],
   "dong": [
