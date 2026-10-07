@@ -16,6 +16,7 @@ import { BangChung, useProof } from '@/components/proof/ProofLayer';
 import type { CnclEvidence } from '@/lib/cncl-registry';
 import { tenNguoi } from '@/lib/dinh-dang';
 import { xepDongThoiGian } from '@/lib/dong-thoi-gian.mjs';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 export type HoSo = {
   slug: string; ten: string; loaiHinh: string | null;
@@ -173,7 +174,7 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
         <p className={`hs-dd hs-dd--${hs.dinhDanh.trangThai}`}>
           <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M10 3 4.5 5v4.5c0 3.4 2.4 5.6 5.5 6.8 3.1-1.2 5.5-3.4 5.5-6.8V5z" /></svg>
           {hs.dinhDanh.trangThai === 'da_dinh_danh'
-            ? <>Đã định danh pháp nhân: mã số {hs.dinhDanh.maSo}{hs.dinhDanh.href && <> · <a className="pf-link" href={hs.dinhDanh.href} target="_blank" rel="noopener noreferrer">bản chụp</a></>}</>
+            ? <>Đã định danh pháp nhân: mã số {hs.dinhDanh.maSo}{hs.dinhDanh.href && <> · <MoBanChup href={hs.dinhDanh.href}>bản chụp</MoBanChup></>}</>
             : <><b>Chưa định danh pháp nhân.</b> Sổ nguồn chưa có mã số doanh nghiệp tra từ cổng thông tin chính thức; trang tổng hợp tư nhân không được dùng làm nguồn.</>}
         </p>
         {hs.tuKhai && (
@@ -181,7 +182,7 @@ export function HoSoDonVi({ hs, bangChung, meta }: { hs: HoSo; bangChung: CnclEv
             <span className="hs-tk__nhan">Tự khai, chưa đối chiếu cổng</span>
             {hs.tuKhai.tenPhapNhan && <span>Pháp nhân: <b>{hs.tuKhai.tenPhapNhan}</b></span>}
             {hs.tuKhai.maSo && <span>Mã số: <b className="hs-tk__ma">{hs.tuKhai.maSo}</b></span>}
-            <a className="pf-link" href={hs.tuKhai.href} target="_blank" rel="noopener noreferrer">bản chụp {hs.tuKhai.nguon}</a>
+            <MoBanChup href={hs.tuKhai.href}>bản chụp {hs.tuKhai.nguon}</MoBanChup>
           </p>)}
       </section>
 

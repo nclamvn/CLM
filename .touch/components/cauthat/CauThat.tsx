@@ -11,6 +11,7 @@ import { useMemo, useState } from 'react';
 import ct from '@/lib/hub-cau-that.json';
 import { hienCau } from '@/lib/hien-cau.mjs';
 import { ngayVN } from '@/lib/dinh-dang';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 type Nguon = { field: string; value: string; span: string; tier: string; source: string; href: string; extraction: string };
 type GoiY = { dv: string; slug: string; kyCho: string[]; khop: string[]; trich: { span: string; href: string; tier: string; source: string } | null };
@@ -57,7 +58,7 @@ function The({ n }: { n: NhuCau }) {
               <blockquote>{hienCau(x.span)}</blockquote>
               <span className="ct-nguon__chan">
                 <span className={`pf-tier pf-tier--${x.tier}`}>hạng {x.tier}</span> {x.source} ·{' '}
-                <a className="pf-link" href={x.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
+                <MoBanChup href={x.href} span={x.span} />
               </span>
             </li>))}
         </ul>
@@ -80,7 +81,7 @@ function The({ n }: { n: NhuCau }) {
                         <figcaption>
                           <span className={`pf-tier pf-tier--${g.trich.tier}`}>hạng {g.trich.tier}</span>
                           <span>{g.trich.source}</span>
-                          <a className="pf-link" href={g.trich.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
+                          <MoBanChup href={g.trich.href} span={g.trich.span} />
                         </figcaption>
                       </figure>
                     </details>)}

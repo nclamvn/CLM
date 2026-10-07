@@ -5,6 +5,7 @@ import { cnclUnits, cnclNeeds, type CnclUnit, type CnclEvidence } from '@/lib/cn
 import { ProofUnitButton, tenTruong, TEN_SP } from '@/components/proof/ProofLayer';
 import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
 import { hienCau } from '@/lib/hien-cau.mjs';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 /**
  * Tra cuu registry bang trinh duyet. Loc TUC THOI phia client tren 42 don vi / 200 evidence.
@@ -49,9 +50,9 @@ function EvidenceRow({ e }: { e: CnclEvidence }) {
       </td>
       <td><TierChip tier={e.tier} /></td>
       <td>
-        <a className="reg-src" href={e.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${hienCau(e.span)}`}>
+        <MoBanChup className="reg-src" href={e.href} span={e.span} title={`Câu làm bằng: ${hienCau(e.span)}`}>
           {e.source}
-        </a>
+        </MoBanChup>
       </td>
     </tr>
   );
@@ -273,9 +274,9 @@ export function RegistryBrowser() {
                   </td>
                   <td><TierChip tier={n.tier} /></td>
                   <td>
-                    <a className="reg-src" href={n.href} target="_blank" rel="noopener noreferrer" title={`Câu làm bằng: ${hienCau(n.span)}`}>
+                    <MoBanChup className="reg-src" href={n.href} span={n.span} title={`Câu làm bằng: ${hienCau(n.span)}`}>
                       {n.source}
-                    </a>
+                    </MoBanChup>
                   </td>
                 </tr>
               ))}

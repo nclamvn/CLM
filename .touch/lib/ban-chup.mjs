@@ -148,3 +148,36 @@ export function moiCauNguon(reg, mat) {
       .map((e) => ({ ai: `${m.id} · ${e.field}`, span: e.span, href: e.href }))),
   ];
 }
+
+/**
+ * Doc khoi dau cua ban chup (07/10/2026, cua so ban chup trong giao dien). Moi ban chup mo dau bang:
+ *   # SNAPSHOT · <ten mien> (<nhan tuy chon>) · captured YYYY-MM-DD via <cach chup>
+ *   # URL: <dia chi trang goc>
+ *   # Bai dang dd/mm/yyyy. Tier A. ...      (hoac "Hang de xuat A", hoac khong co ngay)
+ * Truong nao khong doc duoc thi tra null, KHONG doan. Khong sua ban chup.
+ * @param {string} tho
+ */
+export function docDauBanChup(tho) {
+  const dau = [];
+  for (const d of String(tho).split('\n')) { if (!d.trim().startsWith('#')) break; dau.push(d.trim()); }
+  const tim = (re) => { for (const d of dau) { const m = d.match(re); if (m) return m; } return null; };
+  const s = tim(/^#\s*SNAPSHOT\s*·\s*([^·(]+?)\s*(?:\(([^)]*)\))?\s*(?:·|$)/);
+  const c = tim(/captured\s+(\d{4}-\d{2}-\d{2})(?:\s+via\s+(.+?))?\s*$/);
+  const u = tim(/^#\s*URL:\s*(\S+)/);
+  const ng = tim(/(?:Bai dang|Bài đăng)\s+(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  const h = tim(/\b(?:Tier|Hang(?: de xuat)?|Hạng(?: đề xuất)?)\s+([ABC])\b/);
+  // Phan con lai cua khoi dau la ghi chu cua nguoi chup (ly do chup, ngay dang, hang de xuat...).
+  const ghiChu = dau.filter((d) => !/^#\s*SNAPSHOT/.test(d) && !/^#\s*URL:/.test(d) && !/^#\s*captured\s/.test(d))
+    .map((d) => d.replace(/^#+\s?/, '')).join('\n').replace(/^\s+|\s+$/g, '');
+  return {
+    tenMien: s ? s[1].trim() : null,
+    nhan: s && s[2] ? s[2].trim() : null,
+    ngayChup: c ? c[1] : null,
+    cachChup: c && c[2] ? c[2].trim() : null,
+    url: u ? u[1] : null,
+    ngayDang: ng ? `${ng[3]}-${ng[2].padStart(2, '0')}-${ng[1].padStart(2, '0')}` : null,
+    hang: h ? h[1] : null,
+    ghiChu,
+    soDongDau: dau.length,
+  };
+}

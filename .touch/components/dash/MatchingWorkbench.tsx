@@ -27,6 +27,7 @@ import { useProof } from '@/components/proof/ProofLayer';
 import { tenNguoi } from '@/lib/dinh-dang';
 import { tenNgan } from '@/lib/ten-ngan.mjs';
 import { hienCau } from '@/lib/hien-cau.mjs';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 type PhanRa = {
   tiLeGiao: number; soGiao: number; soTokenCau: number; quaNguong: boolean;
@@ -70,7 +71,7 @@ function Nguon({ e }: { e: MatchEvidence }) {
   return (
     <div className="mw2-nguon">
       <span className={`pf-tier pf-tier--${e.tier}`}>hạng {e.tier}</span>
-      <a className="pf-link" href={e.href} target="_blank" rel="noopener noreferrer">{e.source}</a>
+      <MoBanChup href={e.href} span={e.span}>{e.source}</MoBanChup>
       <span>{e.extraction === 'verbatim' ? 'trích nguyên văn' : 'giá trị chuẩn hoá từ câu nguồn'}</span>
     </div>
   );

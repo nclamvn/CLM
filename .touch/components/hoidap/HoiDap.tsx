@@ -16,6 +16,7 @@ import { khoaTim } from '@/lib/tim-kiem.mjs';
 import { tenTruong } from '@/components/proof/ProofLayer';
 import { tenNgan } from '@/lib/ten-ngan.mjs';
 import { hienCau } from '@/lib/hien-cau.mjs';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 type Trich = { span: string; href: string; tier: string; source: string; field: string; khop: string[] };
 type DonVi = { dv: string; slug: string; trich: Trich[]; kyCho: { match: string; nhuCau: string }[] };
@@ -106,7 +107,7 @@ export function HoiDap() {
                         <figcaption>
                           <span className={`pf-tier pf-tier--${t.tier}`}>hạng {t.tier}</span>
                           <span>{tenTruong(t.field)} · {t.source}</span>
-                          <a className="pf-link" href={t.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
+                          <MoBanChup href={t.href} span={t.span} />
                         </figcaption>
                       </figure>))}
                   </li>))}

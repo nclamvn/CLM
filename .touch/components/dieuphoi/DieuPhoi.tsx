@@ -7,6 +7,7 @@ import Link from 'next/link';
 import dp from '@/lib/hub-dieu-phoi.json';
 import { hienCau } from '@/lib/hien-cau.mjs';
 import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
+import { MoBanChup } from '@/components/proof/BanChup';
 
 type Viec = { loai: string; nhan: string; nhuCau: string; donVi: string | null; nguoi: string; han: string; quaHan: boolean; lenh: string | null };
 type UngVien = { dv: string; slug: string; nguon: string; trangThai: string; suKien: number[]; kyCho: string[]; trich: { span: string; href: string; tier: string; source: string } | null };
@@ -110,7 +111,7 @@ export function DieuPhoi() {
                             <summary>Vì sao máy gợi ý: câu nguồn năng lực · hạng {u.trich.tier} · {u.trich.source}</summary>
                             <figure className="hd-trich">
                               <blockquote>{hienCau(u.trich.span)}</blockquote>
-                              <figcaption><a className="pf-link" href={u.trich.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a></figcaption>
+                              <figcaption><MoBanChup href={u.trich.href} span={u.trich.span} /></figcaption>
                             </figure>
                           </details>)}
                       </li>))}

@@ -15,6 +15,8 @@
  *             anh (phep bo nay cong tu lam, khong muon cua module).
  *   CAU_THO   mot component hien thang X.span cho nguoi doc (>{X.span}<, text={X.span},
  *             title co ${X.span}, <ToDam span={X.span}) ma khong qua hienCau.
+ *   BAN_CHUP_TAB_MOI (07/10/2026) mot lien ket "ban chup" mo tab moi (target="_blank") thay vi dung
+ *             MoBanChup (cua so ban chup tren trang, anh Lam yeu cau).
  *
  * Chay: node scripts/check-hien-cau.mjs [--lib <dir>] [--mo-dun <hien-cau.mjs>] [--quet <dir,dir>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -59,7 +61,10 @@ for (const d of QUET) {
   if (!existsSync(d)) thoat3(`thieu thu muc quet ${d}`);
   for (const p of duyet(d)) {
     soTep++;
-    readFileSync(p, 'utf8').split('\n').forEach((dong, i) => { if (THO.some((r) => r.test(dong))) vi.push(`CAU_THO: ${relative(TOUCH, p)}:${i + 1}`); });
+    readFileSync(p, 'utf8').split('\n').forEach((dong, i) => {
+      if (THO.some((r) => r.test(dong))) vi.push(`CAU_THO: ${relative(TOUCH, p)}:${i + 1}`);
+      if (/<a\b[^>]*target="_blank"[^>]*>[^<]*bản chụp/i.test(dong)) vi.push(`BAN_CHUP_TAB_MOI: ${relative(TOUCH, p)}:${i + 1}`);
+    });
   }
 }
 

@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "fb06c08",
+    "sha": "49c44e6",
     "ngay": "2026-10-07"
   },
-  "tongCommit": 221,
+  "tongCommit": 222,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,9 +68,9 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 72,
+      "commitSauGop": 73,
       "cuoi": {
-        "sha": "fb06c08",
+        "sha": "49c44e6",
         "ngay": "2026-10-07",
         "tieuDe": "Quet lai truy cap sau soi QA, anh moc, ket qua chuoi va dong dau tren may that"
       },
@@ -84,6 +84,11 @@
     ".touch": 67
   },
   "ganDay": [
+    {
+      "sha": "49c44e6",
+      "ngay": "2026-10-07",
+      "tieuDe": "Quet lai truy cap sau soi QA, anh moc, ket qua chuoi va dong dau tren may that"
+    },
     {
       "sha": "fb06c08",
       "ngay": "2026-10-07",
@@ -128,11 +133,6 @@
       "sha": "f34c34c",
       "ngay": "2026-10-02",
       "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
-    },
-    {
-      "sha": "4ace110",
-      "ngay": "2026-10-02",
-      "tieuDe": "Quet lai truy cap sau sua tuong phan Cau that, anh moc, ket qua chuoi tren may that"
     }
   ],
   "dong": [

@@ -17,6 +17,7 @@
  * RANG 4 · component hien thang {e.span} trong blockquote -> CAU_THO.
  * RANG 5 · module nuot noi dung lien ket ([FPT](url) -> rong) -> MAT_CHU.
  * RANG 6 · (02/10/2026) module bo luat go dau nghieng (*Stemona tuberosa*) -> CON_DAU.
+ * RANG 7 · (07/10/2026) component mo ban chup o tab moi thay vi cua so tren trang -> BAN_CHUP_TAB_MOI.
  *
  * Chay: node scripts/bite-hien-cau.mjs     Exit 0 moi rang can · 2 co rang khong can.
  */
@@ -56,6 +57,7 @@ try {
   thu('RANG 4 · component hien thang span -> CAU_THO', 'CAU_THO', (t) => { writeFileSync(join(t, 'ui', 'Tho.tsx'), 'export const B = ({ e }) => <blockquote>{e.span}</blockquote>;\n'); return true; });
   thu('RANG 5 · nuot chu cua lien ket -> MAT_CHU', 'MAT_CHU', (t) => tiem(t, ".replace(/\\[([^\\]]+)\\]\\([^)]*\\)/g, '$1')", ".replace(/\\[([^\\]]+)\\]\\([^)]*\\)/g, '')"));
   thu('RANG 6 · bo luat go dau nghieng -> CON_DAU', 'CON_DAU', (t) => { const p = join(t, 'lib', 'hien-cau.mjs'); const g = readFileSync(p, 'utf8').split('\n'); const k = g.findIndex((l) => l.includes('// nghieng')); if (k < 0) return false; g.splice(k, 1); writeFileSync(p, g.join('\n')); return true; });
+  thu('RANG 7 · ban chup mo tab moi -> BAN_CHUP_TAB_MOI', 'BAN_CHUP_TAB_MOI', (t) => { writeFileSync(join(t, 'ui', 'Tab.tsx'), 'export const C = ({ e }) => <a className="pf-link" href={e.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>;\n'); return true; });
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

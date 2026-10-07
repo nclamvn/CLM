@@ -28,6 +28,7 @@ import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
 import { hienGiaTri } from '@/lib/hien-gia-tri.mjs';
 import { hienCau } from '@/lib/hien-cau.mjs';
 import tenJson from '@/lib/hub-ten.json';
+import { MoBanChup } from '@/components/proof/BanChup';
 export const TEN_SP = (tenJson as { sanPham: Record<string, string> }).sanPham;
 
 // ── Kieu du lieu ────────────────────────────────────────────────────────────
@@ -186,7 +187,7 @@ export function BangChung({ e, chiGhiChu = false, phu, them }: { e: Pick<CnclEvi
         <button type="button" className="pf-link" aria-expanded={mo} onClick={() => setMo((v) => !v)}>
           {mo ? 'Ẩn đoạn quanh câu' : 'Xem câu này nằm ở đâu trong bản chụp'}
         </button>
-        <a className="pf-link" href={e.href} target="_blank" rel="noopener noreferrer">Mở bản chụp</a>
+        <MoBanChup href={e.href} span={e.span} />
         <span className="pf-ev__ex">{e.extraction === 'verbatim' ? 'trích nguyên văn' : 'giá trị chuẩn hoá từ câu trên'}</span>
       </div>
       {mo && <CauTrongBanChup span={e.span} href={e.href} />}
@@ -331,7 +332,7 @@ function NoiDung({ muc, du, moMuc, dong }: { muc: Muc; du: Du; moMuc: (m: Muc) =
         </ul>)}
       {muc.khoa === 'snapshots' && (
         <ul className="pf-list">{[...new Set(du.units.flatMap((u) => u.evidence.map((e) => e.href)))].sort().map((h) => (
-          <li key={h}><a className="pf-row pf-row--a" href={h} target="_blank" rel="noopener noreferrer"><span className="pf-row__v">{h.replace('/evidence/', '')}</span></a></li>))}
+          <li key={h}><MoBanChup className="pf-row pf-row--a" href={h}><span className="pf-row__v">{h.replace('/evidence/', '')}</span></MoBanChup></li>))}
         </ul>)}
     </>
   );
