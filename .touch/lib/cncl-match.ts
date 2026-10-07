@@ -1,4 +1,4 @@
-// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-10-02 · KHONG sua tay.
+// AUTO-GENERATED boi scripts/gen-cncl-data.mjs · 2026-10-07 · KHONG sua tay.
 // Nguon: CaoLocMatch/out/matches.jsonl + signoff_ledger.jsonl
 // Sua o day se bi ghi de lan chay ke. Muon doi noi dung thi sua registry goc roi sinh lai.
 
@@ -31,7 +31,7 @@ export const matchMeta = {
   "tongChay": 24,
   "rule": "anchor_group_overlap_v2",
   "nguoiKy": "Lam Nguyen",
-  "generatedAt": "2026-10-02",
+  "generatedAt": "2026-10-07",
   "congThuc": {
     "wGiao": 0.7,
     "wTier": 0.2,

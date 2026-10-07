@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import '@/styles/nen-tailwind.css';
 import './globals.css';
 import '@/styles/touch-theme.css';
 import '@/styles/touch-portal.css';

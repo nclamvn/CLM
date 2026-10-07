@@ -23,6 +23,7 @@ const TRANG = [
   ['tong_quan', '/dashboard'],
   ['bao_cao', '/dashboard/bao-cao'],
   ['cau_that', '/dashboard/cau-that'],
+  ['dieu_phoi', '/dashboard/dieu-phoi'],
   ['ho_so_fpt', '/dashboard/don-vi/fpt'],
 ];
 mkdirSync(OUT, { recursive: true });

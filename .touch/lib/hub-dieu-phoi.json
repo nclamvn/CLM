@@ -1,0 +1,421 @@
+{
+ "meta": {
+  "ten": "Công nghệ số cho đô thị Hà Nội",
+  "batDau": "2026-10-07",
+  "moTa": "Các bài toán lớn của UBND Thành phố Hà Nội có đối tượng là hệ thống, nền tảng hay dữ liệu số.",
+  "mocNgay": "2026-10-07",
+  "nguoiGacCong": [
+   "Lam Nguyen"
+  ],
+  "nguoiGioiThieu": "Lam Nguyen",
+  "loaiTru": [
+   {
+    "ma": "btl-07",
+    "ten": "Kinh tế không gian tầm thấp",
+    "lyDo": "Kinh tế không gian tầm thấp (UAV, P22): RtR là bên cung trong mảng này, hub đứng ngoài để giữ trung lập."
+   },
+   {
+    "ma": "btl-11",
+    "ten": "Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi",
+    "lyDo": "Sản xuất thông minh và công nghệ lõi: thuộc công nghiệp chế tạo, không phải hạ tầng số đô thị."
+   }
+  ],
+  "soNhuCau": 12,
+  "soSuKien": 0,
+  "soViec": 17,
+  "soQuaHan": 0
+ },
+ "pheu": [
+  {
+   "buoc": "trong_mui",
+   "nhan": "Nhu cầu trong mũi nhọn",
+   "so": 12
+  },
+  {
+   "buoc": "co_ung_vien",
+   "nhan": "Có ứng viên trong sổ nguồn",
+   "so": 9
+  },
+  {
+   "buoc": "da_duyet",
+   "nhan": "Có ứng viên được duyệt",
+   "so": 0
+  },
+  {
+   "buoc": "da_gioi_thieu",
+   "nhan": "Đã giới thiệu",
+   "so": 0
+  },
+  {
+   "buoc": "quan_tam",
+   "nhan": "Có bên phản hồi quan tâm",
+   "so": 0
+  },
+  {
+   "buoc": "ket_qua",
+   "nhan": "Có kết quả (gặp, thí điểm, hợp đồng)",
+   "so": 0
+  }
+ ],
+ "nhuCau": [
+  {
+   "ma": "btl-01",
+   "ten": "bài toán về ùn tắc giao thông trong bối cảnh quỹ đất hạn chế",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "hệ thống giao thông thông minh, tích hợp dữ liệu thời gian thực, ứng dụng trí tuệ nhân tạo",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    },
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    },
+    {
+     "dv": "VinBigData",
+     "slug": "vinbigdata",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-02",
+   "ten": "bài toán về trật tự, vệ sinh đô thị và quản lý chất thải",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "các hệ thống giám sát thông minh",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty An ninh mạng Viettel",
+     "slug": "cong-ty-an-ninh-mang-viettel",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-03",
+   "ten": "Kiểm soát phát thải và phục hồi môi trường",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "hệ thống giám sát, định danh nguồn phát thải theo thời gian thực",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+     "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-04",
+   "ten": "Giải quyết ngập úng đô thị",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "hệ thống dự báo và cảnh báo sớm",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty cổ phần Health Care Center",
+     "slug": "cong-ty-co-phan-health-care-center",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-05",
+   "ten": "An toàn thực phẩm",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "hệ thống truy xuất nguồn gốc hiện đại và giám sát thông minh toàn chuỗi cung ứng",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty 1Matrix",
+     "slug": "cong-ty-1matrix",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-06",
+   "ten": "Quản trị không gian đa tầng",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "bản sao số (Digital Twin) để quản lý không gian đô thị theo thời gian thực",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-08",
+   "ten": "Phát triển kinh tế dữ liệu",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "nền tảng chia sẻ và giao dịch dữ liệu",
+   "dong": null,
+   "ungVien": []
+  },
+  {
+   "ma": "btl-09",
+   "ten": "Xây dựng hệ sinh thái nền tảng “Make in Hanoi”",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "\"hệ điều hành đô thị\" và các nền tảng số dùng chung",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+     "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    },
+    {
+     "dv": "VNPT Technology",
+     "slug": "vnpt-technology",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-10",
+   "ten": "Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "Metaverse, AR/VR",
+   "dong": null,
+   "ungVien": []
+  },
+  {
+   "ma": "btl-12",
+   "ten": "Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "AI và tự động hóa",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "FPT",
+     "slug": "fpt",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    },
+    {
+     "dv": "Tập đoàn Viettel",
+     "slug": "tap-doan-viettel",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    },
+    {
+     "dv": "VNPT",
+     "slug": "vnpt",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-13",
+   "ten": "Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "mô phỏng dữ liệu",
+   "dong": null,
+   "ungVien": [
+    {
+     "dv": "Viettel AI",
+     "slug": "viettel-ai",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": []
+    }
+   ]
+  },
+  {
+   "ma": "btl-14",
+   "ten": "An ninh thông minh",
+   "benDatHang": "UBND Thành phố Hà Nội",
+   "doiTuong": "hạ tầng số an toàn, tích hợp các công cụ phân tích, giám sát và cảnh báo sớm",
+   "dong": null,
+   "ungVien": []
+  }
+ ],
+ "viec": [
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-01",
+   "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-01",
+   "donVi": "VinBigData",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-01",
+   "donVi": "VNPT Technology",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-02",
+   "donVi": "Công ty An ninh mạng Viettel",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-03",
+   "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-04",
+   "donVi": "Công ty cổ phần Health Care Center",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-05",
+   "donVi": "Công ty 1Matrix",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-06",
+   "donVi": "Viettel AI",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-09",
+   "donVi": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-09",
+   "donVi": "VNPT Technology",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-12",
+   "donVi": "FPT",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-12",
+   "donVi": "Tập đoàn Viettel",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-12",
+   "donVi": "VNPT",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-13",
+   "donVi": "Viettel AI",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": false
+  },
+  {
+   "loai": "tim_ben_cung",
+   "nhan": "Tìm bên cung",
+   "nhuCau": "btl-08",
+   "donVi": null,
+   "nguoi": "Người làm giàu dữ liệu (lô mới)",
+   "han": "2026-11-06",
+   "quaHan": false
+  },
+  {
+   "loai": "tim_ben_cung",
+   "nhan": "Tìm bên cung",
+   "nhuCau": "btl-10",
+   "donVi": null,
+   "nguoi": "Người làm giàu dữ liệu (lô mới)",
+   "han": "2026-11-06",
+   "quaHan": false
+  },
+  {
+   "loai": "tim_ben_cung",
+   "nhan": "Tìm bên cung",
+   "nhuCau": "btl-14",
+   "donVi": null,
+   "nguoi": "Người làm giàu dữ liệu (lô mới)",
+   "han": "2026-11-06",
+   "quaHan": false
+  }
+ ],
+ "suKien": []
+}

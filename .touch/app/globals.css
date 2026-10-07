@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Lop nen Tailwind da dong bang thanh styles/nen-tailwind.css (07/10/2026), nap truoc file nay trong app/layout.tsx. */
 
 /*
   Token nen. Dong bo 1:1 voi design/reference_landing_hub.html (:root) va lib/tokens.ts.

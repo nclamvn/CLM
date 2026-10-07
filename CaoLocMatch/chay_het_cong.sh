@@ -310,6 +310,11 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      kiem_toan        "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-kiem-toan.mjs
   # Cau that (01/10/2026, lo 03): nhu cau khop domain da duyet; goi y don vi co cau nguon that, khong tu nhan da ky.
   chay .touch      cau_that         "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-cau-that.mjs
+  # Dieu phoi (07/10/2026, mui nhon cong nghe so do thi Ha Noi): so su kien chi ghi viec nguoi lam,
+  # noi chuoi bam, dung thu tu vong doi cap, khong xung dot loi ich. Dat SAU cau_that vi doc goi y
+  # ung vien tu hub-cau-that.json vua sinh (luat KHONG_TRUNG_LAP).
+  chay CaoLocMatch dieu_phoi        "$CLM"   'OK:|FAIL|KHONG CHAY' python3 check_dieu_phoi.py
+  chay .touch      dieu_phoi_web    "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-dieu-phoi.mjs
   # Dong thoi gian ho so (01/10/2026): nhan khong de nhau, khong de cham, khong tran; do hinh hoc doc lap.
   chay .touch      dong_thoi_gian   "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-dong-thoi-gian.mjs
   # Ban doc cau nguon (01/10/2026): go dau markdown nhung khong mat chu nguon; moi cho hien cau qua hienCau.
@@ -374,6 +379,8 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_bao_cao     "$TOUCH" 'BITE BAO CAO'      node scripts/bite-bao-cao.mjs
     chay .touch    rang_kiem_toan   "$TOUCH" 'BITE KIEM TOAN'    node scripts/bite-kiem-toan.mjs
     chay .touch    rang_cau_that    "$TOUCH" 'BITE CAU THAT'     node scripts/bite-cau-that.mjs
+    chay CaoLocMatch rang_dieu_phoi "$CLM"   'BITE DIEU PHOI|KHONG CHAY' python3 bite_dieu_phoi.py
+    chay .touch    rang_dieu_phoi_web "$TOUCH" 'BITE DIEU PHOI WEB|KHONG CHAY' node scripts/bite-dieu-phoi.mjs
     chay .touch    rang_dong_thoi_gian "$TOUCH" 'BITE DONG THOI GIAN' node scripts/bite-dong-thoi-gian.mjs
     chay .touch    rang_hien_cau    "$TOUCH" 'BITE HIEN CAU'     node scripts/bite-hien-cau.mjs
     chay .touch    rang_kho_ma      "$TOUCH" 'BITE KHO'          node scripts/bite-kho.mjs

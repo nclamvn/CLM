@@ -10,7 +10,7 @@ import { createHash } from 'node:crypto';
 export const TRANG_KIEM = [
   '/', '/dashboard', '/dashboard/thi-truong', '/dashboard/thoi-cuoc', '/dashboard/do-thi', '/dashboard/don-vi',
   '/dashboard/don-vi/trung-tam-vu-tru-viet-nam', '/dashboard/matching', '/dashboard/registry', '/dashboard/repos',
-  '/dashboard/phuong-phap', '/dashboard/bao-cao', '/dashboard/cau-that', '/dashboard/hoi-dap', '/dashboard/hoi-dap?q=Ai%20l%C3%A0m%20%C4%91%C6%B0%E1%BB%A3c%20UAV%3F',
+  '/dashboard/phuong-phap', '/dashboard/bao-cao', '/dashboard/cau-that', '/dashboard/dieu-phoi', '/dashboard/hoi-dap', '/dashboard/hoi-dap?q=Ai%20l%C3%A0m%20%C4%91%C6%B0%E1%BB%A3c%20UAV%3F',
 ];
 
 export function vanTayGiaoDien(touch) {

@@ -1,0 +1,31 @@
+# Mui nhon dieu phoi (07/10/2026). Anh Lam: "trien khai ngay" chien luoc hep va sau.
+#
+# VI SAO CO: hub dung o chu ky. 24 cap da ky nhung khong ai biet cap nao da duoc gioi thieu, da
+# gap hay ra ket qua. Mui nhon la noi dau tien hub khep vong: chon it nhu cau, theo tung cap tu
+# luc may goi y toi luc co ket qua that, do bang viec chu khong do bang so dong du lieu.
+#
+# CHON MUI: cong nghe so cho do thi Ha Noi (bai toan lon cua UBND TP Ha Noi). Ly do: cau that cu
+# the, ben cung da co trong so nguon, va RtR KHONG phai ben cung trong mang nay nen vai trung gian
+# dang tin. Cong check_dieu_phoi.py chan nhu cau nao co ung vien la don vi lien quan cua nguoi
+# gioi thieu hay nguoi duyet (KHONG_TRUNG_LAP).
+#
+# Doi mui, them bot nhu cau, doi nguoi: sua file nay qua commit co ghi ly do.
+ten: "Công nghệ số cho đô thị Hà Nội"
+bat_dau: "2026-10-07"
+mo_ta: "Các bài toán lớn của UBND Thành phố Hà Nội có đối tượng là hệ thống, nền tảng hay dữ liệu số."
+nhu_cau: [btl-01, btl-02, btl-03, btl-04, btl-05, btl-06, btl-08, btl-09, btl-10, btl-12, btl-13, btl-14]
+loai_tru:
+  btl-07: "Kinh tế không gian tầm thấp (UAV, P22): RtR là bên cung trong mảng này, hub đứng ngoài để giữ trung lập."
+  btl-11: "Sản xuất thông minh và công nghệ lõi: thuộc công nghiệp chế tạo, không phải hạ tầng số đô thị."
+# Nguoi duyet ung vien la nguoi gac cong (phai co trong domains/cncl_match/nguoi_ky.yaml).
+nguoi_gac_cong: [Lam Nguyen]
+# Nguoi gui loi gioi thieu thuc te. MAC DINH theo de xuat 07/10/2026; anh Lam doi khi chot nguoi
+# (vd mot nguoi phu trach kinh doanh). Phai co trong nguoi_ky.yaml de cong kiem xung dot loi ich.
+nguoi_gioi_thieu: Lam Nguyen
+# Han cua tung loai viec, tinh bang ngay ke tu moc gan nhat cua cap hay nhu cau.
+han_ngay:
+  xet_ung_vien: 7
+  gui_gioi_thieu: 7
+  cho_phan_hoi: 14
+  ghi_ket_qua: 45
+  tim_ben_cung: 30

@@ -32,7 +32,7 @@ import { khoaTim } from './viet.mjs';
 import { moiCauNguon, spanChiTrongGhiChu } from '../lib/ban-chup.mjs';
 import { dungBanDo, LOAI_CHEO } from '../lib/do-thi-ban-do.mjs';
 import { dungMaTran } from '../lib/do-thi-ma-tran.mjs';
-import { dungHoSo, docCauHinhDomain } from '../lib/ho-so.mjs';
+import { dungHoSo, docCauHinhDomain, slugDonVi } from '../lib/ho-so.mjs';
 import { dungThiTruong } from '../lib/thi-truong.mjs';
 import { dungMatching } from '../lib/matching.mjs';
 import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
@@ -40,6 +40,7 @@ import { dungMoDau } from '../lib/mo-dau.mjs';
 import { dungTenSp } from '../lib/hien-gia-tri.mjs';
 import { dungChiMuc, hoiDap, DONG_NGHIA } from '../lib/hoi-dap.mjs';
 import { dungCauThat } from '../lib/cau-that.mjs';
+import { docMuiNhon, dungDieuPhoi } from '../lib/dieu-phoi.mjs';
 import { dungBaoCao } from '../lib/bao-cao.mjs';
 import { dungHoSoKiemToan } from '../lib/kiem-toan.mjs';
 import { createHash } from 'node:crypto';
@@ -259,6 +260,13 @@ const DH_F = join(LIB, 'cncl-cau-dat-hang.json');
 const dh = existsSync(DH_F) ? JSON.parse(readFileSync(DH_F, 'utf8')) : { claims: [] };
 const cauThat = dungCauThat(dh, JSON.parse(JSON.stringify(chiMuc)), dungTenSp(reg.needs), hoiDap, DONG_NGHIA);
 writeFileSync(join(LIB, 'hub-cau-that.json'), JSON.stringify(cauThat, null, 1) + '\n', 'utf8');
+
+// ── Dieu phoi (07/10/2026): mui nhon + so su kien nguoi ghi -> phieu, hang viec, dong su kien ──
+const DP = env('CLM_KHO_MATCH') ? join(env('CLM_KHO_MATCH'), 'domains', 'dieu_phoi') : goc('CaoLocMatch', 'domains', 'dieu_phoi');
+if (!DP || !existsSync(join(DP, 'mui_nhon.yaml'))) { console.error('KHONG THAY domains/dieu_phoi/mui_nhon.yaml'); process.exit(2); }
+const suKienDp = existsSync(join(DP, 'su_kien.jsonl')) ? readFileSync(join(DP, 'su_kien.jsonl'), 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l)) : [];
+const dieuPhoi = dungDieuPhoi(docMuiNhon(readFileSync(join(DP, 'mui_nhon.yaml'), 'utf8')), suKienDp, cauThat, NOW, slugDonVi);
+writeFileSync(join(LIB, 'hub-dieu-phoi.json'), JSON.stringify(dieuPhoi, null, 1) + '\n', 'utf8');
 
 // ── Bao cao khoang trong (01/10/2026): doc thi truong, mo dau va lich su git cua xu huong ──
 const XH_F = join(LIB, 'hub-xu-huong.json');

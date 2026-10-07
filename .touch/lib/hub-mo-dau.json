@@ -15,7 +15,7 @@
     "xanh": 122,
     "tong": 122,
     "dat": true,
-    "luc": "2026-10-02T11:18:07+0700",
+    "luc": "2026-10-02T11:32:02+0700",
     "nhanh": false
   },
   "diemYeu": {
@@ -212,5 +212,5 @@
       "href": "/dashboard/thoi-cuoc"
     }
   ],
-  "mocNgay": "2026-10-02"
+  "mocNgay": "2026-10-07"
 }

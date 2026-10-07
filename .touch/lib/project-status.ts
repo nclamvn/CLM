@@ -22,6 +22,7 @@ export const nav = [
   { label: 'Tổng quan', href: '/dashboard' },
   { label: 'Hỏi đáp có nguồn', href: '/dashboard/hoi-dap' },
   { label: 'Cầu thật', href: '/dashboard/cau-that' },
+  { label: 'Điều phối', href: '/dashboard/dieu-phoi' },
   { label: 'Toàn cảnh thị trường', href: '/dashboard/thi-truong' },
   { label: 'Dòng thời cuộc', href: '/dashboard/thoi-cuoc' },
   { label: 'Đồ thị cung cầu', href: '/dashboard/do-thi' },

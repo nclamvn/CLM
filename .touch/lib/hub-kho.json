@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "f1c7847",
+    "sha": "60f77f2",
     "ngay": "2026-10-02"
   },
-  "tongCommit": 215,
+  "tongCommit": 216,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -68,9 +68,9 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 66,
+      "commitSauGop": 67,
       "cuoi": {
-        "sha": "f1c7847",
+        "sha": "60f77f2",
         "ngay": "2026-10-02",
         "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
       },
@@ -84,6 +84,11 @@
     ".touch": 65
   },
   "ganDay": [
+    {
+      "sha": "60f77f2",
+      "ngay": "2026-10-02",
+      "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
+    },
     {
       "sha": "f1c7847",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "0b06b4a",
       "ngay": "2026-10-01",
       "tieuDe": "Soi anh that va sua 3 loi hien thi, moi loi mot cong co rang: (1) dong thoi gian ho so de nhan (FPT, VNPT, NCS, 1Matrix): bo tri tach ra lib/dong-thoi-gian.mjs xep nhan theo hop bao, cong dong_thoi_gian do hinh hoc doc lap (NHAN_CHONG, NHAN_DE_CHAM, NHAN_TRAN, NHAN_AN_NHIEU, THIEU_DIEM) + 6 rang, cach cu bi cong bat 4 vu; (2) cau nguon hien dau markdown (**MiSmart**, [FPT](url)): lib/hien-cau.mjs chi go dau dinh dang, ban goc giu nguyen cho ma kiem toan, cong hien_cau (CON_DAU, MAT_CHU, CAU_THO) + 5 rang; (3) Bao cao 390px bi cat mep phai: luoi trang minmax(0,1fr), kiem-truy-cap do them TRAN KHUNG tung doan chu o 1440 va 390 kem tu kiem thuoc do tren mau dung san, check-truy-cap them TRAN_KHUNG, THIEU_DO_TRAN, THUOC_DO_HONG + 3 rang. Registry hien ket qua chuoi day du 112/112."
-    },
-    {
-      "sha": "7c65cb3",
-      "ngay": "2026-10-01",
-      "tieuDe": "Lam moi anh moc, truy cap va ket qua chuoi tren may that"
     }
   ],
   "dong": [
