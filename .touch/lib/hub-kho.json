@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "60f77f2",
-    "ngay": "2026-10-02"
+    "sha": "18ad242",
+    "ngay": "2026-10-07"
   },
-  "tongCommit": 216,
+  "tongCommit": 217,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -51,13 +51,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 53,
+      "commitSauGop": 54,
       "cuoi": {
-        "sha": "f34c34c",
-        "ngay": "2026-10-02",
-        "tieuDe": "Soi anh that man Cau that: ten nhu cau mst-03 hien '*Stemona tuberosa*' (dau nghieng markdown) va trang 390px dai 32.000px. hienCau go them dau nghieng, ap cho ca value cua nhu cau (ten, ben dat hang, doi tuong, han, kinh phi); check-hien-cau kiem ca value cau that + CON_DAU bat dau nghieng + 1 rang; cau nguon cua goi y gap vao details. Sua thu tu chuoi: sinh_xu_huong chay TRUOC sinh_du_lieu_hub vi bao cao doc xu huong; luot nhanh 02/10 bat BAO_CAO_LECH khi ngay moi co commit moi."
+        "sha": "18ad242",
+        "ngay": "2026-10-07",
+        "tieuDe": "Dieu phoi mui nhon (anh Lam: 'trien khai ngay'): cong nghe so cho do thi Ha Noi, 12 bai toan lon, loai btl-07 (UAV, RtR la ben cung) va btl-11. So su kien CaoLocMatch/domains/dieu_phoi/su_kien.jsonl chi nguoi ghi (dieu_phoi.py kiem luat truoc khi ghi), noi chuoi SHA-256; cong dieu_phoi (CHUOI_GAY, SAI_THU_TU, XUNG_DOT, NGOAI_MUI, NGUOI_LA, KHONG_TRUNG_LAP...) + 10 rang. Man /dashboard/dieu-phoi: phieu vong doi, hang viec theo nguoi (17 viec: 14 xet ung vien, 3 tim ben cung), so su kien; cong dieu_phoi_web (VIEC_ROT, PHEU_THOI, SO_LECH dem doc lap...) + 8 rang. Phu thuoc: audit fix trong dong (next 15.5.27, source-map-js 1.2.2); go Tailwind (chi dung preflight + .sr-only) bang cach dong bang CSS no tung sinh vao styles/nen-tailwind.css, khong doi pixel; con lo hong braces qua eslint-config-next (khong co ban va) cho anh Lam quyet. MO_TA_DU_AN.md."
       },
-      "soTep": 148
+      "soTep": 153
     },
     {
       "thuMuc": ".touch",
@@ -68,22 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 67,
+      "commitSauGop": 68,
       "cuoi": {
-        "sha": "60f77f2",
-        "ngay": "2026-10-02",
-        "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
+        "sha": "18ad242",
+        "ngay": "2026-10-07",
+        "tieuDe": "Dieu phoi mui nhon (anh Lam: 'trien khai ngay'): cong nghe so cho do thi Ha Noi, 12 bai toan lon, loai btl-07 (UAV, RtR la ben cung) va btl-11. So su kien CaoLocMatch/domains/dieu_phoi/su_kien.jsonl chi nguoi ghi (dieu_phoi.py kiem luat truoc khi ghi), noi chuoi SHA-256; cong dieu_phoi (CHUOI_GAY, SAI_THU_TU, XUNG_DOT, NGOAI_MUI, NGUOI_LA, KHONG_TRUNG_LAP...) + 10 rang. Man /dashboard/dieu-phoi: phieu vong doi, hang viec theo nguoi (17 viec: 14 xet ung vien, 3 tim ben cung), so su kien; cong dieu_phoi_web (VIEC_ROT, PHEU_THOI, SO_LECH dem doc lap...) + 8 rang. Phu thuoc: audit fix trong dong (next 15.5.27, source-map-js 1.2.2); go Tailwind (chi dung preflight + .sr-only) bang cach dong bang CSS no tung sinh vao styles/nen-tailwind.css, khong doi pixel; con lo hong braces qua eslint-config-next (khong co ban va) cho anh Lam quyet. MO_TA_DU_AN.md."
       },
-      "soTep": 533
+      "soTep": 539
     }
   ],
   "oTheoKho": {
     "CNCLData": 34,
     "Dataset_CongNgheChienLuoc": 2,
-    "CaoLocMatch": 21,
-    ".touch": 65
+    "CaoLocMatch": 23,
+    ".touch": 67
   },
   "ganDay": [
+    {
+      "sha": "18ad242",
+      "ngay": "2026-10-07",
+      "tieuDe": "Dieu phoi mui nhon (anh Lam: 'trien khai ngay'): cong nghe so cho do thi Ha Noi, 12 bai toan lon, loai btl-07 (UAV, RtR la ben cung) va btl-11. So su kien CaoLocMatch/domains/dieu_phoi/su_kien.jsonl chi nguoi ghi (dieu_phoi.py kiem luat truoc khi ghi), noi chuoi SHA-256; cong dieu_phoi (CHUOI_GAY, SAI_THU_TU, XUNG_DOT, NGOAI_MUI, NGUOI_LA, KHONG_TRUNG_LAP...) + 10 rang. Man /dashboard/dieu-phoi: phieu vong doi, hang viec theo nguoi (17 viec: 14 xet ung vien, 3 tim ben cung), so su kien; cong dieu_phoi_web (VIEC_ROT, PHEU_THOI, SO_LECH dem doc lap...) + 8 rang. Phu thuoc: audit fix trong dong (next 15.5.27, source-map-js 1.2.2); go Tailwind (chi dung preflight + .sr-only) bang cach dong bang CSS no tung sinh vao styles/nen-tailwind.css, khong doi pixel; con lo hong braces qua eslint-config-next (khong co ban va) cho anh Lam quyet. MO_TA_DU_AN.md."
+    },
     {
       "sha": "60f77f2",
       "ngay": "2026-10-02",
@@ -128,11 +133,6 @@
       "sha": "7528c02",
       "ngay": "2026-10-01",
       "tieuDe": "Registry tren man hep (< 640px): bang bon cot thanh the xep chong (truong, gia tri, cap nguon + nguon), sua 166 doan chu bi cat ma phep do tran khung moi bat o 390px; can do lai tren may that."
-    },
-    {
-      "sha": "0b06b4a",
-      "ngay": "2026-10-01",
-      "tieuDe": "Soi anh that va sua 3 loi hien thi, moi loi mot cong co rang: (1) dong thoi gian ho so de nhan (FPT, VNPT, NCS, 1Matrix): bo tri tach ra lib/dong-thoi-gian.mjs xep nhan theo hop bao, cong dong_thoi_gian do hinh hoc doc lap (NHAN_CHONG, NHAN_DE_CHAM, NHAN_TRAN, NHAN_AN_NHIEU, THIEU_DIEM) + 6 rang, cach cu bi cong bat 4 vu; (2) cau nguon hien dau markdown (**MiSmart**, [FPT](url)): lib/hien-cau.mjs chi go dau dinh dang, ban goc giu nguyen cho ma kiem toan, cong hien_cau (CON_DAU, MAT_CHU, CAU_THO) + 5 rang; (3) Bao cao 390px bi cat mep phai: luoi trang minmax(0,1fr), kiem-truy-cap do them TRAN KHUNG tung doan chu o 1440 va 390 kem tu kiem thuoc do tren mau dung san, check-truy-cap them TRAN_KHUNG, THIEU_DO_TRAN, THUOC_DO_HONG + 3 rang. Registry hien ket qua chuoi day du 112/112."
     }
   ],
   "dong": [

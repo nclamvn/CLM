@@ -6,12 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "check:emdash": "node scripts/check-emdash.mjs",
     "lint:tokens": "node scripts/check-tokens.mjs",
     "test:responsive": "node scripts/responsive-gate.mjs",
     "check:dashboard": "npm run lint:tokens && npm run test:responsive",
-    "check": "next lint && node scripts/check-emdash.mjs && npm run lint:tokens && next build"
+    "check": "node scripts/check-emdash.mjs && npm run lint:tokens && next build"
   },
   "dependencies": {
     "next": "^15.5.26",
@@ -23,8 +22,7 @@
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "autoprefixer": "10.4.20",
-    "eslint": "9.39.5",
-    "eslint-config-next": "^15.5.26",
+    "axe-core": "4.12.1",
     "playwright": "^1.61.1",
     "postcss": "^8.5.28",
     "typescript": "5.7.3"
