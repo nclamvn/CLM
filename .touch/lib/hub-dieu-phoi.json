@@ -70,21 +70,39 @@
      "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ.",
+      "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     },
     {
      "dv": "VNPT Technology",
      "slug": "vnpt-technology",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Theo Biên bản ghi nhớ, hai bên sẽ phối hợp nghiên cứu và phát triển các công nghệ phục vụ chuyển đổi số trong sản xuất, bao gồm ứng dụng robot tự hành và các giải pháp tự động hóa trong nhà máy; nghiên cứu AI, IoT và cơ điện tử; phát triển các sản phẩm ODM/OEM trong lĩnh vực điện tử - viễn thông; đồng thời số hóa dữ liệu và ứng dụng AI phục vụ nhà máy thông minh cũng như nghiên cứu khoa học.",
+      "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     },
     {
      "dv": "VinBigData",
      "slug": "vinbigdata",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [
+      "MATCH-0016"
+     ],
+     "trich": null
     }
    ]
   },
@@ -100,7 +118,14 @@
      "slug": "cong-ty-an-ninh-mang-viettel",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Hiện tại các sản phẩm của Công ty An ninh mạng Viettel tập trung ở các sản phẩm như: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng. Và các nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty.",
+      "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     }
    ]
   },
@@ -116,7 +141,14 @@
      "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Hệ sinh thái được thiết kế dựa trên sự kết hợp giữa công nghệ giám sát hiện đại, kinh nghiệm thực tiễn, trí tuệ nhân tạo và dữ liệu tình báo an ninh mạng, hình thành hệ thống bảo vệ đa lớp hiệu quả. Các sản phẩm trong Hệ sinh thái được định hướng xây dựng tuân theo các tiêu chuẩn quốc tế và Việt Nam, do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ.",
+      "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     }
    ]
   },
@@ -132,7 +164,14 @@
      "slug": "cong-ty-co-phan-health-care-center",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Đây là sản phẩm do Công ty cổ phần Health Care Center phát triển được giới thiệu như một giải pháp hỗ trợ sàng lọc sức khỏe ban đầu, hướng tới cảnh báo sớm nguy cơ đột quỵ, bệnh tim mạch, tiểu đường và tăng huyết áp.",
+      "href": "/evidence/mst_robot_makeinvn_20251230.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     }
    ]
   },
@@ -148,7 +187,11 @@
      "slug": "cong-ty-1matrix",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [
+      "MATCH-0011"
+     ],
+     "trich": null
     }
    ]
   },
@@ -164,7 +207,11 @@
      "slug": "viettel-ai",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "trich": null
     }
    ]
   },
@@ -188,14 +235,28 @@
      "slug": "cong-ty-co-phan-cong-nghe-truyen-thong-viet-nam-vntt",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Mọi thứ bắt đầu khi VNTT (thành viên của Tổng Công ty Becamex IDC và Tập đoàn VNPT) tiếp cận chúng tôi và đề nghị hỗ trợ chuyển đổi phát triển công nghiệp bằng nền tảng Beca Smart Factory, Beca Smart City do Becamex và VNTT xây dựng và làm chủ.",
+      "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     },
     {
      "dv": "VNPT Technology",
      "slug": "vnpt-technology",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Trên nền tảng công nghệ của Qualcomm, VNPT Technology đã và đang phát triển và sản xuất các thiết bị truy nhập băng rộng cố định không dây dành cho các hộ gia đình, cho doanh nghiệp và cho các đô thị thông minh.",
+      "href": "/evidence/mst_vnpttech_5g_20220831.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     }
    ]
   },
@@ -219,21 +280,42 @@
      "slug": "fpt",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Hệ sinh thái AI Agents hiện xử lý hơn 17 triệu cuộc gọi mỗi tháng và tự động hóa tới 98% yêu cầu khách hàng, giúp nhiều doanh nghiệp tăng đến 20% doanh thu từ kênh telesales.",
+      "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     },
     {
      "dv": "Tập đoàn Viettel",
      "slug": "tap-doan-viettel",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Tại sự kiện, FPT ký kết hàng loạt thỏa thuận với các đối tác công nghệ trong lĩnh vực bán dẫn tại Việt Nam và quốc tế, như hợp tác toàn diện với Viettel trong hoạt động xây dựng năng lực tự chủ về công nghệ bán dẫn thông qua việc liên thông chuỗi giá trị ngành công nghệ bán dẫn: Đào tạo - Thiết kế - Chế tạo - Kiểm thử - Đóng gói - Thương mại, trọng tâm là cùng phát triển dòng chip SoC AI on Edge trên tiến trình 28-32 nm cho hệ sinh thái thiết bị camera, drone, thiết bị bay không người lái (UAV); các thiết bị thông minh.",
+      "href": "/evidence/mst_fpt_nhamay_20260128.txt",
+      "tier": "A",
+      "source": "mst.gov.vn"
+     }
     },
     {
      "dv": "VNPT",
      "slug": "vnpt",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Các trợ lý AI của VNPT AI đã và đang hoạt động hiệu quả trong thực tiễn, phục vụ hơn 1,2 tỷ lượt yêu cầu trong toàn mạng",
+      "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
+      "tier": "B",
+      "source": "vneconomy.vn"
+     }
     }
    ]
   },
@@ -249,7 +331,11 @@
      "slug": "viettel-ai",
      "nguon": "may",
      "trangThai": "cho_xet",
-     "suKien": []
+     "suKien": [],
+     "kyCho": [
+      "MATCH-0001"
+     ],
+     "trich": null
     }
    ]
   },
@@ -270,7 +356,8 @@
    "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -279,7 +366,8 @@
    "donVi": "VinBigData",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"VinBigData\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -288,7 +376,8 @@
    "donVi": "VNPT Technology",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"VNPT Technology\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -297,7 +386,8 @@
    "donVi": "Công ty An ninh mạng Viettel",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-02 --don-vi \"Công ty An ninh mạng Viettel\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -306,7 +396,8 @@
    "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-03 --don-vi \"Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -315,7 +406,8 @@
    "donVi": "Công ty cổ phần Health Care Center",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-04 --don-vi \"Công ty cổ phần Health Care Center\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -324,7 +416,8 @@
    "donVi": "Công ty 1Matrix",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-05 --don-vi \"Công ty 1Matrix\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -333,7 +426,8 @@
    "donVi": "Viettel AI",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-06 --don-vi \"Viettel AI\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -342,7 +436,8 @@
    "donVi": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-09 --don-vi \"Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -351,7 +446,8 @@
    "donVi": "VNPT Technology",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-09 --don-vi \"VNPT Technology\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -360,7 +456,8 @@
    "donVi": "FPT",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"FPT\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -369,7 +466,8 @@
    "donVi": "Tập đoàn Viettel",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"Tập đoàn Viettel\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -378,7 +476,8 @@
    "donVi": "VNPT",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"VNPT\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -387,7 +486,8 @@
    "donVi": "Viettel AI",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-13 --don-vi \"Viettel AI\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "tim_ben_cung",
@@ -396,7 +496,8 @@
    "donVi": null,
    "nguoi": "Người làm giàu dữ liệu (lô mới)",
    "han": "2026-11-06",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": null
   },
   {
    "loai": "tim_ben_cung",
@@ -405,7 +506,8 @@
    "donVi": null,
    "nguoi": "Người làm giàu dữ liệu (lô mới)",
    "han": "2026-11-06",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": null
   },
   {
    "loai": "tim_ben_cung",
@@ -414,7 +516,8 @@
    "donVi": null,
    "nguoi": "Người làm giàu dữ liệu (lô mới)",
    "han": "2026-11-06",
-   "quaHan": false
+   "quaHan": false,
+   "lenh": null
   }
  ],
  "suKien": []

@@ -20,6 +20,7 @@
  * RANG 6 · mui_nhon.yaml them nhu cau ma file khong doi -> SO_LECH.
  * RANG 7 · giao dien bo chu "chỉ người ghi" -> NHAN_THIEU.
  * RANG 8 · buoc sau cua phieu lon hon buoc truoc -> PHEU_NGUOC.
+ * RANG 9 · (07/10/2026) lenh ghi kem viec xet ung vien tro sai don vi -> LENH_SAI.
  *
  * Chay: node scripts/bite-dieu-phoi.mjs     Exit 0 moi rang can · 2 co rang khong can · 3 KHONG CHAY DUOC.
  */
@@ -89,6 +90,9 @@ try {
     if (!s.includes('chỉ người ghi')) throw new Error('khong co chu de go');
     writeFileSync(p, s.split('chỉ người ghi').join('được ghi'));
   });
+  await thu('RANG 9 · lenh ghi tro sai don vi -> LENH_SAI', 'LENH_SAI', (t) => doi(t, (x) => {
+    const v = x.viec.find((q) => q.loai === 'xet_ung_vien'); if (!v) throw new Error('khong co viec xet'); v.lenh = v.lenh.replace(`"${v.donVi}"`, '"Don vi khac"');
+  }));
   await thu('RANG 8 · buoc sau lon hon buoc truoc -> PHEU_NGUOC', 'PHEU_NGUOC', (t) => doi(t, (x) => { x.pheu[2].so = x.pheu[1].so + 1; }));
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });

@@ -439,6 +439,23 @@ mkdir -p "$CLM/out"
     "$(date '+%Y-%m-%dT%H:%M:%S%z')" "$([ "$NHANH" -eq 1 ] && echo nhanh || echo day_du)" \
     "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN" "$(echo $DS_HOAN)"
 } > "$CLM/out/ket_qua_chuoi.json.tmp" && mv "$CLM/out/ket_qua_chuoi.json.tmp" "$CLM/out/ket_qua_chuoi.json"
+
+# DONG DAU (07/10/2026): trang web sinh GIUA chuoi nen chi biet lan chay TRUOC. Soi QA 07/10: lan
+# 09:51 do (122/126), lan 09:58 xanh va duoc push, nhung trang web trong commit day van ghi "122/126,
+# khong dat" cua lan truoc; anh chup luc chup_man con ghi lan 02/10. Trang dang trinh nha dau tu
+# noi sai trang thai cua chinh ma nguon no dung.
+# Nay: CHI KHI lan nay XANH TRON VEN o che do day du, sinh lai du lieu web (tat dinh, cung dau vao)
+# de meta.chuoiCong ghi DUNG lan chay vua kiem commit nay. Lan do hay --nhanh thi KHONG dong dau:
+# trang van ghi lan truoc kem thoi diem, khong ai duoc ghi "dat" thay cho mot lan chua dat.
+# Khong co bo sinh web (canh thu cua bite_hoan, kho chi co du lieu) thi KHONG co gi de dong dau.
+if [ "$DO" -eq 0 ] && [ "$TREO" -eq 0 ] && [ "$NHANH" -eq 0 ] && [ -n "${TOUCH:-}" ] && [ -f "${TOUCH:-}/scripts/gen-cncl-data.mjs" ]; then
+  if ( cd "$TOUCH" && node scripts/gen-cncl-data.mjs >/dev/null && node scripts/gen-hub-data.mjs >/dev/null ); then
+    echo "DONG DAU: trang web ghi lan chay nay ($XANH/$TONG xanh) vao lib/, commit kem theo."
+  else
+    echo "DONG DAU THAT BAI: trang web van ghi lan chay truoc; chay lai chuoi."
+    exit 1
+  fi
+fi
 echo
 echo "CAOLOCMATCH · CHUOI CONG · $(date '+%d/%m/%Y %H:%M')"
 [ "$NHANH" -eq 1 ] && echo "che do --nhanh: DA BO QUA ba bo rang, ket qua nay YEU hon ban day du"

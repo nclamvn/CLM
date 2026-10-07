@@ -32,7 +32,7 @@ const TEN_TRUONG: Record<string, string> = {
 
 function The({ n }: { n: NhuCau }) {
   return (
-    <li className="ct-the">
+    <li className="ct-the" id={n.ma}>
       <div className="ct-the__dau">
         <span className="ct-ma">{n.ma}</span>
         <span className="hs-chip">{n.loaiTen}</span>

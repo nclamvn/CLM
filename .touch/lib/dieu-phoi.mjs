@@ -25,6 +25,21 @@ export const TEN_VIEC = {
 };
 const KQ_TOT = new Set(['gap', 'thi_diem', 'hop_dong']);
 
+/**
+ * Lenh ghi su kien ma nguoi phu trach chay SAU KHI da lam viec that (02/10 soi QA: hang viec chi noi
+ * "xet ung vien" ma khong noi xet xong thi ghi the nao, nguoi van hanh phai tu nho cu phap).
+ * Viec "tim ben cung" khong co lenh ghi: no ket thuc bang mot lo lam giau moi, khong phai su kien.
+ */
+export function lenhGhi(loai, nhuCau, donVi, nguoi) {
+  const q = (x) => `"${String(x).replace(/"/g, '\\"')}"`;
+  const goc = (l, them = '') => `python3 dieu_phoi.py ${l} --nhu-cau ${nhuCau}${donVi ? ` --don-vi ${q(donVi)}` : ''} --nguoi ${q(nguoi)}${them} --noi-dung "..." --ghi`;
+  if (loai === 'xet_ung_vien') return goc('duyet_ung_vien');
+  if (loai === 'gui_gioi_thieu') return goc('gioi_thieu');
+  if (loai === 'cho_phan_hoi') return goc('phan_hoi', ' --ben cung --y quan_tam');
+  if (loai === 'ghi_ket_qua') return goc('ket_qua', ' --ket-qua gap');
+  return null;
+}
+
 /** Doc mui_nhon.yaml theo dung khuon da khai (khong keo thu vien YAML). Thieu khoa thi nem loi. */
 export function docMuiNhon(text) {
   const t = String(text);
@@ -70,7 +85,8 @@ const congNgay = (luc, n) => {
 export function dungDieuPhoi(cfg, suKien, cauThat, mocNgay, slug) {
   const ncCua = new Map(cauThat.nhuCau.map((n) => [n.ma, n]));
   const viec = [];
-  const them = (loai, nhuCau, donVi, nguoi, han) => viec.push({ loai, nhan: TEN_VIEC[loai], nhuCau, donVi, nguoi, han, quaHan: han < mocNgay });
+  const nguoiGhi = (nguoi) => (cfg.nguoiGacCong.includes(nguoi) || nguoi === cfg.nguoiGioiThieu ? nguoi : cfg.nguoiGacCong[0]);
+  const them = (loai, nhuCau, donVi, nguoi, han) => viec.push({ loai, nhan: TEN_VIEC[loai], nhuCau, donVi, nguoi, han, quaHan: han < mocNgay, lenh: lenhGhi(loai, nhuCau, donVi, nguoiGhi(loai === 'xet_ung_vien' ? cfg.nguoiGacCong[0] : nguoi)) });
   const gac = cfg.nguoiGacCong.join(', ');
   const dem = Object.fromEntries(BUOC.map(([k]) => [k, 0]));
   const nhuCau = cfg.nhuCau.map((ma) => {
@@ -97,7 +113,8 @@ export function dungDieuPhoi(cfg, suKien, cauThat, mocNgay, slug) {
         else if (trangThai === 'da_gioi_thieu') them('cho_phan_hoi', ma, dv, cfg.nguoiGioiThieu, congNgay(gt.luc, cfg.hanNgay.cho_phan_hoi));
         else if (trangThai === 'quan_tam') them('ghi_ket_qua', ma, dv, cfg.nguoiGioiThieu, congNgay(ph[ph.length - 1].luc, cfg.hanNgay.ghi_ket_qua));
       }
-      return { dv, slug: slug(dv), nguon: (n?.goiY ?? []).some((g) => g.dv === dv) ? 'may' : 'nguoi', trangThai, suKien: e.map((x) => x.stt) };
+      const gy = (n?.goiY ?? []).find((g) => g.dv === dv) ?? null;
+      return { dv, slug: slug(dv), nguon: gy ? 'may' : 'nguoi', trangThai, suKien: e.map((x) => x.stt), kyCho: gy?.kyCho ?? [], trich: gy?.trich ?? null };
     });
     if (!dong && !ungVien.length) them('tim_ben_cung', ma, null, 'Người làm giàu dữ liệu (lô mới)', congNgay(cfg.batDau, cfg.hanNgay.tim_ben_cung));
     const tt = new Set(ungVien.map((u) => u.trangThai));

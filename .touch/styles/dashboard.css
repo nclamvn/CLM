@@ -1447,3 +1447,9 @@
 .dash-shell .dp-sk p { margin: 2px 0 0; }
 .dash-shell .dp-khoi code { font-size: 12px; }
 @media (max-width: 639px) { .dash-shell .dp-pheu li { grid-template-columns: minmax(0, 1fr) 40px; } .dash-shell .dp-pheu__thanh { grid-column: 1 / -1; grid-row: 2; } }
+/* Dieu phoi (07/10/2026, soi QA): lenh ghi su kien ngay tai dong viec; ly do may goi y ngay tai ung vien. */
+.dash-shell .dp-lenh summary { font-size: 12px; color: var(--color-text-secondary); cursor: pointer; white-space: nowrap; }
+.dash-shell .dp-lenh summary:focus-visible { outline: var(--focus-ring-width) solid var(--color-border-focus); outline-offset: var(--focus-ring-offset); }
+.dash-shell .dp-lenh code { display: block; margin-top: 6px; font-size: 12px; line-height: 17px; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--color-text-primary); background: var(--color-bg-surface-2); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: var(--radius-md); padding: 6px 8px; user-select: all; }
+.dash-shell .dp-trich { flex-basis: 100%; }
+.dash-shell .ct-the:target { outline: 1px solid var(--color-border-strong); outline-offset: 6px; border-radius: var(--radius-md); }

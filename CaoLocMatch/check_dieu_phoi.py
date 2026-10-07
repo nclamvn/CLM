@@ -10,7 +10,8 @@ CONG KIEM (domains/dieu_phoi/su_kien.jsonl, mui_nhon.yaml, cncl_match/nguoi_ky.y
   CHUOI_GAY        truong "truoc" cua mot dong khac SHA-256 cua dong lien truoc (dong dau: "GOC"),
                    hoac stt khong lien tuc: co nguoi sua hay xoa mot dong cu.
   LOAI_LA          loai su kien, y phan hoi, ket qua hay ben ngoai danh sach cho phep.
-  THIEU_TRUONG     thieu truong bat buoc cua loai su kien.
+  THIEU_TRUONG     thieu truong bat buoc cua loai su kien, hoac noi_dung con la cho trong "..." cua
+                   lenh mau tren man Dieu phoi.
   NGOAI_MUI        nhu cau khong nam trong mui nhon.
   THAM_CHIEU_TREO  nhu cau khong co trong domain cau_dat_hang, hoac don vi khong co trong so nguon.
   NGUOI_LA         nguoi ghi khong co trong nguoi_ky.yaml; hoac duyet ma khong phai nguoi gac cong.
@@ -115,7 +116,8 @@ def kiem(tho, sk, cfg, nguoi, don_vi, nhu_cau, goi_y_cua):
         if loai not in LOAI:
             vi.append(f"LOAI_LA: {tag} loai '{loai}'")
             continue
-        thieu = [k for k in ["luc", "nguoi", *LOAI[loai]] if not str(e.get(k, "")).strip()]
+        # "..." la cho trong cua lenh mau tren man Dieu phoi (07/10/2026): quen dien thi coi nhu thieu.
+        thieu = [k for k in ["luc", "nguoi", *LOAI[loai]] if str(e.get(k, "")).strip() in ("", "...")]
         if thieu:
             vi.append(f"THIEU_TRUONG: {tag} {loai} thieu {', '.join(thieu)}")
             continue

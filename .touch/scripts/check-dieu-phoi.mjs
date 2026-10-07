@@ -18,6 +18,10 @@
  *                   thieu viec "tim ben cung".
  *   PHEU_THOI       buoc "da gioi thieu" lon hon so nhu cau co su kien gioi_thieu dem truc tiep tren so.
  *   NHAN_THIEU      giao dien khong noi ro may chi de xuat viec, chi nguoi ghi su kien.
+ *   LENH_SAI        (07/10/2026) lenh ghi kem viec khong dung loai su kien cua viec, sai nhu cau, sai
+ *                   don vi, hoac nguoi ghi khong phai nguoi co quyen (gac cong cho viec xet, nguoi
+ *                   gioi thieu cho viec sau); viec "tim ben cung" khong duoc co lenh ghi. Bang tra
+ *                   loai viec -> loai su kien khai rieng o day, khong muon cua module.
  *
  * Chay: node scripts/check-dieu-phoi.mjs [--lib <dir>] [--dp <domains/dieu_phoi>] [--mo-dun <dieu-phoi.mjs>] [--giao-dien <tsx>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -72,6 +76,19 @@ for (const n of dp.nhuCau) {
     const k = dp.viec.filter((v) => v.nhuCau === n.ma && v.donVi === u.dv).length;
     if (k !== 1) vi.push(`VIEC_ROT: ${n.ma} · ${u.dv} dang ${u.trangThai} ma co ${k} viec`);
   }
+}
+
+const SU_KIEN_CUA = { xet_ung_vien: 'duyet_ung_vien', gui_gioi_thieu: 'gioi_thieu', cho_phan_hoi: 'phan_hoi', ghi_ket_qua: 'ket_qua' };
+const gacCong = (yamlTho.match(/^nguoi_gac_cong:\s*\[([^\]]*)\]/m)?.[1] ?? '').split(',').map((x) => x.trim()).filter(Boolean);
+const gioiThieu = (yamlTho.match(/^nguoi_gioi_thieu:\s*(.+?)\s*$/m)?.[1] ?? '').trim();
+for (const v of dp.viec) {
+  const tag = `${v.nhan} ${v.nhuCau}${v.donVi ? ' · ' + v.donVi : ''}`;
+  if (v.loai === 'tim_ben_cung') { if (v.lenh) vi.push(`LENH_SAI: ${tag} khong duoc co lenh ghi`); continue; }
+  const l = String(v.lenh ?? '');
+  const nguoi = v.loai === 'xet_ung_vien' ? gacCong[0] : gioiThieu;
+  const dung = l.startsWith(`python3 dieu_phoi.py ${SU_KIEN_CUA[v.loai]} `) && l.includes(` --nhu-cau ${v.nhuCau} `)
+    && l.includes(` --don-vi "${v.donVi}" `) && l.includes(` --nguoi "${nguoi}" `) && l.endsWith(' --ghi');
+  if (!dung) vi.push(`LENH_SAI: ${tag} lenh "${l.slice(0, 90)}"`);
 }
 
 if (!existsSync(GD)) vi.push(`NHAN_THIEU: khong thay giao dien ${GD}`);

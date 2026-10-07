@@ -21,6 +21,7 @@ RANG 7  · duyet ung vien la don vi lien quan cua chinh nguoi duyet (RtR) -> XUN
 RANG 8  · mui nhon them nhu cau co ung vien la RtR (ctd-25) -> KHONG_TRUNG_LAP.
 RANG 9  · ket qua ngoai danh sach ("thanh_cong") -> LOAI_LA.
 RANG 10 · don vi khong co trong so nguon -> THAM_CHIEU_TREO.
+RANG 11 · noi_dung con la cho trong "..." cua lenh mau -> THIEU_TRUONG (07/10/2026).
 
 Chay: python3 bite_dieu_phoi.py     Exit 0 moi rang can · 2 co rang khong can · 3 KHONG CHAY DUOC.
 """
@@ -118,6 +119,8 @@ try:
     lk = vong(); lk[3]["ket_qua"] = "thanh_cong"
     rang("RANG 9  · ket qua ngoai danh sach -> LOAI_LA", chuoi(lk), 2, "LOAI_LA")
     rang("RANG 10 · don vi khong co trong so nguon -> THAM_CHIEU_TREO", chuoi(vong(dv="Cong ty Khong Ton Tai")[:1]), 2, "THAM_CHIEU_TREO")
+    cho = vong()[:1]; cho[0]["noi_dung"] = "..."
+    rang("RANG 11 · noi dung con cho trong '...' -> THIEU_TRUONG", chuoi(cho), 2, "THIEU_TRUONG")
 finally:
     for t in tam:
         shutil.rmtree(t, ignore_errors=True)

@@ -18,6 +18,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import md from '@/lib/hub-mo-dau.json';
 import xh from '@/lib/hub-xu-huong.json';
+import dp from '@/lib/hub-dieu-phoi.json';
 import { ProofNumber } from '@/components/proof/ProofLayer';
 import { ngayVN } from '@/lib/dinh-dang';
 
@@ -171,6 +172,16 @@ export function MoDau() {
         <aside className="dash-panel md-viec" aria-labelledby="md-viec-h">
           <h2 className="hs-h" id="md-viec-h">Việc cần làm tiếp <span>sinh từ điểm yếu tự khai</span></h2>
           <ol>
+            {/* Hang viec dieu phoi (07/10/2026, soi QA): viec van hanh cua mui nhon dung dau, vi day la
+                viec biet ngay ai lam va han nao; doc tu lib/hub-dieu-phoi.json, khong go tay. */}
+            {dp.meta.soViec > 0 && (
+              <li key="/dashboard/dieu-phoi">
+                <Link href="/dashboard/dieu-phoi">
+                  <b>{dp.meta.soViec}</b>
+                  <span className="md-viec__chu"><span className="md-viec__ten">việc điều phối đang mở trong mũi nhọn</span><span className="md-viec__cach">{dp.meta.ten}; hạn gần nhất {ngayVN(dp.viec[0]?.han)}{dp.meta.soQuaHan ? `, ${dp.meta.soQuaHan} việc quá hạn` : ''}</span></span>
+                  <span className="md-viec__mui" aria-hidden="true">→</span>
+                </Link>
+              </li>)}
             {D.viecTiep.map((v) => (
               <li key={v.href}>
                 <Link href={v.href}>
