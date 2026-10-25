@@ -25,6 +25,7 @@ export default function LandingPage() {
   const chiSo: { k: string; v: number }[] = [
     { k: 'đơn vị cung có câu nguồn', v: s.donVi },
     { k: 'nhu cầu theo QĐ 21/2026', v: s.nhuCau },
+    { k: `nhu cầu đặt hàng thật từ ${s.benDatHang} bên`, v: s.cauThat },
     { k: 'match đã có người ký', v: s.daKy },
   ];
   return (
@@ -32,10 +33,12 @@ export default function LandingPage() {
       <header className="mt-top">
         <TouchBrand mode="full" theme="dark" size="md" href="/" />
         <nav className="mt-top__nav" aria-label="Điều hướng">
+          {/* 25/10/2026: menu trang dau thieu ba man manh nhat (Cau that, Hoi dap, Dieu phoi); Do thi nhuong cho. */}
           <Link href={ROUTE.dashboard}>Tổng quan</Link>
-          <Link href={`${ROUTE.dashboard}/thi-truong`}>Thị trường</Link>
-          <Link href={`${ROUTE.dashboard}/do-thi`}>Đồ thị</Link>
+          <Link href={`${ROUTE.dashboard}/cau-that`}>Cầu thật</Link>
+          <Link href={`${ROUTE.dashboard}/hoi-dap`}>Hỏi đáp</Link>
           <Link href={`${ROUTE.dashboard}/matching`}>Ghép cung cầu</Link>
+          <Link href={`${ROUTE.dashboard}/dieu-phoi`}>Điều phối</Link>
           <Link href={ROUTE.phuongPhap} className="mt-top__phu">Phương pháp</Link>
         </nav>
         <div className="mt-top__phai">
@@ -56,6 +59,10 @@ export default function LandingPage() {
             {/* Dau cach khong ngat giu cac cum "chiến lược", "Việt Nam", "câu nguồn" tren mot dong. */}
             Bản đồ sống của thị trường công nghệ chiến lược Việt Nam. Mỗi kết nối đều có người ký
             và truy được về tận câu nguồn.
+          </p>
+          {/* 25/10/2026: noi ro ai dung, khong gan con so (tieu de va cau phu giu nguyen nhu anh Lam chot). */}
+          <p className="mt-chu__ai">
+            Dành cho bên đặt hàng cần tìm đơn vị làm được việc, và cho đơn vị công nghệ cần tìm bài toán có thật.
           </p>
           <div className="mt-chu__nut">
             <Link href={ROUTE.dashboard} className="mt-nut">Mở bảng điều khiển <span aria-hidden="true">→</span></Link>

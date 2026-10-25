@@ -9,14 +9,21 @@
  * Ham thuan: nhan chuoi, tra chuoi. Bam (sha256) duoc truyen vao de dung chung cho Node (build,
  * cong kiem, cong cu doi chieu) ma khong keo module crypto vao giao dien.
  */
-export const PHIEN_BAN = 'clm-kiem-toan/1';
+// 25/10/2026, phien ban 2: sap xep theo MA KY TU, khong theo localeCompare. localeCompare phu thuoc
+// ngon ngu cua may (Node tren may chu, trinh duyet tieng Viet cua nguoi nhan), nen hai noi co the
+// sap khac nhau va tinh ra hai ma khac nhau cho cung mot ho so. Kiem lai tren trinh duyet chi dung
+// duoc khi dang chuan khong phu thuoc may. Phien ban 1 van doc duoc de doi chieu tep da gui.
+export const PHIEN_BAN = 'clm-kiem-toan/2';
+export const PHIEN_BAN_CU = ['clm-kiem-toan/1'];
+const theoMa = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 /** Dang chuan cua ho so: cau nguon sap theo (truong, ban chup, cau), ban chup sap theo href. */
-export function dangChuan(donVi, cauNguon, banChup) {
+export function dangChuan(donVi, cauNguon, banChup, phienBan = PHIEN_BAN) {
+  const so = phienBan === 'clm-kiem-toan/1' ? (a, b) => a.localeCompare(b) : theoMa;
   const cau = cauNguon.map((e) => [e.field, String(e.value), e.span, e.href, e.tier, e.source])
-    .sort((a, b) => (a[0] + '\u0000' + a[3] + '\u0000' + a[2]).localeCompare(b[0] + '\u0000' + b[3] + '\u0000' + b[2]));
-  const chup = [...banChup].sort((a, b) => a.href.localeCompare(b.href)).map((b) => [b.href, b.sha256]);
-  return JSON.stringify({ phienBan: PHIEN_BAN, donVi, cauNguon: cau, banChup: chup });
+    .sort((a, b) => so(a[0] + '\u0000' + a[3] + '\u0000' + a[2], b[0] + '\u0000' + b[3] + '\u0000' + b[2]));
+  const chup = [...banChup].sort((a, b) => so(a.href, b.href)).map((b) => [b.href, b.sha256]);
+  return JSON.stringify({ phienBan, donVi, cauNguon: cau, banChup: chup });
 }
 
 /**

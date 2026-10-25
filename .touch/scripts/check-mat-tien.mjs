@@ -90,8 +90,8 @@ for (const p of quetChu) {
 const page = boChuThich(doc(CAN.page));
 if (!/import \{ dungMatTien \} from '@\/lib\/mat-tien'/.test(page) || !/dungMatTien\(\)/.test(page)) vi.push('SO_KHONG_SINH: app/page.tsx khong lay so tu dungMatTien (lib/mat-tien)');
 const mt = boChuThich(doc(CAN.matTien));
-for (const f of ['hub-graph.json', 'cncl-match.json', 'cncl-registry.json']) if (!mt.includes(`'./${f}'`)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts khong doc ${f}`);
-for (const m of mt.matchAll(/\b(donVi|nhuCau|nhom|capCoNguon|daKy|tuChoi|ncTrong|cauNguon|tierA)\s*:\s*(\d+)/g)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts gan cung ${m[1]}: ${m[2]}`);
+for (const f of ['hub-graph.json', 'cncl-match.json', 'cncl-registry.json', 'hub-cau-that.json']) if (!mt.includes(`'./${f}'`)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts khong doc ${f}`);
+for (const m of mt.matchAll(/\b(donVi|nhuCau|nhom|capCoNguon|daKy|tuChoi|ncTrong|cauNguon|tierA|cauThat|benDatHang)\s*:\s*(\d+)/g)) vi.push(`SO_KHONG_SINH: lib/mat-tien.ts gan cung ${m[1]}: ${m[2]}`);
 for (const p of [CAN.page, ...landing]) {
   const s = boChuThich(doc(p)).replace(/QĐ 21(\/2026)?/g, 'QĐ');
   for (const m of s.matchAll(/>([^<>{}]*)</g)) if (/\b\d{2,}\b/.test(m[1])) vi.push(`SO_KHONG_SINH: ${ten(p)} co so go tay trong JSX: "${m[1].trim().slice(0, 60)}"`);

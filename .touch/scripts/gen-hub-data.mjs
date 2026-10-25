@@ -38,7 +38,7 @@ import { dungMatching } from '../lib/matching.mjs';
 import { dungThoiCuoc } from '../lib/thoi-cuoc.mjs';
 import { dungMoDau } from '../lib/mo-dau.mjs';
 import { dungTenSp } from '../lib/hien-gia-tri.mjs';
-import { dungChiMuc, hoiDap, DONG_NGHIA } from '../lib/hoi-dap.mjs';
+import { dungChiMuc, hoiDap, DONG_NGHIA, dungChiMucCau } from '../lib/hoi-dap.mjs';
 import { dungCauThat } from '../lib/cau-that.mjs';
 import { docMuiNhon, dungDieuPhoi } from '../lib/dieu-phoi.mjs';
 import { dungBaoCao } from '../lib/bao-cao.mjs';
@@ -247,9 +247,6 @@ if (!existsSync(SK_CS)) { console.error(`KHONG THAY ${SK_CS} (su kien chinh sach
 const thoiCuoc = dungThoiCuoc({ reg, mat, ev: { events }, hoSo, graph: { nodes, edges }, suKienChinhSach: docJsonl(SK_CS) });
 writeFileSync(join(LIB, 'hub-thoi-cuoc.json'), JSON.stringify(thoiCuoc, null, 2) + '\n', 'utf8');
 
-// ── Mo dau (M0): trang /dashboard, chi doc cac file da sinh o tren ────────
-const moDau = dungMoDau({ reg, mat, graph: { nodes, edges, boCuc }, thiTruong, thoiCuoc, hoSo, matching });
-writeFileSync(join(LIB, 'hub-mo-dau.json'), JSON.stringify(moDau, null, 2) + '\n', 'utf8');
 
 // ── Hoi dap co trich dan (01/10/2026): chi muc cau nguon nang luc + kho cum tu cua so nguon ──
 const chiMuc = dungChiMuc(reg, mat);
@@ -260,6 +257,12 @@ const DH_F = join(LIB, 'cncl-cau-dat-hang.json');
 const dh = existsSync(DH_F) ? JSON.parse(readFileSync(DH_F, 'utf8')) : { claims: [] };
 const cauThat = dungCauThat(dh, JSON.parse(JSON.stringify(chiMuc)), dungTenSp(reg.needs), hoiDap, DONG_NGHIA);
 writeFileSync(join(LIB, 'hub-cau-that.json'), JSON.stringify(cauThat, null, 1) + '\n', 'utf8');
+// 25/10/2026: chi muc cau that cho Hoi dap (hoi ve nhu cau thi tra nhu cau, khong tra ben cung).
+writeFileSync(join(LIB, 'hub-hoi-dap-cau.json'), JSON.stringify(dungChiMucCau(cauThat)) + '\n', 'utf8');
+
+// ── Mo dau (M0): trang /dashboard, chi doc cac file da sinh o tren (25/10/2026: doi xuong sau cau that de dem cau that) ──
+const moDau = dungMoDau({ reg, mat, graph: { nodes, edges, boCuc }, thiTruong, thoiCuoc, hoSo, matching, pheu: JSON.parse(readFileSync(join(LIB, 'hub-pheu.json'), 'utf8')), cauThat });
+writeFileSync(join(LIB, 'hub-mo-dau.json'), JSON.stringify(moDau, null, 2) + '\n', 'utf8');
 
 // ── Dieu phoi (07/10/2026): mui nhon + so su kien nguoi ghi -> phieu, hang viec, dong su kien ──
 const DP = env('CLM_KHO_MATCH') ? join(env('CLM_KHO_MATCH'), 'domains', 'dieu_phoi') : goc('CaoLocMatch', 'domains', 'dieu_phoi');

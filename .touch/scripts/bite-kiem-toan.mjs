@@ -16,6 +16,8 @@
  * RANG 3 · sua mot chu trong cau nguon cua registry -> KIEM_TOAN_LECH.
  * RANG 4 · xoa mot ban chup -> BAN_CHUP_THIEU.
  * RANG 5 · cong cu doi chieu: tep ho so bi sua mot cau nguon -> exit 2 (MA_LECH).
+ * RANG 6 · (25/10/2026) dang chuan quay lai localeCompare (phu thuoc may) -> SAP_PHU_THUOC_MAY.
+ * RANG 7 · (25/10/2026) nut kiem lai tren trinh duyet tu viet ham bam, khong dung Web Crypto -> KIEM_TRINH_DUYET_HONG.
  *
  * Chay: node scripts/bite-kiem-toan.mjs     Exit 0 moi rang can · 2 co rang khong can.
  */
@@ -39,7 +41,7 @@ const canh = () => {
   for (const h of hrefs) if (existsSync(join(TOUCH, 'public', h))) copyFileSync(join(TOUCH, 'public', h), join(t, 'public', h));
   return t;
 };
-const chay = (t) => { const r = spawnSync(process.execPath, [CONG, '--lib', join(t, 'lib'), '--public', join(t, 'public')], { encoding: 'utf8' }); return { rc: r.status, out: r.stdout + r.stderr }; };
+const chay = (t, ...them) => { const r = spawnSync(process.execPath, [CONG, '--lib', join(t, 'lib'), '--public', join(t, 'public'), ...them], { encoding: 'utf8' }); return { rc: r.status, out: r.stdout + r.stderr }; };
 
 try {
   let t = canh(); let r = chay(t);
@@ -58,6 +60,15 @@ try {
   writeFileSync(join(t, 'hs.json'), JSON.stringify(tep));
   const r5 = spawnSync(process.execPath, [join(HERE, 'kiem-ho-so.mjs'), join(t, 'hs.json')], { encoding: 'utf8' });
   inRa('RANG 5 · doi chieu tep bi sua -> MA_LECH', r5.status === 2 && r5.stdout.includes('MA_LECH'), `exit ${r5.status}`);
+  t = canh();
+  { const goc = readFileSync(join(TOUCH, 'lib', 'kiem-toan.mjs'), 'utf8'); const moc = ": theoMa;";
+    if (!goc.includes(moc)) inRa('RANG 6 · sap theo ngon ngu may -> SAP_PHU_THUOC_MAY', false, 'KHONG TIEM DUOC');
+    else { writeFileSync(join(t, 'kt-mod.mjs'), goc.replace(moc, ': (a, b) => a.localeCompare(b);')); r = chay(t, '--mo-dun', join(t, 'kt-mod.mjs'));
+      inRa('RANG 6 · sap theo ngon ngu may -> SAP_PHU_THUOC_MAY', r.rc === 2 && r.out.includes('SAP_PHU_THUOC_MAY'), `exit ${r.rc}`); } }
+  t = canh();
+  writeFileSync(join(t, 'KiemToan.tsx'), "import { dangChuan } from '@/lib/kiem-toan.mjs';\nconst bam = (t) => t.length.toString(16);\n");
+  r = chay(t, '--thanh-phan', join(t, 'KiemToan.tsx'));
+  inRa('RANG 7 · kiem tren trinh duyet khong dung Web Crypto -> KIEM_TRINH_DUYET_HONG', r.rc === 2 && r.out.includes('KIEM_TRINH_DUYET_HONG'), `exit ${r.rc}`);
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

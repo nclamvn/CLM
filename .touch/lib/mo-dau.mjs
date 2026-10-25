@@ -15,7 +15,7 @@
  * Duong xu huong theo ngay khong o day: no doc lich su git (lib/hub-xu-huong.json, cong xu_huong).
  */
 
-export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching }) {
+export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching, pheu = null, cauThat = null }) {
   const claims = reg.units.flatMap((u) => u.evidence);
   const cc = reg.meta.chuoiCong ?? null;
   const k = thiTruong.kpi;
@@ -32,6 +32,9 @@ export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching
       ncCoCung: k.ncCoCung,
       ncTrong: k.ncTrong,
       capCungCau: k.soCap,
+      // 25/10/2026: cau that (nhu cau dat hang cong khai) len so chinh: tra loi "ai tra tien".
+      cauThat: cauThat ? cauThat.nhuCau.length : null,
+      benDatHang: cauThat ? new Set(cauThat.nhuCau.map((n) => n.benDatHang)).size : null,
     },
     chuoiCong: cc ? { xanh: cc.xanh, tong: cc.tong, dat: cc.dat, luc: cc.luc, nhanh: cc.cheDo === 'nhanh' } : null,
     diemYeu: {
@@ -74,7 +77,18 @@ export function dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching
           return `tra mã số trên cổng đăng ký doanh nghiệp quốc gia${tk ? `; ${tk} đơn vị đã có mã tự khai để đối chiếu` : ''}`;
         })(), href: '/dashboard/don-vi' },
         { so: k.ncTrong, viec: `nhu cầu quốc gia chưa có bên cung${trongTen.length ? ` (${trongTen.join(', ')})` : ''}`, cach: 'mở lô làm giàu mới, nguồn duyệt theo lô', href: '/dashboard/thi-truong' },
-        { so: k.ncCoCung - ncDaKy, viec: 'nhu cầu đã có bên cung nhưng chưa có cặp được ký', cach: 'người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối', href: '/dashboard/matching' },
+        // 25/10/2026: viec nay tung ghi "nguoi gac cong xem bang chung tung cap roi ky" trong khi
+        // pheu co 0 cap cho ky, nen nguoi bam vao gap man trong. Chan that la chua cap nao qua nguong
+        // giao cau nguon. Doc so cho ky tu pheu va noi dung cho chan.
+        ...(() => {
+          const choKy = pheu ? (pheu.tang.find((t) => t.k === 'cho_ky')?.n ?? 0) : null;
+          const conLai = k.ncCoCung - ncDaKy;
+          const ra = [];
+          if (choKy) ra.push({ so: choKy, viec: 'cặp ghép qua ngưỡng đang chờ người gác cổng', cach: 'xem bằng chứng từng cặp rồi ký hoặc từ chối', href: '/dashboard/matching' });
+          if (choKy === 0) ra.push({ so: conLai, viec: 'nhu cầu đã có bên cung cùng nhóm nhưng chưa cặp nào đủ câu nguồn để đưa ký', cach: `tìm câu nguồn năng lực nói đúng sản phẩm; máy chỉ đưa tới người ký cặp có độ giao từ ${Math.round((pheu.nguong_giao ?? 0.5) * 100)}% trở lên`, href: '/dashboard/matching#pg-suyt-h' });
+          else if (choKy === null) ra.push({ so: conLai, viec: 'nhu cầu đã có bên cung nhưng chưa có cặp được ký', cach: 'xem phễu ghép để biết cặp đang chặn ở tầng nào', href: '/dashboard/matching' });
+          return ra;
+        })(),
         { so: qh, viec: 'câu nguồn quá 180 ngày chưa có lý do giữ', cach: 'chụp lại nguồn hoặc ghi lý do giữ', href: '/dashboard/registry' },
         { so: thoiCuoc.meta.theoLan.de_xuat, viec: 'tin mới từ vòng tự chạy đang chờ duyệt', cach: 'duyệt rồi mới tính là sự thật', href: '/dashboard/thoi-cuoc' },
       ];

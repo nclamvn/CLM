@@ -1,0 +1,72 @@
+{
+ "lo": [
+  {
+   "dot": "dot_01",
+   "loai": "cung",
+   "loaiTen": "Bên cung (năng lực đơn vị)",
+   "deXuat": 102,
+   "honestNull": 49,
+   "doiChieu": 22,
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-09-30",
+    "loi": "duyệt hết",
+    "soLoai": 0
+   },
+   "nap": {
+    "ngay": "2026-09-30",
+    "soDong": 102
+   },
+   "trangThai": "da_nap"
+  },
+  {
+   "dot": "dot_02",
+   "loai": "dinh_danh",
+   "loaiTen": "Định danh pháp nhân",
+   "deXuat": 55,
+   "honestNull": 65,
+   "doiChieu": 55,
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-10-01",
+    "loi": "đã duyệt và xác nhận thông qua, triển khai tiếp",
+    "soLoai": 0
+   },
+   "nap": {
+    "ngay": "2026-10-01",
+    "soDong": 55
+   },
+   "trangThai": "da_nap"
+  },
+  {
+   "dot": "dot_03",
+   "loai": "cau_that",
+   "loaiTen": "Cầu thật (nhu cầu đặt hàng)",
+   "deXuat": 261,
+   "honestNull": 34,
+   "doiChieu": 131,
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-10-01",
+    "loi": "duyệt 3 lô",
+    "soLoai": 0
+   },
+   "nap": {
+    "ngay": "2026-10-01",
+    "soDong": 261
+   },
+   "trangThai": "da_nap"
+  },
+  {
+   "dot": "dot_04",
+   "loai": "cung",
+   "loaiTen": "Bên cung (năng lực đơn vị)",
+   "deXuat": 11,
+   "honestNull": 46,
+   "doiChieu": 0,
+   "duyet": null,
+   "nap": null,
+   "trangThai": "cho_duyet"
+  }
+ ]
+}

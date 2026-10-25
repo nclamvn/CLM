@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { TouchBrand } from '@/components/brand/TouchBrand';
 
 /**
@@ -50,6 +51,8 @@ const card = {
 } as const;
 
 export default function TokenPreviewPage() {
+  // 25/10/2026: trang xem token cu (bang mau navy, chu tieng Anh) dang song o ban production. Chi hien o dev, nhu dev/globe.
+  if (process.env.NODE_ENV === 'production') notFound();
   return (
     <div style={shell}>
       <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 32 }}>

@@ -13,7 +13,7 @@
     "check": "node scripts/check-emdash.mjs && npm run lint:tokens && next build"
   },
   "dependencies": {
-    "next": "^15.5.26",
+    "next": "^15.5.28",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },

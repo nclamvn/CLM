@@ -1,0 +1,800 @@
+{
+ "luc": "2026-10-25T17:10:58+0700",
+ "cheDo": "day_du",
+ "tong": 132,
+ "xanh": 132,
+ "o": [
+  {
+   "kho": "CNCLData",
+   "ten": "refinery",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "bites",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "check_luat3",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "Dataset_CongNgheChienLuoc",
+   "ten": "cau_span",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "Dataset_CongNgheChienLuoc",
+   "ten": "cau_luat3",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "check_dash",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "doi_chung_nguon",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "do_tuoi_nguon",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "ngay_dang",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "nguon_tai_tro",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "tham_chieu_treo",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "du_dieu_kien",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "khang_dinh_toi_thuong",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "ap_luat_deu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "chuan_hoa",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "ma_so_thue",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "fail_closed",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_khai_canh",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "hang_cho",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "kiem_lo",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "dat_hang_refinery",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "dat_hang_luat3",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "dat_hang",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "build_dan_xuat",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "refinery",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "match_run",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "restore_signoff",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "validate_ky",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "pheu_ghep",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "doc_dung_kho",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "dong_bo_cau",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "bi_mat",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "xung_dot_ky",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "goc_duong_dan",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "sinh_du_lieu_web",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "sinh_xu_huong",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "sinh_du_lieu_hub",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "sinh_du_lieu_kho",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "bo_dau_viet",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "so_sinh",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "chuoi_cong_web",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "lich_su_lo",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "menu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "tim_kiem",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "lop_phu_nguon",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "ghi_chu_ban_chup",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "do_thi",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "ho_so",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "thi_truong",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "matching",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "pheu_ghep_web",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "thoi_cuoc",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "mo_dau",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "xu_huong",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "hoi_dap",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "bao_cao",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "kiem_toan",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "cau_that",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "dieu_phoi",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "dieu_phoi_web",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "dong_thoi_gian",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "hien_cau",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "kho_ma",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "mat_tien",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "don_sac",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "mau_du_lieu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "thuat_ngu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "co_chu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "truy_cap",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "phu_thuoc",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "sinh_tra_cuu",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "cong_em_dash",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "truong_hien",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "lib_song_sinh",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "bien_dich_ts",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "phu_moc",
+   "tt": "XANH",
+   "rang": false
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_tra_cuu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_truong_hien",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_phu_moc",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_so_sinh",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_chuoi_cong",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_lich_su_lo",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_menu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_lop_phu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_ghi_chu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_do_thi",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_ho_so",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_thi_truong",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_matching",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_pheu_web",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_thoi_cuoc",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_mo_dau",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_xu_huong",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_hoi_dap",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_bao_cao",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_kiem_toan",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_cau_that",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_dieu_phoi",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_dieu_phoi_web",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_dong_thoi_gian",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_hien_cau",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_kho_ma",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_mat_tien",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_don_sac",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_mau_du_lieu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_thuat_ngu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_truy_cap",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": ".touch",
+   "ten": "rang_phu_thuoc",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_ap_luat_deu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_fail_closed",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_chuan_hoa",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_ma_so_thue",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_ngay_dang",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_hang_cho",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_moc_thoi_gian",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_kiem_lo",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_lo_dinh_danh",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_lo_cau",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_dat_hang",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_nap_tra_cong",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CNCLData",
+   "ten": "rang_cau_noi_kernel",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_match",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_pheu",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_bang_chung",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_dong_bo",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_gop_cap",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_doc_dung_kho",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_dong_bo_cau",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_hoan",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_bi_mat",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_xung_dot_ky",
+   "tt": "XANH",
+   "rang": true
+  },
+  {
+   "kho": "CaoLocMatch",
+   "ten": "rang_chinh_bang",
+   "tt": "XANH",
+   "rang": true
+  }
+ ]
+}

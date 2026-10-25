@@ -34,6 +34,10 @@
 .mt-top { display: flex; align-items: center; gap: 40px; padding: 0 48px; border-bottom: 1px solid var(--p-line); }
 .mt-top__nav { display: flex; gap: 28px; font-size: 13.5px; }
 .mt-top__nav a { color: var(--p-2); transition: color 150ms var(--p-ease); }
+/* 25/10/2026: menu sau muc; khong cho xuong dong, man 1280-1440 thu khoang cach. */
+.mt-top__nav a { white-space: nowrap; }
+@media (max-width: 1440px) { .mt-top__nav { gap: 18px; font-size: 13px; } .mt-top__nav .mt-top__phu { padding-left: 18px; } }
+@media (max-width: 1300px) { .mt-trang { display: none; } }
 .mt-top__nav a:hover { color: var(--p-ink); }
 .mt-top__nav .mt-top__phu { padding-left: 28px; border-left: 1px solid var(--p-line-2); color: var(--p-3); }
 .mt-top__phai { margin-left: auto; display: flex; align-items: center; gap: 12px; }
@@ -62,7 +66,8 @@
 .mt-chu__h { margin-top: 20px; font-family: var(--p-serif); font-weight: 400; font-size: clamp(52px, 5.4vw, 104px); line-height: 0.98; letter-spacing: -0.025em; white-space: nowrap; }
 .mt-chu__p { margin-top: 24px; max-width: 40ch; font-size: 16px; line-height: 1.6; color: var(--p-2); text-wrap: pretty; }
 .mt-chu__nut { display: flex; align-items: center; gap: 24px; margin-top: 32px; }
-.mt-so { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 48px; border-top: 1px solid var(--p-line-2); }
+.mt-chu__ai { margin-top: 14px; max-width: 44ch; font-size: 14px; line-height: 1.55; color: var(--p-3); text-wrap: pretty; }
+.mt-so { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 36px; border-top: 1px solid var(--p-line-2); }
 .mt-so > div { padding: 14px 16px 0 0; display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; }
 .mt-so dd { order: -1; }
 .mt-so > div + div { padding-left: 16px; border-left: 1px solid var(--p-line); }
@@ -100,8 +105,9 @@
   .mt-chu__h { font-size: clamp(48px, 5vw, 84px); margin-top: 14px; }
   .mt-chu__p { margin-top: 16px; font-size: 15px; }
   .mt-chu__nut { margin-top: 22px; }
-  .mt-so { margin-top: 30px; }
+  .mt-so { margin-top: 24px; }
   .mt-so dd { font-size: 32px; }
+  .mt-chu__ai { margin-top: 10px; font-size: 13px; }
   .mt-bang q { -webkit-line-clamp: 2; }
 }
 @media (max-width: 999px) {

@@ -2335,10 +2335,10 @@
       },
       {
         "nam": "2026",
-        "tuoi": 21,
+        "tuoi": 14,
         "ben": 36,
-        "giu_nguon_cu": 4,
-        "qua_han": 8,
+        "giu_nguon_cu": 7,
+        "qua_han": 12,
         "khong_doc_duoc_ngay": 0
       }
     ],
@@ -2350,13 +2350,13 @@
       "khong_doc_duoc_ngay": 0
     },
     "tong": {
-      "tuoi": 21,
+      "tuoi": 14,
       "ben": 263,
-      "giu_nguon_cu": 65,
-      "qua_han": 29,
+      "giu_nguon_cu": 68,
+      "qua_han": 33,
       "khong_doc_duoc_ngay": 0
     },
-    "mocNgay": "2026-10-07",
+    "mocNgay": "2026-10-25",
     "nguongNgay": 180
   }
 }

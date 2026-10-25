@@ -7,11 +7,14 @@
  * chu may viet. Khong co cau nguon thi tu choi, noi thang so nguon chua co. Tu khoa khop duoc to
  * dam ngay trong cau nguon de nguoi doc thay vi sao cau do duoc chon.
  * Lien ket chia se: ?q=<cau hoi> mo thang cau tra loi.
+ * 25/10/2026: cau hoi ve NHU CAU ("Bo nao dang can UAV?", "Ha Noi can gi?") tra nhu cau dat hang that
+ * kem cau nguon, thay vi tra ben cung nhu truoc. Loai cau hoi do laHoiCau quyet, cung luat tu choi.
  */
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import chiMuc from '@/lib/hub-hoi-dap.json';
-import { hoiDap, DONG_NGHIA } from '@/lib/hoi-dap.mjs';
+import chiMucCau from '@/lib/hub-hoi-dap-cau.json';
+import { hoiDap, hoiCau, laHoiCau, DONG_NGHIA } from '@/lib/hoi-dap.mjs';
 import { khoaTim } from '@/lib/tim-kiem.mjs';
 import { tenTruong } from '@/components/proof/ProofLayer';
 import { tenNgan } from '@/lib/ten-ngan.mjs';
@@ -21,8 +24,12 @@ import { MoBanChup } from '@/components/proof/BanChup';
 type Trich = { span: string; href: string; tier: string; source: string; field: string; khop: string[] };
 type DonVi = { dv: string; slug: string; trich: Trich[]; kyCho: { match: string; nhuCau: string }[] };
 type KetQua = { cau: string; khaiNiem: string[]; nhuCau: { ma: string; ten: string }[]; donVi: DonVi[]; tuChoi: string | null };
+type TrichCau = { field: string; value: string; span: string; href: string; tier: string; source: string };
+type NhuCauTL = { ma: string; ten: string; ben: string; loaiTen: string; khop: string[]; trich: TrichCau[]; trichBen: TrichCau | null };
+type KetQuaCau = { cau: string; loai: 'cau'; ben: string[]; khaiNiem: string[]; nhuCau: NhuCauTL[]; conLai: number; tuChoi: string | null };
+const TEN_TRUONG_CAU: Record<string, string> = { ten_nhu_cau: 'Tên nhu cầu', doi_tuong: 'Đối tượng đặt hàng', ben_dat_hang: 'Bên đặt hàng' };
 
-const VI_DU = ['Ai làm được UAV?', 'Đơn vị nào làm chip bán dẫn?', 'Vắc xin dịch tả lợn châu Phi', 'Robot hình người', 'Điện toán đám mây', 'Cảm biến sinh học'];
+const VI_DU = ['Ai làm được UAV?', 'Đơn vị nào làm chip bán dẫn?', 'Hà Nội cần gì?', 'Bộ nào đang cần UAV?', 'Vắc xin dịch tả lợn châu Phi', 'Robot hình người', 'Điện toán đám mây'];
 // Ban do khai niem -> moi cach viet, de to dam ca tu dong nghia ("drone" khi hoi "UAV").
 const THAY = new Map<string, string[]>((DONG_NGHIA as string[][]).map((c) => [c[0], c]));
 
@@ -56,7 +63,9 @@ export function HoiDap() {
     const c = new URLSearchParams(window.location.search).get('q');
     if (c) { setQ(c); setDaHoi(c); }
   }, []);
-  const kq = useMemo(() => (daHoi ? (hoiDap(daHoi, chiMuc as never) as KetQua) : null), [daHoi]);
+  const laCau = useMemo(() => (daHoi ? laHoiCau(daHoi) : false), [daHoi]);
+  const kq = useMemo(() => (daHoi && !laCau ? (hoiDap(daHoi, chiMuc as never) as KetQua) : null), [daHoi, laCau]);
+  const kqCau = useMemo(() => (daHoi && laCau ? (hoiCau(daHoi, chiMucCau as never, chiMuc as never) as KetQuaCau) : null), [daHoi, laCau]);
   const hoi = (c: string) => {
     const s = c.trim();
     setQ(s); setDaHoi(s);
@@ -79,6 +88,40 @@ export function HoiDap() {
           {VI_DU.map((v) => <button key={v} type="button" className="dt2-chip" onClick={() => hoi(v)}>{v}</button>)}
         </div>
       </section>
+
+      {kqCau && (
+        <section className="dash-panel hd-tl" aria-labelledby="hd-tl-h" aria-live="polite">
+          <h2 className="hs-h" id="hd-tl-h">Trả lời <span>cho câu: “{kqCau.cau}” · câu hỏi về nhu cầu</span></h2>
+          {(kqCau.ben.length > 0 || kqCau.khaiNiem.length > 0) && (
+            <p className="hd-hieu">Máy hiểu câu hỏi gồm: {kqCau.ben.map((b) => <span key={b} className="hd-nc">bên đặt hàng: {b}</span>)}{kqCau.khaiNiem.map((k) => <span key={k} className="hd-kn">{k}</span>)}</p>)}
+          {kqCau.tuChoi ? (
+            <p className="hd-tuchoi">{kqCau.tuChoi}</p>
+          ) : (
+            <>
+              <p className="hd-tom">Sổ nguồn có <b>{kqCau.nhuCau.length + kqCau.conLai}</b> nhu cầu đặt hàng thật liên quan{kqCau.conLai ? `, hiện ${kqCau.nhuCau.length} nhu cầu khớp nhất` : ''}. Mỗi dòng là câu chép nguyên văn từ văn bản của bên đặt hàng, bấm để mở bản chụp.</p>
+              <ol className="hd-ds">
+                {kqCau.nhuCau.map((n) => (
+                  <li key={n.ma} className="hd-dv">
+                    <div className="hd-dv__dau">
+                      <Link href={`/dashboard/cau-that#${n.ma}`} className="hd-dv__ten">{n.ma} · {n.ben}</Link>
+                      <span className="hs-badge">{n.loaiTen}</span>
+                    </div>
+                    {n.trich.map((t, i) => (
+                      <figure key={i} className="hd-trich">
+                        <blockquote><ToDam span={hienCau(t.span)} khop={n.khop} thay={THAY} /></blockquote>
+                        <figcaption>
+                          <span className={`pf-tier pf-tier--${t.tier}`}>hạng {t.tier}</span>
+                          <span>{TEN_TRUONG_CAU[t.field] ?? t.field} · {t.source}</span>
+                          <MoBanChup href={t.href} span={t.span} />
+                        </figcaption>
+                      </figure>))}
+                  </li>))}
+              </ol>
+              <p className="hs-note">Đây là nhu cầu, chưa phải cặp ghép. Gợi ý đơn vị cho từng nhu cầu ở <Link className="pf-link" href="/dashboard/cau-that">trang Cầu thật</Link>.</p>
+            </>
+          )}
+        </section>
+      )}
 
       {kq && (
         <section className="dash-panel hd-tl" aria-labelledby="hd-tl-h" aria-live="polite">
@@ -120,7 +163,8 @@ export function HoiDap() {
       <p className="hs-foot">
         Cách trả lời: máy tách câu hỏi thành khái niệm (gộp từ đồng nghĩa như UAV và thiết bị bay không người lái), tìm trong {(chiMuc as { taiLieu: unknown[] }).taiLieu.length} câu
         nguồn về năng lực, rồi trả nguyên văn câu khớp. Máy không viết thêm chữ nào và không đoán. Đơn vị đã có cặp ghép được người ký cho nhu cầu được hỏi
-        thì hiện kèm. Kiểm định tự động chạy lại một bộ câu hỏi chuẩn mỗi lần dữ liệu đổi.
+        thì hiện kèm. Câu hỏi về nhu cầu (có chữ “cần”, “đặt hàng”, “bài toán”) thì máy tìm trong {(chiMucCau as { nhuCau: unknown[] }).nhuCau.length} nhu cầu đặt hàng thật,
+        theo tên bên đặt hàng hoặc tên công nghệ. Kiểm định tự động chạy lại một bộ câu hỏi chuẩn mỗi lần dữ liệu đổi.
       </p>
     </div>
   );

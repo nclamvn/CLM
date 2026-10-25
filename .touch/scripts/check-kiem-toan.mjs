@@ -19,7 +19,7 @@ import { join, dirname, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dungHoSoKiemToan } from '../lib/kiem-toan.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -33,6 +33,20 @@ const sha = (t) => createHash('sha256').update(t, 'utf8').digest('hex');
 const doc = (href) => { const p = join(PUB, href); return existsSync(p) ? readFileSync(p, 'utf8') : null; };
 
 const vi = [];
+// 25/10/2026: dang chuan khong duoc phu thuoc ngon ngu cua may. Hai chuoi ma localeCompare va ma ky tu
+// sap nguoc nhau ("a" < "B" theo ngon ngu, "B" < "a" theo ma): phien ban hien hanh phai sap theo ma.
+{
+  const md = process.argv.includes('--mo-dun') ? process.argv[process.argv.indexOf('--mo-dun') + 1] : join(HERE, '..', 'lib', 'kiem-toan.mjs');
+  const { dangChuan } = await import(pathToFileURL(md).href + '?t=' + Date.now());
+  const thu = JSON.parse(dangChuan('x', [], [{ href: 'a', sha256: '1' }, { href: 'B', sha256: '2' }]));
+  if (thu.banChup[0][0] !== 'B') vi.push('SAP_PHU_THUOC_MAY: dang chuan sap theo ngon ngu cua may, trinh duyet va may chu co the tinh ra hai ma khac nhau');
+}
+// Nut kiem lai tren trinh duyet phai dung CHINH ham dangChuan va Web Crypto, khong tu viet lai.
+{
+  const kp = process.argv.includes('--thanh-phan') ? process.argv[process.argv.indexOf('--thanh-phan') + 1] : join(HERE, '..', 'components', 'hoso', 'KiemToan.tsx');
+  const s = existsSync(kp) ? readFileSync(kp, 'utf8') : '';
+  if (!/import \{ dangChuan \} from '@\/lib\/kiem-toan\.mjs'/.test(s) || !/crypto\.subtle\.digest\('SHA-256'/.test(s)) vi.push('KIEM_TRINH_DUYET_HONG: KiemToan.tsx khong dung dangChuan cua lib va crypto.subtle de kiem lai');
+}
 const lai = Object.fromEntries(reg.units.map((u) => [u.name, dungHoSoKiemToan(u, doc, sha)]));
 if (JSON.stringify(lai) !== JSON.stringify(kt)) {
   const lech = reg.units.filter((u) => JSON.stringify(lai[u.name]) !== JSON.stringify(kt[u.name])).map((u) => u.name);

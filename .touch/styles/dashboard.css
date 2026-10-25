@@ -1486,3 +1486,37 @@
   .dash-shell .bcm-dau { flex-direction: column; }
 }
 @media print { .dash-shell .bcm-nen { display: none !important; } }
+.dash-shell .md-so--rong { grid-column: 1 / -1; text-decoration: none; color: inherit; }
+/* Phuong phap · dong du lieu, bang kiem dinh, lich su lo (25/10/2026) */
+.dash-shell .pp-dong { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; border-top: var(--stroke-hairline) solid var(--color-border-subtle); }
+.dash-shell .pp-dong__tang { display: flex; flex-direction: column; gap: 4px; padding: 14px 14px 4px 0; position: relative; }
+.dash-shell .pp-dong__tang + .pp-dong__tang { padding-left: 14px; border-left: var(--stroke-hairline) solid var(--color-border-subtle); }
+.dash-shell .pp-dong__so { font-size: 12px; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.dash-shell .pp-dong__ten { font-size: 13px; font-weight: 600; color: var(--color-text-primary); }
+.dash-shell .pp-dong__v { font-family: var(--font-serif-ed); font-size: 32px; line-height: 1.1; color: var(--color-text-primary); font-variant-numeric: lining-nums tabular-nums; margin-top: 6px; }
+.dash-shell .pp-dong__nhan { font-size: 13px; color: var(--color-text-secondary); }
+.dash-shell .pp-dong__phu { font-size: 12px; line-height: 1.5; color: var(--color-text-muted); }
+.dash-shell .pp-kd { margin-top: 14px; }
+.dash-shell .pp-chi-tiet { margin-top: 12px; font-size: 13px; color: var(--color-text-secondary); }
+.dash-shell .pp-chi-tiet summary { cursor: pointer; color: var(--color-text-primary); }
+.dash-shell .pp-o { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 4px 16px; }
+.dash-shell .pp-o li { display: flex; gap: 8px; align-items: baseline; font-size: 12px; }
+.dash-shell .pp-o code { font-size: 12px; color: var(--color-text-secondary); }
+.dash-shell .pp-o__dat { color: var(--color-text-muted); }
+.dash-shell .pp-o__do { color: var(--color-text-primary); font-weight: 700; }
+.dash-shell .pp-o__rang { color: var(--color-text-muted); border: var(--stroke-hairline) solid var(--color-border-subtle); border-radius: 4px; padding: 0 4px; }
+@media (max-width: 1100px) { .dash-shell .pp-dong { grid-template-columns: repeat(3, minmax(0, 1fr)); } .dash-shell .pp-dong__tang:nth-child(4) { border-left: 0; padding-left: 0; } }
+@media (max-width: 639px) { .dash-shell .pp-dong { grid-template-columns: minmax(0, 1fr); } .dash-shell .pp-dong__tang + .pp-dong__tang { border-left: 0; padding-left: 0; border-top: var(--stroke-hairline) solid var(--color-border-subtle); } }
+.dash-shell .kt-nut { display: flex; flex-wrap: wrap; gap: 8px; }
+.dash-shell .kt-kq { margin: 12px 0 0; font-size: 13px; line-height: 1.6; color: var(--color-text-secondary); border-top: var(--stroke-hairline) solid var(--color-border-subtle); padding-top: 10px; }
+/* Bang kiem dinh va lich su lo: cot chu can trai va xuong dong, cot so can phai. */
+.dash-shell .pp-kd th, .dash-shell .pp-kd td { text-align: left; white-space: normal; vertical-align: top; }
+.dash-shell .pp-kd td.so, .dash-shell .pp-kd th.so { text-align: right; white-space: nowrap; }
+/* Menu nhom (25/10/2026, G7) */
+.dash-shell .dash-nav__nhom { display: flex; flex-direction: column; gap: 2px; }
+.dash-shell .dash-nav__nhom + .dash-nav__nhom { margin-top: 10px; padding-top: 10px; border-top: var(--stroke-hairline) solid var(--color-border-subtle); }
+.dash-shell .dash-nav__ten-nhom { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: var(--color-text-muted); padding: 2px 12px 4px; }
+.dash-shell .dash-nav__nhom .dash-nav__item { height: 38px; }
+.dash-shell .dash-nav--phu { margin-top: 12px; }
+.dash-shell .dash-nav--phu .dash-nav__item { height: 34px; font-size: 13px; color: var(--color-text-muted); }
+@media (max-width: 1439px) and (min-width: 900px) { .dash-shell .dash-nav__ten-nhom { display: none; } }

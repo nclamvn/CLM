@@ -4,6 +4,7 @@ import { DashTopBar } from '@/components/dash/DashTopBar';
 import { cnclMeta } from '@/lib/cncl-registry';
 import { matchMeta } from '@/lib/cncl-match';
 import { ngayVN, tenNguoi } from '@/lib/dinh-dang';
+import { DongDuLieu, BangKiemDinh, LichSuLo } from '@/components/phuongphap/KienTruc';
 
 export const metadata: Metadata = {
   title: 'Phương pháp · .touch',
@@ -23,17 +24,24 @@ export default function PhuongPhapPage() {
     <>
       <DashTopBar title="Phương pháp" subtitle="Dữ liệu đến từ đâu, ghép thế nào, ai ký, kiểm định chặn gì" />
       <div className="dash-content pp">
+        {/* 25/10/2026: kien truc mot trang cho nguoi khong doc ma: dong du lieu, so doc tu file da sinh. */}
+        <section className="dash-panel pp-khoi" aria-labelledby="pp-0">
+          <h2 className="pp-h" id="pp-0"><span>00</span> Dữ liệu đi qua những tầng nào</h2>
+          <p>Một chiều, từ trái sang phải. Máy làm các tầng thu thập, kiểm và đề xuất; người duyệt lô và người gác cổng là hai chỗ duy nhất dữ liệu được nhận là sự thật. Mỗi con số dưới đây đọc từ chính dữ liệu đang chạy.</p>
+          <DongDuLieu />
+        </section>
+
         <section className="dash-panel pp-khoi" aria-labelledby="pp-1">
           <h2 className="pp-h" id="pp-1"><span>01</span> Dữ liệu đến từ đâu</h2>
           <p>
             Mọi thông tin về năng lực của một đơn vị là một <b>câu nguồn</b>: một câu chép nguyên văn từ trang công khai
             (cổng thông tin nhà nước, báo chính thống, trang của chính đơn vị), kèm <b>bản chụp</b> trang đó và ngày đăng bài.
-            Hiện có {cnclMeta.claims} câu nguồn về {cnclMeta.units} đơn vị, từ {cnclMeta.snapshots} bản chụp.
+            Hiện có {cnclMeta.claims} câu nguồn về {cnclMeta.units} đơn vị, từ {cnclMeta.banChupCung} bản chụp; tính cả chiều cầu, cầu thật và dòng thời cuộc, toàn hệ giữ {cnclMeta.snapshots} bản chụp.
           </p>
           <dl className="pp-hang">
             <div><dt>Hạng A</dt><dd>Cổng thông tin cơ quan nhà nước và Báo Điện tử Chính phủ. Hiện có {cnclMeta.tierA} câu.</dd></div>
-            <div><dt>Hạng B</dt><dd>Báo chính thống và tạp chí khoa học có biên tập.</dd></div>
-            <div><dt>Hạng C</dt><dd>Trang của chính đơn vị hoặc bài ghi rõ nguồn do đơn vị cung cấp: được dùng, nhưng luôn gắn nhãn tự khai.</dd></div>
+            <div><dt>Hạng B</dt><dd>Báo chính thống và tạp chí khoa học có biên tập. Hiện có {cnclMeta.tierB} câu.</dd></div>
+            <div><dt>Hạng C</dt><dd>Trang của chính đơn vị hoặc bài ghi rõ nguồn do đơn vị cung cấp: được dùng, nhưng luôn gắn nhãn tự khai. Hiện có {cnclMeta.tierC} câu.</dd></div>
           </dl>
           <p className="pp-phu">Không dùng trang tổng hợp, diễn đàn, mạng xã hội hay trang tra cứu doanh nghiệp tư nhân. Nhu cầu quốc gia lấy từ danh mục sản phẩm công nghệ chiến lược theo QĐ 21/2026/QĐ-TTg.</p>
         </section>
@@ -75,11 +83,18 @@ export default function PhuongPhapPage() {
             <li>nguồn quá 180 ngày mà chưa ghi lý do giữ;</li>
             <li>chữ tiếng Anh, chữ quá nhỏ, màu tươi hoặc lỗi truy cập lọt vào giao diện.</li>
           </ul>
-          <p className="pp-phu">Mỗi bước kiểm định có một bộ thử tự cài lỗi để chứng minh bước đó còn bắt được lỗi.</p>
+          <p className="pp-phu">Mỗi bước kiểm định có một bộ thử tự cài lỗi để chứng minh bước đó còn bắt được lỗi. Bảng dưới là kết quả thật của lần chạy gần nhất, chia theo phần của hệ.</p>
+          <BangKiemDinh />
+        </section>
+
+        <section className="dash-panel pp-khoi" aria-labelledby="pp-lo">
+          <h2 className="pp-h" id="pp-lo"><span>05</span> Lịch sử duyệt lô</h2>
+          <p>Dữ liệu mới chỉ vào sổ nguồn theo lô. Máy đề xuất từng dòng kèm câu nguồn và bản chụp, chỗ nào không có nguồn thì để trống và ghi rõ; người kiểm khác tải lại trang gốc để đối chứng; người duyệt trả lời cả lô và lời duyệt được giữ nguyên văn.</p>
+          <LichSuLo />
         </section>
 
         <section className="dash-panel pp-khoi" aria-labelledby="pp-5">
-          <h2 className="pp-h" id="pp-5"><span>05</span> Thuật ngữ</h2>
+          <h2 className="pp-h" id="pp-5"><span>06</span> Thuật ngữ</h2>
           <dl className="pp-tn">
             <div><dt>Câu nguồn</dt><dd>Một câu chép nguyên văn từ nguồn công khai, làm bằng cho một thông tin.</dd></div>
             <div><dt>Bản chụp</dt><dd>Bản lưu trang nguồn tại ngày lấy, để đối chiếu khi trang gốc đổi hoặc mất.</dd></div>

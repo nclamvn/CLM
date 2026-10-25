@@ -12,6 +12,7 @@
 import graph from './hub-graph.json';
 import matchData from './cncl-match.json';
 import registry from './cncl-registry.json';
+import cauThatData from './hub-cau-that.json';
 
 export type NutMT = { id: string; ten: string; loai: 'cung' | 'cau' | 'nhom'; nhom: number; ma?: string; trong?: boolean };
 export type LuongMT = { cung: number; cau: number; nhom: number; daKy: boolean };
@@ -23,7 +24,9 @@ export type MatchMT = {
 };
 export type SoMT = {
   donVi: number; nhuCau: number; nhom: number; capCoNguon: number; daKy: number; tuChoi: number;
-  ncTrong: number; cauNguon: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string; cheDo?: string } | null;
+  ncTrong: number; cauNguon: number; tierA: number;
+  /** 25/10/2026: cau that (nhu cau dat hang cong khai co ben dat hang) len mat tien: tra loi "ai tra tien". */
+  cauThat: number; benDatHang: number; chuoiCong: { xanh: number; tong: number; luc: string; cheDo?: string } | null;
 };
 export type MatTien = { nut: NutMT[]; canhNhom: [number, number][]; luong: LuongMT[]; tuChoi: [number, number][]; match: MatchMT[]; so: SoMT };
 
@@ -38,6 +41,7 @@ export function dungMatTien(): MatTien {
       demandEvidence: { tier: string; value: string; span: string; source: string }[]; supplyEvidence: { tier: string; span: string; source: string }[] }[];
     rejectedPairs: unknown[];
   };
+  const CT = cauThatData as unknown as { nhuCau: { ma: string; benDatHang: string }[] };
   const R = registry as unknown as { meta: { claims: number; tierA: number; chuoiCong: { xanh: number; tong: number; luc: string; cheDo?: string } | null } };
 
   const nhomCua = (n: GNode) => Number(n.kind === 'nhu_cau' ? n.nhom : (n.nhoms ?? [])[0] ?? 0);
@@ -87,7 +91,9 @@ export function dungMatTien(): MatTien {
   const so: SoMT = {
     donVi: cung.length, nhuCau: cau.length, nhom: nhom.length, capCoNguon: capCo.size, daKy: match.length,
     tuChoi: M.rejectedPairs.length, ncTrong: cau.filter((n) => !cauCoCung.has(n.id)).length,
-    cauNguon: R.meta.claims, tierA: R.meta.tierA, chuoiCong: R.meta.chuoiCong ? { xanh: R.meta.chuoiCong.xanh, tong: R.meta.chuoiCong.tong, luc: R.meta.chuoiCong.luc, cheDo: R.meta.chuoiCong.cheDo } : null,
+    cauNguon: R.meta.claims, tierA: R.meta.tierA,
+    cauThat: CT.nhuCau.length, benDatHang: new Set(CT.nhuCau.map((n) => n.benDatHang)).size,
+    chuoiCong: R.meta.chuoiCong ? { xanh: R.meta.chuoiCong.xanh, tong: R.meta.chuoiCong.tong, luc: R.meta.chuoiCong.luc, cheDo: R.meta.chuoiCong.cheDo } : null,
   };
   return { nut, canhNhom, luong, tuChoi, match, so };
 }

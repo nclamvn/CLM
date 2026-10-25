@@ -22,6 +22,8 @@
  * RANG 10 · thanh "da dinh danh" thoi phong 0 -> 60 tren mau 60, ti so hang A sua -> CHAT_LUONG_LECH.
  * RANG 11 · giau viec dinh danh khi van con don vi chua dinh danh -> VIEC_LECH.
  * RANG 12 · bang nhom bot mot nhom -> NHOM_LECH.
+ * RANG 13 · (25/10/2026) viec tiep huong di ky khi pheu co 0 cap cho ky -> VIEC_LECH.
+ * RANG 14 · (25/10/2026) so cau that thoi phong 54 -> 60 -> SO_LECH.
  *
  * Chay: node scripts/bite-mo-dau.mjs
  */
@@ -34,7 +36,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const TOUCH = join(HERE, '..');
 const CONG = join(HERE, 'check-mo-dau.mjs');
-const JSONS = ['hub-mo-dau.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-thi-truong.json', 'hub-thoi-cuoc.json', 'hub-ho-so.json', 'hub-matching.json'];
+const JSONS = ['hub-mo-dau.json', 'cncl-registry.json', 'cncl-match.json', 'hub-graph.json', 'hub-thi-truong.json', 'hub-thoi-cuoc.json', 'hub-ho-so.json', 'hub-matching.json', 'hub-pheu.json', 'hub-cau-that.json'];
 const kq = [];
 const inRa = (nhan, ok, chi) => { console.log(`${nhan.padEnd(58)} : ${ok ? `CAN OK (${chi})` : `KHONG CAN !! ${chi}`}`); kq.push(ok); };
 const tam = [];
@@ -79,6 +81,10 @@ try {
   inRa('RANG 11 · giau viec dinh danh -> VIEC_LECH', r.rc === 2 && r.out.includes('VIEC_LECH'), `exit ${r.rc}`);
   r = chay(canh((t) => doiJson(t, (x) => { x.nhom.pop(); })));
   inRa('RANG 12 · bang nhom bot mot nhom -> NHOM_LECH', r.rc === 2 && r.out.includes('NHOM_LECH'), `exit ${r.rc}`);
+  r = chay(canh((t) => { doiJson(t, (x) => { x.viecTiep.push({ so: 12, viec: 'nhu cầu đã có bên cung nhưng chưa có cặp được ký', cach: 'người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối', href: '/dashboard/matching' }); }); doiFile(t, 'lib/hub-pheu.json', (s) => { const x = JSON.parse(s); x.tang.find((g) => g.k === 'cho_ky').n = 0; return JSON.stringify(x); }); }));
+  inRa('RANG 13 · viec huong di ky khi 0 cap cho ky -> VIEC_LECH', r.rc === 2 && r.out.includes('VIEC_LECH'), `exit ${r.rc}`);
+  r = chay(canh((t) => doiJson(t, (x) => { x.so.cauThat += 6; })));
+  inRa('RANG 14 · so cau that thoi phong -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH'), `exit ${r.rc}`);
 
   const t = canh();
   const goc = readFileSync(join(t, 'lib', 'mo-dau.mjs'), 'utf8');
@@ -89,7 +95,7 @@ try {
     writeFileSync(join(t, 'lib', 'mo-dau.mjs'), hong);
     const m = await import(pathToFileURL(join(t, 'lib', 'mo-dau.mjs')).href);
     const d = (f) => JSON.parse(readFileSync(join(t, 'lib', f), 'utf8'));
-    writeFileSync(join(t, 'lib', 'hub-mo-dau.json'), JSON.stringify(m.dungMoDau({ reg: d('cncl-registry.json'), mat: d('cncl-match.json'), graph: d('hub-graph.json'), thiTruong: d('hub-thi-truong.json'), thoiCuoc: d('hub-thoi-cuoc.json'), hoSo: d('hub-ho-so.json'), matching: d('hub-matching.json') })));
+    writeFileSync(join(t, 'lib', 'hub-mo-dau.json'), JSON.stringify(m.dungMoDau({ reg: d('cncl-registry.json'), mat: d('cncl-match.json'), graph: d('hub-graph.json'), thiTruong: d('hub-thi-truong.json'), thoiCuoc: d('hub-thoi-cuoc.json'), hoSo: d('hub-ho-so.json'), matching: d('hub-matching.json'), pheu: d('hub-pheu.json'), cauThat: d('hub-cau-that.json') })));
     r = chay(t, '--mo-dun', join(t, 'lib', 'mo-dau.mjs'));
     inRa('RANG 9 · module bot mot khoang trong -> SO_LECH', r.rc === 2 && r.out.includes('SO_LECH') && !r.out.includes('MO_DAU_LECH'), `exit ${r.rc}`);
   }

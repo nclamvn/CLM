@@ -108,6 +108,9 @@ DEM="${CLM_KHO_DEM:-$(dirname "$CLM")/Dataset_CongNgheChienLuoc}"
 XANH=0; DO=0; TREO=0; DA_HOAN=0
 DS_HOAN=""; THUA=""
 DONG=""; CHI_TIET=""
+# 25/10/2026: ket qua TUNG O (kho, ten, trang thai) ghi vao file ket qua, de trang Phuong phap cho
+# thay cong nao, rang nao, thay vi chi mot con so tong. Ten o chi gom chu, so, gach duoi.
+O_JSON=""
 
 # chay <kho_nhan> <ten_cong> <thu_muc> <loc_ghi_chu> <lenh...>
 # loc_ghi_chu la bieu thuc grep de rut MOT dong tom tat tu output; de rong thi khong rut.
@@ -136,6 +139,7 @@ chay() {
        fi ;;
     *) trang_thai="DO";          DO=$((DO+1)) ;;
   esac
+  O_JSON="${O_JSON}{\"kho\": \"$kho\", \"ten\": \"$ten\", \"tt\": \"$trang_thai\"},"
   DONG="${DONG}$(printf '%-26s %-26s %-11s %s' "$kho" "$ten" "$trang_thai" "$ghi")
 "
   if [ "$rc" -ne 0 ] && [ "$IM" -eq 0 ]; then
@@ -275,6 +279,10 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
   chay .touch      sinh_du_lieu_kho "$TOUCH" 'KHO:|KHONG CHAY'  node scripts/gen-kho.mjs
   chay .touch      bo_dau_viet      "$TOUCH" 'OK:|FAIL'         node scripts/viet.mjs --tu-kiem
   chay .touch      so_sinh          "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-so-sinh.mjs
+  # 25/10/2026: trang Phuong phap hien ket qua TUNG O va lich su duyet lo; hai bang do phai la that.
+  chay .touch      chuoi_cong_web   "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-chuoi-cong.mjs
+  chay .touch      lich_su_lo       "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-lich-su-lo.mjs
+  chay .touch      menu             "$TOUCH" 'OK:|FAIL|KHONG CHAY' node scripts/check-menu.mjs
   # Pha P1 (29/09/2026): lop phu nguon va Cmd+K. tim_kiem: moi tai lieu tim ra bang ten co
   # dau va ban ASCII doc lap. lop_phu_nguon: moi cau nguon to sang duoc NGUYEN VAN trong ban
   # chup ma trang web phuc vu (public/evidence), khong chi trong ban goc.
@@ -365,6 +373,9 @@ if [ -n "${TOUCH:-}" ] && [ -f "$TOUCH/scripts/gen-cncl-data.mjs" ]; then
     chay .touch    rang_truong_hien "$TOUCH" 'BITE TRUONG HIEN'  node scripts/bite-truong-hien.mjs
     chay .touch    rang_phu_moc     "$TOUCH" 'BITE PHU MOC'      node scripts/bite-phu-moc.mjs
     chay .touch    rang_so_sinh     "$TOUCH" 'BITE SO SINH'      node scripts/bite-so-sinh.mjs
+    chay .touch    rang_chuoi_cong  "$TOUCH" 'BITE CHUOI CONG'   node scripts/bite-chuoi-cong.mjs
+    chay .touch    rang_lich_su_lo  "$TOUCH" 'BITE LICH SU LO'   node scripts/bite-lich-su-lo.mjs
+    chay .touch    rang_menu        "$TOUCH" 'BITE MENU'         node scripts/bite-menu.mjs
     chay .touch    rang_lop_phu     "$TOUCH" 'BITE LOP PHU'      node scripts/bite-lop-phu.mjs
     chay .touch    rang_ghi_chu     "$TOUCH" 'BITE GHI CHU'      node scripts/bite-ghi-chu.mjs
     chay .touch    rang_do_thi      "$TOUCH" 'BITE DO THI'       node scripts/bite-do-thi.mjs
@@ -435,9 +446,9 @@ TONG=$((XANH+DO+TREO+DA_HOAN))
 # sach thi khong co file, va trang web phai noi "chua co ket qua" chu khong duoc bia.
 mkdir -p "$CLM/out"
 {
-  printf '{"luc": "%s", "che_do": "%s", "tong": %d, "xanh": %d, "do": %d, "khong_chay": %d, "hoan": %d, "ds_hoan": "%s"}\n' \
+  printf '{"luc": "%s", "che_do": "%s", "tong": %d, "xanh": %d, "do": %d, "khong_chay": %d, "hoan": %d, "ds_hoan": "%s", "o": [%s]}\n' \
     "$(date '+%Y-%m-%dT%H:%M:%S%z')" "$([ "$NHANH" -eq 1 ] && echo nhanh || echo day_du)" \
-    "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN" "$(echo $DS_HOAN)"
+    "$TONG" "$XANH" "$DO" "$TREO" "$DA_HOAN" "$(echo $DS_HOAN)" "${O_JSON%,}"
 } > "$CLM/out/ket_qua_chuoi.json.tmp" && mv "$CLM/out/ket_qua_chuoi.json.tmp" "$CLM/out/ket_qua_chuoi.json"
 
 # DONG DAU (07/10/2026): trang web sinh GIUA chuoi nen chi biet lan chay TRUOC. Soi QA 07/10: lan

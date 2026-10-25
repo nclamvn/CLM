@@ -1,0 +1,592 @@
+{
+ "dot": "dot_04",
+ "so_dong": 11,
+ "don_vi_moi": [
+  "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)"
+ ],
+ "don_vi_cu": [
+  "Công ty An ninh mạng Viettel",
+  "Tập đoàn MISA",
+  "Viettel High Tech"
+ ],
+ "nhu_cau": [
+  "P01",
+  "P02",
+  "P09"
+ ],
+ "honest_null": [
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "VinBigData",
+   "ly_do": "Không tìm được câu nguồn nào nói VinBigData có sản phẩm hay dự án giao thông thông minh. Các kết quả chỉ nói bộ giải pháp phân tích hình ảnh Vizone (Vizone Secure giám sát an ninh qua video, huấn luyện trên dữ liệu có phương tiện), nền tảng VinBase và thỏa thuận hợp tác với Advantech 2022 về camera an ninh công cộng, đô thị thông minh (chỉ là hợp tác). Các sản phẩm AI cho xe (giám sát người lái, camera 360) là của VinAI, đơn vị khác. Giữ nguyên 'hoãn' ở phiếu xét dòng 7 hoặc chuyển 'loại' cho btl-01.",
+   "url": "https://doanhnhan.baophapluat.vn/vinbigdata-ra-mat-bo-giai-phap-phan-tich-hinh-anh-thong-minh-vizone-64232.html"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-01",
+   "entity": "Tập đoàn Viettel",
+   "ly_do": "Thí điểm hệ thống giao thông thông minh tại 2 nút giao phố Phạm Văn Bạch, Cầu Giấy (6-12/2024) theo đề xuất của Viettel: nguồn tìm được (daibieunhandan.vn) chỉ là tin UBND Hà Nội đồng ý thí điểm, không có báo cáo kết quả. Hệ thống 1.837 camera AI và Trung tâm điều khiển giao thông thông minh của Công an Hà Nội (vận hành từ 13/12/2025) không nêu tên nhà cung cấp trong các bài đã đọc (vneconomy, vnbusiness, daibieunhandan). Không gán cho đơn vị nào.",
+   "url": "https://daibieunhandan.vn/thi-diem-he-thong-giao-thong-thong-minh-10338444.html"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-13",
+   "entity": "Viettel AI",
+   "ly_do": "Chưa có bằng chứng Viettel AI làm bản sao số ĐÔ THỊ. Bằng chứng hiện có chỉ là Viettel BTS Digital Twin (hạ tầng viễn thông). Bản sao số thành phố VSDT (Znews 15/03/2023) do Trung tâm Không gian mạng Viettel (VTCC) phát triển và lúc đó 'mới là một nền tảng để lưu trữ dữ liệu xây dựng thành phố ảo'; nguồn không nói VTCC là tiền thân của Viettel AI nên không gán. Đã đề xuất cho Tập đoàn Viettel thay vào đó.",
+   "url": "https://znews.vn/gen-z-viet-tu-tin-trinh-dien-vu-tru-ao-tai-mwc-2023-post1412248.html"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-13",
+   "entity": "VNPT",
+   "ly_do": "Chỉ là cam kết: đến năm 2027 VNPT sẽ nắm công nghệ xây dựng bản sao số cho các thành phố (baochinhphu.vn 15/01/2025, theo kết quả tìm kiếm). Ý định, chưa có sản phẩm triển khai.",
+   "url": "https://baochinhphu.vn/trien-khai-nghi-quyet-57-nq-tw-trong-trach-va-co-hoi-cua-doanh-nghiep-cong-nghe-so-102250115193508896.htm"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-13",
+   "entity": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
+   "ly_do": "Mô hình 'Chuyển đổi số toàn diện Đặc khu Côn Đảo' trên nền tảng Bản sao kỹ thuật số do VNTT phối hợp triển khai (SGGP 11/06/2026) mới ở hội nghị triển khai thí điểm 1 tháng, chưa có kết quả. Có thể xem lại cho btl-06 và btl-13 khi có sơ kết của Sở KH-CN TPHCM.",
+   "url": "https://www.sggp.org.vn/tphcm-trien-khai-thi-diem-mo-hinh-do-thi-thong-minh-cap-xa-post856874.html"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-13",
+   "entity": null,
+   "ly_do": "Không tìm được viện, trường Việt Nam có đề tài nghiệm thu về bản sao số đô thị hay mô phỏng dữ liệu đô thị trên mst.gov.vn, vjst.vn, baochinhphu.vn. Bài baochinhphu.vn 15/12/2025 nói chung về mô phỏng 3D và bản sao số trong quy hoạch, không nêu đơn vị. Btl-13 hiện chỉ có Tập đoàn Viettel (bằng chứng mức B, độ chín chưa rõ).",
+   "url": "https://baochinhphu.vn/phat-trien-do-thi-thong-minh-tu-nen-tang-cntt-va-du-lieu-so-10225121511200425.htm"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-10",
+   "entity": "VR3D (nhóm của anh Nguyễn Trí Dũng)",
+   "ly_do": "Nhóm gia đình tự số hóa di tích (thềm rồng Điện Kính Thiên, Hoàng thành Thăng Long) và phổ biến miễn phí trên vr3d.vn; nguồn không cho thấy là pháp nhân (doanh nghiệp, viện, trường).",
+   "url": "https://nhandan.vn/ocop/chia-khoa-mo-kho-bau-di-san-post836220.html"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-10",
+   "entity": "Trung tâm Xúc tiến Du lịch Đà Nẵng; Trung tâm Văn hóa - Thể thao & Truyền thanh - Truyền hình TP Hội An",
+   "ly_do": "Là bên đặt hàng và vận hành nền tảng du lịch ảo, không phải bên làm chủ công nghệ (đối tác công nghệ là Bizverse, đã đưa vào ung_vien_ngoai_P).",
+   "url": "https://nhandan.vn/dua-du-lich-len-vu-tru-ao-post716015.html"
+  },
+  {
+   "nhu_cau": "P08",
+   "cau_that": "btl-12",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam có giải pháp tự động hóa sản xuất (P08) dành riêng cho doanh nghiệp vừa và nhỏ với bằng chứng đã triển khai trên nguồn A/B trong lượt này; các bài tìm được (vnbusiness, daibieunhandan) là phân tích xu hướng hoặc nói về doanh nghiệp người dùng (Nhựa Hà Nội), không nêu nhà cung cấp. Btl-12 có MISA (đề xuất mới) cùng FPT, VNPT đã ở phiếu xét 24/10.",
+   "url": "https://daibieunhandan.vn/doanh-nghiep-viet-lot-xac-nho-san-xuat-thong-minh-10412155.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-01",
+   "entity": "Viettel High Tech",
+   "ly_do": "CHUA DE XUAT VI O DON TRI DA CO GIA TRI: registry da co bang_chung_nang_luc cho don vi nay (kiem_lo.py bao O_DA_CO_GIA_TRI), nap them se thanh tranh chap. Can anh Lam quyet: them truong moi trong domain.yaml hoac thay dong cu. Ung vien de xuat (value nguyen van trong span): đạt giải nhất trong cuộc thi \"Ý tưởng An toàn giao thông 2024\". Ghi chu: BẰNG CHỨNG YẾU: mức nguyên mẫu. Bài nói nhóm 'bước đầu thành công', câu dùng thì tương lai 'sẽ', giải thưởng là cuộc thi ý tưởng; chưa có khách hàng hay địa phương triển khai. Nguồn hạng A (cổng tỉnh Bà Rịa - Vũng Tàu cũ). Người duyệt có thể hạ xuống honest-null nếu chỉ nhận hệ thống đã triển khai.",
+   "url": "https://bavutex.baria-vungtau.gov.vn/public/tin-tuc/ap-dung-thanh-cong-cong-nghe-ai-trong-he-thong-camera-phat-nguoi.html",
+   "field": "bang_chung_nang_luc",
+   "evidence_span": "Việc tích hợp chip AI trên từng camera sẽ giúp tối ưu yêu cầu hạ tầng mạng cũng như trung tâm xử lý AI. Những ưu điểm này của chiếc camera có tích hợp trí tuệ nhân tạo đã giúp cho nhóm nghiên cứu đạt giải nhất trong cuộc thi \"Ý tưởng An toàn giao thông 2024\".",
+   "snapshot": "bavutex_viettel_camera_ai_giao_thong_20250116.md",
+   "tier_de_xuat": "A",
+   "ngay_bai": "2025-01-16"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-13",
+   "entity": "Tập đoàn Viettel",
+   "ly_do": "CHUA DE XUAT VI O DON TRI DA CO GIA TRI: registry da co nang_luc_mo_ta_2 cho don vi nay (kiem_lo.py bao O_DA_CO_GIA_TRI), nap them se thanh tranh chap. Can anh Lam quyet: them truong moi trong domain.yaml hoac thay dong cu. Ung vien de xuat (value nguyen van trong span): Viettel xây dựng thành công bản sao số (Digital Twin) của một trong những thành phố ảo đầu tiên tại Việt Nam. Ghi chu: Bản sao số cấp thành phố có cấu phần mô phỏng (Simulation), dữ liệu công trình và thời tiết cập nhật hàng ngày: đúng đối tượng btl-13 (mô phỏng dữ liệu cho bài toán đô thị). Có từ 'đầu tiên'. Bài Tuổi Trẻ văn phong gần thông cáo.",
+   "url": "https://tuoitre.vn/viettel-tang-toc-tren-hanh-trinh-chuyen-doi-so-quoc-gia-20231011125240798.htm",
+   "field": "nang_luc_mo_ta_2",
+   "evidence_span": "Viettel xây dựng thành công bản sao số (Digital Twin) của một trong những thành phố ảo đầu tiên tại Việt Nam, chứa đựng hàm lượng công nghệ cao (IoT, Big Data, AI, GIS, Simulation, Blockchain…). Dữ liệu từ thực tế của mỗi công trình, căn nhà, tình hình thời tiết... được cập nhật từ vệ tinh hàng ngày.",
+   "snapshot": "tuoitre_viettel_ban_sao_so_thanh_pho_20231011.md",
+   "tier_de_xuat": "B",
+   "ngay_bai": "2023-10-11"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-13",
+   "entity": "Tập đoàn Viettel",
+   "ly_do": "CHUA DE XUAT VI O DON TRI DA CO GIA TRI: registry da co bang_chung_nang_luc cho don vi nay (kiem_lo.py bao O_DA_CO_GIA_TRI), nap them se thanh tranh chap. Can anh Lam quyet: them truong moi trong domain.yaml hoac thay dong cu. Ung vien de xuat (value nguyen van trong span): Dữ liệu từ thực tế của mỗi công trình, căn nhà, tình hình thời tiết... được cập nhật từ vệ tinh hàng ngày. Ghi chu: LƯU Ý ĐỘ CHÍN: bài Znews 15/03/2023 (snapshots/znews_viettel_vsdt_mwc_20230315.md) nói sản phẩm này là Viettel Social Digital Twin do Trung tâm Không gian mạng Viettel (VTCC) phát triển, 'mới là một nền tảng để lưu trữ dữ liệu xây dựng thành phố ảo' và 'cần 3-4 năm nữa để hoàn thiện'. Bài SGGP 11/06/2026 ghi Tập đoàn Viettel phối hợp thí điểm 1 tháng 'Hệ thống Digital Twin giám sát an ninh đô thị' tại phường Phú Nhuận và Vũng Tàu (chưa chụp, chưa có kết quả). Chưa có bằng chứng Viettel AI làm bản sao số đô thị (xem honest-null).",
+   "url": "https://tuoitre.vn/viettel-tang-toc-tren-hanh-trinh-chuyen-doi-so-quoc-gia-20231011125240798.htm",
+   "field": "bang_chung_nang_luc",
+   "evidence_span": "Viettel xây dựng thành công bản sao số (Digital Twin) của một trong những thành phố ảo đầu tiên tại Việt Nam, chứa đựng hàm lượng công nghệ cao (IoT, Big Data, AI, GIS, Simulation, Blockchain…). Dữ liệu từ thực tế của mỗi công trình, căn nhà, tình hình thời tiết... được cập nhật từ vệ tinh hàng ngày.",
+   "snapshot": "tuoitre_viettel_ban_sao_so_thanh_pho_20231011.md",
+   "tier_de_xuat": "B",
+   "ngay_bai": "2023-10-11"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "Trung tâm Giám sát và Điều hành đô thị thông minh Huế (HueIOC)",
+   "ly_do": "Đơn vị vận hành thuộc chính quyền, không phải DN/viện/trường. Giải pháp AI nhận diện rác thải chuyển cảnh báo sang Hue-S do WWF phối hợp HueIOC triển khai; nguồn không nêu đơn vị làm chủ công nghệ nhận diện.",
+   "url": "https://chinhsachcuocsong.vnanet.vn/hue-ung-dung-ai-trong-quan-ly-chat-thai-thay-doi-hanh-vi-cua-nguoi-dan/70377.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "Công an TP Hà Nội (hệ thống camera AI phạt nguội trật tự đô thị, vệ sinh môi trường)",
+   "ly_do": "Cơ quan vận hành. Các bài về 1.837 camera AI và phạt nguội xả rác, lấn chiếm vỉa hè không nêu nhà cung cấp hay đơn vị làm chủ công nghệ; không gán được cho doanh nghiệp nào.",
+   "url": "https://tuoitre.vn/camera-ai-phat-nguoi-lan-chiem-via-he-xa-rac-bua-bai-mong-nhan-rong-o-nhieu-do-thi-20260126102222135.htm"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "Urenco 15 (Đà Nẵng)",
+   "ly_do": "Đơn vị vận hành thu gom, lắp GPS và camera trên xe rác; nguồn không cho thấy tự phát triển công nghệ giám sát.",
+   "url": "https://mae.gov.vn/da-nang-so-hoa-de-nang-cao-nang-luc-thu-gom-xu-ly-rac-thai-22425.htm"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "Viettel Hải Phòng (camera AI phường Đông Hải)",
+   "ly_do": "Chỉ mới giới thiệu, nghiên cứu ứng dụng camera AI cho trật tự đô thị, vệ sinh môi trường ở cấp phường; chưa có triển khai. Thông tin lấy từ kết quả tìm kiếm, chưa tải trang.",
+   "url": "https://baophapluat.vn/phuong-dong-hai-nghien-cuu-ung-dung-camera-ai-phuc-vu-chuyen-doi-so-va-quan-ly-do-thi.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "VinAI",
+   "ly_do": "Brochure tự khai nói dự án Vinhomes Smart City có 9.000 luồng camera với 9 tính năng AI về an ninh, tuân thủ; không nêu rõ trật tự, vệ sinh đô thị hay rác thải. Chưa tải trang, chỉ thấy qua kết quả tìm kiếm.",
+   "url": "https://www.vinai.io/wp-content/uploads/2023/10/SE-Brochure-VinAI.pdf"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": "Bkav (AI View)",
+   "ly_do": "Camera AI View tự phát triển nhưng nguồn tìm được chỉ nói nhận diện khuôn mặt, biển số, cháy; không có bằng chứng triển khai cho trật tự hay vệ sinh đô thị.",
+   "url": "https://english.mst.gov.vn/vietnamese-bkav-exports-first-batch-of-ai-view-cameras-to-us-197145432.htm"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-02",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam có câu nguồn hạng A/B nói thẳng tự phát triển camera AI giám sát trật tự, vệ sinh đô thị và gắn được mã P02 (xử lý tại biên). Ứng viên gần nhất là Tập đoàn Viettel (nền tảng smartcity Huế), đã đưa vào ung_vien_ngoai_P_dothi.jsonl.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": "Tổng cục Môi trường (phần mềm Envisoft)",
+   "ly_do": "Phần mềm tiếp nhận dữ liệu quan trắc tự động nguồn thải thời gian thực do Tổng cục Môi trường (cơ quan nhà nước) xây dựng và chuyển giao cho 57 Sở; không phải DN/viện/trường.",
+   "url": "https://nhandan.vn/kiem-soat-o-nhiem-qua-phan-mem-quan-ly-so-lieu-quan-trac-tu-dong-post454095.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": "Cục Viễn thám quốc gia",
+   "ly_do": "Dùng ảnh vệ tinh và drone giám sát điểm nóng phát thải ở Hà Nội; là cơ quan quản lý nhà nước, không thuộc DN/viện/trường; mục tiêu bản đồ ô nhiễm thời gian thực vẫn là định hướng.",
+   "url": "https://vneconomy.vn/dung-ve-tinh-thiet-bi-khong-nguoi-lai-giam-sat-cac-diem-nong-o-nhiem-khong-khi.htm"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": "VNPT",
+   "ly_do": "Bài (chuyên trang OCOP, dạng quảng bá) ghi giải pháp quan trắc môi trường mà VNPT \"phân phối và triển khai\", CEMS dùng thiết bị đạt chuẩn quốc tế: chỉ phân phối, tích hợp, không làm chủ công nghệ.",
+   "url": "https://nhandan.vn/ocop/vnpt-gioi-thieu-giai-phap-quan-trac-moi-truong-hien-dai-chung-tay-vi-mot-viet-nam-xanh-va-ben-vung-post931167.html"
+  },
+  {
+   "nhu_cau": "P13",
+   "cau_that": "btl-03",
+   "entity": "Trung tâm Nghiên cứu triển khai - Khu Công nghệ cao TPHCM",
+   "ly_do": "Nguồn chỉ nói \"sẵn sàng triển khai\" cảm biến khí và hệ thống quan trắc không khí; chưa có triển khai, và không phải định danh nguồn phát thải.",
+   "url": "https://www.sggp.org.vn/quan-trac-ngap-nuoc-o-tp-thu-duc-post587388.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": "Nhất Tín",
+   "ly_do": "Nhà cung cấp thiết bị quan trắc môi trường tự động; nguồn không cho thấy làm chủ công nghệ hay định danh nguồn thải. Chỉ thấy qua kết quả tìm kiếm.",
+   "url": "https://baohatinh.vn/nhat-tin-cung-cap-thiet-bi-quan-trac-moi-truong-tu-dong-chat-luong-cao-dong-bo-post303461.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": "FIMO, Trường Đại học Công nghệ, ĐHQGHN (APOM)",
+   "ly_do": "Phần mềm bản đồ ô nhiễm không khí từ ảnh vệ tinh: đo nồng độ, không định danh nguồn phát thải theo thời gian thực; chưa xác minh được tình trạng vận hành từ nguồn hạng A/B.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-03",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam (DN/viện/trường) có câu nguồn hạng A/B về hệ thống giám sát, định danh nguồn phát thải theo thời gian thực do mình làm chủ. Các hệ thống tìm được là của cơ quan nhà nước (Envisoft, Cục Viễn thám) hoặc do doanh nghiệp phân phối thiết bị ngoại.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": "Đài Khí tượng thủy văn khu vực Nam Bộ",
+   "ly_do": "Năng lực đúng việc và đã hình thành: đề tài \"hệ thống cảnh báo sớm ngập lụt đô thị dựa trên nền tảng AI tại TPHCM\" được Sở KH&CN TPHCM nghiệm thu, ứng dụng dự báo ngập đã bàn giao cho TP Thủ Đức (2023). Không đề xuất vì đơn vị là đài KTTV thuộc hệ thống cơ quan khí tượng nhà nước, không thuộc DN/viện/trường; nếu anh Lâm nới loại hình thì đây là ứng viên mạnh nhất cho btl-04.",
+   "url": "https://hanoimoi.vn/dung-tri-tue-nhan-tao-du-bao-ngap-lut-do-thi-445219.html"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": "Trung tâm Giám sát và điều hành thông minh Đà Nẵng (IOC)",
+   "ly_do": "Đơn vị vận hành; 56 tháp cảnh báo ngập lụt đô thị và bản đồ ngập trên Danang Smart City, nguồn không nêu đơn vị làm chủ công nghệ.",
+   "url": "https://mae.gov.vn/da-nang-ung-dung-khoa-hoc-cong-nghe-trong-phong-chong-ngap-lut-do-thi-19124.htm"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": "Công ty TNHH MTV Thoát nước Hà Nội",
+   "ly_do": "Đơn vị vận hành hệ thống thoát nước, có gần 100 điểm cảm biến mực nước; không thấy bằng chứng tự phát triển hệ thống dự báo ngập.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": null,
+   "ly_do": "Bài \"Xây dựng hệ thống dự báo ngập lụt đô thị cho khu vực Hà Nội sử dụng số liệu mưa lưới độ phân giải cao\" (Tạp chí Khoa học Biến đổi khí hậu, số 12/2019) không ghi cơ quan của tác giả trên trang tóm tắt; không gán được đơn vị.",
+   "url": "https://vjol.info.vn/TCKHBDKH/article/view/57875"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": "Spectee",
+   "ly_do": "Đơn vị Nhật Bản (nền tảng AI Spectee Pro), không phải đơn vị Việt Nam; bản Việt Nam mới dự kiến thí điểm.",
+   "url": "https://bacninh.gov.vn/news/-/details/37632/bac-ninh-nghien-cuu-ung-dung-ai-trong-canh-bao-som-thien-tai-du-bao-lu-lut-133944636"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": "NLT Group",
+   "ly_do": "Trang tự khai về ứng dụng tra cứu, cảnh báo điểm ngập hiển thị dữ liệu 21 trạm TPHCM; chưa có nguồn hạng A/B, chưa rõ dữ liệu trạm do ai làm chủ. Chưa tải trang.",
+   "url": "https://nlt-group.com/nlt-group-ung-dung-tra-cuu-va-canh-bao-diem-ngap-lut/"
+  },
+  {
+   "nhu_cau": "P03",
+   "cau_that": "btl-04",
+   "entity": null,
+   "ly_do": "Hai đơn vị đúng việc tìm được (SHTP Labs, WATEC) không gắn được mã P03/P04 hay mã nào trong 30 sản phẩm theo câu nguồn, đã đưa vào ung_vien_ngoai_P_dothi.jsonl; không có dòng đề xuất có mã P cho btl-04.",
+   "url": null
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-08",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam nào có sàn giao dịch dữ liệu đã vận hành. Sàn dữ liệu quốc gia mới có khung pháp lý (Nghị định 314/2026/NĐ-CP hiệu lực 25/9/2026), chưa thấy nguồn hạng A/B xác nhận giao dịch đầu tiên; đơn vị xây dựng, vận hành là Trung tâm Dữ liệu quốc gia (Bộ Công an), cơ quan nhà nước, không phải doanh nghiệp, viện, trường.",
+   "url": "https://vneconomy.vn/bo-cong-an-de-xuat-quy-trinh-hoat-dong-cua-san-du-lieu.htm"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-08",
+   "entity": "Sàn dữ liệu TP. Đà Nẵng",
+   "ly_do": "Mới phê duyệt Đề án thí điểm 24 tháng theo cơ chế sandbox (mục tiêu niêm yết khoảng 20 bộ dữ liệu), là kế hoạch chưa vận hành; bài không nêu doanh nghiệp công nghệ nào xây dựng nền tảng.",
+   "url": "https://tienphong.vn/da-nang-van-hanh-thi-diem-san-du-lieu-thanh-pho-ra-sao-post1854918.tpo"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-08",
+   "entity": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia (NDXP)",
+   "ly_do": "Nền tảng chia sẻ dữ liệu đã vận hành nhưng do Bộ TT&TT (nay Bộ KH&CN) xây dựng và vận hành; các nguồn tìm được không nêu doanh nghiệp, viện, trường nào làm chủ công nghệ. Chỉ xem qua kết quả tìm kiếm, chưa chụp trang.",
+   "url": "https://vneconomy.vn/moi-ngay-co-1-6-trieu-giao-dich-thuc-hien-qua-nen-tang-ket-noi-chia-se-du-lieu-quoc-gia.htm"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-08",
+   "entity": "VNPT",
+   "ly_do": "Chỉ thấy công văn năm 2020 của Viễn thông Bắc Giang đề nghị triển khai LGSP tỉnh (cổng tỉnh, dạng PDF), không có câu nguồn nói VNPT tự phát triển nền tảng chia sẻ dữ liệu hay sàn dữ liệu; chưa đủ để đề xuất.",
+   "url": "https://www.bacgiang.gov.vn/documents/20181/8360229/1584606237953_CONG VAN - VNPT(khanhtq)(28.02.2020_15h15p47)_signed_signed_signed_signed.pdf/03f5a97f-fe7e-446b-b6be-374fffe87208"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-08",
+   "entity": "Tập đoàn MISA",
+   "ly_do": "Kết quả tìm kiếm chỉ cho thấy MISA bày tỏ kỳ vọng tiếp cận dữ liệu trên sàn (ý định), không có sản phẩm sàn hay nền tảng giao dịch dữ liệu đã vận hành. Chưa chụp trang.",
+   "url": "https://vneconomy.vn/mo-canh-cua-thi-truong-du-lieu-tai-viet-nam.htm"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-09",
+   "entity": "Tập đoàn Viettel",
+   "ly_do": "Không đề xuất cho Tập đoàn: nguồn gọi đích danh pháp nhân con Viettel Solutions là đơn vị thiết kế và phát triển IOC Huế, nên đề xuất tách cho Viettel Solutions (trong ung_vien_ngoai_P_nentang.jsonl).",
+   "url": "https://www.quanlynhanuoc.vn/2022/08/04/ioc-hue-dong-gop-lon-vao-su-thay-doi-bo-mat-cua-tinh-va-xay-dung-cuoc-song-hanh-phuc-cho-nguoi-dan/"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-09",
+   "entity": "IOC TP. Đà Nẵng",
+   "ly_do": "Hệ thống IOC Đà Nẵng đã vận hành hơn 3 năm và được giải VDA 2026, nhưng nguồn chỉ nêu cơ quan nhà nước (Sở KH&CN, Trung tâm Thông tin và Giám sát, điều hành thông minh Đà Nẵng) triển khai, vận hành; không nêu đơn vị công nghệ phát triển. Chưa chụp trang.",
+   "url": "https://viettimes.vn/vi-sao-bo-nao-so-da-nang-duoc-vinh-danh-tai-vda-2026-post207007.html"
+  },
+  {
+   "nhu_cau": null,
+   "cau_that": "btl-09",
+   "entity": null,
+   "ly_do": "Không gắn được mã P cho mọi ứng viên btl-09 (IOC, nền tảng IoT dùng chung không thuộc 30 sản phẩm QĐ 21); cả 3 ứng viên ghi ở ung_vien_ngoai_P_nentang.jsonl. Chưa tìm thấy nguồn A/B về một 'hệ điều hành đô thị' riêng cho Hà Nội.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+   "ly_do": "Bài sggp.org.vn 02/07/2025 chỉ là lễ ra mắt hệ sinh thái sản phẩm (tường lửa, NCS TI, NCS EDR, NCS SOC gồm SIEM và SOAR); không có câu nguồn nêu khách hàng thật hay hệ thống đang vận hành. Chưa đủ chuẩn 'sản phẩm an ninh có khách hàng thật'; vòng sau tìm nguồn có khách hàng.",
+   "url": "https://www.sggp.org.vn/ra-mat-he-sinh-thai-san-pham-an-ninh-mang-ung-dung-ai-post802195.html"
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "VNPT",
+   "ly_do": "Bài nhandan.vn 09/10/2026 về VNPT Threat Intelligence (VNPT Cyber Immunity) đạt giải ASOCIO 2026 được gắn nhãn 'Nội dung có tài trợ', coi như tự khai nên không dùng; đã thay bằng nguồn hạng A trên mst.gov.vn.",
+   "url": "https://nhandan.vn/nen-tang-tham-bao-an-ninh-mang-vnpt-de-cu-duy-nhat-cua-viet-nam-duoc-vinh-danh-tai-asocio-digital-ai-awards-2026-post994113.html"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-14",
+   "entity": null,
+   "ly_do": "Camera AI giám sát an ninh trật tự của Công an Hà Nội (261 camera AI, các dự án khoảng 3.700 camera): các nguồn tìm được không nêu doanh nghiệp cung cấp, không gắn được đơn vị. Chỉ qua kết quả tìm kiếm.",
+   "url": "https://thanglong.chinhphu.vn/ha-noi-to-install-261-ai-surveillance-cameras-by-december-18-110250717160936669.htm"
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "VNPT",
+   "ly_do": "O_DA_CO_GIA_TRI: VNPT da co nang_luc_mo_ta_2 trong so nguon; khuon hien tai moi don vi chi mot gia tri cho truong nay. Giu nguyen dong de xuat (span, ban chup) de nap khi anh Lam chot cach mo rong khuon (G1 quyet dinh 2).",
+   "url": "https://mst.gov.vn/nhung-dich-vu-giai-phap-khang-dinh-vi-the-cua-vnpt-trong-linh-vuc-an-toan-thong-tin-197120292.htm",
+   "de_xuat_giu": {
+    "nhu_cau": "P09",
+    "cau_that": "btl-14",
+    "entity": "VNPT",
+    "field": "nang_luc_mo_ta_2",
+    "value": "Dịch vụ Giám sát an toàn thông tin VNPT được cung cấp ra thị trường có khả năng thực hiện giám sát 24/7 toàn bộ hệ thống của tổ chức, từ đó phát hiện và cảnh báo theo thời gian thực đối với các cuộc tấn công, các hành vi bất thường",
+    "evidence_span": "Dịch vụ Giám sát an toàn thông tin VNPT được cung cấp ra thị trường có khả năng thực hiện giám sát 24/7 toàn bộ hệ thống của tổ chức, từ đó phát hiện và cảnh báo theo thời gian thực đối với các cuộc tấn công, các hành vi bất thường.",
+    "extraction": "verbatim",
+    "note": null,
+    "tier_de_xuat": "A",
+    "snapshot": "mst_vnpt_giam_sat_attt_20210528.md",
+    "url": "https://mst.gov.vn/nhung-dich-vu-giai-phap-khang-dinh-vi-the-cua-vnpt-trong-linh-vuc-an-toan-thong-tin-197120292.htm",
+    "ngay_bai": "2021-05-28",
+    "ly_do": "Dịch vụ giám sát và cảnh báo thời gian thực đã thương mại hoá, khớp 'giám sát và cảnh báo sớm' của btl-14. RANH GIỚI XÁM: bài không nói rõ bộ công cụ giám sát do VNPT tự phát triển; phần tự phát triển được nêu đích danh trong cùng bài là phần mềm VNPT Smart IR. Bài đăng lại từ Vnmedia.vn trên cổng Bộ; trong bài có từ 'đầu tiên' (ở đoạn Smart IR, không nằm trong span này)."
+   }
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "VNPT",
+   "ly_do": "O_DA_CO_GIA_TRI: VNPT da co bang_chung_nang_luc trong so nguon; khuon hien tai moi don vi chi mot gia tri cho truong nay. Giu nguyen dong de xuat (span, ban chup) de nap khi anh Lam chot cach mo rong khuon (G1 quyet dinh 2).",
+   "url": "https://mst.gov.vn/nhung-dich-vu-giai-phap-khang-dinh-vi-the-cua-vnpt-trong-linh-vuc-an-toan-thong-tin-197120292.htm",
+   "de_xuat_giu": {
+    "nhu_cau": "P09",
+    "cau_that": "btl-14",
+    "entity": "VNPT",
+    "field": "bang_chung_nang_luc",
+    "value": "có nhiều kinh nghiệm triển khai cho các Bộ, ban, ngành và các doanh nghiệp lớn, các tỉnh, các Ngân hàng. Tại lễ trao giải Sao Khuê 2021, dịch vụ Giám sát An toàn thông tin VNPT được vinh danh trong nhóm Các dịch vụ An toàn thông tin",
+    "evidence_span": "Do vậy, so với các sản phẩm/giải pháp/dịch vụ cùng loại, giải pháp của VNPT có thể tự tin với một đội ngũ chuyên gia trình độ cao, có nhiều kinh nghiệm triển khai cho các Bộ, ban, ngành và các doanh nghiệp lớn, các tỉnh, các Ngân hàng. Tại lễ trao giải Sao Khuê 2021, dịch vụ Giám sát An toàn thông tin VNPT được vinh danh trong nhóm Các dịch vụ An toàn thông tin.",
+    "extraction": "verbatim",
+    "note": null,
+    "tier_de_xuat": "A",
+    "snapshot": "mst_vnpt_giam_sat_attt_20210528.md",
+    "url": "https://mst.gov.vn/nhung-dich-vu-giai-phap-khang-dinh-vi-the-cua-vnpt-trong-linh-vuc-an-toan-thong-tin-197120292.htm",
+    "ngay_bai": "2021-05-28",
+    "ly_do": "Khách hàng thật (bộ ngành, tỉnh, ngân hàng) và giải Sao Khuê 2021 cho dịch vụ giám sát. Câu khách hàng mang giọng tự giới thiệu, không nêu tên khách hàng cụ thể; bài năm 2021, cần làm tươi."
+   }
+  }
+ ],
+ "dong": [
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "ten_don_vi",
+   "value": "Viettel Solutions",
+   "evidence_span": "Hệ thống giao thông thông minh do Viettel Solutions phát triển.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_viettel_solutions_ai_giao_thong_20251125.md",
+   "url": "https://nhandan.vn/lam-chu-ai-tu-noi-luc-van-hoa-va-con-nguoi-quyet-dinh-thanh-cong-post925625.html",
+   "ngay_bai": "2025-11-25",
+   "ly_do": "Tên gọi theo nguồn là 'Viettel Solutions', đơn vị thành viên của Viettel; tên pháp nhân đầy đủ cần định danh từ cổng chính thức ở bước riêng. Đơn vị mới, không gộp vào Tập đoàn Viettel theo luật công ty con có tên riêng. Câu là chú thích ảnh của bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:1"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Là đơn vị tập trung vào phát triển ứng dụng hơn là nghiên cứu học thuật, Viettel Solutions hiểu rằng chìa khóa thành công nằm ở việc xây dựng một đội ngũ dám thay đổi từ tư duy, thói quen đến cách làm việc.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguồn gọi Viettel Solutions là 'đơn vị tập trung vào phát triển ứng dụng' và cả bài nói về 'văn hóa doanh nghiệp' của đơn vị; chuẩn hoá thành loại hình DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_viettel_solutions_ai_giao_thong_20251125.md",
+   "url": "https://nhandan.vn/lam-chu-ai-tu-noi-luc-van-hoa-va-con-nguoi-quyet-dinh-thanh-cong-post925625.html",
+   "ngay_bai": "2025-11-25",
+   "ly_do": "Câu nguồn không ghi loại hình pháp lý; người duyệt xác nhận khi định danh pháp nhân.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:2"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "nhom_cncl",
+   "value": "1",
+   "evidence_span": "Trên thực tế, AI đã hiện diện trong các sản phẩm của Viettel Solutions từ nhiều năm trước – từ hệ thống giao thông thông minh, giám sát vi phạm, nhận diện biển số xe, đến phân tích an ninh, đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông, xây dựng bản đồ lưu thông phù hợp với đặc thù đô thị Việt Nam…",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: AI chuyên ngành ứng dụng cho giao thông (đo mật độ giao thông bằng AI) thuộc sản phẩm P01, nhóm công nghệ 1 (Công nghệ số) theo bảng sản phẩm sang nhóm đã duyệt.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_viettel_solutions_ai_giao_thong_20251125.md",
+   "url": "https://nhandan.vn/lam-chu-ai-tu-noi-luc-van-hoa-va-con-nguoi-quyet-dinh-thanh-cong-post925625.html",
+   "ngay_bai": "2025-11-25",
+   "ly_do": "Nhóm 1 khớp nhu cầu P01.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:3"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "san_pham_lien_quan",
+   "value": "1",
+   "evidence_span": "Trên thực tế, AI đã hiện diện trong các sản phẩm của Viettel Solutions từ nhiều năm trước – từ hệ thống giao thông thông minh, giám sát vi phạm, nhận diện biển số xe, đến phân tích an ninh, đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông, xây dựng bản đồ lưu thông phù hợp với đặc thù đô thị Việt Nam…",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: 'đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông' là trí tuệ nhân tạo chuyên ngành giao thông, ứng với P01, mã sản phẩm 1.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_viettel_solutions_ai_giao_thong_20251125.md",
+   "url": "https://nhandan.vn/lam-chu-ai-tu-noi-luc-van-hoa-va-con-nguoi-quyet-dinh-thanh-cong-post925625.html",
+   "ngay_bai": "2025-11-25",
+   "ly_do": "Gắn P01 vì sản phẩm 30 mục không có mục riêng cho hệ thống giao thông thông minh; người duyệt có thể cân nhắc thêm P02 nếu có bằng chứng camera xử lý tại biên.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:4"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "nang_luc_mo_ta",
+   "value": "Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại",
+   "evidence_span": "Ở lĩnh vực giao thông thông minh, Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vietnamplus_viettel_its_globee_20260630.md",
+   "url": "https://www.vietnamplus.vn/3-giai-phap-ai-cua-viettel-duoc-vinh-danh-tai-giai-thuong-cong-nghe-quoc-te-post1121423.vnp",
+   "ngay_bai": "2026-06-30",
+   "ly_do": "Thay nguồn ngày 24/10/2026: nguồn cũ nhandan 25/11/2025 đã quá 180 ngày, nạp vào là vay nợ độ tươi ngay lúc nạp. Câu mới (vietnamplus 30/06/2026) nói thẳng hệ sinh thái giao thông thông minh có AI, IoT, dữ liệu lớn, GIS, bản sao số cho quản lý, giám sát và điều hành giao thông: đúng đối tượng btl-01. Người duyệt cần biết: đây là lời của bài viết về giải thưởng, văn phong gần thông cáo; 'thể hiện năng lực làm chủ' là đánh giá của bài, chưa có tên địa phương triển khai.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:5"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-01",
+   "entity": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "field": "bang_chung_nang_luc",
+   "value": "Viettel ITS – Hệ sinh thái Giao thông Thông minh do Viettel Solutions phát triển - được trao danh hiệu Giải Bạc tại hạng mục GovTech Product or Service",
+   "evidence_span": "Trong khi đó, Viettel ITS – Hệ sinh thái Giao thông Thông minh do Viettel Solutions phát triển - được trao danh hiệu Giải Bạc tại hạng mục GovTech Product or Service (Sản phẩm, dịch vụ công nghệ dành cho Chính phủ và khu vực công xuất sắc nhất).",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vietnamplus_viettel_its_globee_20260630.md",
+   "url": "https://www.vietnamplus.vn/3-giai-phap-ai-cua-viettel-duoc-vinh-danh-tai-giai-thuong-cong-nghe-quoc-te-post1121423.vnp",
+   "ngay_bai": "2026-06-30",
+   "ly_do": "Thay nguồn ngày 24/10/2026 (nguồn cũ là chú thích ảnh nhandan 25/11/2025, đã quá 180 ngày). Sự kiện có mốc: Giải Bạc GovTech tại The Globee Awards for Technology 2026, công bố 30/06/2026. Người duyệt cần biết: giải thưởng do tổ chức tư nhân trao, hạng mục có nhiều đơn vị đoạt giải; đây là bằng chứng sản phẩm tồn tại và do Viettel Solutions phát triển, không phải bằng chứng hiệu quả triển khai.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_aigt.jsonl:6"
+  },
+  {
+   "nhu_cau": "P02",
+   "cau_that": "btl-01",
+   "entity": "Viettel High Tech",
+   "field": "nang_luc_mo_ta_2",
+   "value": "Các hệ thống camera mới này sẽ xử lý thông tin trực tiếp trên camera sau đó gửi lại về trung tâm vận hành.",
+   "evidence_span": "Anh Nguyễn Minh Đức, Kỹ sư Phát triển phần mềm, Tổng Công ty Công nghiệp công nghệ cao Viettel cho biết: ''Các hệ thống camera mới này sẽ xử lý thông tin trực tiếp trên camera sau đó gửi lại về trung tâm vận hành.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "A",
+   "snapshot": "bavutex_viettel_camera_ai_giao_thong_20250116.md",
+   "url": "https://bavutex.baria-vungtau.gov.vn/public/tin-tuc/ap-dung-thanh-cong-cong-nghe-ai-trong-he-thong-camera-phat-nguoi.html",
+   "ngay_bai": "2025-01-16",
+   "ly_do": "Camera giao thông tích hợp chip AI xử lý ngay trên camera (xử lý tại biên), phân tích luồng phương tiện để hỗ trợ điều tiết đèn: đúng P02 và gần đối tượng btl-01. Nguồn gọi 'Tổng Công ty Công nghiệp công nghệ cao Viettel', được hiểu là Viettel High Tech trong registry; người duyệt xác nhận ánh xạ tên này.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "A",
+   "nguon_file": "de_xuat_aigt.jsonl:7"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-12",
+   "entity": "Tập đoàn MISA",
+   "field": "nang_luc_mo_ta_2",
+   "value": "MISA đã tích hợp thành công trợ lý trí tuệ nhân tạo MISA AVA vào nền tảng MISA AMIS hỗ trợ người dùng ứng dụng công nghệ vào công tác quản trị – vận hành doanh nghiệp hiệu quả hơn",
+   "evidence_span": "Theo đó, MISA đã tích hợp thành công trợ lý trí tuệ nhân tạo MISA AVA vào nền tảng MISA AMIS hỗ trợ người dùng ứng dụng công nghệ vào công tác quản trị – vận hành doanh nghiệp hiệu quả hơn.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "A",
+   "snapshot": "mst_misa_ava_sme_20240529.md",
+   "url": "https://mst.gov.vn/he-sinh-thai-so-giup-doanh-nghiep-van-hanh-hieu-qua-dua-tren-du-lieu-197240529165439247.htm",
+   "ngay_bai": "2024-05-29",
+   "ly_do": "Trợ lý AI MISA AVA tích hợp trong nền tảng quản trị MISA AMIS, cùng bài nói nền tảng nhắm SMEs và các chức năng tự động hóa (soạn email tuyển dụng, trích xuất CV, báo cáo bằng một câu lệnh): đúng đối tượng btl-12 (AI và tự động hoá cho doanh nghiệp vừa và nhỏ). Bài có từ 'tiên phong' và 'hàng đầu' (ngoài span).",
+   "_co": [],
+   "_hang_luat": "A",
+   "nguon_file": "de_xuat_aigt.jsonl:8"
+  },
+  {
+   "nhu_cau": "P01",
+   "cau_that": "btl-12",
+   "entity": "Tập đoàn MISA",
+   "field": "bang_chung_nang_luc",
+   "value": "kinh nghiệm triển khai thực tế cho hơn 250.000 doanh nghiệp và hơn 25.000 hộ kinh doanh",
+   "evidence_span": "Ở góc độ của đơn vị tư vấn và cung cấp giải pháp chuyển đổi số, dựa theo kinh nghiệm triển khai thực tế cho hơn 250.000 doanh nghiệp và hơn 25.000 hộ kinh doanh ở mọi lĩnh vực, quy mô, bà Lệ chỉ ra 3 vấn đề chính trong quá trình chuyển đổi số của SMEs.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "A",
+   "snapshot": "mst_misa_ava_sme_20240529.md",
+   "url": "https://mst.gov.vn/he-sinh-thai-so-giup-doanh-nghiep-van-hanh-hieu-qua-dua-tren-du-lieu-197240529165439247.htm",
+   "ngay_bai": "2024-05-29",
+   "ly_do": "Số khách hàng là của toàn hệ sinh thái MISA, do đại diện MISA nêu tại DX Summit 2024 và được cổng mst.gov.vn (A) đăng lại; không phải số người dùng riêng của AVA. Các con số năng suất AVA (50% cho HR, gấp 5 lần cho kế toán) là tự khai. Bổ sung cho FPT và VNPT đã có trong phiếu xét 24/10.",
+   "_co": [],
+   "_hang_luat": "A",
+   "nguon_file": "de_xuat_aigt.jsonl:9"
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "Công ty An ninh mạng Viettel",
+   "field": "nang_luc_mo_ta_2",
+   "value": "Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công",
+   "evidence_span": "Trong khi tường lửa và phần mềm diệt virus chủ yếu bảo vệ bên trong, Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "A",
+   "snapshot": "mst_viettel_threat_intelligence_20260819.md",
+   "url": "https://mst.gov.vn/viettel-threat-intelligence-phat-hien-hon-165-trieu-tai-khoan-bi-danh-cap-197260819143942907.htm",
+   "ngay_bai": "2026-08-19",
+   "ly_do": "Công cụ phân tích và cảnh báo sớm nguy cơ (threat intelligence) đang vận hành, đúng đối tượng 'công cụ phân tích, giám sát và cảnh báo sớm' của btl-14. Nguồn gọi tên thương mại 'Viettel Cyber Security', ứng với đơn vị đã có trong registry là Công ty An ninh mạng Viettel; người duyệt xác nhận hai tên là một pháp nhân.",
+   "_co": [],
+   "_hang_luat": "A",
+   "nguon_file": "de_xuat_nentang.jsonl:1"
+  },
+  {
+   "nhu_cau": "P09",
+   "cau_that": "btl-14",
+   "entity": "Công ty An ninh mạng Viettel",
+   "field": "bang_chung_nang_luc",
+   "value": "hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm",
+   "evidence_span": "Trong nửa đầu năm 2026, hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "A",
+   "snapshot": "mst_viettel_threat_intelligence_20260819.md",
+   "url": "https://mst.gov.vn/viettel-threat-intelligence-phat-hien-hon-165-trieu-tai-khoan-bi-danh-cap-197260819143942907.htm",
+   "ngay_bai": "2026-08-19",
+   "ly_do": "Kết quả vận hành thật trong nửa đầu năm 2026, cho thấy hệ thống đã chạy chứ không phải kế hoạch. Số liệu do chính Viettel Cyber Security công bố, cổng Bộ KH&CN đăng lại; không có kiểm chứng độc lập con số.",
+   "_co": [],
+   "_hang_luat": "A",
+   "nguon_file": "de_xuat_nentang.jsonl:2"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # CàoLọcMatch và .touch: mô tả dự án
 
-Bản mô tả ngày 02/10/2026. Mọi con số trong tài liệu này đọc từ dữ liệu của kho tại commit 60f77f2, lượt chạy chuỗi cổng đầy đủ lúc 11:32 cùng ngày (122/122 xanh).
+Bản mô tả ngày 02/10/2026, cập nhật 25/10/2026 (xem mục Cập nhật 25/10 cuối tài liệu). Mọi con số trong tài liệu này đọc từ dữ liệu của kho tại commit 60f77f2, lượt chạy chuỗi cổng đầy đủ lúc 11:32 cùng ngày (122/122 xanh).
 
 Người phụ trách: Nguyễn Cảnh Lâm, AI Officer, Real-time Robotics (RtR). Kho mã: `nclamvn/CLM` (riêng tư).
 
@@ -92,7 +92,7 @@ CLM/
 ├── Dataset_CongNgheChienLuoc/ Chiều CẦU QUỐC GIA: 30 sản phẩm QĐ 21/2026, sự kiện chính sách
 ├── CaoLocMatch/               Máy ghép: match_engine.py, sổ chữ ký, phễu, chuỗi cổng
 │   ├── domains/cncl_match/    signoff_ledger.jsonl · nguoi_ky.yaml
-│   └── chay_het_cong.sh       Chuỗi cổng toàn hệ (122 ô)
+│   └── chay_het_cong.sh       Chuỗi cổng toàn hệ (132 ô từ 25/10/2026)
 └── .touch/                    Mặt giao diện (Next.js 15, React 19)
     ├── app/                   Các trang
     ├── components/            Thành phần giao diện
@@ -144,7 +144,7 @@ Trang tổng hợp, diễn đàn, mạng xã hội và Wikipedia không được
 
 ### 4.2 Chuỗi cổng và bộ răng
 
-`CaoLocMatch/chay_het_cong.sh` chạy **122 ô**: 70 ô cổng kiểm và sinh dữ liệu, 52 ô răng.
+`CaoLocMatch/chay_het_cong.sh` chạy **132 ô** (25/10/2026): 76 ô cổng kiểm và sinh dữ liệu, 56 ô răng. Kết quả từng ô hiện trên trang Phương pháp.
 
 - **Cổng** trả exit 0 (xanh), 2 (đỏ, có vi phạm) hoặc 3 (không chạy được). "Không chạy được" không bao giờ được tính là xanh.
 - **Răng** là bài thử của chính cổng. Mỗi bộ răng tự dựng cảnh trong thư mục tạm, tiêm lỗi thật vào bản sao, rồi kiểm rằng cổng bắt được. Một cổng không có răng thì không ai biết nó còn cắn hay không.
@@ -257,3 +257,15 @@ Không dùng cơ sở dữ liệu hay dịch vụ ngoài lúc chạy. Toàn bộ
 3. Hoàn tất định danh pháp nhân qua phiếu tra cổng.
 4. Mở rộng cầu thật bằng các lô mới (bộ ngành, địa phương, doanh nghiệp nhà nước).
 5. Bật luật hai người ký khi có người gác cổng thứ hai.
+
+---
+
+## Cập nhật 25/10/2026: đợt trình nhà đầu tư
+
+- Trang đầu và Tổng quan có số nhu cầu đặt hàng thật và số bên đặt hàng; trang đầu nói rõ hệ dành cho ai; menu trang đầu có Cầu thật, Hỏi đáp, Điều phối.
+- Hỏi đáp hiểu câu hỏi về cầu ("Hà Nội cần gì?", "Bộ nào đang cần UAV?") và trả nhu cầu đặt hàng thật kèm câu nguồn; vẫn từ chối khi không có nguồn.
+- Hồ sơ đơn vị có nút "Kiểm lại ngay trên trình duyệt": tải lại bản chụp, băm bằng Web Crypto, tính lại mã kiểm toán. Dạng chuẩn phiên bản 2 sắp theo mã ký tự, không phụ thuộc ngôn ngữ máy; tệp phiên bản 1 vẫn đối chiếu được.
+- Trang Phương pháp có dòng dữ liệu sáu tầng, bảng kết quả từng ô kiểm định theo phần của hệ, và lịch sử duyệt lô với lời duyệt nguyên văn.
+- Menu bảng điều khiển nhóm theo việc (Vận hành, Thị trường, Bằng chứng, Báo cáo); Kho mã xuống cuối thanh bên.
+- "Việc cần làm tiếp" nói đúng chỗ chặn: chưa cặp nào đủ câu nguồn để đưa ký, thay vì dẫn tới màn ký trống.
+- Cổng mới: chuoi_cong_web, lich_su_lo, menu; bộ thử tương ứng. Cổng hỏi đáp, mặt tiền, mở đầu, kiểm toán có thêm răng.

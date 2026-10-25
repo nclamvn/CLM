@@ -16,6 +16,12 @@
  *   KHONG_TU_CHOI   cau trong bo chuan danh dau phai tu choi ma may van tra loi.
  *   CAU_CHUAN_HONG  cau trong bo chuan thieu don vi bat buoc.
  *   DON_VI_LA       don vi trong cau tra loi khong co trong registry.
+ *   (25/10/2026, hoi ve cau)
+ *   HIEU_NHAM       may hieu sai loai cau hoi: cau hoi ve nhu cau ("Bo nao dang can UAV?") ma tra ben
+ *                   cung, hoac nguoc lai. Lo ra khi soi duong demo: ca hai chieu deu tra ben cung.
+ *   CHI_MUC_CAU_LECH lib/hub-hoi-dap-cau.json khac ban tinh lai tu lib/hub-cau-that.json.
+ *   CAU_LA          nhu cau trong cau tra loi khong co trong cau that.
+ *   (TRICH_BIA, TRICH_LAC_DE, TU_CHOI_SAI, KHONG_TU_CHOI, CAU_CHUAN_HONG ap ca cho chieu cau.)
  *
  * Chay: node scripts/check-hoi-dap.mjs [--lib <dir>] [--mo-dun <hoi-dap.mjs>] [--chuan <json>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -38,7 +44,10 @@ const mat = dj(join(LIB, 'cncl-match.json'));
 const cm = dj(join(LIB, 'hub-hoi-dap.json'));
 const chuan = dj(CHUAN).cau;
 if (!Array.isArray(chuan) || !chuan.length) thoat3('bo cau hoi chuan rong. Rong khong phai sach.');
-const { hoiDap, dungChiMuc, TRUONG_NANG_LUC, DONG_NGHIA } = await import(pathToFileURL(MO_DUN).href);
+const { hoiDap, dungChiMuc, TRUONG_NANG_LUC, DONG_NGHIA, hoiCau, laHoiCau, dungChiMucCau } = await import(pathToFileURL(MO_DUN).href);
+const ct = dj(join(LIB, 'hub-cau-that.json'));
+const cc = dj(join(LIB, 'hub-hoi-dap-cau.json'));
+if (typeof hoiCau !== 'function' || typeof laHoiCau !== 'function') thoat3('module thieu hoiCau/laHoiCau');
 
 const vi = [];
 if (JSON.stringify(dungChiMuc(reg, mat)) !== JSON.stringify(cm)) vi.push('CHI_MUC_LECH: hub-hoi-dap.json khac ban tinh lai tu registry + match');
@@ -52,7 +61,33 @@ const khop = (span, kn) => {
 };
 
 let soCau = 0; let soTrich = 0;
+if (JSON.stringify(dungChiMucCau(ct)) !== JSON.stringify(cc)) vi.push('CHI_MUC_CAU_LECH: hub-hoi-dap-cau.json khac ban tinh lai tu hub-cau-that.json');
+const ncCua = new Map(ct.nhuCau.map((n) => [n.ma, n]));
 for (const c of chuan) {
+  const laCau = c.loai === 'cau';
+  if (laHoiCau(c.cau) !== laCau) vi.push(`HIEU_NHAM: "${c.cau}" la cau hoi ve ${laCau ? 'NHU CAU' : 'BEN CUNG'} ma may hieu la ${laCau ? 'ben cung' : 'nhu cau'}`);
+  if (laCau) {
+    const r = hoiCau(c.cau, cc, cm);
+    soCau++;
+    if (r.nhuCau.length && r.tuChoi) vi.push(`TU_CHOI_SAI: "${c.cau}" co ${r.nhuCau.length} nhu cau ma van ghi tu choi`);
+    if (!r.nhuCau.length && !r.tuChoi) vi.push(`TU_CHOI_SAI: "${c.cau}" khong co nhu cau nao ma khong tu choi`);
+    if (c.phai_tu_choi && r.nhuCau.length) vi.push(`KHONG_TU_CHOI: "${c.cau}" phai tu choi ma tra ${r.nhuCau.length} nhu cau (${r.nhuCau.slice(0, 3).map((n) => n.ma).join(', ')})`);
+    for (const ma of c.phai_co_ma ?? []) if (!r.nhuCau.some((n) => n.ma === ma)) vi.push(`CAU_CHUAN_HONG: "${c.cau}" thieu nhu cau ${ma}`);
+    for (const n of r.nhuCau) {
+      const that = ncCua.get(n.ma);
+      if (!that) { vi.push(`CAU_LA: "${c.cau}" tra ${n.ma}`); continue; }
+      if (!n.trich.length) vi.push(`TRICH_BIA: "${c.cau}" · ${n.ma} khong co cau trich nao`);
+      for (const t of [...n.trich, ...(n.trichBen ? [n.trichBen] : [])]) {
+        soTrich++;
+        const g = that.nguon.find((x) => x.span === t.span && x.field === t.field);
+        if (!g) vi.push(`TRICH_BIA: "${c.cau}" · ${n.ma}: "${String(t.span).slice(0, 60)}" khong la cau nguon cua nhu cau`);
+        else if (g.href !== t.href) vi.push(`TRICH_BIA: "${c.cau}" · ${n.ma}: ban chup ${t.href} khac ${g.href}`);
+      }
+      if (r.khaiNiem.length && !n.trich.some((t) => r.khaiNiem.some((kn) => khop(t.span, kn)))) vi.push(`TRICH_LAC_DE: "${c.cau}" · ${n.ma}: cau trich khong chua khai niem nao (${r.khaiNiem.join(', ')})`);
+      if (r.ben.length && !r.ben.includes(that.benDatHang)) vi.push(`TRICH_LAC_DE: "${c.cau}" · ${n.ma}: ben dat hang ${that.benDatHang} khong phai ben duoc hoi (${r.ben.join(', ')})`);
+    }
+    continue;
+  }
   const r = hoiDap(c.cau, cm);
   soCau++;
   if (r.donVi.length && r.tuChoi) vi.push(`TU_CHOI_SAI: "${c.cau}" co ${r.donVi.length} don vi ma van ghi tu choi`);

@@ -29,6 +29,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, copyFi
 import { join, dirname } from 'node:path';
 import { goc, tim } from './goc.mjs';
 import { fileURLToPath } from 'node:url';
+import { dungLichSuLo } from '../lib/lich-su-lo.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const TOUCH = join(HERE, '..');
@@ -295,6 +296,16 @@ function docChuoiCong() {
     },
   };
 }
+// 25/10/2026: ket qua TUNG O cua lan chay gan nhat, cho trang Phuong phap (cong nao, rang nao).
+// File cu chua co mang "o" thi ghi null: trang noi "chua co chi tiet", khong doan.
+{
+  const p = join(CLM, 'out', 'ket_qua_chuoi.json');
+  const k = existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
+  const o = k && Array.isArray(k.o) ? k.o.map((x) => ({ kho: x.kho, ten: x.ten, tt: x.tt, rang: x.ten.startsWith('rang_') || x.ten === 'bites' })) : null;
+  writeFileSync(join(TOUCH, 'lib', 'hub-chuoi-cong.json'), JSON.stringify(k ? { luc: k.luc, cheDo: k.che_do, tong: k.tong, xanh: k.xanh, o } : { luc: null, cheDo: null, tong: 0, xanh: 0, o: null }, null, 1) + '\n', 'utf8');
+}
+// 25/10/2026: lich su duyet lo lam giau cho trang Phuong phap.
+writeFileSync(join(TOUCH, 'lib', 'hub-lo.json'), JSON.stringify(dungLichSuLo(join(SUP, '..', '..', 'lam_giau')), null, 1) + '\n', 'utf8');
 const NOW = new Date().toISOString().slice(0, 10);
 const dem_tier = (t) => sup.filter((c) => c.tier === t).length;
 
@@ -306,6 +317,10 @@ const meta = {
   snapshots: canDung.size,
   tierA: dem_tier('A'),
   tierB: dem_tier('B'),
+  // 25/10/2026: Phuong phap ghi "378 cau nguon tu 139 ban chup" trong khi 139 gom ca ban chup chieu
+  // cau, su kien va cau that; cau nguon chieu cung chi dung 106. Tach rieng hai so, va dem ca hang C.
+  tierC: dem_tier('C'),
+  banChupCung: new Set(sup.map((c) => c.capture.snapshot)).size,
   nhomPhu: [...new Set(sup.filter((c) => c.field === 'nhom_cncl').map((c) => String(c.value)))].length,
   generatedAt: NOW,
   frame: 'QĐ 21/2026/QĐ-TTg',
@@ -343,7 +358,7 @@ export type CnclChuoiCong = {
 };
 export type CnclMeta = {
   units: number; claims: number; needs: number; sources: number; snapshots: number;
-  tierA: number; tierB: number; nhomPhu: number; generatedAt: string; frame: string;
+  tierA: number; tierB: number; tierC: number; banChupCung: number; nhomPhu: number; generatedAt: string; frame: string;
   gate: string; chuoiCong: CnclChuoiCong | null;
 };
 

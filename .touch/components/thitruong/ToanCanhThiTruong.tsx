@@ -232,7 +232,7 @@ export function ToanCanhThiTruong() {
           <span><i className="tt-mk2 tt-dong--cung_sp" style={mau(0)} />nhạt: cùng sản phẩm, có câu nguồn</span>
           <span><i className="tt-mk tt-o--trong" />nhu cầu chưa có bên cung</span>
         </div>
-        <p className="hep-note">Màn hẹp không đủ chỗ cho sơ đồ dòng 60 đơn vị. Cùng số liệu ở dạng bảng: <a className="pf-link" href="#phu">bản đồ phủ nhu cầu</a>; danh sách đơn vị ở <Link className="pf-link" href="/dashboard/don-vi">Hồ sơ đơn vị</Link>.</p>
+        <p className="hep-note">Màn hẹp không đủ chỗ cho sơ đồ dòng của mọi đơn vị. Cùng số liệu ở dạng bảng: <a className="pf-link" href="#phu">bản đồ phủ nhu cầu</a>; danh sách đơn vị ở <Link className="pf-link" href="/dashboard/don-vi">Hồ sơ đơn vị</Link>.</p>
         <div className="hep-an"><Sankey /></div>
         <p className="hs-note">
           Cặp bị người gác cổng từ chối không mang dòng. Thứ tự nhóm giữ theo vòng lãnh thổ của đồ thị;

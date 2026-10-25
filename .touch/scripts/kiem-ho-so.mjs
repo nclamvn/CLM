@@ -12,16 +12,16 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { dangChuan, PHIEN_BAN } from '../lib/kiem-toan.mjs';
+import { dangChuan, PHIEN_BAN, PHIEN_BAN_CU } from '../lib/kiem-toan.mjs';
 
 const f = process.argv[2];
 if (!f || !existsSync(f)) { console.log('KHONG CHAY DUOC: dung node scripts/kiem-ho-so.mjs <ho-so.json> [--ban-chup <thu muc public>]'); process.exit(3); }
 const i = process.argv.indexOf('--ban-chup'); const pub = i > 0 ? process.argv[i + 1] : null;
 const hs = JSON.parse(readFileSync(f, 'utf8'));
-if (hs.phienBan !== PHIEN_BAN) { console.log(`KHONG CHAY DUOC: phien ban ${hs.phienBan}, cong cu nay doc ${PHIEN_BAN}`); process.exit(3); }
+if (hs.phienBan !== PHIEN_BAN && !PHIEN_BAN_CU.includes(hs.phienBan)) { console.log(`KHONG CHAY DUOC: phien ban ${hs.phienBan}, cong cu nay doc ${PHIEN_BAN}`); process.exit(3); }
 const sha = (t) => createHash('sha256').update(t, 'utf8').digest('hex');
 const lech = [];
-const tinh = sha(dangChuan(hs.donVi, hs.cauNguon, hs.banChup));
+const tinh = sha(dangChuan(hs.donVi, hs.cauNguon, hs.banChup, hs.phienBan));
 if (tinh !== hs.ma) lech.push(`MA_LECH: tinh lai ${tinh}, tep ghi ${hs.ma}`);
 const thieu = [...new Set(hs.cauNguon.map((c) => c.href))].filter((h) => !hs.banChup.some((b) => b.href === h));
 if (thieu.length) lech.push(`BAN_CHUP_THIEU: ${thieu.join(', ')}`);

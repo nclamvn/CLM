@@ -1,4 +1,4 @@
-29
+33
 # Ngan sach khoa mot chieu cho check_do_tuoi.py: so claim mau-hong qua han MA CHUA co ly do.
 #
 # Lich su, moi dong la mot vong lam moi:
@@ -114,3 +114,21 @@
   Khi tro sang ban chup that, con so nay se tang them.
 29/09/2026 28 -> 29 (luot thu ba). VinBigData · nang_luc_mo_ta: tro sang ban chup that, bai
   04/09/2023, 1121 ngay. Day la bang chung cua MATCH-0007; anh Lam quyet ky lai hay bac.
+
+24/10/2026 29 -> 33. TANG 4, vi NGAY TROI, khong phai ai them du lieu xau. Bay claim vuot moc
+  180 ngay trong thang nay (RtR 2, Indefol 3, GG Power 2). Da di tim nguon moi cho ca ba don vi:
+    Ba claim GIU NGUON CU co can cu (su kien da xay ra, ghi trong note tung claim):
+      GG Power · bang_chung_nang_luc, RtR · bang_chung_nang_luc, Indefol · nang_luc_mo_ta.
+    Bon claim KHONG mien tru duoc, la mon no that:
+      GG Power · nang_luc_mo_ta          nha may va cong suat thiet ke la TRANG THAI. Moi bai
+                                         deu dang quanh 11/04/2026, khong co bai sau 27/04.
+      RtR · nang_luc_mo_ta_2             ket noi Starlink la MO TA THIET KE. Nguon moi hon
+                                         (dronelife 07/07/2026) khong nhac Starlink; trang cua
+                                         chinh RtR co nhac nhung la TU KHAI va ten mien chua duyet.
+      Indefol · bang_chung_nang_luc      "lam chu 50% cong nghe" la TRANG THAI, va chinh bai
+                                         vnexpress 28/04/2026 noi cong ty muon nang len 60-70%
+                                         truoc 2030, tuc con so nay DUOC KY VONG SE DOI.
+      Indefol · location                 tru so TP HCM la trang thai. vnexpress 28/04/2026 nhac
+                                         lai nhung cung toa soan va het han sau hai ngay.
+  BAI HOC LAN THU BA: don vi nap tu dot_01 (30/09) dung bai thang 4, nen chi sau ba tuan da qua
+  han. Nap nguon da 160 ngay tuoi la vay no do tuoi ngay luc nap. Kiem lo nen bao truoc dieu nay.

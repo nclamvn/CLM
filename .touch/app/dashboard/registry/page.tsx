@@ -37,8 +37,10 @@ export default function RegistryPage() {
               className={`chip ${cnclMeta.chuoiCong === null ? 'chip--private' : cnclMeta.chuoiCong.dat ? 'chip--public' : 'chip--risk'} reg-gate`}
               title={cnclMeta.gate}
             >
-              {cnclMeta.chuoiCong === null ? 'CHƯA KIỂM ĐỊNH' : cnclMeta.chuoiCong.dat ? 'KIỂM ĐỊNH ĐẠT' : 'KIỂM ĐỊNH CHƯA ĐẠT'}
+              {cnclMeta.chuoiCong === null ? 'CHƯA KIỂM ĐỊNH' : `${cnclMeta.chuoiCong.dat ? 'KIỂM ĐỊNH ĐẠT' : 'KIỂM ĐỊNH CHƯA ĐẠT'} ${ngayVN(cnclMeta.chuoiCong.luc)}`}
             </span></ProofNumber>
+            {/* 25/10/2026: du lieu sinh sau lan kiem dinh thi noi ra, khong de nhan xanh phu len du lieu no chua kiem. */}
+            {cnclMeta.chuoiCong && cnclMeta.chuoiCong.luc.slice(0, 10) < cnclMeta.generatedAt && <span className="reg-stat__k">dữ liệu sinh sau lần kiểm định này</span>}
           </div>
           <p className="reg-note">
             Mỗi ô truy về một câu nguyên văn trong bản chụp: bấm tên nguồn để mở, rê chuột lên

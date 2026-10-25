@@ -1,6 +1,6 @@
 {
  "ky": "Quý IV/2026",
- "mocNgay": "2026-10-07",
+ "mocNgay": "2026-10-25",
  "so": {
   "tong": 30,
   "daKy": 16,
@@ -405,7 +405,7 @@
   {
    "k": "conHan",
    "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
-   "tu": 349,
+   "tu": 345,
    "mau": 378
   }
  ],
@@ -424,12 +424,12 @@
   },
   {
    "so": 12,
-   "viec": "nhu cầu đã có bên cung nhưng chưa có cặp được ký",
-   "cach": "người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối",
-   "href": "/dashboard/matching"
+   "viec": "nhu cầu đã có bên cung cùng nhóm nhưng chưa cặp nào đủ câu nguồn để đưa ký",
+   "cach": "tìm câu nguồn năng lực nói đúng sản phẩm; máy chỉ đưa tới người ký cặp có độ giao từ 50% trở lên",
+   "href": "/dashboard/matching#pg-suyt-h"
   },
   {
-   "so": 29,
+   "so": 33,
    "viec": "câu nguồn quá 180 ngày chưa có lý do giữ",
    "cach": "chụp lại nguồn hoặc ghi lý do giữ",
    "href": "/dashboard/registry"

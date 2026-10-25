@@ -26,6 +26,8 @@
  * RANG 13 · trang dau them nen gradient -> KHONG_DON_SAC.
  * RANG 14 · hinh dong quay lai mau du lieu var(--data-cung) + shadowBlur -> KHONG_DON_SAC.
  * RANG 15 · tieu de doi sang font sans -> KHONG_DON_SAC.
+ * RANG 16 · (25/10/2026) mat-tien gan cung cauThat: 54 -> SO_KHONG_SINH.
+ * RANG 17 · (25/10/2026) mat-tien thoi doc hub-cau-that.json -> SO_KHONG_SINH.
  *
  * Chay: node scripts/bite-mat-tien.mjs
  */
@@ -93,6 +95,10 @@ try {
     (s) => s.replace("const MUC = docBien('--p-ink', '#EDEDEA');", "const MUC = docBien('--data-cung', '#56B4E9'); ctx.shadowBlur = 14;")), 2, 'KHONG_DON_SAC');
   rang('RANG 15 · tieu de doi sang font sans -> KHONG_DON_SAC', (t) => doi(t, 'styles/landing-hub.css',
     (s) => s.replace(/(\.mt-chu__h \{[^}]*?)font-family: var\(--p-serif\);/, '$1font-family: var(--p-sans);')), 2, 'KHONG_DON_SAC');
+  rang('RANG 16 · mat-tien gan cung cauThat: 54 -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',
+    (s) => s.replace('cauThat: CT.nhuCau.length', 'cauThat: 54')), 2, 'SO_KHONG_SINH');
+  rang('RANG 17 · mat-tien thoi doc hub-cau-that.json -> SO_KHONG_SINH', (t) => doi(t, 'lib/mat-tien.ts',
+    (s) => s.replace("import cauThatData from './hub-cau-that.json';", 'const cauThatData = { nhuCau: [] };')), 2, 'SO_KHONG_SINH');
 } finally {
   for (const t of tam) rmSync(t, { recursive: true, force: true });
 }

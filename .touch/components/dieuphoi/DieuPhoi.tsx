@@ -79,7 +79,7 @@ export function DieuPhoi() {
                       <td><Link className="pf-link" href={`/dashboard/cau-that#${v.nhuCau}`}><b>{v.nhuCau}</b> {tenNc.get(v.nhuCau)}</Link></td>
                       <td>{v.donVi ? <Link className="pf-link" href={`/dashboard/don-vi/${slugDv.get(v.donVi) ?? ''}`}>{v.donVi}</Link> : 'chưa có'}</td>
                       <td>{v.lenh
-                        ? <details className="dp-lenh"><summary>Lệnh ghi</summary><code>{v.lenh}</code></details>
+                        ? <details className="dp-lenh"><summary>Lệnh ghi cho người vận hành</summary><code>{v.lenh}</code></details>
                         : <span className="dp-nguon">kết thúc bằng một lô làm giàu mới</span>}</td>
                     </tr>))}
                 </tbody>
@@ -123,7 +123,7 @@ export function DieuPhoi() {
       <section className="dash-panel dp-khoi" aria-labelledby="dp-sk">
         <h2 className="hs-h" id="dp-sk">Sổ sự kiện <span>{m.soSuKien} sự kiện, chỉ người ghi</span></h2>
         {D.suKien.length === 0
-          ? <p className="ct-trong">Chưa có sự kiện nào. Khi đã làm một việc thật (duyệt ứng viên, gửi giới thiệu, nhận phản hồi, có kết quả), người phụ trách ghi bằng lệnh <code>python3 dieu_phoi.py</code> trong thư mục CaoLocMatch; lệnh kiểm luật trước khi ghi.</p>
+          ? <p className="ct-trong">Chưa có sự kiện nào. Khi đã làm một việc thật (duyệt ứng viên, gửi giới thiệu, nhận phản hồi, có kết quả), người phụ trách ghi lại bằng công cụ ghi sự kiện; công cụ kiểm luật trước khi ghi, và mỗi dòng nối băm với dòng trước nên không sửa lén được.</p>
           : (
             <ol className="dp-sk">
               {[...D.suKien].reverse().map((e) => (

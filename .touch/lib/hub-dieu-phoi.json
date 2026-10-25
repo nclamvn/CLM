@@ -3,7 +3,7 @@
   "ten": "Công nghệ số cho đô thị Hà Nội",
   "batDau": "2026-10-07",
   "moTa": "Các bài toán lớn của UBND Thành phố Hà Nội có đối tượng là hệ thống, nền tảng hay dữ liệu số.",
-  "mocNgay": "2026-10-07",
+  "mocNgay": "2026-10-25",
   "nguoiGacCong": [
    "Lam Nguyen"
   ],
@@ -23,7 +23,7 @@
   "soNhuCau": 12,
   "soSuKien": 0,
   "soViec": 17,
-  "soQuaHan": 0
+  "soQuaHan": 14
  },
  "pheu": [
   {
@@ -356,7 +356,7 @@
    "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -366,7 +366,7 @@
    "donVi": "VinBigData",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"VinBigData\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -376,7 +376,7 @@
    "donVi": "VNPT Technology",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"VNPT Technology\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -386,7 +386,7 @@
    "donVi": "Công ty An ninh mạng Viettel",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-02 --don-vi \"Công ty An ninh mạng Viettel\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -396,7 +396,7 @@
    "donVi": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-03 --don-vi \"Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -406,7 +406,7 @@
    "donVi": "Công ty cổ phần Health Care Center",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-04 --don-vi \"Công ty cổ phần Health Care Center\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -416,7 +416,7 @@
    "donVi": "Công ty 1Matrix",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-05 --don-vi \"Công ty 1Matrix\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -426,7 +426,7 @@
    "donVi": "Viettel AI",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-06 --don-vi \"Viettel AI\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -436,7 +436,7 @@
    "donVi": "Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-09 --don-vi \"Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -446,7 +446,7 @@
    "donVi": "VNPT Technology",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-09 --don-vi \"VNPT Technology\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -456,7 +456,7 @@
    "donVi": "FPT",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"FPT\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -466,7 +466,7 @@
    "donVi": "Tập đoàn Viettel",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"Tập đoàn Viettel\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -476,7 +476,7 @@
    "donVi": "VNPT",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-12 --don-vi \"VNPT\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
@@ -486,7 +486,7 @@
    "donVi": "Viettel AI",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
-   "quaHan": false,
+   "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-13 --don-vi \"Viettel AI\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {

@@ -55,7 +55,7 @@ export function DashShell({ children }: { children: React.ReactNode }) {
           type="button"
           ref={menuBtnRef}
           className="dash-menu-btn"
-          aria-label="Mo menu dieu huong"
+          aria-label="Mở menu điều hướng"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >

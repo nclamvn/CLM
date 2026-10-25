@@ -173,3 +173,98 @@ export function hoiDap(cau, cm, toiDa = 8) {
   }
   return ra;
 }
+
+// ════════════════════════════════════════════════════════════════════════════
+// HOI VE CAU (25/10/2026). Truoc day moi cau hoi deu tra bang ben CUNG: "Bo nao dang can UAV?"
+// ra 8 nha cung cap, "Ha Noi can gi?" bi tu choi du so nguon co 14 bai toan cua Ha Noi. Nguoi hoi
+// ve cau thi phai nhan NHU CAU DAT HANG THAT kem cau nguon nguyen van va ban chup, cung luat:
+// khong co nguon thi tu choi.
+// ════════════════════════════════════════════════════════════════════════════
+
+const TU_HOI_CAU = new Set(('can dang dat hang nhu cau bai toan gi nao bo tinh dia phuong thanh pho ben mua ai dau bai '
+  + 'nhung hien co nhieu dang can tim duoc nao do o').split(' '));
+const BO_TIEN_TO = ['uy ban nhan dan ', 'ubnd ', 'thanh pho ', 'tinh ', 'bo ', 'tong cong ty ', 'ban quan ly ', 'ngan hang nha nuoc ', 'vien '];
+const khoaGon = (s) => ` ${khoaTim(String(s ?? '')).replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim()} `;
+
+/** Cau hoi co hoi ve NHU CAU (ben can, ben dat hang) khong. "Can Tho" la ten dia danh, khong tinh. */
+export function laHoiCau(cau) {
+  const k = khoaGon(cau).replace(/ can tho /g, ' ');
+  return / (can|dat hang|nhu cau|bai toan|ben dat hang|dau bai) /.test(k);
+}
+
+/** Cac cach goi mot ben dat hang: ten day du, bo dan tien to hanh chinh, ma trong ngoac. */
+export function tenGoiBen(ten) {
+  const ra = new Set();
+  const ngoac = [...String(ten).matchAll(/\(([^)]+)\)/g)].map((m) => khoaGon(m[1]).trim());
+  let k = khoaGon(String(ten).replace(/\([^)]*\)/g, ' ')).trim();
+  ra.add(k);
+  for (let doi = true; doi;) {
+    doi = false;
+    for (const t of BO_TIEN_TO) if (k.startsWith(t) && k.length > t.length + 2) { k = k.slice(t.length); ra.add(k); doi = true; }
+  }
+  for (const n of ngoac) if (n.length >= 3) ra.add(n);
+  return [...ra].sort();
+}
+
+/** Chi muc cau that cho hoi dap, dung tu lib/hub-cau-that.json (goi luc build va trong cong kiem). */
+export function dungChiMucCau(cauThat) {
+  const lay = (n, f) => n.nguon.find((x) => x.field === f) ?? null;
+  const trichCua = (x) => (x ? { field: x.field, value: x.value, span: x.span, href: x.href, tier: x.tier, source: x.source } : null);
+  return {
+    nhuCau: cauThat.nhuCau.map((n) => ({
+      ma: n.ma, ten: n.ten, ben: n.benDatHang, loaiTen: n.loaiTen, tenGoi: tenGoiBen(n.benDatHang),
+      // Chi khop tren GIA TRI nguyen van cua ten va doi tuong (deu nam trong span), khong tren ten
+      // san pham do may anh xa: cau trich hien ra phai chua dung tu duoc hoi.
+      khoa: khoaTim(`${n.ten} ${n.doiTuong ?? ''}`),
+      trich: [trichCua(lay(n, 'ten_nhu_cau')), trichCua(lay(n, 'doi_tuong'))].filter(Boolean),
+      trichBen: trichCua(lay(n, 'ben_dat_hang')),
+    })),
+  };
+}
+
+/** Tra loi cau hoi ve cau. Tra { cau, loai: 'cau', ben, khaiNiem, nhuCau: [...], conLai, tuChoi }. */
+export function hoiCau(cau, cc, cm) {
+  if (!cm._cum) { Object.defineProperty(cm, '_cum', { value: new Set(cm.cumTu) }); Object.defineProperty(cm, '_ts', { value: new Map(Object.entries(cm.tanSuat)) }); }
+  const goc = String(cau ?? '').trim();
+  const k = khoaGon(goc);
+  const benHoi = [...new Set(cc.nhuCau.filter((n) => n.tenGoi.some((a) => k.includes(` ${a} `))).map((n) => n.ben))].sort();
+  const tuBen = new Set(cc.nhuCau.filter((n) => benHoi.includes(n.ben)).flatMap((n) => n.tenGoi.join(' ').split(' ')));
+  const { khaiNiem } = hieuCauHoi(goc, cm._cum, cm._ts);
+  // Khai niem trong tu dien dong nghia (nang 2: "ve tinh", "uav") luon giu; "tinh" o day khong phai "tinh thanh".
+  const kn = khaiNiem.filter((x) => x.nang === 2 || !x.nhan.split(' ').every((t) => TU_HOI_CAU.has(t) || TU_CHUC_NANG.has(t) || tuBen.has(t)));
+  const ra = { cau: goc, loai: 'cau', ben: benHoi, khaiNiem: kn.map((x) => x.nhan), nhuCau: [], conLai: 0, tuChoi: null };
+  if (!kn.length && !benHoi.length) {
+    ra.tuChoi = 'Câu hỏi về nhu cầu cần có tên công nghệ hoặc tên bên đặt hàng. Thử hỏi kiểu: "Hà Nội cần gì?" hoặc "Ai đang cần UAV?"';
+    return ra;
+  }
+  // Mot am tiet le duy nhat ("cat" con lai tu "may cat co") qua mo ho de tim nhu cau: tu choi
+  // thay vi khop "dong cat" cua thiet bi dien.
+  if (!benHoi.length && kn.length === 1 && kn[0].le) {
+    ra.tuChoi = `Câu hỏi chỉ còn một âm tiết "${kn[0].nhan}" sau khi bỏ từ hỏi, quá chung để tìm nhu cầu. Thử viết tên công nghệ đầy đủ hơn.`;
+    return ra;
+  }
+  const tong = kn.reduce((a, x) => a + x.nang, 0);
+  const can = tong <= 2 ? tong : tong * 0.5;
+  const tap = benHoi.length ? cc.nhuCau.filter((n) => benHoi.includes(n.ben)) : cc.nhuCau;
+  const dat = [];
+  for (const n of tap) {
+    const trung = kn.filter((x) => x.thay.some((c) => khopDauTu(n.khoa, c)));
+    const nang = trung.reduce((a, x) => a + x.nang, 0);
+    if (kn.length && (!trung.length || nang < can)) continue;
+    const trich = kn.length
+      ? n.trich.filter((t) => trung.some((x) => x.thay.some((c) => khopDauTu(khoaTim(t.value), c))))
+      : n.trich.filter((t) => t.field === 'ten_nhu_cau');
+    if (!trich.length) continue;
+    const diem = nang * 10 + (trich[0].tier === 'A' ? 3 : trich[0].tier === 'B' ? 2 : 0);
+    dat.push({ ma: n.ma, ten: n.ten, ben: n.ben, loaiTen: n.loaiTen, diem, khop: trung.map((x) => x.nhan), trich, trichBen: n.trichBen });
+  }
+  dat.sort((a, b) => b.diem - a.diem || a.ma.localeCompare(b.ma));
+  const toiDa = kn.length ? 8 : 20;
+  ra.nhuCau = dat.slice(0, toiDa);
+  ra.conLai = Math.max(0, dat.length - toiDa);
+  if (!ra.nhuCau.length) {
+    const ve = [...benHoi.map((b) => `của ${b}`), ...kn.map((x) => `"${x.nhan}"`)].join(', ');
+    ra.tuChoi = `Sổ nguồn chưa có nhu cầu đặt hàng nào ${ve || 'khớp câu hỏi'}. Không có nguồn thì không trả lời.`;
+  }
+  return ra;
+}

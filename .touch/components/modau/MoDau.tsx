@@ -155,6 +155,13 @@ export function MoDau() {
           <SoLon gia={s.cauNguon} nhan="câu nguồn nguyên văn" phu={`${s.tierA} câu hạng A`} khoa="claims" tre={120} xuHuong="cauNguon" />
           <SoLon gia={s.matchDaKy} nhan="match đã ký bởi người" phu={`${s.tuChoi} cặp bị từ chối, vẫn hiện`} khoa="matches" tre={240} xuHuong="matchDaKy" />
           <SoLon gia={s.ncTrong} nhan="nhu cầu quốc gia chưa có bên cung" phu={`trên ${s.nhuCau} sản phẩm chiến lược`} khoa="needs" tre={360} nhan2={`/${s.nhuCau}`} />
+          {/* 25/10/2026: cau that len so chinh. Bam ra trang Cau that, noi moi nhu cau co cau nguon va ben dat hang. */}
+          {s.cauThat ? (
+            <Link href="/dashboard/cau-that" className="md-so md-so--rong">
+              <span className="md-so__dong"><span className="md-so__v">{s.cauThat}</span></span>
+              <span className="md-so__k">nhu cầu đặt hàng thật, công khai</span>
+              <span className="md-so__phu">từ {s.benDatHang} bên đặt hàng (bộ ngành, địa phương, viện, doanh nghiệp nhà nước); mỗi nhu cầu có câu nguồn nguyên văn</span>
+            </Link>) : null}
         </div>
       </section>
 

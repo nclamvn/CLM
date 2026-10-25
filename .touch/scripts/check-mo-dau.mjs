@@ -36,17 +36,19 @@ const doc = (p) => { if (!existsSync(p)) thoat3(`thieu ${p}`); return readFileSy
 const dj = (ten) => JSON.parse(doc(join(TOUCH, 'lib', ten)));
 const MD = dj('hub-mo-dau.json'); const reg = dj('cncl-registry.json'); const mat = dj('cncl-match.json');
 const graph = dj('hub-graph.json'); const thiTruong = dj('hub-thi-truong.json'); const thoiCuoc = dj('hub-thoi-cuoc.json');
-const hoSo = dj('hub-ho-so.json'); const matching = dj('hub-matching.json');
+const hoSo = dj('hub-ho-so.json'); const matching = dj('hub-matching.json'); const pheu = dj('hub-pheu.json'); const cauThat = dj('hub-cau-that.json');
 const { dungMoDau } = await import(pathToFileURL(MO_DUN).href);
 
 const vi = [];
-if (JSON.stringify(dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching })) !== JSON.stringify(MD)) vi.push('MO_DAU_LECH: hub-mo-dau.json khac ban tinh lai');
+if (JSON.stringify(dungMoDau({ reg, mat, graph, thiTruong, thoiCuoc, hoSo, matching, pheu, cauThat })) !== JSON.stringify(MD)) vi.push('MO_DAU_LECH: hub-mo-dau.json khac ban tinh lai');
 
 // ── So chinh, dem doc lap ───────────────────────────────────────────────────
 const claims = reg.units.flatMap((u) => u.evidence);
 const coCung = new Set(graph.edges.filter((e) => e.kind === 'cung_san_pham' || e.kind === 'match_da_ky').map((e) => e.target));
 const ncTrong = graph.nodes.filter((n) => n.kind === 'nhu_cau' && !coCung.has(n.id)).length;
 const that = { donVi: reg.units.length, cauNguon: claims.length, tierA: claims.filter((e) => e.tier === 'A').length, matchDaKy: mat.signedMatches.length, tuChoi: mat.rejectedPairs.length, nhuCau: reg.needs.length, ncTrong };
+// 25/10/2026: cau that dem doc lap tu chinh danh sach nhu cau dat hang.
+that.cauThat = cauThat.nhuCau.length; that.benDatHang = new Set(cauThat.nhuCau.map((n) => n.benDatHang)).size;
 for (const [k, v] of Object.entries(that)) if (MD.so?.[k] !== v) vi.push(`SO_LECH: ${k} trang ghi ${MD.so?.[k]}, dem truc tiep ${v}`);
 const cc = reg.meta.chuoiCong;
 if (cc && (!MD.chuoiCong || MD.chuoiCong.xanh !== cc.xanh || MD.chuoiCong.tong !== cc.tong || MD.chuoiCong.dat !== cc.dat)) vi.push(`SO_LECH: chuoi cong trang ghi ${JSON.stringify(MD.chuoiCong)}, meta ${cc.xanh}/${cc.tong}`);
@@ -69,8 +71,12 @@ for (const c of MD.chatLuong ?? []) {
 if ((MD.chatLuong ?? []).length !== 5) vi.push(`CHAT_LUONG_LECH: ${(MD.chatLuong ?? []).length} thanh, phai 5`);
 for (const v of MD.viecTiep ?? []) {
   if (!(v.so > 0)) vi.push(`VIEC_LECH: viec "${v.viec}" so ${v.so} van hien`);
-  if (!existsSync(join(TOUCH, 'app', ...v.href.replace(/^\//, '').split('/'), 'page.tsx'))) vi.push(`VIEC_LECH: ${v.href} khong co trang`);
+  if (!existsSync(join(TOUCH, 'app', ...v.href.replace(/#.*$/, '').replace(/^\//, '').split('/'), 'page.tsx'))) vi.push(`VIEC_LECH: ${v.href} khong co trang`);
 }
+// 25/10/2026: viec khong duoc huong nguoi xem di KY khi pheu khong co cap nao cho ky (man trong).
+const choKy = pheu.tang.find((t) => t.k === 'cho_ky')?.n ?? 0;
+if (choKy === 0 && (MD.viecTiep ?? []).some((v) => /rồi ký|chưa có cặp được ký/.test(`${v.viec} ${v.cach}`))) vi.push('VIEC_LECH: viec huong nguoi xem di ky trong khi pheu co 0 cap cho ky');
+if (choKy > 0 && !(MD.viecTiep ?? []).some((v) => v.so === choKy && v.href === '/dashboard/matching')) vi.push(`VIEC_LECH: pheu co ${choKy} cap cho ky ma khong co viec di ky`);
 const coViec = (href) => (MD.viecTiep ?? []).some((v) => v.href === href);
 if (MD.diemYeu?.chuaDinhDanh > 0 && !coViec('/dashboard/don-vi')) vi.push('VIEC_LECH: con don vi chua dinh danh ma mat viec dinh danh');
 if (ncTrong > 0 && !coViec('/dashboard/thi-truong')) vi.push('VIEC_LECH: con nhu cau trong ma mat viec tim ben cung');
@@ -86,8 +92,8 @@ for (const c of MD.cua ?? []) {
 
 // ── Kho so go tay khong duoc quay lai ───────────────────────────────────────
 const xuat = [...ps.matchAll(/^export\s+(?:const|function|let|var|type|interface)\s+(\w+)/gm)].map((m) => m[1]);
-const thua = xuat.filter((x) => !['nav', 'statusMeta'].includes(x));
-if (thua.length) vi.push(`SO_CU_QUAY_LAI: lib/project-status.ts xuat ${thua.join(', ')} (chi duoc nav, statusMeta)`);
+const thua = xuat.filter((x) => !['nav', 'statusMeta', 'NHOM_MENU'].includes(x));
+if (thua.length) vi.push(`SO_CU_QUAY_LAI: lib/project-status.ts xuat ${thua.join(', ')} (chi duoc nav, NHOM_MENU, statusMeta)`);
 const sm = (ps.match(/export const statusMeta = \{([\s\S]*?)\}/) || [])[1] ?? '';
 if (/\d/.test(sm)) vi.push('SO_CU_QUAY_LAI: statusMeta chua chu so (ngay hoac so go tay)');
 for (const f of [join(TOUCH, 'app', 'dashboard', 'page.tsx'), join(TOUCH, 'components', 'modau', 'MoDau.tsx')]) {

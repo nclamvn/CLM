@@ -7,15 +7,17 @@
     "snapshots": 139,
     "tierA": 120,
     "tierB": 190,
+    "tierC": 68,
+    "banChupCung": 106,
     "nhomPhu": 10,
-    "generatedAt": "2026-10-07",
+    "generatedAt": "2026-10-25",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-10-07 11:09: 126/126 xanh",
+    "gate": "chuỗi cổng 2026-10-25 17:10: 132/132 xanh",
     "chuoiCong": {
-      "luc": "2026-10-07T11:09:07+0700",
+      "luc": "2026-10-25T17:10:58+0700",
       "cheDo": "day_du",
-      "tong": 126,
-      "xanh": 126,
+      "tong": 132,
+      "xanh": 132,
       "do": 0,
       "khongChay": 0,
       "hoan": 0,
@@ -2139,7 +2141,7 @@
           "tier": "B",
           "extraction": "verbatim",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
-          "note": "QUAN TRONG: nen cong nghe la LICENSING tu doi tac nuoc ngoai, KHONG phai cong nghe tu phat trien. Day may da dung va gioi thieu 04/2026. Phan biet ro khi doc."
+          "note": "QUAN TRONG: nen cong nghe la LICENSING tu doi tac nuoc ngoai, KHONG phai cong nghe tu phat trien. Day may da dung va gioi thieu 04/2026. Phan biet ro khi doc. | GIU NGUON CU: da di tim nguon moi ngay 24/10/2026. Claude de xuat, anh Lam xac nhan hoac gach. Moi bai ve GG Power tim duoc (vneconomy, cafebiz, vnexpress, bnews, diendandoanhnghiep, congdoanvietnam) deu dang quanh le ra mat 11/04/2026, khong co bai nao sau 27/04/2026. Claim la SU KIEN DA XAY RA (da nhan chuyen giao cong nghe theo licensing truoc khi nha may ra mat), khong phai trang thai dang dien ra, nen tuoi bai khong lam sai claim."
         },
         {
           "field": "san_pham_lien_quan",
@@ -2321,7 +2323,7 @@
           "tier": "B",
           "extraction": "verbatim",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
-          "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh."
+          "note": "LAM GIAU dot_01 · P19 · duyet 2026-09-30 boi Lam Nguyen. Ly do de xuat: Bài báo B mô tả máy điện phân IDF-EX1000X do Indefol sản xuất, đang vận hành với điện mặt trời (nguyên mẫu/sản phẩm đã hình thành). Người duyệt cần biết: công ty tự nhận làm chủ 50% công nghệ (32% Đức, 18% Pháp) và có từ tối thượng \"đầu tiên\" (hệ 1 MW), nên thu hẹp phạm vi; tên pháp nhân đầy đủ chưa định danh. | GIU NGUON CU: da di tim nguon moi ngay 24/10/2026. Claude de xuat, anh Lam xac nhan hoac gach. vnexpress.net 28/04/2026 (bai 5066894) chep lai gan nguyen cau nay, nhung cung toa soan va chi moi hon 10 ngay, nen KHONG tinh la nguon doc lap va KHONG dung de lam moi (no cung qua 180 ngay ngay 26/10/2026). Claim mo ta NEN CONG NGHE cua mot may DA CHE TAO XONG (dien phan kiem), khong phai trang thai co the doi, nen tuoi bai khong lam sai claim."
         },
         {
           "field": "bang_chung_nang_luc",
@@ -3017,7 +3019,7 @@
           "tier": "B",
           "extraction": "verbatim",
           "href": "/evidence/cafef_rtr_xponential_20260418.txt",
-          "note": "HANG NGUON: TU KHAI. Toan bo noi dung nang luc trong bai den tu phat ngon cua TS Luong Viet Quoc, nha sang lap kiem CEO RtR; bao dang lai, khong kiem chung doc lap. RtR cung la ben van hanh registry nay, nen claim ve chinh minh phai doc voi canh giac cao hon claim ve don vi khac. KHANG DINH TOI THUONG: pham vi la MOT BUOI, MOT NGAY, MOT SU KIEN. 'Duy nhat' o day co nghia: trong buoi Media Preview cua Xponential 2026 ngay 13/04/2026, cac don vi khac deu TU HUY bay vi gio manh, con doi Hera van bay. No KHONG co nghia Hera la drone duy nhat tren the gioi bay duoc trong gio manh, cung khong phai ket qua cua mot phep so sanh co doi chung. Nguon cung ghi ro 'Hien chua co don dat hang ngay vi vua hoan tat bay trinh dien'."
+          "note": "HANG NGUON: TU KHAI. Toan bo noi dung nang luc trong bai den tu phat ngon cua TS Luong Viet Quoc, nha sang lap kiem CEO RtR; bao dang lai, khong kiem chung doc lap. RtR cung la ben van hanh registry nay, nen claim ve chinh minh phai doc voi canh giac cao hon claim ve don vi khac. KHANG DINH TOI THUONG: pham vi la MOT BUOI, MOT NGAY, MOT SU KIEN. 'Duy nhat' o day co nghia: trong buoi Media Preview cua Xponential 2026 ngay 13/04/2026, cac don vi khac deu TU HUY bay vi gio manh, con doi Hera van bay. No KHONG co nghia Hera la drone duy nhat tren the gioi bay duoc trong gio manh, cung khong phai ket qua cua mot phep so sanh co doi chung. Nguon cung ghi ro 'Hien chua co don dat hang ngay vi vua hoan tat bay trinh dien'. | GIU NGUON CU: da di tim nguon moi ngay 24/10/2026. Claude de xuat, anh Lam xac nhan hoac gach. Nguon moi hon co that (dronelife.com 07/07/2026, ten mien CHUA duyet) nhung noi NANG LUC KHAC (tuong thich LiDAR TrueView 641, tai 30 lb, bay toi 60 phut) va khong nhac buoi Media Preview. Claim la SU KIEN DA XAY RA trong mot buoi co ngay (13/04/2026), nen tuoi bai khong lam sai claim; pham vi van la mot buoi nhu ghi o tren."
         },
         {
           "field": "ten_phap_nhan",

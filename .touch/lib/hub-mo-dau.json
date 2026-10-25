@@ -9,19 +9,21 @@
     "nhuCau": 30,
     "ncCoCung": 28,
     "ncTrong": 2,
-    "capCungCau": 67
+    "capCungCau": 67,
+    "cauThat": 54,
+    "benDatHang": 16
   },
   "chuoiCong": {
-    "xanh": 126,
-    "tong": 126,
+    "xanh": 132,
+    "tong": 132,
     "dat": true,
-    "luc": "2026-10-07T11:09:07+0700",
+    "luc": "2026-10-25T17:10:58+0700",
     "nhanh": false
   },
   "diemYeu": {
     "chuaDinhDanh": 60,
-    "quaHanChuaLyDo": 29,
-    "giuNguonCu": 65,
+    "quaHanChuaLyDo": 33,
+    "giuNguonCu": 68,
     "deXuatChoDuyet": 2
   },
   "cua": [
@@ -176,7 +178,7 @@
     {
       "k": "conHan",
       "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
-      "tu": 349,
+      "tu": 345,
       "mau": 378
     }
   ],
@@ -195,12 +197,12 @@
     },
     {
       "so": 12,
-      "viec": "nhu cầu đã có bên cung nhưng chưa có cặp được ký",
-      "cach": "người gác cổng xem bằng chứng từng cặp rồi ký hoặc từ chối",
-      "href": "/dashboard/matching"
+      "viec": "nhu cầu đã có bên cung cùng nhóm nhưng chưa cặp nào đủ câu nguồn để đưa ký",
+      "cach": "tìm câu nguồn năng lực nói đúng sản phẩm; máy chỉ đưa tới người ký cặp có độ giao từ 50% trở lên",
+      "href": "/dashboard/matching#pg-suyt-h"
     },
     {
-      "so": 29,
+      "so": 33,
       "viec": "câu nguồn quá 180 ngày chưa có lý do giữ",
       "cach": "chụp lại nguồn hoặc ghi lý do giữ",
       "href": "/dashboard/registry"
@@ -212,5 +214,5 @@
       "href": "/dashboard/thoi-cuoc"
     }
   ],
-  "mocNgay": "2026-10-07"
+  "mocNgay": "2026-10-25"
 }

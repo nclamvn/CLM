@@ -1,0 +1,16 @@
+{
+ "nguoi_duyet": "(DE XUAT CUA CLAUDE, CHUA DUYET)",
+ "ngay": "0000-00-00",
+ "loai": [
+  6,
+  7,
+  8
+ ],
+ "loai_don_vi": [],
+ "ly_do_loai": {
+  "6": "(de xuat cua Claude) nguon 16/01/2025 da qua 180 ngay, ten mien bavutex chua duyet, cong du_dieu_kien bao do",
+  "7": "(de xuat cua Claude) nguon 29/05/2024 da qua 180 ngay va cong du_dieu_kien bao do vi 'tich hop'",
+  "8": "(de xuat cua Claude) cung nguon 2024 voi dong 7"
+ },
+ "ghi_chu": {}
+}

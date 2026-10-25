@@ -1,62 +1,34 @@
 # .touch
 
-Website `.touch`, provenance-backed B2B matching. Next.js 15 App Router, TypeScript, Tailwind, font self-host. Từ 17/07/2026 site theo **hướng C: control-room tối đen đỏ** (quyết định Con người), spec tại `KnowledgeBase/touch_hub/design/DESIGN_SPEC_DARK.md`. Repo này là SOT triển khai; file demo `touch_home_dark.html` chỉ là artefact thiết kế. Đây là website prototype, tách khỏi engine PoC cào-lọc-match (backend riêng). Mọi số liệu trên giao diện là DEMO minh hoạ, gắn nhãn DEMO DATA.
+Web của CàoLọcMatch: trang đầu một màn và bảng điều khiển cung cầu công nghệ chiến lược. Next.js 15 (App Router), TypeScript, xuất tĩnh; mọi dữ liệu sinh lúc build từ sổ nguồn, không có máy chủ dữ liệu. Tổng quan dự án ở [README của kho](../README.md).
 
 ## Chạy
 
-```bash
-npm install
-npm run dev            # http://localhost:3000
-npm run build          # build production
-npm run start          # chạy bản build
-npm run check          # cổng gộp: lint + em-dash + build
-npm run check:emdash   # cổng cứng: 0 em-dash và en-dash toàn source
 ```
+npm ci
+npx next build && npx next start -p 3200      # http://localhost:3200 (cổng 3000 trên máy anh Lâm là dự án khác)
+node scripts/gen-cncl-data.mjs && node scripts/gen-hub-data.mjs   # sinh lại dữ liệu từ sổ nguồn
+```
+
+Kiểm định không chạy riêng ở đây: dùng `../CaoLocMatch/chay_het_cong.sh`, chuỗi đó chạy mọi `scripts/check-*.mjs` và `scripts/bite-*.mjs` của web cùng các cổng của sổ nguồn.
 
 ## Cấu trúc
 
 ```
-app/            layout (metadata, skip link), page (landing TỐI), hub/ (hub TỐI),
-                not-found, opengraph-image (OG tối, font Việt), robots, sitemap
-components/
-  dark/         9 khối bề mặt tối: NavDark, HeroDark (+GlobeDark, MatchStream),
-                TapeDark, MetricsBand (+CountUp), PipelineDark (+pipeline-core),
-                MatrixHeatmap, ProvenanceGraph, InterpChart, PillarsDark,
-                VerticalsDark (+GCard), CTADark (+MeetDark, meet-core), FooterDark
-  hub/          HubTopBar, HubRail, KpiGrid, HubApp, MatchList, MatchDetail, RegistryTable
-  shared/       Container, Button, MatchCard, TierBadge, ViewSwitch, MobileNav...
-  globe/        globe light (chỉ còn /dev/globe dùng)
-lib/            tokens (light), content.ts (TOÀN BỘ copy, khối `dk` cho bề mặt tối),
-                demo-data.ts (hub), dark-data.ts (số liệu tối, PRNG seed cố định)
-assets/og/      TTF Be Vietnam Pro (convert từ woff2) cho next/og
-public/fonts/   woff2 self-host (Be Vietnam Pro, Fraunces italic, IBM Plex Mono)
-scripts/        check-emdash.mjs
-reports/        Completion Report từng TIP + ảnh kiểm
+app/                 trang đầu (/), bảng điều khiển (/dashboard/*), /hub chuyển về bảng điều khiển
+components/          theo màn: modau, cauthat, dieuphoi, hoidap, hoso, phuongphap, proof (bản chụp, lớp phủ nguồn)
+lib/                 hàm thuần dùng chung cho web và cổng (mo-dau, hoi-dap, kiem-toan, dieu-phoi, lich-su-lo...)
+lib/*.json           dữ liệu đã sinh; KHÔNG sửa tay
+public/evidence/     bản chụp trang nguồn mà câu nguồn trỏ tới
+scripts/gen-*.mjs    sinh dữ liệu web
+scripts/check-*.mjs  cổng (exit 0 sạch, 2 vi phạm, 3 không chạy được)
+scripts/bite-*.mjs   bộ thử tự cài lỗi cho từng cổng, dựng cảnh trong thư mục tạm
+styles/              token đơn sắc, bảng màu dữ liệu, phông Inter và Noto Serif
 ```
 
-## Theme
+## Luật của web
 
-- Bề mặt tối scope trong class `.dk` (token `--dk-*` trong `app/globals.css`), không đụng token light. Trang `/dev/*` là sân chơi nội bộ GIỮ LIGHT (kiểm primitive light theo DESIGN_SPEC gốc), đã chặn robots.
-- Cặp đỏ canonical (không dùng chéo bề mặt):
-
-| Vai trò | Light | Dark |
-|---|---|---|
-| Đỏ nền / fill | `#E4341E` | `#C40F0F` |
-| Đỏ sáng / glow | (không dùng) | `#E8221A`, đỉnh `#FF5A40` |
-| Đỏ chữ nhỏ AA | `#D42B16` | `#F53B2E` |
-
-- Bản đồ đỏ dark là danh sách đóng (DESIGN_SPEC_DARK mục 3); chỗ đỏ mới phải qua Kiến trúc sư duyệt.
-
-## Kỷ luật kỹ thuật
-
-- Copy 100% trong `lib/content.ts`. Cấm em-dash U+2014 và en-dash U+2013 (cổng `check:emdash`).
-- Canvas động (globe, pipeline, mê cung CTA): cleanup đầy đủ, đếm `window.__dkActive` phải về 0 khi rời trang; `prefers-reduced-motion` vẽ khung tĩnh.
-- Số liệu demo deterministic (seed cố định) để SSR không lệch hydrate.
-- Ngưỡng Lighthouse desktop: Perf >= 90, còn lại >= 95 (hiện trạng 99-100).
-
-## Deploy runbook
-
-1. Đặt `NEXT_PUBLIC_SITE_URL=https://<domain>` (metadata, sitemap, robots đọc biến này; mặc định localhost).
-2. `npm run check` phải xanh trên HEAD định deploy.
-3. Hosting đề xuất: Vercel (zero-config với App Router, OG image chạy sẵn) hoặc bất kỳ Node host nào (`npm run build && npm run start`, Node >= 20). Site tĩnh hoàn toàn (mọi route prerender), có thể đứng sau CDN.
-4. Sau deploy kiểm: `/robots.txt`, `/sitemap.xml`, `/opengraph-image` (OG tối tiếng Việt), một URL sai ra 404 thương hiệu.
+- Mọi số trên màn đọc từ `lib/*.json`; cổng đếm lại độc lập.
+- Mọi câu nguồn hiện ra qua `hienCau` (gỡ dấu markdown, không mất chữ) và mở được bản chụp trong cửa sổ trên trang.
+- Đơn sắc; màu chỉ cho đồ hoạ dữ liệu. Chữ không nhỏ hơn 12px. Nhãn tiếng Việt theo bảng thuật ngữ. Không dùng gạch ngang dài.
+- Menu nhóm theo việc; mỗi trang thuộc đúng một mục (`scripts/check-menu.mjs`).
