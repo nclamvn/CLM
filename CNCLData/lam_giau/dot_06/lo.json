@@ -1,0 +1,1694 @@
+{
+ "dot": "dot_06",
+ "so_dong": 67,
+ "don_vi_moi": [
+  "CMC Cyber Security",
+  "Công ty An ninh mạng thông minh SCS",
+  "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+  "Công ty cổ phần Đóng tàu Sông Cấm",
+  "Gremsy",
+  "Hyphen Deux",
+  "Liên doanh Việt - Nga Vietsovpetro",
+  "Saolatek",
+  "Vegacosmos",
+  "Viện Năng lượng nguyên tử Việt Nam"
+ ],
+ "don_vi_cu": [
+  "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+  "Tổng công ty Thiết bị điện Đông Anh",
+  "Viện Khoa học-Công nghệ mật mã"
+ ],
+ "nhu_cau": [
+  "P09",
+  "P20",
+  "P22",
+  "P23",
+  "P24",
+  "P26",
+  "P27",
+  "P28"
+ ],
+ "honest_null": [
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty Cổ phần Chế tạo Giàn khoan Dầu khí (PV Shipyard)",
+   "ly_do": "Có năng lực chế tạo chân đế, trạm biến áp ngoài khơi, nhưng bài mới nhất nói về sản xuất là 28/04/2026 (tổng kết thi đua dự án Fengmiao), đã quá 180 ngày; bài bàn giao kết cấu HVDC là 3/2026. Đã tìm bài mới hơn từ 01/05/2026 nhưng không có. Vòng sau tìm lại khi có tin bàn giao mới.",
+   "url": "https://petrovietnam.petrotimes.vn/pv-shipyard-tong-ket-thi-dua-san-xuat-khen-thuong-cac-tap-the-ca-nhan-tieu-bieu-740402.html"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty CP Kết cấu Kim loại và Lắp máy Dầu khí (PVC-MS)",
+   "ly_do": "Không tìm được bài từ 01/05/2026 về công trình đã hạ thủy hay bàn giao; tin gần nhất là hợp đồng ONGC 6/2025 (chỉ ký hợp đồng)."
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Saigontel / MOBY Robotics (ROV, AUV)",
+   "ly_do": "Chỉ là biên bản ghi nhớ ngày 23/9/2026; công nghệ ROV, AUV do MOBY Robotics (nước ngoài) dẫn dắt, chưa có sản phẩm Việt Nam.",
+   "url": "https://oceannews.com/news/science-technology/moby-robotics-partners-with-saigontel-to-deploy-rov-and-auv-systems-in-vietnam/"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Nhóm thực hiện đề tài thiết bị đo địa chấn đáy đại dương tự nổi (OBS), mã ĐTĐL.CN-79/22",
+   "ly_do": "Đề tài đã nghiệm thu 15/1/2025, có nguyên mẫu; nhưng bài trên mst.gov.vn là 11/12/2025, quá 180 ngày, và chưa xác định tên đơn vị chủ trì trong bản chụp. Vòng sau: tìm tên đơn vị chủ trì và bài mới.",
+   "url": "https://mst.gov.vn/lam-chu-cong-nghe-che-tao-he-thong-do-dia-chan-day-dai-duong-tu-noi-phuc-vu-kinh-te-bien-197251211234333889.htm"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Tổng công ty Thăm dò Khai thác Dầu khí (PVEP)",
+   "ly_do": "Chỉ là nhà điều hành thăm dò, khai thác, dùng thiết bị và dịch vụ của bên khác; không thấy công nghệ thăm dò tự làm."
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Viện Dầu khí Việt Nam (VPI)",
+   "ly_do": "Không tìm được bài từ 2026 nêu công nghệ hay sản phẩm thăm dò do Viện tự phát triển đã ứng dụng; chỉ có định hướng và biên bản hợp tác."
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": null,
+   "ly_do": "Mảng thăm dò lòng đất, biển sâu (ROV, AUV, thiết bị khảo sát) chưa có đơn vị Việt Nam nào có bài từ 01/05/2026 về sản phẩm đã hình thành; mst.gov.vn 21/08/2026 ghi Việt Nam còn phụ thuộc thiết bị khảo sát biển sâu nước ngoài.",
+   "url": "https://mst.gov.vn/muon-thanh-quoc-gia-bien-manh-viet-nam-phai-lam-chu-cong-nghe-bien-sau-197260821205803052.htm"
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "Viện Khoa học và Công nghệ Mỏ - Luyện kim",
+   "ly_do": "Bài mst.gov.vn 18/10/2026 chỉ là hội thảo góp ý dự thảo hồ sơ nhiệm vụ về công nghệ khoáng sản biển; chưa có sản phẩm, công nghệ đã hình thành.",
+   "url": "https://mst.gov.vn/khai-thac-khoang-san-bien-de-xuat-cong-nghe-phai-dap-ung-nhung-dieu-kien-nao-197261017131638939.htm"
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "LS Eco Energy (Hàn Quốc) và Lynas Rare Earths (Úc)",
+   "ly_do": "Đơn vị nước ngoài; chỉ ký thỏa thuận khung (26/3/2026) về nhà máy kim loại đất hiếm tại Việt Nam, chưa có nhà máy.",
+   "url": "https://tuoitre.vn/saigontimes/viet-nam-buoc-vao-khau-che-bien-sau-dat-hiem-1061209459.htm"
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "Công ty CP Tư vấn Công nghệ và Xây dựng Mỏ",
+   "ly_do": "Theo kết quả tìm kiếm, tin 9/2026 cho biết Hà Nội chấp thuận thử nghiệm có kiểm soát 18 tháng sản xuất oxit đất hiếm trên 95%; mới được phép thử nghiệm, chưa có sản phẩm. Chưa tải trang để chụp.",
+   "url": "https://vietnamnews.vn/economy/1798907/ha-noi-gives-green-light-to-controlled-pilot-of-rare-earth-oxide-production.html"
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "Tổng Công ty Lọc hóa dầu Việt Nam (BSR)",
+   "ly_do": "Nhà máy lọc dầu vận hành công nghệ bản quyền nước ngoài; sản phẩm mới 8/2026 là lô Diesel sinh học B5 xuất bán thử nghiệm (44,5 m3) phối trộn từ B100 do đối tác cấp, gần P19 hơn P25. Người duyệt có thể xét lại nếu coi sản xuất sản phẩm lọc dầu là chế biến sâu dầu khí.",
+   "url": "https://tapchikinhtetaichinh.vn/bsr-xuat-ban-lo-nhien-lieu-diesel-sinh-hoc-b5-dau-tien-tu-nha-may-loc-dau-dung-quat-163872.html"
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "Công ty CP Tập đoàn Hóa chất Đức Giang",
+   "ly_do": "Có tổ hợp chế biến sâu quặng apatit, nhưng không tìm được bài từ 01/05/2026 nói về công nghệ tự làm; tin 2026 chủ yếu là tài chính và nguồn quặng."
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": "Viện Công nghệ xạ hiếm",
+   "ly_do": "Đơn vị đã có, ô nang_luc_mo_ta_2 còn trống; không tìm được bài từ 2026 về sản phẩm tách, tinh chế đất hiếm mới (bài tìm được là 2024, 2025)."
+  },
+  {
+   "nhu_cau": "P25",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam mới có bài từ 01/05/2026 về hệ thống chế biến sâu khoáng sản, đất hiếm đã vận hành; các tin 2026 chủ yếu là kế hoạch, thỏa thuận, dự thảo nhiệm vụ."
+  },
+  {
+   "nhu_cau": "P29",
+   "entity": null,
+   "ly_do": "Dự án đường sắt tốc độ cao Bắc - Nam đang lập báo cáo khả thi, chưa khởi công; chưa có đơn vị Việt Nam nào có công trình đường sắt tốc độ cao đã xây. Bộ Xây dựng mới phê duyệt nhiệm vụ nghiên cứu (ray, kết cấu, đất yếu).",
+   "url": "https://baoxaydung.vn/lam-chu-cong-nghe-duong-sat-voi-mo-hinh-3-nha-192260826141600943.htm"
+  },
+  {
+   "nhu_cau": "P29",
+   "entity": "Coteccons",
+   "ly_do": "Chỉ thấy tiêu đề bài 21/10/2026 về phần việc tại dự án đường sắt tốc độ cao của VinSpeed, dự án chưa thi công; chưa tải trang để chụp.",
+   "url": "https://nguoiquansat.vn/coteccons-ctd-he-lo-phan-viec-tai-du-an-duong-sat-toc-do-cao-hon-100-000-ty-dong-cua-vinspeed-323196.html"
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Tập đoàn Trường Hải (THACO)",
+   "ly_do": "Chỉ ký hợp đồng với Hyundai Rotem (23/4/2026, 11/6/2026): 6 toa hoàn chỉnh từ Hàn Quốc và 156 bộ linh kiện CKD; nhà máy toa tàu dự kiến sản xuất từ 2027."
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Tập đoàn Hòa Phát",
+   "ly_do": "Nhà máy ray đường sắt tốc độ cao khởi công 19/12/2025, lô ray đầu tiên dự kiến quý II/2027; chưa có sản phẩm.",
+   "url": "https://nguoiquansat.vn/chua-ra-lo-lo-thep-ray-cao-toc-dau-tien-hoa-phat-da-chao-hang-cho-du-an-5-6-ty-usd-cua-ong-pham-nhat-vuong-287385.html"
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Công ty CP Thông tin tín hiệu đường sắt Hà Nội",
+   "ly_do": "Đã làm thiết bị kết nối 6502 và SSI nhưng hệ thống liên khóa điện tử còn đang nghiên cứu; trang moc.gov.vn trả về rỗng khi tải (2 lần) nên không chụp được.",
+   "url": "https://moc.gov.vn/vn/tin-tuc/1305/91680/nganh-duong-sat-san-sang-lam-chu-he-thong-thong-tin-tin-hieu-duong-sat-hien-dai.aspx"
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Hasitec",
+   "ly_do": "Trúng gói thi công lắp đặt hệ thống thông tin tín hiệu (Hà Nội - Vinh); là đơn vị thi công, tích hợp, không thấy công nghệ tự làm.",
+   "url": "https://baodauthau.vn/hasitec-trung-goi-thau-he-thong-thong-tin-tin-hieu-duong-sat-gan-160-ty-dong-post166277.html"
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Công ty CP Xe lửa Gia Lâm",
+   "ly_do": "Không tìm được bài từ 2026 về toa xe đóng mới đã bàn giao; tin 2023 cho thấy toa Jinxin chỉ đóng vỏ, lắp ráp linh kiện nhập."
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Tập đoàn Đường sắt Quốc gia Việt Nam (VNR)",
+   "ly_do": "Chủ yếu vận hành; tổ hợp công nghiệp đường sắt 250 ha mới là dự án đề xuất.",
+   "url": "https://baoxaydung.vn/lam-chu-cong-nghe-duong-sat-voi-mo-hinh-3-nha-192260826141600943.htm"
+  },
+  {
+   "nhu_cau": "P30",
+   "entity": "Công ty cổ phần Xe lửa Dĩ An",
+   "ly_do": "Đơn vị đã có, ô nang_luc_mo_ta_2 còn trống; trang chủ xeluadian.com.vn không có tin mới, không tìm thêm được vì hết lượt tìm kiếm.",
+   "url": "https://xeluadian.com.vn/"
+  },
+  {
+   "nhu_cau": "P06",
+   "entity": null,
+   "ly_do": "Không tìm được doanh nghiệp Việt mới (ngoài Viettel High Tech, VNPT Technology đã có) có thiết bị 5G đã sản xuất; cafef 04/08/2026 chỉ nêu tổng khoảng 2.500 trạm 5G do doanh nghiệp Việt sản xuất, không nêu tên đơn vị mới.",
+   "url": "https://cafef.vn/viet-nam-tao-ky-tich-lot-top-dau-the-gioi-o-linh-vuc-ngay-ca-nhieu-nuoc-phat-trien-cung-mat-vai-nam-de-lam-188260804090832192.chn"
+  },
+  {
+   "nhu_cau": "P06",
+   "entity": "Tổng công ty Viễn thông MobiFone",
+   "ly_do": "Chỉ là nhà mạng vận hành 5G; thử nghiệm Open RAN với Rakuten Symphony và ký biên bản với Ericsson, không tự sản xuất thiết bị."
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Tập đoàn Geleximco",
+   "ly_do": "Mới là kế hoạch: xúc tiến thủ tục đầu tư nhà máy chip tại Hưng Yên, dự kiến khởi công 11/2026, sản phẩm thương mại đầu 2028; chưa có sản phẩm chip.",
+   "url": "https://mst.gov.vn/thao-go-diem-nghen-de-nganh-cong-nghiep-ban-dan-tu-chu-cong-nghe-197260910154124088.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Xưởng thực hành Đóng gói và Kiểm thử vi mạch (SHTP ATP Lab), Ban Quản lý Khu Công nghệ cao TP.HCM",
+   "ly_do": "Xưởng đào tạo thực hành khánh thành 23/10/2026, thiết bị dây chuyền do Intel Products Việt Nam trao tặng; mục tiêu là đào tạo, chưa có sản phẩm đóng gói kiểm thử do đơn vị làm chủ; Ban Quản lý là cơ quan quản lý nhà nước.",
+   "url": "https://nhandan.vn/khanh-thanh-xuong-thuc-hanh-dong-goi-va-kiem-thu-vi-mach-post997489.html"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Trung tâm quốc gia hỗ trợ sản xuất thử chip bán dẫn (VNMPW/CC)",
+   "ly_do": "Ra mắt 26/06/2026, là trung tâm điều phối MPW, wafer vẫn sản xuất ở TSMC, GlobalFoundries; chưa có tin chip nào tape-out thành công qua trung tâm.",
+   "url": "https://tiasang.com.vn/dau-moc-viet-nam-lan-dau-co-ha-tang-tape-out-chip-ban-dan-5090656.html"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Trung tâm Nghiên cứu và Đào tạo Thiết kế Vi mạch (ICDREC), ĐHQG TP.HCM",
+   "ly_do": "Chip SG8V1 là tin cũ (thương mại từ khoảng 2014), không fetch được trang icdrec.edu.vn; bài 07/09/2026 của ĐHQG TP.HCM chỉ nêu lộ trình, đề tài và đầu tư phòng thí nghiệm. Vòng sau nên tìm tin nghiệm thu mới.",
+   "url": "https://tuoitre.vn/dai-hoc-quoc-gia-tphcm-danh-1875-ti-dong-chay-dua-ai-chip-robot-cong-nghe-luong-tu-1002609071515118.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Trung tâm Thiết kế vi mạch bán dẫn và trí tuệ nhân tạo Đà Nẵng (DSAC)",
+   "ly_do": "Chức năng đào tạo, thu hút đầu tư, ươm tạo; không tìm được chip do trung tâm thiết kế đã chế tạo."
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "VNChip Technology",
+   "ly_do": "Bài cũ (27/09/2024): cung cấp dịch vụ thiết kế chip cho công ty nước ngoài, thiết kế sản xuất tại TSMC; chưa thấy chip của chính đơn vị, là gia công thiết kế. Cận chuẩn, để vòng sau tìm bài mới.",
+   "url": "https://tuoitre.vn/chuyen-mot-cong-ty-thiet-ke-chip-viet-nam-20240918081359892.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "SISLAB, Viện Công nghệ thông tin, ĐHQG Hà Nội",
+   "ly_do": "Chip AI dạng SNN mới ở mức layout và mô phỏng sau bố trí trên CMOS 65nm, bài tự gọi là kết quả ban đầu (12/03/2025), chưa tape-out.",
+   "url": "https://daibieunhandan.vn/nhom-nghien-cuu-dai-hoc-quoc-gia-ha-noi-cong-bo-ket-qua-nghien-cuu-ve-chip-ai-hien-dai-10361661.html"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Trường Đại học Công nghệ, ĐHQG Hà Nội",
+   "ly_do": "Chỉ có thông tin đào tạo, phòng thí nghiệm và kế hoạch trung tâm vi mạch Hòa Lạc; không có chip đã chế tạo.",
+   "url": "https://tuoitre.vn/dhqghn-dat-muc-tieu-den-nam-2030-dao-tao-10000-chuyen-gia-ban-dan-100260619115548154.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Đại học Bách khoa Hà Nội",
+   "ly_do": "Tin 2026 chỉ về đào tạo và cuộc thi MCU-FPGA; chú thích ảnh \"một chip cảm biến được thiết kế\", không có bằng chứng chế tạo.",
+   "url": "https://tuoitre.vn/vi-mach-ban-dan-cau-chuyen-ve-tinh-hoa-va-lot-o-20260212105841066.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Trường Đại học Bách khoa, ĐHQG TP.HCM",
+   "ly_do": "Thành tích nêu là bằng sáng chế cá nhân của giảng viên, không phải chip của đơn vị.",
+   "url": "https://tuoitre.vn/pgs-ts-hoang-trang-va-giac-mo-ban-dan-viet-20260316222829915.htm"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Viettel High Tech",
+   "ly_do": "Đơn vị đã có, ô nang_luc_mo_ta_2 trống; chip 5G DFE là tin 2023, không tìm được bài từ 01/05/2026 về chip, nên không đề xuất ô thứ hai đợt này."
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "VNPT Cyber Immunity",
+   "ly_do": "Nền tảng VNPT Threat Intelligence được giải ASOCIO 2026 nhưng là đội ngũ thuộc VNPT (đã có trong sổ), chưa rõ pháp nhân riêng; bài gắn nhãn \"Nội dung có tài trợ\".",
+   "url": "https://nhandan.vn/nen-tang-tham-bao-an-ninh-mang-vnpt-de-cu-duy-nhat-cua-viet-nam-duoc-vinh-danh-tai-asocio-digital-ai-awards-2026-post994113.html"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty Cổ phần Tập đoàn SAVYINT",
+   "ly_do": "Đạt Sao Khuê 2026 nhóm bảo mật ứng dụng, dữ liệu, nhưng chưa chắc là đơn vị Việt Nam (số điện thoại +61, gọi SAVIS là đối tác tại Việt Nam); sản phẩm hướng ngân hàng, chỉ có nguồn tự khai.",
+   "url": "https://savyint.com/savyint-wins-two-sao-khue-2026-awards-with-savyint-digital-trust-rated-5-stars/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Verichains",
+   "ly_do": "Bài cũ (30/12/2025) về giải Make in Viet Nam 2025; sản phẩm là bảo vệ ứng dụng di động và xác thực định danh, chưa thấy dùng cho hạ tầng quan trọng.",
+   "url": "https://vnexpress.net/sau-san-pham-dat-giai-vang-make-in-viet-nam-2025-5000167-p2.html"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Tập đoàn Công nghệ G-Group",
+   "ly_do": "Chỉ có tên sản phẩm V-SOC trong danh sách Sao Khuê 2026 của VINASA, không có nguồn thứ hai; trang ggroup.com.vn trả về trống.",
+   "url": "https://giaithuongsaokhue.vn/danh-sach-sao-khue-2026/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty CP Đầu tư Kỹ thuật số Việt (VDI WAF)",
+   "ly_do": "Có tên trong Sao Khuê 2026 nhóm an ninh mạng nhưng không xác định được đơn vị; tên miền vdi.com.vn là một công ty khác.",
+   "url": "https://giaithuongsaokhue.vn/danh-sach-sao-khue-2026/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Bkav",
+   "ly_do": "Không tìm được bài từ 01/05/2026 về sản phẩm cho hạ tầng quan trọng; trang bkav.com.vn chỉ có sản phẩm cho người dùng cá nhân, không có ngày.",
+   "url": "https://www.bkav.com.vn/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CyRadar",
+   "ly_do": "Trang tự khai có danh mục sản phẩm SIEM, EDR, ATD nhưng không có ngày đăng, không có bài báo chính thống mới; để vòng sau.",
+   "url": "https://cyradar.com/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CyStack",
+   "ly_do": "Giải Make in Vietnam 2024 (bài 17/01/2025), chỉ đọc được meta, thân bài không tải được.",
+   "url": "https://cystack.net/vi/blog/cystack-lap-cu-dup-giai-thuong-tai-make-in-vietnam-2024"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "VNCS",
+   "ly_do": "Trang vncs.vn chỉ có ảnh sự kiện 2020, không có bằng chứng mới.",
+   "url": "https://vncs.vn/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Thao trường an ninh mạng ViSecurity",
+   "ly_do": "Mới là kế hoạch (dự kiến vận hành 6/2026), không phải pháp nhân riêng; người dẫn dắt là lãnh đạo SafeGate (đã đề xuất).",
+   "url": "https://vnexpress.net/thao-truong-an-ninh-mang-cua-nguoi-viet-4995610.html"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Trung tâm Giám sát an toàn không gian mạng quốc gia (NCSC)",
+   "ly_do": "Trang ncsc.gov.vn trả về rỗng khi fetch, chưa kiểm được công cụ tự phát triển; để vòng sau.",
+   "url": "https://ncsc.gov.vn/"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "MK Networks (MK)",
+   "ly_do": "Thiết bị hạ tầng mạng Switch-Access Point ra mắt cùng SafeGate, thuộc MK (đã có trong sổ là MK Smart), là thiết bị mạng chứ không phải giải pháp bảo mật.",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": null,
+   "ly_do": "Không tìm được ĐƠN VỊ MỚI đủ điều kiện: chưa có bài nêu rõ đơn vị nào tự chế tạo thiết bị, hệ QKD, qubit hay cảm biến lượng tử. Chỉ đề xuất ô thứ hai cho Viện Khoa học-Công nghệ mật mã (mật mã hậu lượng tử). WebSearch hết hạn mức giữa đợt nên các trường ĐH Bách khoa HN, Phenikaa, ĐHQG TP.HCM, Viện Vật lý TP.HCM, Học viện Kỹ thuật mật mã chưa xét hết."
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Công nghệ Lượng tử, ĐHQG Hà Nội (VIQT)",
+   "ly_do": "Chỉ là đơn vị phối hợp sự kiện 17/04/2026 (bài cũ hơn mốc ưu tiên); viện trưởng gán màn trình diễn BB84 (2026) và chip lượng tử siêu dẫn trưng bày (2025) cho mạng lưới VNQuantum, không cho Viện; chưa có bằng chứng thiết bị do Viện chế tạo.",
+   "url": "https://vnu.edu.vn/chuyen-gia-luong-tu-viet-nam-di-sau-nhung-khong-phai-mo-mam-trong-bong-toi-post40144.html"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Nghiên cứu Cao cấp về Toán (VIASM)",
+   "ly_do": "Đơn vị chủ trì chuỗi bài giảng đại chúng; ảnh hệ BB84 ghi nguồn VIASM nhưng bài không nói VIASM chế tạo hệ.",
+   "url": "https://vneconomy.vn/techconnect/ngay-quoc-te-luong-tu-2026-viet-nam-lan-dau-trinh-dien-he-phan-phoi-khoa-luong-tu.htm"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Vật lý, Viện Hàn lâm KH&CN Việt Nam",
+   "ly_do": "Trong bài chỉ có bài giảng về nguyên lý truyền thông lượng tử và QKD của PGS Đinh Văn Trung, không có thiết bị hay kết quả thực nghiệm.",
+   "url": "https://vneconomy.vn/techconnect/ngay-quoc-te-luong-tu-2026-viet-nam-lan-dau-trinh-dien-he-phan-phoi-khoa-luong-tu.htm"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Thiên văn và Viễn thông lượng tử không gian (IAS)",
+   "ly_do": "Chỉ là đơn vị phối hợp tổ chức sự kiện, không có bằng chứng năng lực.",
+   "url": "https://vneconomy.vn/techconnect/ngay-quoc-te-luong-tu-2026-viet-nam-lan-dau-trinh-dien-he-phan-phoi-khoa-luong-tu.htm"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Mạng lưới Công nghệ Lượng tử Việt Nam (VNQuantum)",
+   "ly_do": "Là mạng lưới, không phải pháp nhân; không đề xuất như đơn vị.",
+   "url": "https://vnu.edu.vn/chuyen-gia-luong-tu-viet-nam-di-sau-nhung-khong-phai-mo-mam-trong-bong-toi-post40144.html"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Ban Cơ yếu Chính phủ",
+   "ly_do": "Năng lực mật mã hậu lượng tử (HB-PQSign, Hybrid ML-KEM, ML-PQSign) do Viện Khoa học-Công nghệ mật mã trực thuộc thực hiện, đã đề xuất vào ô thứ hai của Viện để không trùng đơn vị; Ban là cơ quan quản lý.",
+   "url": "https://nhandan.vn/lam-chu-cong-nghe-loi-mat-ma-ban-co-yeu-chinh-phu-cong-bo-3-du-thao-tieu-chuan-quoc-gia-ve-mat-ma-hau-luong-tu-post995997.html"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Quandela",
+   "ly_do": "Đơn vị nước ngoài (Pháp), máy tính lượng tử dự kiến đặt tại một trường ở Gia Lai."
+  },
+  {
+   "nhu_cau": "P21",
+   "entity": null,
+   "ly_do": "Không tìm được đơn vị Việt Nam nào đủ điều kiện cho P21. Đã tìm: thu giữ CO2 thí điểm, CCUS dầu khí, thu hồi CO2 lỏng, vật liệu hấp phụ CO2 đã nghiệm thu, vi tảo hấp thụ CO2 khí thải, thu giữ carbon ở xi măng và thép. Kết quả: các dự án có thật đều dùng công nghệ nước ngoài (thu hồi CO2 Đạm Phú Mỹ là công nghệ MHI do Samsung Engineering triển khai), hoặc mới là biên bản ghi nhớ (CCU Vũng Áng), nghiên cứu khả thi (Nhơn Trạch 2, Xi măng Bình Phước), thỏa thuận nghiên cứu (PVN và JOGMEC lưu trữ ngoài khơi Thanh Hóa, ký 2023), hoặc bài báo khoa học quy mô phòng thí nghiệm (MOF MIL-101 tại ĐH Bách khoa Đà Nẵng 2023). Không có pilot thu giữ CO2 do đơn vị Việt làm chủ công nghệ được đưa tin từ 01/05/2026.",
+   "url": "https://vietnamnews.vn/economy/1798887/viet-nam-eyes-entry-into-40-billion-southeast-asian-ccs-market-experts.html"
+  },
+  {
+   "nhu_cau": "P21",
+   "entity": "Viện Dầu khí Việt Nam (VPI)",
+   "ly_do": "Bài 04/09/2026: VPI mới có nghiên cứu chi phí toàn chuỗi CCS (100 đến 350 USD/tấn) và đánh giá tiềm năng lưu trữ; dự án CCS thí điểm thương mại quy mô nhỏ chỉ là đề xuất cho giai đoạn 2027-2030. Chưa có công nghệ hay pilot thu giữ đã hình thành. Vòng sau theo dõi nếu VPI công bố pilot.",
+   "url": "https://vietnamnews.vn/economy/1798887/viet-nam-eyes-entry-into-40-billion-southeast-asian-ccs-market-experts.html"
+  },
+  {
+   "nhu_cau": "P21",
+   "entity": "Viện Công nghệ môi trường (Viện Hàn lâm Khoa học và Công nghệ Việt Nam)",
+   "ly_do": "Có mô hình pilot thu hồi CO2 từ khí thải đốt than để nuôi tảo Spirulina tại lò gạch Tuynel Đan Phượng thuộc đề tài KC.08.08/11-15, công bố 2017. Bài quá cũ (trước 2020 về đề tài), không có bài mới hơn; nồng độ CO2 xử lý thấp (khoảng 1,2%). Ngoài ra là viện thành viên của Viện Hàn lâm (đã có trong registry). Không đề xuất.",
+   "url": "https://vjol.info.vn/khcn/article/view/27745"
+  },
+  {
+   "nhu_cau": "P21",
+   "entity": "CO2L Tech",
+   "ly_do": "Hệ thống ECR chuyển CO2 thành formic acid thử nghiệm tại nhà máy ở TP.HCM, nhưng công ty do nhà khoa học gốc Việt thành lập ở Canada (đơn vị nước ngoài) và nguồn tìm được là trang tổng hợp opendevelopmentmekong. Không đề xuất.",
+   "url": "https://vietnam.opendevelopmentmekong.net/news/vietnamese-startup-turns-emissions-into-valuable-materials/"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Nghiên cứu hạt nhân",
+   "ly_do": "Đơn vị trực tiếp vận hành Lò phản ứng hạt nhân Đà Lạt (hơn 71.500 giờ, cung ứng dược chất phóng xạ cho 23 cơ sở y học hạt nhân). Bài tìm được đăng 25/07/2025, quá 180 ngày. Năng lực lò đã được đề xuất qua đơn vị mẹ Viện Năng lượng nguyên tử Việt Nam (bài 07/07/2026); đề xuất thêm đơn vị con sẽ đếm trùng cùng một năng lực. Người duyệt có thể tách riêng nếu muốn, cần bài mới hơn.",
+   "url": "https://daibieunhandan.vn/print/10380997.html"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Khoa học và Kỹ thuật hạt nhân",
+   "ly_do": "Có công bố tính toán thủy nhiệt sơ bộ cho lò SMR dựa trên ACPR50S bằng chương trình RELAP5 (Khoa học và Công nghệ Việt Nam, tập 65 số 8B, 2023), nhưng chưa xác nhận được tác giả thuộc viện này từ nguồn đọc được, bài là 2023, và không tìm được bài báo chí từ 01/05/2026. Không lưu bản chụp. Vòng sau: tìm trang VINATOM hoặc tạp chí Nghiên cứu khoa học và phát triển công nghệ hạt nhân.",
+   "url": "https://vjol.info.vn/most/article/download/83463/71038/"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "VinSpace",
+   "ly_do": "Chỉ có kế hoạch: công bố tháng 4/2026 sẽ chế tạo và đưa vệ tinh lên quỹ đạo năm 2027, đã chọn SpaceX làm nhà cung cấp dịch vụ phóng. Chưa có sản phẩm hay nguyên mẫu được đưa tin.",
+   "url": "https://mekongasean.vn/vinspace-hop-tac-voi-spacex-dua-ve-tinh-len-quy-dao-vao-nam-2027-58330.html"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Phòng nghiên cứu không gian FSpace (Trường Đại học FPT)",
+   "ly_do": "Vệ tinh F-1 phóng năm 2012 (nêu trong bài cafef 04/04/2026), không có năng lực mới hơn được đưa tin; FPT đã có trong registry ở nhóm 1. Không đề xuất.",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": null,
+   "ly_do": "Ngoài Trung tâm Vũ trụ Việt Nam (đã có) và Vegacosmos (đã đề xuất, bài cũ), không tìm được đơn vị Việt mới nào thiết kế chế tạo vệ tinh nhỏ hoặc trạm mặt đất có bài từ 01/05/2026. Trạm SpaceX tại Đà Nẵng là đầu tư nước ngoài. Tìm kiếm về Viện Công nghệ vũ trụ và vệ tinh của các trường đại học không ra kết quả; ngân sách WebSearch của lượt đã hết trước khi tìm hết các trường.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "HTI UAS",
+   "ly_do": "Có sản phẩm UAV Horus P02, Horus QS24, trạm điều khiển HTI Ground Station (Nhân Dân 04/06/2026). Nhưng HTI UAS là công ty thành viên của HTI Group và năng lực Horus P02 đã được ghi cho 'HTI Technology' (pháp nhân Công ty Cổ phần Đầu tư và Công nghệ HTI) trong registry. Đề xuất HTI UAS là đơn vị mới sẽ đếm trùng; nếu HTI UAS là pháp nhân riêng thì cần định danh trước. Gợi ý: nang_luc_mo_ta_2 của HTI Technology còn trống, có thể dùng Horus QS24 nếu người duyệt chấp nhận gán năng lực của công ty thành viên cho HTI Technology.",
+   "url": "https://nhandan.vn/he-sinh-thai-uav-make-in-vietnam-ghi-dau-an-tai-japan-drone-expo-2026-post967031.html"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "FPT UAV",
+   "ly_do": "Nguồn (vcci 12/05/2026) mô tả FPT UAV là 'đại diện mảng giải pháp phần mềm và tích hợp hệ thống'; không có bằng chứng tự thiết kế chế tạo UAV. Thuộc diện tích hợp, không đề xuất.",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Hypomotion",
+   "ly_do": "Chỉ được nêu tên trong danh sách Vietnam Pavilion tại Japan Drone Expo 2026 (Nhân Dân 04/06/2026), không có mô tả sản phẩm hay năng lực. Thiếu bằng chứng cho năng lực và bằng chứng năng lực.",
+   "url": "https://nhandan.vn/he-sinh-thai-uav-make-in-vietnam-ghi-dau-an-tai-japan-drone-expo-2026-post967031.html"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Tổng Công ty Cổ phần Bưu chính Viettel (Viettel Post)",
+   "ly_do": "Giải Vàng Globee 2026 cho dự án sử dụng drone cứu trợ thiên tai, hơn 300 chuyến bay năm 2025 (Đại biểu Nhân dân 02/07/2026). Đây là năng lực ứng dụng, vận hành; bài không nói Viettel Post thiết kế chế tạo drone, và một nguồn khác nêu drone Vatomus do Saolatek chế tạo. Thuộc diện chỉ vận hành.",
+   "url": "https://daibieunhandan.vn/print/10422359.html"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "CT UAV",
+   "ly_do": "Công ty thành viên CT Group (đã có trong registry); có UAV CT Pegas 230 bay thử 17/9/2026 và nhà máy liên doanh lắp ráp tại California khánh thành 21/9/2026 theo kết quả tìm kiếm, nhưng chưa lưu bản chụp và năng lực trùng hướng với CT Group (hợp đồng 5.000 UAV). Vòng sau: nếu CT UAV là pháp nhân riêng thì đề xuất riêng; hoặc dùng cho nang_luc_mo_ta_2 của CT Group.",
+   "url": "https://dantri.com.vn/cong-nghe/cong-ty-viet-khanh-thanh-nha-may-lien-doanh-uav-tai-my-20260924111758742.htm"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": null,
+   "ly_do": "Phần chế áp UAV: hệ thống phát hiện, chế áp drone thử nghiệm tại sân bay Đà Nẵng (Tuổi Trẻ 16/08/2026) không nêu tên đơn vị chế tạo. Hệ thống C-UAS của Viettel tại Saha 2026 chỉ thấy ở tạp chí nước ngoài (EDR Magazine), thuộc Viettel High Tech (đã có); chưa lưu bản chụp. Không tìm được đơn vị mới làm chế áp UAV.",
+   "url": "https://news.tuoitre.vn/da-nang-airport-tests-drone-detection-suppression-system-103260816143217814.htm"
+  },
+  {
+   "nhu_cau": "P17",
+   "entity": null,
+   "ly_do": "Chỉ tìm sơ bộ (hết ngân sách WebSearch): bài Nhân Dân 13/06/2026 về vật liệu mới chỉ nêu ý kiến chuyên gia của Viện Khoa học vật liệu (đã có) và ĐHQGHN, không nêu sản phẩm cụ thể của đơn vị mới. Chưa đề xuất.",
+   "url": "https://nhandan.vn/ocop/tu-chu-vat-lieu-moi-trong-ky-nguyen-cong-nghe-post968896.html"
+  },
+  {
+   "nhu_cau": "P18",
+   "entity": null,
+   "ly_do": "Chỉ tìm sơ bộ: nhà máy cell và BESS tìm được đều là đơn vị đã có (VinES, GG Power) hoặc lắp ráp bộ pin trên công nghệ cell nước ngoài (Kim Long Motor với LG Energy Solution). Không có đơn vị mới đủ điều kiện.",
+   "url": null
+  },
+  {
+   "nhu_cau": "P20",
+   "entity": "Trường Điện - Điện tử, Đại học Bách khoa Hà Nội",
+   "ly_do": "Chỉ là đơn vị phối hợp nghiên cứu trong dự án cuộn kháng bù ngang 500kV mới khởi công 28/09/2026; chưa có sản phẩm. Không đề xuất.",
+   "url": "https://daibieunhandan.vn/print/10432045.html"
+  },
+  {
+   "nhu_cau": "P20",
+   "entity": "Công ty Cổ phần Máy điện VIHEM",
+   "ly_do": "Chỉ tìm được trang danh bạ doanh nghiệp (không được dùng) và bài Tạp chí Công Thương cũ về đề tài động cơ hiệu suất cao, không rõ ngày; không có bài từ 01/05/2026.",
+   "url": "https://tapchicongthuong.vn/vihem--thanh-cong-tu-nhung-de-tai-nghien-cuu-dong-co-tiet-kiem-nang-luong-19254.htm"
+  }
+ ],
+ "dong": [
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "ten_don_vi",
+   "value": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "evidence_span": "Ngày 12/9, Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C), trực thuộc Tổng CTCP Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC, HNX: [PVS](https://dulieu.nguoiquansat.vn/doanh-nghiep/PVS)), cùng các đối tác tổ chức Lễ hạ thủy và bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:1"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Ngày 12/9, Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C), trực thuộc Tổng CTCP Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC, HNX: [PVS](https://dulieu.nguoiquansat.vn/doanh-nghiep/PVS)), cùng các đối tác tổ chức Lễ hạ thủy và bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguon goi 'Cong ty TNHH MTV' nen xep DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:2"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "nhom_cncl",
+   "value": "8",
+   "evidence_span": "Sự kiện đánh dấu lần đầu tiên các công trình điện gió ngoài khơi được chế tạo tại Việt Nam xuất khẩu sang châu Âu.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: che tao cong trinh dien gio ngoai khoi (tram bien ap ngoai khoi) thuoc nhom 8 (bien, long dat) theo QD 21/2026, san pham P26.",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:3"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "san_pham_lien_quan",
+   "value": "26",
+   "evidence_span": "Sự kiện đánh dấu lần đầu tiên các công trình điện gió ngoài khơi được chế tạo tại Việt Nam xuất khẩu sang châu Âu.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: cong trinh dien gio ngoai khoi ung voi P26 (cong trinh bien va nang luong ngoai khoi).",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:4"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "nang_luc_mo_ta",
+   "value": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam",
+   "evidence_span": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:5"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+   "field": "bang_chung_nang_luc",
+   "value": "8 cấu kiện của dự án, gồm 4 khối thượng tầng trạm biến áp và 4 khung đỡ mô-đun, đã được hạ thủy thành công",
+   "evidence_span": "Trong chiến dịch hạ thủy kéo dài 43 ngày đêm liên tục, 8 cấu kiện của dự án, gồm 4 khối thượng tầng trạm biến áp và 4 khung đỡ mô-đun, đã được hạ thủy thành công.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nguoiquansat_ptsc_mc_baltica2_20260913.md",
+   "url": "https://nguoiquansat.vn/lan-dau-tien-trong-lich-su-viet-nam-xuat-khau-cong-trinh-dien-gio-ngoai-khoi-nang-16-000-tan-sang-chau-au-315930.html",
+   "ngay_bai": "2026-09-13",
+   "ly_do": "Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:6"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "ten_don_vi",
+   "value": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "evidence_span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:7"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguon goi 'Cong ty co phan' nen xep DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:8"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "nhom_cncl",
+   "value": "8",
+   "evidence_span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: dong tau thi cong cong trinh ngam phuc vu nang luong ngoai khoi thuoc nhom 8 theo QD 21/2026, san pham P26.",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:9"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "san_pham_lien_quan",
+   "value": "26",
+   "evidence_span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: phuong tien thi cong cong trinh bien phuc vu nang luong ngoai khoi ung voi P26.",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:10"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "nang_luc_mo_ta",
+   "value": "tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng)",
+   "evidence_span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:11"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "bang_chung_nang_luc",
+   "value": "các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm",
+   "evidence_span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:12"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Công ty cổ phần Đóng tàu Sông Cấm",
+   "field": "location",
+   "value": "Hải Phòng",
+   "evidence_span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "tuoitre_dong_tau_song_cam_rem_ocean_20260623.md",
+   "url": "https://tuoitre.vn/doanh-nghiep-na-uy-dat-dong-hai-tau-nang-luong-ngoai-khoi-tai-viet-nam-100260623182309562.htm",
+   "ngay_bai": "2026-06-23",
+   "ly_do": "Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:13"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "ten_don_vi",
+   "value": "Liên doanh Việt - Nga Vietsovpetro",
+   "evidence_span": "Bên cạnh đó, Liên doanh Việt - Nga Vietsovpetro cũng tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển, đồng thời đã đảm nhận hợp đồng EPCI cho khách hàng ngoài phạm vi dự án do mình trực tiếp điều hành.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:14"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Bên cạnh đó, Liên doanh Việt - Nga Vietsovpetro cũng tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển, đồng thời đã đảm nhận hợp đồng EPCI cho khách hàng ngoài phạm vi dự án do mình trực tiếp điều hành.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguon goi 'Lien doanh' (doanh nghiep lien doanh) nen xep DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:15"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "nhom_cncl",
+   "value": "8",
+   "evidence_span": "Bên cạnh đó, Liên doanh Việt - Nga Vietsovpetro cũng tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển, đồng thời đã đảm nhận hợp đồng EPCI cho khách hàng ngoài phạm vi dự án do mình trực tiếp điều hành.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: thiet ke, che tao, lap dat cong trinh bien dau khi thuoc nhom 8 theo QD 21/2026, san pham P26.",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:16"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "san_pham_lien_quan",
+   "value": "26",
+   "evidence_span": "Bên cạnh đó, Liên doanh Việt - Nga Vietsovpetro cũng tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển, đồng thời đã đảm nhận hợp đồng EPCI cho khách hàng ngoài phạm vi dự án do mình trực tiếp điều hành.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: cong trinh bien dau khi ung voi P26 (cong trinh bien).",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:17"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "nang_luc_mo_ta",
+   "value": "tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển",
+   "evidence_span": "Bên cạnh đó, Liên doanh Việt - Nga Vietsovpetro cũng tích lũy năng lực thiết kế, chế tạo, vận chuyển, lắp đặt, đấu nối và chạy thử qua nhiều thế hệ công trình biển, đồng thời đã đảm nhận hợp đồng EPCI cho khách hàng ngoài phạm vi dự án do mình trực tiếp điều hành.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:18"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Liên doanh Việt - Nga Vietsovpetro",
+   "field": "bang_chung_nang_luc",
+   "value": "Giàn BK - Thiên Ưng là dự án EPCI đầu tiên và có quy mô lớn nhất ngoài Lô 09-1 do Vietsovpetro thực hiện tại thời điểm hoàn thành",
+   "evidence_span": "Nền tảng đó sau này được Vietsovpetro đưa ra thị trường dịch vụ. Giàn BK - Thiên Ưng là dự án EPCI đầu tiên và có quy mô lớn nhất ngoài Lô 09-1 do Vietsovpetro thực hiện tại thời điểm hoàn thành.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Tạp chí PetroTimes (11/08/2026, nguồn mới, xếp B theo luật tên miền nhưng là tạp chí của Hội Dầu khí, gần với hệ Petrovietnam) ghi Vietsovpetro đã thiết kế, chế tạo, lắp đặt nhiều thế hệ công trình biển và hoàn thành giàn BK - Thiên Ưng theo hợp đồng EPCI, là năng lực đã hình thành. Người duyệt cần biết: đây là liên doanh Việt - Nga, cần anh Lâm quyết có tính là đơn vị Việt Nam; công trình nêu làm bằng chứng đã hoàn thành từ trước 2026; span có từ tối thượng \"đầu tiên\", \"lớn nhất\".",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:19"
+  },
+  {
+   "nhu_cau": "P26",
+   "entity": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+   "field": "nang_luc_mo_ta_2",
+   "value": "lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi",
+   "evidence_span": "Trong hệ sinh thái Petrovietnam, Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) là lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi, trực tiếp triển khai chủ yếu thông qua Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C) cùng các đơn vị thành viên trong chuỗi dịch vụ.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.md",
+   "url": "https://petrovietnam.petrotimes.vn/petrovietnam-lam-chu-nang-luc-tong-thau-epc-cong-trinh-dau-khi-ngoai-khoi-744457.html",
+   "ngay_bai": "2026-08-11",
+   "ly_do": "Đơn vị đã có trong registry, ô nang_luc_mo_ta_2 còn trống: bài 11/08/2026 nêu năng lực tổng thầu EPC công trình dầu khí ngoài khơi, khác năng lực chân đế điện gió đã có. Người duyệt cần biết: câu nguồn nói PTSC triển khai chủ yếu qua PTSC M&C (đề xuất riêng trong lô này), không đề xuất bang_chung_nang_luc vì ô đó đã có giá trị.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_bien_ds_5g.jsonl:20"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "ten_don_vi",
+   "value": "Công ty An ninh mạng thông minh SCS",
+   "evidence_span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:1"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: span ghi \"Công ty An ninh mạng thông minh SCS\", doanh nghiệp nên chuẩn hóa thành DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:2"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "nhom_cncl",
+   "value": "7",
+   "evidence_span": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp. Giải pháp được xếp vào nhóm công nghệ, sản phẩm chiến lược quốc gia theo Quyết định 21/2026/QĐ-TTg, phù hợp với định hướng phát triển công nghiệp an ninh mạng tại Nghị quyết 57, đồng thời được cấp chứng nhận bản quyền tác giả, khẳng định năng lực nghiên cứu và làm chủ công nghệ của đội ngũ kỹ sư Việt Nam.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: sản phẩm an ninh mạng thuộc nhóm công nghệ chiến lược QĐ 21/2026, nhu cầu P09 thuộc nhóm 7.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:3"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "san_pham_lien_quan",
+   "value": "9",
+   "evidence_span": "Nhóm 5 giải pháp của SafeGate hướng tới bảo vệ các tổ chức, doanh nghiệp và hệ thống thông tin trọng yếu gồm có: SafeGate Smart Firewall - Giải pháp tường lửa thông minh; SafeGate Secure Gateway - Cổng quản lý kết nối, an ninh mạng; SafeGate DLP - Giải pháp chống thất thoát dữ liệu, đảm bảo tuân thủ trong lĩnh vực dữ liệu, ngăn chặn rò rỉ dữ liệu nội bộ; SafeGate Data Diode - Giải pháp truyền dữ liệu 1 chiều; SafeGate Z-Entry - Giải pháp kết nối từ xa an toàn theo kiến trúc ZeroTrust.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: giải pháp bảo vệ hệ thống thông tin trọng yếu khớp sản phẩm P09 (bảo mật, an ninh mạng cho hạ tầng quan trọng), ghi số 9.",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:4"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "nang_luc_mo_ta",
+   "value": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp",
+   "evidence_span": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp. Giải pháp được xếp vào nhóm công nghệ, sản phẩm chiến lược quốc gia theo Quyết định 21/2026/QĐ-TTg, phù hợp với định hướng phát triển công nghiệp an ninh mạng tại Nghị quyết 57, đồng thời được cấp chứng nhận bản quyền tác giả, khẳng định năng lực nghiên cứu và làm chủ công nghệ của đội ngũ kỹ sư Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:5"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "Công ty An ninh mạng thông minh SCS",
+   "field": "bang_chung_nang_luc",
+   "value": "chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu",
+   "evidence_span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_safegate_giai_phap_an_ninh_mang_20260512.md",
+   "url": "https://nhandan.vn/ra-mat-bo-giai-phap-an-ninh-mang-chien-luoc-make-in-vietnam-post961697.html",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:6"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "ten_don_vi",
+   "value": "CMC Cyber Security",
+   "evidence_span": "CMDD là giải pháp phòng chống mã độc do CMC Cyber Security phát triển, giúp doanh nghiệp **giám sát, phát hiện, ngăn chặn và xử lý mối đe dọa trên thiết bị đầu cuối** một cách tập trung, đồng bộ và linh hoạt.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:7"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "### CMC CYBER SECURITY LTD **A:** Tầng 15, Tòa nhà CMC, Số 11 Duy Tân, Phường Cầu Giấy, Hà Nội.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: span ghi \"CMC CYBER SECURITY LTD\" (công ty TNHH), chuẩn hóa thành DN.",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:8"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "nhom_cncl",
+   "value": "7",
+   "evidence_span": "#### **Công nghệ Make in Vietnam, làm chủ lõi phát hiện mã độc** CMDD được phát triển trên nền tảng công nghệ tự chủ của CMC Cyber Security, hỗ trợ phát hiện virus, ransomware, spyware, trojan, rootkit, keylogger, fileless malware và các mối đe dọa nâng cao.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: công nghệ phát hiện mã độc tự chủ thuộc lĩnh vực an ninh mạng, nhóm 7 theo QĐ 21.",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:9"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "san_pham_lien_quan",
+   "value": "9",
+   "evidence_span": "CMDD là giải pháp phòng chống mã độc do CMC Cyber Security phát triển, giúp doanh nghiệp **giám sát, phát hiện, ngăn chặn và xử lý mối đe dọa trên thiết bị đầu cuối** một cách tập trung, đồng bộ và linh hoạt.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: giải pháp phòng chống mã độc, bảo vệ thiết bị đầu cuối là giải pháp bảo mật, an ninh mạng, khớp P09, ghi số 9.",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:10"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "nang_luc_mo_ta",
+   "value": "CMDD được phát triển trên nền tảng công nghệ tự chủ của CMC Cyber Security, hỗ trợ phát hiện virus, ransomware, spyware, trojan, rootkit, keylogger, fileless malware và các mối đe dọa nâng cao",
+   "evidence_span": "#### **Công nghệ Make in Vietnam, làm chủ lõi phát hiện mã độc** CMDD được phát triển trên nền tảng công nghệ tự chủ của CMC Cyber Security, hỗ trợ phát hiện virus, ransomware, spyware, trojan, rootkit, keylogger, fileless malware và các mối đe dọa nâng cao.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:11"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "bang_chung_nang_luc",
+   "value": "chứng nhận sản phẩm An toàn thông tin quốc gia",
+   "evidence_span": "Năng lực công nghệ của CMC Cyber Security đã được ghi nhận qua **chứng nhận sản phẩm An toàn thông tin quốc gia**, **chứng chỉ quốc tế VB100**, **Sản phẩm An toàn thông tin xuất sắc năm 2020**; engine được tích hợp bởi **VirusTotal** và **OPSWAT**.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:12"
+  },
+  {
+   "nhu_cau": "P09",
+   "entity": "CMC Cyber Security",
+   "field": "location",
+   "value": "Tầng 15, Tòa nhà CMC, Số 11 Duy Tân, Phường Cầu Giấy, Hà Nội.",
+   "evidence_span": "### CMC CYBER SECURITY LTD **A:** Tầng 15, Tòa nhà CMC, Số 11 Duy Tân, Phường Cầu Giấy, Hà Nội.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "cmccybersecurity_cmdd_phong_chong_ma_doc_00000000.md",
+   "url": "https://cmccybersecurity.com/giai-phap/giai-phap-phong-chong-ma-doc-va-quan-tri-tap-trung-cmdd/",
+   "ngay_bai": null,
+   "ly_do": "Tự khai: trang sản phẩm của chính đơn vị (hạng C), không ghi ngày đăng, meta cập nhật 25/08/2026. Sản phẩm CMDD tự phát triển, có chứng nhận sản phẩm ATTT quốc gia và VB100, nhưng giải thưởng nêu là năm 2020 và chưa có tên khách hàng hạ tầng quan trọng. Pháp nhân riêng với CMC Telecom (đã có trong sổ), cần người duyệt xác nhận tách; câu năng lực ít từ khóa của tên P09 nên máy ghép có thể không nối.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG",
+    "TU_KHAI",
+    "KHONG_RO_NGAY"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:13"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "ten_don_vi",
+   "value": "Hyphen Deux",
+   "evidence_span": "Hyphen Deux công bố tape-out thành công (đưa đi sản xuất) chip vi điều khiển đầu tiên của công ty - HDx32U, đánh dấu một cột mốc quan trọng trong hành trình đóng góp vào hệ sinh thái bán dẫn Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:14"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Hyphen Deux thành lập năm 2022, hoạt động trong lĩnh vực thiết kế vi mạch bán dẫn với văn phòng R&D đặt tại Khu công nghệ cao TP.HCM. Công ty định hướng thiết kế chip tương tự, chip số, hệ thống nhúng, chip tích hợp chuyên dụng - ASICs, hệ thống chip vi điều khiển và phần mềm trí tuệ nhân tạo AI ứng dụng trong lĩnh vực y tế;",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: span ghi Hyphen Deux thành lập năm 2022, hoạt động thiết kế vi mạch, tự gọi là \"Công ty\", chuẩn hóa thành DN.",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:15"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "nhom_cncl",
+   "value": "6",
+   "evidence_span": "Hyphen Deux thành lập năm 2022, hoạt động trong lĩnh vực thiết kế vi mạch bán dẫn với văn phòng R&D đặt tại Khu công nghệ cao TP.HCM. Công ty định hướng thiết kế chip tương tự, chip số, hệ thống nhúng, chip tích hợp chuyên dụng - ASICs, hệ thống chip vi điều khiển và phần mềm trí tuệ nhân tạo AI ứng dụng trong lĩnh vực y tế;",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: thiết kế vi mạch bán dẫn, chip chuyên dụng ASIC thuộc nhóm 6 (chip bán dẫn) theo QĐ 21.",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:16"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "san_pham_lien_quan",
+   "value": "23",
+   "evidence_span": "Chip HDx32U được thiết kế là một vi điều khiển đa năng, tiết kiệm năng lượng, phù hợp với nhiều ứng dụng trong lĩnh vực IoT và công nghiệp.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: chip vi điều khiển cho IoT và công nghiệp là chip chuyên dụng theo nghĩa của P23, ghi số 23.",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:17"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "nang_luc_mo_ta",
+   "value": "thiết kế chip tương tự, chip số, hệ thống nhúng, chip tích hợp chuyên dụng - ASICs, hệ thống chip vi điều khiển",
+   "evidence_span": "Hyphen Deux thành lập năm 2022, hoạt động trong lĩnh vực thiết kế vi mạch bán dẫn với văn phòng R&D đặt tại Khu công nghệ cao TP.HCM. Công ty định hướng thiết kế chip tương tự, chip số, hệ thống nhúng, chip tích hợp chuyên dụng - ASICs, hệ thống chip vi điều khiển và phần mềm trí tuệ nhân tạo AI ứng dụng trong lĩnh vực y tế;",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:18"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "bang_chung_nang_luc",
+   "value": "Hyphen Deux công bố tape-out thành công (đưa đi sản xuất) chip vi điều khiển đầu tiên của công ty - HDx32U",
+   "evidence_span": "Hyphen Deux công bố tape-out thành công (đưa đi sản xuất) chip vi điều khiển đầu tiên của công ty - HDx32U, đánh dấu một cột mốc quan trọng trong hành trình đóng góp vào hệ sinh thái bán dẫn Việt Nam.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:19"
+  },
+  {
+   "nhu_cau": "P23",
+   "entity": "Hyphen Deux",
+   "field": "location",
+   "value": "Khu công nghệ cao TP.HCM",
+   "evidence_span": "Hyphen Deux thành lập năm 2022, hoạt động trong lĩnh vực thiết kế vi mạch bán dẫn với văn phòng R&D đặt tại Khu công nghệ cao TP.HCM. Công ty định hướng thiết kế chip tương tự, chip số, hệ thống nhúng, chip tích hợp chuyên dụng - ASICs, hệ thống chip vi điều khiển và phần mềm trí tuệ nhân tạo AI ứng dụng trong lĩnh vực y tế;",
+   "extraction": "verbatim",
+   "tier_de_xuat": "C",
+   "snapshot": "vietnamnet_hyphen_deux_chip_hdx32u_20251009.md",
+   "url": "https://vietnamnet.vn/hyphen-deux-cong-bo-chip-vi-dieu-khien-hdx32u-tai-innovate-vietnam-2025-2450956.html",
+   "ngay_bai": "2025-10-09",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có (lưu ý: WebSearch hết hạn mức giữa đợt nên tìm chưa trọn); năng lực vẫn đúng vì tape-out chip HDx32U là sự kiện đã xảy ra (công bố tại Innovate Vietnam 2025). Bài ghi \"(Nguồn: Hyphen Deux)\" nên đề xuất hạng C, coi như tự khai; \"đầu tiên\" chỉ là chip đầu tiên của công ty. Chưa có bằng chứng chip đã về từ nhà máy hay có khách hàng, chưa xác minh vốn Việt; bài quá 180 ngày nên sẽ bị cổng độ tươi đánh dấu.",
+   "_co": [
+    "NGUON_MOI",
+    "TU_KHAI"
+   ],
+   "_hang_luat": "C",
+   "nguon_file": "de_xuat_chip_anm.jsonl:20"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Khoa học-Công nghệ mật mã",
+   "field": "nang_luc_mo_ta_2",
+   "value": "thuật toán chữ ký số hậu lượng tử dựa trên hàm băm HB-PQSign, cơ chế đóng gói khoá lai Hybrid ML-KEM và chữ ký số dựa trên lưới có cấu trúc ML-PQSign",
+   "evidence_span": "Với vai trò là Cơ quan mật mã quốc gia, Ban Cơ yếu Chính phủ đang từng bước xác lập năng lực tự chủ, từ lý thuyết đến sản phẩm, qua các kết quả nghiên cứu, xây dựng thuật toán chữ ký số hậu lượng tử dựa trên hàm băm HB-PQSign, cơ chế đóng gói khoá lai Hybrid ML-KEM và chữ ký số dựa trên lưới có cấu trúc ML-PQSign cùng hệ thống bộ tham số mật mã riêng.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_ban_co_yeu_mat_ma_hau_luong_tu_20261017.md",
+   "url": "https://nhandan.vn/lam-chu-cong-nghe-loi-mat-ma-ban-co-yeu-chinh-phu-cong-bo-3-du-thao-tieu-chuan-quoc-gia-ve-mat-ma-hau-luong-tu-post995997.html",
+   "ngay_bai": "2026-10-17",
+   "ly_do": "Đơn vị đã có, hai ô nang_luc_mo_ta_2 và bang_chung_nang_luc đang trống. Bài do TS Nguyễn Quốc Toàn, Viện trưởng Viện Khoa học-Công nghệ mật mã đứng tên, chú thích [1] dẫn công trình của Institute of Cryptography Science and Technology; nhưng câu nguồn gán kết quả cho cấp Ban Cơ yếu Chính phủ, người duyệt cân nhắc. Năng lực đã hình thành: thuật toán có cài đặt tham chiếu, véc-tơ kiểm thử, công bố 3 dự thảo TCVN ngày 17/10/2026; đây là mật mã hậu lượng tử, xếp P24 theo đúng ô sẵn có của đơn vị.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:21"
+  },
+  {
+   "nhu_cau": "P24",
+   "entity": "Viện Khoa học-Công nghệ mật mã",
+   "field": "bang_chung_nang_luc",
+   "value": "Thuật toán đi kèm cài đặt tham chiếu, véc-tơ kiểm thử và giải pháp bảo vệ trước khả năng tấn công kênh kề.",
+   "evidence_span": "Đây là lược đồ chữ ký số hậu lượng tử được tiến hành chuẩn hóa dựa trên nguyên tắc kế thừa chọn lọc kỹ lưỡng từ khung cấu trúc an toàn SPHINCS+ (tiêu chuẩn FIPS 205); đồng thời, kiểm soát, làm chủ tham số và chế độ sử dụng. Các thành phần mật mã cơ bản như hàm băm, cơ chế sinh ngẫu nhiên,… đề xuất sử dụng cho HB-PQSign được lựa chọn để tương thích với các lập luận chứng minh an toàn. Thuật toán đi kèm cài đặt tham chiếu, véc-tơ kiểm thử và giải pháp bảo vệ trước khả năng tấn công kênh kề.",
+   "extraction": "verbatim",
+   "tier_de_xuat": "B",
+   "snapshot": "nhandan_ban_co_yeu_mat_ma_hau_luong_tu_20261017.md",
+   "url": "https://nhandan.vn/lam-chu-cong-nghe-loi-mat-ma-ban-co-yeu-chinh-phu-cong-bo-3-du-thao-tieu-chuan-quoc-gia-ve-mat-ma-hau-luong-tu-post995997.html",
+   "ngay_bai": "2026-10-17",
+   "ly_do": "Đơn vị đã có, hai ô nang_luc_mo_ta_2 và bang_chung_nang_luc đang trống. Bài do TS Nguyễn Quốc Toàn, Viện trưởng Viện Khoa học-Công nghệ mật mã đứng tên, chú thích [1] dẫn công trình của Institute of Cryptography Science and Technology; nhưng câu nguồn gán kết quả cho cấp Ban Cơ yếu Chính phủ, người duyệt cân nhắc. Năng lực đã hình thành: thuật toán có cài đặt tham chiếu, véc-tơ kiểm thử, công bố 3 dự thảo TCVN ngày 17/10/2026; đây là mật mã hậu lượng tử, xếp P24 theo đúng ô sẵn có của đơn vị.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_chip_anm.jsonl:22"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "ten_don_vi",
+   "value": "Viện Năng lượng nguyên tử Việt Nam",
+   "evidence_span": "Ngày 7/7/2026, Viện Năng lượng nguyên tử Việt Nam (VINATOM), tổ chức khoa học và công nghệ hạng đặc biệt trực thuộc Bộ Khoa học và Công nghệ, tổ chức Lễ kỷ niệm 50 năm thành lập Viện Năng lượng nguyên tử Việt Nam (1976–2026).",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Tên viết tắt theo nguồn là VINATOM. Đơn vị mới, không trùng 'Viện Công nghệ xạ hiếm' đã có (viện thành viên của VINATOM, nhóm 8).",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:1"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "loai_hinh",
+   "value": "su_nghiep",
+   "evidence_span": "Ngày 7/7/2026, Viện Năng lượng nguyên tử Việt Nam (VINATOM), tổ chức khoa học và công nghệ hạng đặc biệt trực thuộc Bộ Khoa học và Công nghệ, tổ chức Lễ kỷ niệm 50 năm thành lập Viện Năng lượng nguyên tử Việt Nam (1976–2026).",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguồn gọi VINATOM là 'tổ chức khoa học và công nghệ hạng đặc biệt trực thuộc Bộ Khoa học và Công nghệ', tức đơn vị sự nghiệp nhà nước thuộc bộ; chuẩn hoá thành su_nghiep theo luật mở ngày 26/10/2026.",
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Cổng kiem_lo.py hiện chỉ nhận DN, vien, truong nên sẽ báo GIA_TRI_SAI cho giá trị su_nghiep cho tới khi cổng được cập nhật theo luật mới; nếu người duyệt muốn giữ cổng cũ thì đổi thành vien.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:2"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "nhom_cncl",
+   "value": "5",
+   "evidence_span": "Một trong những dấu ấn quan trọng nhất trong lịch sử phát triển của Viện là việc khôi phục, nâng cấp và vận hành an toàn, hiệu quả Lò phản ứng hạt nhân Đà Lạt năm 1984.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: vận hành và làm chủ công nghệ lò phản ứng hạt nhân thuộc sản phẩm P27, nhóm 5 theo bảng sản phẩm sang nhóm đã duyệt (P27 là ranh giới xám, đã duyệt nguyên trạng).",
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Nhóm 5 khớp P27 trong mapping_sp_nhom.yaml.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:3"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "san_pham_lien_quan",
+   "value": "27",
+   "evidence_span": "Một trong những dấu ấn quan trọng nhất trong lịch sử phát triển của Viện là việc khôi phục, nâng cấp và vận hành an toàn, hiệu quả Lò phản ứng hạt nhân Đà Lạt năm 1984.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: câu nguồn nói về Lò phản ứng hạt nhân Đà Lạt, gắn với P27 Lò phản ứng hạt nhân mô-đun nhỏ (SMR), mã 27.",
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Người duyệt cần biết: năng lực đã hình thành là vận hành lò phản ứng nghiên cứu Đà Lạt và nghiên cứu hạt nhân hơn 40 năm; với riêng SMR bài chỉ nêu mong muốn và nhiệm vụ sắp tới ('từng bước làm chủ', 'sẽ tập trung'), chưa có sản phẩm SMR. Nhận theo luật đợt này cho P27 (viện có lò nghiên cứu).",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:4"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "nang_luc_mo_ta",
+   "value": "khôi phục, nâng cấp và vận hành an toàn, hiệu quả Lò phản ứng hạt nhân Đà Lạt",
+   "evidence_span": "Một trong những dấu ấn quan trọng nhất trong lịch sử phát triển của Viện là việc khôi phục, nâng cấp và vận hành an toàn, hiệu quả Lò phản ứng hạt nhân Đà Lạt năm 1984.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Năng lực đã hình thành: lò vận hành từ 1984, bài đăng 07/07/2026 còn trong hạn độ tươi. Câu có cụm 'quan trọng nhất' (tối thượng) ở phần đầu span, value không lấy phần đó. Người duyệt cần biết: năng lực đã hình thành là vận hành lò phản ứng nghiên cứu Đà Lạt và nghiên cứu hạt nhân hơn 40 năm; với riêng SMR bài chỉ nêu mong muốn và nhiệm vụ sắp tới ('từng bước làm chủ', 'sẽ tập trung'), chưa có sản phẩm SMR. Nhận theo luật đợt này cho P27 (viện có lò nghiên cứu).",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:5"
+  },
+  {
+   "nhu_cau": "P27",
+   "entity": "Viện Năng lượng nguyên tử Việt Nam",
+   "field": "bang_chung_nang_luc",
+   "value": "phục vụ nghiên cứu khoa học, đào tạo nguồn nhân lực, phân tích kích hoạt neutron, nghiên cứu vật liệu và đặc biệt là sản xuất các đồng vị phóng xạ",
+   "evidence_span": "Trong hơn bốn thập kỷ qua, công trình khoa học đặc biệt này đã trở thành trung tâm nghiên cứu hạt nhân quan trọng nhất của đất nước, phục vụ nghiên cứu khoa học, đào tạo nguồn nhân lực, phân tích kích hoạt neutron, nghiên cứu vật liệu và đặc biệt là sản xuất các đồng vị phóng xạ phục vụ chẩn đoán và điều trị bệnh cho hàng triệu người dân Việt Nam.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vneconomy_vinatom_50_nam_lo_phan_ung_20260707.md",
+   "url": "https://vneconomy.vn/vinatom-sau-50-nam-san-sang-cho-giai-doan-phat-trien-moi-cua-nganh-hat-nhan-viet-nam.htm",
+   "ngay_bai": "2026-07-07",
+   "ly_do": "Bằng chứng là hoạt động đã diễn ra hơn bốn thập kỷ (nghiên cứu, phân tích kích hoạt neutron, sản xuất đồng vị). Span có 'quan trọng nhất' (tối thượng), người duyệt thu hẹp. Lò do Viện Nghiên cứu hạt nhân (đơn vị thuộc VINATOM) trực tiếp vận hành; không đề xuất riêng đơn vị đó để tránh đếm trùng một năng lực.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:6"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "ten_don_vi",
+   "value": "Vegacosmos",
+   "evidence_span": "Vegacosmos hiện là công ty công nghệ vũ trụ thuộc Tập đoàn Công nghệ Sao Vega.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Nguồn viết cả 'Vegacosmos' và 'VEGACOSMOS'; tên pháp nhân đầy đủ cần định danh ở bước riêng. Công ty thuộc Tập đoàn Công nghệ Sao Vega, tách riêng theo luật công ty con có tên riêng. Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:7"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Vegacosmos hiện là công ty công nghệ vũ trụ thuộc Tập đoàn Công nghệ Sao Vega.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguồn gọi Vegacosmos là 'công ty công nghệ vũ trụ'; chuẩn hoá thành loại hình DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:8"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "nhom_cncl",
+   "value": "9",
+   "evidence_span": "Vào đúng 18h02’ ngày 30/03/2026, vệ tinh cỡ nhỏ VEGAFLY-1 do đội ngũ kỹ thuật công ty VEGACOSMOS thiết kế, chế tạo đã được phóng thành công vào quỹ đạo từ tên lửa Falcon 9, trong khuôn khổ sứ mệnh “Transporter-16” do SpaceX vận hành, tại Căn cứ Lực lượng không gian Vandenberg, Mỹ.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: thiết kế, chế tạo vệ tinh cỡ nhỏ đưa lên quỹ đạo thuộc P28, nhóm 9 (hàng không vũ trụ) theo bảng sản phẩm sang nhóm đã duyệt.",
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:9"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "san_pham_lien_quan",
+   "value": "28",
+   "evidence_span": "Vào đúng 18h02’ ngày 30/03/2026, vệ tinh cỡ nhỏ VEGAFLY-1 do đội ngũ kỹ thuật công ty VEGACOSMOS thiết kế, chế tạo đã được phóng thành công vào quỹ đạo từ tên lửa Falcon 9, trong khuôn khổ sứ mệnh “Transporter-16” do SpaceX vận hành, tại Căn cứ Lực lượng không gian Vandenberg, Mỹ.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: vệ tinh cỡ nhỏ VEGAFLY-1 phục vụ viễn thám (cùng bài) ứng với P28 Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất, mã 28.",
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Một vệ tinh, chưa phải chùm; vệ tinh thứ hai mới là dự kiến. Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:10"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "nang_luc_mo_ta",
+   "value": "vệ tinh cỡ nhỏ VEGAFLY-1 do đội ngũ kỹ thuật công ty VEGACOSMOS thiết kế, chế tạo đã được phóng thành công vào quỹ đạo",
+   "evidence_span": "Vào đúng 18h02’ ngày 30/03/2026, vệ tinh cỡ nhỏ VEGAFLY-1 do đội ngũ kỹ thuật công ty VEGACOSMOS thiết kế, chế tạo đã được phóng thành công vào quỹ đạo từ tên lửa Falcon 9, trong khuôn khổ sứ mệnh “Transporter-16” do SpaceX vận hành, tại Căn cứ Lực lượng không gian Vandenberg, Mỹ.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Năng lực đã hình thành: vệ tinh tự thiết kế, chế tạo tại Hà Nội đã lên quỹ đạo; việc phóng thuê SpaceX. Người duyệt cần biết: linh kiện vẫn nhập khẩu (xem bằng chứng). Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:11"
+  },
+  {
+   "nhu_cau": "P28",
+   "entity": "Vegacosmos",
+   "field": "bang_chung_nang_luc",
+   "value": "doanh nghiệp đã làm chủ khâu thiết kế và lắp ráp vệ tinh, trong khi linh kiện vẫn phải nhập khẩu",
+   "evidence_span": "Phía Vegacosmos cho biết thêm, doanh nghiệp đã làm chủ khâu thiết kế và lắp ráp vệ tinh, trong khi linh kiện vẫn phải nhập khẩu.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "cafef_vegacosmos_vegafly1_20260404.md",
+   "url": "https://cafef.vn/dung-18h02-san-pham-make-in-vietnam-thanh-cong-phong-len-quy-dao-tai-my-truc-tiep-lien-lac-voi-ha-noi-188260404203248235.chn",
+   "ngay_bai": "2026-04-04",
+   "ly_do": "Lời đại diện doanh nghiệp qua báo (cafef dẫn Nhịp sống thị trường, có trích VnExpress), mức gần tự khai. Ghi rõ giới hạn: làm chủ thiết kế và lắp ráp, không phải linh kiện. Bài cũ, đã tìm bài mới hơn nhưng không có: mọi bài về VEGAFLY-1 tìm được đều đăng 31/03 đến 06/04/2026 (cafef, doanhnghiephoinhap, vov, congthuong), đã quá 180 ngày tính tới 26/10/2026 nên cổng độ tươi sẽ đỏ ngay khi nạp. Năng lực vẫn đúng vì sự kiện đã xảy ra: vệ tinh đã phóng và liên lạc được với trạm Hà Nội.",
+   "_co": [],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:12"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "ten_don_vi",
+   "value": "Gremsy",
+   "evidence_span": "Gremsy là đơn vị dẫn đầu về các hệ thống ổn định chống rung camera (gimbal) và camera chuyên dụng (camera payload) - \"mắt thần\" cho những chiếc drone công nghiệp hiện đại.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Nguồn vcci.com.vn (trang Liên đoàn Thương mại và Công nghiệp Việt Nam, bài dẫn lại TTXVN/bnews), tên miền có thể là nguồn mới. Tên pháp nhân đầy đủ cần định danh ở bước riêng. Span có 'dẫn đầu' (tối thượng), người duyệt thu hẹp.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:13"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Góp mặt tại XPONENTIAL 2026 có 3 doanh nghiệp Việt Nam tiên phong trong lĩnh vực này, gồm: Gremsy - chuyên về camera và hệ thống chống rung thế hệ mới; Realtime Robotics - chuyên drone quân sự và Saolatek - drone tích hợp và giáo dục đào tạo.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguồn gọi Gremsy là một trong '3 doanh nghiệp Việt Nam'; chuẩn hoá thành loại hình DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Span có 'tiên phong' (tối thượng). Span có nhắc Realtime Robotics vì là chữ nguồn; không đề xuất gì cho RtR. Bài nêu Gremsy cùng được ươm tạo tại Khu Công nghệ cao TP.HCM với RtR; người duyệt kiểm thêm quan hệ sở hữu với RtR nếu có để giữ trung lập.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:14"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "nhom_cncl",
+   "value": "9",
+   "evidence_span": "Gremsy là đơn vị dẫn đầu về các hệ thống ổn định chống rung camera (gimbal) và camera chuyên dụng (camera payload) - \"mắt thần\" cho những chiếc drone công nghiệp hiện đại.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: gimbal và camera payload cho drone là thiết bị của UAV, thuộc P22, nhóm 9 theo bảng sản phẩm sang nhóm đã duyệt.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Nhóm 9 khớp P22.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:15"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "san_pham_lien_quan",
+   "value": "22",
+   "evidence_span": "Gremsy là đơn vị dẫn đầu về các hệ thống ổn định chống rung camera (gimbal) và camera chuyên dụng (camera payload) - \"mắt thần\" cho những chiếc drone công nghiệp hiện đại.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: hệ thống ổn định chống rung camera và camera chuyên dụng gắn trên drone là 'thiết bị' UAV trong P22, mã 22.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Người duyệt cần biết: Gremsy làm cấu phần (gimbal, payload) chứ không làm trọn phương tiện bay; nếu P22 chỉ hiểu là phương tiện hoàn chỉnh thì loại.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:16"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "nang_luc_mo_ta",
+   "value": "các hệ thống ổn định chống rung camera (gimbal) và camera chuyên dụng (camera payload) - \"mắt thần\" cho những chiếc drone công nghiệp hiện đại",
+   "evidence_span": "Gremsy là đơn vị dẫn đầu về các hệ thống ổn định chống rung camera (gimbal) và camera chuyên dụng (camera payload) - \"mắt thần\" cho những chiếc drone công nghiệp hiện đại.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Năng lực sản phẩm đã có thị trường. Bài đăng 12/05/2026, trong hạn độ tươi.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:17"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Gremsy",
+   "field": "bang_chung_nang_luc",
+   "value": "Gremsy đã có hơn 15 năm phát triển và có thị trường ở hơn 30 quốc gia",
+   "evidence_span": "Gremsy đã có hơn 15 năm phát triển và có thị trường ở hơn 30 quốc gia, đây là lần thứ 6 doanh nghiệp này tham dự XPONENTIAL.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Bằng chứng khách hàng thật ở mức tổng quát (thị trường hơn 30 quốc gia), không nêu tên khách hàng hay sản lượng.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:18"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "ten_don_vi",
+   "value": "Saolatek",
+   "evidence_span": "Saolatek là đơn vị tiên phong trong nghiên cứu và sản xuất các dòng drone tích hợp, đặc biệt là drone phục vụ giáo dục, đào tạo, cùng các dòng drone phục vụ giám sát, hỗ trợ cứu hộ, cứu nạn.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Nguồn vcci.com.vn (trang Liên đoàn Thương mại và Công nghiệp Việt Nam, bài dẫn lại TTXVN/bnews), tên miền có thể là nguồn mới. Báo Nhân Dân 11/05/2026 viết 'Saolatex', 'Saolatek Việt Nam'; tên pháp nhân cần định danh ở bước riêng. Span có 'tiên phong' (tối thượng).",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:19"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "loai_hinh",
+   "value": "DN",
+   "evidence_span": "Theo ông Trần Anh Tuấn, Phó Chủ tịch Liên minh Kinh tế tầm thấp Việt Nam, Nhà sáng lập Công ty Saolatek, từ ngày 11 đến 14/5, đoàn đại biểu công nghệ UAV Việt Nam tham gia Triển lãm XPONENTIAL 2026 tại Detroit, Hoa Kỳ.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nguồn gọi 'Công ty Saolatek'; chuẩn hoá thành loại hình DN.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Bài nêu Saolatek cùng được ươm tạo tại Khu Công nghệ cao TP.HCM với RtR, và nhà sáng lập là Phó Chủ tịch Liên minh Kinh tế tầm thấp; người duyệt kiểm thêm quan hệ với RtR nếu có để giữ trung lập.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:20"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "nhom_cncl",
+   "value": "9",
+   "evidence_span": "Saolatek là đơn vị tiên phong trong nghiên cứu và sản xuất các dòng drone tích hợp, đặc biệt là drone phục vụ giáo dục, đào tạo, cùng các dòng drone phục vụ giám sát, hỗ trợ cứu hộ, cứu nạn.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: nghiên cứu và sản xuất drone thuộc P22 (UAV), nhóm 9 theo bảng sản phẩm sang nhóm đã duyệt.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Nhóm 9 khớp P22.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:21"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "san_pham_lien_quan",
+   "value": "22",
+   "evidence_span": "Saolatek là đơn vị tiên phong trong nghiên cứu và sản xuất các dòng drone tích hợp, đặc biệt là drone phục vụ giáo dục, đào tạo, cùng các dòng drone phục vụ giám sát, hỗ trợ cứu hộ, cứu nạn.",
+   "extraction": "normalized",
+   "note": "CHUAN HOA CO CHU DICH: các dòng drone tích hợp, drone giám sát và cứu hộ là phương tiện bay không người lái, P22, mã 22.",
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Nhóm 9 khớp P22.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:22"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "nang_luc_mo_ta",
+   "value": "nghiên cứu và sản xuất các dòng drone tích hợp, đặc biệt là drone phục vụ giáo dục, đào tạo, cùng các dòng drone phục vụ giám sát, hỗ trợ cứu hộ, cứu nạn",
+   "evidence_span": "Saolatek là đơn vị tiên phong trong nghiên cứu và sản xuất các dòng drone tích hợp, đặc biệt là drone phục vụ giáo dục, đào tạo, cùng các dòng drone phục vụ giám sát, hỗ trợ cứu hộ, cứu nạn.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Người duyệt cần biết: 'drone tích hợp' có thể là tích hợp linh kiện; bài không nói rõ tỷ lệ tự thiết kế. Bài đăng 12/05/2026, trong hạn độ tươi.",
+   "_co": [
+    "NGUON_MOI",
+    "TOI_THUONG"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:23"
+  },
+  {
+   "nhu_cau": "P22",
+   "entity": "Saolatek",
+   "field": "bang_chung_nang_luc",
+   "value": "Saolatek ra mắt chiếc drone FIRST AID S1100",
+   "evidence_span": "Tại Triển lãm, Saolatek ra mắt chiếc drone FIRST AID S1100. Đây là drone nhằm hỗ trợ các nhiệm vụ cứu hộ, cứu nạn. Điểm đặc biệt của drone này là có thể mang được 10kg, tích hợp đèn pha, loa phóng thanh và cơ cấu thả hàng cứu hộ chuyên dụng, tiếp cận hiện trường thuận lợi.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "vcci_uav_xponential_2026_20260512.md",
+   "url": "https://www.vcci.com.vn/tin-tuc/ba-doanh-nghiep-uav-viet-nam-tham-gia-san-choi-cong-nghe-toan-cau-xponential-2026",
+   "ngay_bai": "2026-05-12",
+   "ly_do": "Sản phẩm cụ thể đã ra mắt tại triển lãm quốc tế, có thông số (tải 10kg, đèn pha, loa, cơ cấu thả hàng). Chưa có tên khách hàng trong bài.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:24"
+  },
+  {
+   "nhu_cau": "P20",
+   "entity": "Tổng công ty Thiết bị điện Đông Anh",
+   "field": "nang_luc_mo_ta_2",
+   "value": "Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam",
+   "evidence_span": "Đến nay, Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam.",
+   "extraction": "verbatim",
+   "note": null,
+   "tier_de_xuat": "B",
+   "snapshot": "daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.md",
+   "url": "https://daibieunhandan.vn/print/10432045.html",
+   "ngay_bai": "2026-09-28",
+   "ly_do": "Đơn vị đã có, ô nang_luc_mo_ta_2 còn trống. Lời Tổng Giám đốc tại lễ khởi công 28/09/2026, nêu năng lực sản xuất đã hình thành (số máy đã sản xuất, thị phần lưới). Các claim hiện có của đơn vị dựa trên bài baochinhphu 16/12/2024, đã quá 180 ngày; dòng này là bài mới. Không đề xuất bang_chung_nang_luc vì ô đó đã có giá trị. Dự án cuộn kháng 500kV trong bài mới khởi công nên không dùng làm năng lực.",
+   "_co": [
+    "NGUON_MOI"
+   ],
+   "_hang_luat": "B",
+   "nguon_file": "de_xuat_hkvt_nl.jsonl:25"
+  }
+ ]
+}

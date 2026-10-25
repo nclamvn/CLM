@@ -19,7 +19,7 @@ CONG KIEM (moi dong de xuat):
                    chuan NFC, bo U+FEFF; KHONG bo dau, KHONG ha chu).
   VALUE_KHONG_SPAN extraction verbatim ma value khong la chuoi con cua span.
   CHUAN_HOA_KHONG_KHAI  extraction normalized ma note khong bat dau "CHUAN HOA CO CHU DICH:".
-  GIA_TRI_SAI      loai_hinh ngoai {DN, vien, truong}; nhom_cncl ngoai 1..10; san_pham_lien_quan
+  GIA_TRI_SAI      loai_hinh ngoai {DN, vien, truong, su_nghiep} (su_nghiep them 26/10/2026, anh Lam mo luat); nhom_cncl ngoai 1..10; san_pham_lien_quan
                    ngoai 1..30 hoac khac ma nhu_cau cua dong.
   NHOM_LECH        nhom_cncl khac nhom cua nhu cau theo QD 21 (bang NHOM_CUA_SP ben duoi).
   HANG_CAO_HON_LUAT tier_de_xuat cao hon hang theo luat ten mien (A: *.gov.vn, baochinhphu.vn;
@@ -203,7 +203,7 @@ def main():
         sp = int(m.group(1)) if m else None
         if sp is None or sp not in NHOM_CUA_SP:
             vi.append(f"GIA_TRI_SAI: {tag} nhu_cau '{r['nhu_cau']}'")
-        if fld == "loai_hinh" and val not in ("DN", "vien", "truong"):
+        if fld == "loai_hinh" and val not in ("DN", "vien", "truong", "su_nghiep"):
             vi.append(f"GIA_TRI_SAI: {tag} loai_hinh '{val}'")
         if fld == "nhom_cncl":
             if not (val.isdigit() and 1 <= int(val) <= 10):

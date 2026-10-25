@@ -1,0 +1,57 @@
+{
+ "_ghi_chu": "Danh gia cua Claude ngay 26/10/2026, KHONG phai quyet dinh. Anh Lam quyet. Muc: Duyet | Can nhac | Gach.",
+ "don_vi": {
+  "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)": {
+   "muc": "Duyệt",
+   "ly_do": "Đã chế tạo và bàn giao 4 trạm biến áp ngoài khơi cho dự án điện gió Baltica 2 (nguoiquansat 13/09/2026). Công ty con có pháp nhân riêng của PTSC; câu nguồn có cụm 'lần đầu tiên'. Ghi chú thêm: năng lực 33 chân đế điện gió đang gắn cho PTSC trong sổ thực chất do đơn vị này làm."
+  },
+  "Công ty cổ phần Đóng tàu Sông Cấm": {
+   "muc": "Duyệt",
+   "ly_do": "Đã đóng và bàn giao tàu thi công công trình ngầm REM Ocean (tuoitre 23/06/2026). Chế tạo theo thiết kế của đối tác Na Uy, nên năng lực là đóng mới chứ không phải thiết kế; cần định danh để tách khỏi liên doanh Damen Song Cam."
+  },
+  "Liên doanh Việt - Nga Vietsovpetro": {
+   "muc": "Cân nhắc",
+   "ly_do": "Năng lực thiết kế, chế tạo, lắp đặt công trình biển có thật (giàn BK - Thiên Ưng, EPCI). Anh quyết một câu hỏi luật: liên doanh Việt - Nga có tính là đơn vị Việt Nam không. Nguồn petrotimes là tên miền mới. Em đã đề xuất ghi chú phạm vi cho từ 'đầu tiên', 'lớn nhất'."
+  },
+  "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)": {
+   "muc": "Duyệt",
+   "ly_do": "Đơn vị đã có; thêm ô năng lực thứ hai còn trống: tổng thầu EPC công trình dầu khí ngoài khơi, nguồn 11/08/2026."
+  },
+  "Công ty An ninh mạng thông minh SCS": {
+   "muc": "Duyệt",
+   "ly_do": "Ra mắt 5 sản phẩm tự phát triển (SafeGate), Secure Gateway thuộc danh mục sản phẩm chiến lược; nhandan 12/05/2026. Chưa nêu tên khách hàng hạ tầng quan trọng."
+  },
+  "CMC Cyber Security": {
+   "muc": "Gạch",
+   "ly_do": "Nguồn duy nhất là trang của chính đơn vị, không có ngày đăng, và một câu nguồn không còn nguyên văn trong bản chụp (máy kiểm sổ chặn). Tìm lại bằng nguồn báo có ngày ở vòng sau."
+  },
+  "Hyphen Deux": {
+   "muc": "Gạch",
+   "ly_do": "Bài 09/10/2025 đã quá 180 ngày, ghi '(Nguồn: Hyphen Deux)' nên là tự khai, chưa có bằng chứng chip đã về hay có khách hàng. Nạp bây giờ là vay nợ độ tươi ngay lúc nạp."
+  },
+  "Viện Khoa học-Công nghệ mật mã": {
+   "muc": "Gạch",
+   "ly_do": "Mật mã hậu lượng tử không phải P24 (truyền thông, tính toán, cảm biến lượng tử); gắn vào P24 là sai lĩnh vực. Đáng đề xuất lại dưới P09 ở vòng sau."
+  },
+  "Viện Năng lượng nguyên tử Việt Nam": {
+   "muc": "Gạch",
+   "ly_do": "Năng lực có nguồn là VẬN HÀNH lò nghiên cứu Đà Lạt; với SMR bài chỉ nói mong muốn. Theo luật đủ điều kiện, vận hành công nghệ do nơi khác làm ra thì không nạp (máy kiểm đủ điều kiện báo đỏ). P27 vẫn trống, ghi rõ trong honest-null."
+  },
+  "Vegacosmos": {
+   "muc": "Gạch",
+   "ly_do": "Phóng VEGAFLY-1 là sự kiện có thật, nhưng mọi bài đăng 31/03 đến 06/04/2026, nay đã quá 180 ngày. Anh có thể giữ nếu chấp nhận: ghi GIỮ NGUỒN CŨ cho bằng chứng (sự kiện đã xảy ra) và tăng ngân sách độ tươi thêm 1 cho câu năng lực."
+  },
+  "Gremsy": {
+   "muc": "Gạch",
+   "ly_do": "Chỉ làm cấu phần (gimbal, camera), câu nguồn tham chiếu tới thứ không nằm trong phần đã chụp (máy kiểm tham chiếu treo báo đỏ), và bài nằm trong hệ sinh thái ươm tạo chung với RtR: gạch để giữ trung lập."
+  },
+  "Saolatek": {
+   "muc": "Cân nhắc",
+   "ly_do": "Nguồn chỉ một câu 'drone tích hợp và giáo dục đào tạo' trong bài về XPONENTIAL có nhắc RtR. Bằng chứng mỏng và gần hệ sinh thái RtR; em nghiêng về gạch, để anh quyết."
+  },
+  "Tổng công ty Thiết bị điện Đông Anh": {
+   "muc": "Duyệt",
+   "ly_do": "Đơn vị đã có; thêm năng lực thứ hai từ bài 28/09/2026: đã sản xuất trên 1.500 máy biến áp 110 đến 500 kV. Máy kiểm đủ điều kiện báo đỏ vì chữ 'vận hành' (máy biến áp đang vận hành trên lưới); em đề xuất ghi chú giải thích."
+  }
+ }
+}

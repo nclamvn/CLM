@@ -23,6 +23,7 @@ RANG 11 · span da co nguyen van trong registry cho cung don vi/truong -> TRUNG_
 RANG 12 · thieu bang san pham -> nhom -> exit 3, khong duoc doan.
 RANG 13 · de xuat o don tri ma registry da co gia tri khac -> O_DA_CO_GIA_TRI.
 RANG 14 · hai gia tri khac nhau cho cung mot o trong lo -> O_TRUNG_TRONG_LO.
+RANG 15 · (26/10/2026, mo them su_nghiep) loai_hinh ngoai danh sach ("cong_ty") -> GIA_TRI_SAI.
 
 Chay: python3 bite_kiem_lo.py [thu_muc_dot]     Exit 0 moi rang can · 2 co rang khong can · 3 khong chay duoc.
 """
@@ -140,6 +141,9 @@ def main():
         rang(tam, "RANG 7  · nhom_cncl khac nhom nhu cau -> NHOM_LECH",
              lambda r: r["field"] == "nhom_cncl",
              lambda r: r | {"value": "6" if r["value"] != "6" else "1"}, 2, "NHOM_LECH")
+        rang(tam, "RANG 15 · loai_hinh ngoai danh sach -> GIA_TRI_SAI",
+             lambda r: r["field"] == "loai_hinh",
+             lambda r: r | {"value": "cong_ty"}, 2, "GIA_TRI_SAI")
         rang(tam, "RANG 8  · em-dash trong ly_do -> EM_DASH", lambda r: True,
              lambda r: r | {"ly_do": r["ly_do"] + " " + chr(0x2014) + " them"}, 2, "EM_DASH")
         rang(tam, "RANG 9  · normalized khong khai -> CHUAN_HOA_KHONG_KHAI",

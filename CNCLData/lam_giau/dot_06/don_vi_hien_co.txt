@@ -1,0 +1,61 @@
+# Don vi da co trong so nguon (ten | nhom). Don vi da co chi duoc de xuat nang_luc_mo_ta_2 va bang_chung_nang_luc neu o con trong.
+Bệnh viện Trung ương Quân đội 108 | nhom 4 | nang_luc_mo_ta_2 trong
+CMC Telecom | nhom 1 | nang_luc_mo_ta_2 trong
+CT Group | nhom 9 | nang_luc_mo_ta_2 trong
+CT Semiconductor | nhom 6 | nang_luc_mo_ta_2 trong
+Công ty 1Matrix | nhom 1 | nang_luc_mo_ta_2 trong
+Công ty An ninh mạng Viettel | nhom 7 | nang_luc_mo_ta_2 trong
+Công ty CP Việt Nam Food (VNF) | nhom 4 | nang_luc_mo_ta_2 trong
+Công ty Cổ phần Công nghệ & Truyền thông Việt Nam (VNTT) | nhom 3 | nang_luc_mo_ta_2 trong
+Công ty Cổ phần Giải pháp Năng lượng VinES | nhom 5 | nang_luc_mo_ta_2 trong
+Công ty Cổ phần Y Sinh Ngọc Bảo | nhom 4 | nang_luc_mo_ta_2 trong
+Công ty TNHH Công nghệ Sinh học xanh Nhật Lan | nhom 4 | nang_luc_mo_ta_2 trong
+Công ty TNHH Luyện kim Trần Hồng Quân | nhom 8 | nang_luc_mo_ta_2 trong
+Công ty cổ phần AVAC Việt Nam | nhom 4 | nang_luc_mo_ta_2 trong
+Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS) | nhom 7 | nang_luc_mo_ta_2 DA CO
+Công ty cổ phần Health Care Center | nhom 3 | nang_luc_mo_ta_2 trong
+Công ty cổ phần VinMotion | nhom 3 | nang_luc_mo_ta_2 DA CO
+Công ty cổ phần Xe lửa Dĩ An | nhom 10 | nang_luc_mo_ta_2 trong
+Công ty cổ phần thuốc thú y Trung ương NAVETCO | nhom 4 | nang_luc_mo_ta_2 trong
+FECON | nhom 10 | nang_luc_mo_ta_2 DA CO
+FPT | nhom 1 | nang_luc_mo_ta_2 DA CO
+FPT Semiconductor | nhom 6 | nang_luc_mo_ta_2 DA CO
+GG Power | nhom 5 | nang_luc_mo_ta_2 trong
+HTI Technology | nhom 9 | nang_luc_mo_ta_2 trong
+Indefol | nhom 5 | nang_luc_mo_ta_2 trong
+Liên danh tư vấn TEDI - TRICC - TEDI SOUTH | nhom 10 | nang_luc_mo_ta_2 trong
+MK Smart | nhom 7 | nang_luc_mo_ta_2 trong
+Masan High-Tech Materials | nhom None | nang_luc_mo_ta_2 trong
+MiSmart | nhom 9 | nang_luc_mo_ta_2 trong
+Nhà máy Kiểm thử và Đóng gói tiên tiến chip bán dẫn FPT | nhom 6 | nang_luc_mo_ta_2 trong
+Phenikaa-X | nhom 9 | nang_luc_mo_ta_2 trong
+Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu | nhom 5 | nang_luc_mo_ta_2 trong
+ROSTEK | nhom 3 | nang_luc_mo_ta_2 trong
+Realtime Robotics (RtR) | nhom 9 | nang_luc_mo_ta_2 DA CO
+Trung tâm Vũ trụ Việt Nam | nhom 9 | nang_luc_mo_ta_2 trong
+Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội | nhom 5 | nang_luc_mo_ta_2 trong
+Tập đoàn Dabaco Việt Nam | nhom 4 | nang_luc_mo_ta_2 DA CO
+Tập đoàn MISA | nhom 3 | nang_luc_mo_ta_2 trong
+Tập đoàn Viettel | nhom 1 | nang_luc_mo_ta_2 DA CO
+Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) | nhom 8 | nang_luc_mo_ta_2 trong
+Tổng công ty Thiết bị điện Đông Anh | nhom 5 | nang_luc_mo_ta_2 trong
+VNPT | nhom 1 | nang_luc_mo_ta_2 DA CO
+VNPT Technology | nhom 2 | nang_luc_mo_ta_2 DA CO
+VSAP LAB | nhom 6 | nang_luc_mo_ta_2 trong
+VTI Solutions | nhom 3 | nang_luc_mo_ta_2 trong
+Viettel AI | nhom 1 | nang_luc_mo_ta_2 DA CO
+Viettel High Tech | nhom 9 | nang_luc_mo_ta_2 trong
+VinAI | nhom 1 | nang_luc_mo_ta_2 trong
+VinBigData | nhom 1 | nang_luc_mo_ta_2 trong
+Viện Công nghệ xạ hiếm | nhom 8 | nang_luc_mo_ta_2 trong
+Viện Cơ điện Nông nghiệp và Công nghệ Sau thu hoạch | nhom 4 | nang_luc_mo_ta_2 trong
+Viện Di truyền Nông nghiệp Việt Nam | nhom 4 | nang_luc_mo_ta_2 trong
+Viện Hàn lâm Khoa học và Công nghệ Việt Nam | nhom 5 | nang_luc_mo_ta_2 trong
+Viện Khoa học và Công nghệ Việt Nam - Hàn Quốc (VKIST) | nhom 4 | nang_luc_mo_ta_2 trong
+Viện Khoa học vật liệu | nhom 4 | nang_luc_mo_ta_2 trong
+Viện Khoa học-Công nghệ mật mã | nhom 7 | nang_luc_mo_ta_2 trong
+Viện Tế bào gốc, Trường Đại học Khoa học Tự nhiên, ĐHQG TP.HCM | nhom 4 | nang_luc_mo_ta_2 trong
+Viện Vaccine và sinh phẩm y tế (IVAC) | nhom 4 | nang_luc_mo_ta_2 trong
+Viện nghiên cứu Tế bào gốc và Công nghệ Gen Vinmec | nhom 4 | nang_luc_mo_ta_2 trong
+XBStation | nhom 9 | nang_luc_mo_ta_2 trong
+Zalo | nhom 1 | nang_luc_mo_ta_2 trong

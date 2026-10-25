@@ -2,7 +2,8 @@ domain: don_vi_cncl
 entity_label: "Don vi VN co nang luc theo nhom cong nghe chien luoc (QD 21/2026/QD-TTg)"
 
 schema:
-  type_field: loai_hinh          # DN / vien / truong
+  type_field: loai_hinh          # DN / vien / truong / su_nghiep (don vi su nghiep nha nuoc: trung tam, dai,
+                                 # vien thuoc bo nganh; anh Lam mo luat 26/10/2026)
   fields:
     - ten_don_vi
     - ma_so_thue                  # dinh danh phap nhan, CHI tu cong chinh thuc.

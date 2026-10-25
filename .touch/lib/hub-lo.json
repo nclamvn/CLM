@@ -67,6 +67,28 @@
    "duyet": null,
    "nap": null,
    "trangThai": "cho_duyet"
+  },
+  {
+   "dot": "dot_05",
+   "loai": "cau_that",
+   "loaiTen": "Cầu thật (nhu cầu đặt hàng)",
+   "deXuat": 221,
+   "honestNull": 53,
+   "doiChieu": 0,
+   "duyet": null,
+   "nap": null,
+   "trangThai": "cho_duyet"
+  },
+  {
+   "dot": "dot_06",
+   "loai": "cung",
+   "loaiTen": "Bên cung (năng lực đơn vị)",
+   "deXuat": 67,
+   "honestNull": 75,
+   "doiChieu": 0,
+   "duyet": null,
+   "nap": null,
+   "trangThai": "cho_duyet"
   }
  ]
 }

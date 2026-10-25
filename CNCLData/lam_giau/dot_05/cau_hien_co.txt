@@ -1,0 +1,55 @@
+# 54 nhu cau da co trong so cau that (ma | ben dat hang | ten). KHONG de xuat lai.
+btl-01 | UBND Thành phố Hà Nội | bài toán về ùn tắc giao thông trong bối cảnh quỹ đất hạn chế
+btl-02 | UBND Thành phố Hà Nội | bài toán về trật tự, vệ sinh đô thị và quản lý chất thải
+btl-03 | UBND Thành phố Hà Nội | Kiểm soát phát thải và phục hồi môi trường
+btl-04 | UBND Thành phố Hà Nội | Giải quyết ngập úng đô thị
+btl-05 | UBND Thành phố Hà Nội | An toàn thực phẩm
+btl-06 | UBND Thành phố Hà Nội | Quản trị không gian đa tầng
+btl-07 | UBND Thành phố Hà Nội | Kinh tế không gian tầm thấp
+btl-08 | UBND Thành phố Hà Nội | Phát triển kinh tế dữ liệu
+btl-09 | UBND Thành phố Hà Nội | Xây dựng hệ sinh thái nền tảng “Make in Hanoi”
+btl-10 | UBND Thành phố Hà Nội | Ứng dụng công nghệ (Metaverse, AR/VR) để thu hút khách quốc tế và kéo dài thời gian lưu trú
+btl-11 | UBND Thành phố Hà Nội | Tập trung vào sản xuất thông minh và làm chủ công nghệ lõi
+btl-12 | UBND Thành phố Hà Nội | Tăng năng suất lao động cho doanh nghiệp vừa và nhỏ qua AI và tự động hóa
+btl-13 | UBND Thành phố Hà Nội | Sử dụng mô phỏng dữ liệu để giải quyết các bài toán đô thị phức tạp
+btl-14 | UBND Thành phố Hà Nội | An ninh thông minh
+btl-21 | Bộ Công Thương | vật liệu carbon nanotubes
+btl-22 | thành phố Đà Nẵng | Thí điểm Bản sao số
+btl-23 | thành phố Đà Nẵng | thí điểm Sàn giao dịch dữ liệu gắn với hình thành Trung tâm tài chính quốc tế
+btl-24 | thành phố Đà Nẵng | thí điểm Mạng Blockchain phục vụ quản lý, phát triển tài sản số
+btl-25 | thành phố Đà Nẵng | mô hình Cảng thông minh Liên Chiểu
+ctd-01 | Bộ Nông nghiệp và Môi trường | Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học
+ctd-02 | Bộ Nông nghiệp và Môi trường | Làm chủ vắc xin thú y thế hệ mới, chế phẩm sinh học và sinh phẩm nông nghiệp
+ctd-03 | Bộ Nông nghiệp và Môi trường | Xây dựng và vận hành hệ thống truy xuất nguồn gốc nông sản
+ctd-04 | Bộ Y tế | Chủ động nguồn vắc xin thế hệ mới dùng cho người
+ctd-05 | Bộ Y tế | Làm chủ liệu pháp tế bào (tế bào miễn dịch, tế bào gốc) phục vụ điều trị ung thư, bệnh mạn tính, bệnh nan y
+ctd-06 | Bộ Y tế | Phát triển y tế cá thể hóa, thiết bị y tế in 3D
+ctd-07 | Bộ Xây dựng | Phát triển công nghệ xây dựng công trình đường sắt tốc độ cao
+ctd-08 | Bộ Giáo dục và Đào tạo | Phát triển nền tảng giáo dục thông minh quốc gia ứng dụng trí tuệ nhân tạo có kiểm soát và hệ thống thực - ảo
+ctd-09 | Bộ Quốc phòng | Nghiên cứu, xây dựng hệ thống quản lý thiết bị bay không người lái quốc gia (UTM) phục vụ quản lý vùng trời và phát triển kinh tế tầm thấp
+ctd-10 | Bộ Công an | Xây dựng và phát triển nền tảng điện toán đám mây nội địa phục vụ chuyển đổi số quốc gia, bảo đảm chủ quyền dữ liệu
+ctd-11 | Bộ Công an | Phát triển nền tảng bảo mật và an ninh mạng cho hạ tầng số quốc gia
+ctd-12 | Bộ Công an | Phát triển thiết bị, phương tiện bay không người lái (UAV) và hệ thống giám sát, phát hiện, chế áp UAV phục vụ bảo đảm an ninh, trật tự và mục tiêu lưỡng dụng
+ctd-13 | Bộ Khoa học và Công nghệ | Làm chủ hạ tầng mạng di động thế hệ sau và phát triển hệ sinh thái 5G
+ctd-14 | Ngân hàng Nhà nước Việt Nam | Nâng cao năng lực giám sát ngân hàng và quản trị rủi ro bằng trí tuệ nhân tạo
+ctd-15 | Viện Hàn lâm Khoa học và Công nghệ Việt Nam | Phát triển vệ tinh, chùm vệ tinh quan sát Trái đất và hạ tầng dữ liệu không gian
+ctd-16 | Bộ Công Thương | Bản sao số (Digital Twin) cho hệ thống điều hành lưới điện quốc gia
+ctd-17 | Bộ Công Thương | thiết bị đóng cắt điện áp từ 22 kV đến 500 kV
+ctd-18 | Bộ Công Thương | robot công nghiệp hai tay với chương trình điều khiển nội địa
+ctd-19 | Bộ Khoa học và Công nghệ | AI camera xử lý tại biên
+ctd-20 | Bộ Khoa học và Công nghệ | robot di động tự hành
+ctd-21 | Bộ Công an | Đề án xây dựng Trung tâm dữ liệu, quản lý, giám sát, xử lý vi phạm và điều hành giao thông
+ctd-22 | Tổng công ty Điện lực miền Bắc (EVNNPC) | Dự án Lắp đặt hệ thống pin lưu trữ năng lượng (BESS) tại các trạm biến áp 110kV giai đoạn 2
+ctd-23 | Ban Quản lý dự án đường Hồ Chí Minh | Gói thầu TB1 Cung cấp và lắp đặt thiết bị cho hệ thống giám sát, điều hành giao thông thuộc Dự án Mở rộng cao tốc Bắc - Nam phía Đông đoạn La Sơn - Hòa Liên
+ctd-24 | Ban Quản lý Đường sắt đô thị (MAUR) | dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương
+ctd-25 | Viện Hàn lâm Khoa học và Công nghệ Việt Nam | Dự án vệ tinh quan sát Trái Đất VNREDSat-2
+mst-01 | Bộ Khoa học và Công nghệ | Nghiên cứu, thiết kế và chế tạo chip thu phát vô tuyến cho UAV
+mst-02 | Bộ Khoa học và Công nghệ | Nghiên cứu, phát triển và làm chủ công nghệ đội robot di động tự hành ứng dụng trong vệ sinh môi trường đô thị
+mst-03 | Liên hiệp các Hội khoa học và kỹ thuật Việt Nam | Xây dựng mô hình phát triển sản phẩm từ cây Bách bộ (*Stemona tuberosa* Lour.) theo hướng bền vững góp phần cải thiện sinh kế cộng đồng tại vùng đệm Vườn quốc gia Xuân Sơn, tỉnh Phú Thọ
+mst-04 | Bộ Khoa học và Công nghệ | Nghiên cứu xây dựng mô hình chuyển đổi số trong hoạt động đo lường. Áp dụng thí điểm cấp chứng chỉ đo lường kỹ thuật số trong lĩnh vực môi trường.
+mst-05 | Bộ Khoa học và Công nghệ | Nghiên cứu thiết kế, chế tạo và tích hợp hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành
+mst-06 | Bộ Khoa học và Công nghệ | Nghiên cứu thiết kế và chế tạo hệ thống robot khảo sát, làm sạch phần dưới nước thân vỏ tàu thủy khi neo đậu
+mst-07 | Bộ Khoa học và Công nghệ | Nghiên cứu thiết kế và chế tạo hệ thống tự động nhận dạng, phân loại và thu gom rác thải nhựa sử dụng trí tuệ nhân tạo (AI)
+mst-08 | Bộ Khoa học và Công nghệ | Nghiên cứu thiết kế và chế tạo hệ thống phân loại trái cây xuất khẩu sử dụng trí tuệ nhân tạo (AI)
+mst-09 | Bộ Khoa học và Công nghệ | Nghiên cứu thiết kế và chế tạo/tích hợp hệ thống chẩn đoán hư hỏng và bảo trì dự báo cho quạt ly tâm công suất lớn trên cơ sở phân tích dao động
+mst-10 | Bộ Khoa học và Công nghệ | Nghiên cứu xây dựng hệ thống tự động phát hiện, giám sát và cảnh báo một số sâu, bệnh chính gây hại trên cây chè dựa trên nền tảng Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)

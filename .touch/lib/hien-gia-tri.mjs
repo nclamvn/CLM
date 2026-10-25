@@ -12,7 +12,7 @@ export const TEN_NHOM = {
   7: 'An ninh mạng và lượng tử', 8: 'Biển, đại dương, lòng đất',
   9: 'Hàng không và vũ trụ', 10: 'Đường sắt tốc độ cao',
 };
-export const LOAI_HINH = { DN: 'Doanh nghiệp', vien: 'Viện nghiên cứu', truong: 'Trường đại học' };
+export const LOAI_HINH = { DN: 'Doanh nghiệp', vien: 'Viện nghiên cứu', truong: 'Trường đại học', su_nghiep: 'Đơn vị sự nghiệp nhà nước' };
 export const maSp = (v) => String(v).replace(/^P/i, '').padStart(2, '0');
 
 /** tenSp: { "01": "Mo hinh ngon ngu lon ...", ... } tu lib/hub-ten.json. */

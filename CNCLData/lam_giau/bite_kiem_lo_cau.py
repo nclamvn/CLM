@@ -40,7 +40,11 @@ lo = sorted(p for p in HERE.glob("dot_*") if (p / "LOAI_CAU").exists())
 if not lo:
     print("KHONG CHAY DUOC: khong co lo cau nao (dot_* co tep LOAI_CAU).")
     sys.exit(3)
-GOC = lo[-1]
+# 26/10/2026: chon lo cau MOI NHAT CO GOP (gop.json khong rong). Truoc day lay lo moi nhat bat ky; lo 05
+# khong co cap trung nao nen khong co gop.json, rang 8 "xoa gop.json" mat cho tiem va chuoi do. Rang 8
+# can mot lo that su da gop de chung minh cong bat lai cap trung; cac rang khac chay tren cung lo do.
+co_gop = [p for p in lo if (p / "gop.json").exists() and json.loads((p / "gop.json").read_text(encoding="utf-8"))]
+GOC = (co_gop or lo)[-1]
 kq, tam = [], []
 
 
