@@ -25,7 +25,6 @@ RANG 6 · FILE KHONG DUOC GIT THEO DOI THI KHONG XET: cung chuoi do nhung file n
 
 Chay: python3 bite_bi_mat.py
 """
-import os
 import shutil
 import subprocess
 import sys

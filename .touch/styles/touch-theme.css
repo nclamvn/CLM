@@ -1,6 +1,6 @@
 /*
   touch-theme.css - he token giao dien .touch v2 (dark-first).
-  Sinh tu docs/design/TOUCH_UI_DEVELOPER_HANDBOOK.md muc 3 (SOT v2) va styles/touch-design-tokens.json.
+  He token SOT v2 (nguon goc: so tay giao dien thang 7/2026, da go khoi kho 26/10/2026 vi mo ta he mau cu).
   Luat: component chi dung var(--token), khong hardcode hex/spacing/radius. Dash-clean (0 em/en-dash).
 */
 
@@ -129,19 +129,7 @@
 }
 
 /* ---- typography helper classes (size/line/weight/tracking tu muc 3.3) ---- */
-.t-display-01 { font-size: 48px; line-height: 56px; font-weight: 700; letter-spacing: -0.03em; }
-.t-heading-01 { font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.025em; }
-.t-heading-02 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.02em; }
-.t-title-01   { font-size: 18px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; }
-.t-title-02   { font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.005em; }
-.t-body-01    { font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: 0; }
-.t-body-02    { font-size: 14px; line-height: 22px; font-weight: 400; letter-spacing: 0; }
-.t-label-01   { font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0.01em; }
-.t-label-upper{ font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .t-mono-01    { font-family: var(--font-code); font-size: 12px; line-height: 18px; font-weight: 500; font-variant-numeric: tabular-nums; }
-.t-caption-01 { font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.01em; }
-.t-metric-xl  { font-size: 40px; line-height: 44px; font-weight: 650; letter-spacing: -0.035em; }
-.t-metric-lg  { font-size: 32px; line-height: 36px; font-weight: 650; letter-spacing: -0.03em; }
 
 @media (prefers-reduced-motion: reduce) {
   :root {

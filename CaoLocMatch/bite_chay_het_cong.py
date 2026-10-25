@@ -26,7 +26,7 @@ Sua 24/08/2026: RANG 3 truoc day doi "tat ca xanh", tuc ngam gia dinh he luc nao
 Gia dinh do vo ngay hom cong du_dieu_kien bao do DUNG. Nay rang chup NEN truoc khi tiem roi
 do "tro ve dung nen". Do la cach do HANH VI thay vi do mot trang thai.
 """
-import json, shutil, subprocess, sys
+import json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent

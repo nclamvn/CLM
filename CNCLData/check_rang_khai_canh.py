@@ -134,7 +134,7 @@ def main():
             print(f"  {p.name}  (khong thay {', '.join(DAU_HIEU_TAM)})")
         ma = 2
     if ma:
-        print(f"\nFAIL: moi file bite_* phai co khoi\n")
+        print("\nFAIL: moi file bite_* phai co khoi\n")
         print(f"    {KHOI}\n    ====\n    <canh den tu dau, va neu du lieu that doi thi rang con can khong>\n")
         print("Bon lan trong hai ngay mot bo rang gay vi canh cua no bien mat chu khong vi")
         print("engine sai. Rang phai mo ta HANH VI can do, khong mo ta FILE cu the.")

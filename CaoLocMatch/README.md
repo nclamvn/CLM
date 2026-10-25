@@ -1,69 +1,41 @@
-# CaoLocMatch · engine PoC (Tuan 2)
+# CaoLocMatch · máy ghép, sổ chữ ký, điều phối, chuỗi cổng
 
-Workspace rieng cua Tho, tach khoi repo website .touch. Theo TIP 05 va cac van
-ban da ky trong `KnowledgeBase/CaoLocMatch_PoC/` (01 spec dataset, 02
-pre-registration, 04 schema match provenance).
+Phần giữa của kho CLM: đọc sổ nguồn đã qua cổng (CNCLData, Dataset_CongNgheChienLuoc), ghép cung với cầu, giữ chữ ký của người gác cổng, điều phối mũi nhọn, và chạy toàn bộ chuỗi cổng của kho. Tổng quan dự án ở [README của kho](../README.md).
 
-## Cai dat (lam TRUOC khi chay bat ky lenh nao)
+## Cài đặt
 
-Tren macOS co Homebrew Python (da kiem tren may Lam 16/08/2026, PEP 668 chan `--user` don thuan):
+Chỉ cần Python 3 và PyYAML:
 
 ```
 python3 -m pip install --user --break-system-packages -r requirements.txt
 ```
 
-Moi truong khong bi PEP 668 chan thi bo `--break-system-packages`.
+Thiếu PyYAML thì mọi lệnh dừng ngay ở dòng đầu với thông báo "Can PyYAML"; đó là lỗi môi trường, không ghi hỏng gì.
 
-Thieu PyYAML se lam MOI lenh dung ngay o dong dau voi thong bao "Can PyYAML".
-Day la loi moi truong, khong phai loi du lieu: khong co gi bi ghi hong, cu cai roi chay lai.
-
-## Cau truc
+## Lệnh chính
 
 ```
-methodbox/        ban sao NGUYEN VAN Refinery MethodBox (refinery.py, bites.py,
-                  new_domain.py) tu PhuongPhap_ChuyenGiao. Khong sua mot byte.
-domains/dich_vu_solo_entrepreneur/
-  domain.yaml     khung theo 01 (universe 1500, alias_map, ambiguous_clusters)
-  claims.jsonl    du lieu SYNTHETIC Phase A (dataset that thay vao o Phase B)
-  snapshots/      ban chup nguon (synthetic)
-make_synthetic.py sinh du lieu tong hop, tu kiem evidence_span verbatim
-match_engine.py   match engine theo schema 04 (fact layer, overlay rule,
-                  gate fail-loud, score tai lap, ENGINE_VERSION)
-match_bites.py    4 rang match gate (04.C)
-check_dash.py     cong 0 em-dash/en-dash cho file Tho sinh
-out/              facts.jsonl, matches.jsonl, blocked.jsonl, report.json
+bash chay_het_cong.sh            # toàn bộ chuỗi cổng và bộ thử của cả kho; xanh trọn vẹn thì đóng dấu kết quả vào web
+bash chay_het_cong.sh --nhanh    # bỏ bộ thử, chỉ để soát nhanh; không đóng dấu
+python3 dieu_phoi.py <loai> --nhu-cau <ma> --don-vi <ten> --nguoi <ten> ...   # ghi một sự kiện người đã làm; xem docstring đầu tệp
 ```
 
-## Kiem suc khoe ca he trong mot lenh
+## Cấu trúc
 
-```bash
-./chay_het_cong.sh            # 14 cong o hai kho, in bang, exit != 0 neu co o khong xanh
-./chay_het_cong.sh --nhanh    # bo qua khoi rang: 1 giay thay vi 12, nhung YEU hon
-python3 bite_chay_het_cong.py # kiem chinh cai bang: no phai biet bao DO va bao KHONG CHAY DUOC
 ```
-
-Bang co BA trang thai chu khong phai hai. `KHONG CHAY DUOC` (vi du cong doi chung nguon khi
-chua ai nap ban tuoi) KHONG duoc tinh la xanh: khong biet khac han biet la sai.
-
-## Lenh tai lap tung buoc
-
-```bash
-python3 make_synthetic.py                                   # sinh du lieu Phase A
-python3 methodbox/refinery.py domains/dich_vu_solo_entrepreneur   # pipeline 7 giai doan
-python3 methodbox/bites.py domains/dich_vu_solo_entrepreneur      # 6 rang core (+N/A gates)
-python3 match_engine.py run domains/dich_vu_solo_entrepreneur     # build match + gate
-python3 match_engine.py validate domains/dich_vu_solo_entrepreneur out/matches.jsonl
-python3 match_engine.py validate ... --require-signoff   # Phase B: bat nguoi gac cong that ky
-python3 match_engine.py sign out/matches.jsonl "<ten>" <ngay>  # ghi signoff SAU khi nguoi gac cong duyet
-python3 match_bites.py                                      # 4 rang match gate
-python3 check_dash.py                                       # cong dash
+match_engine.py         máy ghép: lớp dữ kiện, neo nhóm, độ giao câu nguồn, điểm tính lại được
+build_cncl_match.py     dựng domain cncl_match từ sổ nguồn đã qua cổng
+pheu_matching.py        phễu ghép (khả dĩ, qua neo, qua ngưỡng, đã ký, từ chối)
+dieu_phoi.py            ghi sự kiện điều phối; check_dieu_phoi.py kiểm sổ
+dong_bo_cau.py          đồng bộ bản đọc của Dataset với KnowledgeBase
+ban_tam.py              bản làm việc tạm cho các bộ thử (CLM_KHO_*), không chạm kho thật
+check_*.py / bite_*.py  cổng và bộ thử cài lỗi của phần này
+methodbox/              bản sao NGUYÊN VĂN Refinery MethodBox; không sửa một byte
+domains/cncl_match/     dữ kiện ghép, ánh xạ sản phẩm sang nhóm, người ký, sổ chữ ký
+domains/dieu_phoi/      cấu hình mũi nhọn, sổ sự kiện, phiếu xét
+domains/dich_vu_solo_entrepreneur/  domain tổng hợp, chỉ dùng cho bộ thử của máy ghép (match_bites.py, make_synthetic.py)
+out/matches.jsonl       quyết định của người gác cổng (tracked); phần còn lại của out/ sinh lại được
+reports/                báo cáo kiểm của các đợt luật ghép (mã nguồn trích dẫn một số tệp ở đây)
+lich_su/                TIP, báo cáo hoàn thành và sổ lệnh của giai đoạn PoC (07 đến 08/2026)
+day-len-github.sh       đẩy kho lên một repo riêng tư mới, có cổng chặn bí mật trước khi đẩy
 ```
-
-## Ky luat
-
-Fail-loud exit 2 moi cong; khong co canh bao roi cho qua. A3: disputed khong tu
-resolve (khong thanh fact), honest-null giu nguyen, tier C la claim va phai tu
-khai `unverified` khi lam can cu. Score tai lap: cung registry + cung
-ENGINE_VERSION ra cung digest. Phase B chi chay khi dataset that ve va Lam duyet
-mau 10% theo 01 muc 5; output engine KHOA cho toi khi baseline thu cong cua
-Tuyet nop (02).

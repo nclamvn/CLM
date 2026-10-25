@@ -25,7 +25,7 @@ khoa duoc cua.
 Chay: python3 check_tai_tro.py domains/don_vi_cncl
 Exit 0 sach. Exit 2 co claim vi pham. Exit 3 KHONG CHAY DUOC.
 """
-import json, re, sys
+import json, sys
 from pathlib import Path
 
 # Dau hieu, viet thuong de so khong phan biet hoa thuong.

@@ -144,7 +144,7 @@ def main(domain_dir):
         ma = 2
 
     if ma:
-        print(f'\nFAIL: moi lan loai mot don vi phai viet ra mot dong')
+        print('\nFAIL: moi lan loai mot don vi phai viet ra mot dong')
         print(f'  {NHAN} <ten don vi da nap> · <truong> · <bi loai thieu gi ma don vi kia co>')
         print("Cong khong phan xu quyet dinh. No bat buoc PHEP SO SANH phai duoc viet ra, vi")
         print("hai lan ap luat khong deu trong dung hai ngay deu lo ra do nguoi di kiem lai,")

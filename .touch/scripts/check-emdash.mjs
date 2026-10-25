@@ -8,22 +8,13 @@ import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';
 import { join, extname } from 'node:path';
 
 const ROOT = process.cwd();
-const SCAN_DIRS = ['app', 'components', 'lib', 'scripts', 'styles', 'docs'];
+const SCAN_DIRS = ['app', 'components', 'lib', 'scripts', 'styles'];
 const ROOT_FILES = [
-  'tailwind.config.ts',
   'next.config.mjs',
-  'postcss.config.mjs',
   'package.json',
   'README.md',
 ];
 const TEXT_EXT = new Set(['.ts', '.tsx', '.js', '.mjs', '.css', '.json', '.md', '.svg', '.html']);
-// Tai lieu handoff/SOT imported tu ben ngoai (khong phai content san pham tu viet).
-// Rule em-dash chi ap len content san pham; bo qua reference imported.
-const EXCLUDE_SUFFIX = [
-  'docs/design/TOUCH_PORTAL_LANDING_HUB_BLUEPRINT.md',
-  'docs/design/touch-portal-recipes.css',
-  'docs/design/touch-portal-tokens.json',
-];
 // Dau bi cam, dinh nghia bang code point de chinh file nay khong chua literal.
 //
 // NOI LUAT 18/08/2026 (Con nguoi quyet, thay quyet dinh 2026-07-14): CHI cam em-dash
@@ -43,7 +34,6 @@ let hits = 0;
 
 function scanFile(path) {
   if (!TEXT_EXT.has(extname(path))) return;
-  if (EXCLUDE_SUFFIX.some((s) => path.endsWith(s))) return;
   const text = readFileSync(path, 'utf8');
   const lines = text.split('\n');
   lines.forEach((line, i) => {

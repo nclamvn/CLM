@@ -120,7 +120,7 @@ def main(argv):
         print(f"      tu them : {', '.join(them)}")
         print(f"      value   : {str(c['value'])[:100]}")
         print(f"      span    : {str(c['evidence_span'])[:100]}")
-    print(f"\nFAIL: nhan 'normalized' dang duoc dung de dua vao value nhung chu khong co trong")
+    print("\nFAIL: nhan 'normalized' dang duoc dung de dua vao value nhung chu khong co trong")
     print("nguon. Hai duong xu, ca hai deu la quyet dinh cua NGUOI:")
     print("  1. Sua value cho khop nguon. Neu khop tron ven thi tra extraction ve 'verbatim'.")
     print(f'  2. Giu value va ghi vao note: "{NHAN} <giai thich tung tu them den tu dau>".')

@@ -9,8 +9,8 @@ thu muc tam roi moi tiem). Khong sua file that.
 
 DIEU KIEN TRUOC
 ===============
-Ba ban check_luat3.py (CNCLData, CaoLocMatch, Dataset_CongNgheChienLuoc) phai GIONG HET tung
-byte. Chuoi cong chay ban CNCLData cho chieu cung va ban Dataset cho chieu cau; neu hai ban lech
+Hai ban check_luat3.py (CNCLData, Dataset_CongNgheChienLuoc) phai GIONG HET tung byte (26/10/2026:
+go ban thu ba o CaoLocMatch, khong o nao trong chuoi chay no). Chuoi cong chay ban CNCLData cho chieu cung va ban Dataset cho chieu cau; neu hai ban lech
 thi hai chieu dang bi ap hai luat khac nhau ma bang van xanh.
 
 RANG
@@ -33,8 +33,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 GOC = HERE.parent
 CONG = HERE / "check_luat3.py"
-BAN = [GOC / "CNCLData" / "check_luat3.py", GOC / "CaoLocMatch" / "check_luat3.py",
-       GOC / "Dataset_CongNgheChienLuoc" / "check_luat3.py"]
+BAN = [GOC / "CNCLData" / "check_luat3.py", GOC / "Dataset_CongNgheChienLuoc" / "check_luat3.py"]
 CAU = GOC / "Dataset_CongNgheChienLuoc" / "claims.jsonl"
 
 kq = []
@@ -68,7 +67,7 @@ def main():
         print("KHONG CHAY DUOC: thieu " + ", ".join(thieu))
         return 3
     bytes_ = {b.read_bytes() for b in BAN}
-    in_("DIEU KIEN · ba ban check_luat3.py giong het", len(bytes_) == 1,
+    in_("DIEU KIEN · hai ban check_luat3.py giong het", len(bytes_) == 1,
         "1 ban" if len(bytes_) == 1 else f"{len(bytes_)} ban khac nhau")
     if not CAU.exists():
         print(f"KHONG CHAY DUOC: thieu {CAU}")

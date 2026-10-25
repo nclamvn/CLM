@@ -1,10 +1,10 @@
 {
   "tenKho": "nclamvn/CLM",
   "sinhTu": {
-    "sha": "38978b1",
-    "ngay": "2026-10-07"
+    "sha": "7a68142",
+    "ngay": "2026-10-25"
   },
-  "tongCommit": 224,
+  "tongCommit": 225,
   "commitDau": "2026-07-14",
   "ngayGop": "2026-09-01",
   "phan": [
@@ -17,13 +17,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 35,
-      "commitSauGop": 24,
+      "commitSauGop": 25,
       "cuoi": {
-        "sha": "818c3ad",
-        "ngay": "2026-10-01",
-        "tieuDe": "Lo 03 cau that: anh Lam duyet ('duyet 3 lo'), nap 54 nhu cau dat hang cong nghe (261 claim, 16 ben dat hang) vao domain moi CNCLData/domains/cau_dat_hang qua lam_giau/nap_lo_cau.py. Khi nap, refinery bat 30 span cat tu PDF chi khop khi gop khoang trang va luat 3b bat ctd-21 co moc 2026-2030 ngoai span: sua tai lo (chep dung ngat dong, ghi SUA SAU DUYET), siet kiem_lo_cau.py theo luat tung ky tu cua registry + MOC_VUOT_SPAN (2 rang moi). Cong moi: dat_hang_refinery, dat_hang_luat3, dat_hang (check_cau_dat_hang.py: KHONG_DUYET, NAP_KHONG_KHOP, THIEU_TRUONG_CHINH...) + 9 rang. Web: man /dashboard/cau-that (lib/cau-that.mjs), moi nhu cau kem cau nguon nguyen van va goi y don vi tu may hoi dap (41/54, nhan 'chua ky, khong phai cap ghep'), cong cau_that (GOI_Y_KHONG_NGUON tra doc lap registry, KY_GIA, SO_LECH, NGUON_LECH, NHAN_THIEU) + 6 rang; nav, sitemap, truy cap quet 15 trang."
+        "sha": "7a68142",
+        "ngay": "2026-10-25",
+        "tieuDe": "Dot trinh nha dau tu 25/10: cau that len mat tien, hoi dap hai chieu, kiem lai ho so tren trinh duyet, Phuong phap (dong du lieu, ket qua tung o, lich su lo), menu nhom, README va kich ban demo; lam tuoi do tuoi, next 15.5.28, phieu xet, lo 04"
       },
-      "soTep": 420
+      "soTep": 458
     },
     {
       "thuMuc": "Dataset_CongNgheChienLuoc",
@@ -51,13 +51,13 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 46,
-      "commitSauGop": 55,
+      "commitSauGop": 56,
       "cuoi": {
-        "sha": "e423899",
-        "ngay": "2026-10-07",
-        "tieuDe": "Soi QA va van hanh 07/10/2026, sua 4 diem: (1) chip kiem dinh tren trang dau va Tong quan ghi lan chay TRUOC (anh chup ghi 02/10, commit b96aa2b ghi lan do 122/126 du ma nguon da xanh): chuoi nay DONG DAU, chi khi xanh tron ven che do day du thi sinh lai du lieu web de ghi dung lan vua kiem; bite_hoan bat loi TOUCH chua dat trong canh thu, da sua. (2) Hang viec dieu phoi: moi dong co lenh ghi su kien dung loai, nhu cau, don vi, nguoi (cong dieu_phoi_web them LENH_SAI + rang); lien ket nhu cau sang Cau that (neo), don vi sang ho so; ten nguoi co dau. (3) Ung vien co cau nguon nang luc 'vi sao may goi y' ngay tai cho. (4) Tong quan dua hang viec dieu phoi len dau 'Viec can lam tiep'. Lenh ghi tu choi noi dung con '...' (THIEU_TRUONG + rang)."
+        "sha": "7a68142",
+        "ngay": "2026-10-25",
+        "tieuDe": "Dot trinh nha dau tu 25/10: cau that len mat tien, hoi dap hai chieu, kiem lai ho so tren trinh duyet, Phuong phap (dong du lieu, ket qua tung o, lich su lo), menu nhom, README va kich ban demo; lam tuoi do tuoi, next 15.5.28, phieu xet, lo 04"
       },
-      "soTep": 153
+      "soTep": 154
     },
     {
       "thuMuc": ".touch",
@@ -68,22 +68,27 @@
         "ngay": "2026-09-01"
       },
       "commitTruocGop": 51,
-      "commitSauGop": 75,
+      "commitSauGop": 76,
       "cuoi": {
-        "sha": "38978b1",
-        "ngay": "2026-10-07",
-        "tieuDe": "Quet lai truy cap kem cua so ban chup, anh moc, ket qua chuoi tren may that"
+        "sha": "7a68142",
+        "ngay": "2026-10-25",
+        "tieuDe": "Dot trinh nha dau tu 25/10: cau that len mat tien, hoi dap hai chieu, kiem lai ho so tren trinh duyet, Phuong phap (dong du lieu, ket qua tung o, lich su lo), menu nhom, README va kich ban demo; lam tuoi do tuoi, next 15.5.28, phieu xet, lo 04"
       },
-      "soTep": 539
+      "soTep": 550
     }
   ],
   "oTheoKho": {
     "CNCLData": 34,
     "Dataset_CongNgheChienLuoc": 2,
     "CaoLocMatch": 23,
-    ".touch": 67
+    ".touch": 73
   },
   "ganDay": [
+    {
+      "sha": "7a68142",
+      "ngay": "2026-10-25",
+      "tieuDe": "Dot trinh nha dau tu 25/10: cau that len mat tien, hoi dap hai chieu, kiem lai ho so tren trinh duyet, Phuong phap (dong du lieu, ket qua tung o, lich su lo), menu nhom, README va kich ban demo; lam tuoi do tuoi, next 15.5.28, phieu xet, lo 04"
+    },
     {
       "sha": "38978b1",
       "ngay": "2026-10-07",
@@ -126,11 +131,6 @@
     },
     {
       "sha": "60f77f2",
-      "ngay": "2026-10-02",
-      "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
-    },
-    {
-      "sha": "f1c7847",
       "ngay": "2026-10-02",
       "tieuDe": "Quet lai truy cap sau sua man Cau that, anh moc, ket qua chuoi tren may that"
     }

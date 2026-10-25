@@ -168,7 +168,7 @@ def main():
     # ── --day ──────────────────────────────────────────────────────────────
     dau = doc_dau(nguon)
     if dau is not None and dau != vt_bd and not ep:
-        print(f"\nTU CHOI DAY: ban doc da doi ke tu lan day gan nhat.")
+        print("\nTU CHOI DAY: ban doc da doi ke tu lan day gan nhat.")
         print(f"  van tay da ghi : {dau[:16]}")
         print(f"  van tay hien co: {vt_bd[:16]}")
         _, chi_b, khac = lech(nguon, bd)

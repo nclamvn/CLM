@@ -21,7 +21,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from vtc_chung import NGUON, duong, doc_jsonl, goc_mac_dinh, ngay_tu_url  # noqa: E402
+from vtc_chung import duong, doc_jsonl, goc_mac_dinh, ngay_tu_url  # noqa: E402
 
 # Tu khoa theo 10 nhom CNCL cua QD 21/2026. Trong so 1. Ten don vi da nap trong so 3.
 TU_KHOA = [

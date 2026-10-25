@@ -20,7 +20,7 @@
  * RANG 7  · app/hub/page.tsx khong con chuyen huong ve dashboard -> CON_DEMO.
  * RANG 8  · trang dau thanh trang cuon (.mt bo overflow hidden) -> KHONG_MOT_MAN.
  * RANG 9  · layout bo nap touch-unify.css -> MAU_KHONG_THONG_NHAT.
- * RANG 10 · Hub quay ve do cu (--dk-rd: #C40F0F) -> MAU_KHONG_THONG_NHAT.
+ * RANG 10 · token du lieu quay ve do cu (--data-match: #C40F0F) -> MAU_KHONG_THONG_NHAT. (26/10/2026: lop Hub .dk da don.)
  * RANG 11 · thanh ben ghi lai "Solo Entrepreneur" -> TRANG_THAI_GO_TAY.
  * RANG 12 · KHONG BAO OAN: chu thich nhac lai "chưa chạy" -> van exit 0.
  * RANG 13 · trang dau them nen gradient -> KHONG_DON_SAC.
@@ -83,8 +83,8 @@ try {
     (s) => s.replace(/(\.mt \{[^}]*?)overflow: hidden;/, '$1overflow: visible;')), 2, 'KHONG_MOT_MAN');
   rang('RANG 9  · layout bo nap touch-unify -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'app/layout.tsx',
     (s) => s.replace("import '@/styles/touch-unify.css';\n", '')), 2, 'MAU_KHONG_THONG_NHAT');
-  rang('RANG 10 · Hub quay ve do cu #C40F0F -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'styles/touch-unify.css',
-    (s) => s.replace('--dk-rd: var(--color-accent-blue);', '--dk-rd: #C40F0F;')), 2, 'MAU_KHONG_THONG_NHAT');
+  rang('RANG 10 · token du lieu quay ve do cu #C40F0F -> MAU_KHONG_THONG_NHAT', (t) => doi(t, 'styles/touch-unify.css',
+    (s) => s.replace('--data-match: #FFFFFF;', '--data-match: #C40F0F;')), 2, 'MAU_KHONG_THONG_NHAT');
   rang('RANG 11 · thanh ben ghi "Solo Entrepreneur" -> TRANG_THAI_GO_TAY', (t) => doi(t, 'components/dash/DashSidebar.tsx',
     (s) => s.replace('>Công nghệ chiến lược Việt Nam<', '>Solo Entrepreneur<')), 2, 'TRANG_THAI_GO_TAY');
   rang('RANG 12 · chu thich nhac "chưa chạy" -> van exit 0', (t) => doi(t, 'app/page.tsx',

@@ -179,7 +179,7 @@ def main():
         rc, out = _chay(["restore-signoff", "domains/cncl_match", "out/matches.jsonl"])
         ok3 = rc == 2 and "BANG CHUNG DOI CHU" in out
         print(f"{'RANG 3 · sua fact da ky thi chu ky rung':38s} : " +
-              (f"CAN OK (exit 2, chu ky bi go)" if ok3 else f"KHONG CAN !! exit{rc}\n{out[-400:]}"))
+              ("CAN OK (exit 2, chu ky bi go)" if ok3 else f"KHONG CAN !! exit{rc}\n{out[-400:]}"))
 
     tat_ca = ok1 and ok2 and ok3 and ok4
     print("-" * 62)

@@ -78,7 +78,7 @@ def main():
         return goc.replace(cu_, moi_, 1)
 
     # RANG 2 · bia ten don vi
-    van = thay(dau_ten, f"SO VOI DA NAP: Cong ty Ma Khong Co That ·")
+    van = thay(dau_ten, "SO VOI DA NAP: Cong ty Ma Khong Co That ·")
     if van is None:
         print(f"KHONG CHAY DUOC: khong tiem duoc, khong thay {dau_ten!r}.")
         shutil.rmtree(tam, ignore_errors=True)

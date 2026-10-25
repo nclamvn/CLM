@@ -243,7 +243,7 @@ def main():
         print(f"\nCHO NUOT LOI CHUA KHAI ({len(thieu)}):")
         for p, so, l in thieu:
             print(f"  {p.name}:{so}  {l}")
-        print(f'\nFAIL: moi chuong bat loi ma than chi co pass/return/rong phai co nhan')
+        print('\nFAIL: moi chuong bat loi ma than chi co pass/return/rong phai co nhan')
         print(f'  {NHAN} <ly do>')
         print("Nuot loi xoa mat trang thai KHONG CHAY DUOC, va no luon xoa theo huong co loi")
         print("cho ban bao cao.")

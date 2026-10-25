@@ -18,8 +18,8 @@
  *                 trang thai "tu choi", chuan HIVE: trang thai bang hoa van) va mask/-webkit-mask.
  *   GLOW          text-shadow khac none; box-shadow lop khong lech ma co do nhoe (quang sang).
  *
- * PHAM VI: styles/*.css, app/ (tru app/dev), components/ (tru components/globe: cong cu thu nghiem
- * chi dung o /dev), lib/tokens.ts. Du lieu sinh (lib/*.json, lib/cncl-*.ts) khong quet.
+ * PHAM VI: styles/*.css, app/, components/. Du lieu sinh (lib/*.json, lib/cncl-*.ts) khong quet.
+ * (26/10/2026: go app/dev, components/globe va lib/tokens.ts khoi kho, nen khong con gi phai bo qua.)
  *
  * Chay: node scripts/check-don-sac.mjs [--touch <dir .touch>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -33,20 +33,18 @@ const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.a
 const TOUCH = resolve(arg('--touch') || join(HERE, '..'));
 const thoat3 = (m) => { console.log(`KHONG CHAY DUOC: ${m}`); process.exit(3); };
 
-const BO_QUA = [join(TOUCH, 'app', 'dev'), join(TOUCH, 'components', 'globe')];
 const tep = [];
 const quet = (d, duoi) => {
   if (!existsSync(d)) return;
   for (const t of readdirSync(d)) {
     const p = join(d, t);
-    if (BO_QUA.some((b) => p.startsWith(b)) || t === 'node_modules' || t.startsWith('.')) continue;
+    if (t === 'node_modules' || t.startsWith('.')) continue;
     if (statSync(p).isDirectory()) quet(p, duoi); else if (duoi.test(t)) tep.push(p);
   }
 };
 quet(join(TOUCH, 'styles'), /\.css$/);
 quet(join(TOUCH, 'app'), /\.(css|tsx|ts)$/);
 quet(join(TOUCH, 'components'), /\.(tsx|ts|css)$/);
-if (existsSync(join(TOUCH, 'lib', 'tokens.ts'))) tep.push(join(TOUCH, 'lib', 'tokens.ts'));
 if (!tep.length) thoat3(`khong thay tep giao dien nao duoi ${TOUCH}`);
 
 const boChuThich = (s) => s.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '))

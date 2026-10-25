@@ -24,7 +24,7 @@
  *
  * Chay: node scripts/bite-don-sac.mjs
  */
-import { mkdtempSync, readFileSync, writeFileSync, rmSync, cpSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
+import { mkdtempSync, readFileSync, writeFileSync, rmSync, cpSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
@@ -39,9 +39,8 @@ const tam = [];
 const canh = (sua) => {
   const t = mkdtempSync(join(tmpdir(), 'bite_don_sac_')); tam.push(t);
   cpSync(join(TOUCH, 'styles'), join(t, 'styles'), { recursive: true });
-  cpSync(join(TOUCH, 'app'), join(t, 'app'), { recursive: true, filter: (s) => !s.startsWith(join(TOUCH, 'app', 'dev')) });
-  cpSync(join(TOUCH, 'components'), join(t, 'components'), { recursive: true, filter: (s) => !s.startsWith(join(TOUCH, 'components', 'globe')) });
-  if (existsSync(join(TOUCH, 'lib', 'tokens.ts'))) { mkdirSync(join(t, 'lib'), { recursive: true }); copyFileSync(join(TOUCH, 'lib', 'tokens.ts'), join(t, 'lib', 'tokens.ts')); }
+  cpSync(join(TOUCH, 'app'), join(t, 'app'), { recursive: true });
+  cpSync(join(TOUCH, 'components'), join(t, 'components'), { recursive: true });
   if (sua) sua(t);
   return t;
 };

@@ -46,7 +46,6 @@ def main(argv):
     nc = lo["nhu_cau"]
     dc_p = dot / "doi_chieu_ket_qua.jsonl"
     dc = [json.loads(l) for l in dc_p.read_text(encoding="utf-8").splitlines() if l.strip()] if dc_p.exists() else []
-    khop = {(d["url"], d["chuoi"]): d["ket_qua"] for d in dc}
     url_cua = {}
     for d in lo["dong"]:
         url_cua.setdefault(d["entity"], set()).add(d["url"])

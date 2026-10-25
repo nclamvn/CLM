@@ -22,7 +22,7 @@ chuoi moc duoc CHON TU claims.jsonl moi lan chay (claim dau tien co span du dai)
 ten file: tu 29/09/2026, sau khi ten go cung lam ca hai rang gay luc ban chup do duoc chup lai.
 Kho khong con claim nao dung duoc thi bao KHONG CHAY DUOC.
 """
-import shutil, subprocess, sys
+import subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent

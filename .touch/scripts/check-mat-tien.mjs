@@ -29,8 +29,8 @@
  *                         --color-accent-*), hoac tieu de khong dung serif Noto Serif. Bang mau nhom
  *                         cong nghe (lib/mau-du-lieu.mjs, var(--nhom-N)) DUOC phep tu 01/10/2026: no chi ma
  *                         hoa nhom, va check-mau-du-lieu.mjs canh do tram cua no.
- *   MAU_KHONG_THONG_NHAT  app/layout.tsx khong nap styles/touch-unify.css SAU globals.css; hoac Hub khong
- *                         anh xa --dk-bg/--dk-rd ve token SOT v2; hoac mat tien con do cu #C40F0F/#E8221A.
+ *   MAU_KHONG_THONG_NHAT  app/layout.tsx khong nap styles/touch-unify.css SAU globals.css; hoac touch-unify.css
+ *                         thieu token du lieu; hoac mat tien con do cu #C40F0F/#E8221A.
  *
  * Chay: node scripts/check-mat-tien.mjs [--touch <dir .touch>]
  * Exit 0 sach · 2 vi pham · 3 KHONG CHAY DUOC.
@@ -107,9 +107,8 @@ const layout = doc(CAN.layout);
 const iG = layout.indexOf("import './globals.css'"); const iU = layout.indexOf("import '@/styles/touch-unify.css'");
 if (iU < 0 || iG < 0 || iU < iG) vi.push('MAU_KHONG_THONG_NHAT: app/layout.tsx phai nap styles/touch-unify.css SAU globals.css');
 const unify = boChuThich(doc(CAN.unify));
-for (const [bien, tok] of [['--dk-bg', '--color-bg-canvas'], ['--dk-rd', '--color-accent-blue'], ['--dk-tx', '--color-text-primary'], ['--sans', '--font-ui']]) {
-  if (!new RegExp(`${bien}:\\s*var\\(${tok}\\)`).test(unify)) vi.push(`MAU_KHONG_THONG_NHAT: touch-unify.css khong anh xa ${bien} ve var(${tok})`);
-}
+// 26/10/2026: bo yeu cau anh xa --dk-* cua Hub: Hub minh hoa da go tu 01/10, lop .dk khong con
+// phan tu nao dung nen quy tac CSS cua no da duoc don. Luat do cu va token du lieu van giu.
 for (const tok of ['--data-cung', '--data-cau', '--data-match']) if (!new RegExp(`${tok}:\\s*#`).test(unify)) vi.push(`MAU_KHONG_THONG_NHAT: touch-unify.css thieu token du lieu ${tok}`);
 for (const p of [CAN.css, CAN.unify, CAN.page, ...landing]) {
   const s = boChuThich(doc(p));

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Container } from '@/components/shared/Container';
 import { Button } from '@/components/shared/Button';
 import { notFound } from '@/lib/content';
