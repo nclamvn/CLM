@@ -3,7 +3,7 @@
   "ten": "Công nghệ số cho đô thị Hà Nội",
   "batDau": "2026-10-07",
   "moTa": "Các bài toán lớn của UBND Thành phố Hà Nội có đối tượng là hệ thống, nền tảng hay dữ liệu số.",
-  "mocNgay": "2026-10-25",
+  "mocNgay": "2026-10-26",
   "nguoiGacCong": [
    "Lam Nguyen"
   ],
@@ -22,8 +22,8 @@
   ],
   "soNhuCau": 12,
   "soSuKien": 0,
-  "soViec": 17,
-  "soQuaHan": 14
+  "soViec": 18,
+  "soQuaHan": 15
  },
  "pheu": [
   {
@@ -66,6 +66,20 @@
    "dong": null,
    "ungVien": [
     {
+     "dv": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+     "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Ở lĩnh vực giao thông thông minh, Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại.",
+      "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+      "tier": "B",
+      "source": "vietnamplus.vn"
+     }
+    },
+    {
      "dv": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
      "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
      "nguon": "may",
@@ -92,17 +106,6 @@
       "tier": "A",
       "source": "mst.gov.vn"
      }
-    },
-    {
-     "dv": "VinBigData",
-     "slug": "vinbigdata",
-     "nguon": "may",
-     "trangThai": "cho_xet",
-     "suKien": [],
-     "kyCho": [
-      "MATCH-0016"
-     ],
-     "trich": null
     }
    ]
   },
@@ -125,6 +128,20 @@
       "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
       "tier": "A",
       "source": "mst.gov.vn"
+     }
+    },
+    {
+     "dv": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+     "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+     "nguon": "may",
+     "trangThai": "cho_xet",
+     "suKien": [],
+     "kyCho": [],
+     "trich": {
+      "span": "Ở lĩnh vực giao thông thông minh, Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại.",
+      "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+      "tier": "B",
+      "source": "vietnamplus.vn"
      }
     }
    ]
@@ -363,11 +380,11 @@
    "loai": "xet_ung_vien",
    "nhan": "Xét ứng viên",
    "nhuCau": "btl-01",
-   "donVi": "VinBigData",
+   "donVi": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
    "nguoi": "Lam Nguyen",
    "han": "2026-10-14",
    "quaHan": true,
-   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"VinBigData\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-01 --don-vi \"Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",
@@ -388,6 +405,16 @@
    "han": "2026-10-14",
    "quaHan": true,
    "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-02 --don-vi \"Công ty An ninh mạng Viettel\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
+  },
+  {
+   "loai": "xet_ung_vien",
+   "nhan": "Xét ứng viên",
+   "nhuCau": "btl-02",
+   "donVi": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+   "nguoi": "Lam Nguyen",
+   "han": "2026-10-14",
+   "quaHan": true,
+   "lenh": "python3 dieu_phoi.py duyet_ung_vien --nhu-cau btl-02 --don-vi \"Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)\" --nguoi \"Lam Nguyen\" --noi-dung \"...\" --ghi"
   },
   {
    "loai": "xet_ung_vien",

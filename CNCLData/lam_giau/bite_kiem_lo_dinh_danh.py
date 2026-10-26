@@ -39,6 +39,31 @@ if not lo:
 GOC = lo[-1]
 kq, tam = [], []
 
+# REGISTRY CUA THOI DIEM LO (sua 26/10/2026). Lo dinh danh chi chiu trach nhiem cho cac don vi duoc
+# giao luc lap lo (don_vi_*.txt). Sau lo 04 va lo 06 registry co them 4 don vi chua tung qua lo
+# dinh danh, va canh "sach" cua rang 1 do vi DON_VI_BO_SOT cua 4 don vi do: canh hong chu khong
+# phai cong hong. Cong kiem_lo_dinh_danh.py KHONG doi: van so voi registry duoc dua vao. O day dua
+# vao registry thu hep dung danh sach giao cho lo, va doi moi don vi trong danh sach phai con trong
+# registry that; thieu mot la KHONG CHAY DUOC chu khong lang lang bo qua.
+REG_THAT = HERE.parents[1] / ".touch" / "lib" / "cncl-registry.json"
+if not REG_THAT.exists():
+    print(f"KHONG CHAY DUOC: thieu {REG_THAT}")
+    sys.exit(3)
+giao = sorted({l.split("\t")[0].strip() for f in GOC.glob("don_vi_*.txt") for l in f.read_text(encoding="utf-8").splitlines() if l.strip()})
+if not giao:
+    print(f"KHONG CHAY DUOC: {GOC.name} khong co don_vi_*.txt, khong biet lo duoc giao don vi nao.")
+    sys.exit(3)
+_reg = json.loads(REG_THAT.read_text(encoding="utf-8"))
+_co = {u["name"] for u in _reg["units"]}
+_mat = [n for n in giao if n not in _co]
+if _mat:
+    print(f"KHONG CHAY DUOC: {len(_mat)} don vi giao cho {GOC.name} khong con trong registry: {_mat[:3]}")
+    sys.exit(3)
+_reg_tam = Path(tempfile.mkdtemp(prefix="bite_dinh_danh_reg_"))
+tam.append(_reg_tam)
+REG_LO = _reg_tam / "cncl-registry.json"
+REG_LO.write_text(json.dumps({**_reg, "units": [u for u in _reg["units"] if u["name"] in set(giao)]}, ensure_ascii=False), encoding="utf-8")
+
 
 def doc(p):
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -55,7 +80,7 @@ def rang(nhan, sua, ma, ky=None):
     shutil.copytree(GOC, d, ignore=shutil.ignore_patterns("lo.json", "__pycache__"))
     if sua:
         sua(d)
-    r = subprocess.run([sys.executable, str(CONG), str(d)], capture_output=True, text=True)
+    r = subprocess.run([sys.executable, str(CONG), str(d), str(REG_LO)], capture_output=True, text=True)
     out = r.stdout + r.stderr
     ok = r.returncode == ma and (ky is None or ky in out)
     print(f"{nhan:<60} : {'CAN OK' if ok else 'KHONG CAN !!'} (exit {r.returncode})")

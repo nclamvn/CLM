@@ -1,8 +1,8 @@
 {
   "meta": {
-    "mocNgay": "2026-10-25",
+    "mocNgay": "2026-10-26",
     "nguongNgay": 180,
-    "soDonVi": 60,
+    "soDonVi": 64,
     "truongSchema": [
       "ten_don_vi",
       "ma_so_thue",
@@ -99,7 +99,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -110,7 +110,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -121,7 +121,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -132,7 +132,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -143,7 +143,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -154,7 +154,7 @@
           "source": "benhvien108.vn",
           "href": "/evidence/benhvien108_te_bao_goc_tu_mien_20230608.txt",
           "ngayDang": "2023-06-08",
-          "tuoiNgay": 1235,
+          "tuoiNgay": 1236,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -361,7 +361,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -372,7 +372,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -383,7 +383,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -394,7 +394,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -405,7 +405,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -416,7 +416,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_cmc_cloud_20250321.txt",
           "ngayDang": "2025-03-21",
-          "tuoiNgay": 583,
+          "tuoiNgay": 584,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -506,6 +506,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhom",
           "chung": [
             "1"
@@ -608,7 +616,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
           "ngayDang": "2026-01-01",
-          "tuoiNgay": 297,
+          "tuoiNgay": 298,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -619,7 +627,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
           "ngayDang": "2025-07-21",
-          "tuoiNgay": 461,
+          "tuoiNgay": 462,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -630,7 +638,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
           "ngayDang": "2025-07-21",
-          "tuoiNgay": 461,
+          "tuoiNgay": 462,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -641,7 +649,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
           "ngayDang": "2026-01-01",
-          "tuoiNgay": 297,
+          "tuoiNgay": 298,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -652,7 +660,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_1matrix_vbsn_20260101.txt",
           "ngayDang": "2026-01-01",
-          "tuoiNgay": 297,
+          "tuoiNgay": 298,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -663,7 +671,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_1matrix_vbsn_20250721.txt",
           "ngayDang": "2025-07-21",
-          "tuoiNgay": 461,
+          "tuoiNgay": 462,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -746,6 +754,14 @@
           ]
         },
         {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
           "ten": "VNPT",
           "slug": "vnpt",
           "lyDo": "cung_nhom",
@@ -799,6 +815,180 @@
       ]
     },
     {
+      "slug": "cong-ty-an-ninh-mang-thong-minh-scs",
+      "ten": "Công ty An ninh mạng thông minh SCS",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "7",
+          "nhan": "Nhóm 7 · An ninh mạng và lượng tử"
+        }
+      ],
+      "lanhTho": "7",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "tuKhai": null,
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 2,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2026-05-12",
+        "moiNhat": "2026-05-12"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "ngayDang": "2026-05-12",
+          "tuoiNgay": 167,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P09 · nhu cầu quốc gia",
+          "maSp": "09",
+          "ten": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2026-05-12",
+          "loai": "nguon_dang",
+          "nguon": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty An ninh mạng Viettel",
+          "slug": "cong-ty-an-ninh-mang-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
+          "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        },
+        {
+          "ten": "MK Smart",
+          "slug": "mk-smart",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Viện Khoa học-Công nghệ mật mã",
+          "slug": "vien-khoa-hoc-cong-nghe-mat-ma",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "7"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
       "slug": "cong-ty-an-ninh-mang-viettel",
       "ten": "Công ty An ninh mạng Viettel",
       "loaiHinh": null,
@@ -818,24 +1008,24 @@
       },
       "tuKhai": null,
       "dem": {
-        "cauNguon": 4,
+        "cauNguon": 6,
         "theoTier": {
-          "A": 4,
+          "A": 6,
           "B": 0,
           "C": 0
         },
         "tenMienNguon": 1,
-        "banChup": 1,
+        "banChup": 2,
         "matchDaKy": 0
       },
       "doTuoi": {
-        "tuoi": 0,
+        "tuoi": 2,
         "ben": 3,
         "giuNguonCu": 1,
         "quaHan": 0,
         "khongDocDuoc": 0,
         "cuNhat": "2019-04-12",
-        "moiNhat": "2019-04-12"
+        "moiNhat": "2026-08-19"
       },
       "bangChung": [
         {
@@ -845,7 +1035,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "ngayDang": "2019-04-12",
-          "tuoiNgay": 2753,
+          "tuoiNgay": 2754,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -856,7 +1046,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "ngayDang": "2019-04-12",
-          "tuoiNgay": 2753,
+          "tuoiNgay": 2754,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -867,7 +1057,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "ngayDang": "2019-04-12",
-          "tuoiNgay": 2753,
+          "tuoiNgay": 2754,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -878,9 +1068,31 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "ngayDang": "2019-04-12",
-          "tuoiNgay": 2753,
+          "tuoiNgay": 2754,
           "loaiTruong": "ben",
           "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta_2",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "ngayDang": "2026-08-19",
+          "tuoiNgay": 68,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "A",
+          "source": "mst.gov.vn",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "ngayDang": "2026-08-19",
+          "tuoiNgay": 68,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
         }
       ],
       "nhuCau": [
@@ -900,9 +1112,24 @@
           "nguon": "mst.gov.vn",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "soCau": 4
+        },
+        {
+          "ngay": "2026-08-19",
+          "loai": "nguon_dang",
+          "nguon": "mst.gov.vn",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "soCau": 2
         }
       ],
       "tuongTu": [
+        {
+          "ten": "Công ty An ninh mạng thông minh SCS",
+          "slug": "cong-ty-an-ninh-mang-thong-minh-scs",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        },
         {
           "ten": "Công ty cổ phần Công nghệ an ninh mạng quốc gia Việt Nam (NCS)",
           "slug": "cong-ty-co-phan-cong-nghe-an-ninh-mang-quoc-gia-viet-nam-ncs",
@@ -939,10 +1166,6 @@
         {
           "truong": "loai_hinh",
           "nhan": "Loại hình (doanh nghiệp, viện, trường)"
-        },
-        {
-          "truong": "bang_chung_nang_luc",
-          "nhan": "Bằng chứng năng lực (dự án, sản phẩm, chứng nhận)"
         },
         {
           "truong": "location",
@@ -1002,7 +1225,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1013,7 +1236,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1024,7 +1247,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1035,7 +1258,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1046,7 +1269,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1257,7 +1480,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
           "ngayDang": "2025-11-03",
-          "tuoiNgay": 356,
+          "tuoiNgay": 357,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1268,7 +1491,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
           "ngayDang": "2025-07-02",
-          "tuoiNgay": 480,
+          "tuoiNgay": 481,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1279,7 +1502,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
           "ngayDang": "2025-07-02",
-          "tuoiNgay": 480,
+          "tuoiNgay": 481,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1290,7 +1513,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ncs_hesinhthai_20250702.txt",
           "ngayDang": "2025-07-02",
-          "tuoiNgay": 480,
+          "tuoiNgay": 481,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1301,7 +1524,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_ncs_hesinhthai_20251103.txt",
           "ngayDang": "2025-11-03",
-          "tuoiNgay": 356,
+          "tuoiNgay": 357,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1347,6 +1570,14 @@
         {
           "ten": "Công ty An ninh mạng Viettel",
           "slug": "cong-ty-an-ninh-mang-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        },
+        {
+          "ten": "Công ty An ninh mạng thông minh SCS",
+          "slug": "cong-ty-an-ninh-mang-thong-minh-scs",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P09"
@@ -1443,7 +1674,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1454,7 +1685,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1465,7 +1696,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1476,7 +1707,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1487,7 +1718,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1498,7 +1729,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vntt_orion_nha_may_thong_minh_20241020.txt",
           "ngayDang": "2024-10-20",
-          "tuoiNgay": 735,
+          "tuoiNgay": 736,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1609,6 +1840,187 @@
       ]
     },
     {
+      "slug": "cong-ty-co-phan-dong-tau-song-cam",
+      "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "8",
+          "nhan": "Nhóm 8 · Biển, đại dương, lòng đất"
+        }
+      ],
+      "lanhTho": "8",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "tuKhai": null,
+      "dem": {
+        "cauNguon": 7,
+        "theoTier": {
+          "A": 0,
+          "B": 7,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 3,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2026-06-23",
+        "moiNhat": "2026-06-23"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 6,
+          "field": "location",
+          "tier": "B",
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "ngayDang": "2026-06-23",
+          "tuoiNgay": 125,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P26 · nhu cầu quốc gia",
+          "maSp": "26",
+          "ten": "Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2026-06-23",
+          "loai": "nguon_dang",
+          "nguon": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "soCau": 7
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+          "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty TNHH Luyện kim Trần Hồng Quân",
+          "slug": "cong-ty-tnhh-luyen-kim-tran-hong-quan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
+        {
+          "ten": "Viện Công nghệ xạ hiếm",
+          "slug": "vien-cong-nghe-xa-hiem",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        }
+      ]
+    },
+    {
       "slug": "cong-ty-co-phan-giai-phap-nang-luong-vines",
       "ten": "Công ty Cổ phần Giải pháp Năng lượng VinES",
       "loaiHinh": null,
@@ -1660,7 +2072,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
-          "tuoiNgay": 963,
+          "tuoiNgay": 964,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1671,7 +2083,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
-          "tuoiNgay": 963,
+          "tuoiNgay": 964,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1682,7 +2094,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
-          "tuoiNgay": 963,
+          "tuoiNgay": 964,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1693,7 +2105,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
-          "tuoiNgay": 963,
+          "tuoiNgay": 964,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -1704,7 +2116,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vines_pin_20240306.txt",
           "ngayDang": "2024-03-06",
-          "tuoiNgay": 963,
+          "tuoiNgay": 964,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1854,7 +2266,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1865,7 +2277,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -1876,7 +2288,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -1887,7 +2299,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -2035,7 +2447,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2046,7 +2458,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2057,7 +2469,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -2068,7 +2480,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_vaccine_dtlcp_20230724.txt",
           "ngayDang": "2023-07-24",
-          "tuoiNgay": 1189,
+          "tuoiNgay": 1190,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2283,7 +2695,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_vinmotion_20250606.txt",
           "ngayDang": "2025-06-06",
-          "tuoiNgay": 506,
+          "tuoiNgay": 507,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2294,7 +2706,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_vinmotion_20250606.txt",
           "ngayDang": "2025-06-06",
-          "tuoiNgay": 506,
+          "tuoiNgay": 507,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2305,7 +2717,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_vinmotion_20250606.txt",
           "ngayDang": "2025-06-06",
-          "tuoiNgay": 506,
+          "tuoiNgay": 507,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -2316,7 +2728,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_vinmotion_20250606.txt",
           "ngayDang": "2025-06-06",
-          "tuoiNgay": 506,
+          "tuoiNgay": 507,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -2327,7 +2739,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_vinmotion_20250606.txt",
           "ngayDang": "2025-06-06",
-          "tuoiNgay": 506,
+          "tuoiNgay": 507,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2338,7 +2750,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_vinmotion_minimotion_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -2500,7 +2912,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2511,7 +2923,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2522,7 +2934,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2533,7 +2945,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2544,7 +2956,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -2555,7 +2967,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_xelua_dian_20240925.txt",
           "ngayDang": "2024-09-25",
-          "tuoiNgay": 760,
+          "tuoiNgay": 761,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -2684,7 +3096,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
-          "tuoiNgay": 449,
+          "tuoiNgay": 450,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2695,7 +3107,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
-          "tuoiNgay": 449,
+          "tuoiNgay": 450,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2706,7 +3118,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
-          "tuoiNgay": 449,
+          "tuoiNgay": 450,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -2717,7 +3129,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
-          "tuoiNgay": 449,
+          "tuoiNgay": 450,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -2728,7 +3140,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_ngocbao_peek3d_20250802.txt",
           "ngayDang": "2025-08-02",
-          "tuoiNgay": 449,
+          "tuoiNgay": 450,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2938,7 +3350,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2949,7 +3361,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2960,7 +3372,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2971,7 +3383,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -2982,7 +3394,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -2993,7 +3405,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -3004,7 +3416,7 @@
           "source": "tienphong.vn",
           "href": "/evidence/tienphong_vnf_phu_pham_tom_20260820.txt",
           "ngayDang": "2026-08-20",
-          "tuoiNgay": 66,
+          "tuoiNgay": 67,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -3207,7 +3619,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3218,7 +3630,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3229,7 +3641,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3240,7 +3652,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3251,7 +3663,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -3262,7 +3674,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -3500,7 +3912,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "ngayDang": "2026-07-26",
-          "tuoiNgay": 91,
+          "tuoiNgay": 92,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3511,7 +3923,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "ngayDang": "2026-07-26",
-          "tuoiNgay": 91,
+          "tuoiNgay": 92,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3522,7 +3934,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "ngayDang": "2026-07-26",
-          "tuoiNgay": 91,
+          "tuoiNgay": 92,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -3533,7 +3945,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "ngayDang": "2026-07-26",
-          "tuoiNgay": 91,
+          "tuoiNgay": 92,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -3544,7 +3956,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "ngayDang": "2026-07-26",
-          "tuoiNgay": 91,
+          "tuoiNgay": 92,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -3580,6 +3992,22 @@
       ],
       "cungNhom": [
         {
+          "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "slug": "cong-ty-co-phan-dong-tau-song-cam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
+        {
           "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
           "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
           "lyDo": "cung_nhom",
@@ -3597,6 +4025,180 @@
         {
           "truong": "loai_hinh",
           "nhan": "Loại hình (doanh nghiệp, viện, trường)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
+      "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c",
+      "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "8",
+          "nhan": "Nhóm 8 · Biển, đại dương, lòng đất"
+        }
+      ],
+      "lanhTho": "8",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "tuKhai": null,
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 1,
+        "banChup": 1,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 2,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2026-09-13",
+        "moiNhat": "2026-09-13"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "ngayDang": "2026-09-13",
+          "tuoiNgay": 43,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P26 · nhu cầu quốc gia",
+          "maSp": "26",
+          "ten": "Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2026-09-13",
+          "loai": "nguon_dang",
+          "nguon": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "soCau": 6
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "slug": "cong-ty-co-phan-dong-tau-song-cam",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+          "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "Công ty TNHH Luyện kim Trần Hồng Quân",
+          "slug": "cong-ty-tnhh-luyen-kim-tran-hong-quan",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
+        {
+          "ten": "Viện Công nghệ xạ hiếm",
+          "slug": "vien-cong-nghe-xa-hiem",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
         },
         {
           "truong": "location",
@@ -3651,7 +4253,7 @@
           "source": "tapchikinhtetaichinh.vn",
           "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
           "ngayDang": "2025-12-22",
-          "tuoiNgay": 307,
+          "tuoiNgay": 308,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3662,7 +4264,7 @@
           "source": "tapchikinhtetaichinh.vn",
           "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
           "ngayDang": "2025-12-22",
-          "tuoiNgay": 307,
+          "tuoiNgay": 308,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3673,7 +4275,7 @@
           "source": "tapchikinhtetaichinh.vn",
           "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
           "ngayDang": "2025-12-22",
-          "tuoiNgay": 307,
+          "tuoiNgay": 308,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3684,7 +4286,7 @@
           "source": "tapchikinhtetaichinh.vn",
           "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
           "ngayDang": "2025-12-22",
-          "tuoiNgay": 307,
+          "tuoiNgay": 308,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3695,7 +4297,7 @@
           "source": "tapchikinhtetaichinh.vn",
           "href": "/evidence/tapchikttc_uav_tongquan_chuplai_20251222.txt",
           "ngayDang": "2025-12-22",
-          "tuoiNgay": 307,
+          "tuoiNgay": 308,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -3860,7 +4462,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3871,7 +4473,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -3882,7 +4484,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -3893,7 +4495,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -3904,7 +4506,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4061,7 +4663,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
           "ngayDang": "2024-08-29",
-          "tuoiNgay": 787,
+          "tuoiNgay": 788,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4072,7 +4674,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
           "ngayDang": "2024-08-29",
-          "tuoiNgay": 787,
+          "tuoiNgay": 788,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4083,7 +4685,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
           "ngayDang": "2024-08-29",
-          "tuoiNgay": 787,
+          "tuoiNgay": 788,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -4094,7 +4696,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_fecon_tbm_20240829.txt",
           "ngayDang": "2024-08-29",
-          "tuoiNgay": 787,
+          "tuoiNgay": 788,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4105,7 +4707,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
           "ngayDang": "2015-12-28",
-          "tuoiNgay": 3954,
+          "tuoiNgay": 3955,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -4116,7 +4718,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_fecon_rnd_vo_ham_20151228.txt",
           "ngayDang": "2015-12-28",
-          "tuoiNgay": 3954,
+          "tuoiNgay": 3955,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -4257,7 +4859,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4268,7 +4870,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4279,7 +4881,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4290,7 +4892,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -4301,7 +4903,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4312,7 +4914,7 @@
           "source": "vnanet.vn",
           "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
           "ngayDang": "2026-07-10",
-          "tuoiNgay": 107,
+          "tuoiNgay": 108,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -4323,7 +4925,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -4394,6 +4996,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P01"
@@ -4530,7 +5140,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4541,7 +5151,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4552,7 +5162,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -4563,7 +5173,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4574,7 +5184,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_fpt_tokyo_20260615.txt",
           "ngayDang": "2026-06-15",
-          "tuoiNgay": 132,
+          "tuoiNgay": 133,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         }
@@ -4735,7 +5345,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
-          "tuoiNgay": 196,
+          "tuoiNgay": 197,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4746,7 +5356,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
-          "tuoiNgay": 196,
+          "tuoiNgay": 197,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4757,7 +5367,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
-          "tuoiNgay": 196,
+          "tuoiNgay": 197,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -4768,7 +5378,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
-          "tuoiNgay": 196,
+          "tuoiNgay": 197,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -4779,7 +5389,7 @@
           "source": "tuoitre.vn",
           "href": "/evidence/tuoitre_ggpower_pin_20260412.txt",
           "ngayDang": "2026-04-12",
-          "tuoiNgay": 196,
+          "tuoiNgay": 197,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4934,7 +5544,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4945,7 +5555,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4956,7 +5566,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -4967,7 +5577,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -5137,7 +5747,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5148,7 +5758,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5159,7 +5769,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5170,7 +5780,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5181,7 +5791,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -5192,7 +5802,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -5203,7 +5813,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_indefol_hydrogen_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -5334,7 +5944,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
           "ngayDang": "2024-10-01",
-          "tuoiNgay": 754,
+          "tuoiNgay": 755,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5345,7 +5955,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
           "ngayDang": "2024-10-01",
-          "tuoiNgay": 754,
+          "tuoiNgay": 755,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5356,7 +5966,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
           "ngayDang": "2024-10-01",
-          "tuoiNgay": 754,
+          "tuoiNgay": 755,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -5367,7 +5977,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_tedi_dstdc_20241001.txt",
           "ngayDang": "2024-10-01",
-          "tuoiNgay": 754,
+          "tuoiNgay": 755,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -5478,7 +6088,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5489,7 +6099,7 @@
           "source": "nguoiquansat.vn",
           "href": "/evidence/nguoiquansat_bando_bandan_20251027.txt",
           "ngayDang": "2025-10-27",
-          "tuoiNgay": 363,
+          "tuoiNgay": 364,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -5599,7 +6209,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5610,7 +6220,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5621,7 +6231,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5632,7 +6242,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -5796,7 +6406,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5807,7 +6417,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5818,7 +6428,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -5829,7 +6439,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -5840,7 +6450,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5879,6 +6489,14 @@
         {
           "ten": "Công ty An ninh mạng Viettel",
           "slug": "cong-ty-an-ninh-mang-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P09"
+          ]
+        },
+        {
+          "ten": "Công ty An ninh mạng thông minh SCS",
+          "slug": "cong-ty-an-ninh-mang-thong-minh-scs",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P09"
@@ -5966,7 +6584,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5977,7 +6595,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -5988,7 +6606,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -5999,7 +6617,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -6010,7 +6628,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -6021,7 +6639,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -6148,7 +6766,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6159,7 +6777,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6170,7 +6788,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6181,7 +6799,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -6345,7 +6963,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
           "ngayDang": "2025-11-21",
-          "tuoiNgay": 338,
+          "tuoiNgay": 339,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6356,7 +6974,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
           "ngayDang": "2025-11-21",
-          "tuoiNgay": 338,
+          "tuoiNgay": 339,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6367,7 +6985,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
           "ngayDang": "2025-11-21",
-          "tuoiNgay": 338,
+          "tuoiNgay": 339,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6378,7 +6996,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_bsr_keylab_biodiesel_20251121.txt",
           "ngayDang": "2025-11-21",
-          "tuoiNgay": 338,
+          "tuoiNgay": 339,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6389,7 +7007,7 @@
           "source": "congthuong.vn",
           "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
           "ngayDang": "2026-05-25",
-          "tuoiNgay": 153,
+          "tuoiNgay": 154,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -6400,7 +7018,7 @@
           "source": "congthuong.vn",
           "href": "/evidence/congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525.txt",
           "ngayDang": "2026-05-25",
-          "tuoiNgay": 153,
+          "tuoiNgay": 154,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -6558,7 +7176,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6569,7 +7187,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6580,7 +7198,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6591,7 +7209,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6602,7 +7220,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -6613,7 +7231,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -6624,7 +7242,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_rtr_xponential_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -6635,7 +7253,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_rtr_xponential_20260418.txt",
           "ngayDang": "2026-04-18",
-          "tuoiNgay": 190,
+          "tuoiNgay": 191,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -6816,7 +7434,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
-          "tuoiNgay": 1756,
+          "tuoiNgay": 1757,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6827,7 +7445,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
-          "tuoiNgay": 1756,
+          "tuoiNgay": 1757,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -6838,7 +7456,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
-          "tuoiNgay": 1756,
+          "tuoiNgay": 1757,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -6849,7 +7467,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
-          "tuoiNgay": 1756,
+          "tuoiNgay": 1757,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -6860,7 +7478,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_rostek_agv_20220103.txt",
           "ngayDang": "2022-01-03",
-          "tuoiNgay": 1756,
+          "tuoiNgay": 1757,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7029,7 +7647,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7040,7 +7658,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7051,7 +7669,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7062,7 +7680,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7073,7 +7691,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7084,7 +7702,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7095,7 +7713,7 @@
           "source": "nongnghiepmoitruong.vn",
           "href": "/evidence/nongnghiepmoitruong_dacovac_20250329.txt",
           "ngayDang": "2025-03-29",
-          "tuoiNgay": 575,
+          "tuoiNgay": 576,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7313,7 +7931,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7324,7 +7942,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7335,7 +7953,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -7346,7 +7964,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7520,7 +8138,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
           "ngayDang": "2023-07-27",
-          "tuoiNgay": 1186,
+          "tuoiNgay": 1187,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7531,7 +8149,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
           "ngayDang": "2023-07-27",
-          "tuoiNgay": 1186,
+          "tuoiNgay": 1187,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7542,7 +8160,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
           "ngayDang": "2023-07-27",
-          "tuoiNgay": 1186,
+          "tuoiNgay": 1187,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7553,7 +8171,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
           "ngayDang": "2023-07-27",
-          "tuoiNgay": 1186,
+          "tuoiNgay": 1187,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -7564,7 +8182,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_viettel_llm_chuplai_20230727.txt",
           "ngayDang": "2023-07-27",
-          "tuoiNgay": 1186,
+          "tuoiNgay": 1187,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -7575,7 +8193,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7586,7 +8204,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_fpt_nhamay_20260128.txt",
           "ngayDang": "2026-01-28",
-          "tuoiNgay": 270,
+          "tuoiNgay": 271,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7755,6 +8373,14 @@
           ]
         },
         {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
           "ten": "VSAP LAB",
           "slug": "vsap-lab",
           "lyDo": "cung_nhu_cau",
@@ -7887,24 +8513,24 @@
         "nguon": "ptsc.com.vn"
       },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 8,
         "theoTier": {
           "A": 0,
-          "B": 5,
+          "B": 6,
           "C": 2
         },
-        "tenMienNguon": 2,
-        "banChup": 2,
+        "tenMienNguon": 3,
+        "banChup": 3,
         "matchDaKy": 0
       },
       "doTuoi": {
-        "tuoi": 0,
+        "tuoi": 1,
         "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
         "cuNhat": "2025-06-18",
-        "moiNhat": "2025-06-18"
+        "moiNhat": "2026-08-11"
       },
       "bangChung": [
         {
@@ -7914,7 +8540,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
-          "tuoiNgay": 494,
+          "tuoiNgay": 495,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7925,7 +8551,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
-          "tuoiNgay": 494,
+          "tuoiNgay": 495,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7936,7 +8562,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
-          "tuoiNgay": 494,
+          "tuoiNgay": 495,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7947,7 +8573,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
-          "tuoiNgay": 494,
+          "tuoiNgay": 495,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -7958,7 +8584,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "ngayDang": "2025-06-18",
-          "tuoiNgay": 494,
+          "tuoiNgay": 495,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -7983,6 +8609,17 @@
           "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "nang_luc_mo_ta_2",
+          "tier": "B",
+          "source": "petrovietnam.petrotimes.vn",
+          "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt",
+          "ngayDang": "2026-08-11",
+          "tuoiNgay": 76,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
         }
       ],
       "nhuCau": [
@@ -8002,9 +8639,33 @@
           "nguon": "vneconomy.vn",
           "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
           "soCau": 5
+        },
+        {
+          "ngay": "2026-08-11",
+          "loai": "nguon_dang",
+          "nguon": "petrovietnam.petrotimes.vn",
+          "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt",
+          "soCau": 1
         }
       ],
-      "tuongTu": [],
+      "tuongTu": [
+        {
+          "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "slug": "cong-ty-co-phan-dong-tau-song-cam",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P26"
+          ]
+        }
+      ],
       "cungNhom": [
         {
           "ten": "Công ty TNHH Luyện kim Trần Hồng Quân",
@@ -8040,6 +8701,227 @@
       ]
     },
     {
+      "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+      "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+      "loaiHinh": "Doanh nghiệp",
+      "nhoms": [
+        {
+          "so": "1",
+          "nhan": "Nhóm 1 · Công nghệ số"
+        }
+      ],
+      "lanhTho": "1",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "dinhDanh": {
+        "trangThai": "chua_dinh_danh",
+        "maSo": null,
+        "href": null
+      },
+      "tuKhai": null,
+      "dem": {
+        "cauNguon": 6,
+        "theoTier": {
+          "A": 0,
+          "B": 6,
+          "C": 0
+        },
+        "tenMienNguon": 2,
+        "banChup": 2,
+        "matchDaKy": 0
+      },
+      "doTuoi": {
+        "tuoi": 2,
+        "ben": 4,
+        "giuNguonCu": 0,
+        "quaHan": 0,
+        "khongDocDuoc": 0,
+        "cuNhat": "2025-11-25",
+        "moiNhat": "2026-06-30"
+      },
+      "bangChung": [
+        {
+          "i": 0,
+          "field": "ten_don_vi",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "ngayDang": "2025-11-25",
+          "tuoiNgay": 335,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 1,
+          "field": "loai_hinh",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "ngayDang": "2025-11-25",
+          "tuoiNgay": 335,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 2,
+          "field": "nhom_cncl",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "ngayDang": "2025-11-25",
+          "tuoiNgay": 335,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 3,
+          "field": "san_pham_lien_quan",
+          "tier": "B",
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "ngayDang": "2025-11-25",
+          "tuoiNgay": 335,
+          "loaiTruong": "ben",
+          "trangThai": "ben"
+        },
+        {
+          "i": 4,
+          "field": "nang_luc_mo_ta",
+          "tier": "B",
+          "source": "vietnamplus.vn",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "ngayDang": "2026-06-30",
+          "tuoiNgay": 118,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        },
+        {
+          "i": 5,
+          "field": "bang_chung_nang_luc",
+          "tier": "B",
+          "source": "vietnamplus.vn",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "ngayDang": "2026-06-30",
+          "tuoiNgay": 118,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
+        }
+      ],
+      "nhuCau": [
+        {
+          "id": "CNCL-P01 · nhu cầu quốc gia",
+          "maSp": "01",
+          "ten": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+          "quanHe": [
+            "cung_san_pham"
+          ]
+        }
+      ],
+      "dongThoiGian": [
+        {
+          "ngay": "2025-11-25",
+          "loai": "nguon_dang",
+          "nguon": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "soCau": 4
+        },
+        {
+          "ngay": "2026-06-30",
+          "loai": "nguon_dang",
+          "nguon": "vietnamplus.vn",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "soCau": 2
+        }
+      ],
+      "tuongTu": [
+        {
+          "ten": "FPT",
+          "slug": "fpt",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tập đoàn Viettel",
+          "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Viettel AI",
+          "slug": "viettel-ai",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "VinAI",
+          "slug": "vinai",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "VinBigData",
+          "slug": "vinbigdata",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Zalo",
+          "slug": "zalo",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        }
+      ],
+      "cungNhom": [
+        {
+          "ten": "CMC Telecom",
+          "slug": "cmc-telecom",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "Công ty 1Matrix",
+          "slug": "cong-ty-1matrix",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
+          "ten": "VNPT",
+          "slug": "vnpt",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        }
+      ],
+      "deNham": [],
+      "oTrong": [
+        {
+          "truong": "ma_so_thue",
+          "nhan": "Mã số doanh nghiệp (chỉ nhận từ cổng thông tin chính thức)"
+        },
+        {
+          "truong": "location",
+          "nhan": "Địa điểm"
+        }
+      ]
+    },
+    {
       "slug": "tong-cong-ty-thiet-bi-dien-dong-anh",
       "ten": "Tổng công ty Thiết bị điện Đông Anh",
       "loaiHinh": null,
@@ -8064,24 +8946,24 @@
         "nguon": "eemc.com.vn"
       },
       "dem": {
-        "cauNguon": 7,
+        "cauNguon": 8,
         "theoTier": {
           "A": 5,
-          "B": 0,
+          "B": 1,
           "C": 2
         },
-        "tenMienNguon": 2,
-        "banChup": 3,
+        "tenMienNguon": 3,
+        "banChup": 4,
         "matchDaKy": 1
       },
       "doTuoi": {
-        "tuoi": 0,
+        "tuoi": 1,
         "ben": 5,
         "giuNguonCu": 2,
         "quaHan": 0,
         "khongDocDuoc": 0,
         "cuNhat": "2024-12-16",
-        "moiNhat": "2024-12-16"
+        "moiNhat": "2026-09-28"
       },
       "bangChung": [
         {
@@ -8091,7 +8973,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
-          "tuoiNgay": 678,
+          "tuoiNgay": 679,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8102,7 +8984,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
-          "tuoiNgay": 678,
+          "tuoiNgay": 679,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8113,7 +8995,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
-          "tuoiNgay": 678,
+          "tuoiNgay": 679,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8124,7 +9006,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
-          "tuoiNgay": 678,
+          "tuoiNgay": 679,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8135,7 +9017,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
           "ngayDang": "2024-12-16",
-          "tuoiNgay": 678,
+          "tuoiNgay": 679,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8160,6 +9042,17 @@
           "tuoiNgay": null,
           "loaiTruong": "ben",
           "trangThai": "ben"
+        },
+        {
+          "i": 7,
+          "field": "nang_luc_mo_ta_2",
+          "tier": "B",
+          "source": "daibieunhandan.vn",
+          "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt",
+          "ngayDang": "2026-09-28",
+          "tuoiNgay": 28,
+          "loaiTruong": "mau_hong",
+          "trangThai": "tuoi"
         }
       ],
       "nhuCau": [
@@ -8207,6 +9100,13 @@
           "maHangCho": "HC-dc4dea764834",
           "nhan": "bang_chung_nang_luc: EEMC phối hợp với Trường Điện - Điện tử, Đại học Bách khoa Hà Nội nghiên cứu, thiết kế và chế tạo một cuộn kháng bù ngang 500 kV, công suất 120 MVAr, đáp ứng tiêu chuẩn IEC 60076",
           "nguonUrl": "https://mst.gov.vn/thu-truong-le-xuan-dinh-lam-chu-cong-nghe-loi-la-thuoc-do-cua-du-an-thiet-bi-dien-500-kv-197260928141640959.htm"
+        },
+        {
+          "ngay": "2026-09-28",
+          "loai": "nguon_dang",
+          "nguon": "daibieunhandan.vn",
+          "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt",
+          "soCau": 1
         }
       ],
       "tuongTu": [
@@ -8329,7 +9229,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
           "ngayDang": "2021-03-11",
-          "tuoiNgay": 2054,
+          "tuoiNgay": 2055,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8340,7 +9240,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
           "ngayDang": "2021-03-11",
-          "tuoiNgay": 2054,
+          "tuoiNgay": 2055,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8351,7 +9251,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
           "ngayDang": "2021-03-11",
-          "tuoiNgay": 2054,
+          "tuoiNgay": 2055,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8362,7 +9262,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
           "ngayDang": "2021-03-11",
-          "tuoiNgay": 2054,
+          "tuoiNgay": 2055,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8373,7 +9273,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_nanodragon_ttvtvn_20210311.txt",
           "ngayDang": "2021-03-11",
-          "tuoiNgay": 2054,
+          "tuoiNgay": 2055,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8384,7 +9284,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_trung_tam_vu_tru_khanh_thanh_20260313.txt",
           "ngayDang": "2026-03-13",
-          "tuoiNgay": 226,
+          "tuoiNgay": 227,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8563,7 +9463,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8574,7 +9474,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8585,7 +9485,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8596,7 +9496,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8607,7 +9507,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8618,7 +9518,7 @@
           "source": "nangluongvietnam.vn",
           "href": "/evidence/nangluongvietnam_biodiesel_dhkhtn_20120502.txt",
           "ngayDang": "2012-05-02",
-          "tuoiNgay": 5289,
+          "tuoiNgay": 5290,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8764,7 +9664,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8775,7 +9675,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8786,7 +9686,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8797,7 +9697,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -8808,7 +9708,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -8819,7 +9719,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_nam_agaricus_che_bien_sau_20251211.txt",
           "ngayDang": "2025-12-11",
-          "tuoiNgay": 318,
+          "tuoiNgay": 319,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         }
@@ -9051,7 +9951,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9062,7 +9962,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9073,7 +9973,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9084,7 +9984,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -9095,7 +9995,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -9106,7 +10006,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_viencongnghexahiem_dathiem_20250626.txt",
           "ngayDang": "2025-06-26",
-          "tuoiNgay": 486,
+          "tuoiNgay": 487,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9152,6 +10052,22 @@
         }
       ],
       "cungNhom": [
+        {
+          "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
+        {
+          "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "slug": "cong-ty-co-phan-dong-tau-song-cam",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "8"
+          ]
+        },
         {
           "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
           "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc",
@@ -9225,7 +10141,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
-          "tuoiNgay": 389,
+          "tuoiNgay": 390,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9236,7 +10152,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
-          "tuoiNgay": 389,
+          "tuoiNgay": 390,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9247,7 +10163,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
-          "tuoiNgay": 389,
+          "tuoiNgay": 390,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9258,7 +10174,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
-          "tuoiNgay": 389,
+          "tuoiNgay": 390,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -9269,7 +10185,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_vdtnn_chinhsuagen_20251001.txt",
           "ngayDang": "2025-10-01",
-          "tuoiNgay": 389,
+          "tuoiNgay": 390,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9479,7 +10395,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
           "ngayDang": "2026-02-23",
-          "tuoiNgay": 244,
+          "tuoiNgay": 245,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9490,7 +10406,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
           "ngayDang": "2026-02-23",
-          "tuoiNgay": 244,
+          "tuoiNgay": 245,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9501,7 +10417,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
           "ngayDang": "2026-02-23",
-          "tuoiNgay": 244,
+          "tuoiNgay": 245,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9512,7 +10428,7 @@
           "source": "vjst.vn",
           "href": "/evidence/vjst_vienhanlam_vatlieu_20260223.txt",
           "ngayDang": "2026-02-23",
-          "tuoiNgay": 244,
+          "tuoiNgay": 245,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -9721,7 +10637,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9732,7 +10648,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9743,7 +10659,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9754,7 +10670,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -9765,7 +10681,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_matma_hauluongtu_20260210.txt",
           "ngayDang": "2026-02-10",
-          "tuoiNgay": 257,
+          "tuoiNgay": 258,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -9794,6 +10710,14 @@
         {
           "ten": "Công ty An ninh mạng Viettel",
           "slug": "cong-ty-an-ninh-mang-viettel",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "7"
+          ]
+        },
+        {
+          "ten": "Công ty An ninh mạng thông minh SCS",
+          "slug": "cong-ty-an-ninh-mang-thong-minh-scs",
           "lyDo": "cung_nhom",
           "chung": [
             "7"
@@ -9884,7 +10808,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9895,7 +10819,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9906,7 +10830,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9917,7 +10841,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -9928,7 +10852,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -9939,7 +10863,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vkist_chip_sinh_hoc_gan_da_20250718.txt",
           "ngayDang": "2025-07-18",
-          "tuoiNgay": 464,
+          "tuoiNgay": 465,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10160,7 +11084,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10171,7 +11095,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10182,7 +11106,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10193,7 +11117,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10204,7 +11128,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10215,7 +11139,7 @@
           "source": "vast.gov.vn",
           "href": "/evidence/vast_he_vi_luu_cam_bien_dien_hoa_20170724.txt",
           "ngayDang": "2017-07-24",
-          "tuoiNgay": 3380,
+          "tuoiNgay": 3381,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10431,7 +11355,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
           "ngayDang": "2023-08-21",
-          "tuoiNgay": 1161,
+          "tuoiNgay": 1162,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10442,7 +11366,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
           "ngayDang": "2023-08-21",
-          "tuoiNgay": 1161,
+          "tuoiNgay": 1162,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10453,7 +11377,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
           "ngayDang": "2023-08-21",
-          "tuoiNgay": 1161,
+          "tuoiNgay": 1162,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10464,7 +11388,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_vinmec_20230821.txt",
           "ngayDang": "2023-08-21",
-          "tuoiNgay": 1161,
+          "tuoiNgay": 1162,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10475,7 +11399,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
           "ngayDang": "2026-07-21",
-          "tuoiNgay": 96,
+          "tuoiNgay": 97,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -10486,7 +11410,7 @@
           "source": "baodautu.vn",
           "href": "/evidence/baodautu_car_t_lupus_vinmec_20260721.txt",
           "ngayDang": "2026-07-21",
-          "tuoiNgay": 96,
+          "tuoiNgay": 97,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         }
@@ -10703,7 +11627,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10714,7 +11638,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10725,7 +11649,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10736,7 +11660,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10747,7 +11671,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10758,7 +11682,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10769,7 +11693,7 @@
           "source": "vnexpress.net",
           "href": "/evidence/vnexpress_vien_te_bao_goc_khtn_20230403.txt",
           "ngayDang": "2023-04-03",
-          "tuoiNgay": 1301,
+          "tuoiNgay": 1302,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -10972,7 +11896,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10983,7 +11907,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -10994,7 +11918,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11005,7 +11929,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -11016,7 +11940,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -11027,7 +11951,7 @@
           "source": "baochinhphu.vn",
           "href": "/evidence/baochinhphu_ivac_vaccine_20190116.txt",
           "ngayDang": "2019-01-16",
-          "tuoiNgay": 2839,
+          "tuoiNgay": 2840,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11228,7 +12152,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11239,7 +12163,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11250,7 +12174,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -11261,7 +12185,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11272,7 +12196,7 @@
           "source": "thanhnien.vn",
           "href": "/evidence/thanhnien_viettel_ai_bts_digital_twin_20251219.txt",
           "ngayDang": "2025-12-19",
-          "tuoiNgay": 310,
+          "tuoiNgay": 311,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -11283,7 +12207,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_viettel_bts_digital_twin_20251119.txt",
           "ngayDang": "2025-11-19",
-          "tuoiNgay": 340,
+          "tuoiNgay": 341,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         }
@@ -11354,6 +12278,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P01"
@@ -11482,7 +12414,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11493,7 +12425,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
           "ngayDang": "2024-12-22",
-          "tuoiNgay": 672,
+          "tuoiNgay": 673,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11504,7 +12436,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
           "ngayDang": "2024-12-22",
-          "tuoiNgay": 672,
+          "tuoiNgay": 673,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11515,7 +12447,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
           "ngayDang": "2024-12-22",
-          "tuoiNgay": 672,
+          "tuoiNgay": 673,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11526,7 +12458,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
           "ngayDang": "2024-12-22",
-          "tuoiNgay": 672,
+          "tuoiNgay": 673,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -11537,7 +12469,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_uav_madeinvn_chuplai_20241222.txt",
           "ngayDang": "2024-12-22",
-          "tuoiNgay": 672,
+          "tuoiNgay": 673,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -11709,7 +12641,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11720,7 +12652,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11731,7 +12663,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -11742,7 +12674,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11789,6 +12721,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P01"
@@ -11922,7 +12862,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11933,7 +12873,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11944,7 +12884,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -11955,7 +12895,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -12016,6 +12956,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P01"
@@ -12153,7 +13101,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12164,7 +13112,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12175,7 +13123,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12186,7 +13134,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12197,7 +13145,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt",
           "ngayDang": "2025-11-24",
-          "tuoiNgay": 335,
+          "tuoiNgay": 336,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -12208,7 +13156,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12219,7 +13167,7 @@
           "source": "vneconomy.vn",
           "href": "/evidence/vneconomy_ai_khatvong_chuplai_20230904.txt",
           "ngayDang": "2023-09-04",
-          "tuoiNgay": 1147,
+          "tuoiNgay": 1148,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -12230,7 +13178,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_robot_makeinvn_20251230.txt",
           "ngayDang": "2025-12-30",
-          "tuoiNgay": 299,
+          "tuoiNgay": 300,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12241,7 +13189,7 @@
           "source": "vtv.vn",
           "href": "/evidence/vtv_vnpt_cloud_sao_khue_20260602.txt",
           "ngayDang": "2026-06-02",
-          "tuoiNgay": 145,
+          "tuoiNgay": 146,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -12422,6 +13370,14 @@
           ]
         },
         {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
+          "lyDo": "cung_nhom",
+          "chung": [
+            "1"
+          ]
+        },
+        {
           "ten": "Viettel AI",
           "slug": "viettel-ai",
           "lyDo": "cung_nhom",
@@ -12523,7 +13479,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_5g_20220831.txt",
           "ngayDang": "2022-08-31",
-          "tuoiNgay": 1516,
+          "tuoiNgay": 1517,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12534,7 +13490,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_5g_20220831.txt",
           "ngayDang": "2022-08-31",
-          "tuoiNgay": 1516,
+          "tuoiNgay": 1517,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12545,7 +13501,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_5g_20220831.txt",
           "ngayDang": "2022-08-31",
-          "tuoiNgay": 1516,
+          "tuoiNgay": 1517,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -12556,7 +13512,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_5g_20220831.txt",
           "ngayDang": "2022-08-31",
-          "tuoiNgay": 1516,
+          "tuoiNgay": 1517,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -12567,7 +13523,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_5g_20220831.txt",
           "ngayDang": "2022-08-31",
-          "tuoiNgay": 1516,
+          "tuoiNgay": 1517,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12578,7 +13534,7 @@
           "source": "mst.gov.vn",
           "href": "/evidence/mst_vnpttech_vkist_20260702.txt",
           "ngayDang": "2026-07-02",
-          "tuoiNgay": 115,
+          "tuoiNgay": 116,
           "loaiTruong": "mau_hong",
           "trangThai": "tuoi"
         },
@@ -12720,7 +13676,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
           "ngayDang": "2026-02-02",
-          "tuoiNgay": 265,
+          "tuoiNgay": 266,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12731,7 +13687,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
           "ngayDang": "2026-02-02",
-          "tuoiNgay": 265,
+          "tuoiNgay": 266,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12742,7 +13698,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
           "ngayDang": "2026-02-02",
-          "tuoiNgay": 265,
+          "tuoiNgay": 266,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         },
@@ -12753,7 +13709,7 @@
           "source": "nhandan.vn",
           "href": "/evidence/nhandan_vsaplab_chuplai_20260202.txt",
           "ngayDang": "2026-02-02",
-          "tuoiNgay": 265,
+          "tuoiNgay": 266,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12895,7 +13851,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12906,7 +13862,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12917,7 +13873,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12928,7 +13884,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -12939,7 +13895,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -12950,7 +13906,7 @@
           "source": "vti-solutions.vn",
           "href": "/evidence/vtisolutions_mesx_saokhue_20240413.txt",
           "ngayDang": "2024-04-13",
-          "tuoiNgay": 925,
+          "tuoiNgay": 926,
           "loaiTruong": "mau_hong",
           "trangThai": "giu_nguon_cu"
         },
@@ -13110,7 +14066,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -13121,7 +14077,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -13132,7 +14088,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -13143,7 +14099,7 @@
           "source": "cafef.vn",
           "href": "/evidence/cafef_dn_uav_chuplai_20250903.txt",
           "ngayDang": "2025-09-03",
-          "tuoiNgay": 417,
+          "tuoiNgay": 418,
           "loaiTruong": "mau_hong",
           "trangThai": "qua_han"
         }
@@ -13302,7 +14258,7 @@
           "source": "vnanet.vn",
           "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
           "ngayDang": "2026-07-10",
-          "tuoiNgay": 107,
+          "tuoiNgay": 108,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -13313,7 +14269,7 @@
           "source": "vnanet.vn",
           "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
           "ngayDang": "2026-07-10",
-          "tuoiNgay": 107,
+          "tuoiNgay": 108,
           "loaiTruong": "ben",
           "trangThai": "ben"
         },
@@ -13324,7 +14280,7 @@
           "source": "vnanet.vn",
           "href": "/evidence/vnanet_hesinhthai_ai_chuplai_20260710.txt",
           "ngayDang": "2026-07-10",
-          "tuoiNgay": 107,
+          "tuoiNgay": 108,
           "loaiTruong": "ben",
           "trangThai": "ben"
         }
@@ -13360,6 +14316,14 @@
         {
           "ten": "Tập đoàn Viettel",
           "slug": "tap-doan-viettel",
+          "lyDo": "cung_nhu_cau",
+          "chung": [
+            "P01"
+          ]
+        },
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions",
           "lyDo": "cung_nhu_cau",
           "chung": [
             "P01"

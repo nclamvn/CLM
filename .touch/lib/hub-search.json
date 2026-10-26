@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-25",
-    "soTaiLieu": 100
+    "generatedAt": "2026-10-26",
+    "soTaiLieu": 104
   },
   "docs": [
     {
@@ -29,12 +29,20 @@
       "khoa": "cong ty 1matrix hien vbsn da duoc tich hop vao he thong truy xuat nguon goc cua bo cong an va trien khai tren nen tang dinh danh quoc gia vneid nhom 1 · cong nghe so"
     },
     {
+      "id": "dv:Công ty An ninh mạng thông minh SCS",
+      "kind": "don_vi",
+      "ten": "Công ty An ninh mạng thông minh SCS",
+      "moTa": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp",
+      "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
+      "khoa": "cong ty an ninh mang thong minh scs safegate secure gateway la giai phap quan ly, giam sat he thong mang va ngan chan cac moi de doa an ninh mang, cung cap kha nang bao ve toan dien cho ha tang mang cua to chuc va doanh nghiep nhom 7 · an ninh mang va luong tu"
+    },
+    {
       "id": "dv:Công ty An ninh mạng Viettel",
       "kind": "don_vi",
       "ten": "Công ty An ninh mạng Viettel",
-      "moTa": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
+      "moTa": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty · Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công",
       "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
-      "khoa": "cong ty an ninh mang viettel 100% cac san pham nay deu duoc nghien cuu, phat trien hoan toan boi doi ngu nhan su cua cong ty nhom 7 · an ninh mang va luong tu"
+      "khoa": "cong ty an ninh mang viettel 100% cac san pham nay deu duoc nghien cuu, phat trien hoan toan boi doi ngu nhan su cua cong ty · viettel threat intelligence thu thap, phan tich du lieu tu nhieu nguon de phat hien tai khoan bi lo, du lieu bi rao ban, ten mien gia mao va dau hieu chuan bi tan cong nhom 7 · an ninh mang va luong tu"
     },
     {
       "id": "dv:Công ty cổ phần AVAC Việt Nam",
@@ -59,6 +67,14 @@
       "moTa": "Tường lửa thế hệ mới NCS Next Generation Firewall, nền tảng tình báo an ninh mạng NCS TI, an ninh mạng điểm cuối NCS EDR, trung tâm giám sát an ninh mạng NCS SOC · do các chuyên gia Việt Nam nghiên cứu, sáng tạo và làm chủ",
       "nhan": "Nhóm 7 · An ninh mạng và lượng tử",
       "khoa": "cong ty co phan cong nghe an ninh mang quoc gia viet nam (ncs) tuong lua the he moi ncs next generation firewall, nen tang tinh bao an ninh mang ncs ti, an ninh mang diem cuoi ncs edr, trung tam giam sat an ninh mang ncs soc · do cac chuyen gia viet nam nghien cuu, sang tao va lam chu nhom 7 · an ninh mang va luong tu"
+    },
+    {
+      "id": "dv:Công ty cổ phần Đóng tàu Sông Cấm",
+      "kind": "don_vi",
+      "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+      "moTa": "tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng)",
+      "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "khoa": "cong ty co phan dong tau song cam tau thi cong cong trinh ngam phuc vu nganh nang luong ngoai khoi (escv) - vua duoc ban giao tu xuong dong tau song cam (hai phong) nhom 8 · bien, dai duong, long dat"
     },
     {
       "id": "dv:Công ty Cổ phần Giải pháp Năng lượng VinES",
@@ -131,6 +147,14 @@
       "moTa": "sản xuất thành công nhôm thỏi bằng công nghệ cao, sử dụng công nghệ điện phân nhôm với cường độ dòng điện 500 kA",
       "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
       "khoa": "cong ty tnhh luyen kim tran hong quan san xuat thanh cong nhom thoi bang cong nghe cao, su dung cong nghe dien phan nhom voi cuong do dong dien 500 ka nhom 8 · bien, dai duong, long dat"
+    },
+    {
+      "id": "dv:Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+      "kind": "don_vi",
+      "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+      "moTa": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam",
+      "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
+      "khoa": "cong ty tnhh mtv dich vu co khi hang hai ptsc (ptsc m&c) ptsc m&c vua hoan thanh ha thuy, ban giao 4 tram bien ap ngoai khoi thuoc du an baltica 2, mo dau moc moi cho nganh co khi va nang luong tai tao viet nam nhom 8 · bien, dai duong, long dat"
     },
     {
       "id": "dv:CT Group",
@@ -296,17 +320,25 @@
       "id": "dv:Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
       "kind": "don_vi",
       "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
-      "moTa": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
+      "moTa": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted · lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi",
       "nhan": "Nhóm 8 · Biển, đại dương, lòng đất",
-      "khoa": "tong cong ty co phan dich vu ky thuat dau khi viet nam (ptsc) da xuat sac hoan thanh viec ban giao 33 chan de dien gio ngoai khoi cho doi tac quoc te ørsted nhom 8 · bien, dai duong, long dat"
+      "khoa": "tong cong ty co phan dich vu ky thuat dau khi viet nam (ptsc) da xuat sac hoan thanh viec ban giao 33 chan de dien gio ngoai khoi cho doi tac quoc te ørsted · luc luong chu luc ve tong thau thiet ke, mua sam, che tao (epc) cong trinh dau khi ngoai khoi nhom 8 · bien, dai duong, long dat"
+    },
+    {
+      "id": "dv:Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+      "kind": "don_vi",
+      "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+      "moTa": "Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại",
+      "nhan": "Nhóm 1 · Công nghệ số",
+      "khoa": "tong cong ty giai phap doanh nghiep viettel (viettel solutions) he sinh thai viettel its the hien nang luc lam chu cac cong nghe cot loi nhu tri tue nhan tao (ai), iot, du lieu lon (big data), gis va digital twin trong xay dung he sinh thai quan ly, giam sat va dieu hanh giao thong hien dai nhom 1 · cong nghe so"
     },
     {
       "id": "dv:Tổng công ty Thiết bị điện Đông Anh",
       "kind": "don_vi",
       "ten": "Tổng công ty Thiết bị điện Đông Anh",
-      "moTa": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
+      "moTa": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam · Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam",
       "nhan": "Nhóm 5 · Năng lượng và vật liệu",
-      "khoa": "tong cong ty thiet bi dien dong anh lam chu cong tac thiet ke, che tao thanh cong may bien ap 500kv co cong suat lon nhat tren luoi dien truyen tai viet nam nhom 5 · nang luong va vat lieu"
+      "khoa": "tong cong ty thiet bi dien dong anh lam chu cong tac thiet ke, che tao thanh cong may bien ap 500kv co cong suat lon nhat tren luoi dien truyen tai viet nam · tong cong ty da san xuat tren 1.500 may bien ap tu 110 den 500kv, chiem khoang tren 50% so luong may bien ap dang van hanh tren luoi dien viet nam nhom 5 · nang luong va vat lieu"
     },
     {
       "id": "dv:Trung tâm Vũ trụ Việt Nam",

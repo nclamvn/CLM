@@ -54,16 +54,33 @@
    }
   ]
  },
+ "Công ty An ninh mạng thông minh SCS": {
+  "donVi": "Công ty An ninh mạng thông minh SCS",
+  "phienBan": "clm-kiem-toan/2",
+  "ma": "2e2850d20fa7c5fc35e70d9443a348e3cfa0318bb7f7922c16ead82d6abd0c21",
+  "maNgan": "2e28-50d2-0fa7",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+    "sha256": "d35e518b18d54d60bb14cd506e53d77da452efed6790c6cc1c2c04966ad3fbfb"
+   }
+  ]
+ },
  "Công ty An ninh mạng Viettel": {
   "donVi": "Công ty An ninh mạng Viettel",
   "phienBan": "clm-kiem-toan/2",
-  "ma": "54fbf0a0a93e96b51a7a8c5c73ef9d0f332e9898a2815761b1f373224f2c410a",
-  "maNgan": "54fb-f0a0-a93e",
-  "soCau": 4,
+  "ma": "2f6c116db9744bd572fd4dd8c5a9dfb29c029ed109de4783bfc7e4c855c1909a",
+  "maNgan": "2f6c-116d-b974",
+  "soCau": 6,
   "banChup": [
    {
     "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
     "sha256": "f57e4c6b2bb41289d7aba185db70d4e1a894ba484d0a4686cf920a4145dbe127"
+   },
+   {
+    "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+    "sha256": "e11ae0ea02202d522982c9d54bfb73f9a20aa055ff0a46b8d94f4fc7f332f030"
    }
   ]
  },
@@ -119,6 +136,19 @@
    {
     "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
     "sha256": "d5e9eea3818d1d3c52f5c966c9bda46e5b4de17a4870bb022c8e6e0d45a4dcaa"
+   }
+  ]
+ },
+ "Công ty cổ phần Đóng tàu Sông Cấm": {
+  "donVi": "Công ty cổ phần Đóng tàu Sông Cấm",
+  "phienBan": "clm-kiem-toan/2",
+  "ma": "22616a97795e7c9c00107a7b6faa2ca4e89c5675fd84cc8242149a0dae5058fe",
+  "maNgan": "2261-6a97-795e",
+  "soCau": 7,
+  "banChup": [
+   {
+    "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+    "sha256": "6d991f65eae7a22c454068419dbaa2816517ecbd55cd5ba1a374db6f00f08288"
    }
   ]
  },
@@ -268,6 +298,19 @@
    {
     "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
     "sha256": "b5ea120b9d44983fb7d203e62362aeff05afb64977818000e02896b27086c3a9"
+   }
+  ]
+ },
+ "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)": {
+  "donVi": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+  "phienBan": "clm-kiem-toan/2",
+  "ma": "8bda10b07479a02a893fc984f4441b802608d7fa71bcc94d340a7e834ed5607e",
+  "maNgan": "8bda-10b0-7479",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+    "sha256": "1bf6feebc15800ae3261f437cabe49907fa78838b909c10757ce2ad4b81ef0d9"
    }
   ]
  },
@@ -630,9 +673,9 @@
  "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)": {
   "donVi": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
   "phienBan": "clm-kiem-toan/2",
-  "ma": "e7e04c61ed23333e9e2aa543818394c5b5be58561430729ae19762013b6cf95d",
-  "maNgan": "e7e0-4c61-ed23",
-  "soCau": 7,
+  "ma": "724d647287e0e2766c36cfb14b64f3b8ace7e0abcea3fd52203f69cb662d2561",
+  "maNgan": "724d-6472-87e0",
+  "soCau": 8,
   "banChup": [
    {
     "href": "/evidence/vneconomy_ptsc_chande_20250618.txt",
@@ -641,15 +684,36 @@
    {
     "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
     "sha256": "b88596f516176322170a10b73eafec8a1cd8f02f841159bd990b0b2bc176d351"
+   },
+   {
+    "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt",
+    "sha256": "296e7ec64721f861621505a9bad3602b02d1ff52b197e9ca1eba8b07509a0c62"
+   }
+  ]
+ },
+ "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)": {
+  "donVi": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+  "phienBan": "clm-kiem-toan/2",
+  "ma": "af3b6c45c083e0b83fee1b4bf23eb000356ddd99810c86a1e8b34cc90b3ee35e",
+  "maNgan": "af3b-6c45-c083",
+  "soCau": 6,
+  "banChup": [
+   {
+    "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+    "sha256": "a9d27418af974deb356b15e8c3d91bf638e422428c94d28a475ed73cdf9a3af1"
+   },
+   {
+    "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+    "sha256": "1682c321124c3ab5e6750e0968282ae26670af0cf0e5766179c30f70911ce19c"
    }
   ]
  },
  "Tổng công ty Thiết bị điện Đông Anh": {
   "donVi": "Tổng công ty Thiết bị điện Đông Anh",
   "phienBan": "clm-kiem-toan/2",
-  "ma": "9048a1554506db101ab298fb38e626c9489fdbff74717505085431b1b04ff68f",
-  "maNgan": "9048-a155-4506",
-  "soCau": 7,
+  "ma": "481d9ee7ec6bc7a4dc50336df060ab4ffd76ebbeeae6ff05d93094db563276a2",
+  "maNgan": "481d-9ee7-ec6b",
+  "soCau": 8,
   "banChup": [
    {
     "href": "/evidence/baochinhphu_eemc_mba500kv_20241216.txt",
@@ -662,6 +726,10 @@
    {
     "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
     "sha256": "a37d6ab6d4bdcc7bc0bf12b4ba2e6181e5267ebd777aff20a661c25307d08b93"
+   },
+   {
+    "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt",
+    "sha256": "34ec38b5dad4c0d48c145aec13a5e38768f067d49752f9385e67622425216d38"
    }
   ]
  },

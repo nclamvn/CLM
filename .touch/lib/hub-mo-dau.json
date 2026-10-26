@@ -1,27 +1,27 @@
 {
   "so": {
-    "donVi": 60,
-    "cauNguon": 378,
-    "tierA": 120,
-    "banChup": 106,
+    "donVi": 64,
+    "cauNguon": 407,
+    "tierA": 122,
+    "banChup": 114,
     "matchDaKy": 24,
     "tuChoi": 1,
     "nhuCau": 30,
     "ncCoCung": 28,
     "ncTrong": 2,
-    "capCungCau": 67,
-    "cauThat": 54,
-    "benDatHang": 16
+    "capCungCau": 71,
+    "cauThat": 82,
+    "benDatHang": 29
   },
   "chuoiCong": {
     "xanh": 132,
     "tong": 132,
     "dat": true,
-    "luc": "2026-10-26T01:36:55+0700",
+    "luc": "2026-10-26T08:53:44+0700",
     "nhanh": false
   },
   "diemYeu": {
-    "chuaDinhDanh": 60,
+    "chuaDinhDanh": 64,
     "quaHanChuaLyDo": 33,
     "giuNguonCu": 68,
     "deXuatChoDuyet": 2
@@ -35,17 +35,17 @@
     {
       "href": "/dashboard/thoi-cuoc",
       "ten": "Dòng thời cuộc",
-      "su": "93 sự kiện có nguồn, từ 2012 đến nay"
+      "su": "101 sự kiện có nguồn, từ 2012 đến nay"
     },
     {
       "href": "/dashboard/do-thi",
       "ten": "Đồ thị cung cầu",
-      "su": "0 giao cắt trên 83 cạnh cung cầu"
+      "su": "0 giao cắt trên 87 cạnh cung cầu"
     },
     {
       "href": "/dashboard/don-vi",
       "ten": "Hồ sơ đơn vị",
-      "su": "60 hồ sơ, không điểm tổng hợp"
+      "su": "64 hồ sơ, không điểm tổng hợp"
     },
     {
       "href": "/dashboard/matching",
@@ -55,14 +55,14 @@
     {
       "href": "/dashboard/registry",
       "ten": "Sổ nguồn",
-      "su": "378 câu nguồn, 120 câu hạng A"
+      "su": "407 câu nguồn, 122 câu hạng A"
     }
   ],
   "nhom": [
     {
       "so": 1,
       "nhan": "Công nghệ số",
-      "soDv": 9,
+      "soDv": 10,
       "soNc": 5,
       "coCung": 5,
       "daKy": 4,
@@ -116,7 +116,7 @@
     {
       "so": 7,
       "nhan": "An ninh mạng và lượng tử",
-      "soDv": 4,
+      "soDv": 5,
       "soNc": 2,
       "coCung": 2,
       "daKy": 0,
@@ -125,7 +125,7 @@
     {
       "so": 8,
       "nhan": "Biển, đại dương, lòng đất",
-      "soDv": 3,
+      "soDv": 5,
       "soNc": 2,
       "coCung": 2,
       "daKy": 0,
@@ -155,7 +155,7 @@
       "k": "dinhDanh",
       "nhan": "Đơn vị đã định danh pháp nhân",
       "tu": 0,
-      "mau": 60
+      "mau": 64
     },
     {
       "k": "coCung",
@@ -172,19 +172,19 @@
     {
       "k": "hangA",
       "nhan": "Câu nguồn hạng A (văn bản chính thức)",
-      "tu": 120,
-      "mau": 378
+      "tu": 122,
+      "mau": 407
     },
     {
       "k": "conHan",
       "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
-      "tu": 345,
-      "mau": 378
+      "tu": 374,
+      "mau": 407
     }
   ],
   "viecTiep": [
     {
-      "so": 60,
+      "so": 64,
       "viec": "đơn vị chưa định danh pháp nhân",
       "cach": "tra mã số trên cổng đăng ký doanh nghiệp quốc gia; 12 đơn vị đã có mã tự khai để đối chiếu",
       "href": "/dashboard/don-vi"
@@ -214,5 +214,5 @@
       "href": "/dashboard/thoi-cuoc"
     }
   ],
-  "mocNgay": "2026-10-25"
+  "mocNgay": "2026-10-26"
 }

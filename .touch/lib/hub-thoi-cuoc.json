@@ -1,15 +1,15 @@
 {
   "meta": {
-    "mocNgay": "2026-10-25",
+    "mocNgay": "2026-10-26",
     "tu": "2012-05-02",
     "den": "2026-09-30",
     "theoLan": {
       "chinh_sach": 5,
-      "don_vi": 61,
+      "don_vi": 69,
       "quyet_dinh": 25,
       "de_xuat": 2
     },
-    "baiMoiNhat": "2026-08-20"
+    "baiMoiNhat": "2026-09-28"
   },
   "suKien": [
     {
@@ -1245,6 +1245,36 @@
       "href": "/evidence/mst_gov_ai_diemsang_chuplai_20251124.txt"
     },
     {
+      "id": "SK-DV-nhandan_viettel_solutions_ai_giao_thong_20251125",
+      "ngay": "2025-11-25",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "tier": "B",
+          "span": null
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions"
+        }
+      ],
+      "nhuCau": [
+        "P01"
+      ],
+      "nhom": [
+        "1"
+      ],
+      "soCau": 4,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt"
+    },
+    {
       "id": "SK-DV-mst_nam_agaricus_che_bien_sau_20251211",
       "ngay": "2025-12-11",
       "lan": "don_vi",
@@ -1719,6 +1749,36 @@
       "href": "/evidence/luatvietnam_qd21_danhmuc_20260718.txt"
     },
     {
+      "id": "SK-DV-nhandan_safegate_giai_phap_an_ninh_mang_20260512",
+      "ngay": "2026-05-12",
+      "lan": "don_vi",
+      "tieuDe": "Công ty An ninh mạng thông minh SCS: SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp",
+      "nguon": [
+        {
+          "ten": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "tier": "B",
+          "span": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp. Giải pháp được xếp vào nhóm công nghệ, sản phẩm chiến lược quốc gia theo Quyết định 21/2026/QĐ-TTg, phù hợp với định hướng phát triển công nghiệp an ninh mạng tại Nghị quyết 57, đồng thời được cấp chứng nhận bản quyền tác giả, khẳng định năng lực nghiên cứu và làm chủ công nghệ của đội ngũ kỹ sư Việt Nam."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty An ninh mạng thông minh SCS",
+          "slug": "cong-ty-an-ninh-mang-thong-minh-scs"
+        }
+      ],
+      "nhuCau": [
+        "P09"
+      ],
+      "nhom": [
+        "7"
+      ],
+      "soCau": 6,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt"
+    },
+    {
       "id": "SK-DV-congthuong_vien_hoa_hoc_cn_xuc_tac_di_the_20260525",
       "ngay": "2026-05-25",
       "lan": "don_vi",
@@ -1795,6 +1855,62 @@
       "soCau": 1,
       "trangThai": "da_kiem",
       "href": "/evidence/vjst_fpt_tokyo_20260615.txt"
+    },
+    {
+      "id": "SK-DV-tuoitre_dong_tau_song_cam_rem_ocean_20260623",
+      "ngay": "2026-06-23",
+      "lan": "don_vi",
+      "tieuDe": "Công ty cổ phần Đóng tàu Sông Cấm: tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng)",
+      "nguon": [
+        {
+          "ten": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "tier": "B",
+          "span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "slug": "cong-ty-co-phan-dong-tau-song-cam"
+        }
+      ],
+      "nhuCau": [
+        "P26"
+      ],
+      "nhom": [
+        "8"
+      ],
+      "soCau": 7,
+      "trangThai": "da_kiem",
+      "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt"
+    },
+    {
+      "id": "SK-DV-vietnamplus_viettel_its_globee_20260630",
+      "ngay": "2026-06-30",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions): Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại",
+      "nguon": [
+        {
+          "ten": "vietnamplus.vn",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "tier": "B",
+          "span": "Ở lĩnh vực giao thông thông minh, Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+          "slug": "tong-cong-ty-giai-phap-doanh-nghiep-viettel-viettel-solutions"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 2,
+      "trangThai": "da_kiem",
+      "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt"
     },
     {
       "id": "SK-CS-05",
@@ -1934,6 +2050,32 @@
       "soCau": 5,
       "trangThai": "da_kiem",
       "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt"
+    },
+    {
+      "id": "SK-DV-petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811",
+      "ngay": "2026-08-11",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC): lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi",
+      "nguon": [
+        {
+          "ten": "petrovietnam.petrotimes.vn",
+          "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt",
+          "tier": "B",
+          "span": "Trong hệ sinh thái Petrovietnam, Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) là lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi, trực tiếp triển khai chủ yếu thông qua Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C) cùng các đơn vị thành viên trong chuỗi dịch vụ."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+          "slug": "tong-cong-ty-co-phan-dich-vu-ky-thuat-dau-khi-viet-nam-ptsc"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 1,
+      "trangThai": "da_kiem",
+      "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt"
     },
     {
       "id": "SK-KY-MATCH-0002",
@@ -2174,6 +2316,32 @@
       "href": null
     },
     {
+      "id": "SK-DV-mst_viettel_threat_intelligence_20260819",
+      "ngay": "2026-08-19",
+      "lan": "don_vi",
+      "tieuDe": "Công ty An ninh mạng Viettel: hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm",
+      "nguon": [
+        {
+          "ten": "mst.gov.vn",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "tier": "A",
+          "span": "Trong nửa đầu năm 2026, hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm."
+        }
+      ],
+      "tier": "A",
+      "donVi": [
+        {
+          "ten": "Công ty An ninh mạng Viettel",
+          "slug": "cong-ty-an-ninh-mang-viettel"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 2,
+      "trangThai": "da_kiem",
+      "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt"
+    },
+    {
       "id": "SK-DV-cafef_vinmotion_minimotion_20260820",
       "ngay": "2026-08-20",
       "lan": "don_vi",
@@ -2252,6 +2420,62 @@
       "nguoi": "Lam Nguyen",
       "matchId": "MATCH-0014",
       "href": null
+    },
+    {
+      "id": "SK-DV-nguoiquansat_ptsc_mc_baltica2_20260913",
+      "ngay": "2026-09-13",
+      "lan": "don_vi",
+      "tieuDe": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C): PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam",
+      "nguon": [
+        {
+          "ten": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "tier": "B",
+          "span": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "slug": "cong-ty-tnhh-mtv-dich-vu-co-khi-hang-hai-ptsc-ptsc-m-c"
+        }
+      ],
+      "nhuCau": [
+        "P26"
+      ],
+      "nhom": [
+        "8"
+      ],
+      "soCau": 6,
+      "trangThai": "da_kiem",
+      "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt"
+    },
+    {
+      "id": "SK-DV-daibieunhandan_eemc_khang_bu_ngang_500kv_20260928",
+      "ngay": "2026-09-28",
+      "lan": "don_vi",
+      "tieuDe": "Tổng công ty Thiết bị điện Đông Anh: Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam",
+      "nguon": [
+        {
+          "ten": "daibieunhandan.vn",
+          "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt",
+          "tier": "B",
+          "span": "Đến nay, Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam."
+        }
+      ],
+      "tier": "B",
+      "donVi": [
+        {
+          "ten": "Tổng công ty Thiết bị điện Đông Anh",
+          "slug": "tong-cong-ty-thiet-bi-dien-dong-anh"
+        }
+      ],
+      "nhuCau": [],
+      "nhom": [],
+      "soCau": 1,
+      "trangThai": "da_kiem",
+      "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt"
     },
     {
       "id": "SK-DX-HC-39613d1b6bed",
@@ -3778,7 +4002,7 @@
     {
       "thang": "2025-11",
       "chinh_sach": 0,
-      "don_vi": 4,
+      "don_vi": 5,
       "quyet_dinh": 0,
       "de_xuat": 0
     },
@@ -3820,14 +4044,14 @@
     {
       "thang": "2026-05",
       "chinh_sach": 0,
-      "don_vi": 1,
+      "don_vi": 2,
       "quyet_dinh": 0,
       "de_xuat": 0
     },
     {
       "thang": "2026-06",
       "chinh_sach": 0,
-      "don_vi": 2,
+      "don_vi": 4,
       "quyet_dinh": 0,
       "de_xuat": 0
     },
@@ -3841,14 +4065,14 @@
     {
       "thang": "2026-08",
       "chinh_sach": 0,
-      "don_vi": 2,
+      "don_vi": 4,
       "quyet_dinh": 11,
       "de_xuat": 0
     },
     {
       "thang": "2026-09",
       "chinh_sach": 0,
-      "don_vi": 0,
+      "don_vi": 2,
       "quyet_dinh": 14,
       "de_xuat": 2
     },

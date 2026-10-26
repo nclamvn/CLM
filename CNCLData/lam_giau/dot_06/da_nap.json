@@ -1,0 +1,13 @@
+{
+ "ngay_nap": "2026-10-26",
+ "nguoi_duyet": "Lam Nguyen",
+ "so_claim": 21,
+ "don_vi": [
+  "Công ty An ninh mạng thông minh SCS",
+  "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+  "Công ty cổ phần Đóng tàu Sông Cấm",
+  "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+  "Tổng công ty Thiết bị điện Đông Anh"
+ ],
+ "registry": "domains/don_vi_cncl/claims.jsonl"
+}

@@ -63,10 +63,18 @@
    "loaiTen": "Bên cung (năng lực đơn vị)",
    "deXuat": 11,
    "honestNull": 46,
-   "doiChieu": 0,
-   "duyet": null,
-   "nap": null,
-   "trangThai": "cho_duyet"
+   "doiChieu": 3,
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-10-26",
+    "loi": "duyệt theo khuyến nghị cả 3 lô",
+    "soLoai": 3
+   },
+   "nap": {
+    "ngay": "2026-10-26",
+    "soDong": 8
+   },
+   "trangThai": "da_nap"
   },
   {
    "dot": "dot_05",
@@ -75,9 +83,17 @@
    "deXuat": 221,
    "honestNull": 53,
    "doiChieu": 0,
-   "duyet": null,
-   "nap": null,
-   "trangThai": "cho_duyet"
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-10-26",
+    "loi": "duyệt theo khuyến nghị cả 3 lô",
+    "soLoai": 0
+   },
+   "nap": {
+    "ngay": "2026-10-26",
+    "soDong": 166
+   },
+   "trangThai": "da_nap"
   },
   {
    "dot": "dot_06",
@@ -85,10 +101,18 @@
    "loaiTen": "Bên cung (năng lực đơn vị)",
    "deXuat": 67,
    "honestNull": 75,
-   "doiChieu": 0,
-   "duyet": null,
-   "nap": null,
-   "trangThai": "cho_duyet"
+   "doiChieu": 5,
+   "duyet": {
+    "nguoi": "Lam Nguyen",
+    "ngay": "2026-10-26",
+    "loi": "duyệt theo khuyến nghị cả 3 lô",
+    "soLoai": 46
+   },
+   "nap": {
+    "ngay": "2026-10-26",
+    "soDong": 21
+   },
+   "trangThai": "da_nap"
   }
  ]
 }

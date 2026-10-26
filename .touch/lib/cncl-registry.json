@@ -1,20 +1,20 @@
 {
   "meta": {
-    "units": 60,
-    "claims": 378,
+    "units": 64,
+    "claims": 407,
     "needs": 30,
-    "sources": 61,
-    "snapshots": 139,
-    "tierA": 120,
-    "tierB": 190,
+    "sources": 64,
+    "snapshots": 168,
+    "tierA": 122,
+    "tierB": 217,
     "tierC": 68,
-    "banChupCung": 106,
+    "banChupCung": 114,
     "nhomPhu": 10,
-    "generatedAt": "2026-10-25",
+    "generatedAt": "2026-10-26",
     "frame": "QĐ 21/2026/QĐ-TTg",
-    "gate": "chuỗi cổng 2026-10-26 01:36: 132/132 xanh",
+    "gate": "chuỗi cổng 2026-10-26 08:53: 132/132 xanh",
     "chuoiCong": {
-      "luc": "2026-10-26T01:36:55+0700",
+      "luc": "2026-10-26T08:53:44+0700",
       "cheDo": "day_du",
       "tong": 132,
       "xanh": 132,
@@ -345,6 +345,95 @@
       ]
     },
     {
+      "name": "Công ty An ninh mạng thông minh SCS",
+      "loaiHinh": "DN",
+      "loaiHinhLabel": "Doanh nghiệp",
+      "nhoms": [
+        "7"
+      ],
+      "nhomLabels": [
+        "Nhóm 7 · An ninh mạng và lượng tử"
+      ],
+      "sanPham": [
+        "9"
+      ],
+      "capability": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp",
+      "capability2": "",
+      "tenPhapNhan": "",
+      "maTuKhai": "",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "sources": [
+        {
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt"
+        }
+      ],
+      "tim": "công ty an ninh mạng thông minh scs dn doanh nghiệp safegate secure gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp nhóm 7 an ninh mạng và lượng tử sp 9",
+      "evidence": [
+        {
+          "field": "ten_don_vi",
+          "value": "Công ty An ninh mạng thông minh SCS",
+          "span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        },
+        {
+          "field": "loai_hinh",
+          "value": "DN",
+          "span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "CHUAN HOA CO CHU DICH: span ghi \"Công ty An ninh mạng thông minh SCS\", doanh nghiệp nên chuẩn hóa thành DN. | LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        },
+        {
+          "field": "nhom_cncl",
+          "value": "7",
+          "span": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp. Giải pháp được xếp vào nhóm công nghệ, sản phẩm chiến lược quốc gia theo Quyết định 21/2026/QĐ-TTg, phù hợp với định hướng phát triển công nghiệp an ninh mạng tại Nghị quyết 57, đồng thời được cấp chứng nhận bản quyền tác giả, khẳng định năng lực nghiên cứu và làm chủ công nghệ của đội ngũ kỹ sư Việt Nam.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "CHUAN HOA CO CHU DICH: sản phẩm an ninh mạng thuộc nhóm công nghệ chiến lược QĐ 21/2026, nhu cầu P09 thuộc nhóm 7. | LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        },
+        {
+          "field": "san_pham_lien_quan",
+          "value": "9",
+          "span": "Nhóm 5 giải pháp của SafeGate hướng tới bảo vệ các tổ chức, doanh nghiệp và hệ thống thông tin trọng yếu gồm có: SafeGate Smart Firewall - Giải pháp tường lửa thông minh; SafeGate Secure Gateway - Cổng quản lý kết nối, an ninh mạng; SafeGate DLP - Giải pháp chống thất thoát dữ liệu, đảm bảo tuân thủ trong lĩnh vực dữ liệu, ngăn chặn rò rỉ dữ liệu nội bộ; SafeGate Data Diode - Giải pháp truyền dữ liệu 1 chiều; SafeGate Z-Entry - Giải pháp kết nối từ xa an toàn theo kiến trúc ZeroTrust.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "CHUAN HOA CO CHU DICH: giải pháp bảo vệ hệ thống thông tin trọng yếu khớp sản phẩm P09 (bảo mật, an ninh mạng cho hạ tầng quan trọng), ghi số 9. | LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        },
+        {
+          "field": "nang_luc_mo_ta",
+          "value": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp",
+          "span": "SafeGate Secure Gateway là giải pháp quản lý, giám sát hệ thống mạng và ngăn chặn các mối đe dọa an ninh mạng, cung cấp khả năng bảo vệ toàn diện cho hạ tầng mạng của tổ chức và doanh nghiệp. Giải pháp được xếp vào nhóm công nghệ, sản phẩm chiến lược quốc gia theo Quyết định 21/2026/QĐ-TTg, phù hợp với định hướng phát triển công nghiệp an ninh mạng tại Nghị quyết 57, đồng thời được cấp chứng nhận bản quyền tác giả, khẳng định năng lực nghiên cứu và làm chủ công nghệ của đội ngũ kỹ sư Việt Nam.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        },
+        {
+          "field": "bang_chung_nang_luc",
+          "value": "chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu",
+          "span": "Ngày 12/5, Công ty An ninh mạng thông minh SCS (thương hiệu SafeGate) tổ chức chương trình “Phát triển các giải pháp an ninh mạng chiến lược”, chính thức công bố nhóm sản phẩm an ninh mạng dành cho tổ chức, doanh nghiệp và các hệ thống thông tin trọng yếu.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nhandan_safegate_giai_phap_an_ninh_mang_20260512.txt",
+          "note": "LAM GIAU dot_06 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tin ra mắt chính thức ngày 12/5/2026 nhóm 5 sản phẩm an ninh mạng do kỹ sư của đơn vị phát triển (tường lửa, cổng an ninh, DLP, data diode phần cứng, ZTNA); Secure Gateway được xếp vào nhóm sản phẩm chiến lược theo QĐ 21/2026 và có chứng nhận bản quyền. Người duyệt lưu ý: bài chưa nêu tên khách hàng hạ tầng quan trọng cụ thể; thương hiệu là SafeGate, tên đơn vị lấy đúng như bài."
+        }
+      ]
+    },
+    {
       "name": "Công ty An ninh mạng Viettel",
       "loaiHinh": "",
       "loaiHinhLabel": "",
@@ -358,7 +447,7 @@
         "09"
       ],
       "capability": "100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty",
-      "capability2": "",
+      "capability2": "Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công",
       "tenPhapNhan": "",
       "maTuKhai": "",
       "bestTier": "A",
@@ -366,10 +455,10 @@
       "sources": [
         {
           "source": "mst.gov.vn",
-          "href": "/evidence/mst_viettelcybersecurity_20190412.txt"
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt"
         }
       ],
-      "tim": "công ty an ninh mạng viettel 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty nhóm 7 an ninh mạng và lượng tử sp 09",
+      "tim": "công ty an ninh mạng viettel 100% các sản phẩm này đều được nghiên cứu, phát triển hoàn toàn bởi đội ngũ nhân sự của công ty viettel threat intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công nhóm 7 an ninh mạng và lượng tử sp 09",
       "evidence": [
         {
           "field": "ten_don_vi",
@@ -410,6 +499,26 @@
           "extraction": "normalized",
           "href": "/evidence/mst_viettelcybersecurity_20190412.txt",
           "note": "TIP-2F Phan B, lam giau nen san pham. Span noi san pham an ninh mang do doi ngu tu nghien cuu phat trien -> SP09 Giai phap an ninh mang cho ha tang quan trong. Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+        },
+        {
+          "field": "nang_luc_mo_ta_2",
+          "value": "Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công",
+          "span": "Trong khi tường lửa và phần mềm diệt virus chủ yếu bảo vệ bên trong, Viettel Threat Intelligence thu thập, phân tích dữ liệu từ nhiều nguồn để phát hiện tài khoản bị lộ, dữ liệu bị rao bán, tên miền giả mạo và dấu hiệu chuẩn bị tấn công.",
+          "source": "mst.gov.vn",
+          "tier": "A",
+          "extraction": "verbatim",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "note": "LAM GIAU dot_04 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Công cụ phân tích và cảnh báo sớm nguy cơ (threat intelligence) đang vận hành, đúng đối tượng 'công cụ phân tích, giám sát và cảnh báo sớm' của btl-14. Nguồn gọi tên thương mại 'Viettel Cyber Security', ứng với đơn vị đã có trong registry là Công ty An ninh mạng Viettel; người duyệt xác nhận hai tên là một pháp nhân."
+        },
+        {
+          "field": "bang_chung_nang_luc",
+          "value": "hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm",
+          "span": "Trong nửa đầu năm 2026, hệ thống Viettel Threat Intelligence phát hiện hơn 16,5 triệu bản ghi tài khoản tại Việt Nam bị đánh cắp cùng 302 vụ lộ, lọt dữ liệu trên các diễn đàn ngầm.",
+          "source": "mst.gov.vn",
+          "tier": "A",
+          "extraction": "verbatim",
+          "href": "/evidence/mst_viettel_threat_intelligence_20260819.txt",
+          "note": "LAM GIAU dot_04 · P09 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Kết quả vận hành thật trong nửa đầu năm 2026, cho thấy hệ thống đã chạy chứ không phải kế hoạch. Số liệu do chính Viettel Cyber Security công bố, cổng Bộ KH&CN đăng lại; không có kiểm chứng độc lập con số."
         }
       ]
     },
@@ -713,6 +822,105 @@
           "extraction": "verbatim",
           "href": "/evidence/ncsgroup_vn_chinh_sach_du_lieu_20261001.txt",
           "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang chủ có chỗ viết thiếu chữ 'Công nghệ' (Công ty Cổ phần An ninh mạng Quốc gia Việt Nam), người tra cổng nên tìm cả hai dạng. Website không công bố mã số."
+        }
+      ]
+    },
+    {
+      "name": "Công ty cổ phần Đóng tàu Sông Cấm",
+      "loaiHinh": "DN",
+      "loaiHinhLabel": "Doanh nghiệp",
+      "nhoms": [
+        "8"
+      ],
+      "nhomLabels": [
+        "Nhóm 8 · Biển, đại dương, lòng đất"
+      ],
+      "sanPham": [
+        "26"
+      ],
+      "capability": "tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng)",
+      "capability2": "",
+      "tenPhapNhan": "",
+      "maTuKhai": "",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "sources": [
+        {
+          "source": "tuoitre.vn",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt"
+        }
+      ],
+      "tim": "công ty cổ phần đóng tàu sông cấm dn doanh nghiệp tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (escv) - vừa được bàn giao từ xưởng đóng tàu sông cấm (hải phòng) nhóm 8 biển, đại dương, lòng đất sp 26",
+      "evidence": [
+        {
+          "field": "ten_don_vi",
+          "value": "Công ty cổ phần Đóng tàu Sông Cấm",
+          "span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "loai_hinh",
+          "value": "DN",
+          "span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "CHUAN HOA CO CHU DICH: nguon goi 'Cong ty co phan' nen xep DN. | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "nhom_cncl",
+          "value": "8",
+          "span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "CHUAN HOA CO CHU DICH: dong tau thi cong cong trinh ngam phuc vu nang luong ngoai khoi thuoc nhom 8 theo QD 21/2026, san pham P26. | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "san_pham_lien_quan",
+          "value": "26",
+          "span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "CHUAN HOA CO CHU DICH: phuong tien thi cong cong trinh bien phuc vu nang luong ngoai khoi ung voi P26. | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "nang_luc_mo_ta",
+          "value": "tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng)",
+          "span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "bang_chung_nang_luc",
+          "value": "các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm",
+          "span": "Các hình ảnh và video từ Rem Offshore và DeepOcean cho thấy các tàu REM Ocean và REM Pioneer được hạ thủy tại Công ty cổ phần Đóng tàu Sông Cấm.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
+        },
+        {
+          "field": "location",
+          "value": "Hải Phòng",
+          "span": "REM Ocean - tàu thi công công trình ngầm phục vụ ngành năng lượng ngoài khơi (ESCV) - vừa được bàn giao từ Xưởng đóng tàu Sông Cấm (Hải Phòng) và đang trên hải trình đến Na Uy.",
+          "source": "tuoitre.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/tuoitre_dong_tau_song_cam_rem_ocean_20260623.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (23/06/2026) ghi tàu REM Ocean (tàu thi công công trình ngầm phục vụ năng lượng ngoài khơi) đã được đóng, hạ thủy và bàn giao từ nhà máy Sông Cấm, tàu thứ hai sau REM Pioneer, là sản phẩm đã giao. Người duyệt cần biết: nhà máy đóng thân tàu theo thiết kế của đối tác (Skipsteknisk), phần hoàn thiện làm tại Na Uy, nên phạm vi là chế tạo thân tàu; cần định danh pháp nhân, tách với liên doanh Damen Song Cam nếu có."
         }
       ]
     },
@@ -1566,6 +1774,95 @@
           "extraction": "normalized",
           "href": "/evidence/baochinhphu_nhomthoi_daknong_20260726.txt",
           "note": "TIP-2F Phan B, lam giau nen san pham. Span noi che bien sau bauxite thanh nhom thoi bang dien phan -> SP25 (che bien khoang san). Anh xa ma san pham theo QD 21/2026, SUY TU SPAN DA QUA CONG, khong cao them nguon."
+        }
+      ]
+    },
+    {
+      "name": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+      "loaiHinh": "DN",
+      "loaiHinhLabel": "Doanh nghiệp",
+      "nhoms": [
+        "8"
+      ],
+      "nhomLabels": [
+        "Nhóm 8 · Biển, đại dương, lòng đất"
+      ],
+      "sanPham": [
+        "26"
+      ],
+      "capability": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam",
+      "capability2": "",
+      "tenPhapNhan": "",
+      "maTuKhai": "",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "sources": [
+        {
+          "source": "nguoiquansat.vn",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt"
+        }
+      ],
+      "tim": "công ty tnhh mtv dịch vụ cơ khí hàng hải ptsc (ptsc m&c) dn doanh nghiệp ptsc m&c vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc dự án baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo việt nam nhóm 8 biển, đại dương, lòng đất sp 26",
+      "evidence": [
+        {
+          "field": "ten_don_vi",
+          "value": "Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)",
+          "span": "Ngày 12/9, Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C), trực thuộc Tổng CTCP Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC, HNX: [PVS](https://dulieu.nguoiquansat.vn/doanh-nghiep/PVS)), cùng các đối tác tổ chức Lễ hạ thủy và bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
+        },
+        {
+          "field": "loai_hinh",
+          "value": "DN",
+          "span": "Ngày 12/9, Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C), trực thuộc Tổng CTCP Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC, HNX: [PVS](https://dulieu.nguoiquansat.vn/doanh-nghiep/PVS)), cùng các đối tác tổ chức Lễ hạ thủy và bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "CHUAN HOA CO CHU DICH: nguon goi 'Cong ty TNHH MTV' nen xep DN. | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
+        },
+        {
+          "field": "nhom_cncl",
+          "value": "8",
+          "span": "Sự kiện đánh dấu lần đầu tiên các công trình điện gió ngoài khơi được chế tạo tại Việt Nam xuất khẩu sang châu Âu.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "CHUAN HOA CO CHU DICH: che tao cong trinh dien gio ngoai khoi (tram bien ap ngoai khoi) thuoc nhom 8 (bien, long dat) theo QD 21/2026, san pham P26. | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
+        },
+        {
+          "field": "san_pham_lien_quan",
+          "value": "26",
+          "span": "Sự kiện đánh dấu lần đầu tiên các công trình điện gió ngoài khơi được chế tạo tại Việt Nam xuất khẩu sang châu Âu.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "CHUAN HOA CO CHU DICH: cong trinh dien gio ngoai khoi ung voi P26 (cong trinh bien va nang luong ngoai khoi). | LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
+        },
+        {
+          "field": "nang_luc_mo_ta",
+          "value": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam",
+          "span": "PTSC M&C vừa hoàn thành hạ thủy, bàn giao 4 trạm biến áp ngoài khơi thuộc Dự án Baltica 2, mở dấu mốc mới cho ngành cơ khí và năng lượng tái tạo Việt Nam.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
+        },
+        {
+          "field": "bang_chung_nang_luc",
+          "value": "8 cấu kiện của dự án, gồm 4 khối thượng tầng trạm biến áp và 4 khung đỡ mô-đun, đã được hạ thủy thành công",
+          "span": "Trong chiến dịch hạ thủy kéo dài 43 ngày đêm liên tục, 8 cấu kiện của dự án, gồm 4 khối thượng tầng trạm biến áp và 4 khung đỡ mô-đun, đã được hạ thủy thành công.",
+          "source": "nguoiquansat.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nguoiquansat_ptsc_mc_baltica2_20260913.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Bài báo B (13/09/2026) ghi PTSC M&C đã chế tạo, hạ thủy và bàn giao 4 trạm biến áp ngoài khơi cùng 4 khung đỡ mô-đun (khoảng 16.000 tấn) cho dự án điện gió Baltica 2, là sản phẩm đã giao. Người duyệt cần biết: đây là công ty con có pháp nhân riêng của PTSC (PTSC đã có trong registry với năng lực 33 chân đế điện gió), hợp đồng EPC là liên danh với Semco Maritime (Đan Mạch) phụ trách hệ thống điện; span có từ tối thượng \"lần đầu tiên\" nên thu hẹp phạm vi."
         }
       ]
     },
@@ -3489,7 +3786,7 @@
         "26"
       ],
       "capability": "đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế Ørsted",
-      "capability2": "",
+      "capability2": "lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi",
       "tenPhapNhan": "Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
       "maTuKhai": "0100150577",
       "bestTier": "B",
@@ -3502,9 +3799,13 @@
         {
           "source": "ptsc.com.vn",
           "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt"
+        },
+        {
+          "source": "petrovietnam.petrotimes.vn",
+          "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt"
         }
       ],
-      "tim": "tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam (ptsc) tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam 0100150577 đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế ørsted nhóm 8 biển, đại dương, lòng đất sp 26",
+      "tim": "tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam (ptsc) tổng công ty cổ phần dịch vụ kỹ thuật dầu khí việt nam 0100150577 đã xuất sắc hoàn thành việc bàn giao 33 chân đế điện gió ngoài khơi cho đối tác quốc tế ørsted lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (epc) công trình dầu khí ngoài khơi nhóm 8 biển, đại dương, lòng đất sp 26",
       "evidence": [
         {
           "field": "ten_don_vi",
@@ -3575,6 +3876,109 @@
           "extraction": "verbatim",
           "href": "/evidence/ptsc_com_vn_thong_bao_dhdcd_2023_20261001.txt",
           "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Mã của pháp nhân mẹ, tự khai trong thông báo họp ĐHĐCĐ 2023. Site còn có mục 'Giấy CNĐKKD' (chưa mở) có thể dùng để đối chiếu thêm."
+        },
+        {
+          "field": "nang_luc_mo_ta_2",
+          "value": "lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi",
+          "span": "Trong hệ sinh thái Petrovietnam, Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC) là lực lượng chủ lực về tổng thầu thiết kế, mua sắm, chế tạo (EPC) công trình dầu khí ngoài khơi, trực tiếp triển khai chủ yếu thông qua Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C) cùng các đơn vị thành viên trong chuỗi dịch vụ.",
+          "source": "petrovietnam.petrotimes.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/petrotimes_petrovietnam_tong_thau_epc_ngoai_khoi_20260811.txt",
+          "note": "LAM GIAU dot_06 · P26 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Đơn vị đã có trong registry, ô nang_luc_mo_ta_2 còn trống: bài 11/08/2026 nêu năng lực tổng thầu EPC công trình dầu khí ngoài khơi, khác năng lực chân đế điện gió đã có. Người duyệt cần biết: câu nguồn nói PTSC triển khai chủ yếu qua PTSC M&C (đề xuất riêng trong lô này), không đề xuất bang_chung_nang_luc vì ô đó đã có giá trị."
+        }
+      ]
+    },
+    {
+      "name": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+      "loaiHinh": "DN",
+      "loaiHinhLabel": "Doanh nghiệp",
+      "nhoms": [
+        "1"
+      ],
+      "nhomLabels": [
+        "Nhóm 1 · Công nghệ số"
+      ],
+      "sanPham": [
+        "1"
+      ],
+      "capability": "Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại",
+      "capability2": "",
+      "tenPhapNhan": "",
+      "maTuKhai": "",
+      "bestTier": "B",
+      "favorsRtr": false,
+      "sources": [
+        {
+          "source": "nhandan.vn",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt"
+        },
+        {
+          "source": "vietnamplus.vn",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt"
+        }
+      ],
+      "tim": "tổng công ty giải pháp doanh nghiệp viettel (viettel solutions) dn doanh nghiệp hệ sinh thái viettel its thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (ai), iot, dữ liệu lớn (big data), gis và digital twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại nhóm 1 công nghệ số sp 1",
+      "evidence": [
+        {
+          "field": "ten_don_vi",
+          "value": "Viettel Solutions",
+          "span": "Hệ thống giao thông thông minh do Viettel Solutions phát triển.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "note": "LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Tên gọi theo nguồn là 'Viettel Solutions', đơn vị thành viên của Viettel; tên pháp nhân đầy đủ cần định danh từ cổng chính thức ở bước riêng. Đơn vị mới, không gộp vào Tập đoàn Viettel theo luật công ty con có tên riêng. Câu là chú thích ảnh của bài."
+        },
+        {
+          "field": "loai_hinh",
+          "value": "DN",
+          "span": "Là đơn vị tập trung vào phát triển ứng dụng hơn là nghiên cứu học thuật, Viettel Solutions hiểu rằng chìa khóa thành công nằm ở việc xây dựng một đội ngũ dám thay đổi từ tư duy, thói quen đến cách làm việc.",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "note": "CHUAN HOA CO CHU DICH: nguồn gọi Viettel Solutions là 'đơn vị tập trung vào phát triển ứng dụng' và cả bài nói về 'văn hóa doanh nghiệp' của đơn vị; chuẩn hoá thành loại hình DN. | LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Câu nguồn không ghi loại hình pháp lý; người duyệt xác nhận khi định danh pháp nhân."
+        },
+        {
+          "field": "nhom_cncl",
+          "value": "1",
+          "span": "Trên thực tế, AI đã hiện diện trong các sản phẩm của Viettel Solutions từ nhiều năm trước – từ hệ thống giao thông thông minh, giám sát vi phạm, nhận diện biển số xe, đến phân tích an ninh, đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông, xây dựng bản đồ lưu thông phù hợp với đặc thù đô thị Việt Nam…",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "note": "CHUAN HOA CO CHU DICH: AI chuyên ngành ứng dụng cho giao thông (đo mật độ giao thông bằng AI) thuộc sản phẩm P01, nhóm công nghệ 1 (Công nghệ số) theo bảng sản phẩm sang nhóm đã duyệt. | LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Nhóm 1 khớp nhu cầu P01."
+        },
+        {
+          "field": "san_pham_lien_quan",
+          "value": "1",
+          "span": "Trên thực tế, AI đã hiện diện trong các sản phẩm của Viettel Solutions từ nhiều năm trước – từ hệ thống giao thông thông minh, giám sát vi phạm, nhận diện biển số xe, đến phân tích an ninh, đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông, xây dựng bản đồ lưu thông phù hợp với đặc thù đô thị Việt Nam…",
+          "source": "nhandan.vn",
+          "tier": "B",
+          "extraction": "normalized",
+          "href": "/evidence/nhandan_viettel_solutions_ai_giao_thong_20251125.txt",
+          "note": "CHUAN HOA CO CHU DICH: 'đo mật độ giao thông bằng AI kết hợp dữ liệu viễn thông' là trí tuệ nhân tạo chuyên ngành giao thông, ứng với P01, mã sản phẩm 1. | LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Gắn P01 vì sản phẩm 30 mục không có mục riêng cho hệ thống giao thông thông minh; người duyệt có thể cân nhắc thêm P02 nếu có bằng chứng camera xử lý tại biên."
+        },
+        {
+          "field": "nang_luc_mo_ta",
+          "value": "Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại",
+          "span": "Ở lĩnh vực giao thông thông minh, Hệ sinh thái Viettel ITS thể hiện năng lực làm chủ các công nghệ cốt lõi như trí tuệ nhân tạo (AI), IoT, dữ liệu lớn (Big Data), GIS và Digital Twin trong xây dựng hệ sinh thái quản lý, giám sát và điều hành giao thông hiện đại.",
+          "source": "vietnamplus.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "note": "LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Thay nguồn ngày 24/10/2026: nguồn cũ nhandan 25/11/2025 đã quá 180 ngày, nạp vào là vay nợ độ tươi ngay lúc nạp. Câu mới (vietnamplus 30/06/2026) nói thẳng hệ sinh thái giao thông thông minh có AI, IoT, dữ liệu lớn, GIS, bản sao số cho quản lý, giám sát và điều hành giao thông: đúng đối tượng btl-01. Người duyệt cần biết: đây là lời của bài viết về giải thưởng, văn phong gần thông cáo; 'thể hiện năng lực làm chủ' là đánh giá của bài, chưa có tên địa phương triển khai."
+        },
+        {
+          "field": "bang_chung_nang_luc",
+          "value": "Viettel ITS – Hệ sinh thái Giao thông Thông minh do Viettel Solutions phát triển - được trao danh hiệu Giải Bạc tại hạng mục GovTech Product or Service",
+          "span": "Trong khi đó, Viettel ITS – Hệ sinh thái Giao thông Thông minh do Viettel Solutions phát triển - được trao danh hiệu Giải Bạc tại hạng mục GovTech Product or Service (Sản phẩm, dịch vụ công nghệ dành cho Chính phủ và khu vực công xuất sắc nhất).",
+          "source": "vietnamplus.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/vietnamplus_viettel_its_globee_20260630.txt",
+          "note": "LAM GIAU dot_04 · P01 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Thay nguồn ngày 24/10/2026 (nguồn cũ là chú thích ảnh nhandan 25/11/2025, đã quá 180 ngày). Sự kiện có mốc: Giải Bạc GovTech tại The Globee Awards for Technology 2026, công bố 30/06/2026. Người duyệt cần biết: giải thưởng do tổ chức tư nhân trao, hạng mục có nhiều đơn vị đoạt giải; đây là bằng chứng sản phẩm tồn tại và do Viettel Solutions phát triển, không phải bằng chứng hiệu quả triển khai."
         }
       ]
     },
@@ -3592,7 +3996,7 @@
         "20"
       ],
       "capability": "làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kV có công suất lớn nhất trên lưới điện truyền tải Việt Nam",
-      "capability2": "",
+      "capability2": "Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam",
       "tenPhapNhan": "Tổng công ty Thiết bị điện Đông Anh – Công ty cổ phần",
       "maTuKhai": "0100101322",
       "bestTier": "A",
@@ -3605,9 +4009,13 @@
         {
           "source": "eemc.com.vn",
           "href": "/evidence/eemc_com_vn_about_us_20261001.txt"
+        },
+        {
+          "source": "daibieunhandan.vn",
+          "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt"
         }
       ],
-      "tim": "tổng công ty thiết bị điện đông anh tổng công ty thiết bị điện đông anh – công ty cổ phần 0100101322 làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kv có công suất lớn nhất trên lưới điện truyền tải việt nam nhóm 5 năng lượng và vật liệu sp 20",
+      "tim": "tổng công ty thiết bị điện đông anh tổng công ty thiết bị điện đông anh – công ty cổ phần 0100101322 làm chủ công tác thiết kế, chế tạo thành công máy biến áp 500kv có công suất lớn nhất trên lưới điện truyền tải việt nam tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kv, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện việt nam nhóm 5 năng lượng và vật liệu sp 20",
       "evidence": [
         {
           "field": "ten_don_vi",
@@ -3678,6 +4086,16 @@
           "extraction": "verbatim",
           "href": "/evidence/eemc_com_vn_about_us_20261001.txt",
           "note": "LAM GIAU dot_02 · DINH DANH TU KHAI (khong tinh la da dinh danh) · duyet 2026-10-01 boi Lam Nguyen. Ly do de xuat: Trang tiếng Anh, thông tin đăng ký mới tới lần thay đổi thứ 14 (01/11/2017), có thể cũ; cùng trang ghi số ĐKKD cũ 0103008085 nay là 0100101322. Mã của tổng công ty, không dùng cho hai công ty TNHH MTV con."
+        },
+        {
+          "field": "nang_luc_mo_ta_2",
+          "value": "Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam",
+          "span": "Đến nay, Tổng công ty đã sản xuất trên 1.500 máy biến áp từ 110 đến 500kV, chiếm khoảng trên 50% số lượng máy biến áp đang vận hành trên lưới điện Việt Nam.",
+          "source": "daibieunhandan.vn",
+          "tier": "B",
+          "extraction": "verbatim",
+          "href": "/evidence/daibieunhandan_eemc_khang_bu_ngang_500kv_20260928.txt",
+          "note": "DU DIEU KIEN DA XET: chu 'van hanh' trong cau chi may bien ap dang van hanh tren luoi dien; nang luc duoc khang dinh la SAN XUAT tren 1.500 may bien ap 110 den 500 kV. | LAM GIAU dot_06 · P20 · duyet 2026-10-26 boi Lam Nguyen. Ly do de xuat: Đơn vị đã có, ô nang_luc_mo_ta_2 còn trống. Lời Tổng Giám đốc tại lễ khởi công 28/09/2026, nêu năng lực sản xuất đã hình thành (số máy đã sản xuất, thị phần lưới). Các claim hiện có của đơn vị dựa trên bài baochinhphu 16/12/2024, đã quá 180 ngày; dòng này là bài mới. Không đề xuất bang_chung_nang_luc vì ô đó đã có giá trị. Dự án cuộn kháng 500kV trong bài mới khởi công nên không dùng làm năng lực."
         }
       ]
     },

@@ -1,23 +1,23 @@
 {
  "ky": "Quý IV/2026",
- "mocNgay": "2026-10-25",
+ "mocNgay": "2026-10-26",
  "so": {
   "tong": 30,
   "daKy": 16,
   "coCung": 12,
   "trong": 2,
-  "mong": 12,
-  "donVi": 60,
-  "cauNguon": 378,
+  "mong": 11,
+  "donVi": 64,
+  "cauNguon": 407,
   "matchDaKy": 24
  },
  "tomTat": [
   "16/30 sản phẩm công nghệ chiến lược (53%) đã có ít nhất một cặp cung cầu được người gác cổng ký, dựa trên câu nguồn ở cả hai phía.",
   "12 sản phẩm có đơn vị cung có câu nguồn nhưng chưa có cặp nào được ký.",
   "2 sản phẩm chưa có đơn vị cung nào trong sổ nguồn: P21 Hệ thống thu giữ, sử dụng và lưu trữ carbon; P27 Lò phản ứng hạt nhân mô-đun nhỏ (SMR).",
-  "12 sản phẩm chỉ dựa vào đúng một đơn vị cung, tức một điểm hỏng là mất năng lực.",
-  "Từ 01/09/2026 đến 25/10/2026, sổ nguồn tăng từ 44 lên 60 đơn vị và từ 11 lên 24 cặp đã ký.",
-  "54 nhu cầu đặt hàng công nghệ có nguồn từ 16 bên đặt hàng; 41 nhu cầu đã có đơn vị trong sổ nguồn có câu nguồn liên quan (gợi ý, chưa ký), 13 nhu cầu chưa có bên cung nào."
+  "11 sản phẩm chỉ dựa vào đúng một đơn vị cung, tức một điểm hỏng là mất năng lực.",
+  "Từ 01/09/2026 đến 26/10/2026, sổ nguồn tăng từ 44 lên 60 đơn vị và từ 11 lên 24 cặp đã ký.",
+  "82 nhu cầu đặt hàng công nghệ có nguồn từ 29 bên đặt hàng; 60 nhu cầu đã có đơn vị trong sổ nguồn có câu nguồn liên quan (gợi ý, chưa ký), 22 nhu cầu chưa có bên cung nào."
  ],
  "sanPham": [
   {
@@ -26,7 +26,7 @@
    "nhom": 1,
    "nhomTen": "Công nghệ số",
    "trangThai": "da_ky",
-   "soCung": 6
+   "soCung": 7
   },
   {
    "ma": "02",
@@ -90,7 +90,7 @@
    "nhom": 7,
    "nhomTen": "An ninh mạng và lượng tử",
    "trangThai": "co_cung",
-   "soCung": 3
+   "soCung": 4
   },
   {
    "ma": "10",
@@ -226,7 +226,7 @@
    "nhom": 8,
    "nhomTen": "Biển, đại dương, lòng đất",
    "trangThai": "co_cung",
-   "soCung": 1
+   "soCung": 3
   },
   {
    "ma": "27",
@@ -263,16 +263,6 @@
  ],
  "nhom": [
   {
-   "so": 8,
-   "ten": "Biển, đại dương, lòng đất",
-   "soNc": 2,
-   "daKy": 0,
-   "coCung": 2,
-   "trong": 0,
-   "soDv": 3,
-   "chuaKy": 2
-  },
-  {
    "so": 10,
    "ten": "Đường sắt tốc độ cao",
    "soNc": 2,
@@ -289,7 +279,17 @@
    "daKy": 0,
    "coCung": 2,
    "trong": 0,
-   "soDv": 4,
+   "soDv": 5,
+   "chuaKy": 2
+  },
+  {
+   "so": 8,
+   "ten": "Biển, đại dương, lòng đất",
+   "soNc": 2,
+   "daKy": 0,
+   "coCung": 2,
+   "trong": 0,
+   "soDv": 5,
    "chuaKy": 2
   },
   {
@@ -319,7 +319,7 @@
    "daKy": 4,
    "coCung": 5,
    "trong": 0,
-   "soDv": 9,
+   "soDv": 10,
    "chuaKy": 1
   },
   {
@@ -373,7 +373,6 @@
   "16",
   "17",
   "24",
-  "26",
   "28",
   "30"
  ],
@@ -382,7 +381,7 @@
    "k": "dinhDanh",
    "nhan": "Đơn vị đã định danh pháp nhân",
    "tu": 0,
-   "mau": 60
+   "mau": 64
   },
   {
    "k": "coCung",
@@ -399,19 +398,19 @@
   {
    "k": "hangA",
    "nhan": "Câu nguồn hạng A (văn bản chính thức)",
-   "tu": 120,
-   "mau": 378
+   "tu": 122,
+   "mau": 407
   },
   {
    "k": "conHan",
    "nhan": "Câu nguồn còn hạn hoặc có lý do giữ",
-   "tu": 345,
-   "mau": 378
+   "tu": 374,
+   "mau": 407
   }
  ],
  "viecTiep": [
   {
-   "so": 60,
+   "so": 64,
    "viec": "đơn vị chưa định danh pháp nhân",
    "cach": "tra mã số trên cổng đăng ký doanh nghiệp quốc gia; 12 đơn vị đã có mã tự khai để đối chiếu",
    "href": "/dashboard/don-vi"
@@ -442,19 +441,19 @@
   }
  ],
  "cauThat": {
-  "soNhuCau": 54,
-  "soBenDatHang": 16,
-  "coGoiY": 41,
+  "soNhuCau": 82,
+  "soBenDatHang": 29,
+  "coGoiY": 60,
   "theoLoai": [
    {
     "loai": "nhiem_vu_khcn",
     "ten": "Nhiệm vụ KH&CN đặt hàng",
-    "so": 10
+    "so": 25
    },
    {
     "loai": "bai_toan_lon",
     "ten": "Bài toán lớn",
-    "so": 19
+    "so": 24
    },
    {
     "loai": "chuong_trinh",
@@ -464,10 +463,52 @@
    {
     "loai": "du_an_goi_thau",
     "ten": "Dự án, gói thầu",
-    "so": 5
+    "so": 13
    }
   ],
   "chuaCoBenCung": [
+   {
+    "ma": "bnx-01",
+    "ten": "Nghiên cứu làm chủ công nghệ sản xuất ray, phụ kiện, bộ ghi đường sắt đô thị và ray, phụ kiện đường sắt tốc độ cao tại Việt Nam",
+    "benDatHang": "Bộ Xây dựng",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "30"
+   },
+   {
+    "ma": "bnx-02",
+    "ten": "Nghiên cứu phát triển các kết cấu đường ray cho đường sắt tốc độ cao tại Việt Nam",
+    "benDatHang": "Bộ Xây dựng",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "29"
+   },
+   {
+    "ma": "bnx-03",
+    "ten": "Nghiên cứu, phát triển và làm chủ công nghệ xử lý đất yếu nền đường và vùng chuyển tiếp công trình cho đường sắt tốc độ cao",
+    "benDatHang": "Bộ Xây dựng",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "29"
+   },
+   {
+    "ma": "bnx-05",
+    "ten": "Nghiên cứu phát triển hệ thống liên khóa máy tính (CBI) cho điều khiển chạy tàu đường sắt đô thị",
+    "benDatHang": "Bộ Xây dựng",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "30"
+   },
+   {
+    "ma": "bnx-08",
+    "ten": "Nghiên cứu thiết kế và chế tạo thiết bị tôi plasma bề mặt để nâng cao độ bền mài mòn cho gờ bánh xe lửa",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": "30"
+   },
+   {
+    "ma": "bnx-09",
+    "ten": "Nghiên cứu thiết kế và chế tạo xe cấp nguồn lưu động cho thiết bị hàng không",
+    "benDatHang": "Bộ Khoa học và Công nghệ",
+    "loaiTen": "Nhiệm vụ KH&CN đặt hàng",
+    "maSp": null
+   },
    {
     "ma": "mst-05",
     "ten": "Nghiên cứu thiết kế, chế tạo và tích hợp hệ thống điều khiển từ xa cho máy xúc thủy lực làm việc trong môi trường khắc nghiệt, nguy hiểm cho người vận hành",
@@ -518,6 +559,13 @@
     "maSp": "09"
    },
    {
+    "ma": "dpx-05",
+    "ten": "chương trình sinh học tổng hợp cho lúa và thủy sản kháng mặn",
+    "benDatHang": "UBND thành phố Cần Thơ",
+    "loaiTen": "Bài toán lớn",
+    "maSp": "16"
+   },
+   {
     "ma": "ctd-01",
     "ten": "Phát triển giống cây trồng, vật nuôi, thủy sản thế hệ mới bằng công nghệ gen, tế bào và công nghệ sinh học",
     "benDatHang": "Bộ Nông nghiệp và Môi trường",
@@ -556,6 +604,20 @@
     "ma": "ctd-24",
     "ten": "dự án xây dựng tuyến metro số 2, Bến Thành – Tham Lương",
     "benDatHang": "Ban Quản lý Đường sắt đô thị (MAUR)",
+    "loaiTen": "Dự án, gói thầu",
+    "maSp": "30"
+   },
+   {
+    "ma": "tdx-03",
+    "ten": "Gói thầu số 02 Mua sắm đầu máy thuộc Dự án Đầu tư đầu máy giai đoạn đến năm 2030",
+    "benDatHang": "Tổng công ty Đường sắt Việt Nam (VNR)",
+    "loaiTen": "Dự án, gói thầu",
+    "maSp": "30"
+   },
+   {
+    "ma": "tdx-04",
+    "ten": "đề án xây dựng Tổ hợp công nghiệp đường sắt quy mô lớn tại Hà Nội",
+    "benDatHang": "VNR",
     "loaiTen": "Dự án, gói thầu",
     "maSp": "30"
    }

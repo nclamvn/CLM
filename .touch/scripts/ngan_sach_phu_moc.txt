@@ -1,2 +1,3 @@
-60
+64
 # 30/09/2026: 44 -> 60 sau lo lam giau dot 01 (anh Lam duyet het, ky het). Chup lai va chot moc cung ngay; ca 60/60 don vi nam trong khung anh moc.
+# 26/10/2026: 60 -> 64 sau lo 04 va lo 06 (anh Lam duyet theo khuyen nghi; them PTSC M&C, Viettel Solutions, Song Cam, SCS). Dat truoc khi chup lai tren Mac; neu chup ra duoi 64 thi cong do, phai mo rong khung hinh, khong ha so nay.

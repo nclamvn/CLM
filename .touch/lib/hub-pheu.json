@@ -2,16 +2,16 @@
   "quy_tac": "anchor_group_overlap_v2",
   "nguong_giao": 0.5,
   "so_nhu_cau": 30,
-  "so_don_vi_co_nang_luc": 59,
+  "so_don_vi_co_nang_luc": 63,
   "nhu_cau_chua_anh_xa": 0,
   "tang": [
     {
       "k": "kha_di",
-      "n": 1770
+      "n": 1890
     },
     {
       "k": "qua_neo_nhom",
-      "n": 287
+      "n": 300
     },
     {
       "k": "qua_giao_tu",
@@ -30,9 +30,9 @@
       "n": 0
     }
   ],
-  "neo_qua_chuoi_gia_tri": 51,
+  "neo_qua_chuoi_gia_tri": 53,
   "loai_lop1": {
-    "so": 19,
+    "so": 21,
     "vi_du": [
       {
         "cau": "P23",
@@ -120,8 +120,30 @@
     ]
   },
   "suyt_dat": {
-    "so": 97,
+    "so": 107,
     "vi_du": [
+      {
+        "cau": "P26",
+        "ten_cau": "Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi",
+        "cung": "Công ty cổ phần Đóng tàu Sông Cấm",
+        "ty_le": 0.45,
+        "giao": [
+          "khơi",
+          "lượng",
+          "ngoài",
+          "năng",
+          "trình"
+        ],
+        "thieu": [
+          "biển",
+          "dịch",
+          "lòng",
+          "sâu",
+          "thăm",
+          "đất"
+        ],
+        "nhom_cau": 8
+      },
       {
         "cau": "P16",
         "ten_cau": "Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học",
@@ -191,6 +213,50 @@
         "nhom_cau": 1
       },
       {
+        "cau": "P01",
+        "ten_cau": "Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành",
+        "cung": "Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)",
+        "ty_le": 0.42,
+        "giao": [
+          "lớn",
+          "nhân",
+          "trí",
+          "tuệ",
+          "tạo"
+        ],
+        "thieu": [
+          "hình",
+          "ngành",
+          "ngôn",
+          "ngữ",
+          "tiếng",
+          "trợ",
+          "việt"
+        ],
+        "nhom_cau": 1
+      },
+      {
+        "cau": "P09",
+        "ten_cau": "Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia",
+        "cung": "Công ty An ninh mạng thông minh SCS",
+        "ty_le": 0.4,
+        "giao": [
+          "bảo",
+          "mạng",
+          "ninh",
+          "tầng"
+        ],
+        "thieu": [
+          "gia",
+          "liệu",
+          "mật",
+          "quan",
+          "quốc",
+          "trọng"
+        ],
+        "nhom_cau": 7
+      },
+      {
         "cau": "P17",
         "ten_cau": "Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo",
         "cung": "Phòng Thí nghiệm trọng điểm công nghệ lọc, hóa dầu",
@@ -226,64 +292,8 @@
           "thu"
         ],
         "nhom_cau": 5
-      },
-      {
-        "cau": "P22",
-        "ten_cau": "Thiết bị, phương tiện bay không người lái (UAV)",
-        "cung": "Trung tâm Vũ trụ Việt Nam",
-        "ty_le": 0.4,
-        "giao": [
-          "chế",
-          "sát"
-        ],
-        "thieu": [
-          "giám",
-          "quản",
-          "uav"
-        ],
-        "nhom_cau": 9
-      },
-      {
-        "cau": "P25",
-        "ten_cau": "Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm",
-        "cung": "Viện Công nghệ xạ hiếm",
-        "ty_le": 0.4,
-        "giao": [
-          "chế",
-          "hiếm",
-          "khoáng",
-          "đất"
-        ],
-        "thieu": [
-          "biến",
-          "dầu",
-          "khai",
-          "khí",
-          "sâu",
-          "thác"
-        ],
-        "nhom_cau": 8
-      },
-      {
-        "cau": "P18",
-        "ten_cau": "Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS)",
-        "cung": "Công ty Cổ phần Giải pháp Năng lượng VinES",
-        "ty_le": 0.38,
-        "giao": [
-          "lượng",
-          "năng",
-          "pin"
-        ],
-        "thieu": [
-          "bess",
-          "hợp",
-          "quy",
-          "trữ",
-          "tích"
-        ],
-        "nhom_cau": 5
       }
     ]
   },
-  "generatedAt": "2026-10-25"
+  "generatedAt": "2026-10-26"
 }

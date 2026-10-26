@@ -1,0 +1,31 @@
+{
+ "nguoi_duyet": "Lam Nguyen",
+ "ngay": "2026-10-26",
+ "loi_duyet": "duyệt theo khuyến nghị cả 3 lô",
+ "dien_giai": "Anh Lam tra loi nguyen van tren sau khi doc KHUYEN_NGHI.md va BANG_DUYET.md cua lo dot_05 (commit 391729d). Nap 28 nhu cau khuyen nghi duyet; gach 4 nhu cau tdx-09 den tdx-12 (dinh huong noi bo, chua dat hang cong khai); 6 nhu cau khuyen nghi can nhac CHUA NAP, cho anh Lam quyet rieng.",
+ "loai": [],
+ "loai_nhu_cau": [
+  "tdx-09",
+  "tdx-10",
+  "tdx-11",
+  "tdx-12",
+  "bnx-11",
+  "bnx-12",
+  "dpx-08",
+  "dpx-09",
+  "dpx-13",
+  "dpx-14"
+ ],
+ "ly_do_loai": {
+  "tdx-09": "Gach theo khuyen nghi cua Claude, anh Lam duyet theo khuyen nghi 26/10/2026: chi la dinh huong noi bo trong bai tham luan, chua co thong bao dat hang cong khai.",
+  "tdx-10": "Gach theo khuyen nghi cua Claude, anh Lam duyet theo khuyen nghi 26/10/2026: chi la dinh huong noi bo trong bai tham luan, chua co thong bao dat hang cong khai.",
+  "tdx-11": "Gach theo khuyen nghi cua Claude, anh Lam duyet theo khuyen nghi 26/10/2026: chi la dinh huong noi bo trong bai tham luan, chua co thong bao dat hang cong khai.",
+  "tdx-12": "Gach theo khuyen nghi cua Claude, anh Lam duyet theo khuyen nghi 26/10/2026: chi la dinh huong noi bo trong bai tham luan, chua co thong bao dat hang cong khai.",
+  "bnx-11": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng.",
+  "bnx-12": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng.",
+  "dpx-08": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng.",
+  "dpx-09": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng.",
+  "dpx-13": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng.",
+  "dpx-14": "Khuyen nghi la CAN NHAC; loi duyet theo khuyen nghi khong quyet muc nay nen CHUA NAP, cho anh Lam quyet rieng."
+ }
+}

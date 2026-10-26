@@ -22,6 +22,8 @@ export const BANG_TAY = {
   'Liên danh tư vấn TEDI - TRICC - TEDI SOUTH': 'Liên danh TEDI - TRICC',
   'Công ty cổ phần thuốc thú y Trung ương NAVETCO': 'NAVETCO',
   'Công ty Cổ phần Giải pháp Năng lượng VinES': 'VinES',
+  'Công ty TNHH MTV Dịch vụ Cơ khí Hàng hải PTSC (PTSC M&C)': 'PTSC M&C',
+  'Tổng công ty Giải pháp doanh nghiệp Viettel (Viettel Solutions)': 'Viettel Solutions',
 };
 const TIEN_TO = /^(Tổng công ty cổ phần|Tổng công ty|Công ty cổ phần|Công ty CP|Công ty TNHH|Công ty)\s+/i;
 
